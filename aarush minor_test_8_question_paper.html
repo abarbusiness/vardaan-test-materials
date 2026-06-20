@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax Configuration Block to enable single dollar sign rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        html { background-color: #f3f4f6; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 20px auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .watermark { 
+            position: absolute; 
+            top: 40%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.10; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { text-align: left; margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .section-marks { font-size: 11pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-transform: none; text-decoration: none; }
+        
+        .question-container { margin-bottom: 15px; display: flex; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; clear: both; }
+        
+        /* Premium Flexbox Baseline Alignment System for Marks */
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .question-text {
+            flex-grow: 1;
+            text-align: justify;
+            padding-right: 15px;
+        }
+        .question-marks {
+            font-weight: bold;
+            font-size: 11pt;
+            font-family: "Times New Roman", Times, serif;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; clear: both; }
+        
+        @media print { 
+            html { background-color: white; }
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                box-shadow: none; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark { position: fixed; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="content-wrapper">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 8</div>
+            <div class="exam-details">
+                <span>Class: 7 CBSE</span>
+                <span>Subject: Science (Physics)</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 50</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory.</li>
+                    <li>The paper is divided into three sections: Section A (15 Marks), Section B (15 Marks), and Section C (20 Marks).</li>
+                    <li>Syllabus Covered: Motion and Time, Electric Current and its Effects.</li>
+                    <li>Write your answers neatly, showing clear steps for numerical calculations.</li>
+                    <li>Draw neat, labeled diagrams wherever required.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section A -->
+        <div class="section-header">
+            SECTION A (15 Marks)
+            <span class="section-marks">(Objective / Very Short Answer Type)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">1.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>Draw the standard electrical circuit symbols for the following components:</strong></span>
+                    <span class="question-marks">[5]</span>
+                </div>
+                <div class="sub-question">(a) Battery of two cells</div>
+                <div class="sub-question">(b) Electric Bulb</div>
+                <div class="sub-question">(c) Switch in the 'OFF' position</div>
+                <div class="sub-question">(d) Connecting wire</div>
+                <div class="sub-question">(e) Electric Fuse</div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">2.</div>
+            <div class="q-content">
+                <strong>Answer the following questions based on the measurement of motion:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Differentiate between Uniform motion and Non-uniform motion with one example of each.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) A train covers a distance of $120\text{ km}$ in $2.5\text{ hours}$. Calculate the average speed of the train in $\text{km/h}$ and convert it into $\text{m/s}$.</span>
+                        <span class="question-marks">[3]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">3.</div>
+            <div class="q-content">
+                <strong>Provide concise answers for the following:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Name the metal used for making the filament of an electric bulb and give one reason for its use.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Define the 'Time Period' of a simple pendulum.</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(c) A simple pendulum takes $36\text{ s}$ to complete $30$ oscillations. What is the time period of the pendulum?</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section B -->
+        <div class="section-header">
+            SECTION B (15 Marks)
+            <span class="section-marks">(Short Answer Type - 3 Marks Each)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>Sketch the shape of the distance-time graph for the following cases:</strong>
+                    <br>(i) A car moving with a constant (uniform) speed.
+                    <br>(ii) A car parked on a side road (at rest).
+                    <br>(iii) A car moving with a non-uniform speed.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">5.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>Miniature Circuit Breakers (MCBs) are increasingly being used in modern households.</strong>
+                    <br>(a) What does MCB stand for?
+                    <br>(b) State the principle on which it works.
+                    <br>(c) Why is it preferred over traditional electric fuses?</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">6.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text">The odometer of a car reads $1048\text{ km}$ when the clock shows $8:00\text{ AM}$. What is the distance moved by the car, if at $8:40\text{ AM}$, the odometer reading has changed to $1096\text{ km}$? Calculate the speed of the car in $\text{km/min}$ and $\text{km/h}$.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">7.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>Regarding an electric bell:</strong>
+                    <br>(a) Name the central component of an electric bell that possesses magnetic properties when current flows through it.
+                    <br>(b) What happens to this component when the circuit is broken at the contact screw?
+                    <br>(c) State one everyday application of electromagnets other than an electric bell.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">8.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text">Two friends, A and B, started running from a starting line. A took $15\text{ minutes}$ to cover $3\text{ km}$, while B took $20\text{ minutes}$ to cover $4.5\text{ km}$. Who ran faster? Support your answer with proper calculations.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section C -->
+        <div class="section-header">
+            SECTION C (20 Marks)
+            <span class="section-marks">(Long Answer Type - 5 Marks Each)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                <strong>(Heating Effect of Electric Current)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) State two specific factors on which the amount of heat produced in a wire depends.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) An electrician is carrying out some repairs in your house. He wants to replace a blown fuse with a thick piece of ordinary copper wire. Is it safe? Explain giving scientific reasons.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(c) Name the alloy generally used to make the heating elements of appliances like room heaters and geysers.</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">10.</div>
+            <div class="q-content">
+                <strong>(Kinematics & Averages)</strong>
+                <br>A bus starts its journey from Delhi to Chandigarh. It travels at an average speed of $60\text{ km/h}$ for the first $2\text{ hours}$. Then, it stops at a Dhaba for a $1\text{ hour}$ lunch break. After the break, it resumes its journey and travels at a speed of $80\text{ km/h}$ for the next $1.5\text{ hours}$ to reach Chandigarh.
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Calculate the total distance covered by the bus before the lunch break.</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Calculate the total distance covered by the bus after the lunch break.</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(c) Calculate the total time taken for the entire journey (including the break) and the overall average speed of the bus.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">11.</div>
+            <div class="q-content">
+                <strong>(Electromagnetism)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) What is an electromagnet? How does it differ from a permanent bar magnet?</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) State two ways by which the magnetic strength of an electromagnet can be increased.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(c) Why is soft iron highly preferred as the core material inside an electromagnet?</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                <strong>(Electric Circuits)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Draw a neat and labeled circuit diagram consisting of a battery of three cells, an electric bulb, and a switch in the 'ON' position. Indicate the direction of conventional current flow in the circuit with arrows.</span>
+                        <span class="question-marks">[3]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) If you place a magnetic compass needle near a current-carrying wire in your drawn circuit, what will you observe? Who was the first scientist to notice this effect?</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan</div>
+    </div>
+</body>
+</html>

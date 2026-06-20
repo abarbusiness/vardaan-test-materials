@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax Configuration Block to enable single dollar sign rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        html { background-color: #f3f4f6; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 20px auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .watermark { 
+            position: absolute; 
+            top: 40%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.10; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { text-align: left; margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .section-marks { font-size: 11pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-transform: none; text-decoration: none; }
+        
+        .question-container { margin-bottom: 15px; display: flex; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; clear: both; }
+        
+        /* Premium Flexbox Baseline Alignment System for Marks */
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .question-text {
+            flex-grow: 1;
+            text-align: justify;
+            padding-right: 15px;
+        }
+        .question-marks {
+            font-weight: bold;
+            font-size: 11pt;
+            font-family: "Times New Roman", Times, serif;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; clear: both; }
+        
+        @media print { 
+            html { background-color: white; }
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                box-shadow: none; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark { position: fixed; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="content-wrapper">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 8</div>
+            <div class="exam-details">
+                <span>Class: 8 CBSE</span>
+                <span>Subjects: Mathematics & Science</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 50</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory.</li>
+                    <li>The paper is divided into three sections: Section A (15 Marks), Section B (15 Marks), and Section C (20 Marks).</li>
+                    <li>Syllabus: Algebraic Expressions, Exponents & Powers, Electric Current (Heating & Magnetic Effects).</li>
+                    <li>Show all mathematical steps clearly. Direct answers will not be awarded full marks.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section A -->
+        <div class="section-header">
+            SECTION A (15 Marks)
+            <span class="section-marks">(Objective / Very Short Answer Type)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">1.</div>
+            <div class="q-content">
+                <strong>(Mathematics) Evaluate the following using laws of exponents:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) $(3^0 + 4^{-1}) \times 2^2$</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) $(1/2)^{-2} + (1/3)^{-2} + (1/4)^{-2}$</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">2.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Science) Classify the following devices based on whether they primarily utilize the 'Heating Effect' or 'Magnetic Effect' of electric current:</strong>
+                    <br>(i) Electric Iron &nbsp;&nbsp; (ii) Electric Bell &nbsp;&nbsp; (iii) Electric Fuse &nbsp;&nbsp; (iv) Crane lifting scrap iron.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">3.</div>
+            <div class="q-content">
+                <strong>(Mathematics) Perform the indicated operations on algebraic expressions:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Add: $7xy + 5yz - 3zx$ and $4yz + 9zx - 4y$</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Subtract: $3x^2 - 5x + 4$ from $5x^2 - 7x + 2$</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                <strong>(Science) Answer in one or two sentences:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Who was the first scientist to discover the magnetic effect of electric current?</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Name the alloy predominantly used to make heating elements of appliances like room heaters.</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(c) What is the full form of MCB?</span>
+                        <span class="question-marks">[1]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">5.</div>
+            <div class="q-content">
+                <strong>(Mathematics) Standard Form & Usual Form:</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Express the number $0.00000000837$ in standard scientific form.</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Express $3.02 \times 10^{-6}$ in usual form.</span>
+                        <span class="question-marks">[1.5]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section B -->
+        <div class="section-header">
+            SECTION B (15 Marks)
+            <span class="section-marks">(Short Answer Type - 3 Marks Each)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">6.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Mathematics)</strong> Simplify the following expression and write the answer with a positive exponent:
+                    $$ \frac{8^{-1} \times 5^3}{2^{-4}} $$</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">7.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Science)</strong> What is an electromagnet? State two ways in which you can increase the magnetic strength of an electromagnet.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">8.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Mathematics)</strong> Find the product of the binomials $(2x + 5)$ and $(4x - 3)$. Show the expansion clearly.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Science)</strong> Explain the working principle of an electric fuse. Why should we never replace a blown fuse with a thick piece of ordinary copper wire?</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">10.</div>
+            <div class="q-content">
+                <div class="question-row">
+                    <span class="question-text"><strong>(Mathematics)</strong> Simplify the algebraic expression $3x(4x - 5) + 3$ and then find its numerical value for $x = 3$.</span>
+                    <span class="question-marks">[3]</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section C -->
+        <div class="section-header">
+            SECTION C (20 Marks)
+            <span class="section-marks">(Long Answer Type - 5 Marks Each)</span>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">11.</div>
+            <div class="q-content">
+                <strong>(Mathematics - Algebraic Identities)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Expand $(3a - 5b)^2$ using a suitable algebraic identity.</span>
+                        <span class="question-marks">[2.5]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Evaluate $102 \times 98$ using a suitable algebraic identity. Mention the identity used.</span>
+                        <span class="question-marks">[2.5]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                <strong>(Science - Heating Effect & Magnetism)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Describe an activity/experiment to show that a current-carrying wire behaves like a magnet (Oersted's experiment).</span>
+                        <span class="question-marks">[3]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) State two factors on which the amount of heat produced in a current-carrying wire depends.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">13.</div>
+            <div class="q-content">
+                <strong>(Mathematics - Mixed Applications)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Find the value of $m$ for which $5^m \div 5^{-3} = 5^5$.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Subtract $3pq(p - q)$ from $2pq(p + q)$.</span>
+                        <span class="question-marks">[3]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">14.</div>
+            <div class="q-content">
+                <strong>(Science - Electric Bell)</strong>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(a) Briefly explain the working mechanism of an electric bell when the switch is pressed. Which effect of electric current does it use?</span>
+                        <span class="question-marks">[3]</span>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="question-row">
+                        <span class="question-text">(b) Write two differences between an electromagnet and a permanent bar magnet.</span>
+                        <span class="question-marks">[2]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan</div>
+    </div>
+</body>
+</html>
