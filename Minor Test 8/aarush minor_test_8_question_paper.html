@@ -95,6 +95,30 @@
             } 
             .watermark { position: fixed; }
         }
+    
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            body { max-width: 100%; min-height: auto; padding: 15mm; }
+            .exam-details { flex-wrap: wrap; justify-content: center; gap: 10px; }
+            .watermark { width: 90%; }
+            img { max-width: 100%; height: auto; }
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; font-size: 10pt; }
+            .q-num { width: 25px; }
+            .section-header { font-size: 12pt; }
+            .sub-question { margin-left: 10px; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 5mm; }
+            .institute-name { font-size: 16pt; }
+            .exam-details { font-size: 9pt; }
+            .q-content { text-align: left; }
+        }
+
     </style>
 </head>
 <body>
