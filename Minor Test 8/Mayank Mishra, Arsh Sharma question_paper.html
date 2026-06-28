@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .surprise-badge { display: inline-block; font-weight: bold; padding: 3px 8px; border: 2px solid red; color: red; margin-top: 10px; font-size: 14pt; text-transform: uppercase; border-radius: 4px; box-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: pulse 2s infinite; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .subject-divider { font-weight: bold; font-size: 11pt; color: #333; margin-top: 15px; margin-bottom: 10px; border-left: 4px solid #000; padding-left: 8px; background-color: #f9f9f9; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .surprise-badge { box-shadow: none; animation: none; border: 1px solid black; color: black; background-color: transparent !important; } }
+    </style>
+    <!-- MathJax for rendering Mathematics matrices -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 8</div>
+        <div><span class="surprise-badge">Surprise Test</span></div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subjects: History & Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Questions are categorized subject-wise within each section.</li>
+                <li>For Mathematics, all working/calculations must be shown clearly alongside the answers.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Objective / Short Answer Type - Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="subject-divider">SUBJECT: HISTORY</div>
+
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Europe was divided into two major armed camps prior to the First World War. Name the two camps and list the original member nations of the Triple Entente.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Mention any two specific terms of the Treaty of Versailles that severely crippled the German military.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            State the immediate cause of the First World War. In your answer, name the assassin and the secret society to which he belonged.
+        </div>
+    </div>
+
+    <div class="subject-divider">SUBJECT: MATHEMATICS (MATRICES)</div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the values of \( x \) and \( y \) if: <br><br>
+            \( 2 \begin{bmatrix} x & 5 \\ 7 & y-3 \end{bmatrix} + \begin{bmatrix} 3 & -4 \\ 1 & 2 \end{bmatrix} = \begin{bmatrix} 7 & 6 \\ 15 & 14 \end{bmatrix} \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If \( A = \begin{bmatrix} 2 & -1 \\ 3 & 0 \end{bmatrix} \) and \( B = \begin{bmatrix} -3 \\ 4 \end{bmatrix} \), find the matrix product \( AB \). State the order of the resulting matrix.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="subject-divider">SUBJECT: HISTORY</div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            How did "Intense Nationalism" (Competitive Patriotism) and the "Armament Race" act as underlying causes for the outbreak of the First World War? Explain briefly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            State any three primary objectives behind the establishment of the League of Nations following the First World War.
+        </div>
+    </div>
+
+    <div class="subject-divider">SUBJECT: MATHEMATICS (MATRICES)</div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Let \( A = \begin{bmatrix} 1 & 2 \\ -2 & 3 \end{bmatrix} \) and \( I \) be the identity matrix of order 2. Find the matrix \( M \) such that \( M = A^2 - 4A + 5I \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Solve the matrix equation for matrix \( X \): <br><br>
+            \( \begin{bmatrix} 2 & 1 \\ -3 & 4 \end{bmatrix} X = \begin{bmatrix} 7 \\ 6 \end{bmatrix} \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Given \( P = \begin{bmatrix} 4 & 2 \\ -1 & 1 \end{bmatrix} \) and \( Q = \begin{bmatrix} -2 \\ 3 \end{bmatrix} \). Evaluate \( P^2 Q \).
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - Attempt all questions - 5 Marks Each)</span></div>
+    
+    <div class="subject-divider">SUBJECT: HISTORY</div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The Treaty of Versailles is heavily criticized as a "dictated peace" based on the principle "To the Victors belong the Spoils." Justify this statement by explaining how the treaty dealt with:
+            <div class="sub-question">(a) The Rhine Valley and Alsace-Lorraine. (2 Marks)</div>
+            <div class="sub-question">(b) The Independence of Poland (including the city of Danzig). (1.5 Marks)</div>
+            <div class="sub-question">(c) Germany's overseas colonies. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Discuss the significant results and consequences of the First World War under the following headings:
+            <div class="sub-question">(a) The emergence of New Ideologies and Dictatorships. (2 Marks)</div>
+            <div class="sub-question">(b) National Self-Determination and the creation of new nations. (1.5 Marks)</div>
+            <div class="sub-question">(c) The USA emerging as a World Power. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="subject-divider">SUBJECT: MATHEMATICS (MATRICES)</div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            If \( A = \begin{bmatrix} 3 & 1 \\ -1 & 2 \end{bmatrix} \) and \( B = \begin{bmatrix} 0 & 4 \\ -2 & 1 \end{bmatrix} \):
+            <div class="sub-question">(i) Find matrix \( C \), if \( C = 2A - B \). (2 Marks)</div>
+            <div class="sub-question">(ii) Prove that \( A^2 - 5A + 7I = O \), where \( I \) is the unit matrix and \( O \) is the null matrix of order 2. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan ❤️<br>Powered by Vardaan Comet</div>
+</body>
+</html>
