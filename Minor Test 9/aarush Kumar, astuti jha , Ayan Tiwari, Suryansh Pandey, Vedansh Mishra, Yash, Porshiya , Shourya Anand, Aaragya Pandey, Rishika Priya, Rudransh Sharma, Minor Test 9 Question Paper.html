@@ -6,11 +6,18 @@
     <title>Vardaan Learning Institute - Question Paper</title>
     <style>
         @page { size: A4; margin: 15mm; }
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         body { 
-            width: 210mm; 
-            min-height: 297mm; 
+            width: min(100%, 210mm); 
+            min-height: 100vh; 
             margin: 0 auto; 
-            padding: 15mm; 
+            padding: clamp(14px, 2.5vw, 15mm); 
             box-sizing: border-box; 
             font-family: "Times New Roman", Times, serif; 
             font-size: 11pt; 
@@ -51,12 +58,18 @@
         .exam-details { 
             display: flex; 
             justify-content: space-between; 
+            flex-wrap: wrap; 
+            gap: 8px 16px; 
             margin-top: 15px; 
             font-weight: bold; 
             font-size: 11pt; 
             border-top: 1px solid #000; 
             border-bottom: 1px solid #000; 
             padding: 5px 0; 
+        }
+        .exam-details span {
+            flex: 1 1 160px;
+            min-width: 0;
         }
         .instructions { 
             margin-top: 10px; 
@@ -84,6 +97,7 @@
             display: flex;
             flex-direction: column;
             font-size: 10.5pt;
+            min-width: 0;
         }
         
         .q-header {
@@ -99,6 +113,7 @@
         .q-content { 
             flex-grow: 1; 
             margin-bottom: 4px;
+            overflow-wrap: anywhere;
         }
         
         /* Compact 2x2 grid for options */
@@ -107,6 +122,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 2px 10px;
             margin-left: 25px;
+            min-width: 0;
         }
         
         .option {
@@ -135,7 +151,56 @@
         }
 
         @media print { 
-            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; } 
+            body { width: 100%; min-height: auto; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; } 
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                width: 100%;
+                max-width: none;
+            }
+
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .question-paper-columns {
+                column-count: 1;
+                column-gap: 0;
+            }
+
+            .options-grid {
+                grid-template-columns: 1fr;
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .header {
+                margin-bottom: 12px;
+            }
+
+            .institute-name {
+                font-size: clamp(18pt, 6vw, 24pt);
+            }
+
+            .test-name {
+                font-size: 12pt;
+            }
+
+            .section-header {
+                font-size: 11pt;
+            }
+
+            .instructions ul {
+                padding-left: 18px;
+            }
         }
     </style>
 </head>
