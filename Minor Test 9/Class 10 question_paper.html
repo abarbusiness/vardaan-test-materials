@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper (Class 9 & 10)</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 15mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.3; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 15px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        /* Multi-column layout for the question paper */
+        .question-paper-columns {
+            column-count: 2;
+            column-gap: 30px;
+            margin-top: 15px;
+        }
+        
+        /* Ensures questions don't break awkwardly across columns */
+        .mcq-container { 
+            break-inside: avoid; 
+            page-break-inside: avoid;
+            margin-bottom: 12px; 
+            display: flex;
+            flex-direction: column;
+            font-size: 10.5pt;
+        }
+        
+        .q-header {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 25px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            margin-bottom: 4px;
+        }
+        
+        /* Compact 2x2 grid for options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 10px;
+            margin-left: 25px;
+        }
+        
+        .option {
+            display: flex;
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 15px; 
+            margin-bottom: 10px; 
+            text-decoration: underline; 
+            font-size: 12pt;
+            column-span: all; 
+        }
+
+        .math-expr {
+            font-style: italic;
+        }
+
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            clear: both;
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 9</div>
+        <div class="exam-details">
+            <span>Class: 9 & 10</span>
+            <span>Subject: General (Science, Math, GK, Aptitude)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All 50 questions are compulsory. Each question carries 1 mark.</li>
+                <li>All questions are Multiple Choice Questions (MCQs).</li>
+                <li>Choose the most appropriate option and write your answer clearly.</li>
+                <li>There is no negative marking. Rough work can be done on the back pages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-paper-columns">
+        
+        <div class="section-header">PART I: GENERAL SCIENCE</div>
+
+        <!-- Q1 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">1.</span><span class="q-content">The SI unit of momentum is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) N m</div>
+                <div class="option">(B) kg m/s²</div>
+                <div class="option">(C) kg m/s</div>
+                <div class="option">(D) N/s</div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">2.</span><span class="q-content">The power of a lens is measured in:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Watts</div>
+                <div class="option">(B) Joules</div>
+                <div class="option">(C) Diopters</div>
+                <div class="option">(D) Meters</div>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">3.</span><span class="q-content">What is the commercial unit of electrical energy?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Joule</div>
+                <div class="option">(B) Kilowatt-hour</div>
+                <div class="option">(C) Watt</div>
+                <div class="option">(D) Volt-ampere</div>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">4.</span><span class="q-content">Who discovered the electron?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) J.J. Thomson</div>
+                <div class="option">(B) Ernest Rutherford</div>
+                <div class="option">(C) James Chadwick</div>
+                <div class="option">(D) Niels Bohr</div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">5.</span><span class="q-content">The pH value of a neutral solution at 25°C is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 0</div>
+                <div class="option">(B) 7</div>
+                <div class="option">(C) 14</div>
+                <div class="option">(D) 1</div>
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">6.</span><span class="q-content">Which of the following non-metals is a liquid at room temperature?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Mercury</div>
+                <div class="option">(B) Iodine</div>
+                <div class="option">(C) Bromine</div>
+                <div class="option">(D) Chlorine</div>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">7.</span><span class="q-content">The process of rusting of iron is an example of:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Reduction</div>
+                <div class="option">(B) Oxidation</div>
+                <div class="option">(C) Displacement</div>
+                <div class="option">(D) Double displacement</div>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">8.</span><span class="q-content">Which cell organelle is often referred to as the "suicidal bag" of the cell?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Ribosome</div>
+                <div class="option">(B) Mitochondria</div>
+                <div class="option">(C) Golgi apparatus</div>
+                <div class="option">(D) Lysosome</div>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">9.</span><span class="q-content">Where does the photochemical phase of photosynthesis occur?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Stroma</div>
+                <div class="option">(B) Grana</div>
+                <div class="option">(C) Cytoplasm</div>
+                <div class="option">(D) Nucleus</div>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">10.</span><span class="q-content">Which gland is known as the 'master gland' in the human body?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Thyroid gland</div>
+                <div class="option">(B) Adrenal gland</div>
+                <div class="option">(C) Pituitary gland</div>
+                <div class="option">(D) Pancreas</div>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">11.</span><span class="q-content">The value of acceleration due to gravity (g) on the moon is approximately what fraction of its value on Earth?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 1/2</div>
+                <div class="option">(B) 1/4</div>
+                <div class="option">(C) 1/6</div>
+                <div class="option">(D) 1/10</div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">12.</span><span class="q-content">Who is considered the "Father of Genetics"?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Charles Darwin</div>
+                <div class="option">(B) Gregor Mendel</div>
+                <div class="option">(C) Louis Pasteur</div>
+                <div class="option">(D) Watson and Crick</div>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">13.</span><span class="q-content">Which allotrope of carbon is a good conductor of electricity?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Diamond</div>
+                <div class="option">(B) Fullerene</div>
+                <div class="option">(C) Graphite</div>
+                <div class="option">(D) Coal</div>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">14.</span><span class="q-content">The normal audible range of frequencies for an average human ear is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 2 Hz to 2000 Hz</div>
+                <div class="option">(B) 20 Hz to 20,000 Hz</div>
+                <div class="option">(C) 200 Hz to 20,000 Hz</div>
+                <div class="option">(D) 2000 Hz to 200,000 Hz</div>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">15.</span><span class="q-content">What is the vector responsible for transmitting malaria?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Aedes mosquito</div>
+                <div class="option">(B) Culex mosquito</div>
+                <div class="option">(C) Female Anopheles mosquito</div>
+                <div class="option">(D) Tsetse fly</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART II: GENERAL KNOWLEDGE</div>
+
+        <!-- Q16 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">16.</span><span class="q-content">Who was the first woman President of India?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Indira Gandhi</div>
+                <div class="option">(B) Sarojini Naidu</div>
+                <div class="option">(C) Pratibha Patil</div>
+                <div class="option">(D) Droupadi Murmu</div>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">17.</span><span class="q-content">Which is the longest river entirely flowing within India?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Brahmaputra</div>
+                <div class="option">(B) Godavari</div>
+                <div class="option">(C) Yamuna</div>
+                <div class="option">(D) Ganga</div>
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">18.</span><span class="q-content">What is the minimum age prescribed by the Constitution to become a member of the Lok Sabha?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 18 years</div>
+                <div class="option">(B) 21 years</div>
+                <div class="option">(C) 25 years</div>
+                <div class="option">(D) 30 years</div>
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">19.</span><span class="q-content">Which institution serves as the central or apex bank of India?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) State Bank of India</div>
+                <div class="option">(B) Reserve Bank of India</div>
+                <div class="option">(C) Finance Ministry</div>
+                <div class="option">(D) NITI Aayog</div>
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">20.</span><span class="q-content">Name the first artificial satellite launched by India.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Bhaskara</div>
+                <div class="option">(B) Rohini</div>
+                <div class="option">(C) INSAT-1A</div>
+                <div class="option">(D) Aryabhata</div>
+            </div>
+        </div>
+
+        <!-- Q21 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">21.</span><span class="q-content">In which year was the historic Battle of Plassey fought?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 1526</div>
+                <div class="option">(B) 1757</div>
+                <div class="option">(C) 1764</div>
+                <div class="option">(D) 1857</div>
+            </div>
+        </div>
+
+        <!-- Q22 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">22.</span><span class="q-content">Which noble gas is commonly used in filling weather balloons because it is lighter than air and non-flammable?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Argon</div>
+                <div class="option">(B) Neon</div>
+                <div class="option">(C) Helium</div>
+                <div class="option">(D) Krypton</div>
+            </div>
+        </div>
+
+        <!-- Q23 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">23.</span><span class="q-content">How many players are on the court for a single team in a standard game of basketball?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 5</div>
+                <div class="option">(B) 6</div>
+                <div class="option">(C) 7</div>
+                <div class="option">(D) 9</div>
+            </div>
+        </div>
+
+        <!-- Q24 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">24.</span><span class="q-content">Who is the author of the autobiography "The Story of My Experiments with Truth"?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Jawaharlal Nehru</div>
+                <div class="option">(B) Dr. A.P.J. Abdul Kalam</div>
+                <div class="option">(C) Mahatma Gandhi</div>
+                <div class="option">(D) Sardar Patel</div>
+            </div>
+        </div>
+
+        <!-- Q25 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">25.</span><span class="q-content">Which Indian state is famously known as the "Spice Garden of India"?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Karnataka</div>
+                <div class="option">(B) Andhra Pradesh</div>
+                <div class="option">(C) Kerala</div>
+                <div class="option">(D) Tamil Nadu</div>
+            </div>
+        </div>
+
+        <!-- Q26 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">26.</span><span class="q-content">Who was the first Indian citizen to be awarded the Nobel Prize?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) C.V. Raman</div>
+                <div class="option">(B) Mother Teresa</div>
+                <div class="option">(C) Amartya Sen</div>
+                <div class="option">(D) Rabindranath Tagore</div>
+            </div>
+        </div>
+
+        <!-- Q27 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">27.</span><span class="q-content">Where is the headquarters of the United Nations Organization (UNO) located?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Geneva</div>
+                <div class="option">(B) New York</div>
+                <div class="option">(C) Washington D.C.</div>
+                <div class="option">(D) Paris</div>
+            </div>
+        </div>
+
+        <!-- Q28 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">28.</span><span class="q-content">How many Schedules are currently there in the Constitution of India?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 8</div>
+                <div class="option">(B) 10</div>
+                <div class="option">(C) 12</div>
+                <div class="option">(D) 22</div>
+            </div>
+        </div>
+
+        <!-- Q29 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">29.</span><span class="q-content">Which atmospheric layer protects the Earth's surface from harmful ultraviolet (UV) radiation?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Troposphere</div>
+                <div class="option">(B) Mesosphere</div>
+                <div class="option">(C) Ozone layer</div>
+                <div class="option">(D) Thermosphere</div>
+            </div>
+        </div>
+
+        <!-- Q30 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">30.</span><span class="q-content">Who is credited with inventing the World Wide Web (WWW)?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Bill Gates</div>
+                <div class="option">(B) Steve Jobs</div>
+                <div class="option">(C) Tim Berners-Lee</div>
+                <div class="option">(D) Charles Babbage</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART III: GENERAL MATHEMATICS</div>
+
+        <!-- Q31 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">31.</span><span class="q-content">If <span class="math-expr">α</span> and <span class="math-expr">β</span> are the roots of the quadratic polynomial <span class="math-expr">ax² + bx + c = 0</span>, then the sum of the roots (<span class="math-expr">α + β</span>) is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) c/a</div>
+                <div class="option">(B) -b/a</div>
+                <div class="option">(C) -c/a</div>
+                <div class="option">(D) b/a</div>
+            </div>
+        </div>
+
+        <!-- Q32 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">32.</span><span class="q-content">For any acute angle <span class="math-expr">θ</span>, the value of <span class="math-expr">sin²θ + cos²θ</span> is always:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 0</div>
+                <div class="option">(B) -1</div>
+                <div class="option">(C) 1</div>
+                <div class="option">(D) ∞</div>
+            </div>
+        </div>
+
+        <!-- Q33 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">33.</span><span class="q-content">What is the 10th term of the Arithmetic Progression (A.P.): 2, 7, 12, 17, ...?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 42</div>
+                <div class="option">(B) 47</div>
+                <div class="option">(C) 52</div>
+                <div class="option">(D) 57</div>
+            </div>
+        </div>
+
+        <!-- Q34 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">34.</span><span class="q-content">The angle subtended by a diameter at any point on the circumference of a circle (angle in a semicircle) is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 45°</div>
+                <div class="option">(B) 60°</div>
+                <div class="option">(C) 90°</div>
+                <div class="option">(D) 180°</div>
+            </div>
+        </div>
+
+        <!-- Q35 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">35.</span><span class="q-content">The formula for the volume of a right circular cylinder of radius <span class="math-expr">r</span> and height <span class="math-expr">h</span> is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) ⅓πr²h</div>
+                <div class="option">(B) πr²h</div>
+                <div class="option">(C) 2πrh</div>
+                <div class="option">(D) 4/3πr³</div>
+            </div>
+        </div>
+
+        <!-- Q36 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">36.</span><span class="q-content">The decimal expansion of an irrational number is always:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Terminating</div>
+                <div class="option">(B) Non-terminating repeating</div>
+                <div class="option">(C) Non-terminating non-repeating</div>
+                <div class="option">(D) Terminating repeating</div>
+            </div>
+        </div>
+
+        <!-- Q37 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">37.</span><span class="q-content">In a probability experiment, what is the probability of a sure (or certain) event?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 0</div>
+                <div class="option">(B) 0.5</div>
+                <div class="option">(C) 1</div>
+                <div class="option">(D) -1</div>
+            </div>
+        </div>
+
+        <!-- Q38 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">38.</span><span class="q-content">For a pair of linear equations <span class="math-expr">a₁x + b₁y + c₁ = 0</span> and <span class="math-expr">a₂x + b₂y + c₂ = 0</span>, if <span class="math-expr">a₁/a₂ ≠ b₁/b₂</span>, the system has:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) No solution</div>
+                <div class="option">(B) A unique solution</div>
+                <div class="option">(C) Infinitely many solutions</div>
+                <div class="option">(D) Two solutions</div>
+            </div>
+        </div>
+
+        <!-- Q39 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">39.</span><span class="q-content">What is the distance between the points (0, 3) and (4, 0) on a Cartesian plane?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 7 units</div>
+                <div class="option">(B) 5 units</div>
+                <div class="option">(C) 12 units</div>
+                <div class="option">(D) 25 units</div>
+            </div>
+        </div>
+
+        <!-- Q40 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">40.</span><span class="q-content">Which of the following is the correct empirical relationship among Mean, Median, and Mode?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Mode = 2Median - 3Mean</div>
+                <div class="option">(B) Mode = 3Median - 2Mean</div>
+                <div class="option">(C) Median = 3Mode - 2Mean</div>
+                <div class="option">(D) Mean = 3Median - 2Mode</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART IV: APTITUDE & REASONING</div>
+
+        <!-- Q41 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">41.</span><span class="q-content">Find the next number in the series: 3, 8, 15, 24, ?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 31</div>
+                <div class="option">(B) 33</div>
+                <div class="option">(C) 35</div>
+                <div class="option">(D) 37</div>
+            </div>
+        </div>
+
+        <!-- Q42 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">42.</span><span class="q-content">If in a certain code language, WATER is written as YCVGT, how will FIRE be written in that code?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) HKTG</div>
+                <div class="option">(B) GJSF</div>
+                <div class="option">(C) JMVH</div>
+                <div class="option">(D) HKTF</div>
+            </div>
+        </div>
+
+        <!-- Q43 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">43.</span><span class="q-content">Pointing to a photograph, a man says, "I have no brother or sister but that man's father is my father's son." Whose photograph was it?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) His own</div>
+                <div class="option">(B) His father's</div>
+                <div class="option">(C) His son's</div>
+                <div class="option">(D) His nephew's</div>
+            </div>
+        </div>
+
+        <!-- Q44 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">44.</span><span class="q-content">A boy walks 5 km towards North, takes a right turn and walks 12 km. What is the shortest distance between his starting and current position?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 17 km</div>
+                <div class="option">(B) 13 km</div>
+                <div class="option">(C) 15 km</div>
+                <div class="option">(D) 7 km</div>
+            </div>
+        </div>
+
+        <!-- Q45 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">45.</span><span class="q-content">What is the angle between the hour hand and the minute hand of a clock exactly at 3:30?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 90°</div>
+                <div class="option">(B) 105°</div>
+                <div class="option">(C) 75°</div>
+                <div class="option">(D) 60°</div>
+            </div>
+        </div>
+
+        <!-- Q46 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">46.</span><span class="q-content">If 15th August 2010 was a Sunday, what day of the week was 15th August 2011?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Monday</div>
+                <div class="option">(B) Tuesday</div>
+                <div class="option">(C) Saturday</div>
+                <div class="option">(D) Sunday</div>
+            </div>
+        </div>
+
+        <!-- Q47 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">47.</span><span class="q-content">In a class of 50 students, 30 like Tea, 25 like Coffee, and 10 like both. How many students do not like either Tea or Coffee?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 5</div>
+                <div class="option">(B) 10</div>
+                <div class="option">(C) 15</div>
+                <div class="option">(D) 0</div>
+            </div>
+        </div>
+
+        <!-- Q48 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">48.</span><span class="q-content">A father is 3 times as old as his son. After 12 years, he will be twice as old as his son. What is the present age of the son?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 10 years</div>
+                <div class="option">(B) 12 years</div>
+                <div class="option">(C) 14 years</div>
+                <div class="option">(D) 16 years</div>
+            </div>
+        </div>
+
+        <!-- Q49 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">49.</span><span class="q-content">Rohit ranks 17th from the top and 18th from the bottom in a class test. How many total students are there in the class?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 33</div>
+                <div class="option">(B) 34</div>
+                <div class="option">(C) 35</div>
+                <div class="option">(D) 36</div>
+            </div>
+        </div>
+
+        <!-- Q50 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">50.</span><span class="q-content">Find the word that completes the analogy — Odometer is to Mileage as Barometer is to:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Temperature</div>
+                <div class="option">(B) Volume</div>
+                <div class="option">(C) Pressure</div>
+                <div class="option">(D) Velocity</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

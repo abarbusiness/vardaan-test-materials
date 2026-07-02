@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper (Class 8)</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 15mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.3; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 15px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        /* Multi-column layout for the question paper */
+        .question-paper-columns {
+            column-count: 2;
+            column-gap: 30px;
+            margin-top: 15px;
+        }
+        
+        /* Ensures questions don't break awkwardly across columns */
+        .mcq-container { 
+            break-inside: avoid; 
+            page-break-inside: avoid;
+            margin-bottom: 12px; 
+            display: flex;
+            flex-direction: column;
+            font-size: 10.5pt;
+        }
+        
+        .q-header {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 25px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            margin-bottom: 4px;
+        }
+        
+        /* Compact 2x2 grid for options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 10px;
+            margin-left: 25px;
+        }
+        
+        .option {
+            display: flex;
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 15px; 
+            margin-bottom: 10px; 
+            text-decoration: underline; 
+            font-size: 12pt;
+            column-span: all; 
+        }
+
+        .math-expr {
+            font-style: italic;
+        }
+
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            clear: both;
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 9</div>
+        <div class="exam-details">
+            <span>Class: 8</span>
+            <span>Subject: General (Science, Math, GK, Aptitude)</span>
+            <span>Time: 1 Hour 30 Mins</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All 50 questions are compulsory. Each question carries 1 mark.</li>
+                <li>All questions are Multiple Choice Questions (MCQs).</li>
+                <li>Choose the most appropriate option and write your answer clearly.</li>
+                <li>There is no negative marking. Rough work can be done on the back pages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-paper-columns">
+        
+        <div class="section-header">PART I: GENERAL SCIENCE</div>
+
+        <!-- Q1 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">1.</span><span class="q-content">Which organelle is known as the 'powerhouse of the cell'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Nucleus</div>
+                <div class="option">(B) Mitochondria</div>
+                <div class="option">(C) Ribosome</div>
+                <div class="option">(D) Chloroplast</div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">2.</span><span class="q-content">Which of the following metals is found in a liquid state at room temperature?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Iron</div>
+                <div class="option">(B) Aluminum</div>
+                <div class="option">(C) Mercury</div>
+                <div class="option">(D) Gold</div>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">3.</span><span class="q-content">The SI unit of frequency is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Decibel</div>
+                <div class="option">(B) Hertz</div>
+                <div class="option">(C) Meter</div>
+                <div class="option">(D) Second</div>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">4.</span><span class="q-content">Which gas is primarily responsible for the greenhouse effect?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Oxygen</div>
+                <div class="option">(B) Nitrogen</div>
+                <div class="option">(C) Carbon dioxide</div>
+                <div class="option">(D) Argon</div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">5.</span><span class="q-content">The force of friction always acts in a direction ________ to the applied force.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Opposite</div>
+                <div class="option">(B) Parallel</div>
+                <div class="option">(C) Same</div>
+                <div class="option">(D) Perpendicular</div>
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">6.</span><span class="q-content">Which microorganism promotes the formation of curd?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Amoeba</div>
+                <div class="option">(B) Yeast</div>
+                <div class="option">(C) Lactobacillus</div>
+                <div class="option">(D) Spirogyra</div>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">7.</span><span class="q-content">The ray of light that bounces off a smooth surface is called the:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Incident ray</div>
+                <div class="option">(B) Reflected ray</div>
+                <div class="option">(C) Normal ray</div>
+                <div class="option">(D) Emergent ray</div>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">8.</span><span class="q-content">Which of the following is an example of a contact force?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Magnetic force</div>
+                <div class="option">(B) Gravitational force</div>
+                <div class="option">(C) Muscular force</div>
+                <div class="option">(D) Electrostatic force</div>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">9.</span><span class="q-content">Which non-metal is commonly used in water purification processes?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Iodine</div>
+                <div class="option">(B) Chlorine</div>
+                <div class="option">(C) Sulphur</div>
+                <div class="option">(D) Phosphorus</div>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">10.</span><span class="q-content">The instrument used to record seismic waves during an earthquake is called:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Barometer</div>
+                <div class="option">(B) Thermometer</div>
+                <div class="option">(C) Seismograph</div>
+                <div class="option">(D) Anemometer</div>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">11.</span><span class="q-content">Sound cannot travel through:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Air</div>
+                <div class="option">(B) Water</div>
+                <div class="option">(C) Iron</div>
+                <div class="option">(D) Vacuum</div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">12.</span><span class="q-content">What type of electrical charge does an electron carry?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Positive</div>
+                <div class="option">(B) Negative</div>
+                <div class="option">(C) Neutral</div>
+                <div class="option">(D) Variable</div>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">13.</span><span class="q-content">Which planet is often referred to as the 'Morning Star' or 'Evening Star'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Mercury</div>
+                <div class="option">(B) Mars</div>
+                <div class="option">(C) Venus</div>
+                <div class="option">(D) Jupiter</div>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">14.</span><span class="q-content">Synthetic fibers are synthesized from raw materials called:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Polymers</div>
+                <div class="option">(B) Petrochemicals</div>
+                <div class="option">(C) Plastics</div>
+                <div class="option">(D) Monomers</div>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">15.</span><span class="q-content">When a light ray passes from a rarer medium to a denser medium, it:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Bends away from normal</div>
+                <div class="option">(B) Bends towards normal</div>
+                <div class="option">(C) Goes straight</div>
+                <div class="option">(D) Reflects back</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART II: GENERAL KNOWLEDGE</div>
+
+        <!-- Q16 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">16.</span><span class="q-content">Who was the first Indian woman to go to space?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Sunita Williams</div>
+                <div class="option">(B) Kalpana Chawla</div>
+                <div class="option">(C) Kiran Bedi</div>
+                <div class="option">(D) P.T. Usha</div>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">17.</span><span class="q-content">Which is the largest gland in the human body?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Pancreas</div>
+                <div class="option">(B) Thyroid</div>
+                <div class="option">(C) Liver</div>
+                <div class="option">(D) Pituitary</div>
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">18.</span><span class="q-content">Who is known as the 'Iron Man of India'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Bhagat Singh</div>
+                <div class="option">(B) Subhas Chandra Bose</div>
+                <div class="option">(C) Sardar Vallabhbhai Patel</div>
+                <div class="option">(D) Lala Lajpat Rai</div>
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">19.</span><span class="q-content">Which is considered the longest river in the world?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Amazon</div>
+                <div class="option">(B) Nile</div>
+                <div class="option">(C) Ganga</div>
+                <div class="option">(D) Yangtze</div>
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">20.</span><span class="q-content">What is the capital city of Australia?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Sydney</div>
+                <div class="option">(B) Melbourne</div>
+                <div class="option">(C) Canberra</div>
+                <div class="option">(D) Perth</div>
+            </div>
+        </div>
+
+        <!-- Q21 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">21.</span><span class="q-content">Who wrote the famous book 'Discovery of India'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Mahatma Gandhi</div>
+                <div class="option">(B) Dr. B.R. Ambedkar</div>
+                <div class="option">(C) Jawaharlal Nehru</div>
+                <div class="option">(D) Rabindranath Tagore</div>
+            </div>
+        </div>
+
+        <!-- Q22 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">22.</span><span class="q-content">World Environment Day is observed every year on:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 5th June</div>
+                <div class="option">(B) 22nd April</div>
+                <div class="option">(C) 1st December</div>
+                <div class="option">(D) 2nd October</div>
+            </div>
+        </div>
+
+        <!-- Q23 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">23.</span><span class="q-content">Which Indian state has the highest literacy rate?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Maharashtra</div>
+                <div class="option">(B) Kerala</div>
+                <div class="option">(C) Tamil Nadu</div>
+                <div class="option">(D) Karnataka</div>
+            </div>
+        </div>
+
+        <!-- Q24 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">24.</span><span class="q-content">What is the highest civilian award of the Republic of India?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Padma Shri</div>
+                <div class="option">(B) Padma Vibhushan</div>
+                <div class="option">(C) Param Vir Chakra</div>
+                <div class="option">(D) Bharat Ratna</div>
+            </div>
+        </div>
+
+        <!-- Q25 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">25.</span><span class="q-content">Which part of the computer is considered its 'brain'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) RAM</div>
+                <div class="option">(B) Motherboard</div>
+                <div class="option">(C) CPU</div>
+                <div class="option">(D) Hard Drive</div>
+            </div>
+        </div>
+
+        <!-- Q26 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">26.</span><span class="q-content">What is the common chemical name for baking soda?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Sodium chloride</div>
+                <div class="option">(B) Sodium bicarbonate</div>
+                <div class="option">(C) Calcium carbonate</div>
+                <div class="option">(D) Sodium carbonate</div>
+            </div>
+        </div>
+
+        <!-- Q27 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">27.</span><span class="q-content">Which planet in our solar system is known as the 'Red Planet'?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Jupiter</div>
+                <div class="option">(B) Saturn</div>
+                <div class="option">(C) Mars</div>
+                <div class="option">(D) Uranus</div>
+            </div>
+        </div>
+
+        <!-- Q28 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">28.</span><span class="q-content">Who is the founder of Sikhism?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Guru Gobind Singh</div>
+                <div class="option">(B) Guru Nanak Dev</div>
+                <div class="option">(C) Guru Arjan Dev</div>
+                <div class="option">(D) Guru Tegh Bahadur</div>
+            </div>
+        </div>
+
+        <!-- Q29 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">29.</span><span class="q-content">How many Fundamental Rights are guaranteed by the Indian Constitution?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 5</div>
+                <div class="option">(B) 6</div>
+                <div class="option">(C) 7</div>
+                <div class="option">(D) 8</div>
+            </div>
+        </div>
+
+        <!-- Q30 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">30.</span><span class="q-content">Which is the smallest bone in the human body?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Femur</div>
+                <div class="option">(B) Tibia</div>
+                <div class="option">(C) Stapes</div>
+                <div class="option">(D) Ulna</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART III: GENERAL MATHEMATICS</div>
+
+        <!-- Q31 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">31.</span><span class="q-content">What is the square root of 144?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 12</div>
+                <div class="option">(B) 14</div>
+                <div class="option">(C) 16</div>
+                <div class="option">(D) 18</div>
+            </div>
+        </div>
+
+        <!-- Q32 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">32.</span><span class="q-content">Find the value of <span class="math-expr">x</span> if <span class="math-expr">3x - 5 = 10</span>.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 3</div>
+                <div class="option">(B) 5</div>
+                <div class="option">(C) 15</div>
+                <div class="option">(D) 2</div>
+            </div>
+        </div>
+
+        <!-- Q33 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">33.</span><span class="q-content">What is the cube of 4?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 16</div>
+                <div class="option">(B) 32</div>
+                <div class="option">(C) 64</div>
+                <div class="option">(D) 128</div>
+            </div>
+        </div>
+
+        <!-- Q34 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">34.</span><span class="q-content">The multiplicative inverse of <span class="math-expr">-3/4</span> is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 3/4</div>
+                <div class="option">(B) 4/3</div>
+                <div class="option">(C) -4/3</div>
+                <div class="option">(D) 1</div>
+            </div>
+        </div>
+
+        <!-- Q35 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">35.</span><span class="q-content">The sum of all interior angles of a quadrilateral is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 180°</div>
+                <div class="option">(B) 270°</div>
+                <div class="option">(C) 360°</div>
+                <div class="option">(D) 540°</div>
+            </div>
+        </div>
+
+        <!-- Q36 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">36.</span><span class="q-content">Find the area of a rhombus whose diagonals are 10 cm and 8 cm.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 40 cm²</div>
+                <div class="option">(B) 80 cm²</div>
+                <div class="option">(C) 20 cm²</div>
+                <div class="option">(D) 18 cm²</div>
+            </div>
+        </div>
+
+        <!-- Q37 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">37.</span><span class="q-content">Simplify: <span class="math-expr">2³ × 2⁴</span></span></div>
+            <div class="options-grid">
+                <div class="option">(A) 32</div>
+                <div class="option">(B) 64</div>
+                <div class="option">(C) 128</div>
+                <div class="option">(D) 256</div>
+            </div>
+        </div>
+
+        <!-- Q38 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">38.</span><span class="q-content">A shirt marked at ₹ 800 is sold for ₹ 680. What is the discount percentage?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 10%</div>
+                <div class="option">(B) 15%</div>
+                <div class="option">(C) 20%</div>
+                <div class="option">(D) 25%</div>
+            </div>
+        </div>
+
+        <!-- Q39 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">39.</span><span class="q-content">If <span class="math-expr">x² = 225</span>, and <span class="math-expr">x</span> is a positive integer, then <span class="math-expr">x</span> is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 15</div>
+                <div class="option">(B) 25</div>
+                <div class="option">(C) 35</div>
+                <div class="option">(D) 45</div>
+            </div>
+        </div>
+
+        <!-- Q40 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">40.</span><span class="q-content">The standard scientific notation for 0.000064 is:</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 64 × 10⁻⁴</div>
+                <div class="option">(B) 6.4 × 10⁻⁵</div>
+                <div class="option">(C) 6.4 × 10⁵</div>
+                <div class="option">(D) 0.64 × 10⁻³</div>
+            </div>
+        </div>
+
+        <div class="section-header">PART IV: APTITUDE & REASONING</div>
+
+        <!-- Q41 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">41.</span><span class="q-content">Find the next number in the series: 2, 5, 10, 17, 26, __?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 33</div>
+                <div class="option">(B) 35</div>
+                <div class="option">(C) 37</div>
+                <div class="option">(D) 39</div>
+            </div>
+        </div>
+
+        <!-- Q42 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">42.</span><span class="q-content">In a certain code, if TEACHER is written as VGCEJGT, how is STUDENT written in that code?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) UVWFGPV</div>
+                <div class="option">(B) TUVWFGU</div>
+                <div class="option">(C) UTVWFGP</div>
+                <div class="option">(D) VWXGHQW</div>
+            </div>
+        </div>
+
+        <!-- Q43 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">43.</span><span class="q-content">If CAT = 24 and DOG = 26, then what does RAT equal? (Based on alphabet numbering where A=1, B=2...)</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 36</div>
+                <div class="option">(B) 39</div>
+                <div class="option">(C) 42</div>
+                <div class="option">(D) 45</div>
+            </div>
+        </div>
+
+        <!-- Q44 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">44.</span><span class="q-content">A is B's brother. C is A's mother. D is C's father. How is B related to D?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Son</div>
+                <div class="option">(B) Grandson/Granddaughter</div>
+                <div class="option">(C) Nephew</div>
+                <div class="option">(D) Brother</div>
+            </div>
+        </div>
+
+        <!-- Q45 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">45.</span><span class="q-content">A boy walks 10m North, turns right and walks 10m, turns left and walks 5m, turns left again and walks 10m. How far is he from his starting point?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 15m</div>
+                <div class="option">(B) 20m</div>
+                <div class="option">(C) 25m</div>
+                <div class="option">(D) 35m</div>
+            </div>
+        </div>
+
+        <!-- Q46 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">46.</span><span class="q-content">Select the odd number out: 9, 16, 25, 35, 49.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 16</div>
+                <div class="option">(B) 25</div>
+                <div class="option">(C) 35</div>
+                <div class="option">(D) 49</div>
+            </div>
+        </div>
+
+        <!-- Q47 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">47.</span><span class="q-content">Arrange in a logical and meaningful order: 1. Interview, 2. Application, 3. Job Offer, 4. Written Test.</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 2, 4, 1, 3</div>
+                <div class="option">(B) 2, 1, 4, 3</div>
+                <div class="option">(C) 4, 2, 1, 3</div>
+                <div class="option">(D) 1, 2, 3, 4</div>
+            </div>
+        </div>
+
+        <!-- Q48 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">48.</span><span class="q-content">Find the missing letter: A, Z, C, X, E, __?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) U</div>
+                <div class="option">(B) V</div>
+                <div class="option">(C) W</div>
+                <div class="option">(D) T</div>
+            </div>
+        </div>
+
+        <!-- Q49 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">49.</span><span class="q-content">If 1st January 2024 is a Monday, what day of the week will 1st January 2025 be?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) Tuesday</div>
+                <div class="option">(B) Wednesday</div>
+                <div class="option">(C) Thursday</div>
+                <div class="option">(D) Friday</div>
+            </div>
+        </div>
+
+        <!-- Q50 -->
+        <div class="mcq-container">
+            <div class="q-header"><span class="q-num">50.</span><span class="q-content">In a farm, there are some cows and hens. If the total number of heads is 20 and total number of legs is 64, how many cows are there?</span></div>
+            <div class="options-grid">
+                <div class="option">(A) 8</div>
+                <div class="option">(B) 10</div>
+                <div class="option">(C) 12</div>
+                <div class="option">(D) 14</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
