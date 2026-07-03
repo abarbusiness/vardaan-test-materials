@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-transform: none; }
+        .question-container { margin-bottom: 20px; display: flex; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 8px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100% !important;
+                min-height: unset !important;
+                padding: 14px !important;
+                margin: 0 !important;
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            .institute-name { font-size: 16px !important; letter-spacing: 0 !important; }
+            .test-name { font-size: 13px !important; }
+            .exam-details {
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 12px !important;
+            }
+            .exam-details span { display: block !important; }
+            .instructions { font-size: 11px !important; }
+            .instructions ul { padding-left: 16px !important; }
+            .section-header { font-size: 12px !important; padding: 6px 10px !important; }
+            .question-container { margin-bottom: 16px !important; }
+            .options-grid, .options {
+                grid-template-columns: 1fr !important;
+                gap: 6px !important;
+                padding-left: 0 !important;
+            }
+            .q-num { width: 24px !important; font-size: 13px !important; }
+            .q-content { font-size: 13px !important; }
+            .option, .options > div { font-size: 12px !important; }
+            table { font-size: 11px !important; width: 100% !important; overflow-x: auto !important; display: block !important; }
+            .footer { font-size: 10px !important; margin-top: 20px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Chemistry Test Part 2 (Set A - JEE Level)</div>
+        <div class="exam-details">
+            <span>Class: 12</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 100</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. There are 25 questions in total.</li>
+                <li>Each question carries exactly 4 marks.</li>
+                <li>The paper is based strictly on Colligative Properties and Abnormal Molar Masses.</li>
+                <li>Choose the most appropriate single correct option.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A: Colligative Properties & Vapour Pressure (40 Marks)
+        <span class="marks-info">(Questions 1 to 10 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Colligative properties of dilute solutions depend strictly on which of the following?
+            <div class="options">
+                <div>(A) The chemical identity of the solute particles</div>
+                <div>(B) The physical state of the solute particles</div>
+                <div>(C) The number of solute particles present in the solution</div>
+                <div>(D) Both the nature and number of solute particles</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            For highly dilute solutions (where n<sub>2</sub> &lt;&lt; n<sub>1</sub>), the formula for Relative Lowering of Vapour Pressure (RLVP) simplifies extensively to calculate the molar mass of the solute. The correct simplified formula is:
+            <div class="options">
+                <div>(A) (P<sub>1</sub><sup>0</sup> - P<sub>1</sub>) / P<sub>1</sub><sup>0</sup> = (w<sub>2</sub> &times; M<sub>1</sub>) / (w<sub>1</sub> &times; M<sub>2</sub>)</div>
+                <div>(B) (P<sub>1</sub><sup>0</sup> - P<sub>1</sub>) / P<sub>1</sub><sup>0</sup> = (w<sub>1</sub> &times; M<sub>2</sub>) / (w<sub>2</sub> &times; M<sub>1</sub>)</div>
+                <div>(C) (P<sub>1</sub><sup>0</sup> - P<sub>1</sub>) / P<sub>1</sub><sup>0</sup> = (n<sub>1</sub> &times; n<sub>2</sub>) / (w<sub>1</sub> &times; w<sub>2</sub>)</div>
+                <div>(D) (P<sub>1</sub><sup>0</sup> - P<sub>1</sub>) / P<sub>1</sub> = (w<sub>2</sub> &times; M<sub>1</sub>) / (w<sub>1</sub> &times; M<sub>2</sub>)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            According to Raoult's law and boiling point concepts, a liquid boils precisely when:
+            <div class="options">
+                <div>(A) Its temperature reaches 100&deg;C</div>
+                <div>(B) Its vapour pressure becomes equal to the atmospheric pressure</div>
+                <div>(C) The vapour pressure of the solute exceeds that of the solvent</div>
+                <div>(D) The atmospheric pressure is completely reduced to zero</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Boiling point of water at 750 mm Hg is 99.63&deg;C. How much sucrose (Molar mass = 342 g/mol) is to be added to 500 g of water such that it boils at exactly 100&deg;C? (Given K<sub>b</sub> for water is 0.52 K kg mol<sup>-1</sup>).
+            <div class="options">
+                <div>(A) 121.67 g</div>
+                <div>(B) 243.34 g</div>
+                <div>(C) 171.00 g</div>
+                <div>(D) 342.00 g</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The freezing point of a substance is scientifically defined as the temperature at which:
+            <div class="options">
+                <div>(A) The solid phase begins to melt rapidly</div>
+                <div>(B) The solution phase becomes perfectly transparent</div>
+                <div>(C) The solid phase and liquid phase have the exact same vapour pressure</div>
+                <div>(D) The vapour pressure of the liquid phase reaches 1 atm</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            What is the standard unit of the Ebullioscopic constant (K<sub>b</sub>) and Cryoscopic constant (K<sub>f</sub>)?
+            <div class="options">
+                <div>(A) K mol kg<sup>-1</sup></div>
+                <div>(B) K kg mol<sup>-1</sup></div>
+                <div>(C) K L mol<sup>-1</sup></div>
+                <div>(D) mol kg K<sup>-1</sup></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The formula to calculate the molar mass of a non-volatile solute (M<sub>2</sub>) utilizing the depression of freezing point (&Delta;T<sub>f</sub>) is:
+            <div class="options">
+                <div>(A) M<sub>2</sub> = (1000 &times; w<sub>1</sub> &times; K<sub>f</sub>) / (&Delta;T<sub>f</sub> &times; w<sub>2</sub>)</div>
+                <div>(B) M<sub>2</sub> = (1000 &times; w<sub>2</sub> &times; &Delta;T<sub>f</sub>) / (K<sub>f</sub> &times; w<sub>1</sub>)</div>
+                <div>(C) M<sub>2</sub> = (1000 &times; w<sub>2</sub> &times; K<sub>f</sub>) / (&Delta;T<sub>f</sub> &times; w<sub>1</sub>)</div>
+                <div>(D) M<sub>2</sub> = (w<sub>2</sub> &times; K<sub>f</sub>) / (1000 &times; &Delta;T<sub>f</sub> &times; w<sub>1</sub>)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Based on Raoult's law, the Relative Lowering of Vapour Pressure for a solution is exactly equal to the:
+            <div class="options">
+                <div>(A) Mole fraction of the solvent (x<sub>1</sub>)</div>
+                <div>(B) Mole fraction of the solute (x<sub>2</sub>)</div>
+                <div>(C) Molality of the solution (m)</div>
+                <div>(D) Molarity of the solution (M)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            In the phenomenon of osmosis, the spontaneous flow of solvent molecules through a Semi-Permeable Membrane (SPM) occurs from:
+            <div class="options">
+                <div>(A) A concentrated solution to a dilute solution</div>
+                <div>(B) A pure solvent to a solution</div>
+                <div>(C) A solution to a pure solvent</div>
+                <div>(D) The solute phase to the solvent phase</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Reverse Osmosis (RO), utilized globally for the desalination of seawater, occurs exclusively when the external pressure applied to the solution side is:
+            <div class="options">
+                <div>(A) Exactly equal to the osmotic pressure</div>
+                <div>(B) Less than the osmotic pressure</div>
+                <div>(C) Larger than the osmotic pressure</div>
+                <div>(D) Equal to the atmospheric pressure</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B: Osmotic Pressure & Biomolecules (40 Marks)
+        <span class="marks-info">(Questions 11 to 20 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The osmotic pressure (&pi;) of a solution is mathematically proportional to which concentration term at a given fixed temperature (T)?
+            <div class="options">
+                <div>(A) Molality (m)</div>
+                <div>(B) Mole fraction (x)</div>
+                <div>(C) Molarity (C)</div>
+                <div>(D) Mass percentage (% w/w)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Why is the measurement of osmotic pressure highly preferred over other colligative properties for determining the molar mass of biomolecules (like proteins and polymers)?
+            <div class="options">
+                <div>(A) It relies on measuring boiling point elevation which is highly accurate.</div>
+                <div>(B) It is measured at room temperature, preventing the denaturation of proteins.</div>
+                <div>(C) It utilizes molality, which is completely independent of temperature changes.</div>
+                <div>(D) The resulting magnitudes are incredibly small, making calculations easier.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A 0.9% (mass/volume) sodium chloride solution is safely injected intravenously because it is isotonic with human blood plasma. Two solutions are termed "isotonic" when they have the exact same:
+            <div class="options">
+                <div>(A) Elevation in boiling point</div>
+                <div>(B) Molality</div>
+                <div>(C) Osmotic pressure at a given temperature</div>
+                <div>(D) Vapour pressure at 100&deg;C</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            If a living cell is placed inside a hypertonic solution (a solution with a higher concentration), what will happen to the cell?
+            <div class="options">
+                <div>(A) It will absorb water, swell, and potentially burst (Hemolysis).</div>
+                <div>(B) It will remain completely unchanged.</div>
+                <div>(C) It will lose water and shrink (Plasmolysis).</div>
+                <div>(D) The cell membrane will dissolve instantly.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Hemolysis occurs when a red blood cell absorbs water, swells, and bursts. This phenomenon is exclusively observed when the cell is placed inside a:
+            <div class="options">
+                <div>(A) Hypertonic solution</div>
+                <div>(B) Isotonic solution</div>
+                <div>(C) Hypotonic solution</div>
+                <div>(D) Saturated solution</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            200 cm<sup>3</sup> of an aqueous solution of a protein contains 1.26 g of the protein. The osmotic pressure of this solution at 300 K is found to be 2.57 &times; 10<sup>-3</sup> bar. What is the molar mass of the protein? (R = 0.083 L bar K<sup>-1</sup> mol<sup>-1</sup>).
+            <div class="options">
+                <div>(A) 31,050 g/mol</div>
+                <div>(B) 61,038 g/mol</div>
+                <div>(C) 122,000 g/mol</div>
+                <div>(D) 6,104 g/mol</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            The Van't Hoff factor (<em>i</em>) was introduced by Jacobus Henricus van 't Hoff primarily to mathematically account for:
+            <div class="options">
+                <div>(A) The exact atmospheric pressure at sea level</div>
+                <div>(B) The extent of dissociation or association of solute particles in a solution</div>
+                <div>(C) The variation of the universal gas constant (R)</div>
+                <div>(D) The volatility of the solvent</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            When calculating the normal molar mass versus the abnormal molar mass, the defining formula for the Van't Hoff factor (<em>i</em>) is:
+            <div class="options">
+                <div>(A) <em>i</em> = Abnormal Molar Mass / Normal Molar Mass</div>
+                <div>(B) <em>i</em> = Normal Molar Mass / Abnormal Molar Mass</div>
+                <div>(C) <em>i</em> = Calculated Colligative Property / Observed Colligative Property</div>
+                <div>(D) <em>i</em> = Normal Molar Mass &times; Abnormal Molar Mass</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            Some organic molecules (e.g., Acetic acid in benzene) associate to form dimers due to hydrogen bonding. For such solutes undergoing association, the calculated molar mass derived from colligative properties is:
+            <div class="options">
+                <div>(A) Exactly equal to the true normal molar mass</div>
+                <div>(B) Lower than the true normal molar mass</div>
+                <div>(C) Higher than the true normal molar mass</div>
+                <div>(D) Completely unpredictable</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            For non-electrolytes such as Glucose, Urea, and Sucrose, which neither dissociate nor associate in solution, the value of the Van't Hoff factor (<em>i</em>) is:
+            <div class="options">
+                <div>(A) 0</div>
+                <div>(B) Exactly 1</div>
+                <div>(C) Greater than 1</div>
+                <div>(D) Less than 1</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C: Van't Hoff Factor & Abnormal Molar Mass (20 Marks)
+        <span class="marks-info">(Questions 21 to 25 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            To correct the formulas for colligative properties when dealing with electrolytes (which undergo dissociation), one must multiply the calculated property by the Van't Hoff factor. Which of the following is the CORRECT modified formula for the Elevation of Boiling Point?
+            <div class="options">
+                <div>(A) &Delta;T<sub>b</sub> = K<sub>b</sub> &times; m / <em>i</em></div>
+                <div>(B) &Delta;T<sub>b</sub> = <em>i</em> &times; K<sub>b</sub> &times; m</div>
+                <div>(C) &Delta;T<sub>b</sub> = (<em>i</em> - 1) &times; K<sub>b</sub> &times; m</div>
+                <div>(D) &Delta;T<sub>b</sub> = K<sub>b</sub> &times; m</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            For a weak electrolyte that dissociates into 'n' total ions, the correct mathematical relationship between its degree of dissociation (&alpha;) and the Van't Hoff factor (<em>i</em>) is:
+            <div class="options">
+                <div>(A) &alpha; = (1 - <em>i</em>) / (1 - n)</div>
+                <div>(B) &alpha; = (<em>i</em> - 1) / (n - 1)</div>
+                <div>(C) &alpha; = (n - 1) / (<em>i</em> - 1)</div>
+                <div>(D) &alpha; = <em>i</em> / n</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            A specific salt gives exactly 3 ions upon complete dissociation in water. If its degree of dissociation (&alpha;) at a given concentration is found to be 0.8, what is the calculated value of its Van't Hoff factor (<em>i</em>)?
+            <div class="options">
+                <div>(A) 1.6</div>
+                <div>(B) 3.0</div>
+                <div>(C) 2.6</div>
+                <div>(D) 0.8</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            An unknown organic solute undergoes dimerization (n=2) in a specific solvent. If the experimental Van't Hoff factor (<em>i</em>) for the solution is determined to be 0.6, what is its degree of association (&alpha;)?
+            <div class="options">
+                <div>(A) 0.8</div>
+                <div>(B) 0.4</div>
+                <div>(C) 0.6</div>
+                <div>(D) 1.2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            Which of the following represents the CORRECT modified formula for calculating Osmotic Pressure (&pi;) for an electrolyte solution?
+            <div class="options">
+                <div>(A) &pi; = C R T</div>
+                <div>(B) &pi; = (C R T) / <em>i</em></div>
+                <div>(C) &pi; = <em>i</em> C R T</div>
+                <div>(D) &pi; = <em>i</em> m R T</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

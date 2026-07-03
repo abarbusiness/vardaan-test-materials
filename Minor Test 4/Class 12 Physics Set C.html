@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vardaan Learning Institute - Question Paper Set C</title>
+	<style>
+		@page { size: A4; margin: 20mm; }
+		body { 
+			width: 210mm; 
+			min-height: 297mm; 
+			margin: 0 auto; 
+			padding: 20mm; 
+			box-sizing: border-box; 
+			font-family: "Times New Roman", Times, serif; 
+			font-size: 11.5pt; 
+			line-height: 1.6; 
+			color: #000; 
+			background-color: white; 
+			position: relative; 
+		}
+		.watermark { 
+			position: fixed; 
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+			width: 80%; 
+			opacity: 0.08; 
+			z-index: -1; 
+			pointer-events: none; 
+		}
+		.header { 
+			text-align: center; 
+			margin-bottom: 20px; 
+			border-bottom: 2px solid #000; 
+			padding-bottom: 10px; 
+		}
+		.institute-name { 
+			font-size: 24pt; 
+			font-weight: bold; 
+			text-transform: uppercase; 
+			margin: 0; 
+			letter-spacing: 1px; 
+		}
+		.test-name { 
+			font-size: 14pt; 
+			font-weight: bold; 
+			margin-top: 5px; 
+			text-transform: uppercase;
+		}
+		.exam-details { 
+			display: flex; 
+			justify-content: space-between; 
+			margin-top: 15px; 
+			font-weight: bold; 
+			font-size: 11pt; 
+			border-top: 1px solid #000; 
+			border-bottom: 1px solid #000; 
+			padding: 5px 0; 
+		}
+		.section-header { 
+			text-align: center; 
+			font-weight: bold; 
+			margin-top: 30px; 
+			margin-bottom: 20px; 
+			text-decoration: underline; 
+			font-size: 13pt; 
+			background-color: #f4f4f4;
+			padding: 8px;
+			border: 1px solid #ccc;
+		}
+		.instructions {
+			margin-top: 12px;
+			font-size: 11pt;
+		}
+		.question-wrapper {
+			margin-bottom: 26px;
+			page-break-inside: avoid;
+			border-bottom: 1px dashed #ddd;
+			padding-bottom: 12px;
+		}
+		.question-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: 8px;
+		}
+		.q-text-container {
+			display: flex;
+			flex-grow: 1;
+			padding-right: 20px;
+		}
+		.q-num { 
+			font-weight: bold; 
+			width: 30px; 
+			flex-shrink: 0; 
+		}
+		.q-content { 
+			flex-grow: 1; 
+			font-weight: bold;
+		}
+		.marks-badge {
+			font-weight: bold;
+			font-style: italic;
+			white-space: nowrap;
+			background-color: #eee;
+			padding: 3px 8px;
+			border-radius: 4px;
+			border: 1px solid #aaa;
+			font-size: 10.5pt;
+		}
+		.options { 
+			margin-top: 10px; 
+			display: grid; 
+			grid-template-columns: 1fr 1fr; 
+			grid-gap: 8px; 
+			font-weight: normal;
+		}
+		.footer { 
+			margin-top: 40px; 
+			text-align: center; 
+			font-size: 10pt; 
+			font-weight: bold; 
+			border-top: 1px solid #ccc; 
+			padding-top: 10px; 
+			color: #555; 
+		}
+		@media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+		@media screen and (max-width: 768px) {
+			body { padding: 14px !important; font-size: 13px !important; }
+			.institute-name { font-size: 16px !important; }
+			.exam-details { flex-direction: column !important; gap: 4px !important; }
+			.options { grid-template-columns: 1fr !important; }
+		}
+	</style>
+</head>
+<body>
+	<img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+	<div class="header">
+		<h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+		<div class="test-name">QUESTION PAPER</div>
+		<div class="test-name" style="font-size: 12pt; margin-top: 8px; border: none;">Physics Test Part 2 (Set C - Board Level)</div>
+		<div class="exam-details">
+			<span>Class: 12</span>
+			<span>Subject: Physics</span>
+			<span>Time: 1 Hour</span>
+			<span>Max. Marks: 100</span>
+		</div>
+		<div class="instructions">
+			All questions are compulsory. Each question carries 4 marks. Choose the correct option and write it clearly.
+		</div>
+	</div>
+
+	<!-- SECTION A -->
+	<div class="section-header">SECTION A: Electric Dipole & Equilibrium</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">1.</div>
+				<div class="q-content">
+					What is the SI unit of electric dipole moment?
+					<div class="options">
+						<div>(A) Coulomb per meter (C/m)</div>
+						<div>(B) Coulomb meter (C m)</div>
+						<div>(C) Coulomb meter squared (C m<sup>2</sup>)</div>
+						<div>(D) Newton meter (N m)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">2.</div>
+				<div class="q-content">
+					By convention, what is the direction of the electric dipole moment vector <strong>p</strong>?
+					<div class="options">
+						<div>(A) From positive charge to negative charge</div>
+						<div>(B) From negative charge to positive charge</div>
+						<div>(C) Perpendicular to the line joining the charges</div>
+						<div>(D) It is a scalar quantity and has no direction</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">3.</div>
+				<div class="q-content">
+					What is the net electric charge on an electric dipole?
+					<div class="options">
+						<div>(A) +q</div>
+						<div>(B) -q</div>
+						<div>(C) Zero</div>
+						<div>(D) Infinity</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">4.</div>
+				<div class="q-content">
+					For a short electric dipole, the electric field <em>E</em> at an axial point at distance <em>r</em> from the center is proportional to:
+					<div class="options">
+						<div>(A) 1 / r</div>
+						<div>(B) 1 / r<sup>2</sup></div>
+						<div>(C) 1 / r<sup>3</sup></div>
+						<div>(D) r<sup>2</sup></div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">5.</div>
+				<div class="q-content">
+					Which of the following represents the correct vector formula for the torque <strong>&tau;</strong> experienced by a dipole in a uniform electric field <strong>E</strong>?
+					<div class="options">
+						<div>(A) <strong>&tau;</strong> = <strong>p</strong> &bull; <strong>E</strong></div>
+						<div>(B) <strong>&tau;</strong> = <strong>E</strong> &times; <strong>p</strong></div>
+						<div>(C) <strong>&tau;</strong> = <strong>p</strong> &times; <strong>E</strong></div>
+						<div>(D) <strong>&tau;</strong> = <strong>p</strong> / <strong>E</strong></div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">6.</div>
+				<div class="q-content">
+					An electric dipole is placed in a uniform electric field. The dipole is in a state of stable equilibrium when the angle between its dipole moment <strong>p</strong> and the electric field <strong>E</strong> is:
+					<div class="options">
+						<div>(A) 0&deg;</div>
+						<div>(B) 90&deg;</div>
+						<div>(C) 180&deg;</div>
+						<div>(D) 45&deg;</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">7.</div>
+				<div class="q-content">
+					The torque acting on an electric dipole in a uniform electric field is maximum when the angle between <strong>p</strong> and <strong>E</strong> is:
+					<div class="options">
+						<div>(A) 0&deg;</div>
+						<div>(B) 90&deg;</div>
+						<div>(C) 180&deg;</div>
+						<div>(D) 360&deg;</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">8.</div>
+				<div class="q-content">
+					The ratio of the electric field intensity of a short dipole at a point on the axial line to the field at a point on the equatorial line, at the same distance from the center, is:
+					<div class="options">
+						<div>(A) 1 : 1</div>
+						<div>(B) 1 : 2</div>
+						<div>(C) 2 : 1</div>
+						<div>(D) 4 : 1</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">9.</div>
+				<div class="q-content">
+					A dipole of dipole moment <em>p</em> is originally placed parallel to a uniform electric field <em>E</em>. The work done in rotating it to an antiparallel position (180&deg;) is:
+					<div class="options">
+						<div>(A) Zero</div>
+						<div>(B) pE</div>
+						<div>(C) 2pE</div>
+						<div>(D) -pE</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">10.</div>
+				<div class="q-content">
+					In a non-uniform electric field, an electric dipole generally experiences:
+					<div class="options">
+						<div>(A) Only a net force</div>
+						<div>(B) Only a net torque</div>
+						<div>(C) Both a net force and a net torque</div>
+						<div>(D) Neither a net force nor a net torque</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<!-- SECTION B -->
+	<div class="section-header">SECTION B: Continuous Charge & Gauss's Law</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">11.</div>
+				<div class="q-content">
+					What is the SI unit of surface charge density (&sigma;)?
+					<div class="options">
+						<div>(A) Coulomb per meter (C/m)</div>
+						<div>(B) Coulomb per square meter (C/m<sup>2</sup>)</div>
+						<div>(C) Coulomb per cubic meter (C/m<sup>3</sup>)</div>
+						<div>(D) Coulomb meter (C m)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">12.</div>
+				<div class="q-content">
+					Electric flux is defined as:
+					<div class="options">
+						<div>(A) A vector quantity representing electric force.</div>
+						<div>(B) A scalar quantity representing the total number of electric field lines passing normally through an area.</div>
+						<div>(C) The product of charge and distance.</div>
+						<div>(D) The potential difference across a surface.</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">13.</div>
+				<div class="q-content">
+					Gauss's Law in electrostatics states that the total electric flux through a closed surface enclosing a net charge <em>q</em> is equal to:
+					<div class="options">
+						<div>(A) q / &epsilon;<sub>0</sub></div>
+						<div>(B) &epsilon;<sub>0</sub> / q</div>
+						<div>(C) q &epsilon;<sub>0</sub></div>
+						<div>(D) 1 / (4&pi;&epsilon;<sub>0</sub>) &times; q</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">14.</div>
+				<div class="q-content">
+					What is the total electric flux passing through a closed surface if an electric dipole is placed completely inside it?
+					<div class="options">
+						<div>(A) q / &epsilon;<sub>0</sub></div>
+						<div>(B) 2q / &epsilon;<sub>0</sub></div>
+						<div>(C) Zero</div>
+						<div>(D) Infinity</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">15.</div>
+				<div class="q-content">
+					A charge <em>q</em> is enclosed by a spherical Gaussian surface of radius <em>R</em>. If the radius of the sphere is halved, the electric flux passing through the surface will:
+					<div class="options">
+						<div>(A) Become four times</div>
+						<div>(B) Become half</div>
+						<div>(C) Become double</div>
+						<div>(D) Remain exactly the same</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">16.</div>
+				<div class="q-content">
+					A point charge <em>q</em> is placed precisely at the center of a cube. The electric flux passing through any ONE single face of the cube is:
+					<div class="options">
+						<div>(A) q / &epsilon;<sub>0</sub></div>
+						<div>(B) q / (6&epsilon;<sub>0</sub>)</div>
+						<div>(C) q / (4&epsilon;<sub>0</sub>)</div>
+						<div>(D) q / (8&epsilon;<sub>0</sub>)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">17.</div>
+				<div class="q-content">
+					Which of the following is an acceptable SI unit for Electric Flux?
+					<div class="options">
+						<div>(A) Newton meter squared per Coulomb (N m<sup>2</sup> C<sup>-1</sup>)</div>
+						<div>(B) Newton meter per Coulomb (N m C<sup>-1</sup>)</div>
+						<div>(C) Volt per meter (V/m)</div>
+						<div>(D) Joule per Coulomb (J/C)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">18.</div>
+				<div class="q-content">
+					A closed Gaussian surface encloses three charges: +3q, -2q, and +q. The net outward electric flux through the surface is:
+					<div class="options">
+						<div>(A) 6q / &epsilon;<sub>0</sub></div>
+						<div>(B) 4q / &epsilon;<sub>0</sub></div>
+						<div>(C) 2q / &epsilon;<sub>0</sub></div>
+						<div>(D) Zero</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">19.</div>
+				<div class="q-content">
+					Gauss's law is essentially a direct consequence of which fundamental law of physics?
+					<div class="options">
+						<div>(A) Ampere's Law</div>
+						<div>(B) Coulomb's Law (Inverse Square Law)</div>
+						<div>(C) Faraday's Law</div>
+						<div>(D) Ohm's Law</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">20.</div>
+				<div class="q-content">
+					For maximum electric flux through a given planar area <em>A</em> in a uniform electric field <em>E</em>, the angle between the electric field lines and the AREA VECTOR must be:
+					<div class="options">
+						<div>(A) 0&deg;</div>
+						<div>(B) 45&deg;</div>
+						<div>(C) 90&deg;</div>
+						<div>(D) 180&deg;</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<!-- SECTION C -->
+	<div class="section-header">SECTION C: Applications of Gauss's Law</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">21.</div>
+				<div class="q-content">
+					The electric field <em>E</em> at a perpendicular distance <em>r</em> from an infinitely long straight charged wire with linear charge density <em>&lambda;</em> is given by:
+					<div class="options">
+						<div>(A) E = &lambda; / (&pi;&epsilon;<sub>0</sub>r)</div>
+						<div>(B) E = &lambda; / (2&pi;&epsilon;<sub>0</sub>r)</div>
+						<div>(C) E = &lambda; / (4&pi;&epsilon;<sub>0</sub>r<sup>2</sup>)</div>
+						<div>(D) E = 2&lambda; / (&pi;&epsilon;<sub>0</sub>r<sup>2</sup>)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">22.</div>
+				<div class="q-content">
+					What is the magnitude of the electric field inside a uniformly charged thin spherical conducting shell?
+					<div class="options">
+						<div>(A) Constant but non-zero</div>
+						<div>(B) Directly proportional to the radius</div>
+						<div>(C) Zero everywhere inside</div>
+						<div>(D) Infinity at the center</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">23.</div>
+				<div class="q-content">
+					The electric field produced by a uniformly charged infinite plane sheet of surface charge density <em>&sigma;</em> is:
+					<div class="options">
+						<div>(A) Dependent linearly on the distance from the sheet</div>
+						<div>(B) Uniform and independent of the distance from the sheet</div>
+						<div>(C) Inversely proportional to the square of the distance</div>
+						<div>(D) Zero everywhere outside the sheet</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">24.</div>
+				<div class="q-content">
+					Which of the following expressions correctly gives the electric field due to a uniformly charged infinite plane sheet?
+					<div class="options">
+						<div>(A) E = &sigma; / &epsilon;<sub>0</sub></div>
+						<div>(B) E = &sigma; / (2&epsilon;<sub>0</sub>)</div>
+						<div>(C) E = 2&sigma; / &epsilon;<sub>0</sub></div>
+						<div>(D) E = &sigma; / (4&pi;&epsilon;<sub>0</sub>)</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="question-wrapper">
+		<div class="question-header">
+			<div class="q-text-container">
+				<div class="q-num">25.</div>
+				<div class="q-content">
+					For a uniformly charged thin spherical shell of radius <em>R</em> and total charge <em>Q</em>, the electric field at a point strictly outside the shell (distance r > R from center) is mathematically equivalent to the field produced by:
+					<div class="options">
+						<div>(A) An infinite plane sheet of charge</div>
+						<div>(B) An infinitely long straight charged wire</div>
+						<div>(C) The entire charge Q concentrated precisely at the center</div>
+						<div>(D) An electric dipole placed at the center</div>
+					</div>
+				</div>
+			</div>
+			<div class="marks-badge">[4 Marks]</div>
+		</div>
+	</div>
+
+	<div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

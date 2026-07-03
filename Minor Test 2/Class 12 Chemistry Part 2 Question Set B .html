@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper Set B</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-transform: none; }
+        .question-container { margin-bottom: 20px; display: flex; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 8px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100% !important;
+                min-height: unset !important;
+                padding: 14px !important;
+                margin: 0 !important;
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            .institute-name { font-size: 16px !important; letter-spacing: 0 !important; }
+            .test-name { font-size: 13px !important; }
+            .exam-details {
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 12px !important;
+            }
+            .exam-details span { display: block !important; }
+            .instructions { font-size: 11px !important; }
+            .instructions ul { padding-left: 16px !important; }
+            .section-header { font-size: 12px !important; padding: 6px 10px !important; }
+            .question-container { margin-bottom: 16px !important; }
+            .options-grid, .options {
+                grid-template-columns: 1fr !important;
+                gap: 6px !important;
+                padding-left: 0 !important;
+            }
+            .q-num { width: 24px !important; font-size: 13px !important; }
+            .q-content { font-size: 13px !important; }
+            .option, .options > div { font-size: 12px !important; }
+            table { font-size: 11px !important; width: 100% !important; overflow-x: auto !important; display: block !important; }
+            .footer { font-size: 10px !important; margin-top: 20px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Chemistry Test Part 2 (Set B - JEE Level)</div>
+        <div class="exam-details">
+            <span>Class: 12</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 100</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. There are 25 questions in total.</li>
+                <li>Each question carries exactly 4 marks.</li>
+                <li>The paper strictly adheres to Colligative Properties and Van't Hoff factors (JEE standard).</li>
+                <li>Choose the most appropriate single correct option.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A: Colligative Properties & Vapour Pressure (40 Marks)
+        <span class="marks-info">(Questions 1 to 10 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Which of the following is NOT considered a colligative property of a solution?
+            <div class="options">
+                <div>(A) Elevation of boiling point</div>
+                <div>(B) Relative lowering of vapour pressure</div>
+                <div>(C) Optical activity</div>
+                <div>(D) Depression of freezing point</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            What is the mass of urea (Molar mass = 60 g/mol) that must be dissolved in 100 g of water to lower its vapour pressure by 25%? (Assume exact relation, not the dilute approximation).
+            <div class="options">
+                <div>(A) 55.5 g</div>
+                <div>(B) 111.1 g</div>
+                <div>(C) 222.2 g</div>
+                <div>(D) 83.3 g</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            The molal elevation constant (K<sub>b</sub>) of a particular solvent primarily depends on:
+            <div class="options">
+                <div>(A) The nature of the solute dissolved in it</div>
+                <div>(B) The molality of the solution</div>
+                <div>(C) The nature of the solvent itself</div>
+                <div>(D) The temperature of the surroundings</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            An aqueous solution containing a non-volatile, non-electrolyte solute has a molality of 1 mol/kg. If K<sub>b</sub> for water is 0.52 K kg mol<sup>-1</sup>, what is the exact boiling point of this solution at 1 atm pressure?
+            <div class="options">
+                <div>(A) 100.00&deg;C</div>
+                <div>(B) 99.48&deg;C</div>
+                <div>(C) 100.52&deg;C</div>
+                <div>(D) 101.04&deg;C</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            At the freezing point of a given solvent, which of the following statements is perfectly true regarding its phases?
+            <div class="options">
+                <div>(A) The vapour pressure of the liquid phase is zero.</div>
+                <div>(B) The vapour pressure of the liquid solvent and solid solvent are equal.</div>
+                <div>(C) The vapour pressure of the solution is greater than the pure solid.</div>
+                <div>(D) The atmospheric pressure drops to match the vapour pressure.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            If K<sub>f</sub> for water is 1.86 K kg mol<sup>-1</sup>, what is the freezing point depression (&Delta;T<sub>f</sub>) caused by dissolving 0.5 moles of glucose in 500 g of water?
+            <div class="options">
+                <div>(A) 1.86&deg;C</div>
+                <div>(B) 0.93&deg;C</div>
+                <div>(C) 3.72&deg;C</div>
+                <div>(D) 0.465&deg;C</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A graph is plotted between the vapour pressure of a solvent and temperature. When a non-volatile solute is added, the new vapour pressure curve for the solution:
+            <div class="options">
+                <div>(A) Shifts parallel and above the pure solvent curve</div>
+                <div>(B) Intersects the pure solvent curve at the boiling point</div>
+                <div>(C) Shifts entirely below the pure solvent curve</div>
+                <div>(D) Remains completely unchanged</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            If the molality of a dilute solution is doubled, what happens to the magnitude of the freezing point depression (&Delta;T<sub>f</sub>), assuming the solute does not dissociate or associate?
+            <div class="options">
+                <div>(A) It becomes half</div>
+                <div>(B) It remains unchanged</div>
+                <div>(C) It doubles</div>
+                <div>(D) It quadruples</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Which mathematical expression accurately relates the relative lowering of vapour pressure to the molar masses (M) and weights (w) of solute (2) and solvent (1) for a very dilute solution?
+            <div class="options">
+                <div>(A) &Delta;P / P&deg; = (w<sub>2</sub> &times; M<sub>1</sub>) / (M<sub>2</sub> &times; w<sub>1</sub>)</div>
+                <div>(B) &Delta;P / P&deg; = (w<sub>1</sub> &times; M<sub>2</sub>) / (M<sub>1</sub> &times; w<sub>2</sub>)</div>
+                <div>(C) &Delta;P / P&deg; = (w<sub>2</sub> &times; M<sub>2</sub>) / (w<sub>1</sub> &times; M<sub>1</sub>)</div>
+                <div>(D) &Delta;P / P&deg; = (w<sub>1</sub> &times; M<sub>1</sub>) / (w<sub>2</sub> &times; M<sub>2</sub>)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Addition of a non-volatile solute to a solvent causes:
+            <div class="options">
+                <div>(A) Elevation of vapour pressure and elevation of boiling point</div>
+                <div>(B) Lowering of vapour pressure and depression of boiling point</div>
+                <div>(C) Lowering of vapour pressure and elevation of boiling point</div>
+                <div>(D) Elevation of vapour pressure and depression of freezing point</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B: Osmotic Pressure & Biomolecules (40 Marks)
+        <span class="marks-info">(Questions 11 to 20 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            If the absolute temperature of a solution is doubled and its molarity is halved, the osmotic pressure of the solution will:
+            <div class="options">
+                <div>(A) Double</div>
+                <div>(B) Halve</div>
+                <div>(C) Remain completely unchanged</div>
+                <div>(D) Increase by four times</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Two solutions, A and B, are separated by a semi-permeable membrane. Solution A is 5% (w/v) cane sugar (Molar mass = 342 g/mol) and Solution B is 1% (w/v) of an unknown substance X. If the solutions are exactly isotonic, what is the molar mass of X?
+            <div class="options">
+                <div>(A) 34.2 g/mol</div>
+                <div>(B) 68.4 g/mol</div>
+                <div>(C) 136.8 g/mol</div>
+                <div>(D) 171.0 g/mol</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A plant cell placed in a hypotonic solution will exhibit:
+            <div class="options">
+                <div>(A) Plasmolysis and shrink</div>
+                <div>(B) Turgidity as it absorbs water and swells</div>
+                <div>(C) No change in its volume</div>
+                <div>(D) Immediate destruction of the cell wall</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            What is the expected osmotic pressure of a 0.1 M aqueous solution of glucose at 300 K? (Use R = 0.0821 L atm K<sup>-1</sup> mol<sup>-1</sup>)
+            <div class="options">
+                <div>(A) 1.23 atm</div>
+                <div>(B) 2.46 atm</div>
+                <div>(C) 12.3 atm</div>
+                <div>(D) 24.6 atm</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            A semi-permeable membrane (SPM) used in osmosis strictly allows the passage of:
+            <div class="options">
+                <div>(A) Both solute and solvent molecules</div>
+                <div>(B) Solute molecules only</div>
+                <div>(C) Solvent molecules only</div>
+                <div>(D) Neither solute nor solvent molecules</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Which of the following conditions must be met for the phenomenon of Reverse Osmosis (RO) to occur?
+            <div class="options">
+                <div>(A) Applied hydrostatic pressure must be strictly less than the osmotic pressure.</div>
+                <div>(B) Applied hydrostatic pressure on the solution side must exceed the osmotic pressure.</div>
+                <div>(C) The solution must be heated to its boiling point.</div>
+                <div>(D) The SPM must be replaced with a fully permeable membrane.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            Human blood plasma is known to be isotonic with a particular concentration of aqueous NaCl solution. What is this standard concentration?
+            <div class="options">
+                <div>(A) 0.1% (w/v)</div>
+                <div>(B) 0.9% (w/v)</div>
+                <div>(C) 5.0% (w/v)</div>
+                <div>(D) 9.0% (w/v)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            If the osmotic pressure of a dilute solution is <em>&pi;</em> and its elevation in boiling point is <em>&Delta;T<sub>b</sub></em>, assuming molarity is approximately equal to molality, the correct relation between them is:
+            <div class="options">
+                <div>(A) &pi; = (&Delta;T<sub>b</sub> / K<sub>b</sub>) &times; RT</div>
+                <div>(B) &pi; = (&Delta;T<sub>b</sub> &times; K<sub>b</sub>) / RT</div>
+                <div>(C) &pi; = (K<sub>b</sub> / &Delta;T<sub>b</sub>) &times; RT</div>
+                <div>(D) &pi; = &Delta;T<sub>b</sub> &times; RT &times; K<sub>b</sub></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            During standard osmosis across an SPM, the net spontaneous flow of solvent completely stops when:
+            <div class="options">
+                <div>(A) All solute particles have transferred to the solvent side.</div>
+                <div>(B) The hydrostatic pressure buildup exactly balances the osmotic pressure.</div>
+                <div>(C) The temperature of the solution reaches exactly 0 K.</div>
+                <div>(D) The volume of the solution is doubled.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Why are boiling point elevation and freezing point depression not suitable for finding the molar mass of complex proteins?
+            <div class="options">
+                <div>(A) Because proteins dissociate perfectly into multiple ions.</div>
+                <div>(B) Because proteins generally have very low molar masses.</div>
+                <div>(C) Because proteins may denature at extreme temperatures and their high mass causes unmeasurably small temperature changes.</div>
+                <div>(D) Because proteins do not dissolve in any known solvent.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C: Van't Hoff Factor & Abnormal Molar Mass (20 Marks)
+        <span class="marks-info">(Questions 21 to 25 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            Assuming 100% complete ionization, what is the expected Van't Hoff factor (<em>i</em>) for an aqueous solution of Potassium Sulfate (K<sub>2</sub>SO<sub>4</sub>)?
+            <div class="options">
+                <div>(A) 2</div>
+                <div>(B) 3</div>
+                <div>(C) 4</div>
+                <div>(D) 1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            A weak electrolyte, MgCl<sub>2</sub>, is dissolved in water. If the observed Van't Hoff factor (<em>i</em>) is 2.5, what is its degree of dissociation (&alpha;)?
+            <div class="options">
+                <div>(A) 0.25 (or 25%)</div>
+                <div>(B) 0.50 (or 50%)</div>
+                <div>(C) 0.75 (or 75%)</div>
+                <div>(D) 0.85 (or 85%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            Benzoic acid undergoes dimerization in benzene. If the acid is assumed to be 100% associated (forming strict dimers), the Van't Hoff factor (<em>i</em>) will be:
+            <div class="options">
+                <div>(A) 2.0</div>
+                <div>(B) 1.0</div>
+                <div>(C) 0.5</div>
+                <div>(D) 0.0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            A 0.1 M aqueous solution of Barium Nitrate, Ba(NO<sub>3</sub>)<sub>2</sub>, is found to have a Van't Hoff factor (<em>i</em>) of 2.74. Calculate its percentage degree of dissociation (&alpha;).
+            <div class="options">
+                <div>(A) 74%</div>
+                <div>(B) 87%</div>
+                <div>(C) 91%</div>
+                <div>(D) 100%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            Assuming 100% complete dissociation for the electrolytes, which of the following 0.1 M aqueous solutions will exhibit the highest boiling point?
+            <div class="options">
+                <div>(A) 0.1 M NaCl</div>
+                <div>(B) 0.1 M BaCl<sub>2</sub></div>
+                <div>(C) 0.1 M Urea</div>
+                <div>(D) 0.1 M FeCl<sub>3</sub></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

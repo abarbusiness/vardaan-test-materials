@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- MathJax Configuration and Script -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 11pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .section-header { text-align: left; font-weight: bold; margin-top: 25px; margin-bottom: 15px; background-color: #f0f0f0; padding: 5px 10px; border-left: 4px solid #000; font-size: 12pt; }
+        .question-container { margin-bottom: 25px; display: flex; flex-direction: column; page-break-inside: avoid; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .q-header-row { display: flex; justify-content: space-between; align-items: flex-start; }
+        .q-main { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; font-size: 10pt; color: #555; white-space: nowrap; padding-top: 2px; }
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; padding-left: 30px; }
+        .option { display: flex; align-items: flex-start; }
+        .opt-lbl { font-weight: bold; margin-right: 5px; }
+        .solution-box { background-color: #f9fdfa; border-left: 4px solid #28a745; padding: 12px; margin-top: 15px; margin-left: 30px; font-size: 10.5pt; }
+        .correct-ans { font-weight: bold; color: #d9534f; margin-bottom: 5px; font-size: 11pt; }
+        .sol-heading { font-weight: bold; text-decoration: underline; margin-bottom: 5px; display: inline-block;}
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100% !important;
+                min-height: unset !important;
+                padding: 14px !important;
+                margin: 0 !important;
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            .institute-name { font-size: 16px !important; letter-spacing: 0 !important; }
+            .test-name { font-size: 13px !important; }
+            .exam-details {
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 12px !important;
+            }
+            .exam-details span { display: block !important; }
+            .instructions { font-size: 11px !important; }
+            .instructions ul { padding-left: 16px !important; }
+            .section-header { font-size: 12px !important; padding: 6px 10px !important; }
+            .question-container { margin-bottom: 16px !important; }
+            .options-grid, .options {
+                grid-template-columns: 1fr !important;
+                gap: 6px !important;
+                padding-left: 0 !important;
+            }
+            .q-num { width: 24px !important; font-size: 13px !important; }
+            .q-content { font-size: 13px !important; }
+            .option, .options > div { font-size: 12px !important; }
+            table { font-size: 11px !important; width: 100% !important; overflow-x: auto !important; display: block !important; }
+            .footer { font-size: 10px !important; margin-top: 20px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Detailed Solutions: Chemistry Part 1 Test (Set A)</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE / JEE Mains</span>
+            <span>Subject: Chemistry</span>
+            <span>Total Questions: 25</span>
+            <span>Max. Marks: 100</span>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A: Conceptual Fundamentals</div>
+    
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">1.</div>
+                <div class="q-content">An amalgam of mercury with sodium is a solid solution. Identify the physical states of the solute and the solvent respectively:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Solid, Liquid</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Liquid, Solid</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Solid, Solid</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Liquid, Liquid</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) Liquid, Solid</div>
+            <span class="sol-heading">Solution:</span> An amalgam is an alloy of mercury with another metal. Here, the final physical state of the mixture is solid. The component determining the physical state is the solvent (Sodium, Solid). The component dissolved in it is the solute (Mercury, Liquid).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">2.</div>
+                <div class="q-content">Which of the following concentration expressions is highly preferred in precise scientific calculations due to its temperature independence?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Molarity</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Volume Percentage (v/v)</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Mass by Volume Percentage (w/v)</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Molality</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (D) Molality</div>
+            <span class="sol-heading">Solution:</span> Molarity, v/v%, and w/v% all depend on the <em>volume</em> of the solution, which expands or contracts with changes in temperature. Molality is defined as moles of solute per kg of solvent. Since it depends strictly on mass (which is invariant with temperature), it is preferred for precise calculations.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">3.</div>
+                <div class="q-content">For a solution formed by completely mixing two ideal volatile liquids, which of the following thermodynamic conditions holds true?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> &Delta;H<sub>mix</sub> &gt; 0, &Delta;V<sub>mix</sub> = 0</div>
+            <div class="option"><span class="opt-lbl">(B)</span> &Delta;H<sub>mix</sub> = 0, &Delta;V<sub>mix</sub> = 0</div>
+            <div class="option"><span class="opt-lbl">(C)</span> &Delta;H<sub>mix</sub> &lt; 0, &Delta;V<sub>mix</sub> &lt; 0</div>
+            <div class="option"><span class="opt-lbl">(D)</span> &Delta;H<sub>mix</sub> = 0, &Delta;V<sub>mix</sub> &gt; 0</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) &Delta;H<sub>mix</sub> = 0, &Delta;V<sub>mix</sub> = 0</div>
+            <span class="sol-heading">Solution:</span> By definition, an ideal solution obeys Raoult's Law at all concentrations. Because the A-B intermolecular forces are identical in strength to the pure A-A and B-B forces, no heat is evolved or absorbed (&Delta;H<sub>mix</sub> = 0) and no volume expansion or contraction occurs (&Delta;V<sub>mix</sub> = 0).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">4.</div>
+                <div class="q-content">Aquatic species are generally more comfortable in cold water than in warm water. According to Henry's Law, this is primarily because the value of the Henry's Law constant (K<sub>H</sub>) for oxygen:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Increases with an increase in temperature, decreasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Decreases with an increase in temperature, decreasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Increases with an increase in temperature, increasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Remains unaffected by temperature.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) Increases with an increase in temperature, decreasing solubility.</div>
+            <span class="sol-heading">Solution:</span> According to Henry's Law, $p = K_H \cdot x$. For a constant pressure of oxygen ($p$), the solubility ($x$) is inversely proportional to $K_H$. As temperature increases, the value of $K_H$ increases, which implies that the dissolved mole fraction ($x$) decreases. Thus, cold water holds more dissolved oxygen.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">5.</div>
+                <div class="q-content">To prevent "The Bends" in scuba divers deep underwater, the air in scuba tanks is typically diluted with which of the following gases, owing to its exceptionally low solubility in blood?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Argon</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Helium</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Nitrogen</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Xenon</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) Helium</div>
+            <span class="sol-heading">Solution:</span> Under high pressure, nitrogen dissolves heavily in blood. When a diver ascends quickly, nitrogen bubbles out, blocking capillaries (The Bends). Helium has an extremely high $K_H$ value, meaning its solubility is negligible even at high underwater pressures.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">6.</div>
+                <div class="q-content">A mixture of Chloroform (CHCl<sub>3</sub>) and Acetone (CH<sub>3</sub>COCH<sub>3</sub>) exhibits a specific deviation from Raoult's Law. This is characterized by:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Positive deviation due to the breaking of hydrogen bonds.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Negative deviation due to the formation of new hydrogen bonds.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Ideal behavior as both are polar aprotic solvents.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Positive deviation as they form a minimum boiling azeotrope.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) Negative deviation due to the formation of new hydrogen bonds.</div>
+            <span class="sol-heading">Solution:</span> Pure chloroform and pure acetone lack intermolecular hydrogen bonding. When mixed, the hydrogen of chloroform forms a strong hydrogen bond with the oxygen of acetone. These strong new A-B interactions prevent molecules from escaping into the vapour phase easily, lowering vapour pressure (Negative deviation).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">7.</div>
+                <div class="q-content">A non-ideal solution that shows a large positive deviation from Raoult's law will form a:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Maximum boiling azeotrope at a specific composition.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Minimum boiling azeotrope at a specific composition.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Mixture that can be perfectly separated by fractional distillation.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Sublimating mixture.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) Minimum boiling azeotrope at a specific composition.</div>
+            <span class="sol-heading">Solution:</span> Large positive deviations mean the solution has a higher vapour pressure than expected. Since vapour pressure and boiling point are inversely related, a higher vapour pressure causes the mixture to boil at a temperature lower than either of its pure components (e.g., Ethanol-Water mixture).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">8.</div>
+                <div class="q-content">According to Raoult's Law as a special case of Henry's Law, when the solute is highly volatile, the constant K<sub>H</sub> is mathematically replaced by:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Total pressure (P<sub>total</sub>)</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Mole fraction in vapour phase (y<sub>A</sub>)</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Vapour pressure of the pure component (p&deg;)</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Universal Gas Constant (R)</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) Vapour pressure of the pure component (p&deg;)</div>
+            <span class="sol-heading">Solution:</span> Henry's Law: $p_A = K_H \cdot x_A$. Raoult's Law: $p_A = p_A^\circ \cdot x_A$. For volatile liquids, Raoult's law becomes a special case of Henry's Law where the proportionality constant $K_H$ becomes strictly equal to the vapour pressure of the pure component ($p_A^\circ$).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">9.</div>
+                <div class="q-content">At a given temperature, Nitrogen gas has a higher K<sub>H</sub> value than Oxygen gas in water. Which of the following statements is correct regarding their solubilities at a constant pressure?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Nitrogen is more soluble than Oxygen.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Oxygen is more soluble than Nitrogen.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Both have identical solubility.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Solubilities depend only on the volume of the container.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) Oxygen is more soluble than Nitrogen.</div>
+            <span class="sol-heading">Solution:</span> From Henry's Law, $x = p / K_H$. At constant pressure, the gas with the higher $K_H$ (Nitrogen) will have a lower mole fraction dissolved in the liquid. Therefore, Oxygen (with a lower $K_H$) is more soluble in water.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">10.</div>
+                <div class="q-content">When 50 mL of liquid A is mixed with 50 mL of liquid B, the total volume of the resulting solution is observed to be exactly 99 mL. What can be concluded about the A-B intermolecular forces?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> A-B interactions are weaker than A-A and B-B interactions.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> A-B interactions are equal to A-A and B-B interactions.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> A-B interactions are stronger than A-A and B-B interactions.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Liquids A and B are completely immiscible.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) A-B interactions are stronger than A-A and B-B interactions.</div>
+            <span class="sol-heading">Solution:</span> $\Delta V_{mix} = 99 - (50+50) = -1$ mL. Since $\Delta V_{mix} < 0$, a volume contraction has occurred. This implies the newly formed A-B interactions pull the molecules closer together tightly, hence they must be stronger than the pure interactions. This represents a negative deviation from Raoult's law.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B: Moderate Numericals & Application</div>
+    
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">11.</div>
+                <div class="q-content">What is the mole fraction of the solute in a 1.00 m (molal) aqueous solution?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 0.0177</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 0.0344</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 0.0555</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 0.100</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) 0.0177</div>
+            <span class="sol-heading">Solution:</span> 1.00 m (molal) means 1 mole of solute is dissolved in 1 kg (1000 g) of solvent (Water).<br>
+            Moles of Solute ($n_2$) = 1 mol.<br>
+            Moles of Water ($n_1$) = $1000 \text{ g} / 18 \text{ g/mol} = 55.55 \text{ mol}$.<br>
+            Total Moles = $1 + 55.55 = 56.55 \text{ mol}$.<br>
+            Mole fraction of solute ($x_2$) = $1 / 56.55 \approx 0.01768 \approx 0.0177$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">12.</div>
+                <div class="q-content">The correct mathematical relationship interconverting Molarity (M) and molality (m) for a solution with density 'd' (in g/mL) and solute molar mass 'M<sub>2</sub>' (in g/mol) is:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> m = 1000&times;M / [ (1000&times;d) + (M&times;M<sub>2</sub>) ]</div>
+            <div class="option"><span class="opt-lbl">(B)</span> m = 1000&times;d / [ (1000&times;M) - (M&times;M<sub>2</sub>) ]</div>
+            <div class="option"><span class="opt-lbl">(C)</span> m = 1000&times;M / [ (1000&times;d) - (M&times;M<sub>2</sub>) ]</div>
+            <div class="option"><span class="opt-lbl">(D)</span> M = 1000&times;m / [ (1000&times;d) - (m&times;M<sub>2</sub>) ]</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) m = 1000&times;M / [ (1000&times;d) - (M&times;M<sub>2</sub>) ]</div>
+            <span class="sol-heading">Solution:</span> Let's assume 1 L (1000 mL) of solution. It contains 'M' moles of solute.<br>
+            Mass of 1L solution = $1000 \cdot d$ grams.<br>
+            Mass of solute = $M \cdot M_2$ grams.<br>
+            Mass of solvent ($W_1$) = Total Mass - Solute Mass = $(1000d - M \cdot M_2)$ grams.<br>
+            Molality ($m$) = $\frac{\text{Moles of solute} \times 1000}{W_1(\text{in g})} = \frac{1000 \cdot M}{(1000d - M \cdot M_2)}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">13.</div>
+                <div class="q-content">A 3 M solution of NaCl in water has a density of 1.25 g mL<sup>-1</sup>. What is the molality of the solution? (Molar mass of NaCl = 58.5 g/mol)</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 2.79 m</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 3.15 m</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 2.40 m</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 3.00 m</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) 2.79 m</div>
+            <span class="sol-heading">Solution:</span> Let V = 1 Litre (1000 mL).<br>
+            Moles of NaCl ($n$) = 3. Mass of NaCl = $3 \times 58.5 = 175.5 \text{ g}$.<br>
+            Mass of solution = $1000 \text{ mL} \times 1.25 \text{ g/mL} = 1250 \text{ g}$.<br>
+            Mass of solvent = $1250 - 175.5 = 1074.5 \text{ g} = 1.0745 \text{ kg}$.<br>
+            Molality ($m$) = $\frac{3 \text{ moles}}{1.0745 \text{ kg}} \approx 2.79 \text{ m}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">14.</div>
+                <div class="q-content">Calculate the mole fraction of ethylene glycol (C<sub>2</sub>H<sub>6</sub>O<sub>2</sub>) in an aqueous solution containing 20% of C<sub>2</sub>H<sub>6</sub>O<sub>2</sub> by mass. (Molar mass: C<sub>2</sub>H<sub>6</sub>O<sub>2</sub> = 62 g/mol, H<sub>2</sub>O = 18 g/mol)</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 0.050</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 0.068</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 0.124</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 0.932</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) 0.068</div>
+            <span class="sol-heading">Solution:</span> Let Total Mass = 100 g.<br>
+            Mass of Ethylene Glycol = 20 g $\implies$ Moles = $20 / 62 \approx 0.322 \text{ mol}$.<br>
+            Mass of Water = $100 - 20 = 80 \text{ g} \implies$ Moles = $80 / 18 \approx 4.444 \text{ mol}$.<br>
+            Total Moles = $0.322 + 4.444 = 4.766 \text{ mol}$.<br>
+            Mole fraction ($x_2$) = $\frac{0.322}{4.766} \approx 0.0675 \approx 0.068$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">15.</div>
+                <div class="q-content">The Henry's law constant (K<sub>H</sub>) for N<sub>2</sub> gas at 293 K is 76.48 kbar. The mole fraction of N<sub>2</sub> gas dissolved in water if it exerts a partial pressure of 0.987 bar is approximately:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 1.29 &times; 10<sup>-5</sup></div>
+            <div class="option"><span class="opt-lbl">(B)</span> 1.29 &times; 10<sup>-3</sup></div>
+            <div class="option"><span class="opt-lbl">(C)</span> 2.58 &times; 10<sup>-5</sup></div>
+            <div class="option"><span class="opt-lbl">(D)</span> 7.54 &times; 10<sup>4</sup></div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) 1.29 &times; 10<sup>-5</sup></div>
+            <span class="sol-heading">Solution:</span> Ensure units match. $K_H = 76.48 \text{ kbar} = 76480 \text{ bar}$.<br>
+            $p = K_H \cdot x \implies x = p / K_H$<br>
+            $x = 0.987 \text{ bar} / 76480 \text{ bar}$<br>
+            $x \approx 1.29 \times 10^{-5}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">16.</div>
+                <div class="q-content">For a binary ideal solution of two volatile liquids A and B, the vapour pressures of pure A and pure B are 100 mm Hg and 200 mm Hg respectively. The total vapour pressure of a solution containing 1 mole of A and 3 moles of B is:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 125 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 150 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 175 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 200 mm Hg</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) 175 mm Hg</div>
+            <span class="sol-heading">Solution:</span> Total moles = $1 + 3 = 4$.<br>
+            $x_A = 1/4 = 0.25$, $x_B = 3/4 = 0.75$.<br>
+            $P_{total} = p_A^\circ x_A + p_B^\circ x_B$<br>
+            $P_{total} = (100 \times 0.25) + (200 \times 0.75) = 25 + 150 = 175 \text{ mm Hg}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">17.</div>
+                <div class="q-content">Which of the following aqueous solutions will have the highest molarity if they all have exactly 10% (w/w) concentration? (Assume densities are roughly equal to 1 g/mL)</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> NaOH (Molar mass = 40)</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Urea (Molar mass = 60)</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Glucose (Molar mass = 180)</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Sucrose (Molar mass = 342)</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) NaOH (Molar mass = 40)</div>
+            <span class="sol-heading">Solution:</span> $Molarity = \frac{Mass\% \times 10 \times density}{Molar Mass}$.<br>
+            Since the mass %, constant 10, and density ($\approx 1$) are the same for all options, Molarity is inversely proportional to the Molar Mass ($M \propto \frac{1}{M_2}$). NaOH has the smallest molar mass (40), so it yields the most number of moles and thus the highest molarity.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">18.</div>
+                <div class="q-content">The vapour pressure of pure liquid A is 70 torr and pure liquid B is 50 torr. What will be the mole fraction of component A in the <strong>vapour phase</strong> (y<sub>A</sub>) for an ideal solution where the mole fraction of A in the liquid phase (x<sub>A</sub>) is 0.2?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 0.200</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 0.259</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 0.583</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 0.740</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) 0.259</div>
+            <span class="sol-heading">Solution:</span> Liquid phase: $x_A = 0.2$, so $x_B = 0.8$.<br>
+            Partial pressures: $p_A = 70 \times 0.2 = 14 \text{ torr}$. $p_B = 50 \times 0.8 = 40 \text{ torr}$.<br>
+            Total Pressure: $P_T = 14 + 40 = 54 \text{ torr}$.<br>
+            Vapour Phase fraction (Dalton's Law): $y_A = p_A / P_T = 14 / 54 \approx 0.259$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">19.</div>
+                <div class="q-content">A gas has a Henry's Law constant K<sub>H</sub> = 1.0 &times; 10<sup>5</sup> atm in water. The mole fraction of this gas in the solution when it is subjected to a pressure of 10 atm over the liquid is:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 10<sup>-3</sup></div>
+            <div class="option"><span class="opt-lbl">(B)</span> 10<sup>-4</sup></div>
+            <div class="option"><span class="opt-lbl">(C)</span> 10<sup>-5</sup></div>
+            <div class="option"><span class="opt-lbl">(D)</span> 10<sup>-6</sup></div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) 10<sup>-4</sup></div>
+            <span class="sol-heading">Solution:</span> By Henry's Law: $p = K_H \cdot x$<br>
+            $10 \text{ atm} = (1.0 \times 10^5 \text{ atm}) \cdot x$<br>
+            $x = 10 / 10^5 = 1 / 10^4 = 10^{-4}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">20.</div>
+                <div class="q-content">An azeotropic mixture of two liquids behaves like a pure substance because its:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Composition in the liquid phase and vapour phase are completely different.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Boiling point changes continuously during fractional distillation.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Vapour phase composition is identical to its liquid phase composition.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Components follow Raoult's Law perfectly at all concentrations.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) Vapour phase composition is identical to its liquid phase composition.</div>
+            <span class="sol-heading">Solution:</span> An azeotrope is a constant boiling mixture. This happens specifically when the mole fraction of each component in the liquid phase exactly equals its mole fraction in the vapour phase ($x_A = y_A$ and $x_B = y_B$). Because they boil off at the same ratio, they cannot be separated by fractional distillation.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C: Advanced Numericals / JEE Mains Level</div>
+    
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">21.</div>
+                <div class="q-content">Two completely miscible liquids X and Y form an ideal solution. At 300K, the vapour pressure of a solution containing 1 mole of X and 3 moles of Y is 550 mm Hg. At the same temperature, if 1 additional mole of Y is added to this solution, the vapour pressure of the solution increases to 560 mm Hg. The vapour pressures of pure X and pure Y respectively are:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 200 mm Hg, 400 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 300 mm Hg, 500 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 400 mm Hg, 600 mm Hg</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 600 mm Hg, 400 mm Hg</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) 400 mm Hg, 600 mm Hg</div>
+            <span class="sol-heading">Solution:</span> <br>
+            <strong>Case 1:</strong> 1 mol X, 3 mol Y (Total 4 mol). $x_X = 1/4$, $x_Y = 3/4$.<br>
+            $P_1 = p_X^\circ(1/4) + p_Y^\circ(3/4) = 550 \implies p_X^\circ + 3p_Y^\circ = 2200$  --- (Eq 1)<br><br>
+            <strong>Case 2:</strong> Add 1 mol Y $\implies$ 1 mol X, 4 mol Y (Total 5 mol). $x_X = 1/5$, $x_Y = 4/5$.<br>
+            $P_2 = p_X^\circ(1/5) + p_Y^\circ(4/5) = 560 \implies p_X^\circ + 4p_Y^\circ = 2800$ --- (Eq 2)<br><br>
+            Subtracting Eq 1 from Eq 2:<br>
+            $(p_X^\circ + 4p_Y^\circ) - (p_X^\circ + 3p_Y^\circ) = 2800 - 2200 \implies p_Y^\circ = 600 \text{ mm Hg}$.<br>
+            Substitute $p_Y^\circ$ into Eq 1: $p_X^\circ + 3(600) = 2200 \implies p_X^\circ = 2200 - 1800 = 400 \text{ mm Hg}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">22.</div>
+                <div class="q-content">A mixture of two volatile liquid components A and B forms an ideal solution. The total vapour pressure (P) of the mixture (in torr) at a certain temperature follows the relation: P = 254 &minus; 119 x<sub>A</sub>, where x<sub>A</sub> is the mole fraction of A in the liquid phase. The vapour pressures of pure A (P&deg;<sub>A</sub>) and pure B (P&deg;<sub>B</sub>) respectively are:</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 254 torr and 119 torr</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 119 torr and 254 torr</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 135 torr and 254 torr</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 254 torr and 135 torr</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (C) 135 torr and 254 torr</div>
+            <span class="sol-heading">Solution:</span> The standard formula is $P_{total} = p_B^\circ + (p_A^\circ - p_B^\circ)x_A$.<br>
+            Given equation: $P = 254 - 119 x_A$.<br>
+            By direct comparison:<br>
+            Intercept ($x_A = 0$): $p_B^\circ = 254 \text{ torr}$.<br>
+            Slope: $p_A^\circ - p_B^\circ = -119$<br>
+            $p_A^\circ - 254 = -119 \implies p_A^\circ = 254 - 119 = 135 \text{ torr}$.<br>
+            So, pure A = 135 torr, pure B = 254 torr.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">23.</div>
+                <div class="q-content">An aqueous solution of ethanol (C<sub>2</sub>H<sub>5</sub>OH) is 2.0 M. If the density of the solution is given as 1.025 g/mL, what is the exact molality of this solution? (Molar mass of ethanol = 46 g/mol)</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 1.95 m</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 2.14 m</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 1.79 m</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 2.50 m</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) 2.14 m</div>
+            <span class="sol-heading">Solution:</span> 2.0 M means 2.0 moles of ethanol in 1000 mL of solution.<br>
+            Mass of 1000 mL solution = $1000 \text{ mL} \times 1.025 \text{ g/mL} = 1025 \text{ g}$.<br>
+            Mass of ethanol solute = $2.0 \text{ mol} \times 46 \text{ g/mol} = 92 \text{ g}$.<br>
+            Mass of water solvent = $1025 \text{ g} - 92 \text{ g} = 933 \text{ g} = 0.933 \text{ kg}$.<br>
+            Molality ($m$) = Moles / mass of solvent (kg) = $2.0 / 0.933 \approx 2.143 \text{ m}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">24.</div>
+                <div class="q-content">The mole fraction of liquid A in an ideal binary mixture with liquid B is 0.4. The vapour pressures of pure A and B are 200 mm Hg and 400 mm Hg respectively. The solution is allowed to vaporize. What is the mole fraction of A in the vapour phase?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> 0.25</div>
+            <div class="option"><span class="opt-lbl">(B)</span> 0.40</div>
+            <div class="option"><span class="opt-lbl">(C)</span> 0.50</div>
+            <div class="option"><span class="opt-lbl">(D)</span> 0.75</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (A) 0.25</div>
+            <span class="sol-heading">Solution:</span> Liquid phase: $x_A = 0.4$, $x_B = 1 - 0.4 = 0.6$.<br>
+            $p_A = p_A^\circ \cdot x_A = 200 \times 0.4 = 80 \text{ mm Hg}$.<br>
+            $p_B = p_B^\circ \cdot x_B = 400 \times 0.6 = 240 \text{ mm Hg}$.<br>
+            $P_{total} = 80 + 240 = 320 \text{ mm Hg}$.<br>
+            Vapour phase fraction $y_A = p_A / P_{total} = 80 / 320 = 1/4 = 0.25$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header-row">
+            <div class="q-main">
+                <div class="q-num">25.</div>
+                <div class="q-content">A solution of nitric acid and water forms a maximum boiling azeotrope. Which of the following thermodynamic statements correctly describes this mixture?</div>
+            </div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> &Delta;H<sub>mix</sub> &gt; 0, representing a positive deviation from Raoult's law.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> &Delta;H<sub>mix</sub> &lt; 0, representing a negative deviation from Raoult's law.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> &Delta;H<sub>mix</sub> = 0, representing an ideal solution.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> The intermolecular forces in the mixture are weaker than in the pure liquids.</div>
+        </div>
+        <div class="solution-box">
+            <div class="correct-ans">Correct Answer: (B) &Delta;H<sub>mix</sub> &lt; 0, representing a negative deviation from Raoult's law.</div>
+            <span class="sol-heading">Solution:</span> A maximum boiling azeotrope means the mixture boils at a temperature higher than both pure components. This requires a lower-than-expected vapour pressure, meaning the solution shows a severe negative deviation from Raoult's law. In negative deviations, new bonds formed are stronger, making the mixing process exothermic ($\Delta H_{mix} < 0$).
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

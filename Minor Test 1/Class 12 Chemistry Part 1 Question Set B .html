@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper Set B</title>
+
+    <!-- MathJax Configuration and Script for rendering LaTeX math -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 20px; display: flex; flex-direction: column; page-break-inside: avoid; }
+        .q-row { display: flex; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; padding-left: 30px; }
+        .option { display: flex; align-items: flex-start; }
+        .opt-lbl { font-weight: bold; margin-right: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100% !important;
+                min-height: unset !important;
+                padding: 14px !important;
+                margin: 0 !important;
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            .institute-name { font-size: 16px !important; letter-spacing: 0 !important; }
+            .test-name { font-size: 13px !important; }
+            .exam-details {
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 12px !important;
+            }
+            .exam-details span { display: block !important; }
+            .instructions { font-size: 11px !important; }
+            .instructions ul { padding-left: 16px !important; }
+            .section-header { font-size: 12px !important; padding: 6px 10px !important; }
+            .question-container { margin-bottom: 16px !important; }
+            .options-grid, .options {
+                grid-template-columns: 1fr !important;
+                gap: 6px !important;
+                padding-left: 0 !important;
+            }
+            .q-num { width: 24px !important; font-size: 13px !important; }
+            .q-content { font-size: 13px !important; }
+            .option, .options > div { font-size: 12px !important; }
+            table { font-size: 11px !important; width: 100% !important; overflow-x: auto !important; display: block !important; }
+            .footer { font-size: 10px !important; margin-top: 20px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Chemistry Part 1 Test (Up to Azeotropes) - Set B</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 100</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. This is an objective (Board-Level MCQ) examination.</li>
+                <li>The paper consists of exactly 25 questions, divided into three sections: A, B, and C.</li>
+                <li>Each question carries 4 marks. There is NO negative marking.</li>
+                <li>Choose the most appropriate option.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (40 Marks)<span class="marks-info">(Direct Recall & Definitions - 10 Questions, 4 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">1.</div>
+            <div class="q-content">An amalgam of mercury with sodium is an example of which type of solution?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Solid in liquid</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Liquid in solid</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Solid in solid</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Gas in solid</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">2.</div>
+            <div class="q-content">Which of the following concentration terms is independent of temperature?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Molarity</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Molality</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Volume percentage (v/v)</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Mass by volume percentage (w/v)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">3.</div>
+            <div class="q-content">The sum of the mole fractions of all the components in a solution is always equal to:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $0$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $1$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $100$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Depends on the temperature</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">4.</div>
+            <div class="q-content">A $10\%$ (w/v) solution of $NaCl$ indicates that:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $10\text{ g}$ of $NaCl$ is present in $100\text{ g}$ of solution</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $10\text{ g}$ of $NaCl$ is present in $100\text{ mL}$ of solvent</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $10\text{ g}$ of $NaCl$ is present in $100\text{ mL}$ of solution</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $10\text{ mL}$ of $NaCl$ is present in $100\text{ mL}$ of solution</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">5.</div>
+            <div class="q-content">To appropriately express the concentration of a pollutant in water that is present in trace (very minute) quantities, the preferred unit is:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Molarity</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Parts per million (ppm)</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Mass percentage</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Mole fraction</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">6.</div>
+            <div class="q-content">Which law states that "at a constant temperature, the partial pressure of a gas in the vapour phase is directly proportional to its mole fraction in the solution"?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Raoult's Law</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Dalton's Law</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Henry's Law</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Le Chatelier's Principle</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">7.</div>
+            <div class="q-content">Aquatic animals are more comfortable in cold water rather than warm water because:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $K_H$ decreases with a decrease in temperature, decreasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $K_H$ decreases with a decrease in temperature, increasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $K_H$ increases with a decrease in temperature, increasing solubility.</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Temperature has absolutely no effect on oxygen solubility.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">8.</div>
+            <div class="q-content">For a liquid-liquid solution to be considered perfectly ideal, the correct thermodynamic conditions are:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $\Delta H_{mix} > 0, \Delta V_{mix} = 0$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $\Delta H_{mix} < 0, \Delta V_{mix} < 0$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $\Delta H_{mix} = 0, \Delta V_{mix} > 0$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $\Delta H_{mix} = 0, \Delta V_{mix} = 0$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">9.</div>
+            <div class="q-content">What is the effect of increased external pressure on the solubility of a solid in a liquid?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Solubility increases significantly</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Solubility decreases significantly</div>
+            <div class="option"><span class="opt-lbl">(C)</span> It has practically no effect</div>
+            <div class="option"><span class="opt-lbl">(D)</span> It first increases then decreases</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">10.</div>
+            <div class="q-content">A non-ideal solution exhibiting a large positive deviation from Raoult's law forms a:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Maximum boiling azeotrope</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Minimum boiling azeotrope</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Ideal mixture</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Saturated solution</div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (40 Marks)<span class="marks-info">(Reasoning & Standard Applications - 10 Questions, 4 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">11.</div>
+            <div class="q-content">Scuba divers use tanks diluted with Helium to avoid the medical condition called "the bends". Helium is chosen primarily because of its:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> High reactivity with blood</div>
+            <div class="option"><span class="opt-lbl">(B)</span> High solubility in blood at high pressure</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Low solubility in blood at high pressure</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Extremely low density compared to oxygen</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">12.</div>
+            <div class="q-content">The medical condition known as Anoxia (weakness and inability to think clearly), experienced by climbers at high altitudes, is primarily due to:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> High partial pressure of oxygen in the air</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Low partial pressure of oxygen in the air</div>
+            <div class="option"><span class="opt-lbl">(C)</span> High temperature at high altitudes</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Excessive carbon dioxide in the air</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">13.</div>
+            <div class="q-content">A mixture of chloroform ($CHCl_3$) and acetone ($CH_3COCH_3$) shows a negative deviation from Raoult's law. What is the molecular reason behind this behavior?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Formation of new hydrogen bonds between them</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Breaking of existing hydrogen bonds</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Both liquids are non-polar in nature</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Due to volume expansion upon mixing</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">14.</div>
+            <div class="q-content">An azeotropic mixture of ethanol and water cannot be completely separated into its pure components by fractional distillation because:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> They have very different boiling points</div>
+            <div class="option"><span class="opt-lbl">(B)</span> The liquid and vapour phases have the exact same composition</div>
+            <div class="option"><span class="opt-lbl">(C)</span> They are completely immiscible liquids</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Ethanol is highly volatile</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">15.</div>
+            <div class="q-content">Which of the following binary liquid pairs is known to form a maximum boiling azeotrope?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Ethanol + Water</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Nitric Acid + Water</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Benzene + Toluene</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Hexane + Heptane</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">16.</div>
+            <div class="q-content">According to Raoult's law, the partial vapour pressure of a volatile component in a solution is directly proportional to its:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Molarity in the solution</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Molality in the solution</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Mole fraction in the solution</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Mass percentage in the solution</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">17.</div>
+            <div class="q-content">If a solution formed by mixing two liquids shows a positive deviation from Raoult's law, the sign of $\Delta V_{mix}$ will be:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Positive (Volume expansion)</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Negative (Volume contraction)</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Zero (No volume change)</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Variable depending on the atmospheric pressure</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">18.</div>
+            <div class="q-content">If the dissolution of a solid in a liquid is an endothermic process ($\Delta H_{sol} > 0$), what will happen to its solubility if the temperature is increased?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Solubility will decrease</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Solubility will increase</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Solubility remains constant</div>
+            <div class="option"><span class="opt-lbl">(D)</span> The solid will immediately precipitate out</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">19.</div>
+            <div class="q-content">For a binary solution of volatile liquids A and B, the mole fraction of component A specifically in the vapour phase ($y_A$) is correctly calculated using the formula:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $y_A = p_A^\circ / P_{total}$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $y_A = p_A / P_{total}$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $y_A = x_A / P_{total}$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $y_A = p_A \cdot P_{total}$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">20.</div>
+            <div class="q-content">According to Henry's Law, at a given constant pressure, a higher value of the constant $K_H$ for a gas implies:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Higher solubility of the gas in the liquid</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Lower solubility of the gas in the liquid</div>
+            <div class="option"><span class="opt-lbl">(C)</span> No change in the solubility of the gas</div>
+            <div class="option"><span class="opt-lbl">(D)</span> The gas behaves ideally</div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Calculations & Numericals - 5 Questions, 4 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">21.</div>
+            <div class="q-content">$4.0\text{ g}$ of $NaOH$ (Molar mass = $40\text{ g/mol}$) is dissolved in enough water to make exactly $250\text{ mL}$ of solution. The molarity of this solution is:</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $0.1\text{ M}$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $0.2\text{ M}$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $0.4\text{ M}$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $1.0\text{ M}$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">22.</div>
+            <div class="q-content">What is the mass percentage of benzene ($C_6H_6$) if $22\text{ g}$ of benzene is dissolved in $122\text{ g}$ of carbon tetrachloride ($CCl_4$)?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $15.28\%$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $22.0\%$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $18.03\%$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $84.72\%$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">23.</div>
+            <div class="q-content">The vapour pressures of pure liquids A and B are $100\text{ mm Hg}$ and $200\text{ mm Hg}$ respectively. In an ideal solution containing equal moles of A and B, what is the total vapour pressure?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $100\text{ mm Hg}$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $150\text{ mm Hg}$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $200\text{ mm Hg}$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $300\text{ mm Hg}$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">24.</div>
+            <div class="q-content">$15\text{ g}$ of $NaCl$ is present in $85\text{ g}$ of water. What is the mass percentage of the solute ($NaCl$)?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> $15\%$</div>
+            <div class="option"><span class="opt-lbl">(B)</span> $85\%$</div>
+            <div class="option"><span class="opt-lbl">(C)</span> $17.6\%$</div>
+            <div class="option"><span class="opt-lbl">(D)</span> $10\%$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-num">25.</div>
+            <div class="q-content">Which of the following pairs of liquids is most likely to form a nearly ideal solution?</div>
+        </div>
+        <div class="options-grid">
+            <div class="option"><span class="opt-lbl">(A)</span> Chloroform + Acetone</div>
+            <div class="option"><span class="opt-lbl">(B)</span> Ethanol + Water</div>
+            <div class="option"><span class="opt-lbl">(C)</span> Benzene + Toluene</div>
+            <div class="option"><span class="opt-lbl">(D)</span> Nitric acid + Water</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

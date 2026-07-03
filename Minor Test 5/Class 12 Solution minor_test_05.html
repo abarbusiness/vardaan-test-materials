@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Minor Test 05</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Segoe UI", "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark as requested: z-index 999 */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 3px solid #1a237e; padding-bottom: 15px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #1a237e; letter-spacing: 1px; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #d32f2f; text-transform: uppercase; }
+        .subtitle { font-size: 12pt; font-style: italic; color: #555; margin-top: 5px; }
+
+        .section-header { 
+            background: #1a237e; 
+            color: white; 
+            padding: 8px 15px; 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+        }
+
+        .question-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+
+        .question-text {
+            font-weight: bold;
+            font-size: 12.5pt;
+            color: #000;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        /* Colorful Boxes for Notes and Formulas */
+        .concept-box {
+            background-color: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border-radius: 0 4px 4px 0;
+            font-size: 11pt;
+        }
+        .concept-box strong { color: #e65100; }
+
+        .formula-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border-radius: 0 4px 4px 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12pt;
+            font-weight: bold;
+            color: #0d47a1;
+            text-align: center;
+        }
+
+        .solution-step {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .final-answer {
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #1b5e20;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+
+        .highlight { color: #d32f2f; font-weight: bold; }
+        .math-expr { font-style: italic; font-family: "Times New Roman", serif; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .question-card { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 05 - Comprehensive Solutions</div>
+        <div class="subtitle">Class: 12 CBSE | Subject: Chemistry (Electrochemistry)</div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-header">SECTION A (10 Marks) - Objective / Short Answer</div>
+
+    <!-- Question 1 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q1. A standard Daniel cell has a potential of 1.1 V. Predict the direction of flow of electrons and the chemical reaction taking place if an opposing external potential of (i) exactly 1.1 V and (ii) 1.2 V is applied to this cell.
+        </div>
+        
+        <div class="concept-box">
+            <strong>Key Concept (Reversible Cells):</strong> An electrochemical cell acts as a galvanic cell (generates electricity) as long as the external opposing potential (E<sub>ext</sub>) is less than the cell potential (E<sub>cell</sub>). 
+            <ul>
+                <li>If E<sub>ext</sub> = E<sub>cell</sub>: The cell reaction halts. No current flows.</li>
+                <li>If E<sub>ext</sub> > E<sub>cell</sub>: The cell acts as an <em>electrolytic cell</em>. The reaction reverses, and non-spontaneous chemistry occurs driven by external electricity.</li>
+            </ul>
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>(i) When E<sub>ext</sub> = 1.1 V:</strong><br>
+            Because the external potential perfectly balances the cell potential (1.1 V), the system reaches a state of equilibrium. 
+            <br>&bull; Flow of electrons: Stops entirely. No current flows.
+            <br>&bull; Chemical reaction: No chemical reaction occurs.
+        </div>
+        <div class="solution-step">
+            <strong>(ii) When E<sub>ext</sub> = 1.2 V:</strong><br>
+            The external potential is greater than the cell potential (1.2 V > 1.1 V). The cell is forced to behave as an electrolytic cell. The standard Daniel cell reaction (Zn + Cu<sup>2+</sup> &rarr; Zn<sup>2+</sup> + Cu) reverses.
+            <br>&bull; Flow of electrons: Electrons will now flow in the reverse direction, from <strong>Copper (Cu) to Zinc (Zn)</strong> in the external circuit. Current flows from Zn to Cu.
+            <br>&bull; Chemical reaction: Zn is deposited at the zinc electrode, and Cu dissolves at the copper electrode. Reaction: <strong>Cu(s) + Zn<sup>2+</sup>(aq) &rarr; Cu<sup>2+</sup>(aq) + Zn(s)</strong>.
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q2. Explain, using interionic interactions, why the conductivity (&kappa;) of an electrolytic solution decreases with dilution, whereas its molar conductivity (&Lambda;<sub>m</sub>) increases with dilution.
+        </div>
+        
+        <div class="concept-box">
+            <strong>Key Concept (Conductivity vs Molar Conductivity):</strong><br>
+            &bull; <strong>Conductivity (&kappa;):</strong> Conductance of 1 cm<sup>3</sup> of solution. It strictly depends on the <em>number of ions per unit volume</em>.<br>
+            &bull; <strong>Molar Conductivity (&Lambda;<sub>m</sub>):</strong> Conducting power of all ions produced by dissolving 1 mole of electrolyte.
+        </div>
+        
+        <div class="formula-box">
+            &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / Molarity
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>1. Why Conductivity (&kappa;) decreases:</strong> When we dilute a solution, we are adding more solvent (water). Although the total number of ions might increase slightly (for weak electrolytes), the <em>volume of the solution increases at a much faster rate</em>. Consequently, the number of current-carrying ions present in exactly 1 cm<sup>3</sup> of the solution strictly <strong>decreases</strong>. Hence, &kappa; decreases.
+            <br><br>
+            <strong>2. Why Molar Conductivity (&Lambda;<sub>m</sub>) increases:</strong> Based on the formula, &Lambda;<sub>m</sub> is the product of &kappa; and Volume (V = 1000/M). Upon dilution, the decrease in &kappa; is overcompensated by the massive increase in Volume (V). 
+            <br><em>Interionic explanation:</em> In concentrated solutions, oppositely charged ions are close to each other, causing strong electrostatic attractions (interionic friction) which slow down their movement. Upon dilution, ions move further apart. This decreases the interionic attractions drastically, increasing ionic mobility, and thus increasing &Lambda;<sub>m</sub>.
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q3. During the electrolysis of aqueous sodium chloride, sodium ions are not reduced at the cathode, but hydrogen gas is evolved. However, chlorine gas is preferentially liberated at the anode despite oxygen having a lower oxidation potential. Give rigorous thermodynamic or kinetic reasons for these two observations.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Preferential Discharge & Overpotential):</strong> When multiple ions compete at an electrode, the one requiring the least energy (most favorable standard potential) is discharged first. However, some gases (like O<sub>2</sub>) require extra kinetic energy (Overpotential) to bubble out, altering the thermodynamic expectations.
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>At the Cathode (Reduction):</strong><br>
+            Two competing reactions:<br>
+            1. Na<sup>+</sup>(aq) + e<sup>-</sup> &rarr; Na(s) [E&deg; = -2.71 V]<br>
+            2. H<sub>2</sub>O(l) + e<sup>-</sup> &rarr; &frac12;H<sub>2</sub>(g) + OH<sup>-</sup>(aq) [E&deg; = -0.83 V]<br>
+            <em>Reason:</em> The reduction potential of water (-0.83 V) is much higher (less negative) than that of sodium (-2.71 V). Thermodynamically, it is much easier to reduce water. Therefore, H<sub>2</sub> gas is evolved.
+            <br><br>
+            <strong>At the Anode (Oxidation):</strong><br>
+            Two competing reactions:<br>
+            1. 2Cl<sup>-</sup>(aq) &rarr; Cl<sub>2</sub>(g) + 2e<sup>-</sup> [E&deg;<sub>ox</sub> = -1.36 V]<br>
+            2. 2H<sub>2</sub>O(l) &rarr; O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) + 4e<sup>-</sup> [E&deg;<sub>ox</sub> = -1.23 V]<br>
+            <em>Reason:</em> Thermodynamically, water has a higher (less negative) oxidation potential (-1.23 V) compared to chloride (-1.36 V), so O<sub>2</sub> should evolve. However, the kinetic formation of O<sub>2</sub> gas on standard electrodes is very slow and requires an extra voltage push, known as <strong>kinetic overpotential (or overvoltage)</strong>. Because of this high overpotential for O<sub>2</sub>, the oxidation of Cl<sup>-</sup> becomes kinetically more favorable. Hence, Cl<sub>2</sub> gas is liberated.
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q4. Consider the standard electrode potentials: E&deg;<sub>A<sup>2+</sup>/A</sub> = -2.37 V, E&deg;<sub>B<sup>2+</sup>/B</sub> = -0.76 V, E&deg;<sub>C<sup>2+</sup>/C</sub> = 0.34 V, and E&deg;<sub>D<sup>+</sup>/D</sub> = 0.80 V. Arrange these metals in increasing order of their reducing power and identify the strongest oxidizing agent among the ions. Justify your answer.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Electrochemical Series):</strong><br>
+            &bull; The lower (more negative) the Standard Reduction Potential (SRP), the easier it is for the metal to lose electrons. Hence, <strong>More Negative SRP = Stronger Reducing Agent</strong>.<br>
+            &bull; The higher (more positive) the SRP, the easier it is for the ion to gain electrons. Hence, <strong>More Positive SRP = Stronger Oxidizing Agent</strong>.
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            Given SRPs: A = -2.37 V, B = -0.76 V, C = 0.34 V, D = 0.80 V.<br><br>
+            <strong>1. Increasing order of Reducing Power:</strong><br>
+            Reducing power increases as SRP becomes more negative. <br>
+            Order of SRP: D (+0.80 V) > C (+0.34 V) > B (-0.76 V) > A (-2.37 V).<br>
+            Therefore, reducing power order: <strong>D < C < B < A</strong>.
+            <br><br>
+            <strong>2. Strongest Oxidizing Agent:</strong><br>
+            The species that undergoes reduction most readily is the strongest oxidizing agent. This corresponds to the highest positive SRP. <br>
+            Among the given ions, D<sup>+</sup> has the highest SRP (+0.80 V).<br>
+            Therefore, <strong>D<sup>+</sup> is the strongest oxidizing agent</strong>.
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q5. How much charge is required for the complete reduction of 1 mole of MnO<sub>4</sub><sup>-</sup> to Mn<sup>2+</sup> in an acidic medium? Express your answer rigorously in Coulombs.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Faraday's Laws):</strong> The amount of charge required depends on the number of moles of electrons (n) exchanged in the balanced half-reaction. 1 mole of electrons carries 1 Faraday of charge.
+        </div>
+
+        <div class="formula-box">
+            Charge (Q) = n &times; F <br>
+            Where F (Faraday's Constant) &approx; 96500 Coulombs (C)
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            Step 1: Write the balanced half-reaction for the reduction in acidic medium to find 'n'.<br>
+            MnO<sub>4</sub><sup>-</sup> + 8H<sup>+</sup> + <strong>5e<sup>-</sup></strong> &rarr; Mn<sup>2+</sup> + 4H<sub>2</sub>O<br><br>
+            Step 2: Determine oxidation states to verify.<br>
+            Oxidation state of Mn in MnO<sub>4</sub><sup>-</sup> is +7.<br>
+            Oxidation state of Mn in Mn<sup>2+</sup> is +2.<br>
+            Change in oxidation state = (+7) - (+2) = 5. Therefore, <strong>n = 5 moles of electrons</strong> per mole of MnO<sub>4</sub><sup>-</sup>.<br><br>
+            Step 3: Calculate Charge (Q).<br>
+            Q = n &times; F = 5 &times; 96500 C
+        </div>
+        
+        <div class="final-answer">
+            Total Charge Required = 482,500 Coulombs (or 4.825 &times; 10<sup>5</sup> C)
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-header">SECTION B (15 Marks) - Short Answer Type</div>
+
+    <!-- Question 6 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q6. Calculate the electrode potential of a standard hydrogen electrode placed in a buffer solution with a pH of 10 at 298 K. (Given: H<sub>2</sub> gas is at 1 atm pressure).
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Nernst Equation for SHE):</strong> The Standard Hydrogen Electrode (SHE) has a standard potential E&deg; = 0.00 V. The reaction is: 2H<sup>+</sup>(aq) + 2e<sup>-</sup> &rarr; H<sub>2</sub>(g). The Nernst equation allows calculation at non-standard conditions.
+        </div>
+
+        <div class="formula-box">
+            E = E&deg; - (0.0591 / n) &times; log<sub>10</sub>( P<sub>H2</sub> / [H<sup>+</sup>]<sup>2</sup> )<br>
+            Simplified for Hydrogen: E = -0.0591 &times; pH
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            Given: pH = 10. <br>
+            We know that pH = -log<sub>10</sub>[H<sup>+</sup>] <br>
+            Therefore, [H<sup>+</sup>] = 10<sup>-10</sup> M. <br>
+            Pressure of H<sub>2</sub> gas (P<sub>H2</sub>) = 1 atm.<br><br>
+            
+            Applying the Nernst equation for the reduction half-reaction: 2H<sup>+</sup> + 2e<sup>-</sup> &rarr; H<sub>2</sub><br>
+            E<sub>H+/H2</sub> = E&deg;<sub>H+/H2</sub> - (0.0591 / 2) &times; log( P<sub>H2</sub> / [H<sup>+</sup>]<sup>2</sup> )<br>
+            E<sub>H+/H2</sub> = 0.00 - 0.02955 &times; log( 1 / (10<sup>-10</sup>)<sup>2</sup> )<br>
+            E<sub>H+/H2</sub> = - 0.02955 &times; log( 10<sup>20</sup> )<br>
+            E<sub>H+/H2</sub> = - 0.02955 &times; 20 = -0.591 V.<br><br>
+            <em>Alternative shortcut method:</em> E = -0.0591 &times; pH = -0.0591 &times; 10 = -0.591 V.
+        </div>
+        
+        <div class="final-answer">
+            Electrode Potential (E) = -0.591 V
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q7. The resistance of a conductivity cell filled with 0.1 M KCl solution is 100 &Omega;. If the resistance of the same cell when filled with 0.02 M KCl solution is 520 &Omega;, calculate the conductivity and molar conductivity of the 0.02 M KCl solution. (Given: The conductivity of 0.1 M KCl solution is 1.29 S m<sup>-1</sup>).
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Cell Constant):</strong> The physical dimensions of the conductivity cell (distance between electrodes, area) remain constant. This ratio is the Cell Constant (G*). Once calculated for a known solution, it can be applied to any unknown solution in the same cell.
+        </div>
+
+        <div class="formula-box">
+            Cell Constant (G*) = Conductivity (&kappa;) &times; Resistance (R)<br>
+            &kappa;<sub>unknown</sub> = G* / R<sub>unknown</sub><br>
+            &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / Molarity  (Ensure units are aligned!)
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>Step 1: Calculate the Cell Constant (G*) using 0.1 M KCl data.</strong><br>
+            Given: R<sub>1</sub> = 100 &Omega;, &kappa;<sub>1</sub> = 1.29 S m<sup>-1</sup><br>
+            G* = &kappa;<sub>1</sub> &times; R<sub>1</sub> = 1.29 S m<sup>-1</sup> &times; 100 &Omega; = <strong>129 m<sup>-1</sup></strong>.<br>
+            <em>(To convert to standard cm<sup>-1</sup>: 129 m<sup>-1</sup> = 1.29 cm<sup>-1</sup>)</em><br><br>
+
+            <strong>Step 2: Calculate Conductivity (&kappa;<sub>2</sub>) of 0.02 M KCl.</strong><br>
+            Given: R<sub>2</sub> = 520 &Omega;, G* = 129 m<sup>-1</sup> (or 1.29 cm<sup>-1</sup>).<br>
+            Using cm units for standard chemistry calculations: &kappa;<sub>2</sub> = G* / R<sub>2</sub> = 1.29 cm<sup>-1</sup> / 520 &Omega; <br>
+            &kappa;<sub>2</sub> = <strong>2.48 &times; 10<sup>-3</sup> S cm<sup>-1</sup></strong> (or 0.248 S m<sup>-1</sup>).<br><br>
+
+            <strong>Step 3: Calculate Molar Conductivity (&Lambda;<sub>m</sub>) of 0.02 M KCl.</strong><br>
+            C = 0.02 M (mol L<sup>-1</sup>)<br>
+            Using the standard formula with &kappa; in S cm<sup>-1</sup>:<br>
+            &Lambda;<sub>m</sub> = (&kappa;<sub>2</sub> &times; 1000) / C<br>
+            &Lambda;<sub>m</sub> = (2.48 &times; 10<sup>-3</sup> &times; 1000) / 0.02 = 2.48 / 0.02 = 124.
+        </div>
+        
+        <div class="final-answer">
+            Conductivity (&kappa;) = 2.48 &times; 10<sup>-3</sup> S cm<sup>-1</sup> <br>
+            Molar Conductivity (&Lambda;<sub>m</sub>) = 124 S cm<sup>2</sup> mol<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q8. State Kohlrausch's law of independent migration of ions. How does this law practically help in determining the limiting molar conductivity (&Lambda;&deg;<sub>m</sub>) of a weak electrolyte like acetic acid, which cannot be accurately determined by graphical extrapolation?
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Kohlrausch's Law):</strong> At infinite dilution, interionic forces are zero. Every ion migrates independently, and its contribution to total conductivity is a fixed value, regardless of the other ion present.
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>Statement of Kohlrausch's Law:</strong><br>
+            The limiting molar conductivity of an electrolyte (at infinite dilution) can be represented as the sum of the individual contributions of the anion and the cation of the electrolyte. <br>
+            Mathematically: <strong>&Lambda;&deg;<sub>m</sub> = &nu;<sub>+</sub>&lambda;&deg;<sub>+</sub> + &nu;<sub>-</sub>&lambda;&deg;<sub>-</sub></strong><br>
+            (Where &lambda;&deg;<sub>+</sub> and &lambda;&deg;<sub>-</sub> are limiting molar conductivities of cation and anion, and &nu; represents the number of respective ions).<br><br>
+
+            <strong>Application for Weak Electrolytes:</strong><br>
+            For a weak electrolyte like acetic acid (CH<sub>3</sub>COOH), the curve of &Lambda;<sub>m</sub> vs &radic;C is very steep near zero concentration, meaning it never touches the y-axis. Thus, graphical extrapolation to find &Lambda;&deg;<sub>m</sub> is impossible. <br>
+            Kohlrausch's law allows us to calculate it indirectly using strong electrolytes (which <em>can</em> be graphed). We choose three strong electrolytes that contain the required ions: CH<sub>3</sub>COONa, HCl, and NaCl.
+            <br><br>
+            By the law:<br>
+            &Lambda;&deg;<sub>m</sub>(CH<sub>3</sub>COOH) = &lambda;&deg;(CH<sub>3</sub>COO<sup>-</sup>) + &lambda;&deg;(H<sup>+</sup>)<br><br>
+            We algebraically rearrange the values of the strong electrolytes:<br>
+            &Lambda;&deg;<sub>m</sub>(CH<sub>3</sub>COOH) = [&lambda;&deg;(CH<sub>3</sub>COO<sup>-</sup>) + &lambda;&deg;(Na<sup>+</sup>)] + [&lambda;&deg;(H<sup>+</sup>) + &lambda;&deg;(Cl<sup>-</sup>)] - [&lambda;&deg;(Na<sup>+</sup>) + &lambda;&deg;(Cl<sup>-</sup>)]<br>
+            <strong>Formula: &Lambda;&deg;<sub>m</sub>(CH<sub>3</sub>COOH) = &Lambda;&deg;<sub>m</sub>(CH<sub>3</sub>COONa) + &Lambda;&deg;<sub>m</sub>(HCl) - &Lambda;&deg;<sub>m</sub>(NaCl)</strong><br>
+            This simple addition and subtraction yields the exact value.
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q9. A concentration cell is constructed by dipping two identical copper electrodes in aqueous CuSO<sub>4</sub> solutions of concentrations 0.001 M and 0.1 M respectively at 298 K. 
+            <br>(i) Write the standard cell representation and clearly assign the anode and cathode.
+            <br>(ii) Calculate the EMF of this cell at 298 K.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Concentration Cells):</strong> Both electrodes are of the same material, and solutions are of the same electrolyte but different concentrations. Standard cell potential E&deg; = 0. Current flows simply due to the concentration gradient. Oxidation (Anode) must happen in the <em>less concentrated</em> half-cell to increase its concentration, driving the system towards equilibrium.
+        </div>
+
+        <div class="formula-box">
+            E<sub>cell</sub> = - (0.0591 / n) &times; log ( [C<sub>anode</sub>] / [C<sub>cathode</sub>] )
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>(i) Cell Representation:</strong><br>
+            &bull; <strong>Anode (Oxidation):</strong> Occurs in the less concentrated solution (0.001 M) to generate more Cu<sup>2+</sup> ions.<br>
+            &bull; <strong>Cathode (Reduction):</strong> Occurs in the more concentrated solution (0.1 M) to consume Cu<sup>2+</sup> ions.<br>
+            Cell Notation: <strong>Cu(s) | Cu<sup>2+</sup> (0.001 M) || Cu<sup>2+</sup> (0.1 M) | Cu(s)</strong><br><br>
+
+            <strong>(ii) Calculation of EMF:</strong><br>
+            For Copper, n = 2 electrons (Cu &rarr; Cu<sup>2+</sup> + 2e<sup>-</sup>).<br>
+            Because electrodes are identical, E&deg;<sub>cell</sub> = 0.00 V.<br>
+            Using Nernst Equation:<br>
+            E<sub>cell</sub> = E&deg;<sub>cell</sub> - (0.0591 / 2) &times; log ( [Anode] / [Cathode] )<br>
+            E<sub>cell</sub> = 0 - (0.0591 / 2) &times; log ( 0.001 / 0.1 )<br>
+            E<sub>cell</sub> = - 0.02955 &times; log ( 10<sup>-3</sup> / 10<sup>-1</sup> )<br>
+            E<sub>cell</sub> = - 0.02955 &times; log ( 10<sup>-2</sup> )<br>
+            E<sub>cell</sub> = - 0.02955 &times; (-2)<br>
+            E<sub>cell</sub> = +0.0591 V.
+        </div>
+        
+        <div class="final-answer">
+            Cell EMF = 0.0591 V
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q10. Corrosion of iron is essentially an electrochemical phenomenon. Explain this statement by writing the specific anodic and cathodic reactions that occur during the rusting of iron in the presence of water and atmospheric oxygen.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Electrochemical Theory of Rusting):</strong> Impure iron surfaces act as miniature galvanic cells in the presence of water (acting as an electrolyte) and dissolved oxygen. 
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            According to the electrochemical theory, the uneven surface of iron, coupled with water containing dissolved CO<sub>2</sub> (forming carbonic acid, H<sub>2</sub>CO<sub>3</sub>), creates tiny electrochemical cells on the metal surface.<br><br>
+            
+            <strong>1. Anodic Region:</strong> Pure iron acts as the anode. Iron atoms lose electrons and go into the solution as ferrous ions.<br>
+            <span style="font-family: monospace; font-size: 1.1em; color: #1a237e;">Anode Reaction: 2Fe(s) &rarr; 2Fe<sup>2+</sup>(aq) + 4e<sup>-</sup></span><br><br>
+
+            <strong>2. Cathodic Region:</strong> Electrons released at the anode flow through the metal to another spot, which acts as the cathode. Here, atmospheric oxygen is reduced in the presence of H<sup>+</sup> ions (from water/carbonic acid).<br>
+            <span style="font-family: monospace; font-size: 1.1em; color: #1a237e;">Cathode Reaction: O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) + 4e<sup>-</sup> &rarr; 2H<sub>2</sub>O(l)</span><br><br>
+
+            <strong>3. Overall Cell Reaction:</strong> Adding both half-reactions gives:<br>
+            <span style="font-family: monospace; font-size: 1.1em; font-weight:bold; color: #d32f2f;">2Fe(s) + O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) &rarr; 2Fe<sup>2+</sup>(aq) + 2H<sub>2</sub>O(l)</span><br><br>
+
+            <em>Subsequent reaction (Rust Formation):</em> The Fe<sup>2+</sup> ions are further oxidized by atmospheric oxygen to form Ferric ions (Fe<sup>3+</sup>), which precipitate as hydrated ferric oxide (Rust).<br>
+            2Fe<sup>2+</sup>(aq) + &frac12;O<sub>2</sub>(g) + 2H<sub>2</sub>O(l) &rarr; Fe<sub>2</sub>O<sub>3</sub>(s) + 4H<sup>+</sup>(aq)<br>
+            Fe<sub>2</sub>O<sub>3</sub> + xH<sub>2</sub>O &rarr; <strong>Fe<sub>2</sub>O<sub>3</sub>&middot;xH<sub>2</sub>O (Rust)</strong>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-header">SECTION C (15 Marks) - Long Answer Type</div>
+
+    <!-- Question 11 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q11. Three electrolytic cells A, B, and C containing solutions of ZnSO<sub>4</sub>, AgNO<sub>3</sub>, and CuSO<sub>4</sub> respectively, are connected in series. A steady direct current of 1.5 Amperes was passed through them until exactly 1.45 g of silver was deposited at the cathode of cell B.<br>
+            (a) State Faraday's First and Second Laws of electrolysis which govern this setup.<br>
+            (b) Calculate the exact time for which the current flowed in the circuit.<br>
+            (c) What exact mass of copper and zinc were deposited in cells C and A respectively? (Given atomic masses: Ag = 108 u, Cu = 63.5 u, Zn = 65.3 u, F = 96500 C mol<sup>-1</sup>).
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Faraday's Laws):</strong><br>
+            Cells in series receive the exact same amount of electrical charge (Q). Faraday's Second Law dictates that the mass deposited in series cells is directly proportional to their equivalent weights.
+        </div>
+        
+        <div class="formula-box">
+            First Law: m = Z &times; I &times; t = (M / nF) &times; I &times; t<br>
+            Second Law: m<sub>1</sub> / E<sub>1</sub> = m<sub>2</sub> / E<sub>2</sub>
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>(a) Statement of Laws:</strong><br>
+            &bull; <em>First Law:</em> The amount of chemical reaction (mass of substance deposited or liberated) at any electrode is directly proportional to the quantity of electricity (charge, Q) passed through the electrolyte.<br>
+            &bull; <em>Second Law:</em> When the same quantity of electricity is passed through different electrolytes connected in series, the masses of the substances produced at the electrodes are directly proportional to their equivalent weights (Atomic Mass / Valency).<br><br>
+
+            <strong>(b) Calculation of Time (t):</strong><br>
+            Focus on Cell B (Silver).<br>
+            Reaction: Ag<sup>+</sup> + 1e<sup>-</sup> &rarr; Ag(s) [n = 1]<br>
+            Mass of Ag (m) = 1.45 g, Current (I) = 1.5 A, Molar mass (M) = 108 g/mol.<br>
+            Using First Law: m = (M / nF) &times; I &times; t<br>
+            1.45 = (108 / (1 &times; 96500)) &times; 1.5 &times; t<br>
+            t = (1.45 &times; 96500) / (108 &times; 1.5) = 139925 / 162<br>
+            t &approx; <strong>863.73 seconds</strong> (approx 14 minutes and 24 seconds).<br><br>
+
+            <strong>(c) Mass of Copper and Zinc:</strong><br>
+            Using Faraday's Second Law. Let Equivalent Weight be E = Atomic Mass / n.<br>
+            E<sub>Ag</sub> = 108 / 1 = 108<br>
+            E<sub>Cu</sub> = 63.5 / 2 = 31.75<br>
+            E<sub>Zn</sub> = 65.3 / 2 = 32.65<br><br>
+
+            <em>For Copper (Cell C):</em><br>
+            m<sub>Cu</sub> / E<sub>Cu</sub> = m<sub>Ag</sub> / E<sub>Ag</sub><br>
+            m<sub>Cu</sub> / 31.75 = 1.45 / 108<br>
+            m<sub>Cu</sub> = (1.45 &times; 31.75) / 108 = 46.0375 / 108 &approx; <strong>0.426 g</strong>.<br><br>
+
+            <em>For Zinc (Cell A):</em><br>
+            m<sub>Zn</sub> / E<sub>Zn</sub> = m<sub>Ag</sub> / E<sub>Ag</sub><br>
+            m<sub>Zn</sub> / 32.65 = 1.45 / 108<br>
+            m<sub>Zn</sub> = (1.45 &times; 32.65) / 108 = 47.3425 / 108 &approx; <strong>0.438 g</strong>.
+        </div>
+        
+        <div class="final-answer">
+            Time (t) = 863.73 s | Mass of Cu = 0.426 g | Mass of Zn = 0.438 g
+        </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q12. For the reaction occurring in a standard galvanic cell: <b>Mg(s) + 2Ag<sup>+</sup>(aq) &rarr; Mg<sup>2+</sup>(aq) + 2Ag(s)</b><br>
+            (a) Represent the cell schematically.<br>
+            (b) Calculate the standard cell potential (E&deg;<sub>cell</sub>) and the standard Gibbs free energy change (&Delta;G&deg;) at 298 K. (Given: E&deg;<sub>Mg<sup>2+</sup>/Mg</sub> = -2.36 V, E&deg;<sub>Ag<sup>+</sup>/Ag</sub> = 0.80 V, F = 96500 C mol<sup>-1</sup>).<br>
+            (c) Calculate the maximum electrical work that can be strictly obtained from this cell under standard conditions.<br>
+            (d) Determine the equilibrium constant (K<sub>c</sub>) for the reaction at 298 K.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concepts (Thermodynamics of Cells):</strong><br>
+            &bull; E&deg;<sub>cell</sub> = E&deg;<sub>cathode</sub> - E&deg;<sub>anode</sub><br>
+            &bull; &Delta;G&deg; = -nFE&deg;<sub>cell</sub> (Gibbs energy is the negative of maximum useful electrical work).<br>
+            &bull; Equilibrium constant relates to standard potential via: log K<sub>c</sub> = (nE&deg;) / 0.0591
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            <strong>(a) Cell Representation:</strong><br>
+            Anode (Oxidation): Mg &rarr; Mg<sup>2+</sup> + 2e<sup>-</sup><br>
+            Cathode (Reduction): 2Ag<sup>+</sup> + 2e<sup>-</sup> &rarr; 2Ag<br>
+            Representation: <strong>Mg(s) | Mg<sup>2+</sup>(aq) || Ag<sup>+</sup>(aq) | Ag(s)</strong><br><br>
+
+            <strong>(b) Standard Cell Potential & Gibbs Free Energy:</strong><br>
+            E&deg;<sub>cell</sub> = E&deg;<sub>Cathode</sub> - E&deg;<sub>Anode</sub><br>
+            E&deg;<sub>cell</sub> = E&deg;<sub>Ag+/Ag</sub> - E&deg;<sub>Mg2+/Mg</sub><br>
+            E&deg;<sub>cell</sub> = 0.80 V - (-2.36 V) = <strong>3.16 V</strong>.<br><br>
+            
+            Number of electrons exchanged, n = 2.<br>
+            &Delta;G&deg; = -n F E&deg;<sub>cell</sub><br>
+            &Delta;G&deg; = -2 &times; 96500 C mol<sup>-1</sup> &times; 3.16 V<br>
+            &Delta;G&deg; = -609,880 J mol<sup>-1</sup> = <strong>-609.88 kJ mol<sup>-1</sup></strong>.<br><br>
+
+            <strong>(c) Maximum Electrical Work:</strong><br>
+            Maximum electrical work done by a galvanic cell is equal to the decrease in its Gibbs free energy.<br>
+            W<sub>max</sub> = - &Delta;G&deg; = -(-609.88 kJ mol<sup>-1</sup>) = <strong>609.88 kJ mol<sup>-1</sup></strong>.<br><br>
+
+            <strong>(d) Equilibrium Constant (K<sub>c</sub>):</strong><br>
+            Using the formula: E&deg;<sub>cell</sub> = (0.0591 / n) &times; log K<sub>c</sub><br>
+            3.16 = (0.0591 / 2) &times; log K<sub>c</sub><br>
+            log K<sub>c</sub> = (3.16 &times; 2) / 0.0591<br>
+            log K<sub>c</sub> = 6.32 / 0.0591 = 106.937...<br>
+            K<sub>c</sub> = Antilog(106.937) = 10<sup>0.937</sup> &times; 10<sup>106</sup> &approx; <strong>8.65 &times; 10<sup>106</sup></strong>.
+        </div>
+        
+        <div class="final-answer">
+            E&deg; = 3.16 V | &Delta;G&deg; = -609.88 kJ/mol | W<sub>max</sub> = 609.88 kJ/mol | K<sub>c</sub> = 8.65 &times; 10<sup>106</sup>
+        </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-card">
+        <div class="question-text">
+            Q13. The conductivity (&kappa;) of a 0.001028 M aqueous solution of acetic acid (CH<sub>3</sub>COOH) is experimentally found to be 4.95 &times; 10<sup>-5</sup> S cm<sup>-1</sup> at 298 K.<br>
+            (a) Calculate the molar conductivity (&Lambda;<sub>m</sub>) of this specific solution.<br>
+            (b) If the limiting molar conductivities (&Lambda;&deg;<sub>m</sub>) of H<sup>+</sup> and CH<sub>3</sub>COO<sup>-</sup> ions are 349.6 S cm<sup>2</sup> mol<sup>-1</sup> and 40.9 S cm<sup>2</sup> mol<sup>-1</sup> respectively, calculate the degree of dissociation (&alpha;) of acetic acid at this given concentration.<br>
+            (c) Calculate the acid dissociation constant (K<sub>a</sub>) of the acetic acid.<br>
+            (d) What mathematically happens to the degree of dissociation (&alpha;) if this solution is further diluted with pure water? Justify briefly using Le Chatelier's principle or relevant formulas.
+        </div>
+
+        <div class="concept-box">
+            <strong>Key Concept (Weak Electrolyte Equilibria):</strong><br>
+            &bull; Molar Conductivity at concentration C: &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / C<br>
+            &bull; Degree of Dissociation: &alpha; = &Lambda;<sub>m</sub> / &Lambda;&deg;<sub>m</sub> (Ratio of conductivity at given C to conductivity at infinite dilution).<br>
+            &bull; Acid Dissociation Constant (Ostwald's Law): K<sub>a</sub> = (C &alpha;<sup>2</sup>) / (1 - &alpha;)
+        </div>
+
+        <div class="solution-step">
+            <strong>Solution:</strong><br>
+            Given: &kappa; = 4.95 &times; 10<sup>-5</sup> S cm<sup>-1</sup>, C = 0.001028 M.<br><br>
+            
+            <strong>(a) Molar Conductivity (&Lambda;<sub>m</sub>):</strong><br>
+            &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / C<br>
+            &Lambda;<sub>m</sub> = (4.95 &times; 10<sup>-5</sup> &times; 1000) / 0.001028<br>
+            &Lambda;<sub>m</sub> = 0.0495 / 0.001028 = <strong>48.15 S cm<sup>2</sup> mol<sup>-1</sup></strong>.<br><br>
+
+            <strong>(b) Degree of Dissociation (&alpha;):</strong><br>
+            First, find Limiting Molar Conductivity (&Lambda;&deg;<sub>m</sub>) using Kohlrausch's law:<br>
+            &Lambda;&deg;<sub>m</sub>(CH<sub>3</sub>COOH) = &lambda;&deg;(H<sup>+</sup>) + &lambda;&deg;(CH<sub>3</sub>COO<sup>-</sup>)<br>
+            &Lambda;&deg;<sub>m</sub> = 349.6 + 40.9 = 390.5 S cm<sup>2</sup> mol<sup>-1</sup>.<br>
+            Now calculate &alpha;:<br>
+            &alpha; = &Lambda;<sub>m</sub> / &Lambda;&deg;<sub>m</sub> = 48.15 / 390.5 &approx; <strong>0.1233</strong> (or 12.33%).<br><br>
+
+            <strong>(c) Acid Dissociation Constant (K<sub>a</sub>):</strong><br>
+            Reaction: CH<sub>3</sub>COOH &harr; CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup><br>
+            Initial C: C ........ 0 ........ 0<br>
+            Equilib.: C(1-&alpha;) .. C&alpha; ....... C&alpha;<br>
+            K<sub>a</sub> = [CH<sub>3</sub>COO<sup>-</sup>][H<sup>+</sup>] / [CH<sub>3</sub>COOH] = (C&alpha; &times; C&alpha;) / C(1-&alpha;) = C&alpha;<sup>2</sup> / (1-&alpha;)<br>
+            K<sub>a</sub> = (0.001028 &times; (0.1233)<sup>2</sup>) / (1 - 0.1233)<br>
+            K<sub>a</sub> = (0.001028 &times; 0.01520) / 0.8767<br>
+            K<sub>a</sub> = 0.00001562 / 0.8767 &approx; <strong>1.78 &times; 10<sup>-5</sup></strong>.<br><br>
+
+            <strong>(d) Effect of Further Dilution:</strong><br>
+            According to Ostwald's Dilution Law (K<sub>a</sub> &approx; C&alpha;<sup>2</sup> for weak electrolytes where 1-&alpha; &approx; 1), we get &alpha; = &radic;(K<sub>a</sub> / C) or &alpha; = &radic;(K<sub>a</sub> &times; V). <br>
+            Because K<sub>a</sub> is a constant at a given temperature, mathematically, <strong>as Concentration (C) decreases (or Volume V increases), the degree of dissociation (&alpha;) must increase</strong>. <br>
+            <em>Le Chatelier's Principle:</em> Adding water dilutes all species, decreasing their concentrations. The equilibrium shifts forward (towards the side with more moles of aqueous particles, i.e., the right side) to counteract this drop, thus ionizing more acetic acid.
+        </div>
+        
+        <div class="final-answer">
+            &Lambda;<sub>m</sub> = 48.15 S cm<sup>2</sup> mol<sup>-1</sup> | &alpha; = 0.1233 | K<sub>a</sub> = 1.78 &times; 10<sup>-5</sup>
+        </div>
+    </div>
+
+    <div class="footer">Detailed Solutions Created by Team Vardaan</div>
+</body>
+</html>

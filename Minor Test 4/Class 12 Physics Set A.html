@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-transform: none; }
+        .question-container { margin-bottom: 20px; display: flex; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 8px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100% !important;
+                min-height: unset !important;
+                padding: 14px !important;
+                margin: 0 !important;
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            .institute-name { font-size: 16px !important; letter-spacing: 0 !important; }
+            .test-name { font-size: 13px !important; }
+            .exam-details {
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 12px !important;
+            }
+            .exam-details span { display: block !important; }
+            .instructions { font-size: 11px !important; }
+            .instructions ul { padding-left: 16px !important; }
+            .section-header { font-size: 12px !important; padding: 6px 10px !important; }
+            .question-container { margin-bottom: 16px !important; }
+            .options-grid, .options {
+                grid-template-columns: 1fr !important;
+                gap: 6px !important;
+                padding-left: 0 !important;
+            }
+            .q-num { width: 24px !important; font-size: 13px !important; }
+            .q-content { font-size: 13px !important; }
+            .option, .options > div { font-size: 12px !important; }
+            table { font-size: 11px !important; width: 100% !important; overflow-x: auto !important; display: block !important; }
+            .footer { font-size: 10px !important; margin-top: 20px !important; }
+            img { max-width: 100% !important; height: auto !important; }
+        } 
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Physics Test Part 2 (Set A)</div>
+        <div class="exam-details">
+            <span>Class: 12</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 100</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. There are 25 questions in total.</li>
+                <li>Each question carries exactly 4 marks.</li>
+                <li>The paper is divided into three thematic sections for organizational purposes, aligned with JEE Mains pattern.</li>
+                <li>Choose the correct option (Single Correct Choice Type).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A: Electric Dipole & Equilibrium (40 Marks)
+        <span class="marks-info">(Questions 1 to 10 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            What is the magnitude of the electric field on the equatorial line of a short electric dipole of dipole moment <em>p</em> at a distance <em>r</em> from its center? (Let <em>k = 1 / 4&pi;&epsilon;<sub>0</sub></em>)
+            <div class="options">
+                <div>(A) 2kp / r<sup>3</sup></div>
+                <div>(B) kp / r<sup>3</sup></div>
+                <div>(C) kp / r<sup>2</sup></div>
+                <div>(D) 2kp / r<sup>2</sup></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            The direction of the electric field at a point on the equatorial line of an electric dipole is:
+            <div class="options">
+                <div>(A) Parallel to the dipole moment <strong>p</strong></div>
+                <div>(B) Antiparallel to the dipole moment <strong>p</strong></div>
+                <div>(C) Perpendicular to the dipole moment <strong>p</strong></div>
+                <div>(D) Inclined at 45&deg; to the dipole moment <strong>p</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            An electric dipole is placed in a uniform electric field <strong>E</strong>. What is the net force experienced by the dipole?
+            <div class="options">
+                <div>(A) pE</div>
+                <div>(B) Zero</div>
+                <div>(C) p / E</div>
+                <div>(D) pE cos&theta;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            The torque acting on an electric dipole of moment <strong>p</strong> placed in a uniform electric field <strong>E</strong> is given by:
+            <div class="options">
+                <div>(A) <strong>p</strong> &bull; <strong>E</strong></div>
+                <div>(B) <strong>E</strong> &times; <strong>p</strong></div>
+                <div>(C) <strong>p</strong> &times; <strong>E</strong></div>
+                <div>(D) Zero</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            A dipole is placed in a uniform electric field. The potential energy of the dipole is minimum when the angle between dipole moment <strong>p</strong> and electric field <strong>E</strong> is:
+            <div class="options">
+                <div>(A) 0&deg;</div>
+                <div>(B) 90&deg;</div>
+                <div>(C) 180&deg;</div>
+                <div>(D) 45&deg;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Identify the condition for unstable equilibrium of an electric dipole placed in a uniform electric field.
+            <div class="options">
+                <div>(A) &theta; = 0&deg;</div>
+                <div>(B) &theta; = 90&deg;</div>
+                <div>(C) &theta; = 180&deg;</div>
+                <div>(D) &theta; = 270&deg;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Calculate the work done by an external agent in rotating a dipole from its position of stable equilibrium to unstable equilibrium in a uniform electric field <em>E</em>.
+            <div class="options">
+                <div>(A) pE</div>
+                <div>(B) -2pE</div>
+                <div>(C) 2pE</div>
+                <div>(D) Zero</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            A small dipole with moment of inertia <em>I</em> and dipole moment <em>p</em> is displaced by a small angle &theta; from its stable equilibrium position in a uniform field <em>E</em>. The time period of its simple harmonic motion is:
+            <div class="options">
+                <div>(A) T = 2&pi;&radic;(I / pE)</div>
+                <div>(B) T = 2&pi;&radic;(pE / I)</div>
+                <div>(C) T = &pi;&radic;(I / pE)</div>
+                <div>(D) T = 2&pi;&radic;(I / 2pE)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The ratio of the magnitudes of the electric fields produced by a short dipole at an axial point and an equatorial point, equidistant from the center, is:
+            <div class="options">
+                <div>(A) 1 : 1</div>
+                <div>(B) 2 : 1</div>
+                <div>(C) 1 : 2</div>
+                <div>(D) 4 : 1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            If the electric field on the equatorial line of a dipole at distance <em>r</em> is <em>E</em>, what will be the electric field at distance <em>2r</em>?
+            <div class="options">
+                <div>(A) E / 2</div>
+                <div>(B) E / 4</div>
+                <div>(C) E / 8</div>
+                <div>(D) E / 16</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B: Continuous Charge & Gauss's Law (40 Marks)
+        <span class="marks-info">(Questions 11 to 20 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            A thin semi-circular ring of radius <em>R</em> carries a uniform linear charge density <em>&lambda;</em>. The magnitude of the electric field at the center of the arc is:
+            <div class="options">
+                <div>(A) &lambda; / (2&pi;&epsilon;<sub>0</sub>R)</div>
+                <div>(B) &lambda; / (4&pi;&epsilon;<sub>0</sub>R)</div>
+                <div>(C) 2&lambda; / (&pi;&epsilon;<sub>0</sub>R)</div>
+                <div>(D) Zero</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            According to Gauss's Law, the total electric flux through any closed surface is equal to:
+            <div class="options">
+                <div>(A) &epsilon;<sub>0</sub> &times; (net charge enclosed)</div>
+                <div>(B) (net charge enclosed) / &epsilon;<sub>0</sub></div>
+                <div>(C) 1 / (4&pi;&epsilon;<sub>0</sub>) &times; (net charge enclosed)</div>
+                <div>(D) Zero, always</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A charge <em>q</em> is placed exactly at the center of a cube. What is the electric flux passing through any ONE face of the cube?
+            <div class="options">
+                <div>(A) q / &epsilon;<sub>0</sub></div>
+                <div>(B) q / (6&epsilon;<sub>0</sub>)</div>
+                <div>(C) q / (8&epsilon;<sub>0</sub>)</div>
+                <div>(D) q / (4&epsilon;<sub>0</sub>)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            If a point charge <em>q</em> is placed at one of the corners of a cube, the total electric flux passing through the cube is:
+            <div class="options">
+                <div>(A) q / &epsilon;<sub>0</sub></div>
+                <div>(B) q / (2&epsilon;<sub>0</sub>)</div>
+                <div>(C) q / (4&epsilon;<sub>0</sub>)</div>
+                <div>(D) q / (8&epsilon;<sub>0</sub>)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            A solid non-conducting sphere of radius <em>R</em> has a volume charge density &rho; = &rho;<sub>0</sub>r, where <em>r</em> is the distance from the center. The dimensional formula for &rho;<sub>0</sub> is:
+            <div class="options">
+                <div>(A) [M<sup>0</sup> L<sup>-4</sup> T<sup>1</sup> A<sup>1</sup>]</div>
+                <div>(B) [M<sup>0</sup> L<sup>-3</sup> T<sup>1</sup> A<sup>1</sup>]</div>
+                <div>(C) [M<sup>1</sup> L<sup>-2</sup> T<sup>-1</sup> A<sup>1</sup>]</div>
+                <div>(D) [M<sup>0</sup> L<sup>-2</sup> T<sup>1</sup> A<sup>1</sup>]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            An electric dipole is completely enclosed within a spherical Gaussian surface. The net electric flux through the surface is:
+            <div class="options">
+                <div>(A) p / &epsilon;<sub>0</sub></div>
+                <div>(B) 2p / &epsilon;<sub>0</sub></div>
+                <div>(C) Zero</div>
+                <div>(D) Infinite</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            A charge <em>Q</em> is enclosed by a Gaussian spherical surface of radius <em>R</em>. If the radius is doubled, the outward electric flux will:
+            <div class="options">
+                <div>(A) Be doubled</div>
+                <div>(B) Increase four times</div>
+                <div>(C) Be reduced to half</div>
+                <div>(D) Remain the same</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            A hemispherical surface of radius <em>R</em> is placed in a uniform electric field <em>E</em> such that the flat face is perpendicular to the electric field lines. The magnitude of the flux through the curved surface is:
+            <div class="options">
+                <div>(A) &pi;R<sup>2</sup>E</div>
+                <div>(B) 2&pi;R<sup>2</sup>E</div>
+                <div>(C) Zero</div>
+                <div>(D) 4&pi;R<sup>2</sup>E</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            If &#8750; <strong>E</strong> &bull; d<strong>A</strong> = 0 over a closed surface, then:
+            <div class="options">
+                <div>(A) The electric field <strong>E</strong> must be zero everywhere on the surface.</div>
+                <div>(B) The total net charge enclosed within the surface must be zero.</div>
+                <div>(C) No charges can exist anywhere inside or outside the surface.</div>
+                <div>(D) The flux is entering the surface from one side only.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            A uniform rod of length <em>L</em> carries a total charge <em>Q</em>. The linear charge density <em>&lambda;</em> of the rod is:
+            <div class="options">
+                <div>(A) QL</div>
+                <div>(B) Q / L</div>
+                <div>(C) Q / L<sup>2</sup></div>
+                <div>(D) L / Q</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C: Applications of Gauss's Law (20 Marks)
+        <span class="marks-info">(Questions 21 to 25 - 4 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            The electric field at a distance <em>r</em> from an infinitely long straight uniformly charged wire having linear charge density <em>&lambda;</em> is proportional to:
+            <div class="options">
+                <div>(A) r</div>
+                <div>(B) 1 / r</div>
+                <div>(C) 1 / r<sup>2</sup></div>
+                <div>(D) r<sup>2</sup></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            Two infinite parallel plane sheets carry uniform surface charge densities +&sigma; and -&sigma; respectively. What is the magnitude of the electric field in the region between the two sheets?
+            <div class="options">
+                <div>(A) Zero</div>
+                <div>(B) &sigma; / (2&epsilon;<sub>0</sub>)</div>
+                <div>(C) &sigma; / &epsilon;<sub>0</sub></div>
+                <div>(D) 2&sigma; / &epsilon;<sub>0</sub></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            A uniformly charged thin spherical shell of radius <em>R</em> carries a total charge <em>Q</em>. What is the electric field at a point inside the shell at a distance <em>r</em> (where <em>r &lt; R</em>) from the center?
+            <div class="options">
+                <div>(A) Zero</div>
+                <div>(B) kQ / r<sup>2</sup></div>
+                <div>(C) kQ / R<sup>2</sup></div>
+                <div>(D) kQr / R<sup>3</sup></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            For a uniformly charged thin spherical shell of radius <em>R</em>, the electric field just outside the surface of the shell is:
+            <div class="options">
+                <div>(A) Zero</div>
+                <div>(B) &sigma; / &epsilon;<sub>0</sub></div>
+                <div>(C) &sigma; / (2&epsilon;<sub>0</sub>)</div>
+                <div>(D) Infinity</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            An electron of mass <em>m</em> and charge <em>-e</em> revolves in a circular orbit around a uniformly charged infinitely long straight wire of linear charge density <em>&lambda;</em>. The orbital velocity of the electron is independent of:
+            <div class="options">
+                <div>(A) Mass of electron</div>
+                <div>(B) Linear charge density &lambda;</div>
+                <div>(C) Charge of electron</div>
+                <div>(D) Radius of the orbit</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
