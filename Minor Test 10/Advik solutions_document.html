@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- Including MathJax for rendering fractional marks securely -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #b30000; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #333; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; background-color: #f0f0f0; padding: 5px; border: 1px solid #ccc; font-size: 13pt; color: #2c3e50; }
+        
+        .question-container { margin-bottom: 25px; display: flex; flex-direction: column; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .q-row { display: flex; justify-content: space-between; align-items: flex-start; }
+        .q-text-area { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; width: 45px; flex-shrink: 0; color: #b30000; }
+        .q-content { flex-grow: 1; color: #444; font-style: italic; }
+        .marks { font-weight: bold; color: #d9534f; white-space: nowrap; background: #fdf5f5; padding: 2px 8px; border: 1px solid #ebccd1; border-radius: 4px; font-size: 11pt; }
+        
+        .solution-box { margin-top: 10px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #5cb85c; border-radius: 4px; }
+        .explanation { font-size: 10.5pt; color: #666; margin-top: 8px; border-top: 1px dotted #ccc; padding-top: 5px; }
+        .letter-format { border: 1px dashed #999; padding: 15px; background-color: #fff; font-family: Arial, sans-serif; font-size: 11pt; margin-top: 10px; }
+        .letter-format p { margin: 5px 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 15px; min-height: auto; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+            .q-row { flex-direction: column; }
+            .marks { align-self: flex-end; margin-top: 5px; font-size: 11pt; }
+            .mjx-chtml { white-space: normal !important; word-wrap: break-word; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 8 (ICSE)</span>
+            <span>Subject: English Grammar</span>
+            <span>Time: 1 hr 30 min</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A SOLUTIONS (10 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 1.</div>
+                <div class="q-content">Change to Indirect: The teacher said to the students, "Have you completed your assignments?"</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> The teacher asked the students if (or whether) they had completed their assignments.
+            <div class="explanation"><em>Explanation:</em> The reporting verb changes to 'asked'. Since it is a Yes/No question, the conjunction 'if' or 'whether' is used. Present perfect tense changes to past perfect.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 2.</div>
+                <div class="q-content">Change to Indirect: She said, "Alas! I have failed the entrance test."</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> She exclaimed with sorrow that she had failed the entrance test.
+            <div class="explanation"><em>Explanation:</em> 'Alas' denotes sadness, so reporting verb becomes 'exclaimed with sorrow'. The present perfect tense changes to past perfect ('had failed').</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 3.</div>
+                <div class="q-content">Change to Indirect: My mother said to me, "Do not waste your time playing video games."</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> My mother advised (or warned) me not to waste my time playing video games.
+            <div class="explanation"><em>Explanation:</em> Imperative negative sentence. "Said to" changes to "advised". "Do not" changes to "not to". Pronoun 'your' changes to 'my'.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 4.</div>
+                <div class="q-content">Fill in the blanks with determiners: (a) ___ knowledge... (b) Is there ___ coffee...</div>
+            </div>
+            <div class="marks">[1+1=2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong><br>
+            (a) <strong>A little</strong> knowledge is a dangerous thing.<br>
+            (b) Is there <strong>any</strong> coffee left in the pot?
+            <div class="explanation"><em>Explanation:</em> 'A little' means a small amount (positive sense), which fits the proverb. 'Any' is used in interrogative sentences for uncountable nouns.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 5.</div>
+                <div class="q-content">Choose the correct determiner: (a) He has ___ experience... (b) ___ the brothers...</div>
+            </div>
+            <div class="marks">[1+1=2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong><br>
+            (a) He has <strong>much</strong> experience in software development.<br>
+            (b) <strong>Both</strong> the brothers are participating in the marathon.
+            <div class="explanation"><em>Explanation:</em> 'Experience' is an uncountable noun, so 'much' is used. 'Both' is used for a specific pair of two, followed by 'the'.</div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B SOLUTIONS (10 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 6.</div>
+                <div class="q-content">Change to Direct: The manager ordered the clerk to bring the file immediately.</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> The manager said to the clerk, "Bring the file immediately."
+            <div class="explanation"><em>Explanation:</em> The reporting verb 'ordered' indicates an imperative sentence in direct speech.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 7.</div>
+                <div class="q-content">Change to Direct: He asked me where I was going for my summer vacation.</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> He said to me, "Where are you going for your summer vacation?"
+            <div class="explanation"><em>Explanation:</em> 'Asked' reverts to 'said to'. The past continuous tense ('was going') reverts to present continuous ('are going').</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 8.</div>
+                <div class="q-content">Identify and correct the determiner error: (a) I don't have some money... (b) She has read whole books...</div>
+            </div>
+            <div class="marks">[1+1=2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong><br>
+            (a) I don't have <strong>any</strong> money to lend you right now.<br>
+            (b) She has read <strong>all the</strong> books in the public library.
+            <div class="explanation"><em>Explanation:</em> 'Any' is used in negative sentences, not 'some'. 'Whole' is used with singular nouns (e.g., the whole book), whereas 'all' is used with plural nouns.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 9.</div>
+                <div class="q-content">Insert suitable determiners: (a) ___ boy... (b) I have bought ___ apples.</div>
+            </div>
+            <div class="marks">[1+1=2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong><br>
+            (a) <strong>Each</strong> (or Every) boy in the class was given a certificate of participation.<br>
+            (b) I have bought <strong>some</strong> fresh apples from the market.
+            <div class="explanation"><em>Explanation:</em> 'Each/Every' correctly distributes the singular noun 'boy'. 'Some' is used in affirmative sentences for countable plurals.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 10.</div>
+                <div class="q-content">Change to Indirect (Focus on demonstrative determiners): John said, "This is the best book I have ever read."</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Answer:</strong> John said that <strong>that</strong> was the best book he had ever read.
+            <div class="explanation"><em>Explanation:</em> The demonstrative determiner 'this' changes to 'that'. The first 'that' is the conjunction, and the second 'that' replaces 'this'. Present perfect ('have ever read') changes to past perfect ('had ever read').</div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C SOLUTIONS (30 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 11.</div>
+                <div class="q-content">Formal Letter: Letter to the Editor regarding the nuisance of loudspeakers.</div>
+            </div>
+            <div class="marks">[10 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Marking Scheme:</strong> <br>
+            Format (Sender's Add, Date, Receiver's Add, Subject, Salutation, Subscription): \(\mathbf{3}\) <strong>Marks</strong> <br>
+            Content & Body (Issue, Effects, Appeal): \(\mathbf{4}\) <strong>Marks</strong> <br>
+            Expression (Fluency & Accuracy): \(\mathbf{3}\) <strong>Marks</strong>
+            
+            <div class="letter-format">
+                <p>12, Sunrise Apartments<br>Civil Lines<br>City - [Pin Code]</p>
+                <p>15th March 2024</p>
+                <p>The Editor<br>The Daily Times<br>City - [Pin Code]</p>
+                <p><strong>Subject: Nuisance caused by the unregulated use of loudspeakers.</strong></p>
+                <p>Respected Sir/Madam,</p>
+                <p>Through the columns of your esteemed newspaper, I wish to draw the attention of the concerned authorities towards the growing nuisance of loudspeakers in our locality.</p>
+                <p>Of late, the indiscriminate use of loudspeakers during religious festivals, local functions, and political rallies has crossed all acceptable limits. These blaring speakers are often played late into the night, blatantly violating noise pollution regulations. As this is the crucial examination season, the deafening noise is causing immense distress to students, making it impossible for them to concentrate on their studies. Furthermore, the elderly and the sick are suffering from severe anxiety and sleep deprivation.</p>
+                <p>I earnestly appeal to the local authorities and law enforcement agencies to take stringent action against the defaulters and strictly enforce the time restrictions on the use of loudspeakers.</p>
+                <p>Thanking you.</p>
+                <p>Yours faithfully,<br>[Student's Name]</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 12.</div>
+                <div class="q-content">Summary Writing based on the given passage (Importance of Trees).</div>
+            </div>
+            <div class="marks">[10 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>Title:</strong> The Lifeline of Our Planet / The Importance of Trees <span style="float:right; font-weight:bold; font-size:10pt;">[\(2\) Marks]</span><br><br>
+            <strong>Summary:</strong><br>
+            Trees are vital for Earth's ecological balance. They provide essential oxygen, absorb harmful carbon dioxide, prevent soil erosion, and offer habitats to diverse wildlife. Additionally, they provide valuable resources like timber and medicine. To counter the severe threats of deforestation, extensive afforestation is urgently required. <span style="float:right; font-weight:bold; font-size:10pt;">[\(8\) Marks]</span>
+            <div class="explanation"><em>Marking Scheme:</em> Word limit: ~45 words. Deduct marks for exceeding 60 words, copying exact sentences without paraphrasing, or missing key points (oxygen, soil, habitat, afforestation).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-row">
+            <div class="q-text-area">
+                <div class="q-num">Ans 13.</div>
+                <div class="q-content">Applied Grammar: (A) Dialogue Conversion and (B) Cloze Passage - Determiners.</div>
+            </div>
+            <div class="marks">[10 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <strong>(A) Dialogue Conversion</strong> <span style="float:right; font-weight:bold; font-size:10pt;">[\(5\) Marks]</span><br>
+            The doctor asked the patient how he was feeling that day. The patient replied that he had a severe headache. The doctor then inquired if he had taken the medicine he had prescribed the previous day. The patient replied in the affirmative but added that it had not helped much.<br>
+            <div class="explanation"><em>Note:</em> Give \(1\frac{1}{4}\) marks for each correct sentence conversion (ensuring time/pronoun/tense shifts).</div>
+            
+            <br>
+            <strong>(B) Cloze Passage - Determiners</strong> <span style="float:right; font-weight:bold; font-size:10pt;">[\(5 \times 1 = 5\) Marks]</span><br>
+            Once upon a time, there lived <strong>(i) a</strong> king who was highly respected. He had <strong>(ii) much</strong> (or a lot of) wealth in his treasury, but he never spent <strong>(iii) any</strong> of it on his own luxuries. <strong>(iv) All</strong> (or The) people in his kingdom loved him dearly because he patiently listened to <strong>(v) every</strong> problem they faced and tried to solve it.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

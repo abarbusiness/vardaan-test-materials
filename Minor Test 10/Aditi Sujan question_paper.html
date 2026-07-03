@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .reading-passage {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-style: italic;
+            background-color: #fcfcfc;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                padding: 15px;
+                min-height: auto;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .institute-name {
+                font-size: 18pt;
+            }
+            .watermark {
+                width: 90%;
+            }
+        }
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test - English Language</div>
+        <div class="exam-details">
+            <span>Class: 8 (ICSE)</span>
+            <span>Subject: English Grammar</span>
+            <span>Time: 1 hr 30 min</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Do not copy the questions; write the correct question number against your answer.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">Change the following sentence from Active to Passive Voice:<br> <em>"The chief guest distributed the prizes to the winners."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">Change the following sentence from Passive to Active Voice:<br> <em>"The new policy was announced by the principal yesterday."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">Change the following sentence into Indirect Speech:<br> <em>The teacher said to the students, "The Earth revolves around the Sun."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">Change the following sentence into Direct Speech:<br> <em>He requested me to wait there till he returned.</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">Identify the voice of the following sentence and change it to the other voice:<br> <em>"By whom was this beautiful poem written?"</em></div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">Convert the following complex sentence into Passive Voice:<br> <em>"Everyone knows that the management will accept our proposal."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">Change the following sentence into Indirect Speech, maintaining the conditional structure:<br> <em>She said to him, "If it rains tomorrow, we will cancel the picnic."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">Change the following dialogue into Indirect Speech:<br> <em>"Why are you looking so sad?" Rita asked. "Alas! I have lost my diamond ring," the lady cried.</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">Convert the following sentence into Active Voice, supplying a suitable subject if necessary:<br> <em>"The injured hiker was helped to reach the nearest town, and he was given immediate medical attention."</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">Change the following sentence into Indirect Speech:<br> <em>The captain said to the soldiers, "Stand at ease! Do not move until I give the order."</em></div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (30 Marks)<span class="marks-info">(Composition and Applied Grammar)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Formal Letter (10 Marks):</strong> Write a letter to the Municipal Commissioner of your city complaining about the poor condition of roads and the irregular clearance of garbage in your locality. Request prompt action to resolve these issues.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Summary Writing (10 Marks):</strong> Read the passage given below carefully and write a summary of it in about <strong>40-50 words</strong>. Supply a suitable title.
+            <div class="reading-passage">
+                The 1943 copper penny is worth a lot of money. Copper was hard to get during the war because it was primarily being used for military purposes, such as manufacturing ammunition and communication wires. Therefore, the government minted pennies using zinc-coated steel instead. However, a small batch of pennies was accidentally minted in copper, making them exceedingly rare today. Similarly, the 1955 double die penny is also highly valuable. These pennies were stamped twice by accident during the minting process, resulting in a distinct doubled image on the coin's face. Coin collectors covet these rare errors, and they are willing to pay thousands of dollars to add them to their collections.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Applied Grammar (10 Marks):</strong> Do as directed.
+            <br><br>
+            <strong>(A) Dialogue Conversion (5 Marks):</strong> Rewrite the following conversation in Indirect Speech in the form of a continuous paragraph.
+            <div class="reading-passage">
+                Mother: "Why are you so late from school today, Ravi?"<br>
+                Ravi: "I stayed back for football practice."<br>
+                Mother: "You should have informed me earlier. I was very worried."<br>
+                Ravi: "I am sorry, Mom. I will call you next time."
+            </div>
+            <strong>(B) Mixed Transformations (5 Marks):</strong> Do as directed for the following sentences.
+            <div class="sub-question">(i) Change to Passive Voice: <em>"Who has broken this beautiful glass vase?"</em></div>
+            <div class="sub-question">(ii) Change to Indirect Speech: <em>The teacher said to the boy, "Leave the room immediately and do not return!"</em></div>
+            <div class="sub-question">(iii) Change to Active Voice: <em>"The old building was heavily damaged by the fierce storm."</em></div>
+            <div class="sub-question">(iv) Change to Direct Speech: <em>She asked me if I would help her with her science project the next day.</em></div>
+            <div class="sub-question">(v) Change to Passive Voice: <em>"They are currently painting the walls of the auditorium."</em></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

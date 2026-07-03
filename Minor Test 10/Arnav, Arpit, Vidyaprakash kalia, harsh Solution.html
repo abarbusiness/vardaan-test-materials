@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution - Vardaan Learning Institute</title>
+    <!-- MathJax for any numerical marking breakdowns -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #fcfcfc; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-bottom: 3px solid #2c3e50; 
+            padding-bottom: 15px; 
+            background: linear-gradient(90deg, #ecf0f1, #ffffff, #ecf0f1);
+            border-radius: 8px 8px 0 0;
+        }
+        .institute-name { font-size: 22pt; font-weight: 800; color: #2c3e50; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 13pt; font-weight: 600; color: #e74c3c; margin-top: 5px; }
+        
+        .section-header { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 10px 15px; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 5px;
+            font-size: 12pt;
+        }
+        
+        .question-box {
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+        }
+        
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks-pill {
+            background-color: #2ecc71;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .solution-block {
+            padding-top: 10px;
+        }
+        
+        .ans-heading {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .sub-q {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9fa;
+            border-radius: 4px;
+        }
+
+        .sub-q-text { font-style: italic; color: #555; margin-bottom: 8px; font-size: 10.5pt;}
+        
+        .correct-ans {
+            font-weight: 600;
+            color: #000;
+            font-size: 11.5pt;
+        }
+
+        .teacher-note {
+            margin-top: 5px;
+            font-size: 9.5pt;
+            color: #e67e22;
+            background-color: #fdf2e9;
+            padding: 5px 8px;
+            border-radius: 3px;
+            border-left: 3px solid #e67e22;
+        }
+
+        .format-box {
+            border: 1px solid #bdc3c7;
+            padding: 20px;
+            background-color: white;
+            margin-top: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+        }
+
+        .marking-scheme {
+            margin-top: 15px;
+            background-color: #ebf5fb;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            border: 1px solid #d6eaf8;
+        }
+
+        @media (max-width: 768px) {
+            .format-box { width: 95%; padding: 15px; }
+            .institute-name { font-size: 18pt; }
+        }
+        
+        @media (max-width: 480px) {
+            .q-header { flex-direction: column; }
+            .q-marks-pill { align-self: flex-start; margin-top: 8px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTION KEY - Minor Test</div>
+        <div style="font-size: 10pt; margin-top: 5px; color: #7f8c8d;">English Grammar & Writing Skills | Max Marks: 50 | Time: 1.5 Hrs</div>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (20 Marks)</div>
+    
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-text">Q1. Change into Indirect Speech. Ensure proper tense and pronoun changes.</div>
+            <div class="q-marks-pill">10 Marks [5 x 2]</div>
+        </div>
+        
+        <div class="solution-block">
+            <div class="sub-q">
+                <div class="sub-q-text">(a) The principal said to the students, "The school will remain closed tomorrow due to heavy rain."</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">The principal told the students that the school would remain closed the next day (or the following day) due to heavy rain.</div>
+                <div class="teacher-note"><strong>Reasoning:</strong> 'said to' changes to 'told'. Conjunction 'that' is added. 'will' changes to 'would' (past form in reported speech). 'tomorrow' changes to 'the next day'.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(b) She asked me, "Have you submitted your final assignment to the coordinator?"</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">She asked me if (or whether) I had submitted my final assignment to the coordinator.</div>
+                <div class="teacher-note"><strong>Reasoning:</strong> Yes/No question, so 'if/whether' is used. Present perfect ('have submitted') changes to past perfect ('had submitted'). 'you' changes to 'I', and 'your' changes to 'my'.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(c) The doctor advised the patient, "Do not eat oily food and exercise daily."</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">The doctor advised the patient not to eat oily food and to exercise daily.</div>
+                <div class="teacher-note"><strong>Reasoning:</strong> Imperative sentence. Negative command 'Do not' changes to 'not to + verb'. The reporting verb is already 'advised' which is perfectly suited here.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(d) "What a magnificent performance you gave on stage!" exclaimed the director.</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">The director exclaimed with admiration/joy that he/she had given a very magnificent performance on stage.</div>
+                <div class="teacher-note"><strong>Reasoning:</strong> Exclamatory sentence changes to assertive. 'gave' (V2 - Simple Past) changes to 'had given' (Past Perfect). The word 'very' or 'truly' is added to show the intensity of 'What a'.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(e) He said, "I was studying for my exams when the lights went out."</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">He said that he had been studying for his exams when the lights went out (or had gone out).</div>
+                <div class="teacher-note"><strong>Reasoning:</strong> Past Continuous ('was studying') changes to Past Perfect Continuous ('had been studying'). Past simple ('went') can change to 'had gone', though keeping it as 'went' is also grammatically acceptable in time clauses.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-text">Q2. Transform the sentences from Active to Passive Voice or vice versa.</div>
+            <div class="q-marks-pill">10 Marks [5 x 2]</div>
+        </div>
+        
+        <div class="solution-block">
+            <div class="sub-q">
+                <div class="sub-q-text">(a) The management is continuously ignoring the legitimate demands of the workers. (Active)</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">The legitimate demands of the workers are continuously being ignored by the management.</div>
+                <div class="teacher-note"><strong>Rule:</strong> Present Continuous active (is/are + v-ing) becomes (is/are + being + V3) in passive. Plural object ('demands') takes 'are'.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(b) By whom was this exquisite portrait painted in the 18th century? (Passive)</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">Who painted this exquisite portrait in the 18th century?</div>
+                <div class="teacher-note"><strong>Rule:</strong> 'By whom' changes back to 'Who'. Past simple passive ('was painted') reverts to past simple active ('painted').</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(c) Please maintain absolute silence inside the library premises. (Active)</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">You are requested to maintain absolute silence inside the library premises. <br><em>(OR)</em> Absolute silence must be maintained inside the library premises.</div>
+                <div class="teacher-note"><strong>Rule:</strong> Sentences starting with 'Please' are usually changed using 'You are requested to'. Using modals like 'should be' or 'must be' is also correct.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(d) The government will have completed the new highway project before the next elections. (Active)</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">The new highway project will have been completed by the government before the next elections.</div>
+                <div class="teacher-note"><strong>Rule:</strong> Future Perfect (will have + V3) becomes (will have been + V3). The object 'the new highway project' becomes the subject.</div>
+            </div>
+
+            <div class="sub-q">
+                <div class="sub-q-text">(e) They expected the scientist to win the Nobel Prize for his groundbreaking discovery. (Active)</div>
+                <div class="ans-heading">Ans:</div>
+                <div class="correct-ans">It was expected by them that the scientist would win the Nobel Prize for his groundbreaking discovery. <br><em>(OR)</em> The scientist was expected to win the Nobel Prize for his groundbreaking discovery.</div>
+                <div class="teacher-note"><strong>Rule:</strong> Complex sentence structure. The second answer is more idiomatic and preferred in modern English grammar.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: SHORT WRITING SKILLS (10 Marks)</div>
+    
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-text">Q3. Notice Writing: Inter-School Drama Competition</div>
+            <div class="q-marks-pill">10 Marks</div>
+        </div>
+        
+        <div class="solution-block">
+            <div class="ans-heading">Model Answer (Format & Content):</div>
+            
+            <div class="format-box" style="font-family: Arial, sans-serif; text-align: center;">
+                <strong>ST. XAVIER'S HIGH SCHOOL, DELHI</strong><br>
+                <strong>NOTICE</strong><br>
+                <div style="text-align: left; margin-top: 10px;">14 October 202X</div>
+                <strong style="text-decoration: underline; display: block; margin: 10px 0;">Selection Trials for Inter-School Drama Competition</strong>
+                <div style="text-align: justify; margin-top: 10px;">
+                    This is to inform all students from Classes VIII to XII that our school is participating in the District Level Inter-School Drama Competition scheduled for next month. Selection trials to finalize the school drama troupe will be held as per the details given below:<br><br>
+                    <strong>Date:</strong> 20 October 202X<br>
+                    <strong>Time:</strong> 10:00 AM onwards<br>
+                    <strong>Venue:</strong> School Auditorium<br><br>
+                    Interested students with a flair for acting should register their names with the undersigned latest by 18 October 202X. For further queries, contact the undersigned.
+                </div>
+                <div style="text-align: left; margin-top: 20px;">
+                    <em>Ananya / Aarav</em><br>
+                    (Cultural Secretary)
+                </div>
+            </div>
+
+            <div class="marking-scheme">
+                <strong>Marking Breakdown:</strong><br>
+                Format (Box, Name of Institution, "NOTICE", Date, Heading, Sign & Designation) : \( 3 \) Marks<br>
+                Content (What, When, Where, Whom to contact, Deadline) : \( 4 \) Marks<br>
+                Expression (Grammar, Spelling, Tone) : \( 3 \) Marks<br>
+                <em>Total: \( 3 + 4 + 3 = 10 \) Marks</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C: LONG WRITING SKILLS (20 Marks)</div>
+    
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-text">Q4. Formal Letter (Choice 1): Complaint to Municipal Commissioner regarding dug-up roads.</div>
+            <div class="q-marks-pill">20 Marks</div>
+        </div>
+        
+        <div class="solution-block">
+            <div class="ans-heading">Model Answer:</div>
+            
+            <div class="format-box" style="font-family: Arial, sans-serif; text-align: left;">
+                45, Green Park<br>
+                Civil Lines<br>
+                Kanpur<br><br>
+                14 October 202X<br><br>
+                The Municipal Commissioner<br>
+                Kanpur Municipal Corporation<br>
+                Kanpur<br><br>
+                <strong>Subject: Request for immediate repair of dug-up road in Green Park locality.</strong><br><br>
+                Sir/Madam,<br><br>
+                Through this letter, I wish to draw your urgent attention to the deplorable condition of the main road leading to the Green Park locality in Civil Lines.<br><br>
+                The road was excavated by the civic authorities approximately two months ago to lay a new sewer line. While the underground pipe-laying work was completed weeks ago, the road has been left unattended and heavily dug up. Mountains of rubble and deep trenches make it nearly impossible for vehicles to pass, resulting in severe daily traffic jams during peak hours. <br><br>
+                Moreover, the open trenches pose a massive risk to the safety of pedestrians, especially the elderly and school-going children. We have witnessed multiple minor accidents involving two-wheelers skidding on the loose debris at night due to poor street lighting.<br><br>
+                Despite repeated verbal complaints to the local ward officers, no action has been initiated. I earnestly request you to instruct the concerned department to clear the rubble and reconstruct the road immediately to restore normalcy and prevent any fatal accidents.<br><br>
+                Thanking you.<br><br>
+                Yours faithfully,<br>
+                <em>Siddharth / Smriti</em><br>
+                (Resident, Green Park)
+            </div>
+            
+            <div class="marking-scheme">
+                <strong>Marking Breakdown (CBSE/ICSE Standard Scaled to 20):</strong><br>
+                Format (Sender's address, Date, Receiver's address, Subject, Salutation, Closing) : \( 5 \) Marks<br>
+                Content (Clear statement of issue, elaboration on effects/risks, call to action) : \( 10 \) Marks<br>
+                Expression (Coherence, Vocabulary, Grammatical accuracy) : \( 5 \) Marks<br>
+                <em>Total: \( 5 + 10 + 5 = 20 \) Marks</em>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-text">Q4. Formal Letter (Choice 2 - OR): Letter to Editor regarding social media influence on teenagers.</div>
+            <div class="q-marks-pill">20 Marks</div>
+        </div>
+        
+        <div class="solution-block">
+            <div class="ans-heading">Model Answer Overview (Key Points):</div>
+            <ul style="margin-top: 10px; color: #444;">
+                <li><strong>Format:</strong> Sender's Add -> Date -> The Editor, The Times of India, New Delhi -> Subject -> Sir/Madam -> Body -> Yours truly, Rakesh/Rupali.</li>
+                <li><strong>Introductory Paragraph:</strong> Express desire to use the columns of the esteemed newspaper to highlight the alarming impact of unchecked social media usage on teenagers.</li>
+                <li><strong>Main Body (The Problem):</strong> Constant scrolling leads to sleep deprivation, lack of physical activity, and severe distraction from academics. Unrealistic standards online trigger anxiety, depression, and self-esteem issues among the youth.</li>
+                <li><strong>Concluding Paragraph (Solutions):</strong> Parents should implement 'digital-free zones' and fixed screen times. Schools must conduct counseling sessions on digital detox and cyber hygiene. </li>
+            </ul>
+            <div class="teacher-note">
+                <strong>Teacher's Tip for Grading:</strong> Ensure the student maintains a formal, objective tone. The distinction between a complaint letter (direct action requested) and a letter to the editor (raising awareness) must be evident.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

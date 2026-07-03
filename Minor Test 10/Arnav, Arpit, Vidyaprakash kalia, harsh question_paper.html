@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- Polyfill and MathJax (included for template completeness) -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            width: 100%; 
+            max-width: 210mm; /* A4 Width for laptops/desktops */
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+
+        .exam-details span { margin: 5px 0; }
+        
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        .q-main { display: flex; width: 100%; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; text-align: justify; padding-right: 15px; }
+        .q-marks { font-weight: bold; flex-shrink: 0; text-align: right; white-space: nowrap; }
+        
+        .sub-question-container { 
+            display: flex; 
+            margin-top: 8px; 
+            margin-left: 10px; 
+            align-items: flex-start; 
+            justify-content: space-between;
+        }
+        
+        .sub-q-main { display: flex; flex-grow: 1; }
+        .sub-q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .sub-q-content { flex-grow: 1; text-align: justify; padding-right: 10px; }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 768px) {
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+            body { padding: 15px; font-size: 11pt; }
+        }
+        
+        @media (max-width: 480px) {
+            .institute-name { font-size: 15pt; }
+            .question-container, .sub-question-container { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; font-size: 10pt; }
+            body { padding: 10px; }
+            .q-num { width: 25px; }
+            .sub-q-num { width: 25px; }
+            .MathJax { font-size: 0.9em !important; } /* Handle equation breaks */
+        }
+
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 15mm; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test - English Grammar & Composition</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: English</span>
+            <span>Time: 1 Hour 30 Min</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Strictly adhere to the prescribed word limits and format.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (20 Marks)<span class="marks-info">(Attempt all questions)</span></div>
+    
+    <div class="question-container">
+        <div class="q-main">
+            <div class="q-num">1.</div>
+            <div class="q-content">
+                <strong>Change the following sentences from Active to Passive Voice or vice versa as required:</strong>
+                
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(a)</div>
+                        <div class="sub-q-content">The municipal workers are cleaning the streets after the festival.</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(b)</div>
+                        <div class="sub-q-content">Who broke the expensive crystal vase in the living room?</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(c)</div>
+                        <div class="sub-q-content">The new school uniform will be distributed by the management tomorrow.</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(d)</div>
+                        <div class="sub-q-content">Kindly submit all your assignments before the deadline.</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(e)</div>
+                        <div class="sub-q-content">The chef had prepared a delicious five-course meal for the guests.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[5 &times; 2 = 10]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-main">
+            <div class="q-num">2.</div>
+            <div class="q-content">
+                <strong>Change the following sentences into Indirect Speech. Ensure proper tense and pronoun changes:</strong>
+                
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(a)</div>
+                        <div class="sub-q-content">Rahul said, "I have completed my science project yesterday."</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(b)</div>
+                        <div class="sub-q-content">The teacher said to the students, "Honesty is the best policy."</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(c)</div>
+                        <div class="sub-q-content">The passenger asked the ticket collector, "When does the Rajdhani Express arrive at the platform?"</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(d)</div>
+                        <div class="sub-q-content">The old woman said, "Alas! I have lost my only source of income."</div>
+                    </div>
+                </div>
+                <div class="sub-question-container">
+                    <div class="sub-q-main">
+                        <div class="sub-q-num">(e)</div>
+                        <div class="sub-q-content">The doctor said to the patient, "Take these medicines regularly and avoid eating oily food."</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[5 &times; 2 = 10]</div>
+    </div>
+
+    <div class="section-header">SECTION B: SHORT WRITING SKILLS (10 Marks)<span class="marks-info">(Notice Writing)</span></div>
+    
+    <div class="question-container">
+        <div class="q-main">
+            <div class="q-num">3.</div>
+            <div class="q-content">
+                You are Aryan/Ananya, the Cultural Secretary of Delhi Public School, R.K. Puram. Your school is organizing an <strong>'Inter-School Science Exhibition'</strong> in the coming fortnight. Draft a formal notice in not more than 50 words to be put up on the school notice board, informing students of classes VI to VIII to submit their project models. Include all necessary details like date, time, venue, theme, and the deadline for submission.
+            </div>
+        </div>
+        <div class="q-marks">[10]</div>
+    </div>
+
+    <div class="section-header">SECTION C: LONG WRITING SKILLS (20 Marks)<span class="marks-info">(Formal Letter Writing)</span></div>
+    
+    <div class="question-container">
+        <div class="q-main">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                You are Raj/Rhea, a resident of 12, Civil Lines, Jaipur. For the past two months, there has been a significant increase in the number of stray dogs in your locality. They chase vehicles at night and have become a threat to the safety of children and the elderly. <br><br>
+                Write a formal letter to the <strong>Municipal Commissioner</strong> of the Jaipur Municipal Corporation, bringing this urgent issue to their attention. Highlight the safety concerns and request prompt action to relocate them to a safer shelter. (Word limit: 120-150 words).
+            </div>
+        </div>
+        <div class="q-marks">[20]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

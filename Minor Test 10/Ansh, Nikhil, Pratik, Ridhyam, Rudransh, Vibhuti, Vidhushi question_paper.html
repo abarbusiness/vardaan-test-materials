@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 10</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 2px 10px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex;}
+        .sq-num { width: 25px; flex-shrink: 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; width: 100%; margin: 0; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .exam-details span { margin: 2px 0; }
+            .section-header { font-size: 12pt; }
+            .q-num { width: 25px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 60%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 10</div>
+        <div class="exam-details">
+            <span>Class: 8</span>
+            <span>Subject: English Grammar</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Read the instructions for each question carefully.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            Fill in the blanks with suitable <strong>prepositions</strong>:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>She has been suffering from a severe fever __________ Monday.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The clever cat jumped __________ the wall to catch the mouse.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            Join the following pairs of sentences using appropriate <strong>conjunctions</strong>:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>He is poor. He is honest.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>You must work hard. You will fail the examination.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            Complete the sentences using the <strong>infinitive</strong> form of the verbs given in brackets:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>It is always easy __________ (advise) others but difficult to act.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The brave soldier refused __________ (obey) the illegal orders.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            Identify whether the underlined verbs are <strong>finite</strong> or <strong>non-finite</strong>:
+            <div class="sub-question"><div class="sq-num">(a)</div><div><u>Swimming</u> is considered an excellent full-body exercise.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The students <u>want</u> to go home early today.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            Choose the correct option to fill in the blanks:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>I am eagerly looking forward __________ meeting you next week. <em>(to / for / of)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>__________ he was feeling ill, he attended the mathematics class. <em>(Though / Because / As)</em></div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            Identify and correct the incorrect <strong>prepositions</strong> in the following sentences:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>I prefer drinking green tea than black coffee.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The principal was very angry on me for my behavior.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>We reached at the railway station right on time.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            Rewrite the following sentences using appropriate <strong>correlative conjunctions</strong> <em>(e.g., neither...nor, either...or, not only...but also)</em>:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>She does not speak English. She does not speak French.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>Rohan is a skilled musician. He is a talented painter.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>You can take the blue pen. You can take the red pen. (Choose one)</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            Combine the following pairs of sentences using an <strong>Infinitive</strong>:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>The poor man has three children. He must provide for them.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>I heard the news of your success. I was extremely happy.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>The old lady is very weak. She cannot walk without support.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            Pick out the <strong>finite</strong> and <strong>non-finite</strong> verbs from the sentences below (Specify which is which):
+            <div class="sub-question"><div class="sq-num">(a)</div><div>He went to the bustling market to buy some fresh fruits.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>Seeing the approaching lion, the terrified hunter climbed up a tree.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>My grandmother enjoys reading mystery novels in the evening.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            Complete the paragraph by filling in the blanks with suitable <strong>prepositions</strong> or <strong>conjunctions</strong>:
+            <br><br>
+            Ravi walked <strong>(a)</strong> __________ the dense park <strong>(b)</strong> __________ he suddenly saw his old friend sitting <strong>(c)</strong> __________ a wooden bench.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type / Detailed Application - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            Do as directed (Sentence Transformation focusing on conjunctions/infinitives):
+            <div class="sub-question"><div class="sq-num">(a)</div><div>As soon as the principal entered the hall, the students stood up. <em>(Rewrite using 'No sooner...than')</em></div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The luggage is so heavy that he cannot lift it. <em>(Rewrite using 'too...to')</em></div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>Walk fast otherwise you will miss the morning train. <em>(Rewrite beginning with 'Unless')</em></div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>Besides being an acclaimed singer, she is a classical dancer. <em>(Rewrite using 'Not only...but also')</em></div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>He was devastated when he heard the tragic news. <em>(Rewrite using an infinitive)</em></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            Fill in the blanks with the correct <strong>finite or non-finite form</strong> of the verbs given in brackets:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>We decided __________ (start) our journey early in the morning.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>__________ (err) is human, __________ (forgive) is divine.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>I watched the blind man carefully __________ (cross) the busy road.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>The strict manager made the employees __________ (wait) for three hours.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>My younger sister is very fond of __________ (listen) to classical music.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Paragraph Editing:</strong> Fill in the blanks with suitable <strong>prepositions</strong> and <strong>conjunctions</strong> to complete the passage correctly.
+            <br><br>
+            The weary traveler was walking <strong>(a)</strong> __________ the dark forest <strong>(b)</strong> __________ he suddenly heard a loud, terrifying roar. He quickly looked <strong>(c)</strong> __________ him <strong>(d)</strong> __________ could not see any wild animal. Trembling <strong>(e)</strong> __________ fear, he decided to hide behind a massive oak tree.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q14.</div>
+        <div class="q-content">
+            Answer the following conceptual questions clearly:
+            <div class="sub-question"><div class="sq-num">(a)</div><div>Differentiate between <strong>Finite</strong> and <strong>Non-finite verbs</strong>. Provide one clear example sentence for each to support your answer. <em>(2.5 Marks)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>Explain how a <strong>Preposition</strong> functions differently from a <strong>Conjunction</strong> in a sentence. Provide one example sentence for each. <em>(2.5 Marks)</em></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q15.</div>
+        <div class="q-content">
+            Synthesize (combine) the following sets of simple sentences into one single simple sentence using a <strong>Participle</strong>, <strong>Infinitive</strong>, or <strong>Preposition with a Gerund</strong> (Non-finite verbs):
+            <div class="sub-question"><div class="sq-num">(a)</div><div>The sun rose brightly. The thick fog disappeared completely.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>He finished his complicated homework. He went out to play with his friends.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>I have some important duties. I must perform them diligently.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>He was extremely tired of walking. He sat down under a tree to rest.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>The beggar found a hundred-rupee note. He was absolutely delighted.</div></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
