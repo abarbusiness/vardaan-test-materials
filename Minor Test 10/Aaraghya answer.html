@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b30000; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #f0f0f0; padding: 5px;}
+        
+        .qa-container { margin-bottom: 20px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-box { background-color: #f9f9f9; padding: 10px; border-left: 4px solid #333; margin-bottom: 10px; font-style: italic; text-align: justify;}
+        
+        .solution-box { display: flex; flex-direction: column; }
+        .sol-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px; color: #006600; }
+        .marks-right { font-weight: bold; color: #b30000; border: 1px solid #b30000; padding: 2px 8px; border-radius: 4px; font-size: 10pt; background: #fff;}
+        
+        .ans-text { text-align: justify; }
+        .ans-text ul { margin-top: 5px; padding-left: 20px; }
+        .marking-scheme { font-size: 9.5pt; color: #555; background: #fdfdfd; padding: 8px; border-left: 3px solid #b30000; margin-top: 10px;}
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .sol-header { flex-direction: column; align-items: flex-start; gap: 5px;}
+            .marks-right { align-self: flex-start; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS & MARKING SCHEME - MINOR TEST (MIT 10)</div>
+        <p style="font-weight:bold; margin-top:5px;">Class: 7 ICSE | Subject: English Grammar | Max Marks: 50</p>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (35 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q1. Identify nouns and state their kind:</strong> (a) Honesty is the best policy. (b) The jury gave its verdict. (c) Ashoka was a wise king. (d) The crowd gathered... (e) Iron is a useful metal.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                <ul>
+                    <li><strong>(a)</strong> Honesty - Abstract Noun, Policy - Abstract Noun</li>
+                    <li><strong>(b)</strong> Jury - Collective Noun, Verdict - Abstract Noun</li>
+                    <li><strong>(c)</strong> Ashoka - Proper Noun, King - Common Noun</li>
+                    <li><strong>(d)</strong> Crowd - Collective Noun, Parliament - Common/Proper Noun (depending on context)</li>
+                    <li><strong>(e)</strong> Iron - Material Noun, Metal - Common Noun</li>
+                </ul>
+            </div>
+            <div class="marking-scheme"><em>Marking: 1 mark per sentence for correctly identifying at least ONE noun and its correct kind.</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q2. Fill in pronouns:</strong> (a) The boy ___ stole... (b) She hurt ___... (c) This is the house ___ Jack built. (d) The boys organized ___... (e) ___ is raining...</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (a) <strong>who</strong> (Relative Pronoun)<br>
+                (b) <strong>herself</strong> (Reflexive Pronoun)<br>
+                (c) <strong>that / which</strong> (Relative Pronoun)<br>
+                (d) <strong>themselves</strong> (Reflexive/Emphatic Pronoun)<br>
+                (e) <strong>It</strong> (Personal Pronoun)
+            </div>
+            <div class="marking-scheme"><em>Marking: 1 mark for each correct pronoun. Spelling must be correct.</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q3. Insert Articles:</strong> (a) He is ___ honour... (b) ___ Ganga is... (c) I saw ___ one-eyed man... (d) Copper is ___ useful metal. (e) ___ sun rises...</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (a) <strong>an</strong> (Vowel sound 'o')<br>
+                (b) <strong>The</strong> (Specific river)<br>
+                (c) <strong>a</strong> (Consonant sound 'w' in one)<br>
+                (d) <strong>a</strong> (Consonant sound 'y' in useful)<br>
+                (e) <strong>The</strong> (Unique celestial body)
+            </div>
+            <div class="marking-scheme"><em>Marking: 1 mark for each correct article.</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q4. Sentences:</strong> A. Identify kind. B. Transform sentences.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">10 Marks (5+5)</span></div>
+            <div class="ans-text">
+                <strong>A. Identification:</strong><br>
+                (i) <strong>Exclamatory</strong> Sentence<br>
+                (ii) <strong>Imperative</strong> Sentence<br>
+                (iii) <strong>Interrogative</strong> Sentence<br>
+                (iv) <strong>Assertive / Declarative</strong> Sentence<br>
+                (v) <strong>Imperative</strong> Sentence<br><br>
+                
+                <strong>B. Transformation:</strong><br>
+                (i) The knife is <strong>not blunt</strong>.<br>
+                (ii) <strong>Everybody/Everyone loves</strong> his country.<br>
+                (iii) It is/was a <strong>very tragic end</strong>.<br>
+                (iv) He is <strong>not always wise</strong>.<br>
+                (v) <strong>Never disobey</strong> your parents.
+            </div>
+            <div class="marking-scheme"><em>Marking: 1 mark for each correct identification and 1 mark for each grammatically correct transformation preserving the meaning. No half marks in grammar.</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q5. Fill Tenses:</strong> (a) go (b) read (c) live (d) leave (e) visit (f) knock (g) finish (h) discover (i) pass (j) play</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">10 Marks</span></div>
+            <div class="ans-text">
+                (a) <strong>goes</strong> (Simple Present - habitual action)<br>
+                (b) <strong>was reading</strong> (Past Continuous - action interrupted in the past)<br>
+                (c) <strong>have been living</strong> (Present Perfect Continuous - started in past, continuing now)<br>
+                (d) <strong>had left</strong> (Past Perfect - first of two past actions)<br>
+                (e) <strong>will visit / is visiting</strong> (Simple Future / Present Continuous for planned future)<br>
+                (f) <strong>is knocking</strong> (Present Continuous - happening right now)<br>
+                (g) <strong>have finished</strong> (Present Perfect - completed just now)<br>
+                (h) <strong>discovered</strong> (Simple Past - completed past action with time implied/stated)<br>
+                (i) <strong>will pass</strong> (Simple Future - conditional Type 1)<br>
+                (j) <strong>have been playing</strong> (Present Perfect Continuous - 'since morning')
+            </div>
+            <div class="marking-scheme"><em>Marking: 1 mark for each correct verb tense. Pay attention to subject-verb agreement (e.g., 'goes' not 'go').</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: WRITING SKILLS (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q6. Attempt ANY ONE (Informal Letter):</strong><br> Option A: Congratulating a friend on winning a debate.<br>OR<br> Option B: Thanking uncle for a birthday gift (smartwatch).</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">15 Marks</span></div>
+            <div class="ans-text">
+                <strong>Option A (Sample Letter):</strong><br><br>
+                12, MG Road<br>
+                Bangalore, Karnataka<br><br>
+                
+                25th October 202X<br><br>
+                
+                Dear Rohan,<br><br>
+                
+                I hope this letter finds you in the best of health and spirits. I am writing to you today with a heart full of joy and pride.<br><br>
+                
+                I was absolutely thrilled to read in the local newspaper that you have won the first prize in the State Level Inter-School Debate Competition! Please accept my heartiest congratulations on this spectacular achievement. I have always known you to be an excellent speaker with strong arguments, and it is wonderful to see your talent being recognized on such a large platform. <br><br>
+                
+                Your hard work and late-night preparations have finally paid off. I have already told my parents about your victory, and they send their blessings and love. We must definitely celebrate this milestone once our term exams are over. Let me know when you are free next weekend so we can meet.<br><br>
+                
+                Give my warmest regards to uncle and aunt.<br><br>
+                
+                Yours lovingly,<br>
+                Arjun<br><br>
+                
+                <hr style="border-top: 1px dashed #ccc; margin: 15px 0;"><br>
+                
+                <strong>Option B (Sample Letter):</strong><br><br>
+                45, Rosewood Apartments<br>
+                Pune, Maharashtra<br><br>
+                
+                25th October 202X<br><br>
+                
+                Dear Uncle,<br><br>
+                
+                I hope you and Aunt Meera are doing well. I want to sincerely thank you for the wonderful surprise you sent me on my 13th birthday.<br><br>
+                
+                The smartwatch you gifted me is absolutely amazing! It was the best present I received this year. It fits perfectly and looks very stylish. More importantly, it has already proven to be incredibly useful. I can set reminders for my study schedule, and the step tracker is motivating me to stay physically active during the evenings. I wear it to school every day, and all my friends love it.<br><br>
+                
+                I missed having you here at my birthday party, but your thoughtful gift made up for your absence. I promise to take great care of it and use it wisely to improve my routine.<br><br>
+                
+                Please pay us a visit soon. Give my love to Aunt Meera and little Riya.<br><br>
+                
+                Yours affectionately,<br>
+                Sneha
+            </div>
+            <div class="marking-scheme">
+                <strong>ICSE Marking Scheme for Informal Letter (15 Marks):</strong><br>
+                <ul>
+                    <li><strong>Format (3 Marks):</strong> Sender's Address (½), Date (½), Salutation (½), Subscription (1), Signature (½). <em>Note: No receiver's address or subject in an informal letter.</em></li>
+                    <li><strong>Content (6 Marks):</strong> Clearly stating the purpose, relevant details (mentioning the debate/watch specifically), logical flow, and warm conclusion.</li>
+                    <li><strong>Expression (6 Marks):</strong> Appropriate informal yet respectful tone, grammatical accuracy, varied sentence structures, correct spellings, and neat presentation.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

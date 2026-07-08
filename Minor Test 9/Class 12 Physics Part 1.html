@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* Base Print & Desktop Styles */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; /* Changed to max-width for responsiveness */
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Styles for Mobile and Tablet */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { width: 100%; text-align: center; border-bottom: 1px dashed #ccc; padding-bottom: 2px; }
+            .exam-details span:last-child { border-bottom: none; }
+            .q-num { width: 25px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Surprise Test - MiT 09 - Physics Part 1 (Electric Potential & Capacitance)</div>
+        <div class="exam-details">
+            <span>Class: 12</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Use properly labeled diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Two equipotential surfaces can never intersect each other. Justify this statement with a valid scientific reason.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Write the expression for the potential energy of an electric dipole of dipole moment \( \vec{p} \) placed in a uniform electric field \( \vec{E} \). Identify the conditions for stable and unstable equilibrium.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            A charge of \( 5\mu C \) is moved from a point \( A \) to a point \( B \) on an equipotential surface. What is the work done by the electrostatic force in this process? Explain briefly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Draw the equipotential surfaces for a single positive point charge. How does the spacing between the surfaces change as we move away from the charge?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Establish the relationship between electric field intensity (\( E \)) and electric potential (\( V \)) at a point.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Derive an expression for the electrostatic potential energy of a system of two point charges \( q_1 \) and \( q_2 \) separated by a distance \( r \) in the absence of any external electric field.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Two capacitors of capacitances \( 3 \mu F \) and \( 6 \mu F \) are connected in series across a \( 12V \) battery. Calculate:
+            <div class="sub-question">(i) The equivalent capacitance of the combination.</div>
+            <div class="sub-question">(ii) The potential difference across the \( 3 \mu F \) capacitor.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Derive the expression for the energy stored in a parallel plate capacitor of capacitance \( C \) charged to a potential \( V \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            A parallel plate capacitor is charged to a certain potential difference by a battery. The battery is then disconnected, and a dielectric slab of dielectric constant \( K \) is inserted, completely filling the space between the plates. State the effect (with reasoning) on:
+            <div class="sub-question">(i) The capacitance of the capacitor.</div>
+            <div class="sub-question">(ii) The electric field between the plates.</div>
+            <div class="sub-question">(iii) The energy stored in the capacitor.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Three point charges \( +q \), \( -2q \), and \( +3q \) are placed at the vertices \( A \), \( B \), and \( C \) respectively of an equilateral triangle of side \( a \). Find the total electrostatic potential energy of the system.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Derive an expression for the capacitance of a parallel plate capacitor of plate area \( A \) and plate separation \( d \) when the space between the plates is completely filled with a vacuum. (2 Marks)</div>
+            <div class="sub-question">(b) A dielectric slab of thickness \( t \) (\( t < d \)) and dielectric constant \( K \) is introduced between the plates of the above capacitor. Obtain the new expression for its capacitance. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Define an electric dipole. Find the expression for the electric potential at a point on the axial line of an electric dipole. (3 Marks)</div>
+            <div class="sub-question">(b) Show that the electric potential at any point on the equatorial line of an electric dipole is zero. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A network of four capacitors \( C_1 = 10 \mu F \), \( C_2 = 20 \mu F \), \( C_3 = 30 \mu F \), and \( C_4 = 40 \mu F \) are connected to a \( 100V \) DC supply. \( C_1 \), \( C_2 \), and \( C_3 \) are connected in parallel, and this combination is connected in series with \( C_4 \).
+            <div class="sub-question">(a) Draw the circuit diagram for the given arrangement. (1 Mark)</div>
+            <div class="sub-question">(b) Calculate the equivalent capacitance of the network. (2 Marks)</div>
+            <div class="sub-question">(c) Calculate the total charge supplied by the battery. (1 Mark)</div>
+            <div class="sub-question">(d) Calculate the energy stored in the capacitor \( C_4 \). (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

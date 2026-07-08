@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            word-wrap: break-word; /* Prevents text from overflowing on small screens */
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; flex-direction: row; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sq-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .marks-right { float: right; font-weight: bold; font-size: 10pt; margin-left: 10px; }
+        .stanza { font-style: italic; margin: 10px 0 10px 40px; border-left: 3px solid #ccc; padding-left: 10px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; border: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { text-align: center; width: 100%; }
+            .q-num { width: 30px; }
+            .question-container { flex-direction: column; }
+            .marks-right { float: none; display: inline-block; margin-top: 5px; color: #555; background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 9pt;}
+            .stanza { margin-left: 10px; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST (MIT 10)</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: English Grammar & Literature</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper comprises two sections: Section A (Grammar) and Section B (Literature).</li>
+                <li>All questions are compulsory.</li>
+                <li>Write your answers neatly and legibly. Number your answers correctly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (30 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            <strong>Do as directed regarding Nouns (Number, Case, and Gender):</strong> <span class="marks-right">[10 Marks]</span><br>
+            <strong>A. Rewrite the following sentences by changing the gender of the underlined nouns:</strong> <span class="marks-right">[3]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>The <u>duke</u> gave a reward to the <u>monk</u>.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>My <u>nephew</u> has bought a beautiful <u>stallion</u>.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>The <u>emperor</u> was angry with the <u>wizard</u>.</div></div>
+            <br>
+            <strong>B. Change the following singular nouns to plural:</strong> <span class="marks-right">[4]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>Criterion</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Loaf</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Dwarf</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>Mother-in-law</div></div>
+            <br>
+            <strong>C. Identify the noun in the sentence and state its Case (Nominative, Objective, or Possessive):</strong> <span class="marks-right">[3]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div><strong>Birds</strong> fly in the sky.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>I found <strong>Rahul's</strong> lost bag.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>The teacher praised the <strong>student</strong>.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with suitable Articles (a, an, the). Put a cross (X) where no article is required:</strong> <span class="marks-right">[10 &times; 1 = 10]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>He is _______ honest boy who never lies.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>We saw _______ one-eyed dog wandering in the street.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>_______ Himalayas are in the north of India.</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>My brother is studying at _______ university in London.</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>I read _______ interesting book yesterday. _______ book was about space.</div></div>
+            <div class="sub-question"><div class="sq-num">(vi)</div><div>Gold is _______ precious metal.</div></div>
+            <div class="sub-question"><div class="sq-num">(vii)</div><div>He returned after _______ hour.</div></div>
+            <div class="sub-question"><div class="sq-num">(viii)</div><div>_______ sun rises in _______ east.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            <strong>Do as directed regarding Adjectives (Degree of Comparison):</strong> <span class="marks-right">[10 Marks]</span><br>
+            <strong>A. Fill in the blanks with the correct degree of the adjective given in the brackets:</strong> <span class="marks-right">[5]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>Prevention is ________ than cure. (good)</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Mt. Everest is the ________ peak in the world. (high)</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>This puzzle is ________ than the one we solved yesterday. (difficult)</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>Iron is the ________ of all metals. (useful)</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>She is as ________ as her sister. (smart)</div></div>
+            <br>
+            <strong>B. Rewrite the following sentences changing the degree of comparison as directed, without changing the meaning:</strong> <span class="marks-right">[5]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>No other city in India is as crowded as Mumbai. <em>(Change into Superlative Degree)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Gold is more precious than silver. <em>(Change into Positive Degree)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>He is the strongest man in the village. <em>(Change into Comparative Degree)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>Very few boys are as industrious as Mohan. <em>(Change into Superlative Degree)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Jupiter is larger than any other planet. <em>(Change into Positive Degree)</em></div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: LITERATURE (20 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            <strong>Read the extract given below and answer the questions that follow:</strong> <span class="marks-right">[10 Marks]</span>
+            <div class="stanza">
+                "The way a crow<br>
+                Shook down on me<br>
+                The dust of snow<br>
+                From a hemlock tree"
+            </div>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>Name the poem and the poet. <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>Where was the poet at this moment and what was his state of mind? <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>What exactly is the "dust of snow"? How did it fall on the poet? <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>What do the 'crow' and the 'hemlock tree' symbolize in this stanza? Why has the poet chosen them? <span class="marks-right">[4]</span></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            <strong>Answer the following questions in 40-50 words based on the poem "Dust of Snow":</strong> <span class="marks-right">[10 Marks]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>How does the falling of the dust of snow bring about a change in the poet's mood? <span class="marks-right">[4]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The poem conveys a deep philosophical message using simple incidents of nature. Elaborate on the central theme of the poem. <span class="marks-right">[6]</span></div></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

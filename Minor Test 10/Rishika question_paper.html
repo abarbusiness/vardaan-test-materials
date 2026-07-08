@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            word-wrap: break-word; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Styling */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        /* Section Styling */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        /* Question Styling */
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; flex-direction: row; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sq-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .marks-right { float: right; font-weight: bold; font-size: 10pt; margin-left: 10px; }
+        
+        .extract-box { border: 1px solid #333; padding: 10px; margin-bottom: 10px; font-style: italic; background-color: #fcfcfc; }
+        .or-divider { text-align: center; font-weight: bold; margin: 20px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; border: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { text-align: center; width: 100%; }
+            .q-num { width: 30px; }
+            .question-container { flex-direction: column; }
+            .marks-right { float: none; display: inline-block; margin-top: 5px; color: #555; background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 9pt;}
+            .sub-question { flex-direction: column; }
+            .sq-num { width: auto; margin-bottom: 3px; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+            .extract-box { background-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 10 (MIT 10)</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: English (Grammar & Literature)</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper is divided into three sections: Section A (Grammar), Section B (Literature), and Section C (Writing Skills).</li>
+                <li>All questions are compulsory. Internal choices are provided in specific questions.</li>
+                <li>Strictly adhere to the word limit wherever prescribed.</li>
+                <li>Write your answers neatly and legibly. Number the answers correctly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (15 Marks)<span class="marks-info">(Sentences)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            <strong>Identify the kind of sentence (Assertive/Declarative, Interrogative, Imperative, or Exclamatory) for each of the following:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>Alas! We have lost the final match by one goal.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Please wait for me at the bus stop until I arrive.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>The mighty Himalayas act as a natural barrier for our country.</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>Why did you not complete your assignment on time?</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Never speak ill of others behind their backs.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <strong>Separate the Subject and the Predicate in the following sentences:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>The old man with a heavy walking stick crossed the busy street.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Under the huge banyan tree sat the wise village elder.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Barking dogs seldom bite.</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>A fleet of ships was anchored near the harbor.</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>On the top of the hill lives a hermit.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            <strong>Transform the following sentences as directed in the brackets without changing their core meaning:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>She is a very talented singer. <em>(Change into Exclamatory)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Can a leopard change its spots? <em>(Change into Assertive)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>What a terrifying nightmare it was! <em>(Change into Assertive)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>He is an honest boy. <em>(Change into Negative)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Please open the windows. <em>(Change into Interrogative)</em></div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: LITERATURE (25 Marks)<span class="marks-info">("A Hero" & "I Dream a World")</span></div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            <strong>Read the extract given below and answer the questions that follow:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="extract-box">
+                "Leave alone strength, can you prove you have courage? Let me see if you can sleep alone tonight in my office room."
+            </div>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>Who is the speaker of the above lines and to whom are they addressed?</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>What incident or news sparked this conversation between the two?</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Where did the listener usually sleep every night?</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>What was the listener's immediate reaction to this challenge?</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Find a word from the extract which means the opposite of 'cowardice'.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            <strong>Answer ANY FOUR of the following questions in 30-40 words each:</strong> <span class="marks-right">[4 &times; 3 = 12]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>Why did Swami's father insist that he should sleep alone in the office room? What was he trying to teach him?</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>Describe the terrifying nightmare that Swami experienced while sleeping under the wooden bench.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>In the poem "I Dream a World", what kind of world does Langston Hughes envision for mankind?</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>How does the poet personify 'wretchedness' and 'greed' in the poem? What effect do they have on the world?</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>How did Swami's classmates and teachers react the next day? Was Swami genuinely a brave boy?</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <strong>Answer ANY ONE of the following questions in 80-100 words:</strong> <span class="marks-right">[1 &times; 8 = 8]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>"Courage is everything, strength and age are not important." Do you agree with this statement made by Swami's father? Discuss with reference to the story "A Hero", highlighting the irony in how Swami eventually proved his father right.</div></div>
+            <br>
+            <div class="or-divider">OR</div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The poem "I Dream a World" is a powerful plea for equality, peace, and universal brotherhood. Elaborate on the poet's vision and how it contrasts with the harsh realities of prejudice and discrimination in our current world.</div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C: WRITING SKILLS (10 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            <strong>Attempt ANY ONE of the following formal letters (100-120 words):</strong> <span class="marks-right">[10 Marks]</span><br><br>
+            Write a letter to the Editor of a national daily (The Times of India) drawing the attention of the concerned authorities towards the frequent and unannounced power cuts in your locality during the crucial examination season, causing massive inconvenience to students. You are Rohan/Rhea residing at 45, Gulmohar Park, New Delhi.
+            
+            <div class="or-divider">OR</div>
+
+            Write a letter to the Editor of a local newspaper expressing your deep concern over the increasing problem of junk food consumption among school-going children. Highlight the severe health impacts like obesity and lethargy, and suggest ways to promote healthy eating habits. You are Aryan/Ananya, a resident of 12-B, Civil Lines, Jaipur.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Senior Academic Wing</div>
+</body>
+</html>

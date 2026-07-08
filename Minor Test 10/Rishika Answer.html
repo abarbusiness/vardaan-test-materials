@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            word-wrap: break-word; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Styling */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #003366; }
+        
+        /* Section Styling */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #f0f4f8; padding: 5px; color: #003366; border: 1px solid #cce0ff;}
+        
+        /* Question & Answer Box Styling */
+        .qa-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-box { background-color: #f9f9f9; padding: 12px; border-left: 4px solid #333; margin-bottom: 12px; font-style: italic; text-align: justify;}
+        
+        .solution-box { display: flex; flex-direction: column; }
+        .sol-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; color: #006600; }
+        .marks-right { font-weight: bold; color: #b30000; border: 1px solid #b30000; padding: 2px 8px; border-radius: 4px; font-size: 10pt; background: #fff;}
+        
+        .ans-text { text-align: justify; }
+        .ans-text ul { margin-top: 5px; padding-left: 20px; }
+        .ans-text p { margin-top: 0; margin-bottom: 10px;}
+        .ans-text strong { color: #000; }
+        
+        /* Marking Scheme Box */
+        .marking-scheme { font-size: 9.5pt; color: #444; background: #fff9e6; padding: 10px; border-left: 4px solid #ffcc00; margin-top: 12px; font-family: Arial, sans-serif;}
+        
+        .or-divider { text-align: center; font-weight: bold; margin: 15px 0; color: #333;}
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .sol-header { flex-direction: column; align-items: flex-start; gap: 5px;}
+            .marks-right { align-self: flex-start; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .marking-scheme { background: transparent; border: 1px solid #555; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS & EXAMINER MARKING SCHEME</div>
+        <p style="font-weight:bold; margin-top:5px; color:#333;">Class: 7 CBSE | Subject: English | Minor Test 10 | Max Marks: 50 | Time: 1.5 Hours</p>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q1. Identify the kind of sentence:</strong><br>
+        (i) Alas! We have lost the final match by one goal.<br>
+        (ii) Please wait for me at the bus stop until I arrive.<br>
+        (iii) The mighty Himalayas act as a natural barrier for our country.<br>
+        (iv) Why did you not complete your assignment on time?<br>
+        (v) Never speak ill of others behind their backs.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (i) <strong>Exclamatory Sentence</strong><br>
+                (ii) <strong>Imperative Sentence</strong><br>
+                (iii) <strong>Assertive / Declarative Sentence</strong><br>
+                (iv) <strong>Interrogative Sentence</strong><br>
+                (v) <strong>Imperative Sentence</strong>
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme:</strong> Award 1 mark for each correct identification. No partial marks. Spelling errors in grammatical terms may be penalized by ½ mark overall at the evaluator's discretion.</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q2. Separate the Subject and the Predicate:</strong><br>
+        (i) The old man with a heavy walking stick crossed the busy street.<br>
+        (ii) Under the huge banyan tree sat the wise village elder.<br>
+        (iii) Barking dogs seldom bite.<br>
+        (iv) A fleet of ships was anchored near the harbor.<br>
+        (v) On the top of the hill lives a hermit.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (i) <strong>Subject:</strong> The old man with a heavy walking stick | <strong>Predicate:</strong> crossed the busy street.<br>
+                (ii) <strong>Subject:</strong> the wise village elder | <strong>Predicate:</strong> sat Under the huge banyan tree.<br>
+                (iii) <strong>Subject:</strong> Barking dogs | <strong>Predicate:</strong> seldom bite.<br>
+                (iv) <strong>Subject:</strong> A fleet of ships | <strong>Predicate:</strong> was anchored near the harbor.<br>
+                (v) <strong>Subject:</strong> a hermit | <strong>Predicate:</strong> lives On the top of the hill.
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme:</strong> Award 1 mark for each correctly separated sentence. <br><em>Note for Evaluator:</em> Pay special attention to sentences (ii) and (v) where the subject is placed at the end due to inversion. If a student includes the verb in the subject, award 0.</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q3. Transform the sentences:</strong><br>
+        (i) She is a very talented singer. (To Exclamatory)<br>
+        (ii) Can a leopard change its spots? (To Assertive)<br>
+        (iii) What a terrifying nightmare it was! (To Assertive)<br>
+        (iv) He is an honest boy. (To Negative)<br>
+        (v) Please open the windows. (To Interrogative)</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (i) <strong>What a talented singer she is!</strong> OR <strong>How talented a singer she is!</strong><br>
+                (ii) <strong>A leopard cannot change its spots.</strong><br>
+                (iii) <strong>It was a very terrifying nightmare.</strong><br>
+                (iv) <strong>He is not a dishonest boy.</strong> (Meaning must remain the same by using double negative/antonym)<br>
+                (v) <strong>Will you please open the windows?</strong> OR <strong>Could you please open the windows?</strong>
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme:</strong> Award 1 mark for each correct transformation. <br><em>Deductions:</em> Deduct ½ mark if correct punctuation (exclamation mark, question mark, full stop) is omitted at the end of the transformed sentence. In (iv), if a student writes "He is not an honest boy", award 0 as the meaning changes.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: LITERATURE (25 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q4. Extract Based Questions ("A Hero"):</strong><br>
+        "Leave alone strength, can you prove you have courage? Let me see if you can sleep alone tonight in my office room."</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer:</span> <span class="marks-right">5 Marks</span></div>
+            <div class="ans-text">
+                (i) <strong>Swami's father</strong> is speaking to his son, <strong>Swami</strong>.<br>
+                (ii) The conversation was sparked by a <strong>newspaper report</strong> that Swami's father read aloud about a village boy's bravery in facing a tiger.<br>
+                (iii) Swami usually slept beside his <strong>Granny</strong> in the passage.<br>
+                (iv) Swami tried to change the subject, mumbled weakly, and suggested he would sleep alone from the <strong>first of next month</strong>.<br>
+                (v) <strong>Courage</strong>.
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme:</strong> 1 mark for each correct, specific answer. Brief answers are acceptable.</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q5. Short Answer Questions (Attempt any 4):</strong></div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer / Value Points:</span> <span class="marks-right">12 Marks (4 x 3)</span></div>
+            <div class="ans-text">
+                <strong>(a) Father's intention:</strong> Swami's father wanted him to break the habit of sleeping beside his granny like a baby. He wanted to instill courage in him and teach him that courage is more important than strength or age. He wanted Swami to face his fears.<br><br>
+                <strong>(b) The Nightmare:</strong> While sleeping under the bench, Swami dreamt that a tiger was chasing him. His feet felt stuck to the ground. He tried to escape and open his eyes, but he couldn't. He heard a rustling sound and thought the devil had come to get him.<br><br>
+                <strong>(c) Poet's Vision:</strong> Langston Hughes envisions a utopian world where no man scorns another, where love and peace adorn the earth. He dreams of a world where all races (black or white) share the world's bounties equally, and freedom is a sweet domain.<br><br>
+                <strong>(d) Personification:</strong> The poet personifies 'wretchedness' (extreme sorrow/hardship) as hanging its head (being defeated) and 'greed' as no longer sapping (draining) the soul. This implies that in his dream world, human misery and selfish desires will be eradicated, allowing the soul to thrive.<br><br>
+                <strong>(e) Reaction & Reality:</strong> The next day, Swami was treated as a hero. His classmates looked at him with respect, and his teachers patted his back. The headmaster called him a true scout. However, ironically, Swami was not truly brave; he bit the burglar out of sheer desperation and terror, mistaking him for a devil.
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme (per question):</strong> 3 Marks total.<br>
+            - Content & Accuracy (Value Points): 2 Marks<br>
+            - Expression & Coherence: 1 Mark<br>
+            <em>Evaluator Note: Grade only the first four attempted if a student attempts all five.</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q6. Long Answer Question (Attempt any 1):</strong><br>
+        (a) "Courage is everything..." Irony in Swami proving it. <br>OR<br> (b) "I Dream a World" poet's vision vs. current reality.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Value Points:</span> <span class="marks-right">8 Marks</span></div>
+            <div class="ans-text">
+                <strong>Option (a) - Swami's Courage (Value Points):</strong>
+                <ul>
+                    <li><strong>Context:</strong> Father's argument that a weak man with courage can achieve anything, while a strong coward cannot.</li>
+                    <li><strong>Swami's Reality:</strong> Swami was naturally fearful, dependent on his Granny, afraid of ghosts and darkness.</li>
+                    <li><strong>The Incident:</strong> When forced to sleep in the office, he is paralyzed with fear. He hides under the bench for safety.</li>
+                    <li><strong>The Irony:</strong> When the burglar breaks in, Swami doesn't act out of bravery. He acts out of absolute terror, thinking a devil has come to tear him apart. He bites the ankle in a desperate act of survival.</li>
+                    <li><strong>Conclusion:</strong> Ironically, father's statement was proven true—a small, terrified boy (without strength) caught an armed burglar, but not through conscious courage, making the title "A Hero" deeply satirical.</li>
+                </ul>
+                <br>
+                <strong>Option (b) - I Dream a World (Value Points):</strong>
+                <ul>
+                    <li><strong>The Utopian Vision:</strong> Hughes envisions a world of absolute equality—"black or white, whatever race you be." A world bathed in peace, love, and joy.</li>
+                    <li><strong>Eradication of Negativity:</strong> A world free from greed that "saps the soul" and avarice (blight). A world where wretchedness is defeated.</li>
+                    <li><strong>Contrast with Present Reality:</strong> In reality, our world is deeply fractured by racial discrimination, casteism, and socio-economic inequality. (Students should mention real-world strife).</li>
+                    <li><strong>Greed vs. Sharing:</strong> Present world is driven by material greed, whereas the poet dreams of "bounties of the earth" being shared by all.</li>
+                    <li><strong>Conclusion:</strong> The poem remains highly relevant as a beacon of hope against the harsh realities of human prejudice.</li>
+                </ul>
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme (8 Marks):</strong><br>
+            - Content (Thorough understanding, relevant points): 4 Marks<br>
+            - Fluency & Organization (Logical progression, paragraphing): 2 Marks<br>
+            - Accuracy (Grammar, vocabulary, spelling): 2 Marks</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C: WRITING SKILLS (10 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box"><strong>Q7. Letter to the Editor:</strong><br>
+        Frequent power cuts during exams OR Problem of junk food consumption.</div>
+        <div class="solution-box">
+            <div class="sol-header"><span>Answer / Value Points:</span> <span class="marks-right">10 Marks</span></div>
+            <div class="ans-text">
+                <strong>Format Requirements:</strong><br>
+                <ul>
+                    <li><strong>Sender's Address:</strong> 45, Gulmohar Park, New Delhi OR 12-B, Civil Lines, Jaipur</li>
+                    <li><strong>Date:</strong> (e.g., 20th November 202X)</li>
+                    <li><strong>Receiver's Address:</strong> The Editor, The Times of India, New Delhi OR The Editor, [Local Daily Name], Jaipur</li>
+                    <li><strong>Subject:</strong> Concise and underlined. (e.g., Frequent Power Cuts During Exam Season / Concern over Increasing Junk Food Consumption).</li>
+                    <li><strong>Salutation:</strong> Sir / Madam,</li>
+                    <li><strong>Body:</strong> 3 Paragraphs (Introduction through the columns..., Problem detailing, Suggestion/Appeal).</li>
+                    <li><strong>Subscription:</strong> Yours truly / Yours sincerely,</li>
+                    <li><strong>Name:</strong> Rohan/Rhea OR Aryan/Ananya</li>
+                </ul>
+                <br>
+                <strong>Content Value Points (Option 1 - Power Cuts):</strong>
+                <ul>
+                    <li>Highlighting the timing: crucial board/annual examinations are approaching.</li>
+                    <li>Impact: Disruption of study schedules, inability to use digital resources/laptops, physical discomfort (heat), stress and anxiety among students.</li>
+                    <li>Appeal: Requesting electricity board authorities to ensure uninterrupted power supply at least during study hours, or publish a fixed schedule for load shedding.</li>
+                </ul>
+                <br>
+                <strong>Content Value Points (Option 2 - Junk Food):</strong>
+                <ul>
+                    <li>Highlighting the trend: Easy availability of fast food, aggressive marketing, changing lifestyles.</li>
+                    <li>Health Impacts: Rising cases of childhood obesity, lethargy, lack of concentration, nutritional deficiencies.</li>
+                    <li>Suggestions: School canteens should serve healthy options, parents must encourage home-cooked meals, awareness campaigns about balanced diets.</li>
+                </ul>
+            </div>
+            <div class="marking-scheme"><strong>Marking Scheme Breakdown (10 Marks):</strong><br>
+            - <strong>Format:</strong> 3 Marks (Sender's Address, Date, Receiver's Address, Subject, Salutation, Subscription. Deduct ½ mark for each missing/incorrect element.)<br>
+            - <strong>Content:</strong> 4 Marks (Relevance to topic, clarity of ideas, inclusion of value points.)<br>
+            - <strong>Expression:</strong> 3 Marks (Grammatical accuracy, appropriate formal vocabulary, coherence, and flow of ideas.)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Senior Academic Wing</div>
+</body>
+</html>

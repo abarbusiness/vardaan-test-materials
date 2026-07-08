@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sq-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .marks-right { float: right; font-weight: bold; font-size: 10pt; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; border: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { text-align: center; width: 100%; }
+            .q-num { width: 30px; }
+            .marks-right { float: none; display: block; margin-top: 5px; color: #555; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST (MIT 10)</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: English Grammar</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper comprises two sections: Section A (Grammar) and Section B (Writing Skills).</li>
+                <li>All questions in Section A are compulsory. Internal choice is provided in Section B.</li>
+                <li>Write your answers neatly and legibly. Read the instructions for each question carefully.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: GRAMMAR (35 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            <strong>Identify the nouns in the following sentences and state their kind:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>Honesty is the best policy.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>The jury gave its verdict.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>Ashoka was a wise and noble king.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>The crowd gathered outside the parliament.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>Iron is a very useful metal.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate Pronouns (Personal, Reflexive, or Relative):</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>The boy _________ stole the pen was caught by the teacher.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>She hurt _________ while playing in the garden.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>This is the house _________ Jack built.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>The boys organized the entire event _________.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>_________ is raining heavily outside.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            <strong>Insert appropriate Articles (a, an, the) wherever necessary:</strong> <span class="marks-right">[5 &times; 1 = 5]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>He is _________ honour to his profession.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>_________ Ganga is considered a holy river in India.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>I saw _________ one-eyed man crossing the street.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>Copper is _________ useful metal.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>_________ sun rises in the east and sets in the west.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            <strong>Do as directed regarding Sentences:</strong> <span class="marks-right">[5 + 5 = 10]</span><br>
+            <strong>A. Identify the kind of sentence (Assertive, Interrogative, Imperative, Exclamatory):</strong>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>What a beautiful sunset it is!</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Please bring me a glass of water.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Do you know the way to the railway station?</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>The earth revolves around the sun.</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Never tell a lie to your elders.</div></div>
+            <br>
+            <strong>B. Transform the sentences as directed in the brackets without changing the meaning:</strong>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>The knife is sharp. <em>(Change into Negative)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Who does not love his country? <em>(Change into Assertive)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>What a tragic end! <em>(Change into Assertive)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>He is sometimes foolish. <em>(Change into Negative)</em></div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>Always obey your parents. <em>(Change into Negative)</em></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with the correct Tense form of the verb given in the brackets:</strong> <span class="marks-right">[10 &times; 1 = 10]</span>
+            <div class="sub-question"><div class="sq-num">(a)</div><div>My father _________ (go) for a walk every morning.</div></div>
+            <div class="sub-question"><div class="sq-num">(b)</div><div>I _________ (read) a fascinating novel when he suddenly came in.</div></div>
+            <div class="sub-question"><div class="sq-num">(c)</div><div>We _________ (live) in this city for the last ten years.</div></div>
+            <div class="sub-question"><div class="sq-num">(d)</div><div>The train _________ (leave) the platform before we reached the station.</div></div>
+            <div class="sub-question"><div class="sq-num">(e)</div><div>She _________ (visit) her grandparents in Delhi next week.</div></div>
+            <div class="sub-question"><div class="sq-num">(f)</div><div>Listen! Someone _________ (knock) at the front door.</div></div>
+            <div class="sub-question"><div class="sq-num">(g)</div><div>I _________ (finish) my homework just now.</div></div>
+            <div class="sub-question"><div class="sq-num">(h)</div><div>Columbus _________ (discover) America in 1492.</div></div>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>If you work hard, you _________ (pass) the examination.</div></div>
+            <div class="sub-question"><div class="sq-num">(j)</div><div>They _________ (play) chess since morning and haven't stopped yet.</div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: WRITING SKILLS (15 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <strong>Attempt ANY ONE of the following (Informal Letter):</strong> <span class="marks-right">[15]</span><br><br>
+            <strong>Option A:</strong><br>
+            Write a letter to your friend congratulating him/her on winning the first prize in the State Level Inter-School Debate Competition. Describe how happy and proud you feel about their achievement.<br>
+            <div style="text-align: center; font-weight: bold; margin: 15px 0; font-size: 14pt;">OR</div>
+            <strong>Option B:</strong><br>
+            Write a letter to your uncle thanking him for the beautiful smartwatch he sent you as a gift on your 13th birthday. Explain how useful it will be for your studies and daily routine.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

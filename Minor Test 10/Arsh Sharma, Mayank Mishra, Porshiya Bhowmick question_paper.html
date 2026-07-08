@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            max-width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            word-wrap: break-word; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; flex-direction: row; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sq-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .marks-right { float: right; font-weight: bold; font-size: 10pt; margin-left: 10px; }
+        
+        .extract-box { border: 1px solid #333; padding: 12px; margin-bottom: 12px; font-style: italic; background-color: #fcfcfc; line-height: 1.6;}
+        .or-divider { text-align: center; font-weight: bold; margin: 20px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; width: 100%; border: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { text-align: center; width: 100%; }
+            .q-num { width: 30px; }
+            .question-container { flex-direction: column; }
+            .marks-right { float: none; display: inline-block; margin-top: 5px; color: #555; background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 9pt;}
+            .sub-question { flex-direction: column; }
+            .sq-num { width: auto; margin-bottom: 3px; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15; }
+            .extract-box { background-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 10 (MIT 10)</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: English (Language & Literature)</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The paper is divided into two sections: Section A (Language) and Section B (Literature).</li>
+                <li>All questions are compulsory unless an internal choice is provided.</li>
+                <li>You are allowed 15 minutes to read the paper before you begin to write.</li>
+                <li>Answers must be written neatly, and the question numbering must match the paper exactly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: ENGLISH LANGUAGE (25 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            <strong>Write a formal letter on ANY ONE of the following topics (approx. 120-150 words):</strong> <span class="marks-right">[10 Marks]</span><br><br>
+            <strong>(a) Letter of Complaint:</strong> You are Amit/Anita, a resident of 15, Park Street, Kolkata. You recently purchased a high-end smartphone from a reputable local store, but it started malfunctioning within a week of purchase. The store manager is unresponsive. Write a letter to the Customer Service Manager of the manufacturing company complaining about the defective product, detailing the issues, and requesting a prompt replacement.
+            
+            <div class="or-divider">OR</div>
+
+            <strong>(b) Letter to the Editor:</strong> You are Sumit/Sumita, residing at 42, Civil Lines, Pune. You are deeply concerned about the increasing incidents of road accidents in your city caused by underage driving and reckless speeding. Write a letter to the Editor of a national daily expressing your concern and suggesting strict measures that authorities should implement to curb this menace.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <strong>Fill in each of the numbered blanks with the correct form of the word given in brackets. (Do not copy the passage, write only the correct form):</strong> <span class="marks-right">[10 &times; ½ = 5 Marks]</span><br><br>
+            Yesterday, while I (1) _________ (walk) back from school, I (2) _________ (notice) a small puppy shivering by the roadside. It (3) _________ (rain) heavily for the past hour, and the poor creature (4) _________ (look) terrified. I immediately (5) _________ (take) off my jacket and wrapped it around the puppy. By the time I (6) _________ (reach) home, the puppy (7) _________ (fall) asleep in my arms. My mother, who (8) _________ (wait) for me, was initially angry that I was wet, but her expression (9) _________ (soften) as soon as she (10) _________ (see) the puppy.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate Determiners:</strong> <span class="marks-right">[5 &times; 1 = 5 Marks]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>_________ knowledge is a dangerous thing.</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>I have read _________ books on the subject, but I still feel confused.</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Could you please pour _________ more coffee into my mug?</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>_________ student in the hall was given a certificate of participation.</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>There is hardly _________ sugar left in the jar to make tea.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate Modals (can, could, may, might, shall, should, will, would, must, ought to):</strong> <span class="marks-right">[5 &times; 1 = 5 Marks]</span>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>_________ you please pass me the salt?</div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>We _________ respect our elders and teachers. (Moral obligation)</div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>If he had run faster, he _________ have won the race.</div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>_________ I come in, Sir?</div></div>
+            <div class="sub-question"><div class="sq-num">(v)</div><div>You _________ submit the assignment by tomorrow evening, or it won't be graded. (Strict necessity)</div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: LITERATURE (25 Marks)<span class="marks-info">(Julius Caesar - Act 2 to Act 4)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            <strong>Read the extract given below and answer the questions that follow:</strong> 
+            <div class="extract-box">
+                <em><strong>ANTONY:</strong></em><br>
+                "Friends, Romans, countrymen, lend me your ears;<br>
+                I come to bury Caesar, not to praise him.<br>
+                The evil that men do lives after them;<br>
+                The good is oft interred with their bones;<br>
+                So let it be with Caesar."
+            </div>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>Where does this scene take place? Who spoke to the crowd just before Antony? <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Why does Antony say, "I come to bury Caesar, not to praise him"? What is his actual motive? <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>How does Antony manipulate the word "honourable" during his speech to turn the crowd against the conspirators? <span class="marks-right">[3]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>What document does Antony produce later in his speech to further incite the mob? Mention one provision of that document. <span class="marks-right">[3]</span></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <strong>Read the extract given below and answer the questions that follow:</strong> 
+            <div class="extract-box">
+                <em><strong>CAESAR:</strong></em><br>
+                "Cowards die many times before their deaths;<br>
+                The valiant never taste of death but once.<br>
+                Of all the wonders that I yet have heard,<br>
+                It seems to me most strange that men should fear;<br>
+                Seeing that death, a necessary end,<br>
+                Will come when it will come."
+            </div>
+            <div class="sub-question"><div class="sq-num">(i)</div><div>To whom are these words spoken? What has just happened to prompt the listener to stop Caesar from going out? <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(ii)</div><div>Explain the meaning of "Cowards die many times before their deaths". <span class="marks-right">[2]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(iii)</div><div>Despite this brave speech, who eventually convinces Caesar to go to the Capitol and how does he reinterpret the frightening omens? <span class="marks-right">[3]</span></div></div>
+            <div class="sub-question"><div class="sq-num">(iv)</div><div>What tragic irony is embedded in Caesar's refusal to heed the warnings given to him on the Ides of March? <span class="marks-right">[3]</span></div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            <strong>Answer the following question in about 80-100 words:</strong> <span class="marks-right">[5 Marks]</span><br><br>
+            In Act 4, Scene 3 (the tent scene at Sardis), a bitter quarrel breaks out between Brutus and Cassius. What are the primary reasons for this conflict, and how does it reveal the fundamental differences in their characters?
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

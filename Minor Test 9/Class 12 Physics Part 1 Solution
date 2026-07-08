@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Physics Ch 2</title>
+    <!-- MathJax Configuration for better mobile wrapping -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f4f7f6;
+            box-sizing: border-box;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            border-top: 4px solid #2c3e50;
+        }
+        h1 { margin: 0; color: #2c3e50; font-size: 24px;}
+        h2 { margin: 5px 0 0 0; color: #7f8c8d; font-size: 16px; font-weight: normal;}
+        
+        .section-title {
+            color: #2c3e50; 
+            border-bottom: 2px solid #ccc; 
+            padding-bottom: 5px; 
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .qa-container { 
+            background: white; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin-bottom: 25px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            gap: 15px; /* Ensures space between text and marks */
+        }
+        .q-text { 
+            flex-grow: 1; 
+            font-weight: 600; 
+            color: #2c3e50;
+            text-align: justify;
+        }
+        .marks { 
+            flex-shrink: 0; /* Forces marks to stay on the right and not shrink */
+            font-weight: bold; 
+            color: #e74c3c; 
+            background: #fadbd8; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
+        .solution { 
+            padding-left: 15px; 
+            border-left: 2px dashed #bdc3c7; 
+            margin-left: 5px; 
+        }
+        .solution h4 { 
+            color: #27ae60; 
+            margin-top: 0; 
+            margin-bottom: 10px;
+            font-size: 16px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        .sub-part {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        .step-marks { 
+            float: right; 
+            color: #d35400; 
+            font-size: 13px; 
+            font-weight: bold; 
+            font-style: italic;
+            background: #fcf3cf;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        /* Handles long equations gracefully without breaking layout */
+        .math-scroll { 
+            width: 100%;
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            padding: 10px 0; 
+            -webkit-overflow-scrolling: touch;
+        }
+        /* Hide scrollbar for a cleaner look, but still allow swiping */
+        .math-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .math-scroll::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body { padding: 10px; }
+            .header { padding: 15px; margin-bottom: 20px; }
+            h1 { font-size: 20px; }
+            .qa-container { padding: 15px; }
+            .question-header { padding: 12px; gap: 10px; }
+            .q-text { font-size: 14px; }
+            .marks { font-size: 12px; padding: 4px 8px; }
+            .solution { padding-left: 10px; font-size: 14px; }
+            .step-marks { float: none; display: inline-block; margin-top: 5px; }
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px; 
+            opacity: 0.08; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+
+    <div class="header">
+        <h1>MiT 09 || Detailed Solutions & Marking Scheme</h1>
+        <h2>Surprise Test - Class 12 Physics (Chapter 2: Electrostatic Potential and Capacitance)</h2>
+    </div>
+
+    <div class="section-title">SECTION A</div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">1. Two equipotential surfaces can never intersect each other. Justify this statement with a valid scientific reason.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p>If two equipotential surfaces were to intersect, it would mean that at the point of intersection, there would be <strong>two different values of electric potential</strong>, which is physically impossible. <span class="step-marks">(1 Mark)</span></p>
+            <p>Alternatively: The direction of the electric field is always perpendicular to an equipotential surface. If they intersect, there would be two perpendiculars at the point of intersection, implying two different directions of the electric field at a single point, which is impossible. <span class="step-marks">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">2. Write the expression for the potential energy of an electric dipole of dipole moment \( \vec{p} \) placed in a uniform electric field \( \vec{E} \). Identify the conditions for stable and unstable equilibrium.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="math-scroll">
+                <p>The potential energy \( U \) of an electric dipole is given by the dot product of dipole moment and electric field:<br>
+                \[ U = -\vec{p} \cdot \vec{E} = -pE \cos\theta \] <span class="step-marks">(1 Mark)</span></p>
+            </div>
+            <p><strong>Stable Equilibrium:</strong> Occurs when potential energy is minimum. This happens when the dipole is aligned parallel to the electric field (\( \theta = 0^\circ \)). Here, \( U = -pE \). <span class="step-marks">(1/2 Mark)</span></p>
+            <p><strong>Unstable Equilibrium:</strong> Occurs when potential energy is maximum. This happens when the dipole is aligned anti-parallel to the field (\( \theta = 180^\circ \)). Here, \( U = +pE \). <span class="step-marks">(1/2 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">3. A charge of \( 5\mu C \) is moved from a point \( A \) to a point \( B \) on an equipotential surface. What is the work done by the electrostatic force in this process? Explain briefly.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p>The work done is <strong>Zero</strong>. <span class="step-marks">(1 Mark)</span></p>
+            <p><strong>Reason:</strong> By definition, the electric potential is constant everywhere on an equipotential surface. Therefore, the potential difference between any two points A and B on it is zero (\( V_B - V_A = 0 \)). <br>
+            Since Work Done \( W = q(V_B - V_A) \), we get \( W = 5\mu C \times 0 = 0 \). <span class="step-marks">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">4. Draw the equipotential surfaces for a single positive point charge. How does the spacing between the surfaces change as we move away from the charge?</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p><em>(Diagram Requirement: Student must draw concentric circles/spheres around a central '+' charge, with outward radial electric field lines perpendicular to these surfaces.)</em> <span class="step-marks">(1 Mark)</span></p>
+            <p><strong>Spacing:</strong> The electric field intensity decreases as we move away from the point charge (\( E \propto \frac{1}{r^2} \)). We know the relation \( E = -\frac{dV}{dr} \), which gives \( dr = -\frac{dV}{E} \). <br>
+            For a constant potential difference \( dV \), the spacing \( dr \) is inversely proportional to \( E \). Since \( E \) decreases, <strong>the spacing between equipotential surfaces increases</strong> as we move away from the charge. <span class="step-marks">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">5. Establish the relationship between electric field intensity (\( E \)) and electric potential (\( V \)) at a point.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="math-scroll">
+                <p>Consider a unit positive test charge moved by a small distance \( d\vec{r} \) against an electric field \( \vec{E} \).</p>
+                <p>The work done against the electric field is: <br>
+                \( dW = \vec{F} \cdot d\vec{r} = (1)\vec{E} \cdot d\vec{r} = -E dr \) (Since force is against the field, angle is 180°, so \( \cos 180^\circ = -1 \)) <span class="step-marks">(1 Mark)</span></p>
+                <p>By definition, the work done in moving a unit positive charge is the potential difference \( dV \). <br>
+                Equating the two: \( dV = -E dr \) <br>
+                <strong>\[ E = -\frac{dV}{dr} \]</strong> <span class="step-marks">(1 Mark)</span></p>
+            </div>
+            <p><em>(The negative sign indicates that the direction of the electric field is in the direction of steepest decrease of electrical potential.)</em></p>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B</div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">6. Derive an expression for the electrostatic potential energy of a system of two point charges \( q_1 \) and \( q_2 \) separated by a distance \( r \) in the absence of any external electric field.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p>Let the first charge \( q_1 \) be brought from infinity to a point \( P_1 \). Since there is initially no external electric field, the work done is zero: <br>
+            \( W_1 = 0 \). <span class="step-marks">(1 Mark)</span></p>
+            <p>This charge \( q_1 \) creates an electric potential at a distance \( r \) (where point \( P_2 \) is located):</p>
+            <div class="math-scroll">
+                \[ V_1 = \frac{1}{4\pi\epsilon_0} \frac{q_1}{r} \]
+            </div>
+            <p>Now, to bring the second charge \( q_2 \) from infinity to point \( P_2 \), work must be done against the electric field of \( q_1 \). <span class="step-marks">(1 Mark)</span></p>
+            <div class="math-scroll">
+                <p>\( W_2 = q_2 \times V_1 \) <br>
+                \[ W_2 = q_2 \left( \frac{1}{4\pi\epsilon_0} \frac{q_1}{r} \right) \] <br>
+                \[ W_2 = \frac{1}{4\pi\epsilon_0} \frac{q_1 q_2}{r} \]</p>
+            </div>
+            <p>The total work done (\( W_1 + W_2 \)) is stored as the electrostatic potential energy (\( U \)) of the system. <br>
+            <strong>\[ U = \frac{1}{4\pi\epsilon_0} \frac{q_1 q_2}{r} \]</strong> <span class="step-marks">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">7. Two capacitors of capacitances \( 3 \mu F \) and \( 6 \mu F \) are connected in series across a \( 12V \) battery. Calculate: <br>(i) The equivalent capacitance of the combination. <br>(ii) The potential difference across the \( 3 \mu F \) capacitor.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="sub-part">
+                <p><strong>(i) Equivalent Capacitance (\( C_{eq} \)):</strong></p>
+                <div class="math-scroll">
+                    <p>For capacitors connected in series, the formula is: \( \frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} \)<br>
+                    \( \frac{1}{C_{eq}} = \frac{1}{3} + \frac{1}{6} = \frac{2+1}{6} = \frac{3}{6} = \frac{1}{2} \mu F^{-1} \) <br>
+                    <strong>\( C_{eq} = 2 \mu F \)</strong> <span class="step-marks">(1.5 Marks)</span></p>
+                </div>
+            </div>
+            <div class="sub-part">
+                <p><strong>(ii) Potential Difference across \( 3 \mu F \) capacitor (\( V_1 \)):</strong></p>
+                <div class="math-scroll">
+                    <p>In a series combination, the charge \( Q \) is the same on both capacitors. <br>
+                    Total charge drawn from the battery: \( Q = C_{eq} \times V = 2 \mu F \times 12 V = 24 \mu C \) <span class="step-marks">(0.5 Marks)</span></p>
+                    <p>Potential difference across the first capacitor (\( C_1 = 3 \mu F \)): <br>
+                    \( V_1 = \frac{Q}{C_1} = \frac{24 \mu C}{3 \mu F} \) <br>
+                    <strong>\( V_1 = 8 V \)</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">8. Derive the expression for the energy stored in a parallel plate capacitor of capacitance \( C \) charged to a potential \( V \).</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p>Consider a capacitor of capacitance \( C \). Initially, it is uncharged. Let it be charged gradually by a battery.</p>
+            <p>At any intermediate stage during charging, let the instantaneous charge on the capacitor be \( q \) and its potential difference be \( v \). <br>
+            Then, \( v = \frac{q}{C} \). <span class="step-marks">(1 Mark)</span></p>
+            <div class="math-scroll">
+                <p>The small amount of work done (\( dW \)) in transferring an additional small charge \( dq \) against this potential difference is: <br>
+                \[ dW = v \cdot dq = \frac{q}{C} dq \] <span class="step-marks">(1 Mark)</span></p>
+                <p>The total work done to charge the capacitor from an initial charge \( q = 0 \) to a final charge \( q = Q \) is the integral of \( dW \): <br>
+                \[ W = \int_0^Q \frac{q}{C} dq = \frac{1}{C} \left[ \frac{q^2}{2} \right]_0^Q = \frac{Q^2}{2C} \]</p>
+            </div>
+            <p>This work done is stored inside the capacitor as electrostatic potential energy \( U \). <br>
+            <strong>\( U = \frac{Q^2}{2C} \)</strong>. <br>
+            Substituting \( Q = CV \), we get the alternate form: <strong>\( U = \frac{1}{2}CV^2 \)</strong>. <span class="step-marks">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">9. A parallel plate capacitor is charged to a certain potential difference by a battery. The battery is then disconnected, and a dielectric slab of dielectric constant \( K \) is inserted, completely filling the space between the plates. State the effect (with reasoning) on:<br>(i) The capacitance of the capacitor.<br>(ii) The electric field between the plates.<br>(iii) The energy stored in the capacitor.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p><strong>Crucial Concept:</strong> Since the battery is disconnected before inserting the dielectric, the <strong>Total Charge (\( Q \)) remains constant</strong>.</p>
+            <div class="sub-part">
+                <p><strong>(i) Capacitance:</strong> <br>
+                The presence of a dielectric medium always increases the capacitance by a factor of its dielectric constant \( K \). <br>
+                <strong>\( C' = K \cdot C_0 \)</strong> (Capacitance increases \( K \) times). <span class="step-marks">(1 Mark)</span></p>
+            </div>
+            <div class="sub-part">
+                <p><strong>(ii) Electric Field:</strong> <br>
+                The new potential difference is \( V' = \frac{Q}{C'} = \frac{Q}{KC_0} = \frac{V_0}{K} \). <br>
+                Since Electric Field \( E = \frac{V}{d} \), the new electric field is \( E' = \frac{V'}{d} = \frac{V_0/K}{d} = \frac{E_0}{K} \). <br>
+                <strong>\( E' = \frac{E_0}{K} \)</strong> (Electric field decreases by a factor of \( K \)). <span class="step-marks">(1 Mark)</span></p>
+            </div>
+            <div class="sub-part">
+                <p><strong>(iii) Energy stored:</strong> <br>
+                Using the energy formula that involves constant charge \( Q \): <br>
+                \( U' = \frac{Q^2}{2C'} = \frac{Q^2}{2(KC_0)} = \frac{1}{K} \left( \frac{Q^2}{2C_0} \right) = \frac{U_0}{K} \) <br>
+                <strong>\( U' = \frac{U_0}{K} \)</strong> (Stored energy decreases by a factor of \( K \)). <span class="step-marks">(1 Mark)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">10. Three point charges \( +q \), \( -2q \), and \( +3q \) are placed at the vertices \( A \), \( B \), and \( C \) respectively of an equilateral triangle of side \( a \). Find the total electrostatic potential energy of the system.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <p>The total electrostatic potential energy of a system of charges is the algebraic sum of the potential energies of all possible pairs of charges.</p>
+            <div class="math-scroll">
+                \[ U_{total} = U_{AB} + U_{BC} + U_{CA} \] <span class="step-marks">(1 Mark)</span>
+                <br><br>
+                \[ U_{total} = \frac{1}{4\pi\epsilon_0} \left[ \frac{(q_{A})(q_{B})}{r_{AB}} + \frac{(q_{B})(q_{C})}{r_{BC}} + \frac{(q_{C})(q_{A})}{r_{CA}} \right] \]
+                <br><br>
+                Here, \( r_{AB} = r_{BC} = r_{CA} = a \). Substituting the charges: <br>
+                \[ U_{total} = \frac{1}{4\pi\epsilon_0} \left[ \frac{(+q)(-2q)}{a} + \frac{(-2q)(+3q)}{a} + \frac{(+3q)(+q)}{a} \right] \] <span class="step-marks">(1 Mark)</span>
+                <br><br>
+                \[ U_{total} = \frac{1}{4\pi\epsilon_0 a} \left[ -2q^2 - 6q^2 + 3q^2 \right] \]
+                <br><br>
+                \[ U_{total} = \frac{1}{4\pi\epsilon_0 a} \left[ -5q^2 \right] \]
+                <br><br>
+                <strong>\[ U_{total} = -\frac{5q^2}{4\pi\epsilon_0 a} \]</strong> <span class="step-marks">(1 Mark)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C</div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">11. (a) Derive an expression for the capacitance of a parallel plate capacitor of plate area \( A \) and plate separation \( d \) when the space between the plates is completely filled with a vacuum. (2 Marks)<br><br>(b) A dielectric slab of thickness \( t \) (\( t < d \)) and dielectric constant \( K \) is introduced between the plates of the above capacitor. Obtain the new expression for its capacitance. (3 Marks)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="sub-part">
+                <p><strong>(a) Capacitance in Vacuum [2 Marks]:</strong></p>
+                <div class="math-scroll">
+                    <p>Let the plates have surface charge densities \( +\sigma \) and \( -\sigma \), where \( \sigma = \frac{Q}{A} \).</p>
+                    <p>The uniform electric field between the plates in vacuum is: <br>
+                    \( E_0 = \frac{\sigma}{\epsilon_0} = \frac{Q}{A\epsilon_0} \) <span class="step-marks">(0.5 Mark)</span></p>
+                    <p>The potential difference between the plates is: <br>
+                    \( V_0 = E_0 \cdot d = \frac{Q \cdot d}{A\epsilon_0} \) <span class="step-marks">(0.5 Mark)</span></p>
+                    <p>By definition, capacitance is the ratio of charge to potential: <br>
+                    \( C_0 = \frac{Q}{V_0} = \frac{Q}{\left(\frac{Q \cdot d}{A\epsilon_0}\right)} \)</p>
+                    <p><strong>\[ C_0 = \frac{\epsilon_0 A}{d} \]</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+            
+            <div class="sub-part">
+                <p><strong>(b) Capacitance with Dielectric Slab (\( t < d \)) [3 Marks]:</strong></p>
+                <div class="math-scroll">
+                    <p>When a dielectric slab of thickness \( t \) is inserted, the space between the plates consists of two regions: <br>
+                    1. Vacuum region of thickness \( (d-t) \) with electric field \( E_0 = \frac{Q}{A\epsilon_0} \). <br>
+                    2. Dielectric region of thickness \( t \) with reduced electric field \( E = \frac{E_0}{K} \). <span class="step-marks">(1 Mark)</span></p>
+                    <p>The total potential difference \( V \) across the plates is the sum of the potential drops across these two regions: <br>
+                    \[ V = E_0(d-t) + E(t) \] <br>
+                    \[ V = E_0(d-t) + \frac{E_0}{K}(t) \] <br>
+                    \[ V = E_0 \left[ (d-t) + \frac{t}{K} \right] \] <span class="step-marks">(1 Mark)</span></p>
+                    <p>Substitute \( E_0 = \frac{Q}{A\epsilon_0} \): <br>
+                    \[ V = \frac{Q}{A\epsilon_0} \left[ d - t + \frac{t}{K} \right] \]</p>
+                    <p>The new Capacitance is \( C = \frac{Q}{V} \): <br>
+                    \[ C = \frac{Q}{\frac{Q}{A\epsilon_0} \left( d - t + \frac{t}{K} \right)} \]</p>
+                    <p><strong>\[ C = \frac{\epsilon_0 A}{d - t + \frac{t}{K}} \]</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">12. (a) Define an electric dipole. Find the expression for the electric potential at a point on the axial line of an electric dipole. (3 Marks)<br><br>(b) Show that the electric potential at any point on the equatorial line of an electric dipole is zero. (2 Marks)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="sub-part">
+                <p><strong>(a) Definition & Axial Potential [3 Marks]:</strong></p>
+                <p><strong>Electric Dipole:</strong> An electric dipole is a pair of equal and opposite point charges separated by a small vector distance. <span class="step-marks">(0.5 Mark)</span></p>
+                <div class="math-scroll">
+                    <p>Let an electric dipole consist of charges \( -q \) at point A and \( +q \) at point B separated by a distance \( 2a \). Let P be a point on the axial line at a distance \( r \) from the center O of the dipole on the side of \( +q \).</p>
+                    <p>Potential at P due to charge \( +q \): \( V_1 = \frac{1}{4\pi\epsilon_0} \frac{q}{(r-a)} \) <br>
+                    Potential at P due to charge \( -q \): \( V_2 = \frac{1}{4\pi\epsilon_0} \frac{-q}{(r+a)} \) <span class="step-marks">(1 Mark)</span></p>
+                    <p>By superposition, total Potential \( V \) at P is the algebraic sum: <br>
+                    \[ V = V_1 + V_2 = \frac{q}{4\pi\epsilon_0} \left[ \frac{1}{r-a} - \frac{1}{r+a} \right] \] <br>
+                    \[ V = \frac{q}{4\pi\epsilon_0} \left[ \frac{(r+a) - (r-a)}{(r-a)(r+a)} \right] \] <br>
+                    \[ V = \frac{1}{4\pi\epsilon_0} \frac{q(2a)}{r^2 - a^2} \]</p>
+                    <p>Since the electric dipole moment is \( p = q \times 2a \), we get: <br>
+                    <strong>\[ V = \frac{1}{4\pi\epsilon_0} \frac{p}{r^2 - a^2} \]</strong> <span class="step-marks">(1.5 Marks)</span></p>
+                    <p><em>(For a short dipole where \( r \gg a \), this reduces to \( V = \frac{1}{4\pi\epsilon_0} \frac{p}{r^2} \))</em></p>
+                </div>
+            </div>
+
+            <div class="sub-part">
+                <p><strong>(b) Equatorial Potential [2 Marks]:</strong></p>
+                <div class="math-scroll">
+                    <p>Let point P be on the equatorial line (perpendicular bisector) of the dipole at a distance \( r \) from the center O.</p>
+                    <p>The distance of point P from both the charges \( -q \) (at A) and \( +q \) (at B) is exactly the same, given by Pythagoras theorem: \( AP = BP = \sqrt{r^2 + a^2} \). <span class="step-marks">(1 Mark)</span></p>
+                    <p>Total potential at P is the sum of potentials due to both charges: <br>
+                    \[ V = V_{+q} + V_{-q} \] <br>
+                    \[ V = \frac{1}{4\pi\epsilon_0} \frac{q}{\sqrt{r^2 + a^2}} + \frac{1}{4\pi\epsilon_0} \frac{-q}{\sqrt{r^2 + a^2}} \] <br>
+                    <strong>\[ V = 0 \]</strong> <span class="step-marks">(1 Mark)</span></p>
+                    <p>Therefore, the entire equatorial plane of an electric dipole is a zero-potential surface.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-header">
+            <div class="q-text">13. A network of four capacitors \( C_1 = 10 \mu F \), \( C_2 = 20 \mu F \), \( C_3 = 30 \mu F \), and \( C_4 = 40 \mu F \) are connected to a \( 100V \) DC supply. \( C_1 \), \( C_2 \), and \( C_3 \) are connected in parallel, and this combination is connected in series with \( C_4 \).<br><br>(a) Draw the circuit diagram for the given arrangement. (1 Mark)<br>(b) Calculate the equivalent capacitance of the network. (2 Marks)<br>(c) Calculate the total charge supplied by the battery. (1 Mark)<br>(d) Calculate the energy stored in the capacitor \( C_4 \). (1 Mark)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution">
+            <h4>Solution:</h4>
+            <div class="sub-part">
+                <p><strong>(a) Circuit Diagram [1 Mark]:</strong></p>
+                <p><em>(Diagram Requirement: Student must neatly sketch a circuit where three capacitors \( C_1 \), \( C_2 \), and \( C_3 \) are in parallel branches. These branches merge into a single node, which then connects to \( C_4 \). The entire combination is closed in a loop with a 100V DC source.)</em></p>
+            </div>
+            
+            <div class="sub-part">
+                <p><strong>(b) Equivalent Capacitance (\( C_{eq} \)) [2 Marks]:</strong></p>
+                <div class="math-scroll">
+                    <p>First, resolve the parallel combination of \( C_1, C_2, C_3 \): <br>
+                    \( C_p = C_1 + C_2 + C_3 = 10\mu F + 20\mu F + 30\mu F = 60 \mu F \) <span class="step-marks">(1 Mark)</span></p>
+                    <p>Now, this equivalent capacitance \( C_p \) is in series with \( C_4 \): <br>
+                    \( \frac{1}{C_{eq}} = \frac{1}{C_p} + \frac{1}{C_4} = \frac{1}{60} + \frac{1}{40} \) <br>
+                    \( \frac{1}{C_{eq}} = \frac{2 + 3}{120} = \frac{5}{120} \) <br>
+                    <strong>\( C_{eq} = \frac{120}{5} = 24 \mu F \)</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+            
+            <div class="sub-part">
+                <p><strong>(c) Total Charge (\( Q \)) [1 Mark]:</strong></p>
+                <div class="math-scroll">
+                    <p>The total charge supplied by the 100V battery to the entire network is: <br>
+                    \( Q_{total} = C_{eq} \times V \) <br>
+                    \( Q_{total} = 24 \mu F \times 100 V \) <br>
+                    <strong>\( Q_{total} = 2400 \mu C \) (or \( 2.4 \times 10^{-3} C \))</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+            
+            <div class="sub-part">
+                <p><strong>(d) Energy stored in \( C_4 \) [1 Mark]:</strong></p>
+                <div class="math-scroll">
+                    <p>Since \( C_4 \) is in series with the main circuit, the entire total charge \( Q_{total} \) flows through it. <br>
+                    Therefore, the charge on \( C_4 \) is \( Q_4 = 2400 \mu C \).</p>
+                    <p>Energy stored in \( C_4 \) is: <br>
+                    \( U_4 = \frac{Q_4^2}{2C_4} \) <br>
+                    \( U_4 = \frac{(2400 \times 10^{-6} C)^2}{2 \times 40 \times 10^{-6} F} \) <br>
+                    \( U_4 = \frac{5760000 \times 10^{-12}}{80 \times 10^{-6}} \) <br>
+                    <strong>\( U_4 = 72000 \times 10^{-6} J = 0.072 J \)</strong> <span class="step-marks">(1 Mark)</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
