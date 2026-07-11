@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Answer Key & Solutions</title>
+    <!-- MathJax for rendering Mathematical equations -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 1, 
+        minScale: 0.5,
+        matchFontHeight: true,
+        displayAlign: 'left',
+        displayIndent: '2em'
+      }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #2980b9;
+            --bg-color: #f8f9fa;
+        }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 { margin: 0; color: var(--primary); font-size: 26px; text-transform: uppercase; }
+        .header h2 { margin: 10px 0 0; color: var(--accent); font-size: 18px; }
+        
+        .section-title {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 30px 0 15px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .solution-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            background: #fff;
+        }
+        
+        /* Flexbox setup to place marks on the right */
+        .q-header {
+            background-color: #eaf2f8;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #d5e5f2;
+        }
+        .q-text { flex: 1; font-weight: 600; color: var(--primary); padding-right: 15px; }
+        .q-marks { 
+            background: var(--accent); 
+            color: white; 
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+
+        .a-body { padding: 20px; font-size: 1.05em; }
+        .step { margin-bottom: 10px; }
+        .final-answer {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 10px 15px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container { margin: 10px; padding: 15px; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 10px; }
+            .a-body { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vardaan Learning Institute</h1>
+            <h2>Detailed Solutions & Answer Key - Minor Test (Class 8 ICSE)</h2>
+        </div>
+
+        <div class="section-title">SECTION A (10 Marks)</div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">1. Define contact and non-contact forces. Give one example of each.</div>
+                <div class="q-marks">2 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step"><strong>Contact Forces:</strong> Forces that act on a body only when objects are in physical contact with each other.<br>
+                <em>Example:</em> Frictional force, Muscular force. (1 Mark)</div>
+                <div class="step"><strong>Non-Contact Forces:</strong> Forces that can act on an object from a distance without any physical contact.<br>
+                <em>Example:</em> Gravitational force, Magnetic force. (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">2. A solid metallic block has a mass of 120 g and occupies a volume of 30 cm³. Calculate its density in SI units.</div>
+                <div class="q-marks">2 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Mass ($m$) = $120 \text{ g}$</div>
+                <div class="step">Volume ($V$) = $30 \text{ cm}^3$</div>
+                <div class="step">Density ($d$) = $\frac{\text{Mass}}{\text{Volume}} = \frac{120}{30} = 4 \text{ g/cm}^3$ (1 Mark)</div>
+                <div class="step">To convert to SI units ($\text{kg/m}^3$), we multiply by 1000.</div>
+                <div class="final-answer">Density in SI units = $4 \times 1000 = 4000 \text{ kg/m}^3$ (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">3. Find the area of a rhombus whose diagonals are 12 cm and 16 cm respectively.</div>
+                <div class="q-marks">2 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Let diagonals be $d_1 = 12 \text{ cm}$ and $d_2 = 16 \text{ cm}$.</div>
+                <div class="step">Area of a rhombus = $\frac{1}{2} \times d_1 \times d_2$</div>
+                <div class="math-scroll">
+                $$ \text{Area} = \frac{1}{2} \times 12 \times 16 $$
+                $$ \text{Area} = 6 \times 16 $$
+                </div>
+                <div class="final-answer">Area = $96 \text{ cm}^2$</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">4. The circumference of a circle is 88 cm. Find its area. (Take &pi; = 22/7)</div>
+                <div class="q-marks">2 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Circumference ($C$) = $2 \pi r = 88 \text{ cm}$</div>
+                <div class="math-scroll">
+                $$ 2 \times \frac{22}{7} \times r = 88 $$
+                $$ \frac{44}{7} \times r = 88 $$
+                $$ r = \frac{88 \times 7}{44} = 2 \times 7 = 14 \text{ cm} $$
+                </div>
+                <div class="step">Area = $\pi r^2$</div>
+                <div class="math-scroll">
+                $$ \text{Area} = \frac{22}{7} \times 14 \times 14 = 22 \times 2 \times 14 $$
+                </div>
+                <div class="final-answer">Area = $616 \text{ cm}^2$</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">5. Why does an iron nail sink in water, but a large steel ship floats? Explain briefly.</div>
+                <div class="q-marks">2 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">The density of a solid iron nail is greater than the density of water. Therefore, the upthrust (buoyant force) acting on it is less than its weight, causing it to sink. (1 Mark)</div>
+                <div class="step">A ship, although made of steel, is hollow and traps a large volume of air. This makes its <em>average density</em> less than that of water. It displaces a volume of water whose weight is equal to the total weight of the ship, allowing it to float (Principle of Floatation). (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION B (15 Marks)</div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">6. Define 'Moment of Force' and state its SI unit. What are the two factors on which the turning effect of a force depends?</div>
+                <div class="q-marks">3 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step"><strong>Definition:</strong> The turning effect produced by a force on a rigid body about a fixed point or axis is called the moment of force. It is equal to the product of the magnitude of the force and the perpendicular distance of the line of action of the force from the axis of rotation. (1 Mark)</div>
+                <div class="step"><strong>SI Unit:</strong> Newton-metre (N m). (1 Mark)</div>
+                <div class="step"><strong>Factors:</strong><br>
+                    1. The magnitude of the force applied.<br>
+                    2. The perpendicular distance of the force from the pivoted point (axis of rotation). (1 Mark)
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">7. A rectangular grassy plot is 112 m long and 78 m broad. It has a gravel path 2.5 m wide all around it on the inside. Find the area of the gravel path.</div>
+                <div class="q-marks">3 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Outer dimensions of the plot: Length ($L$) = 112 m, Breadth ($B$) = 78 m.</div>
+                <div class="step">Outer Area = $112 \times 78 = 8736 \text{ m}^2$. (1 Mark)</div>
+                <div class="step">The path is inside. Therefore, inner dimensions:</div>
+                <div class="math-scroll">
+                $$ \text{Inner Length } (l) = 112 - (2.5 + 2.5) = 112 - 5 = 107 \text{ m} $$
+                $$ \text{Inner Breadth } (b) = 78 - (2.5 + 2.5) = 78 - 5 = 73 \text{ m} $$
+                </div>
+                <div class="step">Inner Area = $107 \times 73 = 7811 \text{ m}^2$. (1 Mark)</div>
+                <div class="step">Area of Path = Outer Area - Inner Area</div>
+                <div class="math-scroll">
+                $$ \text{Area} = 8736 - 7811 $$
+                </div>
+                <div class="final-answer">Area of the path = $925 \text{ m}^2$ (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">8. The relative density of silver is 10.8. The density of water is 10³ kg/m³. What is the density of silver in SI units? What does this imply?</div>
+                <div class="q-marks">3 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Relative Density (RD) = $\frac{\text{Density of substance}}{\text{Density of water}}$</div>
+                <div class="math-scroll">
+                $$ 10.8 = \frac{\text{Density of silver}}{10^3 \text{ kg/m}^3} $$
+                </div>
+                <div class="final-answer">Density of silver = $10.8 \times 10^3 \text{ kg/m}^3$ or $10800 \text{ kg/m}^3$ (1.5 Marks)</div>
+                <div class="step"><strong>Implication:</strong> This statement implies that silver is 10.8 times heavier than an equal volume of water. (1.5 Marks)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">9. Find the area of a trapezium whose parallel sides are 24 cm and 20 cm, and the perpendicular distance between them is 15 cm.</div>
+                <div class="q-marks">3 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Parallel sides: $a = 24 \text{ cm}$, $b = 20 \text{ cm}$</div>
+                <div class="step">Height (distance between them), $h = 15 \text{ cm}$</div>
+                <div class="step">Formula: Area = $\frac{1}{2} \times (\text{Sum of parallel sides}) \times \text{height}$ (1 Mark)</div>
+                <div class="math-scroll">
+                $$ \text{Area} = \frac{1}{2} \times (24 + 20) \times 15 $$
+                $$ \text{Area} = \frac{1}{2} \times 44 \times 15 $$
+                $$ \text{Area} = 22 \times 15 $$
+                </div>
+                <div class="final-answer">Area = $330 \text{ cm}^2$ (2 Marks)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">10. A solid metallic cube of side 5 cm has a mass of 1000 g. Find its density in g/cm³. Will it float or sink in a liquid of density 1.2 g/cm³? Give a reason.</div>
+                <div class="q-marks">3 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Side of cube = $5 \text{ cm}$</div>
+                <div class="step">Volume of cube = $5 \times 5 \times 5 = 125 \text{ cm}^3$ (1 Mark)</div>
+                <div class="step">Mass = $1000 \text{ g}$</div>
+                <div class="step">Density = $\frac{\text{Mass}}{\text{Volume}} = \frac{1000}{125} = 8 \text{ g/cm}^3$ (1 Mark)</div>
+                <div class="final-answer">The cube will <strong>sink</strong> in the liquid.</div>
+                <div class="step"><strong>Reason:</strong> The density of the cube ($8 \text{ g/cm}^3$) is greater than the density of the liquid ($1.2 \text{ g/cm}^3$). (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION C (25 Marks)</div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">11. A room is 8 m long, 6 m wide, and 4 m high. Find the total cost of whitewashing the four walls and the ceiling at the rate of ₹ 50 per square metre.</div>
+                <div class="q-marks">5 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Dimensions: $L = 8 \text{ m}$, $B = 6 \text{ m}$, $H = 4 \text{ m}$</div>
+                <div class="step">Area of 4 walls (Lateral Surface Area) = $2(L + B) \times H$</div>
+                <div class="math-scroll">
+                $$ \text{Area}_{\text{walls}} = 2(8 + 6) \times 4 = 2(14) \times 4 = 112 \text{ m}^2 \quad \text{(2 Marks)} $$
+                </div>
+                <div class="step">Area of ceiling = $L \times B$</div>
+                <div class="math-scroll">
+                $$ \text{Area}_{\text{ceiling}} = 8 \times 6 = 48 \text{ m}^2 \quad \text{(1 Mark)} $$
+                </div>
+                <div class="step">Total area to be whitewashed = $112 + 48 = 160 \text{ m}^2$ (1 Mark)</div>
+                <div class="step">Cost of whitewashing = Total Area $\times$ Rate</div>
+                <div class="math-scroll">
+                $$ \text{Cost} = 160 \times 50 $$
+                </div>
+                <div class="final-answer">Total Cost = ₹ 8,000 (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">12. (a) Differentiate between mass and weight.<br>(b) A body of volume 100 cm³ weighs 5 kgf in air. Immersed in liquid of density 1.8 &times; 10³ kg/m³. Find (i) Upthrust (ii) Apparent weight.</div>
+                <div class="q-marks">5 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step"><strong>(a) Differences (Any two - 2 Marks):</strong><br>
+                1. Mass is the quantity of matter in a body, Weight is the gravitational force acting on it.<br>
+                2. Mass is scalar; Weight is a vector quantity.<br>
+                3. Mass remains constant everywhere; Weight varies from place to place.<br>
+                4. SI unit of Mass is kg; SI unit of weight is Newton (N).</div>
+                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+                <div class="step"><strong>(b) Numerical (3 Marks):</strong></div>
+                <div class="step">Volume of body ($V$) = $100 \text{ cm}^3 = 100 \times 10^{-6} \text{ m}^3 = 10^{-4} \text{ m}^3$</div>
+                <div class="step">Density of liquid ($\rho$) = $1.8 \times 10^3 \text{ kg/m}^3 = 1800 \text{ kg/m}^3$</div>
+                <div class="step">Weight in air ($W_1$) = $5 \text{ kgf}$</div>
+                <div class="step"><strong>(i) Upthrust ($F_B$):</strong> Formula = $V \rho g$</div>
+                <div class="math-scroll">
+                $$ F_B = 10^{-4} \times 1800 \times g = 0.18 \text{ kgf} \quad \text{(1.5 Marks)} $$
+                </div>
+                <div class="step"><strong>(ii) Apparent weight in liquid:</strong> = Weight in Air - Upthrust</div>
+                <div class="math-scroll">
+                $$ W_{\text{app}} = 5 - 0.18 = 4.82 \text{ kgf} \quad \text{(1.5 Marks)} $$
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">13. A rectangular park 60m &times; 40m. Two crossroads of width 3m run at right angles through centre. Find area of crossroads and cost of concreting at ₹ 150/m².</div>
+                <div class="q-marks">5 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Area of the road parallel to the length = $60 \text{ m} \times 3 \text{ m} = 180 \text{ m}^2$ (1 Mark)</div>
+                <div class="step">Area of the road parallel to the breadth = $40 \text{ m} \times 3 \text{ m} = 120 \text{ m}^2$ (1 Mark)</div>
+                <div class="step">Area of the common central intersection (counted twice) = $3 \text{ m} \times 3 \text{ m} = 9 \text{ m}^2$ (1 Mark)</div>
+                <div class="step">Total area of crossroads = (Area of road 1) + (Area of road 2) - (Common Area)</div>
+                <div class="math-scroll">
+                $$ \text{Total Area} = 180 + 120 - 9 = 300 - 9 = 291 \text{ m}^2 \quad \text{(1 Mark)} $$
+                </div>
+                <div class="step">Cost of concreting = Area $\times$ Rate</div>
+                <div class="math-scroll">
+                $$ \text{Cost} = 291 \times 150 $$
+                </div>
+                <div class="final-answer">Total Cost = ₹ 43,650 (1 Mark)</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">14. (a) State the Principle of Floatation. (b) A block of wood of volume 50 cm³ and density 0.6 g/cm³ floats in water. Find its mass and volume immersed.</div>
+                <div class="q-marks">5 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step"><strong>(a) Principle of Floatation (2 Marks):</strong><br>
+                It states that when a body floats in a liquid, the weight of the liquid displaced by its immersed part is equal to the total weight of the body.</div>
+                <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+                <div class="step"><strong>(b) Numerical (3 Marks):</strong></div>
+                <div class="step">Volume of block ($V$) = $50 \text{ cm}^3$, Density of block ($d$) = $0.6 \text{ g/cm}^3$</div>
+                <div class="step"><strong>Mass of the block:</strong> $m = V \times d = 50 \times 0.6$</div>
+                <div class="final-answer">Mass = $30 \text{ g}$ (1 Mark)</div>
+                <div class="step"><strong>Volume immersed:</strong> By principle of floatation, Weight of block = Weight of water displaced.</div>
+                <div class="step">Mass of block = Mass of water displaced $\Rightarrow 30 \text{ g}$ of water is displaced.</div>
+                <div class="step">Since density of water is $1 \text{ g/cm}^3$, Volume of $30 \text{ g}$ water = $30 \text{ cm}^3$.</div>
+                <div class="step">Therefore, Volume of water displaced = Volume of block immersed.</div>
+                <div class="final-answer">Volume immersed in water = $30 \text{ cm}^3$ (2 Marks)</div>
+                <div class="step"><em>Alternative formula:</em> $v = \frac{d}{d_w} \times V = \frac{0.6}{1} \times 50 = 30 \text{ cm}^3$</div>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="q-header">
+                <div class="q-text">15. A circular park is surrounded by a path 7 m wide. Circumference of the park is 352 m. Find total area of the path.</div>
+                <div class="q-marks">5 Marks</div>
+            </div>
+            <div class="a-body">
+                <div class="step">Let the inner radius of the park be $r$.</div>
+                <div class="step">Circumference = $2 \pi r = 352 \text{ m}$</div>
+                <div class="math-scroll">
+                $$ 2 \times \frac{22}{7} \times r = 352 $$
+                $$ r = \frac{352 \times 7}{44} = 8 \times 7 = 56 \text{ m} \quad \text{(1.5 Marks)} $$
+                </div>
+                <div class="step">Width of the path = $7 \text{ m}$. Outer radius ($R$) = $56 + 7 = 63 \text{ m}$ (1 Mark)</div>
+                <div class="step">Area of the path = Area of outer circle - Area of inner circle = $\pi(R^2 - r^2)$</div>
+                <div class="math-scroll">
+                $$ \text{Area} = \frac{22}{7} \times (63^2 - 56^2) $$
+                $$ \text{Area} = \frac{22}{7} \times (63 - 56) \times (63 + 56) \quad \text{(using } a^2-b^2 \text{ identity)} $$
+                $$ \text{Area} = \frac{22}{7} \times 7 \times 119 \quad \text{(1.5 Marks)} $$
+                $$ \text{Area} = 22 \times 119 $$
+                </div>
+                <div class="final-answer">Area of the path = $2618 \text{ m}^2$ (1 Mark)</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

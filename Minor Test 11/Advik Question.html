@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        chtml: { displayAlign: 'left', displayIndent: '2em' }
+      };
+    </script>
+    <style>
+        /* Base Print and Desktop Styles */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-sizing: border-box;
+        }
+        
+        /* Screen responsiveness for Mobile/Tablet/Laptop */
+        @media screen {
+            body { width: 100%; max-width: 210mm; margin: 20px auto; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            @media (max-width: 768px) {
+                body { padding: 15px; margin: 0; font-size: 11pt; }
+                .institute-name { font-size: 18pt !important; }
+                .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+                .exam-details span { display: block; width: 100%; text-align: center; border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+                .exam-details span:last-child { border-bottom: none; }
+            }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+        }
+
+        /* Template Specific Styles */
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.10; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #2c3e50; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; }
+        .instructions { margin-top: 15px; font-size: 10.5pt; font-style: italic; text-align: left; background-color: #f9f9f9; padding: 10px; border-radius: 5px; border: 1px solid #eee; }
+        .instructions ul { margin: 5px 0 0 0; padding-left: 25px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 4px; text-decoration: none; }
+        .question-container { margin-bottom: 18px; display: flex; align-items: flex-start; text-align: justify; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 8px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        .math-overflow { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; max-width: 100%; }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 11</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Maths & Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper comprises three sections: <strong>A, B, and C</strong>. All questions are compulsory.</li>
+                <li><strong>Section A:</strong> Questions 1 to 5 carry 2 marks each.</li>
+                <li><strong>Section B:</strong> Questions 6 to 10 carry 3 marks each.</li>
+                <li><strong>Section C:</strong> Questions 11 to 15 carry 5 marks each.</li>
+                <li>In each section, Mathematics questions precede Chemistry questions.</li>
+                <li>Write your answers neatly and legibly. Show all essential working steps for mathematical problems.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            <div class="math-overflow">Evaluate \( (3x - 4y)^2 \) using a suitable algebraic identity.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <div class="math-overflow">Find the value of \( 78^2 - 22^2 \) without actual multiplication, using standard identities.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Define 'Intermolecular force of attraction'. State briefly how it varies among solids, liquids, and gases.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            What is the Kinetic Molecular Theory of matter? State any one of its primary postulates.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Differentiate between sublimation and deposition with one suitable example of each.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <div class="math-overflow">Simplify the following algebraic expression using identities: \( (2p + 3q)^2 + (2p - 3q)^2 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            <div class="math-overflow">If \( a - \frac{1}{a} = 5 \), find the value of \( a^2 + \frac{1}{a^2} \).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Explain the process of melting of a solid into a liquid on the basis of the kinetic theory of matter.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Give scientific reasons for the following statements:
+            <div class="sub-question">(a) Solids have a fixed shape and fixed volume. (1.5 Marks)</div>
+            <div class="sub-question">(b) Gases exert pressure on the walls of the container in all directions. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            State three significant differences between the process of evaporation and boiling.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="math-overflow">Prove that: \( (5m - 2n)^2 + 40mn = (5m + 2n)^2 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Using suitable standard identities, evaluate the following:
+            <div class="sub-question math-overflow">(a) \( 104 \times 96 \) (2.5 Marks)</div>
+            <div class="sub-question math-overflow">(b) \( 102^2 \) (2.5 Marks)</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+             <div class="math-overflow">If \( x + y = 12 \) and \( xy = 14 \), find the value of \( x^2 + y^2 \). Show your working clearly.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            State the five main postulates of the kinetic molecular theory of matter.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Tabulate five points of difference between solids, liquids, and gases based on their physical properties. Consider the following parameters for your differences: Shape, Volume, Compressibility, Intermolecular Space, and Intermolecular Force.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • Academic Dean</div>
+</body>
+</html>

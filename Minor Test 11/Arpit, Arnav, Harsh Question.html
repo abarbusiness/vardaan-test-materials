@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        chtml: { displayAlign: 'left', displayIndent: '2em' }
+      };
+    </script>
+    <style>
+        /* Base Print and Desktop Styles */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-sizing: border-box;
+        }
+        
+        /* Screen responsiveness for Mobile/Tablet/Laptop */
+        @media screen {
+            body { width: 100%; max-width: 210mm; margin: 20px auto; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            @media (max-width: 768px) {
+                body { padding: 15px; margin: 0; font-size: 11pt; }
+                .institute-name { font-size: 18pt !important; }
+                .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+                .exam-details span { display: block; width: 100%; text-align: center; border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+                .exam-details span:last-child { border-bottom: none; }
+            }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+        }
+
+        /* Template Specific Styles */
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.10; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #2c3e50; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; }
+        .instructions { margin-top: 15px; font-size: 10.5pt; font-style: italic; text-align: left; background-color: #f9f9f9; padding: 10px; border-radius: 5px; border: 1px solid #eee; }
+        .instructions ul { margin: 5px 0 0 0; padding-left: 25px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 13pt; text-transform: uppercase; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 4px; text-decoration: none; }
+        .question-container { margin-bottom: 18px; display: flex; align-items: flex-start; text-align: justify; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 8px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        .math-overflow { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 11</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Maths & Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper comprises three sections: <strong>A, B, and C</strong>. All questions are compulsory.</li>
+                <li><strong>Section A:</strong> Questions 1 to 5 carry 2 marks each.</li>
+                <li><strong>Section B:</strong> Questions 6 to 10 carry 3 marks each.</li>
+                <li><strong>Section C:</strong> Questions 11 to 15 carry 5 marks each.</li>
+                <li>In each section, Mathematics questions precede Science questions.</li>
+                <li>Write your answers neatly and legibly. Show working for mathematical problems.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            A machine in a soft drink factory fills 840 bottles in 6 hours. How many bottles will it fill in 5 hours?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            If 15 workers can build a wall in 48 hours, how many workers will be required to do the same work in 30 hours?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Define malleability and ductility. Name one metal that is highly malleable.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Why is sodium metal kept immersed in kerosene? Give a scientific reason.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            What happens when a copper vessel is exposed to moist air for a long time? Write the chemical components of the green coating formed.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            A train is moving at a uniform speed of \(75 \text{ km/hr}\). 
+            <div class="sub-question">(i) How far will it travel in 20 minutes?</div>
+            <div class="sub-question">(ii) Find the time required to cover a distance of 250 km.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A school has 8 periods a day, each of 45 minutes duration. How long would each period be if the school has 9 periods a day, assuming the total number of school hours remains the same?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Suppose 2 kg of sugar contains \(9 \times 10^6\) crystals. How many sugar crystals are there in:
+            <div class="sub-question">(i) 5 kg of sugar?</div>
+            <div class="sub-question">(ii) 1.2 kg of sugar?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            State three clear points of differentiation between metals and non-metals based on their physical properties.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            State reasons for the following statements:
+            <div class="sub-question">(a) Aluminium foils are used to wrap food items.</div>
+            <div class="sub-question">(b) Immersion rods for heating liquids are made up of metallic substances.</div>
+            <div class="sub-question">(c) Copper cannot displace zinc from its salt solution.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            A garrison of 120 men has provisions for 30 days. At the end of 5 days, 5 more men joined them. 
+            <div class="sub-question">(a) How many days can they sustain on the remaining provision? (4 Marks)</div>
+            <div class="sub-question">(b) Identify the type of proportion used in this problem. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) A farmer has enough food to feed 20 animals in his cattle for 6 days. How long would the food last if there were 10 more animals in his cattle? (3 Marks)</div>
+            <div class="sub-question">(b) In a model of a ship, the mast is 9 cm high, while the mast of the actual ship is 12 m high. If the length of the ship is 28 m, how long is the model ship? (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) What is a displacement reaction? Illustrate with a balanced chemical equation. (3 Marks)</div>
+            <div class="sub-question">(b) Can you store lemon pickle in an aluminium utensil? Explain your answer with scientific reasoning. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Write the complete word equations for the chemical reactions when:
+            <div class="sub-question">(a) Magnesium is reacted with dilute hydrochloric acid. (1.5 Marks)</div>
+            <div class="sub-question">(b) Copper is reacted with dilute sulphuric acid. (1.5 Marks)</div>
+            <div class="sub-question">(c) Explain the rule of reactivity series that dictates the outcome of reaction (b). (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) What are metalloids? Give two examples. (2 Marks)</div>
+            <div class="sub-question">(b) Identify and name the specific non-metal used in the following applications: (3 Marks)
+                <ul>
+                    <li>(i) In the water purification process to kill germs.</li>
+                    <li>(ii) In fertilizers to enhance plant growth.</li>
+                    <li>(iii) In the purple coloured solution applied on wounds as an antiseptic.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • Academic Dean</div>
+</body>
+</html>

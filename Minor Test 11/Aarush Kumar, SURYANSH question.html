@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 11</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        /* Responsive base styling */
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; /* Percentage based padding for responsiveness */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark styling */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header section */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        /* Exam details responsive grid */
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        /* Sections and Questions */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; overflow-y: hidden; } /* Prevents math equations from overflowing on mobile */
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        .math-block { overflow-x: auto; padding: 5px 0; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Print media query overrides */
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .exam-details { flex-wrap: nowrap; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 11</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Science & Mathematics</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Break down mathematical steps clearly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Find the value of \( 2^3 \times 3^2 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Express \( 343 \) in exponential form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Name two metals which are exceptionally soft and can be easily cut with a knife.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            What happens when a magnesium ribbon is burnt in air? Write the corresponding word equation.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Define the term <em>malleability</em>. Name the most malleable metal known to us.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Simplify and express the result in power notation:
+            <div class="math-block">
+                \( (5^2)^3 \times 5^4 \div 5^7 \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Write the number \( 279404 \) in its expanded form using exponents.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Simplify the following expression:
+            <div class="math-block">
+                \( \displaystyle \frac{2^5 \times 3^4 \times 4}{3^2 \times 32} \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            State three clear differences between metals and non-metals based purely on their physical properties.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Why is sodium metal kept immersed under kerosene oil? Explain the scientific reason briefly.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Solve the following:
+            <div class="sub-question">
+                <strong>(a)</strong> Express \( 729 \times 64 \) as a product of prime factors only in exponential form. <em>(3 Marks)</em>
+            </div>
+            <div class="sub-question">
+                <strong>(b)</strong> Evaluate the expression: \( (-1)^{20} + (-1)^{21} + (-1)^{22} \). <em>(2 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Simplify the given exponential expression completely showing all steps clearly:
+            <div class="math-block" style="margin-top: 10px; margin-bottom: 10px;">
+                \( \displaystyle \frac{3^5 \times 10^5 \times 25}{5^7 \times 6^5} \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Answer the following based on chemical reactivity:
+            <div class="sub-question">
+                <strong>(a)</strong> What do you understand by "displacement reactions"? <em>(2 Marks)</em>
+            </div>
+            <div class="sub-question">
+                <strong>(b)</strong> Detail the observation when an iron nail is placed in a copper sulphate solution. Write the word equation for this reaction. <em>(3 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Give strict scientific reasons for the following statements (1 mark each):
+            <div class="sub-question">(a) Aluminum foils are widely used to wrap food items.</div>
+            <div class="sub-question">(b) Immersion rods used for heating liquids are made of metallic substances.</div>
+            <div class="sub-question">(c) Copper cannot displace zinc from its salt solution.</div>
+            <div class="sub-question">(d) Temple bells are made of metals and not wood.</div>
+            <div class="sub-question">(e) Gold and silver are highly preferred for making jewelry.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Answer the following based on properties of non-metals:
+            <div class="sub-question">
+                <strong>(a)</strong> Distinguish between a metal and a non-metal strictly on the basis of their <em>chemical properties</em> (provide two distinct points). <em>(2 Marks)</em>
+            </div>
+            <div class="sub-question">
+                <strong>(b)</strong> What happens when non-metals react with oxygen? Explain in detail with the help of an example (e.g., Sulphur) and mention the nature of the product formed. <em>(3 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

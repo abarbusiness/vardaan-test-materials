@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        /* Made responsive: max-width used instead of fixed width */
+        body { max-width: 210mm; width: 100%; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between; }
+        .q-num-content { display: flex; align-items: flex-start; flex-grow: 1; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; padding-right: 15px; }
+        .q-marks { font-weight: bold; white-space: nowrap; flex-shrink: 0; margin-left: 10px; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Mobile & Tablet Responsiveness */
+        @media screen and (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .q-num { width: 25px; }
+            .question-container { flex-direction: column; }
+            .q-marks { align-self: flex-end; font-size: 10pt; margin-top: 5px; }
+        }
+        
+        /* Print specifics */
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .question-container { flex-direction: row; }
+            .q-marks { align-self: flex-start; margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 11</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Maths & Science</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Use proper algebraic formatting.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - Objective / Short Answer Type)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">1.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> State whether the following statements are True (T) or False (F):
+                <div class="sub-question">(a) Particles are more closely packed in solids and least in gases.</div>
+                <div class="sub-question">(b) The kinetic energy of particles is larger in solids than in gases.</div>
+            </div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">2.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> Choose the correct option:
+                <div class="sub-question">(i) Which is the smallest independent particle of water?
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Ion &nbsp;&nbsp;&nbsp;&nbsp; (b) Atom &nbsp;&nbsp;&nbsp;&nbsp; (c) Molecule
+                </div>
+                <div class="sub-question">(ii) Which of these is highly compressible?
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;(a) Solids &nbsp;&nbsp;&nbsp;&nbsp; (b) Liquids &nbsp;&nbsp;&nbsp;&nbsp; (c) Gases
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">3.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> Add the following algebraic terms:
+                <br> \( 8ab, -5ab, 3ab, -ab \)
+            </div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> Subtract \( -8pq \) from \( 6pq \).
+            </div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">5.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> What is the melting point? Give an example.
+            </div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (20 Marks)<span class="marks-info">(Short Answer Type - 4 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">6.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> Why does water flow, but ice doesn't? Explain clearly based on the particulate nature of matter.
+            </div>
+        </div>
+        <div class="q-marks">[4]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">7.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> Add the following algebraic expressions:
+                <br> \( 3a - 4b + 4c, \quad 2a + 3b - 8c, \quad \text{and} \quad a - 6b + c \)
+            </div>
+        </div>
+        <div class="q-marks">[4]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">8.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> What is called diffusion? Give an example from real life.
+            </div>
+        </div>
+        <div class="q-marks">[4]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> Subtract \( 2a - 5b + 2c - 9 \) from \( 3a - 4b - c + 6 \).
+            </div>
+        </div>
+        <div class="q-marks">[4]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">10.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> Explain any two characteristics of particles of matter.
+            </div>
+        </div>
+        <div class="q-marks">[4]</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">11.</div>
+            <div class="q-content">
+                <strong>(Science)</strong> Write the different properties of solids, liquids and gases in tabular form.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> The two adjacent sides of a rectangle are \( 5x^2 - 3y^2 \) and \( x^2 + 2xy \). Find the perimeter of the rectangle.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">13.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> What must be subtracted from \( 3a^2 - 6ab - 3b^2 - 1 \) to get \( 4a^2 - 7ab - 4b^2 + 1 \)?
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num-content">
+            <div class="q-num">14.</div>
+            <div class="q-content">
+                <strong>(Maths)</strong> The perimeter of a triangle is \( 6p^2 - 4p + 9 \) and two of its sides are \( p^2 - 2p + 1 \) and \( 3p^2 - 5p + 3 \). Find the third side of the triangle.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

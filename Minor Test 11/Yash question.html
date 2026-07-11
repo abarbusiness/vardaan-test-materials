@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Science Minor Test 8</title>
+    <!-- MathJax for rendering scientific notations and equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none;}
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between;}
+        .q-left { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; white-space: nowrap; flex-shrink: 0; }
+        
+        .sub-question { margin-left: 0; margin-top: 8px; display: flex; justify-content: space-between;}
+        .sub-q-left { display: flex; flex-grow: 1; padding-right: 15px;}
+        .sub-q-num { width: 30px; flex-shrink: 0; }
+        .sub-q-marks { font-weight: bold; white-space: nowrap; flex-shrink: 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                min-height: auto; 
+                box-shadow: none; 
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .q-num { width: 25px; }
+            .sub-q-num { width: 25px; }
+            .watermark { width: 90%; }
+            /* Hide individual sub-marks on very small screens to avoid clutter, keep main marks */
+            .sub-q-marks { font-size: 9pt; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+            .exam-details { flex-direction: row; justify-content: space-between; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 11</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Science (Physics & Chemistry)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: Section A (15 Marks), Section B (15 Marks), and Section C (20 Marks).</li>
+                <li>Write your answers neatly, showing clear steps for numerical calculations.</li>
+                <li>Use standard scientific notations and chemical symbols where appropriate.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (15 Marks)<span class="marks-info">(Objective / Very Short Answer Type - Attempt All Questions)</span></div>
+    
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">1.</div>
+            <div class="q-content">
+                Classify the following changes as either a Physical Change or a Chemical Change, and provide a single-sentence scientific justification for each:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Melting of solid candle wax when heated.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Explosion of fireworks during a festival.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(c)</div>
+                        <div>Dissolution of sugar in water.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(d)</div>
+                        <div>Photosynthesis in green plants.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(e)</div>
+                        <div>Growth of a seedling into a tree.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">2.</div>
+            <div class="q-content">
+                Provide scientific representations for the following:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Write the chemical formulas of: (i) Calcium Carbonate, (ii) Zinc Chloride.</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Identify the constituent elements and calculate the total molecular atomicity for:<br>
+                        (i) Sulphuric Acid \( (\text{H}_2\text{SO}_4) \)<br>
+                        (ii) Ammonium Chloride \( (\text{NH}_4\text{Cl}) \).</div>
+                    </div>
+                    <div class="sub-q-marks">[3]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">3.</div>
+            <div class="q-content">
+                Answer the following questions regarding physical measurements and conversions:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Define the term 'Least Count' of a measuring vessel. A measuring cylinder has 10 equal graduation marks between the \( 20 \text{ mL} \) and \( 30 \text{ mL} \) markings. Calculate its least count.</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Perform the following unit conversions, displaying the steps clearly:<br>
+                        (i) Convert a density of \( 8.5 \text{ g/cm}^3 \) into the SI unit of density \( (\text{kg/m}^3) \).<br>
+                        (ii) Convert a speed of \( 18 \text{ km/h} \) into \( \text{m/s} \).</div>
+                    </div>
+                    <div class="sub-q-marks">[3]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                Differentiate between the following terms with clear, scientific comparison points:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>A homogeneous mixture and a heterogeneous mixture (give one example of each).</div>
+                    </div>
+                    <div class="sub-q-marks">[1.5]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>An element and a compound based on their microscopic composition.</div>
+                    </div>
+                    <div class="sub-q-marks">[1.5]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">5.</div>
+            <div class="q-content">
+                A piece of copper of mass \( 178 \text{ g} \) is fully immersed into a graduated measuring cylinder filled with water. The initial water level reads \( 40 \text{ mL} \) and rises to \( 60 \text{ mL} \) upon complete immersion.
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Calculate the volume of the copper piece in \( \text{cm}^3 \).</div>
+                    </div>
+                    <div class="sub-q-marks">[1]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Determine the density of copper in standard SI units \( (\text{kg/m}^3) \).</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">6.</div>
+            <div class="q-content">
+                Explain the fundamental physics or chemistry principle behind each of the following separation processes:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Separation of kerosene oil and water using a separating funnel.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Separation of nitrogen and oxygen from liquid air using fractional distillation.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(c)</div>
+                        <div>Separation of iron filings from sulfur powder.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">7.</div>
+            <div class="q-content">
+                Identify if the following processes are Exothermic or Endothermic changes. Justify your selection:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Dissolving Ammonium Chloride \( (\text{NH}_4\text{Cl}) \) crystals in water, which results in the test tube turning very cold.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Burning of a magnesium ribbon in oxygen.</div>
+                    </div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(c)</div>
+                        <div>Water boiling and turning into steam.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">8.</div>
+            <div class="q-content">
+                Define standard density and relative density:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>Write down the mathematical relationship between Density, Mass, and Volume. State its SI unit.</div>
+                    </div>
+                    <div class="sub-q-marks">[1.5]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>What is relative density? Why does relative density not possess any physical units? Explain.</div>
+                    </div>
+                    <div class="sub-q-marks">[1.5]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                <strong>(Physical vs. Chemical Changes)</strong>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>The burning of a wax candle is considered a unique process where both a physical change and a chemical change occur simultaneously. Describe this dual process clearly.</div>
+                    </div>
+                    <div class="sub-q-marks">[3]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>State the two main chemical compounds formed during the combustion of wax. Write down a simple word equation for this combustion process.</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">10.</div>
+            <div class="q-content">
+                <strong>(Separation Methodologies)</strong><br>
+                You are provided with a solid mixture containing: Sand, Common Salt (Sodium Chloride), and Ammonium Chloride.<br>
+                Design a step-by-step experimental plan to separate all three components in their pure, dry, and solid states. Mention the specific apparatus and purification techniques utilized in each phase.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">11.</div>
+            <div class="q-content">
+                <strong>(Measurement & Density Bottle)</strong><br>
+                An empty relative density bottle has a mass of \( 25 \text{ g} \). When completely filled with pure water, its total mass is \( 50 \text{ g} \). When emptied, dried, and completely refilled with an unknown organic liquid 'Y', the total recorded mass is \( 45 \text{ g} \). (Assume density of water = \( 1 \text{ g/cm}^3 \)).<br>
+                Calculate:
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>The volume capacity of the density bottle.</div>
+                    </div>
+                    <div class="sub-q-marks">[1.5]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>The absolute density of organic liquid 'Y' in \( \text{g/cm}^3 \) and in standard SI units \( (\text{kg/m}^3) \).</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(c)</div>
+                        <div>The relative density of liquid 'Y'.</div>
+                    </div>
+                    <div class="sub-q-marks">[0.5]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(d)</div>
+                        <div>The mass of liquid 'Y' that would completely occupy a volume of \( 100 \text{ cm}^3 \).</div>
+                    </div>
+                    <div class="sub-q-marks">[1]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-left">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                <strong>(Factors Affecting Changes & Rusting)</strong>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(a)</div>
+                        <div>State three conditions other than heating that are necessary for a chemical change to occur. Provide one relevant chemical example or reaction for each.</div>
+                    </div>
+                    <div class="sub-q-marks">[3]</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-left">
+                        <div class="sub-q-num">(b)</div>
+                        <div>Rusting of iron and burning of iron are both oxidation processes. State two chemical differences between them.</div>
+                    </div>
+                    <div class="sub-q-marks">[2]</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks"></div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

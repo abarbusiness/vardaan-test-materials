@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 12px; 
+            display: flex; 
+            justify-content: space-between;
+        }
+        .q-wrapper {
+            display: flex;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .q-marks {
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+        }
+        @media (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+            }
+            .question-container { flex-direction: column; }
+            .q-marks { text-align: right; margin-top: 5px; font-size: 10pt; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 11 (MIT 11)</div>
+        <div class="exam-details">
+            <span>Class: 6 / 7 ICSE</span>
+            <span>Subject: Physics (Measurements)</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 15 objective/very short questions of 1 mark each.</li>
+                <li>Section B contains 5 short answer questions of 3 marks each.</li>
+                <li>Section C contains 4 long answer questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (15 Marks)<span class="marks-info">(Objective / Very Short Answer Type - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">1.</div><div class="q-content">Length is the measure of distance between two ________.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">2.</div><div class="q-content">The SI unit of mass is ________.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">3.</div><div class="q-content">One mean solar day is equal to ________ seconds.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">4.</div><div class="q-content"><strong>True or False:</strong> A physical balance is used by a grocer to find the mass of vegetables.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">5.</div><div class="q-content"><strong>True or False:</strong> The magnitude of a standard unit should not change with respect to time and place.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">6.</div><div class="q-content">Which of the following is the most appropriate unit for measuring the thickness of a single coin?<br> (a) centimetre &nbsp;&nbsp;&nbsp; (b) millimetre &nbsp;&nbsp;&nbsp; (c) metre &nbsp;&nbsp;&nbsp; (d) kilometre</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">7.</div><div class="q-content">One metric tonne is equal to:<br> (a) 100 kg &nbsp;&nbsp;&nbsp; (b) 1000 kg &nbsp;&nbsp;&nbsp; (c) 10 quintals &nbsp;&nbsp;&nbsp; (d) Both b and c</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">8.</div><div class="q-content">A pendulum which takes exactly two seconds to complete one oscillation is called a:<br> (a) hour pendulum &nbsp;&nbsp;&nbsp; (b) seconds pendulum &nbsp;&nbsp;&nbsp; (c) minute pendulum &nbsp;&nbsp;&nbsp; (d) standard pendulum</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">9.</div><div class="q-content">Define 'Standard Unit'.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">10.</div><div class="q-content">What does FPS system stand for in the context of measurement?</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">11.</div><div class="q-content">Convert the time 18:57 (on a 24-hour clock) to 12-hour clock time.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">12.</div><div class="q-content">Convert the time 8:20 p.m. to 24-hour clock time.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">13.</div><div class="q-content">Name the device traditionally used by a doctor to measure the temperature of a human body.</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">14.</div><div class="q-content">How many inches make one foot?</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">15.</div><div class="q-content">Which historic unit of length was declared by King Henry as the distance from the tip of his nose to the stretched thumb of his sideways stretched arm?</div></div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">16.</div><div class="q-content">State the three main characteristics that a standard unit of a physical quantity must possess to be globally acceptable.</div></div>
+        <div class="q-marks">[3]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">17.</div><div class="q-content">While measuring the length of a wooden block with a metre scale, an error can occur due to the thickness of the scale. 
+            <div class="sub-question">(a) How does this error occur?</div>
+            <div class="sub-question">(b) State two ways to avoid or reduce this error for more accurate reading.</div>
+        </div></div>
+        <div class="q-marks">[3]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">18.</div><div class="q-content">
+            <div class="sub-question">(a) Define the term 'Mass'.</div>
+            <div class="sub-question">(b) Differentiate between the tools used by a jeweller and a grocer to measure mass, giving a reason for the difference.</div>
+        </div></div>
+        <div class="q-marks">[3]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">19.</div><div class="q-content">Briefly outline the step-by-step method you would use to measure the length of a curved line drawn on a piece of paper using a thin cotton thread and common pins.</div></div>
+        <div class="q-marks">[3]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">20.</div><div class="q-content">A student needs to find the diameter of a thin copper wire. He winds the wire over a smooth pencil to form a tight coil of 30 turns. If the total length of the coil on a centimetre scale is measured as 1.5 cm, calculate the diameter of the wire in millimetres (mm). Show your working.</div></div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">21.</div><div class="q-content">
+            <div class="sub-question">(a) Define 'time' and 'mean solar day'. (2 Marks)</div>
+            <div class="sub-question">(b) Establish the mathematical relation between the SI unit of time (second) and a mean solar day. Show the complete calculation of how many seconds are present in one mean solar day. (3 Marks)</div>
+        </div></div>
+        <div class="q-marks">[5]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">22.</div><div class="q-content">
+            <div class="sub-question">(a) What is a simple pendulum? Define the terms 'oscillation' and 'time period' in the context of a pendulum. (3 Marks)</div>
+            <div class="sub-question">(b) During a sports event, a student uses a seconds pendulum as a timer. If the bob of the seconds pendulum swings (oscillates) 20 times during an event, calculate the total time taken by the event in seconds. (2 Marks)</div>
+        </div></div>
+        <div class="q-marks">[5]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">23.</div><div class="q-content">
+            <div class="sub-question">(a) It is inaccurate to measure the thickness of a single 5-rupee coin directly with a standard centimetre scale. Describe a practical method to measure its thickness accurately. (3 Marks)</div>
+            <div class="sub-question">(b) Using the method from part (a), a student places 24 identical coins one upon another. If the total thickness recorded by a half-metre scale is 4.8 cm, mathematically calculate the thickness of a single coin in millimetres (mm). (2 Marks)</div>
+        </div></div>
+        <div class="q-marks">[5]</div>
+    </div>
+    <div class="question-container">
+        <div class="q-wrapper"><div class="q-num">24.</div><div class="q-content">
+            <div class="sub-question">(a) The 24-hour clock system is widely used in railways and airlines. List any three advantages of using the 24-hour clock over the traditional 12-hour clock. (3 Marks)</div>
+            <div class="sub-question">(b) Perform the following interconversions: (2 Marks)<br>
+            &nbsp;&nbsp;&nbsp;(i) Convert 11:30 a.m. to 24-hour clock time.<br>
+            &nbsp;&nbsp;&nbsp;(ii) Convert 15:45 (24-hour clock) to 12-hour clock time.</div>
+        </div></div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

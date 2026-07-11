@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Minor Test 11</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 20px auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: #fafafa; 
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15); 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 3px double #000; padding-bottom: 10px; }
+        .institute-name { font-size: 20pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #2c3e50;}
+        .solution-title { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #e74c3c; letter-spacing: 1px;}
+        .exam-details { font-weight: bold; font-size: 11pt; margin-top: 10px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; font-size: 14pt; background-color: #ecf0f1; padding: 5px; border-radius: 4px; border: 1px solid #bdc3c7;}
+        
+        .solution-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-text { font-style: italic; color: #555; margin-bottom: 10px; background-color: #f9f9f9; padding: 10px; border-left: 4px solid #3498db; }
+        
+        .answer-block { display: flex; align-items: flex-start; justify-content: space-between; }
+        .answer-content { flex-grow: 1; padding-right: 15px; overflow-x: auto; }
+        .marks-box { font-weight: bold; font-size: 11pt; color: #e74c3c; border: 1px solid #e74c3c; padding: 4px 8px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; background: #fff;}
+        
+        .step { margin-bottom: 5px; }
+        .final-answer { font-weight: bold; background-color: #e8f6f3; padding: 3px 8px; border: 1px solid #1abc9c; border-radius: 3px; display: inline-block; margin-top: 5px;}
+        
+        /* To handle long equations on mobile devices, we use horizontal scroll for the answer-content block, and break rules */
+        .math-break { display: none; }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                box-shadow: none; 
+                font-size: 11pt;
+            }
+            .answer-block { flex-direction: column; }
+            .marks-box { align-self: flex-end; margin-top: 10px; margin-bottom: 10px; font-size: 10pt; }
+            .math-break { display: block; margin: 10px 0; }
+            .question-text { font-size: 10.5pt; }
+            /* Overflow handling for long math rendering */
+            .answer-content { width: 100%; overflow-x: auto; overflow-y: hidden; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; background-color: white; -webkit-print-color-adjust: exact;} 
+            .section-header { background-color: transparent !important; border: 1px solid #000; }
+            .question-text { background-color: transparent !important; border-left: 2px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">MARKING SCHEME & SOLUTIONS</div>
+        <div class="exam-details">MINOR TEST 11 | Class 6 (ICSE) | Mathematics</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q1.</strong> Evaluate using the rules of integers: (a) \( (-28) - (-14) \) &nbsp; (b) \( |-35| + |-12| \)
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step"><strong>(a)</strong> \( (-28) - (-14) \)</div>
+                <div class="step">\( = -28 + 14 \) <span style="font-size: 0.9em; color: gray;">(Subtracting a negative is adding a positive)</span></div>
+                <div class="step final-answer">\( = -14 \)</div>
+                <br>
+                <div class="step"><strong>(b)</strong> \( |-35| + |-12| \)</div>
+                <div class="step">Absolute value makes it positive:</div>
+                <div class="step">\( = 35 + 12 \)</div>
+                <div class="step final-answer">\( = 47 \)</div>
+            </div>
+            <div class="marks-box">[1 + 1 = 2M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q2.</strong> Convert \( 4 \frac{2}{5} \) into an improper fraction and then find its reciprocal.
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Improper fraction \( = \frac{(4 \times 5) + 2}{5} \)</div>
+                <div class="step">\( = \frac{20 + 2}{5} \)</div>
+                <div class="step">\( = \frac{22}{5} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">The reciprocal is found by flipping the numerator and denominator.</div>
+                <div class="step final-answer">Reciprocal \( = \frac{5}{22} \)</div>
+            </div>
+            <div class="marks-box">[2M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q3.</strong> The temperature of a freezer was \( -6^\circ\text{C} \). If lowered by \( 5^\circ\text{C} \), what is the new temperature?
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Initial temperature \( = -6^\circ\text{C} \)</div>
+                <div class="step">"Lowered by" means we must subtract \( 5^\circ\text{C} \).</div>
+                <div class="step">New temperature \( = -6 - 5 \)</div>
+                <div class="step final-answer">\( = -11^\circ\text{C} \)</div>
+            </div>
+            <div class="marks-box">[2M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q4.</strong> Find the integer which is \( 5 \) less than \( -3 \) and write its additive inverse.
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Integer 5 less than -3 implies subtraction:</div>
+                <div class="step">\( -3 - 5 = -8 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">The additive inverse of a number changes its sign.</div>
+                <div class="step">Additive inverse of \( -8 \) is:</div>
+                <div class="step final-answer">\( +8 \)</div>
+            </div>
+            <div class="marks-box">[2M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q5.</strong> Add the following fractions: \( \frac{5}{12} \) and \( \frac{7}{18} \).
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Find LCM of denominators 12 and 18.</div>
+                <div class="step">LCM(12, 18) \( = 36 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[0.5 Mark]</span></div>
+                <div class="step">Convert to equivalent fractions:</div>
+                <div class="step">\( \frac{5 \times 3}{12 \times 3} = \frac{15}{36} \) and \( \frac{7 \times 2}{18 \times 2} = \frac{14}{36} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">Add them: \( \frac{15}{36} + \frac{14}{36} \)</div>
+                <div class="step final-answer">\( = \frac{29}{36} \)</div>
+            </div>
+            <div class="marks-box">[2M]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q6.</strong> Simplify: \( (-22) + (+35) - (-18) + (-11) \)
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Resolve signs first:</div>
+                <div class="step">\( -22 + 35 + 18 - 11 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">Group positive and negative integers:</div>
+                <div class="step">\( = (35 + 18) - (22 + 11) \)</div>
+                <span class="math-break"></span>
+                <div class="step">\( = 53 - 33 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step final-answer">\( = 20 \)</div>
+            </div>
+            <div class="marks-box">[3M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q7.</strong> Simplify: \( \frac{4}{5} + \frac{7}{10} - \frac{1}{2} \)
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Find LCM of denominators 5, 10, and 2.</div>
+                <div class="step">LCM(5, 10, 2) \( = 10 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">Convert to common denominator:</div>
+                <div class="step">\( = \frac{4 \times 2}{10} + \frac{7 \times 1}{10} - \frac{1 \times 5}{10} \)</div>
+                <span class="math-break"></span>
+                <div class="step">\( = \frac{8 + 7 - 5}{10} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">\( = \frac{15 - 5}{10} \)</div>
+                <div class="step">\( = \frac{10}{10} \)</div>
+                <div class="step final-answer">\( = 1 \)</div>
+            </div>
+            <div class="marks-box">[3M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q8.</strong> Total 60 students. \( \frac{3}{5} \) like cricket, \( \frac{1}{4} \) like football, rest like tennis. Find number of tennis players.
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Number of students who like cricket \( = \frac{3}{5} \text{ of } 60 = \frac{3}{5} \times 60 = 3 \times 12 = 36 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">Number of students who like football \( = \frac{1}{4} \text{ of } 60 = \frac{1}{4} \times 60 = 15 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <div class="step">Total students liking cricket and football \( = 36 + 15 = 51 \)</div>
+                <div class="step">Students liking tennis = Total - (Cricket + Football)</div>
+                <div class="step">\( = 60 - 51 \)</div>
+                <div class="step final-answer">\( = 9 \text{ students} \)</div>
+            </div>
+            <div class="marks-box">[3M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q9.</strong> Subtract the sum of \( -250 \) and \( 138 \) from the sum of \( 136 \) and \( -272 \).
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step"><strong>Step 1:</strong> Find the sum of -250 and 138</div>
+                <div class="step">\( (-250) + 138 = -112 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step"><strong>Step 2:</strong> Find the sum of 136 and -272</div>
+                <div class="step">\( 136 + (-272) = -136 \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step"><strong>Step 3:</strong> Subtract Step 1 from Step 2</div>
+                <div class="step">\( (-136) - (-112) \)</div>
+                <div class="step">\( = -136 + 112 \)</div>
+                <div class="step final-answer">\( = -24 \)</div>
+            </div>
+            <div class="marks-box">[3M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q10.</strong> Elevator descends at \( 6 \text{ m/min} \). Starts from \( +10 \text{ m} \) to reach \( -350 \text{ m} \). Find time taken.
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Initial position \( = +10 \text{ m} \)</div>
+                <div class="step">Final position \( = -350 \text{ m} \)</div>
+                <div class="step">Total distance to be covered \( = \) Difference in positions</div>
+                <div class="step">\( = 10 \text{ m} - (-350 \text{ m}) \)</div>
+                <span class="math-break"></span>
+                <div class="step">\( = 10 + 350 = 360 \text{ m} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1.5 Marks]</span></div>
+                <br>
+                <div class="step">Speed of descent \( = 6 \text{ m/min} \)</div>
+                <div class="step">Time taken \( = \frac{\text{Total Distance}}{\text{Speed}} \)</div>
+                <div class="step">\( = \frac{360}{6} \)</div>
+                <div class="step final-answer">\( = 60 \text{ minutes} \text{ (or 1 Hour)} \)</div>
+            </div>
+            <div class="marks-box">[3M]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q11.</strong> Simplify using BODMAS: \( 3 \frac{1}{5} - \left[ 2 \frac{1}{2} - \left\{ 1 \frac{1}{3} - \left( \frac{1}{2} + \frac{1}{6} \right) \right\} \right] \)
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Convert all mixed fractions to improper fractions:</div>
+                <div class="step">\( \frac{16}{5} - \left[ \frac{5}{2} - \left\{ \frac{4}{3} - \left( \frac{1}{2} + \frac{1}{6} \right) \right\} \right] \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step">Solve inner parenthesis \( ( \dots ) \):</div>
+                <div class="step">\( \frac{1}{2} + \frac{1}{6} = \frac{3 + 1}{6} = \frac{4}{6} = \frac{2}{3} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step">Substitute back and solve curly braces \( \{ \dots \} \):</div>
+                <div class="step">\( \frac{16}{5} - \left[ \frac{5}{2} - \left\{ \frac{4}{3} - \frac{2}{3} \right\} \right] \)</div>
+                <span class="math-break"></span>
+                <div class="step">\( = \frac{16}{5} - \left[ \frac{5}{2} - \frac{2}{3} \right] \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step">Solve square brackets \( [ \dots ] \):</div>
+                <div class="step">\( \frac{5}{2} - \frac{2}{3} = \frac{15 - 4}{6} = \frac{11}{6} \) &nbsp; <span style="color:blue; font-size: 0.9em;">[1 Mark]</span></div>
+                <br>
+                <div class="step">Final subtraction:</div>
+                <div class="step">\( \frac{16}{5} - \frac{11}{6} \)</div>
+                <div class="step">LCM of 5 and 6 is 30.</div>
+                <div class="step">\( = \frac{96 - 55}{30} \)</div>
+                <div class="step final-answer">\( = \frac{41}{30} \text{ or } 1 \frac{11}{30} \)</div>
+            </div>
+            <div class="marks-box">[5M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q12.</strong> Earns ₹45,000/month. Spends \( \frac{1}{3} \) on rent, \( \frac{1}{5} \) on food, \( \frac{1}{6} \) on education. Calculate: (a) Total spent (b) Saved (c) Fraction saved.
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step">Total Income \( = \text{₹}45,000 \)</div>
+                <br>
+                <div class="step"><strong>(a) Calculating Expenditures:</strong></div>
+                <div class="step">Rent \( = \frac{1}{3} \times 45000 = \text{₹}15,000 \)</div>
+                <div class="step">Food \( = \frac{1}{5} \times 45000 = \text{₹}9,000 \)</div>
+                <div class="step">Education \( = \frac{1}{6} \times 45000 = \text{₹}7,500 \)</div>
+                <span class="math-break"></span>
+                <div class="step">Total Spent \( = 15000 + 9000 + 7500 \)</div>
+                <div class="step final-answer">Total Spent \( = \text{₹}31,500 \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[2 Marks]</div>
+                <br>
+                <div class="step"><strong>(b) Calculating Savings:</strong></div>
+                <div class="step">Savings \( = \text{Total Income} - \text{Total Spent} \)</div>
+                <div class="step">\( = 45000 - 31500 \)</div>
+                <div class="step final-answer">Savings \( = \text{₹}13,500 \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[2 Marks]</div>
+                <br>
+                <div class="step"><strong>(c) Fraction of Income Saved:</strong></div>
+                <div class="step">Fraction \( = \frac{\text{Savings}}{\text{Total Income}} \)</div>
+                <div class="step">\( = \frac{13500}{45000} \)</div>
+                <span class="math-break"></span>
+                <div class="step">Divide by 100: \( \frac{135}{450} \)</div>
+                <div class="step">Divide by 45: \( \frac{3}{10} \)</div>
+                <div class="step final-answer">Fraction Saved \( = \frac{3}{10} \)</div>
+            </div>
+            <div class="marks-box">[2+2+1=5M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q13.</strong> (a) Arrange in ascending order: \( -15, 23, -8, 0, -2, 12 \). (b) Evaluate using number line concept: \( (-4) + 6 + (-3) \).
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step"><strong>(a) Ascending Order (Smallest to Largest):</strong></div>
+                <div class="step">Identify the negatives first, the most negative is smallest.</div>
+                <div class="step final-answer">\( -15, -8, -2, 0, 12, 23 \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[2 Marks]</div>
+                <br>
+                <div class="step"><strong>(b) Number Line Evaluation for \( (-4) + 6 + (-3) \):</strong></div>
+                <div class="step"><em>Step 1:</em> Start at \( 0 \), move \( 4 \) units left to reach \( -4 \).</div>
+                <div class="step"><em>Step 2:</em> From \( -4 \), add \( 6 \). Move \( 6 \) units to the right. </div>
+                <div class="step">\( -4 + 6 = +2 \). Current position is at \( +2 \).</div>
+                <div class="step"><em>Step 3:</em> From \( +2 \), add \( -3 \). Move \( 3 \) units left.</div>
+                <div class="step">\( 2 - 3 = -1 \).</div>
+                <div class="step final-answer">Final Answer \( = -1 \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[3 Marks - 1 mark for each logical step]</div>
+            </div>
+            <div class="marks-box">[2+3=5M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q14.</strong> Reads \( \frac{1}{5} \) book in 1 hr. (a) Part read in \( 2 \frac{1}{5} \) hrs? (b) If book is 250 pages, pages read in this time?
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step"><strong>(a) Part read in given time:</strong></div>
+                <div class="step">Time given \( = 2 \frac{1}{5} \text{ hours} = \frac{11}{5} \text{ hours} \)</div>
+                <div class="step">Part read in 1 hour \( = \frac{1}{5} \)</div>
+                <div class="step">Part read in \( \frac{11}{5} \text{ hours} = \frac{1}{5} \times \frac{11}{5} \)</div>
+                <span class="math-break"></span>
+                <div class="step final-answer">\( = \frac{11}{25} \text{ part of the book} \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[2 Marks]</div>
+                <br>
+                <div class="step"><strong>(b) Pages read:</strong></div>
+                <div class="step">Total pages in book \( = 250 \)</div>
+                <div class="step">Number of pages read \( = \text{Part read} \times \text{Total pages} \)</div>
+                <div class="step">\( = \frac{11}{25} \times 250 \)</div>
+                <div class="step">\( = 11 \times 10 \)</div>
+                <div class="step final-answer">\( = 110 \text{ pages} \)</div>
+            </div>
+            <div class="marks-box">[2+3=5M]</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-text">
+            <strong>Q15.</strong> Diver is \( -20 \text{m} \), goes down \( 15 \text{m} \), rises \( 8 \text{m} \). (a) Final position? (b) Vertical distance from bird at \( +35 \text{m} \)?
+        </div>
+        <div class="answer-block">
+            <div class="answer-content">
+                <div class="step"><strong>(a) Final Position:</strong></div>
+                <div class="step">Let sea level be \( 0 \). Below sea level is negative.</div>
+                <div class="step">Initial position \( = -20 \text{ m} \)</div>
+                <div class="step">Goes down by 15m \( \rightarrow \) Add \( -15 \)</div>
+                <div class="step">Rises by 8m \( \rightarrow \) Add \( +8 \)</div>
+                <span class="math-break"></span>
+                <div class="step">Final Position \( = -20 - 15 + 8 \)</div>
+                <div class="step">\( = -35 + 8 \)</div>
+                <div class="step final-answer">\( = -27 \text{ m} \) (or 27m below sea level)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[2 Marks]</div>
+                <br>
+                <div class="step"><strong>(b) Vertical distance to bird:</strong></div>
+                <div class="step">Position of bird \( = +35 \text{ m} \)</div>
+                <div class="step">Position of diver \( = -27 \text{ m} \)</div>
+                <div class="step">Vertical distance \( = \text{Top position} - \text{Bottom position} \)</div>
+                <div class="step">\( = 35 - (-27) \)</div>
+                <span class="math-break"></span>
+                <div class="step">\( = 35 + 27 \)</div>
+                <div class="step final-answer">\( = 62 \text{ m} \)</div>
+                <div style="text-align: right; color:blue; font-size: 0.9em;">[3 Marks]</div>
+            </div>
+            <div class="marks-box">[2+3=5M]</div>
+        </div>
+    </div>
+
+</body>
+</html>

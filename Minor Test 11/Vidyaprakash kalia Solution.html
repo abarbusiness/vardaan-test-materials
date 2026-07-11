@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Vardaan Learning Institute</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        chtml: { displayAlign: 'left', displayIndent: '1em' }
+      };
+    </script>
+    <style>
+        /* Base Print and Desktop Styles */
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            box-sizing: border-box;
+        }
+        
+        /* Responsive scaling */
+        @media screen {
+            body { width: 100%; max-width: 210mm; margin: 20px auto; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            @media (max-width: 768px) {
+                body { padding: 15px; margin: 0; font-size: 11pt; }
+                .institute-name { font-size: 18pt !important; }
+                .step-marks { font-size: 10pt; }
+            }
+        }
+
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #2c3e50; }
+        .doc-title { font-size: 16pt; font-weight: bold; margin-top: 5px; text-decoration: underline; background-color: #2c3e50; color: white; display: inline-block; padding: 5px 15px; border-radius: 4px;}
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 5px; font-size: 14pt; text-transform: uppercase; color: #b71c1c; }
+        
+        .q-box { background-color: #f4f6f8; padding: 10px; border-left: 4px solid #2c3e50; margin-bottom: 15px; font-style: italic; }
+        .sol-box { margin-bottom: 30px; padding: 10px; }
+        
+        .flex-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; }
+        .sol-content { flex-grow: 1; padding-right: 15px; overflow-x: auto; max-width: 100%;}
+        .step-marks { font-weight: bold; color: #d32f2f; white-space: nowrap; width: 60px; text-align: right; flex-shrink: 0; }
+        
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; max-width: 600px;}
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+        th { background-color: #eee; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        .math-overflow { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">ANSWER KEY & DETAILED SOLUTIONS</div>
+        <p style="margin-top:10px; font-weight:bold;">Minor Test 11 | Class 8 | Maths & Science | Max Marks: 50</p>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <!-- Q1 -->
+    <div class="q-box"><strong>Q1.</strong> Evaluate \( (2x + 3y)^2 \) using a suitable algebraic identity.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                Using the identity: \( (a + b)^2 = a^2 + 2ab + b^2 \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Here, \( a = 2x \) and \( b = 3y \).
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">\( (2x + 3y)^2 = (2x)^2 + 2(2x)(3y) + (3y)^2 \)</div>
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow"><strong>= \( 4x^2 + 12xy + 9y^2 \)</strong></div>
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-box"><strong>Q2.</strong> Find the value of \( 52^2 - 48^2 \) without actual multiplication, using a standard identity.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                Using the identity: \( a^2 - b^2 = (a - b)(a + b) \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Here, \( a = 52 \) and \( b = 48 \).
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( 52^2 - 48^2 = (52 - 48)(52 + 48) \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( = (4) \times (100) = \) <strong>400</strong>
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-box"><strong>Q3.</strong> Define the melting point and boiling point of a substance.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Melting Point:</strong> The temperature at which a solid melts to become a liquid at atmospheric pressure is called its melting point.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Boiling Point:</strong> The temperature at which a liquid starts boiling (turning into gas) at atmospheric pressure is known as its boiling point.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-box"><strong>Q4.</strong> Give a scientific reason: Why does a desert cooler cool better on a hot, dry day?</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                A desert cooler works on the principle of evaporation, which causes cooling.
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                On a hot, dry day, the temperature is high and humidity is low. Both these factors increase the rate of evaporation of water.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Faster evaporation leads to greater cooling, thus it cools better.
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-box"><strong>Q5.</strong> State two main points of difference between solids and gases based on their physical properties.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                1. <strong>Shape & Volume:</strong> Solids have a definite shape and fixed volume, whereas gases have neither definite shape nor fixed volume.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                2. <strong>Compressibility:</strong> Solids are highly incompressible, while gases are highly compressible. (Accept any other valid property like intermolecular space/force).
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <!-- Q6 -->
+    <div class="q-box"><strong>Q6.</strong> Simplify the following algebraic expression using identities: \( (3a - 4b)^2 - (3a + 4b)^2 \)</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                Using identity: \( (x - y)^2 = x^2 - 2xy + y^2 \) and \( (x + y)^2 = x^2 + 2xy + y^2 \)
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">\( [ (3a)^2 - 2(3a)(4b) + (4b)^2 ] - [ (3a)^2 + 2(3a)(4b) + (4b)^2 ] \)</div>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">\( = (9a^2 - 24ab + 16b^2) - (9a^2 + 24ab + 16b^2) \)</div><br>
+                <div class="math-overflow">\( = 9a^2 - 24ab + 16b^2 - 9a^2 - 24ab - 16b^2 \)</div><br>
+                <strong>= \( -48ab \)</strong> 
+                <br><em>(Alternate method using \( a^2 - b^2 \) identity is also fully correct).</em>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-box"><strong>Q7.</strong> If \( x + \frac{1}{x} = 4 \), find the value of \( x^2 + \frac{1}{x^2} \).</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                Given, \( x + \frac{1}{x} = 4 \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Squaring both sides:<br>
+                <div class="math-overflow">\( \left(x + \frac{1}{x}\right)^2 = 4^2 \)</div>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">\( x^2 + \left(\frac{1}{x}\right)^2 + 2(x)\left(\frac{1}{x}\right) = 16 \)</div><br>
+                \( x^2 + \frac{1}{x^2} + 2 = 16 \)
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( x^2 + \frac{1}{x^2} = 16 - 2 = \) <strong>14</strong>
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-box"><strong>Q8.</strong> Evaluate \( 105 \times 95 \) using a suitable algebraic identity.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                We can write \( 105 \times 95 \) as \( (100 + 5)(100 - 5) \).
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Using the identity: \( (a + b)(a - b) = a^2 - b^2 \)
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Here \( a = 100 \), \( b = 5 \).<br>
+                \( (100)^2 - (5)^2 \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+         <div class="flex-row">
+            <div class="sol-content">
+                \( = 10000 - 25 = \) <strong>9975</strong>
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-box"><strong>Q9.</strong> Give scientific reasons for: (a) A gas fills completely the vessel. (b) Smell of hot sizzling food reaches from meters away.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(a)</strong> In gases, the intermolecular forces of attraction are negligible, and particles possess high kinetic energy. 
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Therefore, the particles move freely in all directions and spread out to completely fill the vessel.
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(b)</strong> Hot food releases aromatic vapors. Due to high temperature, the kinetic energy of these vapor particles is very high.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                As a result, they diffuse rapidly into the air and reach us even from several meters away.
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-box"><strong>Q10.</strong> What is sublimation? Name any two chemical substances that undergo sublimation.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Sublimation:</strong> The process in which a solid directly changes into a gaseous state on heating, without passing through the liquid state (and vice-versa on cooling), is called sublimation.
+            </div>
+            <div class="step-marks">[2.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Examples:</strong> Camphor, Naphthalene, Ammonium chloride, Dry ice (Any two).
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+
+    <!-- Q11 -->
+    <div class="q-box"><strong>Q11.</strong> Prove that: \( (4pq + 3q)^2 - 48pq^2 = (4pq - 3q)^2 \)</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>LHS:</strong> \( (4pq + 3q)^2 - 48pq^2 \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Expand using \( (a + b)^2 = a^2 + 2ab + b^2 \):<br>
+                <div class="math-overflow">\( = [(4pq)^2 + 2(4pq)(3q) + (3q)^2] - 48pq^2 \)</div>
+            </div>
+            <div class="step-marks">[1.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">\( = 16p^2q^2 + 24pq^2 + 9q^2 - 48pq^2 \)</div>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Group like terms:<br>
+                <div class="math-overflow">\( = 16p^2q^2 - 24pq^2 + 9q^2 \)</div>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Notice this matches the expansion of \( (a - b)^2 = a^2 - 2ab + b^2 \):<br>
+                <div class="math-overflow">\( = (4pq)^2 - 2(4pq)(3q) + (3q)^2 \)</div><br>
+                \( = (4pq - 3q)^2 \) = <strong>RHS. Hence Proved.</strong>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-box"><strong>Q12.</strong> Using suitable standard identities, evaluate: (a) \( 103 \times 104 \) (b) \( 99^2 \)</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(a)</strong> \( 103 \times 104 = (100 + 3)(100 + 4) \)<br>
+                Using identity: \( (x + a)(x + b) = x^2 + (a + b)x + ab \)
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Here, \( x = 100 \), \( a = 3 \), \( b = 4 \).<br>
+                \( = (100)^2 + (3 + 4)(100) + (3 \times 4) \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( = 10000 + 7(100) + 12 = 10000 + 700 + 12 = \) <strong>10712</strong>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(b)</strong> \( 99^2 = (100 - 1)^2 \)<br>
+                Using identity: \( (a - b)^2 = a^2 - 2ab + b^2 \)
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( = (100)^2 - 2(100)(1) + (1)^2 \)
+            </div>
+            <div class="step-marks">[0.5]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                \( = 10000 - 200 + 1 = 9800 + 1 = \) <strong>9801</strong>
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q-box"><strong>Q13.</strong> What is meant by evaporation? Explain any three factors that affect the rate of evaporation.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Evaporation:</strong> The phenomenon of change of a liquid into vapors at any temperature below its boiling point is called evaporation.
+            </div>
+            <div class="step-marks">[2.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Factors affecting rate of evaporation (Any 3):</strong><br>
+                1. <strong>Surface Area:</strong> An increase in surface area increases the rate of evaporation (e.g., spreading wet clothes to dry).
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                2. <strong>Temperature:</strong> With the increase of temperature, more particles get enough kinetic energy to go into the vapor state, increasing evaporation.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                3. <strong>Humidity:</strong> If the amount of water vapor (humidity) in the air is already high, the rate of evaporation decreases.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <em>(Optional 4th factor): 4. <strong>Wind Speed:</strong> Higher wind speed carries away water vapor particles faster, increasing evaporation.</em>
+            </div>
+            <div class="step-marks"></div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q-box"><strong>Q14.</strong> Tabulate differences between Solid, Liquid, and Gas based on shape/volume, intermolecular force, and compressibility.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <div class="math-overflow">
+                <table>
+                    <tr><th>Property</th><th>Solid</th><th>Liquid</th><th>Gas</th></tr>
+                    <tr><td><strong>(i) Shape & Volume</strong></td><td>Definite shape and definite volume.</td><td>No definite shape but definite volume. (Takes shape of container)</td><td>Neither definite shape nor definite volume.</td></tr>
+                    <tr><td><strong>(ii) Intermolecular Force</strong></td><td>Very strong (Strongest).</td><td>Weaker than solids but stronger than gases.</td><td>Very weak (Negligible).</td></tr>
+                    <tr><td><strong>(iii) Compressibility</strong></td><td>Incompressible (Negligible).</td><td>Slightly compressible.</td><td>Highly compressible.</td></tr>
+                </table>
+                </div>
+            </div>
+            <div class="step-marks">[5.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <em>(1.5 marks for correct details in each property row, plus 0.5 for overall neat tabulation).</em>
+            </div>
+            <div class="step-marks"></div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q-box"><strong>Q15.</strong> (a) Convert 300 K to Celsius. (b) Why does ice float on water? (c) State of matter highly compressible and its application.</div>
+    <div class="sol-box">
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(a)</strong> Temperature in Celsius = Temperature in Kelvin - 273<br>
+                \( ^\circ\text{C} = 300 - 273 = \) <strong>27 \(^\circ\)C</strong>.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(b)</strong> Although ice is a solid, it has a cage-like crystal structure containing large empty spaces. 
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                Because of these empty spaces, the volume of ice is more than that of liquid water, making the <strong>density of ice less than that of water</strong>. Hence, it floats.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>(c)</strong> <strong>Gas</strong> is the state of matter that is highly compressible.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+        <div class="flex-row">
+            <div class="sol-content">
+                <strong>Application:</strong> LPG (Liquefied Petroleum Gas) used for cooking at home, or CNG (Compressed Natural Gas) used as fuel in vehicles.
+            </div>
+            <div class="step-marks">[1.0]</div>
+        </div>
+    </div>
+
+    <div class="footer">Verified by Academic Dean • Team Vardaan</div>
+</body>
+</html>

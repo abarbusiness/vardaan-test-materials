@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        /* Base styles adapted for responsiveness while keeping A4 proportions on large screens */
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Slight shadow for screen preview */
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: 0; /* Adjusted z-index */
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; position: relative; z-index: 1;}
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        /* Flexbox for exam details for easy responsiveness */
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; position: relative; z-index: 1;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; position: relative; z-index: 1;}
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; position: relative; z-index: 1;}
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; position: relative; z-index: 1;}
+        
+        /* Responsive rules for smaller screens */
+        @media screen and (max-width: 768px) {
+            body { 
+                padding: 15px; 
+                margin: 10px auto; 
+                box-shadow: none; 
+                border: 1px solid #ddd;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .exam-details span { padding: 3px 0; border-bottom: 1px dashed #eee; }
+            .exam-details span:last-child { border-bottom: none; }
+        }
+        
+        /* Print rules to strictly adhere to the A4 template format */
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; border: none; -webkit-print-color-adjust: exact; } 
+            @page { margin: 20mm; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Maths & Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show rough work logically on the right margin.</li>
+                <li>Calculations and relevant steps must be clearly shown.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define contact and non-contact forces. Give one example of each.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">A solid metallic block has a mass of 120 g and occupies a volume of 30 cm<sup>3</sup>. Calculate its density in SI units.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Find the area of a rhombus whose diagonals are 12 cm and 16 cm respectively.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">The circumference of a circle is 88 cm. Find its area. (Take &pi; = 22/7)</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Why does an iron nail sink in water, but a large steel ship floats? Explain briefly using the concept of density and upthrust.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Define 'Moment of Force' and state its SI unit. What are the two factors on which the turning effect of a force depends?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A rectangular grassy plot is 112 m long and 78 m broad. It has a gravel path 2.5 m wide all around it on the inside. Find the area of the gravel path.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">The relative density of silver is 10.8. The density of water is 10<sup>3</sup> kg/m<sup>3</sup>. What is the density of silver in SI units? What does this statement imply about the mass of silver compared to an equal volume of water?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Find the area of a trapezium whose parallel sides are 24 cm and 20 cm, and the perpendicular distance between them is 15 cm.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A solid metallic cube of side 5 cm has a mass of 1000 g. Find its density in g/cm<sup>3</sup>. Will it float or sink in a liquid of density 1.2 g/cm<sup>3</sup>? Give a reason.</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">A room is 8 m long, 6 m wide, and 4 m high. Find the total cost of whitewashing the four walls and the ceiling at the rate of ₹ 50 per square metre.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            (a) Differentiate between mass and weight. (Any two points of difference).<br>
+            (b) A body of volume 100 cm<sup>3</sup> weighs 5 kgf in air. It is completely immersed in a liquid of density 1.8 &times; 10<sup>3</sup> kg m<sup>&minus;3</sup>. Find: 
+            <div class="sub-question">(i) The upthrust due to the liquid.</div>
+            <div class="sub-question">(ii) The apparent weight of the body in the liquid.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">A rectangular park is 60 m long and 40 m wide. Two crossroads, each of width 3 m, run at right angles through the centre of the park, parallel to its sides. Find the area of the crossroads and the cost of laying them with concrete at ₹ 150 per m<sup>2</sup>.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            (a) State the Principle of Floatation.<br>
+            (b) A block of wood of volume 50 cm<sup>3</sup> and density 0.6 g/cm<sup>3</sup> floats in water. Find the mass of the block and the volume of the block immersed in water. (Density of water = 1 g/cm<sup>3</sup>).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">A circular park is surrounded by a path 7 m wide. If the circumference of the park is 352 m, find the total area of the path. (Take &pi; = 22/7)</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

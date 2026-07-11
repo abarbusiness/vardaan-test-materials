@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Minor Test 11</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: #fafafa; /* Slight off-white for solutions */
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(16pt, 4vw, 22pt); font-weight: bold; text-transform: uppercase; margin: 0; color: #2e7d32; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .section-header { background-color: #e8f5e9; padding: 8px; border-left: 5px solid #2e7d32; font-weight: bold; margin-top: 25px; margin-bottom: 15px; font-size: 12pt; }
+        
+        .q-box { background: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .q-text { font-weight: bold; color: #333; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px dashed #ccc; }
+        
+        /* Solution steps layout for responsiveness and marks */
+        .sol-heading { color: #2e7d32; font-weight: bold; margin-top: 10px; margin-bottom: 5px; text-decoration: underline; }
+        .step-row { display: flex; flex-direction: column; margin-bottom: 8px; }
+        .step-content { flex-grow: 1; overflow-x: auto; padding-right: 10px; }
+        .step-marks { font-weight: bold; color: #c62828; font-size: 10pt; align-self: flex-end; white-space: nowrap; margin-top: 5px;}
+        
+        /* Laptop/Tablet layout */
+        @media (min-width: 600px) {
+            .step-row { flex-direction: row; justify-content: space-between; align-items: baseline; }
+            .step-marks { margin-top: 0; margin-left: 15px; align-self: auto; }
+        }
+
+        .math-block { margin: 10px 0; overflow-x: auto; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MARKING SCHEME & SOLUTIONS - Minor Test 11</div>
+        <div style="margin-top: 5px; font-size: 10pt;">Class: 7 CBSE | Subject: Science & Math | Max Marks: 50</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="q-box">
+        <div class="q-text">Q1. Find the value of \( 2^3 \times 3^2 \).</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">\( 2^3 = 2 \times 2 \times 2 = 8 \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">\( 3^2 = 3 \times 3 = 9 \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Therefore, \( 8 \times 9 = 72 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q2. Express 343 in exponential form.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">Prime factorization of 343:<br>\( 343 = 7 \times 7 \times 7 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Exponential form = \( 7^3 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q3. Name two metals which are exceptionally soft and can be easily cut with a knife.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">1. Sodium (Na)<br>2. Potassium (K)</div>
+            <div class="step-marks">[1 + 1 = 2 Marks]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q4. What happens when a magnesium ribbon is burnt in air? Write the corresponding word equation.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">When magnesium ribbon is burnt in air, it burns with a dazzling white flame and forms a white powdery ash called magnesium oxide.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Word Equation: Magnesium + Oxygen \( \rightarrow \) Magnesium Oxide</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q5. Define the term malleability. Name the most malleable metal known to us.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content"><strong>Malleability:</strong> The property of metals by which they can be beaten into thin sheets without breaking.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>Most malleable metal:</strong> Gold (Silver is also acceptable).</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="q-box">
+        <div class="q-text">Q6. Simplify and express in power notation: \( (5^2)^3 \times 5^4 \div 5^7 \)</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">Using law \( (a^m)^n = a^{m \times n} \):<br>\( (5^2)^3 = 5^{2 \times 3} = 5^6 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Expression becomes: \( 5^6 \times 5^4 \div 5^7 \)<br>Using law \( a^m \times a^n = a^{m+n} \):<br>\( 5^{6+4} \div 5^7 = 5^{10} \div 5^7 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Using law \( a^m \div a^n = a^{m-n} \):<br>\( 5^{10-7} = 5^3 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q7. Write the number 279404 in its expanded form using exponents.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">Place values: 2 is in lakh place, 7 in ten thousands, etc.</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">
+                \( 279404 = 200000 + 70000 + 9000 + 400 + 0 + 4 \)<br>
+                \( = 2 \times 100000 + 7 \times 10000 + 9 \times 1000 + 4 \times 100 + 0 \times 10 + 4 \times 1 \)
+            </div>
+            <div class="step-marks">[1½ Marks]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">
+                <strong>Expanded Form:</strong><br>
+                \( = 2 \times 10^5 + 7 \times 10^4 + 9 \times 10^3 + 4 \times 10^2 + 0 \times 10^1 + 4 \times 10^0 \)
+            </div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q8. Simplify: \( \frac{2^5 \times 3^4 \times 4}{3^2 \times 32} \)</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">First, express all composite numbers as prime factors:<br>\( 4 = 2^2 \)<br>\( 32 = 2^5 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Substitute these into the expression:<br>\( = \frac{2^5 \times 3^4 \times 2^2}{3^2 \times 2^5} \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Group the bases:<br>\( = \frac{2^{5+2} \times 3^4}{2^5 \times 3^2} = \frac{2^7 \times 3^4}{2^5 \times 3^2} \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Using exponent laws for division:<br>\( = 2^{7-5} \times 3^{4-2} \)<br>\( = 2^2 \times 3^2 \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Evaluate:<br>\( = 4 \times 9 = 36 \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q9. State three clear differences between metals and non-metals based purely on their physical properties.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">
+                <table style="width:100%; border-collapse: collapse; margin-top: 5px;" border="1" cellpadding="5">
+                    <tr><th>Property</th><th>Metals</th><th>Non-Metals</th></tr>
+                    <tr><td><strong>State</strong></td><td>Mostly solid at room temp (except Mercury).</td><td>Exist in solid, liquid, and gaseous states.</td></tr>
+                    <tr><td><strong>Malleability/Ductility</strong></td><td>Highly malleable and ductile.</td><td>Non-malleable and non-ductile (brittle).</td></tr>
+                    <tr><td><strong>Conduction</strong></td><td>Good conductors of heat and electricity.</td><td>Poor conductors (except Graphite).</td></tr>
+                    <tr><td><strong>Lustre</strong></td><td>Have a shiny appearance (lustrous).</td><td>Dull appearance (except Iodine/Diamond).</td></tr>
+                </table>
+                <em>(Any three valid points)</em>
+            </div>
+            <div class="step-marks">[1 Mark each = 3 Marks]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q10. Why is sodium metal kept immersed under kerosene oil?</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">Sodium is a highly reactive metal.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">It reacts vigorously with atmospheric oxygen and water (moisture) to generate a lot of heat, which can easily catch fire.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">To prevent this accidental fire and cut off its contact with air and moisture, it is safely stored immersed under kerosene oil.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+    
+    <div class="q-box">
+        <div class="q-text">Q11. (a) Express \( 729 \times 64 \) as product of prime factors in exponential form. (b) Evaluate: \( (-1)^{20} + (-1)^{21} + (-1)^{22} \)</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content"><strong>Part (a):</strong><br>Prime factorization of 729:<br>\( 729 = 3 \times 3 \times 3 \times 3 \times 3 \times 3 = 3^6 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Prime factorization of 64:<br>\( 64 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 = 2^6 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Product: \( 3^6 \times 2^6 \) (or \( 6^6 \))</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content" style="margin-top: 10px;"><strong>Part (b):</strong><br>Recall that \( (-1)^{\text{even}} = 1 \) and \( (-1)^{\text{odd}} = -1 \).</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">
+                \( (-1)^{20} = 1 \)<br>
+                \( (-1)^{21} = -1 \)<br>
+                \( (-1)^{22} = 1 \)
+            </div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Expression value = \( 1 + (-1) + 1 = 1 - 1 + 1 = 1 \)</div>
+            <div class="step-marks">[½ Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q12. Simplify: \( \displaystyle \frac{3^5 \times 10^5 \times 25}{5^7 \times 6^5} \)</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content">Step 1: Express composite bases as products of prime factors.<br>\( 10 = 2 \times 5 \)<br>\( 25 = 5^2 \)<br>\( 6 = 2 \times 3 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Step 2: Substitute these into the expression:<br>
+            <div class="math-block">\( = \frac{3^5 \times (2 \times 5)^5 \times 5^2}{5^7 \times (2 \times 3)^5} \)</div></div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Step 3: Expand using \( (a \times b)^m = a^m \times b^m \):<br>
+            <div class="math-block">\( = \frac{3^5 \times 2^5 \times 5^5 \times 5^2}{5^7 \times 2^5 \times 3^5} \)</div></div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Step 4: Group the powers with the same base:<br>
+            Numerator: \( 2^5 \times 3^5 \times 5^{5+2} = 2^5 \times 3^5 \times 5^7 \)<br>
+            Denominator: \( 2^5 \times 3^5 \times 5^7 \)</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">Step 5: Cancel terms / use division laws:<br>
+            <div class="math-block">\( = 2^{5-5} \times 3^{5-5} \times 5^{7-7} = 2^0 \times 3^0 \times 5^0 = 1 \times 1 \times 1 = 1 \)</div></div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q13. (a) What are displacement reactions? (b) Iron nail in copper sulphate solution observation & equation.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content"><strong>Part (a):</strong><br>A chemical reaction in which a more reactive metal displaces a less reactive metal from its salt solution is called a displacement reaction.</div>
+            <div class="step-marks">[2 Marks]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>Part (b) Observation:</strong><br>1. The blue colour of the copper sulphate solution gradually fades and turns light green (due to the formation of Iron Sulphate).<br>2. A reddish-brown coating (of copper metal) is deposited on the iron nail.</div>
+            <div class="step-marks">[2 Marks]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>Word Equation:</strong><br>Iron + Copper Sulphate \(\rightarrow\) Iron Sulphate + Copper</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q14. Give reasons for the following:</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content"><strong>(a) Aluminum foils are used to wrap food:</strong> Aluminum is highly malleable, so it can be easily beaten into very thin, flexible foils. It also does not react easily with food.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>(b) Immersion rods are made of metals:</strong> Metals are excellent conductors of electricity and heat, which is essential for heating the liquid efficiently.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>(c) Copper cannot displace zinc:</strong> Copper is placed below zinc in the reactivity series (it is less reactive than zinc), hence it cannot displace a more reactive metal from its salt.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>(d) Bells are made of metals:</strong> Metals possess the property of being sonorous; they produce a ringing sound when struck hard. Wood is not sonorous.</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>(e) Gold/Silver for jewelry:</strong> They are highly lustrous (shiny), highly malleable and ductile (easy to shape), and noble/unreactive (do not corrode easily).</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <div class="q-text">Q15. (a) Distinguish metal/non-metal on chemical properties. (b) Reaction of non-metals with oxygen with example.</div>
+        <div class="sol-heading">Solution:</div>
+        <div class="step-row">
+            <div class="step-content"><strong>Part (a) Chemical Differences:</strong><br>
+            1. <em>Oxides:</em> Metals form basic oxides (e.g., MgO), whereas non-metals form acidic or neutral oxides (e.g., SO<sub>2</sub>).<br>
+            2. <em>Reaction with Acids:</em> Metals generally react with dilute acids to produce hydrogen gas (pop sound), whereas non-metals generally do not react with dilute acids.</div>
+            <div class="step-marks">[2 Marks]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>Part (b) Reaction with Oxygen:</strong><br>Non-metals react with oxygen to form non-metallic oxides. These oxides are generally acidic in nature (they turn blue litmus red when dissolved in water).</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content"><strong>Example:</strong> When Sulphur (a non-metal) is burnt in air (oxygen), it forms sulphur dioxide gas.<br>
+            Equation: Sulphur + Oxygen \(\rightarrow\) Sulphur dioxide (\( S + O_2 \rightarrow SO_2 \))</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+        <div class="step-row">
+            <div class="step-content">If this gas is dissolved in water, it forms sulphurous acid:<br>
+            Sulphur dioxide + Water \(\rightarrow\) Sulphurous acid (\( SO_2 + H_2O \rightarrow H_2SO_3 \))</div>
+            <div class="step-marks">[1 Mark]</div>
+        </div>
+    </div>
+
+    <div class="footer">Confidential - For Teacher's Reference Only | Team Vardaan</div>
+</body>
+</html>
