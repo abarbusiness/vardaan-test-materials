@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 850px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 11pt;
+            }
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        
+        .solution-title { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: #b30000;
+        }
+
+        .part-header {
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 35px; 
+            background-color: #e6f2ff;
+            padding: 8px;
+            border: 1px solid #000;
+            font-size: 14pt;
+        }
+
+        .question-block {
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            padding: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .q-num {
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+        }
+
+        .marks {
+            float: right;
+            font-weight: bold;
+            color: #0066cc;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .solution-block {
+            padding: 10px 10px 10px 35px;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .step-marks {
+            float: right;
+            color: #666;
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        /* Responsive Math Wrapper for Mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            /* Thin scrollbar for webkit */
+            &::-webkit-scrollbar {
+                height: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 3px;
+            }
+        }
+
+        .final-answer {
+            font-weight: bold;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTION KEY: MINOR TEST - 11</div>
+        <div style="margin-top: 5px;">Class: 7 ICSE | Subjects: Maths & Physics | Max Marks: 50</div>
+    </div>
+
+    <div class="part-header">PART I: MATHEMATICS (25 Marks)</div>
+
+    <!-- Question 1 -->
+    <div class="question-block">
+        <div class="q-num">1.</div>
+        <div class="q-text">Express \( 729 \) as a power of \( 3 \). <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        To express 729 as a power of 3, we find its prime factorization using 3:<br>
+        \( 729 \div 3 = 243 \) <br>
+        \( 243 \div 3 = 81 \) <br>
+        \( 81 \div 3 = 27 \) <br>
+        \( 27 \div 3 = 9 \) <br>
+        \( 9 \div 3 = 3 \) <br>
+        \( 3 \div 3 = 1 \) <span class="step-marks">[1 mark for factorization]</span><br>
+        Multiplying them, we get: \( 729 = 3 \times 3 \times 3 \times 3 \times 3 \times 3 \)
+        <div class="math-scroll">
+            \[ 729 = 3^6 \]
+        </div>
+        <div class="final-answer">Answer: \( 3^6 \)</div> <span class="step-marks">[1 mark for correct exponent]</span>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-block">
+        <div class="q-num">2.</div>
+        <div class="q-text">Two numbers are in the ratio \( 3 : 5 \). If their sum is \( 96 \), find the two numbers. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        Let the common multiple be \( x \).<br>
+        Therefore, the two numbers are \( 3x \) and \( 5x \).<br>
+        Given that their sum is 96:
+        <div class="math-scroll">
+            \[ 3x + 5x = 96 \]
+            \[ 8x = 96 \]
+        </div>
+        <span class="step-marks">[1 mark for setting up equation]</span><br>
+        <div class="math-scroll">
+            \[ x = \frac{96}{8} = 12 \]
+        </div>
+        Now, substitute the value of \( x \):<br>
+        First number = \( 3 \times 12 = 36 \)<br>
+        Second number = \( 5 \times 12 = 60 \)
+        <div class="final-answer">Answer: The numbers are 36 and 60.</div> <span class="step-marks">[1 mark for correct numbers]</span>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-block">
+        <div class="q-num">3.</div>
+        <div class="q-text">Simplify using laws of exponents: \( (2^3 \times 2^4) \div 2^5 \) <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        According to the product law of exponents: \( a^m \times a^n = a^{m+n} \)<br>
+        Numerator = \( 2^{3+4} = 2^7 \) <span class="step-marks">[1 mark for product law]</span><br>
+        Now, substitute this back into the expression:<br>
+        \( 2^7 \div 2^5 \)<br>
+        According to the quotient law of exponents: \( a^m \div a^n = a^{m-n} \)<br>
+        <div class="math-scroll">
+            \[ = 2^{7-5} \]
+            \[ = 2^2 \]
+        </div>
+        <div class="final-answer">Answer: \( 2^2 \) or 4</div> <span class="step-marks">[1 mark for quotient law/final answer]</span>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-block">
+        <div class="q-num">4.</div>
+        <div class="q-text">Simplify the given exponential expression completely:<br> \( \frac{3^5 \times 10^5 \times 25}{5^7 \times 6^5} \) <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        First, express composite bases (\( 10, 25, 6 \)) in terms of prime factors:<br>
+        \( 10 = 2 \times 5 \)<br>
+        \( 25 = 5^2 \)<br>
+        \( 6 = 2 \times 3 \) <span class="step-marks">[1 mark for prime factorization]</span><br>
+        
+        Substitute these into the expression:
+        <div class="math-scroll">
+            \[ \frac{3^5 \times (2 \times 5)^5 \times 5^2}{5^7 \times (2 \times 3)^5} \]
+        </div>
+        Distribute the powers using the law \( (ab)^m = a^m b^m \):
+        <div class="math-scroll">
+            \[ \frac{3^5 \times 2^5 \times 5^5 \times 5^2}{5^7 \times 2^5 \times 3^5} \]
+        </div>
+        Group like bases in the numerator:
+        <div class="math-scroll">
+            \[ \frac{2^5 \times 3^5 \times 5^{(5+2)}}{2^5 \times 3^5 \times 5^7} = \frac{2^5 \times 3^5 \times 5^7}{2^5 \times 3^5 \times 5^7} \]
+        </div>
+        <span class="step-marks">[1 mark for grouping and laws]</span><br>
+        Since the numerator is identical to the denominator, all terms cancel out (using \( a^m \div a^m = a^0 = 1 \)):
+        <div class="math-scroll">
+            \[ 2^{(5-5)} \times 3^{(5-5)} \times 5^{(7-7)} = 2^0 \times 3^0 \times 5^0 = 1 \times 1 \times 1 = 1 \]
+        </div>
+        <div class="final-answer">Answer: 1</div> <span class="step-marks">[1 mark for correct final simplification]</span>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-block">
+        <div class="q-num">5.</div>
+        <div class="q-text">The angles of a triangle are in the ratio \( 2 : 3 : 4 \). Find the measure of each angle. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        Let the angles of the triangle be \( 2x \), \( 3x \), and \( 4x \).<br>
+        We know that the sum of angles in a triangle is \( 180^\circ \). <span class="step-marks">[1 mark for stating property]</span><br>
+        <div class="math-scroll">
+            \[ 2x + 3x + 4x = 180^\circ \]
+            \[ 9x = 180^\circ \]
+            \[ x = \frac{180^\circ}{9} = 20^\circ \]
+        </div>
+        <span class="step-marks">[1 mark for solving for x]</span><br>
+        Now, calculate each angle:<br>
+        First angle = \( 2x = 2 \times 20^\circ = 40^\circ \)<br>
+        Second angle = \( 3x = 3 \times 20^\circ = 60^\circ \)<br>
+        Third angle = \( 4x = 4 \times 20^\circ = 80^\circ \)
+        <div class="final-answer">Answer: 40°, 60°, and 80°</div> <span class="step-marks">[1 mark for final angles]</span>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-block">
+        <div class="q-num">6.</div>
+        <div class="q-text">If \( x : y = 3 : 4 \) and \( y : z = 8 : 9 \), calculate the combined ratio \( x : y : z \), and thereby find the ratio \( x : z \). <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        Given ratios:<br>
+        \( \frac{x}{y} = \frac{3}{4} \) and \( \frac{y}{z} = \frac{8}{9} \)<br>
+        To combine the ratios, the common term '\( y \)' must have the same value in both ratios. <br>
+        Currently, \( y = 4 \) in the first ratio and \( y = 8 \) in the second. <span class="step-marks">[1 mark for identifying LCM approach]</span><br>
+        LCM of 4 and 8 is 8.<br>
+        Multiply the first ratio by \( \frac{2}{2} \) to make \( y = 8 \):
+        <div class="math-scroll">
+            \[ x : y = (3 \times 2) : (4 \times 2) = 6 : 8 \]
+        </div>
+        Now, we have:<br>
+        \( x : y = 6 : 8 \)<br>
+        \( y : z = 8 : 9 \)<br>
+        Combined ratio \( x : y : z = 6 : 8 : 9 \) <span class="step-marks">[1 mark for combined ratio]</span><br>
+        From this, the ratio of \( x \) to \( z \) is directly observed as:
+        <div class="math-scroll">
+            \[ x : z = 6 : 9 \]
+        </div>
+        Simplifying by dividing by 3: \( x : z = 2 : 3 \)
+        <div class="final-answer">Answer: x : z = 2 : 3</div> <span class="step-marks">[1 mark for x:z simplified]</span>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-block">
+        <div class="q-num">7.</div>
+        <div class="q-text">
+            (a) Find the value of \( m \) if: \( 5^m \div 5^{-3} = 5^5 \) <span class="marks">[2 Marks]</span><br>
+            (b) A car travels 228 km in 3 hours. How long will it take to travel 912 km at a uniform speed? <span class="marks">[3 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        Given: \( 5^m \div 5^{-3} = 5^5 \)<br>
+        Using the quotient law: \( a^x \div a^y = a^{x-y} \)<br>
+        <div class="math-scroll">
+            \[ 5^{m - (-3)} = 5^5 \]
+            \[ 5^{m + 3} = 5^5 \]
+        </div>
+        <span class="step-marks">[1 mark for quotient law application]</span><br>
+        Since bases are the same, equate the powers:<br>
+        <div class="math-scroll">
+            \[ m + 3 = 5 \]
+            \[ m = 5 - 3 = 2 \]
+        </div>
+        <div class="final-answer">Answer: m = 2</div> <span class="step-marks">[1 mark for final value]</span>
+        
+        <br><br><strong>Solution (b):</strong><br>
+        Using Unitary Method:<br>
+        Time taken to travel 228 km = 3 hours <span class="step-marks">[1 mark]</span><br>
+        Time taken to travel 1 km = \( \frac{3}{228} \) hours <span class="step-marks">[1 mark]</span><br>
+        Time taken to travel 912 km = \( \frac{3}{228} \times 912 \)
+        <div class="math-scroll">
+            \[ = \frac{3 \times 912}{228} = 3 \times 4 = 12 \text{ hours} \]
+        </div>
+        <div class="final-answer">Answer: 12 hours</div> <span class="step-marks">[1 mark for final calculation]</span>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-block">
+        <div class="q-num">8.</div>
+        <div class="q-text">
+            (a) Determine if the numbers 4, 6, 8, and 12 are in proportion. <span class="marks">[2 Marks]</span><br>
+            (b) Simplify: \( \left( \frac{a^3}{b^4} \right)^2 \times \left( \frac{b^2}{a} \right)^3 \) <span class="marks">[3 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        Four numbers \( a, b, c, d \) are in proportion if \( a \times d = b \times c \) (Product of extremes = Product of means).<br>
+        Here, extremes are 4 and 12. Means are 6 and 8.<br>
+        Product of extremes = \( 4 \times 12 = 48 \)<br>
+        Product of means = \( 6 \times 8 = 48 \) <span class="step-marks">[1 mark for calculating both]</span><br>
+        Since \( 48 = 48 \), the given numbers are in proportion.
+        <div class="final-answer">Answer: Yes, they are in proportion.</div> <span class="step-marks">[1 mark for conclusion]</span>
+
+        <br><br><strong>Solution (b):</strong><br>
+        Given expression: \( \left( \frac{a^3}{b^4} \right)^2 \times \left( \frac{b^2}{a^1} \right)^3 \)<br>
+        Apply power of a power rule \( (x^m)^n = x^{mn} \) to numerators and denominators:
+        <div class="math-scroll">
+            \[ = \frac{a^{3 \times 2}}{b^{4 \times 2}} \times \frac{b^{2 \times 3}}{a^{1 \times 3}} \]
+            \[ = \frac{a^6}{b^8} \times \frac{b^6}{a^3} \]
+        </div>
+        <span class="step-marks">[1.5 marks for expanding powers correctly]</span><br>
+        Combine and apply quotient law \( x^m \div x^n = x^{m-n} \):
+        <div class="math-scroll">
+            \[ = \frac{a^6 \times b^6}{a^3 \times b^8} \]
+            \[ = a^{6-3} \times b^{6-8} \]
+            \[ = a^3 \times b^{-2} \]
+        </div>
+        Express with positive exponents:
+        <div class="math-scroll">
+            \[ = \frac{a^3}{b^2} \]
+        </div>
+        <div class="final-answer">Answer: \( \frac{a^3}{b^2} \)</div> <span class="step-marks">[1.5 marks for simplification and positive exponent]</span>
+    </div>
+
+    <div class="part-header" style="page-break-before: always;">PART II: PHYSICS (25 Marks)</div>
+
+    <!-- Question 9 -->
+    <div class="question-block">
+        <div class="q-num">9.</div>
+        <div class="q-text">Define energy. What is the SI unit of energy? <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Energy:</strong> It is defined as the capacity or ability of a body to do work. <span class="step-marks">[1 mark]</span><br>
+        <strong>SI Unit:</strong> The SI unit of energy is the <strong>Joule (J)</strong>. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-block">
+        <div class="q-num">10.</div>
+        <div class="q-text">What is meant by the mechanical energy of a body? Name its two primary types. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Mechanical Energy:</strong> The total energy possessed by a body due to its state of motion or its state of rest/position is called mechanical energy. <span class="step-marks">[1 mark]</span><br>
+        <strong>Two Types:</strong><br>
+        1. Kinetic Energy (KE)<br>
+        2. Potential Energy (PE) <span class="step-marks">[1 mark for both]</span>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question-block">
+        <div class="q-num">11.</div>
+        <div class="q-text">State the Law of Conservation of Energy. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        The Law of Conservation of Energy states that energy can neither be created nor be destroyed; it can only be transformed from one form to another. The total energy of an isolated system remains constant. <span class="step-marks">[2 marks for complete statement]</span>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-block">
+        <div class="q-num">12.</div>
+        <div class="q-text">State the primary energy transformations occurring in... <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        (a) <strong>Glowing electric bulb:</strong> Electrical energy is transformed into Light and Heat energy. <span class="step-marks">[1 mark]</span><br>
+        (b) <strong>Microphone:</strong> Sound energy is transformed into Electrical energy. <span class="step-marks">[1 mark]</span><br>
+        (c) <strong>Photosynthesis:</strong> Light (Solar) energy is transformed into Chemical energy. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-block">
+        <div class="q-num">13.</div>
+        <div class="q-text">Differentiate between kinetic energy and potential energy. Provide one practical example of each. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse: collapse; margin-top:10px; margin-bottom:10px;">
+            <tr style="background-color:#f0f0f0;">
+                <th>Kinetic Energy</th>
+                <th>Potential Energy</th>
+            </tr>
+            <tr>
+                <td>Energy possessed by a body by virtue of its <strong>motion</strong>.</td>
+                <td>Energy possessed by a body by virtue of its <strong>position or configuration</strong>.</td>
+            </tr>
+            <tr>
+                <td><strong>Example:</strong> A moving car, blowing wind, flowing water.</td>
+                <td><strong>Example:</strong> Water stored in a dam, a stretched rubber band.</td>
+            </tr>
+        </table>
+        <span class="step-marks">[1 mark for each definition + 0.5 mark for each example]</span>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question-block">
+        <div class="q-num">14.</div>
+        <div class="q-text">A boulder of mass \( 5 \text{ kg} \) is at a height of \( 10 \text{ m} \). Calculate potential energy. (\( g = 10 \text{ m/s}^2 \)) <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        Given data:<br>
+        Mass (\( m \)) = \( 5 \text{ kg} \)<br>
+        Height (\( h \)) = \( 10 \text{ m} \)<br>
+        Acceleration due to gravity (\( g \)) = \( 10 \text{ m/s}^2 \) <span class="step-marks">[1 mark for data extraction]</span><br>
+        Formula for Gravitational Potential Energy (P.E.) = \( m \times g \times h \) <span class="step-marks">[1 mark for formula]</span>
+        <div class="math-scroll">
+            \[ \text{P.E.} = 5 \times 10 \times 10 \]
+            \[ \text{P.E.} = 500 \text{ Joules (J)} \]
+        </div>
+        <div class="final-answer">Answer: The potential energy is 500 J.</div> <span class="step-marks">[1 mark for calculation and unit]</span>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-block">
+        <div class="q-num">15.</div>
+        <div class="q-text">
+            (a) Define 1 Joule of energy. Relation to calorie. <span class="marks">[2 Marks]</span><br>
+            (b) Energy transformation in a swinging pendulum. <span class="marks">[3 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <strong>1 Joule:</strong> 1 Joule is the amount of work done (or energy transferred) when a force of 1 Newton displaces a body by 1 metre in the direction of the force. <span class="step-marks">[1 mark]</span><br>
+        <strong>Relation:</strong> \( 1 \text{ calorie} = 4.184 \text{ Joules} \) (or approx. 4.2 J). <span class="step-marks">[1 mark]</span>
+        
+        <br><br><strong>Solution (b):</strong><br>
+        In a swinging simple pendulum, there is a continuous exchange between potential and kinetic energy:<br>
+        1. At the <strong>extreme positions</strong> (highest points of swing), the bob momentarily stops. Its velocity is zero, so Kinetic Energy = 0. All its energy is in the form of <strong>Maximum Potential Energy</strong>. <span class="step-marks">[1 mark]</span><br>
+        2. As the bob swings downwards towards the center, Potential Energy decreases (height decreases) and transforms into Kinetic Energy (velocity increases). <span class="step-marks">[1 mark]</span><br>
+        3. At the <strong>mean position</strong> (lowest point), its height is minimum and velocity is maximum. Here, Potential Energy is zero (relative to the bottom), and all energy is in the form of <strong>Maximum Kinetic Energy</strong>. The total mechanical energy remains constant throughout. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question-block">
+        <div class="q-num">16.</div>
+        <div class="q-text">
+            (a) Energy stored in a compressed spring? <span class="marks">[1 Mark]</span><br>
+            (b) Example to show sound is a form of energy. <span class="marks">[2 Marks]</span><br>
+            (c) Calculate kinetic energy for \( m = 0.2 \text{ kg} \), \( v = 10 \text{ m/s} \). <span class="marks">[2 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <strong>Elastic Potential Energy</strong> is stored in a compressed spring. <span class="step-marks">[1 mark]</span>
+        
+        <br><br><strong>Solution (b):</strong><br>
+        When a loud sound (like a sonic boom from a jet or a loud explosion) occurs near a house, the glass windowpanes vibrate heavily and sometimes even shatter. This doing of work (moving or breaking the glass) proves that sound possesses energy. <span class="step-marks">[2 marks for appropriate example and reasoning]</span>
+        
+        <br><br><strong>Solution (c):</strong><br>
+        Given: Mass (\( m \)) = \( 0.2 \text{ kg} \), Velocity (\( v \)) = \( 10 \text{ m/s} \)<br>
+        Formula for Kinetic Energy (K.E.) = \( \frac{1}{2} m v^2 \) <span class="step-marks">[1 mark for formula]</span>
+        <div class="math-scroll">
+            \[ \text{K.E.} = \frac{1}{2} \times 0.2 \times (10)^2 \]
+            \[ \text{K.E.} = \frac{1}{2} \times 0.2 \times 100 \]
+            \[ \text{K.E.} = 0.1 \times 100 = 10 \text{ J} \]
+        </div>
+        <div class="final-answer">Answer: The kinetic energy is 10 J.</div> <span class="step-marks">[1 mark for correct calculation with unit]</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            /* Base settings for A4 print */
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Responsive adaptations for screens */
+        @media screen and (max-width: 850px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 11pt; /* Slightly smaller for mobile readability */
+            }
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Allows wrapping on small screens */
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        /* Mobile specific adjustments for exam details */
+        @media screen and (max-width: 500px) {
+            .institute-name { font-size: 18pt; }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .part-header {
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 35px; 
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #000;
+            font-size: 14pt;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto; /* Handles overflowing equations */
+        }
+        
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+            display: flex;
+        }
+        
+        .sub-num {
+            width: 30px;
+            flex-shrink: 0;
+        }
+
+        .marks-right {
+            float: right;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .part-header {
+                background-color: #e0e0e0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST - 01</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subjects: Mathematics & Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The paper is divided into two parts: Part I (Mathematics) and Part II (Physics).</li>
+                <li>Both parts carry 25 marks each. All questions are compulsory.</li>
+                <li>Show all working steps clearly for numerical problems.</li>
+                <li>Use of calculators is strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="part-header">PART I: MATHEMATICS (25 Marks)</div>
+    
+    <div class="section-header">SECTION A (6 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Express \( 729 \) as a power of \( 3 \).
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Two numbers are in the ratio \( 3 : 5 \). If their sum is \( 96 \), find the two numbers.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Simplify the following expression using laws of exponents: 
+            \[ (2^3 \times 2^4) \div 2^5 \]
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (9 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Simplify the given exponential expression completely:
+            \[ \frac{3^5 \times 10^5 \times 25}{5^7 \times 6^5} \]
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The angles of a triangle are in the ratio \( 2 : 3 : 4 \). Find the measure of each angle of the triangle.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            If \( x : y = 3 : 4 \) and \( y : z = 8 : 9 \), calculate the combined ratio \( x : y : z \), and thereby find the ratio \( x : z \).
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Find the value of \( m \) if: &nbsp; \( 5^m \div 5^{-3} = 5^5 \) <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>A car travels \( 228 \text{ km} \) in \( 3 \text{ hours} \). Using the unitary method (or proportion), how long will it take the same car to travel \( 912 \text{ km} \) at a uniform speed? <span class="marks-right">[3]</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Determine if the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion. Justify your answer mathematically. <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Simplify using the laws of exponents:
+                    \[ \left( \frac{a^3}{b^4} \right)^2 \times \left( \frac{b^2}{a} \right)^3 \] 
+                    <span class="marks-right">[3]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="part-header" style="page-break-before: always;">PART II: PHYSICS (25 Marks)</div>
+    
+    <div class="section-header">SECTION A (6 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Define energy. What is the SI unit of energy?
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            What is meant by the mechanical energy of a body? Name its two primary types.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            State the Law of Conservation of Energy.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (9 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            State the primary energy transformations occurring in the following cases:
+            <div class="sub-question"><div class="sub-num">(a)</div><div>A glowing electric bulb</div></div>
+            <div class="sub-question"><div class="sub-num">(b)</div><div>A microphone being used during a speech</div></div>
+            <div class="sub-question"><div class="sub-num">(c)</div><div>Photosynthesis in green plants</div></div>
+            <span class="marks-right" style="margin-top: -65px;">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Differentiate between kinetic energy and potential energy. Provide one practical example of each.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            A boulder of mass \( 5 \text{ kg} \) is precariously balanced at a height of \( 10 \text{ m} \) above the ground. Calculate its gravitational potential energy. <br><em>(Take acceleration due to gravity, \( g = 10 \text{ m/s}^2 \))</em>
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Define 1 Joule of energy. State the mathematical relationship between one Joule and one calorie. <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Describe in detail the transformation of energy that takes place when a simple pendulum swings from one extreme position to another. (You may assume no air resistance). <span class="marks-right">[3]</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>What specific form of energy is stored in a compressed spring? <span class="marks-right">[1]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Briefly describe a common example or a simple observation which proves that sound is a form of energy. <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(c)</div>
+                <div>Calculate the kinetic energy possessed by a cricket ball of mass \( 0.2 \text{ kg} \) moving with a uniform velocity of \( 10 \text{ m/s} \). <span class="marks-right">[2]</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

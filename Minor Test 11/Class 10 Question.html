@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- MathJax for rendering equations correctly -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        /* Adjusted for responsiveness */
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; /* Switched to px for screen responsiveness */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none;}
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; margin-left: 10px; flex-shrink: 0; }
+        
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Media Queries */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: flex-start; gap: 5px; border-bottom: none; }
+            .exam-details span { border-bottom: 1px solid #eee; width: 100%; padding-bottom: 3px; }
+            .exam-details span:last-child { border-bottom: 1px solid #000; }
+            .question-container { flex-direction: row; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name { font-size: 16pt; }
+            .q-num { width: 25px; }
+        }
+
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .exam-details { flex-direction: row; align-items: center; border-bottom: 1px solid #000; gap: 0; }
+            .exam-details span { border-bottom: none; width: auto; padding-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 11</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Mathematics & Social Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into Section A (Mathematics) and Section B (Social Science).</li>
+                <li>Write your answers neatly and legibly. Show step-by-step working for mathematics.</li>
+                <li>Marks for each question are indicated on the right side.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION A: MATHEMATICS -->
+    <div class="section-header">SECTION A: MATHEMATICS (25 Marks)<span class="marks-info">(Chapter: Arithmetic Progression)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Find the 10th term of the AP: $2, 7, 12, \dots$</div>
+        <div class="q-marks">[2]</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Which term of the AP: $21, 18, 15, \dots$ is $-81$?</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">If the 3rd and the 9th terms of an AP are $4$ and $-8$ respectively, which term of this AP is zero?</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Find the sum of the first 15 multiples of $8$.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">The sum of the 4th and 8th terms of an AP is $24$ and the sum of the 6th and 10th terms is $44$. Find the first three terms of the AP.</div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">A manufacturer of TV sets produced 600 sets in the third year and 700 sets in the seventh year. Assuming that the production increases uniformly by a fixed number every year, find:
+            <div class="sub-question">(i) the production in the 1st year</div>
+            <div class="sub-question">(ii) the production in the 10th year</div>
+            <div class="sub-question">(iii) the total production in the first 7 years</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">The sum of first $n$ terms of an AP is given by the formula $S_n = 3n^2 - 4n$. Find the $n$th term and the 12th term of the AP.</div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+
+    <!-- SECTION B: SOCIAL SCIENCE -->
+    <div class="section-header">SECTION B: SOCIAL SCIENCE (25 Marks)<span class="marks-info">(Topics: Forest & Wildlife Resources, Federalism)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Mention any two primary reasons for the depletion of forest resources in India.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">What is meant by 'Reserved Forests'?</div>
+        <div class="q-marks">[2]</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Define Federalism in your own words.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Differentiate between extinct species and endangered species. Provide one example for each.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">What is decentralisation? Why was it considered necessary to implement it in India?</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Mention any three key features of a federal form of government.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">Describe the role of local communities in the conservation of forests and wildlife in India. Give suitable examples to support your answer.</div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">Explain the threefold distribution of legislative powers between the Union Government and the State Governments in India (Union List, State List, Concurrent List).</div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

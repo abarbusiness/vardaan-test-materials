@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Science Question Paper</title>
+    <!-- MathJax for rendering Scientific Formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Mobile and Tablet Responsiveness */
+        @media screen and (max-width: 850px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 11pt; 
+            }
+        }
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+                font-size: 10.5pt;
+            }
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        @media screen and (max-width: 600px) {
+            .institute-name { font-size: 18pt; }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            background-color: #f8f8f8;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto; 
+        }
+        
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+            display: flex;
+        }
+        
+        .sub-num {
+            width: 30px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .marks-right {
+            float: right;
+            font-weight: bold;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .section-header {
+                background-color: #e0e0e0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST - 11</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The paper consists of three sections: A, B, and C.</li>
+                <li>All questions are compulsory. Keep your answers clear, concise, and to the point.</li>
+                <li>Marks for each question are indicated against it.</li>
+                <li>Chapters Covered: Water: A Precious Resource & Nutrition in Animals.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Name the five main steps involved in the process of nutrition in humans.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            What is meant by the 'water table'?
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            What are 'villi'? Where are they found in the human body?
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Mention any two natural sources of fresh water available on Earth.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Which part of the human digestive canal is primarily involved in:
+            <div class="sub-question"><div class="sub-num">(i)</div><div>Chewing of food?</div></div>
+            <div class="sub-question"><div class="sub-num">(ii)</div><div>Killing of harmful bacteria?</div></div>
+            <span class="marks-right" style="margin-top:-35px;">[2]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            List three simple ways in which you can conserve water in your home.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            State three differences between milk teeth and permanent teeth.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            What is 'rainwater harvesting'? Why is this practice important?
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            How does an Amoeba capture its food? Explain briefly.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            State the main functions of:
+            <div class="sub-question"><div class="sub-num">(a)</div><div>Saliva in the mouth. <span class="marks-right">[1.5]</span></div></div>
+            <div class="sub-question"><div class="sub-num">(b)</div><div>Bile juice in the small intestine. <span class="marks-right">[1.5]</span></div></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>List the main parts of the human alimentary canal (digestive tract) in the correct order, starting from the mouth. <span class="marks-right">[3]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Explain the role of the stomach in the digestion of food. <span class="marks-right">[2]</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Explain the 'water cycle' in nature. What are the main processes involved in it? <span class="marks-right">[3]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Water exists in three different forms in nature. Name these three forms with one example of each. <span class="marks-right">[2]</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Who are called 'ruminants'? Give two examples. <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Explain the special process of digestion in grass-eating animals. What is 'cud'? <span class="marks-right">[3]</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>What is meant by 'groundwater' and 'aquifer'? <span class="marks-right">[2]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Discuss any three factors that are responsible for the depletion of the water table in cities. <span class="marks-right">[3]</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-num">(a)</div>
+                <div>Define the terms 'assimilation' and 'egestion' in the context of animal nutrition. <span class="marks-right">[3]</span></div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(b)</div>
+                <div>Which organ in the human digestive system is primarily responsible for absorbing water from undigested food? What happens to the remaining semi-solid waste? <span class="marks-right">[2]</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

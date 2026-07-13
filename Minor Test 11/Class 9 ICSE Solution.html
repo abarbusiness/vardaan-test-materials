@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning - Answer Key MIT 11</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: #fafafa; 
+            position: relative; 
+        }
+        .container { background-color: white; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 20pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #b22222;}
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .part-header { text-align: center; font-weight: bold; font-size: 14pt; margin-top: 30px; margin-bottom: 10px; text-transform: uppercase; background: #e0e0e0; padding: 8px;}
+        .section-header { font-weight: bold; margin-top: 25px; margin-bottom: 15px; border-bottom: 1px dashed #ccc; font-size: 12pt; color: #333; }
+        
+        .q-block { margin-bottom: 25px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #fff;}
+        .q-text-row { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .q-text { flex-grow: 1; margin-right: 15px; color: #2c3e50; }
+        .q-marks { width: 45px; text-align: right; flex-shrink: 0; color: #c0392b; }
+        
+        .sol-heading { font-weight: bold; text-transform: uppercase; font-size: 9pt; color: #27ae60; letter-spacing: 1px; margin-bottom: 5px;}
+        .sol-content { padding-left: 10px; border-left: 3px solid #27ae60; }
+        .step { margin-bottom: 5px; }
+        .marks-breakdown { font-size: 9pt; color: #e67e22; float: right; font-style: italic; }
+
+        /* Math container for mobile scrolling */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; display: block; max-width: 100%; padding: 5px 0; }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { width: 100%; margin: 0; padding: 10px; }
+            .container { padding: 10px; box-shadow: none; border: 1px solid #ddd;}
+            .institute-name { font-size: 16pt; }
+            .q-block { padding: 10px; }
+            .q-text-row { flex-direction: column; }
+            .q-marks { text-align: left; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">ANSWER KEY & DETAILED SOLUTIONS - MIT 11</div>
+            <div style="margin-top: 10px; font-weight: bold;">Class 9 ICSE | Maths & Science | Max Marks: 50</div>
+        </div>
+
+        <div class="section-header">SECTION A: MATHEMATICS (25 Marks)</div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q1. (a) Convert to log form: \( 5^3 = 125 \) <br> (b) Convert to exp form: \( \log_{10} 0.01 = -2 \)</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step"><strong>(a)</strong> The base is 5, exponent is 3. <br>
+                Logarithmic form: <span class="math-scroll">\( \log_5 (125) = 3 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><strong>(b)</strong> The base is 10, the power is -2.<br>
+                Exponential form: <span class="math-scroll">\( 10^{-2} = 0.01 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q2. Evaluate: \( \log_2 16 + \log_3 27 \)</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Expressing arguments as powers of respective bases: \( 16 = 2^4 \) and \( 27 = 3^3 \).</div>
+                <div class="step"><span class="math-scroll">\( = \log_2 (2^4) + \log_3 (3^3) \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Using property \( \log_a (a^n) = n \):</div>
+                <div class="step"><span class="math-scroll">\( = 4 \log_2 2 + 3 \log_3 3 \)</span></div>
+                <div class="step"><span class="math-scroll">\( = 4(1) + 3(1) = 4 + 3 = 7 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q3. If \( \log_x 64 = \frac{3}{2} \), determine the value of \( x \).</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Convert to exponential form:</div>
+                <div class="step"><span class="math-scroll">\( x^{\frac{3}{2}} = 64 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Raise both sides to the power of \( \frac{2}{3} \) to isolate \( x \):</div>
+                <div class="step"><span class="math-scroll">\( (x^{\frac{3}{2}})^{\frac{2}{3}} = (64)^{\frac{2}{3}} \)</span></div>
+                <div class="step"><span class="math-scroll">\( x = (4^3)^{\frac{2}{3}} = 4^2 \)</span></div>
+                <div class="step"><span class="math-scroll">\( x = 16 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q4. Express as a single logarithm: \( 2 \log 3 - \frac{1}{2} \log 16 + \log 12 \)</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Use power law \( n \log a = \log (a^n) \):</div>
+                <div class="step"><span class="math-scroll">\( = \log (3^2) - \log (16^{\frac{1}{2}}) + \log 12 \)</span></div>
+                <div class="step"><span class="math-scroll">\( = \log 9 - \log 4 + \log 12 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Using Product and Quotient Laws:</div>
+                <div class="step"><span class="math-scroll">\( = \log \left( \frac{9 \times 12}{4} \right) \)</span></div>
+                <div class="step"><span class="math-scroll">\( = \log (9 \times 3) = \log 27 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q5. Solve for \( x \): \( \log_{10} (x^2 - 21) = 2 \)</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Convert the logarithmic equation to exponential form:</div>
+                <div class="step"><span class="math-scroll">\( x^2 - 21 = 10^2 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( x^2 - 21 = 100 \)</span></div>
+                <div class="step"><span class="math-scroll">\( x^2 = 100 + 21 = 121 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Taking square root on both sides:</div>
+                <div class="step"><span class="math-scroll">\( x = \pm 11 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q6. Prove: \( \log \left( \frac{81}{8} \right) - 2 \log \left( \frac{3}{2} \right) + 3 \log \left( \frac{2}{3} \right) + \log \left( \frac{3}{4} \right) = 0 \)</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">LHS: Use power law for the coefficients:</div>
+                <div class="step"><span class="math-scroll">\( = \log \left( \frac{81}{8} \right) - \log \left( \left(\frac{3}{2}\right)^2 \right) + \log \left( \left(\frac{2}{3}\right)^3 \right) + \log \left( \frac{3}{4} \right) \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( = \log \left( \frac{81}{8} \right) - \log \left( \frac{9}{4} \right) + \log \left( \frac{8}{27} \right) + \log \left( \frac{3}{4} \right) \)</span></div>
+                <div class="step">Combine using Quotient (\(-\)) and Product (\(+\)) laws:</div>
+                <div class="step"><span class="math-scroll">\( = \log \left( \frac{81}{8} \div \frac{9}{4} \times \frac{8}{27} \times \frac{3}{4} \right) \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( = \log \left( \frac{81}{8} \times \frac{4}{9} \times \frac{8}{27} \times \frac{3}{4} \right) \)</span></div>
+                <div class="step">Simplifying the fraction: 
+                <br> Numerators: \( 81 \times 4 \times 8 \times 3 = 7776 \)
+                <br> Denominators: \( 8 \times 9 \times 27 \times 4 = 7776 \)
+                <br> Ratio = \( 1 \)</div>
+                <div class="step"><span class="math-scroll">\( = \log (1) = 0 = \text{RHS} \)</span>. Hence Proved. <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+        
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q7. If \( a^2 + b^2 = 7ab \), prove \( 2 \log (a + b) = 2 \log 3 + \log a + \log b \)</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Given: \( a^2 + b^2 = 7ab \)</div>
+                <div class="step">Add \( 2ab \) to both sides to complete the square:</div>
+                <div class="step"><span class="math-scroll">\( a^2 + b^2 + 2ab = 7ab + 2ab \)</span></div>
+                <div class="step"><span class="math-scroll">\( (a + b)^2 = 9ab \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Taking logarithm on both sides:</div>
+                <div class="step"><span class="math-scroll">\( \log (a + b)^2 = \log (9ab) \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Applying power law on LHS, and product law on RHS:</div>
+                <div class="step"><span class="math-scroll">\( 2 \log (a + b) = \log 9 + \log a + \log b \)</span></div>
+                <div class="step"><span class="math-scroll">\( 2 \log (a + b) = \log (3^2) + \log a + \log b \)</span></div>
+                <div class="step"><span class="math-scroll">\( 2 \log (a + b) = 2 \log 3 + \log a + \log b \)</span>. Hence Proved. <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+        
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q8. Given \( \log_{10} x = a \) and \( \log_{10} y = b \), express \( 10^{2a-b} \) in terms of \( x \) and \( y \).</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Convert the given log equations to exponential forms:</div>
+                <div class="step"><span class="math-scroll">\( \log_{10} x = a \implies 10^a = x \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( \log_{10} y = b \implies 10^b = y \)</span> <span class="marks-breakdown">[0.5 Marks]</span></div>
+                <div class="step">Now consider the expression: \( 10^{2a-b} \)</div>
+                <div class="step">Using exponent rules (\( m^{x-y} = \frac{m^x}{m^y} \) and \( m^{xy} = (m^x)^y \)):</div>
+                <div class="step"><span class="math-scroll">\( = \frac{10^{2a}}{10^b} = \frac{(10^a)^2}{10^b} \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Substituting \( 10^a = x \) and \( 10^b = y \):</div>
+                <div class="step"><span class="math-scroll">\( = \frac{x^2}{y} \)</span> <span class="marks-breakdown">[0.5 Marks]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q9. Solve: \( \log x + \log y = 2 \) and \( x - y = 15 \)</div>
+                <div class="q-marks">[5]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">From the first equation: \( \log x + \log y = 2 \)</div>
+                <div class="step">Applying product law (assuming base 10):</div>
+                <div class="step"><span class="math-scroll">\( \log_{10} (xy) = 2 \)</span></div>
+                <div class="step">Convert to exponential form:</div>
+                <div class="step"><span class="math-scroll">\( xy = 10^2 \implies xy = 100 \)</span>  ---- (Eq. 1) <span class="marks-breakdown">[1.5 Marks]</span></div>
+                <div class="step">From the second equation: \( x - y = 15 \implies x = 15 + y \)  ---- (Eq. 2)</div>
+                <div class="step">Substitute (Eq. 2) into (Eq. 1):</div>
+                <div class="step"><span class="math-scroll">\( (15 + y)y = 100 \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( y^2 + 15y - 100 = 0 \)</span></div>
+                <div class="step">Factorizing the quadratic equation:</div>
+                <div class="step"><span class="math-scroll">\( y^2 + 20y - 5y - 100 = 0 \)</span></div>
+                <div class="step"><span class="math-scroll">\( y(y + 20) - 5(y + 20) = 0 \)</span></div>
+                <div class="step"><span class="math-scroll">\( (y + 20)(y - 5) = 0 \)</span> <span class="marks-breakdown">[1.5 Marks]</span></div>
+                <div class="step">Therefore, \( y = -20 \) or \( y = 5 \).</div>
+                <div class="step">Since logarithms are only defined for positive real numbers, \( x > 0 \) and \( y > 0 \). Thus, reject \( y = -20 \).</div>
+                <div class="step">So, \( y = 5 \). Substitute \( y = 5 \) in \( x = 15 + y \implies x = 15 + 5 = 20 \).</div>
+                <div class="step"><strong>Final Answer:</strong> \( x = 20, y = 5 \) <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="section-header" style="page-break-before: always;">SECTION B: SCIENCE (Physics) - 25 Marks</div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q10. Body moving with uniform velocity of \( 10 \text{ m/s} \). What is acceleration? Justify.</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step"><strong>Acceleration is \( 0 \text{ m/s}^2 \).</strong> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><strong>Justification:</strong> Acceleration is defined as the rate of change of velocity (\( a = \frac{v-u}{t} \)). Since the velocity is uniform (constant), there is no change in velocity (\( v = u = 10 \text{ m/s} \)). Therefore, the acceleration is zero. <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q11. Define inertia. On what physical quantity does it depend?</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step"><strong>Inertia:</strong> It is the inherent property of a body by virtue of which it resists any change in its state of rest or of uniform motion in a straight line. <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><strong>Dependency:</strong> The inertia of a body depends solely on its <strong>Mass</strong>. (Greater mass means greater inertia). <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q12. Stone dropped from a cliff. Velocity after \( 3\text{s} \)? (\( g=10\text{m/s}^2 \))</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Initial velocity \( u = 0 \text{ m/s} \) (since it is dropped).</div>
+                <div class="step">Acceleration \( a = g = 10 \text{ m/s}^2 \), Time \( t = 3 \text{ s} \). <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Using first equation of motion: \( v = u + gt \)</div>
+                <div class="step"><span class="math-scroll">\( v = 0 + (10 \times 3) = 30 \text{ m/s} \).</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+        
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q13. State two differences between distance and displacement.</div>
+                <div class="q-marks">[2]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">1. <strong>Nature:</strong> Distance is a scalar quantity (only magnitude), whereas Displacement is a vector quantity (magnitude and direction). <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">2. <strong>Values:</strong> Distance is always positive for a moving body. Displacement can be positive, negative, or zero. (Alternatively: Distance is the actual path length, displacement is the shortest path). <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q14. Derive algebraically: \( v^2 = u^2 + 2as \)</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Let an object move with initial velocity \( u \), uniform acceleration \( a \), and reach final velocity \( v \), covering distance \( s \) in time \( t \).</div>
+                <div class="step">From the first equation of motion: \( v = u + at \implies t = \frac{v - u}{a} \)  ---- (Eq. 1) <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">We know, Distance = Average Velocity \( \times \) Time</div>
+                <div class="step"><span class="math-scroll">\( s = \left( \frac{v + u}{2} \right) \times t \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">Substitute the value of \( t \) from Eq. 1 into this equation:</div>
+                <div class="step"><span class="math-scroll">\( s = \left( \frac{v + u}{2} \right) \times \left( \frac{v - u}{a} \right) \)</span></div>
+                <div class="step">Using identity \( (a+b)(a-b) = a^2 - b^2 \):</div>
+                <div class="step"><span class="math-scroll">\( s = \frac{v^2 - u^2}{2a} \)</span></div>
+                <div class="step"><span class="math-scroll">\( 2as = v^2 - u^2 \implies v^2 = u^2 + 2as \)</span> (Proved) <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q15. Bullet \( 20\text{g} \) at \( 150\text{m/s} \) stops in \( 0.03\text{s} \). Calculate force.</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Given: Mass \( m = 20 \text{ g} = \frac{20}{1000} \text{ kg} = 0.02 \text{ kg} \). <span class="marks-breakdown">[0.5 Marks]</span></div>
+                <div class="step">Initial velocity \( u = 150 \text{ m/s} \), Final velocity \( v = 0 \text{ m/s} \), Time \( t = 0.03 \text{ s} \).</div>
+                <div class="step">Calculate acceleration \( a = \frac{v - u}{t} \):</div>
+                <div class="step"><span class="math-scroll">\( a = \frac{0 - 150}{0.03} = \frac{-150}{0.03} = -5000 \text{ m/s}^2 \)</span> <span class="marks-breakdown">[1.5 Marks]</span></div>
+                <div class="step">Force \( F = ma = 0.02 \text{ kg} \times (-5000 \text{ m/s}^2) \)</div>
+                <div class="step"><span class="math-scroll">\( F = -100 \text{ N} \)</span>. The magnitude of the retarding force is <strong>100 N</strong>. <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+        
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q16. Car accelerates \( 18 \text{km/h} \) to \( 36 \text{km/h} \) in \( 5\text{s} \). Find (i) \( a \), (ii) distance \( s \).</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step">Initial velocity \( u = 18 \text{ km/h} = 18 \times \frac{5}{18} = 5 \text{ m/s} \).</div>
+                <div class="step">Final velocity \( v = 36 \text{ km/h} = 36 \times \frac{5}{18} = 10 \text{ m/s} \). Time \( t = 5 \text{ s} \). <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><strong>(i) Acceleration (a):</strong> <br>
+                <span class="math-scroll">\( a = \frac{v - u}{t} = \frac{10 - 5}{5} = \frac{5}{5} = 1 \text{ m/s}^2 \).</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><strong>(ii) Distance (s):</strong> <br>
+                Using \( s = ut + \frac{1}{2}at^2 \):<br>
+                <span class="math-scroll">\( s = (5 \times 5) + \frac{1}{2} \times 1 \times (5)^2 \)</span> <br>
+                <span class="math-scroll">\( s = 25 + 12.5 = 37.5 \text{ meters} \).</span> <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q17. Newton's Third Law & Application to Swimming.</div>
+                <div class="q-marks">[3]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step"><strong>Third Law:</strong> To every action, there is always an equal and opposite reaction. (Action and reaction forces act on two different bodies). <span class="marks-breakdown">[1.5 Marks]</span></div>
+                <div class="step"><strong>Application (Swimming):</strong> While swimming, a person pushes the water backward with their hands and feet (Action force). According to Newton's Third Law, the water exerts an equal and opposite forward force on the person (Reaction force), which enables the swimmer to move forward. <span class="marks-breakdown">[1.5 Marks]</span></div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-text-row">
+                <div class="q-text">Q18. (a) Law of conservation of momentum. (b) Boy \( 40\text{kg} \), \( 5\text{m/s} \) jumps on cart \( 10\text{kg} \). Find \( v \).</div>
+                <div class="q-marks">[5]</div>
+            </div>
+            <div class="sol-heading">Solution:</div>
+            <div class="sol-content">
+                <div class="step"><strong>(a) Law of Conservation of Momentum:</strong> It states that in an isolated system (when no external unbalanced force acts on it), the total momentum of the system remains constant before and after collision. <span class="marks-breakdown">[2 Marks]</span></div>
+                <div class="step"><strong>(b) Numerical:</strong> Let the boy be object 1 and cart be object 2.<br>
+                Mass of boy \( m_1 = 40 \text{ kg} \), Initial velocity \( u_1 = 5 \text{ m/s} \).<br>
+                Mass of cart \( m_2 = 10 \text{ kg} \), Initial velocity \( u_2 = 0 \text{ m/s} \) (stationary).</div>
+                <div class="step">Total initial momentum \( = m_1u_1 + m_2u_2 \)</div>
+                <div class="step"><span class="math-scroll">\( = (40 \times 5) + (10 \times 0) = 200 + 0 = 200 \text{ kg m/s} \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step">After jumping, they move together with a common velocity, let's call it \( v \).<br>
+                Total final mass \( M = m_1 + m_2 = 40 + 10 = 50 \text{ kg} \).<br>
+                Total final momentum \( = M \times v = 50v \).</div>
+                <div class="step">By law of conservation of momentum:<br>
+                Initial Momentum = Final Momentum</div>
+                <div class="step"><span class="math-scroll">\( 200 = 50v \)</span> <span class="marks-breakdown">[1 Mark]</span></div>
+                <div class="step"><span class="math-scroll">\( v = \frac{200}{50} = 4 \text{ m/s} \)</span></div>
+                <div class="step">The common velocity of the cart and the boy is <strong>\( 4 \text{ m/s} \)</strong> in the direction the boy was running. <span class="marks-breakdown">[1 Mark]</span></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

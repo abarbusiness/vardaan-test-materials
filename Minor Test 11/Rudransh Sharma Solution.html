@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical and Chemical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 850px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 11pt;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; font-size: 10.5pt; }
+            .institute-name { font-size: 18pt !important; }
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        
+        .solution-title { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: #b30000;
+        }
+
+        .part-header {
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 35px; 
+            background-color: #e6f2ff;
+            padding: 8px;
+            border: 1px solid #000;
+            font-size: 14pt;
+        }
+
+        .question-block {
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            padding: 12px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .q-num {
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+        }
+
+        .marks {
+            float: right;
+            font-weight: bold;
+            color: #0066cc;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .solution-block {
+            padding: 10px 10px 10px 35px;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .step-marks {
+            float: right;
+            color: #666;
+            font-size: 10pt;
+            font-style: italic;
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            &::-webkit-scrollbar { height: 6px; }
+            &::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+        }
+
+        table.diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table.diff-table th, table.diff-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.diff-table th { background-color: #f0f0f0; }
+
+        .final-answer {
+            font-weight: bold;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTION KEY: MINOR TEST - 11</div>
+        <div style="margin-top: 5px;">Class: 7 ICSE | Subject: Chemistry | Max Marks: 50</div>
+    </div>
+
+    <div class="part-header">SECTION A (10 Marks)</div>
+
+    <!-- Question 1 -->
+    <div class="question-block">
+        <div class="q-num">1.</div>
+        <div class="q-text">Define 'atomicity'. State the atomicity of Ozone and Phosphorus. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Atomicity:</strong> The total number of atoms present in one molecule of an element or a compound is known as its atomicity. <span class="step-marks">[1 mark]</span><br>
+        <strong>Atomicity of Ozone (\(\mathrm{O_3}\)):</strong> 3 (Triatomic) <span class="step-marks">[0.5 mark]</span><br>
+        <strong>Atomicity of Phosphorus (\(\mathrm{P_4}\)):</strong> 4 (Tetratomic) <span class="step-marks">[0.5 mark]</span>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-block">
+        <div class="q-num">2.</div>
+        <div class="q-text">Classify into elements, compounds, and mixtures: Air, Pure Water, Iron, Blood. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        1. <strong>Air:</strong> Mixture (of gases like \(N_2\), \(O_2\), \(CO_2\), etc.) <span class="step-marks">[0.5 mark]</span><br>
+        2. <strong>Pure Water (\(\mathrm{H_2O}\)):</strong> Compound <span class="step-marks">[0.5 mark]</span><br>
+        3. <strong>Iron (\(\mathrm{Fe}\)):</strong> Element <span class="step-marks">[0.5 mark]</span><br>
+        4. <strong>Blood:</strong> Mixture (of plasma, RBCs, WBCs, etc.) <span class="step-marks">[0.5 mark]</span>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-block">
+        <div class="q-num">3.</div>
+        <div class="q-text">State any two core characteristics of a physical change. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        Characteristics of a physical change (Any two):<br>
+        1. No new substance is formed. <span class="step-marks">[1 mark]</span><br>
+        2. The change is temporary and usually reversible. <span class="step-marks">[1 mark]</span><br>
+        <em>(Alternate accepted points: There is no change in the chemical composition of the substance; there is usually no overall absorption or evolution of energy).</em>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-block">
+        <div class="q-num">4.</div>
+        <div class="q-text">Why is the melting of wax considered a physical change, whereas the burning of a candle is considered a chemical change? <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Melting of wax:</strong> It is a physical change because only the state of wax changes from solid to liquid. No new substance is formed, and solid wax can be obtained back on cooling (reversible). <span class="step-marks">[1 mark]</span><br>
+        <strong>Burning of a candle:</strong> It is a chemical change because the wax combusts with oxygen in the air to form new chemical substances like Carbon Dioxide (\(\mathrm{CO_2}\)) and Water vapour (\(\mathrm{H_2O}\)), along with the release of heat and light energy. It is irreversible. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-block">
+        <div class="q-num">5.</div>
+        <div class="q-text">Write the chemical formulae for: (a) Sodium chloride (b) Calcium carbonate. <span class="marks">[2 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        (a) <strong>Sodium chloride:</strong> \(\mathrm{NaCl}\) <span class="step-marks">[1 mark]</span><br>
+        (b) <strong>Calcium carbonate:</strong> \(\mathrm{CaCO_3}\) <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <div class="part-header">SECTION B (15 Marks)</div>
+
+    <!-- Question 6 -->
+    <div class="question-block">
+        <div class="q-num">6.</div>
+        <div class="q-text">Differentiate between an element and a compound on the basis of any three distinct points. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <div class="math-scroll">
+            <table class="diff-table">
+                <tr>
+                    <th>Basis</th>
+                    <th>Element</th>
+                    <th>Compound</th>
+                </tr>
+                <tr>
+                    <td><strong>Definition</strong></td>
+                    <td>A pure substance made up of only one kind of atom.</td>
+                    <td>A pure substance made up of two or more elements chemically combined in a fixed ratio.</td>
+                </tr>
+                <tr>
+                    <td><strong>Breakdown</strong></td>
+                    <td>Cannot be broken down into simpler substances by ordinary physical or chemical methods.</td>
+                    <td>Can be broken down into its constituent elements by chemical methods.</td>
+                </tr>
+                <tr>
+                    <td><strong>Properties</strong></td>
+                    <td>Has its own unique set of properties.</td>
+                    <td>Properties of a compound are entirely different from the properties of its constituent elements.</td>
+                </tr>
+            </table>
+        </div>
+        <span class="step-marks">[1 mark for each valid difference point = 3 marks total]</span>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-block">
+        <div class="q-num">7.</div>
+        <div class="q-text">Give scientific reasons for: (a) Rusting of iron is a chemical change. (b) Tearing of paper is a physical change, but burning it is a chemical change. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>(a)</strong> Rusting of iron is a chemical change because iron reacts with oxygen and moisture in the air to form a completely new substance called <em>iron oxide</em> (rust). The original properties of iron are lost, and the change is permanent and irreversible. <span class="step-marks">[1.5 marks]</span><br><br>
+        <strong>(b)</strong> Tearing of paper is a physical change because it only changes the size and shape of the paper; no new substance is formed. <span class="step-marks">[0.75 marks]</span><br>
+        However, burning of paper is a chemical change because it produces ash, carbon dioxide, and water vapor (new substances) with a completely different chemical composition, which cannot be reversed back to paper. <span class="step-marks">[0.75 marks]</span>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-block">
+        <div class="q-num">8.</div>
+        <div class="q-text">Write the standard chemical symbols and valencies for: (a) Aluminium (b) Oxygen (c) Potassium. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        (a) <strong>Aluminium:</strong> Symbol = \(\mathrm{Al}\), Valency = 3 (or +3) <span class="step-marks">[1 mark]</span><br>
+        (b) <strong>Oxygen:</strong> Symbol = \(\mathrm{O}\), Valency = 2 (or -2) <span class="step-marks">[1 mark]</span><br>
+        (c) <strong>Potassium:</strong> Symbol = \(\mathrm{K}\), Valency = 1 (or +1) <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-block">
+        <div class="q-num">9.</div>
+        <div class="q-text">What is meant by a chemical equation? State two vital conditions necessary for a chemical change to take place. <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Chemical Equation:</strong> The short-hand representation of a chemical reaction using the symbols and formulae of the respective elements and compounds involved is called a chemical equation. <span class="step-marks">[1 mark]</span><br><br>
+        <strong>Conditions for a chemical change (Any two):</strong><br>
+        1. <strong>Close Contact:</strong> Reactants must come into close physical contact or be mixed in a solution state. <span class="step-marks">[1 mark]</span><br>
+        2. <strong>Energy Supply:</strong> Many reactions require the application of heat (e.g., thermal decomposition), light (e.g., photosynthesis), or electricity (e.g., electrolysis) to occur. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-block">
+        <div class="q-num">10.</div>
+        <div class="q-text">Explain 'sublimation' with a suitable example. Is it a physical or a chemical change? <span class="marks">[3 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution:</strong><br>
+        <strong>Sublimation:</strong> It is the process in which a solid changes directly into its gaseous state on heating, without passing through the intermediate liquid state, and vice versa on cooling. <span class="step-marks">[1.5 marks]</span><br><br>
+        <strong>Example:</strong> Heating of Iodine crystals, Naphthalene balls, or Camphor. <span class="step-marks">[0.5 mark]</span><br><br>
+        <strong>Nature of Change:</strong> It is a <strong>Physical Change</strong> because no new substance is formed, and the solid can be recovered simply by cooling the vapors. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <div class="part-header" style="page-break-before: always;">SECTION C (25 Marks)</div>
+
+    <!-- Question 11 -->
+    <div class="question-block">
+        <div class="q-num">11.</div>
+        <div class="q-text">
+            (a) State three fundamental differences between physical and chemical changes. <span class="marks">[3 Marks]</span><br>
+            (b) Classify into physical or chemical changes: (i) Curdling of milk (ii) Dissolving sugar in water. <span class="marks">[2 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <div class="math-scroll">
+            <table class="diff-table">
+                <tr>
+                    <th>Physical Change</th>
+                    <th>Chemical Change</th>
+                </tr>
+                <tr>
+                    <td>No new substance is formed.</td>
+                    <td>One or more new substances are formed.</td>
+                </tr>
+                <tr>
+                    <td>The change is usually temporary and reversible.</td>
+                    <td>The change is permanent and generally irreversible.</td>
+                </tr>
+                <tr>
+                    <td>Chemical composition of the substance remains the same.</td>
+                    <td>Chemical composition of the substance completely changes.</td>
+                </tr>
+            </table>
+        </div>
+        <span class="step-marks">[3 marks: 1 for each difference]</span><br><br>
+        <strong>Solution (b):</strong><br>
+        (i) <strong>Curdling of milk:</strong> Chemical Change (Lactic acid is formed, irreversible). <span class="step-marks">[1 mark]</span><br>
+        (ii) <strong>Dissolving sugar in water:</strong> Physical Change (Sugar can be recovered by evaporation). <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-block">
+        <div class="q-num">12.</div>
+        <div class="q-text">
+            (a) Define 'mixture'. <span class="marks">[1 Mark]</span><br>
+            (b) How does a mixture differ from a compound? (Two points) <span class="marks">[2 Marks]</span><br>
+            (c) Name the constituent elements present in: (i) Ammonia (ii) Sulphuric acid. <span class="marks">[2 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <strong>Mixture:</strong> A material containing two or more elements or compounds physically mixed together in any proportion without undergoing any chemical change. <span class="step-marks">[1 mark]</span><br><br>
+        
+        <strong>Solution (b):</strong> (Any two valid points)<br>
+        1. <strong>Proportion:</strong> In a mixture, constituents can be mixed in any ratio, whereas in a compound, elements combine in a fixed, definite ratio by mass. <span class="step-marks">[1 mark]</span><br>
+        2. <strong>Separation:</strong> Constituents of a mixture can be separated by simple physical methods (e.g., filtration, evaporation). Constituents of a compound can only be separated by chemical or electrochemical methods. <span class="step-marks">[1 mark]</span><br><br>
+        
+        <strong>Solution (c):</strong><br>
+        (i) <strong>Ammonia (\(\mathrm{NH_3}\)):</strong> Nitrogen and Hydrogen. <span class="step-marks">[1 mark]</span><br>
+        (ii) <strong>Sulphuric Acid (\(\mathrm{H_2SO_4}\)):</strong> Hydrogen, Sulphur, and Oxygen. <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-block">
+        <div class="q-num">13.</div>
+        <div class="q-text">Write the chemical formula using the criss-cross method: (a) Magnesium chloride (b) Aluminium oxide. <span class="marks">[5 Marks]</span></div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a): Magnesium chloride</strong><br>
+        Step 1: Write symbols: \(\mathrm{Mg}\) and \(\mathrm{Cl}\) <span class="step-marks">[0.5 mark]</span><br>
+        Step 2: Write valencies below symbols:<br>
+        \(\mathrm{Mg} \quad \mathrm{Cl}\)<br>
+        \(2 \quad \quad 1\) <span class="step-marks">[1 mark]</span><br>
+        Step 3: Criss-cross the valencies:<br>
+        \(\mathrm{Mg_1Cl_2}\)<br>
+        <div class="final-answer">Formula: \(\mathrm{MgCl_2}\)</div> <span class="step-marks">[1 mark]</span><br><br>
+
+        <strong>Solution (b): Aluminium oxide</strong><br>
+        Step 1: Write symbols: \(\mathrm{Al}\) and \(\mathrm{O}\) <span class="step-marks">[0.5 mark]</span><br>
+        Step 2: Write valencies below symbols:<br>
+        \(\mathrm{Al} \quad \mathrm{O}\)<br>
+        \(3 \quad \quad 2\) <span class="step-marks">[1 mark]</span><br>
+        Step 3: Criss-cross the valencies:<br>
+        \(\mathrm{Al_2O_3}\)<br>
+        <div class="final-answer">Formula: \(\mathrm{Al_2O_3}\)</div> <span class="step-marks">[1 mark]</span>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question-block">
+        <div class="q-num">14.</div>
+        <div class="q-text">
+            (a) What happens when magnesium ribbon is burnt in air? Write word equation and identify type of change. <span class="marks">[3 Marks]</span><br>
+            (b) Mention two observations that indicate a chemical change. <span class="marks">[2 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <strong>Observation:</strong> When a magnesium ribbon is burnt in air, it burns with a dazzling, brilliant white flame and forms a white powdery ash (Magnesium Oxide). <span class="step-marks">[1 mark]</span><br>
+        <strong>Word Equation:</strong><br>
+        Magnesium + Oxygen (from air) \(\rightarrow\) Magnesium oxide <span class="step-marks">[1 mark]</span><br>
+        <strong>Type of change:</strong> It is a <strong>Chemical Change</strong> (as a new substance, magnesium oxide, is formed and heat/light is emitted). <span class="step-marks">[1 mark]</span><br><br>
+
+        <strong>Solution (b):</strong><br>
+        General observations indicating a chemical change (Any two):<br>
+        1. Evolution of a gas (effervescence). <span class="step-marks">[1 mark]</span><br>
+        2. Change in colour. <span class="step-marks">[1 mark]</span><br>
+        <em>(Alternate answers: Formation of a precipitate; Change in temperature/Release or absorption of heat).</em>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-block">
+        <div class="q-num">15.</div>
+        <div class="q-text">
+            (a) Describe an activity to show dissolving copper sulphate is a physical change, but adding iron nails is a chemical change. <span class="marks">[3 Marks]</span><br>
+            (b) What is meant by 'intermolecular space' and 'intermolecular force'? How do they differ in solids and gases? <span class="marks">[2 Marks]</span>
+        </div>
+    </div>
+    <div class="solution-block">
+        <strong>Solution (a):</strong><br>
+        <strong>Physical Change Part:</strong> Take some water in a beaker and add a few blue crystals of copper sulphate. Stir it. The water turns blue, forming a copper sulphate solution. If we evaporate the water, we get the blue crystals back. No new substance is formed, making it a physical change. <span class="step-marks">[1.5 marks]</span><br>
+        <strong>Chemical Change Part:</strong> Now, drop a clean iron nail into this blue copper sulphate solution and leave it for a while. You will observe that the blue colour of the solution turns light green (Iron Sulphate is formed) and a brown coating of copper deposits on the iron nail. New substances are formed, making this a chemical change. <span class="step-marks">[1.5 marks]</span><br><br>
+
+        <strong>Solution (b):</strong><br>
+        <strong>Definitions:</strong><br>
+        1. <em>Intermolecular Space:</em> The empty space between the constituent particles (atoms/molecules) of a matter. <span class="step-marks">[0.5 mark]</span><br>
+        2. <em>Intermolecular Force:</em> The force of attraction existing between the constituent particles of a matter. <span class="step-marks">[0.5 mark]</span><br>
+        <strong>Difference in Solids and Gases:</strong><br>
+        In solids, the intermolecular space is <em>minimum</em> and the intermolecular force of attraction is <em>maximum</em> (very strong). <br>
+        In gases, the intermolecular space is <em>maximum</em> and the intermolecular force of attraction is <em>minimum</em> (negligible). <span class="step-marks">[1 mark for both comparisons]</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- MathJax for rendering equations correctly -->
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: 'left',
+          displayIndent: '1em'
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'ams'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .solution-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; }
+        h1 { margin: 0; color: #2c3e50; font-size: 24px; text-transform: uppercase;}
+        h2 { margin: 5px 0 0 0; color: #7f8c8d; font-size: 16px; font-weight: 500; }
+        
+        .section-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            margin: 30px 0 20px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .qa-block {
+            border: 1px solid #e1e8ed;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            page-break-inside: avoid;
+        }
+        .question-box {
+            background-color: #f1f5f8;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e1e8ed;
+            font-weight: 600;
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            color: #e74c3c; 
+            white-space: nowrap; 
+            font-weight: bold; 
+            background: #fdeaea;
+            padding: 2px 8px;
+            border-radius: 4px;
+            height: fit-content;
+        }
+        
+        .answer-box {
+            padding: 20px 15px;
+            background-color: #ffffff;
+        }
+        .answer-box h4 {
+            margin-top: 0;
+            color: #27ae60;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        /* Chunking long equations for small screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px 0;
+            margin: 10px 0;
+            /* Ensures scrollbar works on touch devices smoothly */
+            -webkit-overflow-scrolling: touch; 
+        }
+
+        ul, ol { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        /* Highlighting final answers */
+        .final-answer {
+            display: inline-block;
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body { padding: 10px; }
+            .solution-container { padding: 15px; }
+            .question-box { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="solution-container">
+    <div class="header">
+        <h1>VARDAAN LEARNING INSTITUTE</h1>
+        <h2>Solutions: Minor Test 11 (Class 10 CBSE)</h2>
+    </div>
+
+    <!-- SECTION A: MATHEMATICS -->
+    <div class="section-title">SECTION A: MATHEMATICS</div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">1. Find the 10th term of the AP: $2, 7, 12, \dots$</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given Arithmetic Progression (AP): $2, 7, 12, \dots$</p>
+            <p>First term ($a$) = $2$</p>
+            <p>Common difference ($d$) = $7 - 2 = 5$</p>
+            <p>The formula for the $n$th term of an AP is:</p>
+            <div class="math-scroll">
+                $$a_n = a + (n - 1)d$$
+            </div>
+            <p>To find the 10th term ($a_{10}$), substitute $n = 10, a = 2, d = 5$:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_{10} &= 2 + (10 - 1)5 \\ &= 2 + 9(5) \\ &= 2 + 45 \\ &= 47 \end{aligned}$$
+            </div>
+            <div class="final-answer">The 10th term of the AP is 47.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">2. Which term of the AP: $21, 18, 15, \dots$ is $-81$?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given AP: $21, 18, 15, \dots$</p>
+            <p>First term ($a$) = $21$</p>
+            <p>Common difference ($d$) = $18 - 21 = -3$</p>
+            <p>Let the $n$th term be $-81$. So, $a_n = -81$.</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_n &= a + (n - 1)d \\ -81 &= 21 + (n - 1)(-3) \\ -81 - 21 &= (n - 1)(-3) \\ -102 &= -3(n - 1) \\ \frac{-102}{-3} &= n - 1 \\ 34 &= n - 1 \\ n &= 34 + 1 = 35 \end{aligned}$$
+            </div>
+            <div class="final-answer">The 35th term of the given AP is $-81$.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">3. If the 3rd and the 9th terms of an AP are $4$ and $-8$ respectively, which term of this AP is zero?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Let the first term be $a$ and the common difference be $d$.</p>
+            <p>Given: $a_3 = 4$ and $a_9 = -8$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + 2d &= 4 \quad \text{--- (Equation 1)} \\ a + 8d &= -8 \quad \text{--- (Equation 2)} \end{aligned}$$
+            </div>
+            <p>Subtracting Equation 1 from Equation 2:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (a + 8d) - (a + 2d) &= -8 - 4 \\ 6d &= -12 \\ d &= -2 \end{aligned}$$
+            </div>
+            <p>Substitute $d = -2$ in Equation 1:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + 2(-2) &= 4 \\ a - 4 &= 4 \\ a &= 8 \end{aligned}$$
+            </div>
+            <p>Let the $n$th term be $0$ ($a_n = 0$):</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + (n - 1)d &= 0 \\ 8 + (n - 1)(-2) &= 0 \\ (n - 1)(-2) &= -8 \\ n - 1 &= 4 \\ n &= 5 \end{aligned}$$
+            </div>
+            <div class="final-answer">The 5th term of the AP is zero.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">4. Find the sum of the first 15 multiples of $8$.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>The first 15 multiples of 8 form an AP: $8, 16, 24, \dots$</p>
+            <p>Here, first term ($a$) = $8$<br>
+            Common difference ($d$) = $16 - 8 = 8$<br>
+            Number of terms ($n$) = $15$</p>
+            <p>The formula for the sum of the first $n$ terms is:</p>
+            <div class="math-scroll">
+                $$S_n = \frac{n}{2} [2a + (n - 1)d]$$
+            </div>
+            <p>Substitute the values:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} S_{15} &= \frac{15}{2} [2(8) + (15 - 1)8] \\ &= \frac{15}{2} [16 + 14(8)] \\ &= \frac{15}{2} [16 + 112] \\ &= \frac{15}{2} \times 128 \\ &= 15 \times 64 \\ &= 960 \end{aligned}$$
+            </div>
+            <div class="final-answer">The sum of the first 15 multiples of 8 is 960.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">5. The sum of the 4th and 8th terms of an AP is $24$ and the sum of the 6th and 10th terms is $44$. Find the first three terms of the AP.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Let the first term be $a$ and common difference be $d$.</p>
+            <p><strong>Condition 1:</strong> Sum of 4th and 8th term is $24$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_4 + a_8 &= 24 \\ (a + 3d) + (a + 7d) &= 24 \\ 2a + 10d &= 24 \\ a + 5d &= 12 \quad \text{--- (Equation 1) (Dividing by 2)} \end{aligned}$$
+            </div>
+            <p><strong>Condition 2:</strong> Sum of 6th and 10th term is $44$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_6 + a_{10} &= 44 \\ (a + 5d) + (a + 9d) &= 44 \\ 2a + 14d &= 44 \\ a + 7d &= 22 \quad \text{--- (Equation 2) (Dividing by 2)} \end{aligned}$$
+            </div>
+            <p>Subtracting Equation 1 from Equation 2:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (a + 7d) - (a + 5d) &= 22 - 12 \\ 2d &= 10 \\ d &= 5 \end{aligned}$$
+            </div>
+            <p>Substitute $d = 5$ in Equation 1:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + 5(5) &= 12 \\ a + 25 &= 12 \\ a &= 12 - 25 \\ a &= -13 \end{aligned}$$
+            </div>
+            <p>The first three terms are $a$, $a+d$, $a+2d$:</p>
+            <ul>
+                <li>First term = $-13$</li>
+                <li>Second term = $-13 + 5 = -8$</li>
+                <li>Third term = $-8 + 5 = -3$</li>
+            </ul>
+            <div class="final-answer">The first three terms of the AP are $-13, -8, -3$.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">6. A manufacturer of TV sets produced 600 sets in the third year and 700 sets in the seventh year. Assuming that the production increases uniformly by a fixed number every year, find: (i) the production in the 1st year (ii) the production in the 10th year (iii) the total production in the first 7 years</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Since the production increases uniformly, it forms an AP.</p>
+            <p>Given:<br>
+            Production in 3rd year ($a_3$) = $600$<br>
+            Production in 7th year ($a_7$) = $700$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + 2d &= 600 \quad \text{--- (Equation 1)} \\ a + 6d &= 700 \quad \text{--- (Equation 2)} \end{aligned}$$
+            </div>
+            <p>Subtracting Equation 1 from Equation 2:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} 4d &= 100 \implies d = 25 \end{aligned}$$
+            </div>
+            <p>Substitute $d=25$ in Equation 1:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a + 2(25) &= 600 \\ a + 50 &= 600 \\ a &= 550 \end{aligned}$$
+            </div>
+            
+            <p><strong>(i) Production in the 1st year ($a$):</strong></p>
+            <div class="final-answer">550 TV sets.</div>
+            
+            <p><strong>(ii) Production in the 10th year ($a_{10}$):</strong></p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_{10} &= a + 9d \\ &= 550 + 9(25) \\ &= 550 + 225 = 775 \end{aligned}$$
+            </div>
+            <div class="final-answer">775 TV sets.</div>
+
+            <p><strong>(iii) Total production in first 7 years ($S_7$):</strong></p>
+            <div class="math-scroll">
+                $$\begin{aligned} S_n &= \frac{n}{2}[a + a_n] \\ S_7 &= \frac{7}{2}[a_1 + a_7] \\ &= \frac{7}{2}[550 + 700] \\ &= \frac{7}{2}[1250] \\ &= 7 \times 625 = 4375 \end{aligned}$$
+            </div>
+            <div class="final-answer">Total production is 4375 TV sets.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">7. The sum of first $n$ terms of an AP is given by the formula $S_n = 3n^2 - 4n$. Find the $n$th term and the 12th term of the AP.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given: $S_n = 3n^2 - 4n$</p>
+            <p>We know that the $n$th term is given by $a_n = S_n - S_{n-1}$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} S_{n-1} &= 3(n-1)^2 - 4(n-1) \\ &= 3(n^2 - 2n + 1) - 4n + 4 \\ &= 3n^2 - 6n + 3 - 4n + 4 \\ &= 3n^2 - 10n + 7 \end{aligned}$$
+            </div>
+            <p>Now, calculate $a_n$:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_n &= S_n - S_{n-1} \\ &= (3n^2 - 4n) - (3n^2 - 10n + 7) \\ &= 3n^2 - 4n - 3n^2 + 10n - 7 \\ &= 6n - 7 \end{aligned}$$
+            </div>
+            <p><strong>To find the 12th term ($a_{12}$):</strong></p>
+            <p>Substitute $n=12$ in the general formula for $a_n$:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} a_{12} &= 6(12) - 7 \\ &= 72 - 7 \\ &= 65 \end{aligned}$$
+            </div>
+            <div class="final-answer">The $n$th term is $6n - 7$ and the 12th term is $65$.</div>
+        </div>
+    </div>
+
+    <!-- SECTION B: SOCIAL SCIENCE -->
+    <div class="section-title">SECTION B: SOCIAL SCIENCE</div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">8. Mention any two primary reasons for the depletion of forest resources in India.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Two primary reasons for the depletion of forest resources in India are:</p>
+            <ol>
+                <li><strong>Expansion of Agriculture:</strong> Large-scale clearing of forests for agricultural expansion, especially after independence, has led to immense forest cover loss.</li>
+                <li><strong>Developmental Projects:</strong> Large-scale development projects like river valley projects (e.g., dams), mining activities, and infrastructure expansion lead to severe deforestation and habitat destruction.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">9. What is meant by 'Reserved Forests'?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Reserved Forests</strong> are the most restricted forests which are permanently earmarked either for the production of timber or other forest produce and in which right of grazing and cultivation is seldom allowed. More than half of the total forest land in India has been declared reserved forests. They are regarded as the most valuable as far as the conservation of forest and wildlife resources is concerned.</p>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">10. Define Federalism in your own words.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Federalism</strong> is a system of government in which power is divided between a central authority (the national government) and various constituent units of the country (like states or provinces). Both levels of government enjoy their power independent of the other and have their own distinct areas of jurisdiction.</p>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">11. Differentiate between extinct species and endangered species. Provide one example for each.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                <tr style="background-color: #f1f5f8;">
+                    <th>Basis</th>
+                    <th>Extinct Species</th>
+                    <th>Endangered Species</th>
+                </tr>
+                <tr>
+                    <td><strong>Definition</strong></td>
+                    <td>Species which are not found after searches of known or likely areas where they may occur. They no longer exist on Earth.</td>
+                    <td>Species which are in danger of extinction. Their survival is difficult if the negative factors that have led to a decline in their population continue to operate.</td>
+                </tr>
+                <tr>
+                    <td><strong>Status</strong></td>
+                    <td>Population is zero. Recovery is impossible.</td>
+                    <td>Population is drastically low but conservation efforts can save them.</td>
+                </tr>
+                <tr>
+                    <td><strong>Example</strong></td>
+                    <td>Asiatic Cheetah, Pink head duck.</td>
+                    <td>Indian Rhino, Black buck, Crocodile, Indian wild ass.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">12. What is decentralisation? Why was it considered necessary to implement it in India?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Decentralisation:</strong> When power is taken away from the Central and State governments and given to local government (Panchayats and Municipalities), it is called decentralisation.</p>
+            <p><strong>Need in India:</strong></p>
+            <ol>
+                <li><strong>Vastness of States:</strong> Indian states are very large and internally highly diverse (e.g., UP is bigger than Russia in population). It is difficult for state governments to look into the grass-root problems effectively.</li>
+                <li><strong>Local Knowledge:</strong> A large number of problems and issues are best settled at the local level because people have better knowledge of local problems, local resources, and where to spend money efficiently.</li>
+                <li><strong>Democratic Participation:</strong> It helps inculcate a habit of democratic participation among citizens and allows them to directly participate in decision-making processes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">13. Mention any three key features of a federal form of government.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Three key features of a federal government are:</p>
+            <ol>
+                <li><strong>Two or more levels of government:</strong> There are two or more tiers of government (e.g., Central, State, and Local).</li>
+                <li><strong>Distinct Jurisdiction:</strong> Different tiers of government govern the same citizens, but each tier has its own jurisdiction in specific matters of legislation, taxation, and administration.</li>
+                <li><strong>Constitutional Guarantee:</strong> The existence and authority of each tier of government is constitutionally guaranteed. The fundamental provisions cannot be unilaterally changed by one level of government; such changes require the consent of both levels.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">14. Describe the role of local communities in the conservation of forests and wildlife in India. Give suitable examples to support your answer.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>In India, forests are not just homes to wildlife but also to many traditional local communities. They have played a vital role in conserving flora and fauna since ancient times, as their livelihoods are intimately linked to nature.</p>
+            <ol>
+                <li><strong>Chipko Movement:</strong> In the Himalayas, the famous Chipko movement successfully resisted deforestation in several areas by physically hugging trees. It also highlighted community afforestation with indigenous species.</li>
+                <li><strong>Sacred Groves:</strong> Nature worship is an age-old tribal belief. Certain patches of forests or parts of large forests have been left untouched by the local people and any interference with them is banned. These are called Sacred Groves.</li>
+                <li><strong>Bhairodev Dakav 'Sonchuri':</strong> The inhabitants of five villages in the Alwar district of Rajasthan have declared 1,200 hectares of forest as the Bhairodev Dakav 'Sonchuri'. They declared their own set of rules and regulations which do not allow hunting and protect the wildlife against any outside encroachments.</li>
+                <li><strong>Joint Forest Management (JFM):</strong> It is an excellent example of involving local communities in managing and restoring degraded forests. Formally introduced in 1988 (starting in Odisha), JFM depends on the formation of local village institutions that undertake protection activities on degraded forest land managed by the forest department, in return for intermediate benefits like non-timber forest produce.</li>
+                <li><strong>Bishnoi Community:</strong> In Rajasthan, villages are populated by the Bishnoi community who zealously protect herds of blackbuck, nilgai, and peacocks. No one is allowed to harm these animals as they are seen as an integral part of their community.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">15. Explain the threefold distribution of legislative powers between the Union Government and the State Governments in India (Union List, State List, Concurrent List).</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>The Constitution of India clearly provided a threefold distribution of legislative powers between the Union Government and the State Governments to prevent conflicts and ensure smooth governance. This is done through three lists:</p>
+            
+            <ol>
+                <li><strong>Union List:</strong> 
+                    <ul>
+                        <li>It includes subjects of national importance where a uniform policy throughout the country is required.</li>
+                        <li><strong>Law-making power:</strong> Only the Union Government (Parliament) can make laws relating to the subjects mentioned in the Union List.</li>
+                        <li><strong>Examples:</strong> Defense of the country, foreign affairs, banking, communications, and currency.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>State List:</strong>
+                    <ul>
+                        <li>It contains subjects of State and local importance.</li>
+                        <li><strong>Law-making power:</strong> The State Governments alone can make laws relating to the subjects mentioned in the State List under normal circumstances.</li>
+                        <li><strong>Examples:</strong> Police, trade, commerce, agriculture, and irrigation.</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Concurrent List:</strong>
+                    <ul>
+                        <li>It includes subjects of common interest to both the Union Government as well as the State Governments.</li>
+                        <li><strong>Law-making power:</strong> Both the Union as well as the State Governments can make laws on the subjects mentioned in this list. However, if their laws conflict with each other, the law made by the Union Government prevails.</li>
+                        <li><strong>Examples:</strong> Education, forest, trade unions, marriage, adoption, and succession.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Residuary Powers:</strong> Any subjects that do not fall in any of the three lists (e.g., Computer Software, which came up after the constitution was made) fall under the 'Residuary Subjects'. According to the constitution, the Union Government has the power to legislate on these residuary subjects.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

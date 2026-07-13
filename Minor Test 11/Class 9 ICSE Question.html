@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .part-header { text-align: center; font-weight: bold; font-size: 16pt; margin-top: 30px; margin-bottom: 10px; text-transform: uppercase; background: #f0f0f0; padding: 5px;}
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; width: 100%; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; }
+        .q-marks { font-weight: bold; width: 40px; text-align: right; flex-shrink: 0; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Math container for mobile scrolling */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; display: block; max-width: 100%; }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { width: 100%; margin: 0; padding: 15px; min-height: auto; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; border: none; }
+            .exam-details span { border-bottom: 1px dashed #ccc; width: 100%; text-align: center; padding-bottom: 3px; }
+            .watermark { width: 95%; }
+            .question-container { flex-direction: row; }
+            .q-marks { font-size: 10pt; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MIT 11 - MINOR TEST</div>
+        <div class="exam-details">
+            <span>Class: 9 ICSE</span>
+            <span>Subject: Mathematics & Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The paper is divided into two sections: Section A (Mathematics - 25 Marks) and Section B (Science - 25 Marks).</li>
+                <li>All questions are compulsory. Internal choices are not provided.</li>
+                <li>Write your answers neatly and legibly. Proper units and steps must be shown.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: MATHEMATICS (Logarithms) - 25 Marks</div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            (a) Convert the given exponential equation into logarithmic form: \( 5^3 = 125 \)<br>
+            (b) Convert the given logarithmic equation into exponential form: \( \log_{10} 0.01 = -2 \)
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Evaluate the following expression without using log tables:
+            <div class="math-scroll">\[ \log_2 16 + \log_3 27 \]</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            If \( \log_x 64 = \frac{3}{2} \), determine the value of the base \( x \).
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Express the following as a single logarithm:
+            <div class="math-scroll">\[ 2 \log 3 - \frac{1}{2} \log 16 + \log 12 \]</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Solve for \( x \):
+            <div class="math-scroll">\[ \log_{10} (x^2 - 21) = 2 \]</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Prove the following identity using the laws of logarithms:
+            <div class="math-scroll">\[ \log \left( \frac{81}{8} \right) - 2 \log \left( \frac{3}{2} \right) + 3 \log \left( \frac{2}{3} \right) + \log \left( \frac{3}{4} \right) = 0 \]</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            If \( a^2 + b^2 = 7ab \), prove that:
+            <div class="math-scroll">\[ 2 \log (a + b) = 2 \log 3 + \log a + \log b \]</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Given that \( \log_{10} x = a \) and \( \log_{10} y = b \), express the value of \( 10^{2a-b} \) in terms of \( x \) and \( y \).
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Solve the following simultaneous equations for \( x \) and \( y \):
+            <div class="math-scroll">\[ \log x + \log y = 2 \]</div>
+            <div class="math-scroll">\[ x - y = 15 \]</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="section-header" style="page-break-before: always;">SECTION B: SCIENCE (Physics) - 25 Marks</div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            A body is moving with a uniform velocity of \( 10 \text{ m/s} \). What will be its acceleration? Justify your answer.
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Define inertia. On what physical quantity does the inertia of a body depend?
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A stone is dropped freely from a cliff. What will be its velocity after \( 3 \text{ s} \)? (Take \( g = 10 \text{ m/s}^2 \))
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            State any two differences between distance and displacement.
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Derive the third equation of motion algebraically: \( v^2 = u^2 + 2as \).
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            A bullet of mass \( 20 \text{ g} \) moving with a speed of \( 150 \text{ m/s} \) strikes a wooden plank and comes to rest in \( 0.03 \text{ s} \). Calculate the magnitude of force exerted by the wooden plank on the bullet.
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            A car accelerates uniformly from \( 18 \text{ km/h} \) to \( 36 \text{ km/h} \) in \( 5 \text{ s} \). Calculate: <br>
+            (i) the acceleration in \( \text{m/s}^2 \).<br>
+            (ii) the distance covered by the car in that time.
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            State Newton's Third Law of Motion. Explain briefly how it applies to a person swimming in a pool.
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            (a) State the law of conservation of momentum. (2 marks)<br>
+            (b) A boy of mass \( 40 \text{ kg} \) running at a velocity of \( 5 \text{ m/s} \) jumps onto a stationary cart of mass \( 10 \text{ kg} \). Find the common velocity of the cart with the boy on it. (3 marks)
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

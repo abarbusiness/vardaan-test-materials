@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (CBSE)</title>
+    
+    <!-- MathJax for rendering equations correctly -->
+    <script>
+      MathJax = {
+        chtml: {
+          displayAlign: 'left',
+          displayIndent: '1em'
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'ams'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .solution-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; }
+        h1 { margin: 0; color: #2c3e50; font-size: 24px; text-transform: uppercase;}
+        h2 { margin: 5px 0 0 0; color: #7f8c8d; font-size: 16px; font-weight: 500; }
+        
+        .section-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            margin: 30px 0 20px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .qa-block {
+            border: 1px solid #e1e8ed;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            page-break-inside: avoid;
+        }
+        .question-box {
+            background-color: #f1f5f8;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e1e8ed;
+            font-weight: 600;
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            color: #e74c3c; 
+            white-space: nowrap; 
+            font-weight: bold; 
+            background: #fdeaea;
+            padding: 2px 8px;
+            border-radius: 4px;
+            height: fit-content;
+        }
+        
+        .answer-box {
+            padding: 20px 15px;
+            background-color: #ffffff;
+        }
+        .answer-box h4 {
+            margin-top: 0;
+            color: #27ae60;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        /* Chunking long equations for small screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px 0;
+            margin: 10px 0;
+            -webkit-overflow-scrolling: touch; 
+        }
+
+        ul, ol { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        /* Highlighting final answers */
+        .final-answer {
+            display: inline-block;
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body { padding: 10px; }
+            .solution-container { padding: 15px; }
+            .question-box { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="solution-container">
+    <div class="header">
+        <h1>VARDAAN LEARNING INSTITUTE</h1>
+        <h2>Solutions: Minor Test 11 (Class 9 CBSE)</h2>
+    </div>
+
+    <!-- SECTION A: MATHEMATICS -->
+    <div class="section-title">SECTION A: MATHEMATICS (Algebraic Identities)</div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">1. Evaluate $(99)^2$ using a suitable algebraic identity.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>We can write $99$ as $(100 - 1)$.</p>
+            <p>Using the identity: $(a - b)^2 = a^2 - 2ab + b^2$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (99)^2 &= (100 - 1)^2 \\ &= (100)^2 - 2(100)(1) + (1)^2 \\ &= 10000 - 200 + 1 \\ &= 9800 + 1 \\ &= 9801 \end{aligned}$$
+            </div>
+            <div class="final-answer">9801</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">2. Expand using a suitable identity: $(2x - y + z)^2$.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Using the identity: $(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$</p>
+            <p>Here, $a = 2x, b = -y, c = z$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (2x - y + z)^2 &= (2x)^2 + (-y)^2 + (z)^2 + 2(2x)(-y) + 2(-y)(z) + 2(z)(2x) \\ &= 4x^2 + y^2 + z^2 - 4xy - 2yz + 4zx \end{aligned}$$
+            </div>
+            <div class="final-answer">$4x^2 + y^2 + z^2 - 4xy - 2yz + 4zx$</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">3. Factorise: $\displaystyle 4x^2 - \frac{y^2}{100}$.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>We can rewrite the expression as perfect squares:</p>
+            <div class="math-scroll">
+                $$4x^2 - \frac{y^2}{100} = (2x)^2 - \left(\frac{y}{10}\right)^2$$
+            </div>
+            <p>Using the identity: $a^2 - b^2 = (a - b)(a + b)$</p>
+            <div class="math-scroll">
+                $$\text{Here, } a = 2x, \text{ and } b = \frac{y}{10}$$
+                $$= \left(2x - \frac{y}{10}\right)\left(2x + \frac{y}{10}\right)$$
+            </div>
+            <div class="final-answer">$\left(2x - \frac{y}{10}\right)\left(2x + \frac{y}{10}\right)$</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">4. If $x + y + z = 0$, show that $x^3 + y^3 + z^3 = 3xyz$.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given: $x + y + z = 0$</p>
+            <p>$\implies x + y = -z$</p>
+            <p>Cubing both sides:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (x + y)^3 &= (-z)^3 \\ x^3 + y^3 + 3xy(x + y) &= -z^3 \end{aligned}$$
+            </div>
+            <p>Since we know $x + y = -z$, substitute it back into the equation:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} x^3 + y^3 + 3xy(-z) &= -z^3 \\ x^3 + y^3 - 3xyz &= -z^3 \\ x^3 + y^3 + z^3 &= 3xyz \end{aligned}$$
+            </div>
+            <div class="final-answer">Hence Proved.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">5. Factorise completely: $8a^3 + b^3 + 12a^2b + 6ab^2$.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>The given expression can be written in the form of $(x + y)^3 = x^3 + y^3 + 3x^2y + 3xy^2$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} 8a^3 + b^3 + 12a^2b + 6ab^2 &= (2a)^3 + (b)^3 + 3(2a)^2(b) + 3(2a)(b)^2 \end{aligned}$$
+            </div>
+            <p>Here, $x = 2a$ and $y = b$.</p>
+            <p>Using the identity:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} &= (2a + b)^3 \\ &= (2a + b)(2a + b)(2a + b) \end{aligned}$$
+            </div>
+            <div class="final-answer">$(2a + b)^3$</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">6. Evaluate $103 \times 107$ using an appropriate algebraic identity.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>We can rewrite the numbers as:</p>
+            <div class="math-scroll">
+                $$103 \times 107 = (100 + 3) \times (100 + 7)$$
+            </div>
+            <p>Using the identity: $(x + a)(x + b) = x^2 + (a + b)x + ab$</p>
+            <p>Here, $x = 100$, $a = 3$, $b = 7$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (100 + 3)(100 + 7) &= (100)^2 + (3 + 7) \times 100 + (3 \times 7) \\ &= 10000 + (10) \times 100 + 21 \\ &= 10000 + 1000 + 21 \\ &= 11021 \end{aligned}$$
+            </div>
+            <div class="final-answer">11021</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">7. (i) If $\displaystyle x^2 + \frac{1}{x^2} = 51$, find the value of $\displaystyle \left(x - \frac{1}{x}\right)$. <br> (ii) Expand: $(3a - 7b - c)^2$.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Part (i): [2.5 Marks]</strong></p>
+            <p>We know the identity: $\displaystyle \left(x - \frac{1}{x}\right)^2 = x^2 + \frac{1}{x^2} - 2\left(x\right)\left(\frac{1}{x}\right)$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} \left(x - \frac{1}{x}\right)^2 &= x^2 + \frac{1}{x^2} - 2 \end{aligned}$$
+            </div>
+            <p>Substitute $\displaystyle x^2 + \frac{1}{x^2} = 51$:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} \left(x - \frac{1}{x}\right)^2 &= 51 - 2 \\ \left(x - \frac{1}{x}\right)^2 &= 49 \end{aligned}$$
+            </div>
+            <p>Taking square root on both sides:</p>
+            <div class="math-scroll">
+                $$x - \frac{1}{x} = \pm 7$$
+            </div>
+            
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+            
+            <p><strong>Part (ii): [2.5 Marks]</strong></p>
+            <p>Using the identity: $(x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx$</p>
+            <p>Here, $x = 3a, y = -7b, z = -c$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (3a - 7b - c)^2 &= (3a)^2 + (-7b)^2 + (-c)^2 + 2(3a)(-7b) + 2(-7b)(-c) + 2(-c)(3a) \\ &= 9a^2 + 49b^2 + c^2 - 42ab + 14bc - 6ac \end{aligned}$$
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">8. (i) Verify that: $x^3 + y^3 = (x + y)(x^2 - xy + y^2)$. <br> (ii) Factorise using the above identity: $64m^3 - 343n^3$.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Part (i): [2.5 Marks]</strong></p>
+            <p>We take the Right Hand Side (RHS) and expand it:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} \text{RHS} &= (x + y)(x^2 - xy + y^2) \\ &= x(x^2 - xy + y^2) + y(x^2 - xy + y^2) \\ &= x^3 - x^2y + xy^2 + yx^2 - xy^2 + y^3 \end{aligned}$$
+            </div>
+            <p>Since $-x^2y$ and $+yx^2$ cancel out, and $+xy^2$ and $-xy^2$ cancel out:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} \text{RHS} &= x^3 + y^3 = \text{LHS} \end{aligned}$$
+            </div>
+            <p>Hence Verified.</p>
+            
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+            
+            <p><strong>Part (ii): [2.5 Marks]</strong></p>
+            <p>We are given: $64m^3 - 343n^3$</p>
+            <p>This can be written as difference of cubes: $(4m)^3 - (7n)^3$</p>
+            <p>Using the identity for difference of cubes: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$</p>
+            <p>Here, $a = 4m$ and $b = 7n$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} (4m)^3 - (7n)^3 &= (4m - 7n)[(4m)^2 + (4m)(7n) + (7n)^2] \\ &= (4m - 7n)(16m^2 + 28mn + 49n^2) \end{aligned}$$
+            </div>
+            <div class="final-answer">$(4m - 7n)(16m^2 + 28mn + 49n^2)$</div>
+        </div>
+    </div>
+
+
+    <!-- SECTION B: SCIENCE -->
+    <div class="section-title">SECTION B: SCIENCE (Force and Laws of Motion)</div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">9. Define inertia. How is the inertia of an object related to its mass?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Inertia:</strong> It is the natural tendency of an object to resist any change in its state of rest or of uniform motion.</p>
+            <p><strong>Relation with Mass:</strong> Mass is the quantitative measure of inertia. Heavier objects have more inertia than lighter objects. Therefore, the inertia of an object is directly proportional to its mass.</p>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">10. Why is it advised to tie any luggage kept on the roof of a bus with a rope?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>When a bus starts suddenly, the lower part of the luggage comes in motion along with the bus, but the upper part tends to remain at rest due to the <strong>inertia of rest</strong>, and it may fall backward.</p>
+            <p>Similarly, when a moving bus stops suddenly, the bus comes to rest but the luggage tends to remain in motion due to the <strong>inertia of motion</strong>, and it may fall forward. To prevent the luggage from falling, it is advised to tie it with a rope.</p>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">11. A body of mass 2 kg is moving with a constant velocity of 5 m/s. What is the net force acting on the body?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given: Velocity ($v$) = 5 m/s, which is <strong>constant</strong>.</p>
+            <p>Since velocity is constant, there is no change in velocity, meaning Acceleration ($a$) = 0 m/s$^2$.</p>
+            <p>According to Newton's Second Law of Motion:</p>
+            <div class="math-scroll">
+                $$F = m \times a$$
+                $$F = 2 \text{ kg} \times 0 \text{ m/s}^2 = 0 \text{ N}$$
+            </div>
+            <div class="final-answer">Net force = 0 N (Zero)</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">12. State Newton's Second Law of Motion. Derive its mathematical formulation ($F = ma$).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>Newton's Second Law of Motion:</strong> The rate of change of momentum of an object is directly proportional to the applied unbalanced force in the direction of the force.</p>
+            <p><strong>Derivation:</strong></p>
+            <p>Let an object of mass $m$ move with an initial velocity $u$. A constant force $F$ acts on it for time $t$, accelerating it to a final velocity $v$.</p>
+            <p>Initial momentum, $p_1 = mu$</p>
+            <p>Final momentum, $p_2 = mv$</p>
+            <p>Change in momentum = $p_2 - p_1 = mv - mu = m(v - u)$</p>
+            <p>Rate of change of momentum = $\frac{m(v - u)}{t}$</p>
+            <p>According to the law:</p>
+            <div class="math-scroll">
+                $$F \propto \frac{m(v - u)}{t}$$
+                $$F = k \cdot m\left(\frac{v - u}{t}\right)$$
+            </div>
+            <p>Since acceleration $a = \frac{v - u}{t}$:</p>
+            <div class="math-scroll">
+                $$F = kma$$
+            </div>
+            <p>We choose the unit of force such that $k = 1$. Therefore,</p>
+            <div class="final-answer">$F = ma$</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">13. Explain why a cricketer pulls his hands backwards while catching a fast-moving cricket ball.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>According to Newton's second law of motion, the force required to stop a moving body is directly proportional to the rate of change of momentum ($F \propto \frac{\Delta p}{t}$).</p>
+            <p>While catching a fast-moving ball, a cricketer pulls his hands backwards to <strong>increase the time ($t$)</strong> taken to bring the ball to rest (i.e., to reduce its momentum to zero).</p>
+            <p>By increasing the time duration, the rate of change of momentum decreases. As a result, a much smaller impact force ($F$) is exerted on his hands, preventing severe injuries.</p>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">14. A truck starts from rest and rolls down a hill with a constant acceleration. It travels a distance of 400 m in 20 s. Find its acceleration. Also, calculate the force acting on it if its mass is 7 tonnes. (Hint: 1 tonne = 1000 kg).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p>Given parameters:</p>
+            <ul>
+                <li>Initial velocity ($u$) = 0 m/s (starts from rest)</li>
+                <li>Distance ($s$) = 400 m</li>
+                <li>Time ($t$) = 20 s</li>
+                <li>Mass ($m$) = 7 tonnes = $7 \times 1000 = 7000$ kg</li>
+            </ul>
+            <p>Using the second equation of motion: $s = ut + \frac{1}{2}at^2$</p>
+            <div class="math-scroll">
+                $$\begin{aligned} 400 &= (0 \times 20) + \frac{1}{2} \times a \times (20)^2 \\ 400 &= 0 + \frac{1}{2} \times a \times 400 \\ 400 &= 200a \\ a &= \frac{400}{200} = 2 \text{ m/s}^2 \end{aligned}$$
+            </div>
+            <p>Now, Force ($F$) = $ma$</p>
+            <div class="math-scroll">
+                $$F = 7000 \text{ kg} \times 2 \text{ m/s}^2 = 14000 \text{ N}$$
+            </div>
+            <div class="final-answer">Acceleration = 2 m/s$^2$ and Force = 14000 N.</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">15. (a) State the Law of Conservation of Momentum.<br> (b) A bullet of mass 20 g is horizontally fired with a velocity of 150 m/s from a pistol of mass 2 kg. What is the recoil velocity of the pistol?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>(a) Law of Conservation of Momentum: [2 Marks]</strong><br>
+            It states that when two or more bodies interact with each other, their total momentum remains constant, provided no external unbalanced force acts upon them.</p>
+            
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+
+            <p><strong>(b) Numerical: [3 Marks]</strong></p>
+            <ul>
+                <li>Mass of bullet ($m_1$) = 20 g = 0.02 kg</li>
+                <li>Velocity of bullet ($v_1$) = 150 m/s</li>
+                <li>Mass of pistol ($m_2$) = 2 kg</li>
+                <li>Initial velocities of bullet ($u_1$) and pistol ($u_2$) are 0 (both are at rest).</li>
+                <li>Let the recoil velocity of the pistol be $v_2$.</li>
+            </ul>
+            <p>According to the law of conservation of momentum:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} m_1u_1 + m_2u_2 &= m_1v_1 + m_2v_2 \\ (0.02 \times 0) + (2 \times 0) &= (0.02 \times 150) + (2 \times v_2) \\ 0 &= 3 + 2v_2 \\ 2v_2 &= -3 \\ v_2 &= -1.5 \text{ m/s} \end{aligned}$$
+            </div>
+            <p>The negative sign indicates that the direction in which the pistol recoils is opposite to that of the bullet.</p>
+            <div class="final-answer">Recoil velocity of pistol = 1.5 m/s (backwards).</div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-box">
+            <div class="q-text">16. (a) State Newton's Third Law of Motion and give one example from daily life.<br> (b) Two objects of masses 100 g and 200 g are moving along the same line and direction with velocities of 2 m/s and 1 m/s, respectively. They collide, and after the collision, the first object moves at a velocity of 1.67 m/s. Determine the velocity of the second object.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <h4>Solution:</h4>
+            <p><strong>(a) Newton's Third Law: [2 Marks]</strong><br>
+            <strong>Statement:</strong> To every action, there is an equal and opposite reaction, and they act on two different bodies.<br>
+            <strong>Example:</strong> Walking. When we walk, we push the ground backward (action). In response, the ground pushes our foot forward with an equal force (reaction), allowing us to move.</p>
+            
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 20px 0;">
+
+            <p><strong>(b) Numerical: [3 Marks]</strong></p>
+            <p>Given Data:</p>
+            <ul>
+                <li>Mass of object 1 ($m_1$) = 100 g = 0.1 kg</li>
+                <li>Mass of object 2 ($m_2$) = 200 g = 0.2 kg</li>
+                <li>Initial velocity of object 1 ($u_1$) = 2 m/s</li>
+                <li>Initial velocity of object 2 ($u_2$) = 1 m/s</li>
+                <li>Final velocity of object 1 ($v_1$) = 1.67 m/s</li>
+                <li>Let the final velocity of object 2 be $v_2$.</li>
+            </ul>
+            <p>By the law of conservation of momentum:</p>
+            <div class="math-scroll">
+                $$\begin{aligned} m_1u_1 + m_2u_2 &= m_1v_1 + m_2v_2 \\ (0.1 \times 2) + (0.2 \times 1) &= (0.1 \times 1.67) + (0.2 \times v_2) \\ 0.2 + 0.2 &= 0.167 + 0.2v_2 \\ 0.4 &= 0.167 + 0.2v_2 \\ 0.2v_2 &= 0.4 - 0.167 \\ 0.2v_2 &= 0.233 \\ v_2 &= \frac{0.233}{0.2} \\ v_2 &= 1.165 \text{ m/s} \end{aligned}$$
+            </div>
+            <div class="final-answer">Velocity of the second object is 1.165 m/s.</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
