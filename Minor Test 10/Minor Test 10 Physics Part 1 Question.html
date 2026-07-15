@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* Base Print Styles */
+        @page { size: A4; margin: 20mm; }
+        
+        /* General Document Styles */
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: #f4f4f9; 
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Container simulating A4 sheet for screens */
+        .paper-container {
+            width: 100%;
+            max-width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            background-color: white; 
+            position: relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+        
+        /* Content formatting (above watermark) */
+        .content-layer {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        .exam-details span {
+            margin: 5px 10px;
+        }
+
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            flex-direction: row;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            /* overflow-x: auto; Handle long math equations on mobile */ /* Removed to prevent internal scrollbars */
+        }
+        
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Design Rules */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .paper-container { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+            
+            /* Add MathJax wrapping rule for mobile */
+            .mjx-chtml { white-space: normal !important; } 
+        }
+
+        @media print { 
+            body { background-color: transparent; padding: 0; }
+            .paper-container { box-shadow: none; padding: 20mm; width: 100%; margin: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+        
+        <div class="content-layer">
+            <div class="header">
+                <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+                <div class="test-name">Minor Test 10 (SURPRISE TEST)</div>
+                <div class="exam-details">
+                    <span>Class: 11</span>
+                    <span>Subject: Physics (Basic Mathematics)</span>
+                    <span>Time: 1 Hour</span>
+                    <span>Max. Marks: 50</span>
+                </div>
+                <div class="instructions">
+                    <strong>General Instructions:</strong>
+                    <ul>
+                        <li>All questions are compulsory.</li>
+                        <li>Section A contains 5 questions of 2 marks each.</li>
+                        <li>Section B contains 5 questions of 3 marks each.</li>
+                        <li>Section C contains 5 questions of 5 marks each.</li>
+                        <li>Use of calculators is strictly prohibited. Write your answers neatly.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section A -->
+            <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+            
+            <div class="question-container">
+                <div class="q-num">1.</div>
+                <div class="q-content">
+                    Differentiate the following function with respect to \( x \): 
+                    <br> \( y = 3x^4 - \frac{2}{x^2} + 5\sin(x) \)
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">2.</div>
+                <div class="q-content">
+                    Evaluate the indefinite integral: 
+                    <br> \( \displaystyle \int (4x^3 + \cos(x) - e^x) \,dx \)
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">3.</div>
+                <div class="q-content">
+                    Find the slope of the tangent to the curve \( y = x^2 - 4x + 3 \) at the point where \( x = 2 \).
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">4.</div>
+                <div class="q-content">
+                    If the position of a particle moving along a straight line is given by \( s(t) = 2t^2 - 3t + 1 \) (where \( s \) is in meters and \( t \) is in seconds), find its instantaneous velocity at \( t = 3 \) seconds.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">5.</div>
+                <div class="q-content">
+                    Evaluate the definite integral: 
+                    <br> \( \displaystyle \int_{0}^{\pi/2} \sin(x) \,dx \)
+                </div>
+            </div>
+
+            <!-- Section B -->
+            <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+            
+            <div class="question-container">
+                <div class="q-num">6.</div>
+                <div class="q-content">
+                    Using the chain rule, differentiate the function: \( y = (2x + 3)^5 \) with respect to \( x \).
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">7.</div>
+                <div class="q-content">
+                    The velocity of a particle moving along the x-axis is given by \( v(t) = 3t^2 - 2t \) m/s. If the particle starts from the origin at \( t = 0 \), determine its position \( x(t) \) at \( t = 2 \) seconds.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">8.</div>
+                <div class="q-content">
+                    Use the product rule to find the derivative of \( y = x^2 \sin(x) \) with respect to \( x \).
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">9.</div>
+                <div class="q-content">
+                    Calculate the area enclosed under the curve \( y = 3x^2 \), bounded by the x-axis, between the ordinates \( x = 1 \) and \( x = 3 \).
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">10.</div>
+                <div class="q-content">
+                    Use the quotient rule to differentiate \( \displaystyle y = \frac{\ln x}{x} \) with respect to \( x \).
+                </div>
+            </div>
+
+            <!-- Section C -->
+            <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+            
+            <div class="question-container">
+                <div class="q-num">11.</div>
+                <div class="q-content">
+                    The position of a particle is given by the equation \( \displaystyle x(t) = \frac{t^3}{3} - 2t^2 + 3t + 5 \) (where \( x \) is in meters and \( t \) is in seconds). 
+                    <div class="sub-question">(a) Find the expressions for the velocity \( v(t) \) and acceleration \( a(t) \) of the particle.</div>
+                    <div class="sub-question">(b) Calculate the time(s) when the particle is momentarily at rest.</div>
+                    <div class="sub-question">(c) What is the acceleration of the particle at these times?</div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">12.</div>
+                <div class="q-content">
+                    A particle's acceleration is given by \( a(t) = (6t - 4) \text{ m/s}^2 \). Its initial velocity at \( t = 0 \) is \( 2 \text{ m/s} \) and its initial position is \( 5 \text{ m} \). 
+                    <br><br>
+                    Using the method of integration, rigorously derive the explicit functions for velocity \( v(t) \) and position \( x(t) \) with respect to time.
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">13.</div>
+                <div class="q-content">
+                    For the algebraic function \( y = x^3 - 3x^2 - 9x + 5 \):
+                    <div class="sub-question">(a) Find the critical points where the first derivative is zero.</div>
+                    <div class="sub-question">(b) Use the second derivative test to determine whether each critical point is a local maximum or local minimum.</div>
+                    <div class="sub-question">(c) Find the corresponding maximum and minimum values of the function.</div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">14.</div>
+                <div class="q-content">
+                    Solve the following calculus problems:
+                    <div class="sub-question">(a) Evaluate the definite integral: \( \displaystyle \int_{1}^{4} \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right) \,dx \).</div>
+                    <div class="sub-question">(b) If \( y = e^{2x} \ln(x) \), find \( \frac{dy}{dx} \).</div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="q-num">15.</div>
+                <div class="q-content">
+                    Answer the following questions based on basic vectors and graphs:
+                    <div class="sub-question">(a) Given two vectors \( \vec{A} = 3\hat{i} - 2\hat{j} + \hat{k} \) and \( \vec{B} = -2\hat{i} + 5\hat{j} - 3\hat{k} \), find the unit vector parallel to their resultant vector \( \vec{R} \).</div>
+                    <div class="sub-question">(b) Draw a neat and clearly labeled rough sketch of the graph for the function \( y = -e^{-x} \) for \( x \geq 0 \), showing the asymptotic behaviour.</div>
+                </div>
+            </div>
+
+            <div class="footer">Created by Team Vardaan with ❤️</div>
+        </div>
+    </div>
+</body>
+</html>

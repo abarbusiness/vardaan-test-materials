@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Key - Minor Test 10</title>
+    <!-- MathJax for rendering equations securely -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        body { 
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #eef2f5; 
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .solution-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto; 
+            padding: 30px; 
+            box-sizing: border-box; 
+            background-color: white; 
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid #2c3e50; 
+            padding-bottom: 15px; 
+        }
+        
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            color: #2c3e50;
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            color: #e74c3c;
+        }
+
+        .section-header { 
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+            font-size: 12pt; 
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .q-block {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .q-header {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .q-text {
+            font-weight: 600;
+            color: #2c3e50;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .q-marks {
+            background-color: #e74c3c;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .sol-body {
+            padding: 15px;
+            color: #444;
+            /* overflow-x: auto; Vital for long math equations on mobile */ /* Removed to prevent internal scrollbars */
+        }
+        
+        .sol-step {
+            margin-bottom: 10px;
+        }
+
+        .final-answer {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Responsive Design Rules */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .solution-container { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-start; }
+            .sol-body { padding: 10px; }
+            
+            /* Custom CSS for math equations to wrap nicely */
+            .mjx-chtml { white-space: normal !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="solution-container">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="doc-title">DETAILED SOLUTION KEY - Minor Test 10</div>
+            <div>Class 11 | Physics (Basic Mathematics) | Max Marks: 50</div>
+        </div>
+
+        <div class="section-header">
+            <span>SECTION A (Detailed Solutions)</span>
+            <span>10 Marks Total</span>
+        </div>
+        
+        <!-- Q1 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q1. Differentiate: \( y = 3x^4 - \frac{2}{x^2} + 5\sin(x) \)</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Given function: \( y = 3x^4 - 2x^{-2} + 5\sin(x) \)</div>
+                <div class="sol-step">Differentiating w.r.t \( x \):</div>
+                <div class="sol-step">
+                    \(\displaystyle \frac{dy}{dx} = \frac{d}{dx}(3x^4) - \frac{d}{dx}(2x^{-2}) + \frac{d}{dx}(5\sin(x)) \)
+                </div>
+                <div class="sol-step">
+                    \( \displaystyle \frac{dy}{dx} = 3(4x^3) - 2(-2x^{-3}) + 5(\cos(x)) \)
+                </div>
+                <div class="final-answer">
+                    Ans: \( \displaystyle \frac{dy}{dx} = 12x^3 + \frac{4}{x^3} + 5\cos(x) \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q2. Evaluate: \( \displaystyle \int (4x^3 + \cos(x) - e^x) \,dx \)</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Using the property of linearity in integrals:</div>
+                <div class="sol-step">
+                    \( \displaystyle I = \int 4x^3 \,dx + \int \cos(x) \,dx - \int e^x \,dx \)
+                </div>
+                <div class="sol-step">
+                    \( \displaystyle I = 4 \left( \frac{x^4}{4} \right) + \sin(x) - e^x + C \) <br>
+                    <small><i>(where C is the constant of integration)</i></small>
+                </div>
+                <div class="final-answer">
+                    Ans: \( I = x^4 + \sin(x) - e^x + C \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q3. Find slope of tangent to \( y = x^2 - 4x + 3 \) at \( x = 2 \).</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">The slope of the tangent is given by the derivative \( \frac{dy}{dx} \).</div>
+                <div class="sol-step">
+                    \( \displaystyle \frac{dy}{dx} = \frac{d}{dx}(x^2 - 4x + 3) = 2x - 4 \)
+                </div>
+                <div class="sol-step">Evaluating at \( x = 2 \):</div>
+                <div class="sol-step">
+                    Slope \( m = 2(2) - 4 = 4 - 4 = 0 \)
+                </div>
+                <div class="final-answer">
+                    Ans: Slope = \( 0 \) (The tangent is horizontal)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q4. Given \( s(t) = 2t^2 - 3t + 1 \), find velocity at \( t = 3 \)s.</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Velocity \( v \) is the rate of change of position with respect to time: \( v = \frac{ds}{dt} \).</div>
+                <div class="sol-step">
+                    \( \displaystyle v(t) = \frac{d}{dt}(2t^2 - 3t + 1) = 4t - 3 \)
+                </div>
+                <div class="sol-step">Substituting \( t = 3 \):</div>
+                <div class="sol-step">
+                    \( v(3) = 4(3) - 3 = 12 - 3 = 9 \)
+                </div>
+                <div class="final-answer">
+                    Ans: Velocity at \( t=3 \)s is \( 9 \text{ m/s} \).
+                </div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q5. Evaluate: \( \displaystyle \int_{0}^{\pi/2} \sin(x) \,dx \)</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">The integral of \( \sin(x) \) is \( -\cos(x) \).</div>
+                <div class="sol-step">
+                    \( \displaystyle I = \left[ -\cos(x) \right]_{0}^{\pi/2} \)
+                </div>
+                <div class="sol-step">Applying the upper and lower limits:</div>
+                <div class="sol-step">
+                    \( I = (-\cos(\frac{\pi}{2})) - (-\cos(0)) \)
+                </div>
+                <div class="sol-step">
+                    Since \( \cos(\frac{\pi}{2}) = 0 \) and \( \cos(0) = 1 \):<br>
+                    \( I = (-0) - (-1) = 1 \)
+                </div>
+                <div class="final-answer">
+                    Ans: \( 1 \)
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <span>SECTION B (Detailed Solutions)</span>
+            <span>15 Marks Total</span>
+        </div>
+
+        <!-- Q6 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q6. Differentiate \( y = (2x + 3)^5 \) using the chain rule.</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Let \( u = 2x + 3 \). Then \( y = u^5 \).</div>
+                <div class="sol-step">By chain rule: \( \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} \)</div>
+                <div class="sol-step">
+                    Step 1: \( \displaystyle \frac{dy}{du} = 5u^4 \) <br>
+                    Step 2: \( \displaystyle \frac{du}{dx} = \frac{d}{dx}(2x + 3) = 2 \)
+                </div>
+                <div class="sol-step">
+                    Multiplying them together: <br>
+                    \( \displaystyle \frac{dy}{dx} = 5(2x + 3)^4 \cdot 2 \)
+                </div>
+                <div class="final-answer">
+                    Ans: \( \displaystyle \frac{dy}{dx} = 10(2x + 3)^4 \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q7. \( v(t) = 3t^2 - 2t \). Starts from origin. Find position \( x(t) \) at \( t = 2 \)s.</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Position \( x(t) \) is the integral of velocity: \( \displaystyle x(t) = \int v(t) \,dt \)</div>
+                <div class="sol-step">
+                    \( \displaystyle x(t) = \int (3t^2 - 2t) \,dt = \frac{3t^3}{3} - \frac{2t^2}{2} + C \) <br>
+                    \( x(t) = t^3 - t^2 + C \)
+                </div>
+                <div class="sol-step">
+                    Initial condition: At \( t=0, x=0 \) (starts from origin). <br>
+                    \( 0 = 0^3 - 0^2 + C \implies C = 0 \) <br>
+                    So, general position equation is \( x(t) = t^3 - t^2 \).
+                </div>
+                <div class="sol-step">
+                    At \( t = 2 \)s: <br>
+                    \( x(2) = (2)^3 - (2)^2 = 8 - 4 = 4 \)
+                </div>
+                <div class="final-answer">
+                    Ans: Position at \( t=2 \)s is \( 4 \text{ m} \).
+                </div>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q8. Use product rule for \( y = x^2 \sin(x) \).</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">The product rule states: \( \frac{d}{dx}(u \cdot v) = u\frac{dv}{dx} + v\frac{du}{dx} \)</div>
+                <div class="sol-step">Let \( u = x^2 \) and \( v = \sin(x) \).</div>
+                <div class="sol-step">
+                    \( \frac{du}{dx} = 2x \) <br>
+                    \( \frac{dv}{dx} = \cos(x) \)
+                </div>
+                <div class="sol-step">
+                    Substitute into the formula: <br>
+                    \( \displaystyle \frac{dy}{dx} = x^2 \cdot \cos(x) + \sin(x) \cdot 2x \)
+                </div>
+                <div class="final-answer">
+                    Ans: \( \displaystyle \frac{dy}{dx} = x^2\cos(x) + 2x\sin(x) \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q9. Area under \( y = 3x^2 \) from \( x = 1 \) to \( x = 3 \).</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">Area under a curve is given by the definite integral: \( \displaystyle A = \int_{a}^{b} y \,dx \)</div>
+                <div class="sol-step">
+                    \( \displaystyle A = \int_{1}^{3} 3x^2 \,dx \)
+                </div>
+                <div class="sol-step">
+                    Evaluating the integral: <br>
+                    \( \displaystyle A = \left[ 3 \cdot \frac{x^3}{3} \right]_{1}^{3} = \left[ x^3 \right]_{1}^{3} \)
+                </div>
+                <div class="sol-step">
+                    Applying limits: <br>
+                    \( A = (3^3) - (1^3) = 27 - 1 = 26 \)
+                </div>
+                <div class="final-answer">
+                    Ans: Area = \( 26 \text{ sq. units} \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q10. Use quotient rule for \( \displaystyle y = \frac{\ln x}{x} \).</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">The quotient rule states: \( \displaystyle \frac{d}{dx}\left(\frac{u}{v}\right) = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2} \)</div>
+                <div class="sol-step">Let \( u = \ln(x) \) and \( v = x \).</div>
+                <div class="sol-step">
+                    \( \displaystyle \frac{du}{dx} = \frac{1}{x} \) <br>
+                    \( \displaystyle \frac{dv}{dx} = 1 \)
+                </div>
+                <div class="sol-step">
+                    Substitute into the formula: <br>
+                    \( \displaystyle \frac{dy}{dx} = \frac{x \cdot (\frac{1}{x}) - \ln(x) \cdot 1}{x^2} \)
+                </div>
+                <div class="sol-step">
+                    Simplify the numerator: <br>
+                    \( x \cdot (\frac{1}{x}) = 1 \)
+                </div>
+                <div class="final-answer">
+                    Ans: \( \displaystyle \frac{dy}{dx} = \frac{1 - \ln(x)}{x^2} \)
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <span>SECTION C (Detailed Solutions)</span>
+            <span>25 Marks Total</span>
+        </div>
+
+        <!-- Q11 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q11. \( \displaystyle x(t) = \frac{t^3}{3} - 2t^2 + 3t + 5 \). Find \( v, a \), rest times, and acceleration at rest.</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">
+                    <b>(a) Velocity and Acceleration:</b> <br>
+                    \( \displaystyle v(t) = \frac{dx}{dt} = \frac{d}{dt}\left( \frac{t^3}{3} - 2t^2 + 3t + 5 \right) \) <br>
+                    \( \displaystyle v(t) = \frac{3t^2}{3} - 4t + 3 = t^2 - 4t + 3 \) <br><br>
+                    \( \displaystyle a(t) = \frac{dv}{dt} = \frac{d}{dt}(t^2 - 4t + 3) = 2t - 4 \)
+                </div>
+                <div class="sol-step">
+                    <b>(b) Time(s) when momentarily at rest:</b> <br>
+                    Particle is at rest when \( v(t) = 0 \). <br>
+                    \( t^2 - 4t + 3 = 0 \) <br>
+                    Factorizing the quadratic equation: <br>
+                    \( t^2 - 3t - t + 3 = 0 \) <br>
+                    \( t(t - 3) - 1(t - 3) = 0 \) <br>
+                    \( (t - 1)(t - 3) = 0 \) <br>
+                    Therefore, the particle is at rest at \( t = 1 \)s and \( t = 3 \)s.
+                </div>
+                <div class="sol-step">
+                    <b>(c) Acceleration at these times:</b> <br>
+                    At \( t = 1 \)s: \( a(1) = 2(1) - 4 = -2 \text{ m/s}^2 \) <br>
+                    At \( t = 3 \)s: \( a(3) = 2(3) - 4 = 2 \text{ m/s}^2 \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q12. \( a(t) = 6t - 4 \). Initial velocity = 2, Initial pos = 5. Derive \( v(t) \) and \( x(t) \).</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">
+                    <b>Step 1: Finding Velocity \( v(t) \)</b> <br>
+                    \( \displaystyle v(t) = \int a(t) \,dt = \int (6t - 4) \,dt \) <br>
+                    \( \displaystyle v(t) = \frac{6t^2}{2} - 4t + C_1 = 3t^2 - 4t + C_1 \)
+                </div>
+                <div class="sol-step">
+                    Using initial condition for velocity: At \( t = 0, v = 2 \) <br>
+                    \( 2 = 3(0)^2 - 4(0) + C_1 \implies C_1 = 2 \) <br>
+                    <b>\( \therefore v(t) = 3t^2 - 4t + 2 \)</b>
+                </div>
+                <div class="sol-step">
+                    <b>Step 2: Finding Position \( x(t) \)</b> <br>
+                    \( \displaystyle x(t) = \int v(t) \,dt = \int (3t^2 - 4t + 2) \,dt \) <br>
+                    \( \displaystyle x(t) = \frac{3t^3}{3} - \frac{4t^2}{2} + 2t + C_2 \) <br>
+                    \( \displaystyle x(t) = t^3 - 2t^2 + 2t + C_2 \)
+                </div>
+                <div class="sol-step">
+                    Using initial condition for position: At \( t = 0, x = 5 \) <br>
+                    \( 5 = (0)^3 - 2(0)^2 + 2(0) + C_2 \implies C_2 = 5 \)
+                </div>
+                <div class="final-answer">
+                    Ans: <br>
+                    \( v(t) = 3t^2 - 4t + 2 \) <br>
+                    \( x(t) = t^3 - 2t^2 + 2t + 5 \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q13. Find local maxima and minima for \( y = x^3 - 3x^2 - 9x + 5 \).</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">
+                    <b>Step 1: Find First Derivative \( \frac{dy}{dx} \)</b> <br>
+                    \( \displaystyle \frac{dy}{dx} = 3x^2 - 6x - 9 \)
+                </div>
+                <div class="sol-step">
+                    <b>Step 2: Find Critical Points (set \( \frac{dy}{dx} = 0 \))</b> <br>
+                    \( 3(x^2 - 2x - 3) = 0 \) <br>
+                    \( x^2 - 3x + x - 3 = 0 \) <br>
+                    \( (x - 3)(x + 1) = 0 \) <br>
+                    Critical points are \( x = 3 \) and \( x = -1 \).
+                </div>
+                <div class="sol-step">
+                    <b>Step 3: Second Derivative Test</b> <br>
+                    \( \displaystyle \frac{d^2y}{dx^2} = \frac{d}{dx}(3x^2 - 6x - 9) = 6x - 6 \) <br><br>
+                    <u>Check \( x = -1 \):</u> <br>
+                    \( \frac{d^2y}{dx^2}\big|_{x=-1} = 6(-1) - 6 = -12 \) (Negative \( \implies \) Local Maximum) <br>
+                    Maximum Value = \( (-1)^3 - 3(-1)^2 - 9(-1) + 5 = -1 - 3 + 9 + 5 = 10 \) <br><br>
+                    <u>Check \( x = 3 \):</u> <br>
+                    \( \frac{d^2y}{dx^2}\big|_{x=3} = 6(3) - 6 = 12 \) (Positive \( \implies \) Local Minimum) <br>
+                    Minimum Value = \( (3)^3 - 3(3)^2 - 9(3) + 5 = 27 - 27 - 27 + 5 = -22 \)
+                </div>
+                <div class="final-answer">
+                    Ans: <br>
+                    Local Max at \( x = -1 \), Max Value = \( 10 \) <br>
+                    Local Min at \( x = 3 \), Min Value = \( -22 \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q14. Evaluate Integral and Product Rule Differentiation.</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">
+                    <b>(a) Evaluate: \( \displaystyle \int_{1}^{4} \left(\sqrt{x} + \frac{1}{\sqrt{x}}\right) \,dx \)</b> [3 Marks] <br><br>
+                    Rewrite function as powers: \( x^{1/2} + x^{-1/2} \) <br>
+                    Integral = \( \displaystyle \left[ \frac{x^{3/2}}{3/2} + \frac{x^{1/2}}{1/2} \right]_{1}^{4} = \left[ \frac{2}{3}x^{3/2} + 2x^{1/2} \right]_{1}^{4} \) <br><br>
+                    Substitute Upper Limit (4): <br>
+                    \( \displaystyle \frac{2}{3}(4)^{3/2} + 2(4)^{1/2} = \frac{2}{3}(8) + 2(2) = \frac{16}{3} + 4 = \frac{16 + 12}{3} = \frac{28}{3} \) <br><br>
+                    Substitute Lower Limit (1): <br>
+                    \( \displaystyle \frac{2}{3}(1)^{3/2} + 2(1)^{1/2} = \frac{2}{3} + 2 = \frac{2 + 6}{3} = \frac{8}{3} \) <br><br>
+                    Final Value = Upper - Lower = \( \displaystyle \frac{28}{3} - \frac{8}{3} = \frac{20}{3} \)
+                </div>
+                <hr style="border:0; border-top: 1px dashed #ccc; margin: 15px 0;">
+                <div class="sol-step">
+                    <b>(b) If \( y = e^{2x} \ln(x) \), find \( \frac{dy}{dx} \)</b> [2 Marks] <br><br>
+                    Apply Product Rule: \( (uv)' = uv' + vu' \) <br>
+                    \( u = e^{2x} \implies u' = 2e^{2x} \) (Chain Rule applied) <br>
+                    \( v = \ln(x) \implies v' = \frac{1}{x} \) <br><br>
+                    \( \displaystyle \frac{dy}{dx} = e^{2x}\left(\frac{1}{x}\right) + \ln(x)(2e^{2x}) \) <br>
+                    \( \displaystyle \frac{dy}{dx} = e^{2x} \left( \frac{1}{x} + 2\ln(x) \right) \)
+                </div>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q15. Vector Resultant and Sketch of \( y = -e^{-x} \).</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <div class="sol-step">
+                    <b>(a) Resultant Unit Vector</b> [3 Marks] <br><br>
+                    Given vectors: <br>
+                    \( \vec{A} = 3\hat{i} - 2\hat{j} + \hat{k} \) <br>
+                    \( \vec{B} = -2\hat{i} + 5\hat{j} - 3\hat{k} \) <br><br>
+                    Resultant \( \vec{R} = \vec{A} + \vec{B} \) <br>
+                    \( \vec{R} = (3 - 2)\hat{i} + (-2 + 5)\hat{j} + (1 - 3)\hat{k} \) <br>
+                    \( \vec{R} = \hat{i} + 3\hat{j} - 2\hat{k} \) <br><br>
+                    Magnitude \( |\vec{R}| = \sqrt{(1)^2 + (3)^2 + (-2)^2} = \sqrt{1 + 9 + 4} = \sqrt{14} \) <br><br>
+                    Unit Vector \( \hat{R} = \frac{\vec{R}}{|\vec{R}|} \) <br>
+                    \( \hat{R} = \frac{1}{\sqrt{14}} (\hat{i} + 3\hat{j} - 2\hat{k}) \)
+                </div>
+                <hr style="border:0; border-top: 1px dashed #ccc; margin: 15px 0;">
+                <div class="sol-step">
+                    <b>(b) Graph Sketch for \( y = -e^{-x}, x \ge 0 \)</b> [2 Marks] <br><br>
+                    - Standard graph \( e^{-x} \) starts at \( (0, 1) \) and decays to \( 0 \) as \( x \to \infty \). <br>
+                    - The negative sign flips this graph upside down. <br>
+                    - At \( x = 0 \), \( y = -e^0 = -1 \). <br>
+                    - As \( x \to \infty \), \( e^{-x} \to 0 \), so \( y \to 0 \) from the negative side.<br>
+                    <br>
+                    <i>Sketch Description:</i> <br>
+                    Axes: Standard X (horizontal) and Y (vertical).<br>
+                    Curve: Starts at the point \( (0, -1) \) on the y-axis.<br>
+                    It curves upwards steadily in the 4th quadrant, getting infinitely closer to the positive x-axis (horizontal asymptote \( y = 0 \)) without ever touching it.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
