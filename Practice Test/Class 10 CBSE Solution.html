@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Practice Test (Trigonometry)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { 
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f8f9fa; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { text-align: center; color: #1a202c; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        
+        .sol-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            transition: box-shadow 0.2s;
+            overflow-wrap: break-word; /* Allows long math text to wrap */
+        }
+        .sol-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        
+        .sol-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .q-num { font-weight: bold; font-size: 1.1em; color: #2b6cb0; }
+        .marks { background: #ebf8ff; color: #3182ce; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; font-weight: 600; }
+        
+        .sol-question { font-style: italic; margin-bottom: 15px; color: #4a5568; }
+        .sol-answer { font-weight: bold; color: #38a169; margin-bottom: 10px; font-size: 1.05em; }
+        
+        .sol-steps { 
+            background: #f7fafc; 
+            padding: 12px; 
+            border-radius: 4px; 
+            font-size: 0.95em; 
+            overflow-x: auto; /* Highly important for MathJax on mobile */
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            .sol-card { padding: 10px; }
+            /* Breaking equations into scrolling chunks for mobile */
+            .sol-steps { display: block; overflow-x: auto; white-space: nowrap; } 
+            .math-chunk { display: block; margin: 5px 0; white-space: normal; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detailed Solutions: Practice Test (Trigonometry)</h1>
+        
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 1</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">In \(\triangle ABC\), right-angled at \(B\), \(AB = 3\text{ cm}\) and \(BC = 4\text{ cm}\). The value of \(\sin A\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(4/5\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">In \(\triangle ABC\), right angled at \(B\). Base \(AB = 3\), Perpendicular \(BC = 4\).</span><br>
+                <span class="math-chunk">Using Pythagoras theorem: \(AC^2 = AB^2 + BC^2\)</span><br>
+                <span class="math-chunk">\(AC^2 = 3^2 + 4^2 = 9 + 16 = 25 \Rightarrow AC = 5\)</span><br>
+                <span class="math-chunk">\(\sin A = \frac{\text{Opposite to } A}{\text{Hypotenuse}} = \frac{BC}{AC} = \frac{4}{5}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 2</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The value of \(\tan 45^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">From the standard trigonometric table, the value of \(\tan 45^\circ\) is exactly \(1\).</span><br>
+                <span class="math-chunk">Since \(\sin 45^\circ = 1/\sqrt{2}\) and \(\cos 45^\circ = 1/\sqrt{2}\), \(\tan 45^\circ = \frac{\sin 45^\circ}{\cos 45^\circ} = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 3</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The exact value of \(\sin 30^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (a) \(1/2\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">From the standard trigonometric table, the value of \(\sin 30^\circ\) is \(1/2\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 4</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Evaluate \(\cos^2 30^\circ - \sin^2 30^\circ\):</div>
+            <div class="sol-answer">Correct Option: (b) \(1/2\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">We know that \(\cos 30^\circ = \frac{\sqrt{3}}{2}\) and \(\sin 30^\circ = \frac{1}{2}\).</span><br>
+                <span class="math-chunk">\(\cos^2 30^\circ - \sin^2 30^\circ = \left(\frac{\sqrt{3}}{2}\right)^2 - \left(\frac{1}{2}\right)^2\)</span><br>
+                <span class="math-chunk">\(= \frac{3}{4} - \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 5</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\sin \theta = \cos \theta\) for an acute angle \(\theta\), then \(\theta\) is equal to:</div>
+            <div class="sol-answer">Correct Option: (b) \(45^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Given \(\sin \theta = \cos \theta\). Dividing both sides by \(\cos \theta\):</span><br>
+                <span class="math-chunk">\(\frac{\sin \theta}{\cos \theta} = 1 \Rightarrow \tan \theta = 1\).</span><br>
+                <span class="math-chunk">We know \(\tan 45^\circ = 1\), hence \(\theta = 45^\circ\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 6</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">According to trigonometric identities, \(1 - \sin^2 \theta\) is identically equal to:</div>
+            <div class="sol-answer">Correct Option: (b) \(\cos^2 \theta\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">By the fundamental trigonometric identity: \(\sin^2 \theta + \cos^2 \theta = 1\).</span><br>
+                <span class="math-chunk">Rearranging the terms, we get \(\cos^2 \theta = 1 - \sin^2 \theta\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 7</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The value of the expression \(\sin^2 60^\circ + \cos^2 60^\circ\) evaluates to:</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Using the identity \(\sin^2 \theta + \cos^2 \theta = 1\).</span><br>
+                <span class="math-chunk">Here \(\theta = 60^\circ\). Therefore, \(\sin^2 60^\circ + \cos^2 60^\circ = 1\).</span><br>
+                <span class="math-chunk">(Alternatively: \((\sqrt{3}/2)^2 + (1/2)^2 = 3/4 + 1/4 = 1\)).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 8</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\tan A = 4/3\), find the value of \(\sin A\):</div>
+            <div class="sol-answer">Correct Option: (a) \(4/5\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\tan A = \frac{\text{Perpendicular}}{\text{Base}} = \frac{4}{3}\).</span><br>
+                <span class="math-chunk">Let Perpendicular = \(4k\), Base = \(3k\). Hypotenuse \(H = \sqrt{(4k)^2 + (3k)^2} = \sqrt{25k^2} = 5k\).</span><br>
+                <span class="math-chunk">\(\sin A = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{4k}{5k} = \frac{4}{5}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 9</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The numerical value of \(\sin 90^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (c) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">From the standard trigonometric table, the value of \(\sin 90^\circ = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 10</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">What is the maximum value of \(\sin \theta\) for \(0^\circ \le \theta \le 90^\circ\)?</div>
+            <div class="sol-answer">Correct Option: (c) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">The value of \(\sin \theta\) increases from \(0\) to \(1\) as \(\theta\) goes from \(0^\circ\) to \(90^\circ\).</span><br>
+                <span class="math-chunk">Hence, the maximum value is \(1\) (at \(\theta = 90^\circ\)).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 11</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">\(\tan \theta\) can be written in terms of \(\sin \theta\) and \(\cos \theta\) as:</div>
+            <div class="sol-answer">Correct Option: (b) \(\frac{\sin\theta}{\cos\theta}\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">By definition, \(\tan \theta = \frac{\text{Opposite}}{\text{Adjacent}}\).</span><br>
+                <span class="math-chunk">Dividing numerator and denominator by Hypotenuse, we get \(\frac{\sin \theta}{\cos \theta}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 12</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The value of \(\cos 0^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">From the trigonometric standard tables, \(\cos 0^\circ = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 13</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Evaluate the expression \(9 \sec^2 A - 9 \tan^2 A\):</div>
+            <div class="sol-answer">Correct Option: (b) \(9\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Taking \(9\) common: \(9(\sec^2 A - \tan^2 A)\).</span><br>
+                <span class="math-chunk">We know the identity \(1 + \tan^2 A = \sec^2 A \Rightarrow \sec^2 A - \tan^2 A = 1\).</span><br>
+                <span class="math-chunk">Therefore, \(9(1) = 9\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 14</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The expression \(\frac{1 + \tan^2 A}{1 + \cot^2 A}\) simplifies to:</div>
+            <div class="sol-answer">Correct Option: (d) \(\tan^2 A\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Using identities: \(1 + \tan^2 A = \sec^2 A\) and \(1 + \cot^2 A = \operatorname{cosec}^2 A\).</span><br>
+                <span class="math-chunk">The expression becomes \(\frac{\sec^2 A}{\operatorname{cosec}^2 A} = \frac{1/\cos^2 A}{1/\sin^2 A}\).</span><br>
+                <span class="math-chunk">\(= \frac{\sin^2 A}{\cos^2 A} = \tan^2 A\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 15</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\sin A = 1/2\), then the value of \(\cos A\) is:</div>
+            <div class="sol-answer">Correct Option: (a) \(\sqrt{3}/2\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">If \(\sin A = 1/2\), then angle \(A = 30^\circ\).</span><br>
+                <span class="math-chunk">Therefore, \(\cos A = \cos 30^\circ = \frac{\sqrt{3}}{2}\).</span><br>
+                <span class="math-chunk">(Or use \(\cos A = \sqrt{1 - \sin^2 A} = \sqrt{1 - 1/4} = \sqrt{3/4}\)).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 16</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\triangle PQR\) is right-angled at \(Q\), and \(\sin P = 5/13\), find \(\tan P\).</div>
+            <div class="sol-answer">Correct Option: (a) \(5/12\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\sin P = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{5}{13}\).</span><br>
+                <span class="math-chunk">\(\text{Base} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12\).</span><br>
+                <span class="math-chunk">\(\tan P = \frac{\text{Perpendicular}}{\text{Base}} = \frac{5}{12}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 17</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Calculate the value of \(\frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ}\):</div>
+            <div class="sol-answer">Correct Option: (a) \(\sin 60^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Substitute \(\tan 30^\circ = \frac{1}{\sqrt{3}}\).</span><br>
+                <span class="math-chunk">Numerator: \(2 \times \frac{1}{\sqrt{3}} = \frac{2}{\sqrt{3}}\).</span><br>
+                <span class="math-chunk">Denominator: \(1 + \left(\frac{1}{\sqrt{3}}\right)^2 = 1 + \frac{1}{3} = \frac{4}{3}\).</span><br>
+                <span class="math-chunk">Result: \(\frac{2/\sqrt{3}}{4/3} = \frac{2}{\sqrt{3}} \times \frac{3}{4} = \frac{\sqrt{3}}{2}\).</span><br>
+                <span class="math-chunk">Since \(\sin 60^\circ = \frac{\sqrt{3}}{2}\), option (a) is correct.</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 18</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Find the value of \(\frac{1 - \tan^2 45^\circ}{1 + \tan^2 45^\circ}\):</div>
+            <div class="sol-answer">Correct Option: (d) \(0\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Substitute \(\tan 45^\circ = 1\).</span><br>
+                <span class="math-chunk">Expression becomes: \(\frac{1 - 1^2}{1 + 1^2} = \frac{1 - 1}{1 + 1} = \frac{0}{2} = 0\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 19</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">\(\sin 2A = 2 \sin A\) is true when \(A\) is equal to:</div>
+            <div class="sol-answer">Correct Option: (a) \(0^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Test the options. Let \(A = 0^\circ\).</span><br>
+                <span class="math-chunk">LHS = \(\sin (2 \times 0^\circ) = \sin 0^\circ = 0\).</span><br>
+                <span class="math-chunk">RHS = \(2 \sin 0^\circ = 2(0) = 0\). LHS = RHS.</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 20</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The expression \(\frac{2 \tan 30^\circ}{1 - \tan^2 30^\circ}\) is equal to:</div>
+            <div class="sol-answer">Correct Option: (c) \(\tan 60^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Substitute \(\tan 30^\circ = 1/\sqrt{3}\).</span><br>
+                <span class="math-chunk">Numerator: \(2/\sqrt{3}\). Denominator: \(1 - 1/3 = 2/3\).</span><br>
+                <span class="math-chunk">Result: \(\frac{2/\sqrt{3}}{2/3} = \frac{2}{\sqrt{3}} \times \frac{3}{2} = \sqrt{3}\).</span><br>
+                <span class="math-chunk">Since \(\tan 60^\circ = \sqrt{3}\), option (c) is correct.</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 21</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\cos \theta = \frac{\sqrt{3}}{2}\), then the acute angle \(\theta\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(30^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">From the standard trigonometric ratios, \(\cos 30^\circ = \frac{\sqrt{3}}{2}\).</span><br>
+                <span class="math-chunk">Therefore, \(\theta = 30^\circ\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 22</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Evaluate: \(\sin 60^\circ \cos 30^\circ + \sin 30^\circ \cos 60^\circ\)</div>
+            <div class="sol-answer">Correct Option: (c) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Substitute standard values: \(\left(\frac{\sqrt{3}}{2}\right)\left(\frac{\sqrt{3}}{2}\right) + \left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\).</span><br>
+                <span class="math-chunk">\(= \frac{3}{4} + \frac{1}{4} = \frac{4}{4} = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 23</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">What is the standard value of \(\sec^2 \theta - \tan^2 \theta\)?</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">By the standard Pythagorean trigonometric identity, \(1 + \tan^2 \theta = \sec^2 \theta\).</span><br>
+                <span class="math-chunk">Rearranging yields: \(\sec^2 \theta - \tan^2 \theta = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 24</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\cot \theta = 7/8\), evaluate \(\frac{(1+\sin\theta)(1-\sin\theta)}{(1+\cos\theta)(1-\cos\theta)}\):</div>
+            <div class="sol-answer">Correct Option: (a) \(49/64\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Simplify numerator using \((a+b)(a-b) = a^2-b^2\): \(1 - \sin^2 \theta = \cos^2 \theta\).</span><br>
+                <span class="math-chunk">Simplify denominator similarly: \(1 - \cos^2 \theta = \sin^2 \theta\).</span><br>
+                <span class="math-chunk">Expression becomes \(\frac{\cos^2 \theta}{\sin^2 \theta} = \cot^2 \theta\).</span><br>
+                <span class="math-chunk">Given \(\cot \theta = 7/8\), so \(\cot^2 \theta = (7/8)^2 = 49/64\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 25</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(3 \cot A = 4\), find the value of \(\cos A\).</div>
+            <div class="sol-answer">Correct Option: (b) \(4/5\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(3 \cot A = 4 \Rightarrow \cot A = 4/3\).</span><br>
+                <span class="math-chunk">Base = \(4\), Perpendicular = \(3\). Hypotenuse = \(\sqrt{4^2 + 3^2} = \sqrt{16 + 9} = 5\).</span><br>
+                <span class="math-chunk">\(\cos A = \frac{\text{Base}}{\text{Hypotenuse}} = \frac{4}{5}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 26</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The exact value of \(\operatorname{cosec} 45^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(\sqrt{2}\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\operatorname{cosec} 45^\circ\) is the reciprocal of \(\sin 45^\circ\).</span><br>
+                <span class="math-chunk">Since \(\sin 45^\circ = 1/\sqrt{2}\), \(\operatorname{cosec} 45^\circ = \sqrt{2}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 27</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The exact value of \(\cot 60^\circ\) is:</div>
+            <div class="sol-answer">Correct Option: (b) \(1/\sqrt{3}\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\cot 60^\circ = \frac{1}{\tan 60^\circ}\).</span><br>
+                <span class="math-chunk">Since \(\tan 60^\circ = \sqrt{3}\), \(\cot 60^\circ = 1/\sqrt{3}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 28</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\sec \theta = 13/12\), calculate \(\sin \theta\).</div>
+            <div class="sol-answer">Correct Option: (c) \(5/13\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\sec \theta = \frac{\text{Hypotenuse}}{\text{Base}} = \frac{13}{12}\).</span><br>
+                <span class="math-chunk">\(\text{Perpendicular} = \sqrt{13^2 - 12^2} = \sqrt{169 - 144} = \sqrt{25} = 5\).</span><br>
+                <span class="math-chunk">\(\sin \theta = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{5}{13}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 29</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">What is the value of \((\sin 30^\circ + \cos 30^\circ) - (\sin 60^\circ + \cos 60^\circ)\)?</div>
+            <div class="sol-answer">Correct Option: (b) \(0\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Substitute values: \((1/2 + \sqrt{3}/2) - (\sqrt{3}/2 + 1/2)\).</span><br>
+                <span class="math-chunk">Notice both brackets yield the exact same sum. Thus, the difference is \(0\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 30</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Which of the following is equivalent to \(\sqrt{1 - \cos^2 A}\)?</div>
+            <div class="sol-answer">Correct Option: (c) \(\sin A\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">By the identity \(\sin^2 A + \cos^2 A = 1\), we have \(\sin^2 A = 1 - \cos^2 A\).</span><br>
+                <span class="math-chunk">Taking the square root (for acute angle A), \(\sin A = \sqrt{1 - \cos^2 A}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 31</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">In a right triangle \(ABC\), right-angled at \(B\), if \(\tan A = 1\), find the value of \(2 \sin A \cos A\).</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\tan A = 1 \Rightarrow A = 45^\circ\).</span><br>
+                <span class="math-chunk">\(2 \sin A \cos A = 2 \sin 45^\circ \cos 45^\circ = 2 \left(\frac{1}{\sqrt{2}}\right)\left(\frac{1}{\sqrt{2}}\right)\).</span><br>
+                <span class="math-chunk">\(= 2 \times \frac{1}{2} = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 32</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\triangle ABC\) is right-angled at \(C\), then the value of \(\cos(A+B)\) is:</div>
+            <div class="sol-answer">Correct Option: (a) \(0\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">In \(\triangle ABC\), \(A + B + C = 180^\circ\). Given \(C = 90^\circ\).</span><br>
+                <span class="math-chunk">So, \(A + B = 180^\circ - 90^\circ = 90^\circ\).</span><br>
+                <span class="math-chunk">Therefore, \(\cos(A+B) = \cos(90^\circ) = 0\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 33</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Given \(15 \cot A = 8\), find \(\sin A\).</div>
+            <div class="sol-answer">Correct Option: (b) \(15/17\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\cot A = 8/15\). Base = \(8\), Perpendicular = \(15\).</span><br>
+                <span class="math-chunk">Hypotenuse = \(\sqrt{8^2 + 15^2} = \sqrt{64 + 225} = \sqrt{289} = 17\).</span><br>
+                <span class="math-chunk">\(\sin A = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{15}{17}\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 34</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The value of \(\sec A\) or \(\operatorname{cosec} A\) is always:</div>
+            <div class="sol-answer">Correct Option: (c) \(\ge 1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\sec A = \frac{\text{Hypotenuse}}{\text{Base}}\) and \(\operatorname{cosec} A = \frac{\text{Hypotenuse}}{\text{Perpendicular}}\).</span><br>
+                <span class="math-chunk">Since Hypotenuse is the longest side, the ratio is always greater than or equal to \(1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 35</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Evaluate the expression \(\sin^2 45^\circ + \cos^2 45^\circ\):</div>
+            <div class="sol-answer">Correct Option: (b) \(1\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">By standard identity, \(\sin^2 \theta + \cos^2 \theta = 1\).</span><br>
+                <span class="math-chunk">Or by values: \((1/\sqrt{2})^2 + (1/\sqrt{2})^2 = 1/2 + 1/2 = 1\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 36</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Which of the following is exactly equal to \(\cos 30^\circ\)?</div>
+            <div class="sol-answer">Correct Option: (a) \(\sin 60^\circ\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">\(\cos 30^\circ = \sqrt{3}/2\).</span><br>
+                <span class="math-chunk">Checking options, \(\sin 60^\circ = \sqrt{3}/2\). They are complementary ratios.</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 37</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">Express \(\operatorname{cosec}^2 \theta - 1\) in terms of another trigonometric ratio:</div>
+            <div class="sol-answer">Correct Option: (c) \(\cot^2 \theta\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Using the standard identity: \(1 + \cot^2 \theta = \operatorname{cosec}^2 \theta\).</span><br>
+                <span class="math-chunk">Rearranging yields: \(\operatorname{cosec}^2 \theta - 1 = \cot^2 \theta\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 38</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The simplification of \((\sec A + \tan A)(1 - \sin A)\) yields:</div>
+            <div class="sol-answer">Correct Option: (d) \(\cos A\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">Convert to sine and cosine: \((\frac{1}{\cos A} + \frac{\sin A}{\cos A})(1 - \sin A)\).</span><br>
+                <span class="math-chunk">\(= \left(\frac{1 + \sin A}{\cos A}\right) (1 - \sin A) = \frac{(1 + \sin A)(1 - \sin A)}{\cos A}\).</span><br>
+                <span class="math-chunk">\(= \frac{1 - \sin^2 A}{\cos A} = \frac{\cos^2 A}{\cos A} = \cos A\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 39</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">If \(\sin \theta = x\) and \(\sec \theta = y\), then \(\tan \theta\) is equal to:</div>
+            <div class="sol-answer">Correct Option: (c) \(xy\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">We know \(\tan \theta = \frac{\sin \theta}{\cos \theta}\).</span><br>
+                <span class="math-chunk">Since \(\sec \theta = 1/\cos \theta\), we can write \(\tan \theta = \sin \theta \times \sec \theta\).</span><br>
+                <span class="math-chunk">Substitute given values: \(\tan \theta = x \times y = xy\).</span>
+            </div>
+        </div>
+
+        <div class="sol-card">
+            <div class="sol-header">
+                <span class="q-num">Question 40</span>
+                <span class="marks">[2 Marks]</span>
+            </div>
+            <div class="sol-question">The expression \(\tan^2 \theta \cdot \cos^2 \theta\) simplifies to:</div>
+            <div class="sol-answer">Correct Option: (a) \(\sin^2 \theta\)</div>
+            <div class="sol-steps">
+                <strong>Solution:</strong><br>
+                <span class="math-chunk">We know \(\tan \theta = \frac{\sin \theta}{\cos \theta}\). Therefore, \(\tan^2 \theta = \frac{\sin^2 \theta}{\cos^2 \theta}\).</span><br>
+                <span class="math-chunk">Expression: \(\frac{\sin^2 \theta}{\cos^2 \theta} \times \cos^2 \theta\).</span><br>
+                <span class="math-chunk">The \(\cos^2 \theta\) terms cancel out, leaving \(\sin^2 \theta\).</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

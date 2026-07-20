@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Practice Test (Trigonometry)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        .exam-details span { flex: 1 1 45%; min-width: 120px; }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; flex-direction: row; align-items: flex-start; break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+            width: 100%;
+        }
+        .option { padding-left: 5px; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { padding: 20mm; width: 210mm; }
+            .watermark { position: fixed; }
+            .question-container { break-inside: avoid; }
+            @page { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Practice Test</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Mathematics (Trigonometry)</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 80</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper consists of 40 Multiple Choice Questions.</li>
+                <li>Each question carries 2 marks. There is no negative marking.</li>
+                <li>Select the most appropriate option.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (80 Marks)<span class="marks-info">(Multiple Choice Questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            In \(\triangle ABC\), right-angled at \(B\), \(AB = 3\text{ cm}\) and \(BC = 4\text{ cm}\). The value of \(\sin A\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(3/5\)</div>
+                <div class="option">(b) \(4/5\)</div>
+                <div class="option">(c) \(3/4\)</div>
+                <div class="option">(d) \(4/3\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            The value of \(\tan 45^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(\sqrt{3}\)</div>
+                <div class="option">(d) \(1/\sqrt{3}\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            The exact value of \(\sin 30^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(1/2\)</div>
+                <div class="option">(b) \(\sqrt{3}/2\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Evaluate \(\cos^2 30^\circ - \sin^2 30^\circ\):
+            <div class="options-grid">
+                <div class="option">(a) \(1\)</div>
+                <div class="option">(b) \(1/2\)</div>
+                <div class="option">(c) \(0\)</div>
+                <div class="option">(d) \(-1/2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If \(\sin \theta = \cos \theta\) for an acute angle \(\theta\), then \(\theta\) is equal to:
+            <div class="options-grid">
+                <div class="option">(a) \(30^\circ\)</div>
+                <div class="option">(b) \(45^\circ\)</div>
+                <div class="option">(c) \(60^\circ\)</div>
+                <div class="option">(d) \(90^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            According to trigonometric identities, \(1 - \sin^2 \theta\) is identically equal to:
+            <div class="options-grid">
+                <div class="option">(a) \(\sec^2 \theta\)</div>
+                <div class="option">(b) \(\cos^2 \theta\)</div>
+                <div class="option">(c) \(\tan^2 \theta\)</div>
+                <div class="option">(d) \(\operatorname{cosec}^2 \theta\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The value of the expression \(\sin^2 60^\circ + \cos^2 60^\circ\) evaluates to:
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(-1\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            If \(\tan A = 4/3\), find the value of \(\sin A\):
+            <div class="options-grid">
+                <div class="option">(a) \(4/5\)</div>
+                <div class="option">(b) \(3/5\)</div>
+                <div class="option">(c) \(5/4\)</div>
+                <div class="option">(d) \(5/3\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The numerical value of \(\sin 90^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1/2\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) Not defined</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            What is the maximum value of \(\sin \theta\) for \(0^\circ \le \theta \le 90^\circ\)?
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1/2\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) Infinity</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            \(\tan \theta\) can be written in terms of \(\sin \theta\) and \(\cos \theta\) as:
+            <div class="options-grid">
+                <div class="option">(a) \(\frac{\cos\theta}{\sin\theta}\)</div>
+                <div class="option">(b) \(\frac{\sin\theta}{\cos\theta}\)</div>
+                <div class="option">(c) \(\sin\theta \cdot \cos\theta\)</div>
+                <div class="option">(d) \(\frac{1}{\sin\theta \cos\theta}\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            The value of \(\cos 0^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(1/2\)</div>
+                <div class="option">(d) \(\sqrt{3}/2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Evaluate the expression \(9 \sec^2 A - 9 \tan^2 A\):
+            <div class="options-grid">
+                <div class="option">(a) \(1\)</div>
+                <div class="option">(b) \(9\)</div>
+                <div class="option">(c) \(8\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            The expression \(\frac{1 + \tan^2 A}{1 + \cot^2 A}\) simplifies to:
+            <div class="options-grid">
+                <div class="option">(a) \(\sec^2 A\)</div>
+                <div class="option">(b) \(-1\)</div>
+                <div class="option">(c) \(\cot^2 A\)</div>
+                <div class="option">(d) \(\tan^2 A\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            If \(\sin A = 1/2\), then the value of \(\cos A\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(\sqrt{3}/2\)</div>
+                <div class="option">(b) \(1/\sqrt{2}\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            If \(\triangle PQR\) is right-angled at \(Q\), and \(\sin P = 5/13\), find \(\tan P\).
+            <div class="options-grid">
+                <div class="option">(a) \(5/12\)</div>
+                <div class="option">(b) \(12/5\)</div>
+                <div class="option">(c) \(13/5\)</div>
+                <div class="option">(d) \(12/13\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            Calculate the value of \(\frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ}\):
+            <div class="options-grid">
+                <div class="option">(a) \(\sin 60^\circ\)</div>
+                <div class="option">(b) \(\cos 60^\circ\)</div>
+                <div class="option">(c) \(\tan 60^\circ\)</div>
+                <div class="option">(d) \(\sin 30^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Find the value of \(\frac{1 - \tan^2 45^\circ}{1 + \tan^2 45^\circ}\):
+            <div class="options-grid">
+                <div class="option">(a) \(\tan 90^\circ\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(\sin 45^\circ\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            The equation \(\sin 2A = 2 \sin A\) is true when \(A\) is equal to:
+            <div class="options-grid">
+                <div class="option">(a) \(0^\circ\)</div>
+                <div class="option">(b) \(30^\circ\)</div>
+                <div class="option">(c) \(45^\circ\)</div>
+                <div class="option">(d) \(60^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            The expression \(\frac{2 \tan 30^\circ}{1 - \tan^2 30^\circ}\) is equal to:
+            <div class="options-grid">
+                <div class="option">(a) \(\cos 60^\circ\)</div>
+                <div class="option">(b) \(\sin 60^\circ\)</div>
+                <div class="option">(c) \(\tan 60^\circ\)</div>
+                <div class="option">(d) \(\sin 30^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            If \(\cos \theta = \frac{\sqrt{3}}{2}\), then the acute angle \(\theta\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(0^\circ\)</div>
+                <div class="option">(b) \(30^\circ\)</div>
+                <div class="option">(c) \(45^\circ\)</div>
+                <div class="option">(d) \(60^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            Evaluate: \(\sin 60^\circ \cos 30^\circ + \sin 30^\circ \cos 60^\circ\)
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1/2\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            What is the standard value of \(\sec^2 \theta - \tan^2 \theta\)?
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(-1\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            If \(\cot \theta = 7/8\), evaluate \(\frac{(1+\sin\theta)(1-\sin\theta)}{(1+\cos\theta)(1-\cos\theta)}\):
+            <div class="options-grid">
+                <div class="option">(a) \(49/64\)</div>
+                <div class="option">(b) \(64/49\)</div>
+                <div class="option">(c) \(7/8\)</div>
+                <div class="option">(d) \(8/7\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            If \(3 \cot A = 4\), find the value of \(\cos A\).
+            <div class="options-grid">
+                <div class="option">(a) \(3/5\)</div>
+                <div class="option">(b) \(4/5\)</div>
+                <div class="option">(c) \(5/3\)</div>
+                <div class="option">(d) \(5/4\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            The exact value of \(\operatorname{cosec} 45^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(1/\sqrt{2}\)</div>
+                <div class="option">(b) \(\sqrt{2}\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            The exact value of \(\cot 60^\circ\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(\sqrt{3}\)</div>
+                <div class="option">(b) \(1/\sqrt{3}\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            If \(\sec \theta = 13/12\), calculate \(\sin \theta\).
+            <div class="options-grid">
+                <div class="option">(a) \(12/13\)</div>
+                <div class="option">(b) \(5/12\)</div>
+                <div class="option">(c) \(5/13\)</div>
+                <div class="option">(d) \(13/5\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            What is the value of \((\sin 30^\circ + \cos 30^\circ) - (\sin 60^\circ + \cos 60^\circ)\)?
+            <div class="options-grid">
+                <div class="option">(a) \(-1\)</div>
+                <div class="option">(b) \(0\)</div>
+                <div class="option">(c) \(1\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            Which of the following is equivalent to \(\sqrt{1 - \cos^2 A}\)?
+            <div class="options-grid">
+                <div class="option">(a) \(\tan A\)</div>
+                <div class="option">(b) \(\sec A\)</div>
+                <div class="option">(c) \(\sin A\)</div>
+                <div class="option">(d) \(\cot A\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">31.</div>
+        <div class="q-content">
+            In a right triangle \(ABC\), right-angled at \(B\), if \(\tan A = 1\), find the value of \(2 \sin A \cos A\).
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(1/2\)</div>
+                <div class="option">(d) \(2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">32.</div>
+        <div class="q-content">
+            If \(\triangle ABC\) is right-angled at \(C\), then the value of \(\cos(A+B)\) is:
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(1/2\)</div>
+                <div class="option">(d) \(\sqrt{3}/2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">33.</div>
+        <div class="q-content">
+            Given \(15 \cot A = 8\), find \(\sin A\).
+            <div class="options-grid">
+                <div class="option">(a) \(8/17\)</div>
+                <div class="option">(b) \(15/17\)</div>
+                <div class="option">(c) \(17/15\)</div>
+                <div class="option">(d) \(17/8\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">34.</div>
+        <div class="q-content">
+            The value of \(\sec A\) or \(\operatorname{cosec} A\) is always:
+            <div class="options-grid">
+                <div class="option">(a) \(< 1\)</div>
+                <div class="option">(b) \(\le 1\)</div>
+                <div class="option">(c) \(\ge 1\)</div>
+                <div class="option">(d) \(0\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">35.</div>
+        <div class="q-content">
+            Evaluate the expression \(\sin^2 45^\circ + \cos^2 45^\circ\):
+            <div class="options-grid">
+                <div class="option">(a) \(0\)</div>
+                <div class="option">(b) \(1\)</div>
+                <div class="option">(c) \(2\)</div>
+                <div class="option">(d) \(1/2\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">36.</div>
+        <div class="q-content">
+            Which of the following is exactly equal to \(\cos 30^\circ\)?
+            <div class="options-grid">
+                <div class="option">(a) \(\sin 60^\circ\)</div>
+                <div class="option">(b) \(\sin 30^\circ\)</div>
+                <div class="option">(c) \(\tan 60^\circ\)</div>
+                <div class="option">(d) \(\cos 60^\circ\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">37.</div>
+        <div class="q-content">
+            Express \(\operatorname{cosec}^2 \theta - 1\) in terms of another trigonometric ratio:
+            <div class="options-grid">
+                <div class="option">(a) \(\tan^2 \theta\)</div>
+                <div class="option">(b) \(\sec^2 \theta\)</div>
+                <div class="option">(c) \(\cot^2 \theta\)</div>
+                <div class="option">(d) \(\sin^2 \theta\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">38.</div>
+        <div class="q-content">
+            The simplification of \((\sec A + \tan A)(1 - \sin A)\) yields:
+            <div class="options-grid">
+                <div class="option">(a) \(\sec A\)</div>
+                <div class="option">(b) \(\sin A\)</div>
+                <div class="option">(c) \(\operatorname{cosec} A\)</div>
+                <div class="option">(d) \(\cos A\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">39.</div>
+        <div class="q-content">
+            If \(\sin \theta = x\) and \(\sec \theta = y\), then \(\tan \theta\) is equal to:
+            <div class="options-grid">
+                <div class="option">(a) \(x+y\)</div>
+                <div class="option">(b) \(x-y\)</div>
+                <div class="option">(c) \(xy\)</div>
+                <div class="option">(d) \(x/y\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">40.</div>
+        <div class="q-content">
+            The expression \(\tan^2 \theta \cdot \cos^2 \theta\) simplifies to:
+            <div class="options-grid">
+                <div class="option">(a) \(\sin^2 \theta\)</div>
+                <div class="option">(b) \(\cos^2 \theta\)</div>
+                <div class="option">(c) \(\sec^2 \theta\)</div>
+                <div class="option">(d) \(\operatorname{cot}^2 \theta\)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
