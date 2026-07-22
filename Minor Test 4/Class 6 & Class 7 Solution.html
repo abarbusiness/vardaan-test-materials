@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Canvas Solution Key</title>
+    <style>
+        body {
+            background-color: #525659; /* PDF viewer typical background */
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvas-container {
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Standard A4 aspect ratio width */
+            width: 850px; 
+            max-width: 95vw;
+            overflow-x: auto;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        @media print {
+            body { background-color: white; padding: 0; }
+            #canvas-container { box-shadow: none; width: 100%; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container">
+        <canvas id="paperCanvas"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('paperCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Document styling constants
+        const PAGE_WIDTH = 850; // Fixed virtual width for layout consistency
+        const MARGIN_X = 60;
+        const CONTENT_WIDTH = PAGE_WIDTH - (MARGIN_X * 2);
+        
+        // Colors
+        const COLOR_TEXT = '#000000';
+        const COLOR_ANSWER_BG = '#f8f9fa';
+        const COLOR_ANSWER_BORDER = '#2e7d32';
+        const COLOR_ANSWER_TEXT = '#1b5e20';
+        const COLOR_SECONDARY = '#555555';
+
+        // The exact content transcribed into a renderable data structure
+        const paperData = [
+            { type: 'space', height: 40 },
+            { type: 'title', text: 'VARDAAN LEARNING INSTITUTE' },
+            { type: 'subtitle', text: 'Minor Test 04 - Solution Key' },
+            { type: 'details', class: '6 & 7', subject: 'General Mathematics', time: '1 Hour', marks: '40' },
+            { type: 'instructions', title: 'General Instructions:', points: [
+                'All questions are compulsory.',
+                'The paper is divided into three sections: A, B, and C.',
+                'Write your answers neatly and legibly. Clearly show the steps of your calculations.'
+            ]},
+            
+            // SECTION A
+            { type: 'section', text: 'SECTION A (10 Marks)', subtext: '(Attempt all questions - 2 Marks Each)' },
+            { type: 'question', num: '1.', text: 'Convert the fraction 3/4 into its decimal representation.', marks: '[2 Marks]' },
+            { type: 'answer', lines: ['Answer:', '3 \u00F7 4 = 0.75'] }, // \u00F7 is division sign
+            
+            { type: 'question', num: '2.', text: 'Find the Least Common Multiple (LCM) of 4 and 6.', marks: '[2 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Multiples of 4: 4, 8, 12, 16...', 'Multiples of 6: 6, 12, 18...', 'The lowest common multiple is 12.'] },
+            
+            { type: 'question', num: '3.', text: 'Add the following fractions: 1/5 + 2/5', marks: '[2 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Since the denominators are the same:', '(1 + 2) / 5 = 3/5'] },
+            
+            { type: 'question', num: '4.', text: 'Convert the decimal number 0.25 into a fraction in its simplest form.', marks: '[2 Marks]' },
+            { type: 'answer', lines: ['Answer:', '0.25 = 25 / 100', 'Dividing numerator and denominator by 25:', '1/4'] },
+            
+            { type: 'question', num: '5.', text: 'Find the Highest Common Factor (HCF) of 12 and 18.', marks: '[2 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Factors of 12: 1, 2, 3, 4, 6, 12', 'Factors of 18: 1, 2, 3, 6, 9, 18', 'The highest common factor is 6.'] },
+
+            // SECTION B
+            { type: 'section', text: 'SECTION B (15 Marks)', subtext: '(Short Answer Type - 3 Marks Each)' },
+            { type: 'question', num: '6.', text: 'Simplify the given decimal expression: 2.5 + 3.2 - 1.4', marks: '[3 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Step 1 (Addition): 2.5 + 3.2 = 5.7', 'Step 2 (Subtraction): 5.7 - 1.4 = 4.3'] },
+
+            { type: 'question', num: '7.', text: 'A piece of ribbon is 5/8 meters long. If 1/4 meters is cut from it, what is the length of the remaining ribbon?', marks: '[3 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Remaining length = Total length - Cut length', '= 5/8 - 1/4', 'Make denominators equal (LCM of 8 and 4 is 8):', '1/4 = 2/8', '= 5/8 - 2/8 = 3/8 meters'] },
+
+            { type: 'question', num: '8.', text: 'Find the Least Common Multiple (LCM) of 12, 15, and 20.', marks: '[3 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Prime factorization:', '12 = 2\u00B2 \u00D7 3', '15 = 3 \u00D7 5', '20 = 2\u00B2 \u00D7 5', 'LCM = Highest power of each prime factor = 2\u00B2 \u00D7 3 \u00D7 5 = 4 \u00D7 15 = 60'] },
+
+            { type: 'question', num: '9.', text: 'Multiply the decimal numbers: 3.4 \u00D7 1.2', marks: '[3 Marks]' }, // \u00D7 is multiply sign
+            { type: 'answer', lines: ['Answer:', 'Ignore decimals and multiply: 34 \u00D7 12 = 408', 'Total decimal places in question = 2 (one from 3.4, one from 1.2)', 'Place decimal point 2 positions from right: 4.08'] },
+
+            { type: 'question', num: '10.', text: 'Two numbers have an HCF of 6 and an LCM of 36. If one of the numbers is 12, find the other number.', marks: '[3 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Formula: Product of two numbers = HCF \u00D7 LCM', '12 \u00D7 (Other Number) = 6 \u00D7 36', '12 \u00D7 (Other Number) = 216', 'Other Number = 216 \u00F7 12 = 18'] },
+
+            // SECTION C
+            { type: 'section', text: 'SECTION C (15 Marks)', subtext: '(Long Answer Type - 5 Marks Each)' },
+            { type: 'question', num: '11.', text: 'Three school bells ring at intervals of 10 minutes, 15 minutes, and 20 minutes respectively. If they all ring together at 8:00 AM, at what time will they ring together again?', marks: '[5 Marks]' },
+            { type: 'answer', lines: ['Answer:', 'Find the LCM of 10, 15, and 20 to know the common interval.', '10 = 2 \u00D7 5', '15 = 3 \u00D7 5', '20 = 2\u00B2 \u00D7 5', 'LCM = 2\u00B2 \u00D7 3 \u00D7 5 = 60 minutes.', 'The bells will ring together after 60 minutes (1 hour).', '8:00 AM + 1 hour = 9:00 AM'] },
+
+            { type: 'question', num: '12.', text: 'A boy spends 1/3 of his pocket money on buying books and 1/4 of his pocket money on snacks.\n(i) What fraction of his money did he spend in total?\n(ii) What fraction of his pocket money is left with him?', marks: '[5 Marks]' },
+            { type: 'answer', lines: ['Answer:', '(i) Total spent:', '1/3 + 1/4 = (4/12) + (3/12) = 7/12', '', '(ii) Fraction left:', 'Let total pocket money be 1 (whole).', 'Left = 1 - 7/12 = 12/12 - 7/12 = 5/12'] },
+
+            { type: 'question', num: '13.', text: 'Evaluate the following:\n(i) Divide 15.6 by 1.2\n(ii) Find the greatest number that will divide 24, 36, and 60 exactly without leaving any remainder.', marks: '[5 Marks]' },
+            { type: 'answer', lines: ['Answer:', '(i) Division:', '15.6 \u00F7 1.2 = (15.6 \u00D7 10) \u00F7 (1.2 \u00D7 10) = 156 \u00F7 12 = 13', '', '(ii) Greatest number (HCF):', 'Find HCF of 24, 36, and 60.', '24 = 2\u00B3 \u00D7 3', '36 = 2\u00B2 \u00D7 3\u00B2', '60 = 2\u00B2 \u00D7 3 \u00D7 5', 'HCF = lowest power of common factors = 2\u00B2 \u00D7 3 = 4 \u00D7 3 = 12'] },
+
+            { type: 'space', height: 40 },
+            { type: 'footer', text: 'Solution Key - Created by Team Vardaan' }
+        ];
+
+        
+        // Helper to handle multi-line text with exact width boundaries
+        function wrapText(ctx, text, x, y, maxWidth, lineHeight, simulate = false) {
+            let totalHeight = 0;
+            // Handle manual line breaks in text (e.g. subquestions)
+            const paragraphs = text.split('\n');
+
+            paragraphs.forEach(paragraph => {
+                let words = paragraph.split(' ');
+                let line = '';
+                
+                for (let n = 0; n < words.length; n++) {
+                    let testLine = line + words[n] + ' ';
+                    let metrics = ctx.measureText(testLine);
+                    let testWidth = metrics.width;
+                    
+                    if (testWidth > maxWidth && n > 0) {
+                        if (!simulate) ctx.fillText(line, x, y + totalHeight);
+                        line = words[n] + ' ';
+                        totalHeight += lineHeight;
+                    } else {
+                        line = testLine;
+                    }
+                }
+                if (!simulate) ctx.fillText(line, x, y + totalHeight);
+                totalHeight += lineHeight;
+            });
+            
+            return totalHeight;
+        }
+
+        
+        // Master render function (handles both measurement pass and drawing pass)
+        function renderDocument(simulate = false) {
+            let cursorY = MARGIN_X; // Start Y position
+
+            if (!simulate) {
+                // Clear and draw white background
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                // Draw watermark
+                drawWatermark();
+            }
+
+            paperData.forEach(item => {
+                if (item.type === 'space') {
+                    cursorY += item.height;
+                } 
+                else if (item.type === 'title') {
+                    ctx.font = 'bold 30px "Times New Roman", Times, serif';
+                    ctx.fillStyle = COLOR_TEXT;
+                    ctx.textAlign = 'center';
+                    if (!simulate) ctx.fillText(item.text, PAGE_WIDTH / 2, cursorY);
+                    cursorY += 40;
+                }
+                else if (item.type === 'subtitle') {
+                    ctx.font = 'bold 18px "Times New Roman", Times, serif';
+                    ctx.fillStyle = COLOR_TEXT;
+                    ctx.textAlign = 'center';
+                    
+                    if (!simulate) {
+                        ctx.fillText(item.text, PAGE_WIDTH / 2, cursorY);
+                        // Draw underline
+                        const textWidth = ctx.measureText(item.text).width;
+                        ctx.beginPath();
+                        ctx.moveTo((PAGE_WIDTH - textWidth) / 2, cursorY + 5);
+                        ctx.lineTo((PAGE_WIDTH + textWidth) / 2, cursorY + 5);
+                        ctx.stroke();
+                    }
+                    cursorY += 30;
+                }
+                else if (item.type === 'details') {
+                    ctx.font = 'bold 15px "Times New Roman", Times, serif';
+                    ctx.textAlign = 'left';
+                    const yPos = cursorY + 15;
+                    
+                    if (!simulate) {
+                        // Top line
+                        ctx.beginPath();
+                        ctx.moveTo(MARGIN_X, cursorY);
+                        ctx.lineTo(PAGE_WIDTH - MARGIN_X, cursorY);
+                        ctx.stroke();
+
+                        // Details texts distributed evenly
+                        ctx.fillText(`Class: ${item.class}`, MARGIN_X, yPos);
+                        ctx.textAlign = 'center';
+                        ctx.fillText(`Subject: ${item.subject}`, PAGE_WIDTH * 0.4, yPos);
+                        ctx.fillText(`Time: ${item.time}`, PAGE_WIDTH * 0.7, yPos);
+                        ctx.textAlign = 'right';
+                        ctx.fillText(`Max. Marks: ${item.marks}`, PAGE_WIDTH - MARGIN_X, yPos);
+                        
+                        // Bottom line
+                        ctx.beginPath();
+                        ctx.moveTo(MARGIN_X, yPos + 15);
+                        ctx.lineTo(PAGE_WIDTH - MARGIN_X, yPos + 15);
+                        ctx.stroke();
+                    }
+                    cursorY += 50;
+                }
+                else if (item.type === 'instructions') {
+                    ctx.font = 'bold 14px "Times New Roman", Times, serif';
+                    ctx.textAlign = 'left';
+                    if (!simulate) ctx.fillText(item.title, MARGIN_X, cursorY);
+                    cursorY += 20;
+
+                    ctx.font = 'italic 13px "Times New Roman", Times, serif';
+                    item.points.forEach(point => {
+                        if (!simulate) {
+                            ctx.fillText('•', MARGIN_X + 10, cursorY);
+                        }
+                        const pointHeight = wrapText(ctx, point, MARGIN_X + 25, cursorY, CONTENT_WIDTH - 25, 20, simulate);
+                        cursorY += pointHeight;
+                    });
+                    cursorY += 20;
+                }
+                else if (item.type === 'section') {
+                    cursorY += 15;
+                    ctx.textAlign = 'center';
+                    
+                    ctx.font = 'bold 18px "Times New Roman", Times, serif';
+                    if (!simulate) {
+                        ctx.fillText(item.text, PAGE_WIDTH / 2, cursorY);
+                        // Underline
+                        const tWidth = ctx.measureText(item.text).width;
+                        ctx.beginPath();
+                        ctx.moveTo((PAGE_WIDTH - tWidth) / 2, cursorY + 4);
+                        ctx.lineTo((PAGE_WIDTH + tWidth) / 2, cursorY + 4);
+                        ctx.stroke();
+                    }
+                    cursorY += 22;
+
+                    ctx.font = 'italic 14px "Times New Roman", Times, serif';
+                    if (!simulate) ctx.fillText(item.subtext, PAGE_WIDTH / 2, cursorY);
+                    cursorY += 30;
+                }
+                else if (item.type === 'question') {
+                    ctx.textAlign = 'left';
+                    ctx.fillStyle = COLOR_TEXT;
+                    
+                    // Question Number
+                    ctx.font = 'bold 16px "Times New Roman", Times, serif';
+                    if (!simulate) ctx.fillText(item.num, MARGIN_X, cursorY);
+                    
+                    // Marks (Right Aligned)
+                    const marksWidth = ctx.measureText(item.marks).width;
+                    if (!simulate) ctx.fillText(item.marks, PAGE_WIDTH - MARGIN_X - marksWidth, cursorY);
+                    
+                    // Question Text (Wrapped)
+                    ctx.font = '16px "Times New Roman", Times, serif';
+                    const textMaxWidth = CONTENT_WIDTH - 40 - marksWidth - 20; // Room for num and marks
+                    const textHeight = wrapText(ctx, item.text, MARGIN_X + 40, cursorY, textMaxWidth, 24, simulate);
+                    
+                    cursorY += textHeight + 10;
+                }
+                else if (item.type === 'answer') {
+                    // Pre-calculate answer height
+                    ctx.font = '15px Arial, sans-serif';
+                    let answerHeight = 20; // Top padding
+                    item.lines.forEach((line, index) => {
+                        ctx.font = index === 0 ? 'bold 15px Arial, sans-serif' : '15px Arial, sans-serif';
+                        let lHeight = index === 0 ? 25 : 22; // Answer label gets a bit more space
+                        
+                        // Use wrap text for long answer lines to be safe
+                        let wrappedH = wrapText(ctx, line, 0, 0, CONTENT_WIDTH - 80, lHeight, true);
+                        answerHeight += wrappedH;
+                    });
+                    answerHeight += 5; // Bottom padding
+
+                    if (!simulate) {
+                        // Draw Background Box
+                        ctx.fillStyle = COLOR_ANSWER_BG;
+                        ctx.fillRect(MARGIN_X + 40, cursorY, CONTENT_WIDTH - 40, answerHeight);
+                        
+                        // Draw Left Border
+                        ctx.fillStyle = COLOR_ANSWER_BORDER;
+                        ctx.fillRect(MARGIN_X + 40, cursorY, 4, answerHeight);
+
+                        // Draw Text
+                        let textY = cursorY + 25;
+                        item.lines.forEach((line, index) => {
+                            ctx.fillStyle = COLOR_ANSWER_TEXT;
+                            if (index === 0) {
+                                ctx.font = 'bold 15px Arial, sans-serif';
+                                if (!simulate) {
+                                    ctx.fillText(line, MARGIN_X + 60, textY);
+                                    // Underline "Answer:"
+                                    const w = ctx.measureText(line).width;
+                                    ctx.beginPath();
+                                    ctx.moveTo(MARGIN_X + 60, textY + 3);
+                                    ctx.lineTo(MARGIN_X + 60 + w, textY + 3);
+                                    ctx.strokeStyle = COLOR_ANSWER_TEXT;
+                                    ctx.lineWidth = 1;
+                                    ctx.stroke();
+                                    ctx.strokeStyle = COLOR_TEXT; // reset
+                                }
+                                textY += 25;
+                            } else {
+                                ctx.font = '15px Arial, sans-serif';
+                                let lHeight = 22;
+                                let wrappedH = wrapText(ctx, line, MARGIN_X + 60, textY, CONTENT_WIDTH - 80, lHeight, simulate);
+                                textY += wrappedH;
+                            }
+                        });
+                    }
+                    
+                    cursorY += answerHeight + 25; // Space after answer
+                }
+                else if (item.type === 'footer') {
+                    ctx.textAlign = 'center';
+                    ctx.font = 'bold 14px Arial, sans-serif';
+                    ctx.fillStyle = COLOR_SECONDARY;
+                    
+                    if (!simulate) {
+                        // Top line for footer
+                        ctx.beginPath();
+                        ctx.moveTo(MARGIN_X + 50, cursorY - 20);
+                        ctx.lineTo(PAGE_WIDTH - MARGIN_X - 50, cursorY - 20);
+                        ctx.strokeStyle = '#cccccc';
+                        ctx.stroke();
+                        ctx.strokeStyle = COLOR_TEXT; // reset
+                        
+                        ctx.fillText(item.text, PAGE_WIDTH / 2, cursorY);
+                    }
+                    cursorY += 30;
+                }
+            });
+
+            return cursorY;
+        }
+
+        
+        function drawWatermark() {
+            ctx.save();
+            ctx.translate(PAGE_WIDTH / 2, canvas.height / 2);
+            ctx.rotate(-Math.PI / 4); // Rotate -45 degrees
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // Draw large watermark text mimicking the logo
+            ctx.font = 'bold 120px Arial, sans-serif';
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillText('VARDAAN', 0, -40);
+            
+            ctx.font = 'bold 60px Arial, sans-serif';
+            ctx.fillText('LEARNING INSTITUTE', 0, 60);
+            
+            ctx.restore();
+        }
+
+        function init() {
+            // First pass: Calculate required height
+            const requiredHeight = renderDocument(true);
+
+            // Handle high DPI (Retina) displays for crisp text
+            const dpr = window.devicePixelRatio || 1;
+            
+            // Set actual canvas size
+            canvas.width = PAGE_WIDTH * dpr;
+            canvas.height = requiredHeight * dpr;
+            
+            // Scale CSS display size
+            canvas.style.width = `${PAGE_WIDTH}px`;
+            canvas.style.height = `${requiredHeight}px`;
+
+            // Normalize coordinate system to use css pixels
+            ctx.scale(dpr, dpr);
+
+            // Second pass: Actually draw everything
+            renderDocument(false);
+        }
+
+        // Wait for fonts to load before rendering to ensure measurements are correct
+        document.fonts.ready.then(() => {
+            init();
+        });
+
+    </script>
+</body>
+</html>
