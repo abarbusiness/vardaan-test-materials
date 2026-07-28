@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Minor Test 12</title>
+    <!-- MathJax Configuration for responsive math rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; 
+            line-height: 1.5; color: #000; background-color: white; position: relative; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.08; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1b5e20; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #000;}
+        .exam-details { 
+            display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #2e7d32; border-bottom: 1px solid #2e7d32; padding: 8px 5px; color: #1b5e20;
+        }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e8f5e9; padding: 5px; color: #1b5e20;}
+        .question-container { margin-bottom: 25px; display: flex; flex-direction: column; text-align: left; border-bottom: 1px dashed #ccc; padding-bottom: 15px;}
+        .q-header { display: flex; align-items: flex-start; justify-content: space-between; width: 100%; font-weight: bold;}
+        .q-main { display: flex; flex-grow: 1; }
+        .q-num { width: 35px; flex-shrink: 0; }
+        .q-text { flex-grow: 1; }
+        .q-marks { margin-left: 10px; flex-shrink: 0; white-space: nowrap; color: #d32f2f;}
+        
+        .solution-box { 
+            background-color: #fafafa; border-left: 5px solid #4CAF50; padding: 15px; 
+            margin-top: 12px; border-radius: 0 5px 5px 0; font-family: Arial, sans-serif; 
+            font-size: 11pt; color: #222; box-shadow: inset 0 0 8px rgba(0,0,0,0.03);
+        }
+        .solution-heading { font-weight: bold; color: #2e7d32; margin-bottom: 8px; text-transform: uppercase; font-size: 10pt; letter-spacing: 0.5px;}
+        .solution-content p { margin: 6px 0; line-height: 1.6; }
+        .math-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 10px 0; margin: 10px 0; border-radius: 4px; }
+        .diagram-desc { width: 100%; max-width: 500px; border: 2px dashed #81c784; padding: 15px; background: #e8f5e9; color: #2e7d32; margin: 15px 0; border-radius: 6px; font-size: 10.5pt; text-align: left; }
+        .diagram-desc strong { color: #1b5e20; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; box-shadow: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; gap: 5px; }
+            .exam-details span { border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+            .exam-details span:last-child { border-bottom: none; }
+            .solution-box { padding: 10px; font-size: 10.5pt; }
+        }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .solution-box { page-break-inside: avoid; border-left-color: #4CAF50 !important; background-color: #f9f9f9 !important; }
+            .question-container { border-bottom: none; margin-bottom: 15px;}
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS - Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A SOLUTIONS (10 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">1.</div>
+                <div class="q-text">Define the terms (a) Optical Centre, and (b) Principal Axis in reference to a spherical lens.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>(a) Optical Centre (1 Mark):</strong> It is a fixed point located on the principal axis of a thin lens such that any ray of light directed towards it passes through the lens undeviated (without any shift in its path).</p>
+                <p><strong>(b) Principal Axis (1 Mark):</strong> It is an imaginary straight line joining the centres of curvature of the two spherical surfaces that form the lens.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">2.</div>
+                <div class="q-text">What is a lens? Name the two main types of spherical lenses.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Lens (1 Mark):</strong> A lens is a transparent refracting medium bounded by two surfaces, out of which at least one surface is spherical.</p>
+                <p><strong>Types (1 Mark):</strong> The two main types of spherical lenses are: <br>1. Convex (or converging) lens <br>2. Concave (or diverging) lens.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">3.</div>
+                <div class="q-text">State the specific condition when a ray of light passes undeviated through a thin spherical lens.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Condition (2 Marks):</strong> A ray of light passes undeviated through a thin lens when the incident ray is directed exactly towards the <strong>Optical Centre</strong> of the lens.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">4.</div>
+                <div class="q-text">Define the term 'aperture' of a lens. How does the brightness (intensity) of an image depend on the aperture of the lens?</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Aperture (1 Mark):</strong> The effective diameter of the circular outline of a spherical lens is called its aperture. It represents the area of the lens exposed to the incident light.</p>
+                <p><strong>Intensity Relation (1 Mark):</strong> The brightness or intensity of the image formed is directly proportional to the square of the aperture. A lens with a larger aperture allows more light rays to pass through, resulting in a brighter image.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">5.</div>
+                <div class="q-text">A ray of light passes through the first principal focus (\(F_1\)) of a convex lens. What will be its path after refraction? State the rule.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Path after refraction (2 Marks):</strong> After refraction through the convex lens, the light ray will emerge <strong>parallel to the principal axis</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B SOLUTIONS (15 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">6.</div>
+                <div class="q-text">Draw a neat labelled diagram to show the action of a convex lens on an incident parallel beam of light. Clearly mark the optical centre, principal axis, and principal focus.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><em>(2 marks for correct ray diagram showing convergence, 1 mark for correct labels)</em></p>
+                <div class="diagram-desc">
+                    <strong>Diagram Requirements:</strong><br>
+                    1. Draw a convex lens with a straight line passing through the middle (Principal Axis).<br>
+                    2. Mark Optical Centre (O) in the exact middle of the lens.<br>
+                    3. Draw 2-3 incident rays parallel to the principal axis from the left side. <br>
+                    4. After refraction (bending at the central axis of the lens), show all rays converging and intersecting at a single point on the principal axis on the right side.<br>
+                    5. Label this point of intersection as Second Principal Focus (\(F_2\)). Indicate arrows on all rays!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">7.</div>
+                <div class="q-text">State the three standard rules used for drawing ray diagrams to locate the formation of an image by a concave lens.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><em>(1 mark for each correct rule)</em></p>
+                <p><strong>Rule 1:</strong> An incident ray parallel to the principal axis, after refraction through a concave lens, appears to diverge from the second principal focus (\(F_2\)) located on the same side as the object.</p>
+                <p><strong>Rule 2:</strong> An incident ray directed towards the first principal focus (\(F_1\)) of a concave lens emerges parallel to the principal axis after refraction.</p>
+                <p><strong>Rule 3:</strong> An incident ray passing through the optical centre (O) of the concave lens goes straight and emerges without any deviation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">8.</div>
+                <div class="q-text">Differentiate between a convex lens and a concave lens on the basis of: (a) action on a parallel beam of light, (b) nature of images formed, and (c) physical shape.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <table style="width:100%; border-collapse: collapse; margin-top: 10px;" border="1">
+                    <tr style="background-color: #e8f5e9;">
+                        <th style="padding: 8px;">Basis of Difference</th>
+                        <th style="padding: 8px;">Convex Lens</th>
+                        <th style="padding: 8px;">Concave Lens</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;"><strong>(a) Action on Light</strong></td>
+                        <td style="padding: 8px;">It converges a parallel beam of light.</td>
+                        <td style="padding: 8px;">It diverges a parallel beam of light.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;"><strong>(b) Image formed</strong></td>
+                        <td style="padding: 8px;">Can form real & inverted as well as virtual & erect images.</td>
+                        <td style="padding: 8px;">Always forms virtual, erect, and diminished images.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;"><strong>(c) Physical Shape</strong></td>
+                        <td style="padding: 8px;">Thick in the middle and thin at the edges.</td>
+                        <td style="padding: 8px;">Thin in the middle and thick at the edges.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">9.</div>
+                <div class="q-text">Define the first principal focus (\(F_1\)) of a convex lens. Draw an accurate ray diagram to illustrate your definition.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Definition (1.5 Marks):</strong> The first principal focus (\(F_1\)) of a convex lens is a specific point on the principal axis such that divergent rays of light starting from this point become parallel to the principal axis after refraction through the lens.</p>
+                <div class="diagram-desc">
+                    <strong>Diagram Requirements (1.5 Marks):</strong><br>
+                    Draw a point \(F_1\) on the principal axis on the left side of a convex lens. Draw diverging incident rays starting from \(F_1\) hitting the lens. After passing through the vertical midline of the lens, draw the refracted rays completely horizontal and parallel to the principal axis.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">10.</div>
+                <div class="q-text">Explain theoretically why a convex lens is referred to as a converging lens while a concave lens is known as a diverging lens. (Hint: Prism action of lens)</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>Explanation (3 Marks):</strong> Any spherical lens can be considered to be made up of a large number of extremely small prisms. <br>
+                - In a <strong>convex lens</strong>, the bases of all these constituent prisms are directed towards the central principal axis. Since a prism always bends a ray of light towards its base, the convex lens bends incident parallel rays inwards, bringing them to a point (converging action).<br>
+                - In a <strong>concave lens</strong>, the bases of the constituent prisms are directed outwards (away from the principal axis). Therefore, it bends incident parallel rays outwards, spreading them apart (diverging action).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C SOLUTIONS (25 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">11.</div>
+                <div class="q-text">
+                    (a) Name the two key factors on which the focal length of a spherical lens depends. <br>
+                    (b) A convex lens made of glass is immersed completely in water. What happens to its focal length? State the scientific reason for your answer.
+                </div>
+            </div>
+            <div class="q-marks">[2+3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>(a) Factors (2 Marks):</strong> The focal length of a lens depends on:<br>
+                1. The refractive index (\(\mu\)) of the material of the lens relative to its surrounding medium.<br>
+                2. The radii of curvature (\(R_1\) and \(R_2\)) of the two spherical surfaces of the lens.</p>
+                <p><strong>(b) Effect of Water (3 Marks):</strong> When a convex lens is completely immersed in water, its focal length <strong>increases</strong>.</p>
+                <p><strong>Reason:</strong> The focal length (\(f\)) of a lens is inversely proportional to \((\mu - 1)\), where \(\mu\) is the relative refractive index. The refractive index of glass with respect to water (\( _w\mu_g \)) is less than the refractive index of glass with respect to air (\( _a\mu_g \)).</p>
+                <div class="math-container">
+                    \[ \text{Since } _w\mu_g < _a\mu_g \]
+                    \[ \text{The value of } (\mu - 1) \text{ decreases in water.} \]
+                    \[ \text{Because } \frac{1}{f} \propto (\mu - 1), \text{ a decrease in } (\mu - 1) \text{ causes the focal length } f \text{ to increase.} \]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">12.</div>
+                <div class="q-text">Draw a highly precise ray diagram to show the formation of an image by a convex lens when a small object is placed between the optical centre (O) and the first principal focus (\(F_1\)). State the nature, position, and relative size of the image. Mention one practical application of this specific case.</div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><em>(2 marks for diagram, 2 marks for characteristics, 1 mark for application)</em></p>
+                <div class="diagram-desc">
+                    <strong>Diagram Requirements:</strong><br>
+                    Object AB placed between Optical Centre (O) and Focus (\(F_1\)) of a convex lens.<br>
+                    Ray 1: Parallel to principal axis, passes through \(F_2\).<br>
+                    Ray 2: Passes through optical centre (O) undeviated.<br>
+                    These refracted rays diverge on the right side. Produce them backward (using dashed lines) to intersect on the left side (same side as object) forming a larger image A'B'.
+                </div>
+                <p><strong>Characteristics of the Image:</strong></p>
+                <ul>
+                    <li><strong>Nature:</strong> Virtual and Erect</li>
+                    <li><strong>Position:</strong> On the same side of the lens as the object (behind the object).</li>
+                    <li><strong>Size:</strong> Magnified (larger than the object).</li>
+                </ul>
+                <p><strong>Application:</strong> This principle is used in a <strong>Magnifying Glass (Simple Microscope)</strong>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">13.</div>
+                <div class="q-text">An object is placed precisely at a distance of \(2F_1\) in front of a convex lens. Draw the corresponding ray diagram to determine the exact position of the image. List out all the characteristics (nature, position, and size) of the image formed.</div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><em>(2.5 marks for accurate ray diagram, 2.5 marks for characteristics)</em></p>
+                <div class="diagram-desc">
+                    <strong>Diagram Requirements:</strong><br>
+                    Draw convex lens. Mark \(F_1\), \(2F_1\) on left; \(F_2\), \(2F_2\) on right.<br>
+                    Place object exactly at \(2F_1\).<br>
+                    Ray 1: Parallel to principal axis -> passes through \(F_2\).<br>
+                    Ray 2: Passes through Optical Centre (O) -> straight line.<br>
+                    Intersection exactly at \(2F_2\) on the other side, forming an inverted image touching the principal axis.
+                </div>
+                <p><strong>Characteristics of the Image:</strong></p>
+                <ul>
+                    <li><strong>Position:</strong> Formed exactly at \(2F_2\) on the other side of the lens.</li>
+                    <li><strong>Nature:</strong> Real and Inverted.</li>
+                    <li><strong>Size:</strong> Same size as the object (Magnification \(m = -1\)).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">14.</div>
+                <div class="q-text">
+                    (a) An object is placed at infinity in front of a concave lens. Draw a ray diagram to show the image formation. <br>
+                    (b) State the characteristics of the image formed in this scenario.
+                </div>
+            </div>
+            <div class="q-marks">[3+2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>(a) Ray Diagram (3 Marks):</strong></p>
+                <div class="diagram-desc">
+                    <strong>Diagram Requirements:</strong><br>
+                    Draw a concave lens with principal axis. Object is at infinity, so draw 2-3 incident rays completely parallel to the principal axis from the left side.<br>
+                    After hitting the concave lens, the rays diverge (bend outwards).<br>
+                    Extend these diverging rays backwards using dashed lines. They must all meet exactly at the second principal focus (\(F_2\)) on the left side.
+                </div>
+                <p><strong>(b) Characteristics of Image (2 Marks):</strong></p>
+                <ul>
+                    <li><strong>Position:</strong> At the second principal focus (\(F_2\)), on the same side as the object.</li>
+                    <li><strong>Nature:</strong> Virtual and Erect.</li>
+                    <li><strong>Size:</strong> Highly diminished (point-sized).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">15.</div>
+                <div class="q-text">
+                    (a) The lower half of a convex lens is tightly covered with an opaque black paper. Will this modified lens still produce a complete image of an object placed in front of it? Justify your answer thoroughly. <br>
+                    (b) How will the physical characteristics, specifically the intensity (brightness) of the image, be affected in the above case?
+                </div>
+            </div>
+            <div class="q-marks">[3+2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-heading">Solution & Marking Scheme:</div>
+            <div class="solution-content">
+                <p><strong>(a) Completeness of Image (3 Marks):</strong><br>
+                <strong>Yes</strong>, the lens will still produce a complete image of the object. <br>
+                <strong>Justification:</strong> Image formation is not dependent on having the entire lens exposed. Every small part of the lens is capable of forming a full image. The rays of light coming from the object will still pass through the uncovered (upper) half of the lens, undergo refraction, and converge to form the complete image exactly at the same position as before.</p>
+                
+                <p><strong>(b) Effect on Intensity (2 Marks):</strong><br>
+                The intensity (brightness) of the image will be <strong>reduced (it will become halved)</strong>. <br>
+                This is because the covered opaque lower half blocks light rays. Now, only half the amount of light rays compared to the original situation pass through the lens to form the image, leading to a dimmer picture.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Prepared by Team Vardaan</div>
+</body>
+</html>

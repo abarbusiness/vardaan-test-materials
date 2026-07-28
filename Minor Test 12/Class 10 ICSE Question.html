@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering scientific notations and equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; 
+            line-height: 1.5; color: #000; background-color: white; position: relative; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #000; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 5px; 
+        }
+        .instructions { margin-top: 15px; font-size: 10.5pt; font-style: italic; text-align: left; background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #eee; padding: 5px; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none;}
+        .question-container { margin-bottom: 15px; display: flex; flex-direction: column; text-align: left;}
+        .q-header { display: flex; align-items: flex-start; justify-content: space-between; width: 100%;}
+        .q-main { display: flex; flex-grow: 1; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-text { flex-grow: 1; }
+        .q-marks { font-weight: bold; margin-left: 10px; flex-shrink: 0; white-space: nowrap; }
+        .sub-question { margin-left: 35px; margin-top: 5px; display: flex; }
+        .sq-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .sq-text { flex-grow: 1; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        .math-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; box-shadow: none; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; gap: 5px; }
+            .exam-details span { border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+            .exam-details span:last-child { border-bottom: none; }
+        }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .instructions, .section-header { background-color: #f0f0f0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> contains 5 short questions of 2 marks each. All are compulsory.</li>
+                <li><strong>Section B</strong> contains 5 moderate questions of 3 marks each. All are compulsory.</li>
+                <li><strong>Section C</strong> contains 5 detailed/diagrammatic questions of 5 marks each. All are compulsory.</li>
+                <li>Draw neat and properly labelled ray diagrams wherever necessary, indicating the direction of rays using arrows.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">1.</div>
+                <div class="q-text">Define the terms (a) Optical Centre, and (b) Principal Axis in reference to a spherical lens.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">2.</div>
+                <div class="q-text">What is a lens? Name the two main types of spherical lenses.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">3.</div>
+                <div class="q-text">State the specific condition when a ray of light passes undeviated through a thin spherical lens.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">4.</div>
+                <div class="q-text">Define the term 'aperture' of a lens. How does the brightness (intensity) of an image depend on the aperture of the lens?</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">5.</div>
+                <div class="q-text">A ray of light passes through the first principal focus (\(F_1\)) of a convex lens. What will be its path after refraction? State the rule.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">6.</div>
+                <div class="q-text">Draw a neat labelled diagram to show the action of a convex lens on an incident parallel beam of light. Clearly mark the optical centre, principal axis, and principal focus.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">7.</div>
+                <div class="q-text">State the three standard rules used for drawing ray diagrams to locate the formation of an image by a concave lens.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">8.</div>
+                <div class="q-text">Differentiate between a convex lens and a concave lens on the basis of: (a) action on a parallel beam of light, (b) nature of images formed, and (c) physical shape.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">9.</div>
+                <div class="q-text">Define the first principal focus (\(F_1\)) of a convex lens. Draw an accurate ray diagram to illustrate your definition.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">10.</div>
+                <div class="q-text">Explain theoretically why a convex lens is referred to as a converging lens while a concave lens is known as a diverging lens. (Hint: Prism action of lens)</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">11.</div>
+                <div class="q-text">
+                    (a) Name the two key factors on which the focal length of a spherical lens depends. <br>
+                    (b) A convex lens made of glass is immersed completely in water. What happens to its focal length? State the scientific reason for your answer.
+                </div>
+            </div>
+            <div class="q-marks">[2+3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">12.</div>
+                <div class="q-text">Draw a highly precise ray diagram to show the formation of an image by a convex lens when a small object is placed between the optical centre (O) and the first principal focus (\(F_1\)). State the nature, position, and relative size of the image. Mention one practical application of this specific case.</div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">13.</div>
+                <div class="q-text">An object is placed precisely at a distance of \(2F_1\) in front of a convex lens. Draw the corresponding ray diagram to determine the exact position of the image. List out all the characteristics (nature, position, and size) of the image formed.</div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">14.</div>
+                <div class="q-text">
+                    (a) An object is placed at infinity in front of a concave lens. Draw a ray diagram to show the image formation. <br>
+                    (b) State the characteristics of the image formed in this scenario.
+                </div>
+            </div>
+            <div class="q-marks">[3+2]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-main">
+                <div class="q-num">15.</div>
+                <div class="q-text">
+                    (a) The lower half of a convex lens is tightly covered with an opaque black paper. Will this modified lens still produce a complete image of an object placed in front of it? Justify your answer thoroughly. <br>
+                    (b) How will the physical characteristics, specifically the intensity (brightness) of the image, be affected in the above case?
+                </div>
+            </div>
+            <div class="q-marks">[3+2]</div>
+        </div>
+    </div>
+
+    <div class="footer">Prepared by Team Vardaan</div>
+</body>
+</html>

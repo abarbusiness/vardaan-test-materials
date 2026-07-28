@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; opacity: 0.12; 
+            z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; justify-content: space-between; 
+            margin-top: 15px; font-weight: bold; font-size: 11pt; 
+            border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        .math-scroll { overflow-x: auto; overflow-y: hidden; }
+
+        @media screen and (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+        }
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 20pt; }
+            .exam-details { flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+            .exam-details span { flex-basis: 45%; }
+            .watermark { width: 95%; }
+        }
+        @media screen and (max-width: 480px) {
+            .institute-name { font-size: 16pt; }
+            .exam-details span { flex-basis: 100%; text-align: center; }
+            .q-num { width: 30px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly showing necessary working.</li>
+                <li>Topic: Ratio and Proportion (Level: Easy).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Express the ratio \( 45 : 108 \) in its simplest form.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Find the ratio of \( 40 \) cm to \( 1.2 \) m.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Check whether the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Divide ₹ \( 150 \) between Amit and Sumit in the ratio \( 2 : 3 \).</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Define 'Proportion' and write the rule relating the product of extremes and the product of means.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">The length and breadth of a rectangular field are \( 50 \) m and \( 15 \) m respectively. Find the ratio of the length to the breadth, and the breadth to the perimeter.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Find the value of \( x \) if \( 3 : x :: 12 : 20 \).</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Out of \( 40 \) students in a class, \( 16 \) are girls and the rest are boys. Find the ratio of the number of boys to the number of girls.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Two numbers are in the ratio \( 3 : 5 \). If their sum is \( 96 \), find the two numbers.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">The cost of \( 5 \) identical pens is ₹ \( 120 \). Find the cost of \( 8 \) such pens.</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">A piece of wire \( 84 \) cm long is cut into three pieces in the ratio \( 3 : 4 : 5 \). Find the length of each piece of the wire.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            In a school, there are \( 3200 \) students. If the ratio of boys to girls is \( 5 : 3 \), find:
+            <div class="sub-question">(i) the total number of boys in the school.</div>
+            <div class="sub-question">(ii) the total number of girls in the school.</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">The present ages of A and B are in the ratio \( 7 : 9 \). If the sum of their ages is \( 48 \) years, what are their actual ages? What will be the ratio of their ages after \( 3 \) years?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Are \( 30, 40, 45, \) and \( 60 \) in proportion? Show your working.</div>
+            <div class="sub-question">(b) The first, second, and fourth terms of a proportion are \( 12, 21, \) and \( 14 \) respectively. Find the third term.</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            In a mixture of \( 60 \) liters, the ratio of milk to water is \( 2 : 1 \).
+            <div class="sub-question">(i) How many liters of milk and water are present in the mixture initially?</div>
+            <div class="sub-question">(ii) If \( 10 \) liters of water is added to the mixture, what will be the new ratio of milk to water?</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 12</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                font-size: 11pt; 
+            }
+            .header .institute-name { font-size: 18pt; }
+            .header .test-name { font-size: 12pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: flex-start; 
+                gap: 5px; 
+            }
+            .question-container { 
+                display: block; 
+            }
+            .q-num { 
+                display: inline-block; 
+                margin-right: 5px; 
+                width: auto;
+            }
+            .q-content { 
+                display: inline; 
+            }
+            .sub-question { 
+                margin-left: 10px; 
+                display: block;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 9 ICSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working for numericals clearly.</li>
+                <li>Assume \( g = 10 \text{ m s}^{-2} \) and density of water = \( 1000 \text{ kg m}^{-3} \) or \( 1 \text{ g cm}^{-3} \) unless otherwise stated.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define upthrust (buoyant force). State its SI unit.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">State Archimedes' Principle.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">A piece of stone weighs \( 50 \text{ N} \) in air and \( 38 \text{ N} \) when completely immersed in water. Calculate the upthrust acting on the stone.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Why does a block of wood held below the surface of water rise to the surface when released?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">State the two fundamental conditions necessary for a body to float equilibrium in a liquid.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Explain scientifically why a small iron nail sinks in water, but a massive iron ship floats on it.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Define Relative Density. Express the formula for Relative Density in terms of the weight of the solid in air and its weight in water. Why does it have no unit?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">A solid metallic block of volume \( 150 \text{ cm}^3 \) is completely immersed in water. Calculate the upthrust acting on the block.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">What is a Plimsoll line? Why are different lines marked on the hull of a ship for different water conditions (e.g., fresh water vs. sea water)?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A solid body floats in water with one-third \( (\frac{1}{3}) \) of its volume outside the water surface. Calculate the density of the material of the body in SI units.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer / Numerical Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            (a) Derive the mathematical expression for the upthrust \( (F_B = V \rho g) \) acting on a body completely immersed in a liquid of density \( \rho \). (3)<br>
+            (b) How does the upthrust acting on a submerged body change when the temperature of the fluid is increased? Give a reason for your answer. (2)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            (a) State the Principle of Floatation. (2)<br>
+            (b) An iceberg floats in sea water. The density of ice is \( 0.92 \text{ g cm}^{-3} \) and the density of sea water is \( 1.025 \text{ g cm}^{-3} \). Determine the percentage of the iceberg's volume that remains submerged underwater. (3)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A piece of brass weighs \( 175 \text{ gf} \) in air and \( 150 \text{ gf} \) when completely immersed in water. Calculate:<br>
+            <div class="sub-question">(i) The volume of the brass piece. (2)</div>
+            <div class="sub-question">(ii) The density of the brass piece. (2)</div>
+            <div class="sub-question">(iii) Its apparent weight when immersed in a liquid of density \( 0.8 \text{ g cm}^{-3} \). (1)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

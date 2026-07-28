@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b30000; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(9pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+            background-color: #f9f9f9;
+        }
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #eee; padding: 5px; }
+        
+        .qa-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-box { background-color: #f0f7ff; padding: 10px; border-left: 4px solid #0056b3; margin-bottom: 10px; font-weight: bold; }
+        .solution-box { padding: 10px; display: flex; flex-direction: column; }
+        
+        .sol-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .sol-title { font-weight: bold; color: #2e7d32; text-decoration: underline;}
+        .marks-box { font-weight: bold; color: #b30000; background-color: #ffeaea; padding: 4px 8px; border-radius: 4px; border: 1px solid #ffcaca; font-size: 10pt;}
+        
+        .step { margin-bottom: 8px; }
+        .final-answer { font-weight: bold; color: #000; background: #e8f5e9; padding: 5px 10px; border-left: 4px solid #2e7d32; display: inline-block; margin-top: 5px;}
+        
+        .math-scroll { overflow-x: auto; overflow-y: hidden; padding: 5px 0; }
+        .sub-part { margin-left: 20px; margin-top: 10px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+        @media (max-width: 600px) {
+            .exam-details { flex-direction: column; text-align: center; }
+            .sol-header { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 12 - DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Chapter: Exponents</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            Q1. Identify the base and the exponent for the following: <br>
+            (i) \( (-3)^5 \) &nbsp;&nbsp;&nbsp; (ii) \( \left(\frac{2}{5}\right)^4 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[2 Marks]</span>
+            </div>
+            <div class="step">
+                <strong>(i) For \( (-3)^5 \):</strong><br>
+                Base = -3 <span style="color: gray;">[0.5 Mark]</span><br>
+                Exponent (Power) = 5 <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                <strong>(ii) For \( \left(\frac{2}{5}\right)^4 \):</strong><br>
+                Base = \( \frac{2}{5} \) <span style="color: gray;">[0.5 Mark]</span><br>
+                Exponent (Power) = 4 <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q2. Express the following in its exponential form: \( p \times p \times p \times q \times q \times r \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[2 Marks]</span>
+            </div>
+            <div class="step">
+                Group the same bases together:<br>
+                \( (p \times p \times p) \times (q \times q) \times r \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Apply exponents to represent repeated multiplication:<br>
+                <div class="final-answer">= \( p^3 \times q^2 \times r^1 \)  or \( p^3q^2r \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q3. Find the numerical value of: \( 2^3 \times 3^2 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[2 Marks]</span>
+            </div>
+            <div class="step">
+                Expand the exponential forms:<br>
+                \( 2^3 = 2 \times 2 \times 2 = 8 \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                \( 3^2 = 3 \times 3 = 9 \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                Multiply the values together:<br>
+                \( 8 \times 9 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">= 72</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q4. Evaluate the following expression: \( (-1)^{15} + (-1)^{20} \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[2 Marks]</span>
+            </div>
+            <div class="step">
+                We know that negative base to an <strong>odd</strong> power results in a negative value.<br>
+                \( (-1)^{15} = -1 \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                Negative base to an <strong>even</strong> power results in a positive value.<br>
+                \( (-1)^{20} = 1 \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                Adding them together:<br>
+                \( -1 + 1 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">= 0</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q5. Simplify and state the final answer: \( 5^0 \times 4^0 \times 3^0 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[2 Marks]</span>
+            </div>
+            <div class="step">
+                By the law of zero exponent, any non-zero number raised to the power of 0 is 1. \( (a^0 = 1) \)
+            </div>
+            <div class="step">
+                Therefore:<br>
+                \( 5^0 = 1 \)<br>
+                \( 4^0 = 1 \)<br>
+                \( 3^0 = 1 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Expression becomes:<br>
+                \( 1 \times 1 \times 1 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">= 1</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q6. Express \( 72 \) as a product of its prime factors in exponential form.
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[3 Marks]</span>
+            </div>
+            <div class="step">
+                Perform prime factorization of 72:<br>
+                \( 72 = 2 \times 36 \)<br>
+                \( = 2 \times 2 \times 18 \)<br>
+                \( = 2 \times 2 \times 2 \times 9 \)<br>
+                \( = 2 \times 2 \times 2 \times 3 \times 3 \) <span style="color: gray;">[1.5 Marks]</span>
+            </div>
+            <div class="step">
+                Group identical prime factors:<br>
+                Base 2 appears 3 times.<br>
+                Base 3 appears 2 times. <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                <div class="final-answer">= \( 2^3 \times 3^2 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q7. Simplify the following using laws of exponents and express the result in exponential form: \( (3^4 \times 3^5) \div 3^7 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[3 Marks]</span>
+            </div>
+            <div class="step">
+                First, solve the bracket using the product law of exponents: \( a^m \times a^n = a^{m+n} \)<br>
+                \( (3^4 \times 3^5) = 3^{4+5} = 3^9 \) <span style="color: gray;">[1.5 Marks]</span>
+            </div>
+            <div class="step">
+                Now substitute back into the expression:<br>
+                \( 3^9 \div 3^7 \)
+            </div>
+            <div class="step">
+                Use the quotient law of exponents: \( a^m \div a^n = a^{m-n} \) (where \( m > n \))<br>
+                \( = 3^{9-7} \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                <div class="final-answer">= \( 3^2 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q8. Which is greater: \( 2^3 \) or \( 3^2 \)? Show your working clearly.
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[3 Marks]</span>
+            </div>
+            <div class="step">
+                Calculate the value of both expressions.<br>
+                Value of \( 2^3 \):<br>
+                \( 2^3 = 2 \times 2 \times 2 = 8 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Value of \( 3^2 \):<br>
+                \( 3^2 = 3 \times 3 = 9 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Comparing the values:<br>
+                Since \( 9 > 8 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">Therefore, \( 3^2 \) is greater than \( 2^3 \).</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q9. Simplify using laws of exponents: \( (2^3)^4 \times 2^5 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[3 Marks]</span>
+            </div>
+            <div class="step">
+                First, use the power of a power law: \( (a^m)^n = a^{m \times n} \)<br>
+                \( (2^3)^4 = 2^{3 \times 4} = 2^{12} \) <span style="color: gray;">[1.5 Marks]</span>
+            </div>
+            <div class="step">
+                Now multiply this result by the remaining term:<br>
+                \( 2^{12} \times 2^5 \)
+            </div>
+            <div class="step">
+                Use the product law: \( a^m \times a^n = a^{m+n} \)<br>
+                \( = 2^{12+5} \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                <div class="final-answer">= \( 2^{17} \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q10. Express \( 343 \) as a power with base 7.
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[3 Marks]</span>
+            </div>
+            <div class="step">
+                Find the prime factorization of 343 by repeatedly dividing by 7.<br>
+                \( 343 \div 7 = 49 \) <span style="color: gray;">[1 Mark]</span><br>
+                \( 49 \div 7 = 7 \) <span style="color: gray;">[1 Mark]</span><br>
+                \( 7 \div 7 = 1 \)
+            </div>
+            <div class="step">
+                So, \( 343 = 7 \times 7 \times 7 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">= \( 7^3 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q11. Simplify and express the result in exponential form using laws of exponents:
+            <div class="math-scroll">\[ \frac{2^5 \times 3^4 \times 5^3}{2^3 \times 3^2 \times 5} \]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[5 Marks]</span>
+            </div>
+            <div class="step">
+                Separate the terms with the same base to apply quotient laws:<br>
+                \( \left( \frac{2^5}{2^3} \right) \times \left( \frac{3^4}{3^2} \right) \times \left( \frac{5^3}{5^1} \right) \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Apply quotient law \( a^m \div a^n = a^{m-n} \) for each base:
+            </div>
+            <div class="step">
+                For base 2: \( 2^{5-3} = 2^2 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                For base 3: \( 3^{4-2} = 3^2 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                For base 5: \( 5^{3-1} = 5^2 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Combine the simplified bases:<br>
+                <div class="final-answer">= \( 2^2 \times 3^2 \times 5^2 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q12. If \( 2^n = 128 \), find the value of \( n \). Hence, find the value of \( 2^{n-2} \).
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[5 Marks]</span>
+            </div>
+            <div class="step">
+                <strong>Part 1: Finding \( n \)</strong><br>
+                Express 128 as a power of 2 using prime factorization.<br>
+                \( 128 = 2 \times 64 = 2 \times 2 \times 32 = 2 \times 2 \times 2 \times 16 \) ...<br>
+                \( 128 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 = 2^7 \) <span style="color: gray;">[2 Marks]</span>
+            </div>
+            <div class="step">
+                Equating the exponents since the bases are identical:<br>
+                \( 2^n = 2^7 \)<br>
+                <div class="final-answer">\( n = 7 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step" style="margin-top: 15px;">
+                <strong>Part 2: Finding \( 2^{n-2} \)</strong><br>
+                Substitute the value of \( n = 7 \) into the expression:<br>
+                \( 2^{7-2} \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                \( = 2^5 \)<br>
+                \( = 2 \times 2 \times 2 \times 2 \times 2 \)
+            </div>
+            <div class="step">
+                <div class="final-answer">= 32</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q13. Evaluate the following fractions: <br>
+            (i) \( (-2)^3 \times (-3)^2 \) &nbsp;&nbsp;&nbsp; (ii) \( \left(\frac{1}{2}\right)^3 \times \left(\frac{2}{3}\right)^2 \)
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[5 Marks]</span>
+            </div>
+            <div class="step">
+                <strong>(i) Evaluate \( (-2)^3 \times (-3)^2 \)</strong> <span style="color: gray;">[2.5 Marks]</span>
+            </div>
+            <div class="step sub-part">
+                \( (-2)^3 = -2 \times -2 \times -2 = -8 \) <span style="color: gray;">[1 Mark]</span><br>
+                \( (-3)^2 = -3 \times -3 = 9 \) <span style="color: gray;">[0.5 Mark]</span><br>
+                Multiply the results: \( -8 \times 9 \)<br>
+                <div class="final-answer">= -72</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+            
+            <div class="step" style="margin-top: 15px;">
+                <strong>(ii) Evaluate \( \left(\frac{1}{2}\right)^3 \times \left(\frac{2}{3}\right)^2 \)</strong> <span style="color: gray;">[2.5 Marks]</span>
+            </div>
+            <div class="step sub-part">
+                \( \left(\frac{1}{2}\right)^3 = \frac{1^3}{2^3} = \frac{1}{8} \) <span style="color: gray;">[1 Mark]</span><br>
+                \( \left(\frac{2}{3}\right)^2 = \frac{2^2}{3^2} = \frac{4}{9} \) <span style="color: gray;">[0.5 Mark]</span><br>
+                Multiply the fractions: \( \frac{1}{8} \times \frac{4}{9} \)<br>
+                Simplify: \( \frac{1 \times 4}{8 \times 9} = \frac{4}{72} = \frac{1}{18} \)<br>
+                <div class="final-answer">= \( \frac{1}{18} \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q14. Simplify using laws of exponents:
+            <div class="math-scroll">\[ \frac{a^4 \times b^3 \times c^5}{a^2 \times b \times c^3} \]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[5 Marks]</span>
+            </div>
+            <div class="step">
+                Group similar variables together to apply the quotient law \( x^m \div x^n = x^{m-n} \):<br>
+                <div class="math-scroll">\( \left( \frac{a^4}{a^2} \right) \times \left( \frac{b^3}{b^1} \right) \times \left( \frac{c^5}{c^3} \right) \)</div> <span style="color: gray;">[1.5 Marks]</span>
+            </div>
+            <div class="step">
+                Apply law for base \( a \):<br>
+                \( a^{4-2} = a^2 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Apply law for base \( b \): (Note that \( b = b^1 \))<br>
+                \( b^{3-1} = b^2 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Apply law for base \( c \):<br>
+                \( c^{5-3} = c^2 \) <span style="color: gray;">[0.5 Mark]</span>
+            </div>
+            <div class="step">
+                Combine the simplified parts:<br>
+                <div class="final-answer">= \( a^2 b^2 c^2 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            Q15. Find the value of \( x \) if:
+            <div class="math-scroll">\[ 7^{2x+1} = 7^3 \times 7^2 \]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-header">
+                <span class="sol-title">Solution:</span>
+                <span class="marks-box">[5 Marks]</span>
+            </div>
+            <div class="step">
+                First, simplify the right hand side (RHS) of the equation using the product law \( a^m \times a^n = a^{m+n} \):
+            </div>
+            <div class="step">
+                RHS = \( 7^3 \times 7^2 = 7^{3+2} = 7^5 \) <span style="color: gray;">[2 Marks]</span>
+            </div>
+            <div class="step">
+                Now, the equation becomes:<br>
+                \( 7^{2x+1} = 7^5 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Since the bases are identical on both sides of the equation, we can equate their exponents:<br>
+                \( 2x + 1 = 5 \) <span style="color: gray;">[1 Mark]</span>
+            </div>
+            <div class="step">
+                Solve the linear equation for \( x \):<br>
+                \( 2x = 5 - 1 \)<br>
+                \( 2x = 4 \)<br>
+                \( x = \frac{4}{2} \)
+            </div>
+            <div class="step">
+                <div class="final-answer">\( x = 2 \)</div> <span style="color: gray;">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

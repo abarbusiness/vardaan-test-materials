@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.10; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(9pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+        .instructions { margin-top: 15px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 4px; text-decoration: none;}
+        
+        .question-container { margin-bottom: 20px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; word-wrap: break-word; overflow-wrap: break-word;}
+        .sub-question { margin-left: 15px; margin-top: 8px; display: flex;}
+        
+        /* Responsive equation scrolling for mobile */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; padding: 5px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+        @media (max-width: 600px) {
+            .exam-details { flex-direction: column; text-align: center; }
+            .question-container { flex-direction: column; }
+            .q-num { margin-bottom: 5px; }
+            .sub-question { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 12</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show all working steps clearly.</li>
+                <li>Use of calculators is strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Identify the base and the exponent for the following:
+            <div class="sub-question">
+                <div class="q-num">(i)</div>
+                <div class="q-content">\( (-3)^5 \)</div>
+            </div>
+            <div class="sub-question">
+                <div class="q-num">(ii)</div>
+                <div class="q-content">\( \left(\frac{2}{5}\right)^4 \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Express the following in its exponential form: 
+            <div class="math-scroll">\( p \times p \times p \times q \times q \times r \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Find the numerical value of:
+            <div class="math-scroll">\( 2^3 \times 3^2 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Evaluate the following expression:
+            <div class="math-scroll">\( (-1)^{15} + (-1)^{20} \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Simplify and state the final answer:
+            <div class="math-scroll">\( 5^0 \times 4^0 \times 3^0 \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Express \( 72 \) as a product of its prime factors in exponential form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Simplify the following using laws of exponents and express the result in exponential form:
+            <div class="math-scroll">\( (3^4 \times 3^5) \div 3^7 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Which is greater: \( 2^3 \) or \( 3^2 \)? Show your working clearly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Simplify using laws of exponents:
+            <div class="math-scroll">\( (2^3)^4 \times 2^5 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Express \( 343 \) as a power with base 7.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Simplify and express the result in exponential form using laws of exponents:
+            <div class="math-scroll">
+                \[ \frac{2^5 \times 3^4 \times 5^3}{2^3 \times 3^2 \times 5} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            If \( 2^n = 128 \), find the value of \( n \). Hence, find the value of \( 2^{n-2} \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Evaluate the following fractions:
+            <div class="sub-question">
+                <div class="q-num">(i)</div>
+                <div class="q-content">\( (-2)^3 \times (-3)^2 \)</div>
+            </div>
+            <div class="sub-question">
+                <div class="q-num">(ii)</div>
+                <div class="q-content">\( \left(\frac{1}{2}\right)^3 \times \left(\frac{2}{3}\right)^2 \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Simplify using laws of exponents:
+            <div class="math-scroll">
+                \[ \frac{a^4 \times b^3 \times c^5}{a^2 \times b \times c^3} \]
+            </div>
+            (Where \( a, b, c \) are non-zero integers)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Find the value of \( x \) if:
+            <div class="math-scroll">
+                \[ 7^{2x+1} = 7^3 \times 7^2 \]
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

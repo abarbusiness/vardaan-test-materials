@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #333;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 20px; 
+            font-size: 13pt; 
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .solution-container { 
+            margin-bottom: 25px; 
+            padding-bottom: 20px; 
+            border-bottom: 1px dashed #aaa; 
+            page-break-inside: avoid;
+        }
+        .q-row { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            background-color: #fcfcfc;
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 3px solid #555;
+            margin-bottom: 10px;
+        }
+        .q-text { 
+            flex-grow: 1; 
+            padding-right: 15px; 
+            font-weight: bold; 
+        }
+        .q-marks { 
+            font-weight: bold; 
+            white-space: nowrap; 
+            color: #d32f2f;
+        }
+        .ans-text { 
+            margin-top: 10px; 
+            padding-left: 12px; 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 10px; 
+                font-size: 10.5pt; 
+            }
+            .header .institute-name { font-size: 16pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: flex-start; 
+                gap: 5px; 
+                font-size: 10pt;
+            }
+            .q-row { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; font-size: 10pt; }
+            .ans-text { padding-left: 0; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .solution-container { border-bottom: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 9 ICSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q1. Define upthrust (buoyant force). State its SI unit.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            The upward force exerted by a fluid (liquid or gas) on a body when it is partially or completely immersed in it is called upthrust or buoyant force. <br>
+            <strong>SI Unit:</strong> The SI unit of upthrust is the <strong>Newton (N)</strong>.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q2. State Archimedes' Principle.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            Archimedes' Principle states that when a body is partially or completely immersed in a fluid at rest, it experiences an upward thrust (buoyant force) which is equal to the weight of the fluid displaced by the immersed part of the body.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q3. A piece of stone weighs \( 50 \text{ N} \) in air and \( 38 \text{ N} \) when completely immersed in water. Calculate the upthrust.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            Given:<br>
+            Weight of stone in air \( (W_1) = 50 \text{ N} \)<br>
+            Weight of stone in water \( (W_2) = 38 \text{ N} \)<br>
+            <div class="math-scroll">
+            $$ 
+            \begin{aligned}
+            \text{Upthrust } (F_B) &= \text{Loss in weight} \\
+            &= W_1 - W_2 \\
+            &= 50 \text{ N} - 38 \text{ N} \\
+            &= 12 \text{ N}
+            \end{aligned} 
+            $$
+            </div>
+            <strong>Answer:</strong> The upthrust acting on the stone is 12 N.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q4. Why does a block of wood held below the surface of water rise to the surface when released?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            The density of wood is less than the density of water. When held underwater, the upthrust (buoyant force) exerted by the displaced water is greater than the true weight of the wood block acting downwards. This net upward force pushes the block to the surface when released.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q5. State the two fundamental conditions necessary for a body to float equilibrium in a liquid.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            1. The weight of the floating body must be equal to the upthrust (or weight of the liquid displaced by its immersed part). i.e., \( W = F_B \).<br>
+            2. The centre of gravity of the body and the centre of buoyancy of the displaced liquid must lie on the same vertical line.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q6. Explain scientifically why a small iron nail sinks in water, but a massive iron ship floats on it.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            An iron nail is solid, so its overall average density is greater than the density of water (\( \rho_{iron} > \rho_{water} \)). The weight of the water displaced by the nail is less than its own weight, so the net downward force causes it to sink.<br><br>
+            A ship, though made of iron, is hollow inside and contains a large volume of air. This makes the <strong>average density</strong> of the ship less than the density of water. When placed in water, it displaces a large volume of water. The upthrust provided by this displaced water becomes equal to the total weight of the ship, satisfying the law of floatation, thereby allowing it to float.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q7. Define Relative Density. Express the formula for Relative Density in terms of the weight of the solid. Why does it have no unit?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            <strong>Definition:</strong> Relative density of a substance is defined as the ratio of the density of the substance to the density of water at 4°C.<br>
+            <strong>Formula:</strong> By Archimedes' principle, Relative Density can be expressed as:
+            <div class="math-scroll">
+            $$ \text{R.D.} = \frac{\text{Weight of solid in air}}{\text{Weight of solid in air} - \text{Weight of solid in water}} $$
+            </div>
+            <strong>Reason for no unit:</strong> It is a pure ratio of two similar physical quantities (densities or weights). Hence, the units cancel out, leaving it dimensionless.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q8. A solid metallic block of volume \( 150 \text{ cm}^3 \) is completely immersed in water. Calculate the upthrust acting on the block.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            Given:<br>
+            Volume of the block, \( V = 150 \text{ cm}^3 \)<br>
+            <div class="math-scroll">
+            $$ V = 150 \times 10^{-6} \text{ m}^3 = 1.5 \times 10^{-4} \text{ m}^3 $$
+            </div>
+            Density of water, \( \rho = 1000 \text{ kg m}^{-3} \)<br>
+            Acceleration due to gravity, \( g = 10 \text{ m s}^{-2} \)<br>
+            <div class="math-scroll">
+            $$ 
+            \begin{aligned}
+            \text{Upthrust } (F_B) &= V \cdot \rho \cdot g \\
+            &= (1.5 \times 10^{-4}) \times 1000 \times 10 \\
+            &= 1.5 \times 10^{-4} \times 10^4 \\
+            &= 1.5 \text{ N}
+            \end{aligned} 
+            $$
+            </div>
+            <strong>Answer:</strong> The upthrust on the block is 1.5 N.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q9. What is a Plimsoll line? Why are different lines marked on the hull of a ship for different water conditions?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            A <strong>Plimsoll line</strong> is a reference mark located on a ship's hull that indicates the maximum safe depth to which the vessel may be loaded safely.<br><br>
+            <strong>Reason for multiple lines:</strong> The density of water varies in different environments (e.g., fresh water is less dense than sea water; warm water is less dense than cold water). Because upthrust depends on the density of the fluid \( (F_B = V\rho g) \), a ship will sink deeper in fresh/warm water than in cold sea water to displace the same weight of fluid. Therefore, different lines are marked to ensure safe loading limits across various water densities.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q10. A solid body floats in water with one-third \( (\frac{1}{3}) \) of its volume outside the water surface. Calculate the density of the material in SI units.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            Let the total volume of the body be \( V \).<br>
+            Volume of the body outside water = \( \frac{1}{3}V \)<br>
+            Therefore, Volume immersed in water, \( v = V - \frac{1}{3}V = \frac{2}{3}V \).<br>
+            Density of water, \( \rho_w = 1000 \text{ kg m}^{-3} \).<br>
+            By the Law of Floatation:
+            <div class="math-scroll">
+            $$ \frac{\text{Volume immersed } (v)}{\text{Total Volume } (V)} = \frac{\text{Density of solid } (\rho_s)}{\text{Density of liquid } (\rho_w)} $$
+            </div>
+            <div class="math-scroll">
+            $$ 
+            \begin{aligned}
+            \frac{\frac{2}{3}V}{V} &= \frac{\rho_s}{1000} \\
+            \frac{2}{3} &= \frac{\rho_s}{1000} \\
+            \rho_s &= \frac{2000}{3} \\
+            \rho_s &\approx 666.67 \text{ kg m}^{-3}
+            \end{aligned} 
+            $$
+            </div>
+            <strong>Answer:</strong> The density of the material is approx \( 666.67 \text{ kg m}^{-3} \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q11. (a) Derive the expression for upthrust. (b) Effect of temperature on upthrust.</div>
+            <div class="q-marks">[3 + 2 = 5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Derivation (3 Marks):</strong><br>
+            Consider a solid cylinder of cross-sectional area \( A \) and height \( h \) completely immersed in a liquid of density \( \rho \). Let the top surface be at depth \( h_1 \) and bottom surface at depth \( h_2 \) from the free surface.<br>
+            Downward pressure on top surface, \( P_1 = h_1 \rho g \)<br>
+            Downward thrust on top, \( F_1 = P_1 \cdot A = h_1 \rho g A \)<br>
+            Upward pressure on bottom surface, \( P_2 = h_2 \rho g \)<br>
+            Upward thrust on bottom, \( F_2 = P_2 \cdot A = h_2 \rho g A \)<br>
+            Since \( h_2 > h_1 \), \( F_2 > F_1 \). The net upward force is the Upthrust \( (F_B) \).
+            <div class="math-scroll">
+            $$ 
+            \begin{aligned}
+            F_B &= F_2 - F_1 \\
+            &= h_2 \rho g A - h_1 \rho g A \\
+            &= A(h_2 - h_1) \rho g
+            \end{aligned} 
+            $$
+            </div>
+            Since \( (h_2 - h_1) = h \) (height of cylinder), and \( A \times h = V \) (volume of cylinder):
+            <div class="math-scroll">
+            $$ F_B = V \rho g $$
+            </div>
+            
+            <strong>(b) Temperature Effect (2 Marks):</strong><br>
+            When the temperature of the fluid is increased, its volume increases causing its density \( (\rho) \) to decrease. Since Upthrust is directly proportional to the density of the fluid \( (F_B \propto \rho) \), <strong>the upthrust decreases</strong> with an increase in temperature.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q12. (a) Principle of Floatation. (b) Iceberg Submerged Percentage.</div>
+            <div class="q-marks">[2 + 3 = 5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Principle of Floatation (2 Marks):</strong><br>
+            It states that the weight of a floating body is equal to the weight of the liquid displaced by its submerged part.<br><br>
+            
+            <strong>(b) Numerical (3 Marks):</strong><br>
+            Density of ice, \( \rho_i = 0.92 \text{ g cm}^{-3} \)<br>
+            Density of sea water, \( \rho_w = 1.025 \text{ g cm}^{-3} \)<br>
+            Let total volume of iceberg be \( V \) and submerged volume be \( v \).<br>
+            According to the law of floatation:
+            <div class="math-scroll">
+            $$ \frac{v}{V} = \frac{\rho_i}{\rho_w} $$
+            </div>
+            <div class="math-scroll">
+            $$ 
+            \begin{aligned}
+            \frac{v}{V} &= \frac{0.92}{1.025} \\
+            &= 0.8975
+            \end{aligned} 
+            $$
+            </div>
+            Percentage submerged = \( \frac{v}{V} \times 100 \)
+            <div class="math-scroll">
+            $$ \text{Percentage} = 0.8975 \times 100 = 89.75\% $$
+            </div>
+            <strong>Answer:</strong> Approximately 89.75% of the iceberg's volume remains submerged.
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q13. Brass piece calculations: (i) Volume, (ii) Density, (iii) Apparent weight in another liquid.</div>
+            <div class="q-marks">[2 + 2 + 1 = 5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <strong>Solution:</strong><br>
+            Given:<br>
+            Weight in air, \( W_a = 175 \text{ gf} \) (Mass = 175 g)<br>
+            Weight in water, \( W_w = 150 \text{ gf} \)<br>
+            Density of water, \( \rho_w = 1 \text{ g cm}^{-3} \)<br>
+            
+            <strong>(i) Volume of brass piece (2 Marks):</strong><br>
+            Upthrust in water = \( W_a - W_w = 175 - 150 = 25 \text{ gf} \)<br>
+            By Archimedes' Principle, Upthrust = Weight of water displaced.<br>
+            Volume of water displaced = \( \frac{\text{Mass of water}}{\text{Density of water}} = \frac{25 \text{ g}}{1 \text{ g cm}^{-3}} = 25 \text{ cm}^3 \)<br>
+            Since it is completely immersed, <strong>Volume of brass \( V = 25 \text{ cm}^3 \).</strong><br><br>
+            
+            <strong>(ii) Density of the brass piece (2 Marks):</strong><br>
+            <div class="math-scroll">
+            $$ \text{Density } (\rho) = \frac{\text{Mass}}{\text{Volume}} = \frac{175 \text{ g}}{25 \text{ cm}^3} = 7 \text{ g cm}^{-3} $$
+            </div><br>
+            
+            <strong>(iii) Apparent weight in liquid of density \( 0.8 \text{ g cm}^{-3} \) (1 Mark):</strong><br>
+            Upthrust in liquid = \( V \times \rho_l \times g \)<br>
+            (In terms of gf, Upthrust = Volume × Density)
+            <div class="math-scroll">
+            $$ \text{Upthrust} = 25 \text{ cm}^3 \times 0.8 \text{ g cm}^{-3} = 20 \text{ gf} $$
+            </div>
+            Apparent weight = Weight in air - Upthrust in liquid
+            <div class="math-scroll">
+            $$ \text{Apparent Weight} = 175 \text{ gf} - 20 \text{ gf} = 155 \text{ gf} $$
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { 
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f8f9fa;
+        }
+        .sol-header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .sol-header h1 { margin: 0 0 10px 0; font-size: clamp(20px, 4vw, 28px); }
+        .sol-header p { margin: 0; font-size: clamp(14px, 2.5vw, 16px); opacity: 0.9; }
+        
+        .section-title {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        .q-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+            gap: 15px;
+        }
+        .q-text {
+            flex: 1;
+            font-size: 1.1em;
+        }
+        .marks-badge {
+            background-color: #e74c3c;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        .solution-step {
+            margin-bottom: 10px;
+        }
+        .final-ans {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        /* Mobile responsive scrolling for long equations */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body { padding: 10px; }
+            .q-card { padding: 15px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sol-header">
+        <h1>Detailed Solutions: Minor Test 12</h1>
+        <p>Class: 7 ICSE | Subject: Mathematics | Topic: Profit and Loss</p>
+    </div>
+
+    <h2 class="section-title">SECTION A (2 Marks Each)</h2>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">1. Find the profit or loss percent if Cost Price (CP) = ₹400 and Selling Price (SP) = ₹460.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Given: CP = ₹400, SP = ₹460.</div>
+            <div class="solution-step">Since SP > CP, there is a profit.</div>
+            <div class="math-scroll">
+                \[ \text{Profit} = \text{SP} - \text{CP} = 460 - 400 = \text{₹60} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Profit Percent} = \left( \frac{\text{Profit}}{\text{CP}} \times 100 \right)\% \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Profit Percent} = \left( \frac{60}{400} \times 100 \right)\% = 15\% \]
+            </div>
+            <div class="final-ans">Final Answer: The profit percent is 15%.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">2. A shopkeeper buys a toy for ₹250 and sells it at a loss of 12%. Find the selling price of the toy.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Given: CP = ₹250, Loss% = 12%.</div>
+            <div class="solution-step">Method 1: Finding loss amount first.</div>
+            <div class="math-scroll">
+                \[ \text{Loss} = 12\% \text{ of CP} = \frac{12}{100} \times 250 = \text{₹30} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{SP} = \text{CP} - \text{Loss} = 250 - 30 = \text{₹220} \]
+            </div>
+            <div class="final-ans">Final Answer: The selling price of the toy is ₹220.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">3. What is the cost price of an article which is sold for ₹840 at a profit of 5%?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Given: SP = ₹840, Profit% = 5%.</div>
+            <div class="solution-step">Using the formula for CP when SP and Profit% are given:</div>
+            <div class="math-scroll">
+                \[ \text{CP} = \left( \frac{100}{100 + \text{Profit}\%} \right) \times \text{SP} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{CP} = \left( \frac{100}{100 + 5} \right) \times 840 = \left( \frac{100}{105} \right) \times 840 \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{CP} = \left( \frac{20}{21} \right) \times 840 = 20 \times 40 = 800 \]
+            </div>
+            <div class="final-ans">Final Answer: The cost price of the article is ₹800.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">4. Define 'Overhead Expenses'. How are they treated while calculating profit or loss?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step"><strong>Definition:</strong> Overhead expenses are the additional costs incurred by a buyer on an article after purchasing it, such as transportation, repairs, labor charges, or taxes.</div>
+            <div class="solution-step"><strong>Treatment:</strong> Overhead expenses are always added to the original Cost Price (CP) to calculate the <em>Total Cost Price</em> (or Effective Cost Price). Profit or loss is calculated on this Total Cost Price.</div>
+            <div class="math-scroll">
+                \[ \text{Total CP} = \text{Original CP} + \text{Overhead Expenses} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">5. By selling a pen for ₹45, a shopkeeper loses ₹5. Find his loss percentage.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Given: SP = ₹45, Loss = ₹5.</div>
+            <div class="solution-step">First, calculate the Cost Price (CP):</div>
+            <div class="math-scroll">
+                \[ \text{CP} = \text{SP} + \text{Loss} = 45 + 5 = \text{₹50} \]
+            </div>
+            <div class="solution-step">Now, calculate the Loss Percentage:</div>
+            <div class="math-scroll">
+                \[ \text{Loss Percent} = \left( \frac{\text{Loss}}{\text{CP}} \times 100 \right)\% = \left( \frac{5}{50} \times 100 \right)\% = 10\% \]
+            </div>
+            <div class="final-ans">Final Answer: The shopkeeper's loss percentage is 10%.</div>
+        </div>
+    </div>
+
+    <h2 class="section-title">SECTION B (4 Marks Each)</h2>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">6. A man bought 2 dozen eggs for ₹84. Since 4 of them were broken, he sold the remaining at ₹4 per egg. Find his total profit or loss and the profit/loss percentage.</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Total eggs bought = 2 dozen = \( 2 \times 12 = 24 \) eggs.</div>
+            <div class="solution-step">Total Cost Price (CP) of 24 eggs = ₹84.</div>
+            <div class="solution-step">Number of broken eggs = 4. Remaining good eggs = \( 24 - 4 = 20 \) eggs.</div>
+            <div class="solution-step">Selling Price (SP) of 1 egg = ₹4.</div>
+            <div class="math-scroll">
+                \[ \text{Total SP of 20 eggs} = 20 \times 4 = \text{₹80} \]
+            </div>
+            <div class="solution-step">Since Total CP (₹84) > Total SP (₹80), he suffers a loss.</div>
+            <div class="math-scroll">
+                \[ \text{Total Loss} = \text{CP} - \text{SP} = 84 - 80 = \text{₹4} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Loss Percent} = \left( \frac{\text{Loss}}{\text{CP}} \times 100 \right)\% = \left( \frac{4}{84} \times 100 \right)\% = \left( \frac{100}{21} \right)\% \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Loss Percent} = 4\frac{16}{21}\% \approx 4.76\% \]
+            </div>
+            <div class="final-ans">Final Answer: Total loss is ₹4, and Loss percent is \( 4\frac{16}{21}\% \).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">7. The selling price of 12 pens is equal to the cost price of 15 pens. Find the gain percent.</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Let the Cost Price (CP) of 1 pen be ₹1.</div>
+            <div class="math-scroll">
+                \[ \text{CP of 12 pens} = 12 \times 1 = \text{₹12} \]
+                \[ \text{CP of 15 pens} = 15 \times 1 = \text{₹15} \]
+            </div>
+            <div class="solution-step">According to the question, SP of 12 pens = CP of 15 pens.</div>
+            <div class="math-scroll">
+                \[ \text{SP of 12 pens} = \text{₹15} \]
+            </div>
+            <div class="solution-step">Now we compare CP and SP for the <strong>same quantity</strong> (12 pens):</div>
+            <div class="solution-step">CP of 12 pens = ₹12, SP of 12 pens = ₹15. Since SP > CP, there is a profit.</div>
+            <div class="math-scroll">
+                \[ \text{Profit} = \text{SP} - \text{CP} = 15 - 12 = \text{₹3} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Gain Percent} = \left( \frac{\text{Profit}}{\text{CP}} \times 100 \right)\% = \left( \frac{3}{12} \times 100 \right)\% \]
+                \[ \text{Gain Percent} = \left( \frac{1}{4} \times 100 \right)\% = 25\% \]
+            </div>
+            <div class="final-ans">Final Answer: The gain percent is 25%.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">8. A vendor bought lemons at 6 for ₹10 and sold them at 4 for ₹8. Find his gain or loss percent.</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">To find gain or loss, make the quantities same. Let's take the LCM of 6 and 4, which is 12.</div>
+            <div class="solution-step"><strong>Calculating CP for 12 lemons:</strong></div>
+            <div class="math-scroll">
+                \[ \text{CP of 6 lemons} = \text{₹10} \implies \text{CP of 12 lemons} = \frac{10}{6} \times 12 = \text{₹20} \]
+            </div>
+            <div class="solution-step"><strong>Calculating SP for 12 lemons:</strong></div>
+            <div class="math-scroll">
+                \[ \text{SP of 4 lemons} = \text{₹8} \implies \text{SP of 12 lemons} = \frac{8}{4} \times 12 = 2 \times 12 = \text{₹24} \]
+            </div>
+            <div class="solution-step">Comparing CP and SP for 12 lemons: SP (₹24) > CP (₹20), hence it is a gain.</div>
+            <div class="math-scroll">
+                \[ \text{Gain} = \text{SP} - \text{CP} = 24 - 20 = \text{₹4} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Gain Percent} = \left( \frac{\text{Gain}}{\text{CP}} \times 100 \right)\% = \left( \frac{4}{20} \times 100 \right)\% = 20\% \]
+            </div>
+            <div class="final-ans">Final Answer: The vendor's gain percent is 20%.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">9. Rahul sold two bicycles for ₹3,000 each. On one bicycle, he gained 20%, and on the other, he lost 20%. Find his total gain or loss percent in the whole transaction.</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step"><strong>For the first bicycle (Gain of 20%):</strong></div>
+            <div class="solution-step">SP = ₹3,000, Gain% = 20%</div>
+            <div class="math-scroll">
+                \[ \text{CP}_1 = \left( \frac{100}{100 + 20} \right) \times 3000 = \left( \frac{100}{120} \right) \times 3000 = \frac{5}{6} \times 3000 = \text{₹2,500} \]
+            </div>
+            <div class="solution-step"><strong>For the second bicycle (Loss of 20%):</strong></div>
+            <div class="solution-step">SP = ₹3,000, Loss% = 20%</div>
+            <div class="math-scroll">
+                \[ \text{CP}_2 = \left( \frac{100}{100 - 20} \right) \times 3000 = \left( \frac{100}{80} \right) \times 3000 = \frac{5}{4} \times 3000 = \text{₹3,750} \]
+            </div>
+            <div class="solution-step"><strong>Total Transaction:</strong></div>
+            <div class="math-scroll">
+                \[ \text{Total CP} = \text{CP}_1 + \text{CP}_2 = 2500 + 3750 = \text{₹6,250} \]
+                \[ \text{Total SP} = 3000 + 3000 = \text{₹6,000} \]
+            </div>
+            <div class="solution-step">Since Total CP > Total SP, it is a loss.</div>
+            <div class="math-scroll">
+                \[ \text{Total Loss} = 6250 - 6000 = \text{₹250} \]
+                \[ \text{Loss Percent} = \left( \frac{250}{6250} \times 100 \right)\% = \left( \frac{1}{25} \times 100 \right)\% = 4\% \]
+            </div>
+            <div class="final-ans">Final Answer: Rahul suffers a total loss of 4%.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">10. A dealer buys a machine for ₹8,000. He spends ₹500 on its transport and ₹300 on installation. At what price must he sell it to gain 15%?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Initial Cost Price (CP) = ₹8,000.</div>
+            <div class="solution-step">Overhead expenses = Transport + Installation = ₹500 + ₹300 = ₹800.</div>
+            <div class="math-scroll">
+                \[ \text{Total CP} = \text{Initial CP} + \text{Overhead Expenses} = 8000 + 800 = \text{₹8,800} \]
+            </div>
+            <div class="solution-step">Desired Gain% = 15%.</div>
+            <div class="math-scroll">
+                \[ \text{SP} = \left( \frac{100 + \text{Gain}\%}{100} \right) \times \text{Total CP} \]
+                \[ \text{SP} = \left( \frac{100 + 15}{100} \right) \times 8800 = \frac{115}{100} \times 8800 = 115 \times 88 = \text{₹10,120} \]
+            </div>
+            <div class="final-ans">Final Answer: He must sell the machine for ₹10,120 to gain 15%.</div>
+        </div>
+    </div>
+
+    <h2 class="section-title">SECTION C (5 Marks Each)</h2>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">11. By selling an article for ₹960, a man incurs a loss of 4%. At what price should he sell it to make a profit of 16%?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step"><strong>Step 1: Find the Cost Price (CP)</strong></div>
+            <div class="solution-step">Given: Initial SP = ₹960, Loss% = 4%.</div>
+            <div class="math-scroll">
+                \[ \text{CP} = \left( \frac{100}{100 - \text{Loss}\%} \right) \times \text{SP} = \left( \frac{100}{100 - 4} \right) \times 960 \]
+                \[ \text{CP} = \left( \frac{100}{96} \right) \times 960 = 100 \times 10 = \text{₹1,000} \]
+            </div>
+            <div class="solution-step"><strong>Step 2: Find the New Selling Price for a 16% Profit</strong></div>
+            <div class="solution-step">Given: CP = ₹1,000, Desired Profit% = 16%.</div>
+            <div class="math-scroll">
+                \[ \text{New Profit} = 16\% \text{ of } 1000 = \frac{16}{100} \times 1000 = \text{₹160} \]
+                \[ \text{New SP} = \text{CP} + \text{Profit} = 1000 + 160 = \text{₹1,160} \]
+            </div>
+            <div class="final-ans">Final Answer: He should sell the article for ₹1,160.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">12. A grocer bought 50 kg of rice at ₹40 per kg and 50 kg of another variety at ₹60 per kg. He mixed the two varieties and sold the mixture at ₹55 per kg. Find his profit or loss percent on the whole transaction.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step"><strong>Step 1: Calculate Total Cost Price (CP)</strong></div>
+            <div class="math-scroll">
+                \[ \text{CP of 1st variety} = 50 \text{ kg} \times 40\text{/kg} = \text{₹2,000} \]
+                \[ \text{CP of 2nd variety} = 50 \text{ kg} \times 60\text{/kg} = \text{₹3,000} \]
+                \[ \text{Total CP} = 2000 + 3000 = \text{₹5,000} \]
+            </div>
+            <div class="solution-step">Total quantity of mixture = 50 kg + 50 kg = 100 kg.</div>
+            
+            <div class="solution-step"><strong>Step 2: Calculate Total Selling Price (SP)</strong></div>
+            <div class="solution-step">He sold the entire 100 kg mixture at ₹55 per kg.</div>
+            <div class="math-scroll">
+                \[ \text{Total SP} = 100 \text{ kg} \times 55\text{/kg} = \text{₹5,500} \]
+            </div>
+
+            <div class="solution-step"><strong>Step 3: Calculate Profit and Profit Percent</strong></div>
+            <div class="solution-step">Since Total SP > Total CP, there is a profit.</div>
+            <div class="math-scroll">
+                \[ \text{Profit} = \text{Total SP} - \text{Total CP} = 5500 - 5000 = \text{₹500} \]
+                \[ \text{Profit Percent} = \left( \frac{500}{5000} \times 100 \right)\% = 10\% \]
+            </div>
+            <div class="final-ans">Final Answer: The grocer makes a profit of 10% on the whole transaction.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">13. If an article is sold at a gain of 5% instead of being sold at a loss of 5%, a man gets ₹20 more. Find the cost price of the article.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step">Let the Cost Price (CP) of the article be \( x \).</div>
+            
+            <div class="solution-step"><strong>Case 1 (Loss of 5%):</strong></div>
+            <div class="math-scroll">
+                \[ \text{SP}_1 = x - (5\% \text{ of } x) = x - 0.05x = 0.95x \]
+            </div>
+            
+            <div class="solution-step"><strong>Case 2 (Gain of 5%):</strong></div>
+            <div class="math-scroll">
+                \[ \text{SP}_2 = x + (5\% \text{ of } x) = x + 0.05x = 1.05x \]
+            </div>
+            
+            <div class="solution-step"><strong>Forming the Equation:</strong></div>
+            <div class="solution-step">According to the question, the difference between the two selling prices is ₹20.</div>
+            <div class="math-scroll">
+                \[ \text{SP}_2 - \text{SP}_1 = 20 \]
+                \[ 1.05x - 0.95x = 20 \]
+                \[ 0.10x = 20 \]
+                \[ x = \frac{20}{0.10} = \frac{2000}{10} = 200 \]
+            </div>
+            <div class="final-ans">Final Answer: The cost price of the article is ₹200.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <div class="q-header">
+            <div class="q-text">14. Rohan bought a second-hand car for ₹1,20,000. He spent ₹15,000 on its repairs and ₹5,000 on new tires. He then sold it to his friend at a profit of 10%. His friend later sold it to another person at a loss of 5%. What did the final person pay for the car?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-step"><strong>Step 1: Rohan's Transaction</strong></div>
+            <div class="math-scroll">
+                \[ \text{Rohan's Total CP} = 1,20,000 \text{ (Purchase)} + 15,000 \text{ (Repairs)} + 5,000 \text{ (Tires)} = \text{₹1,40,000} \]
+            </div>
+            <div class="solution-step">Rohan sells it at 10% profit.</div>
+            <div class="math-scroll">
+                \[ \text{Profit} = 10\% \text{ of } 1,40,000 = \text{₹14,000} \]
+                \[ \text{Rohan's SP} = 1,40,000 + 14,000 = \text{₹1,54,000} \]
+            </div>
+            
+            <div class="solution-step"><strong>Step 2: Friend's Transaction</strong></div>
+            <div class="solution-step">The friend buys the car for ₹1,54,000. So, Friend's CP = ₹1,54,000.</div>
+            <div class="solution-step">The friend sells it at a loss of 5%.</div>
+            <div class="math-scroll">
+                \[ \text{Loss} = 5\% \text{ of } 1,54,000 = \frac{5}{100} \times 1,54,000 = 5 \times 1540 = \text{₹7,700} \]
+                \[ \text{Friend's SP} = \text{Friend's CP} - \text{Loss} = 1,54,000 - 7,700 = \text{₹1,46,300} \]
+            </div>
+            <div class="solution-step">This Selling Price is exactly what the final person paid.</div>
+            <div class="final-ans">Final Answer: The final person paid ₹1,46,300 for the car.</div>
+        </div>
+    </div>
+
+</body>
+</html>

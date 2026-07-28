@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            /* Base styles adjusted for responsiveness */
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 2px 10px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .marks-right { float: right; font-weight: bold; margin-left: 10px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Mobile and Tablet Responsiveness */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+        }
+        
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show all steps clearly.</li>
+                <li>Use of calculator is strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Write the degree of the given polynomial: \( 3x^2y - 5xy^3 + 2x^4 - 7 \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Identify the numerical coefficient and write all the literal factors of the term \( -12x^2yz \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Classify the following algebraic expressions as monomial, binomial, or trinomial:
+            <div class="sub-question">(i) \( 4a^2 - 3b + 7c \)</div>
+            <div class="sub-question">(ii) \( -8x^2yz^3 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Subtract \( (3a - 5b) \) from \( (7a + 2b) \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Find the numerical value of the expression \( x^2 - y^2 + 2xy \) when \( x = 2 \) and \( y = -1 \).
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Add the following algebraic expressions:<br>
+                \( 4x^2 - 7xy + 4y^2 - 3 \), \( 5 + 6y^2 - 8xy + x^2 \), and \( 6 - 2xy + 2x^2 - 5y^2 \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Simplify the following expression:<br>
+            \( 5x - [3y - \{2x - (y - x)\}] \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            What must be added to \( 2x^2 - 3xy + 5y^2 \) to get \( x^2 + xy - y^2 \)?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            If \( A = 3p^2 - 4p + 1 \), \( B = 5p^2 + 7p - 8 \), and \( C = -2p^2 + p + 6 \), find the value of the expression \( A - B + C \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The length of a rectangular field is \( (3x + 2y) \) units and its breadth is \( (x - 3y) \) units. Find the algebraic expression for the perimeter of the field.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Given \( P = -2x^2 - y^2 + 3xy \), \( Q = x^2 - 2y^2 - xy \) and \( R = x^2 + 3y^2 - 2xy \).
+            <div class="sub-question">(a) Find the sum of \( P, Q, \) and \( R \).</div>
+            <div class="sub-question">(b) Evaluate \( P + Q \) if \( x = 1 \) and \( y = -2 \).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Simplify the following expression by removing the brackets strictly in order (vinculum, round, curly, square):<br>
+            <div class="math-scroll">
+                \( 3a - \left[ 2a - \left\{ 3a - (2a - \overline{a - b}) \right\} \right] \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            By how much does the sum of \( (5x^2 - 7x + 4) \) and \( (-3x^2 + 5x + 2) \) exceed the difference when \( (x^2 - x - 1) \) is subtracted from \( (2x^2 + 3x - 5) \)?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Write the algebraic expression for: "Five times a number \( x \) added to the square of a number \( y \), and the whole sum subtracted from the cube of a number \( z \)".</div>
+            <div class="sub-question">(b) Identify and group the like terms from the following list:<br>
+            \( 3x^2y, -2xy^2, 5yx^2, 7x^2, -y^2x, -x^2 \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            The sides of a triangle are \( (2x^2 - 3x + 4) \text{ cm} \), \( (x^2 + 5x - 1) \text{ cm} \), and \( (-3x^2 + 4x + 5) \text{ cm} \). 
+            <div class="sub-question">(a) Find the algebraic expression for the perimeter of the triangle.</div>
+            <div class="sub-question">(b) If \( x = 2 \), what is the numerical value of the perimeter?</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

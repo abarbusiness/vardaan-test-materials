@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 20px auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.08; z-index: 1; pointer-events: none; }
+        .content-layer { position: relative; z-index: 2; }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap; }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; }
+        
+        .question-container { margin-bottom: 15px; display: flex; justify-content: space-between; width: 100%; page-break-inside: avoid;}
+        .q-left-wrapper { display: flex; max-width: 90%; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; white-space: nowrap; margin-left: 10px; }
+        .sub-question { display: flex; margin-top: 5px; margin-bottom: 5px; }
+        .sq-num { width: 30px; flex-shrink: 0; }
+        
+        /* Math formatting - natural wrapping without scrollbars */
+        .math-scroll { padding-bottom: 5px; word-wrap: break-word; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 800px) {
+            body { width: 100%; margin: 0; padding: 15px; box-shadow: none; border: none; font-size: 11pt;}
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; text-align: center; }
+            .question-container { flex-direction: row; }
+            .q-left-wrapper { max-width: 85%; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="content-layer">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 12</div>
+            <div class="exam-details">
+                <span>Class: 6 (ICSE)</span>
+                <span>Subject: Mathematics</span>
+                <span>Time: 1.5 Hours</span>
+                <span>Max. Marks: 40</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory.</li>
+                    <li>The paper is divided into three sections: A, B, and C.</li>
+                    <li>Write your answers neatly and legibly. Show rough work clearly on the right side of the page.</li>
+                    <li>Topics covered: Integers, Divisibility Tests, HCF, LCM, and BODMAS.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">1.</div>
+                <div class="q-content">Write the absolute value of \( -15 \) and the additive inverse of \( 24 \).</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">2.</div>
+                <div class="q-content">Without actual division, check if the number \( 3456 \) is divisible by \( 4 \) and \( 9 \) using divisibility rules.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">3.</div>
+                <div class="q-content">Simplify the following using BODMAS rule: <br> \( 18 - [5 + (6 \div 2)] \)</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">4.</div>
+                <div class="q-content">Find the Highest Common Factor (HCF) of \( 16 \) and \( 24 \) by the prime factorization method.</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">5.</div>
+                <div class="q-content">Arrange the following integers in descending order: <br> \( -7, 0, 5, -12, 14, -1 \)</div>
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+
+        <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">6.</div>
+                <div class="q-content">
+                    Simplify using the BODMAS rule (including vinculum):
+                    <div class="math-scroll">\( 27 - [38 - \{46 - (15 - \overline{13 - 2})\}] \)</div>
+                </div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">7.</div>
+                <div class="q-content">Find the Lowest Common Multiple (LCM) of \( 24, 36 \), and \( 40 \) using the common division method.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">8.</div>
+                <div class="q-content">Replace the symbol '*' by the smallest possible digit so that the number \( 56*89 \) becomes divisible by \( 3 \).</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">9.</div>
+                <div class="q-content">Find the greatest number which divides \( 45 \) and \( 60 \) without leaving any remainder.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">10.</div>
+                <div class="q-content">A submarine was situated \( 120 \text{ m} \) below sea level. If it ascends \( 45 \text{ m} \), what is its new position? Express the final position using an appropriate integer.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+
+        <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">11.</div>
+                <div class="q-content">Three bells toll at intervals of \( 12, 15 \), and \( 20 \) minutes respectively. If they start tolling together at 8:00 a.m., at what time will they toll together again? Show your complete working.</div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">12.</div>
+                <div class="q-content">
+                    <div class="sub-question">
+                        <div class="sq-num">(a)</div>
+                        <div>Simplify: \( 100 - 3 \times [20 + \{50 - (40 - \overline{10 - 5})\}] \) <span style="float:right;">[3]</span></div>
+                    </div>
+                    <div class="sub-question">
+                        <div class="sq-num">(b)</div>
+                        <div>Test the divisibility of the number \( 7138965 \) by \( 11 \). State the rule clearly. <span style="float:right;">[2]</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="q-marks"></div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-left-wrapper">
+                <div class="q-num">13.</div>
+                <div class="q-content">
+                    <div class="sub-question">
+                        <div class="sq-num">(a)</div>
+                        <div>The product of two numbers is \( 432 \) and their LCM is \( 72 \). Find their HCF. <span style="float:right;">[3]</span></div>
+                    </div>
+                    <div class="sub-question">
+                        <div class="sq-num">(b)</div>
+                        <div>Evaluate using a suitable property of integers: \( (-15) \times 8 + (-15) \times 2 \) <span style="float:right;">[2]</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="q-marks"></div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan - Minor Test 12</div>
+    </div>
+</body>
+</html>

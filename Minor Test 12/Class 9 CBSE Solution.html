@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solution</title>
+    
+    <!-- MathJax Configuration for optimal equation breaking on small screens -->
+    <script>
+        window.MathJax = {
+            chtml: { 
+                displayAlign: 'left', 
+                displayIndent: '1em' 
+            },
+            tex: {
+                packages: {'[+]': ['noerrors']}
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.10; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-left: 4px solid #000;
+            font-size: 13pt; 
+        }
+        .solution-container { 
+            margin-bottom: 25px; 
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .question-block {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .q-text {
+            flex-grow: 1;
+            margin-right: 15px;
+        }
+        .marks {
+            flex-shrink: 0;
+            color: #d32f2f;
+            white-space: nowrap;
+        }
+        .answer-block {
+            padding-left: 10px;
+            color: #1a1a1a;
+            overflow-x: auto; /* Handles equation overflow on mobile */
+        }
+        .answer-label {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                margin: 0; 
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+            .question-block { flex-direction: column; }
+            .marks { margin-top: 8px; text-align: right; }
+            
+            /* Helps large multiline equations break/scroll properly on tiny screens */
+            mjx-container[jax="CHTML"][display="true"] {
+                overflow-x: auto;
+                overflow-y: hidden;
+                max-width: 100%;
+                padding-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12 - DETAILED SOLUTIONS</div>
+        <p style="margin-top: 5px; font-weight: bold;">Class: 9 | Subject: Mathematics (Algebraic Identities)</p>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">1. Expand using a suitable identity: \( (x + 3)(x + 3) \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">The expression can be written as \( (x + 3)^2 \).</div>
+            <div class="step">Using the identity: \( (a + b)^2 = a^2 + 2ab + b^2 \)</div>
+            <div class="step">Here, \( a = x \) and \( b = 3 \).</div>
+            <div class="step">
+                \begin{align*}
+                (x + 3)^2 &= (x)^2 + 2(x)(3) + (3)^2 \\
+                &= x^2 + 6x + 9
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( x^2 + 6x + 9 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">2. Factorise: \( y^2 - 49 \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">The expression can be written as: \( (y)^2 - (7)^2 \)</div>
+            <div class="step">Using the identity: \( a^2 - b^2 = (a + b)(a - b) \)</div>
+            <div class="step">Here, \( a = y \) and \( b = 7 \).</div>
+            <div class="step">
+                \begin{align*}
+                y^2 - 49 = (y + 7)(y - 7)
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( (y + 7)(y - 7) \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">3. Evaluate the product without multiplying directly: \( 105 \times 106 \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We can rewrite the numbers as: \( 105 = 100 + 5 \) and \( 106 = 100 + 6 \)</div>
+            <div class="step">Using the identity: \( (x + a)(x + b) = x^2 + (a + b)x + ab \)</div>
+            <div class="step">Here, \( x = 100 \), \( a = 5 \), and \( b = 6 \).</div>
+            <div class="step">
+                \begin{align*}
+                (100 + 5)(100 + 6) &= (100)^2 + (5 + 6)(100) + (5 \times 6) \\
+                &= 10000 + (11)(100) + 30 \\
+                &= 10000 + 1100 + 30 \\
+                &= 11130
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 11130 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">4. Expand: \( (2x - y + z)^2 \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">Using the identity: \( (a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca \)</div>
+            <div class="step">Here, \( a = 2x \), \( b = -y \), and \( c = z \).</div>
+            <div class="step">
+                \begin{align*}
+                (2x - y + z)^2 &= (2x)^2 + (-y)^2 + (z)^2 + 2(2x)(-y) + 2(-y)(z) + 2(z)(2x) \\
+                &= 4x^2 + y^2 + z^2 - 4xy - 2yz + 4zx
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 4x^2 + y^2 + z^2 - 4xy - 2yz + 4zx \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">5. Write the expanded form: \( (2a + 3b)^3 \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">Using the identity: \( (x + y)^3 = x^3 + y^3 + 3xy(x + y) \)</div>
+            <div class="step">Here, \( x = 2a \) and \( y = 3b \).</div>
+            <div class="step">
+                \begin{align*}
+                (2a + 3b)^3 &= (2a)^3 + (3b)^3 + 3(2a)(3b)(2a + 3b) \\
+                &= 8a^3 + 27b^3 + 18ab(2a + 3b) \\
+                &= 8a^3 + 27b^3 + 36a^2b + 54ab^2
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 8a^3 + 27b^3 + 36a^2b + 54ab^2 \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">6. Evaluate \( (998)^2 \) using a suitable identity.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We can write \( 998 \) as \( (1000 - 2) \).</div>
+            <div class="step">Using the identity: \( (a - b)^2 = a^2 - 2ab + b^2 \)</div>
+            <div class="step">Here, \( a = 1000 \) and \( b = 2 \).</div>
+            <div class="step">
+                \begin{align*}
+                (1000 - 2)^2 &= (1000)^2 - 2(1000)(2) + (2)^2 \\
+                &= 1000000 - 4000 + 4 \\
+                &= 996000 + 4 \\
+                &= 996004
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 996004 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">7. Factorise: \( 4x^2 + 9y^2 + 16z^2 + 12xy - 24yz - 16xz \)</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We use the identity: \( a^2 + b^2 + c^2 + 2ab + 2bc + 2ca = (a + b + c)^2 \)</div>
+            <div class="step">Notice that the terms with \( yz \) and \( xz \) are negative, which means the term involving \( z \) is negative.</div>
+            <div class="step">Let's rewrite the given expression:</div>
+            <div class="step">\( 4x^2 = (2x)^2 \)</div>
+            <div class="step">\( 9y^2 = (3y)^2 \)</div>
+            <div class="step">\( 16z^2 = (-4z)^2 \) (Taking z term as negative)</div>
+            <div class="step">Checking the middle terms:</div>
+            <div class="step">\( 2ab = 2(2x)(3y) = 12xy \)</div>
+            <div class="step">\( 2bc = 2(3y)(-4z) = -24yz \)</div>
+            <div class="step">\( 2ca = 2(-4z)(2x) = -16xz \)</div>
+            <div class="step">Since it perfectly matches the identity, we have:</div>
+            <div class="step">
+                \begin{align*}
+                (2x)^2 + (3y)^2 + (-4z)^2 + 2(2x)(3y) + 2(3y)(-4z) + 2(-4z)(2x) &= (2x + 3y - 4z)^2
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( (2x + 3y - 4z)^2 \) or \( (2x + 3y - 4z)(2x + 3y - 4z) \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">8. If \( x + y = 12 \) and \( xy = 27 \), find the value of \( x^3 + y^3 \).</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We know the identity: \( x^3 + y^3 = (x + y)(x^2 - xy + y^2) \)</div>
+            <div class="step">Alternatively, we can use: \( (x + y)^3 = x^3 + y^3 + 3xy(x + y) \)</div>
+            <div class="step">Let's use the second one. Substitute the given values \( x + y = 12 \) and \( xy = 27 \):</div>
+            <div class="step">
+                \begin{align*}
+                (12)^3 &= x^3 + y^3 + 3(27)(12) \\
+                1728 &= x^3 + y^3 + 972 \\
+                x^3 + y^3 &= 1728 - 972 \\
+                x^3 + y^3 &= 756
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 756 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">9. Factorise: \( 27y^3 + 125z^3 \)</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We can rewrite the expression as perfect cubes:</div>
+            <div class="step">\( 27y^3 = (3y)^3 \) and \( 125z^3 = (5z)^3 \)</div>
+            <div class="step">Using the identity: \( a^3 + b^3 = (a + b)(a^2 - ab + b^2) \)</div>
+            <div class="step">Here, \( a = 3y \) and \( b = 5z \).</div>
+            <div class="step">
+                \begin{align*}
+                (3y)^3 + (5z)^3 &= (3y + 5z)[(3y)^2 - (3y)(5z) + (5z)^2] \\
+                &= (3y + 5z)(9y^2 - 15yz + 25z^2)
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( (3y + 5z)(9y^2 - 15yz + 25z^2) \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">10. Evaluate \( (102)^3 \) using a suitable identity.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We can write \( 102 \) as \( (100 + 2) \).</div>
+            <div class="step">Using the identity: \( (a + b)^3 = a^3 + b^3 + 3ab(a + b) \)</div>
+            <div class="step">Here, \( a = 100 \) and \( b = 2 \).</div>
+            <div class="step">
+                \begin{align*}
+                (100 + 2)^3 &= (100)^3 + (2)^3 + 3(100)(2)(100 + 2) \\
+                &= 1000000 + 8 + 600(102) \\
+                &= 1000000 + 8 + 61200 \\
+                &= 1061208
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 1061208 \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">11. Factorise: \( 8x^3 + y^3 + 27z^3 - 18xyz \)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">Let's write the given expression in the standard form.</div>
+            <div class="step">\( 8x^3 = (2x)^3 \)</div>
+            <div class="step">\( y^3 = (y)^3 \)</div>
+            <div class="step">\( 27z^3 = (3z)^3 \)</div>
+            <div class="step">And, \( 18xyz = 3(2x)(y)(3z) \)</div>
+            <div class="step">The expression matches the identity:</div>
+            <div class="step">\( a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca) \)</div>
+            <div class="step">Here, \( a = 2x \), \( b = y \), and \( c = 3z \).</div>
+            <div class="step">Applying the identity:</div>
+            <div class="step">
+                \begin{align*}
+                (2x)^3 + (y)^3 + (3z)^3 - 3(2x)(y)(3z) &= (2x + y + 3z)[(2x)^2 + (y)^2 + (3z)^2 - (2x)(y) - (y)(3z) - (3z)(2x)] \\
+                &= (2x + y + 3z)(4x^2 + y^2 + 9z^2 - 2xy - 3yz - 6zx)
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( (2x + y + 3z)(4x^2 + y^2 + 9z^2 - 2xy - 3yz - 6zx) \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">12. (i) Expand: \( (x - \frac{2}{3}y)^3 \) <br> (ii) Factorise: \( 64a^3 - 27b^3 - 144a^2b + 108ab^2 \)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step"><strong>Part (i):</strong> [2.5 Marks]</div>
+            <div class="step">Using identity \( (a - b)^3 = a^3 - b^3 - 3ab(a - b) \) or \( a^3 - b^3 - 3a^2b + 3ab^2 \)</div>
+            <div class="step">Here, \( a = x \), \( b = \frac{2}{3}y \).</div>
+            <div class="step">
+                \begin{align*}
+                \left(x - \frac{2}{3}y\right)^3 &= (x)^3 - \left(\frac{2}{3}y\right)^3 - 3(x)^2\left(\frac{2}{3}y\right) + 3(x)\left(\frac{2}{3}y\right)^2 \\
+                &= x^3 - \frac{8}{27}y^3 - 2x^2y + 3(x)\left(\frac{4}{9}y^2\right) \\
+                &= x^3 - \frac{8}{27}y^3 - 2x^2y + \frac{4}{3}xy^2
+                \end{align*}
+            </div>
+            
+            <div class="step"><strong>Part (ii):</strong> [2.5 Marks]</div>
+            <div class="step">We check if the expression is a perfect cube expansion \( (x - y)^3 = x^3 - y^3 - 3x^2y + 3xy^2 \).</div>
+            <div class="step">\( 64a^3 = (4a)^3 \) and \( 27b^3 = (3b)^3 \). So, let \( x = 4a \) and \( y = 3b \).</div>
+            <div class="step">Check middle terms:</div>
+            <div class="step">\( -3x^2y = -3(4a)^2(3b) = -3(16a^2)(3b) = -144a^2b \)</div>
+            <div class="step">\( +3xy^2 = 3(4a)(3b)^2 = 3(4a)(9b^2) = 108ab^2 \)</div>
+            <div class="step">Since it matches exactly, it is the expansion of \( (4a - 3b)^3 \).</div>
+            <div class="step">
+                \begin{align*}
+                64a^3 - 27b^3 - 144a^2b + 108ab^2 = (4a - 3b)^3
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answers:</strong> (i) \( x^3 - \frac{8}{27}y^3 - 2x^2y + \frac{4}{3}xy^2 \), (ii) \( (4a - 3b)(4a - 3b)(4a - 3b) \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">13. Without actually calculating the cubes, find the value of: <br> (i) \( (-12)^3 + (7)^3 + (5)^3 \) <br> (ii) \( (28)^3 + (-15)^3 + (-13)^3 \)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We know the conditional identity:</div>
+            <div class="step">If \( x + y + z = 0 \), then \( x^3 + y^3 + z^3 = 3xyz \).</div>
+            
+            <div class="step"><strong>Part (i):</strong> [2.5 Marks]</div>
+            <div class="step">Let \( x = -12 \), \( y = 7 \), and \( z = 5 \).</div>
+            <div class="step">Check sum: \( -12 + 7 + 5 = -12 + 12 = 0 \).</div>
+            <div class="step">Since the sum is 0, we apply the identity:</div>
+            <div class="step">
+                \begin{align*}
+                (-12)^3 + (7)^3 + (5)^3 &= 3(-12)(7)(5) \\
+                &= -36 \times 35 \\
+                &= -1260
+                \end{align*}
+            </div>
+            
+            <div class="step"><strong>Part (ii):</strong> [2.5 Marks]</div>
+            <div class="step">Let \( x = 28 \), \( y = -15 \), and \( z = -13 \).</div>
+            <div class="step">Check sum: \( 28 + (-15) + (-13) = 28 - 28 = 0 \).</div>
+            <div class="step">Since the sum is 0, we apply the identity:</div>
+            <div class="step">
+                \begin{align*}
+                (28)^3 + (-15)^3 + (-13)^3 &= 3(28)(-15)(-13) \\
+                &= 84 \times 195 \\
+                &= 16380
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answers:</strong> (i) \( -1260 \), (ii) \( 16380 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">14. Verify that: \( x^3 + y^3 = (x + y)(x^2 - xy + y^2) \)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">We need to prove that LHS = RHS. We will start with the Right Hand Side (RHS).</div>
+            <div class="step">RHS = \( (x + y)(x^2 - xy + y^2) \)</div>
+            <div class="step">Expand by multiplying each term of the first polynomial by each term of the second polynomial:</div>
+            <div class="step">
+                \begin{align*}
+                \text{RHS} &= x(x^2 - xy + y^2) + y(x^2 - xy + y^2) \\
+                &= (x \cdot x^2 - x \cdot xy + x \cdot y^2) + (y \cdot x^2 - y \cdot xy + y \cdot y^2) \\
+                &= (x^3 - x^2y + xy^2) + (x^2y - xy^2 + y^3)
+                \end{align*}
+            </div>
+            <div class="step">Now, group the like terms together:</div>
+            <div class="step">
+                \begin{align*}
+                &= x^3 - x^2y + x^2y + xy^2 - xy^2 + y^3
+                \end{align*}
+            </div>
+            <div class="step">Notice that \( -x^2y \) and \( +x^2y \) cancel out. Similarly, \( +xy^2 \) and \( -xy^2 \) cancel out.</div>
+            <div class="step">
+                \begin{align*}
+                &= x^3 + 0 + 0 + y^3 \\
+                &= x^3 + y^3
+                \end{align*}
+            </div>
+            <div class="step">Which is equal to the Left Hand Side (LHS).</div>
+            <div class="step">Therefore, LHS = RHS. Hence Verified.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-block">
+            <div class="q-text">15. Find the following product using appropriate identities: \( (3x + 4)(3x - 5) \)</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="answer-block">
+            <div class="answer-label">Solution:</div>
+            <div class="step">The expression is in the form of the identity:</div>
+            <div class="step">\( (x + a)(x + b) = x^2 + (a + b)x + ab \)</div>
+            <div class="step">Comparing the given expression \( (3x + 4)(3x - 5) \) with the identity:</div>
+            <div class="step">Let the variable part be \( X = 3x \).</div>
+            <div class="step">Let the constant terms be \( a = 4 \) and \( b = -5 \).</div>
+            <div class="step">Substitute these values into the identity:</div>
+            <div class="step">
+                \begin{align*}
+                (3x + 4)(3x - 5) &= (3x)^2 + (4 + (-5))(3x) + (4)(-5)
+                \end{align*}
+            </div>
+            <div class="step">Now, simplify each term:</div>
+            <div class="step">\( (3x)^2 = 9x^2 \)</div>
+            <div class="step">\( (4 - 5)(3x) = (-1)(3x) = -3x \)</div>
+            <div class="step">\( (4)(-5) = -20 \)</div>
+            <div class="step">Putting it all together:</div>
+            <div class="step">
+                \begin{align*}
+                &= 9x^2 - 3x - 20
+                \end{align*}
+            </div>
+            <div class="step"><strong>Answer:</strong> \( 9x^2 - 3x - 20 \)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering Mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* Base Styles similar to Question Paper for uniformity */
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            box-sizing: border-box;
+        }
+
+        @media screen {
+            body {
+                width: 100%;
+                max-width: 210mm;
+                min-height: 297mm;
+                margin: 20px auto;
+                padding: 20mm;
+                box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            }
+        }
+
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; opacity: 0.12; 
+            z-index: -1; pointer-events: none; 
+        }
+
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .solution-title { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #d32f2f; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        
+        /* Solution Specific Formatting */
+        .solution-container { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #fafafa; break-inside: avoid; }
+        .question-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 10px; color: #1a237e; border-bottom: 1px dashed #ccc; padding-bottom: 5px;}
+        .q-text { flex-grow: 1; padding-right: 15px;}
+        .q-marks { flex-shrink: 0; color: #d32f2f; font-size: 11pt; white-space: nowrap;}
+        
+        .solution-body { margin-top: 10px; }
+        .step-label { font-weight: bold; font-style: italic; margin-top: 10px; display: inline-block; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-bottom: 5px; }
+        
+        /* Highlighting Final Answers */
+        .final-answer { display: inline-block; padding: 3px 8px; border: 2px solid #4caf50; background-color: #e8f5e9; font-weight: bold; border-radius: 4px; margin-top: 10px;}
+
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; margin: 0; }
+            .institute-name { font-size: 18pt; }
+            .solution-container { padding: 10px; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .question-header { flex-direction: column; }
+            .q-marks { text-align: right; margin-top: 5px; }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; }
+            .watermark { position: absolute; }
+            .solution-container { border: none; background-color: transparent; border-bottom: 2px solid #ccc; border-radius: 0;}
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">SOLUTIONS & MARKING SCHEME - MINOR TEST 12</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Mathematics (Trigonometry)</span>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION A</h2>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q1. If \(\sin \theta = \frac{3}{5}\), calculate the value of \((\tan \theta + \sec \theta)\).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Given, \(\sin \theta = \frac{\text{Perpendicular (P)}}{\text{Hypotenuse (H)}} = \frac{3}{5}\).</p>
+            <p>Let \(P = 3k\) and \(H = 5k\). Using Pythagoras Theorem (\(H^2 = P^2 + B^2\)):</p>
+            <div class="math-scroll">\[ (5k)^2 = (3k)^2 + B^2 \implies B^2 = 25k^2 - 9k^2 = 16k^2 \implies B = 4k \]</div>
+            <p>Now, \(\tan \theta = \frac{P}{B} = \frac{3k}{4k} = \frac{3}{4}\) and \(\sec \theta = \frac{H}{B} = \frac{5k}{4k} = \frac{5}{4}\).</p>
+            <p>Therefore, \(\tan \theta + \sec \theta = \frac{3}{4} + \frac{5}{4} = \frac{8}{4} = 2\).</p>
+            <div class="final-answer">Answer: 2</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q2. Evaluate: \( 2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>We know the standard trigonometric values:</p>
+            <ul>
+                <li>\(\tan 45^\circ = 1\)</li>
+                <li>\(\cos 30^\circ = \frac{\sqrt{3}}{2}\)</li>
+                <li>\(\sin 60^\circ = \frac{\sqrt{3}}{2}\)</li>
+            </ul>
+            <p>Substituting these values into the expression:</p>
+            <div class="math-scroll">\[ = 2(1)^2 + \left(\frac{\sqrt{3}}{2}\right)^2 - \left(\frac{\sqrt{3}}{2}\right)^2 \]</div>
+            <div class="math-scroll">\[ = 2(1) + \frac{3}{4} - \frac{3}{4} = 2 + 0 = 2 \]</div>
+            <div class="final-answer">Answer: 2</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q3. Prove that: \((1 - \sin^2 A)\sec^2 A = 1\)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Taking the Left Hand Side (LHS):</p>
+            <div class="math-scroll">\[ \text{LHS} = (1 - \sin^2 A)\sec^2 A \]</div>
+            <p>Using the fundamental trigonometric identity: \(\sin^2 A + \cos^2 A = 1 \implies 1 - \sin^2 A = \cos^2 A\).</p>
+            <div class="math-scroll">\[ \text{LHS} = (\cos^2 A) \cdot \sec^2 A \]</div>
+            <p>Since \(\sec A = \frac{1}{\cos A}\), we have \(\sec^2 A = \frac{1}{\cos^2 A}\).</p>
+            <div class="math-scroll">\[ \text{LHS} = \cos^2 A \times \frac{1}{\cos^2 A} = 1 \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q4. Given \(15 \cot A = 8\), find the value of \(\sin A\).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Given, \(15 \cot A = 8 \implies \cot A = \frac{8}{15}\).</p>
+            <p>We know \(\cot A = \frac{\text{Base (B)}}{\text{Perpendicular (P)}}\). Let \(B = 8k\) and \(P = 15k\).</p>
+            <p>Using Pythagoras Theorem to find Hypotenuse (H):</p>
+            <div class="math-scroll">\[ H^2 = P^2 + B^2 \implies H^2 = (15k)^2 + (8k)^2 = 225k^2 + 64k^2 = 289k^2 \]</div>
+            <div class="math-scroll">\[ H = \sqrt{289k^2} = 17k \]</div>
+            <p>Now, \(\sin A = \frac{P}{H} = \frac{15k}{17k} = \frac{15}{17}\).</p>
+            <div class="final-answer">Answer: 15/17</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q5. Evaluate: \( \frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ} \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Substitute the value of \(\tan 30^\circ = \frac{1}{\sqrt{3}}\):</p>
+            <div class="math-scroll">\[ = \frac{2 \left( \frac{1}{\sqrt{3}} \right)}{1 + \left( \frac{1}{\sqrt{3}} \right)^2} \]</div>
+            <div class="math-scroll">\[ = \frac{ \frac{2}{\sqrt{3}} }{1 + \frac{1}{3}} = \frac{ \frac{2}{\sqrt{3}} }{ \frac{4}{3} } \]</div>
+            <div class="math-scroll">\[ = \frac{2}{\sqrt{3}} \times \frac{3}{4} = \frac{6}{4\sqrt{3}} = \frac{3}{2\sqrt{3}} \]</div>
+            <p>Rationalizing the denominator:</p>
+            <div class="math-scroll">\[ = \frac{3\sqrt{3}}{2 \times 3} = \frac{\sqrt{3}}{2} \]</div>
+            <p><em>(Note: This is also equal to \(\sin 60^\circ\)).</em></p>
+            <div class="final-answer">Answer: \(\frac{\sqrt{3}}{2}\)</div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION B</h2>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q6. Prove that: \( \frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Taking the Left Hand Side (LHS) and finding the common denominator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\cos A \cdot \cos A + (1 + \sin A)(1 + \sin A)}{(1 + \sin A)\cos A} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\cos^2 A + (1 + \sin A)^2}{(1 + \sin A)\cos A} \]</div>
+            <p>Expanding \((1 + \sin A)^2 = 1 + \sin^2 A + 2\sin A\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\cos^2 A + 1 + \sin^2 A + 2\sin A}{(1 + \sin A)\cos A} \]</div>
+            <p>Since \(\cos^2 A + \sin^2 A = 1\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{1 + 1 + 2\sin A}{(1 + \sin A)\cos A} = \frac{2 + 2\sin A}{(1 + \sin A)\cos A} \]</div>
+            <p>Taking 2 common from the numerator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{2(1 + \sin A)}{(1 + \sin A)\cos A} = \frac{2}{\cos A} = 2 \sec A \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q7. Prove that: \( (\sin A + \text{cosec } A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 A \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Expand both squared binomials on the LHS using \((x+y)^2 = x^2+y^2+2xy\):</p>
+            <div class="math-scroll">\[ \text{LHS} = (\sin^2 A + \text{cosec}^2 A + 2\sin A \text{cosec } A) + (\cos^2 A + \sec^2 A + 2\cos A \sec A) \]</div>
+            <p>Since \(\sin A \cdot \text{cosec } A = 1\) and \(\cos A \cdot \sec A = 1\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \sin^2 A + \text{cosec}^2 A + 2(1) + \cos^2 A + \sec^2 A + 2(1) \]</div>
+            <p>Rearranging the terms:</p>
+            <div class="math-scroll">\[ \text{LHS} = (\sin^2 A + \cos^2 A) + \text{cosec}^2 A + \sec^2 A + 4 \]</div>
+            <p>We know \(\sin^2 A + \cos^2 A = 1\). Also, use identities \(\text{cosec}^2 A = 1 + \cot^2 A\) and \(\sec^2 A = 1 + \tan^2 A\):</p>
+            <div class="math-scroll">\[ \text{LHS} = 1 + (1 + \cot^2 A) + (1 + \tan^2 A) + 4 \]</div>
+            <div class="math-scroll">\[ \text{LHS} = 1 + 1 + 1 + 4 + \tan^2 A + \cot^2 A = 7 + \tan^2 A + \cot^2 A \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q8. In \(\triangle PQR\), right-angled at \(Q\), \(PR + QR = 25\) cm and \(PQ = 5\) cm. Determine \(\sin P, \cos P, \tan P\).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Given \(PQ = 5\) cm (Base for angle P), and \(PR + QR = 25 \implies PR = 25 - QR\).</p>
+            <p>Applying Pythagoras Theorem in \(\triangle PQR\): \(PR^2 = PQ^2 + QR^2\)</p>
+            <div class="math-scroll">\[ (25 - QR)^2 = (5)^2 + QR^2 \]</div>
+            <div class="math-scroll">\[ 625 - 50QR + QR^2 = 25 + QR^2 \]</div>
+            <p>Canceling \(QR^2\) from both sides:</p>
+            <div class="math-scroll">\[ 625 - 25 = 50QR \implies 600 = 50QR \implies QR = 12 \text{ cm} \]</div>
+            <p>Now, calculate Hypotenuse \(PR = 25 - 12 = 13 \text{ cm}\).</p>
+            <p>With respect to angle P: Perpendicular (P) = \(QR = 12\), Base (B) = \(PQ = 5\), Hypotenuse (H) = \(PR = 13\).</p>
+            <div class="math-scroll">\[ \sin P = \frac{P}{H} = \frac{12}{13} \]</div>
+            <div class="math-scroll">\[ \cos P = \frac{B}{H} = \frac{5}{13} \]</div>
+            <div class="math-scroll">\[ \tan P = \frac{P}{B} = \frac{12}{5} \]</div>
+            <div class="final-answer">\(\sin P = \frac{12}{13}\), \(\cos P = \frac{5}{13}\), \(\tan P = \frac{12}{5}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q9. Prove that: \( \sqrt{\frac{1 + \sin A}{1 - \sin A}} = \sec A + \tan A \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Take the LHS and rationalize the expression inside the square root by multiplying numerator and denominator by \((1 + \sin A)\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \sqrt{\frac{(1 + \sin A)}{(1 - \sin A)} \times \frac{(1 + \sin A)}{(1 + \sin A)}} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \sqrt{\frac{(1 + \sin A)^2}{1^2 - \sin^2 A}} \]</div>
+            <p>Using the identity \(1 - \sin^2 A = \cos^2 A\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \sqrt{\frac{(1 + \sin A)^2}{\cos^2 A}} = \frac{1 + \sin A}{\cos A} \]</div>
+            <p>Separating the denominator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{1}{\cos A} + \frac{\sin A}{\cos A} = \sec A + \tan A \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q10. Prove that: \( \frac{\sin \theta - 2\sin^3 \theta}{2\cos^3 \theta - \cos \theta} = \tan \theta \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Taking LHS, factor out \(\sin \theta\) from numerator and \(\cos \theta\) from denominator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin \theta (1 - 2\sin^2 \theta)}{\cos \theta (2\cos^2 \theta - 1)} \]</div>
+            <p>Use the identity \(\sin^2 \theta = 1 - \cos^2 \theta\) in the numerator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin \theta [1 - 2(1 - \cos^2 \theta)]}{\cos \theta (2\cos^2 \theta - 1)} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin \theta [1 - 2 + 2\cos^2 \theta]}{\cos \theta (2\cos^2 \theta - 1)} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin \theta (2\cos^2 \theta - 1)}{\cos \theta (2\cos^2 \theta - 1)} \]</div>
+            <p>Cancel out the common term \((2\cos^2 \theta - 1)\) from numerator and denominator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin \theta}{\cos \theta} = \tan \theta \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION C</h2>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q11. Prove that: \( \frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \text{ cosec } \theta \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Convert all terms in LHS to \(\sin \theta\) and \(\cos \theta\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}} \]</div>
+            <p>Simplify denominators by taking LCM:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\frac{\sin \theta}{\cos \theta}}{\frac{\sin \theta - \cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{\frac{\cos \theta - \sin \theta}{\cos \theta}} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin \theta(\cos \theta - \sin \theta)} \]</div>
+            <p>Change the sign of the second term to make the brackets identical: \((\cos \theta - \sin \theta) = -(\sin \theta - \cos \theta)\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} - \frac{\cos^2 \theta}{\sin \theta(\sin \theta - \cos \theta)} \]</div>
+            <p>Take LCM of denominators: \(\sin \theta \cos \theta (\sin \theta - \cos \theta)\)</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} \]</div>
+            <p>Use identity \(a^3 - b^3 = (a - b)(a^2 + b^2 + ab)\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \cos^2 \theta + \sin \theta \cos \theta)}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} \]</div>
+            <p>Cancel \((\sin \theta - \cos \theta)\) and apply \(\sin^2 \theta + \cos^2 \theta = 1\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} = \frac{1}{\sin \theta \cos \theta} + \frac{\sin \theta \cos \theta}{\sin \theta \cos \theta} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \text{cosec } \theta \sec \theta + 1 = 1 + \sec \theta \text{ cosec } \theta \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q12. Prove: \( \frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \text{cosec } A + \cot A \) using \(\text{cosec}^2 A = 1 + \cot^2 A\)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Divide numerator and denominator of LHS by \(\sin A\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\frac{\cos A}{\sin A} - \frac{\sin A}{\sin A} + \frac{1}{\sin A}}{\frac{\cos A}{\sin A} + \frac{\sin A}{\sin A} - \frac{1}{\sin A}} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{\cot A - 1 + \text{cosec } A}{\cot A + 1 - \text{cosec } A} \]</div>
+            <p>Rearrange the numerator to group \(\cot A\) and \(\text{cosec } A\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\cot A + \text{cosec } A) - 1}{\cot A - \text{cosec } A + 1} \]</div>
+            <p>Substitute \(1 = \text{cosec}^2 A - \cot^2 A\) in the numerator only:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\text{cosec } A + \cot A) - (\text{cosec}^2 A - \cot^2 A)}{\cot A - \text{cosec } A + 1} \]</div>
+            <p>Factorize \((\text{cosec}^2 A - \cot^2 A)\) as \((\text{cosec } A - \cot A)(\text{cosec } A + \cot A)\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\text{cosec } A + \cot A) - [(\text{cosec } A - \cot A)(\text{cosec } A + \cot A)]}{\cot A - \text{cosec } A + 1} \]</div>
+            <p>Take \((\text{cosec } A + \cot A)\) common from the numerator terms:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\text{cosec } A + \cot A)[1 - (\text{cosec } A - \cot A)]}{\cot A - \text{cosec } A + 1} \]</div>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(\text{cosec } A + \cot A)(1 - \text{cosec } A + \cot A)}{\cot A - \text{cosec } A + 1} \]</div>
+            <p>The term \((1 - \text{cosec } A + \cot A)\) is identical in both numerator and denominator. Canceling them out:</p>
+            <div class="math-scroll">\[ \text{LHS} = \text{cosec } A + \cot A \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q13. Evaluate: \( \frac{\sin 30^\circ + \tan 45^\circ - \text{cosec } 60^\circ}{\sec 30^\circ + \cos 60^\circ + \cot 45^\circ} \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Write standard values for all trigonometric ratios:</p>
+            <ul>
+                <li>\(\sin 30^\circ = 1/2\), \(\tan 45^\circ = 1\), \(\text{cosec } 60^\circ = 2/\sqrt{3}\)</li>
+                <li>\(\sec 30^\circ = 2/\sqrt{3}\), \(\cos 60^\circ = 1/2\), \(\cot 45^\circ = 1\)</li>
+            </ul>
+            <p>Substituting the values into the expression:</p>
+            <div class="math-scroll">\[ = \frac{\frac{1}{2} + 1 - \frac{2}{\sqrt{3}}}{\frac{2}{\sqrt{3}} + \frac{1}{2} + 1} \]</div>
+            <p>Simplify numerator and denominator separately:</p>
+            <div class="math-scroll">\[ \text{Numerator} = \frac{3}{2} - \frac{2}{\sqrt{3}} = \frac{3\sqrt{3} - 4}{2\sqrt{3}} \]</div>
+            <div class="math-scroll">\[ \text{Denominator} = \frac{2}{\sqrt{3}} + \frac{3}{2} = \frac{4 + 3\sqrt{3}}{2\sqrt{3}} \]</div>
+            <p>Now, divide numerator by denominator (the \(2\sqrt{3}\) cancels out):</p>
+            <div class="math-scroll">\[ = \frac{3\sqrt{3} - 4}{3\sqrt{3} + 4} \]</div>
+            <p>Rationalize the denominator by multiplying by its conjugate \((3\sqrt{3} - 4)\):</p>
+            <div class="math-scroll">\[ = \frac{(3\sqrt{3} - 4)(3\sqrt{3} - 4)}{(3\sqrt{3} + 4)(3\sqrt{3} - 4)} \]</div>
+            <div class="math-scroll">\[ = \frac{(3\sqrt{3})^2 + 4^2 - 2(3\sqrt{3})(4)}{(3\sqrt{3})^2 - 4^2} \]</div>
+            <div class="math-scroll">\[ = \frac{27 + 16 - 24\sqrt{3}}{27 - 16} \]</div>
+            <div class="math-scroll">\[ = \frac{43 - 24\sqrt{3}}{11} \]</div>
+            <div class="final-answer">Answer: \(\frac{43 - 24\sqrt{3}}{11}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q14. If \(\sec \theta + \tan \theta = p\), then show that: \( \frac{p^2 - 1}{p^2 + 1} = \sin \theta \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>We are given \(\sec \theta + \tan \theta = p\) <b>---- (Equation 1)</b></p>
+            <p>We know the identity: \(\sec^2 \theta - \tan^2 \theta = 1\).</p>
+            <p>Factoring it: \((\sec \theta - \tan \theta)(\sec \theta + \tan \theta) = 1\)</p>
+            <p>Substituting \(p\) from Equation 1:</p>
+            <div class="math-scroll">\[ (\sec \theta - \tan \theta) \cdot p = 1 \implies \sec \theta - \tan \theta = \frac{1}{p} \text{  ---- (Equation 2)} \]</div>
+            <p><strong>Step A: Find \(\sec \theta\)</strong> by adding Eq 1 and Eq 2:</p>
+            <div class="math-scroll">\[ (\sec \theta + \tan \theta) + (\sec \theta - \tan \theta) = p + \frac{1}{p} \]</div>
+            <div class="math-scroll">\[ 2\sec \theta = \frac{p^2 + 1}{p} \implies \sec \theta = \frac{p^2 + 1}{2p} \]</div>
+            <p><strong>Step B: Find \(\tan \theta\)</strong> by subtracting Eq 2 from Eq 1:</p>
+            <div class="math-scroll">\[ (\sec \theta + \tan \theta) - (\sec \theta - \tan \theta) = p - \frac{1}{p} \]</div>
+            <div class="math-scroll">\[ 2\tan \theta = \frac{p^2 - 1}{p} \implies \tan \theta = \frac{p^2 - 1}{2p} \]</div>
+            <p><strong>Step C: Find \(\sin \theta\)</strong></p>
+            <p>We know that \(\sin \theta = \frac{\sin \theta / \cos \theta}{1 / \cos \theta} = \frac{\tan \theta}{\sec \theta}\).</p>
+            <p>Substitute values of \(\tan \theta\) and \(\sec \theta\):</p>
+            <div class="math-scroll">\[ \sin \theta = \frac{ \frac{p^2 - 1}{2p} }{ \frac{p^2 + 1}{2p} } = \frac{p^2 - 1}{p^2 + 1} \]</div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-header">
+            <div class="q-text">Q15. Prove that: \( (\text{cosec } \theta - \cot \theta)^2 = \frac{1 - \cos \theta}{1 + \cos \theta} \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <span class="step-label">Solution:</span>
+            <p>Take the LHS and convert \(\text{cosec } \theta\) and \(\cot \theta\) into \(\sin \theta\) and \(\cos \theta\):</p>
+            <div class="math-scroll">\[ \text{LHS} = (\text{cosec } \theta - \cot \theta)^2 = \left( \frac{1}{\sin \theta} - \frac{\cos \theta}{\sin \theta} \right)^2 \]</div>
+            <p>Combining the fractions inside the bracket:</p>
+            <div class="math-scroll">\[ \text{LHS} = \left( \frac{1 - \cos \theta}{\sin \theta} \right)^2 \]</div>
+            <p>Applying the square to numerator and denominator:</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(1 - \cos \theta)^2}{\sin^2 \theta} \]</div>
+            <p>Using the fundamental identity \(\sin^2 \theta = 1 - \cos^2 \theta\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(1 - \cos \theta)^2}{1 - \cos^2 \theta} \]</div>
+            <p>Factorize the denominator using \(a^2 - b^2 = (a-b)(a+b)\) where \(a=1, b=\cos \theta\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{(1 - \cos \theta)(1 - \cos \theta)}{(1 - \cos \theta)(1 + \cos \theta)} \]</div>
+            <p>Cancel out the common term \((1 - \cos \theta)\):</p>
+            <div class="math-scroll">\[ \text{LHS} = \frac{1 - \cos \theta}{1 + \cos \theta} \]</div>
+            <p>\(\text{LHS} = \text{RHS}\). <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Detailed Solutions</div>
+</body>
+</html>

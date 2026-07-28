@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #2c3e50; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; color: #800000; }
+        
+        .question-box { background-color: #f9f9f9; border: 1px solid #e0e0e0; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .solution-box { margin-bottom: 25px; padding-left: 10px; border-left: 3px solid #27ae60; }
+        .q-num { font-weight: bold; margin-right: 10px; }
+        .marks-right { float: right; font-weight: bold; color: #c0392b; background: #fdf2f0; padding: 2px 6px; border-radius: 3px; font-size: 11pt; border: 1px solid #e6b0aa; }
+        
+        /* Math container for breaking long equations on small screens */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; margin: 5px 0; padding-bottom: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+        }
+        
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .question-box { background-color: transparent; border-color: #aaa; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & DETAILED SOLUTIONS - Minor Test 12</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Topic: Algebraic Expressions</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <!-- Q1 -->
+    <div class="question-box">
+        <span class="marks-right">[2 Marks]</span>
+        <span class="q-num">Q1.</span> Write the degree of the given polynomial: \( 3x^2y - 5xy^3 + 2x^4 - 7 \)
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        To find the degree of a polynomial, we find the sum of the powers of variables in each term:<br>
+        Term 1: \( 3x^2y \) &rarr; Degree = \( 2 + 1 = 3 \)<br>
+        Term 2: \( -5xy^3 \) &rarr; Degree = \( 1 + 3 = 4 \)<br>
+        Term 3: \( 2x^4 \) &rarr; Degree = \( 4 \)<br>
+        Term 4: \( -7 \) &rarr; Degree = \( 0 \)<br>
+        The highest degree among all terms is 4.<br>
+        <strong>Therefore, the degree of the polynomial is 4.</strong>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-box">
+        <span class="marks-right">[2 Marks]</span>
+        <span class="q-num">Q2.</span> Identify the numerical coefficient and write all the literal factors of the term \( -12x^2yz \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        In the term \( -12x^2yz \):<br>
+        The number part is the numerical coefficient. <br>
+        <strong>Numerical Coefficient = \( -12 \)</strong> (1 Mark)<br>
+        The variable parts are the literal factors. Expanding \( x^2yz \):<br>
+        <strong>Literal factors = \( x, x, y, \text{ and } z \)</strong> (1 Mark)
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-box">
+        <span class="marks-right">[2 Marks]</span>
+        <span class="q-num">Q3.</span> Classify as monomial, binomial, or trinomial: (i) \( 4a^2 - 3b + 7c \) (ii) \( -8x^2yz^3 \)
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        (i) \( 4a^2 - 3b + 7c \) has three unlike terms. <br>
+        <strong>Classification: Trinomial</strong> (1 Mark)<br>
+        (ii) \( -8x^2yz^3 \) is a single term (no plus or minus signs separating parts).<br>
+        <strong>Classification: Monomial</strong> (1 Mark)
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-box">
+        <span class="marks-right">[2 Marks]</span>
+        <span class="q-num">Q4.</span> Subtract \( (3a - 5b) \) from \( (7a + 2b) \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Required expression = \( (7a + 2b) - (3a - 5b) \)<br>
+        Open the brackets (change signs of the second expression):<br>
+        \( = 7a + 2b - 3a + 5b \)<br>
+        Collect like terms together:<br>
+        \( = (7a - 3a) + (2b + 5b) \)<br>
+        <strong>\( = 4a + 7b \)</strong>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-box">
+        <span class="marks-right">[2 Marks]</span>
+        <span class="q-num">Q5.</span> Find the numerical value of \( x^2 - y^2 + 2xy \) when \( x = 2 \) and \( y = -1 \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Substitute \( x = 2 \) and \( y = -1 \) in the expression:<br>
+        \( = (2)^2 - (-1)^2 + 2(2)(-1) \)<br>
+        Evaluate the squares and multiplication:<br>
+        \( = 4 - (1) + (-4) \)<br>
+        \( = 4 - 1 - 4 \)<br>
+        <strong>\( = -1 \)</strong>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <!-- Q6 -->
+    <div class="question-box">
+        <span class="marks-right">[3 Marks]</span>
+        <span class="q-num">Q6.</span> Add: \( 4x^2 - 7xy + 4y^2 - 3 \), \( 5 + 6y^2 - 8xy + x^2 \), and \( 6 - 2xy + 2x^2 - 5y^2 \)
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Arrange the terms in a row and group like terms (Column method can also be used):<br>
+        <div class="math-scroll">
+            \( (4x^2 - 7xy + 4y^2 - 3) + (x^2 - 8xy + 6y^2 + 5) + (2x^2 - 2xy - 5y^2 + 6) \)
+        </div>
+        Grouping like terms:<br>
+        <div class="math-scroll">
+            \( = (4x^2 + x^2 + 2x^2) + (-7xy - 8xy - 2xy) + (4y^2 + 6y^2 - 5y^2) + (-3 + 5 + 6) \)
+        </div>
+        \( = (7x^2) + (-17xy) + (5y^2) + (8) \)<br>
+        <strong>\( = 7x^2 - 17xy + 5y^2 + 8 \)</strong>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-box">
+        <span class="marks-right">[3 Marks]</span>
+        <span class="q-num">Q7.</span> Simplify: \( 5x - [3y - \{2x - (y - x)\}] \)
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        We resolve the brackets from innermost to outermost (BODMAS rule).<br>
+        Step 1: Open round brackets \( ( ) \)<br>
+        \( = 5x - [3y - \{2x - y + x\}] \)<br>
+        Step 2: Simplify terms inside curly brackets \( \{ \} \)<br>
+        \( = 5x - [3y - \{3x - y\}] \)<br>
+        Step 3: Open curly brackets \( \{ \} \) by multiplying by negative sign.<br>
+        \( = 5x - [3y - 3x + y] \)<br>
+        Step 4: Simplify terms inside square brackets \( [ ] \)<br>
+        \( = 5x - [4y - 3x] \)<br>
+        Step 5: Open square brackets.<br>
+        \( = 5x - 4y + 3x \)<br>
+        <strong>\( = 8x - 4y \)</strong>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-box">
+        <span class="marks-right">[3 Marks]</span>
+        <span class="q-num">Q8.</span> What must be added to \( 2x^2 - 3xy + 5y^2 \) to get \( x^2 + xy - y^2 \)?
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Let the expression to be added be \( M \).<br>
+        \( (2x^2 - 3xy + 5y^2) + M = (x^2 + xy - y^2) \)<br>
+        Therefore, \( M = \text{(Result)} - \text{(Given expression)} \)<br>
+        <div class="math-scroll">
+            \( M = (x^2 + xy - y^2) - (2x^2 - 3xy + 5y^2) \)
+        </div>
+        Open the brackets:<br>
+        <div class="math-scroll">
+            \( M = x^2 + xy - y^2 - 2x^2 + 3xy - 5y^2 \)
+        </div>
+        Collect like terms:<br>
+        \( M = (x^2 - 2x^2) + (xy + 3xy) + (-y^2 - 5y^2) \)<br>
+        <strong>\( M = -x^2 + 4xy - 6y^2 \)</strong>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-box">
+        <span class="marks-right">[3 Marks]</span>
+        <span class="q-num">Q9.</span> If \( A = 3p^2 - 4p + 1 \), \( B = 5p^2 + 7p - 8 \), and \( C = -2p^2 + p + 6 \), find \( A - B + C \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Substitute the expressions for A, B, and C in \( (A) - (B) + (C) \):<br>
+        <div class="math-scroll">
+            \( = (3p^2 - 4p + 1) - (5p^2 + 7p - 8) + (-2p^2 + p + 6) \)
+        </div>
+        Open the brackets:<br>
+        <div class="math-scroll">
+            \( = 3p^2 - 4p + 1 - 5p^2 - 7p + 8 - 2p^2 + p + 6 \)
+        </div>
+        Group like terms:<br>
+        \( = (3p^2 - 5p^2 - 2p^2) + (-4p - 7p + p) + (1 + 8 + 6) \)<br>
+        \( = (3 - 7)p^2 + (-11 + 1)p + (15) \)<br>
+        <strong>\( = -4p^2 - 10p + 15 \)</strong>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-box">
+        <span class="marks-right">[3 Marks]</span>
+        <span class="q-num">Q10.</span> The length of a rectangular field is \( (3x + 2y) \) and breadth is \( (x - 3y) \). Find the perimeter.
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        Given: Length (\( L \)) \( = 3x + 2y \), Breadth (\( B \)) \( = x - 3y \)<br>
+        Formula for Perimeter of rectangle \( = 2 \times (L + B) \)<br>
+        Step 1: Find \( L + B \)<br>
+        \( L + B = (3x + 2y) + (x - 3y) \)<br>
+        \( L + B = 3x + x + 2y - 3y = 4x - y \)<br>
+        Step 2: Multiply by 2<br>
+        Perimeter \( = 2 \times (4x - y) \)<br>
+        Distribute the 2 inside the bracket:<br>
+        <strong>Perimeter \( = 8x - 2y \) units</strong>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+
+    <!-- Q11 -->
+    <div class="question-box">
+        <span class="marks-right">[5 Marks]</span>
+        <span class="q-num">Q11.</span> Given \( P = -2x^2 - y^2 + 3xy \), \( Q = x^2 - 2y^2 - xy \) and \( R = x^2 + 3y^2 - 2xy \).<br>
+        (a) Find the sum of \( P, Q, \) and \( R \).<br>
+        (b) Evaluate \( P + Q \) if \( x = 1 \) and \( y = -2 \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Part (a): Find \( P + Q + R \)</strong> (3 Marks)<br>
+        <div class="math-scroll">
+            \( P + Q + R = (-2x^2 - y^2 + 3xy) + (x^2 - 2y^2 - xy) + (x^2 + 3y^2 - 2xy) \)
+        </div>
+        Group like terms:<br>
+        <div class="math-scroll">
+            \( = (-2x^2 + x^2 + x^2) + (-y^2 - 2y^2 + 3y^2) + (3xy - xy - 2xy) \)
+        </div>
+        \( = (0)x^2 + (0)y^2 + (0)xy \)<br>
+        <strong>\( = 0 \)</strong><br><br>
+        
+        <strong>Part (b): Evaluate \( P + Q \) at \( x = 1, y = -2 \)</strong> (2 Marks)<br>
+        First, find \( P + Q \):<br>
+        \( P + Q = (-2x^2 - y^2 + 3xy) + (x^2 - 2y^2 - xy) \)<br>
+        \( P + Q = -x^2 - 3y^2 + 2xy \)<br>
+        Now, substitute \( x = 1, y = -2 \):<br>
+        \( = -(1)^2 - 3(-2)^2 + 2(1)(-2) \)<br>
+        \( = -1 - 3(4) - 4 \)<br>
+        \( = -1 - 12 - 4 \)<br>
+        <strong>\( = -17 \)</strong>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-box">
+        <span class="marks-right">[5 Marks]</span>
+        <span class="q-num">Q12.</span> Simplify: \( 3a - \left[ 2a - \left\{ 3a - (2a - \overline{a - b}) \right\} \right] \)
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        We apply BODMAS. The bar bracket (vinculum) \(\overline{a - b}\) must be resolved first.<br>
+        Step 1: Remove vinculum. (A minus sign before it changes the sign of terms under it).<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 2a - \left\{ 3a - (2a - a + b) \right\} \right] \)
+        </div>
+        Simplify inside the round bracket: \( (2a - a + b) = (a + b) \)<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 2a - \left\{ 3a - (a + b) \right\} \right] \)
+        </div>
+        Step 2: Remove round bracket \( ( ) \)<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 2a - \left\{ 3a - a - b \right\} \right] \)
+        </div>
+        Simplify inside curly bracket: \( (3a - a) = 2a \)<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 2a - \left\{ 2a - b \right\} \right] \)
+        </div>
+        Step 3: Remove curly bracket \( \{ \} \)<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 2a - 2a + b \right] \)
+        </div>
+        Simplify inside square bracket: \( 2a - 2a = 0 \)<br>
+        <div class="math-scroll">
+            \( = 3a - \left[ 0 + b \right] \)
+        </div>
+        Step 4: Final simplification<br>
+        <strong>\( = 3a - b \)</strong>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-box">
+        <span class="marks-right">[5 Marks]</span>
+        <span class="q-num">Q13.</span> By how much does the sum of \( (5x^2 - 7x + 4) \) and \( (-3x^2 + 5x + 2) \) exceed the difference when \( (x^2 - x - 1) \) is subtracted from \( (2x^2 + 3x - 5) \)?
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Part 1: Find the Sum</strong><br>
+        Sum \( = (5x^2 - 7x + 4) + (-3x^2 + 5x + 2) \)<br>
+        \( = (5x^2 - 3x^2) + (-7x + 5x) + (4 + 2) \)<br>
+        \( = 2x^2 - 2x + 6 \) &nbsp;&nbsp;&nbsp; <em>(Let this be S)</em><br><br>
+
+        <strong>Part 2: Find the Difference</strong><br>
+        Difference \( = (2x^2 + 3x - 5) - (x^2 - x - 1) \)<br>
+        \( = 2x^2 + 3x - 5 - x^2 + x + 1 \)<br>
+        \( = (2x^2 - x^2) + (3x + x) + (-5 + 1) \)<br>
+        \( = x^2 + 4x - 4 \) &nbsp;&nbsp;&nbsp; <em>(Let this be D)</em><br><br>
+
+        <strong>Part 3: Find how much S exceeds D</strong><br>
+        Required value \( = S - D \)<br>
+        <div class="math-scroll">
+            \( = (2x^2 - 2x + 6) - (x^2 + 4x - 4) \)
+        </div>
+        \( = 2x^2 - 2x + 6 - x^2 - 4x + 4 \)<br>
+        \( = (2x^2 - x^2) + (-2x - 4x) + (6 + 4) \)<br>
+        <strong>\( = x^2 - 6x + 10 \)</strong>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question-box">
+        <span class="marks-right">[5 Marks]</span>
+        <span class="q-num">Q14.</span> (a) Write the algebraic expression...<br>
+        (b) Identify and group the like terms...
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Part (a): Write Algebraic Expression</strong> (2 Marks)<br>
+        "Five times a number \( x \)" = \( 5x \)<br>
+        "square of a number \( y \)" = \( y^2 \)<br>
+        Their sum = \( (5x + y^2) \)<br>
+        "cube of a number \( z \)" = \( z^3 \)<br>
+        Subtracting the sum from the cube:<br>
+        <strong>Expression: \( z^3 - (5x + y^2) \)</strong><br><br>
+        
+        <strong>Part (b): Group Like Terms</strong> (3 Marks)<br>
+        List: \( 3x^2y, -2xy^2, 5yx^2, 7x^2, -y^2x, -x^2 \)<br>
+        Like terms have exactly the same literal factors with same powers.<br>
+        Note that \( yx^2 = x^2y \) and \( y^2x = xy^2 \).<br>
+        <strong>Group 1:</strong> Terms with \( x^2y \) variables.<br>
+        <strong>\( 3x^2y, \text{ and } 5yx^2 \)</strong><br>
+        <strong>Group 2:</strong> Terms with \( xy^2 \) variables.<br>
+        <strong>\( -2xy^2, \text{ and } -y^2x \)</strong><br>
+        <strong>Group 3:</strong> Terms with \( x^2 \) variables.<br>
+        <strong>\( 7x^2, \text{ and } -x^2 \)</strong>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question-box">
+        <span class="marks-right">[5 Marks]</span>
+        <span class="q-num">Q15.</span> The sides of a triangle are \( (2x^2 - 3x + 4) \text{ cm} \), \( (x^2 + 5x - 1) \text{ cm} \), and \( (-3x^2 + 4x + 5) \text{ cm} \).<br>
+        (a) Find expression for perimeter. (b) Find value if \( x = 2 \).
+    </div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Part (a): Find the perimeter</strong> (3 Marks)<br>
+        Perimeter of a triangle = Sum of all three sides.<br>
+        <div class="math-scroll">
+            \( \text{Perimeter} = (2x^2 - 3x + 4) + (x^2 + 5x - 1) + (-3x^2 + 4x + 5) \)
+        </div>
+        Group the like terms:<br>
+        <div class="math-scroll">
+            \( = (2x^2 + x^2 - 3x^2) + (-3x + 5x + 4x) + (4 - 1 + 5) \)
+        </div>
+        \( = (3x^2 - 3x^2) + (6x) + (8) \)<br>
+        \( = 0 + 6x + 8 \)<br>
+        <strong>Perimeter = \( (6x + 8) \text{ cm} \)</strong><br><br>
+
+        <strong>Part (b): Numerical value at \( x = 2 \)</strong> (2 Marks)<br>
+        Substitute \( x = 2 \) into the perimeter expression:<br>
+        \( \text{Perimeter} = 6(2) + 8 \)<br>
+        \( \text{Perimeter} = 12 + 8 \)<br>
+        <strong>Perimeter = \( 20 \text{ cm} \)</strong>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering mathematical equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f4f4f4; padding: 5px; }
+        
+        .solution-block { 
+            margin-bottom: 25px; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            page-break-inside: avoid;
+        }
+        
+        .q-header-row { 
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .marks { 
+            flex-shrink: 0; 
+            background: #e0f7fa; 
+            color: #006064; 
+            padding: 3px 8px; 
+            border-radius: 4px;
+            font-size: 11pt;
+            font-weight: bold;
+        }
+        
+        .sol-text { margin-top: 10px; color: #333; }
+        .final-answer { font-weight: bold; color: #2e7d32; margin-top: 10px; border-left: 3px solid #2e7d32; padding-left: 10px; }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                min-height: auto; 
+                padding: 10px; 
+                margin: 0; 
+                font-size: 11pt; 
+            }
+            .institute-name { font-size: 18pt; }
+            .q-header-row { flex-direction: column; }
+            .marks { align-self: flex-end; margin-top: 5px; }
+            mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block !important; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; }
+            .watermark { position: absolute; }
+            .solution-block { border: 1px solid #aaa; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12 - DETAILED SOLUTIONS & MARKING SCHEME</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q1. Evaluate the following integer expression: \( (-15) + (+23) - (-12) \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Given expression: \( (-15) + (+23) - (-12) \)<br>
+            Step 1: Simplify the signs.<br>
+            \( = -15 + 23 + 12 \)<br>
+            Step 2: Add the positive integers.<br>
+            \( = -15 + 35 \)<br>
+            Step 3: Subtract.<br>
+            \( = 20 \)
+            <div class="final-answer">Final Answer: 20</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q2. Convert the decimal \( 3.075 \) into a fraction in its simplest form.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Step 1: Write the decimal as a fraction with denominator 1000.<br>
+            \( 3.075 = \frac{3075}{1000} \)<br>
+            Step 2: Simplify by dividing the numerator and denominator by their highest common factor (HCF).<br>
+            Divide by 25: \( \frac{3075 \div 25}{1000 \div 25} = \frac{123}{40} \)<br>
+            Step 3: Convert to mixed fraction (optional but recommended).<br>
+            \( \frac{123}{40} = 3 \frac{3}{40} \)
+            <div class="final-answer">Final Answer: \( \frac{123}{40} \) or \( 3 \frac{3}{40} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q3. Find the ratio of 45 minutes to 1.5 hours in its simplest form.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            To find the ratio, both quantities must have the same units.<br>
+            Convert 1.5 hours to minutes: <br>
+            \( 1 \text{ hour} = 60 \text{ minutes} \)<br>
+            \( 1.5 \text{ hours} = 1.5 \times 60 = 90 \text{ minutes} \)<br>
+            Now, Ratio = \( \frac{45 \text{ minutes}}{90 \text{ minutes}} \)<br>
+            Ratio = \( \frac{45}{90} = \frac{1}{2} \)
+            <div class="final-answer">Final Answer: \( 1 : 2 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q4. Arrange the following integers in ascending order: \( -8,\ 0,\ -12,\ 5,\ -2 \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Ascending order means from smallest to largest.<br>
+            Negative numbers with larger absolute values are smaller.<br>
+            Smallest is \( -12 \), followed by \( -8 \), then \( -2 \).<br>
+            Then comes \( 0 \), and the largest is \( 5 \).
+            <div class="final-answer">Final Answer: \( -12,\ -8,\ -2,\ 0,\ 5 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q5. If the numbers \( 3,\ x,\ 15,\ 25 \) are in proportion, find the value of \( x \).</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            If numbers are in proportion, then:<br>
+            Product of extremes = Product of means<br>
+            \( 3 \times 25 = x \times 15 \)<br>
+            \( 75 = 15x \)<br>
+            \( x = \frac{75}{15} \)<br>
+            \( x = 5 \)
+            <div class="final-answer">Final Answer: \( x = 5 \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q6. A rectangular field has a length of \( 42.5 \text{ m} \) and a breadth of \( 18.6 \text{ m} \). Calculate its perimeter and area.</div>
+            <div class="marks">[4 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Given: Length (\( l \)) = \( 42.5 \text{ m} \), Breadth (\( b \)) = \( 18.6 \text{ m} \)<br>
+            <br>
+            <strong>Part 1: Perimeter</strong> (2 Marks)<br>
+            Perimeter = \( 2 \times (l + b) \)<br>
+            \( = 2 \times (42.5 + 18.6) \)<br>
+            \( = 2 \times 61.1 \)<br>
+            \( = 122.2 \text{ m} \)<br>
+            <br>
+            <strong>Part 2: Area</strong> (2 Marks)<br>
+            Area = \( l \times b \)<br>
+            \( = 42.5 \times 18.6 \)<br>
+            \( = 790.5 \text{ m}^2 \)
+            <div class="final-answer">Final Answer: Perimeter = \( 122.2 \text{ m} \), Area = \( 790.5 \text{ m}^2 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q7. Subtract the sum of \( -345 \) and \( 120 \) from the difference of \( 45 \) and \( -110 \).</div>
+            <div class="marks">[4 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Step 1: Find the sum of \( -345 \) and \( 120 \).<br>
+            Sum = \( (-345) + 120 = -225 \)<br>
+            <br>
+            Step 2: Find the difference of \( 45 \) and \( -110 \).<br>
+            Difference = \( 45 - (-110) = 45 + 110 = 155 \)<br>
+            <br>
+            Step 3: Subtract the Sum from the Difference.<br>
+            Result = Difference - Sum<br>
+            \( = 155 - (-225) \)<br>
+            \( = 155 + 225 \)<br>
+            \( = 380 \)
+            <div class="final-answer">Final Answer: 380</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q8. Two numbers are in the ratio \( 5 : 7 \). If the sum of the numbers is \( 108 \), find the two numbers.</div>
+            <div class="marks">[4 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Let the common ratio multiplier be \( x \).<br>
+            Then, the two numbers are \( 5x \) and \( 7x \).<br>
+            Given, their sum is 108.<br>
+            \( 5x + 7x = 108 \)<br>
+            \( 12x = 108 \)<br>
+            \( x = \frac{108}{12} \)<br>
+            \( x = 9 \)<br><br>
+            Now, find the numbers:<br>
+            First number = \( 5x = 5 \times 9 = 45 \)<br>
+            Second number = \( 7x = 7 \times 9 = 63 \)
+            <div class="final-answer">Final Answer: The numbers are 45 and 63.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q9. Simplify the following decimal expression using BODMAS:<br>\( 18.5 - [6.4 - \{3.2 + (5.6 - 3.1)\}] \)</div>
+            <div class="marks">[4 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            According to BODMAS, solve innermost brackets first (round brackets).<br>
+            \( = 18.5 - [6.4 - \{3.2 + (2.5)\}] \)<br>
+            Next, solve the curly brackets.<br>
+            \( = 18.5 - [6.4 - \{5.7\}] \)<br>
+            Next, solve the square brackets.<br>
+            \( = 18.5 - [0.7] \)<br>
+            Finally, perform subtraction.<br>
+            \( = 18.5 - 0.7 = 17.8 \)
+            <div class="final-answer">Final Answer: 17.8</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q10. A car travels \( 165 \text{ km} \) in 3 hours at a uniform speed.<br>(a) How long will it take to travel \( 440 \text{ km} \)?<br>(b) How far will it travel in 7 hours?</div>
+            <div class="marks">[4 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            First, find the uniform speed of the car.<br>
+            Speed = \( \frac{\text{Distance}}{\text{Time}} = \frac{165}{3} = 55 \text{ km/hr} \).<br><br>
+            <strong>(a)</strong> Time to travel 440 km:<br>
+            Time = \( \frac{\text{Distance}}{\text{Speed}} \)<br>
+            Time = \( \frac{440}{55} = 8 \text{ hours} \).<br><br>
+            <strong>(b)</strong> Distance traveled in 7 hours:<br>
+            Distance = Speed \( \times \) Time<br>
+            Distance = \( 55 \times 7 = 385 \text{ km} \).
+            <div class="final-answer">Final Answer: (a) 8 hours, (b) 385 km</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q11. In a competitive examination, 5 marks are awarded for every correct answer, \( -2 \) marks for every incorrect answer, and 0 marks for questions not attempted.<br>
+            (a) Rahul attempts all questions. He gets 12 correct and 8 incorrect answers. What is his total score?<br>
+            (b) Riya scores 20 marks in the same exam. If she got 10 correct answers, how many questions did she guess incorrectly?</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Rahul's Score:</strong> (2.5 Marks)<br>
+            Marks for 12 correct answers = \( 12 \times 5 = 60 \)<br>
+            Marks for 8 incorrect answers = \( 8 \times (-2) = -16 \)<br>
+            Total Score = \( 60 + (-16) = 60 - 16 = 44 \)<br><br>
+            <strong>(b) Riya's Incorrect Answers:</strong> (2.5 Marks)<br>
+            Riya's marks for 10 correct answers = \( 10 \times 5 = 50 \)<br>
+            Total score obtained by Riya = 20<br>
+            Marks obtained for incorrect answers = Total Score - Marks for correct answers<br>
+            \( = 20 - 50 = -30 \)<br>
+            Since each incorrect answer penalizes 2 marks, number of incorrect answers = \( \frac{-30}{-2} = 15 \)<br>
+            <div class="final-answer">Final Answer: (a) Rahul's score is 44. (b) Riya guessed 15 questions incorrectly.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q12. The cost of \( 15.5 \text{ kg} \) of apples is Rs. \( 1317.50 \).<br>
+            (a) Find the cost of \( 1 \text{ kg} \) of apples.<br>
+            (b) Find the quantity of apples that can be purchased for Rs. \( 595 \).</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Cost of 1 kg of apples:</strong> (2.5 Marks)<br>
+            Cost of 15.5 kg = Rs. 1317.50<br>
+            Cost of 1 kg = \( \frac{1317.50}{15.5} \)<br>
+            Convert decimals to whole numbers by multiplying numerator and denominator by 10:<br>
+            \( = \frac{13175}{155} \)<br>
+            Dividing, we get \( = \text{Rs. } 85 \)<br><br>
+            <strong>(b) Quantity purchased for Rs. 595:</strong> (2.5 Marks)<br>
+            Apples purchased for Rs. 85 = 1 kg<br>
+            Apples purchased for Rs. 595 = \( \frac{595}{85} \)<br>
+            Dividing, we get \( = 7 \text{ kg} \)<br>
+            <div class="final-answer">Final Answer: (a) Cost of 1 kg is Rs. 85. (b) 7 kg can be purchased for Rs. 595.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q13. The ratio of the monthly income to the monthly expenditure of a family is \( 9 : 7 \). If their monthly savings is Rs. \( 7200 \):<br>
+            (a) What is their total monthly income?<br>
+            (b) What is their total monthly expenditure?</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Let the monthly income be \( 9x \) and the monthly expenditure be \( 7x \).<br>
+            We know that: Income = Expenditure + Savings<br>
+            Therefore, Savings = Income - Expenditure<br>
+            Savings = \( 9x - 7x = 2x \)<br><br>
+            Given, Savings = Rs. 7200<br>
+            \( 2x = 7200 \)<br>
+            \( x = \frac{7200}{2} = 3600 \)<br><br>
+            <strong>(a) Total Monthly Income:</strong><br>
+            Income = \( 9x = 9 \times 3600 = \text{Rs. } 32,400 \)<br><br>
+            <strong>(b) Total Monthly Expenditure:</strong><br>
+            Expenditure = \( 7x = 7 \times 3600 = \text{Rs. } 25,200 \)<br>
+            <em>(Check: 32400 - 25200 = 7200)</em>
+            <div class="final-answer">Final Answer: (a) Income = Rs. 32,400, (b) Expenditure = Rs. 25,200</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q14. A piece of electrical wire measuring \( 14.4 \text{ m} \) in length is cut into two pieces in the ratio \( 3 : 5 \).<br>
+            (a) Find the length of each piece in meters.<br>
+            (b) Express the length of the smaller piece in centimeters as an integer.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Length of each piece in meters:</strong> (3 Marks)<br>
+            Total ratio parts = \( 3 + 5 = 8 \) parts.<br>
+            Total length = \( 14.4 \text{ m} \)<br>
+            Value of one part = \( \frac{14.4}{8} = 1.8 \text{ m} \)<br>
+            Length of first piece = \( 3 \times 1.8 = 5.4 \text{ m} \)<br>
+            Length of second piece = \( 5 \times 1.8 = 9.0 \text{ m} \)<br><br>
+            <strong>(b) Smaller piece in centimeters:</strong> (2 Marks)<br>
+            The smaller piece measures \( 5.4 \text{ m} \).<br>
+            We know \( 1 \text{ m} = 100 \text{ cm} \).<br>
+            Length in cm = \( 5.4 \times 100 = 540 \text{ cm} \).
+            <div class="final-answer">Final Answer: (a) Pieces are 5.4 m and 9.0 m. (b) Smaller piece is 540 cm.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

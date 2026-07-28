@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 13pt; 
+        }
+
+        .solution-block {
+            margin-bottom: 25px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks {
+            flex-shrink: 0;
+            color: #d32f2f;
+            white-space: nowrap;
+        }
+
+        .solution-content {
+            padding: 10px;
+            padding-left: 20px;
+        }
+        
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        /* Math Overflow for small screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+        
+        .final-answer {
+            font-weight: bold;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #f8fcf8;
+        }
+
+        /* Responsive CSS */
+        @media screen and (max-width: 800px) {
+            body { width: 100%; padding: 15px; margin: 0; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 95%; }
+            .question-header { flex-direction: column; }
+            .marks { margin-top: 5px; text-align: right; }
+        }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12 - DETAILED SOLUTIONS</div>
+        <p><strong>Class:</strong> 9 CBSE | <strong>Subject:</strong> Mathematics (Linear Equations)</p>
+    </div>
+
+    <div class="section-header">SECTION A SOLUTIONS (2 Marks Each)</div>
+    
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q1. Express the linear equation \( 2x = -5y \) in the standard form \( ax + by + c = 0 \) and indicate the values of \( a, b, \) and \( c \).</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Step 1:</strong> Bring all terms to one side to express it in the form \( ax + by + c = 0 \).</div>
+            <div class="math-scroll">\( 2x + 5y = 0 \)</div>
+            <div class="step"><strong>Step 2:</strong> To make the constant term visible, we can write it as:</div>
+            <div class="math-scroll">\( 2x + 5y + 0 = 0 \)</div>
+            <div class="step"><strong>Step 3:</strong> Comparing with standard form \( ax + by + c = 0 \):</div>
+            <div class="final-answer">\( a = 2, b = 5, c = 0 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q2. Check which of the following are solutions of the equation \( x - 2y = 4 \): (i) \( (0, 2) \) (ii) \( (4, 0) \)</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Given Equation: \( x - 2y = 4 \)</div>
+            <div class="step"><strong>(i) For \( (0, 2) \):</strong> Put \( x = 0 \) and \( y = 2 \) in LHS.</div>
+            <div class="math-scroll">\( \text{LHS} = 0 - 2(2) = -4 \)</div>
+            <div class="step">Since \( \text{LHS} \neq \text{RHS} \) (as \( -4 \neq 4 \)), <span style="font-weight:bold;">\( (0, 2) \) is NOT a solution.</span> (1 Mark)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>(ii) For \( (4, 0) \):</strong> Put \( x = 4 \) and \( y = 0 \) in LHS.</div>
+            <div class="math-scroll">\( \text{LHS} = 4 - 2(0) = 4 \)</div>
+            <div class="step">Since \( \text{LHS} = \text{RHS} \), <span style="font-weight:bold;">\( (4, 0) \) IS a solution.</span> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q3. Find the value of \( k \), if \( x = 2, y = 1 \) is a solution of the equation \( 2x + 3y = k \).</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Since \( (2, 1) \) is a solution, substituting \( x = 2 \) and \( y = 1 \) will satisfy the equation.</div>
+            <div class="step">Equation: \( 2x + 3y = k \)</div>
+            <div class="math-scroll">\( \Rightarrow 2(2) + 3(1) = k \)</div>
+            <div class="math-scroll">\( \Rightarrow 4 + 3 = k \)</div>
+            <div class="final-answer">\( k = 7 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q4. Write any two distinct solutions for the linear equation \( 2x + y = 7 \).</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">We can rewrite the equation as \( y = 7 - 2x \). Let's substitute arbitrary values for \( x \).</div>
+            <div class="step"><strong>Solution 1:</strong> Let \( x = 0 \). Then, \( y = 7 - 2(0) = 7 \). Point: <strong>(0, 7)</strong></div>
+            <div class="step"><strong>Solution 2:</strong> Let \( x = 1 \). Then, \( y = 7 - 2(1) = 5 \). Point: <strong>(1, 5)</strong></div>
+            <div class="step"><em>(Note: Students may provide any other valid solutions like (2, 3), (3, 1), etc. Award full marks for any two correct points.)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q5. At what points does the graph of the linear equation \( x + y = 5 \) meet the x-axis and the y-axis?</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Intersection with x-axis:</strong> The y-coordinate is 0.</div>
+            <div class="step">Put \( y = 0 \) in \( x + y = 5 \) \( \Rightarrow x + 0 = 5 \Rightarrow x = 5 \).</div>
+            <div class="step">Point on x-axis: <strong>(5, 0)</strong> (1 Mark)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>Intersection with y-axis:</strong> The x-coordinate is 0.</div>
+            <div class="step">Put \( x = 0 \) in \( x + y = 5 \) \( \Rightarrow 0 + y = 5 \Rightarrow y = 5 \).</div>
+            <div class="step">Point on y-axis: <strong>(0, 5)</strong> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B SOLUTIONS (3 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q6. The cost of a notebook is twice the cost of a pen. Write a linear equation in two variables to represent this statement.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Let the cost of a notebook be ₹ \( x \). (1/2 Mark)</div>
+            <div class="step">Let the cost of a pen be ₹ \( y \). (1/2 Mark)</div>
+            <div class="step">According to the given condition: Cost of notebook = \( 2 \times \) Cost of pen</div>
+            <div class="math-scroll">\( x = 2y \) (1 Mark)</div>
+            <div class="step">Converting into standard form:</div>
+            <div class="final-answer">\( x - 2y = 0 \) (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q7. Give the geometric representations of \( y = 3 \) as an equation (i) in one variable (ii) in two variables.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>(i) In one variable:</strong></div>
+            <div class="step">The equation \( y = 3 \) represents a point on the number line.</div>
+            <pre style="font-family: monospace; letter-spacing: 2px;">
+<--|---|---|---|---|---|---|-->
+  -2  -1   0   1   2   3   4
+                       ^ (y=3)
+            </pre>
+            <div class="step">(1.5 Marks)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>(ii) In two variables:</strong></div>
+            <div class="step">The equation can be written as \( 0\cdot x + 1\cdot y = 3 \). This represents a straight line parallel to the x-axis, passing through the point \( (0, 3) \) on the Cartesian plane.</div>
+            <div class="step"><em>(Student must draw a basic Cartesian plane and a horizontal line passing through y=3)</em></div>
+            <div class="step">(1.5 Marks for explanation and graph)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q8. Solve the equation \( 2x + 1 = x - 3 \), and represent the solution(s) on the Cartesian plane.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Solving the equation:</strong></div>
+            <div class="math-scroll">\( 2x + 1 = x - 3 \)</div>
+            <div class="math-scroll">\( 2x - x = -3 - 1 \)</div>
+            <div class="final-answer">\( x = -4 \) (1 Mark)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>Representation on Cartesian Plane:</strong></div>
+            <div class="step">The equation \( x = -4 \) can be written as \( 1\cdot x + 0\cdot y = -4 \).</div>
+            <div class="step">For any value of \( y \), \( x \) is always \( -4 \). Points are \( (-4, 0), (-4, 2), \) etc.</div>
+            <div class="step">The graph is a straight line parallel to the y-axis, located 4 units to the left of the y-axis.</div>
+            <div class="step"><em>(Award 2 Marks for correctly plotting a vertical line passing through x = -4)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q9. If the point \( (3, 4) \) lies on the graph of the equation \( 3y = ax + 7 \), find the value of \( a \).</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Since the point \( (3, 4) \) lies on the line \( 3y = ax + 7 \), it must satisfy the equation.</div>
+            <div class="step">Substitute \( x = 3 \) and \( y = 4 \) into the equation: (1 Mark)</div>
+            <div class="math-scroll">\( 3(4) = a(3) + 7 \)</div>
+            <div class="math-scroll">\( 12 = 3a + 7 \) (1 Mark)</div>
+            <div class="math-scroll">\( 12 - 7 = 3a \)</div>
+            <div class="math-scroll">\( 5 = 3a \)</div>
+            <div class="final-answer">\( a = \frac{5}{3} \) (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q10. Yamini and Fatima together contributed ₹ 100. Write a linear equation which satisfies this data.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Let Yamini's contribution be ₹ \( x \). (1 Mark)</div>
+            <div class="step">Let Fatima's contribution be ₹ \( y \). (1 Mark)</div>
+            <div class="step">According to the problem, their total contribution is ₹ 100.</div>
+            <div class="step">Therefore, the linear equation is:</div>
+            <div class="final-answer">\( x + y = 100 \) (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C SOLUTIONS (5 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q11. Taxi fare: ₹ 8 for 1st km, ₹ 5 per km for subsequent. Distance \( x \), fare ₹ \( y \). (i) Write equation. (ii) Draw graph.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>(i) Forming the equation:</strong></div>
+            <div class="step">Total distance = \( x \) km.</div>
+            <div class="step">Fare for 1st km = ₹ 8</div>
+            <div class="step">Remaining distance = \( (x - 1) \) km.</div>
+            <div class="step">Fare for subsequent distance = ₹ \( 5 \times (x - 1) \)</div>
+            <div class="step">Total fare (\( y \)) = Fare for 1st km + Fare for remaining distance</div>
+            <div class="math-scroll">\( y = 8 + 5(x - 1) \)</div>
+            <div class="math-scroll">\( y = 8 + 5x - 5 \)</div>
+            <div class="final-answer">\( y = 5x + 3 \)  OR  \( 5x - y + 3 = 0 \) (2 Marks)</div>
+            
+            <div class="step" style="margin-top:15px;"><strong>(ii) Drawing the graph:</strong></div>
+            <div class="step">Find at least two solutions for \( y = 5x + 3 \):</div>
+            <ul>
+                <li>If \( x = 0, y = 3 \). Point: \( (0, 3) \)</li>
+                <li>If \( x = 1, y = 8 \). Point: \( (1, 8) \)</li>
+                <li>If \( x = 2, y = 13 \). Point: \( (2, 13) \)</li>
+            </ul>
+            <div class="step"><em>(Award 3 Marks for correctly plotting points, drawing a straight line, and labelling axes. Note: For practical application, \(x\) and \(y\) should be positive in the graph quadrant).</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q12. \( F = \left(\frac{9}{5}\right)C + 32 \). (i) If \( 30^\circ\text{C} \), find F. (ii) If \( 95^\circ\text{F} \), find C. (iii) Find same numerical temp.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>(i) Temperature is \( 30^\circ\text{C} \):</strong> (1.5 Marks)</div>
+            <div class="math-scroll">\( F = \left(\frac{9}{5}\right)(30) + 32 \)</div>
+            <div class="math-scroll">\( F = 9 \times 6 + 32 = 54 + 32 = 86 \)</div>
+            <div class="step">Temperature in Fahrenheit = <strong>\( 86^\circ\text{F} \)</strong></div>
+
+            <div class="step" style="margin-top:10px;"><strong>(ii) Temperature is \( 95^\circ\text{F} \):</strong> (1.5 Marks)</div>
+            <div class="math-scroll">\( 95 = \left(\frac{9}{5}\right)C + 32 \)</div>
+            <div class="math-scroll">\( 95 - 32 = \left(\frac{9}{5}\right)C \)</div>
+            <div class="math-scroll">\( 63 = \left(\frac{9}{5}\right)C \)</div>
+            <div class="math-scroll">\( C = \frac{63 \times 5}{9} = 7 \times 5 = 35 \)</div>
+            <div class="step">Temperature in Celsius = <strong>\( 35^\circ\text{C} \)</strong></div>
+
+            <div class="step" style="margin-top:10px;"><strong>(iii) Numerically same temperature:</strong> (2 Marks)</div>
+            <div class="step">Let \( F = C = x \). Substitute in the equation:</div>
+            <div class="math-scroll">\( x = \left(\frac{9}{5}\right)x + 32 \)</div>
+            <div class="math-scroll">\( x - \left(\frac{9}{5}\right)x = 32 \)</div>
+            <div class="math-scroll">\( \frac{5x - 9x}{5} = 32 \)</div>
+            <div class="math-scroll">\( -4x = 160 \)</div>
+            <div class="step">\( x = -40 \)</div>
+            <div class="final-answer">Yes, \( -40^\circ \) is the same in both scales.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q13. Graph \( x + y = 4 \). Find x-axis intersection. Check if \( (2, 2) \) lies on line.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Graphing \( x + y = 4 \):</strong></div>
+            <div class="step">Solutions table:</div>
+            <ul>
+                <li>\( x = 0 \Rightarrow y = 4 \). Point: \( (0, 4) \)</li>
+                <li>\( x = 4 \Rightarrow y = 0 \). Point: \( (4, 0) \)</li>
+            </ul>
+            <div class="step"><em>(Student plots these points and draws a straight line. - 2 Marks)</em></div>
+            
+            <div class="step" style="margin-top:10px;"><strong>x-axis intersection:</strong></div>
+            <div class="step">From the graph or algebraically (put \( y=0 \)), the line intersects the x-axis at:</div>
+            <div class="final-answer">Coordinates: \( (4, 0) \) (1.5 Marks)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>Checking point \( (2, 2) \):</strong></div>
+            <div class="step">Substitute \( x = 2, y = 2 \) into \( x + y = 4 \).</div>
+            <div class="math-scroll">LHS = \( 2 + 2 = 4 \). RHS = \( 4 \). LHS = RHS.</div>
+            <div class="final-answer">Yes, \( (2, 2) \) lies on the line. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q14. Give equations of two lines passing through \( (2, 14) \). How many more? Why?</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Two equations:</strong> We need to create algebraic relations satisfying \( x = 2, y = 14 \).</div>
+            <div class="step">Example 1: \( y = 7x \) (since \( 14 = 7 \times 2 \))</div>
+            <div class="step">Example 2: \( x + y = 16 \) (since \( 2 + 14 = 16 \))</div>
+            <div class="step">Example 3: \( y - x = 12 \)</div>
+            <div class="step"><em>(Award 2 Marks for any two correct equations).</em></div>
+            
+            <div class="step" style="margin-top:10px;"><strong>How many more such lines?</strong></div>
+            <div class="final-answer">There are infinitely many more such lines. (1 Mark)</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>Logical geometric explanation:</strong></div>
+            <div class="step">In Euclidean geometry, through a single given point in a plane, infinitely many straight lines can pass. Since a linear equation in two variables represents a straight line, and the coordinate \( (2, 14) \) represents a single point in the Cartesian plane, an infinite number of lines (and thus, equations) can pass through it in various directions (slopes). (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q15. (i) Equation where ordinate is 3 times abscissa. (ii) Intersection of \( \frac{x}{2} + \frac{y}{3} = 1 \) on axes.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>(i) Linear Equation:</strong> (2 Marks)</div>
+            <div class="step">Let abscissa (x-coordinate) = \( x \)</div>
+            <div class="step">Let ordinate (y-coordinate) = \( y \)</div>
+            <div class="step">Condition: Ordinate is 3 times the abscissa.</div>
+            <div class="final-answer">\( y = 3x \)  OR  \( 3x - y = 0 \)</div>
+            
+            <div class="step" style="margin-top:15px;"><strong>(ii) Intersection points:</strong> (3 Marks)</div>
+            <div class="step">Equation: \( \frac{x}{2} + \frac{y}{3} = 1 \)</div>
+            
+            <div class="step"><strong>x-axis intersection:</strong> Put \( y = 0 \).</div>
+            <div class="math-scroll">\( \frac{x}{2} + \frac{0}{3} = 1 \Rightarrow \frac{x}{2} = 1 \Rightarrow x = 2 \)</div>
+            <div class="step">Coordinates: <strong>\( (2, 0) \)</strong></div>
+            
+            <div class="step" style="margin-top:10px;"><strong>y-axis intersection:</strong> Put \( x = 0 \).</div>
+            <div class="math-scroll">\( \frac{0}{2} + \frac{y}{3} = 1 \Rightarrow \frac{y}{3} = 1 \Rightarrow y = 3 \)</div>
+            <div class="step">Coordinates: <strong>\( (0, 3) \)</strong></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Detailed Solutions</div>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions - Minor Test 12</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left', displayIndent: '1em' },
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #f0f2f5; 
+            margin: 0;
+            padding: 10px;
+        }
+
+        .paper-container {
+            width: 100%;
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 30px; 
+            box-sizing: border-box; 
+            background-color: white; 
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Header styling */
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 3px solid #2c3e50; padding-bottom: 15px; }
+        .institute-name { font-size: 22pt; font-weight: bold; color: #2c3e50; margin: 0; }
+        .doc-type { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #e74c3c; }
+        .test-name { font-size: 13pt; margin-top: 5px; color: #555;}
+        
+        .section-header { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 10px; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .qa-block { margin-bottom: 30px; border-bottom: 1px dashed #ccc; padding-bottom: 20px; }
+        
+        .question-row { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            color: #34495e; 
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .q-text-wrapper { display: flex; flex-grow: 1; }
+        .q-num { width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; padding-right: 15px; }
+        .q-marks { font-weight: bold; color: #e74c3c; flex-shrink: 0; white-space: nowrap; }
+
+        .solution-row { padding: 0 10px 0 40px; }
+        .solution-title { font-weight: bold; text-decoration: underline; margin-bottom: 10px; display: inline-block; color: #27ae60; }
+        
+        /* Math display responsive handling */
+        .math-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+        .step { margin-bottom: 8px; }
+        .final-answer { font-weight: bold; color: #c0392b; background: #fdf5f6; padding: 5px 10px; border-left: 3px solid #c0392b; display: inline-block; margin-top: 10px; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+
+        @media (max-width: 768px) {
+            .paper-container { padding: 15px; border-radius: 0; }
+            .solution-row { padding-left: 10px; }
+            body { font-size: 11pt; padding: 0; }
+            .institute-name { font-size: 18pt; }
+            .question-row { flex-direction: column; }
+            .q-marks { text-align: right; margin-top: 5px; border-top: 1px solid #eee; padding-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="doc-type">DETAILED SOLUTIONS & MARKING SCHEME</div>
+            <div class="test-name">Class 7 ICSE - Mathematics | Minor Test 12</div>
+        </div>
+
+        <div class="section-header">SECTION A (10 Marks)</div>
+        
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">1.</div>
+                    <div class="q-content">Convert \( \frac{3}{8} \) into a percentage, and express \( 45\% \) as a fraction in its simplest form.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step"><strong>Part I: Convert fraction to percentage</strong></div>
+                <div class="math-container">
+                    \( \frac{3}{8} \text{ as a percentage } = \frac{3}{8} \times 100\% \)
+                </div>
+                <div class="math-container">
+                    \( = \frac{300}{8}\% = 37.5\% \text{ or } 37\frac{1}{2}\% \)
+                </div>
+                <div class="step" style="margin-top: 10px;"><strong>Part II: Convert percentage to fraction</strong></div>
+                <div class="math-container">
+                    \( 45\% = \frac{45}{100} \)
+                </div>
+                <div class="math-container">
+                    Dividing numerator and denominator by 5:
+                    \( \frac{45 \div 5}{100 \div 5} = \frac{9}{20} \)
+                </div>
+                <div class="final-answer">Answer: 37.5% and 9/20</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">2.</div>
+                    <div class="q-content">Find the number whose \( 12.5\% \) is equal to \( 64 \).</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let the required number be \( x \).</div>
+                <div class="step">According to the problem:</div>
+                <div class="math-container">
+                    \( 12.5\% \text{ of } x = 64 \)
+                </div>
+                <div class="math-container">
+                    \( \Rightarrow \frac{12.5}{100} \times x = 64 \)
+                </div>
+                <div class="math-container">
+                    \( \Rightarrow \frac{125}{1000} \times x = 64 \) (removing decimal)
+                </div>
+                <div class="math-container">
+                    \( \Rightarrow \frac{1}{8} \times x = 64 \)
+                </div>
+                <div class="math-container">
+                    \( \Rightarrow x = 64 \times 8 \)
+                </div>
+                <div class="math-container">
+                    \( \Rightarrow x = 512 \)
+                </div>
+                <div class="final-answer">Answer: The number is 512.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">3.</div>
+                    <div class="q-content">A shopkeeper bought a chair for ₹\( 450 \) and sold it for ₹\( 540 \). Find his profit percentage.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Cost Price (C.P.) = ₹ 450</div>
+                <div class="step">Selling Price (S.P.) = ₹ 540</div>
+                <div class="step">Since S.P. > C.P., there is a profit.</div>
+                <div class="math-container">
+                    \( \text{Profit} = \text{S.P.} - \text{C.P.} = 540 - 450 = ₹ 90 \)
+                </div>
+                <div class="math-container">
+                    \( \text{Profit Percentage} = \left( \frac{\text{Profit}}{\text{C.P.}} \right) \times 100\% \)
+                </div>
+                <div class="math-container">
+                    \( = \left( \frac{90}{450} \right) \times 100\% = \frac{1}{5} \times 100\% = 20\% \)
+                </div>
+                <div class="final-answer">Answer: The profit percentage is 20%.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">4.</div>
+                    <div class="q-content">Calculate the simple interest on ₹\( 2500 \) for \( 2 \) years at the rate of \( 6\% \) per annum.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Principal (P) = ₹ 2500</div>
+                <div class="step">Time (T) = 2 years</div>
+                <div class="step">Rate (R) = 6% per annum</div>
+                <div class="math-container">
+                    \( \text{Simple Interest (S.I.)} = \frac{P \times R \times T}{100} \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.I.} = \frac{2500 \times 6 \times 2}{100} \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.I.} = 25 \times 12 = ₹ 300 \)
+                </div>
+                <div class="final-answer">Answer: The simple interest is ₹ 300.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">5.</div>
+                    <div class="q-content">If the price of a stationary kit increases from ₹\( 200 \) to ₹\( 250 \), calculate the percentage increase in the price.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Original Price = ₹ 200</div>
+                <div class="step">New Price = ₹ 250</div>
+                <div class="math-container">
+                    \( \text{Increase in price} = \text{New Price} - \text{Original Price} \)
+                </div>
+                <div class="math-container">
+                    \( = 250 - 200 = ₹ 50 \)
+                </div>
+                <div class="math-container">
+                    \( \text{Percentage Increase} = \left( \frac{\text{Increase}}{\text{Original Price}} \right) \times 100\% \)
+                </div>
+                <div class="math-container">
+                    \( = \left( \frac{50}{200} \right) \times 100\% = \frac{1}{4} \times 100\% = 25\% \)
+                </div>
+                <div class="final-answer">Answer: The percentage increase is 25%.</div>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION B (15 Marks)</div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">6.</div>
+                    <div class="q-content">Out of \( 800 \) students in a school, \( 45\% \) are girls. Find the exact number of boys studying in the school.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Total number of students = 800</div>
+                <div class="step">Percentage of girls = 45%</div>
+                <div class="step"><strong>Method 1: Direct approach</strong></div>
+                <div class="math-container">
+                    Percentage of boys \( = (100\% - \text{Percentage of girls}) = 100\% - 45\% = 55\% \)
+                </div>
+                <div class="math-container">
+                    Number of boys \( = 55\% \text{ of } 800 \)
+                </div>
+                <div class="math-container">
+                    \( = \frac{55}{100} \times 800 = 55 \times 8 = 440 \)
+                </div>
+                <div class="final-answer">Answer: The number of boys in the school is 440.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">7.</div>
+                    <div class="q-content">An article is marked at ₹\( 850 \). The shopkeeper allows a discount of \( 12\% \) on the marked price. Find the final selling price of the article.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Marked Price (M.P.) = ₹ 850</div>
+                <div class="step">Discount Percentage = 12%</div>
+                <div class="math-container">
+                    \( \text{Discount Amount} = 12\% \text{ of M.P.} = \frac{12}{100} \times 850 \)
+                </div>
+                <div class="math-container">
+                    \( = \frac{12 \times 85}{10} = \frac{1020}{10} = ₹ 102 \)
+                </div>
+                <div class="math-container">
+                    \( \text{Selling Price (S.P.)} = \text{M.P.} - \text{Discount} \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.P.} = 850 - 102 = ₹ 748 \)
+                </div>
+                <div class="final-answer">Answer: The selling price is ₹ 748.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">8.</div>
+                    <div class="q-content">A man sells a decorative lamp for ₹\( 396 \) and gains \( 10\% \) on the transaction. Calculate the cost price of the lamp.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Selling Price (S.P.) = ₹ 396</div>
+                <div class="step">Gain Percentage = 10%</div>
+                <div class="step">Let the Cost Price (C.P.) be \( x \).</div>
+                <div class="math-container">
+                    \( \text{S.P.} = \text{C.P.} + \text{Gain} \)
+                </div>
+                <div class="math-container">
+                    \( 396 = x + 10\% \text{ of } x \)
+                </div>
+                <div class="math-container">
+                    \( 396 = x + 0.10x \Rightarrow 396 = 1.10x \)
+                </div>
+                <div class="math-container">
+                    \( x = \frac{396}{1.10} = \frac{3960}{11} = 360 \)
+                </div>
+                <div class="step"><em>Alternative Formula Method:</em></div>
+                <div class="math-container">
+                    \( \text{C.P.} = \frac{100}{100 + \text{Gain\%}} \times \text{S.P.} \)
+                </div>
+                <div class="math-container">
+                    \( \text{C.P.} = \frac{100}{110} \times 396 = \frac{10}{11} \times 396 = 10 \times 36 = ₹ 360 \)
+                </div>
+                <div class="final-answer">Answer: The cost price of the lamp is ₹ 360.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">9.</div>
+                    <div class="q-content">At what rate of simple interest per annum will a principal amount of ₹\( 4000 \) yield an amount of ₹\( 5200 \) in \( 3 \) years?</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Principal (P) = ₹ 4000</div>
+                <div class="step">Amount (A) = ₹ 5200</div>
+                <div class="step">Time (T) = 3 years</div>
+                <div class="math-container">
+                    \( \text{Simple Interest (S.I.)} = \text{Amount} - \text{Principal} \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.I.} = 5200 - 4000 = ₹ 1200 \)
+                </div>
+                <div class="step">Using the formula for Rate (R):</div>
+                <div class="math-container">
+                    \( R = \frac{\text{S.I.} \times 100}{P \times T} \)
+                </div>
+                <div class="math-container">
+                    \( R = \frac{1200 \times 100}{4000 \times 3} \)
+                </div>
+                <div class="math-container">
+                    \( R = \frac{120000}{12000} = 10\% \)
+                </div>
+                <div class="final-answer">Answer: The rate of interest is 10% per annum.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">10.</div>
+                    <div class="q-content">The population of a town increases by \( 8\% \) annually. If its present population is \( 54,000 \), what was its population exactly a year ago?</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let the population a year ago be \( x \).</div>
+                <div class="step">Annual increase percentage = 8%</div>
+                <div class="step">Present population = 54,000</div>
+                <div class="math-container">
+                    \( \text{Present Population} = x + (8\% \text{ of } x) \)
+                </div>
+                <div class="math-container">
+                    \( 54000 = x + \frac{8}{100}x \)
+                </div>
+                <div class="math-container">
+                    \( 54000 = \frac{108x}{100} \)
+                </div>
+                <div class="math-container">
+                    \( x = \frac{54000 \times 100}{108} \)
+                </div>
+                <div class="math-container">
+                    \( x = 500 \times 100 = 50,000 \)
+                </div>
+                <div class="final-answer">Answer: The population a year ago was 50,000.</div>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION C (25 Marks)</div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">11.</div>
+                    <div class="q-content">A dealer bought two tables for a total of ₹\( 3120 \). He sold one of them at a loss of \( 15\% \) and the other at a gain of \( 36\% \). If the selling price of both tables is identical, determine the cost price of each table.</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let the Cost Price of the first table be \( x \) and the second table be \( y \).</div>
+                <div class="math-container">
+                    Given: \( x + y = 3120 \)   ---- (Equation 1)
+                </div>
+                <div class="step">For the first table (Sold at 15% loss):</div>
+                <div class="math-container">
+                    \( \text{Selling Price (S.P.)}_1 = x - 15\% \text{ of } x = x - 0.15x = 0.85x \)
+                </div>
+                <div class="step">For the second table (Sold at 36% gain):</div>
+                <div class="math-container">
+                    \( \text{Selling Price (S.P.)}_2 = y + 36\% \text{ of } y = y + 0.36y = 1.36y \)
+                </div>
+                <div class="step">According to the question, both selling prices are equal:</div>
+                <div class="math-container">
+                    \( 0.85x = 1.36y \)
+                </div>
+                <div class="math-container">
+                    \( \frac{x}{y} = \frac{1.36}{0.85} = \frac{136}{85} \)
+                </div>
+                <div class="step">Divide numerator and denominator by 17:</div>
+                <div class="math-container">
+                    \( \frac{x}{y} = \frac{8}{5} \)
+                </div>
+                <div class="step">This implies the cost prices are in the ratio 8:5. Sum of ratio parts = 8 + 5 = 13.</div>
+                <div class="math-container">
+                    \( x = \frac{8}{13} \times 3120 = 8 \times 240 = ₹ 1920 \)
+                </div>
+                <div class="math-container">
+                    \( y = \frac{5}{13} \times 3120 = 5 \times 240 = ₹ 1200 \)
+                </div>
+                <div class="final-answer">Answer: The cost price of the first table is ₹ 1920 and the second table is ₹ 1200.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">12.</div>
+                    <div class="q-content">A sum of money lent out at simple interest amounts to ₹\( 5750 \) in \( 3 \) years and to ₹\( 6250 \) in \( 5 \) years. Find the principal sum and the rate of interest per annum.</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let Principal = P and Rate of Interest = R%</div>
+                <div class="math-container">
+                    Amount after 5 years = P + (S.I. for 5 years) = ₹ 6250
+                </div>
+                <div class="math-container">
+                    Amount after 3 years = P + (S.I. for 3 years) = ₹ 5750
+                </div>
+                <div class="step">Subtracting the two equations gives the Simple Interest for the difference in time (2 years):</div>
+                <div class="math-container">
+                    \( \text{S.I. for 2 years} = 6250 - 5750 = ₹ 500 \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.I. for 1 year} = \frac{500}{2} = ₹ 250 \)
+                </div>
+                <div class="math-container">
+                    \( \text{S.I. for 3 years} = 250 \times 3 = ₹ 750 \)
+                </div>
+                <div class="step"><strong>Finding Principal:</strong></div>
+                <div class="math-container">
+                    \( \text{Principal (P)} = \text{Amount after 3 years} - \text{S.I. for 3 years} \)
+                </div>
+                <div class="math-container">
+                    \( P = 5750 - 750 = ₹ 5000 \)
+                </div>
+                <div class="step"><strong>Finding Rate of Interest:</strong></div>
+                <div class="math-container">
+                    \( R = \frac{\text{S.I. for 1 year} \times 100}{P \times 1} = \frac{250 \times 100}{5000} \)
+                </div>
+                <div class="math-container">
+                    \( R = \frac{25000}{5000} = 5\% \)
+                </div>
+                <div class="final-answer">Answer: Principal = ₹ 5000, Rate = 5% p.a.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">13.</div>
+                    <div class="q-content">By selling a wall clock for ₹\( 144 \), a retailer loses \( 10\% \). At what price should he sell the same clock to ensure a gain of \( 10\% \)?</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step"><strong>Case 1: Finding Cost Price</strong></div>
+                <div class="step">Selling Price (\( S.P._1 \)) = ₹ 144, Loss = 10%</div>
+                <div class="math-container">
+                    \( C.P. = \frac{100}{100 - \text{Loss}\%} \times S.P._1 \)
+                </div>
+                <div class="math-container">
+                    \( C.P. = \frac{100}{100 - 10} \times 144 = \frac{100}{90} \times 144 \)
+                </div>
+                <div class="math-container">
+                    \( C.P. = \frac{10}{9} \times 144 = 10 \times 16 = ₹ 160 \)
+                </div>
+                <div class="step" style="margin-top: 15px;"><strong>Case 2: Finding New Selling Price</strong></div>
+                <div class="step">Cost Price (C.P.) = ₹ 160, Desired Gain = 10%</div>
+                <div class="math-container">
+                    \( S.P._2 = C.P. \times \left( \frac{100 + \text{Gain}\%}{100} \right) \)
+                </div>
+                <div class="math-container">
+                    \( S.P._2 = 160 \times \left( \frac{100 + 10}{100} \right) = 160 \times \frac{110}{100} \)
+                </div>
+                <div class="math-container">
+                    \( S.P._2 = 16 \times 11 = ₹ 176 \)
+                </div>
+                <div class="final-answer">Answer: He should sell the clock for ₹ 176.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">14.</div>
+                    <div class="q-content">In an entrance examination, \( 72\% \) of the total candidates passed. If the number of failures is \( 392 \), find the total number of candidates who appeared for the exam. Additionally, calculate the number of candidates who passed.</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let the total number of candidates be \( x \).</div>
+                <div class="step">Percentage of students who passed = 72%</div>
+                <div class="math-container">
+                    Percentage of students who failed = \( 100\% - 72\% = 28\% \)
+                </div>
+                <div class="step">Number of failures is given as 392.</div>
+                <div class="math-container">
+                    \( 28\% \text{ of } x = 392 \)
+                </div>
+                <div class="math-container">
+                    \( \frac{28}{100} \times x = 392 \)
+                </div>
+                <div class="math-container">
+                    \( x = \frac{392 \times 100}{28} = 14 \times 100 = 1400 \)
+                </div>
+                <div class="step">Total number of candidates = 1400.</div>
+                <div class="step" style="margin-top: 10px;"><strong>Finding Passed Candidates:</strong></div>
+                <div class="math-container">
+                    Number of passed candidates = Total candidates - Number of failures
+                </div>
+                <div class="math-container">
+                    \( = 1400 - 392 = 1008 \)
+                </div>
+                <div class="step"><em>(Alternatively: \( 72\% \text{ of } 1400 = 1008 \))</em></div>
+                <div class="final-answer">Answer: Total candidates = 1400. Passed candidates = 1008.</div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="q-text-wrapper">
+                    <div class="q-num">15.</div>
+                    <div class="q-content">A trader marks his goods \( 40\% \) above the cost price and then allows a discount of \( 25\% \) to the customer. Find his overall gain or loss percentage. If his actual profit is ₹\( 150 \), determine the original cost price of the goods.</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-row">
+                <div class="solution-title">Solution:</div>
+                <div class="step">Let the Cost Price (C.P.) be \( 100x \).</div>
+                <div class="step">Goods marked 40% above C.P.:</div>
+                <div class="math-container">
+                    Marked Price (M.P.) = \( 100x + 40\% \text{ of } 100x = 100x + 40x = 140x \)
+                </div>
+                <div class="step">Discount allowed is 25% on M.P.:</div>
+                <div class="math-container">
+                    \( \text{Discount} = 25\% \text{ of } 140x = \frac{25}{100} \times 140x = \frac{1}{4} \times 140x = 35x \)
+                </div>
+                <div class="math-container">
+                    Selling Price (S.P.) = M.P. - Discount = \( 140x - 35x = 105x \)
+                </div>
+                <div class="step"><strong>Finding Gain %:</strong></div>
+                <div class="math-container">
+                    \( \text{Gain} = \text{S.P.} - \text{C.P.} = 105x - 100x = 5x \)
+                </div>
+                <div class="math-container">
+                    \( \text{Gain } \% = \left( \frac{5x}{100x} \right) \times 100\% = 5\% \)
+                </div>
+                <div class="step" style="margin-top: 15px;"><strong>Finding Original Cost Price:</strong></div>
+                <div class="step">Actual profit is given as ₹ 150.</div>
+                <div class="math-container">
+                    \( \therefore 5x = 150 \)
+                </div>
+                <div class="math-container">
+                    \( x = \frac{150}{5} = 30 \)
+                </div>
+                <div class="math-container">
+                    Original C.P. = \( 100x = 100 \times 30 = ₹ 3000 \)
+                </div>
+                <div class="final-answer">Answer: Overall Gain = 5%. Original Cost Price = ₹ 3000.</div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan - Solutions Desk</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 12</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        /* Base responsive styles */
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: #f4f4f9; 
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Container to mimic A4 paper on large screens but adapt on small */
+        .paper-container {
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            background-color: white; 
+            position: relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Watermark styling */
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; position: relative; z-index: 1; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+        }
+        
+        .exam-details span { margin: 5px 10px; }
+
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; position: relative; z-index: 1; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; position: relative; z-index: 1; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; position: relative; z-index: 1; }
+        
+        @media (max-width: 768px) {
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+            .paper-container { padding: 15px; }
+            body { font-size: 11pt; }
+        }
+
+        /* Print specific styling */
+        @media print { 
+            body { background-color: white; padding: 0; }
+            .paper-container { box-shadow: none; width: 210mm; padding: 20mm; margin: 0; }
+            -webkit-print-color-adjust: exact; 
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 12</div>
+            <div class="exam-details">
+                <span>Class: 7 ICSE</span>
+                <span>Subject: Mathematics</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 50</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory.</li>
+                    <li>The paper is divided into three sections: A, B, and C.</li>
+                    <li>Show clear step-by-step working for numerical problems.</li>
+                    <li>Write your answers neatly and legibly.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section A -->
+        <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-num">1.</div>
+            <div class="q-content">Convert \( \frac{3}{8} \) into a percentage, and express \( 45\% \) as a fraction in its simplest form.</div>
+        </div>
+        
+        <div class="question-container">
+            <div class="q-num">2.</div>
+            <div class="q-content">Find the number whose \( 12.5\% \) is equal to \( 64 \).</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">3.</div>
+            <div class="q-content">A shopkeeper bought a chair for ₹\( 450 \) and sold it for ₹\( 540 \). Find his profit percentage.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">4.</div>
+            <div class="q-content">Calculate the simple interest on ₹\( 2500 \) for \( 2 \) years at the rate of \( 6\% \) per annum.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">5.</div>
+            <div class="q-content">If the price of a stationary kit increases from ₹\( 200 \) to ₹\( 250 \), calculate the percentage increase in the price.</div>
+        </div>
+
+        <!-- Section B -->
+        <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-num">6.</div>
+            <div class="q-content">Out of \( 800 \) students in a school, \( 45\% \) are girls. Find the exact number of boys studying in the school.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">7.</div>
+            <div class="q-content">An article is marked at ₹\( 850 \). The shopkeeper allows a discount of \( 12\% \) on the marked price. Find the final selling price of the article.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">8.</div>
+            <div class="q-content">A man sells a decorative lamp for ₹\( 396 \) and gains \( 10\% \) on the transaction. Calculate the cost price of the lamp.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">9.</div>
+            <div class="q-content">At what rate of simple interest per annum will a principal amount of ₹\( 4000 \) yield an amount of ₹\( 5200 \) in \( 3 \) years?</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">10.</div>
+            <div class="q-content">The population of a town increases by \( 8\% \) annually. If its present population is \( 54,000 \), what was its population exactly a year ago?</div>
+        </div>
+
+        <!-- Section C -->
+        <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+        
+        <div class="question-container">
+            <div class="q-num">11.</div>
+            <div class="q-content">A dealer bought two tables for a total of ₹\( 3120 \). He sold one of them at a loss of \( 15\% \) and the other at a gain of \( 36\% \). If the selling price of both tables is identical, determine the cost price of each table.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">12.</div>
+            <div class="q-content">A sum of money lent out at simple interest amounts to ₹\( 5750 \) in \( 3 \) years and to ₹\( 6250 \) in \( 5 \) years. Find the principal sum and the rate of interest per annum.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">13.</div>
+            <div class="q-content">By selling a wall clock for ₹\( 144 \), a retailer loses \( 10\% \). At what price should he sell the same clock to ensure a gain of \( 10\% \)?</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">14.</div>
+            <div class="q-content">In an entrance examination, \( 72\% \) of the total candidates passed. If the number of failures is \( 392 \), find the total number of candidates who appeared for the exam. Additionally, calculate the number of candidates who passed.</div>
+        </div>
+
+        <div class="question-container">
+            <div class="q-num">15.</div>
+            <div class="q-content">A trader marks his goods \( 40\% \) above the cost price and then allows a discount of \( 25\% \) to the customer. Find his overall gain or loss percentage. If his actual profit is ₹\( 150 \), determine the original cost price of the goods.</div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan - Shaping Futures</div>
+    </div>
+</body>
+</html>
