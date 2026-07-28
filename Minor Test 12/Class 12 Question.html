@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vardaan Learning Institute — Haloalkanes &amp; Haloarenes · Full Chapter Mastery Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3a2410;          /* warm dark brown text */
+    --ink-soft:#7a5a3a;
+    --orange:#ee6c0a;       /* Vardaan orange */
+    --orange-deep:#c2540a;
+    --orange-dark:#9a3f05;
+    --paper:#ffffff;
+    --rule:#eBd9c3;
+    --band:#fdf1e2;
+    --band-2:#fff6ea;
+  }
+  html.dark-mode {
+    --ink: #e0e0e0;
+    --ink-soft: #a89481;
+    --orange: #ff8533;
+    --orange-deep: #e56b1a;
+    --orange-dark: #cc5800;
+    --paper: #181a1b;
+    --rule: #3f352c;
+    --band: #241c14;
+    --band-2: #1c1814;
+  }
+  html.dark-mode body {
+    background: var(--paper);
+    box-shadow: 0 2px 30px rgba(0,0,0,0.5);
+  }
+  html.dark-mode .watermark {
+    filter: invert(1);
+    opacity: 0.04;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:#f2e6d4}
+  body{
+    font-family:'Spectral',Georgia,serif;
+    color:var(--ink);
+    background:var(--paper);
+    max-width:920px;
+    margin:24px auto 60px;
+    box-shadow:0 2px 30px rgba(120,60,10,.20);
+    line-height:1.55;
+  }
+  .sheet{padding:0 54px 48px}
+
+  /* ---------- Masthead ---------- */
+  header{border-bottom:3px solid var(--orange-deep); padding:34px 54px 20px; position:relative; background:var(--paper)}
+  header::after{content:"";display:block;position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--orange)}
+  .crest-row{display:flex;align-items:center;gap:20px}
+  .inst h1{font-family:'Archivo',sans-serif;font-weight:800;font-size:30px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink);line-height:1.1}
+  .inst h1 span{color:var(--orange)}
+  .inst .tag{font-family:'Archivo',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--ink-soft);margin-top:5px}
+  .exam-line{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-top:22px;padding-top:14px;border-top:1px solid var(--rule)}
+  .exam-line .subject{font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;letter-spacing:.5px}
+  .exam-line .chapter{font-style:italic;font-size:15px;color:var(--ink-soft)}
+  .meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-family:'Archivo',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--ink);margin-top:10px}
+  .meta b{color:var(--orange-deep)}
+  .ref{font-size:12.5px;font-style:italic;color:var(--ink-soft);margin-top:8px;text-align:center}
+
+  /* ---------- Instructions ---------- */
+  .instructions{margin:28px 0 8px;border:1.5px solid var(--orange-deep);background:var(--band);padding:16px 22px;font-size:14px}
+  .instructions h3{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;color:var(--orange-dark)}
+  .instructions ol{margin-left:20px}
+  .instructions li{margin:3px 0}
+
+  /* ---------- Topic map ---------- */
+  .topicmap{margin:18px 0 6px;border:1px solid var(--rule);padding:14px 20px;background:var(--band-2);font-size:13.5px}
+  .topicmap h3{font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange-dark);margin-bottom:8px}
+  .topicmap table{width:100%;border-collapse:collapse}
+  .topicmap td,.topicmap th{border-bottom:1px dashed var(--rule);padding:3px 6px;text-align:left;font-size:13px}
+  .topicmap th{font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-soft)}
+  .topicmap td.m{text-align:right;font-family:'Archivo',sans-serif;font-weight:600;color:var(--orange-deep)}
+
+  /* ---------- Sections ---------- */
+  .section-head{display:flex;align-items:center;gap:14px;margin:44px 0 4px}
+  .section-head .badge{font-family:'Archivo',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.2px;background:var(--orange);color:#fff;padding:6px 14px;text-transform:uppercase}
+  .section-head .desc{font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;color:var(--ink);text-transform:uppercase}
+  .section-head .line{flex:1;height:1px;background:var(--rule)}
+  .section-head .tm{font-family:'Archivo',sans-serif;font-weight:700;font-size:11.5px;color:var(--orange-deep);letter-spacing:.8px;text-transform:uppercase}
+  .ncert-tag{font-size:12.5px;font-style:italic;color:var(--ink-soft);margin:0 0 12px 2px}
+
+  .q{display:flex;gap:14px;margin:20px 0;page-break-inside:avoid}
+  .q .no{flex:0 0 36px;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;color:var(--orange-deep);padding-top:2px}
+  .q .body{flex:1;font-size:15.5px}
+  .q .marks{flex:0 0 44px;text-align:right;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;color:var(--ink-soft);padding-top:3px}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin-top:8px;font-size:15px}
+  .opts.one-col{grid-template-columns:1fr}
+  .opts span b{font-family:'Archivo',sans-serif;font-weight:600;font-size:12.5px;color:var(--ink-soft);margin-right:6px}
+  .sub{margin-top:6px;margin-left:4px}
+  .sub li{margin:5px 0 5px 22px}
+  .or-divider{text-align:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:3px;color:var(--orange-deep);margin:10px 0}
+  .note{font-size:13px;font-style:italic;color:var(--ink-soft)}
+  sub,sup{font-size:70%}
+
+  /* ---------- Reactions with conditions ABOVE the arrow ---------- */
+  .rxn{font-size:15px;margin:12px 0 12px 8px;display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+  .rxn .lbl{font-family:'Archivo',sans-serif;font-size:12.5px;font-weight:600;color:var(--ink-soft);margin-right:8px;min-width:28px}
+  .arr{display:inline-flex;flex-direction:column;align-items:center;justify-content:flex-end;vertical-align:middle;margin:0 10px;min-width:104px}
+  .arr .cond{font-size:10.8px;font-style:italic;color:var(--orange-dark);line-height:1.25;text-align:center;padding:0 4px 2px;white-space:nowrap}
+  .arr .shaft{display:block;width:100%;height:0;border-top:1.7px solid var(--ink);position:relative}
+  .arr .shaft::after{content:"";position:absolute;right:-2px;top:-5px;border-left:8px solid var(--ink);border-top:4px solid transparent;border-bottom:4px solid transparent}
+  .arr .below{font-size:10.8px;font-style:italic;color:var(--ink-soft);line-height:1.25;padding:2px 4px 0;white-space:nowrap}
+  .blank{display:inline-block;min-width:74px;border-bottom:1.4px dotted var(--ink-soft);height:16px;vertical-align:baseline}
+
+  /* ---------- Structure figures ---------- */
+  .figs{display:flex;flex-wrap:wrap;gap:30px;align-items:flex-end;margin:14px 0 6px}
+  .fig{display:flex;flex-direction:column;align-items:center;gap:5px}
+  .fig .cap{font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--ink-soft);text-align:center}
+  svg text{font-family:'Spectral',Georgia,serif;font-size:14px;fill:var(--ink);font-weight:600}
+  svg .small{font-size:11px}
+  svg line, svg polygon, svg polyline, svg circle, svg path{stroke:var(--ink);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  svg .wedge{fill:var(--ink);stroke:none}
+  svg .hash{stroke-width:2.4}
+
+  /* ---------- Case boxes ---------- */
+  .case{border:1px solid var(--rule);border-left:4px solid var(--orange);background:var(--band-2);padding:14px 18px;margin:8px 0 10px;font-size:14.5px}
+  .case p{margin:6px 0}
+
+  /* ---------- Theme Toggle ---------- */
+  .theme-toggle {
+      position: fixed; top: 20px; right: 20px; width: 44px; height: 44px;
+      border-radius: 50%; background: #f0f0f0; border: none; cursor: pointer;
+      z-index: 1000; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  html.dark-mode .theme-toggle {
+      filter: invert(1) hue-rotate(180deg); background: #e0e0e0;
+  }
+  .icon-sun, .icon-moon { position: absolute; transition: all 0.5s ease; color: #333; }
+  .icon-sun { opacity: 0; transform: scale(0.5) rotate(-90deg); }
+  .icon-moon { opacity: 1; transform: scale(1) rotate(0deg); }
+  html.dark-mode .icon-sun { opacity: 1; transform: scale(1) rotate(0deg); }
+  html.dark-mode .icon-moon { opacity: 0; transform: scale(0.5) rotate(90deg); }
+
+  .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.08; z-index: 1; pointer-events: none; }
+
+  footer{margin-top:52px;border-top:3px solid var(--orange-deep);position:relative;padding:18px 54px 30px;text-align:center}
+  footer::before{content:"";position:absolute;left:0;right:0;top:4px;height:2px;background:var(--orange)}
+  footer .end{font-family:'Archivo',sans-serif;font-weight:800;letter-spacing:4px;font-size:13px;text-transform:uppercase;color:var(--ink)}
+  footer .love{margin-top:8px;font-style:italic;font-size:14px;color:var(--ink-soft)}
+  footer .love b{color:var(--orange-deep);font-style:normal;font-family:'Archivo',sans-serif;font-weight:700}
+
+  @media print{
+    .theme-toggle { display: none !important; }
+    html{background:#fff}
+    body{box-shadow:none;margin:0;max-width:100%}
+    .sheet{padding:0 32px 30px}
+    header,footer{padding-left:32px;padding-right:32px}
+    .watermark { position: fixed !important; }
+  }
+  @media (max-width:640px){
+    .sheet{padding:0 16px 30px}
+    header{padding:24px 16px 16px}
+    .opts{grid-template-columns:1fr}
+    .q{gap:8px}
+    .arr .cond,.arr .below{white-space:normal}
+  }
+</style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+</button>
+<script>function toggleTheme() { document.documentElement.classList.toggle('dark-mode'); }</script>
+
+<img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+<header>
+  <div class="crest-row">
+    <div class="crest">
+      <img src="image/157d4706-5f80-420c-9f40-0fee62e6d4e3.png" alt="Vardaan Logo" style="width: 74px; height: 74px; object-fit: cover; border-radius: 14px; box-shadow: 0 4px 14px rgba(120, 60, 10, 0.25);">
+    </div>
+    <div class="inst">
+      <h1>Vardaan <span>Learning</span> Institute</h1>
+      <div class="tag">Shaping Concepts · Building Futures</div>
+    </div>
+  </div>
+
+  <div class="exam-line">
+    <div class="subject">CHEMISTRY — CLASS XII · FULL CHAPTER MASTERY PAPER</div>
+    <div class="chapter">Unit 6 : Haloalkanes and Haloarenes</div>
+  </div>
+  <div class="meta">
+    <span>Paper Code : <b>VLI/CHE/XII/06-M</b></span>
+    <span>Questions : <b>76</b></span>
+    <span>Maximum Marks : <b>200</b></span>
+  </div>
+</header>
+
+<div class="sheet">
+
+<div class="instructions">
+  <h3>General Instructions</h3>
+  <ol>
+    <li>This is a <b>topic-wise mastery paper</b>. Questions are grouped into <b>Parts A to N</b>, each mapped to one NCERT article of the chapter, so that no topic is left untested.</li>
+    <li>A student who can answer <b>every question of every part</b> has covered the complete chapter — classification, nomenclature, C—X bond, all preparations, physical properties, S<sub>N</sub>1/S<sub>N</sub>2, stereochemistry, elimination, metals, haloarene chemistry, polyhalogen compounds, conversions and HOTS.</li>
+    <li>Marks for each question are shown against it in brackets. Internal choices are marked <b>OR</b>.</li>
+    <li>Wherever a reaction is asked, write <b>balanced equations with conditions above the arrow</b>, exactly as practised in class.</li>
+    <li>Draw clear structures; use wedge–dash notation wherever stereochemistry is involved.</li>
+  </ol>
+</div>
+
+<div class="topicmap">
+  <h3>Blueprint · Topic-wise mark distribution</h3>
+  <table>
+    <tr><th>Part</th><th>NCERT Article &amp; Topic</th><th style="text-align:right">Marks</th></tr>
+    <tr><td>A</td><td>6.1 Classification of halocompounds</td><td class="m">10</td></tr>
+    <tr><td>B</td><td>6.2 Nomenclature (common &amp; IUPAC)</td><td class="m">18</td></tr>
+    <tr><td>C</td><td>6.3 Nature of C—X bond</td><td class="m">5</td></tr>
+    <tr><td>D</td><td>6.4 Preparation of haloalkanes</td><td class="m">22</td></tr>
+    <tr><td>E</td><td>6.5 Preparation of haloarenes</td><td class="m">10</td></tr>
+    <tr><td>F</td><td>6.6 Physical properties</td><td class="m">11</td></tr>
+    <tr><td>G</td><td>6.7.1(1) Nucleophilic substitution — S<sub>N</sub>2 &amp; S<sub>N</sub>1</td><td class="m">29</td></tr>
+    <tr><td>H</td><td>6.7.1(c) Stereochemical aspects</td><td class="m">21</td></tr>
+    <tr><td>I</td><td>6.7.1(2) Elimination reactions</td><td class="m">11</td></tr>
+    <tr><td>J</td><td>6.7.1(3) &amp; 6.7.2(3) Reactions with metals</td><td class="m">9</td></tr>
+    <tr><td>K</td><td>6.7.2 Reactions of haloarenes</td><td class="m">21</td></tr>
+    <tr><td>L</td><td>6.8 Polyhalogen compounds</td><td class="m">13</td></tr>
+    <tr><td>M</td><td>Conversions (whole chapter)</td><td class="m">10</td></tr>
+    <tr><td>N</td><td>HOTS &amp; structure-deduction problems</td><td class="m">10</td></tr>
+    <tr><td></td><td style="font-weight:700">Total</td><td class="m" style="font-weight:800">200</td></tr>
+  </table>
+</div>
+
+<!-- ==================== PART A ==================== -->
+<div class="section-head">
+  <div class="badge">Part A</div>
+  <div class="desc">Classification of Halocompounds</div>
+  <div class="line"></div>
+  <div class="tm">10 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.1 — on the basis of number of halogen atoms; compounds with <i>sp</i><sup>3</sup> C—X (alkyl, allylic, benzylic) and <i>sp</i><sup>2</sup> C—X (vinylic, aryl) bonds.</div>
+
+<div class="q"><div class="no">1.</div><div class="body">
+  The compound shown below is best classified as a/an:
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 150 84" width="132">
+        <polyline points="16,60 46,40 76,60"/>
+        <line x1="20" y1="53" x2="44" y2="37"/>
+        <line x1="76" y1="60" x2="102" y2="45"/>
+        <text x="118" y="49" text-anchor="middle">Cl</text>
+      </svg>
+    </div>
+  </div>
+  <div class="opts">
+    <span><b>(a)</b> vinylic halide</span>
+    <span><b>(b)</b> allylic halide</span>
+    <span><b>(c)</b> aryl halide</span>
+    <span><b>(d)</b> benzylic halide</span>
+  </div>
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">2.</div><div class="body">
+  In which of the following is the halogen attached to an <i>sp</i><sup>2</sup>-hybridised carbon of a carbon–carbon double bond (i.e. a <b>vinylic halide</b>)?
+  <div class="opts">
+    <span><b>(a)</b> CH<sub>2</sub>=CH—Cl</span>
+    <span><b>(b)</b> CH<sub>2</sub>=CH—CH<sub>2</sub>Cl</span>
+    <span><b>(c)</b> C<sub>6</sub>H<sub>5</sub>—CH<sub>2</sub>Cl</span>
+    <span><b>(d)</b> CH<sub>3</sub>—CHCl—CH<sub>3</sub></span>
+  </div>
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">3.</div><div class="body">
+  The compound drawn below is a:
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 200 128" width="164">
+        <polygon points="62,28 92,45 92,79 62,96 32,79 32,45"/>
+        <circle cx="62" cy="62" r="16"/>
+        <line x1="92" y1="45" x2="120" y2="30"/>
+        <text x="152" y="34" text-anchor="middle">CH<tspan class="small" dy="3">2</tspan><tspan dy="-3">Cl</tspan></text>
+      </svg>
+    </div>
+  </div>
+  <div class="opts">
+    <span><b>(a)</b> 1° benzylic halide</span>
+    <span><b>(b)</b> aryl halide</span>
+    <span><b>(c)</b> vinylic halide</span>
+    <span><b>(d)</b> 2° alkyl halide</span>
+  </div>
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">4.</div><div class="body">
+  Classify each of the following as <b>alkyl (1°/2°/3°), allylic, benzylic, vinylic or aryl halide</b>:
+  <ol class="sub" type="i">
+    <li>(CH<sub>3</sub>)<sub>2</sub>CHCH(Cl)CH<sub>3</sub></li>
+    <li>CH<sub>3</sub>C(Cl)(C<sub>2</sub>H<sub>5</sub>)CH<sub>2</sub>CH<sub>3</sub></li>
+    <li>CH<sub>3</sub>CH=C(Cl)CH<sub>3</sub></li>
+    <li>CH<sub>2</sub>=CH—CH<sub>2</sub>Br</li>
+    <li>C<sub>6</sub>H<sub>5</sub>—C(CH<sub>3</sub>)<sub>2</sub>Br</li>
+    <li><i>p</i>-Cl—C<sub>6</sub>H<sub>4</sub>—CH<sub>2</sub>CH<sub>3</sub> (classify the C—Cl bond)</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">5.</div><div class="body">
+  Define <b>gem-dihalides</b> and <b>vic-dihalides</b>. Give the structure, common name and IUPAC name of one example of each (take the two dichloroethanes).
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">6.</div><div class="body">
+  On the basis of hybridisation of the carbon bearing the halogen, distinguish between a <b>haloalkane</b> and a <b>haloarene</b>. Also state how monohalo-, dihalo- and polyhalogen compounds are classified.
+</div><div class="marks">[2]</div></div>
+
+<!-- ==================== PART B ==================== -->
+<div class="section-head">
+  <div class="badge">Part B</div>
+  <div class="desc">Nomenclature</div>
+  <div class="line"></div>
+  <div class="tm">18 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.2 — common names, IUPAC halosubstituted-hydrocarbon names, o/m/p vs 1,2-/1,3-/1,4-, alkylidene &amp; alkylene dihalides.</div>
+
+<div class="q"><div class="no">7.</div><div class="body">
+  Write <b>IUPAC names</b> of the following compounds:
+  <ol class="sub" type="i">
+    <li>(CH<sub>3</sub>)<sub>2</sub>CHCH(Cl)CH<sub>3</sub></li>
+    <li>CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)CH(C<sub>2</sub>H<sub>5</sub>)Cl</li>
+    <li>CH<sub>3</sub>CH<sub>2</sub>C(CH<sub>3</sub>)<sub>2</sub>CH<sub>2</sub>I</li>
+    <li>(CH<sub>3</sub>)<sub>3</sub>CCH<sub>2</sub>CH(Br)C<sub>6</sub>H<sub>5</sub></li>
+    <li>CH<sub>3</sub>CH=CHC(Br)(CH<sub>3</sub>)<sub>2</sub></li>
+    <li>CH<sub>3</sub>C(C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>CH<sub>2</sub>Br</li>
+    <li>CH<sub>3</sub>CH(Cl)CH(Br)CH<sub>3</sub></li>
+    <li>ClCH<sub>2</sub>C≡CCH<sub>2</sub>Br</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">8.</div><div class="body">
+  Give the <b>IUPAC name</b> corresponding to each of the following <b>common names</b>:
+  <ol class="sub" type="i">
+    <li>sec-Butyl chloride</li>
+    <li>neo-Pentyl bromide</li>
+    <li>Vinyl chloride</li>
+    <li>Chloroform</li>
+  </ol>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">9.</div><div class="body">
+  Draw the <b>structures</b> of the following compounds:
+  <ol class="sub" type="i">
+    <li>2-Chloro-3-methylpentane</li>
+    <li>4-<i>tert</i>-Butyl-3-iodoheptane</li>
+    <li>1,4-Dibromobut-2-ene</li>
+    <li>1-Bromo-4-<i>sec</i>-butyl-2-methylbenzene</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">10.</div><div class="body">
+  Draw the structures of <b>all eight structural isomers</b> of molecular formula C<sub>5</sub>H<sub>11</sub>Br. Name each isomer according to the IUPAC system and classify it as a primary, secondary or tertiary bromide.
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">11.</div><div class="body">
+  Write the <b>IUPAC names</b> of the compounds whose structures are drawn below:
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 190 130" width="150">
+        <polygon points="72,28 102,45 102,79 72,96 42,79 42,45"/>
+        <circle cx="72" cy="62" r="16"/>
+        <line x1="102" y1="45" x2="126" y2="32"/>
+        <text x="140" y="35" text-anchor="middle">Cl</text>
+        <line x1="72" y1="28" x2="72" y2="12"/>
+        <text x="72" y="8" text-anchor="middle">CH<tspan class="small" dy="3">3</tspan></text>
+      </svg>
+      <div class="cap">(i)</div>
+    </div>
+    <div class="fig">
+      <svg viewBox="0 0 180 96" width="156">
+        <polyline points="18,68 48,48 78,68 108,48 138,68"/>
+        <line x1="51" y1="54" x2="75" y2="70"/>
+        <line x1="108" y1="48" x2="108" y2="24"/>
+        <text x="108" y="17" text-anchor="middle">Br</text>
+      </svg>
+      <div class="cap">(ii)</div>
+    </div>
+    <div class="fig">
+      <svg viewBox="0 0 200 138" width="152">
+        <polygon points="82,28 112,45 112,79 82,96 52,79 52,45"/>
+        <circle cx="82" cy="62" r="16"/>
+        <line x1="52" y1="45" x2="28" y2="32"/>
+        <text x="16" y="35" text-anchor="middle">Br</text>
+        <line x1="112" y1="45" x2="136" y2="32"/>
+        <text x="150" y="35" text-anchor="middle">Br</text>
+      </svg>
+      <div class="cap">(iii)</div>
+    </div>
+    <div class="fig">
+      <svg viewBox="0 0 160 122" width="126">
+        <polygon points="62,24 92,41 92,75 62,92 32,75 32,41"/>
+        <line x1="36" y1="46" x2="36" y2="70"/>
+        <line x1="92" y1="41" x2="116" y2="28"/>
+        <text x="130" y="31" text-anchor="middle">Cl</text>
+      </svg>
+      <div class="cap">(iv)&nbsp; (halogen on the carbon next to C=C)</div>
+    </div>
+  </div>
+</div><div class="marks">[4]</div></div>
+
+<!-- ==================== PART C ==================== -->
+<div class="section-head">
+  <div class="badge">Part C</div>
+  <div class="desc">Nature of the C—X Bond</div>
+  <div class="line"></div>
+  <div class="tm">5 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.3 — polarity of the bond; trends in bond length, bond enthalpy and dipole moment down the halogen group.</div>
+
+<div class="q"><div class="no">12.</div><div class="body">
+  Among the methyl halides CH<sub>3</sub>F, CH<sub>3</sub>Cl, CH<sub>3</sub>Br and CH<sub>3</sub>I, the one with the <b>highest dipole moment</b> is:
+  <div class="opts">
+    <span><b>(a)</b> CH<sub>3</sub>F</span>
+    <span><b>(b)</b> CH<sub>3</sub>Cl</span>
+    <span><b>(c)</b> CH<sub>3</sub>Br</span>
+    <span><b>(d)</b> CH<sub>3</sub>I</span>
+  </div>
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">13.</div><div class="body">
+  Why is the carbon–halogen bond of an alkyl halide <b>polarised</b>? Show the partial charges on a general C—X bond, and explain why the C—X bond length increases regularly from C—F to C—I.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">14.</div><div class="body">
+  How does the <b>C—X bond enthalpy</b> vary from CH<sub>3</sub>—F to CH<sub>3</sub>—I? What consequence does this trend have for the relative reactivity of R—F, R—Cl, R—Br and R—I in substitution reactions?
+</div><div class="marks">[2]</div></div>
+
+<!-- ==================== PART D ==================== -->
+<div class="section-head">
+  <div class="badge">Part D</div>
+  <div class="desc">Preparation of Haloalkanes</div>
+  <div class="line"></div>
+  <div class="tm">22 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.4 — from alcohols; from hydrocarbons (free radical halogenation, addition to alkenes); halogen exchange (Finkelstein &amp; Swarts).</div>
+
+<div class="q"><div class="no">15.</div><div class="body">
+  Complete the following equations for the preparation of haloalkanes <b>from alcohols</b> (write the missing products):
+  <div class="rxn"><span class="lbl">(i)</span> R—OH + HCl
+    <span class="arr"><span class="cond">anhyd. ZnCl<sub>2</sub></span><span class="shaft"></span></span>
+    <span class="blank"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(ii)</span> R—OH + NaBr + H<sub>2</sub>SO<sub>4</sub>
+    <span class="arr"><span class="cond">constant boiling<br>HBr (48%)</span><span class="shaft"></span></span>
+    <span class="blank"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(iii)</span> 3R—OH + PX<sub>3</sub>
+    <span class="arr"><span class="cond">X = Cl, Br</span><span class="shaft"></span></span>
+    <span class="blank"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(iv)</span> R—OH + PCl<sub>5</sub>
+    <span class="arr"><span class="cond">&nbsp;</span><span class="shaft"></span></span>
+    <span class="blank"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(v)</span> R—OH
+    <span class="arr"><span class="cond">red&nbsp;P / X<sub>2</sub></span><span class="shaft"></span><span class="below">X<sub>2</sub> = Br<sub>2</sub>, I<sub>2</sub></span></span>
+    <span class="blank"></span>
+  </div>
+</div><div class="marks">[5]</div></div>
+
+<div class="q"><div class="no">16.</div><div class="body">
+  Why is <b>thionyl chloride</b> considered the best reagent for converting an alcohol into an alkyl chloride? Write the equation showing all products.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">17.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>Write the order of reactivity of 1°, 2° and 3° alcohols with a given haloacid.</li>
+    <li>How is the reaction of a <b>tertiary alcohol</b> with concentrated HCl carried out, and how do the conditions differ for primary and secondary alcohols?</li>
+  </ol>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">18.</div><div class="body">
+  Free radical chlorination of alkanes is <b>not</b> a good laboratory method for preparing a pure monohaloalkane. Explain why, using the photochemical chlorination of butane as an example:
+  <div class="rxn"><span class="lbl"></span> CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> + Cl<sub>2</sub>
+    <span class="arr"><span class="cond">UV light or heat</span><span class="shaft"></span></span>
+    mixture of isomeric mono- and polyhaloalkanes
+  </div>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">19.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>Propene reacts with HI to give two products, of which one predominates. Write both products, identify the major one and name the rule that governs this outcome.</li>
+    <li>What happens when HBr adds to propene <b>in the presence of peroxide</b>? Name the effect.</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">20.</div><div class="body">
+  Addition of bromine in CCl<sub>4</sub> to an alkene is used as a laboratory <b>test for unsaturation</b>. What observation confirms the presence of a double bond, and what type of product (give its class name) is formed?
+  <div class="rxn"><span class="lbl"></span> CH<sub>2</sub>=CH<sub>2</sub> + Br<sub>2</sub>
+    <span class="arr"><span class="cond">CCl<sub>4</sub></span><span class="shaft"></span></span>
+    BrCH<sub>2</sub>—CH<sub>2</sub>Br
+  </div>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">21.</div><div class="body">
+  Write the <b>Finkelstein reaction</b> for the preparation of an alkyl iodide. Why is <b>dry acetone</b> used as the solvent, and how does Le Chatelier's principle favour the forward reaction?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">22.</div><div class="body">
+  Name the reaction used for the synthesis of <b>alkyl fluorides</b> and complete:
+  <div class="rxn"><span class="lbl"></span> H<sub>3</sub>C—Br + AgF
+    <span class="arr"><span class="cond">heat</span><span class="shaft"></span></span>
+    <span class="blank"></span> + <span class="blank" style="min-width:52px"></span>
+  </div>
+  List <b>two other metallic fluorides</b> that may be used in place of AgF.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">23.</div><div class="body">
+  The methods used for preparing haloalkanes from alcohols are <b>not applicable</b> for preparing aryl halides from phenols. Give reason.
+</div><div class="marks">[2]</div></div>
+
+<!-- ==================== PART E ==================== -->
+<div class="section-head">
+  <div class="badge">Part E</div>
+  <div class="desc">Preparation of Haloarenes</div>
+  <div class="line"></div>
+  <div class="tm">10 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.5 — electrophilic substitution of arenes; Sandmeyer's reaction from diazonium salts; iodination; the fluorine limitation.</div>
+
+<div class="q"><div class="no">24.</div><div class="body">
+  Write the equation for the <b>electrophilic chlorination of toluene</b>, showing both isomeric products:
+  <div class="rxn"><span class="lbl"></span> C<sub>6</sub>H<sub>5</sub>CH<sub>3</sub> + Cl<sub>2</sub>
+    <span class="arr"><span class="cond">Fe (Lewis acid)</span><span class="shaft"></span><span class="below">dark</span></span>
+    <i>o</i>-chlorotoluene + <i>p</i>-chlorotoluene
+  </div>
+  <ol class="sub" type="a">
+    <li>Why is a Lewis acid catalyst (Fe or FeCl<sub>3</sub>) required?</li>
+    <li>How are the <i>ortho</i> and <i>para</i> isomers separated in practice?</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">25.</div><div class="body">
+  Iodination of arenes is <b>reversible</b>. Which reagents are added to make the reaction proceed, and what is their exact role?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">26.</div><div class="body">
+  How is <b>chlorobenzene</b> prepared from aniline by <b>Sandmeyer's reaction</b>? Write both steps with complete conditions above the arrows:
+  <div class="rxn"><span class="lbl">Step 1:</span> C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>
+    <span class="arr"><span class="cond">NaNO<sub>2</sub> + HX</span><span class="shaft"></span><span class="below">273–278 K</span></span>
+    <span class="blank" style="min-width:130px"></span> (benzene diazonium halide)
+  </div>
+  <div class="rxn"><span class="lbl">Step 2:</span> C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>X<sup>−</sup>
+    <span class="arr"><span class="cond">Cu<sub>2</sub>Cl<sub>2</sub></span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:100px"></span> + N<sub>2</sub>
+  </div>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">27.</div><div class="body">
+  Replacement of the diazonium group by <b>iodine</b> does not require a cuprous halide. Write the reaction of benzene diazonium chloride with KI.
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">28.</div><div class="body">
+  Why are <b>fluoro compounds not prepared</b> by direct electrophilic halogenation of arenes?
+</div><div class="marks">[1]</div></div>
+
+<!-- ==================== PART F ==================== -->
+<div class="section-head">
+  <div class="badge">Part F</div>
+  <div class="desc">Physical Properties</div>
+  <div class="line"></div>
+  <div class="tm">11 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.6 — melting &amp; boiling points, effect of branching, isomeric dihalobenzenes, density, solubility.</div>
+
+<div class="q"><div class="no">29.</div><div class="body">
+  For the same alkyl group, the correct <b>decreasing</b> order of boiling points of alkyl halides is:
+  <div class="opts">
+    <span><b>(a)</b> RF &gt; RCl &gt; RBr &gt; RI</span>
+    <span><b>(b)</b> RI &gt; RBr &gt; RCl &gt; RF</span>
+    <span><b>(c)</b> RCl &gt; RBr &gt; RI &gt; RF</span>
+    <span><b>(d)</b> RBr &gt; RCl &gt; RI &gt; RF</span>
+  </div>
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">30.</div><div class="body">
+  Arrange each set in order of <b>increasing boiling point</b>, with reason:
+  <ol class="sub" type="i">
+    <li>Bromomethane, Bromoform, Chloromethane, Dibromomethane</li>
+    <li>1-Chloropropane, Isopropyl chloride, 1-Chlorobutane</li>
+  </ol>
+  Also explain why boiling points of halogen derivatives are considerably higher than those of hydrocarbons of comparable molecular mass.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">31.</div><div class="body">
+  The three isomeric bromobutanes boil at 375 K, 364 K and 346 K. Assign each boiling point to the correct isomer (1-bromobutane, 2-bromobutane, 2-bromo-2-methylpropane) and state the general rule about <b>branching and boiling point</b> that explains the trend.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">32.</div><div class="body">
+  Boiling points of the isomeric dichlorobenzenes are very nearly the same, yet <i>p</i>-dichlorobenzene melts far higher (323 K) than the <i>ortho</i> (256 K) and <i>meta</i> (249 K) isomers. Discuss.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">33.</div><div class="body">
+  State how the <b>density</b> of haloalkanes varies with (i) number of carbon atoms, (ii) number of halogen atoms and (iii) atomic mass of the halogen. Which is denser: CH<sub>2</sub>Cl<sub>2</sub> or CCl<sub>4</sub>?
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">34.</div><div class="body">
+  Haloalkanes are only very slightly soluble in water but dissolve readily in organic solvents. Explain both facts in terms of the energy of the attractions broken and the new attractions formed.
+</div><div class="marks">[2]</div></div>
+
+<!-- ==================== PART G ==================== -->
+<div class="section-head">
+  <div class="badge">Part G</div>
+  <div class="desc">Nucleophilic Substitution — S<sub>N</sub>2 &amp; S<sub>N</sub>1</div>
+  <div class="line"></div>
+  <div class="tm">29 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.7.1(1) — substrate &amp; leaving group; products with common nucleophiles; ambident nucleophiles; mechanisms, kinetics, steric &amp; electronic effects.</div>
+
+<div class="q"><div class="no">35.</div><div class="body">
+  What is a <b>nucleophilic substitution reaction</b>? In the general reaction below, identify the substrate, the nucleophile and the leaving group:
+  <div class="rxn"><span class="lbl"></span> Nu<sup>−</sup> + R—X
+    <span class="arr"><span class="cond">&nbsp;</span><span class="shaft"></span></span>
+    R—Nu + X<sup>−</sup>
+  </div>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">36.</div><div class="body">
+  An alkyl halide R—X is treated separately with each reagent below. Write the <b>substitution product (R—Nu)</b> and the <b>class of the main product</b> in each case:
+  <ol class="sub" type="i">
+    <li>NaOH (aq)</li>
+    <li>NaOR′</li>
+    <li>NH<sub>3</sub> (excess)</li>
+    <li>KCN</li>
+    <li>AgCN</li>
+    <li>KNO<sub>2</sub></li>
+    <li>AgNO<sub>2</sub></li>
+    <li>R′COOAg &nbsp;/&nbsp; LiAlH<sub>4</sub> (any one)</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">37.</div><div class="body">
+  What are <b>ambident nucleophiles</b>? Taking the cyanide ion and the nitrite ion as examples, show the two points of attack in each and name the pair of products each can give with an alkyl halide.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">38.</div><div class="body">
+  The reaction of CH<sub>3</sub>Cl with hydroxide ion follows <b>second order kinetics</b>.
+  <ol class="sub" type="a">
+    <li>Name the mechanism and write the rate law.</li>
+    <li>Describe the transition state, in which carbon is simultaneously bonded to five atoms, and draw it showing partial bonds.</li>
+    <li>What is meant by <b>inversion of configuration</b>? Which everyday analogy is used to describe it?</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">39.</div><div class="body">
+  The relative rates of S<sub>N</sub>2 reaction of simple halides are: methyl (30) &gt; ethyl 1° (1) &gt; isopropyl 2° (0.02) &gt; <i>tert</i>-butyl 3° (≈0). Account for this order in terms of <b>steric hindrance</b>, and state the resulting general reactivity order of 1°, 2° and 3° halides in S<sub>N</sub>2 reactions.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">40.</div><div class="body">
+  Hydrolysis of <i>tert</i>-butyl bromide with hydroxide ion follows <b>first order kinetics</b>.
+  <ol class="sub" type="a">
+    <li>Name the mechanism; write both steps, marking the slow (rate-determining) step, and give the rate law.</li>
+    <li>In which type of solvent are such reactions generally carried out?</li>
+    <li>Why do 3° halides undergo this reaction fastest?</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">41.</div><div class="body">
+  In each of the following pairs, identify the compound that undergoes a <b>faster S<sub>N</sub>2 reaction</b>, with reason:
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 400 132" width="330">
+        <!-- cyclohexyl-CH2Cl -->
+        <polygon points="58,32 88,49 88,83 58,100 28,83 28,49"/>
+        <line x1="88" y1="49" x2="112" y2="36"/>
+        <text x="146" y="40" text-anchor="middle">CH<tspan class="small" dy="3">2</tspan><tspan dy="-3">Cl</tspan></text>
+        <text x="205" y="72">and</text>
+        <!-- chlorocyclohexane -->
+        <polygon points="288,32 318,49 318,83 288,100 258,83 258,49"/>
+        <line x1="318" y1="49" x2="342" y2="36"/>
+        <text x="358" y="40" text-anchor="middle">Cl</text>
+      </svg>
+      <div class="cap">(i)</div>
+    </div>
+    <div class="fig">
+      <svg viewBox="0 0 400 100" width="330">
+        <!-- 1-iodobutane -->
+        <polyline points="20,70 48,52 76,70 104,52"/>
+        <text x="122" y="56" text-anchor="middle">I</text>
+        <text x="180" y="66">and</text>
+        <!-- 1-chlorobutane -->
+        <polyline points="232,70 260,52 288,70 316,52"/>
+        <text x="340" y="56" text-anchor="middle">Cl</text>
+      </svg>
+      <div class="cap">(ii)</div>
+    </div>
+  </div>
+  Also state, for a given alkyl group, the full reactivity order of R—X (X = F, Cl, Br, I) that holds in <b>both</b> S<sub>N</sub>1 and S<sub>N</sub>2 mechanisms.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">42.</div><div class="body">
+  Allylic and benzylic halides show <b>high reactivity towards S<sub>N</sub>1</b> reactions. Explain with the resonance structures of the allyl or benzyl carbocation.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">43.</div><div class="body">
+  Predict the order of reactivity in <b>both S<sub>N</sub>1 and S<sub>N</sub>2</b> reactions, with reasons:
+  <ol class="sub" type="i">
+    <li>The four isomeric bromobutanes (C<sub>4</sub>H<sub>9</sub>Br)</li>
+    <li>C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>Br,&nbsp; C<sub>6</sub>H<sub>5</sub>CH(C<sub>6</sub>H<sub>5</sub>)Br,&nbsp; C<sub>6</sub>H<sub>5</sub>CH(CH<sub>3</sub>)Br,&nbsp; C<sub>6</sub>H<sub>5</sub>C(CH<sub>3</sub>)(C<sub>6</sub>H<sub>5</sub>)Br</li>
+  </ol>
+  <div class="or-divider">OR</div>
+  Of the two primary bromides (CH<sub>3</sub>)<sub>2</sub>CHCH<sub>2</sub>Br and CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>Br, which is more reactive in S<sub>N</sub>1 reactions and why? Which of the two secondary bromides C<sub>6</sub>H<sub>5</sub>CH(C<sub>6</sub>H<sub>5</sub>)Br and C<sub>6</sub>H<sub>5</sub>CH(CH<sub>3</sub>)Br is less reactive in S<sub>N</sub>2 and why?
+</div><div class="marks">[3]</div></div>
+
+<!-- ==================== PART H ==================== -->
+<div class="section-head">
+  <div class="badge">Part H</div>
+  <div class="desc">Stereochemical Aspects</div>
+  <div class="line"></div>
+  <div class="tm">21 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.7.1(c) — optical activity, chirality, enantiomers, racemic mixture, retention, inversion, racemisation; stereochemistry of S<sub>N</sub>1 and S<sub>N</sub>2.</div>
+
+<div class="q"><div class="no">44.</div><div class="body">
+  Define <b>optical activity</b>. What do the terms <i>dextrorotatory</i> (d, +) and <i>laevorotatory</i> (l, −) mean, and which instrument measures the angle of rotation?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">45.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>Define <b>chirality</b> and <b>asymmetric carbon (stereocentre)</b>.</li>
+    <li>Identify the <b>chiral</b> molecules from the following list: 2-chlorobutane; propan-2-ol; bromochloro-iodomethane (BrClCHI); 2-bromo-2-methylpropane; 2-bromopropanoic acid (H<sub>3</sub>C—CHBr—COOH).</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">46.</div><div class="body">
+  Butan-2-ol is chiral whereas propan-2-ol is achiral. Justify this statement using the wedge–dash structure given below, and describe the mirror-image test of chirality.
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 230 150" width="186">
+        <line x1="112" y1="76" x2="112" y2="36"/>
+        <text x="112" y="28" text-anchor="middle">OH</text>
+        <line x1="112" y1="76" x2="56" y2="94"/>
+        <text x="36" y="102" text-anchor="middle">H<tspan class="small" dy="3">3</tspan><tspan dy="-3">C</tspan></text>
+        <polygon class="wedge" points="112,76 166,90 162,100"/>
+        <text x="192" y="102" text-anchor="middle">C<tspan class="small" dy="3">2</tspan><tspan dy="-3">H</tspan><tspan class="small" dy="3">5</tspan></text>
+        <line class="hash" x1="110" y1="86"  x2="114" y2="86"/>
+        <line class="hash" x1="108" y1="94"  x2="116" y2="94"/>
+        <line class="hash" x1="106" y1="102" x2="118" y2="102"/>
+        <line class="hash" x1="104" y1="110" x2="120" y2="110"/>
+        <text x="112" y="130" text-anchor="middle">H</text>
+      </svg>
+      <div class="cap">Butan-2-ol (wedge–dash)</div>
+    </div>
+  </div>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">47.</div><div class="body">
+  What are <b>enantiomers</b>? In what physical property do a pair of enantiomers differ, and in which properties (m.p., b.p., refractive index) are they identical?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">48.</div><div class="body">
+  Define <b>racemic mixture</b> and <b>racemisation</b>. Why is a racemic mixture optically inactive, and how is it represented before the name of a compound?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">49.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>Define <b>retention of configuration</b>.</li>
+    <li>When (−)-2-methylbutan-1-ol is heated with concentrated HCl, the product is (+)-1-chloro-2-methylbutane, yet the reaction proceeds with retention. Explain why the <b>sign of optical rotation</b> can change even though the configuration at the stereocentre is unchanged.</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">50.</div><div class="body">
+  When (−)-2-bromooctane reacts with sodium hydroxide, (+)-octan-2-ol is formed with the —OH group occupying the position <b>opposite</b> to that of the bromide. Which mechanism operates? What general stereochemical statement can be made about this mechanism for optically active halides?
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">51.</div><div class="body">
+  Hydrolysis of optically active 2-bromobutane gives (±)-butan-2-ol.
+  <ol class="sub" type="a">
+    <li>Which mechanism is operating?</li>
+    <li>Explain, with the help of the planar (<i>sp</i><sup>2</sup>, achiral) carbocation intermediate, why the product is racemic — showing attack of the nucleophile from both faces.</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<!-- ==================== PART I ==================== -->
+<div class="section-head">
+  <div class="badge">Part I</div>
+  <div class="desc">Elimination Reactions</div>
+  <div class="line"></div>
+  <div class="tm">11 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.7.1(2) — β-elimination, Zaitsev's rule, elimination versus substitution.</div>
+
+<div class="q"><div class="no">52.</div><div class="body">
+  What is <b>β-elimination</b>? With the help of a labelled diagram of a haloalkane, identify the α-carbon and the β-carbon, and state which atoms are removed from each during dehydrohalogenation with alcoholic KOH.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">53.</div><div class="body">
+  State <b>Zaitsev's (Saytzeff's) rule</b>. Apply it to the dehydrohalogenation of 2-bromopentane:
+  <div class="rxn"><span class="lbl"></span> CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH(Br)CH<sub>3</sub>
+    <span class="arr"><span class="cond">alc. KOH, Δ</span><span class="shaft"></span><span class="below">(−HBr)</span></span>
+    pent-2-ene (81%) + pent-1-ene (19%)
+  </div>
+  Explain why pent-2-ene is the major product.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">54.</div><div class="body">
+  An alkyl halide with β-hydrogens can undergo substitution or elimination when treated with a base/nucleophile. State how the preferred route depends on:
+  <ol class="sub" type="i">
+    <li>the bulk (size) of the nucleophile/base,</li>
+    <li>whether the halide is primary, secondary or tertiary,</li>
+    <li>the type of KOH used — aqueous versus alcoholic (explain why aqueous KOH gives alcohols but alcoholic KOH gives alkenes).</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">55.</div><div class="body">
+  Predict <b>all the alkenes</b> that would be formed by dehydrohalogenation of the following halides with sodium ethoxide in ethanol, and identify the <b>major</b> alkene in each case:
+  <ol class="sub" type="i">
+    <li>2-Chloro-2-methylbutane</li>
+    <li>1-Bromo-1-methylcyclohexane</li>
+    <li>2,2,3-Trimethyl-3-bromopentane</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<!-- ==================== PART J ==================== -->
+<div class="section-head">
+  <div class="badge">Part J</div>
+  <div class="desc">Reactions with Metals</div>
+  <div class="line"></div>
+  <div class="tm">9 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.7.1(3) &amp; 6.7.2(3) — Grignard reagents, Wurtz, Wurtz-Fittig and Fittig reactions.</div>
+
+<div class="q"><div class="no">56.</div><div class="body">
+  How is the Grignard reagent CH<sub>3</sub>CH<sub>2</sub>MgBr prepared? Write the equation with conditions, and describe the nature of the carbon–magnesium and magnesium–halogen bonds.
+  <div class="rxn"><span class="lbl"></span> CH<sub>3</sub>CH<sub>2</sub>Br + Mg
+    <span class="arr"><span class="cond">dry ether</span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:110px"></span>
+  </div>
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">57.</div><div class="body">
+  What happens when a Grignard reagent comes in contact with even a trace of water? Write the equation and explain why Grignard reagents must be prepared under <b>anhydrous</b> conditions.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">58.</div><div class="body">
+  State the <b>Wurtz reaction</b> and complete:
+  <div class="rxn"><span class="lbl"></span> 2 CH<sub>3</sub>Br + 2 Na
+    <span class="arr"><span class="cond">dry ether</span><span class="shaft"></span></span>
+    <span class="blank"></span> + 2 NaBr
+  </div>
+  What structural relationship exists between the halide taken and the alkane obtained?
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">59.</div><div class="body">
+  Distinguish between the <b>Wurtz–Fittig</b> and <b>Fittig</b> reactions. Write one balanced equation for each (use bromobenzene with methyl bromide, and bromobenzene alone, respectively) with conditions above the arrows.
+</div><div class="marks">[3]</div></div>
+
+<!-- ==================== PART K ==================== -->
+<div class="section-head">
+  <div class="badge">Part K</div>
+  <div class="desc">Reactions of Haloarenes</div>
+  <div class="line"></div>
+  <div class="tm">21 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.7.2 — low reactivity towards nucleophilic substitution; replacement by —OH; the nitro-group effect and mechanism; electrophilic substitution reactions.</div>
+
+<div class="q"><div class="no">60.</div><div class="body">
+  Aryl halides are <b>extremely less reactive</b> towards nucleophilic substitution. Explain all <b>four</b> reasons:
+  <ol class="sub" type="i">
+    <li>resonance effect (partial double bond character of C—X),</li>
+    <li>difference in hybridisation of the carbon in the C—X bond,</li>
+    <li>instability of the phenyl cation,</li>
+    <li>electronic repulsion between the nucleophile and the ring.</li>
+  </ol>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">61.</div><div class="body">
+  Draw the <b>resonating structures of chlorobenzene</b> showing conjugation of the halogen lone pairs with the π-electrons of the ring.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">62.</div><div class="body">
+  The C—Cl bond length in a haloalkane is 177 pm but only 169 pm in chlorobenzene. Explain this difference using the concept of <i>s</i>-character, and state its consequence for reactivity.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">63.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>Write the reaction by which chlorobenzene is converted into phenol, with full conditions:
+      <div class="rxn"><span class="lbl"></span> C<sub>6</sub>H<sub>5</sub>Cl
+        <span class="arr"><span class="cond">(i) NaOH, 623 K, 300 atm</span><span class="shaft"></span><span class="below">(ii) H<sup>+</sup></span></span>
+        <span class="blank" style="min-width:90px"></span>
+      </div>
+    </li>
+    <li>How do the required conditions change when one —NO<sub>2</sub> group is present at the <i>para</i> position (443 K), and when three —NO<sub>2</sub> groups are present at the 2,4,6-positions (warm water)? What general conclusion follows?</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">64.</div><div class="body">
+  Why does the —NO<sub>2</sub> group increase the reactivity of haloarenes towards nucleophilic substitution only from the <b>ortho- and para-positions</b> and not from the <b>meta-position</b>? Base your answer on the stabilisation of the intermediate carbanion through resonance.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">65.</div><div class="body">
+  Haloarenes undergo the usual <b>electrophilic substitution</b> reactions of the benzene ring, though slowly. Write the major (and minor) products of the following reactions of chlorobenzene:
+  <div class="rxn"><span class="lbl">(i)</span> C<sub>6</sub>H<sub>5</sub>Cl + Cl<sub>2</sub>
+    <span class="arr"><span class="cond">anhyd. FeCl<sub>3</sub></span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:150px"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(ii)</span> C<sub>6</sub>H<sub>5</sub>Cl + HNO<sub>3</sub>
+    <span class="arr"><span class="cond">conc. H<sub>2</sub>SO<sub>4</sub></span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:150px"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(iii)</span> C<sub>6</sub>H<sub>5</sub>Cl
+    <span class="arr"><span class="cond">conc. H<sub>2</sub>SO<sub>4</sub>, Δ</span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:150px"></span>
+  </div>
+  <div class="rxn"><span class="lbl">(iv)</span> C<sub>6</sub>H<sub>5</sub>Cl + CH<sub>3</sub>Cl
+    <span class="arr"><span class="cond">anhyd. AlCl<sub>3</sub></span><span class="shaft"></span></span>
+    <span class="blank" style="min-width:150px"></span>
+  </div>
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">66.</div><div class="body">
+  Although chlorine is an electron-withdrawing group, it is <b><i>ortho</i>-, <i>para</i>-directing</b> in electrophilic aromatic substitution, and at the same time <b>deactivates</b> the ring. Resolve this apparent contradiction by discussing the opposing inductive and resonance effects, stating which effect controls <b>reactivity</b> and which controls <b>orientation</b>.
+</div><div class="marks">[3]</div></div>
+
+<!-- ==================== PART L ==================== -->
+<div class="section-head">
+  <div class="badge">Part L</div>
+  <div class="desc">Polyhalogen Compounds</div>
+  <div class="line"></div>
+  <div class="tm">13 Marks</div>
+</div>
+<div class="ncert-tag">NCERT 6.8 — dichloromethane, chloroform, iodoform, carbon tetrachloride, freons, DDT: uses, health effects and environmental hazards.</div>
+
+<div class="q"><div class="no">67.</div><div class="body">
+  Give <b>two industrial uses</b> of dichloromethane (methylene chloride), and mention two harmful effects it has on the human body.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">68.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>State the <b>major present-day use</b> of chloroform.</li>
+    <li>Chloroform is slowly oxidised by air in the presence of light to a highly poisonous gas. Name the gas and complete the equation:
+      <div class="rxn"><span class="lbl"></span> 2 CHCl<sub>3</sub> + O<sub>2</sub>
+        <span class="arr"><span class="cond">light</span><span class="shaft"></span></span>
+        <span class="blank"></span> + 2 HCl
+      </div>
+    </li>
+    <li>How is chloroform stored so as to prevent this reaction?</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">69.</div><div class="body">
+  Iodoform was formerly used as an antiseptic. To what are its antiseptic properties actually due, and why has it been replaced?
+</div><div class="marks">[1]</div></div>
+
+<div class="q"><div class="no">70.</div><div class="body">
+  Mention <b>two uses</b> of carbon tetrachloride, and explain how its release into the air ultimately increases human exposure to ultraviolet radiation.
+</div><div class="marks">[2]</div></div>
+
+<div class="q"><div class="no">71.</div><div class="body">
+  <ol class="sub" type="a">
+    <li>What are <b>freons</b>? List three characteristic properties.</li>
+    <li>Write the formula of <b>Freon-12</b> and name the reaction by which it is manufactured from tetrachloromethane.</li>
+    <li>How do freons disturb the natural ozone balance of the stratosphere?</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">72.</div><div class="body">
+  With reference to the structure of <b>DDT</b> shown below, state (a) why its use expanded enormously after World War II, and (b) two problems that led to its ban in several countries.
+  <div class="figs">
+    <div class="fig">
+      <svg viewBox="0 0 356 156" width="312">
+        <polygon points="50,88 64,64 92,64 106,88 92,112 64,112"/>
+        <circle cx="78" cy="88" r="15"/>
+        <line x1="50" y1="88" x2="32" y2="88"/>
+        <text x="20" y="93" text-anchor="middle">Cl</text>
+        <line x1="106" y1="88" x2="156" y2="88"/>
+        <line x1="156" y1="88" x2="156" y2="55"/>
+        <text x="156" y="47" text-anchor="middle">CCl<tspan class="small" dy="3">3</tspan></text>
+        <line x1="156" y1="88" x2="156" y2="115"/>
+        <text x="156" y="131" text-anchor="middle">H</text>
+        <line x1="156" y1="88" x2="206" y2="88"/>
+        <polygon points="206,88 220,64 248,64 262,88 248,112 220,112"/>
+        <circle cx="234" cy="88" r="15"/>
+        <line x1="262" y1="88" x2="280" y2="88"/>
+        <text x="292" y="93" text-anchor="middle">Cl</text>
+      </svg>
+      <div class="cap">p,p′-Dichlorodiphenyltrichloroethane (DDT)</div>
+    </div>
+  </div>
+</div><div class="marks">[2]</div></div>
+
+<!-- ==================== PART M ==================== -->
+<div class="section-head">
+  <div class="badge">Part M</div>
+  <div class="desc">Conversions — Whole Chapter</div>
+  <div class="line"></div>
+  <div class="tm">10 Marks</div>
+</div>
+<div class="ncert-tag">Multi-step syntheses linking every preparation and reaction studied in the unit.</div>
+
+<div class="q"><div class="no">73.</div><div class="body">
+  How will you bring about the following conversions? (Attempt any <b>ten</b>; each step must carry its reagent and condition above the arrow.)
+  <ol class="sub" type="i">
+    <li>Ethanol to but-1-yne</li>
+    <li>Ethane to bromoethene</li>
+    <li>Propene to 1-nitropropane</li>
+    <li>Toluene to benzyl alcohol</li>
+    <li>Propene to propyne</li>
+    <li>Ethanol to ethyl fluoride</li>
+    <li>Bromomethane to propanone</li>
+    <li>But-1-ene to but-2-ene</li>
+    <li>1-Chlorobutane to n-octane</li>
+    <li>Benzene to biphenyl (diphenyl)</li>
+    <li>Aniline to chlorobenzene</li>
+    <li><i>tert</i>-Butyl bromide to isobutyl bromide</li>
+    <li>2-Bromopropane to 1-bromopropane</li>
+    <li>Chlorobenzene to <i>p</i>-nitrophenol</li>
+    <li>Aniline to phenyl isocyanide</li>
+  </ol>
+</div><div class="marks">[10]</div></div>
+
+<!-- ==================== PART N ==================== -->
+<div class="section-head">
+  <div class="badge">Part N</div>
+  <div class="desc">HOTS &amp; Structure-Deduction Problems</div>
+  <div class="line"></div>
+  <div class="tm">10 Marks</div>
+</div>
+<div class="ncert-tag">Higher-order questions integrating free radical halogenation, isomerism and reaction sequences.</div>
+
+<div class="q"><div class="no">74.</div><div class="body">
+  A hydrocarbon C<sub>5</sub>H<sub>10</sub> does not react with chlorine in the dark but gives a <b>single monochloro compound</b> C<sub>5</sub>H<sub>9</sub>Cl in bright sunlight. Identify the hydrocarbon, draw its structure and justify both observations.
+</div><div class="marks">[3]</div></div>
+
+<div class="q"><div class="no">75.</div><div class="body">
+  A primary alkyl halide (a), C<sub>4</sub>H<sub>9</sub>Br, reacts with alcoholic KOH to give compound (b). Compound (b) reacts with HBr to give (c), which is an <b>isomer of (a)</b>. When (a) reacts with sodium metal, it gives compound (d), C<sub>8</sub>H<sub>18</sub>, which is <b>different</b> from the compound obtained when n-butyl bromide reacts with sodium. Deduce the structural formula of (a) and write equations for all the reactions involved.
+</div><div class="marks">[4]</div></div>
+
+<div class="q"><div class="no">76.</div><div class="body">
+  Among the isomeric alkanes of molecular formula C<sub>5</sub>H<sub>12</sub>, identify — with structures and grouping of equivalent hydrogens — the isomer that on photochemical chlorination yields
+  <ol class="sub" type="i">
+    <li>a single monochloride,</li>
+    <li>three isomeric monochlorides,</li>
+    <li>four isomeric monochlorides.</li>
+  </ol>
+</div><div class="marks">[3]</div></div>
+
+</div><!-- /sheet -->
+
+
+</body>
+</html>
