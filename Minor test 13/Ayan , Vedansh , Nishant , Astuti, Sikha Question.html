@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 13</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; /* Changed to max-width for responsiveness */
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase;}
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 15px;
+            margin-top: 8px;
+        }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; text-align: center; }
+            .options-grid { grid-template-columns: 1fr; } /* Single column for mobile */
+            .q-num { width: 25px; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 13</div>
+        <div class="exam-details">
+            <span>Class: 6 (ICSE)</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper consists of two sections based on the chapter <strong>Leaf and Flower</strong>.</li>
+                <li><strong>Section A</strong> contains 25 Multiple Choice Questions (1 Mark each).</li>
+                <li><strong>Section B</strong> contains 5 Subjective Questions (3 Marks each).</li>
+                <li>All questions are compulsory. Write clean and legible answers.</li>
+                <li>Reference: Based strictly on fundamental concepts from NCERT & standard textbooks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">1.</div><div class="q-content">The flat green portion of a leaf is called the:<div class="options-grid"><span>(a) Petiole</span><span>(b) Lamina (Leaf blade)</span><span>(c) Midrib</span><span>(d) Vein</span></div></div></div>
+    <div class="question-container"><div class="q-num">2.</div><div class="q-content">The thin lines present on a leaf are known as:<div class="options-grid"><span>(a) Stomata</span><span>(b) Margin</span><span>(c) Veins</span><span>(d) Base</span></div></div></div>
+    <div class="question-container"><div class="q-num">3.</div><div class="q-content">The prominent line in the middle of a leaf is called the:<div class="options-grid"><span>(a) Midrib</span><span>(b) Petiole</span><span>(c) Lamina</span><span>(d) Margin</span></div></div></div>
+    <div class="question-container"><div class="q-num">4.</div><div class="q-content">The design made by veins in a leaf is called:<div class="options-grid"><span>(a) Transpiration</span><span>(b) Photosynthesis</span><span>(c) Venation</span><span>(d) Respiration</span></div></div></div>
+    <div class="question-container"><div class="q-num">5.</div><div class="q-content">If the design of veins is net-like on both sides of the midrib, the venation is:<div class="options-grid"><span>(a) Parallel</span><span>(b) Reticulate</span><span>(c) Circular</span><span>(d) Straight</span></div></div></div>
+    
+    <div class="question-container"><div class="q-num">6.</div><div class="q-content">Grass leaves usually exhibit which type of venation?<div class="options-grid"><span>(a) Reticulate</span><span>(b) Irregular</span><span>(c) Webbed</span><span>(d) Parallel</span></div></div></div>
+    <div class="question-container"><div class="q-num">7.</div><div class="q-content">The part of a leaf by which it is attached to the stem is called:<div class="options-grid"><span>(a) Petiole</span><span>(b) Lamina</span><span>(c) Vein</span><span>(d) Root</span></div></div></div>
+    <div class="question-container"><div class="q-num">8.</div><div class="q-content">Water comes out of leaves in the form of vapour by a process called:<div class="options-grid"><span>(a) Photosynthesis</span><span>(b) Transpiration</span><span>(c) Respiration</span><span>(d) Condensation</span></div></div></div>
+    <div class="question-container"><div class="q-num">9.</div><div class="q-content">Tiny pores on the surface of leaves through which exchange of gases takes place are:<div class="options-grid"><span>(a) Veins</span><span>(b) Chloroplasts</span><span>(c) Stomata</span><span>(d) Petioles</span></div></div></div>
+    <div class="question-container"><div class="q-num">10.</div><div class="q-content">Leaves prepare their food in the presence of sunlight and a green colored substance called:<div class="options-grid"><span>(a) Stomata</span><span>(b) Chlorophyll</span><span>(c) Oxygen</span><span>(d) Nitrogen</span></div></div></div>
+    
+    <div class="question-container"><div class="q-num">11.</div><div class="q-content">What do plants release during the process of photosynthesis?<div class="options-grid"><span>(a) Carbon dioxide</span><span>(b) Nitrogen</span><span>(c) Oxygen</span><span>(d) Hydrogen</span></div></div></div>
+    <div class="question-container"><div class="q-num">12.</div><div class="q-content">The main function of a flower is to help the plant in:<div class="options-grid"><span>(a) Making food</span><span>(b) Breathing</span><span>(c) Reproduction</span><span>(d) Support</span></div></div></div>
+    <div class="question-container"><div class="q-num">13.</div><div class="q-content">The outermost whorl of a flower, consisting of green, leaf-like structures, is called:<div class="options-grid"><span>(a) Petals</span><span>(b) Sepals</span><span>(c) Stamens</span><span>(d) Pistil</span></div></div></div>
+    <div class="question-container"><div class="q-num">14.</div><div class="q-content">The bright, colorful, and scented part of a flower that attracts insects is the:<div class="options-grid"><span>(a) Sepal</span><span>(b) Petal</span><span>(c) Root</span><span>(d) Stem</span></div></div></div>
+    <div class="question-container"><div class="q-num">15.</div><div class="q-content">The male reproductive part of a flower is called:<div class="options-grid"><span>(a) Pistil</span><span>(b) Stigma</span><span>(c) Stamen</span><span>(d) Ovary</span></div></div></div>
+
+    <div class="question-container"><div class="q-num">16.</div><div class="q-content">The stamen consists of a stalk called the filament and a swollen top called the:<div class="options-grid"><span>(a) Anther</span><span>(b) Stigma</span><span>(c) Style</span><span>(d) Ovule</span></div></div></div>
+    <div class="question-container"><div class="q-num">17.</div><div class="q-content">What does the anther produce?<div class="options-grid"><span>(a) Nectar</span><span>(b) Pollen grains</span><span>(c) Ovules</span><span>(d) Seeds</span></div></div></div>
+    <div class="question-container"><div class="q-num">18.</div><div class="q-content">The female reproductive part located at the center of the flower is called:<div class="options-grid"><span>(a) Stamen</span><span>(b) Pistil (or Carpel)</span><span>(c) Sepal</span><span>(d) Petal</span></div></div></div>
+    <div class="question-container"><div class="q-num">19.</div><div class="q-content">Which of the following is NOT a part of the pistil?<div class="options-grid"><span>(a) Stigma</span><span>(b) Style</span><span>(c) Ovary</span><span>(d) Anther</span></div></div></div>
+    <div class="question-container"><div class="q-num">20.</div><div class="q-content">The swollen basal part of the pistil is called the:<div class="options-grid"><span>(a) Stigma</span><span>(b) Ovary</span><span>(c) Filament</span><span>(d) Style</span></div></div></div>
+
+    <div class="question-container"><div class="q-num">21.</div><div class="q-content">Inside the ovary, small bead-like structures are present. They are called:<div class="options-grid"><span>(a) Pollens</span><span>(b) Nectar</span><span>(c) Ovules</span><span>(d) Stamens</span></div></div></div>
+    <div class="question-container"><div class="q-num">22.</div><div class="q-content">The sticky topmost part of the pistil that receives pollen is the:<div class="options-grid"><span>(a) Stigma</span><span>(b) Style</span><span>(c) Ovary</span><span>(d) Anther</span></div></div></div>
+    <div class="question-container"><div class="q-num">23.</div><div class="q-content">A flower containing all four whorls (sepals, petals, stamens, and pistil) is called a:<div class="options-grid"><span>(a) Incomplete flower</span><span>(b) Complete flower</span><span>(c) Unisexual flower</span><span>(d) Dead flower</span></div></div></div>
+    <div class="question-container"><div class="q-num">24.</div><div class="q-content">The transfer of pollen grains from the anther to the stigma of a flower is called:<div class="options-grid"><span>(a) Fertilization</span><span>(b) Pollination</span><span>(c) Transpiration</span><span>(d) Respiration</span></div></div></div>
+    <div class="question-container"><div class="q-num">25.</div><div class="q-content">After successful fertilization, the ovary of the flower develops into a:<div class="options-grid"><span>(a) Seed</span><span>(b) Stem</span><span>(c) Root</span><span>(d) Fruit</span></div></div></div>
+
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Answer all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            Define venation. Name and briefly explain the two main types of venation found in leaves with one example of each.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            State three important functions performed by the leaves of a plant.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            Draw a neat diagram of a typical leaf and label the following parts: <br>
+            (i) Petiole &nbsp;&nbsp;&nbsp; (ii) Lamina &nbsp;&nbsp;&nbsp; (iii) Midrib
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            Name the four main whorls (parts) of a complete flower. State the primary function of petals.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            Differentiate between the Stamen and the Pistil by writing any three key differences.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

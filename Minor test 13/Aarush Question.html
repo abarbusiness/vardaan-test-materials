@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .exam-details span { margin: 5px 10px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 8px;
+            width: 100%;
+        }
+        .mcq-option { display: flex; }
+        .opt-label { font-weight: bold; margin-right: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+        
+        /* Responsive rules for screen viewing */
+        @media (max-width: 768px) {
+            body { width: 100%; padding: 15px; margin: 0; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .mcq-options { grid-template-columns: 1fr; } /* Stack MCQs on mobile */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Social Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> comprises 25 Multiple Choice Questions of 1 mark each.</li>
+                <li><strong>Section B</strong> comprises 3 Short Answer Type Questions of 2 marks each.</li>
+                <li><strong>Section C</strong> comprises 3 Long Answer Type Questions of 3 marks each.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            What was the earliest form of exchange where goods were traded directly for other goods?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Digital System</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Banking System</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Barter System</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Coinage System</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            In which layer of the Earth's atmosphere do all weather changes take place?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Stratosphere</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Troposphere</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Mesosphere</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Exosphere</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Who are credited with minting the first coins around the 6th century BCE?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Romans</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Egyptians</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Lydians</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Greeks</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Which element of weather measures how hot or cold the atmosphere is?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Humidity</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Precipitation</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Wind</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Temperature</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The situation in the barter system where both people must exactly want what the other person is offering is called:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Store of Value</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Double Coincidence of Wants</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Standard of Payment</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Problem of Portability</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Which layer of the atmosphere contains the ozone layer?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Troposphere</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Thermosphere</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Stratosphere</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Exosphere</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Which authority is the ONLY legal body that can issue currency in modern India?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> State Bank of India (SBI)</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Ministry of Finance</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Reserve Bank of India (RBI)</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> SPMCIL</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Which instrument is used to measure wind speed?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Anemometer</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Barometer</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Hygrometer</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Rain Gauge</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Which of the following places in India receives the highest average annual rainfall in the world?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Shimla</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Mawsynram</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Khardung La</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Mumbai</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The modern English word "salary" comes from the Latin word <em>salarium</em>, which refers to:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Gold</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Cowrie shells</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Salt</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Grain</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The Karman Line, which is the imaginary boundary between Earth's atmosphere and outer space, is located at what altitude above sea level?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> 50 km</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> 100 km</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> 200 km</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> 500 km</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            In ancient India, early punch-marked pieces of metal used as coins were known as:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Annas</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Karshapanas</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Rupees</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Dinars</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            What do dark, heavy nimbus clouds signify in nature?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Fair weather</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Impending rain or storms</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> High humidity</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Snowfall only</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Which of the following is India’s system for instant bank-to-bank transfers using a phone number?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Cheque</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Debit Card</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> UPI</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Cash</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            The pleasant, earthy smell produced when rain hits dry soil is called:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Humidity</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Petrichor</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Precipitation</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Acclimatisation</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            In which country was paper money first used during the 7th century?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> India</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Rome</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> China</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Great Britain</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            What is an anemometer used to measure?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Wind direction</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Atmospheric pressure</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Humidity</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Wind speed</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            In what year was the Indian Rupee symbol (₹) adopted?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> 2005</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> 2010</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> 1947</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> 2015</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            Which atmospheric layer contains charged particles where auroras occur and the International Space Station orbits?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Troposphere</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Mesosphere</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Thermosphere</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Stratosphere</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            What does a hygrometer measure?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Humidity</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Wind speed</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Temperature</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Rainfall</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            Because a cow cannot be cut in half for a trade, the barter system suffers from the problem of:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Durability</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Divisibility</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Portability</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Measure of Value</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            What happens to atmospheric pressure as altitude increases?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> It increases</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> It decreases</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> It remains the same</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> It first increases then decreases</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            Which app is used by the IMD to give location-specific agro-met advice to farmers?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Kisan App</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Meghdoot App</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Mausam App</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Vayu App</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            Historically in India, the "Anna" system was used. One anna was equal to:
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> 1/10 of a rupee</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> 1/12 of a rupee</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> 1/16 of a rupee</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> 1/100 of a rupee</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            Which animal's croaking is considered a natural sign of expected rainfall?
+            <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-label">(a)</span> Snake</div>
+                <div class="mcq-option"><span class="opt-label">(b)</span> Frog</div>
+                <div class="mcq-option"><span class="opt-label">(c)</span> Lion</div>
+                <div class="mcq-option"><span class="opt-label">(d)</span> Eagle</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (6 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            Define the Barter System. Name any two commodities that were used in ancient times for this exchange.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            State the main difference between Weather and Climate.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            List any two advantages of using Digital Payments in the modern age.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (9 Marks)<span class="marks-info">(Long Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            Explain any three major problems of the Barter System that led to the invention of money.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            Name the five layers of the Earth's atmosphere in order from bottom to top. Which layer protects the Earth by absorbing harmful ultraviolet rays from the Sun?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">31.</div>
+        <div class="q-content">
+            To overcome the limitations of the barter system, society developed money. Briefly explain any three of the four essential functions that money performs.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Minor Test 13</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%;
+            max-width: 500px; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d9381e;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            flex-direction: column;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        .q-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            font-weight: bold;
+        }
+        .q-marks {
+            font-weight: bold;
+            white-space: nowrap;
+            margin-left: 10px;
+            color: #d9381e;
+        }
+        .solution-box {
+            margin-left: 30px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 3px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .math-chunk {
+            display: inline-block;
+            word-break: break-word;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 768px) { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                font-size: 11pt;
+            } 
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+            }
+            .solution-box { margin-left: 0; margin-top: 10px; }
+            /* Breaking equations gracefully on small screens */
+            .math-chunk { display: block; overflow-x: auto; margin: 5px 0; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .solution-box { background-color: transparent; border-left: 2px solid #000; }
+        }
+    </style>
+    <!-- MathJax Integration -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS & ANSWER KEY : MINOR TEST 13</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A - SOLUTIONS (25 Marks)</div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">1.</div><div class="q-content">Who proposed the Five-Kingdom classification of living organisms?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Robert Whittaker</strong><br><em>Explanation:</em> Robert H. Whittaker proposed the 5-kingdom classification (Monera, Protista, Fungi, Plantae, Animalia) in 1969.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">2.</div><div class="q-content">Which of the following is the basic or smallest unit of classification?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (d) Species</strong><br><em>Explanation:</em> Species is the lowest and most fundamental unit of biological classification.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">3.</div><div class="q-content">Amoeba belongs to which of the following kingdoms?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Protista</strong><br><em>Explanation:</em> Amoeba is a unicellular eukaryotic organism, which places it in Kingdom Protista.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">4.</div><div class="q-content">Organisms in Kingdom Fungi obtain their food by:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Absorbing decaying matter</strong><br><em>Explanation:</em> Fungi are heterotrophic and typically saprophytic, absorbing nutrients from dead and decaying matter.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">5.</div><div class="q-content">Animals that do not possess a backbone are classified as:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Invertebrates</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">6.</div><div class="q-content">Sponges, which have pores all over their body, belong to Phylum:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (a) Porifera</strong><br><em>Explanation:</em> The word 'Porifera' means pore-bearing animals.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">7.</div><div class="q-content">Hydra and Jellyfish belong to which phylum?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Cnidaria (Coelenterata)</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">8.</div><div class="q-content">Tapeworm is an example of a flatworm belonging to Phylum:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Platyhelminthes</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">9.</div><div class="q-content">Earthworms have a segmented body. They belong to Phylum:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (a) Annelida</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">10.</div><div class="q-content">Which is the largest phylum of the animal kingdom, containing insects?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Arthropoda</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">11.</div><div class="q-content">The term 'Arthropoda' literally means:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Jointed legs</strong><br><em>Explanation:</em> 'Arthro' means jointed and 'poda' means legs/feet.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">12.</div><div class="q-content">Animals with a soft, unsegmented body often enclosed in a hard shell (e.g., Snail) belong to:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Mollusca</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">13.</div><div class="q-content">Starfish belongs to Phylum Echinodermata. A key characteristic of this phylum is:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Spiny skin</strong><br><em>Explanation:</em> 'Echino' means spiny and 'derma' means skin.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">14.</div><div class="q-content">Animals possessing a backbone (vertebral column) belong to:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Vertebrata</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">15.</div><div class="q-content">Fishes (Class Pisces) primarily breathe using:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Gills</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">16.</div><div class="q-content">Amphibians, such as frogs, are unique because they can live:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Both on land and in water</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">17.</div><div class="q-content">Which class includes cold-blooded animals with dry, scaly skin (e.g., Snakes, Lizards)?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Reptilia</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">18.</div><div class="q-content">Birds belong to Class Aves. Which of the following is true for them?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Forelimbs modified into wings</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">19.</div><div class="q-content">Which of these is a distinct characteristic of Mammals?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Presence of mammary glands</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">20.</div><div class="q-content">Which kingdom contains unicellular organisms that lack a distinct, well-defined nucleus (Prokaryotes)?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (a) Monera</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">21.</div><div class="q-content">The system of providing a two-word scientific name to organisms is called:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Binomial nomenclature</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">22.</div><div class="q-content">In the scientific name <i>Homo sapiens</i>, the word 'Homo' represents the:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Genus</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">23.</div><div class="q-content">A bat is capable of flying in the air, yet it is classified as a:</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (b) Mammal</strong><br><em>Explanation:</em> Bats give birth to young ones and have mammary glands.</div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">24.</div><div class="q-content">Yeast and Mushroom are examples of which kingdom?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (d) Fungi</strong></div></div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">25.</div><div class="q-content">Which of the following animals has a streamlined body to help it swim easily in water?</div><div class="q-marks">[1]</div></div><div class="solution-box"><strong>Answer: (c) Fish</strong></div></div>
+
+    <div class="section-header">SECTION B - SOLUTIONS (6 Marks)</div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">26.</div><div class="q-content">Define 'Species'. Who introduced the system of Binomial Nomenclature?</div><div class="q-marks">[2]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <ul style="margin-top: 5px; margin-bottom: 0;">
+            <li><strong>Species:</strong> It is the basic unit of classification. A species is defined as a group of organisms that are structurally similar and can interbreed among themselves to produce fertile offspring. (1 Mark)</li>
+            <li><strong>Binomial Nomenclature:</strong> The system was introduced by <strong>Carolus Linnaeus</strong>. (1 Mark)</li>
+        </ul>
+    </div></div>
+
+    <div class="question-container"><div class="q-row"><div class="q-num">27.</div><div class="q-content">State any two main characteristics of Kingdom Fungi. Give one example of an organism from this kingdom.</div><div class="q-marks">[2]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Characteristics (Any Two - 1 Mark Total; 0.5 each):</strong>
+        <ul style="margin-top: 5px; margin-bottom: 5px;">
+            <li>They are eukaryotic and mostly multicellular (except yeast which is unicellular).</li>
+            <li>They lack chlorophyll, hence they cannot photosynthesize (Heterotrophic/Saprophytic).</li>
+            <li>Their cell walls are made up of chitin.</li>
+        </ul>
+        <strong>Example (1 Mark):</strong> Mushroom, Yeast, or Bread mould (Rhizopus).
+    </div></div>
+
+    <div class="question-container"><div class="q-row"><div class="q-num">28.</div><div class="q-content">Write any two fundamental differences between Invertebrates and Vertebrates.</div><div class="q-marks">[2]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <table border="1" cellspacing="0" cellpadding="5" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+            <tr>
+                <th style="background-color: #eaeaea; width: 50%;">Invertebrates</th>
+                <th style="background-color: #eaeaea; width: 50%;">Vertebrates</th>
+            </tr>
+            <tr>
+                <td>They do not have a backbone (vertebral column).</td>
+                <td>They possess a well-defined backbone (vertebral column).</td>
+            </tr>
+            <tr>
+                <td>They do not have a skeletal framework inside their body (endoskeleton).</td>
+                <td>They have an internal skeleton made of bone or cartilage.</td>
+            </tr>
+        </table>
+        <br><em>(1 Mark for each correct difference pairing)</em>
+    </div></div>
+
+    <div class="section-header">SECTION C - SOLUTIONS (9 Marks)</div>
+    
+    <div class="question-container"><div class="q-row"><div class="q-num">29.</div><div class="q-content">Write three distinguishing features of Phylum Arthropoda. Give two common examples of animals belonging to this phylum.</div><div class="q-marks">[3]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>Distinguishing Features (Any Three - 2 Marks; ~0.66 each):</strong>
+        <ul style="margin-top: 5px; margin-bottom: 5px;">
+            <li>They possess jointed appendages (legs).</li>
+            <li>Their body is segmented, usually divided into head, thorax, and abdomen.</li>
+            <li>They have a hard outer covering called an exoskeleton made of chitin.</li>
+            <li>It is the largest phylum in the animal kingdom.</li>
+        </ul>
+        <strong>Examples (1 Mark; 0.5 each):</strong> Ant, Spider, Butterfly, Cockroach, Crab. (Any two).
+    </div></div>
+
+    <div class="question-container"><div class="q-row"><div class="q-num">30.</div><div class="q-content">Classify the following animals into their correct respective classes under Vertebrata: <br><br>(a) Shark &nbsp;&nbsp; (b) Frog &nbsp;&nbsp; (c) Snake &nbsp;&nbsp; (d) Pigeon &nbsp;&nbsp; (e) Bat &nbsp;&nbsp; (f) Human</div><div class="q-marks">[3]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <em>(0.5 Marks for each correct classification, Total 3 Marks)</em>
+        <ul style="margin-top: 5px; margin-bottom: 0;">
+            <li><strong>(a) Shark:</strong> Class Pisces (Fishes)</li>
+            <li><strong>(b) Frog:</strong> Class Amphibia</li>
+            <li><strong>(c) Snake:</strong> Class Reptilia</li>
+            <li><strong>(d) Pigeon:</strong> Class Aves (Birds)</li>
+            <li><strong>(e) Bat:</strong> Class Mammalia</li>
+            <li><strong>(f) Human:</strong> Class Mammalia</li>
+        </ul>
+    </div></div>
+
+    <div class="question-container"><div class="q-row"><div class="q-num">31.</div><div class="q-content">Name the five kingdoms of the living world as proposed by R.H. Whittaker. Give one example of an organism for each of the first three kingdoms you list.</div><div class="q-marks">[3]</div></div>
+    <div class="solution-box">
+        <strong>Solution:</strong><br>
+        <strong>The Five Kingdoms (1.5 Marks):</strong>
+        <ol style="margin-top: 5px; margin-bottom: 10px;">
+            <li>Kingdom Monera</li>
+            <li>Kingdom Protista</li>
+            <li>Kingdom Fungi</li>
+            <li>Kingdom Plantae</li>
+            <li>Kingdom Animalia</li>
+        </ol>
+        <strong>Examples of the first three (1.5 Marks; 0.5 each):</strong>
+        <ul style="margin-top: 0; margin-bottom: 0;">
+            <li><em>Monera Example:</em> Bacteria, Blue-green algae.</li>
+            <li><em>Protista Example:</em> Amoeba, Paramecium.</li>
+            <li><em>Fungi Example:</em> Mushroom, Yeast, Bread mould.</li>
+        </ul>
+    </div></div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

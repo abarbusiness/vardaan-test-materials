@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Minor Test 13 (Leaf and Flower)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #fcfcfc; 
+        }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 3px solid #2c3e50; padding-bottom: 15px; }
+        .institute-name { font-size: 22pt; font-weight: bold; color: #2c3e50; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; color: #e74c3c; }
+        
+        .section-header { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 10px; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 4px;
+            font-size: 13pt;
+        }
+        
+        .solution-box { 
+            background: white; 
+            border: 1px solid #ddd; 
+            border-left: 5px solid #3498db; 
+            border-radius: 5px; 
+            padding: 15px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .q-text { font-weight: 600; color: #2c3e50; width: 85%; }
+        .marks-right { font-weight: bold; color: #e74c3c; text-align: right; width: 10%; min-width: 50px; }
+        
+        .ans-text { color: #27ae60; font-weight: 600; margin-bottom: 5px; }
+        .explanation { color: #555; font-size: 10.5pt; }
+        
+        /* Specific adjustments for Subjective Table formatting */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; font-size: 10.5pt; }
+            .question-row { flex-direction: column; }
+            .q-text { width: 100%; margin-bottom: 5px; }
+            .marks-right { width: 100%; text-align: left; color: #7f8c8d; font-size: 9pt; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & DETAILED SOLUTIONS - MINOR TEST 13</div>
+        <div>Class: 6 (ICSE) | Subject: Science (Biology) | Topic: Leaf and Flower</div>
+    </div>
+
+    <div class="section-header">SECTION A: Multiple Choice Questions (25 Marks)</div>
+    
+    <script>
+        // Data structure for easy rendering of 25 MCQ solutions
+        const mcqSolutions = [
+            { q: "1. The flat green portion of a leaf is called the:", ans: "(b) Lamina (Leaf blade)", exp: "The broad, green, flat part of the leaf is known as the lamina or leaf blade." },
+            { q: "2. The thin lines present on a leaf are known as:", ans: "(c) Veins", exp: "Veins give support and transport water and minerals through the leaf." },
+            { q: "3. The prominent line in the middle of a leaf is called the:", ans: "(a) Midrib", exp: "The thick vein in the exact middle of the lamina is the midrib." },
+            { q: "4. The design made by veins in a leaf is called:", ans: "(c) Venation", exp: "Leaf venation is the arrangement pattern of veins in a leaf blade." },
+            { q: "5. If the design of veins is net-like on both sides of the midrib, the venation is:", ans: "(b) Reticulate", exp: "Reticulate venation forms a web-like network, common in dicot plants like mango and rose." },
+            { q: "6. Grass leaves usually exhibit which type of venation?", ans: "(d) Parallel", exp: "In grasses (monocots), veins run parallel to one another." },
+            { q: "7. The part of a leaf by which it is attached to the stem is called:", ans: "(a) Petiole", exp: "The stalk connecting the leaf blade to the stem is the petiole." },
+            { q: "8. Water comes out of leaves in the form of vapour by a process called:", ans: "(b) Transpiration", exp: "Transpiration is the evaporative loss of water mainly from leaf stomata." },
+            { q: "9. Tiny pores on the surface of leaves through which exchange of gases takes place are:", ans: "(c) Stomata", exp: "Stomata (singular: stoma) allow CO2 in and O2/water vapor out." },
+            { q: "10. Leaves prepare their food in the presence of sunlight and a green colored substance called:", ans: "(b) Chlorophyll", exp: "Chlorophyll is the pigment responsible for trapping solar energy." },
+            { q: "11. What do plants release during the process of photosynthesis?", ans: "(c) Oxygen", exp: "Plants take in CO2 and release O2 as a byproduct of photosynthesis." },
+            { q: "12. The main function of a flower is to help the plant in:", ans: "(c) Reproduction", exp: "Flowers contain the reproductive organs that lead to the formation of seeds and fruit." },
+            { q: "13. The outermost whorl of a flower, consisting of green, leaf-like structures, is called:", ans: "(b) Sepals", exp: "Sepals protect the flower while it is in the bud stage." },
+            { q: "14. The bright, colorful, and scented part of a flower that attracts insects is the:", ans: "(b) Petal", exp: "Petals are visually attractive to lure pollinators like bees and butterflies." },
+            { q: "15. The male reproductive part of a flower is called:", ans: "(c) Stamen", exp: "The stamen represents the male organ of the flower." },
+            { q: "16. The stamen consists of a stalk called the filament and a swollen top called the:", ans: "(a) Anther", exp: "Anther is the lobed structure at the top of the filament." },
+            { q: "17. What does the anther produce?", ans: "(b) Pollen grains", exp: "Anthers produce fine, usually yellowish particles called pollen grains containing male gametes." },
+            { q: "18. The female reproductive part located at the center of the flower is called:", ans: "(b) Pistil (or Carpel)", exp: "The innermost whorl is the female reproductive organ, the pistil." },
+            { q: "19. Which of the following is NOT a part of the pistil?", ans: "(d) Anther", exp: "The anther is part of the stamen (male), whereas stigma, style, and ovary make up the pistil." },
+            { q: "20. The swollen basal part of the pistil is called the:", ans: "(b) Ovary", exp: "The ovary is the swollen base containing the ovules." },
+            { q: "21. Inside the ovary, small bead-like structures are present. They are called:", ans: "(c) Ovules", exp: "Ovules are the female gametes which turn into seeds upon fertilization." },
+            { q: "22. The sticky topmost part of the pistil that receives pollen is the:", ans: "(a) Stigma", exp: "The stigma is structurally adapted (sticky or feathery) to catch pollen." },
+            { q: "23. A flower containing all four whorls (sepals, petals, stamens, and pistil) is called a:", ans: "(b) Complete flower", exp: "A complete flower has all four fundamental parts." },
+            { q: "24. The transfer of pollen grains from the anther to the stigma of a flower is called:", ans: "(b) Pollination", exp: "Pollination is the first critical step toward plant reproduction." },
+            { q: "25. After successful fertilization, the ovary of the flower develops into a:", ans: "(d) Fruit", exp: "Post-fertilization, the ovary matures into a fruit, and ovules into seeds." }
+        ];
+
+        document.write(mcqSolutions.map(item => `
+            <div class="solution-box">
+                <div class="question-row">
+                    <div class="q-text">${item.q}</div>
+                    <div class="marks-right">[1 Mark]</div>
+                </div>
+                <div>
+                    <div class="ans-text">Answer: ${item.ans}</div>
+                    <div class="explanation"><strong>Explanation:</strong> ${item.exp}</div>
+                </div>
+            </div>
+        `).join(''));
+    </script>
+
+    <div class="section-header">SECTION B: Subjective Questions (15 Marks)</div>
+
+    <div class="solution-box">
+        <div class="question-row">
+            <div class="q-text">26. Define venation. Name and briefly explain the two main types of venation found in leaves with one example of each.</div>
+            <div class="marks-right">[3 Marks]</div>
+        </div>
+        <div>
+            <div class="explanation">
+                <strong>Solution:</strong><br>
+                <strong>Venation:</strong> The arrangement or pattern of veins and veinlets in the lamina (leaf blade) of a leaf is called venation. <em>(1 Mark)</em><br><br>
+                <strong>Types of Venation:</strong>
+                <ul>
+                    <li><strong>Reticulate Venation:</strong> When the veins form a net-like design on both sides of the midrib. <br><em>Example:</em> Peepal, Mango, Rose. <em>(1 Mark)</em></li>
+                    <li><strong>Parallel Venation:</strong> When the veins run parallel to one another from the base to the tip of the leaf. <br><em>Example:</em> Grass, Wheat, Banana. <em>(1 Mark)</em></li>
+                </ul>
+                <small><em>(Marking Scheme: 1 mark for definition, 1 mark each for correct explanation + example of the two types.)</em></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-box">
+        <div class="question-row">
+            <div class="q-text">27. State three important functions performed by the leaves of a plant.</div>
+            <div class="marks-right">[3 Marks]</div>
+        </div>
+        <div>
+            <div class="explanation">
+                <strong>Solution:</strong><br>
+                The three main functions of a leaf are:<br>
+                <ol>
+                    <li><strong>Photosynthesis:</strong> Leaves prepare food for the plant using carbon dioxide and water in the presence of sunlight and chlorophyll.</li>
+                    <li><strong>Transpiration:</strong> Leaves release excess water into the atmosphere in the form of water vapour through tiny pores called stomata. This helps in cooling the plant and pulling water up from the roots.</li>
+                    <li><strong>Respiration / Gaseous Exchange:</strong> Leaves facilitate the exchange of gases (taking in oxygen and releasing carbon dioxide during respiration, and vice versa during photosynthesis) through stomata.</li>
+                </ol>
+                <small><em>(Marking Scheme: 1 mark for each correctly stated function.)</em></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-box">
+        <div class="question-row">
+            <div class="q-text">28. Draw a neat diagram of a typical leaf and label the following parts: (i) Petiole (ii) Lamina (iii) Midrib</div>
+            <div class="marks-right">[3 Marks]</div>
+        </div>
+        <div>
+            <div class="explanation">
+                <strong>Solution:</strong><br>
+                <em>(Since drawing is not possible here, evaluate the student's diagram based on the following criteria:)</em><br><br>
+                The student must draw a clear outline of a leaf.<br>
+                <strong>Labels required:</strong>
+                <ul>
+                    <li><strong>Petiole:</strong> The narrow stalk connecting the leaf to the stem. <em>(1 Mark)</em></li>
+                    <li><strong>Lamina (Leaf Blade):</strong> The broad, flat, green surface of the leaf. <em>(1 Mark)</em></li>
+                    <li><strong>Midrib:</strong> The thick central vein running through the middle of the lamina. <em>(1 Mark)</em></li>
+                </ul>
+                <em>(Teacher Note: Deduct half a mark if the drawing is highly untidy but labels are correct.)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-box">
+        <div class="question-row">
+            <div class="q-text">29. Name the four main whorls (parts) of a complete flower. State the primary function of petals.</div>
+            <div class="marks-right">[3 Marks]</div>
+        </div>
+        <div>
+            <div class="explanation">
+                <strong>Solution:</strong><br>
+                The four main whorls of a complete flower from outside to inside are:
+                <ol>
+                    <li><strong>Sepals</strong> (Calyx)</li>
+                    <li><strong>Petals</strong> (Corolla)</li>
+                    <li><strong>Stamens</strong> (Androecium - Male part)</li>
+                    <li><strong>Pistil / Carpel</strong> (Gynoecium - Female part)</li>
+                </ol>
+                <em>(2 Marks for listing all four whorls correctly. 1/2 mark for each.)</em><br><br>
+                <strong>Function of Petals:</strong> Petals are usually brightly colored and scented to <strong>attract insects and birds for pollination</strong>. They also protect the inner reproductive parts when the flower is young. <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-box">
+        <div class="question-row">
+            <div class="q-text">30. Differentiate between the Stamen and the Pistil by writing any three key differences.</div>
+            <div class="marks-right">[3 Marks]</div>
+        </div>
+        <div>
+            <div class="explanation">
+                <strong>Solution:</strong><br>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Stamen</th>
+                        <th>Pistil (Carpel)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>1. Role</strong></td>
+                        <td>It is the male reproductive part of the flower.</td>
+                        <td>It is the female reproductive part of the flower.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Parts/Structure</strong></td>
+                        <td>It consists of two parts: the <strong>anther</strong> and the <strong>filament</strong>.</td>
+                        <td>It consists of three parts: the <strong>stigma</strong>, <strong>style</strong>, and <strong>ovary</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Gamete Production</strong></td>
+                        <td>The anther produces <strong>pollen grains</strong> (which contain male gametes).</td>
+                        <td>The ovary contains <strong>ovules</strong> (which contain female gametes/eggs).</td>
+                    </tr>
+                </table>
+                <br>
+                <small><em>(Marking Scheme: 1 mark for each correct, corresponding point of difference.)</em></small>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
