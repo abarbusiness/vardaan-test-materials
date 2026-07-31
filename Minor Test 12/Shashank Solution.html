@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vardaan Learning Institute - Solutions</title>
-    <!-- MathJax for rendering mathematical equations properly -->
+    <title>Vardaan Learning Institute - Solution Key</title>
+    <!-- MathJax for rendering mathematical equations -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
+        /* Base Page Setup */
         @page { size: A4; margin: 20mm; }
         body { 
-            width: 210mm; 
+            max-width: 210mm; 
+            width: 90%;
             min-height: 297mm; 
             margin: 0 auto; 
-            padding: 20mm; 
+            padding: 20px 15px; 
             box-sizing: border-box; 
             font-family: "Times New Roman", Times, serif; 
             font-size: 12pt; 
@@ -22,74 +24,88 @@
             background-color: white; 
             position: relative; 
         }
+        
         .watermark { 
             position: fixed; 
             top: 50%; 
             left: 50%; 
             transform: translate(-50%, -50%); 
             width: 80%; 
-            max-width: 600px;
-            opacity: 0.08; 
+            max-width: 400px; 
+            opacity: 0.08; /* Slightly lighter for solution file to prioritize readability */
             z-index: -1; 
             pointer-events: none; 
         }
         
-        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
-        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
-        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; color: #2c3e50; }
+        .test-name { font-size: clamp(14pt, 3vw, 16pt); font-weight: bold; margin-top: 5px; color: #e74c3c; }
         
-        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f4f4f4; padding: 5px; }
-        
-        .solution-block { 
-            margin-bottom: 25px; 
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            page-break-inside: avoid;
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 10px;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2.5vw, 12pt); 
+            border-top: 1px solid #2c3e50; 
+            border-bottom: 1px solid #2c3e50; 
+            padding: 8px 0; 
         }
         
-        .q-header-row { 
+        /* Layout for Question + Marks + Solution */
+        .qa-block { 
+            margin-bottom: 30px; 
+            padding: 15px; 
+            border: 1px solid #e0e0e0; 
+            border-radius: 8px; 
+            background-color: #fdfdfd;
+        }
+        
+        .question-header { 
             display: flex; 
-            justify-content: space-between;
+            justify-content: space-between; 
             align-items: flex-start;
             border-bottom: 1px dashed #ccc;
-            padding-bottom: 8px;
-            margin-bottom: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
             font-weight: bold;
         }
         
-        .q-text { flex-grow: 1; padding-right: 15px; }
-        .marks { 
-            flex-shrink: 0; 
-            background: #e0f7fa; 
-            color: #006064; 
-            padding: 3px 8px; 
-            border-radius: 4px;
-            font-size: 11pt;
-            font-weight: bold;
+        .q-text-wrapper { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { width: 35px; flex-shrink: 0; color: #2980b9; }
+        .q-content { flex-grow: 1; min-width: 0; }
+        
+        .marks-badge { 
+            background-color: #2980b9; 
+            color: white; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-size: 10pt; 
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .solution-content { 
+            padding-left: 35px; /* Aligns with question text */
         }
         
-        .sol-text { margin-top: 10px; color: #333; }
-        .final-answer { font-weight: bold; color: #2e7d32; margin-top: 10px; border-left: 3px solid #2e7d32; padding-left: 10px; }
+        .solution-label { font-weight: bold; color: #27ae60; margin-bottom: 5px; }
         
-        @media screen and (max-width: 768px) {
-            body { 
-                width: 100%; 
-                min-height: auto; 
-                padding: 10px; 
-                margin: 0; 
-                font-size: 11pt; 
-            }
-            .institute-name { font-size: 18pt; }
-            .q-header-row { flex-direction: column; }
-            .marks { align-self: flex-end; margin-top: 5px; }
-            mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block !important; }
+        .math-scroll { 
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            padding: 5px 0;
+            width: 100%;
         }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
         
         @media print { 
-            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; }
-            .watermark { position: absolute; }
-            .solution-block { border: 1px solid #aaa; }
+            body { max-width: 100%; width: 100%; padding: 15mm; margin: 0; -webkit-print-color-adjust: exact; } 
+            .qa-block { page-break-inside: avoid; border: 1px solid #000; }
+            .marks-badge { background-color: transparent !important; color: #000 !important; border: 1px solid #000; }
         }
     </style>
 </head>
@@ -98,294 +114,418 @@
     
     <div class="header">
         <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
-        <div class="test-name">Minor Test 12 - DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <div class="test-name">MINOR TEST 12 - DETAILED SOLUTION KEY</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Max. Marks: 50</span>
+        </div>
     </div>
 
-    <div class="section-header">SECTION A</div>
+    <!-- Section A Solutions -->
+    <h3 style="text-align: center; color: #2c3e50;">SECTION A (10 Marks)</h3>
     
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q1. Evaluate the following integer expression: \( (-15) + (+23) - (-12) \)</div>
-            <div class="marks">[2 Marks]</div>
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">1.</div>
+                <div class="q-content">Evaluate the following expression involving integers:<br> \( -15 + 8 - (-12) \)</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
         </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Given expression: \( (-15) + (+23) - (-12) \)<br>
-            Step 1: Simplify the signs.<br>
-            \( = -15 + 23 + 12 \)<br>
-            Step 2: Add the positive integers.<br>
-            \( = -15 + 35 \)<br>
-            Step 3: Subtract.<br>
-            \( = 20 \)
-            <div class="final-answer">Final Answer: 20</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q2. Convert the decimal \( 3.075 \) into a fraction in its simplest form.</div>
-            <div class="marks">[2 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Step 1: Write the decimal as a fraction with denominator 1000.<br>
-            \( 3.075 = \frac{3075}{1000} \)<br>
-            Step 2: Simplify by dividing the numerator and denominator by their highest common factor (HCF).<br>
-            Divide by 25: \( \frac{3075 \div 25}{1000 \div 25} = \frac{123}{40} \)<br>
-            Step 3: Convert to mixed fraction (optional but recommended).<br>
-            \( \frac{123}{40} = 3 \frac{3}{40} \)
-            <div class="final-answer">Final Answer: \( \frac{123}{40} \) or \( 3 \frac{3}{40} \)</div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            <div class="math-scroll">
+                \begin{align*} 
+                &= -15 + 8 - (-12) \\ 
+                &= -15 + 8 + 12 \quad \text{(Since } - \times - = + \text{)} \\
+                &= -7 + 12 \\
+                &= \mathbf{5} 
+                \end{align*}
+            </div>
         </div>
     </div>
 
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q3. Find the ratio of 45 minutes to 1.5 hours in its simplest form.</div>
-            <div class="marks">[2 Marks]</div>
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">2.</div>
+                <div class="q-content">Find the Highest Common Factor (HCF) of 36 and 84 using the prime factorization method.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
         </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            To find the ratio, both quantities must have the same units.<br>
-            Convert 1.5 hours to minutes: <br>
-            \( 1 \text{ hour} = 60 \text{ minutes} \)<br>
-            \( 1.5 \text{ hours} = 1.5 \times 60 = 90 \text{ minutes} \)<br>
-            Now, Ratio = \( \frac{45 \text{ minutes}}{90 \text{ minutes}} \)<br>
-            Ratio = \( \frac{45}{90} = \frac{1}{2} \)
-            <div class="final-answer">Final Answer: \( 1 : 2 \)</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q4. Arrange the following integers in ascending order: \( -8,\ 0,\ -12,\ 5,\ -2 \)</div>
-            <div class="marks">[2 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Ascending order means from smallest to largest.<br>
-            Negative numbers with larger absolute values are smaller.<br>
-            Smallest is \( -12 \), followed by \( -8 \), then \( -2 \).<br>
-            Then comes \( 0 \), and the largest is \( 5 \).
-            <div class="final-answer">Final Answer: \( -12,\ -8,\ -2,\ 0,\ 5 \)</div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Finding the prime factors of each number:
+            <div class="math-scroll">
+                \begin{align*} 
+                36 &= 2 \times 2 \times 3 \times 3 = 2^2 \times 3^2 \\
+                84 &= 2 \times 2 \times 3 \times 7 = 2^2 \times 3 \times 7 
+                \end{align*}
+            </div>
+            To find the HCF, take the product of the lowest powers of common prime factors:
+            <div class="math-scroll">
+                \begin{align*}
+                \text{HCF} &= 2^2 \times 3 \\
+                \text{HCF} &= 4 \times 3 = \mathbf{12}
+                \end{align*}
+            </div>
         </div>
     </div>
 
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q5. If the numbers \( 3,\ x,\ 15,\ 25 \) are in proportion, find the value of \( x \).</div>
-            <div class="marks">[2 Marks]</div>
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">3.</div>
+                <div class="q-content">Express the fraction \( \frac{18}{48} \) in its simplest form.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
         </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            If numbers are in proportion, then:<br>
-            Product of extremes = Product of means<br>
-            \( 3 \times 25 = x \times 15 \)<br>
-            \( 75 = 15x \)<br>
-            \( x = \frac{75}{15} \)<br>
-            \( x = 5 \)
-            <div class="final-answer">Final Answer: \( x = 5 \)</div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Find the HCF of the numerator (18) and denominator (48).<br>
+            HCF of 18 and 48 is 6.<br>
+            Divide both numerator and denominator by their HCF:
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{18 \div 6}{48 \div 6} = \mathbf{\frac{3}{8}}
+                \end{align*}
+            </div>
         </div>
     </div>
 
-    <div class="section-header">SECTION B</div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q6. A rectangular field has a length of \( 42.5 \text{ m} \) and a breadth of \( 18.6 \text{ m} \). Calculate its perimeter and area.</div>
-            <div class="marks">[4 Marks]</div>
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">4.</div>
+                <div class="q-content">Write an algebraic expression for the statement: "Five times a number \( x \) decreased by 7."</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
         </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Given: Length (\( l \)) = \( 42.5 \text{ m} \), Breadth (\( b \)) = \( 18.6 \text{ m} \)<br>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Five times a number \( x \) is \( 5x \).<br>
+            Decreased by 7 means subtracting 7.<br>
+            Therefore, the expression is: <strong>\( 5x - 7 \)</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">5.</div>
+                <div class="q-content">Find the supplementary angle of \( 45^\circ \).</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Supplementary angles add up to \( 180^\circ \).<br>
+            <div class="math-scroll">
+                \begin{align*}
+                \text{Supplementary angle} &= 180^\circ - \text{given angle} \\
+                &= 180^\circ - 45^\circ \\
+                &= \mathbf{135^\circ}
+                \end{align*}
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B Solutions -->
+    <h3 style="text-align: center; color: #2c3e50; margin-top: 40px;">SECTION B (20 Marks)</h3>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">6.</div>
+                <div class="q-content">Simplify the following mixed fractions:<br> \( 3\frac{1}{2} + 2\frac{3}{4} - 1\frac{5}{8} \)</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Step 1: Convert mixed fractions to improper fractions.
+            <div class="math-scroll">
+                \begin{align*}
+                3\frac{1}{2} = \frac{7}{2}, \quad 2\frac{3}{4} = \frac{11}{4}, \quad 1\frac{5}{8} = \frac{13}{8}
+                \end{align*}
+            </div>
+            Step 2: Find the LCM of denominators 2, 4, and 8, which is 8.<br>
+            Step 3: Make denominators common and solve.
+            <div class="math-scroll">
+                \begin{align*}
+                &= \frac{7 \times 4}{2 \times 4} + \frac{11 \times 2}{4 \times 2} - \frac{13 \times 1}{8 \times 1} \\
+                &= \frac{28}{8} + \frac{22}{8} - \frac{13}{8} \\
+                &= \frac{28 + 22 - 13}{8} \\
+                &= \frac{50 - 13}{8} = \frac{37}{8}
+                \end{align*}
+            </div>
+            Step 4: Convert back to a mixed fraction.
+            <strong>\( = 4\frac{5}{8} \)</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">7.</div>
+                <div class="q-content">A rope of length 15.6 meters is cut into 4 equal pieces. Find the exact length of each piece in meters and centimeters.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Total length of the rope = \( 15.6 \) m<br>
+            Number of pieces = 4<br>
+            Length of one piece = \( \frac{15.6}{4} \)
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{15.6}{4} &= 3.9 \text{ meters}
+                \end{align*}
+            </div>
+            To convert to meters and centimeters:<br>
+            \( 3.9 \) m = \( 3 \) m + \( 0.9 \) m<br>
+            Since \( 1 \text{ m} = 100 \text{ cm} \),<br>
+            \( 0.9 \text{ m} = 0.9 \times 100 \text{ cm} = 90 \text{ cm} \).<br>
+            <strong>Length of each piece is 3 meters and 90 centimeters.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">8.</div>
+                <div class="q-content">Solve the following linear equation for \( x \) and verify your answer:<br> \( 3x + 5 = 20 \)</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            <strong>Solving for x:</strong>
+            <div class="math-scroll">
+                \begin{align*}
+                3x + 5 &= 20 \\
+                3x &= 20 - 5 \\
+                3x &= 15 \\
+                x &= \frac{15}{3} \\
+                \mathbf{x} &\mathbf{= 5}
+                \end{align*}
+            </div>
+            <strong>Verification:</strong><br>
+            Substitute \( x = 5 \) into the Left Hand Side (LHS):
+            <div class="math-scroll">
+                \begin{align*}
+                \text{LHS} &= 3(5) + 5 \\
+                &= 15 + 5 \\
+                &= 20
+                \end{align*}
+            </div>
+            Since LHS = Right Hand Side (RHS) = 20, the solution is verified.
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">9.</div>
+                <div class="q-content">In a class of 40 students, \( \frac{3}{5} \) of the students are boys. Find the total number of girls in the class.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Total number of students = 40<br>
+            Fraction of boys = \( \frac{3}{5} \)
+            <br><br>
+            <strong>Method 1:</strong><br>
+            Number of boys = \( \frac{3}{5} \times 40 = 3 \times 8 = 24 \) boys.<br>
+            Number of girls = Total students - Number of boys<br>
+            Number of girls = \( 40 - 24 = \mathbf{16} \)
+            <br><br>
+            <strong>Method 2:</strong><br>
+            Fraction of girls = \( 1 - \frac{3}{5} = \frac{2}{5} \)<br>
+            Number of girls = \( \frac{2}{5} \times 40 = 2 \times 8 = \mathbf{16} \)
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">10.</div>
+                <div class="q-content">Find the Lowest Common Multiple (LCM) of 24, 36, and 40 using the division method. Show your steps clearly.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Using the common division method:
+            <table style="margin-top: 10px; border-collapse: collapse; text-align: center;">
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">2</td><td style="padding: 2px 8px;">24, 36, 40</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">2</td><td style="padding: 2px 8px;">12, 18, 20</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">2</td><td style="padding: 2px 8px;">6, 9, 10</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">3</td><td style="padding: 2px 8px;">3, 9, 5</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">3</td><td style="padding: 2px 8px;">1, 3, 5</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;">5</td><td style="padding: 2px 8px;">1, 1, 5</td></tr>
+                <tr><td style="border-right: 1px solid #000; padding: 2px 8px;"></td><td style="padding: 2px 8px;">1, 1, 1</td></tr>
+            </table>
             <br>
-            <strong>Part 1: Perimeter</strong> (2 Marks)<br>
-            Perimeter = \( 2 \times (l + b) \)<br>
-            \( = 2 \times (42.5 + 18.6) \)<br>
-            \( = 2 \times 61.1 \)<br>
-            \( = 122.2 \text{ m} \)<br>
+            <div class="math-scroll">
+                \begin{align*}
+                \text{LCM} &= 2 \times 2 \times 2 \times 3 \times 3 \times 5 \\
+                &= 8 \times 9 \times 5 \\
+                &= 72 \times 5 = \mathbf{360}
+                \end{align*}
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C Solutions -->
+    <h3 style="text-align: center; color: #2c3e50; margin-top: 40px;">SECTION C (20 Marks)</h3>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">11.</div>
+                <div class="q-content">Simplify the following mathematical expression strictly using the BODMAS rule:<br> \( 14 - \left[ 3 + \{8 \div (4 - 2)\} \times 2 \right] \)</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            According to BODMAS, we solve the inner Brackets first (Round, then Curly, then Square), followed by Of, Division, Multiplication, Addition, and Subtraction.
+            <div class="math-scroll">
+                \begin{align*}
+                &14 - \left[ 3 + \{8 \div \mathbf{(4 - 2)}\} \times 2 \right] \\
+                &= 14 - \left[ 3 + \mathbf{\{8 \div 2\}} \times 2 \right] \quad \text{(Solved round bracket)} \\
+                &= 14 - \left[ 3 + \mathbf{4 \times 2} \right] \quad \text{(Solved curly bracket)} \\
+                &= 14 - \left[ \mathbf{3 + 8} \right] \quad \text{(Multiplication inside square bracket)} \\
+                &= 14 - \mathbf{11} \quad \text{(Solved square bracket)} \\
+                &= \mathbf{3}
+                \end{align*}
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">12.</div>
+                <div class="q-content">Find the greatest number which divides 62, 78, and 109 leaving remainders 2, 3, and 4 respectively.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Since remainders of 2, 3, and 4 are left, we must first subtract these remainders from the respective numbers to find the numbers that are exactly divisible.
+            <div class="math-scroll">
+                \begin{align*}
+                62 - 2 &= 60 \\
+                78 - 3 &= 75 \\
+                109 - 4 &= 105
+                \end{align*}
+            </div>
+            The required greatest number will be the Highest Common Factor (HCF) of 60, 75, and 105.<br><br>
+            Prime factorizations:
+            <div class="math-scroll">
+                \begin{align*}
+                60 &= 2 \times 2 \times \mathbf{3} \times \mathbf{5} = 2^2 \times 3 \times 5 \\
+                75 &= \mathbf{3} \times \mathbf{5} \times 5 = 3 \times 5^2 \\
+                105 &= \mathbf{3} \times \mathbf{5} \times 7 = 3 \times 5 \times 7
+                \end{align*}
+            </div>
+            The common prime factors are 3 and 5.
+            <div class="math-scroll">
+                \begin{align*}
+                \text{HCF} &= 3 \times 5 = \mathbf{15}
+                \end{align*}
+            </div>
+            <strong>The greatest number is 15.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">13.</div>
+                <div class="q-content">
+                    Answer the following algebraic parts:
+                    <div style="margin-left: 15px; margin-top: 5px;">
+                        (a) Subtract the sum of \( 2x - 3y + 4z \) and \( 3x + 2y - 5z \) from \( 8x - y + z \).<br>
+                        (b) Evaluate the expression \( 2a^2 - 3ab + b^2 \) when \( a = 2 \) and \( b = -1 \).
+                    </div>
+                </div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            <strong>Part (a) [2.5 Marks]</strong><br>
+            Step 1: Find the sum of the first two expressions.
+            <div class="math-scroll">
+                \begin{align*}
+                \text{Sum} &= (2x - 3y + 4z) + (3x + 2y - 5z) \\
+                &= (2x + 3x) + (-3y + 2y) + (4z - 5z) \\
+                &= 5x - y - z
+                \end{align*}
+            </div>
+            Step 2: Subtract this sum from \( 8x - y + z \).
+            <div class="math-scroll">
+                \begin{align*}
+                &= (8x - y + z) - (5x - y - z) \\
+                &= 8x - y + z - 5x + y + z \\
+                &= (8x - 5x) + (-y + y) + (z + z) \\
+                &= \mathbf{3x + 2z}
+                \end{align*}
+            </div>
             <br>
-            <strong>Part 2: Area</strong> (2 Marks)<br>
-            Area = \( l \times b \)<br>
-            \( = 42.5 \times 18.6 \)<br>
-            \( = 790.5 \text{ m}^2 \)
-            <div class="final-answer">Final Answer: Perimeter = \( 122.2 \text{ m} \), Area = \( 790.5 \text{ m}^2 \)</div>
+            <strong>Part (b) [2.5 Marks]</strong><br>
+            Substitute \( a = 2 \) and \( b = -1 \) into \( 2a^2 - 3ab + b^2 \).
+            <div class="math-scroll">
+                \begin{align*}
+                &= 2(2)^2 - 3(2)(-1) + (-1)^2 \\
+                &= 2(4) - (-6) + (1) \\
+                &= 8 + 6 + 1 \\
+                &= \mathbf{15}
+                \end{align*}
+            </div>
         </div>
     </div>
 
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q7. Subtract the sum of \( -345 \) and \( 120 \) from the difference of \( 45 \) and \( -110 \).</div>
-            <div class="marks">[4 Marks]</div>
+    <div class="qa-block">
+        <div class="question-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">14.</div>
+                <div class="q-content">The length of a rectangular playing field is twice its breadth. If the perimeter of the field is 150 m, find the length and breadth of the field. Subsequently, calculate the total area of the field.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
         </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Step 1: Find the sum of \( -345 \) and \( 120 \).<br>
-            Sum = \( (-345) + 120 = -225 \)<br>
-            <br>
-            Step 2: Find the difference of \( 45 \) and \( -110 \).<br>
-            Difference = \( 45 - (-110) = 45 + 110 = 155 \)<br>
-            <br>
-            Step 3: Subtract the Sum from the Difference.<br>
-            Result = Difference - Sum<br>
-            \( = 155 - (-225) \)<br>
-            \( = 155 + 225 \)<br>
-            \( = 380 \)
-            <div class="final-answer">Final Answer: 380</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q8. Two numbers are in the ratio \( 5 : 7 \). If the sum of the numbers is \( 108 \), find the two numbers.</div>
-            <div class="marks">[4 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Let the common ratio multiplier be \( x \).<br>
-            Then, the two numbers are \( 5x \) and \( 7x \).<br>
-            Given, their sum is 108.<br>
-            \( 5x + 7x = 108 \)<br>
-            \( 12x = 108 \)<br>
-            \( x = \frac{108}{12} \)<br>
-            \( x = 9 \)<br><br>
-            Now, find the numbers:<br>
-            First number = \( 5x = 5 \times 9 = 45 \)<br>
-            Second number = \( 7x = 7 \times 9 = 63 \)
-            <div class="final-answer">Final Answer: The numbers are 45 and 63.</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q9. Simplify the following decimal expression using BODMAS:<br>\( 18.5 - [6.4 - \{3.2 + (5.6 - 3.1)\}] \)</div>
-            <div class="marks">[4 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            According to BODMAS, solve innermost brackets first (round brackets).<br>
-            \( = 18.5 - [6.4 - \{3.2 + (2.5)\}] \)<br>
-            Next, solve the curly brackets.<br>
-            \( = 18.5 - [6.4 - \{5.7\}] \)<br>
-            Next, solve the square brackets.<br>
-            \( = 18.5 - [0.7] \)<br>
-            Finally, perform subtraction.<br>
-            \( = 18.5 - 0.7 = 17.8 \)
-            <div class="final-answer">Final Answer: 17.8</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q10. A car travels \( 165 \text{ km} \) in 3 hours at a uniform speed.<br>(a) How long will it take to travel \( 440 \text{ km} \)?<br>(b) How far will it travel in 7 hours?</div>
-            <div class="marks">[4 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            First, find the uniform speed of the car.<br>
-            Speed = \( \frac{\text{Distance}}{\text{Time}} = \frac{165}{3} = 55 \text{ km/hr} \).<br><br>
-            <strong>(a)</strong> Time to travel 440 km:<br>
-            Time = \( \frac{\text{Distance}}{\text{Speed}} \)<br>
-            Time = \( \frac{440}{55} = 8 \text{ hours} \).<br><br>
-            <strong>(b)</strong> Distance traveled in 7 hours:<br>
-            Distance = Speed \( \times \) Time<br>
-            Distance = \( 55 \times 7 = 385 \text{ km} \).
-            <div class="final-answer">Final Answer: (a) 8 hours, (b) 385 km</div>
-        </div>
-    </div>
-
-    <div class="section-header">SECTION C</div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q11. In a competitive examination, 5 marks are awarded for every correct answer, \( -2 \) marks for every incorrect answer, and 0 marks for questions not attempted.<br>
-            (a) Rahul attempts all questions. He gets 12 correct and 8 incorrect answers. What is his total score?<br>
-            (b) Riya scores 20 marks in the same exam. If she got 10 correct answers, how many questions did she guess incorrectly?</div>
-            <div class="marks">[5 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            <strong>(a) Rahul's Score:</strong> (2.5 Marks)<br>
-            Marks for 12 correct answers = \( 12 \times 5 = 60 \)<br>
-            Marks for 8 incorrect answers = \( 8 \times (-2) = -16 \)<br>
-            Total Score = \( 60 + (-16) = 60 - 16 = 44 \)<br><br>
-            <strong>(b) Riya's Incorrect Answers:</strong> (2.5 Marks)<br>
-            Riya's marks for 10 correct answers = \( 10 \times 5 = 50 \)<br>
-            Total score obtained by Riya = 20<br>
-            Marks obtained for incorrect answers = Total Score - Marks for correct answers<br>
-            \( = 20 - 50 = -30 \)<br>
-            Since each incorrect answer penalizes 2 marks, number of incorrect answers = \( \frac{-30}{-2} = 15 \)<br>
-            <div class="final-answer">Final Answer: (a) Rahul's score is 44. (b) Riya guessed 15 questions incorrectly.</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q12. The cost of \( 15.5 \text{ kg} \) of apples is Rs. \( 1317.50 \).<br>
-            (a) Find the cost of \( 1 \text{ kg} \) of apples.<br>
-            (b) Find the quantity of apples that can be purchased for Rs. \( 595 \).</div>
-            <div class="marks">[5 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            <strong>(a) Cost of 1 kg of apples:</strong> (2.5 Marks)<br>
-            Cost of 15.5 kg = Rs. 1317.50<br>
-            Cost of 1 kg = \( \frac{1317.50}{15.5} \)<br>
-            Convert decimals to whole numbers by multiplying numerator and denominator by 10:<br>
-            \( = \frac{13175}{155} \)<br>
-            Dividing, we get \( = \text{Rs. } 85 \)<br><br>
-            <strong>(b) Quantity purchased for Rs. 595:</strong> (2.5 Marks)<br>
-            Apples purchased for Rs. 85 = 1 kg<br>
-            Apples purchased for Rs. 595 = \( \frac{595}{85} \)<br>
-            Dividing, we get \( = 7 \text{ kg} \)<br>
-            <div class="final-answer">Final Answer: (a) Cost of 1 kg is Rs. 85. (b) 7 kg can be purchased for Rs. 595.</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q13. The ratio of the monthly income to the monthly expenditure of a family is \( 9 : 7 \). If their monthly savings is Rs. \( 7200 \):<br>
-            (a) What is their total monthly income?<br>
-            (b) What is their total monthly expenditure?</div>
-            <div class="marks">[5 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            Let the monthly income be \( 9x \) and the monthly expenditure be \( 7x \).<br>
-            We know that: Income = Expenditure + Savings<br>
-            Therefore, Savings = Income - Expenditure<br>
-            Savings = \( 9x - 7x = 2x \)<br><br>
-            Given, Savings = Rs. 7200<br>
-            \( 2x = 7200 \)<br>
-            \( x = \frac{7200}{2} = 3600 \)<br><br>
-            <strong>(a) Total Monthly Income:</strong><br>
-            Income = \( 9x = 9 \times 3600 = \text{Rs. } 32,400 \)<br><br>
-            <strong>(b) Total Monthly Expenditure:</strong><br>
-            Expenditure = \( 7x = 7 \times 3600 = \text{Rs. } 25,200 \)<br>
-            <em>(Check: 32400 - 25200 = 7200)</em>
-            <div class="final-answer">Final Answer: (a) Income = Rs. 32,400, (b) Expenditure = Rs. 25,200</div>
-        </div>
-    </div>
-
-    <div class="solution-block">
-        <div class="q-header-row">
-            <div class="q-text">Q14. A piece of electrical wire measuring \( 14.4 \text{ m} \) in length is cut into two pieces in the ratio \( 3 : 5 \).<br>
-            (a) Find the length of each piece in meters.<br>
-            (b) Express the length of the smaller piece in centimeters as an integer.</div>
-            <div class="marks">[5 Marks]</div>
-        </div>
-        <div class="sol-text">
-            <strong>Solution:</strong><br>
-            <strong>(a) Length of each piece in meters:</strong> (3 Marks)<br>
-            Total ratio parts = \( 3 + 5 = 8 \) parts.<br>
-            Total length = \( 14.4 \text{ m} \)<br>
-            Value of one part = \( \frac{14.4}{8} = 1.8 \text{ m} \)<br>
-            Length of first piece = \( 3 \times 1.8 = 5.4 \text{ m} \)<br>
-            Length of second piece = \( 5 \times 1.8 = 9.0 \text{ m} \)<br><br>
-            <strong>(b) Smaller piece in centimeters:</strong> (2 Marks)<br>
-            The smaller piece measures \( 5.4 \text{ m} \).<br>
-            We know \( 1 \text{ m} = 100 \text{ cm} \).<br>
-            Length in cm = \( 5.4 \times 100 = 540 \text{ cm} \).
-            <div class="final-answer">Final Answer: (a) Pieces are 5.4 m and 9.0 m. (b) Smaller piece is 540 cm.</div>
+        <div class="solution-content">
+            <div class="solution-label">Solution:</div>
+            Let the breadth of the rectangular field be \( b \) meters.<br>
+            According to the question, the length \( (l) \) is twice the breadth.<br>
+            Therefore, \( l = 2b \) meters.<br><br>
+            
+            Given Perimeter = 150 m.<br>
+            Formula for perimeter of a rectangle = \( 2(l + b) \)
+            <div class="math-scroll">
+                \begin{align*}
+                2(2b + b) &= 150 \\
+                2(3b) &= 150 \\
+                6b &= 150 \\
+                b &= \frac{150}{6} = \mathbf{25 \text{ m}}
+                \end{align*}
+            </div>
+            Breadth (\( b \)) = 25 m.<br>
+            Length (\( l \)) = \( 2 \times 25 \) = <strong>50 m.</strong><br><br>
+            
+            Calculation for Area:<br>
+            Formula for Area = \( l \times b \)
+            <div class="math-scroll">
+                \begin{align*}
+                \text{Area} &= 50 \text{ m} \times 25 \text{ m} \\
+                &= \mathbf{1250 \text{ sq. m}}
+                \end{align*}
+            </div>
         </div>
     </div>
 

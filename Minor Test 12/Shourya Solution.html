@@ -4,436 +4,391 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vardaan Learning Institute - Solutions</title>
-    
+    <!-- MathJax for rendering mathematical equations properly -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script>
-        window.MathJax = {
-            chtml: {
-                displayAlign: 'left',
-                displayIndent: '1em'
-            }
-        };
-    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <style>
+        @page { size: A4; margin: 20mm; }
         body { 
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 1000px; 
+            width: 210mm; 
+            min-height: 297mm; 
             margin: 0 auto; 
-            padding: 20px; 
-            background-color: #f9fafb;
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
         }
-        .header-box {
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
         }
-        .header-box h1 { margin: 0; font-size: 24px; text-transform: uppercase; letter-spacing: 1px;}
-        .header-box h2 { margin: 10px 0 0 0; font-size: 18px; font-weight: 400; color: #e0e7ff;}
         
-        .section-title {
-            background-color: #e5e7eb;
-            padding: 10px 15px;
-            border-left: 5px solid #1e3a8a;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 30px 0 20px 0;
-            border-radius: 0 4px 4px 0;
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f4f4f4; padding: 5px; }
+        
+        .solution-block { 
+            margin-bottom: 25px; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            page-break-inside: avoid;
         }
-
-        .sol-card {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .q-header {
-            display: flex;
+        
+        .q-header-row { 
+            display: flex; 
             justify-content: space-between;
             align-items: flex-start;
-            border-bottom: 2px dashed #e5e7eb;
-            padding-bottom: 12px;
-            margin-bottom: 15px;
-        }
-
-        .q-text {
-            font-weight: 600;
-            color: #1f2937;
-            flex: 1;
-            padding-right: 15px;
-        }
-
-        .q-marks {
-            background-color: #dbeafe;
-            color: #1e40af;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
             font-weight: bold;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            white-space: nowrap;
-        }
-
-        .ans-body {
-            color: #4b5563;
         }
         
-        .ans-body h4 { margin: 0 0 10px 0; color: #047857; font-size: 16px; }
-        
-        .step { margin-bottom: 8px; }
-        .final-ans {
-            background-color: #ecfdf5;
-            border: 1px solid #10b981;
-            padding: 10px;
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .marks { 
+            flex-shrink: 0; 
+            background: #e0f7fa; 
+            color: #006064; 
+            padding: 3px 8px; 
             border-radius: 4px;
-            font-weight: 600;
-            color: #065f46;
-            margin-top: 15px;
-            display: inline-block;
-        }
-
-        /* Essential for small screen equation wrapping */
-        .math-scroll {
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding-bottom: 5px;
-            max-width: 100%;
+            font-size: 11pt;
+            font-weight: bold;
         }
         
-        .math-scroll::-webkit-scrollbar { height: 6px; }
-        .math-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-
+        .sol-text { margin-top: 10px; color: #333; }
+        .final-answer { font-weight: bold; color: #2e7d32; margin-top: 10px; border-left: 3px solid #2e7d32; padding-left: 10px; }
+        
         @media screen and (max-width: 768px) {
-            body { padding: 10px; }
-            .q-header { flex-direction: column; gap: 10px; }
-            .q-marks { align-self: flex-start; }
-            .sol-card { padding: 15px; }
+            body { 
+                width: 100%; 
+                min-height: auto; 
+                padding: 10px; 
+                margin: 0; 
+                font-size: 11pt; 
+            }
+            .institute-name { font-size: 18pt; }
+            .q-header-row { flex-direction: column; }
+            .marks { align-self: flex-end; margin-top: 5px; }
+            mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block !important; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; }
+            .watermark { position: absolute; }
+            .solution-block { border: 1px solid #aaa; }
         }
     </style>
 </head>
 <body>
-
-    <div class="header-box">
-        <h1>Vardaan Learning Institute</h1>
-        <h2>Detailed Solutions - Minor Test 12 | Class 6 ICSE | Ratio & Proportion</h2>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 12 - DETAILED SOLUTIONS & MARKING SCHEME</div>
     </div>
 
-    <!-- SECTION A -->
-    <div class="section-title">SECTION A (10 Marks)</div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">1. Express the ratio \( 45 : 108 \) in its simplest form.</div>
-            <div class="q-marks">[2 Marks]</div>
+    <div class="section-header">SECTION A</div>
+    
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q1. Evaluate the following integer expression: \( (-15) + (+23) - (-12) \)</div>
+            <div class="marks">[2 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Ratio = \( \frac{45}{108} \)</div>
-            <div class="step">Find the Highest Common Factor (HCF) of 45 and 108.</div>
-            <div class="step">Factors of 45: 1, 3, 5, 9, 15, 45. <br>Factors of 108: 1, 2, 3, 4, 6, 9, 12, 18, 27, 36, 54, 108.<br> HCF = 9.</div>
-            <div class="step math-scroll">
-                Divide both numerator and denominator by 9: <br>
-                \( \frac{45 \div 9}{108 \div 9} = \frac{5}{12} \)
-            </div>
-            <div class="final-ans">Simplest form = 5 : 12</div>
-        </div>
-    </div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">2. Find the ratio of \( 40 \) cm to \( 1.2 \) m.</div>
-            <div class="q-marks">[2 Marks]</div>
-        </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">To find the ratio, both quantities must have the same unit.</div>
-            <div class="step">Convert meters to centimeters: \( 1 \) m = \( 100 \) cm</div>
-            <div class="step">\( 1.2 \) m = \( 1.2 \times 100 \) cm = \( 120 \) cm</div>
-            <div class="step math-scroll">
-                Ratio = \( \frac{40 \text{ cm}}{120 \text{ cm}} = \frac{40}{120} = \frac{1}{3} \)
-            </div>
-            <div class="final-ans">Ratio = 1 : 3</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Given expression: \( (-15) + (+23) - (-12) \)<br>
+            Step 1: Simplify the signs.<br>
+            \( = -15 + 23 + 12 \)<br>
+            Step 2: Add the positive integers.<br>
+            \( = -15 + 35 \)<br>
+            Step 3: Subtract.<br>
+            \( = 20 \)
+            <div class="final-answer">Final Answer: 20</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">3. Check whether the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion.</div>
-            <div class="q-marks">[2 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q2. Convert the decimal \( 3.075 \) into a fraction in its simplest form.</div>
+            <div class="marks">[2 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Four numbers \(a, b, c, d\) are in proportion if \(a : b = c : d\).</div>
-            <div class="step">Ratio of first two terms = \( \frac{4}{6} = \frac{2}{3} \)</div>
-            <div class="step">Ratio of last two terms = \( \frac{8}{12} = \frac{2}{3} \)</div>
-            <div class="step">Since \( \frac{2}{3} = \frac{2}{3} \), the ratios are equal.</div>
-            <div class="step"><em>Alternative method:</em> Product of extremes (\(4 \times 12 = 48\)) = Product of means (\(6 \times 8 = 48\)).</div>
-            <div class="final-ans">Yes, they are in proportion.</div>
-        </div>
-    </div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">4. Divide ₹ \( 150 \) between Amit and Sumit in the ratio \( 2 : 3 \).</div>
-            <div class="q-marks">[2 Marks]</div>
-        </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Total amount = ₹ \( 150 \)</div>
-            <div class="step">Sum of the ratios = \( 2 + 3 = 5 \)</div>
-            <div class="step math-scroll">Amit's share = \( \frac{2}{5} \times 150 = 2 \times 30 = \text{₹ } 60 \)</div>
-            <div class="step math-scroll">Sumit's share = \( \frac{3}{5} \times 150 = 3 \times 30 = \text{₹ } 90 \)</div>
-            <div class="final-ans">Amit gets ₹ 60 and Sumit gets ₹ 90.</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Step 1: Write the decimal as a fraction with denominator 1000.<br>
+            \( 3.075 = \frac{3075}{1000} \)<br>
+            Step 2: Simplify by dividing the numerator and denominator by their highest common factor (HCF).<br>
+            Divide by 25: \( \frac{3075 \div 25}{1000 \div 25} = \frac{123}{40} \)<br>
+            Step 3: Convert to mixed fraction (optional but recommended).<br>
+            \( \frac{123}{40} = 3 \frac{3}{40} \)
+            <div class="final-answer">Final Answer: \( \frac{123}{40} \) or \( 3 \frac{3}{40} \)</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">5. Define 'Proportion' and write the rule relating the product of extremes and the product of means.</div>
-            <div class="q-marks">[2 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q3. Find the ratio of 45 minutes to 1.5 hours in its simplest form.</div>
+            <div class="marks">[2 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step"><strong>Proportion:</strong> An equation stating that two ratios are equal is called a proportion. (e.g., \(a:b = c:d\))</div>
-            <div class="step"><strong>Rule:</strong> In a true proportion, the product of the extreme terms (outer terms) is equal to the product of the mean terms (inner terms).</div>
-            <div class="final-ans">Product of Extremes = Product of Means</div>
-        </div>
-    </div>
-
-    <!-- SECTION B -->
-    <div class="section-title">SECTION B (15 Marks)</div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">6. The length and breadth of a rectangular field are \( 50 \) m and \( 15 \) m respectively. Find the ratio of the length to the breadth, and the breadth to the perimeter.</div>
-            <div class="q-marks">[3 Marks]</div>
-        </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Length (\(L\)) = \( 50 \) m, Breadth (\(B\)) = \( 15 \) m.</div>
-            <div class="step math-scroll"><strong>Part 1:</strong> Ratio of Length to Breadth = \( \frac{50}{15} = \frac{10}{3} \) (Dividing by 5).<br> Ratio = \( 10 : 3 \)</div>
-            <div class="step math-scroll"><strong>Part 2:</strong> Perimeter = \( 2 \times (L + B) = 2 \times (50 + 15) = 2 \times 65 = 130 \) m.</div>
-            <div class="step math-scroll">Ratio of Breadth to Perimeter = \( \frac{15}{130} = \frac{3}{26} \) (Dividing by 5).</div>
-            <div class="final-ans">Length : Breadth = 10 : 3<br>Breadth : Perimeter = 3 : 26</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            To find the ratio, both quantities must have the same units.<br>
+            Convert 1.5 hours to minutes: <br>
+            \( 1 \text{ hour} = 60 \text{ minutes} \)<br>
+            \( 1.5 \text{ hours} = 1.5 \times 60 = 90 \text{ minutes} \)<br>
+            Now, Ratio = \( \frac{45 \text{ minutes}}{90 \text{ minutes}} \)<br>
+            Ratio = \( \frac{45}{90} = \frac{1}{2} \)
+            <div class="final-answer">Final Answer: \( 1 : 2 \)</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">7. Find the value of \( x \) if \( 3 : x :: 12 : 20 \).</div>
-            <div class="q-marks">[3 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q4. Arrange the following integers in ascending order: \( -8,\ 0,\ -12,\ 5,\ -2 \)</div>
+            <div class="marks">[2 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Given proportion: \( 3 : x = 12 : 20 \)</div>
-            <div class="step">Using the rule: Product of Extremes = Product of Means</div>
-            <div class="step math-scroll">
-                \( 3 \times 20 = x \times 12 \)
-            </div>
-            <div class="step math-scroll">
-                \( 60 = 12x \)
-            </div>
-            <div class="step math-scroll">
-                \( x = \frac{60}{12} \)
-            </div>
-            <div class="step">
-                \( x = 5 \)
-            </div>
-            <div class="final-ans">\( x = 5 \)</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Ascending order means from smallest to largest.<br>
+            Negative numbers with larger absolute values are smaller.<br>
+            Smallest is \( -12 \), followed by \( -8 \), then \( -2 \).<br>
+            Then comes \( 0 \), and the largest is \( 5 \).
+            <div class="final-answer">Final Answer: \( -12,\ -8,\ -2,\ 0,\ 5 \)</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">8. Out of \( 40 \) students in a class, \( 16 \) are girls and the rest are boys. Find the ratio of the number of boys to the number of girls.</div>
-            <div class="q-marks">[3 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q5. If the numbers \( 3,\ x,\ 15,\ 25 \) are in proportion, find the value of \( x \).</div>
+            <div class="marks">[2 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Total number of students = \( 40 \)</div>
-            <div class="step">Number of girls = \( 16 \)</div>
-            <div class="step">Number of boys = Total students - Number of girls = \( 40 - 16 = 24 \)</div>
-            <div class="step math-scroll">
-                Ratio of Boys to Girls = \( \frac{\text{Number of Boys}}{\text{Number of Girls}} = \frac{24}{16} \)
-            </div>
-            <div class="step">Dividing numerator and denominator by 8:</div>
-            <div class="step">\( \frac{24 \div 8}{16 \div 8} = \frac{3}{2} \)</div>
-            <div class="final-ans">Ratio = 3 : 2</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            If numbers are in proportion, then:<br>
+            Product of extremes = Product of means<br>
+            \( 3 \times 25 = x \times 15 \)<br>
+            \( 75 = 15x \)<br>
+            \( x = \frac{75}{15} \)<br>
+            \( x = 5 \)
+            <div class="final-answer">Final Answer: \( x = 5 \)</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">9. Two numbers are in the ratio \( 3 : 5 \). If their sum is \( 96 \), find the two numbers.</div>
-            <div class="q-marks">[3 Marks]</div>
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q6. A rectangular field has a length of \( 42.5 \text{ m} \) and a breadth of \( 18.6 \text{ m} \). Calculate its perimeter and area.</div>
+            <div class="marks">[4 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Let the common multiple be \( x \).</div>
-            <div class="step">Then, the two numbers are \( 3x \) and \( 5x \).</div>
-            <div class="step">According to the question, their sum is \( 96 \).</div>
-            <div class="step math-scroll">
-                \( 3x + 5x = 96 \) <br>
-                \( 8x = 96 \) <br>
-                \( x = \frac{96}{8} \) <br>
-                \( x = 12 \)
-            </div>
-            <div class="step">First number = \( 3x = 3 \times 12 = 36 \)</div>
-            <div class="step">Second number = \( 5x = 5 \times 12 = 60 \)</div>
-            <div class="final-ans">The numbers are 36 and 60.</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Given: Length (\( l \)) = \( 42.5 \text{ m} \), Breadth (\( b \)) = \( 18.6 \text{ m} \)<br>
+            <br>
+            <strong>Part 1: Perimeter</strong> (2 Marks)<br>
+            Perimeter = \( 2 \times (l + b) \)<br>
+            \( = 2 \times (42.5 + 18.6) \)<br>
+            \( = 2 \times 61.1 \)<br>
+            \( = 122.2 \text{ m} \)<br>
+            <br>
+            <strong>Part 2: Area</strong> (2 Marks)<br>
+            Area = \( l \times b \)<br>
+            \( = 42.5 \times 18.6 \)<br>
+            \( = 790.5 \text{ m}^2 \)
+            <div class="final-answer">Final Answer: Perimeter = \( 122.2 \text{ m} \), Area = \( 790.5 \text{ m}^2 \)</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">10. The cost of \( 5 \) identical pens is ₹ \( 120 \). Find the cost of \( 8 \) such pens.</div>
-            <div class="q-marks">[3 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q7. Subtract the sum of \( -345 \) and \( 120 \) from the difference of \( 45 \) and \( -110 \).</div>
+            <div class="marks">[4 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Using the Unitary Method:</div>
-            <div class="step">Cost of \( 5 \) pens = ₹ \( 120 \)</div>
-            <div class="step math-scroll">Cost of \( 1 \) pen = \( \frac{120}{5} = \text{₹ } 24 \)</div>
-            <div class="step math-scroll">Cost of \( 8 \) pens = \( 8 \times 24 = \text{₹ } 192 \)</div>
-            <div class="final-ans">The cost of 8 pens is ₹ 192.</div>
-        </div>
-    </div>
-
-    <!-- SECTION C -->
-    <div class="section-title">SECTION C (25 Marks)</div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">11. A piece of wire \( 84 \) cm long is cut into three pieces in the ratio \( 3 : 4 : 5 \). Find the length of each piece of the wire.</div>
-            <div class="q-marks">[5 Marks]</div>
-        </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Total length of the wire = \( 84 \) cm</div>
-            <div class="step">Ratio of the pieces = \( 3 : 4 : 5 \)</div>
-            <div class="step">Sum of the ratio parts = \( 3 + 4 + 5 = 12 \) parts</div>
-            <div class="step math-scroll">
-                Length of first piece = \( \left(\frac{3}{12}\right) \times 84 = 3 \times 7 = 21 \) cm
-            </div>
-            <div class="step math-scroll">
-                Length of second piece = \( \left(\frac{4}{12}\right) \times 84 = 4 \times 7 = 28 \) cm
-            </div>
-            <div class="step math-scroll">
-                Length of third piece = \( \left(\frac{5}{12}\right) \times 84 = 5 \times 7 = 35 \) cm
-            </div>
-            <div class="step"><em>Verification: 21 + 28 + 35 = 84 cm.</em></div>
-            <div class="final-ans">The lengths are 21 cm, 28 cm, and 35 cm.</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Step 1: Find the sum of \( -345 \) and \( 120 \).<br>
+            Sum = \( (-345) + 120 = -225 \)<br>
+            <br>
+            Step 2: Find the difference of \( 45 \) and \( -110 \).<br>
+            Difference = \( 45 - (-110) = 45 + 110 = 155 \)<br>
+            <br>
+            Step 3: Subtract the Sum from the Difference.<br>
+            Result = Difference - Sum<br>
+            \( = 155 - (-225) \)<br>
+            \( = 155 + 225 \)<br>
+            \( = 380 \)
+            <div class="final-answer">Final Answer: 380</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">12. In a school, there are \( 3200 \) students. If the ratio of boys to girls is \( 5 : 3 \), find: (i) the total number of boys, (ii) the total number of girls.</div>
-            <div class="q-marks">[5 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q8. Two numbers are in the ratio \( 5 : 7 \). If the sum of the numbers is \( 108 \), find the two numbers.</div>
+            <div class="marks">[4 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Total number of students = \( 3200 \)</div>
-            <div class="step">Ratio of boys to girls = \( 5 : 3 \)</div>
-            <div class="step">Total ratio parts = \( 5 + 3 = 8 \) parts</div>
-            <div class="step math-scroll">
-                <strong>(i) Number of boys:</strong> <br>
-                \( \text{Boys} = \left(\frac{5}{8}\right) \times 3200 = 5 \times 400 = 2000 \)
-            </div>
-            <div class="step math-scroll">
-                <strong>(ii) Number of girls:</strong> <br>
-                \( \text{Girls} = \left(\frac{3}{8}\right) \times 3200 = 3 \times 400 = 1200 \)
-            </div>
-            <div class="final-ans">(i) Boys = 2000 &nbsp;&nbsp; (ii) Girls = 1200</div>
-        </div>
-    </div>
-
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">13. The present ages of A and B are in the ratio \( 7 : 9 \). If the sum of their ages is \( 48 \) years, what are their actual ages? What will be the ratio of their ages after \( 3 \) years?</div>
-            <div class="q-marks">[5 Marks]</div>
-        </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step">Let present age of A be \( 7x \) and present age of B be \( 9x \).</div>
-            <div class="step math-scroll">
-                Sum of their ages = \( 48 \) <br>
-                \( 7x + 9x = 48 \) <br>
-                \( 16x = 48 \) <br>
-                \( x = \frac{48}{16} = 3 \)
-            </div>
-            <div class="step">Present age of A = \( 7 \times 3 = 21 \) years</div>
-            <div class="step">Present age of B = \( 9 \times 3 = 27 \) years</div>
-            <div class="step"><br><strong>After 3 years:</strong></div>
-            <div class="step">Age of A will be \( 21 + 3 = 24 \) years</div>
-            <div class="step">Age of B will be \( 27 + 3 = 30 \) years</div>
-            <div class="step math-scroll">
-                New Ratio = \( 24 : 30 = \frac{24}{30} = \frac{4}{5} \) (Dividing by 6)
-            </div>
-            <div class="final-ans">Present ages: A=21 yrs, B=27 yrs. <br>Ratio after 3 years = 4 : 5.</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Let the common ratio multiplier be \( x \).<br>
+            Then, the two numbers are \( 5x \) and \( 7x \).<br>
+            Given, their sum is 108.<br>
+            \( 5x + 7x = 108 \)<br>
+            \( 12x = 108 \)<br>
+            \( x = \frac{108}{12} \)<br>
+            \( x = 9 \)<br><br>
+            Now, find the numbers:<br>
+            First number = \( 5x = 5 \times 9 = 45 \)<br>
+            Second number = \( 7x = 7 \times 9 = 63 \)
+            <div class="final-answer">Final Answer: The numbers are 45 and 63.</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">14. (a) Are \( 30, 40, 45, \) and \( 60 \) in proportion? (b) The first, second, and fourth terms of a proportion are \( 12, 21, \) and \( 14 \) respectively. Find the third term.</div>
-            <div class="q-marks">[5 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q9. Simplify the following decimal expression using BODMAS:<br>\( 18.5 - [6.4 - \{3.2 + (5.6 - 3.1)\}] \)</div>
+            <div class="marks">[4 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step"><strong>(a) Checking Proportion:</strong></div>
-            <div class="step math-scroll">
-                Product of extremes = \( 30 \times 60 = 1800 \) <br>
-                Product of means = \( 40 \times 45 = 1800 \) <br>
-                Since \( 1800 = 1800 \), Yes, they are in proportion. (2 Marks)
-            </div>
-            <div class="step"><br><strong>(b) Finding third term:</strong></div>
-            <div class="step">Let the third term be \( x \).</div>
-            <div class="step">The terms are in proportion: \( 12 : 21 :: x : 14 \)</div>
-            <div class="step math-scroll">
-                Product of extremes = Product of means<br>
-                \( 12 \times 14 = 21 \times x \) <br>
-                \( 168 = 21x \) <br>
-                \( x = \frac{168}{21} = 8 \)
-            </div>
-            <div class="final-ans">(a) Yes &nbsp;&nbsp; (b) Third term = 8</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            According to BODMAS, solve innermost brackets first (round brackets).<br>
+            \( = 18.5 - [6.4 - \{3.2 + (2.5)\}] \)<br>
+            Next, solve the curly brackets.<br>
+            \( = 18.5 - [6.4 - \{5.7\}] \)<br>
+            Next, solve the square brackets.<br>
+            \( = 18.5 - [0.7] \)<br>
+            Finally, perform subtraction.<br>
+            \( = 18.5 - 0.7 = 17.8 \)
+            <div class="final-answer">Final Answer: 17.8</div>
         </div>
     </div>
 
-    <div class="sol-card">
-        <div class="q-header">
-            <div class="q-text">15. In a mixture of \( 60 \) liters, the ratio of milk to water is \( 2 : 1 \). (i) How many liters of milk and water are present? (ii) If \( 10 \) liters of water is added, what will be the new ratio?</div>
-            <div class="q-marks">[5 Marks]</div>
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q10. A car travels \( 165 \text{ km} \) in 3 hours at a uniform speed.<br>(a) How long will it take to travel \( 440 \text{ km} \)?<br>(b) How far will it travel in 7 hours?</div>
+            <div class="marks">[4 Marks]</div>
         </div>
-        <div class="ans-body">
-            <h4>Solution:</h4>
-            <div class="step"><strong>(i) Initial Mixture:</strong></div>
-            <div class="step">Total volume = \( 60 \) liters. Ratio = \( 2 : 1 \). Sum of parts = \( 3 \).</div>
-            <div class="step math-scroll">
-                Volume of Milk = \( \left(\frac{2}{3}\right) \times 60 = 40 \) liters.
-            </div>
-            <div class="step math-scroll">
-                Volume of Water = \( \left(\frac{1}{3}\right) \times 60 = 20 \) liters.
-            </div>
-            <div class="step"><br><strong>(ii) After adding water:</strong></div>
-            <div class="step">Water added = \( 10 \) liters.</div>
-            <div class="step">New volume of water = \( 20 + 10 = 30 \) liters.</div>
-            <div class="step">Volume of milk remains the same = \( 40 \) liters.</div>
-            <div class="step math-scroll">
-                New Ratio of Milk to Water = \( \frac{40}{30} = \frac{4}{3} \)
-            </div>
-            <div class="final-ans">(i) Milk = 40 L, Water = 20 L. <br>(ii) New Ratio = 4 : 3</div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            First, find the uniform speed of the car.<br>
+            Speed = \( \frac{\text{Distance}}{\text{Time}} = \frac{165}{3} = 55 \text{ km/hr} \).<br><br>
+            <strong>(a)</strong> Time to travel 440 km:<br>
+            Time = \( \frac{\text{Distance}}{\text{Speed}} \)<br>
+            Time = \( \frac{440}{55} = 8 \text{ hours} \).<br><br>
+            <strong>(b)</strong> Distance traveled in 7 hours:<br>
+            Distance = Speed \( \times \) Time<br>
+            Distance = \( 55 \times 7 = 385 \text{ km} \).
+            <div class="final-answer">Final Answer: (a) 8 hours, (b) 385 km</div>
         </div>
     </div>
 
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q11. In a competitive examination, 5 marks are awarded for every correct answer, \( -2 \) marks for every incorrect answer, and 0 marks for questions not attempted.<br>
+            (a) Rahul attempts all questions. He gets 12 correct and 8 incorrect answers. What is his total score?<br>
+            (b) Riya scores 20 marks in the same exam. If she got 10 correct answers, how many questions did she guess incorrectly?</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Rahul's Score:</strong> (2.5 Marks)<br>
+            Marks for 12 correct answers = \( 12 \times 5 = 60 \)<br>
+            Marks for 8 incorrect answers = \( 8 \times (-2) = -16 \)<br>
+            Total Score = \( 60 + (-16) = 60 - 16 = 44 \)<br><br>
+            <strong>(b) Riya's Incorrect Answers:</strong> (2.5 Marks)<br>
+            Riya's marks for 10 correct answers = \( 10 \times 5 = 50 \)<br>
+            Total score obtained by Riya = 20<br>
+            Marks obtained for incorrect answers = Total Score - Marks for correct answers<br>
+            \( = 20 - 50 = -30 \)<br>
+            Since each incorrect answer penalizes 2 marks, number of incorrect answers = \( \frac{-30}{-2} = 15 \)<br>
+            <div class="final-answer">Final Answer: (a) Rahul's score is 44. (b) Riya guessed 15 questions incorrectly.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q12. The cost of \( 15.5 \text{ kg} \) of apples is Rs. \( 1317.50 \).<br>
+            (a) Find the cost of \( 1 \text{ kg} \) of apples.<br>
+            (b) Find the quantity of apples that can be purchased for Rs. \( 595 \).</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Cost of 1 kg of apples:</strong> (2.5 Marks)<br>
+            Cost of 15.5 kg = Rs. 1317.50<br>
+            Cost of 1 kg = \( \frac{1317.50}{15.5} \)<br>
+            Convert decimals to whole numbers by multiplying numerator and denominator by 10:<br>
+            \( = \frac{13175}{155} \)<br>
+            Dividing, we get \( = \text{Rs. } 85 \)<br><br>
+            <strong>(b) Quantity purchased for Rs. 595:</strong> (2.5 Marks)<br>
+            Apples purchased for Rs. 85 = 1 kg<br>
+            Apples purchased for Rs. 595 = \( \frac{595}{85} \)<br>
+            Dividing, we get \( = 7 \text{ kg} \)<br>
+            <div class="final-answer">Final Answer: (a) Cost of 1 kg is Rs. 85. (b) 7 kg can be purchased for Rs. 595.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q13. The ratio of the monthly income to the monthly expenditure of a family is \( 9 : 7 \). If their monthly savings is Rs. \( 7200 \):<br>
+            (a) What is their total monthly income?<br>
+            (b) What is their total monthly expenditure?</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            Let the monthly income be \( 9x \) and the monthly expenditure be \( 7x \).<br>
+            We know that: Income = Expenditure + Savings<br>
+            Therefore, Savings = Income - Expenditure<br>
+            Savings = \( 9x - 7x = 2x \)<br><br>
+            Given, Savings = Rs. 7200<br>
+            \( 2x = 7200 \)<br>
+            \( x = \frac{7200}{2} = 3600 \)<br><br>
+            <strong>(a) Total Monthly Income:</strong><br>
+            Income = \( 9x = 9 \times 3600 = \text{Rs. } 32,400 \)<br><br>
+            <strong>(b) Total Monthly Expenditure:</strong><br>
+            Expenditure = \( 7x = 7 \times 3600 = \text{Rs. } 25,200 \)<br>
+            <em>(Check: 32400 - 25200 = 7200)</em>
+            <div class="final-answer">Final Answer: (a) Income = Rs. 32,400, (b) Expenditure = Rs. 25,200</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header-row">
+            <div class="q-text">Q14. A piece of electrical wire measuring \( 14.4 \text{ m} \) in length is cut into two pieces in the ratio \( 3 : 5 \).<br>
+            (a) Find the length of each piece in meters.<br>
+            (b) Express the length of the smaller piece in centimeters as an integer.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="sol-text">
+            <strong>Solution:</strong><br>
+            <strong>(a) Length of each piece in meters:</strong> (3 Marks)<br>
+            Total ratio parts = \( 3 + 5 = 8 \) parts.<br>
+            Total length = \( 14.4 \text{ m} \)<br>
+            Value of one part = \( \frac{14.4}{8} = 1.8 \text{ m} \)<br>
+            Length of first piece = \( 3 \times 1.8 = 5.4 \text{ m} \)<br>
+            Length of second piece = \( 5 \times 1.8 = 9.0 \text{ m} \)<br><br>
+            <strong>(b) Smaller piece in centimeters:</strong> (2 Marks)<br>
+            The smaller piece measures \( 5.4 \text{ m} \).<br>
+            We know \( 1 \text{ m} = 100 \text{ cm} \).<br>
+            Length in cm = \( 5.4 \times 100 = 540 \text{ cm} \).
+            <div class="final-answer">Final Answer: (a) Pieces are 5.4 m and 9.0 m. (b) Smaller piece is 540 cm.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
 </body>
 </html>

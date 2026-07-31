@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vardaan Learning Institute - Question Paper</title>
-    
+    <!-- MathJax for rendering mathematical equations properly -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <style>
         @page { size: A4; margin: 20mm; }
         body { 
@@ -24,56 +23,70 @@
             position: relative; 
         }
         .watermark { 
-            position: fixed; top: 50%; left: 50%; 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
             transform: translate(-50%, -50%); 
-            width: 80%; opacity: 0.12; 
-            z-index: -1; pointer-events: none; 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
         }
+        
         .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
         .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
         .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
         .exam-details { 
-            display: flex; justify-content: space-between; 
-            margin-top: 15px; font-weight: bold; font-size: 11pt; 
-            border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
         }
         .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
         .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
         .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
         .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
-        
-        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
-        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
-        .q-content { flex-grow: 1; }
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; word-wrap: break-word; overflow-x: auto; }
         .sub-question { margin-left: 20px; margin-top: 5px; }
-        
         .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
         
-        .math-scroll { overflow-x: auto; overflow-y: hidden; }
-
-        @media screen and (max-width: 1024px) {
-            body { width: 100%; padding: 15mm; }
-        }
         @media screen and (max-width: 768px) {
-            body { width: 100%; padding: 15px; font-size: 11pt; }
-            .institute-name { font-size: 20pt; }
-            .exam-details { flex-wrap: wrap; justify-content: space-between; gap: 10px; }
-            .exam-details span { flex-basis: 45%; }
-            .watermark { width: 95%; }
+            body { 
+                width: 100%; 
+                min-height: auto; 
+                padding: 15px; 
+                margin: 0; 
+                font-size: 11pt; 
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+            }
+            .question-container { flex-direction: row; }
+            .q-num { width: 25px; }
+            /* Math equation wrapper for mobile scrolling */
+            mjx-container { overflow-x: auto; max-width: 100%; display: block !important; }
         }
-        @media screen and (max-width: 480px) {
-            .institute-name { font-size: 16pt; }
-            .exam-details span { flex-basis: 100%; text-align: center; }
-            .q-num { width: 30px; }
-        }
+        
         @media print { 
-            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
-            .math-scroll { overflow-x: visible; }
+            body { width: 100%; margin: 0; padding: 15mm; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
         }
     </style>
 </head>
 <body>
     <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
     <div class="header">
         <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
         <div class="test-name">Minor Test 12</div>
@@ -88,104 +101,102 @@
             <ul>
                 <li>All questions are compulsory.</li>
                 <li>The paper is divided into three sections: A, B, and C.</li>
-                <li>Write your answers neatly and legibly showing necessary working.</li>
-                <li>Topic: Ratio and Proportion (Level: Easy).</li>
+                <li>Show necessary calculations step-by-step.</li>
+                <li>Write your answers neatly and legibly.</li>
             </ul>
         </div>
     </div>
 
-    <!-- Section A -->
     <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
     
     <div class="question-container">
         <div class="q-num">1.</div>
-        <div class="q-content">Express the ratio \( 45 : 108 \) in its simplest form.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">2.</div>
-        <div class="q-content">Find the ratio of \( 40 \) cm to \( 1.2 \) m.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">3.</div>
-        <div class="q-content">Check whether the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">4.</div>
-        <div class="q-content">Divide ₹ \( 150 \) between Amit and Sumit in the ratio \( 2 : 3 \).</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">5.</div>
-        <div class="q-content">Define 'Proportion' and write the rule relating the product of extremes and the product of means.</div>
+        <div class="q-content">Evaluate the following integer expression: \( (-15) + (+23) - (-12) \)</div>
     </div>
 
-    <!-- Section B -->
-    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Convert the decimal \( 3.075 \) into a fraction in its simplest form.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Find the ratio of 45 minutes to 1.5 hours in its simplest form.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Arrange the following integers in ascending order:<br>
+        \( -8,\ 0,\ -12,\ 5,\ -2 \)</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">If the numbers \( 3,\ x,\ 15,\ 25 \) are in proportion, find the value of \( x \).</div>
+    </div>
+
+    <div class="section-header">SECTION B (20 Marks)<span class="marks-info">(Short Answer Type - 4 Marks Each)</span></div>
     
     <div class="question-container">
         <div class="q-num">6.</div>
-        <div class="q-content">The length and breadth of a rectangular field are \( 50 \) m and \( 15 \) m respectively. Find the ratio of the length to the breadth, and the breadth to the perimeter.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">7.</div>
-        <div class="q-content">Find the value of \( x \) if \( 3 : x :: 12 : 20 \).</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">8.</div>
-        <div class="q-content">Out of \( 40 \) students in a class, \( 16 \) are girls and the rest are boys. Find the ratio of the number of boys to the number of girls.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">9.</div>
-        <div class="q-content">Two numbers are in the ratio \( 3 : 5 \). If their sum is \( 96 \), find the two numbers.</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">10.</div>
-        <div class="q-content">The cost of \( 5 \) identical pens is ₹ \( 120 \). Find the cost of \( 8 \) such pens.</div>
+        <div class="q-content">A rectangular field has a length of \( 42.5 \text{ m} \) and a breadth of \( 18.6 \text{ m} \). Calculate its perimeter and area.</div>
     </div>
 
-    <!-- Section C -->
-    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Subtract the sum of \( -345 \) and \( 120 \) from the difference of \( 45 \) and \( -110 \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Two numbers are in the ratio \( 5 : 7 \). If the sum of the numbers is \( 108 \), find the two numbers.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Simplify the following decimal expression using BODMAS:<br>
+        \( 18.5 - [6.4 - \{3.2 + (5.6 - 3.1)\}] \)</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A car travels \( 165 \text{ km} \) in 3 hours at a uniform speed.<br>
+            <div class="sub-question">(a) How long will it take to travel \( 440 \text{ km} \)?</div>
+            <div class="sub-question">(b) How far will it travel in 7 hours?</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
     
     <div class="question-container">
         <div class="q-num">11.</div>
-        <div class="q-content">A piece of wire \( 84 \) cm long is cut into three pieces in the ratio \( 3 : 4 : 5 \). Find the length of each piece of the wire.</div>
+        <div class="q-content">In a competitive examination, 5 marks are awarded for every correct answer, \( -2 \) marks for every incorrect answer, and 0 marks for questions not attempted.<br>
+            <div class="sub-question">(a) Rahul attempts all questions. He gets 12 correct and 8 incorrect answers. What is his total score?</div>
+            <div class="sub-question">(b) Riya scores 20 marks in the same exam. If she got 10 correct answers, how many questions did she guess incorrectly?</div>
+        </div>
     </div>
-    
+
     <div class="question-container">
         <div class="q-num">12.</div>
-        <div class="q-content">
-            In a school, there are \( 3200 \) students. If the ratio of boys to girls is \( 5 : 3 \), find:
-            <div class="sub-question">(i) the total number of boys in the school.</div>
-            <div class="sub-question">(ii) the total number of girls in the school.</div>
+        <div class="q-content">The cost of \( 15.5 \text{ kg} \) of apples is Rs. \( 1317.50 \).<br>
+            <div class="sub-question">(a) Find the cost of \( 1 \text{ kg} \) of apples.</div>
+            <div class="sub-question">(b) Find the quantity of apples that can be purchased for Rs. \( 595 \).</div>
         </div>
     </div>
-    
+
     <div class="question-container">
         <div class="q-num">13.</div>
-        <div class="q-content">The present ages of A and B are in the ratio \( 7 : 9 \). If the sum of their ages is \( 48 \) years, what are their actual ages? What will be the ratio of their ages after \( 3 \) years?</div>
-    </div>
-    
-    <div class="question-container">
-        <div class="q-num">14.</div>
-        <div class="q-content">
-            <div class="sub-question">(a) Are \( 30, 40, 45, \) and \( 60 \) in proportion? Show your working.</div>
-            <div class="sub-question">(b) The first, second, and fourth terms of a proportion are \( 12, 21, \) and \( 14 \) respectively. Find the third term.</div>
+        <div class="q-content">The ratio of the monthly income to the monthly expenditure of a family is \( 9 : 7 \). If their monthly savings is Rs. \( 7200 \):<br>
+            <div class="sub-question">(a) What is their total monthly income?</div>
+            <div class="sub-question">(b) What is their total monthly expenditure?</div>
         </div>
     </div>
-    
+
     <div class="question-container">
-        <div class="q-num">15.</div>
-        <div class="q-content">
-            In a mixture of \( 60 \) liters, the ratio of milk to water is \( 2 : 1 \).
-            <div class="sub-question">(i) How many liters of milk and water are present in the mixture initially?</div>
-            <div class="sub-question">(ii) If \( 10 \) liters of water is added to the mixture, what will be the new ratio of milk to water?</div>
+        <div class="q-num">14.</div>
+        <div class="q-content">A piece of electrical wire measuring \( 14.4 \text{ m} \) in length is cut into two pieces in the ratio \( 3 : 5 \).<br>
+            <div class="sub-question">(a) Find the length of each piece in meters.</div>
+            <div class="sub-question">(b) Express the length of the smaller piece in centimeters as an integer.</div>
         </div>
     </div>
 
