@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* Base Print & Standard Settings */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: #fcfcfc; 
+            position: relative; 
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        /* Screen-specific Responsive Design */
+        @media screen {
+            body {
+                width: 100%;
+                max-width: 210mm;
+                min-height: 297mm;
+                padding: 5%;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                margin-top: 20px;
+                margin-bottom: 20px;
+                background-color: white;
+            }
+        }
+
+        /* Mobile specific adjustments */
+        @media screen and (max-width: 600px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .test-name { font-size: 12pt !important; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { border-bottom: 1px dashed #ccc; width: 100%; text-align: center; }
+            .exam-details span:last-child { border-bottom: none; }
+            .q-num { width: 25px !important; }
+            .step-row { flex-direction: column; align-items: flex-start !important; }
+            .marks { align-self: flex-end; font-size: 9pt; padding-top: 4px; }
+        }
+
+        /* Shared Styles */
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 500px; opacity: 0.08; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a365d; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b91c1c; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; background-color: #f3f4f6; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; background: #e5e7eb; padding: 5px; border-radius: 4px; font-size: 13pt; border: 1px solid #ccc; }
+        
+        /* Question & Solution Containers */
+        .qa-container { margin-bottom: 25px; page-break-inside: avoid; border-bottom: 1px dashed #e5e7eb; padding-bottom: 15px; }
+        .question-box { display: flex; text-align: justify; background-color: #eff6ff; padding: 10px; border-left: 4px solid #3b82f6; margin-bottom: 10px; border-radius: 0 4px 4px 0; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; color: #1e3a8a; }
+        .q-content { flex-grow: 1; font-weight: 600; color: #1e3a8a; } 
+        
+        .solution-box { padding: 5px 10px; }
+        .solution-title { font-weight: bold; text-decoration: underline; margin-bottom: 5px; color: #065f46; }
+        
+        /* Step-by-step marking flexbox */
+        .step-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+        .step-content { flex-grow: 1; padding-right: 15px; }
+        .marks { font-weight: bold; color: #dc2626; flex-shrink: 0; font-size: 10pt; white-space: nowrap; background: #fee2e2; padding: 2px 6px; border-radius: 4px; }
+        
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; white-space: nowrap; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; background-color: white; } 
+            .watermark { position: fixed; }
+            .question-box { background-color: transparent; border-left: 2px solid #000; color: #000; }
+            .q-content, .q-num, .solution-title { color: #000; }
+            .marks { color: #000; border: 1px solid #000; background: transparent; }
+            .exam-details { background-color: transparent; }
+            .section-header { background: transparent; border: 2px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS & MARKING SCHEME - MINOR TEST 3</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Social Science & Math</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 60</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (20 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">1.</div>
+            <div class="q-content">Find the product of the following integers: \((-15) \times (-10) \times (-2)\).</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Product = \([(-15) \times (-10)] \times (-2)\)</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Product = \(150 \times (-2)\) <em>(Product of two negative integers is positive)</em></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Product = -300</strong></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">2.</div>
+            <div class="q-content">State the Distributive Property of multiplication over addition for integers. Provide one mathematical example to illustrate it.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content"><strong>Statement:</strong> For any three integers \(a\), \(b\), and \(c\), \(a \times (b + c) = (a \times b) + (a \times c)\).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Example:</strong> Let \(a = 2, b = 3, c = 4\).<br>
+                LHS = \(2 \times (3 + 4) = 2 \times 7 = 14\)<br>
+                RHS = \((2 \times 3) + (2 \times 4) = 6 + 8 = 14\). LHS = RHS.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">3.</div>
+            <div class="q-content">A submarine is situated at 800m below sea level. If it ascends 250m, what is its new position? Express the final answer using an appropriate integer sign.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Initial position of submarine = \(-800\) m (below sea level)</div>
+                <div class="marks">[0.5 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Distance ascended = \(+250\) m</div>
+                <div class="marks">[0.5 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">New position = \(-800 + 250 = -550\) m</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">4.</div>
+            <div class="q-content">Write a pair of negative integers whose difference gives 8.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Let the two negative integers be \(a\) and \(b\). We need \(a - b = 8\).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Example:</strong> Let \(a = -2\) and \(b = -10\).<br>
+                Difference: \(-2 - (-10) = -2 + 10 = 8\).<br>
+                <em>(Accept any valid pair, e.g., -1 and -9, -5 and -13, etc.)</em></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">5.</div>
+            <div class="q-content">Evaluate: \([(-30) \div (-6)] \div 5\)</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Step 1 (Solve inner bracket): \((-30) \div (-6) = 5\)</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Step 2: Substitute back into equation: \(5 \div 5 = 1\)<br>
+                <strong>Final Answer = 1</strong></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">6.</div>
+            <div class="q-content">Name the three parallel ranges that make up the majestic Himalayan mountain system.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">The three parallel ranges of the Himalayas are:<br>
+                1. <strong>Himadri</strong> (Greater Himalayas or Inner Himalayas)<br>
+                2. <strong>Himachal</strong> (Lesser Himalayas or Middle Himalayas)<br>
+                3. <strong>Shiwaliks</strong> (Outer Himalayas)</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">7.</div>
+            <div class="q-content">What were the early forms of democratic assemblies practiced during the Vedic period? Briefly state who comprised them.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">The early forms of democratic assemblies were <strong>Sabha</strong> and <strong>Samiti</strong>.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">- <strong>Sabha:</strong> A select council consisting of elders, chiefs, and important people of the tribe.<br>
+                - <strong>Samiti:</strong> A larger, general assembly comprising all the common people (the entire tribe/vish).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">8.</div>
+            <div class="q-content">Mention any two key differences between the Western Coastal Plains and the Eastern Coastal Plains of India.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">
+                    1. <strong>Location & Width:</strong> Western coastal plains lie between the Western Ghats and the Arabian Sea and are very narrow. Eastern coastal plains lie between the Eastern Ghats and the Bay of Bengal and are much broader.<br>
+                    2. <strong>River Deltas:</strong> Western coastal plains lack large deltas (rivers form estuaries). Eastern coastal plains have large, fertile deltas formed by rivers like Mahanadi, Godavari, Krishna, and Kaveri.
+                </div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">9.</div>
+            <div class="q-content">Define the terms 'Janapada' and 'Mahajanapada'.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">- <strong>Janapada:</strong> Literally means the land where the 'Jana' (people/tribe) set its foot and settled down. They were early territorial states.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">- <strong>Mahajanapada:</strong> Around 2500 years ago, some Janapadas became more important and powerful than others. These large, powerful states were known as Mahajanapadas (e.g., Magadha).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">10.</div>
+            <div class="q-content">Which geographic region is known as the 'Granary of India', and why is it called so?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">The <strong>Northern Plains</strong> of India are known as the 'Granary of India'.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Reason:</strong> They are formed by the interplay of three major river systems (Indus, Ganga, and Brahmaputra) which deposit highly fertile alluvial soil. This flat, fertile land combined with an abundant water supply makes it immensely productive for agriculture (especially wheat and rice).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">11.</div>
+            <div class="q-content">In a class test containing 15 questions, 4 marks are awarded for every correct answer and (-2) marks are awarded for every incorrect answer. Gurpreet attempts all questions but only 9 of her answers are correct. What is her total score?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Total questions = 15. Correct answers = 9. <br>
+                Incorrect answers = \(15 - 9 = 6\).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Marks for 9 correct answers = \(9 \times 4 = 36\).<br>
+                Marks for 6 incorrect answers = \(6 \times (-2) = -12\).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Total Score = Marks for correct + Marks for incorrect<br>
+                Total Score = \(36 + (-12) = 36 - 12 = 24\).<br>
+                <strong>Gurpreet's total score is 24.</strong></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">12.</div>
+            <div class="q-content">Evaluate the following using suitable properties of integers: \(26 \times (-48) + (-48) \times (-36)\). Also, name the property used.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Expression: \(26 \times (-48) + (-48) \times (-36)\)<br>
+                We observe that \((-48)\) is a common factor. Taking it out as common:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">\( = (-48) \times [26 + (-36)] \)<br>
+                \( = (-48) \times [26 - 36] \)<br>
+                \( = (-48) \times [-10] \)</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">\( = 480 \)<br>
+                <strong>Property Used:</strong> Distributive Property of Multiplication over Addition.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">13.</div>
+            <div class="q-content">What was the impact of iron technology on agriculture and warfare during the period of Second Urbanisation in Ancient India?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">
+                    <strong>Impact on Agriculture:</strong><br>
+                    1. <em>Iron Axes:</em> Enabled people to clear dense, heavily forested areas of the Gangetic valley effectively, expanding cultivable land.<br>
+                    2. <em>Iron Ploughshares:</em> Replaced wooden ploughshares, allowing deep ploughing of the heavy, clayey soil. This significantly increased agricultural yield, leading to surplus food production.
+                </div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">
+                    <strong>Impact on Warfare:</strong><br>
+                    Iron weapons (swords, spears, arrowheads) were far superior to bronze/copper. Kings who controlled iron mines (like in Magadha) equipped their armies with strong weapons, giving them a decisive military advantage to conquer other Janapadas and build empires.
+                </div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">14.</div>
+            <div class="q-content">The Great Indian Desert (Thar Desert) has a harsh climate, yet people have adapted to survive there. Describe the lifestyle, housing, and main occupations of the people living in this region.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">
+                    <strong>1. Occupations:</strong> Due to scarce rainfall and sandy soil, traditional agriculture is difficult. The primary occupation is nomadic herding (rearing sheep, goats, and camels). Camels are vital for transport ("Ship of the Desert"). In areas with oases or irrigation (like the Indira Gandhi Canal), drought-resistant crops like bajra, jowar, and gram are grown.
+                </div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">
+                    <strong>2. Housing:</strong> Houses are specially designed to beat the heat. They have thick walls (to insulate against the scorching sun) and flat roofs. Windows are kept small to prevent hot, dusty winds from entering.
+                </div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">
+                    <strong>3. Lifestyle/Adaptation:</strong> People traditionally lead a nomadic or semi-nomadic lifestyle, moving in search of pasture and water (Banjaras). Water conservation is a critical part of their daily life.
+                </div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">15.</div>
+            <div class="q-content">Differentiate between <em>Varna</em> and <em>Jati</em> as per the ancient Indian societal structure. Provide at least three points of distinction.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">
+                    <table style="width:100%; border-collapse: collapse; margin-top: 5px;" border="1">
+                        <tr>
+                            <th style="padding: 5px; text-align: left; background:#f3f4f6;">Basis</th>
+                            <th style="padding: 5px; text-align: left; background:#f3f4f6;">Varna</th>
+                            <th style="padding: 5px; text-align: left; background:#f3f4f6;">Jati</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong>Origin/Meaning</strong></td>
+                            <td style="padding: 5px;">Broad, older classification originating in the early Vedic period (Rig Veda). Derived from 'color' or 'class'.</td>
+                            <td style="padding: 5px;">Developed later (Later Vedic/Post-Vedic). Derived from 'birth' or specific craft/occupation.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong>Number</strong></td>
+                            <td style="padding: 5px;">Strictly limited to Four (Brahmana, Kshatriya, Vaishya, Shudra).</td>
+                            <td style="padding: 5px;">Countless in number; society splintered into thousands of Jatis.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong>Mobility/Basis</strong></td>
+                            <td style="padding: 5px;">Initially based on occupation/merit (flexible), later became rigid.</td>
+                            <td style="padding: 5px;">Strictly hereditary (determined entirely by birth from the beginning) and deeply tied to specific endogamous groups.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="marks">[3 Marks] (1 per point)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">16.</div>
+            <div class="q-content">A merchant earns a profit of ₹15 per bag of basmati rice sold and a loss of ₹5 per bag of non-basmati rice sold.<br>
+            (i) He sells 3,000 bags of basmati rice and 5,000 bags of non-basmati rice in a month. What is his net profit or loss?<br>
+            (ii) What is the number of basmati rice bags he must sell to have neither profit nor loss, if the number of non-basmati rice bags sold is 6,400?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (i):</strong><br>
+                Profit on 1 bag of basmati = +₹15<br>
+                Total profit on 3,000 basmati bags = \(3000 \times 15 = \) ₹45,000</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Loss on 1 bag of non-basmati = -₹5<br>
+                Total loss on 5,000 non-basmati bags = \(5000 \times (-5) = \) -₹25,000<br>
+                Net Profit/Loss = \(45,000 + (-25,000) = 20,000\)<br>
+                <strong>Answer (i): The merchant makes a net profit of ₹20,000.</strong></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (ii):</strong><br>
+                Condition: Neither profit nor loss. This means Total Profit + Total Loss = 0, or Total Profit = Total Loss.<br>
+                Number of non-basmati bags sold = 6,400.<br>
+                Total loss incurred = \(6400 \times 5 = \) ₹32,000.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">To cover this loss, the profit from basmati bags must be exactly ₹32,000.<br>
+                Let the number of basmati bags be '\(x\)'.<br>
+                \(15 \times x = 32,000 \implies x = \frac{32,000}{15}\)</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">\(x = 2133.33...\) bags.<br>
+                <em>Teacher's Note:</em> Since bags cannot be sold in fractions, he must sell <strong>2134 bags</strong> of basmati rice to ensure he does not suffer an overall loss (he will make a marginal profit of ₹10). <em>(Mathematically exact answer: \(2133 \frac{1}{3}\) bags).</em></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">17.</div>
+            <div class="q-content">The temperature at 12 noon was 10°C above zero. If it decreases at the uniform rate of 2°C per hour until midnight:<br>
+            (i) At what time would the temperature be exactly 8°C below zero?<br>
+            (ii) What would be the temperature at midnight?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content">Initial temperature at 12 noon = +10°C.<br>
+                Rate of temperature decrease = -2°C per hour.</div>
+                <div class="marks">[0.5 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (i):</strong><br>
+                Target temperature = 8°C below zero = -8°C.<br>
+                Total change in temperature required = Final Temp - Initial Temp<br>
+                Change = \(-8 - 10 = -18°C\)</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Time taken for this change = \(\frac{\text{Total Change}}{\text{Rate of Change}} = \frac{-18}{-2} = 9\) hours.<br>
+                9 hours after 12 noon is <strong>9:00 PM</strong>.</div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (ii):</strong><br>
+                Time from 12 noon to midnight = 12 hours.<br>
+                Total temperature change in 12 hours = \(12 \times (-2°C) = -24°C\).</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content">Temperature at midnight = Initial Temp + Total Change<br>
+                \(= 10°C + (-24°C) = -14°C\).<br>
+                <strong>Answer (ii): The temperature at midnight would be -14°C.</strong></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">18.</div>
+            <div class="q-content">Simplify the following mathematical expressions systematically:<br>
+            (i) \([(-36) \div 12] \div 3\)<br>
+            (ii) \((-15) \times 8 + (-15) \times 2\)<br>
+            (iii) \((-40) \div [(-10) + (-10)]\)</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (i):</strong> \([(-36) \div 12] \div 3\)<br>
+                Using BODMAS, solve square brackets first: \((-36) \div 12 = -3\)<br>
+                Now, \(-3 \div 3 = -1\).<br>
+                <strong>Ans: -1</strong></div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (ii):</strong> \((-15) \times 8 + (-15) \times 2\)<br>
+                Using Distributive Property: \((-15) \times (8 + 2)\)<br>
+                \(= (-15) \times 10 = -150\).<br>
+                <strong>Ans: -150</strong></div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Part (iii):</strong> \((-40) \div [(-10) + (-10)]\)<br>
+                Solve square brackets: \([-10 - 10] = -20\)<br>
+                Now, \((-40) \div (-20) = 2\).<br>
+                <strong>Ans: 2</strong></div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">19.</div>
+            <div class="q-content">The physical features of India heavily influence its economy and lifestyle. Justify this statement by explaining the economic importance and distinct geographical characteristics of the <strong>Peninsular Plateau</strong>. How do its rivers differ from those in the Northern Plains?</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content"><strong>Geographical Characteristics:</strong><br>
+                The Peninsular Plateau is a highly ancient, stable landmass formed from older crystalline, igneous, and metamorphic rocks (Gondwana land). It has a triangular shape with broad, shallow valleys and rounded hills. It is divided into the Central Highlands and the Deccan Plateau.</div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Economic Importance:</strong><br>
+                It acts as the "Storehouse of Minerals" of India. It is exceptionally rich in mineral resources like coal, iron ore, manganese, bauxite, etc. (especially in the Chota Nagpur plateau region). This wealth forms the backbone of India's metallurgical and heavy industries, generating immense employment and economic growth. Black soil areas (Deccan Trap) are highly suitable for cotton cultivation.</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>Difference in Rivers:</strong><br>
+                1. <em>Water Source:</em> Peninsular rivers (Godavari, Krishna, Narmada) are rain-fed and seasonal. Northern plains rivers (Ganga, Brahmaputra) are perennial (fed by Himalayan glaciers + rain).<br>
+                2. <em>Terrain & Navigation:</em> Peninsular rivers flow through uneven, rocky terrain forming waterfalls; they are swift and largely unnavigable. Northern rivers flow sluggishly over flat terrain, making them highly suitable for navigation and extensive canal irrigation.</div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">20.</div>
+            <div class="q-content">Give a detailed account of the "Second Urbanisation" in ancient India. In your answer, include the reasons for the emergence of Mahajanapadas in the Ganga plains, the forms of government they practiced (Monarchy vs. Republic), and the role of punch-marked coins in expanding trade.</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <div class="step-row">
+                <div class="step-content"><strong>1. Second Urbanisation & Emergence of Mahajanapadas (approx. 6th century BCE):</strong><br>
+                The shift of the Aryan civilization from the Indus Valley to the fertile Ganga plains marked this era. The primary catalyst was <strong>iron technology</strong>. Iron tools allowed vast forest tracts to be cleared, and deep ploughing generated large agricultural surpluses. This surplus supported non-agricultural populations (artisans, traders), leading to the rise of large cities and powerful territorial states called Mahajanapadas (e.g., Magadha, Kosala).</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>2. Forms of Government:</strong><br>
+                - <em>Monarchies (Rajyas):</em> Ruled by a single king (Raja) who held absolute power. Kingship was hereditary. E.g., Magadha.<br>
+                - <em>Republics (Gana-Sanghas):</em> Ruled by a group or an assembly of elders/nobles, rather than a single king. Decisions were made by voting in assemblies. E.g., Vajji, Mallas.</div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+            <div class="step-row">
+                <div class="step-content"><strong>3. Role of Punch-marked Coins:</strong><br>
+                Prior to this period, barter systems were prevalent. The introduction of punch-marked coins (mostly made of silver and copper with symbols punched onto them) standardized value exchange. This drastically simplified transactions, reduced the limitations of the barter system, and caused a tremendous boom in both internal and long-distance trade, firmly establishing a money economy.</div>
+                <div class="marks">[1.5 Marks]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Solutions Generated Confidentially</div>
+</body>
+</html>
