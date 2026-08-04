@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering equations cleanly and responsively -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #1a365d;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #2b6cb0;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0;
+            flex-wrap: wrap;
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #2c5282;
+        }
+        .solution-container {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #cbd5e0;
+            padding-bottom: 15px;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 8px;
+            background-color: #f7fafc;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .q-text {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #cbd5e0;
+        }
+        .answer-box {
+            padding-left: 15px;
+            color: #000;
+        }
+        .marks-allotted {
+            color: #c53030;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+        .step-marks {
+            float: right;
+            color: #718096;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .clear { clear: both; }
+        
+        /* Math/Equation responsiveness */
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                margin: 0;
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px;
+            }
+            .q-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .marks-allotted {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            .math-container {
+                font-size: 0.9em;
+            }
+        }
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+        }
+        
+        table.diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table.diff-table th, table.diff-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        table.diff-table th {
+            background-color: #f7fafc;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MARKING SCHEME / DETAILED SOLUTIONS - Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science (Biology - Life Processes)</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)</div>
+    
+    <!-- Using a simplified structure for MCQs to save space in the solution document -->
+    <div class="solution-container">
+        <div class="q-header">
+            <span>Q1 to Q25. Multiple Choice Questions</span>
+            <span class="marks-allotted">[25 x 1 = 25 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p><strong>1. (d)</strong> All of the above <span class="step-marks">1M</span></p>
+            <p><strong>2. (b)</strong> Mitochondria <span class="step-marks">1M</span></p>
+            <p><strong>3. (a)</strong> Transport of water <span class="step-marks">1M</span></p>
+            <p><strong>4. (c)</strong> Excretion <span class="step-marks">1M</span></p>
+            <p><strong>5. (b)</strong> Small intestine <span class="step-marks">1M</span></p>
+            <p><strong>6. (a)</strong> Water <span class="step-marks">1M</span></p>
+            <p><strong>7. (c)</strong> Water in guard cells <span class="step-marks">1M</span></p>
+            <p><strong>8. (c)</strong> Salivary amylase <span class="step-marks">1M</span></p>
+            <p><strong>9. (b)</strong> Prevent it from collapsing when there is less air in it <span class="step-marks">1M</span></p>
+            <p><strong>10. (a)</strong> Lactic acid and energy <span class="step-marks">1M</span></p>
+            <p><strong>11. (b)</strong> Pulmonary vein <span class="step-marks">1M</span></p>
+            <p><strong>12. (b)</strong> Sphygmomanometer <span class="step-marks">1M</span></p>
+            <p><strong>13. (d)</strong> Nephrons <span class="step-marks">1M</span></p>
+            <p><strong>14. (b)</strong> Phloem <span class="step-marks">1M</span></p>
+            <p><strong>15. (b)</strong> Dialysis <span class="step-marks">1M</span></p>
+            <p><strong>16. (c)</strong> Platelets <span class="step-marks">1M</span></p>
+            <p><strong>17. (b)</strong> Mucus <span class="step-marks">1M</span></p>
+            <p><strong>18. (b)</strong> Small intestine <span class="step-marks">1M</span></p>
+            <p><strong>19. (a)</strong> ATP <span class="step-marks">1M</span></p>
+            <p><strong>20. (b)</strong> Transpiration <span class="step-marks">1M</span></p>
+            <p><strong>21. (b)</strong> Hippocampus, Exocoetus, Anabas (Fishes) <span class="step-marks">1M</span></p>
+            <p><strong>22. (b)</strong> Valves <span class="step-marks">1M</span></p>
+            <p><strong>23. (c)</strong> Amino acids <span class="step-marks">1M</span></p>
+            <p><strong>24. (c)</strong> Cuscuta <span class="step-marks">1M</span></p>
+            <p><strong>25. (c)</strong> Haemoglobin <span class="step-marks">1M</span></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>26. Differentiate between autotrophic and heterotrophic nutrition. Give examples.</span>
+            <span class="marks-allotted">[3 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <table class="diff-table">
+                <tr>
+                    <th>Autotrophic Nutrition</th>
+                    <th>Heterotrophic Nutrition</th>
+                </tr>
+                <tr>
+                    <td>1. Organisms synthesize their own food from simple inorganic substances (CO<sub>2</sub> and water).</td>
+                    <td>1. Organisms cannot synthesize their own food and depend on other organisms for it.</td>
+                </tr>
+                <tr>
+                    <td>2. Presence of green pigment (chlorophyll) and sunlight is essential.</td>
+                    <td>2. Chlorophyll and sunlight are not required.</td>
+                </tr>
+                <tr>
+                    <td>3. Example: Green plants, some bacteria.</td>
+                    <td>3. Example: Animals, Fungi, Amoeba.</td>
+                </tr>
+            </table>
+            <div class="step-marks">1 Mark for each valid difference/point pair = 3M</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>27. Differences between aerobic and anaerobic respiration. Organisms using anaerobic mode.</span>
+            <span class="marks-allotted">[3 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <table class="diff-table">
+                <tr>
+                    <th>Aerobic Respiration</th>
+                    <th>Anaerobic Respiration</th>
+                </tr>
+                <tr>
+                    <td>1. Takes place in the presence of oxygen.</td>
+                    <td>1. Takes place in the absence of oxygen.</td>
+                </tr>
+                <tr>
+                    <td>2. Complete breakdown of food (glucose) occurs. End products are CO<sub>2</sub> and water.</td>
+                    <td>2. Partial breakdown of food occurs. End products may be ethanol & CO<sub>2</sub> (yeast) or lactic acid (muscles).</td>
+                </tr>
+                <tr>
+                    <td>3. Large amount of energy is released (38 ATP).</td>
+                    <td>3. Very small amount of energy is released (2 ATP).</td>
+                </tr>
+            </table>
+            <p><strong>Organisms using anaerobic mode:</strong> Yeast, some bacteria. <span class="step-marks">0.5M</span></p>
+            <div class="step-marks">2.5 Marks for differences (min 2 points)</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>28. Describe the structure and functioning of nephrons in brief.</span>
+            <span class="marks-allotted">[3 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p><strong>Structure:</strong> Nephron is the basic filtration unit of the kidney. It consists of a cup-shaped structure called Bowman's capsule containing a cluster of capillaries called Glomerulus. The Bowman's capsule leads into a long tubular structure which eventually joins a collecting duct. <span class="step-marks">1.5M</span></p>
+            <p><strong>Functioning:</strong></p>
+            <ul>
+                <li><strong>Filtration:</strong> Blood enters the glomerulus under high pressure. Water and small solutes (glucose, amino acids, salts, urea) are filtered into Bowman's capsule.</li>
+                <li><strong>Reabsorption:</strong> As the filtrate passes along the tubular part, useful substances like glucose, amino acids, salts, and a major amount of water are selectively reabsorbed into surrounding capillaries.</li>
+                <li><strong>Urine Formation:</strong> The remaining liquid containing urea, excess salts, and water forms urine, which enters the collecting duct. <span class="step-marks">1.5M</span></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>29. Explain the mechanism of breathing in humans.</span>
+            <span class="marks-allotted">[3 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p>Breathing involves two steps:</p>
+            <ul>
+                <li><strong>Inhalation (Inspiration):</strong> When we breathe in, our ribs are lifted up and outwards, and the diaphragm flattens. As a result, the chest cavity becomes larger. This decreases the air pressure inside the lungs, and air is sucked into the lungs, filling the expanded alveoli. <span class="step-marks">1.5M</span></li>
+                <li><strong>Exhalation (Expiration):</strong> When we breathe out, the ribs move downwards and inwards, and the diaphragm relaxes and arches upwards. The chest cavity becomes smaller. This increases the pressure inside the lungs, and the air is pushed out of the lungs. <span class="step-marks">1.5M</span></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>30. Why is it necessary to separate oxygenated and deoxygenated blood in mammals and birds?</span>
+            <span class="marks-allotted">[3 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p>Mammals and birds are warm-blooded (endothermic) animals, meaning they constantly need energy to maintain their body temperature irrespective of the environment.</p>
+            <p>Separation of oxygenated and deoxygenated blood:</p>
+            <ol>
+                <li>Prevents the mixing of oxygen-rich blood with oxygen-poor blood. <span class="step-marks">1M</span></li>
+                <li>Allows a highly efficient supply of oxygen to the body cells. <span class="step-marks">1M</span></li>
+                <li>This high efficiency of oxygen supply is essential to meet their high energy demands for cellular respiration to generate heat and maintain constant body temperature. <span class="step-marks">1M</span></li>
+            </ol>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>31. (a) Human heart diagram. (b) Double circulation.</span>
+            <span class="marks-allotted">[5 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p><strong>(a) Diagram of Human Heart:</strong> <em>(Examiner notes: Award 3 marks for a neat diagram with at least 4 correct labellings such as Left/Right Atrium, Left/Right Ventricle, Aorta, Vena Cava, Pulmonary Artery/Vein, Septum, Valves.)</em> <span class="step-marks">3M</span></p>
+            <p><strong>(b) Double Circulation:</strong> Blood passes through the human heart twice during one complete cycle through the body. This is called double circulation. It includes:</p>
+            <ul>
+                <li><strong>Systemic Circulation:</strong> Oxygenated blood from the left ventricle is pumped to all body parts, and deoxygenated blood returns to the right atrium.</li>
+                <li><strong>Pulmonary Circulation:</strong> Deoxygenated blood from the right ventricle is pumped to the lungs for oxygenation, and oxygenated blood returns to the left atrium.</li>
+            </ul>
+            <p><strong>Importance:</strong> It ensures strict separation of oxygenated and deoxygenated blood, ensuring highly efficient oxygen supply required by warm-blooded animals. <span class="step-marks">2M</span></p>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <span>32. (a) Photosynthesis equation (b) Three main events (c) Desert plants</span>
+            <span class="marks-allotted">[5 Marks]</span>
+        </div>
+        <div class="answer-box">
+            <p><strong>(a) Balanced Chemical Equation:</strong></p>
+            <div class="math-container">
+                $$6CO_2 + 12H_2O \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} C_6H_{12}O_6 + 6O_2 + 6H_2O$$
+            </div>
+            <div class="step-marks">1M</div>
+            <div class="clear"></div>
+            
+            <p><strong>(b) Three Main Events during Photosynthesis:</strong></p>
+            <ol>
+                <li>Absorption of light energy by chlorophyll.</li>
+                <li>Conversion of light energy to chemical energy and splitting of water molecules into hydrogen and oxygen.</li>
+                <li>Reduction of carbon dioxide to carbohydrates (glucose).</li>
+            </ol>
+            <div class="step-marks">3M (1 Mark each)</div>
+            <div class="clear"></div>
+            
+            <p><strong>(c) Desert Plants:</strong> Desert plants keep their stomata closed during the day to prevent water loss. They take up carbon dioxide at night and prepare an intermediate compound. This intermediate is acted upon by the light energy absorbed by chlorophyll during the daytime to complete photosynthesis. <span class="step-marks">1M</span></p>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • Confidential Marking Scheme</div>
+</body>
+</html>

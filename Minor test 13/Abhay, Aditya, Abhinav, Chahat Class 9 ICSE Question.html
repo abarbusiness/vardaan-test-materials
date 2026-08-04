@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 13</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span {
+            margin: 5px 10px;
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .exam-details span { margin: 2px 0; }
+            .options-grid { grid-template-columns: 1fr; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 9 ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>All questions are compulsory.</li>
+                <li>Section A contains 25 Multiple Choice Questions (1 Mark each).</li>
+                <li>Section B contains 5 Short Answer Questions (3 Marks each).</li>
+                <li>Section C contains 2 Long Answer Questions (5 Marks each).</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">1.</div><div class="q-content">The Five-Kingdom classification was proposed by:
+        <div class="options-grid"><div>(a) Carolus Linnaeus</div><div>(b) Robert Whittaker</div><div>(c) Charles Darwin</div><div>(d) Gregor Mendel</div></div>
+    </div></div>
+    
+    <div class="question-container"><div class="q-num">2.</div><div class="q-content">Organisms lacking a well-defined nucleus and membrane-bound organelles are grouped under Kingdom:
+        <div class="options-grid"><div>(a) Protista</div><div>(b) Monera</div><div>(c) Fungi</div><div>(d) Plantae</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">3.</div><div class="q-content">The cell wall of fungi is primarily composed of:
+        <div class="options-grid"><div>(a) Cellulose</div><div>(b) Peptidoglycan</div><div>(c) Chitin</div><div>(d) Lignin</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">4.</div><div class="q-content">Which of the following is an example of a unicellular eukaryote?
+        <div class="options-grid"><div>(a) Bacteria</div><div>(b) Amoeba</div><div>(c) Mushroom</div><div>(d) Fern</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">5.</div><div class="q-content">Plants belonging to the division Thallophyta are commonly called:
+        <div class="options-grid"><div>(a) Mosses</div><div>(b) Ferns</div><div>(c) Algae</div><div>(d) Gymnosperms</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">6.</div><div class="q-content">Which group of plants is known as the 'Amphibians of the Plant Kingdom'?
+        <div class="options-grid"><div>(a) Pteridophytes</div><div>(b) Bryophytes</div><div>(c) Gymnosperms</div><div>(d) Angiosperms</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">7.</div><div class="q-content">The reserve food material in fungi is typically stored as:
+        <div class="options-grid"><div>(a) Starch</div><div>(b) Glycogen</div><div>(c) Glucose</div><div>(d) Cellulose</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">8.</div><div class="q-content">Plants bearing 'naked seeds' belong to which division?
+        <div class="options-grid"><div>(a) Angiosperms</div><div>(b) Gymnosperms</div><div>(c) Pteridophyta</div><div>(d) Bryophyta</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">9.</div><div class="q-content">Which of the following belongs to Kingdom Monera?
+        <div class="options-grid"><div>(a) Paramecium</div><div>(b) Yeast</div><div>(c) Lactobacillus</div><div>(d) Spirogyra</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">10.</div><div class="q-content">The first terrestrial plants to possess vascular tissues (xylem and phloem) are:
+        <div class="options-grid"><div>(a) Bryophytes</div><div>(b) Pteridophytes</div><div>(c) Thallophytes</div><div>(d) Angiosperms</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">11.</div><div class="q-content">A defining feature of Angiosperms is:
+        <div class="options-grid"><div>(a) Absence of true roots</div><div>(b) Seeds enclosed within a fruit</div><div>(c) Naked ovules</div><div>(d) Unicellular plant body</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">12.</div><div class="q-content">Lichen is a symbiotic association between:
+        <div class="options-grid"><div>(a) Algae and Bacteria</div><div>(b) Fungi and Roots of higher plants</div><div>(c) Algae and Fungi</div><div>(d) Bryophytes and Fungi</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">13.</div><div class="q-content">Euglena is placed under Kingdom Protista because it is:
+        <div class="options-grid"><div>(a) Multicellular and autotrophic</div><div>(b) Unicellular and eukaryotic</div><div>(c) Prokaryotic and motile</div><div>(d) Saprophytic and multicellular</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">14.</div><div class="q-content">The basic unit of biological classification is:
+        <div class="options-grid"><div>(a) Genus</div><div>(b) Phylum</div><div>(c) Species</div><div>(d) Kingdom</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">15.</div><div class="q-content">Which of the following is NOT a characteristic of Kingdom Plantae?
+        <div class="options-grid"><div>(a) Eukaryotic</div><div>(b) Heterotrophic nutrition</div><div>(c) Multicellular</div><div>(d) Cell wall made of cellulose</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">16.</div><div class="q-content">Cycas and Pinus are examples of:
+        <div class="options-grid"><div>(a) Monocots</div><div>(b) Dicots</div><div>(c) Gymnosperms</div><div>(d) Pteridophytes</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">17.</div><div class="q-content">The mode of nutrition in mushrooms and bread moulds is:
+        <div class="options-grid"><div>(a) Autotrophic</div><div>(b) Parasitic</div><div>(c) Saprophytic</div><div>(d) Holozoic</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">18.</div><div class="q-content">Which division of Plantae has a plant body that is NOT differentiated into true root, stem, and leaves?
+        <div class="options-grid"><div>(a) Pteridophyta</div><div>(b) Gymnosperms</div><div>(c) Bryophyta</div><div>(d) Thallophyta</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">19.</div><div class="q-content">Pseudopodia are the locomotory organs of:
+        <div class="options-grid"><div>(a) Amoeba</div><div>(b) Paramecium</div><div>(c) Bacteria</div><div>(d) Euglena</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">20.</div><div class="q-content">Yeast is distinct from other fungi because it is:
+        <div class="options-grid"><div>(a) Autotrophic</div><div>(b) Unicellular</div><div>(c) Prokaryotic</div><div>(d) Aquatic</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">21.</div><div class="q-content">The thread-like structures forming the body of a fungus are called:
+        <div class="options-grid"><div>(a) Hyphae</div><div>(b) Rhizoids</div><div>(c) Roots</div><div>(d) Flagella</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">22.</div><div class="q-content">In the binomial nomenclature system, the first name indicates the:
+        <div class="options-grid"><div>(a) Species</div><div>(b) Family</div><div>(c) Genus</div><div>(d) Order</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">23.</div><div class="q-content">Which of the following is an example of an Angiosperm?
+        <div class="options-grid"><div>(a) Moss</div><div>(b) Mango tree</div><div>(c) Pine tree</div><div>(d) Spirogyra</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">24.</div><div class="q-content">Spores in a fern are typically found on the:
+        <div class="options-grid"><div>(a) Roots</div><div>(b) Underside of leaves</div><div>(c) Stem</div><div>(d) Tips of branches</div></div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">25.</div><div class="q-content">Organisms that survive in extreme environments, like hot springs, belong to which group?
+        <div class="options-grid"><div>(a) Archaebacteria (Monera)</div><div>(b) Fungi</div><div>(c) Protista</div><div>(d) Bryophyta</div></div>
+    </div></div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">26.</div><div class="q-content">Differentiate between organisms of Kingdom Monera and Kingdom Protista based on their cellular structure. Give one example of each.</div></div>
+    
+    <div class="question-container"><div class="q-num">27.</div><div class="q-content">State three distinct characteristic features of Kingdom Fungi regarding their cell wall, mode of nutrition, and body structure.</div></div>
+
+    <div class="question-container"><div class="q-num">28.</div><div class="q-content">Why are Bryophytes referred to as the "amphibians of the plant kingdom"? Explain briefly.</div></div>
+
+    <div class="question-container"><div class="q-num">29.</div><div class="q-content">What are Gymnosperms? State any two features that differentiate them from Angiosperms.</div></div>
+
+    <div class="question-container"><div class="q-num">30.</div><div class="q-content">List three main criteria used by Robert Whittaker to classify organisms into Five Kingdoms.</div></div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - Attempt all questions - 5 Marks Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">31.</div><div class="q-content">Explain the classification of Kingdom Plantae into its major divisions. Describe the defining characteristics of Thallophyta, Bryophyta, and Pteridophyta with one example for each.</div></div>
+
+    <div class="question-container"><div class="q-num">32.</div><div class="q-content">Describe the general characteristics of Kingdom Monera focusing on their cell structure, shape, and mode of nutrition. How are they economically important to humans? (Give two beneficial roles).</div></div>
+
+    <div class="footer">Created by Team Vardaan (Generated by System)</div>
+</body>
+</html>

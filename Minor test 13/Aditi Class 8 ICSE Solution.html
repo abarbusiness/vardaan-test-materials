@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    <!-- MathJax for rendering equations properly with chunking support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; width: 100%; min-height: 297mm; margin: 0 auto; 
+            padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; line-height: 1.6; color: #000; background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; text-align: center;}
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #b30000; text-align: center;}
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap;
+        }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; color: #333;}
+        
+        .question-block {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        .q-text-container { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { width: 35px; flex-shrink: 0; }
+        .marks { flex-shrink: 0; color: #b30000; font-size: 11pt; white-space: nowrap;}
+        
+        .solution-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 10px 15px;
+            margin-top: 5px;
+            border-radius: 0 4px 4px 0;
+        }
+        .solution-title { font-weight: bold; color: #4CAF50; margin-bottom: 5px; font-size: 11pt;}
+        .mcq-ans { font-weight: bold; color: #000; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        table.diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table.diff-table th, table.diff-table td { border: 1px solid #000; padding: 8px; text-align: left; }
+        
+        @media (max-width: 768px) {
+            body { padding: 15mm 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .question-row { flex-direction: column; }
+            .marks { align-self: flex-end; margin-top: 5px; }
+        }
+        @media (max-width: 480px) {
+            .q-num { width: 25px; }
+            .mjx-chtml { white-space: normal !important; word-wrap: break-word; } /* responsive math chunking */
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .solution-box { background-color: #fff; border-left: 2px solid #000; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTION KEY - Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Topic: Nervous System</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A - Solutions (MCQs)</div>
+
+    <script>
+        // Helper block for rendering repeating MCQ structure cleanly
+        const mcqAnswers = [
+            {q: "The structural and functional unit of the nervous system is:", ans: "(b) Neuron"},
+            {q: "Which part of the brain is responsible for thinking, memory, and intelligence?", ans: "(c) Cerebrum"},
+            {q: "The number of cranial nerves in the human body is:", ans: "(a) 12 pairs"},
+            {q: "The long, unbranched process extending from the cell body of a neuron is called:", ans: "(c) Axon"},
+            {q: "Which of the following is an involuntary action?", ans: "(c) Heartbeat"},
+            {q: "The gap between the axon terminal of one neuron and the dendrites of the next neuron is known as:", ans: "(a) Synapse"},
+            {q: "The part of the brain that controls balance and posture of the body is:", ans: "(b) Cerebellum"},
+            {q: "Reflex actions are primarily controlled by the:", ans: "(b) Spinal cord"},
+            {q: "Nerves that carry messages from the sense organs to the brain or spinal cord are called:", ans: "(c) Sensory nerves"},
+            {q: "The protective membranes covering the brain and spinal cord are called:", ans: "(b) Meninges"},
+            {q: "The number of spinal nerves in the human body is:", ans: "(c) 31 pairs"},
+            {q: "Which part of the neuron receives messages from other neurons?", ans: "(b) Dendrites"},
+            {q: "The fluid present between the meninges that protects the brain from mechanical shocks is:", ans: "(b) Cerebrospinal fluid"},
+            {q: "The Central Nervous System (CNS) consists of:", ans: "(c) Brain and spinal cord"},
+            {q: "Blinking of the eye when a sudden object comes in front of it is an example of:", ans: "(b) Reflex action"},
+            {q: "The insulating sheath covering the axon is known as:", ans: "(b) Myelin sheath"},
+            {q: "Which nerve transmits impulses from the brain to the effector organs (muscles/glands)?", ans: "(b) Motor nerve"},
+            {q: "The pathway taken by a nerve impulse during a reflex action is called:", ans: "(b) Reflex arc"},
+            {q: "The largest part of the human brain is:", ans: "(c) Cerebrum"},
+            {q: "Nerves made up of both sensory and motor fibers are called:", ans: "(b) Mixed nerves"},
+            {q: "The cell body of a neuron is alternatively known as:", ans: "(d) Both (a) and (c) <br><small><i>(Cyton and Soma)</i></small>"},
+            {q: "The lowest part of the brain that continues downward as the spinal cord is:", ans: "(c) Medulla oblongata"},
+            {q: "Any change in the environment that brings about a response in an organism is called a:", ans: "(b) Stimulus"},
+            {q: "Which system comprises the cranial and spinal nerves?", ans: "(b) Peripheral Nervous System"},
+            {q: "Coughing and sneezing are examples of:", ans: "(c) Reflex actions"}
+        ];
+
+        document.write('<div>');
+        mcqAnswers.forEach((item, index) => {
+            document.write(`
+                <div class="question-block" style="margin-bottom: 15px; padding-bottom: 10px;">
+                    <div class="question-row">
+                        <div class="q-text-container">
+                            <div class="q-num">${index + 1}.</div>
+                            <div class="q-text">${item.q}</div>
+                        </div>
+                        <div class="marks">[1 Mark]</div>
+                    </div>
+                    <div class="solution-box" style="padding: 6px 15px;">
+                        <span class="solution-title">Ans:</span> <span class="mcq-ans">${item.ans}</span>
+                    </div>
+                </div>
+            `);
+        });
+        document.write('</div>');
+    </script>
+
+    <div class="section-header" style="margin-top: 40px;">SECTION B - Solutions (Subjective)</div>
+
+    <div class="question-block">
+        <div class="question-row">
+            <div class="q-text-container">
+                <div class="q-num">26.</div>
+                <div class="q-text">State the functions of the three main parts of a neuron: Cyton, Dendrites, and Axon.</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p>The functions of the three main parts of a neuron are:</p>
+            <ul>
+                <li><strong>(i) Cyton (Cell Body):</strong> It is the main metabolic region of the neuron. It controls the vital functions of the cell and processes the electrical signals received from the dendrites. <em>(1 Mark)</em></li>
+                <li><strong>(ii) Dendrites:</strong> These are short, highly branched extensions that act as receptors. They receive nerve impulses (messages) from other neurons and conduct them towards the cell body. <em>(1 Mark)</em></li>
+                <li><strong>(iii) Axon:</strong> It is a long, single nerve fiber that carries nerve impulses <em>away</em> from the cell body and transmits them to another neuron, muscle, or gland. <em>(1 Mark)</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-row">
+            <div class="q-text-container">
+                <div class="q-num">27.</div>
+                <div class="q-text">Differentiate between Cerebrum and Cerebellum based on their primary functions. (Give at least two points of difference).</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <table class="diff-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Cerebrum</th>
+                    <th>Cerebellum</th>
+                </tr>
+                <tr>
+                    <td><strong>Primary Function</strong></td>
+                    <td>It controls memory, intelligence, thinking, reasoning, and all conscious (voluntary) activities.</td>
+                    <td>It controls the coordination of muscular movements and maintains the posture and balance of the body.</td>
+                </tr>
+                <tr>
+                    <td><strong>Location / Size</strong></td>
+                    <td>It is the largest part of the brain, occupying the uppermost region.</td>
+                    <td>It is a smaller region located at the back of the head, under the cerebrum.</td>
+                </tr>
+            </table>
+            <p style="font-style: italic; font-size: 10pt; margin-top: 5px;">(Award 1.5 Marks for each valid contrasting point)</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-row">
+            <div class="q-text-container">
+                <div class="q-num">28.</div>
+                <div class="q-text">What is a Reflex Action? Give two common examples of reflex actions in our daily life.</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Definition:</strong> A reflex action is an automatic, quick, and involuntary response of the body to a stimulus, primarily controlled by the spinal cord without the immediate involvement of the conscious areas of the brain. <em>(1.5 Marks)</em></p>
+            <p><strong>Examples (Any two):</strong> <em>(0.75 Marks each)</em></p>
+            <ol>
+                <li>Immediate withdrawal of the hand when it touches a hot or sharp object.</li>
+                <li>Watering of the mouth upon seeing or smelling delicious food.</li>
+                <li>Blinking of eyes when a strong beam of light flashes across them.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-row">
+            <div class="q-text-container">
+                <div class="q-num">29.</div>
+                <div class="q-text">Name the three types of nerves found in the human body. Briefly state the function of each type.</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p>The three types of nerves and their functions are:</p>
+            <ul>
+                <li><strong>1. Sensory Nerves:</strong> They carry nerve impulses from the sense organs (receptors) to the Central Nervous System (Brain and Spinal Cord). <em>(1 Mark)</em></li>
+                <li><strong>2. Motor Nerves:</strong> They carry instructions (motor impulses) from the Central Nervous System back to the effector organs (muscles or glands) to initiate a response. <em>(1 Mark)</em></li>
+                <li><strong>3. Mixed Nerves:</strong> These nerves contain both sensory and motor fibers. They perform dual functions, i.e., transmitting impulses to and from the Central Nervous System. (Example: Spinal nerves). <em>(1 Mark)</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question-row">
+            <div class="q-text-container">
+                <div class="q-num">30.</div>
+                <div class="q-text">Define the Central Nervous System (CNS). What is the main function of the spinal cord?</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Central Nervous System (CNS):</strong> The CNS is the main control center of the body that integrates and processes information. It consists of the <strong>Brain</strong> and the <strong>Spinal Cord</strong>. <em>(1.5 Marks)</em></p>
+            <p><strong>Main Functions of the Spinal Cord:</strong> <em>(1.5 Marks)</em></p>
+            <ul>
+                <li>It controls involuntary actions below the neck region, specifically managing <strong>reflex actions</strong>.</li>
+                <li>It acts as a relay channel, conducting sensory impulses from the skin and muscles to the brain, and carrying motor impulses from the brain to the muscles of the trunk and limbs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

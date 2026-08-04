@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            /* Responsive Screen Settings */
+            max-width: 900px; 
+            width: 95%; 
+            margin: 20px auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; flex-direction: row; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .mcq-options { grid-template-columns: 1fr; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            body { padding: 10px; }
+        }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { 
+                width: 210mm; 
+                min-height: 297mm;
+                margin: 0 auto; 
+                padding: 20mm; 
+                box-shadow: none;
+                -webkit-print-color-adjust: exact; 
+            } 
+            .mcq-options { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13: Health - The Ultimate Treasure</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (Objective) and Section B (Subjective).</li>
+                <li>Section A contains 25 Multiple Choice Questions carrying 1 mark each.</li>
+                <li>Section B contains 5 Subjective questions carrying 3 marks each.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Which of the following best describes 'health' according to the World Health Organization?
+            <div class="mcq-options">
+                <div>(a) Absence of disease</div>
+                <div>(b) Physical fitness only</div>
+                <div>(c) State of complete physical, mental, and social well-being</div>
+                <div>(d) Eating a balanced diet</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            AQI stands for:
+            <div class="mcq-options">
+                <div>(a) Air Quality Index</div>
+                <div>(b) Air Quantity Index</div>
+                <div>(c) Ambient Quality Indicator</div>
+                <div>(d) Atmospheric Quality Index</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Which of the following is a common sign of being unwell?
+            <div class="mcq-options">
+                <div>(a) High energy levels</div>
+                <div>(b) Fever and fatigue</div>
+                <div>(c) Good appetite</div>
+                <div>(d) Sound sleep</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Disease-causing microorganisms are commonly known as:
+            <div class="mcq-options">
+                <div>(a) Antibodies</div>
+                <div>(b) Pathogens</div>
+                <div>(c) Antigens</div>
+                <div>(d) Vectors</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Organisms that carry disease-causing microbes from an infected person to a healthy person are called:
+            <div class="mcq-options">
+                <div>(a) Parasites</div>
+                <div>(b) Pathogens</div>
+                <div>(c) Vectors</div>
+                <div>(d) Fungi</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            An example of indirect transmission of a communicable disease is:
+            <div class="mcq-options">
+                <div>(a) Shaking hands</div>
+                <div>(b) Drinking contaminated water</div>
+                <div>(c) Hugging an infected person</div>
+                <div>(d) Sharing a towel</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Which of the following diseases is caused by a virus?
+            <div class="mcq-options">
+                <div>(a) Cholera</div>
+                <div>(b) Tuberculosis</div>
+                <div>(c) Polio</div>
+                <div>(d) Malaria</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Malaria is caused by which type of microbe?
+            <div class="mcq-options">
+                <div>(a) Virus</div>
+                <div>(b) Bacteria</div>
+                <div>(c) Protozoa</div>
+                <div>(d) Fungi</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Ringworm is an infection primarily caused by:
+            <div class="mcq-options">
+                <div>(a) Bacteria</div>
+                <div>(b) Virus</div>
+                <div>(c) Fungi</div>
+                <div>(d) Protozoa</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Which mosquito is the vector for Dengue virus?
+            <div class="mcq-options">
+                <div>(a) Female Anopheles</div>
+                <div>(b) Aedes</div>
+                <div>(c) Culex</div>
+                <div>(d) Housefly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            A disease that does NOT spread from one person to another is called a:
+            <div class="mcq-options">
+                <div>(a) Communicable disease</div>
+                <div>(b) Infectious disease</div>
+                <div>(c) Non-communicable disease</div>
+                <div>(d) Viral disease</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Which of the following is a non-communicable disease?
+            <div class="mcq-options">
+                <div>(a) Diabetes</div>
+                <div>(b) Common cold</div>
+                <div>(c) Covid-19</div>
+                <div>(d) Cholera</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The self-ability of our body to fight against diseases is called:
+            <div class="mcq-options">
+                <div>(a) Infection</div>
+                <div>(b) Vaccination</div>
+                <div>(c) Immunity</div>
+                <div>(d) Medication</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Who discovered the vaccine for smallpox?
+            <div class="mcq-options">
+                <div>(a) Louis Pasteur</div>
+                <div>(b) Alexander Fleming</div>
+                <div>(c) Edward Jenner</div>
+                <div>(d) Robert Koch</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Vaccines generally contain:
+            <div class="mcq-options">
+                <div>(a) Strong, active pathogens</div>
+                <div>(b) Dead or weakened microbes</div>
+                <div>(c) Antibiotics</div>
+                <div>(d) White blood cells</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Which of the following helps prevent the breeding of mosquitoes?
+            <div class="mcq-options">
+                <div>(a) Keeping water uncovered</div>
+                <div>(b) Allowing water to stagnate in tires</div>
+                <div>(c) Changing water in coolers regularly</div>
+                <div>(d) Throwing garbage on the street</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            Which of these is a habit of a healthy lifestyle?
+            <div class="mcq-options">
+                <div>(a) Skipping meals</div>
+                <div>(b) Sleeping for only 3 hours</div>
+                <div>(c) Exercising regularly</div>
+                <div>(d) Drinking unfiltered pond water</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            A clean environment is characterized by:
+            <div class="mcq-options">
+                <div>(a) High AQI value</div>
+                <div>(b) Presence of toxic gases</div>
+                <div>(c) Safe drinking water and fresh air</div>
+                <div>(d) Overflowing drains</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            Microbes can easily be seen using a:
+            <div class="mcq-options">
+                <div>(a) Telescope</div>
+                <div>(b) Microscope</div>
+                <div>(c) Stethoscope</div>
+                <div>(d) Periscope</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Which of the following diseases spreads through direct contact?
+            <div class="mcq-options">
+                <div>(a) Chickenpox</div>
+                <div>(b) Malaria</div>
+                <div>(c) Dengue</div>
+                <div>(d) Scurvy</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            What is the primary function of the immune system?
+            <div class="mcq-options">
+                <div>(a) To digest food</div>
+                <div>(b) To pump blood</div>
+                <div>(c) To defend the body against pathogens</div>
+                <div>(d) To filter urine</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            Boiling drinking water is a good practice because it:
+            <div class="mcq-options">
+                <div>(a) Makes the water taste better</div>
+                <div>(b) Kills disease-causing germs</div>
+                <div>(c) Adds minerals to the water</div>
+                <div>(d) Cools down the body</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            Breathing continuously in a polluted environment mostly affects the:
+            <div class="mcq-options">
+                <div>(a) Digestive system</div>
+                <div>(b) Skeletal system</div>
+                <div>(c) Respiratory system</div>
+                <div>(d) Muscular system</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            Which of the following is NOT a general method of preventing communicable diseases?
+            <div class="mcq-options">
+                <div>(a) Washing hands with soap</div>
+                <div>(b) Getting vaccinated</div>
+                <div>(c) Sharing used towels and handkerchiefs</div>
+                <div>(d) Keeping food covered</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            The female Anopheles mosquito acts as a vector for:
+            <div class="mcq-options">
+                <div>(a) Dengue</div>
+                <div>(b) Malaria</div>
+                <div>(c) Typhoid</div>
+                <div>(d) Cholera</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            (a) Define communicable diseases.<br>
+            (b) Give two examples of communicable diseases.<br>
+            (c) State one direct method of disease transmission.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            Differentiate between living in a clean environment and a polluted environment by giving any three points.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            What is immunity? Explain briefly how vaccination helps our immune system fight off diseases.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            (a) Name the pathogen (type of microbe) that causes Malaria.<br>
+            (b) What is a disease vector?<br>
+            (c) Name the specific vector responsible for transmitting Malaria.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            List any three general habits of a healthy lifestyle that help in the prevention of diseases.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

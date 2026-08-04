@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; flex-direction: column; }
+        .q-header { display: flex; justify-content: space-between; width: 100%;}
+        .q-text-group { display: flex; flex-grow: 1;}
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; margin-left: 10px; flex-shrink: 0; }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 5px;
+            margin-left: 35px;
+        }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; gap: 5px; text-align: center; }
+        }
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.15 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper consists of 40 marks divided into two sections.</li>
+                <li><strong>Section A</strong> contains 25 Multiple Choice Questions (1 mark each).</li>
+                <li><strong>Section B</strong> contains 5 Subjective Questions (3 marks each).</li>
+                <li>Write all answers clearly. Draw neat diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - Attempt all questions)</span></div>
+    
+    <script>
+        const mcqs = [
+            { q: "The primary gas needed by humans for respiration is:", opts: ["(a) Nitrogen", "(b) Oxygen", "(c) Hydrogen", "(d) Carbon dioxide"] },
+            { q: "Which of the following organs is NOT a part of the respiratory system?", opts: ["(a) Nose", "(b) Trachea", "(c) Heart", "(d) Lungs"] },
+            { q: "The fine hair inside our nose help to:", opts: ["(a) Smell better", "(b) Breathe faster", "(c) Trap dust particles", "(d) Produce mucus"] },
+            { q: "What is the common name for the trachea?", opts: ["(a) Food pipe", "(b) Windpipe", "(c) Voice box", "(d) Air sac"] },
+            { q: "The process of breathing in air is known as:", opts: ["(a) Exhalation", "(b) Digestion", "(c) Inhalation", "(d) Circulation"] },
+            { q: "The process of breathing out air is known as:", opts: ["(a) Exhalation", "(b) Inhalation", "(c) Perspiration", "(d) Respiration"] },
+            { q: "The voice box, which produces sound, is also called the:", opts: ["(a) Pharynx", "(b) Epiglottis", "(c) Trachea", "(d) Larynx"] },
+            { q: "The muscular wall separating the chest cavity from the abdomen is the:", opts: ["(a) Rib cage", "(b) Sternum", "(c) Diaphragm", "(d) Stomach"] },
+            { q: "During inhalation, the size of the chest cavity:", opts: ["(a) Decreases", "(b) Increases", "(c) Remains the same", "(d) Moves inward"] },
+            { q: "The tiny, balloon-like air sacs in the lungs are called:", opts: ["(a) Bronchi", "(b) Bronchioles", "(c) Alveoli", "(d) Capillaries"] },
+            { q: "The actual exchange of gases in the lungs takes place in the:", opts: ["(a) Nostrils", "(b) Trachea", "(c) Bronchi", "(d) Alveoli"] },
+            { q: "Which gas is exhaled out of the body in larger quantities than it was inhaled?", opts: ["(a) Oxygen", "(b) Carbon dioxide", "(c) Nitrogen", "(d) Argon"] },
+            { q: "What bony structure protects the delicate lungs from physical injury?", opts: ["(a) Skull", "(b) Pelvis", "(c) Backbone", "(d) Rib cage"] },
+            { q: "The trachea divides into two branches that enter the lungs. These are called:", opts: ["(a) Bronchi", "(b) Bronchioles", "(c) Alveoli", "(d) Pharynx"] },
+            { q: "Where does cellular respiration take place in our body?", opts: ["(a) In the blood", "(b) In the lungs", "(c) Inside the cells", "(d) In the heart"] },
+            { q: "Energy in our body is released by the breakdown of which substance?", opts: ["(a) Water", "(b) Glucose (Food)", "(c) Vitamins", "(d) Minerals"] },
+            { q: "The small flap that acts like a lid to prevent food from entering the windpipe is the:", opts: ["(a) Tongue", "(b) Tonsil", "(c) Epiglottis", "(d) Uvula"] },
+            { q: "Sneezing is a reflex action that helps to:", opts: ["(a) Inhale more oxygen", "(b) Exhale carbon dioxide", "(c) Clear the upper respiratory tract", "(d) Digest food"] },
+            { q: "The normal breathing rate of an adult human at rest is approximately:", opts: ["(a) 12-20 breaths per min", "(b) 70-80 breaths per min", "(c) 5-10 breaths per min", "(d) 40-50 breaths per min"] },
+            { q: "Which part of the blood is responsible for transporting oxygen?", opts: ["(a) Plasma", "(b) Platelets", "(c) White blood cells", "(d) Red blood cells"] },
+            { q: "Yawning usually happens when our body needs an extra supply of:", opts: ["(a) Food", "(b) Water", "(c) Oxygen", "(d) Carbon dioxide"] },
+            { q: "In which part of the respiratory tract is the air we breathe warmed and moistened?", opts: ["(a) Alveoli", "(b) Nasal cavity", "(c) Trachea", "(d) Bronchi"] },
+            { q: "The process of breaking down food without the use of oxygen is called:", opts: ["(a) Aerobic respiration", "(b) Anaerobic respiration", "(c) Breathing", "(d) Photosynthesis"] },
+            { q: "Which lung is slightly larger and has three lobes?", opts: ["(a) Left lung", "(b) Right lung", "(c) Both are exactly the same", "(d) It changes with age"] },
+            { q: "Asthma is a common disease associated with which system of the body?", opts: ["(a) Digestive system", "(b) Nervous system", "(c) Respiratory system", "(d) Circulatory system"] }
+        ];
+
+        document.write('<div>');
+        mcqs.forEach((q, index) => {
+            document.write(`
+                <div class="question-container">
+                    <div class="q-header">
+                        <div class="q-text-group">
+                            <div class="q-num">Q${index + 1}.</div>
+                            <div class="q-content">${q.q}</div>
+                        </div>
+                        <div class="q-marks">[1]</div>
+                    </div>
+                    <div class="options-grid">
+                        ${q.opts.map(opt => `<div>${opt}</div>`).join('')}
+                    </div>
+                </div>
+            `);
+        });
+        document.write('</div>');
+    </script>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions)</span></div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q26.</div>
+                <div class="q-content">Name the organs of the human respiratory system in the correct sequence, starting from the nose.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q27.</div>
+                <div class="q-content">Why is it advised to breathe through the nose rather than the mouth? Give any two reasons.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q28.</div>
+                <div class="q-content">What is the function of the rib cage in the respiratory system? How does it help during breathing?</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q29.</div>
+                <div class="q-content">State what happens to the diaphragm during inhalation and exhalation.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q30.</div>
+                <div class="q-content">Define cellular respiration. Write the word equation to show what happens during this process.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

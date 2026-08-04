@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 4vw; /* Responsive padding */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; /* Optimal base font size for A4 printing */
+            line-height: 1.4; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 75%; 
+            max-width: 550px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 15px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: clamp(18pt, 4.5vw, 24pt); /* Fluid typography */
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+        }
+        .test-name { 
+            font-size: clamp(12pt, 3vw, 14pt); 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Adapts to smaller screens */
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: clamp(9.5pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 6px 0; 
+        }
+        .exam-details span {
+            margin: 2px 5px;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: clamp(9pt, 2vw, 10pt); 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 20px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: clamp(11pt, 2.5vw, 13pt); 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 3px; 
+        }
+        .question-container { 
+            margin-bottom: 12px; 
+            display: flex; 
+            page-break-inside: avoid; /* Keeps question and options together when printing */
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 6px 15px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .option {
+            display: flex;
+            align-items: flex-start;
+        }
+        .opt-label {
+            width: 25px;
+            font-weight: normal;
+        }
+        
+        .marks-right {
+            float: right;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            page-break-inside: avoid;
+        }
+        
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 10mm; 
+                -webkit-print-color-adjust: exact; 
+                font-size: 11pt;
+            } 
+            @page { margin: 10mm; }
+            .question-container { margin-bottom: 10px; }
+            .section-header { margin-top: 15px; }
+        }
+        
+        @media screen and (max-width: 600px) {
+            body { padding: 15px; }
+            .options-grid { grid-template-columns: 1fr; } /* Stack options vertically on mobile */
+            .q-num { width: 25px; }
+            .exam-details { flex-direction: column; text-align: center; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13 (Set B)</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (MCQs) and Section B (Subjective).</li>
+                <li>Section A contains 25 Multiple Choice Questions carrying 1 mark each.</li>
+                <li>Section B contains short and long answer questions carrying a total of 15 marks.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - Attempt all - 1 Mark Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            The main function of the heart in the human body is to:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Digest food</div>
+                <div class="option"><span class="opt-label">(b)</span> Pump blood</div>
+                <div class="option"><span class="opt-label">(c)</span> Filter urine</div>
+                <div class="option"><span class="opt-label">(d)</span> Produce oxygen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            The red colour of human blood is due to the presence of a pigment called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Chlorophyll</div>
+                <div class="option"><span class="opt-label">(b)</span> Melanin</div>
+                <div class="option"><span class="opt-label">(c)</span> Haemoglobin</div>
+                <div class="option"><span class="opt-label">(d)</span> Plasma</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Which blood vessels carry oxygen-depleted (carbon dioxide-rich) blood back to the heart?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Arteries</div>
+                <div class="option"><span class="opt-label">(b)</span> Veins</div>
+                <div class="option"><span class="opt-label">(c)</span> Capillaries</div>
+                <div class="option"><span class="opt-label">(d)</span> Nerves</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            The normal resting pulse rate of a healthy adult person is generally between:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> 40 to 50 beats per minute</div>
+                <div class="option"><span class="opt-label">(b)</span> 72 to 80 beats per minute</div>
+                <div class="option"><span class="opt-label">(c)</span> 100 to 120 beats per minute</div>
+                <div class="option"><span class="opt-label">(d)</span> 10 to 20 beats per minute</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            A doctor uses which instrument to listen to the sounds of your heart?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Microscope</div>
+                <div class="option"><span class="opt-label">(b)</span> Telescope</div>
+                <div class="option"><span class="opt-label">(c)</span> Stethoscope</div>
+                <div class="option"><span class="opt-label">(d)</span> Thermometer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            What is the liquid part (fluid matrix) of the blood called?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Platelets</div>
+                <div class="option"><span class="opt-label">(b)</span> Serum</div>
+                <div class="option"><span class="opt-label">(c)</span> Lymph</div>
+                <div class="option"><span class="opt-label">(d)</span> Plasma</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            When you get a cut, blood clots and stops flowing after some time. This is due to the presence of:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Red Blood Cells</div>
+                <div class="option"><span class="opt-label">(b)</span> White Blood Cells</div>
+                <div class="option"><span class="opt-label">(c)</span> Platelets</div>
+                <div class="option"><span class="opt-label">(d)</span> Plasma</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Which organ works as a blood filter to remove waste products like urea from the body?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Lungs</div>
+                <div class="option"><span class="opt-label">(b)</span> Kidneys</div>
+                <div class="option"><span class="opt-label">(c)</span> Liver</div>
+                <div class="option"><span class="opt-label">(d)</span> Stomach</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The tube-like structure that carries urine from the kidney to the urinary bladder is the:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Urethra</div>
+                <div class="option"><span class="opt-label">(b)</span> Ureter</div>
+                <div class="option"><span class="opt-label">(c)</span> Nephron</div>
+                <div class="option"><span class="opt-label">(d)</span> Renal vein</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Sweating helps our body in:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Heating the body</div>
+                <div class="option"><span class="opt-label">(b)</span> Cooling the body</div>
+                <div class="option"><span class="opt-label">(c)</span> Digesting food</div>
+                <div class="option"><span class="opt-label">(d)</span> Absorbing sunlight</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Aquatic animals like fishes mainly excrete their cellular waste in the form of:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Urea</div>
+                <div class="option"><span class="opt-label">(b)</span> Uric acid</div>
+                <div class="option"><span class="opt-label">(c)</span> Ammonia</div>
+                <div class="option"><span class="opt-label">(d)</span> Carbon dioxide</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Birds, lizards, and insects excrete a white-coloured, semi-solid waste called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Ammonia</div>
+                <div class="option"><span class="opt-label">(b)</span> Urea</div>
+                <div class="option"><span class="opt-label">(c)</span> Uric acid</div>
+                <div class="option"><span class="opt-label">(d)</span> Guano</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The special tissue in plants responsible for transporting water and minerals from roots to leaves is:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Phloem</div>
+                <div class="option"><span class="opt-label">(b)</span> Xylem</div>
+                <div class="option"><span class="opt-label">(c)</span> Epidermis</div>
+                <div class="option"><span class="opt-label">(d)</span> Stomata</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            The special tissue in plants responsible for transporting prepared food from leaves to all parts is:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Xylem</div>
+                <div class="option"><span class="opt-label">(b)</span> Root hair</div>
+                <div class="option"><span class="opt-label">(c)</span> Phloem</div>
+                <div class="option"><span class="opt-label">(d)</span> Bark</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            The continuous evaporation of water from the surface of leaves is known as:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Respiration</div>
+                <div class="option"><span class="opt-label">(b)</span> Transpiration</div>
+                <div class="option"><span class="opt-label">(c)</span> Condensation</div>
+                <div class="option"><span class="opt-label">(d)</span> Photosynthesis</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Transpiration generates a pulling force that helps pull water to great heights in tall trees. This force is called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Gravitational pull</div>
+                <div class="option"><span class="opt-label">(b)</span> Magnetic pull</div>
+                <div class="option"><span class="opt-label">(c)</span> Suction pull</div>
+                <div class="option"><span class="opt-label">(d)</span> Frictional pull</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            Water and minerals enter the plant roots mainly through:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Stomata</div>
+                <div class="option"><span class="opt-label">(b)</span> Branches</div>
+                <div class="option"><span class="opt-label">(c)</span> Root hairs</div>
+                <div class="option"><span class="opt-label">(d)</span> Flowers</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Where is the human heart located?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> In the chest cavity, slightly tilted to the left</div>
+                <div class="option"><span class="opt-label">(b)</span> In the stomach area</div>
+                <div class="option"><span class="opt-label">(c)</span> Near the kidneys</div>
+                <div class="option"><span class="opt-label">(d)</span> In the chest cavity, exactly in the center</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            How many chambers does a normal human heart have?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Two</div>
+                <div class="option"><span class="opt-label">(b)</span> Three</div>
+                <div class="option"><span class="opt-label">(c)</span> Four</div>
+                <div class="option"><span class="opt-label">(d)</span> Six</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            The upper two chambers of the human heart are called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Ventricles</div>
+                <div class="option"><span class="opt-label">(b)</span> Atria (or Auricles)</div>
+                <div class="option"><span class="opt-label">(c)</span> Valves</div>
+                <div class="option"><span class="opt-label">(d)</span> Aortas</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            What is the purpose of the partition (septum) between the chambers of the heart?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> To mix oxygen-rich and carbon dioxide-rich blood</div>
+                <div class="option"><span class="opt-label">(b)</span> To prevent mixing of oxygen-rich and carbon dioxide-rich blood</div>
+                <div class="option"><span class="opt-label">(c)</span> To stop the heartbeat when resting</div>
+                <div class="option"><span class="opt-label">(d)</span> To create a pulse</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            Extremely thin blood vessels that connect arteries to veins in tissues are called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Capillaries</div>
+                <div class="option"><span class="opt-label">(b)</span> Aorta</div>
+                <div class="option"><span class="opt-label">(c)</span> Vena cava</div>
+                <div class="option"><span class="opt-label">(d)</span> Pulmonary veins</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            Which part of the blood helps in fighting against germs and infections?
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> RBCs</div>
+                <div class="option"><span class="opt-label">(b)</span> WBCs (White Blood Cells)</div>
+                <div class="option"><span class="opt-label">(c)</span> Platelets</div>
+                <div class="option"><span class="opt-label">(d)</span> Plasma</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            The throbbing movement caused by the flow of blood in the arteries is called:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Blood pressure</div>
+                <div class="option"><span class="opt-label">(b)</span> Heart rate</div>
+                <div class="option"><span class="opt-label">(c)</span> Pulse</div>
+                <div class="option"><span class="opt-label">(d)</span> Suction pull</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            The waste product formed continuously in the cells of our body during respiration that needs to be removed by lungs is:
+            <div class="options-grid">
+                <div class="option"><span class="opt-label">(a)</span> Oxygen</div>
+                <div class="option"><span class="opt-label">(b)</span> Urine</div>
+                <div class="option"><span class="opt-label">(c)</span> Carbon dioxide</div>
+                <div class="option"><span class="opt-label">(d)</span> Undigested food</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header" style="page-break-before: always;">SECTION B (15 Marks)<span class="marks-info">(Subjective Questions - Attempt all)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            <span class="marks-right">[2]</span>
+            What is the function of platelets in the blood? Why is this function important?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            <span class="marks-right">[2]</span>
+            Why is the transport of materials (like food, water, and oxygen) necessary in a plant or an animal? Give two basic reasons.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            <span class="marks-right">[3]</span>
+            State three main differences between arteries and veins.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            <span class="marks-right">[3]</span>
+            Name the four major organs of the human excretory system in their correct sequence. What is the specific role of the kidneys in this system?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            <span class="marks-right">[5]</span>
+            (a) What is transpiration? (1 mark)<br>
+            (b) How does transpiration help tall plants and trees? (2 marks)<br>
+            (c) Why do plants need root hairs, and how do they assist in the transportation process? (2 marks)
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

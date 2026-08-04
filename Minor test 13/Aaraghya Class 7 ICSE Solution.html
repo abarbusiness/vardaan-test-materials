@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions Minor Test 13</title>
+    
+    <!-- Load MathJax for rigorous mathematical rendering if needed -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #1a365d; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #c53030; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-transform: uppercase; font-size: 14pt; background-color: #f3f4f6; padding: 5px; border-radius: 4px; border: 1px solid #d1d5db; }
+        
+        .qa-container { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #e5e7eb; }
+        .question-row { display: flex; justify-content: space-between; align-items: flex-start; font-weight: bold; color: #1f2937; margin-bottom: 8px; }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .marks { font-weight: bold; flex-shrink: 0; white-space: nowrap; color: #b91c1c; font-size: 11pt; border: 1px solid #b91c1c; padding: 2px 6px; border-radius: 4px; }
+        
+        .solution-row { display: flex; }
+        .sol-label { font-weight: bold; width: 45px; flex-shrink: 0; color: #047857; }
+        .sol-content { flex-grow: 1; color: #374151; }
+        
+        .correct-opt { font-weight: bold; color: #047857; }
+        
+        .diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .diff-table th, .diff-table td { border: 1px solid #000; padding: 8px; text-align: left; }
+        .diff-table th { background-color: #f3f4f6; }
+        
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 15px; margin: 0; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .question-row { flex-direction: column; }
+            .marks { align-self: flex-end; margin-top: 5px; }
+            .q-text { padding-right: 0; }
+            
+            /* Responsive MathJax constraint */
+            .mjx-chtml { white-space: normal !important; word-wrap: break-word; }
+            mjx-container[jax="CHTML"][display="true"] {
+                display: block;
+                text-align: left;
+                margin: 1em 0;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .qa-container { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS: MINOR TEST 13 (CLASS 7 ICSE)</div>
+    </div>
+
+    <div class="section-header">SECTION A - OBJECTIVE SOLUTIONS</div>
+
+    <script>
+        const mcqAnswers = [
+            { q: "Who proposed the Five Kingdom system of classification?", ans: "(c) R.H. Whittaker", detail: "Robert H. Whittaker proposed the 5 kingdom classification in 1969 based on cell structure, body organization, etc." },
+            { q: "Which of the following kingdoms consists of prokaryotic organisms?", ans: "(b) Monera", detail: "Kingdom Monera comprises unicellular prokaryotes (lacking a true nucleus)." },
+            { q: "Amoeba and Paramecium belong to kingdom:", ans: "(c) Protista", detail: "They are unicellular eukaryotic organisms, hence placed in Kingdom Protista." },
+            { q: "Organisms that cannot make their own food and depend on others are called:", ans: "(b) Heterotrophs", detail: "Heterotrophs rely on other plants or animals for nutrition." },
+            { q: "The cell wall of fungi is mainly made up of:", ans: "(c) Chitin", detail: "Unlike plants which have a cellulose cell wall, fungi have cell walls made of complex sugars called chitin." },
+            { q: "Which of the following is NOT a characteristic of Kingdom Plantae?", ans: "(c) Heterotrophic", detail: "Plants possess chlorophyll and prepare their own food, hence they are autotrophic, not heterotrophic." },
+            { q: "Bacteria are placed in Kingdom:", ans: "(b) Monera", detail: "All true bacteria and cyanobacteria are prokaryotic and belong to Monera." },
+            { q: "Yeast is an example of a unicellular:", ans: "(c) Fungus", detail: "Yeast is a unique single-celled fungus belonging to Kingdom Fungi." },
+            { q: "Which kingdom includes organisms that lack a cell wall entirely?", ans: "(c) Animalia", detail: "Animal cells do not have cell walls; they only have a cell membrane." },
+            { q: "The mode of nutrition in mushrooms and bread mould is:", ans: "(c) Saprotrophic", detail: "They secrete enzymes on dead organic matter and absorb the simple nutrients." },
+            { q: "A 'prokaryotic' cell is one which lacks a:", ans: "(b) Well-defined nucleus", detail: "Pro- means primitive, karyon means nucleus. Their genetic material is not enclosed in a nuclear membrane." },
+            { q: "Which organism shows both plant-like (has chloroplast) and animal-like features?", ans: "(b) Euglena", detail: "Euglena can photosynthesize like plants but lacks a cell wall and can move like animals." },
+            { q: "Vertebrates and invertebrates are groups found under which kingdom?", ans: "(c) Animalia", detail: "These are the two major divisions of the animal kingdom based on the presence/absence of a backbone." },
+            { q: "Paramecium moves from one place to another using tiny hair-like structures called:", ans: "(c) Cilia", detail: "Cilia beat in coordination to propel the Paramecium forward in water." },
+            { q: "Ferns, mosses, and flowering plants are examples of:", ans: "(c) Plantae", detail: "They are multicellular, autotrophic eukaryotes with cellulosic cell walls." },
+            { q: "Blue-green algae (Cyanobacteria) belong to:", ans: "(a) Monera", detail: "Despite being called 'algae', they are prokaryotic bacteria." },
+            { q: "The basic and lowest unit of classification is:", ans: "(d) Species", detail: "Species is the fundamental unit of taxonomy comprising organisms capable of interbreeding." },
+            { q: "Organisms of Kingdom Protista are primarily:", ans: "(a) Unicellular and eukaryotic", detail: "Protista includes single-celled organisms that have a well-defined nucleus." },
+            { q: "Which of the following kingdoms does NOT contain multicellular organisms?", ans: "(d) Monera", detail: "Monera consists strictly of unicellular prokaryotes." },
+            { q: "The process by which green plants prepare their own food is called:", ans: "(c) Photosynthesis", detail: "Plants use sunlight, CO2, and water to synthesize glucose." },
+            { q: "A common example of Kingdom Fungi used in bakeries is:", ans: "(b) Yeast", detail: "Yeast is used for fermentation in baking bread." },
+            { q: "Organisms that absorb nutrients from dead and decaying matter are called:", ans: "(b) Saprophytes", detail: "Saprophytes like fungi play a crucial role as decomposers in nature." },
+            { q: "Amoeba captures its food with the help of false feet known as:", ans: "(c) Pseudopodia", detail: "Pseudopodia ('false feet') extend around the food particle to engulf it." },
+            { q: "Which of these is considered the highest category in biological classification?", ans: "(d) Kingdom", detail: "The hierarchy goes: Kingdom > Phylum > Class > Order > Family > Genus > Species." },
+            { q: "Lactobacillus, a bacteria used in curd making, belongs to:", ans: "(b) Monera", detail: "As a bacterium, it is a prokaryote belonging to Monera." }
+        ];
+
+        document.write('<div>');
+        mcqAnswers.forEach((item, index) => {
+            document.write(`
+                <div class="qa-container">
+                    <div class="question-row">
+                        <div class="q-text">Q${index + 1}. ${item.q}</div>
+                        <div class="marks">[1 Mark]</div>
+                    </div>
+                    <div class="solution-row">
+                        <div class="sol-label">Ans:</div>
+                        <div class="sol-content">
+                            <span class="correct-opt">${item.ans}</span><br>
+                            <em>Explanation:</em> ${item.detail}
+                        </div>
+                    </div>
+                </div>
+            `);
+        });
+        document.write('</div>');
+    </script>
+
+    <div class="section-header">SECTION B - SUBJECTIVE SOLUTIONS</div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text">Q26. State three main characteristic features of Kingdom Monera. Give one example.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="sol-label">Ans:</div>
+            <div class="sol-content">
+                <strong>Characteristic features of Kingdom Monera (Any three):</strong>
+                <ol style="margin-top: 5px;">
+                    <li>They are unicellular (single-celled) organisms.</li>
+                    <li>They are <strong>prokaryotic</strong>, meaning they lack a well-defined true nucleus; nuclear material is scattered in the cytoplasm.</li>
+                    <li>They lack membrane-bound cell organelles like mitochondria, chloroplasts, etc.</li>
+                    <li>Some are autotrophic (like blue-green algae) while most are heterotrophic.</li>
+                </ol>
+                <strong>Example:</strong> Bacteria (e.g., <em>Lactobacillus</em>) or Blue-green algae. <br>
+                <em>(Marking Scheme: 0.5 mark for each characteristic = 1.5M, 0.5 mark for prokaryotic term = 0.5M, 1 mark for correct example.)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text">Q27. Differentiate between Kingdom Plantae and Kingdom Animalia. (Write any three differences).</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="sol-label">Ans:</div>
+            <div class="sol-content">
+                <table class="diff-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Kingdom Plantae</th>
+                        <th>Kingdom Animalia</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Cell Wall</strong></td>
+                        <td>Cells possess a rigid cell wall made of cellulose.</td>
+                        <td>Cells lack a cell wall; only a cell membrane is present.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nutrition</strong></td>
+                        <td>They are mostly autotrophic (make their own food via photosynthesis).</td>
+                        <td>They are heterotrophic (depend on others for food).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Locomotion</strong></td>
+                        <td>They are stationary and rooted in one place.</td>
+                        <td>Most animals can move freely from one place to another.</td>
+                    </tr>
+                </table>
+                <em>(Marking Scheme: 1 mark for each valid difference correctly contrasting both sides. Total = 3 Marks.)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text">Q28. Why are Fungi not classified under Kingdom Plantae? State two scientific reasons. Name one example of a fungus.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="sol-label">Ans:</div>
+            <div class="sol-content">
+                <strong>Reasons Fungi are excluded from Plantae:</strong>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Lack of Chlorophyll:</strong> Fungi do not possess chlorophyll and cannot perform photosynthesis. Therefore, their mode of nutrition is heterotrophic (saprophytic), whereas plants are autotrophic.</li>
+                    <li><strong>Cell Wall Composition:</strong> The cell wall of fungi is made of a tough complex sugar called <strong>chitin</strong>, unlike plants whose cell walls are primarily made of cellulose.</li>
+                </ul>
+                <strong>Example:</strong> Mushroom / Bread mould (Rhizopus) / Yeast.<br>
+                <em>(Marking Scheme: 1 Mark for lack of chlorophyll, 1 Mark for Chitin cell wall, 1 Mark for valid example.)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text">Q29. Name all the five kingdoms of classification in order. Write one distinct characteristic of Kingdom Protista.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="sol-label">Ans:</div>
+            <div class="sol-content">
+                <strong>The Five Kingdoms (Proposed by R.H. Whittaker):</strong>
+                <ol style="margin-top: 5px;">
+                    <li>Kingdom Monera</li>
+                    <li>Kingdom Protista</li>
+                    <li>Kingdom Fungi</li>
+                    <li>Kingdom Plantae</li>
+                    <li>Kingdom Animalia</li>
+                </ol>
+                <strong>Characteristic of Kingdom Protista:</strong> They are predominantly <em>unicellular eukaryotic</em> organisms (they have a single cell with a well-defined true nucleus).<br>
+                <em>(Marking Scheme: 2 Marks for correctly listing all 5 kingdoms, 1 Mark for the correct characteristic of Protista.)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text">Q30. What are 'Prokaryotes' and 'Eukaryotes'? Give one example of each from the Five Kingdom classification.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="sol-label">Ans:</div>
+            <div class="sol-content">
+                <p><strong>Prokaryotes:</strong> These are primitive organisms whose cells do not have a well-defined nucleus. Their genetic material is not enclosed by a nuclear membrane. <br>
+                <em>Example:</em> Bacteria (belongs to Kingdom Monera).</p>
+                
+                <p><strong>Eukaryotes:</strong> These are organisms that have advanced cells with a well-defined true nucleus enclosed in a nuclear membrane, along with membrane-bound organelles.<br>
+                <em>Example:</em> Amoeba (Protista) OR Mango tree (Plantae) OR Human (Animalia).</p>
+                
+                <em>(Marking Scheme: 1 Mark for correct definition of Prokaryote + 0.5 for example. 1 Mark for definition of Eukaryote + 0.5 for example. Total = 3 Marks.)</em>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

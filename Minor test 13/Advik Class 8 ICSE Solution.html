@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #2E7D32; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #f0f0f0; padding: 5px; }
+        
+        /* Solution specific styles */
+        .sol-container { 
+            margin-bottom: 20px; 
+            padding: 10px; 
+            border: 1px dashed #ccc; 
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        .sol-header { 
+            display: flex; 
+            justify-content: space-between; 
+            border-bottom: 1px solid #eee; 
+            margin-bottom: 8px; 
+            padding-bottom: 5px;
+            align-items: flex-start;
+        }
+        .q-text { font-weight: bold; color: #333; flex-grow: 1; padding-right: 15px; text-align: justify;}
+        .marks-badge { 
+            background-color: #000; 
+            color: #fff; 
+            padding: 2px 8px; 
+            border-radius: 12px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .answer-text { color: #1565C0; margin-top: 5px; text-align: justify; }
+        .marking-scheme { font-size: 10pt; color: #d32f2f; margin-top: 5px; font-style: italic; }
+        .mcq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .mcq-item { border-bottom: 1px dotted #ccc; padding: 4px 0; display: flex; justify-content: space-between;}
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 800px) {
+            body { width: 100%; padding: 10px; margin: 0; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-wrap: wrap; gap: 5px; justify-content: center; }
+            .exam-details span { flex: 1 1 45%; text-align: center; }
+            .mcq-grid { grid-template-columns: 1fr; }
+            .sol-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .math-equation { overflow-x: auto; display: block; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 13 - DETAILED SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A : MULTIPLE CHOICE QUESTIONS (25 Marks)</div>
+    
+    <div class="sol-container">
+        <div class="mcq-grid">
+            <div class="mcq-item"><b>Q1.</b> (b) The Sun <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q2.</b> (c) Temperature <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q3.</b> (c) Producers <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q4.</b> (c) Herbivores <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q5.</b> (b) Food chain <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q6.</b> (a) Food web <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q7.</b> (d) Decomposers <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q8.</b> (c) Testis <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q9.</b> (d) Ovary <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q10.</b> (b) Ovulation <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q11.</b> (c) Fertilization <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q12.</b> (b) Fallopian tube <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q13.</b> (c) Zygote <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q14.</b> (c) Adolescence <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q15.</b> (b) Testosterone <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q16.</b> (a) Estrogen <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q17.</b> (c) Uterus <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q18.</b> (b) Menopause <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q19.</b> (c) Menarche <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q20.</b> (c) Grasshopper <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q21.</b> (a) Ecosystem <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q22.</b> (b) Scavenger <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q23.</b> (c) Chromosomes <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q24.</b> (c) \( 23 \) pairs <span class="marks-badge">[1M]</span></div>
+            <div class="mcq-item"><b>Q25.</b> (c) Decomposers <span class="marks-badge">[1M]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B : SUBJECTIVE QUESTIONS (15 Marks)</div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="q-text">26. Define an ecosystem. Name its two major components with one example for each.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-text">
+            <strong>Answer:</strong><br>
+            <strong>Ecosystem:</strong> An ecosystem is a self-sustaining structural and functional unit of the biosphere consisting of a community of living beings and the physical environment, both interacting and exchanging materials with each other.<br><br>
+            <strong>Major Components:</strong>
+            <ol>
+                <li><strong>Biotic (Living) Components:</strong> e.g., Plants, Animals, Microorganisms.</li>
+                <li><strong>Abiotic (Non-living) Components:</strong> e.g., Sunlight, Water, Soil, Temperature.</li>
+            </ol>
+        </div>
+        <div class="marking-scheme">[Marking Scheme: Definition: 1 Mark | Naming components: 1 Mark | Examples: 1 Mark]</div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="q-text">27. What is a food web? Briefly explain how a food web is different from a food chain.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-text">
+            <strong>Answer:</strong><br>
+            <strong>Food Web:</strong> A complex network of many interconnected food chains existing in an ecosystem is called a food web.<br><br>
+            <strong>Difference:</strong>
+            <ul>
+                <li><strong>Food Chain:</strong> It is a simple, straight, linear pathway showing how energy is passed from one organism to another (e.g., Grass \(\rightarrow\) Grasshopper \(\rightarrow\) Frog).</li>
+                <li><strong>Food Web:</strong> It consists of multiple interconnecting food chains, showing multiple alternative pathways for energy flow, making the ecosystem more stable.</li>
+            </ul>
+        </div>
+        <div class="marking-scheme">[Marking Scheme: Definition of Food Web: 1.5 Marks | Clear difference/comparison: 1.5 Marks]</div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="q-text">28. Name the primary male and primary female reproductive organs in human beings. What are the respective gametes produced by them?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-text">
+            <strong>Answer:</strong><br>
+            <strong>Primary Male Reproductive Organ:</strong> Testis (plural: Testes).<br>
+            <strong>Male Gamete Produced:</strong> Sperm (Spermatozoa).<br><br>
+            <strong>Primary Female Reproductive Organ:</strong> Ovary (plural: Ovaries).<br>
+            <strong>Female Gamete Produced:</strong> Egg or Ovum.
+        </div>
+        <div class="marking-scheme">[Marking Scheme: Male organ & gamete: 1.5 Marks | Female organ & gamete: 1.5 Marks]</div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="q-text">29. Define the term fertilization. What is the product of fertilization called? Where exactly does this process occur in the human female body?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-text">
+            <strong>Answer:</strong><br>
+            <strong>Fertilization:</strong> The biological process of fusion of a male gamete (sperm) with a female gamete (egg/ovum) to form a single cell is called fertilization.<br>
+            <strong>Product of Fertilization:</strong> The single fused cell formed is called a <strong>Zygote</strong>.<br>
+            <strong>Site of Fertilization:</strong> In human females, fertilization naturally takes place inside the <strong>Fallopian tube (Oviduct)</strong>.
+        </div>
+        <div class="marking-scheme">[Marking Scheme: Definition: 1 Mark | Product (Zygote): 1 Mark | Site (Fallopian tube): 1 Mark]</div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="q-text">30. What do you understand by the term 'puberty'? Mention any two physical changes that occur specifically in boys during puberty.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-text">
+            <strong>Answer:</strong><br>
+            <strong>Puberty:</strong> It is the stage in life when the reproductive organs reach maturity, begin to function, and secondary sexual characteristics develop, making the individual capable of reproduction.<br><br>
+            <strong>Changes in Boys during Puberty (Any two):</strong>
+            <ul>
+                <li>Sudden increase in height and broadening of shoulders.</li>
+                <li>Deepening or cracking of the voice (due to enlargement of the voice box/Adam's apple).</li>
+                <li>Growth of facial hair (beard and moustaches) and body hair.</li>
+                <li>Development and maturation of reproductive organs (testes begin producing sperm).</li>
+            </ul>
+        </div>
+        <div class="marking-scheme">[Marking Scheme: Definition of Puberty: 1 Mark | Any two correct changes in boys: 1 Mark each]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

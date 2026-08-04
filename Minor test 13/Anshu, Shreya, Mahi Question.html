@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 5px;
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                margin: 0;
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .options-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science (Biology - Life Processes)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> consists of 25 Multiple Choice Questions carrying 1 mark each.</li>
+                <li><strong>Section B</strong> consists of 5 subjective questions carrying 3 marks each.</li>
+                <li><strong>Section C</strong> consists of 2 subjective questions carrying 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Autotrophic nutrition requires:
+            <div class="options-grid">
+                <div>(a) Carbon dioxide and water</div>
+                <div>(b) Chlorophyll</div>
+                <div>(c) Sunlight</div>
+                <div>(d) All of the above</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            The breakdown of pyruvate to give carbon dioxide, water and energy takes place in:
+            <div class="options-grid">
+                <div>(a) Cytoplasm</div>
+                <div>(b) Mitochondria</div>
+                <div>(c) Chloroplast</div>
+                <div>(d) Nucleus</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            The xylem in plants is responsible for:
+            <div class="options-grid">
+                <div>(a) Transport of water</div>
+                <div>(b) Transport of food</div>
+                <div>(c) Transport of amino acids</div>
+                <div>(d) Transport of oxygen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            The kidneys in human beings are a part of the system for:
+            <div class="options-grid">
+                <div>(a) Nutrition</div>
+                <div>(b) Respiration</div>
+                <div>(c) Excretion</div>
+                <div>(d) Transportation</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The site of complete digestion of carbohydrates, proteins, and fats is the:
+            <div class="options-grid">
+                <div>(a) Stomach</div>
+                <div>(b) Small intestine</div>
+                <div>(c) Large intestine</div>
+                <div>(d) Liver</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Oxygen liberated during photosynthesis comes from:
+            <div class="options-grid">
+                <div>(a) Water</div>
+                <div>(b) Chlorophyll</div>
+                <div>(c) Carbon dioxide</div>
+                <div>(d) Glucose</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The opening and closing of the stomatal pore depends upon:
+            <div class="options-grid">
+                <div>(a) Oxygen</div>
+                <div>(b) Temperature</div>
+                <div>(c) Water in guard cells</div>
+                <div>(d) Concentration of CO<sub>2</sub> in stomata</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Which enzyme is responsible for the digestion of starch in the human mouth?
+            <div class="options-grid">
+                <div>(a) Pepsin</div>
+                <div>(b) Trypsin</div>
+                <div>(c) Salivary amylase</div>
+                <div>(d) Lipase</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Rings of cartilage are present in the trachea to:
+            <div class="options-grid">
+                <div>(a) Filter the air</div>
+                <div>(b) Prevent it from collapsing when there is less air in it</div>
+                <div>(c) Produce sound</div>
+                <div>(d) Trap dust particles</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Anaerobic respiration in human muscle cells during rigorous exercise produces:
+            <div class="options-grid">
+                <div>(a) Lactic acid and energy</div>
+                <div>(b) Ethanol, carbon dioxide and energy</div>
+                <div>(c) Water and energy</div>
+                <div>(d) Glucose and oxygen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Which blood vessel carries oxygenated blood from the lungs to the heart?
+            <div class="options-grid">
+                <div>(a) Pulmonary artery</div>
+                <div>(b) Pulmonary vein</div>
+                <div>(c) Vena cava</div>
+                <div>(d) Aorta</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            The instrument used to measure blood pressure is:
+            <div class="options-grid">
+                <div>(a) Barometer</div>
+                <div>(b) Sphygmomanometer</div>
+                <div>(c) Thermometer</div>
+                <div>(d) Stethoscope</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The filtration units of the kidneys are called:
+            <div class="options-grid">
+                <div>(a) Ureters</div>
+                <div>(b) Urethra</div>
+                <div>(c) Neurons</div>
+                <div>(d) Nephrons</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Translocation of soluble products of photosynthesis in plants occurs through:
+            <div class="options-grid">
+                <div>(a) Xylem</div>
+                <div>(b) Phloem</div>
+                <div>(c) Cortex</div>
+                <div>(d) Pith</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            The artificial kidney works on the principle of:
+            <div class="options-grid">
+                <div>(a) Osmosis</div>
+                <div>(b) Dialysis</div>
+                <div>(c) Diffusion</div>
+                <div>(d) Active transport</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Which component of blood helps in the clotting of blood at the site of an injury?
+            <div class="options-grid">
+                <div>(a) Red Blood Cells</div>
+                <div>(b) White Blood Cells</div>
+                <div>(c) Platelets</div>
+                <div>(d) Plasma</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            The inner lining of the stomach is protected from the action of hydrochloric acid by:
+            <div class="options-grid">
+                <div>(a) Pepsin</div>
+                <div>(b) Mucus</div>
+                <div>(c) Bile</div>
+                <div>(d) Trypsin</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Which part of the alimentary canal receives bile from the liver?
+            <div class="options-grid">
+                <div>(a) Stomach</div>
+                <div>(b) Small intestine</div>
+                <div>(c) Large intestine</div>
+                <div>(d) Oesophagus</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            The cellular energy currency for most cellular processes is:
+            <div class="options-grid">
+                <div>(a) ATP</div>
+                <div>(b) ADP</div>
+                <div>(c) AMP</div>
+                <div>(d) Glucose</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            In plants, the loss of water in the form of vapour from the aerial parts is called:
+            <div class="options-grid">
+                <div>(a) Translocation</div>
+                <div>(b) Transpiration</div>
+                <div>(c) Guttation</div>
+                <div>(d) Evaporation</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            Single circulation, i.e., blood flows through the heart only once during one cycle of passage through the body, is exhibited by:
+            <div class="options-grid">
+                <div>(a) Labeo, Chameleon, Salamander</div>
+                <div>(b) Hippocampus, Exocoetus, Anabas</div>
+                <div>(c) Hyla, Rana, Draco</div>
+                <div>(d) Whale, Dolphin, Turtle</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            What ensures that blood does not flow backwards when the atria or ventricles contract?
+            <div class="options-grid">
+                <div>(a) Thick muscular walls</div>
+                <div>(b) Valves</div>
+                <div>(c) Thin walls of atria</div>
+                <div>(d) Septum</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            The end product of protein digestion is:
+            <div class="options-grid">
+                <div>(a) Glucose</div>
+                <div>(b) Fatty acids</div>
+                <div>(c) Amino acids</div>
+                <div>(d) Glycerol</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            Which of the following organisms shows a parasitic mode of nutrition?
+            <div class="options-grid">
+                <div>(a) Amoeba</div>
+                <div>(b) Mushroom</div>
+                <div>(c) Cuscuta</div>
+                <div>(d) Green plants</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            The respiratory pigment in human beings is:
+            <div class="options-grid">
+                <div>(a) Carotene</div>
+                <div>(b) Chlorophyll</div>
+                <div>(c) Haemoglobin</div>
+                <div>(d) Mitochondria</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            Differentiate between autotrophic nutrition and heterotrophic nutrition. Give one example of each.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            What are the differences between aerobic and anaerobic respiration? Name some organisms that use the anaerobic mode of respiration.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            Describe the structure and functioning of nephrons in brief.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            Explain the mechanism of breathing in humans.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            Why is it necessary to separate oxygenated and deoxygenated blood in mammals and birds?
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - Attempt all questions - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">31.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Draw a neat and properly labelled diagram of the human heart showing the internal structure. (3 Marks)</div>
+            <div class="sub-question">(b) Explain the process of double circulation in the human body. Why is it important? (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">32.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Write the balanced chemical equation for the process of photosynthesis. (1 Mark)</div>
+            <div class="sub-question">(b) What are the three main events that occur during the process of photosynthesis? (3 Marks)</div>
+            <div class="sub-question">(c) How do desert plants take up carbon dioxide and perform photosynthesis? (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • All the Best!</div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 13</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase; }
+        
+        .exam-details { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .exam-details span { margin: 2px 5px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; }
+        
+        .question-container { margin-bottom: 12px; display: flex; align-items: flex-start; break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px; margin-bottom: 10px; }
+        .option { display: flex; }
+        .opt-label { font-weight: bold; margin-right: 5px; }
+        
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { width: 100%; min-height: auto; padding: 15px; margin: 0; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; text-align: center; align-items: center; }
+            .options-grid { grid-template-columns: 1fr; gap: 2px; }
+            .watermark { width: 90%; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .options-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 13</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Biology (Science)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (Objective) and Section B (Subjective).</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Topic Covered: Five Kingdom Classification.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+
+    <div class="question-container"><div class="q-num">1.</div><div class="q-content">Who proposed the Five Kingdom system of classification?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Carolus Linnaeus</div><div class="option"><span class="opt-label">(b)</span> Robert Hooke</div><div class="option"><span class="opt-label">(c)</span> R.H. Whittaker</div><div class="option"><span class="opt-label">(d)</span> Louis Pasteur</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">2.</div><div class="q-content">Which of the following kingdoms consists of prokaryotic organisms?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Protista</div><div class="option"><span class="opt-label">(b)</span> Monera</div><div class="option"><span class="opt-label">(c)</span> Fungi</div><div class="option"><span class="opt-label">(d)</span> Plantae</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">3.</div><div class="q-content">Amoeba and Paramecium belong to kingdom:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Monera</div><div class="option"><span class="opt-label">(b)</span> Fungi</div><div class="option"><span class="opt-label">(c)</span> Protista</div><div class="option"><span class="opt-label">(d)</span> Animalia</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">4.</div><div class="q-content">Organisms that cannot make their own food and depend on others are called:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Autotrophs</div><div class="option"><span class="opt-label">(b)</span> Heterotrophs</div><div class="option"><span class="opt-label">(c)</span> Producers</div><div class="option"><span class="opt-label">(d)</span> Phototrophs</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">5.</div><div class="q-content">The cell wall of fungi is mainly made up of:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Cellulose</div><div class="option"><span class="opt-label">(b)</span> Lignin</div><div class="option"><span class="opt-label">(c)</span> Chitin</div><div class="option"><span class="opt-label">(d)</span> Peptidoglycan</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">6.</div><div class="q-content">Which of the following is NOT a characteristic of Kingdom Plantae?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Multicellular</div><div class="option"><span class="opt-label">(b)</span> Autotrophic</div><div class="option"><span class="opt-label">(c)</span> Heterotrophic</div><div class="option"><span class="opt-label">(d)</span> Cell wall made of cellulose</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">7.</div><div class="q-content">Bacteria are placed in Kingdom:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Protista</div><div class="option"><span class="opt-label">(b)</span> Monera</div><div class="option"><span class="opt-label">(c)</span> Fungi</div><div class="option"><span class="opt-label">(d)</span> Plantae</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">8.</div><div class="q-content">Yeast is an example of a unicellular:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Bacterium</div><div class="option"><span class="opt-label">(b)</span> Protist</div><div class="option"><span class="opt-label">(c)</span> Fungus</div><div class="option"><span class="opt-label">(d)</span> Plant</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">9.</div><div class="q-content">Which kingdom includes organisms that lack a cell wall entirely?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Fungi</div><div class="option"><span class="opt-label">(b)</span> Protista</div><div class="option"><span class="opt-label">(c)</span> Animalia</div><div class="option"><span class="opt-label">(d)</span> Plantae</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">10.</div><div class="q-content">The mode of nutrition in mushrooms and bread mould is:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Autotrophic</div><div class="option"><span class="opt-label">(b)</span> Parasitic</div><div class="option"><span class="opt-label">(c)</span> Saprotrophic</div><div class="option"><span class="opt-label">(d)</span> Holozoic</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">11.</div><div class="q-content">A 'prokaryotic' cell is one which lacks a:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Cell membrane</div><div class="option"><span class="opt-label">(b)</span> Well-defined nucleus</div><div class="option"><span class="opt-label">(c)</span> Cytoplasm</div><div class="option"><span class="opt-label">(d)</span> Ribosome</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">12.</div><div class="q-content">Which organism shows both plant-like (has chloroplast) and animal-like features?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Amoeba</div><div class="option"><span class="opt-label">(b)</span> Euglena</div><div class="option"><span class="opt-label">(c)</span> Paramecium</div><div class="option"><span class="opt-label">(d)</span> Yeast</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">13.</div><div class="q-content">Vertebrates and invertebrates are groups found under which kingdom?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Plantae</div><div class="option"><span class="opt-label">(b)</span> Protista</div><div class="option"><span class="opt-label">(c)</span> Animalia</div><div class="option"><span class="opt-label">(d)</span> Monera</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">14.</div><div class="q-content">Paramecium moves from one place to another using tiny hair-like structures called:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Pseudopodia</div><div class="option"><span class="opt-label">(b)</span> Flagella</div><div class="option"><span class="opt-label">(c)</span> Cilia</div><div class="option"><span class="opt-label">(d)</span> Tentacles</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">15.</div><div class="q-content">Ferns, mosses, and flowering plants are examples of:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Fungi</div><div class="option"><span class="opt-label">(b)</span> Monera</div><div class="option"><span class="opt-label">(c)</span> Plantae</div><div class="option"><span class="opt-label">(d)</span> Animalia</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">16.</div><div class="q-content">Blue-green algae (Cyanobacteria) belong to:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Monera</div><div class="option"><span class="opt-label">(b)</span> Protista</div><div class="option"><span class="opt-label">(c)</span> Plantae</div><div class="option"><span class="opt-label">(d)</span> Fungi</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">17.</div><div class="q-content">The basic and lowest unit of classification is:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Phylum</div><div class="option"><span class="opt-label">(b)</span> Class</div><div class="option"><span class="opt-label">(c)</span> Genus</div><div class="option"><span class="opt-label">(d)</span> Species</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">18.</div><div class="q-content">Organisms of Kingdom Protista are primarily:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Unicellular and eukaryotic</div><div class="option"><span class="opt-label">(b)</span> Multicellular and prokaryotic</div><div class="option"><span class="opt-label">(c)</span> Unicellular and prokaryotic</div><div class="option"><span class="opt-label">(d)</span> Multicellular and eukaryotic</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">19.</div><div class="q-content">Which of the following kingdoms does NOT contain multicellular organisms?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Animalia</div><div class="option"><span class="opt-label">(b)</span> Plantae</div><div class="option"><span class="opt-label">(c)</span> Fungi</div><div class="option"><span class="opt-label">(d)</span> Monera</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">20.</div><div class="q-content">The process by which green plants prepare their own food is called:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Respiration</div><div class="option"><span class="opt-label">(b)</span> Transpiration</div><div class="option"><span class="opt-label">(c)</span> Photosynthesis</div><div class="option"><span class="opt-label">(d)</span> Digestion</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">21.</div><div class="q-content">A common example of Kingdom Fungi used in bakeries is:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Amoeba</div><div class="option"><span class="opt-label">(b)</span> Yeast</div><div class="option"><span class="opt-label">(c)</span> Lactobacillus</div><div class="option"><span class="opt-label">(d)</span> Spirogyra</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">22.</div><div class="q-content">Organisms that absorb nutrients from dead and decaying matter are called:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Parasites</div><div class="option"><span class="opt-label">(b)</span> Saprophytes</div><div class="option"><span class="opt-label">(c)</span> Autotrophs</div><div class="option"><span class="opt-label">(d)</span> Carnivores</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">23.</div><div class="q-content">Amoeba captures its food with the help of false feet known as:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Cilia</div><div class="option"><span class="opt-label">(b)</span> Flagella</div><div class="option"><span class="opt-label">(c)</span> Pseudopodia</div><div class="option"><span class="opt-label">(d)</span> Mycelium</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">24.</div><div class="q-content">Which of these is considered the highest category in biological classification?<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Species</div><div class="option"><span class="opt-label">(b)</span> Genus</div><div class="option"><span class="opt-label">(c)</span> Order</div><div class="option"><span class="opt-label">(d)</span> Kingdom</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">25.</div><div class="q-content">Lactobacillus, a bacteria used in curd making, belongs to:<div class="options-grid"><div class="option"><span class="opt-label">(a)</span> Protista</div><div class="option"><span class="opt-label">(b)</span> Monera</div><div class="option"><span class="opt-label">(c)</span> Fungi</div><div class="option"><span class="opt-label">(d)</span> Animalia</div></div></div></div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            State three main characteristic features of Kingdom Monera. Give one example.
+            <div style="text-align: right; font-weight: bold; font-size: 10pt;">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            Differentiate between Kingdom Plantae and Kingdom Animalia. (Write any three differences).
+            <div style="text-align: right; font-weight: bold; font-size: 10pt;">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            Why are Fungi not classified under Kingdom Plantae? State two scientific reasons. Name one example of a fungus.
+            <div style="text-align: right; font-weight: bold; font-size: 10pt;">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            Name all the five kingdoms of classification in order. Write one distinct characteristic of Kingdom Protista.
+            <div style="text-align: right; font-weight: bold; font-size: 10pt;">[3]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            What are 'Prokaryotes' and 'Eukaryotes'? Give one example of each from the Five Kingdom classification.
+            <div style="text-align: right; font-weight: bold; font-size: 10pt;">[3]</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

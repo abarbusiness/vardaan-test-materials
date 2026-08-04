@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    
+    <!-- MathJax for rendering equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%;
+            max-width: 600px; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a5276; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #b03a2e;
+        }
+        .solution-container { 
+            margin-bottom: 20px; 
+            padding-bottom: 15px; 
+            border-bottom: 1px dashed #ccc;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%; 
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .q-text-group { display: flex; flex-grow: 1; }
+        .q-num { width: 40px; flex-shrink: 0; color: #333;}
+        .q-content { flex-grow: 1; color: #333;}
+        .q-marks { margin-left: 10px; flex-shrink: 0; color: #c0392b;}
+        
+        .ans-block {
+            margin-left: 40px;
+            color: #196f3d;
+        }
+        .ans-label {
+            font-weight: bold;
+            color: #196f3d;
+        }
+        
+        /* Table for differences */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #196f3d;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .math-scroll {
+            overflow-x: auto;
+            padding: 5px 0;
+        }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; gap: 5px; text-align: center; }
+            .ans-block { margin-left: 10px; }
+            .q-num { width: 30px; }
+        }
+        @media print { body { width: 100%; max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTION KEY: Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks) - Answer Key</div>
+    
+    <script>
+        const mcqSolutions = [
+            { a: "(b) Oxygen", exp: "Humans require oxygen to break down food and release energy." },
+            { a: "(c) Heart", exp: "The heart is a part of the circulatory system, not the respiratory system." },
+            { a: "(c) Trap dust particles", exp: "Nasal hair acts as a filter to stop dust from entering the lungs." },
+            { a: "(b) Windpipe", exp: "The trachea is a tube that carries air, commonly called the windpipe." },
+            { a: "(c) Inhalation", exp: "Drawing air into the lungs is called inhalation." },
+            { a: "(a) Exhalation", exp: "Pushing air out of the lungs is called exhalation." },
+            { a: "(d) Larynx", exp: "The larynx contains vocal cords that vibrate to produce sound." },
+            { a: "(c) Diaphragm", exp: "It is a dome-shaped muscle located at the base of the chest cavity." },
+            { a: "(b) Increases", exp: "The chest cavity expands to make room for the incoming air." },
+            { a: "(c) Alveoli", exp: "Alveoli are millions of tiny air sacs at the end of the bronchioles." },
+            { a: "(d) Alveoli", exp: "Oxygen enters the blood, and carbon dioxide leaves the blood in the alveoli." },
+            { a: "(b) Carbon dioxide", exp: "Carbon dioxide is a waste product of cellular respiration." },
+            { a: "(d) Rib cage", exp: "The rib cage forms a bony shield around the heart and lungs." },
+            { a: "(a) Bronchi", exp: "The trachea splits into a right and left bronchus." },
+            { a: "(c) Inside the cells", exp: "Respiration is a cellular process happening in all living cells." },
+            { a: "(b) Glucose (Food)", exp: "Glucose is broken down to release stored chemical energy." },
+            { a: "(c) Epiglottis", exp: "It covers the windpipe during swallowing so we don't choke." },
+            { a: "(c) Clear the upper respiratory tract", exp: "It forcefully expels irritants and dust from the nasal cavity." },
+            { a: "(a) 12-20 breaths per min", exp: "This is the normal, healthy breathing rate for an adult." },
+            { a: "(d) Red blood cells", exp: "RBCs contain a pigment called hemoglobin that binds to oxygen." },
+            { a: "(c) Oxygen", exp: "A deep yawn brings a large gulp of oxygen into the lungs." },
+            { a: "(b) Nasal cavity", exp: "Mucus and blood vessels in the nasal cavity warm and moisten the air." },
+            { a: "(b) Anaerobic respiration", exp: "Anaerobic means 'without air' (or without oxygen)." },
+            { a: "(b) Right lung", exp: "The right lung is larger; the left lung has a notch for the heart." },
+            { a: "(c) Respiratory system", exp: "Asthma causes narrowing and swelling of the airways in the lungs." }
+        ];
+
+        document.write('<div style="display: flex; flex-wrap: wrap; gap: 10px;">');
+        mcqSolutions.forEach((sol, index) => {
+            document.write(`
+                <div style="width: 100%; border-bottom: 1px dotted #eaeaea; padding-bottom: 5px;">
+                    <div style="display:flex; justify-content: space-between;">
+                        <div><strong>Q${index + 1}.</strong> ${sol.a}</div>
+                        <div class="q-marks">[1]</div>
+                    </div>
+                    <div style="font-size: 10.5pt; color: #555; margin-left: 28px;"><em>Reason: ${sol.exp}</em></div>
+                </div>
+            `);
+        });
+        document.write('</div>');
+    </script>
+
+    <div class="section-header">SECTION B (15 Marks) - Detailed Solutions</div>
+    
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q26.</div>
+                <div class="q-content">Name the organs of the human respiratory system in the correct sequence, starting from the nose.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            The organs of the human respiratory system in the correct sequence are: <br>
+            <strong>Nose (Nostrils/Nasal cavity) &rarr; Pharynx &rarr; Larynx &rarr; Trachea &rarr; Bronchi &rarr; Bronchioles &rarr; Alveoli (Lungs).</strong><br>
+            <em>(Marking Scheme: 0.5 marks for each correct organ in the sequence.)</em>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q27.</div>
+                <div class="q-content">Why is it advised to breathe through the nose rather than the mouth? Give any two reasons.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            It is advised to breathe through the nose because:<br>
+            1. <strong>Filtration:</strong> The fine hair and mucus present inside the nasal cavity trap dust particles and germs, preventing them from entering the lungs. [1.5 Marks]<br>
+            2. <strong>Warming and Moistening:</strong> The inner lining of the nose warms and moistens the inhaled air, making it suitable for the delicate lungs. Breathing through the mouth bypasses these protective mechanisms. [1.5 Marks]
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q28.</div>
+                <div class="q-content">What is the function of the rib cage in the respiratory system? How does it help during breathing?</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Function:</strong> The primary function of the rib cage is to protect the delicate respiratory organs, specifically the lungs, from physical injury. [1.5 Marks]<br><br>
+            <strong>Role during breathing:</strong> The rib cage expands outwards and upwards during inhalation to increase the space in the chest cavity (allowing lungs to fill with air). During exhalation, it moves inwards and downwards, helping to push the air out. [1.5 Marks]
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q29.</div>
+                <div class="q-content">State what happens to the diaphragm during inhalation and exhalation.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <ul>
+                <li><strong>During Inhalation:</strong> The diaphragm muscles contract, and it moves downwards (flattens). This increases the volume of the chest cavity, allowing air to rush into the lungs. [1.5 Marks]</li>
+                <li><strong>During Exhalation:</strong> The diaphragm muscles relax, and it moves upwards back to its original dome shape. This decreases the volume of the chest cavity, pushing air out of the lungs. [1.5 Marks]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text-group">
+                <div class="q-num">Q30.</div>
+                <div class="q-content">Define cellular respiration. Write the word equation to show what happens during this process.</div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Definition:</strong> Cellular respiration is the chemical process by which food (glucose) is broken down in the cells of the body with the help of oxygen to release energy, along with carbon dioxide and water as by-products. [1.5 Marks]<br><br>
+            <strong>Word Equation:</strong> [1.5 Marks]
+            <div class="math-scroll">
+                $$ \text{Glucose} + \text{Oxygen} \xrightarrow{} \text{Carbon dioxide} + \text{Water} + \text{Energy} $$
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

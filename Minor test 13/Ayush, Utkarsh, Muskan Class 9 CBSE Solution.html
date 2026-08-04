@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- Polyfill and MathJax for rendering scientific/math notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* Responsive base styling */
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: #e9ecef; 
+            margin: 0; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+        
+        .paper-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20mm;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #28a745; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #1a1a1a;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            color: #28a745;
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            flex-wrap: wrap;
+        }
+        .exam-details span { margin: 2px 10px; }
+
+        /* Q/A Formatting */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            font-size: 14pt; 
+            background-color: #f8f9fa;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .qa-block {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .question-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks {
+            flex-shrink: 0;
+            color: #d9534f;
+            font-weight: bold;
+            background: #fdf2f2;
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid #f5c6cb;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+
+        .answer-block {
+            margin-left: 25px;
+            color: #0056b3;
+            overflow-x: auto;
+        }
+
+        .answer-label {
+            font-weight: bold;
+            color: #28a745;
+            margin-right: 5px;
+        }
+
+        /* Math / Equation Chunking for small screens */
+        .math-chunk {
+            display: block;
+            overflow-x: auto;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        /* Tables for differences */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #0056b3;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #e9ecef; }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { padding: 5px; }
+            .paper-container { padding: 15px; }
+            .exam-details { flex-direction: column; text-align: center; }
+            .question-row { flex-direction: column; }
+            .marks { margin-top: 5px; align-self: flex-start; }
+            .answer-block { margin-left: 0; }
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            th { position: absolute; top: -9999px; left: -9999px; }
+            tr { margin-bottom: 15px; border: 1px solid #ccc; }
+            td { 
+                border: none; 
+                border-bottom: 1px solid #eee; 
+                position: relative; 
+                padding-left: 50%; 
+            }
+            td:before { 
+                position: absolute; 
+                top: 6px; 
+                left: 6px; 
+                width: 45%; 
+                padding-right: 10px; 
+                white-space: nowrap; 
+                font-weight: bold; 
+            }
+        }
+        
+        @media print { 
+            body { background-color: white; padding: 0; }
+            .paper-container { box-shadow: none; width: 100%; max-width: none; margin: 0; padding: 20mm; }
+            -webkit-print-color-adjust: exact; 
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 13 - SOLUTIONS & MARKING SCHEME</div>
+            <div class="exam-details">
+                <span>Class: 9 CBSE</span>
+                <span>Subject: Science (Biology)</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 50</span>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION A (Multiple Choice Questions)</div>
+        
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">1. A group of cells alike in form, function, and origin is called:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Tissue</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">2. Which of the following tissues has dead cells?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Sclerenchyma</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">3. Girth of stem increases due to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Lateral meristem</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">4. The husk of a coconut is made up of which tissue?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (a) Sclerenchymatous tissue</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">5. Which cell does not have a perforated cell wall?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Companion cells <em>(Tracheids, sieve tubes, and vessels have pits or perforations for conduction)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">6. Bone matrix is rich in:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Calcium and phosphorus</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">7. Water hyacinth floats on water surface. Which tissue provides this buoyancy?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Aerenchyma</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">8. Which of the following is connective tissue?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (d) All of the above <em>(Ligament, tendon, and blood are all connective tissues)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">9. Nervous tissue is not found in:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Tendons</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">10. Fats are stored in the human body as:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Adipose tissue</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">11. Which muscles act involuntarily?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) (ii) and (iii) <em>(Smooth muscles and Cardiac muscles)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">12. Meristematic tissues in plants are:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (a) Localized and dividing cells</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">13. Which of the following does not lose their nucleus at maturity?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (a) Companion cells</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">14. Cartilage is not found in:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Kidney</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">15. The flexibility in plants is due to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (a) Collenchyma</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">16. Cork cells are made impervious to water and gases by the presence of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Suberin</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">17. Survival of plants in a terrestrial environment is made possible by the presence of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Conducting tissue <em>(Xylem and Phloem for water and food transport)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">18. Choose the wrong statement:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Epithelial tissues have intercellular spaces between them. <em>(Epithelial tissues are tightly packed and form a continuous sheet with almost no intercellular spaces)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">19. The water conducting tissue generally present in gymnosperms is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Tracheids</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">20. A person met with an accident in which two long bones of hand were dislocated. Which among the following may be the possible reason?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Ligament break <em>(Ligaments connect bone to bone)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">21. Which type of tissue forms the inner lining of a blood vessel?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (a) Epithelial tissue <em>(Specifically, Simple Squamous Epithelium)</em>.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">22. While doing work and running, you move your organs like hands, legs, etc. Which among the following is correct?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (d) Skeletal muscles contract and pull the tendon to move the bones.</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">23. Which structure protects the plant body against the invasion of parasites?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (d) Epidermis and Cork both</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">24. Voluntary muscles are found in:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (b) Limbs</div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">25. Which of the following helps in repair of tissue and fills up the space inside the organ?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="answer-block"><span class="answer-label">Ans:</span> (c) Areolar</div>
+        </div>
+
+        <div class="section-header">SECTION B (Short Answer Type I)</div>
+        
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">26. State any two major differences between voluntary and involuntary muscles based on their structure.</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <table>
+                    <tr>
+                        <th>Voluntary (Striated) Muscles</th>
+                        <th>Involuntary (Smooth) Muscles</th>
+                    </tr>
+                    <tr>
+                        <td>1. Cells are long, cylindrical, and unbranched.</td>
+                        <td>1. Cells are spindle-shaped (tapering ends) and unbranched.</td>
+                    </tr>
+                    <tr>
+                        <td>2. They are multinucleate (have many nuclei per cell).</td>
+                        <td>2. They are uninucleate (have a single nucleus per cell).</td>
+                    </tr>
+                    <tr>
+                        <td>3. Show alternate light and dark bands (striations).</td>
+                        <td>3. Do not show striations (non-striated).</td>
+                    </tr>
+                </table>
+                <em>(Award 1 mark for each valid difference. Any two points are sufficient).</em>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">27. What are stomata? State any two primary functions of stomata in plants.</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <strong>Stomata:</strong> They are tiny pores present on the surface of leaves (epidermis), enclosed by two kidney-shaped guard cells.<br><br>
+                <strong>Functions:</strong>
+                <ol>
+                    <li>Exchange of gases (\(O_2\) and \(CO_2\)) with the atmosphere during photosynthesis and respiration.</li>
+                    <li>Transpiration (loss of water in the form of water vapour).</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">28. Name the tissue responsible for movement in our body. Mention the three types of this tissue.</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                The tissue responsible for movement in our body is <strong>Muscular Tissue</strong> (1 Mark).<br><br>
+                The three types of muscular tissue are (1 Mark for all three):
+                <ol>
+                    <li>Striated (Skeletal/Voluntary) muscles</li>
+                    <li>Smooth (Unstriated/Involuntary) muscles</li>
+                    <li>Cardiac muscles</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">29. Differentiate between parenchyma, collenchyma, and sclerenchyma purely on the basis of their cell wall characteristics.</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <ul>
+                    <li><strong>Parenchyma:</strong> Cell wall is thin and made up of cellulose.</li>
+                    <li><strong>Collenchyma:</strong> Cell wall is irregularly thickened at the corners due to the deposition of pectin and cellulose.</li>
+                    <li><strong>Sclerenchyma:</strong> Cell wall is heavily thickened, hard, and rigid due to the deposition of lignin.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">30. What is the specific function of the cardiac muscle? Where is it located?</div>
+                <div class="marks">[2 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <strong>Location:</strong> Cardiac muscles are found exclusively in the walls of the <strong>heart</strong>. (1 Mark)<br>
+                <strong>Function:</strong> They undergo rhythmic contraction and relaxation throughout life without getting fatigued. This pumping action helps the heart circulate blood to various parts of the body. (1 Mark)
+            </div>
+        </div>
+
+        <div class="section-header">SECTION C (Short Answer Type II)</div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">31. Draw a neatly labelled diagram of a neuron showing the cell body, dendrite, axon, and nerve ending.</div>
+                <div class="marks">[3 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <em>Teacher's Note for Evaluation:</em><br>
+                - Diagram must show a star-shaped/polygonal cell body (cyton) with a central nucleus. (1 Mark)<br>
+                - Hair-like projections from cyton labelled as <strong>Dendrites</strong>. (0.5 Mark)<br>
+                - Single long tubular extension labelled as <strong>Axon</strong> (preferably with myelin sheath indicated). (0.5 Mark)<br>
+                - Branched terminals at the end of the axon labelled as <strong>Nerve endings / Axon terminals</strong>. (1 Mark)<br>
+                <em>(Since visual drawing isn't possible in text, marks are awarded for accuracy of structure and 4 exact labels requested.)</em>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">32. Differentiate between bone and cartilage based on their nature, matrix composition, and location in the human body (provide at least three points).</div>
+                <div class="marks">[3 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Bone</th>
+                        <th>Cartilage</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature</strong></td>
+                        <td>Hard, rigid, non-flexible, and porous tissue.</td>
+                        <td>Soft, flexible, and non-porous tissue.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Matrix Composition</strong></td>
+                        <td>Matrix is solid, composed of proteins and rich in salts of calcium and phosphorus.</td>
+                        <td>Matrix is solid but flexible, composed of proteins and sugars.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td>Forms the skeleton (e.g., skull, ribs, limbs).</td>
+                        <td>Found in ear pinna, nose tip, trachea, and ends of long bones.</td>
+                    </tr>
+                </table>
+                <em>(1 Mark for each correct contrasting pair).</em>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">33. Explain what complex permanent tissues are. Name the two types of complex tissues found in plants and state their respective functions.</div>
+                <div class="marks">[3 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <strong>Complex Permanent Tissues:</strong> Tissues that are made up of more than one type of cells which coordinate together to perform a common specific function are called complex permanent tissues. (1 Mark)<br><br>
+                The two types of complex tissues in plants are Xylem and Phloem. (0.5 Mark for naming both)<br><br>
+                <strong>Functions:</strong>
+                <ul>
+                    <li><strong>Xylem:</strong> It is primarily responsible for the unidirectional conduction of water and dissolved minerals from the roots to the stem and leaves. (0.75 Mark)</li>
+                    <li><strong>Phloem:</strong> It is responsible for the bidirectional translocation of prepared food (sugars) from the leaves to other parts of the plant. (0.75 Mark)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION D (Long Answer Type)</div>
+
+        <div class="qa-block">
+            <div class="question-row">
+                <div class="question-text">34. (a) Describe the structure and general function of the various types of epithelial tissues in animals. Mention where squamous and columnar epithelium are specifically found. (3 Marks) <br><br>
+                (b) How does cork act as a protective tissue? Explain the process of its formation and name the chemical that makes it impervious to gases and water. (3 Marks)</div>
+                <div class="marks">[6 Marks]</div>
+            </div>
+            <div class="answer-block">
+                <span class="answer-label">Ans:</span><br>
+                <strong>Part (a): Epithelial Tissues (3 Marks)</strong><br>
+                Epithelial tissues are covering or protective tissues separated from underlying tissues by an extracellular fibrous basement membrane. They are tightly packed with almost no intercellular spaces.<br>
+                Types based on structure:
+                <ul>
+                    <li><strong>Squamous Epithelium:</strong> Thin, flat, and scale-like cells forming a delicate lining. <em>Location:</em> Alveoli of lungs, inner lining of blood vessels, and lining of mouth/esophagus. (1 Mark)</li>
+                    <li><strong>Cuboidal Epithelium:</strong> Cube-shaped cells that provide mechanical support and sometimes secretion. <em>Location:</em> Lining of kidney tubules and ducts of salivary glands. (1 Mark)</li>
+                    <li><strong>Columnar Epithelium:</strong> Tall, pillar-like cells facilitating absorption and secretion. <em>Location:</em> Inner lining of the intestine. If bearing cilia (ciliated columnar), found in the respiratory tract. (1 Mark)</li>
+                </ul>
+                
+                <hr style="border: 0.5px dashed #ccc; margin: 15px 0;">
+
+                <strong>Part (b): Cork as Protective Tissue (3 Marks)</strong><br>
+                <ul>
+                    <li><strong>Formation:</strong> As plants grow older, the outer protective tissues undergo changes. A strip of secondary meristem (cork cambium) replaces the epidermis of the stem. Cells on the outside are cut off from this layer to form a multi-layered thick bark or cork. (1.5 Marks)</li>
+                    <li><strong>Protective Nature:</strong> Cells of cork are dead and compactly arranged without intercellular spaces. This physically protects the inner tissues from mechanical injury, extreme temperatures, and parasitic fungal/bacterial infections. (0.5 Mark)</li>
+                    <li><strong>Chemical Imperviousness:</strong> Their cell walls possess a waxy chemical called <strong>Suberin</strong>. (1 Mark). Suberin makes the cork cells highly impervious (waterproof and leakproof) to gases and water, preventing excessive water loss (desiccation).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan - Solutions Generated Confidentially</div>
+    </div>
+</body>
+</html>

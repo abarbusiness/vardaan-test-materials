@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        /* Mobile and Screen responsiveness */
+        @media screen {
+            body {
+                width: 100%;
+                max-width: 900px;
+                padding: 5vw;
+                min-height: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            body { font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .mcq-options { grid-template-columns: 1fr !important; }
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none;}
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            margin-top: 5px;
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+        }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13: Digestive System</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Keep your answers neat and clean.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> contains 25 Multiple Choice Questions (1 mark each).</li>
+                <li><strong>Section B</strong> contains 3 Short Answer Type Questions (2 marks each).</li>
+                <li><strong>Section C</strong> contains 3 Long Answer Type Questions (3 marks each).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">The process of taking food into the body is called:
+            <ol class="mcq-options">
+                <li>Digestion</li>
+                <li>Ingestion</li>
+                <li>Assimilation</li>
+                <li>Egestion</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Which of the following teeth are used for biting and cutting food?
+            <ol class="mcq-options">
+                <li>Incisors</li>
+                <li>Canines</li>
+                <li>Premolars</li>
+                <li>Molars</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">The total number of milk teeth in a human child is:
+            <ol class="mcq-options">
+                <li>20</li>
+                <li>24</li>
+                <li>28</li>
+                <li>32</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">The hardest substance in the human body is:
+            <ol class="mcq-options">
+                <li>Bone</li>
+                <li>Dentine</li>
+                <li>Enamel</li>
+                <li>Cartilage</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Saliva contains an enzyme that breaks down:
+            <ol class="mcq-options">
+                <li>Proteins</li>
+                <li>Fats</li>
+                <li>Starch</li>
+                <li>Vitamins</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">The tube that connects the mouth to the stomach is known as the:
+            <ol class="mcq-options">
+                <li>Trachea</li>
+                <li>Oesophagus</li>
+                <li>Small intestine</li>
+                <li>Large intestine</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">The wavelike movement that pushes food down the food pipe is called:
+            <ol class="mcq-options">
+                <li>Digestion</li>
+                <li>Respiration</li>
+                <li>Peristalsis</li>
+                <li>Circulation</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">The stomach is a muscular bag shaped like the letter:
+            <ol class="mcq-options">
+                <li>C</li>
+                <li>J</li>
+                <li>U</li>
+                <li>V</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Which acid is secreted in the stomach to kill bacteria?
+            <ol class="mcq-options">
+                <li>Sulphuric acid</li>
+                <li>Nitric acid</li>
+                <li>Hydrochloric acid</li>
+                <li>Acetic acid</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">The largest gland in the human body is the:
+            <ol class="mcq-options">
+                <li>Pancreas</li>
+                <li>Liver</li>
+                <li>Salivary gland</li>
+                <li>Thyroid</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">The liver secretes a digestive juice called:
+            <ol class="mcq-options">
+                <li>Gastric juice</li>
+                <li>Pancreatic juice</li>
+                <li>Bile</li>
+                <li>Saliva</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">Where is bile temporarily stored before it enters the small intestine?
+            <ol class="mcq-options">
+                <li>Stomach</li>
+                <li>Pancreas</li>
+                <li>Gall bladder</li>
+                <li>Rectum</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">The longest part of the human digestive system is the:
+            <ol class="mcq-options">
+                <li>Oesophagus</li>
+                <li>Stomach</li>
+                <li>Small intestine</li>
+                <li>Large intestine</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">The tiny, finger-like projections in the small intestine that absorb digested food are called:
+            <ol class="mcq-options">
+                <li>Villi</li>
+                <li>Cilia</li>
+                <li>Flagella</li>
+                <li>Tentacles</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">The complete digestion of food takes place in the:
+            <ol class="mcq-options">
+                <li>Mouth</li>
+                <li>Stomach</li>
+                <li>Small intestine</li>
+                <li>Large intestine</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">The main function of the large intestine is to absorb:
+            <ol class="mcq-options">
+                <li>Proteins</li>
+                <li>Water</li>
+                <li>Fats</li>
+                <li>Carbohydrates</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">Undigested semi-solid waste is stored in the:
+            <ol class="mcq-options">
+                <li>Anus</li>
+                <li>Rectum</li>
+                <li>Stomach</li>
+                <li>Gall bladder</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">The process of removing undigested solid waste from the body is called:
+            <ol class="mcq-options">
+                <li>Excretion</li>
+                <li>Egestion</li>
+                <li>Digestion</li>
+                <li>Respiration</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">The total number of permanent teeth in an adult human is:
+            <ol class="mcq-options">
+                <li>20</li>
+                <li>28</li>
+                <li>30</li>
+                <li>32</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">Which teeth are well-developed in flesh-eating animals for tearing meat?
+            <ol class="mcq-options">
+                <li>Incisors</li>
+                <li>Canines</li>
+                <li>Premolars</li>
+                <li>Molars</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">The digestion of proteins begins in the:
+            <ol class="mcq-options">
+                <li>Mouth</li>
+                <li>Oesophagus</li>
+                <li>Stomach</li>
+                <li>Large intestine</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">The sticky, yellowish film of bacteria that forms on uncleaned teeth is called:
+            <ol class="mcq-options">
+                <li>Enamel</li>
+                <li>Dentine</li>
+                <li>Plaque</li>
+                <li>Gum</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">The part of the tooth embedded inside the gums is the:
+            <ol class="mcq-options">
+                <li>Crown</li>
+                <li>Root</li>
+                <li>Neck</li>
+                <li>Enamel</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">Which of the following organs does NOT produce any digestive enzyme?
+            <ol class="mcq-options">
+                <li>Salivary glands</li>
+                <li>Stomach</li>
+                <li>Pancreas</li>
+                <li>Liver</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">Which gland secretes pancreatic juice?
+            <ol class="mcq-options">
+                <li>Liver</li>
+                <li>Pancreas</li>
+                <li>Salivary gland</li>
+                <li>Thyroid gland</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (6 Marks)<span class="marks-info">(Short Answer Type - Attempt all - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">Define digestion.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">Why is it important to chew our food properly before swallowing?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">What is the role of hydrochloric acid (HCl) present in the stomach? Mention any two points.</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (9 Marks)<span class="marks-info">(Long Answer Type - Attempt all - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">Name the four different types of teeth found in an adult human. State the main function of any two types.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">Write one main function for each of the following parts of the digestive system:
+            <div class="sub-question">(a) Liver</div>
+            <div class="sub-question">(b) Villi</div>
+            <div class="sub-question">(c) Saliva</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">31.</div>
+        <div class="q-content">Differentiate between Ingestion and Egestion (write at least two points of difference).</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

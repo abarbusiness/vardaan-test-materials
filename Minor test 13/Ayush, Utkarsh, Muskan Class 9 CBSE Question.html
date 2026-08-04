@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 13</title>
+    <style>
+        /* Responsive base styling */
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: #f4f6f8; 
+            margin: 0; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+        
+        .paper-container {
+            max-width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 0 auto;
+            background-color: white;
+            padding: 20mm;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            flex-wrap: wrap;
+        }
+        .exam-details span { margin: 2px 10px; }
+        
+        /* Instructions */
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+
+        /* Sections and Questions */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        
+        /* MCQ Options Styling */
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 5px;
+            width: 100%;
+        }
+        .option { display: flex; }
+        .opt-label { font-weight: bold; margin-right: 5px; }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .paper-container { padding: 15px; }
+            .institute-name { font-size: 20pt; }
+            .exam-details { flex-direction: column; text-align: center; }
+            .mcq-options { grid-template-columns: 1fr; }
+        }
+        
+        /* Print Styles */
+        @media print { 
+            body { background-color: white; padding: 0; }
+            .paper-container { box-shadow: none; width: 100%; max-width: none; margin: 0; padding: 20mm; }
+            -webkit-print-color-adjust: exact; 
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test 13</div>
+            <div class="exam-details">
+                <span>Class: 9 CBSE</span>
+                <span>Subject: Science (Biology - Tissues)</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 50</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>The question paper comprises four sections - A, B, C, and D. There are 34 questions in the question paper. All questions are compulsory.</li>
+                    <li><strong>Section A:</strong> Q.1 to Q.25 are Multiple Choice Questions. Each carries 1 mark.</li>
+                    <li><strong>Section B:</strong> Q.26 to Q.30 are Short Answer Type-I questions carrying 2 marks each. Answers to these should be brief.</li>
+                    <li><strong>Section C:</strong> Q.31 to Q.33 are Short Answer Type-II questions carrying 3 marks each.</li>
+                    <li><strong>Section D:</strong> Q.34 is a Long Answer Type question carrying 6 marks.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+        
+        <div class="question-container"><div class="q-num">1.</div><div class="q-content">A group of cells alike in form, function, and origin is called:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Organ</div><div class="option"><span class="opt-label">(b)</span> Organ system</div>
+                <div class="option"><span class="opt-label">(c)</span> Tissue</div><div class="option"><span class="opt-label">(d)</span> Organelle</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">2.</div><div class="q-content">Which of the following tissues has dead cells?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Parenchyma</div><div class="option"><span class="opt-label">(b)</span> Sclerenchyma</div>
+                <div class="option"><span class="opt-label">(c)</span> Collenchyma</div><div class="option"><span class="opt-label">(d)</span> Epithelial tissue</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">3.</div><div class="q-content">Girth of stem increases due to:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Apical meristem</div><div class="option"><span class="opt-label">(b)</span> Lateral meristem</div>
+                <div class="option"><span class="opt-label">(c)</span> Intercalary meristem</div><div class="option"><span class="opt-label">(d)</span> Vertical meristem</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">4.</div><div class="q-content">The husk of a coconut is made up of which tissue?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Sclerenchymatous tissue</div><div class="option"><span class="opt-label">(b)</span> Apical meristem</div>
+                <div class="option"><span class="opt-label">(c)</span> Collenchyma</div><div class="option"><span class="opt-label">(d)</span> Parenchyma</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">5.</div><div class="q-content">Which cell does not have a perforated cell wall?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Tracheids</div><div class="option"><span class="opt-label">(b)</span> Companion cells</div>
+                <div class="option"><span class="opt-label">(c)</span> Sieve tubes</div><div class="option"><span class="opt-label">(d)</span> Vessels</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">6.</div><div class="q-content">Bone matrix is rich in:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Fluoride and calcium</div><div class="option"><span class="opt-label">(b)</span> Calcium and phosphorus</div>
+                <div class="option"><span class="opt-label">(c)</span> Calcium and potassium</div><div class="option"><span class="opt-label">(d)</span> Phosphorus and potassium</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">7.</div><div class="q-content">Water hyacinth floats on water surface. Which tissue provides this buoyancy?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Chlorenchyma</div><div class="option"><span class="opt-label">(b)</span> Sclerenchyma</div>
+                <div class="option"><span class="opt-label">(c)</span> Aerenchyma</div><div class="option"><span class="opt-label">(d)</span> Collenchyma</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">8.</div><div class="q-content">Which of the following is connective tissue?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Ligament</div><div class="option"><span class="opt-label">(b)</span> Tendon</div>
+                <div class="option"><span class="opt-label">(c)</span> Blood</div><div class="option"><span class="opt-label">(d)</span> All of the above</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">9.</div><div class="q-content">Nervous tissue is not found in:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Brain</div><div class="option"><span class="opt-label">(b)</span> Spinal cord</div>
+                <div class="option"><span class="opt-label">(c)</span> Tendons</div><div class="option"><span class="opt-label">(d)</span> Nerves</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">10.</div><div class="q-content">Fats are stored in the human body as:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Cuboidal epithelium</div><div class="option"><span class="opt-label">(b)</span> Adipose tissue</div>
+                <div class="option"><span class="opt-label">(c)</span> Bones</div><div class="option"><span class="opt-label">(d)</span> Cartilage</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">11.</div><div class="q-content">Which muscles act involuntarily? <br>(i) Striated muscles (ii) Smooth muscles (iii) Cardiac muscles (iv) Skeletal muscles
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> (i) and (ii)</div><div class="option"><span class="opt-label">(b)</span> (ii) and (iii)</div>
+                <div class="option"><span class="opt-label">(c)</span> (iii) and (iv)</div><div class="option"><span class="opt-label">(d)</span> (i) and (iv)</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">12.</div><div class="q-content">Meristematic tissues in plants are:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Localized and dividing cells</div><div class="option"><span class="opt-label">(b)</span> Localized and permanent cells</div>
+                <div class="option"><span class="opt-label">(c)</span> Growing in volume only</div><div class="option"><span class="opt-label">(d)</span> Permanent and non-dividing cells</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">13.</div><div class="q-content">Which of the following does not lose their nucleus at maturity?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Companion cells</div><div class="option"><span class="opt-label">(b)</span> Red blood cells</div>
+                <div class="option"><span class="opt-label">(c)</span> Sieve tube cells</div><div class="option"><span class="opt-label">(d)</span> Vessels</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">14.</div><div class="q-content">Cartilage is not found in:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Nose</div><div class="option"><span class="opt-label">(b)</span> Ear</div>
+                <div class="option"><span class="opt-label">(c)</span> Kidney</div><div class="option"><span class="opt-label">(d)</span> Larynx</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">15.</div><div class="q-content">The flexibility in plants is due to:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Collenchyma</div><div class="option"><span class="opt-label">(b)</span> Sclerenchyma</div>
+                <div class="option"><span class="opt-label">(c)</span> Parenchyma</div><div class="option"><span class="opt-label">(d)</span> Chlorenchyma</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">16.</div><div class="q-content">Cork cells are made impervious to water and gases by the presence of:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Cellulose</div><div class="option"><span class="opt-label">(b)</span> Lipids</div>
+                <div class="option"><span class="opt-label">(c)</span> Suberin</div><div class="option"><span class="opt-label">(d)</span> Lignin</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">17.</div><div class="q-content">Survival of plants in a terrestrial environment is made possible by the presence of:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Intercalary meristem</div><div class="option"><span class="opt-label">(b)</span> Conducting tissue</div>
+                <div class="option"><span class="opt-label">(c)</span> Apical meristem</div><div class="option"><span class="opt-label">(d)</span> Parenchymatous tissue</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">18.</div><div class="q-content">Choose the wrong statement:
+            <div class="mcq-options" style="grid-template-columns: 1fr;">
+                <div class="option"><span class="opt-label">(a)</span> The nature of matrix differs according to the function of the connective tissue.</div>
+                <div class="option"><span class="opt-label">(b)</span> Fats are stored below the skin and in between the internal organs.</div>
+                <div class="option"><span class="opt-label">(c)</span> Epithelial tissues have intercellular spaces between them.</div>
+                <div class="option"><span class="opt-label">(d)</span> Cells of striated muscles are multinucleate and unbranched.</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">19.</div><div class="q-content">The water conducting tissue generally present in gymnosperms is:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Vessels</div><div class="option"><span class="opt-label">(b)</span> Sieve tubes</div>
+                <div class="option"><span class="opt-label">(c)</span> Tracheids</div><div class="option"><span class="opt-label">(d)</span> Xylem fibres</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">20.</div><div class="q-content">A person met with an accident in which two long bones of hand were dislocated. Which among the following may be the possible reason?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Tendon break</div><div class="option"><span class="opt-label">(b)</span> Break of skeletal muscle</div>
+                <div class="option"><span class="opt-label">(c)</span> Ligament break</div><div class="option"><span class="opt-label">(d)</span> Areolar tissue break</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">21.</div><div class="q-content">Which type of tissue forms the inner lining of a blood vessel?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Epithelial tissue</div><div class="option"><span class="opt-label">(b)</span> Connective tissue</div>
+                <div class="option"><span class="opt-label">(c)</span> Nervous tissue</div><div class="option"><span class="opt-label">(d)</span> Muscle tissue</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">22.</div><div class="q-content">While doing work and running, you move your organs like hands, legs, etc. Which among the following is correct?
+            <div class="mcq-options" style="grid-template-columns: 1fr;">
+                <div class="option"><span class="opt-label">(a)</span> Smooth muscles contract and pull the ligament to move the bones.</div>
+                <div class="option"><span class="opt-label">(b)</span> Smooth muscles contract and pull the tendons to move the bones.</div>
+                <div class="option"><span class="opt-label">(c)</span> Skeletal muscles contract and pull the ligament to move the bones.</div>
+                <div class="option"><span class="opt-label">(d)</span> Skeletal muscles contract and pull the tendon to move the bones.</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">23.</div><div class="q-content">Which structure protects the plant body against the invasion of parasites?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Epidermis</div><div class="option"><span class="opt-label">(b)</span> Endodermis</div>
+                <div class="option"><span class="opt-label">(c)</span> Cork</div><div class="option"><span class="opt-label">(d)</span> Epidermis and Cork both</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">24.</div><div class="q-content">Voluntary muscles are found in:
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Alimentary canal</div><div class="option"><span class="opt-label">(b)</span> Limbs</div>
+                <div class="option"><span class="opt-label">(c)</span> Iris of the eye</div><div class="option"><span class="opt-label">(d)</span> Bronchi of lungs</div>
+            </div>
+        </div></div>
+
+        <div class="question-container"><div class="q-num">25.</div><div class="q-content">Which of the following helps in repair of tissue and fills up the space inside the organ?
+            <div class="mcq-options">
+                <div class="option"><span class="opt-label">(a)</span> Tendon</div><div class="option"><span class="opt-label">(b)</span> Adipose tissue</div>
+                <div class="option"><span class="opt-label">(c)</span> Areolar</div><div class="option"><span class="opt-label">(d)</span> Cartilage</div>
+            </div>
+        </div></div>
+
+        <div class="section-header">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type I - 2 Marks Each)</span></div>
+        
+        <div class="question-container"><div class="q-num">26.</div><div class="q-content">State any two major differences between voluntary and involuntary muscles based on their structure.</div></div>
+        <div class="question-container"><div class="q-num">27.</div><div class="q-content">What are stomata? State any two primary functions of stomata in plants.</div></div>
+        <div class="question-container"><div class="q-num">28.</div><div class="q-content">Name the tissue responsible for movement in our body. Mention the three types of this tissue.</div></div>
+        <div class="question-container"><div class="q-num">29.</div><div class="q-content">Differentiate between parenchyma, collenchyma, and sclerenchyma purely on the basis of their cell wall characteristics.</div></div>
+        <div class="question-container"><div class="q-num">30.</div><div class="q-content">What is the specific function of the cardiac muscle? Where is it located?</div></div>
+
+        <div class="section-header">SECTION C (9 Marks)<span class="marks-info">(Short Answer Type II - 3 Marks Each)</span></div>
+        
+        <div class="question-container"><div class="q-num">31.</div><div class="q-content">Draw a neatly labelled diagram of a neuron showing the cell body, dendrite, axon, and nerve ending.</div></div>
+        <div class="question-container"><div class="q-num">32.</div><div class="q-content">Differentiate between bone and cartilage based on their nature, matrix composition, and location in the human body (provide at least three points).</div></div>
+        <div class="question-container"><div class="q-num">33.</div><div class="q-content">Explain what complex permanent tissues are. Name the two types of complex tissues found in plants and state their respective functions.</div></div>
+
+        <div class="section-header">SECTION D (6 Marks)<span class="marks-info">(Long Answer Type - 6 Marks)</span></div>
+        
+        <div class="question-container"><div class="q-num">34.</div><div class="q-content">
+            (a) Describe the structure and general function of the various types of epithelial tissues in animals. Mention where squamous and columnar epithelium are specifically found. (3 Marks) <br><br>
+            (b) How does cork act as a protective tissue? Explain the process of its formation and name the chemical that makes it impervious to gases and water. (3 Marks)
+        </div></div>
+
+        <div class="footer">Created by Team Vardaan</div>
+    </div>
+</body>
+</html>

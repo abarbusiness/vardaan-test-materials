@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; text-align: center;}
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-align: center;}
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        .option-item { display: flex; }
+        .option-label { font-weight: bold; margin-right: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 768px) {
+            body { padding: 15mm 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+        }
+        @media (max-width: 480px) {
+            .options-grid { grid-template-columns: 1fr; }
+            .q-num { width: 25px; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (MCQs) and Section B (Subjective).</li>
+                <li>Section A consists of 25 Multiple Choice Questions of 1 mark each.</li>
+                <li>Section B consists of 5 Subjective Questions of 3 marks each.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">1.</div><div class="q-content">The structural and functional unit of the nervous system is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Nephron</div>
+            <div class="option-item"><span class="option-label">(b)</span> Neuron</div>
+            <div class="option-item"><span class="option-label">(c)</span> Cyton</div>
+            <div class="option-item"><span class="option-label">(d)</span> Axon</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">2.</div><div class="q-content">Which part of the brain is responsible for thinking, memory, and intelligence?
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Cerebellum</div>
+            <div class="option-item"><span class="option-label">(b)</span> Medulla Oblongata</div>
+            <div class="option-item"><span class="option-label">(c)</span> Cerebrum</div>
+            <div class="option-item"><span class="option-label">(d)</span> Spinal Cord</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">3.</div><div class="q-content">The number of cranial nerves in the human body is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> 12 pairs</div>
+            <div class="option-item"><span class="option-label">(b)</span> 31 pairs</div>
+            <div class="option-item"><span class="option-label">(c)</span> 10 pairs</div>
+            <div class="option-item"><span class="option-label">(d)</span> 21 pairs</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">4.</div><div class="q-content">The long, unbranched process extending from the cell body of a neuron is called:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Dendrite</div>
+            <div class="option-item"><span class="option-label">(b)</span> Synapse</div>
+            <div class="option-item"><span class="option-label">(c)</span> Axon</div>
+            <div class="option-item"><span class="option-label">(d)</span> Cyton</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">5.</div><div class="q-content">Which of the following is an involuntary action?
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Reading a book</div>
+            <div class="option-item"><span class="option-label">(b)</span> Walking</div>
+            <div class="option-item"><span class="option-label">(c)</span> Heartbeat</div>
+            <div class="option-item"><span class="option-label">(d)</span> Singing</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">6.</div><div class="q-content">The gap between the axon terminal of one neuron and the dendrites of the next neuron is known as:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Synapse</div>
+            <div class="option-item"><span class="option-label">(b)</span> Myelin sheath</div>
+            <div class="option-item"><span class="option-label">(c)</span> Cyton</div>
+            <div class="option-item"><span class="option-label">(d)</span> Stimulus</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">7.</div><div class="q-content">The part of the brain that controls balance and posture of the body is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Cerebrum</div>
+            <div class="option-item"><span class="option-label">(b)</span> Cerebellum</div>
+            <div class="option-item"><span class="option-label">(c)</span> Medulla Oblongata</div>
+            <div class="option-item"><span class="option-label">(d)</span> Hypothalamus</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">8.</div><div class="q-content">Reflex actions are primarily controlled by the:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Brain</div>
+            <div class="option-item"><span class="option-label">(b)</span> Spinal cord</div>
+            <div class="option-item"><span class="option-label">(c)</span> Sensory nerves</div>
+            <div class="option-item"><span class="option-label">(d)</span> Motor nerves</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">9.</div><div class="q-content">Nerves that carry messages from the sense organs to the brain or spinal cord are called:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Motor nerves</div>
+            <div class="option-item"><span class="option-label">(b)</span> Mixed nerves</div>
+            <div class="option-item"><span class="option-label">(c)</span> Sensory nerves</div>
+            <div class="option-item"><span class="option-label">(d)</span> Cranial nerves</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">10.</div><div class="q-content">The protective membranes covering the brain and spinal cord are called:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Pleura</div>
+            <div class="option-item"><span class="option-label">(b)</span> Meninges</div>
+            <div class="option-item"><span class="option-label">(c)</span> Pericardium</div>
+            <div class="option-item"><span class="option-label">(d)</span> Myelin</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">11.</div><div class="q-content">The number of spinal nerves in the human body is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> 12 pairs</div>
+            <div class="option-item"><span class="option-label">(b)</span> 21 pairs</div>
+            <div class="option-item"><span class="option-label">(c)</span> 31 pairs</div>
+            <div class="option-item"><span class="option-label">(d)</span> 43 pairs</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">12.</div><div class="q-content">Which part of the neuron receives messages from other neurons?
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Axon</div>
+            <div class="option-item"><span class="option-label">(b)</span> Dendrites</div>
+            <div class="option-item"><span class="option-label">(c)</span> Nucleus</div>
+            <div class="option-item"><span class="option-label">(d)</span> Myelin sheath</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">13.</div><div class="q-content">The fluid present between the meninges that protects the brain from mechanical shocks is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Blood plasma</div>
+            <div class="option-item"><span class="option-label">(b)</span> Cerebrospinal fluid</div>
+            <div class="option-item"><span class="option-label">(c)</span> Lymph</div>
+            <div class="option-item"><span class="option-label">(d)</span> Synovial fluid</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">14.</div><div class="q-content">The Central Nervous System (CNS) consists of:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Brain and nerves</div>
+            <div class="option-item"><span class="option-label">(b)</span> Spinal cord and nerves</div>
+            <div class="option-item"><span class="option-label">(c)</span> Brain and spinal cord</div>
+            <div class="option-item"><span class="option-label">(d)</span> Only brain</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">15.</div><div class="q-content">Blinking of the eye when a sudden object comes in front of it is an example of:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Voluntary action</div>
+            <div class="option-item"><span class="option-label">(b)</span> Reflex action</div>
+            <div class="option-item"><span class="option-label">(c)</span> Conditioned reflex</div>
+            <div class="option-item"><span class="option-label">(d)</span> None of these</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">16.</div><div class="q-content">The insulating sheath covering the axon is known as:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Cell membrane</div>
+            <div class="option-item"><span class="option-label">(b)</span> Myelin sheath</div>
+            <div class="option-item"><span class="option-label">(c)</span> Dendrite</div>
+            <div class="option-item"><span class="option-label">(d)</span> Meninges</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">17.</div><div class="q-content">Which nerve transmits impulses from the brain to the effector organs (muscles/glands)?
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Sensory nerve</div>
+            <div class="option-item"><span class="option-label">(b)</span> Motor nerve</div>
+            <div class="option-item"><span class="option-label">(c)</span> Mixed nerve</div>
+            <div class="option-item"><span class="option-label">(d)</span> Optic nerve</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">18.</div><div class="q-content">The pathway taken by a nerve impulse during a reflex action is called:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Neural pathway</div>
+            <div class="option-item"><span class="option-label">(b)</span> Reflex arc</div>
+            <div class="option-item"><span class="option-label">(c)</span> Motor arc</div>
+            <div class="option-item"><span class="option-label">(d)</span> Sensory tract</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">19.</div><div class="q-content">The largest part of the human brain is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Medulla</div>
+            <div class="option-item"><span class="option-label">(b)</span> Pons</div>
+            <div class="option-item"><span class="option-label">(c)</span> Cerebrum</div>
+            <div class="option-item"><span class="option-label">(d)</span> Cerebellum</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">20.</div><div class="q-content">Nerves made up of both sensory and motor fibers are called:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Dual nerves</div>
+            <div class="option-item"><span class="option-label">(b)</span> Mixed nerves</div>
+            <div class="option-item"><span class="option-label">(c)</span> Double nerves</div>
+            <div class="option-item"><span class="option-label">(d)</span> Connective nerves</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">21.</div><div class="q-content">The cell body of a neuron is alternatively known as:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Cyton</div>
+            <div class="option-item"><span class="option-label">(b)</span> Axon</div>
+            <div class="option-item"><span class="option-label">(c)</span> Soma</div>
+            <div class="option-item"><span class="option-label">(d)</span> Both (a) and (c)</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">22.</div><div class="q-content">The lowest part of the brain that continues downward as the spinal cord is:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Cerebrum</div>
+            <div class="option-item"><span class="option-label">(b)</span> Cerebellum</div>
+            <div class="option-item"><span class="option-label">(c)</span> Medulla oblongata</div>
+            <div class="option-item"><span class="option-label">(d)</span> Thalamus</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">23.</div><div class="q-content">Any change in the environment that brings about a response in an organism is called a:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Reaction</div>
+            <div class="option-item"><span class="option-label">(b)</span> Stimulus</div>
+            <div class="option-item"><span class="option-label">(c)</span> Impulse</div>
+            <div class="option-item"><span class="option-label">(d)</span> Reflex</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">24.</div><div class="q-content">Which system comprises the cranial and spinal nerves?
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Central Nervous System</div>
+            <div class="option-item"><span class="option-label">(b)</span> Peripheral Nervous System</div>
+            <div class="option-item"><span class="option-label">(c)</span> Skeletal System</div>
+            <div class="option-item"><span class="option-label">(d)</span> Circulatory System</div>
+        </div>
+    </div></div>
+
+    <div class="question-container"><div class="q-num">25.</div><div class="q-content">Coughing and sneezing are examples of:
+        <div class="options-grid">
+            <div class="option-item"><span class="option-label">(a)</span> Voluntary actions</div>
+            <div class="option-item"><span class="option-label">(b)</span> Conscious actions</div>
+            <div class="option-item"><span class="option-label">(c)</span> Reflex actions</div>
+            <div class="option-item"><span class="option-label">(d)</span> Skeletal movements</div>
+        </div>
+    </div></div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            State the functions of the three main parts of a neuron: Cyton, Dendrites, and Axon.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            Differentiate between Cerebrum and Cerebellum based on their primary functions. (Give at least two points of difference).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            What is a Reflex Action? Give two common examples of reflex actions in our daily life.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            Name the three types of nerves found in the human body. Briefly state the function of each type.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            Define the Central Nervous System (CNS). What is the main function of the spinal cord?
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering chemical formulas and math equations beautifully -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 4vw; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: clamp(18pt, 4.5vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: clamp(12pt, 3vw, 14pt); 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            background-color: #f0f0f0;
+            padding: 8px;
+            font-size: clamp(11pt, 2.5vw, 13pt); 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .qa-block {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 4px solid #333;
+        }
+        .q-num {
+            width: 35px;
+            flex-shrink: 0;
+        }
+        .q-text {
+            flex-grow: 1;
+        }
+        .marks-right {
+            float: right;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-left: 10px;
+            background-color: #ffebee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+        .answer {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #0056b3; 
+        }
+        .ans-label {
+            font-weight: bold;
+            margin-right: 10px;
+            color: #000;
+        }
+        .ans-content {
+            flex-grow: 1;
+        }
+        
+        .mcq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .mcq-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .mcq-qnum { font-weight: bold; margin-right: 5px; color: #333;}
+        .mcq-ans { color: #d32f2f; font-weight: bold; }
+        .mcq-expl { font-size: 9.5pt; color: #555; margin-top: 6px; display: block; font-style: italic;}
+
+        .diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .diff-table th, .diff-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .diff-table th {
+            background-color: #e3f2fd;
+            color: #000;
+        }
+
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media print { 
+            body { padding: 10mm; } 
+            @page { margin: 10mm; }
+        }
+        
+        @media screen and (max-width: 600px) {
+            body { padding: 15px; }
+            .q-num { width: 25px; }
+            .answer { margin-left: 0; flex-direction: column;}
+            .ans-label { margin-bottom: 5px;}
+            .mcq-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Ensures long equations don't break the layout on small screens */
+        .math-chunk-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 8px 0;
+            background: #f4f6f8;
+            border-radius: 4px;
+            margin: 5px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13 (Set B) - Detailed Solutions</div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="section-header">SECTION A (Multiple Choice Questions)</div>
+    
+    <div class="mcq-grid">
+        <div class="mcq-item"><span class="mcq-qnum">1.</span> (b) Pump blood <span class="mcq-expl">The heart pumps blood to transport substances throughout the body.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">2.</span> (c) Haemoglobin <span class="mcq-expl">Haemoglobin binds with oxygen and gives blood its red colour.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">3.</span> (b) Veins <span class="mcq-expl">Veins collect $CO_2$-rich blood from all parts of the body and carry it to the heart.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">4.</span> (b) 72 to 80 beats <span class="mcq-expl">This is the standard resting pulse rate for humans.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">5.</span> (c) Stethoscope <span class="mcq-expl">Doctors use a stethoscope to amplify the sound of heartbeats.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">6.</span> (d) Plasma <span class="mcq-expl">Plasma is the fluid matrix in which blood cells are suspended.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">7.</span> (c) Platelets <span class="mcq-expl">Platelets form clots to prevent excessive bleeding.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">8.</span> (b) Kidneys <span class="mcq-expl">Kidneys act as filters to remove toxic urea from the blood.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">9.</span> (b) Ureter <span class="mcq-expl">Ureters are tubes that transport urine from kidneys to the bladder.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">10.</span> (b) Cooling the body <span class="mcq-expl">Evaporation of sweat takes away body heat, cooling us down.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">11.</span> (c) Ammonia <span class="mcq-expl">Fishes excrete highly toxic ammonia, which dissolves directly in water ($NH_3$).</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">12.</span> (c) Uric acid <span class="mcq-expl">This semi-solid waste conserves water for birds and insects.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">13.</span> (b) Xylem <span class="mcq-expl">Xylem transports water in an upward direction.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">14.</span> (c) Phloem <span class="mcq-expl">Phloem distributes the glucose/food prepared by leaves.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">15.</span> (b) Transpiration <span class="mcq-expl">It is the loss of water in vapour form from stomata.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">16.</span> (c) Suction pull <span class="mcq-expl">Similar to sucking from a straw, created by transpiration.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">17.</span> (c) Root hairs <span class="mcq-expl">They increase the surface area for maximum absorption of water.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">18.</span> (a) Chest cavity, tilted left <span class="mcq-expl">The heart is safely located inside the rib cage.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">19.</span> (c) Four <span class="mcq-expl">Two atria and two ventricles.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">20.</span> (b) Atria <span class="mcq-expl">The singular is atrium, and plural is atria.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">21.</span> (b) To prevent mixing <span class="mcq-expl">It ensures $O_2$-rich and $CO_2$-rich blood stay separate.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">22.</span> (a) Capillaries <span class="mcq-expl">These are very thin vessels where material exchange occurs.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">23.</span> (b) WBCs <span class="mcq-expl">White Blood Cells act as the defense mechanism of the body.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">24.</span> (c) Pulse <span class="mcq-expl">Can be easily felt on the wrist or neck.</span></div>
+        <div class="mcq-item"><span class="mcq-qnum">25.</span> (c) Carbon dioxide <span class="mcq-expl">$CO_2$ is a waste product of cellular respiration exhaled via lungs.</span></div>
+    </div>
+
+    <div class="section-header">SECTION B (Subjective Questions)</div>
+
+    <div class="qa-block">
+        <div class="question">
+            <div class="q-num">26.</div>
+            <div class="q-text">What is the function of platelets in the blood? Why is this function important? <span class="marks-right">[2]</span></div>
+        </div>
+        <div class="answer">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-content">
+                <ul>
+                    <li><strong>Function (1 Mark):</strong> Platelets are responsible for the clotting of blood whenever there is an injury or a cut on the body.</li>
+                    <li><strong>Importance (1 Mark):</strong> If platelets were absent, bleeding would not stop during an injury, leading to severe blood loss, which can be fatal. Clotting plugs the cut and prevents excess blood loss.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question">
+            <div class="q-num">27.</div>
+            <div class="q-text">Why is the transport of materials (like food, water, and oxygen) necessary in a plant or an animal? Give two basic reasons. <span class="marks-right">[2]</span></div>
+        </div>
+        <div class="answer">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-content">
+                Transport of materials is necessary because:
+                <ol>
+                    <li><strong>To provide energy and growth (1 Mark):</strong> Every living cell requires a continuous supply of essential substances like food (glucose), water, and oxygen ($O_2$) to survive, perform life functions, and release energy.</li>
+                    <li><strong>To remove toxic waste (1 Mark):</strong> Cells constantly produce harmful waste products (like Carbon dioxide ($CO_2$) and urea) during their functioning. A transport system is required to carry these wastes away from the cells to excretory organs for removal.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question">
+            <div class="q-num">28.</div>
+            <div class="q-text">State three main differences between arteries and veins. <span class="marks-right">[3]</span></div>
+        </div>
+        <div class="answer">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-content">
+                <strong>(3 Marks - 1 mark for each valid difference):</strong>
+                <table class="diff-table">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Arteries</th>
+                        <th>Veins</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Direction of Flow</strong></td>
+                        <td>Carry blood <em>away</em> from the heart to body parts.</td>
+                        <td>Carry blood <em>towards</em> the heart from body parts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Type of Blood</strong></td>
+                        <td>Generally carry oxygen-rich blood (except pulmonary artery).</td>
+                        <td>Generally carry carbon dioxide-rich blood (except pulmonary vein).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wall Thickness & Valves</strong></td>
+                        <td>Have thick, elastic walls to handle high pressure. <strong>No valves</strong> present.</td>
+                        <td>Have thin walls as pressure is low. <strong>Valves are present</strong> to prevent backflow.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="qa-block">
+        <div class="question">
+            <div class="q-num">29.</div>
+            <div class="q-text">Name the four major organs of the human excretory system in their correct sequence. What is the specific role of the kidneys in this system? <span class="marks-right">[3]</span></div>
+        </div>
+        <div class="answer">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-content">
+                <strong>Sequence of Organs (2 Marks - 0.5 each):</strong>
+                <br>
+                The correct pathway for the flow of urine is:
+                <div class="math-chunk-container">
+                   $$ \text{Kidneys} \xrightarrow{\text{filtered into}} \text{Ureters} \xrightarrow{\text{stored in}} \text{Urinary Bladder} \xrightarrow{\text{excreted via}} \text{Urethra} $$
+                </div>
+                <strong>Role of Kidneys (1 Mark):</strong><br>
+                Kidneys contain millions of tiny blood capillaries that act as filters. When blood reaches the kidneys, useful substances are absorbed back into the blood, while toxic wastes dissolved in water are filtered out as urine.
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question">
+            <div class="q-num">30.</div>
+            <div class="q-text">
+                (a) What is transpiration? (1 mark)<br>
+                (b) How does transpiration help tall plants and trees? (2 marks)<br>
+                (c) Why do plants need root hairs, and how do they assist in the transportation process? (2 marks)
+                <span class="marks-right">[5]</span>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-content">
+                <strong>(a) Transpiration (1 Mark):</strong><br>
+                The process by which plants lose water in the form of water vapour through the stomata present on the surface of their leaves is called transpiration.
+                <br><br>
+                <strong>(b) Helpfulness to Tall Plants (2 Marks):</strong><br>
+                <ul>
+                    <li><strong>Creates Suction Pull (1 Mark):</strong> As water evaporates from the leaves, it creates a vacuum or suction pull (transpirational pull). This force is strong enough to pull water and dissolved minerals upwards from the roots to great heights in tall trees.</li>
+                    <li><strong>Cooling Effect (1 Mark):</strong> Evaporation of water cools the plant body, protecting it from the extreme heat of the sun.</li>
+                </ul>
+                <br>
+                <strong>(c) Role of Root Hairs (2 Marks):</strong><br>
+                <ul>
+                    <li>Plants need root hairs to vastly <strong>increase the surface area (1 Mark)</strong> of the roots.</li>
+                    <li><strong>Assistance in Transportation (1 Mark):</strong> A larger surface area allows roots to absorb maximum amounts of water and dissolved mineral salts from the surrounding soil efficiently, which are then passed into the xylem vessels for upward transport.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering scientific notations and equations correctly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: #fafafa; /* slightly off-white for reading comfort */
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #1a365d; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; font-size: 14pt; background-color: #e0e0e0; padding: 5px; border-radius: 4px; }
+        .solution-container { 
+            margin-bottom: 20px; 
+            background: #fff; 
+            padding: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .ques-row { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; border-bottom: 1px dashed #bbb; padding-bottom: 5px; }
+        .ques-text { flex-grow: 1; padding-right: 15px; }
+        .marks { flex-shrink: 0; color: #d32f2f; font-weight: bold; width: 60px; text-align: right; }
+        .ans-row { display: flex; }
+        .ans-label { font-weight: bold; color: #2e7d32; margin-right: 10px; width: 40px; flex-shrink: 0; }
+        .ans-text { flex-grow: 1; }
+        
+        /* Table styling for differentiation questions */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+        th { background-color: #f5f5f5; }
+        
+        .math-chunk { overflow-x: auto; margin: 10px 0; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .solution-container { padding: 10px; }
+            .ques-row { flex-direction: column; }
+            .marks { text-align: left; margin-top: 5px; width: auto; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15mm; background: white; -webkit-print-color-adjust: exact; }
+            .solution-container { box-shadow: none; border: none; padding: 0; margin-bottom: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13 - ANSWER KEY & SOLUTIONS</div>
+        <div style="margin-top:5px; font-weight:bold; color: #555;">Class: 10 ICSE | Subject: Biology (Excretory System)</div>
+    </div>
+
+    <div class="section-header">SECTION A (35 Marks) - Objective</div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q1. Multiple Choice Questions</div>
+            <div class="marks">[25 &times; 1 = 25M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <ol style="margin-top:0; padding-left: 20px; line-height: 1.8;">
+                    <li><strong>(c)</strong> Kidneys <em>(Primary organ filtering blood)</em></li>
+                    <li><strong>(b)</strong> Nephron <em>(Microscopic filtering unit)</em></li>
+                    <li><strong>(a)</strong> Glomerulus <em>(Capillary tuft for ultrafiltration)</em></li>
+                    <li><strong>(c)</strong> Urea <em>(Major nitrogenous waste in humans)</em></li>
+                    <li><strong>(b)</strong> Urochrome <em>(Pigment derived from bile/haemoglobin breakdown)</em></li>
+                    <li><strong>(c)</strong> Malpighian capsule <em>(Consists of Bowman's capsule and Glomerulus)</em></li>
+                    <li><strong>(d)</strong> Anti-diuretic hormone (ADH) <em>(Secreted by posterior pituitary)</em></li>
+                    <li><strong>(b)</strong> Renal artery <em>(Brings oxygenated but nitrogenous-waste rich blood)</em></li>
+                    <li><strong>(c)</strong> Loop of Henle <em>(U-shaped part of renal tubule)</em></li>
+                    <li><strong>(c)</strong> Heart <em>(Heart is for circulation, not excretion)</em></li>
+                    <li><strong>(b)</strong> Urinary bladder <em>(Temporary storage for urine)</em></li>
+                    <li><strong>(b)</strong> Osmoregulation <em>(Maintains osmotic pressure)</em></li>
+                    <li><strong>(b)</strong> 6.0 (Slightly acidic) <em>(Diet dependent, but generally ~6.0)</em></li>
+                    <li><strong>(c)</strong> Liver <em>(Via ornithine cycle)</em></li>
+                    <li><strong>(b)</strong> Ureter <em>(Tube carrying urine downwards)</em></li>
+                    <li><strong>(b)</strong> Cortex <em>(Outer dark region containing Malpighian corpuscles)</em></li>
+                    <li><strong>(a)</strong> Proximal Convoluted Tubule <em>(Reabsorbs 100% glucose, ~70% water)</em></li>
+                    <li><strong>(c)</strong> Glucose <em>(Should not be present in healthy urine)</em></li>
+                    <li><strong>(b)</strong> Hematuria <em>(Hema = blood, uria = urine)</em></li>
+                    <li><strong>(b)</strong> Dialyzer <em>(Artificial kidney machine)</em></li>
+                    <li><strong>(c)</strong> Thermoregulation (cooling) <em>(Primary role is cooling via evaporation)</em></li>
+                    <li><strong>(c)</strong> Renal Pelvis <em>(Funnel-like expanded upper part of ureter)</em></li>
+                    <li><strong>(b)</strong> Diabetes insipidus <em>(Causes frequent, dilute urination)</em></li>
+                    <li><strong>(b)</strong> Efferent arteriole <em>(Narrower diameter creates high hydrostatic pressure)</em></li>
+                    <li><strong>(a)</strong> Hilum <em>(Notch where vessels enter/exit)</em></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q2. Fill in the blanks</div>
+            <div class="marks">[5 &times; 1 = 5M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-top: 0;">
+                    <li><strong>(i) Micturition</strong> <em>(The act of expelling urine from the urinary bladder)</em></li>
+                    <li><strong>(ii) Afferent</strong> <em>(Afferent = bringing to, Efferent = taking away)</em></li>
+                    <li><strong>(iii) Lungs</strong> <em>(Excretes \( CO_2 \) and \( H_2O \) vapor)</em></li>
+                    <li><strong>(iv) Pyramids</strong> <em>(Conical structures in the medulla)</em></li>
+                    <li><strong>(v) Filtrate</strong> <em>(Primary urine formed after ultrafiltration)</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q3. True or False (with correction)</div>
+            <div class="marks">[5 &times; 1 = 5M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <ol style="margin-top:0; padding-left: 20px; line-height: 1.8;">
+                    <li><strong>False.</strong> Correct Statement: The right kidney is placed slightly <strong>lower</strong> than the left kidney (due to the position of the large liver above it).</li>
+                    <li><strong>False.</strong> Correct Statement: Urea is produced in the <strong>liver</strong> (and only excreted by the kidneys).</li>
+                    <li><strong>False.</strong> Correct Statement: Excretion is the removal of <strong>metabolic chemical wastes</strong> from the body. (Removal of undigested food is called egestion/defecation).</li>
+                    <li><strong>False.</strong> Correct Statement: The normal presence of glucose in urine is a sign of <strong>disease (Diabetes mellitus)</strong>.</li>
+                    <li><strong>True.</strong> (Sweat helps in minor excretion of salts and urea).</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks) - Subjective</div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q4. (a) Definitions & (b) Diagram of Malpighian capsule</div>
+            <div class="marks">[2+3 = 5M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <strong>(a) Definitions (1 Mark each):</strong>
+                <ul style="margin-top: 5px; margin-bottom: 15px;">
+                    <li><strong>(i) Excretion:</strong> It is the biological process by which harmful, useless metabolic waste products (like urea, uric acid) are removed from the body.</li>
+                    <li><strong>(ii) Osmoregulation:</strong> It is the process of regulating the osmotic pressure of the blood and body fluids by maintaining the correct balance of water and dissolved salts.</li>
+                </ul>
+                <strong>(b) Diagram & Function (2 Marks for Diagram + 1 Mark for Function):</strong><br>
+                <div style="border: 1px solid #ddd; padding: 10px; display: inline-block; background: #fff; margin: 10px 0;">
+                    <em>[Teacher's Note: Students must draw a cup-shaped structure (Bowman's Capsule) enclosing a knot of capillaries (Glomerulus). The wider Afferent arteriole entering and narrower Efferent arteriole leaving must be clearly labelled.]</em>
+                </div>
+                <br><strong>Function:</strong> The Malpighian capsule is the site for <strong>Ultrafiltration</strong>. Blood flows under high pressure through the glomerulus, forcing liquid (water, glucose, urea, salts) into the Bowman's capsule, creating the glomerular filtrate.
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q5. Differentiate between the following:</div>
+            <div class="marks">[5M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <em>(Marks: 2M for (a), 2M for (b), 1M for (c))</em>
+                <table>
+                    <tr>
+                        <th style="width: 20%;">Basis</th>
+                        <th style="width: 40%;">First Entity</th>
+                        <th style="width: 40%;">Second Entity</th>
+                    </tr>
+                    <tr>
+                        <td><strong>(a) Function</strong></td>
+                        <td><strong>Ureter:</strong> It carries urine from the kidneys to the urinary bladder.</td>
+                        <td><strong>Urethra:</strong> It is a tube that carries urine from the urinary bladder to the outside of the body.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Nitrogenous waste composition</strong></td>
+                        <td><strong>Renal Artery:</strong> Contains blood with a <em>high</em> concentration of urea (unfiltered blood).</td>
+                        <td><strong>Renal Vein:</strong> Contains blood with a <em>low</em> concentration of urea (filtered blood).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(c) Location</strong></td>
+                        <td><strong>Renal Cortex:</strong> The outer, darker region of the kidney.</td>
+                        <td><strong>Renal Medulla:</strong> The inner, lighter region of the kidney.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="ques-row">
+            <div class="ques-text">Q6. Give biological reasons:</div>
+            <div class="marks">[5M]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans:</div>
+            <div class="ans-text">
+                <em>(Marks: 2M for (a), 1.5M for (b), 1.5M for (c))</em>
+                <ul style="margin-top: 5px; list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">
+                        <strong>(a) Urine in summer is thicker (more concentrated):</strong> 
+                        In summer, we lose a large amount of water from the body in the form of sweat (to regulate body temperature). To conserve water and maintain the osmotic balance of the blood (osmoregulation), the kidneys reabsorb more water from the glomerular filtrate. As a result, less water is eliminated, making the urine thicker and hypertonic.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <strong>(b) Efferent arteriole is narrower than afferent arteriole:</strong> 
+                        The wider afferent arteriole brings more blood into the glomerulus, while the narrower efferent arteriole restricts its easy outflow. This difference in diameter creates a high hydrostatic pressure inside the glomerulus, which is essential for <strong>ultrafiltration</strong> to occur.
+                    </li>
+                    <li>
+                        <strong>(c) Advice for Dialysis:</strong> 
+                        A person is advised to undergo dialysis when they suffer from <strong>Renal Failure (Kidney failure)</strong>. When both kidneys are damaged (due to infection, injury, or restricted blood flow) and cannot filter the blood effectively, toxic nitrogenous wastes like urea begin to accumulate in the body (uremia), which can be fatal. The dialysis machine acts as an artificial kidney to filter these wastes.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; font-size: 10pt; color: #777;">
+        End of Solution Document
+    </div>
+</body>
+</html>

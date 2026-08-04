@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; /* Responsive update */
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 8%; /* Percentage padding for responsiveness */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 5px; }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; width: 100%; align-items: flex-start; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .mcq-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+        }
+        @media screen and (max-width: 600px) {
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .mcq-options { grid-template-columns: 1fr; } /* Stack MCQ options on mobile */
+            body { padding: 5%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13: Excretion</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (Objective) and Section B (Subjective).</li>
+                <li>Read the questions carefully before answering. Ensure neat and legible handwriting.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)<span class="marks-info">(Multiple Choice Questions - 1 Mark Each)</span></div>
+    
+    <div class="question-container"><div class="q-num">1.</div><div class="q-content">The main excretory organ in the human body is:
+        <div class="mcq-options"><div>(a) Lungs</div><div>(b) Heart</div><div>(c) Kidney</div><div>(d) Skin</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">2.</div><div class="q-content">Which of the following is the major nitrogenous waste product in humans?
+        <div class="mcq-options"><div>(a) Ammonia</div><div>(b) Urea</div><div>(c) Uric acid</div><div>(d) Carbon dioxide</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">3.</div><div class="q-content">The muscular tube that connects the kidney to the urinary bladder is called:
+        <div class="mcq-options"><div>(a) Urethra</div><div>(b) Ureter</div><div>(c) Nephron</div><div>(d) Renal vein</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">4.</div><div class="q-content">The sac-like structure that temporarily stores urine is the:
+        <div class="mcq-options"><div>(a) Ureter</div><div>(b) Gall bladder</div><div>(c) Urinary bladder</div><div>(d) Bowman's capsule</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">5.</div><div class="q-content">The basic structural and functional unit of the kidney is the:
+        <div class="mcq-options"><div>(a) Neuron</div><div>(b) Alveolus</div><div>(c) Villi</div><div>(d) Nephron</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">6.</div><div class="q-content">Sweating primarily helps the human body in:
+        <div class="mcq-options"><div>(a) Digestion</div><div>(b) Excreting excess water and salts</div><div>(c) Breathing</div><div>(d) Circulating blood</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">7.</div><div class="q-content">Which gas is excreted as a waste product by the lungs during exhalation?
+        <div class="mcq-options"><div>(a) Oxygen</div><div>(b) Nitrogen</div><div>(c) Carbon dioxide</div><div>(d) Hydrogen</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">8.</div><div class="q-content">Some plants store their waste products in old xylem tissues in the form of:
+        <div class="mcq-options"><div>(a) Resins and gums</div><div>(b) Oxygen</div><div>(c) Starch</div><div>(d) Glucose</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">9.</div><div class="q-content">The outer, darker region of the kidney is known as the:
+        <div class="mcq-options"><div>(a) Medulla</div><div>(b) Cortex</div><div>(c) Pelvis</div><div>(d) Hilum</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">10.</div><div class="q-content">The inner, lighter region of the kidney is called the:
+        <div class="mcq-options"><div>(a) Medulla</div><div>(b) Cortex</div><div>(c) Urethra</div><div>(d) Calyx</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">11.</div><div class="q-content">The opening through which urine is passed out of the body is the:
+        <div class="mcq-options"><div>(a) Anus</div><div>(b) Ureter</div><div>(c) Urethra</div><div>(d) Nephridia</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">12.</div><div class="q-content">Which organ plays a crucial role in detoxifying blood and converting toxic ammonia into less toxic urea?
+        <div class="mcq-options"><div>(a) Kidney</div><div>(b) Liver</div><div>(c) Pancreas</div><div>(d) Stomach</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">13.</div><div class="q-content">The normal pale-yellow colour of urine is due to the presence of a pigment called:
+        <div class="mcq-options"><div>(a) Hemoglobin</div><div>(b) Chlorophyll</div><div>(c) Urochrome</div><div>(d) Melanin</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">14.</div><div class="q-content">In simple organisms like Amoeba, excretion primarily takes place through:
+        <div class="mcq-options"><div>(a) Kidneys</div><div>(b) General body surface (diffusion)</div><div>(c) Malpighian tubules</div><div>(d) Flame cells</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">15.</div><div class="q-content">The blood vessel that brings dirty, oxygenated blood containing waste to the kidney is the:
+        <div class="mcq-options"><div>(a) Renal vein</div><div>(b) Pulmonary artery</div><div>(c) Renal artery</div><div>(d) Hepatic portal vein</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">16.</div><div class="q-content">Which of the following is a plant excretory product that is highly useful in manufacturing tyres and erasers?
+        <div class="mcq-options"><div>(a) Gum</div><div>(b) Resin</div><div>(c) Latex (Rubber)</div><div>(d) Essential oils</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">17.</div><div class="q-content">The biological process of eliminating harmful metabolic wastes from the body is known as:
+        <div class="mcq-options"><div>(a) Egestion</div><div>(b) Digestion</div><div>(c) Respiration</div><div>(d) Excretion</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">18.</div><div class="q-content">Excess water in plants is lost to the atmosphere in the form of water vapour through the process of:
+        <div class="mcq-options"><div>(a) Transpiration</div><div>(b) Photosynthesis</div><div>(c) Translocation</div><div>(d) Respiration</div></div></div></div>
+
+    <div class="question-container"><div class="q-num">19.</div><div class="q-content">Which structure physically protects the kidneys in the human body?
+        <div class="mcq-options"><div>(a) Skull</div><div>(b) Last two pairs of ribs</div><div>(c) Sternum</div><div>(d) Pelvic girdle</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">20.</div><div class="q-content">Which of the following substances is normally NOT found in the urine of a healthy person?
+        <div class="mcq-options"><div>(a) Water</div><div>(b) Urea</div><div>(c) Salts</div><div>(d) Glucose</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">21.</div><div class="q-content">Which of the following is NOT an accessory excretory organ in humans?
+        <div class="mcq-options"><div>(a) Skin</div><div>(b) Liver</div><div>(c) Lungs</div><div>(d) Heart</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">22.</div><div class="q-content">Although urine is formed in the kidneys, the urea present in it is actually manufactured in the:
+        <div class="mcq-options"><div>(a) Heart</div><div>(b) Liver</div><div>(c) Spleen</div><div>(d) Lungs</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">23.</div><div class="q-content">Sweat is produced in the skin by specialised structures called:
+        <div class="mcq-options"><div>(a) Sebaceous glands</div><div>(b) Sweat glands</div><div>(c) Hair follicles</div><div>(d) Epidermis</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">24.</div><div class="q-content">Stomata on the leaves help plants in excreting:
+        <div class="mcq-options"><div>(a) Solid waste</div><div>(b) Resins</div><div>(c) Oxygen (during day) and Carbon dioxide (at night)</div><div>(d) Latex</div></div></div></div>
+    
+    <div class="question-container"><div class="q-num">25.</div><div class="q-content">Tiny pores present on the woody stems of older plants that help in gaseous exchange and minor excretion are called:
+        <div class="mcq-options"><div>(a) Guard cells</div><div>(b) Epidermis</div><div>(c) Stomata</div><div>(d) Lenticels</div></div></div></div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Subjective Type Questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">Define the term 'Excretion'. Why is it strictly necessary for living organisms to excrete waste?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">Name the four main organs of the human excretory system. State one primary function of the kidneys.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">Unlike animals, plants do not have specific excretory organs. Mention any three ways by which plants get rid of their waste products.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">Clearly differentiate between the processes of 'Egestion' and 'Excretion' (Give two points of difference).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">Explain briefly the role of the skin and the liver as accessory excretory organs in the human body.</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 6 Biology Solutions</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #2c5282;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #2b6cb0;
+        }
+        .question-container { 
+            margin-bottom: 20px; 
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .q-text-wrapper {
+            display: flex;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            font-weight: bold;
+            color: #333;
+        }
+        .marks-badge {
+            background-color: #edf2f7;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #4a5568;
+            white-space: nowrap;
+        }
+        .solution-box {
+            background-color: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-size: 11.5pt;
+        }
+        .solution-title {
+            font-weight: bold;
+            color: #2f855a;
+            margin-bottom: 5px;
+            font-size: 11pt;
+        }
+        ul.sol-list {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 15px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        .correct-opt {
+            color: #276749;
+            font-weight: bold;
+            background-color: #c6f6d5;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body { padding: 15px; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 5px; margin-left: 35px; align-self: flex-start;}
+            .options-grid { grid-template-columns: 1fr; }
+            /* Breaking long equations/text for mobile */
+            .solution-box { word-break: break-word; overflow-wrap: break-word; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .options-grid { grid-template-columns: 1fr 1fr; }
+            .solution-box { background-color: #f9f9f9 !important; border-left-color: #666 !important; }
+        }
+    </style>
+    <!-- MathJax for rendering equations cleanly and chunking on small screens -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & SOLUTIONS - MINOR TEST 01</div>
+        <div class="exam-details">
+            <span>Class: 6 CBSE</span>
+            <span>Subject: General Biology</span>
+            <span>Time: 1 Hour 30 Mins</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A SOLUTIONS (25 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">1.</div>
+                <div class="q-content">Which of the following is an energy-giving food component?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Carbohydrates</span><br>
+            <em>Explanation: Carbohydrates and fats are the primary energy-giving foods in our diet.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">2.</div>
+                <div class="q-content">Scurvy is a disease caused by the deficiency of:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Vitamin C</span><br>
+            <em>Explanation: Lack of Vitamin C causes scurvy, which leads to bleeding gums and poor wound healing.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">3.</div>
+                <div class="q-content">Animals that eat only plants or plant products are called:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Herbivores</span><br>
+            <em>Explanation: Herbivores (e.g., cow, deer) feed exclusively on plants.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">4.</div>
+                <div class="q-content">The edible part of a potato plant is its:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Stem</span><br>
+            <em>Explanation: Potato is an underground modified stem (tuber) that stores food.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">5.</div>
+                <div class="q-content">Which part of the plant is responsible for making food?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Leaf</span><br>
+            <em>Explanation: Leaves contain chlorophyll and make food through photosynthesis; they are the "kitchen" of the plant.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">6.</div>
+                <div class="q-content">The process by which plants make their own food is called:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Photosynthesis</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">7.</div>
+                <div class="q-content">The male reproductive part of a flower is the:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Stamen</span><br>
+            <em>Explanation: The stamen consists of the anther and filament. The pistil is the female part.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">8.</div>
+                <div class="q-content">Which type of joint is found in the human shoulder?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Ball and socket joint</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">9.</div>
+                <div class="q-content">The hard outer skeleton of a snail is called its:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(a) Shell</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">10.</div>
+                <div class="q-content">Earthworms breathe through their:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Skin</span><br>
+            <em>Explanation: Earthworms have moist skin which allows for the exchange of gases directly with the environment.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">11.</div>
+                <div class="q-content">A cactus plant is best adapted to survive in a:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Desert</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">12.</div>
+                <div class="q-content">Which of the following is NOT a characteristic of living things?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Rusting</span><br>
+            <em>Explanation: Rusting is a chemical process that occurs in metals (non-living things like iron).</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">13.</div>
+                <div class="q-content">Rose and lemon plants are examples of:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Shrubs</span><br>
+            <em>Explanation: They have hard but not very thick stems, with branches branching out near the base.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">14.</div>
+                <div class="q-content">Carrots and radishes are actually modified:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(a) Roots</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">15.</div>
+                <div class="q-content">Exposure to sunlight helps our body to produce:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(d) Vitamin D</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">16.</div>
+                <div class="q-content">A deficiency of Iron in the diet causes:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Anaemia</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">17.</div>
+                <div class="q-content">Animals that eat both plants and the flesh of other animals are called:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Omnivores</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">18.</div>
+                <div class="q-content">The small green, leaf-like structures at the base of a flower are:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Sepals</span><br>
+            <em>Explanation: Sepals protect the flower during its bud stage.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">19.</div>
+                <div class="q-content">After fertilization, which part of the flower develops into a fruit?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(a) Ovary</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">20.</div>
+                <div class="q-content">The framework of bones that gives shape to our body is the:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Skeletal system</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">21.</div>
+                <div class="q-content">The rib cage protects which important internal organs?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(b) Heart and lungs</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">22.</div>
+                <div class="q-content">Which of the following is a biotic (living) component of a habitat?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Plants</span><br>
+            <em>Explanation: Soil, water, and sunlight are abiotic (non-living) components.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">23.</div>
+                <div class="q-content">A pond is an example of an:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(a) Aquatic habitat</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">24.</div>
+                <div class="q-content">The process of loss of water in the form of vapor from leaves is called:</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(c) Transpiration</span>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">25.</div>
+                <div class="q-content">Which vitamin is essential for maintaining healthy eyesight?</div>
+            </div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            Correct Option: <span class="correct-opt">(a) Vitamin A</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B SOLUTIONS (15 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">26.</div>
+                <div class="q-content">Name any three main components of food. Why is roughage (dietary fiber) necessary for our body even though it does not provide nutrients?</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Main components of food (Any three) [1.5 Marks]:</strong> Carbohydrates, Proteins, Fats, Vitamins, Minerals.</p>
+            <p><strong>Importance of Roughage [1.5 Marks]:</strong> Roughage (dietary fiber) is essential because it helps our body get rid of undigested food. It adds bulk to the stool, preventing constipation and aiding in the smooth movement of food through the digestive tract.</p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">27.</div>
+                <div class="q-content">Differentiate between a taproot and fibrous roots. Give one example of a plant for each type.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <ul class="sol-list">
+                <li><strong>Taproot [1 Mark]:</strong> In a taproot system, there is one main, thick root that grows straight downwards, and smaller lateral roots branch off from it. 
+                <br><em>Example [0.5 Mark]:</em> Carrot, Radish, or Mango.</li>
+                <li><strong>Fibrous Roots [1 Mark]:</strong> In a fibrous root system, there is no single main root. Instead, a cluster of similar-sized, thin roots emerges directly from the base of the stem and spreads out in the soil.
+                <br><em>Example [0.5 Mark]:</em> Grass, Wheat, or Maize.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">28.</div>
+                <div class="q-content">What is a ball and socket joint? Explain briefly how it allows movement, and state where it is found in the human body.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Definition [1 Mark]:</strong> A ball and socket joint is a type of freely movable joint where the rounded end (ball) of one bone fits securely into the hollow space (socket) of another bone.</p>
+            <p><strong>Movement [1 Mark]:</strong> Because of this unique structure, it allows for movement in all directions (360 degrees).</p>
+            <p><strong>Location [1 Mark]:</strong> It is found in the <strong>shoulder joints</strong> and the <strong>hip joints</strong> of the human body.</p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">29.</div>
+                <div class="q-content">List any three major characteristics that separate living organisms from non-living things. Explain one of them briefly.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Characteristics of living organisms (Any three) [1.5 Marks]:</strong></p>
+            <ul class="sol-list">
+                <li>They need food (Nutrition).</li>
+                <li>They show growth.</li>
+                <li>They respire (Breathe/Release energy).</li>
+                <li>They respond to stimuli.</li>
+                <li>They reproduce their own kind.</li>
+            </ul>
+            <p><strong>Explanation of one characteristic [1.5 Marks] (Example - Respiration):</strong> Respiration is the process by which living organisms take in oxygen to break down food and release the energy needed to survive. Non-living things do not breathe or require energy in this way.</p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <div class="q-text-wrapper">
+                <div class="q-num">30.</div>
+                <div class="q-content">Explain the process of photosynthesis in plants. Write down the names of the essential raw materials required for this process.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Process of Photosynthesis [1.5 Marks]:</strong> Photosynthesis is the process by which green plants prepare their own food. Leaves use sunlight to convert carbon dioxide and water into food (glucose) and release oxygen as a byproduct. The green pigment called chlorophyll helps capture the sunlight energy.</p>
+            <p><strong>Essential Raw Materials [1.5 Marks]:</strong></p>
+            <ul class="sol-list">
+                <li>Sunlight</li>
+                <li>Chlorophyll (present in leaves)</li>
+                <li>Carbon dioxide (from the air)</li>
+                <li>Water (from the soil)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Solutions Generated Confidentially</div>
+</body>
+</html>

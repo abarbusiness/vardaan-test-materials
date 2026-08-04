@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    
+    <!-- MathJax Integration -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1e3a8a; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-badge { display: inline-block; background-color: #22c55e; color: white; padding: 4px 12px; border-radius: 4px; font-weight: bold; margin-top: 10px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 14pt; background: #f3f4f6; padding: 5px; }
+        
+        .qa-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; page-break-inside: avoid; }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; font-weight: bold; color: #333; }
+        .q-text { flex-grow: 1; margin-right: 15px; }
+        .marks-box { 
+            flex-shrink: 0; 
+            background-color: #e5e7eb; 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border: 1px solid #9ca3af; 
+            white-space: nowrap;
+        }
+        
+        .answer-box { margin-left: 25px; color: #1f2937; }
+        .answer-label { font-weight: bold; color: #15803d; margin-right: 5px; }
+        
+        .table-diff { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .table-diff th, .table-diff td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+        .table-diff th { background-color: #f9fafb; }
+        
+        /* Handling equations on small screens */
+        .math-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 600px) {
+            body { padding: 5%; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-box { margin-top: 5px; align-self: flex-start; }
+            .answer-box { margin-left: 10px; }
+        }
+        @media print { 
+            body { max-width: none; width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .solution-badge { border: 1px solid #000; background-color: transparent; color: #000;}
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13: Excretion</div>
+        <div class="solution-badge">DETAILED SOLUTION KEY & MARKING SCHEME</div>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks)</div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 30px;">
+        <!-- Compact view for MCQs to save space while providing detailed references -->
+        <div><b>1.</b> (c) Kidney <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>2.</b> (b) Urea <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>3.</b> (b) Ureter <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>4.</b> (c) Urinary bladder <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>5.</b> (d) Nephron <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>6.</b> (b) Excreting excess water... <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>7.</b> (c) Carbon dioxide <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>8.</b> (a) Resins and gums <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>9.</b> (b) Cortex <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>10.</b> (a) Medulla <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>11.</b> (c) Urethra <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>12.</b> (b) Liver <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>13.</b> (c) Urochrome <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>14.</b> (b) General body surface <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>15.</b> (c) Renal artery <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>16.</b> (c) Latex (Rubber) <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>17.</b> (d) Excretion <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>18.</b> (a) Transpiration <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>19.</b> (b) Last two pairs of ribs <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>20.</b> (d) Glucose <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>21.</b> (d) Heart <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>22.</b> (b) Liver <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>23.</b> (b) Sweat glands <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>24.</b> (c) Oxygen & Carbon dioxide <span style="color:gray; font-size:9pt;">[1M]</span></div>
+        <div><b>25.</b> (d) Lenticels <span style="color:gray; font-size:9pt;">[1M]</span></div>
+    </div>
+    <div style="font-size: 10pt; font-style: italic; margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+        *Teacher's Note: Each correct MCQ option awards exactly 1 mark. No half marks are to be given.*
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="q-header">
+            <div class="q-text">26. Define the term 'Excretion'. Why is it strictly necessary for living organisms to excrete waste?</div>
+            <div class="marks-box">[1 + 2 = 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span><br>
+            <strong>Definition (1 Mark):</strong> Excretion is the biological process by which living organisms eliminate toxic, nitrogenous metabolic waste products (like urea, uric acid, and ammonia) produced inside their bodies.<br><br>
+            <strong>Necessity of Excretion (2 Marks):</strong><br>
+            It is strictly necessary because:
+            <ul style="margin-top: 5px; margin-bottom: 5px;">
+                <li>Metabolic wastes are highly toxic. If they accumulate in the body, they act as poison and disrupt normal cellular activities, eventually leading to death. <em>(1 Mark)</em></li>
+                <li>Excretion helps in maintaining salt and water balance (osmoregulation) inside the body, ensuring homeostasis. <em>(1 Mark)</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-header">
+            <div class="q-text">27. Name the four main organs of the human excretory system. State one primary function of the kidneys.</div>
+            <div class="marks-box">[2 + 1 = 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span><br>
+            <strong>Four main organs (2 Marks - ½ mark each):</strong>
+            <ol style="margin-top: 5px; margin-bottom: 10px;">
+                <li>A pair of <strong>Kidneys</strong></li>
+                <li>A pair of <strong>Ureters</strong></li>
+                <li><strong>Urinary bladder</strong></li>
+                <li><strong>Urethra</strong></li>
+            </ol>
+            <strong>Primary Function of Kidneys (1 Mark):</strong><br>
+            The primary function of the kidneys is to filter out nitrogenous wastes (like urea) and excess salts from the blood to form urine, thereby purifying the blood.
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-header">
+            <div class="q-text">28. Unlike animals, plants do not have specific excretory organs. Mention any three ways by which plants get rid of their waste products.</div>
+            <div class="marks-box">[1 × 3 = 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span><br>
+            Plants eliminate their waste products in the following ways (Any three, 1 mark each):
+            <ul style="margin-top: 5px; margin-bottom: 5px;">
+                <li><strong>Transpiration & Diffusion:</strong> Excess water is removed via transpiration through stomata. Gases like Oxygen (during day) and \(CO_2\) (during night) diffuse out through stomata and lenticels.</li>
+                <li><strong>Shedding of Parts:</strong> Plants store solid waste in leaves, bark, or fruits, and get rid of these wastes when these parts mature and fall off (shedding of leaves/bark).</li>
+                <li><strong>Secretion of By-products:</strong> Certain complex wastes are stored as resins, gums, and latex in older, non-functional xylem tissues or special structures.</li>
+                <li><strong>Root Exudation:</strong> Some wastes are excreted directly into the surrounding soil by the roots.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-header">
+            <div class="q-text">29. Clearly differentiate between the processes of 'Egestion' and 'Excretion' (Give two points of difference).</div>
+            <div class="marks-box">[1.5 × 2 = 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span><br>
+            <table class="table-diff">
+                <tr>
+                    <th style="width: 50%;">Egestion (Defecation)</th>
+                    <th style="width: 50%;">Excretion</th>
+                </tr>
+                <tr>
+                    <td>1. It is the process of removal of <strong>undigested solid food waste</strong> (faeces) from the digestive tract. <em>(1 Mark)</em></td>
+                    <td>1. It is the process of removal of <strong>metabolic liquid/gaseous waste</strong> produced inside the body's cells. <em>(1 Mark)</em></td>
+                </tr>
+                <tr>
+                    <td>2. The waste is passed out through the <strong>anus</strong>. <em>(0.5 Mark)</em></td>
+                    <td>2. The waste is passed out through excretory organs like <strong>kidneys, lungs, and skin</strong>. <em>(0.5 Mark)</em></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-header">
+            <div class="q-text">30. Explain briefly the role of the skin and the liver as accessory excretory organs in the human body.</div>
+            <div class="marks-box">[1.5 + 1.5 = 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <span class="answer-label">Answer:</span><br>
+            <strong>Role of Skin (1.5 Marks):</strong><br>
+            The skin contains sweat glands. It helps in excretion by producing <strong>sweat</strong>, which contains excess water, small amounts of dissolved salts (mostly sodium chloride), and traces of urea. Sweating also provides a cooling effect to the body.<br><br>
+            <strong>Role of Liver (1.5 Marks):</strong><br>
+            The liver acts as a critical detoxifying organ. It breaks down excess, toxic amino acids from the blood into a highly toxic gas (Ammonia), and then quickly converts this ammonia into less harmful <strong>urea</strong>. The blood then carries this urea to the kidneys for final removal. It also breaks down dead red blood cells to form bile pigments.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • Academic Dean Review Complete</div>
+</body>
+</html>

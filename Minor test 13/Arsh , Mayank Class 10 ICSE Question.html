@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; flex-direction: row; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .mcq-options { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px; }
+        .sub-question { margin-bottom: 10px; }
+        .sub-question-num { font-weight: bold; display: inline-block; width: 30px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .mcq-options { grid-template-columns: 1fr; }
+            .q-num { width: 30px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15mm; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 150mm; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Biology (Excretory System)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (Objective) and Section B (Subjective).</li>
+                <li>Read the questions carefully before writing the answers.</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (35 Marks)<br><span class="marks-info">(Objective Type Questions)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Choose the most appropriate option for the following statements: (25 &times; 1 = 25 Marks)</strong>
+            
+            <div class="sub-question" style="margin-top: 10px;">
+                <span class="sub-question-num">(i)</span> The primary excretory organ in human beings is:
+                <div class="mcq-options">
+                    <div>(a) Lungs</div><div>(b) Skin</div>
+                    <div>(c) Kidneys</div><div>(d) Liver</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(ii)</span> The structural and functional unit of the kidney is:
+                <div class="mcq-options">
+                    <div>(a) Neuron</div><div>(b) Nephron</div>
+                    <div>(c) Ureter</div><div>(d) Alveolus</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(iii)</span> The knot of blood capillaries inside the Bowman's capsule is called:
+                <div class="mcq-options">
+                    <div>(a) Glomerulus</div><div>(b) Loop of Henle</div>
+                    <div>(c) Renal Vein</div><div>(d) Vasa recta</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(iv)</span> The main nitrogenous waste produced in the human body is:
+                <div class="mcq-options">
+                    <div>(a) Ammonia</div><div>(b) Uric acid</div>
+                    <div>(c) Urea</div><div>(d) Creatinine</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(v)</span> The pigment that gives a pale yellow colour to human urine is:
+                <div class="mcq-options">
+                    <div>(a) Haemoglobin</div><div>(b) Urochrome</div>
+                    <div>(c) Melanin</div><div>(d) Bilirubin</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(vi)</span> Ultrafiltration takes place in the:
+                <div class="mcq-options">
+                    <div>(a) Proximal convoluted tubule</div><div>(b) Distal convoluted tubule</div>
+                    <div>(c) Malpighian capsule</div><div>(d) Collecting duct</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(vii)</span> The hormone that regulates the amount of water excreted in urine is:
+                <div class="mcq-options">
+                    <div>(a) Insulin</div><div>(b) Thyroxine</div>
+                    <div>(c) Adrenaline</div><div>(d) Anti-diuretic hormone (ADH)</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(viii)</span> The blood vessel that brings oxygenated and waste-laden blood to the kidney is:
+                <div class="mcq-options">
+                    <div>(a) Renal vein</div><div>(b) Renal artery</div>
+                    <div>(c) Hepatic portal vein</div><div>(d) Pulmonary artery</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(ix)</span> The U-shaped structure of a nephron is known as:
+                <div class="mcq-options">
+                    <div>(a) Bowman's capsule</div><div>(b) Collecting tubule</div>
+                    <div>(c) Loop of Henle</div><div>(d) Urethra</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(x)</span> Which of the following is NOT an organ of excretion in humans?
+                <div class="mcq-options">
+                    <div>(a) Skin</div><div>(b) Lungs</div>
+                    <div>(c) Heart</div><div>(d) Liver</div>
+                </div>
+            </div>
+            
+            <div class="sub-question">
+                <span class="sub-question-num">(xi)</span> The muscular sac that temporarily stores urine is:
+                <div class="mcq-options">
+                    <div>(a) Gall bladder</div><div>(b) Urinary bladder</div>
+                    <div>(c) Ureter</div><div>(d) Pelvis</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xii)</span> The process of maintaining water and salt balance in the body is called:
+                <div class="mcq-options">
+                    <div>(a) Excretion</div><div>(b) Osmoregulation</div>
+                    <div>(c) Secretion</div><div>(d) Ultrafiltration</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xiii)</span> Normal pH of human urine is approximately:
+                <div class="mcq-options">
+                    <div>(a) 2.0 (Highly acidic)</div><div>(b) 6.0 (Slightly acidic)</div>
+                    <div>(c) 7.4 (Slightly alkaline)</div><div>(d) 10.0 (Highly alkaline)</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xiv)</span> Urea is synthesized from excess amino acids in the:
+                <div class="mcq-options">
+                    <div>(a) Kidney</div><div>(b) Spleen</div>
+                    <div>(c) Liver</div><div>(d) Pancreas</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xv)</span> The tube that carries urine from the kidney to the urinary bladder is:
+                <div class="mcq-options">
+                    <div>(a) Urethra</div><div>(b) Ureter</div>
+                    <div>(c) Fallopian tube</div><div>(d) Epididymis</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xvi)</span> The outer darker region of the kidney is known as the:
+                <div class="mcq-options">
+                    <div>(a) Medulla</div><div>(b) Cortex</div>
+                    <div>(c) Pelvis</div><div>(d) Hilum</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xvii)</span> Selective reabsorption of useful substances like glucose primarily occurs in:
+                <div class="mcq-options">
+                    <div>(a) Proximal Convoluted Tubule</div><div>(b) Distal Convoluted Tubule</div>
+                    <div>(c) Glomerulus</div><div>(d) Bowman's capsule</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xviii)</span> Which of the following is completely reabsorbed from the glomerular filtrate under normal conditions?
+                <div class="mcq-options">
+                    <div>(a) Urea</div><div>(b) Uric acid</div>
+                    <div>(c) Glucose</div><div>(d) Creatinine</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xix)</span> The condition where blood is passed in the urine is called:
+                <div class="mcq-options">
+                    <div>(a) Glycosuria</div><div>(b) Hematuria</div>
+                    <div>(c) Diuresis</div><div>(d) Uremia</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xx)</span> The machine used to filter blood when kidneys fail is called a:
+                <div class="mcq-options">
+                    <div>(a) Pacemaker</div><div>(b) Dialyzer</div>
+                    <div>(c) Ventilator</div><div>(d) Electrocardiograph</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xxi)</span> Sweat primarily helps the human body in:
+                <div class="mcq-options">
+                    <div>(a) Digestion</div><div>(b) Respiration</div>
+                    <div>(c) Thermoregulation (cooling)</div><div>(d) Circulation</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xxii)</span> Which part of the kidney acts like a funnel to collect urine and pass it to the ureter?
+                <div class="mcq-options">
+                    <div>(a) Cortex</div><div>(b) Medulla</div>
+                    <div>(c) Renal Pelvis</div><div>(d) Bowman's capsule</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xxiii)</span> A disease caused due to the insufficient secretion of ADH is:
+                <div class="mcq-options">
+                    <div>(a) Diabetes mellitus</div><div>(b) Diabetes insipidus</div>
+                    <div>(c) Goitre</div><div>(d) Scurvy</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xxiv)</span> Which efferent vessel is narrower, creating hydrostatic pressure in the glomerulus?
+                <div class="mcq-options">
+                    <div>(a) Afferent arteriole</div><div>(b) Efferent arteriole</div>
+                    <div>(c) Renal vein</div><div>(d) Vena cava</div>
+                </div>
+            </div>
+
+            <div class="sub-question">
+                <span class="sub-question-num">(xxv)</span> The concavity on the inner margin of the kidney is known as:
+                <div class="mcq-options">
+                    <div>(a) Hilum</div><div>(b) Pyramid</div>
+                    <div>(c) Calyx</div><div>(d) Cortex</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with suitable words: (5 &times; 1 = 5 Marks)</strong>
+            <div class="sub-question" style="margin-top: 10px;">
+                <span class="sub-question-num">(i)</span> The physical process of passing urine out of the body is called _______________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(ii)</span> Blood enters the glomerulus through the _______________ arteriole.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(iii)</span> _______________ is an excretory organ that eliminates carbon dioxide and water vapour.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(iv)</span> The renal medulla is divided into several conical masses called renal _______________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(v)</span> The fluid that is collected in the Bowman's capsule is known as glomerular _______________.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False. If false, rewrite the correct statement: (5 &times; 1 = 5 Marks)</strong>
+            <div class="sub-question" style="margin-top: 10px;">
+                <span class="sub-question-num">(i)</span> The right kidney is placed slightly higher than the left kidney.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(ii)</span> Urea is produced in the kidneys.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(iii)</span> Excretion is the removal of undigested food from the alimentary canal.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(iv)</span> The normal presence of glucose in urine is a sign of good health.
+            </div>
+            <div class="sub-question">
+                <span class="sub-question-num">(v)</span> Sweat contains mostly water along with dissolved sodium chloride and trace amounts of urea.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<br><span class="marks-info">(Subjective Type Questions - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <strong>(a)</strong> Define the following terms:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) Excretion<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) Osmoregulation 
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(b)</strong> Draw a neat, well-labelled diagram of a Malpighian capsule (showing Bowman's capsule and Glomerulus). Mention the specific function of this part. 
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Differentiate between the following pairs on the basis of what is given in the brackets:</strong>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(a)</strong> Ureter and Urethra (Function)
+            </div>
+            <div class="sub-question">
+                <strong>(b)</strong> Renal Artery and Renal Vein (Type of blood composition specifically related to nitrogenous waste)
+            </div>
+            <div class="sub-question">
+                <strong>(c)</strong> Renal Cortex and Renal Medulla (Location inside the kidney)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Give appropriate biological reasons for the following statements:</strong>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(a)</strong> Urine passed in summer is slightly thicker (more concentrated) than the urine passed in winter.
+            </div>
+            <div class="sub-question">
+                <strong>(b)</strong> The efferent arteriole is narrower than the afferent arteriole.
+            </div>
+            <div class="sub-question">
+                <strong>(c)</strong> A person is advised to undergo dialysis. (State the biological condition when this happens).
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

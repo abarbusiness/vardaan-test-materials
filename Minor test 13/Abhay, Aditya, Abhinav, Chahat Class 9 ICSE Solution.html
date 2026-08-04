@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: white; 
+            position: relative;
+            word-wrap: break-word;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #2c3e50; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #2c3e50;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #c0392b;
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            background-color: #f1f2f6;
+            padding: 5px;
+            border-left: 5px solid #2c3e50;
+            font-size: 12pt; 
+        }
+        
+        /* Layout for Question + Marks */
+        .q-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 4px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-marks {
+            white-space: nowrap;
+            color: #c0392b;
+            font-size: 10pt;
+            background: #ffeaa7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .answer-box {
+            margin-bottom: 25px;
+            padding-left: 10px;
+            border-left: 2px solid #2ecc71;
+        }
+        .correct-opt {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .math-break {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        table.diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table.diff-table th, table.diff-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 10.5pt; }
+            .institute-name { font-size: 16pt; }
+            .q-row { flex-direction: column; }
+            .q-marks { margin-top: 5px; align-self: flex-start; }
+            .math-break { font-size: 90%; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & DETAILED SOLUTIONS : Minor Test 13</div>
+        <p style="margin:5px 0; font-size:10pt;">Class: 9 ICSE | Subject: Biology | Topic: Five Kingdom Classification (upto Plantae)</p>
+    </div>
+
+    <div class="section-header">SECTION A (25 Marks) - Multiple Choice Questions</div>
+    
+    <div class="q-row"><div class="q-text">1. The Five-Kingdom classification was proposed by:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Robert Whittaker</span>. <br><em>Explanation:</em> R.H. Whittaker proposed the Five-Kingdom classification in 1969 comprising Monera, Protista, Fungi, Plantae, and Animalia.</div>
+
+    <div class="q-row"><div class="q-text">2. Organisms lacking a well-defined nucleus and membrane-bound organelles are grouped under Kingdom:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Monera</span>. <br><em>Explanation:</em> Monerans are prokaryotes, meaning their genetic material is not enclosed in a nuclear membrane (nucleoid).</div>
+
+    <div class="q-row"><div class="q-text">3. The cell wall of fungi is primarily composed of:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Chitin</span>. <br><em>Explanation:</em> Fungal cell walls are made of a tough, complex sugar called chitin, unlike plants which have cellulose.</div>
+
+    <div class="q-row"><div class="q-text">4. Which of the following is an example of a unicellular eukaryote?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Amoeba</span>. <br><em>Explanation:</em> Amoeba belongs to Kingdom Protista, which consists of primarily unicellular, eukaryotic organisms.</div>
+
+    <div class="q-row"><div class="q-text">5. Plants belonging to the division Thallophyta are commonly called:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Algae</span>. <br><em>Explanation:</em> Thallophytes have an undifferentiated plant body (thallus) and are mostly aquatic, predominantly known as algae.</div>
+
+    <div class="q-row"><div class="q-text">6. Which group of plants is known as the 'Amphibians of the Plant Kingdom'?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Bryophytes</span>. <br><em>Explanation:</em> They live on land but require water for sexual reproduction (swimming of male gametes to the female organ).</div>
+
+    <div class="q-row"><div class="q-text">7. The reserve food material in fungi is typically stored as:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Glycogen</span>. <br><em>Explanation:</em> Like animals, fungi store their excess food as glycogen, not as starch.</div>
+
+    <div class="q-row"><div class="q-text">8. Plants bearing 'naked seeds' belong to which division?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Gymnosperms</span>. <br><em>Explanation:</em> 'Gymno' means naked and 'sperma' means seed. Their ovules are not enclosed within an ovary wall.</div>
+
+    <div class="q-row"><div class="q-text">9. Which of the following belongs to Kingdom Monera?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Lactobacillus</span>. <br><em>Explanation:</em> Lactobacillus is a bacterium, which is a prokaryote belonging to Monera.</div>
+
+    <div class="q-row"><div class="q-text">10. The first terrestrial plants to possess vascular tissues (xylem and phloem) are:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Pteridophytes</span>. <br><em>Explanation:</em> Pteridophytes (like ferns) are the earliest vascular cryptogams.</div>
+
+    <div class="q-row"><div class="q-text">11. A defining feature of Angiosperms is:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Seeds enclosed within a fruit</span>. <br><em>Explanation:</em> Angiosperms are flowering plants where the ovary ripens into a fruit, enclosing the seeds.</div>
+
+    <div class="q-row"><div class="q-text">12. Lichen is a symbiotic association between:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Algae and Fungi</span>. <br><em>Explanation:</em> The alga prepares food (photosynthesis), and the fungus provides shelter and absorbs minerals/water.</div>
+
+    <div class="q-row"><div class="q-text">13. Euglena is placed under Kingdom Protista because it is:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Unicellular and eukaryotic</span>. <br><em>Explanation:</em> Protista is the kingdom for all unicellular eukaryotes, irrespective of their mode of nutrition.</div>
+
+    <div class="q-row"><div class="q-text">14. The basic unit of biological classification is:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Species</span>. <br><em>Explanation:</em> Species is the lowest and basic unit of taxonomy containing organisms capable of interbreeding.</div>
+
+    <div class="q-row"><div class="q-text">15. Which of the following is NOT a characteristic of Kingdom Plantae?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Heterotrophic nutrition</span>. <br><em>Explanation:</em> Plants are characteristically autotrophic (photosynthetic).</div>
+
+    <div class="q-row"><div class="q-text">16. Cycas and Pinus are examples of:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Gymnosperms</span>. <br><em>Explanation:</em> These are non-flowering plants that bear naked seeds in cones.</div>
+
+    <div class="q-row"><div class="q-text">17. The mode of nutrition in mushrooms and bread moulds is:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Saprophytic</span>. <br><em>Explanation:</em> They secrete digestive enzymes onto dead/decaying organic matter and absorb the soluble nutrients.</div>
+
+    <div class="q-row"><div class="q-text">18. Which division of Plantae has a plant body that is NOT differentiated into true root, stem, and leaves?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(d) Thallophyta</span>. <br><em>Explanation:</em> The undifferentiated plant body is called a 'thallus'.</div>
+
+    <div class="q-row"><div class="q-text">19. Pseudopodia are the locomotory organs of:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(a) Amoeba</span>. <br><em>Explanation:</em> Amoeba uses 'false feet' (pseudopodia) for movement and engulfing food.</div>
+
+    <div class="q-row"><div class="q-text">20. Yeast is distinct from other fungi because it is:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Unicellular</span>. <br><em>Explanation:</em> While most fungi are multicellular with hyphae, yeast is uniquely unicellular.</div>
+
+    <div class="q-row"><div class="q-text">21. The thread-like structures forming the body of a fungus are called:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(a) Hyphae</span>. <br><em>Explanation:</em> A network of hyphae forms the mycelium, which is the main body of a fungus.</div>
+
+    <div class="q-row"><div class="q-text">22. In the binomial nomenclature system, the first name indicates the:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(c) Genus</span>. <br><em>Explanation:</em> The scientific name consists of the generic name (starts with a capital letter) and the specific epithet.</div>
+
+    <div class="q-row"><div class="q-text">23. Which of the following is an example of an Angiosperm?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Mango tree</span>. <br><em>Explanation:</em> Mango trees produce flowers and fruits enclosing seeds, characteristic of Angiosperms.</div>
+
+    <div class="q-row"><div class="q-text">24. Spores in a fern are typically found on the:</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(b) Underside of leaves</span>. <br><em>Explanation:</em> Ferns produce spores in structures called sporangia, clustered into sori on the lower surface of leaves (fronds).</div>
+
+    <div class="q-row"><div class="q-text">25. Organisms that survive in extreme environments, like hot springs, belong to which group?</div><div class="q-marks">[1 Mark]</div></div>
+    <div class="answer-box"><strong>Ans:</strong> <span class="correct-opt">(a) Archaebacteria (Monera)</span>. <br><em>Explanation:</em> Archaebacteria have unique cell wall components that allow them to endure extreme heat (thermophiles) or salinity.</div>
+
+    <div class="section-header">SECTION B (15 Marks) - Short Answer Type</div>
+    
+    <div class="q-row"><div class="q-text">26. Differentiate between organisms of Kingdom Monera and Kingdom Protista based on their cellular structure. Give one example of each.</div><div class="q-marks">[3 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong>
+        <table class="diff-table">
+            <tr>
+                <th>Feature</th>
+                <th>Kingdom Monera</th>
+                <th>Kingdom Protista</th>
+            </tr>
+            <tr>
+                <td>Cellular Structure</td>
+                <td><strong>Prokaryotic:</strong> Lack a well-defined nucleus (genetic material is a nucleoid) and lack membrane-bound organelles (like mitochondria, chloroplasts). (1 mark)</td>
+                <td><strong>Eukaryotic:</strong> Have a true well-defined nucleus enclosed in a nuclear membrane and contain membrane-bound organelles. (1 mark)</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>Bacteria (e.g., <em>Lactobacillus</em>, <em>E. coli</em>) (0.5 mark)</td>
+                <td><em>Amoeba</em>, <em>Paramecium</em>, <em>Euglena</em> (0.5 mark)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="q-row"><div class="q-text">27. State three distinct characteristic features of Kingdom Fungi regarding their cell wall, mode of nutrition, and body structure.</div><div class="q-marks">[3 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong> (1 mark for each point)
+        <ol>
+            <li><strong>Cell Wall:</strong> They have a rigid cell wall primarily made of a complex sugar called <strong>chitin</strong> (not cellulose).</li>
+            <li><strong>Mode of Nutrition:</strong> They are <strong>heterotrophic</strong>, specifically <strong>saprophytic</strong> or parasitic. They secrete enzymes outside their body to digest dead organic matter and then absorb the nutrients.</li>
+            <li><strong>Body Structure:</strong> The main plant body is mostly multicellular (except yeast) and consists of a network of fine, thread-like structures called <strong>hyphae</strong>, which together form a mass known as <strong>mycelium</strong>.</li>
+        </ol>
+    </div>
+
+    <div class="q-row"><div class="q-text">28. Why are Bryophytes referred to as the "amphibians of the plant kingdom"? Explain briefly.</div><div class="q-marks">[3 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong>
+        Bryophytes (like mosses and liverworts) are called the "amphibians of the plant kingdom" because:
+        <ul style="margin-top:5px;">
+            <li><strong>Terrestrial Habitat (1 Mark):</strong> They primarily grow on land in moist and shady places, functioning as terrestrial plants for their vegetative growth.</li>
+            <li><strong>Dependency on Water for Reproduction (2 Marks):</strong> Just like amphibians in the animal kingdom, bryophytes absolutely require an external layer of water to complete their life cycle. The male gametes (antherozoids) are motile and must swim through water to reach the female reproductive organ (archegonium) for fertilization to occur.</li>
+        </ul>
+    </div>
+
+    <div class="q-row"><div class="q-text">29. What are Gymnosperms? State any two features that differentiate them from Angiosperms.</div><div class="q-marks">[3 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong>
+        <strong>Gymnosperms</strong> are a group of vascular plants that bear seeds which are not enclosed within an ovary wall (i.e., they bear "naked seeds"). (1 Mark)<br><br>
+        <strong>Differences from Angiosperms:</strong> (2 Marks)
+        <table class="diff-table">
+            <tr>
+                <th>Feature</th>
+                <th>Gymnosperms</th>
+                <th>Angiosperms</th>
+            </tr>
+            <tr>
+                <td>Seeds</td>
+                <td>Seeds are naked (exposed on cone scales).</td>
+                <td>Seeds are enclosed within a fruit (ripened ovary).</td>
+            </tr>
+            <tr>
+                <td>Reproductive Organ</td>
+                <td>Do not produce flowers; bear cones (strobili).</td>
+                <td>Produce true flowers.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="q-row"><div class="q-text">30. List three main criteria used by Robert Whittaker to classify organisms into Five Kingdoms.</div><div class="q-marks">[3 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong> (1 mark for each valid criterion)
+        Robert Whittaker's Five-Kingdom classification is based on the following key criteria:
+        <ol>
+            <li><strong>Cell Structure:</strong> Whether the organism is Prokaryotic (lacking a true nucleus) or Eukaryotic (having a true nucleus).</li>
+            <li><strong>Body Organization (Thallus organization):</strong> Whether the organism is Unicellular (single-celled) or Multicellular (complex body design).</li>
+            <li><strong>Mode of Nutrition:</strong> How the organism obtains food - Autotrophic (photosynthetic), Heterotrophic (saprophytic or holozoic ingestion).</li>
+        </ol>
+        <em>(Note: Reproduction and phylogenetic relationships were also criteria, accepting any three gives full marks.)</em>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks) - Long Answer Type</div>
+    
+    <div class="q-row"><div class="q-text">31. Explain the classification of Kingdom Plantae into its major divisions. Describe the defining characteristics of Thallophyta, Bryophyta, and Pteridophyta with one example for each.</div><div class="q-marks">[5 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong>
+        Kingdom Plantae is broadly classified based on plant body differentiation, presence of vascular tissues, and ability to bear seeds. (0.5 Mark)<br><br>
+        <strong>1. Thallophyta (Algae): (1.5 Marks)</strong>
+        <ul>
+            <li><strong>Characteristics:</strong> The plant body is not differentiated into true roots, stem, and leaves; it is a simple mass called a 'thallus'. They lack vascular tissues (xylem and phloem). Predominantly aquatic.</li>
+            <li><strong>Example:</strong> <em>Spirogyra</em> (or Ulothrix, Chara).</li>
+        </ul>
+        <strong>2. Bryophyta: (1.5 Marks)</strong>
+        <ul>
+            <li><strong>Characteristics:</strong> The plant body is differentiated into stem-like and leaf-like structures but lacks true roots; instead, they have thread-like structures called rhizoids for anchorage. They lack specialized vascular tissues. Known as amphibians of the plant kingdom.</li>
+            <li><strong>Example:</strong> Moss (<em>Funaria</em>), Riccia (Liverwort).</li>
+        </ul>
+        <strong>3. Pteridophyta: (1.5 Marks)</strong>
+        <ul>
+            <li><strong>Characteristics:</strong> The plant body is well-differentiated into true roots, stems, and leaves. They are the first terrestrial plants to possess vascular tissues (xylem for water, phloem for food). They reproduce via spores and do not produce seeds.</li>
+            <li><strong>Example:</strong> Ferns (<em>Dryopteris</em>), Horsetails.</li>
+        </ul>
+    </div>
+
+    <div class="q-row"><div class="q-text">32. Describe the general characteristics of Kingdom Monera focusing on their cell structure, shape, and mode of nutrition. How are they economically important to humans? (Give two beneficial roles).</div><div class="q-marks">[5 Marks]</div></div>
+    <div class="answer-box">
+        <strong>Ans:</strong>
+        <strong>General Characteristics of Monera: (3 Marks)</strong>
+        <ul>
+            <li><strong>Cell Structure (Prokaryotic):</strong> Monerans lack a true, membrane-bound nucleus. The genetic material (DNA) lies naked in the cytoplasm forming a nucleoid. Membrane-bound organelles like mitochondria, chloroplasts, and ER are absent. The cell wall is usually made of peptidoglycan (murein).</li>
+            <li><strong>Shape:</strong> Bacteria (the sole members) exist in four basic shapes: spherical (Coccus), rod-shaped (Bacillus), comma-shaped (Vibrio), and spiral (Spirillum).</li>
+            <li><strong>Mode of Nutrition:</strong> Highly diverse. They can be autotrophic (photosynthetic or chemosynthetic) synthesizing their own food, or heterotrophic (parasitic, saprophytic, or symbiotic) relying on other organisms or dead organic matter.</li>
+        </ul>
+        <strong>Economic Importance (Beneficial Roles): (2 Marks - 1 each)</strong>
+        <ol>
+            <li><strong>In Food Industry:</strong> Certain bacteria are essential for making dairy products. E.g., <em>Lactobacillus</em> is used to convert milk into curd (fermentation of lactose).</li>
+            <li><strong>In Agriculture (Nitrogen Fixation):</strong> Symbiotic bacteria like <em>Rhizobium</em> found in the root nodules of leguminous plants, or free-living ones like <em>Azotobacter</em>, fix atmospheric nitrogen into nitrates, enriching soil fertility.</li>
+        </ol>
+    </div>
+
+    <div style="text-align:center; font-style:italic; margin-top:30px; font-size:10pt;">
+        --- End of Solutions ---
+    </div>
+</body>
+</html>
