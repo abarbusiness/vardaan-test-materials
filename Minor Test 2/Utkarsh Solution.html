@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    
+    <!-- MathJax Configuration and Script for rendering LaTeX math formulas -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                tags: 'ams'
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '1em'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* Base Styles & Typography */
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: #f9f9f9; 
+            margin: 0; 
+            padding: 0;
+        }
+        .container {
+            max-width: 210mm;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* Branding & Header */
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.08; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double #000; 
+            padding-bottom: 15px; 
+            position: relative;
+            z-index: 1;
+        }
+        .institute-name { 
+            font-size: 26pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #1a1a1a;
+        }
+        .test-name { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #333;
+            text-transform: uppercase;
+        }
+        .solution-tag {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12pt;
+            margin-top: 10px;
+        }
+
+        /* Section Dividers */
+        .section-header { 
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center; 
+            font-weight: bold; 
+            margin: 30px 0 20px 0; 
+            font-size: 14pt; 
+            border: 1px solid #ccc;
+            position: relative;
+            z-index: 1;
+        }
+        .subject-divider { 
+            font-weight: bold; 
+            font-size: 13pt; 
+            color: #2c3e50; 
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            margin: 25px 0 15px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Q&A Block Layout */
+        .qa-block {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .question-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fdfdfd;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .q-text-container {
+            display: flex;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+            color: #2980b9;
+        }
+        .q-text { 
+            font-weight: bold; 
+            color: #333;
+            text-align: justify;
+        }
+        .q-marks {
+            font-weight: bold;
+            color: #e74c3c;
+            white-space: nowrap;
+            background: #fbeeeeb0;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11pt;
+            flex-shrink: 0;
+        }
+        .solution-box {
+            padding: 0 15px 0 50px;
+            text-align: justify;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .sub-part {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Elements */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
+        table.comparison {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            min-width: 600px; /* Forces scrolling on small screens */
+        }
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        table.comparison th, table.comparison td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+        table.comparison th {
+            background-color: #f2f2f2;
+        }
+        
+        /* Utility */
+        .diagram-box {
+            border: 1px dashed #7f8c8d;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .footer { 
+            margin-top: 50px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 15px; 
+            color: #777; 
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive Media Queries */
+        @media screen and (max-width: 768px) {
+            .container { padding: 10mm; margin: 0; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .question-box { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 8px; }
+            .solution-box { padding-left: 15px; }
+            body { font-size: 11pt; }
+        }
+        @media print {
+            body { background-color: white; }
+            .container { box-shadow: none; margin: 0; padding: 0; width: 100%; max-width: none; }
+            .qa-block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Minor Test</div>
+            <div class="solution-tag">DETAILED SOLUTION KEY</div>
+        </div>
+
+        <!-- ================= SECTION A ================= -->
+        <div class="section-header">SECTION A (12 Marks)</div>
+        <div class="subject-divider">Part I: Science (Matter and Pure Substances)</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">1.</div>
+                    <div class="q-text">Define matter. Name the three fundamental states of matter.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>Anything that occupies space (has volume) and has mass is called <strong>matter</strong>. <em>(1 Mark)</em></p>
+                <p>The three fundamental states of matter are: <strong>Solid, Liquid, and Gas</strong>. <em>(1 Mark)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">2.</div>
+                    <div class="q-text">Write any two key differences between a pure substance and a mixture.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <ul>
+                    <li><strong>Composition:</strong> A pure substance consists of a single type of particles and has a fixed composition, whereas a mixture consists of two or more types of particles and has a variable composition. <em>(1 Mark)</em></li>
+                    <li><strong>Separation:</strong> The constituents of a pure substance cannot be separated by simple physical methods, whereas the constituents of a mixture can be separated easily by physical methods (like filtration, evaporation). <em>(1 Mark)</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">3.</div>
+                    <div class="q-text">Why does a desert cooler cool better on a hot, dry day?</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>A desert cooler works on the principle of evaporative cooling. On a hot and dry day, the temperature is high and humidity (moisture in the air) is low. These conditions significantly increase the rate of evaporation of water. Because evaporation causes cooling (as it draws latent heat from the surroundings), the rapid evaporation leads to a better cooling effect. <em>(2 Marks)</em></p>
+            </div>
+        </div>
+
+        <div class="subject-divider">Part II: Mathematics</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">4.</div>
+                    <div class="q-text">Simplify the following expression: $(3 + \sqrt{3})(3 - \sqrt{3})$.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>The given expression is in the form of the algebraic identity: $(a + b)(a - b) = a^2 - b^2$</p>
+                <div class="math-scroll">
+                    $$ \begin{aligned} 
+                    \text{Here, } a &= 3 \text{ and } b = \sqrt{3} \\
+                    (3 + \sqrt{3})(3 - \sqrt{3}) &= (3)^2 - (\sqrt{3})^2 \\
+                    &= 9 - 3 \\
+                    &= 6
+                    \end{aligned} $$
+                </div>
+                <p><strong>Final Answer:</strong> 6 <em>(2 Marks for applying identity and final result)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">5.</div>
+                    <div class="q-text">Find the value of the polynomial $P(x) = 5x - 4x^2 + 3$ at $x = 2$.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>Given polynomial: $P(x) = 5x - 4x^2 + 3$</p>
+                <p>Substitute $x = 2$ into the polynomial:</p>
+                <div class="math-scroll">
+                    $$ \begin{aligned} 
+                    P(2) &= 5(2) - 4(2)^2 + 3 \\
+                    &= 10 - 4(4) + 3 \\
+                    &= 10 - 16 + 3 \\
+                    &= -6 + 3 \\
+                    &= -3
+                    \end{aligned} $$
+                </div>
+                <p><strong>Final Answer:</strong> -3 <em>(2 Marks)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">6.</div>
+                    <div class="q-text">Express the linear equation $2x + 3y = 9.3\overline{5}$ in the standard form $ax + by + c = 0$ and indicate the values of $a, b,$ and $c$.</div>
+                </div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>The standard form of a linear equation in two variables is $ax + by + c = 0$.</p>
+                <p>Given equation: $2x + 3y = 9.3\overline{5}$</p>
+                <p>Transposing the constant term to the LHS:</p>
+                <div class="math-scroll">
+                    $$ 2x + 3y - 9.3\overline{5} = 0 $$
+                </div>
+                <p>Comparing this with $ax + by + c = 0$, we get:</p>
+                <p><strong>$a = 2, \quad b = 3, \quad c = -9.3\overline{5}$</strong> <em>(1 Mark for standard form, 1 Mark for values)</em></p>
+            </div>
+        </div>
+
+        <!-- ================= SECTION B ================= -->
+        <div class="section-header">SECTION B (18 Marks)</div>
+        <div class="subject-divider">Part I: Science (Matter and Pure Substances)</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">7.</div>
+                    <div class="q-text">State any three characteristics of the particles of matter.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>The three main characteristics of particles of matter are:</p>
+                <ol>
+                    <li><strong>Particles of matter have space between them:</strong> (Intermolecular spaces exist between particles, which is why salt dissolves evenly in water).</li>
+                    <li><strong>Particles of matter are continuously moving:</strong> (They possess kinetic energy. Example: Smell of hot sizzling food reaches us from a distance due to diffusion).</li>
+                    <li><strong>Particles of matter attract each other:</strong> (There is an intermolecular force of attraction acting between particles that keeps them together).</li>
+                </ol>
+                <p><em>(1 Mark for each correct characteristic)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">8.</div>
+                    <div class="q-text">Define the following terms clearly: (a) Melting point, (b) Boiling point, (c) Latent heat of fusion.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Melting point:</strong> The specific temperature at which a solid melts to become a liquid at atmospheric pressure is called its melting point. <em>(1 Mark)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Boiling point:</strong> The specific temperature at which a liquid starts boiling and changing into vapor at atmospheric pressure is called its boiling point. <em>(1 Mark)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(c) Latent heat of fusion:</strong> It is the amount of heat energy required to change 1 kg of a solid into a liquid at atmospheric pressure at its melting point, without any change in temperature. <em>(1 Mark)</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">9.</div>
+                    <div class="q-text">How can we successfully separate a mixture containing common salt and ammonium chloride? Briefly explain the principle involved.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>Method: Sublimation</strong> <em>(1 Mark)</em></p>
+                <p><strong>Procedure & Principle:</strong></p>
+                <ul>
+                    <li>The mixture is placed in a china dish and covered with an inverted glass funnel. The stem of the funnel is plugged with cotton.</li>
+                    <li>On heating the china dish, the <strong>ammonium chloride undergoes sublimation</strong>.</li>
+                    <li><strong>Principle:</strong> Sublimation is the process where a solid changes directly into vapors on heating, and vapors change directly into solid on cooling, bypassing the liquid state. Ammonium chloride is a sublimable volatile component, while common salt (sodium chloride) is non-sublimable. <em>(1.5 Marks)</em></li>
+                    <li>The ammonium chloride vapors rise and condense on the cooler inner walls of the funnel, forming a solid sublimate. Common salt is left behind in the china dish. <em>(0.5 Marks)</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="subject-divider">Part II: Mathematics</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">10.</div>
+                    <div class="q-text">Show how $\sqrt{5}$ can be represented on the number line. (Draw a neat sketch).</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>By Pythagoras Theorem, we can write $5 = 2^2 + 1^2$. Therefore, $\sqrt{5} = \sqrt{2^2 + 1^2}$.</p>
+                <p><strong>Steps of construction:</strong></p>
+                <ol>
+                    <li>Draw a horizontal number line and mark a point 'O' representing zero.</li>
+                    <li>Mark point 'A' on the number line such that OA = 2 units.</li>
+                    <li>From point 'A', draw a perpendicular line segment AB of length 1 unit (AB $\perp$ OA).</li>
+                    <li>Join O and B. Now, $\Delta OAB$ is a right-angled triangle at A.</li>
+                    <li>By Pythagoras theorem: $OB^2 = OA^2 + AB^2 \Rightarrow OB = \sqrt{2^2 + 1^2} = \sqrt{4 + 1} = \sqrt{5}$ units.</li>
+                    <li>Taking O as the center and OB as the radius, draw an arc intersecting the number line at a point, say 'P'.</li>
+                    <li>Point P represents $\sqrt{5}$ on the number line.</li>
+                </ol>
+                <div class="diagram-box">
+                    [Teacher Note: Students should draw a right angled triangle on the number line with base 2 units, perpendicular 1 unit. Hypotenuse will be $\sqrt{5}$. An arc from the hypotenuse tip to the number line represents the exact point.]
+                </div>
+                <p><em>(1 Mark for logic/Pythagoras break down, 2 Marks for steps and correct sketch)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">11.</div>
+                    <div class="q-text">Factorize the quadratic polynomial $x^2 + 7x + 10$ using the splitting the middle term method.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>Given polynomial: $x^2 + 7x + 10$</p>
+                <p>We need to find two numbers whose product is $1 \times 10 = 10$ and whose sum is the middle term, $7$.</p>
+                <p>The numbers are $5$ and $2$ (since $5 \times 2 = 10$ and $5 + 2 = 7$).</p>
+                <p>Splitting the middle term ($7x$):</p>
+                <div class="math-scroll">
+                    $$ \begin{aligned} 
+                    x^2 + 7x + 10 &= x^2 + 5x + 2x + 10 \\
+                    &= x(x + 5) + 2(x + 5) \quad \text{(Taking common terms)} \\
+                    &= (x + 2)(x + 5)
+                    \end{aligned} $$
+                </div>
+                <p><strong>Final Factors:</strong> $(x + 2)(x + 5)$ <em>(1 Mark for correct split, 2 Marks for correct factorization)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">12.</div>
+                    <div class="q-text">Find three different solutions for the linear equation in two variables: $2x + y = 7$.</div>
+                </div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <p>Given equation: $2x + y = 7$. We can express $y$ in terms of $x$:</p>
+                <div class="math-scroll">
+                    $$ y = 7 - 2x $$
+                </div>
+                <p>Let's find three solutions by substituting arbitrary values for $x$:</p>
+                <ul>
+                    <li><strong>Let $x = 0$:</strong> <br>
+                        $y = 7 - 2(0) = 7$. <br>
+                        Solution 1: <strong>(0, 7)</strong> <em>(1 Mark)</em>
+                    </li>
+                    <li><strong>Let $x = 1$:</strong> <br>
+                        $y = 7 - 2(1) = 7 - 2 = 5$. <br>
+                        Solution 2: <strong>(1, 5)</strong> <em>(1 Mark)</em>
+                    </li>
+                    <li><strong>Let $x = 2$:</strong> <br>
+                        $y = 7 - 2(2) = 7 - 4 = 3$. <br>
+                        Solution 3: <strong>(2, 3)</strong> <em>(1 Mark)</em>
+                    </li>
+                </ul>
+                <p><em>(Note: Any mathematically valid coordinate pair solving the equation is acceptable.)</em></p>
+            </div>
+        </div>
+
+        <!-- ================= SECTION C ================= -->
+        <div class="section-header">SECTION C (30 Marks)</div>
+        <div class="subject-divider">Part I: Science (Matter and Pure Substances)</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">13.</div>
+                    <div class="q-text">Compare the properties of solids, liquids, and gases on the basis of the following factors: (a) Shape, (b) Volume, (c) Compressibility, (d) Intermolecular space, (e) Kinetic energy of particles.</div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="table-responsive">
+                    <table class="comparison">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Solid</th>
+                                <th>Liquid</th>
+                                <th>Gas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>(a) Shape</strong></td>
+                                <td>Definite shape</td>
+                                <td>No definite shape (takes the shape of the container)</td>
+                                <td>No definite shape</td>
+                            </tr>
+                            <tr>
+                                <td><strong>(b) Volume</strong></td>
+                                <td>Definite volume</td>
+                                <td>Definite volume</td>
+                                <td>No definite volume</td>
+                            </tr>
+                            <tr>
+                                <td><strong>(c) Compressibility</strong></td>
+                                <td>Incompressible (negligible)</td>
+                                <td>Slightly compressible</td>
+                                <td>Highly compressible</td>
+                            </tr>
+                            <tr>
+                                <td><strong>(d) Intermolecular space</strong></td>
+                                <td>Minimum (tightly packed)</td>
+                                <td>Moderate (more than solids)</td>
+                                <td>Maximum (very far apart)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>(e) Kinetic energy</strong></td>
+                                <td>Minimum (particles vibrate at fixed positions)</td>
+                                <td>More than solids</td>
+                                <td>Maximum (move freely and randomly)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><em>(1 Mark for each completely correct row comparison)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">14.</div>
+                    <div class="q-text">
+                        (a) What is a suspension? State any two distinguishing properties of a suspension. (3 Marks)<br><br>
+                        (b) Differentiate between homogeneous and heterogeneous mixtures with one example of each. (2 Marks)
+                    </div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Suspension:</strong> A suspension is a heterogeneous mixture in which the solute particles do not dissolve but remain suspended throughout the bulk of the medium. <em>(1 Mark)</em>
+                    <br><strong>Properties (Any Two):</strong>
+                    <ul>
+                        <li>It is a heterogeneous mixture.</li>
+                        <li>The particles of a suspension can be seen by the naked eye (size > 100 nm).</li>
+                        <li>It shows the Tyndall effect (scatters a beam of light passing through it).</li>
+                        <li>It is unstable; particles settle down when left undisturbed.</li>
+                    </ul>
+                    <em>(2 Marks, 1 for each property)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Homogeneous vs Heterogeneous Mixtures:</strong>
+                    <ul>
+                        <li><strong>Homogeneous Mixture:</strong> A mixture having a uniform composition throughout. The components are indistinguishable. <br>
+                        <em>Example:</em> Salt dissolved in water, air. <em>(1 Mark)</em></li>
+                        <li><strong>Heterogeneous Mixture:</strong> A mixture having a non-uniform composition throughout. Distinct parts or boundaries are visible. <br>
+                        <em>Example:</em> Sand and iron filings, oil and water. <em>(1 Mark)</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">15.</div>
+                    <div class="q-text">
+                        (a) Define the process of evaporation. (2 Marks)<br><br>
+                        (b) List and briefly explain any three factors that affect the rate of evaporation of a liquid. (3 Marks)
+                    </div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Evaporation:</strong> The phenomenon of change of a liquid into vapors at any temperature <em>below its boiling point</em> is called evaporation. It is a surface phenomenon where particles at the surface gain enough energy to overcome forces of attraction. <em>(2 Marks)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Factors affecting the rate of evaporation (Any three):</strong>
+                    <ol>
+                        <li><strong>Surface Area:</strong> Evaporation is a surface phenomenon. If the surface area increases, the rate of evaporation increases (e.g., spreading clothes to dry).</li>
+                        <li><strong>Temperature:</strong> With an increase in temperature, more particles get enough kinetic energy to convert into the vapor state, increasing the rate of evaporation.</li>
+                        <li><strong>Humidity:</strong> Humidity is the amount of water vapor present in air. If the humidity in the air is already high, the capacity to hold more water is low, so the rate of evaporation decreases.</li>
+                        <li><strong>Wind Speed:</strong> Higher wind speed blows away the water vapor particles, decreasing the local humidity and increasing the rate of evaporation.</li>
+                    </ol>
+                    <em>(3 Marks, 1 Mark for each factor correctly explained)</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="subject-divider">Part II: Mathematics</div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">16.</div>
+                    <div class="q-text">
+                        Apply the concepts of Number Systems to solve the following:<br>
+                        (a) Rationalize the denominator of $\frac{1}{7 + 3\sqrt{2}}$. (3 Marks)<br><br>
+                        (b) Express $0.4\overline{7}$ in the form $\frac{p}{q}$, where $p$ and $q$ are integers and $q \neq 0$. (2 Marks)
+                    </div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Rationalize the denominator:</strong>
+                    <p>To rationalize $\frac{1}{7 + 3\sqrt{2}}$, multiply the numerator and the denominator by its conjugate, $7 - 3\sqrt{2}$.</p>
+                    <div class="math-scroll">
+                        $$ \begin{aligned} 
+                        \frac{1}{7 + 3\sqrt{2}} &= \frac{1}{7 + 3\sqrt{2}} \times \frac{7 - 3\sqrt{2}}{7 - 3\sqrt{2}} \\
+                        &= \frac{7 - 3\sqrt{2}}{(7)^2 - (3\sqrt{2})^2} \quad \text{[Using } (a+b)(a-b) = a^2 - b^2 \text{]} \\
+                        &= \frac{7 - 3\sqrt{2}}{49 - 18} \\
+                        &= \frac{7 - 3\sqrt{2}}{31}
+                        \end{aligned} $$
+                    </div>
+                    <em>(3 Marks: 1 for conjugate multiplication, 1 for identity application, 1 for final answer)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Express $0.4\overline{7}$ as $\frac{p}{q}$:</strong>
+                    <p>Let $x = 0.4777\dots$ ---- (Equation 1)</p>
+                    <p>Multiply by 10 to shift the decimal past the non-repeating digit:</p>
+                    <p>$10x = 4.777\dots$ ---- (Equation 2)</p>
+                    <p>Multiply by 10 again to shift past one repeating digit:</p>
+                    <p>$100x = 47.777\dots$ ---- (Equation 3)</p>
+                    <p>Subtract Eq 2 from Eq 3:</p>
+                    <div class="math-scroll">
+                        $$ \begin{aligned} 
+                        100x - 10x &= 47.777\dots - 4.777\dots \\
+                        90x &= 43 \\
+                        x &= \frac{43}{90}
+                        \end{aligned} $$
+                    </div>
+                    <em>(2 Marks: 1 for correct decimal shifting logic, 1 for final fraction)</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">17.</div>
+                    <div class="q-text">
+                        Apply algebraic identities and the Factor Theorem:<br>
+                        (a) Factorize the cubic polynomial completely: $x^3 - 2x^2 - x + 2$. (3 Marks)<br><br>
+                        (b) Evaluate the following using a suitable algebraic identity: $(99)^3$. (2 Marks)
+                    </div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Factorize $x^3 - 2x^2 - x + 2$:</strong>
+                    <p>Method 1: Grouping terms.</p>
+                    <div class="math-scroll">
+                        $$ \begin{aligned} 
+                        x^3 - 2x^2 - x + 2 &= x^2(x - 2) - 1(x - 2) \\
+                        &= (x^2 - 1)(x - 2)
+                        \end{aligned} $$
+                    </div>
+                    <p>Apply identity $a^2 - b^2 = (a-b)(a+b)$ on $(x^2 - 1)$:</p>
+                    <div class="math-scroll">
+                        $$ = (x - 1)(x + 1)(x - 2) $$
+                    </div>
+                    <em>(3 Marks: 1.5 for valid grouping/initial factor, 1.5 for complete factorization)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Evaluate $(99)^3$:</strong>
+                    <p>Write $99$ as $(100 - 1)$ and apply the identity $(a - b)^3 = a^3 - b^3 - 3ab(a - b)$.</p>
+                    <div class="math-scroll">
+                        $$ \begin{aligned} 
+                        (100 - 1)^3 &= (100)^3 - (1)^3 - 3(100)(1)(100 - 1) \\
+                        &= 1,000,000 - 1 - 300(99) \\
+                        &= 1,000,000 - 1 - 29,700 \\
+                        &= 1,000,000 - 29,701 \\
+                        &= 970,299
+                        \end{aligned} $$
+                    </div>
+                    <em>(2 Marks: 1 for identity setup, 1 for correct calculation)</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-box">
+                <div class="q-text-container">
+                    <div class="q-num">18.</div>
+                    <div class="q-text">
+                        Linear equations geometry:<br>
+                        (a) Draw the graph of the linear equation $x + y = 4$ on a Cartesian plane. (3 Marks)<br><br>
+                        (b) Check algebraically whether $(2, 2)$ and $(4, 1)$ are solutions of the equation $x + 2y = 6$. (2 Marks)
+                    </div>
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="solution-box">
+                <span class="sol-heading">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Graph of $x + y = 4$:</strong>
+                    <p>First, find at least two coordinates to plot the line:</p>
+                    <ul>
+                        <li>If $x = 0$, $0 + y = 4 \Rightarrow y = 4$. Coordinate: <strong>(0, 4)</strong></li>
+                        <li>If $y = 0$, $x + 0 = 4 \Rightarrow x = 4$. Coordinate: <strong>(4, 0)</strong></li>
+                        <li>If $x = 2$, $2 + y = 4 \Rightarrow y = 2$. Coordinate: <strong>(2, 2)</strong></li>
+                    </ul>
+                    <div class="diagram-box">
+                        [Teacher Note: Students should draw a neat Cartesian Plane. Plot the points (0,4), (4,0), and (2,2). Draw a straight line passing through these points, extending infinitely in both directions, and label the line "$x+y=4$". Axes should be properly labeled with scale.]
+                    </div>
+                    <em>(3 Marks: 1 for finding coordinates, 2 for correct graph plotting)</em>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Check solutions for $x + 2y = 6$:</strong>
+                    <p>Substitute the coordinates into the LHS of the equation.</p>
+                    <p><strong>For (2, 2):</strong> Substitute $x = 2, y = 2$</p>
+                    <div class="math-scroll">
+                        $$ \text{LHS} = 2 + 2(2) = 2 + 4 = 6 = \text{RHS} $$
+                    </div>
+                    <p>Yes, $(2, 2)$ is a solution. <em>(1 Mark)</em></p>
+                    
+                    <p><strong>For (4, 1):</strong> Substitute $x = 4, y = 1$</p>
+                    <div class="math-scroll">
+                        $$ \text{LHS} = 4 + 2(1) = 4 + 2 = 6 = \text{RHS} $$
+                    </div>
+                    <p>Yes, $(4, 1)$ is also a solution. <em>(1 Mark)</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan • Comprehensive Evaluation Key</div>
+    </div>
+</body>
+</html>

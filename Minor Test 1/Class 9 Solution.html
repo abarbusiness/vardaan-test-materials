@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- MathJax for rendering Mathematical equations properly -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                tags: 'ams'
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.08; z-index: 0; pointer-events: none; }
+        .content-wrapper { position: relative; z-index: 1; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #1a365d; letter-spacing: 1px;}
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #e53e3e; }
+        
+        .section-title { background-color: #f7fafc; padding: 10px; border-left: 4px solid #2b6cb0; font-weight: bold; font-size: 14pt; margin: 30px 0 20px 0; }
+        .q-block { margin-bottom: 30px; border-bottom: 1px dashed #cbd5e0; padding-bottom: 20px; }
+        
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; background-color: #edf2f7; padding: 10px; border-radius: 4px; margin-bottom: 15px; }
+        .q-text { flex-grow: 1; margin-right: 15px; font-weight: bold; }
+        .q-marks { font-weight: bold; color: #c53030; white-space: nowrap; flex-shrink: 0; padding-top: 2px;}
+        
+        .sol-body { padding-left: 10px; border-left: 3px solid #48bb78; }
+        .sol-label { font-weight: bold; color: #2f855a; margin-bottom: 10px; display: inline-block; }
+        
+        .math-scroll { overflow-x: auto; overflow-y: hidden; padding: 5px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; box-shadow: none; -webkit-print-color-adjust: exact; }
+            .watermark { position: fixed; }
+        }
+        @media screen and (max-width: 800px) {
+            body { width: 100%; min-height: auto; padding: 15px; margin: 0; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-end; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="content-wrapper">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">DETAILED SOLUTIONS: Minor Test 01</div>
+            <div style="margin-top: 10px; font-weight: bold; color: #4a5568;">Class: 9 | Subject: Mathematics</div>
+        </div>
+
+        <div class="section-title">SECTION A (2 Marks Each)</div>
+        
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q1. Find the HCF and LCM of 144 and 198 using the prime factorization method.</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>First, we find the prime factorization of both numbers:</p>
+                <div class="math-scroll">
+                    $$ 144 = 2 \times 2 \times 2 \times 2 \times 3 \times 3 = 2^4 \times 3^2 $$
+                    $$ 198 = 2 \times 3 \times 3 \times 11 = 2^1 \times 3^2 \times 11^1 $$
+                </div>
+                <p><b>HCF (Highest Common Factor):</b> Product of the lowest powers of common prime factors.</p>
+                <div class="math-scroll">
+                    $$ \text{HCF} = 2^1 \times 3^2 = 2 \times 9 = 18 $$
+                </div>
+                <p><b>LCM (Least Common Multiple):</b> Product of the highest powers of all prime factors involved.</p>
+                <div class="math-scroll">
+                    $$ \text{LCM} = 2^4 \times 3^2 \times 11^1 = 16 \times 9 \times 11 = 1584 $$
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q2. The HCF of two numbers is 18 and their product is 12960. Find the LCM of the given numbers.</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>We know the relationship between HCF, LCM, and the product of two numbers:</p>
+                <div class="math-scroll">
+                    $$ \text{HCF} \times \text{LCM} = \text{Product of the two numbers} $$
+                </div>
+                <p>Substituting the given values:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    18 \times \text{LCM} &= 12960 \\\\
+                    \text{LCM} &= \frac{12960}{18} \\\\
+                    \text{LCM} &= 720
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q3. Evaluate the following expression: $2^0 + 3^0 - 4^0 + (1/2)^{-1}$</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>Using the laws of exponents, $a^0 = 1$ (for $a \neq 0$) and $(a/b)^{-n} = (b/a)^n$.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= 1 + 1 - 1 + \left(\frac{2}{1}\right)^1 \\\\
+                    &= 2 - 1 + 2 \\\\
+                    &= 1 + 2 \\\\
+                    &= 3
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q4. Simplify: $(81 / 16)^{-3/4}$</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>First, write the bases as powers:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \left(\frac{81}{16}\right)^{-3/4} &= \left(\frac{3^4}{2^4}\right)^{-3/4} \\\\
+                    &= \left( \left(\frac{3}{2}\right)^4 \right)^{-3/4} \\\\
+                    \end{align*}
+                </div>
+                <p>Multiply the powers $(a^m)^n = a^{mn}$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \left(\frac{3}{2}\right)^{4 \times \frac{-3}{4}} \\\\
+                    &= \left(\frac{3}{2}\right)^{-3} \\\\
+                    &= \left(\frac{2}{3}\right)^3 \\\\
+                    &= \frac{8}{27}
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q5. Find the value of $x$ if $3^{2x + 1} \div 9 = 27$.</div>
+                <div class="q-marks">[2 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>Express all bases as powers of 3:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    3^{2x + 1} \div 3^2 &= 3^3 \\\\
+                    \end{align*}
+                </div>
+                <p>Using the law of exponents for division $a^m \div a^n = a^{m-n}$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    3^{(2x + 1) - 2} &= 3^3 \\\\
+                    3^{2x - 1} &= 3^3
+                    \end{align*}
+                </div>
+                <p>Since bases are equal, equate the powers:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    2x - 1 &= 3 \\\\
+                    2x &= 4 \\\\
+                    x &= 2
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION B (3 Marks Each)</div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q6. Three bells toll at intervals of 12, 15, and 18 minutes respectively. If they start tolling together at 8:00 AM, at what time will they next toll together?</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>The time they will toll together again is given by the LCM of their individual intervals (12, 15, and 18 minutes).</p>
+                <p>Finding the LCM using prime factorization:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    12 &= 2^2 \times 3 \\\\
+                    15 &= 3 \times 5 \\\\
+                    18 &= 2 \times 3^2
+                    \end{align*}
+                </div>
+                <p>LCM = Product of highest powers of all prime factors.</p>
+                <div class="math-scroll">
+                    $$ \text{LCM} = 2^2 \times 3^2 \times 5 = 4 \times 9 \times 5 = 180 \text{ minutes} $$
+                </div>
+                <p>Convert minutes to hours:</p>
+                <div class="math-scroll">
+                    $$ 180 \text{ minutes} = \frac{180}{60} \text{ hours} = 3 \text{ hours} $$
+                </div>
+                <p>They started at 8:00 AM. They will toll together after 3 hours.</p>
+                <p><b>Next toll time:</b> 8:00 AM + 3 hours = <b>11:00 AM</b></p>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q7. Find the greatest number of 4 digits which is exactly divisible by 12, 16, and 24.</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>First, find the LCM of 12, 16, and 24 to find their smallest common divisible number.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    12 &= 2^2 \times 3 \\\\
+                    16 &= 2^4 \\\\
+                    24 &= 2^3 \times 3 \\\\
+                    \text{LCM} &= 2^4 \times 3 = 16 \times 3 = 48
+                    \end{align*}
+                </div>
+                <p>The greatest 4-digit number is 9999. Now, divide 9999 by the LCM (48) to find the remainder.</p>
+                <div class="math-scroll">
+                    $$ 9999 \div 48 = 208 \text{ with a remainder of } 15 $$
+                </div>
+                <p>To find the number exactly divisible by 48, subtract the remainder from 9999.</p>
+                <div class="math-scroll">
+                    $$ \text{Required Number} = 9999 - 15 = 9984 $$
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q8. Simplify the following expression: $\frac{3^{n+1} - 3^n}{3^{n+2} + 3^n}$</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>Factor out the common term $3^n$ from both the numerator and the denominator.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \frac{3^{n+1} - 3^n}{3^{n+2} + 3^n} &= \frac{3^n \cdot 3^1 - 3^n \cdot 1}{3^n \cdot 3^2 + 3^n \cdot 1} \\\\
+                    \end{align*}
+                </div>
+                <p>Taking $3^n$ as common:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \frac{3^n(3^1 - 1)}{3^n(3^2 + 1)} \\\\
+                    \end{align*}
+                </div>
+                <p>Cancel out $3^n$ from numerator and denominator:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \frac{3 - 1}{9 + 1} \\\\
+                    &= \frac{2}{10} \\\\
+                    &= \frac{1}{5}
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q9. Prove that: $\left(\frac{x^a}{x^b}\right)^{a+b} \times \left(\frac{x^b}{x^c}\right)^{b+c} \times \left(\frac{x^c}{x^a}\right)^{c+a} = 1$</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>Consider the Left Hand Side (LHS):</p>
+                <p>Using the law of exponents $\frac{x^m}{x^n} = x^{m-n}$ inside the brackets:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \text{LHS} &= (x^{a-b})^{a+b} \times (x^{b-c})^{b+c} \times (x^{c-a})^{c+a} \\\\
+                    \end{align*}
+                </div>
+                <p>Using the power of a power rule $(x^m)^n = x^{mn}$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= x^{(a-b)(a+b)} \times x^{(b-c)(b+c)} \times x^{(c-a)(c+a)} \\\\
+                    \end{align*}
+                </div>
+                <p>Applying the algebraic identity $(A-B)(A+B) = A^2 - B^2$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= x^{a^2 - b^2} \times x^{b^2 - c^2} \times x^{c^2 - a^2} \\\\
+                    \end{align*}
+                </div>
+                <p>When bases are same, powers are added $x^m \times x^n = x^{m+n}$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= x^{(a^2 - b^2) + (b^2 - c^2) + (c^2 - a^2)} \\\\
+                    &= x^{a^2 - a^2 - b^2 + b^2 - c^2 + c^2} \\\\
+                    &= x^0 \\\\
+                    &= 1 = \text{RHS}
+                    \end{align*}
+                </div>
+                <p>Hence proved.</p>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q10. Find the value of $x$ if: $2^{x - 5} \times 5^{x - 4} = 5$</div>
+                <div class="q-marks">[3 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>We can rewrite the equation to group similar terms. Break down $5^{x-4}$ to match the exponent $x-5$.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    2^{x - 5} \times 5^{(x - 5) + 1} &= 5 \\\\
+                    2^{x - 5} \times 5^{x - 5} \times 5^1 &= 5 \\\\
+                    \end{align*}
+                </div>
+                <p>Combine the terms with the same exponent using $a^m \times b^m = (ab)^m$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    (2 \times 5)^{x - 5} \times 5 &= 5 \\\\
+                    10^{x - 5} &= \frac{5}{5} \\\\
+                    10^{x - 5} &= 1
+                    \end{align*}
+                </div>
+                <p>We know that any non-zero number to the power of 0 is 1. Thus, $1 = 10^0$.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    10^{x - 5} &= 10^0 \\\\
+                    \end{align*}
+                </div>
+                <p>Equating the powers:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    x - 5 &= 0 \\\\
+                    x &= 5
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION C (5 Marks Each)</div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q11. In a morning walk, three persons step off together. Their steps measure 80 cm, 85 cm, and 90 cm respectively. What is the minimum distance each should walk so that all can cover the same distance in complete steps? Express your final answer in meters.</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>The minimum distance required so that each person covers the same distance in complete steps will be the LCM of their individual step lengths (80 cm, 85 cm, and 90 cm).</p>
+                <p><b>Step 1:</b> Find prime factors.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    80 &= 2^4 \times 5 \\\\
+                    85 &= 5 \times 17 \\\\
+                    90 &= 2 \times 3^2 \times 5
+                    \end{align*}
+                </div>
+                <p><b>Step 2:</b> Calculate LCM.</p>
+                <p>The LCM is the product of the highest powers of all prime factors occurring in the numbers.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \text{LCM} &= 2^4 \times 3^2 \times 5 \times 17 \\\\
+                    &= 16 \times 9 \times 5 \times 17 \\\\
+                    &= 144 \times 85 \\\\
+                    &= 12240 \text{ cm}
+                    \end{align*}
+                </div>
+                <p><b>Step 3:</b> Convert into meters.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \text{Distance in meters} &= \frac{12240}{100} \text{ m} \\\\
+                    &= 122.4 \text{ meters}
+                    \end{align*}
+                </div>
+                <p>The minimum distance each should walk is <b>122.4 meters</b>.</p>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q12. Simplify the following expression completely using the laws of exponents:<br><br>
+                $\left(\frac{25}{9}\right)^{-5/2} \times \left(\frac{27}{8}\right)^{2/3} \div \left(\frac{8}{27}\right)^{-1/3}$
+                </div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p>Let's simplify each term individually before combining them.</p>
+                <p><b>Term 1:</b></p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \left(\frac{25}{9}\right)^{-5/2} &= \left( \left(\frac{5}{3}\right)^2 \right)^{-5/2} = \left(\frac{5}{3}\right)^{-5} = \left(\frac{3}{5}\right)^5 = \frac{3^5}{5^5} = \frac{243}{3125}
+                    \end{align*}
+                </div>
+                <p><b>Term 2:</b></p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \left(\frac{27}{8}\right)^{2/3} &= \left( \left(\frac{3}{2}\right)^3 \right)^{2/3} = \left(\frac{3}{2}\right)^2 = \frac{3^2}{2^2} = \frac{9}{4}
+                    \end{align*}
+                </div>
+                <p><b>Term 3:</b></p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \left(\frac{8}{27}\right)^{-1/3} &= \left( \left(\frac{2}{3}\right)^3 \right)^{-1/3} = \left(\frac{2}{3}\right)^{-1} = \frac{3}{2}
+                    \end{align*}
+                </div>
+                <p>Now substitute these back into the original expression:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \left(\frac{243}{3125}\right) \times \left(\frac{9}{4}\right) \div \left(\frac{3}{2}\right) \\\\
+                    \end{align*}
+                </div>
+                <p>Convert the division into multiplication by taking the reciprocal:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \left(\frac{243}{3125}\right) \times \left(\frac{9}{4}\right) \times \left(\frac{2}{3}\right) \\\\
+                    \end{align*}
+                </div>
+                <p>Simplify by canceling out common factors:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    &= \frac{243}{3125} \times \frac{9 \times 2}{4 \times 3} \\\\
+                    &= \frac{243}{3125} \times \frac{3}{2} \\\\
+                    &= \frac{729}{6250}
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-header">
+                <div class="q-text">Q13. If $x = 3 + 2\sqrt{2}$, determine the value of $x^2 + \frac{1}{x^2}$.</div>
+                <div class="q-marks">[5 Marks]</div>
+            </div>
+            <div class="sol-body">
+                <span class="sol-label">Solution:</span>
+                <p><b>Step 1:</b> Find the value of $\frac{1}{x}$ by rationalizing the denominator.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \frac{1}{x} &= \frac{1}{3 + 2\sqrt{2}} \\\\
+                    &= \frac{1}{3 + 2\sqrt{2}} \times \frac{3 - 2\sqrt{2}}{3 - 2\sqrt{2}} \\\\
+                    &= \frac{3 - 2\sqrt{2}}{(3)^2 - (2\sqrt{2})^2} \\\\
+                    &= \frac{3 - 2\sqrt{2}}{9 - 8} \\\\
+                    &= 3 - 2\sqrt{2}
+                    \end{align*}
+                </div>
+                <p><b>Step 2:</b> Find the value of $\left(x + \frac{1}{x}\right)$.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    x + \frac{1}{x} &= (3 + 2\sqrt{2}) + (3 - 2\sqrt{2}) \\\\
+                    x + \frac{1}{x} &= 6
+                    \end{align*}
+                </div>
+                <p><b>Step 3:</b> Square both sides to find $x^2 + \frac{1}{x^2}$.</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    \left(x + \frac{1}{x}\right)^2 &= 6^2 \\\\
+                    \end{align*}
+                </div>
+                <p>Using the identity $(a+b)^2 = a^2 + b^2 + 2ab$:</p>
+                <div class="math-scroll">
+                    \begin{align*}
+                    x^2 + \frac{1}{x^2} + 2\left(x\right)\left(\frac{1}{x}\right) &= 36 \\\\
+                    x^2 + \frac{1}{x^2} + 2 &= 36 \\\\
+                    x^2 + \frac{1}{x^2} &= 36 - 2 \\\\
+                    x^2 + \frac{1}{x^2} &= 34
+                    \end{align*}
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan - Confidentially yours, The Academic Dean</div>
+    </div>
+</body>
+</html>
