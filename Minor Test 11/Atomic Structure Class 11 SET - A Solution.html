@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Key - Vardaan Learning Institute</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Mobile and tablet responsive rules */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .test-name { font-size: 12pt !important; }
+            .exam-details { flex-wrap: wrap; gap: 10px; font-size: 10pt !important; }
+            .exam-details span { width: 48%; }
+            .math-scroll { overflow-x: auto; display: block; max-width: 100%; white-space: nowrap; padding-bottom: 5px; }
+            .marks-badge { position: static !important; display: inline-block; margin-top: 5px; float: right; }
+        }
+
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 500px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 8px 0; 
+        }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #f0f0f0; padding: 5px; }
+        
+        .question-box { background-color: #fafafa; padding: 10px; border-left: 4px solid #ccc; margin-bottom: 10px; font-style: italic; }
+        .solution-container { margin-bottom: 25px; display: flex; flex-direction: column; text-align: left; position: relative; }
+        .solution-content { margin-left: 0; }
+        
+        .step { margin-bottom: 8px; position: relative; }
+        .marks-badge { 
+            position: absolute; right: 0; top: 0; 
+            background: #e0e0e0; padding: 2px 8px; 
+            border-radius: 4px; font-weight: bold; font-size: 10pt; color: #333; 
+        }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .math-scroll { overflow-x: visible; white-space: normal; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTION KEY: Minor Test 11 - Set A</div>
+        <div class="exam-details">
+            <span>Class: 11 CBSE</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <!-- Q1 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q14.</strong> (a) Derive de Broglie's equation. (b) Calculate mass of photon with \(\lambda = 3.6 \mathring{A}\).</div>
+        <div class="solution-content">
+            <div class="step math-scroll">
+                Given:<br>
+                Wavelength (\(\lambda\)) = \(400 \text{ nm} = 400 \times 10^{-9} \text{ m} = 4 \times 10^{-7} \text{ m}\)<br>
+                \(h = 6.626 \times 10^{-34} \text{ J s}\)<br>
+                \(c = 3 \times 10^8 \text{ m/s}\)
+            </div>
+            <div class="step math-scroll">
+                <strong>1. Calculation of Frequency (\(\nu\)):</strong><br>
+                \[ \nu = \frac{c}{\lambda} = \frac{3 \times 10^8}{4 \times 10^{-7}} \]
+                \[ \nu = 0.75 \times 10^{15} \text{ Hz} = 7.5 \times 10^{14} \text{ Hz (or s}^{-1}\text{)} \]
+                <span class="marks-badge">[1.5 Marks]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>2. Calculation of Energy (\(E\)):</strong><br>
+                \[ E = h\nu = (6.626 \times 10^{-34} \text{ J s}) \times (7.5 \times 10^{14} \text{ s}^{-1}) \]
+                \[ E = 49.695 \times 10^{-20} \text{ J} = 4.97 \times 10^{-19} \text{ J} \]
+                <span class="marks-badge">[1.5 Marks]</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q10.</strong> Explain the Aufbau Principle. Which orbital will be filled first among \(4s\), \(3d\), and \(4p\)? Justify your answer using the \((n+l)\) rule.</div>
+        <div class="solution-content">
+            <div class="step">
+                <strong>Aufbau Principle:</strong> It states that in the ground state of atoms, orbitals are filled with electrons in the increasing order of their energies. Electrons first occupy the lowest energy orbital available.
+                <span class="marks-badge">[1 Mark]</span>
+            </div>
+            <div class="step">
+                <strong>\((n+l)\) Rule Application:</strong><br>
+                For \(4s\): \(n=4, l=0 \implies (n+l) = 4 + 0 = 4\)<br>
+                For \(3d\): \(n=3, l=2 \implies (n+l) = 3 + 2 = 5\)<br>
+                For \(4p\): \(n=4, l=1 \implies (n+l) = 4 + 1 = 5\)
+                <span class="marks-badge">[1 Mark]</span>
+            </div>
+            <div class="step">
+                <strong>Conclusion:</strong> 
+                The \(4s\) orbital has the lowest \((n+l)\) value, hence it has the lowest energy and will be filled <strong>first</strong>.<br>
+                <em>Note: Between \(3d\) and \(4p\), both have \((n+l) = 5\), but \(3d\) has a lower \(n\) value, so it is filled before \(4p\).</em>
+                <span class="marks-badge">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <!-- Q11 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q11.</strong> (a) Define Quantum numbers. (b) Name the four quantum numbers and explain in detail what information each provides.</div>
+        <div class="solution-content">
+            <div class="step">
+                <strong>(a) Definition:</strong> Quantum numbers are a set of four numbers which give complete information about the electron in an atom, i.e., its energy, shape, orientation, and spin.
+                <span class="marks-badge">[1 Mark]</span>
+            </div>
+            <div class="step">
+                <strong>(b) The Four Quantum Numbers:</strong>
+                <ul>
+                    <li><strong>Principal Quantum Number (\(n\)):</strong> Indicates the main energy shell. It determines the size and largely the energy of the orbital. Values: \(n = 1, 2, 3...\) <span style="float:right; font-weight:bold;">[1 Mark]</span></li>
+                    <li><strong>Azimuthal/Angular Momentum Quantum Number (\(l\)):</strong> Indicates the subshell and defines the three-dimensional shape of the orbital (s=spherical, p=dumbbell, etc.). Values: \(0\) to \((n-1)\). <span style="float:right; font-weight:bold;">[1 Mark]</span></li>
+                    <li><strong>Magnetic Quantum Number (\(m_l\)):</strong> Indicates the spatial orientation of the orbital with respect to a standard set of coordinate axes. It also determines the number of orbitals in a subshell. Values: \(-l\) to \(+l\) including zero. <span style="float:right; font-weight:bold;">[1 Mark]</span></li>
+                    <li><strong>Electron Spin Quantum Number (\(m_s\)):</strong> Indicates the direction of the electron's spin on its own axis (clockwise or anticlockwise). Values: \(+\frac{1}{2}\) or \(-\frac{1}{2}\). <span style="float:right; font-weight:bold;">[1 Mark]</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q12.</strong> (a) What is the photoelectric effect? (b) Photon \(\lambda = 4 \times 10^{-7} \text{ m}\), Work function \(W_0 = 2.13 \text{ eV}\). Calculate Energy of photon in eV and K.E. of emission.</div>
+        <div class="solution-content">
+            <div class="step">
+                <strong>(a) Photoelectric Effect:</strong> The phenomenon of ejection of electrons from the surface of a metal when light of suitable frequency (threshold frequency) strikes it is called the photoelectric effect. The emitted electrons are called photoelectrons.
+                <span class="marks-badge">[2 Marks]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>(b) Calculations:</strong><br>
+                Given: \(\lambda = 4 \times 10^{-7} \text{ m}\), \(W_0 = 2.13 \text{ eV}\).<br><br>
+                <strong>(i) Energy of the photon (\(E\)):</strong><br>
+                \[ E = \frac{hc}{\lambda} = \frac{6.626 \times 10^{-34} \times 3 \times 10^8}{4 \times 10^{-7}} \text{ Joules} \]
+                \[ E = \frac{19.878 \times 10^{-26}}{4 \times 10^{-7}} = 4.969 \times 10^{-19} \text{ J} \]
+                To convert to eV, divide by \(1.6 \times 10^{-19}\):<br>
+                \[ E (\text{in eV}) = \frac{4.969 \times 10^{-19}}{1.6 \times 10^{-19}} \approx 3.10 \text{ eV} \]
+                <span class="marks-badge">[1.5 Marks]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>(ii) Kinetic Energy (K.E.) of emission:</strong><br>
+                According to Einstein's photoelectric equation: \(E = W_0 + K.E.\)<br>
+                \[ K.E. = E - W_0 \]
+                \[ K.E. = 3.10 \text{ eV} - 2.13 \text{ eV} = 0.97 \text{ eV} \]
+                <em>(Or in Joules: \(0.97 \times 1.6 \times 10^{-19} = 1.55 \times 10^{-19} \text{ J}\))</em>
+                <span class="marks-badge">[1.5 Marks]</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q13.</strong> (a) Draw shapes of s and p orbitals. (b) Four quantum numbers for valence electron of Na. (c) Which orbitals are not possible: \(1p, 2s, 3f, 4d\)? Reason.</div>
+        <div class="solution-content">
+            <div class="step">
+                <strong>(a) Shapes:</strong><br>
+                - \(s\)-orbital is strictly <strong>spherical</strong> and symmetrical around the nucleus.<br>
+                - \(p\)-orbital is <strong>dumbbell-shaped</strong> consisting of two lobes on opposite sides of the nucleus (e.g., \(p_x\) along the x-axis).<br>
+                <em>(Examiner notes: 1 mark for correct description/rough sketch of spherical s, 1 mark for dumbbell p-orbital).</em>
+                <span class="marks-badge">[2 Marks]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>(b) Quantum numbers for Na (Z=11) valence electron:</strong><br>
+                Electronic configuration: \(1s^2 2s^2 2p^6 \mathbf{3s^1}\)<br>
+                Valence electron is in \(3s\).<br>
+                \(n = 3\), \(l = 0\), \(m_l = 0\), \(m_s = +\frac{1}{2}\) (or \(-\frac{1}{2}\))
+                <span class="marks-badge">[1 Mark]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>(c) Impossible Orbitals:</strong><br>
+                - <strong>\(1p\) is not possible:</strong> For \(n=1\), \(l\) can only be \(0\) (s-orbital). \(l\) cannot be equal to \(n\).<br>
+                - <strong>\(3f\) is not possible:</strong> For \(n=3\), max value of \(l\) is \(2\) (\(3d\)). For f-orbital, \(l=3\), which requires \(n\) to be at least \(4\).<br>
+                <em>(\(2s\) and \(4d\) are perfectly possible).</em>
+                <span class="marks-badge">[2 Marks]</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q14.</strong> (a) Derive de Broglie's equation. (b) Calculate mass of photon with \(\lambda = 3.6 \text{ \AA}\).</div>
+        <div class="solution-content">
+            <div class="step math-scroll">
+                <strong>(a) Derivation of de Broglie's equation:</strong><br>
+                According to Planck's quantum theory for a photon: \(E = h\nu = \frac{hc}{\lambda}\) &nbsp;&nbsp;&nbsp; ...(i)<br>
+                According to Einstein's mass-energy relationship: \(E = mc^2\) &nbsp;&nbsp;&nbsp; ...(ii)<br>
+                Equating (i) and (ii):<br>
+                \[ mc^2 = \frac{hc}{\lambda} \implies \lambda = \frac{h}{mc} \]
+                For a material particle of mass '\(m\)' moving with velocity '\(v\)', \(c\) is replaced by \(v\):<br>
+                \[ \lambda = \frac{h}{mv} \quad \text{or} \quad \lambda = \frac{h}{p} \]
+                <span class="marks-badge">[2 Marks]</span>
+            </div>
+            <div class="step math-scroll">
+                <strong>(b) Calculation of mass of photon:</strong><br>
+                Given: \(\lambda = 3.6 \mathring{A} = 3.6 \times 10^{-10} \text{ m}\)<br>
+                \(h = 6.626 \times 10^{-34} \text{ kg m}^2 \text{s}^{-1}\)<br>
+                \(c = 3 \times 10^8 \text{ m/s}\)<br>
+                <br>
+                Using formula: \(m = \frac{h}{\lambda c}\)<br>
+                \[ m = \frac{6.626 \times 10^{-34}}{3.6 \times 10^{-10} \times 3 \times 10^8} \]
+                \[ m = \frac{6.626 \times 10^{-34}}{10.8 \times 10^{-2}} \]
+                \[ m = 0.6135 \times 10^{-32} \text{ kg} = 6.135 \times 10^{-33} \text{ kg} \]
+                <span class="marks-badge">[3 Marks]</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="solution-container">
+        <div class="question-box"><strong>Q15.</strong> (a) Postulates of Bohr's model for hydrogen atom. (b) Limitations of Bohr's atomic model.</div>
+        <div class="solution-content">
+            <div class="step">
+                <strong>(a) Main Postulates of Bohr's Model:</strong>
+                <ul>
+                    <li>The electron in a hydrogen atom can move around the nucleus in a circular path of fixed radius and energy, called orbits or stationary states.</li>
+                    <li>The energy of an electron in the orbit does not change with time (remains constant unless it absorbs/emits energy).</li>
+                    <li>Only those orbits are permitted in which the angular momentum of the electron is an integral multiple of \(\frac{h}{2\pi}\). i.e., \(mvr = \frac{nh}{2\pi}\).</li>
+                    <li>Radiation is absorbed or emitted only when an electron jumps from one stationary state to another. \(\Delta E = E_2 - E_1 = h\nu\).</li>
+                </ul>
+                <span class="marks-badge">[3 Marks]</span>
+            </div>
+            <div class="step">
+                <strong>(b) Limitations of Bohr's Model (Any two):</strong>
+                <ul>
+                    <li>It could not explain the line spectra of multi-electron atoms (atoms containing more than one electron).</li>
+                    <li>It could not explain the splitting of spectral lines in a magnetic field (Zeeman effect) or electric field (Stark effect).</li>
+                    <li>It contradicts Heisenberg’s uncertainty principle as it assumes well-defined circular paths (orbits) with exact position and velocity simultaneously.</li>
+                    <li>It could not explain the ability of atoms to form molecules by chemical bonds.</li>
+                </ul>
+                <span class="marks-badge">[2 Marks]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
