@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Mobile and tablet responsive rules */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .test-name { font-size: 12pt !important; }
+            .exam-details { flex-wrap: wrap; gap: 10px; font-size: 10pt !important; }
+            .exam-details span { width: 48%; }
+            .math-scroll { overflow-x: auto; display: block; max-width: 100%; padding: 5px 0; }
+        }
+
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 500px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 8px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; }
+        .marks { float: right; font-weight: bold; margin-left: 10px; }
+        
+        .circuit-svg { width: 100%; max-width: 280px; height: auto; display: block; margin: 15px auto; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .math-scroll { overflow-x: visible; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 13 - Current Electricity</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> consists of 5 questions of 2 marks each.</li>
+                <li><strong>Section B</strong> consists of 5 questions of 3 marks each.</li>
+                <li><strong>Section C</strong> consists of 5 questions of 5 marks each.</li>
+                <li>Use of log tables is permitted. Calculators are strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">A cylindrical metallic wire of resistance \(R\) is stretched to uniformly double its length. What will be its new resistance and resistivity? Justify your answer.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Plot a graph showing the variation of resistivity (\(\rho\)) with temperature (\(T\)) for (i) a typical metal (like Copper) and (ii) a typical semiconductor (like Silicon).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Define mobility of charge carriers in a conductor. Write its S.I. unit.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">A cell of emf '\(E\)' and internal resistance '\(r\)' is connected across a variable external resistance '\(R\)'. Plot a graph showing the variation of terminal potential difference '\(V\)' with '\(R\)'.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">State the microscopic form of Ohm's law (vector form) relating current density (\(\vec{J}\)), conductivity (\(\sigma\)), and electric field (\(\vec{E}\)). Show briefly how it connects to the macroscopic form \(V = IR\).</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Define relaxation time of the free electrons drifting in a conductor. How is it related to the drift velocity of free electrons? Deduce the expression for drift velocity \(v_d = -\frac{eE}{m}\tau\).
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Two identical cells, whether joined in series or in parallel, give the same current when connected to an external resistance of \(2 \, \Omega\). Find the internal resistance of each cell.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">State Kirchhoff's rules for electrical networks. Name the fundamental conservation principle on which each rule is based.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Draw a schematic diagram of a Wheatstone bridge. Using Kirchhoff's laws, derive the condition for a balanced Wheatstone bridge.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            A nichrome heating element connected to a \(220 \text{ V}\) supply draws an initial current of \(3.2 \text{ A}\) which settles after a few seconds to a steady value of \(2.8 \text{ A}\). What is the steady temperature of the heating element if the room temperature is \(27^\circ \text{C}\)? 
+            <br><em>(Temperature coefficient of resistance of nichrome averaged over the temperature range involved is \(1.7 \times 10^{-4} {}^{\circ}\text{C}^{-1}\))</em>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            State Kirchhoff's laws. Use these laws to calculate the current flowing through each branch of the electrical network shown in the figure below.
+            
+            <svg viewBox="0 0 400 300" class="circuit-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <g id="res">
+                  <polyline points="-20,0 -15,-10 -5,10 5,-10 15,10 20,0" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <g id="bat">
+                  <line x1="-20" y1="0" x2="-5" y2="0" stroke="black" stroke-width="2"/>
+                  <line x1="-5" y1="-15" x2="-5" y2="15" stroke="black" stroke-width="2"/>
+                  <line x1="5" y1="-8" x2="5" y2="8" stroke="black" stroke-width="4"/>
+                  <line x1="5" y1="0" x2="20" y2="0" stroke="black" stroke-width="2"/>
+                </g>
+                <circle id="dot" cx="0" cy="0" r="3" fill="black"/>
+              </defs>
+              <!-- Wires -->
+              <line x1="50" y1="50" x2="350" y2="50" stroke="black" stroke-width="2"/>
+              <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2"/>
+              
+              <!-- Left Branch -->
+              <line x1="50" y1="50" x2="50" y2="80" stroke="black" stroke-width="2"/>
+              <use href="#bat" x="50" y="100" transform="rotate(90 50 100)"/>
+              <line x1="50" y1="120" x2="50" y2="150" stroke="black" stroke-width="2"/>
+              <use href="#res" x="50" y="170" transform="rotate(90 50 170)"/>
+              <line x1="50" y1="190" x2="50" y2="250" stroke="black" stroke-width="2"/>
+              
+              <!-- Middle Branch -->
+              <line x1="200" y1="50" x2="200" y2="130" stroke="black" stroke-width="2"/>
+              <use href="#res" x="200" y="150" transform="rotate(90 200 150)"/>
+              <line x1="200" y1="170" x2="200" y2="250" stroke="black" stroke-width="2"/>
+              
+              <!-- Right Branch -->
+              <line x1="350" y1="50" x2="350" y2="80" stroke="black" stroke-width="2"/>
+              <use href="#bat" x="350" y="100" transform="rotate(90 350 100)"/>
+              <line x1="350" y1="120" x2="350" y2="150" stroke="black" stroke-width="2"/>
+              <use href="#res" x="350" y="170" transform="rotate(90 350 170)"/>
+              <line x1="350" y1="190" x2="350" y2="250" stroke="black" stroke-width="2"/>
+              
+              <!-- Nodes -->
+              <use href="#dot" x="50" y="50"/><use href="#dot" x="200" y="50"/><use href="#dot" x="350" y="50"/>
+              <use href="#dot" x="50" y="250"/><use href="#dot" x="200" y="250"/><use href="#dot" x="350" y="250"/>
+              
+              <!-- Labels -->
+              <text x="25" y="105" text-anchor="end" font-family="Times New Roman" font-size="14">10 V</text>
+              <text x="25" y="175" text-anchor="end" font-family="Times New Roman" font-size="14">3 Ω</text>
+              <text x="175" y="155" text-anchor="end" font-family="Times New Roman" font-size="14">4 Ω</text>
+              <text x="375" y="105" text-anchor="start" font-family="Times New Roman" font-size="14">5 V</text>
+              <text x="375" y="175" text-anchor="start" font-family="Times New Roman" font-size="14">2 Ω</text>
+              
+              <!-- Polarities -->
+              <text x="65" y="90" font-family="Arial" font-size="14">+</text>
+              <text x="65" y="125" font-family="Arial" font-size="16">-</text>
+              <text x="365" y="90" font-family="Arial" font-size="14">+</text>
+              <text x="365" y="125" font-family="Arial" font-size="16">-</text>
+            </svg>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            (a) Establish a relation between electric current '\(I\)' and drift velocity '\(v_d\)' of electrons in a conductor of cross-section '\(A\)'. <span style="float: right;">[3]</span>
+            <div class="sub-question">(b) How does the drift velocity of electrons in a metallic conductor change if the length of the conductor is doubled while keeping the applied potential difference constant? Justify. <span style="float: right;">[2]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            (a) For the network shown below, identify the type of circuit and calculate the equivalent resistance between the terminals A and B. <span style="float: right;">[3]</span>
+            
+            <svg viewBox="0 0 400 340" class="circuit-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <g id="res2">
+                  <polyline points="-20,0 -15,-10 -5,10 5,-10 15,10 20,0" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <g id="bat2">
+                  <line x1="-20" y1="0" x2="-5" y2="0" stroke="black" stroke-width="2"/>
+                  <line x1="-5" y1="-15" x2="-5" y2="15" stroke="black" stroke-width="2"/>
+                  <line x1="5" y1="-8" x2="5" y2="8" stroke="black" stroke-width="4"/>
+                  <line x1="5" y1="0" x2="20" y2="0" stroke="black" stroke-width="2"/>
+                </g>
+                <circle id="dot2" cx="0" cy="0" r="3" fill="black"/>
+              </defs>
+              
+              <!-- Bridge Framework -->
+              <line x1="50" y1="80" x2="105" y2="80" stroke="black" stroke-width="2"/>
+              <use href="#res2" x="125" y="80" />
+              <line x1="145" y1="80" x2="255" y2="80" stroke="black" stroke-width="2"/>
+              <use href="#res2" x="275" y="80" />
+              <line x1="295" y1="80" x2="350" y2="80" stroke="black" stroke-width="2"/>
+              
+              <line x1="50" y1="220" x2="105" y2="220" stroke="black" stroke-width="2"/>
+              <use href="#res2" x="125" y="220" />
+              <line x1="145" y1="220" x2="255" y2="220" stroke="black" stroke-width="2"/>
+              <use href="#res2" x="275" y="220" />
+              <line x1="295" y1="220" x2="350" y2="220" stroke="black" stroke-width="2"/>
+              
+              <!-- Middle Galvanometer/Resistor Branch -->
+              <line x1="200" y1="80" x2="200" y2="130" stroke="black" stroke-width="2"/>
+              <use href="#res2" x="200" y="150" transform="rotate(90 200 150)"/>
+              <line x1="200" y1="170" x2="200" y2="220" stroke="black" stroke-width="2"/>
+              
+              <!-- Left and Right Input/Output nodes -->
+              <line x1="50" y1="80" x2="50" y2="220" stroke="black" stroke-width="2"/>
+              <line x1="350" y1="80" x2="350" y2="220" stroke="black" stroke-width="2"/>
+              
+              <!-- Connections to Battery -->
+              <line x1="50" y1="150" x2="20" y2="150" stroke="black" stroke-width="2"/>
+              <line x1="20" y1="150" x2="20" y2="280" stroke="black" stroke-width="2"/>
+              <line x1="20" y1="280" x2="180" y2="280" stroke="black" stroke-width="2"/>
+              
+              <use href="#bat2" x="200" y="280" />
+              
+              <line x1="220" y1="280" x2="380" y2="280" stroke="black" stroke-width="2"/>
+              <line x1="380" y1="280" x2="380" y2="150" stroke="black" stroke-width="2"/>
+              <line x1="380" y1="150" x2="350" y2="150" stroke="black" stroke-width="2"/>
+              
+              <!-- Nodes -->
+              <use href="#dot2" x="50" y="80"/><use href="#dot2" x="200" y="80"/><use href="#dot2" x="350" y="80"/>
+              <use href="#dot2" x="50" y="220"/><use href="#dot2" x="200" y="220"/><use href="#dot2" x="350" y="220"/>
+              <use href="#dot2" x="50" y="150"/><use href="#dot2" x="350" y="150"/>
+              
+              <!-- Labels -->
+              <text x="125" y="65" text-anchor="middle" font-family="Times New Roman" font-size="14">10 Ω</text>
+              <text x="275" y="65" text-anchor="middle" font-family="Times New Roman" font-size="14">20 Ω</text>
+              <text x="125" y="245" text-anchor="middle" font-family="Times New Roman" font-size="14">15 Ω</text>
+              <text x="275" y="245" text-anchor="middle" font-family="Times New Roman" font-size="14">30 Ω</text>
+              <text x="215" y="155" text-anchor="start" font-family="Times New Roman" font-size="14">50 Ω</text>
+              <text x="200" y="305" text-anchor="middle" font-family="Times New Roman" font-size="14">9 V</text>
+              <text x="35" y="145" text-anchor="end" font-family="Times New Roman" font-weight="bold" font-size="16">A</text>
+              <text x="365" y="145" text-anchor="start" font-family="Times New Roman" font-weight="bold" font-size="16">B</text>
+            </svg>
+            
+            <div class="sub-question">(b) Calculate the total current drawn by the circuit from the \(9 \text{ V}\) battery. <span style="float: right;">[1]</span></div>
+            <div class="sub-question">(c) Why is the Wheatstone bridge method considered a 'null method' and preferred over using a voltmeter/ammeter to measure unknown resistance? <span style="float: right;">[1]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            (a) Derive the expression for the equivalent emf (\(E_{eq}\)) and equivalent internal resistance (\(r_{eq}\)) when two cells of emfs \(E_1\) and \(E_2\) and internal resistances \(r_1\) and \(r_2\) are connected in parallel. <span style="float: right;">[3]</span>
+            <div class="sub-question">(b) Two cells of emfs \(1.5 \text{ V}\) and \(2.0 \text{ V}\) having internal resistances \(0.2 \, \Omega\) and \(0.3 \, \Omega\) respectively are connected in parallel. Calculate the emf and internal resistance of the equivalent cell. <span style="float: right;">[2]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            (a) Define electrical conductivity. Write its relationship with resistivity. <span style="float: right;">[1]</span>
+            <div class="sub-question">(b) Two bulbs are rated \(P_1\) at \(V\) volts and \(P_2\) at \(V\) volts. If they are connected in series across a supply voltage \(V\), prove that the total power consumed \(P\) is given by \(\frac{1}{P} = \frac{1}{P_1} + \frac{1}{P_2}\). <span style="float: right;">[2]</span></div>
+            <div class="sub-question">(c) Which bulb will glow brighter in the series combination described in part (b) and why? <span style="float: right;">[2]</span></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Faculty of Physics</div>
+</body>
+</html>

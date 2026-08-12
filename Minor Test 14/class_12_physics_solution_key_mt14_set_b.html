@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Key - Current Electricity Part 2 - Set B</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Mobile and tablet responsive rules */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .test-name { font-size: 12pt !important; }
+            .exam-details { flex-wrap: wrap; gap: 10px; font-size: 10pt !important; }
+            .exam-details span { width: 48%; }
+            .math-scroll { overflow-x: auto; display: block; max-width: 100%; white-space: nowrap; padding-bottom: 5px; }
+            .marks-badge { position: static !important; display: inline-block; margin-top: 5px; float: right; }
+        }
+
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 500px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 8px 0; 
+        }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background-color: #f0f0f0; padding: 5px; }
+        
+        .question-box { background-color: #fafafa; padding: 10px; border-left: 4px solid #ccc; margin-bottom: 15px; font-style: italic; font-size: 11pt; }
+        .solution-container { margin-bottom: 25px; display: flex; flex-direction: column; text-align: left; position: relative; }
+        
+        .step { margin-bottom: 8px; position: relative; padding-right: 70px; }
+        .marks-badge { 
+            position: absolute; right: 0; top: 0; 
+            background: #e0e0e0; padding: 2px 8px; 
+            border-radius: 4px; font-weight: bold; font-size: 10pt; color: #333; 
+        }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .math-scroll { overflow-x: visible; white-space: normal; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTION KEY: Minor Test 14 - Set B</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="solution-container">
+        <div class="question-box"><strong>Q1.</strong> Drift velocity variation with (i) temperature, (ii) potential difference.</div>
+        <div class="step math-scroll">
+            <strong>(i) Temperature:</strong> When temperature increases, the thermal speed of electrons increases, leading to more frequent collisions. Thus, relaxation time (\(\tau\)) decreases. Since \(v_d \propto \tau\), the <strong>drift velocity decreases</strong>.
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>(ii) Potential Difference (V):</strong> We know \(v_d = \frac{eE}{m}\tau = \frac{eV}{mL}\tau\). If V increases (and length L is constant), the electric field E increases, hence <strong>drift velocity increases</strong> linearly.
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q2.</strong> Wire of \(10 \, \Omega\) stretched to increase length by 10%. New resistance?</div>
+        <div class="step math-scroll">
+            Original length = \(l\). New length \(l' = l + 0.10l = 1.1l\).<br>
+            Since volume remains constant (\(A \cdot l = A' \cdot l'\)), new area \(A' = \frac{A}{1.1}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            \(R' = \rho \frac{l'}{A'} = \rho \frac{1.1l}{A / 1.1} = 1.21 \left(\rho \frac{l}{A}\right) = 1.21 R\).<br>
+            \(R' = 1.21 \times 10 = \mathbf{12.1 \, \Omega}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q3.</strong> Heating coil (100W, 220V) cut in half, connected in parallel. Total power?</div>
+        <div class="step math-scroll">
+            Original resistance of the full coil \(R = \frac{V^2}{P} = \frac{(220)^2}{100} = \frac{48400}{100} = 484 \, \Omega\).<br>
+            When cut into two identical halves, resistance of each half \(R' = \frac{484}{2} = 242 \, \Omega\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            When both halves are in parallel, equivalent resistance \(R_{eq} = \frac{R'}{2} = \frac{242}{2} = 121 \, \Omega\).<br>
+            Total power consumed \(P_{total} = \frac{V^2}{R_{eq}} = \frac{(220)^2}{121} = \frac{48400}{121} = \mathbf{400 \text{ W}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q4.</strong> Potentiometer balance shift from 35.0 cm (1.25V) to 63.0 cm. New emf?</div>
+        <div class="step math-scroll">
+            Principle of potentiometer: \(E \propto l \implies E = kl\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Therefore, \(\frac{E_1}{E_2} = \frac{l_1}{l_2} \implies \frac{1.25}{E_2} = \frac{35.0}{63.0}\).<br>
+            \(E_2 = 1.25 \times \frac{63}{35} = 1.25 \times 1.8 = \mathbf{2.25 \text{ V}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q5.</strong> Temp coeff. \(R_0=5.00 \Omega, R_{100}=5.23 \Omega, R_t=5.795 \Omega\). Find \(t\).</div>
+        <div class="step math-scroll">
+            Formula for temperature: \(t = \frac{R_t - R_0}{R_{100} - R_0} \times 100\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            \(t = \frac{5.795 - 5.00}{5.23 - 5.00} \times 100 = \frac{0.795}{0.23} \times 100 = 3.4565 \times 100 \approx \mathbf{345.65 {}^{\circ}\text{C}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q6.</strong> Cell \(E, r\). Current \(0.5\text{A}\) via \(12\Omega\), \(0.25\text{A}\) via \(25\Omega\). Find \(E, r\).</div>
+        <div class="step math-scroll">
+            Using equation \(E = I(R + r)\):<br>
+            Case 1: \(E = 0.5(12 + r) \implies E = 6 + 0.5r\) &nbsp;&nbsp;--- (Eq 1)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Case 2: \(E = 0.25(25 + r) \implies E = 6.25 + 0.25r\) &nbsp;&nbsp;--- (Eq 2)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Equating Eq 1 and Eq 2:<br>
+            \(6 + 0.5r = 6.25 + 0.25r \implies 0.25r = 0.25 \implies \mathbf{r = 1 \, \Omega}\).<br>
+            Substitute \(r\) in Eq 1: \(E = 6 + 0.5(1) = \mathbf{6.5 \text{ V}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q7.</strong> Meter bridge: null at \(39.5\text{cm}\), \(Y=12.5\Omega\). Find \(X\). Interchange effect?</div>
+        <div class="step math-scroll">
+            (i) Balanced condition: \(\frac{X}{Y} = \frac{l}{100-l}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            \(\frac{X}{12.5} = \frac{39.5}{100 - 39.5} = \frac{39.5}{60.5}\)<br>
+            \(X = 12.5 \times \frac{39.5}{60.5} \approx \mathbf{8.16 \, \Omega}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            (ii) If the galvanometer and cell are interchanged at the balance point, the balance condition (\(P/Q = R/S\)) remains mathematically intact. Therefore, the galvanometer will <strong>not show any current</strong> (null point remains unchanged).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q8.</strong> Principle of potentiometer. How to increase sensitivity?</div>
+        <div class="step">
+            <strong>Principle:</strong> When a steady current flows through a wire of uniform cross-section and composition, the potential drop across any length of the wire is directly proportional to that length. \((V \propto l \implies V = kl)\), where \(k\) is potential gradient.
+            <span class="marks-badge">[1.5 Marks]</span>
+        </div>
+        <div class="step">
+            <strong>Sensitivity:</strong> Sensitivity increases when the potential gradient (\(k = V/L\)) decreases, allowing smaller potential differences to be measured accurately.<br>
+            This is achieved by:<br>
+            1. Increasing the length (\(L\)) of the potentiometer wire.<br>
+            2. Decreasing the current in the main circuit using a rheostat.
+            <span class="marks-badge">[1.5 Marks]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q9.</strong> 24 cells mixed grouping for max current. Find \(m, n\) and \(I_{max}\).</div>
+        <div class="step math-scroll">
+            Total cells \(mn = 24\).<br>
+            Condition for maximum current: External resistance must equal total equivalent internal resistance of the battery array.<br>
+            \(R = \frac{nr}{m} \implies 3 = \frac{n(0.5)}{m} \implies 3m = 0.5n \implies n = 6m\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Substitute \(n = 6m\) into \(mn = 24\):<br>
+            \(m(6m) = 24 \implies 6m^2 = 24 \implies m^2 = 4 \implies \mathbf{m = 2}\) (rows).<br>
+            Therefore, \(n = 24 / 2 = \mathbf{12}\) (cells per row).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Maximum current \(I_{max} = \frac{mnE}{mR + nr} = \frac{24 \times 1.5}{2(3) + 12(0.5)} = \frac{36}{6 + 6} = \frac{36}{12} = \mathbf{3 \text{ A}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q10.</strong> V-I graph intercepts: \(V=1.5\text{V}\), \(I=3.0\text{A}\). Find \(E, r, P_{max}\).</div>
+        <div class="step math-scroll">
+            (i) The voltage intercept (when \(I=0\)) gives the EMF of the cell. \(\mathbf{E = 1.5 \text{ V}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            (ii) The current intercept (when \(V=0\)) gives the short-circuit current \(I_{sc}\).<br>
+            \(I_{sc} = \frac{E}{r} \implies 3.0 = \frac{1.5}{r} \implies \mathbf{r = 0.5 \, \Omega}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            (iii) Maximum power is delivered when \(R = r = 0.5 \, \Omega\).<br>
+            \(P_{max} = \frac{E^2}{4r} = \frac{(1.5)^2}{4(0.5)} = \frac{2.25}{2} = \mathbf{1.125 \text{ W}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q11.</strong> Equivalent resistance of infinite ladder network (\(1\Omega\) series, \(2\Omega\) shunt).</div>
+        <div class="step math-scroll">
+            Let the equivalent resistance of the entire infinite ladder between points A and B be \(R_{eq}\). <br>
+            Since the network is infinite, adding or removing one repeating unit (one \(1 \, \Omega\) and one \(2 \, \Omega\) resistor) from the front does not alter the total equivalent resistance.
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Therefore, the circuit can be modeled as the first \(1 \, \Omega\) resistor in series with a parallel combination of the first \(2 \, \Omega\) resistor and the rest of the infinite network (\(R_{eq}\)).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Mathematically: \(R_{eq} = 1 + \left( \frac{2 \times R_{eq}}{2 + R_{eq}} \right)\)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Multiplying by \((2 + R_{eq})\) to solve:<br>
+            \(R_{eq}(2 + R_{eq}) = 1(2 + R_{eq}) + 2R_{eq}\)<br>
+            \(2R_{eq} + R_{eq}^2 = 2 + 3R_{eq}\)<br>
+            \(R_{eq}^2 - R_{eq} - 2 = 0\)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Factoring the quadratic equation:<br>
+            \((R_{eq} - 2)(R_{eq} + 1) = 0\)<br>
+            Since resistance cannot be negative, \(R_{eq} = \mathbf{2 \, \Omega}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q12.</strong> Kirchhoff's laws on two-loop circuit. Current through \(5\Omega\) middle branch.</div>
+        <div class="step math-scroll">
+            Let current \(I_1\) flow from the 10V battery (clockwise in left loop) and \(I_2\) flow from the 4V battery (anticlockwise in right loop). Both currents meet at the top node and flow downwards through the middle \(5 \, \Omega\) resistor. Thus, current through middle = \((I_1 + I_2)\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>Loop 1 (Left Loop, Clockwise KVL):</strong><br>
+            \(+10 - 2I_1 - 5(I_1 + I_2) = 0\)<br>
+            \(10 = 7I_1 + 5I_2\) &nbsp;&nbsp;&nbsp;--- (Eq 1)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>Loop 2 (Right Loop, Anticlockwise KVL):</strong><br>
+            \(+4 - 3I_2 - 5(I_1 + I_2) = 0\)<br>
+            \(4 = 5I_1 + 8I_2\) &nbsp;&nbsp;&nbsp;--- (Eq 2)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>Solving simultaneously:</strong><br>
+            Multiply Eq 1 by 8: \(56I_1 + 40I_2 = 80\)<br>
+            Multiply Eq 2 by 5: \(25I_1 + 40I_2 = 20\)<br>
+            Subtracting: \(31I_1 = 60 \implies I_1 = \frac{60}{31} \text{ A}\).<br>
+            Substitute \(I_1\) in Eq 2: \(5(\frac{60}{31}) + 8I_2 = 4 \implies \frac{300}{31} + 8I_2 = \frac{124}{31} \implies 8I_2 = -\frac{176}{31} \implies I_2 = -\frac{22}{31} \text{ A}\). (Negative sign implies actual flow is opposite to assumed direction).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Current through \(5 \, \Omega\) resistor = \(I_1 + I_2 = \frac{60}{31} + \left(-\frac{22}{31}\right) = \mathbf{\frac{38}{31} \text{ A} \approx 1.23 \text{ A}}\).<br>
+            Direction: <strong>Downwards</strong> (since the net result is positive).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q13.</strong> Wheatstone condition and unknown R calculation.</div>
+        <div class="step math-scroll">
+            <strong>(a) Condition:</strong> A Wheatstone bridge is balanced when no current flows through the galvanometer. This happens when the ratio of resistances in adjacent arms is equal: \(\frac{P}{Q} = \frac{R}{S}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>(b) Calculation:</strong> For zero deflection, the bridge must be balanced. <br>
+            Comparing with standard bridge arms: \(R_{AB} = 10 \, \Omega, R_{BC} = 20 \, \Omega\).<br>
+            \(R_{AD} = 15 \, \Omega\), and \(R_{DC}\) is the parallel combination of \(R\) and \(60 \, \Omega\). Let it be \(R_p\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Balance condition: \(\frac{R_{AB}}{R_{BC}} = \frac{R_{AD}}{R_p}\)<br>
+            \(\frac{10}{20} = \frac{15}{R_p} \implies \frac{1}{2} = \frac{15}{R_p}\)
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Solving for \(R_p\): \(R_p = 30 \, \Omega\).<br>
+            Now, \(R_p\) is formed by \(R\) and \(60 \, \Omega\) in parallel: \(\frac{1}{R_p} = \frac{1}{R} + \frac{1}{60}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            \(\frac{1}{30} = \frac{1}{R} + \frac{1}{60} \implies \frac{1}{R} = \frac{1}{30} - \frac{1}{60} = \frac{2 - 1}{60} = \frac{1}{60}\).<br>
+            \(\mathbf{R = 60 \, \Omega}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q14.</strong> Heating coils: time for series and parallel combinations.</div>
+        <div class="step math-scroll">
+            Let the heat required to boil the water be \(H\).<br>
+            When connected individually: \(H = \frac{V^2}{R_1} t_1 \implies R_1 = \frac{V^2 t_1}{H}\) and \(R_2 = \frac{V^2 t_2}{H}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>(a) Series:</strong> Equivalent resistance \(R_s = R_1 + R_2 = \frac{V^2}{H}(t_1 + t_2)\).<br>
+            Time taken \(t_s\): \(H = \frac{V^2}{R_s} t_s \implies t_s = \frac{H R_s}{V^2} = \frac{H}{V^2} \left( \frac{V^2}{H}(t_1 + t_2) \right)\).<br>
+            \(t_s = t_1 + t_2 = 15 + 30 = \mathbf{45 \text{ min}}\).
+            <span class="marks-badge">[1.5 Marks]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>(b) Parallel:</strong> Equivalent resistance \(R_p = \frac{R_1 R_2}{R_1 + R_2}\).<br>
+            Time taken \(t_p\): \(t_p = \frac{H R_p}{V^2} = \frac{H}{V^2} \left( \frac{\frac{V^2 t_1}{H} \cdot \frac{V^2 t_2}{H}}{\frac{V^2 t_1}{H} + \frac{V^2 t_2}{H}} \right) = \frac{H}{V^2} \left( \frac{V^2}{H} \cdot \frac{t_1 t_2}{t_1 + t_2} \right)\).<br>
+            \(t_p = \frac{t_1 t_2}{t_1 + t_2} = \frac{15 \times 30}{15 + 30} = \frac{450}{45} = \mathbf{10 \text{ min}}\).
+            <span class="marks-badge">[2.5 Marks]</span>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-box"><strong>Q15.</strong> (a) Derivation for cells in series. (b) Find \(V_X - V_Y\) in given branch.</div>
+        <div class="step math-scroll">
+            <strong>(a) Derivation:</strong> Consider two cells \(E_1, r_1\) and \(E_2, r_2\) connected in series. Current \(I\) flows through them. Let potentials at nodes be \(V_A\), \(V_B\), \(V_C\).<br>
+            \(V_A - V_B = E_1 - I r_1\)<br>
+            \(V_B - V_C = E_2 - I r_2\) <span style="float: right;">[1 Mark]</span><br>
+            Total potential difference \(V = V_A - V_C = (V_A - V_B) + (V_B - V_C) = (E_1 - I r_1) + (E_2 - I r_2)\).<br>
+            \(V = (E_1 + E_2) - I(r_1 + r_2)\). <span style="float: right;">[1 Mark]</span><br>
+            Comparing with standard equation \(V = E_{eq} - I r_{eq}\), we get:<br>
+            \(\mathbf{E_{eq} = E_1 + E_2}\) and \(\mathbf{r_{eq} = r_1 + r_2}\). <span style="float: right;">[1 Mark]</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="step math-scroll">
+            <strong>(b) Potential Difference \(V_X - V_Y\):</strong><br>
+            Apply KVL along the branch from X to Y. Current \(I = 2 \text{ A}\) flows in direction of tracing.<br>
+            \(V_X - (\text{Drop across 4V battery, going + to -}) - I(\text{Internal res 1\Omega}) - I(\text{Res 2\Omega}) + (\text{Rise across 6V battery, going - to +}) - I(\text{Internal res 2\Omega}) = V_Y\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="step math-scroll">
+            Mathematically:<br>
+            \(V_X - 4 - 2(1) - 2(2) + 6 - 2(2) = V_Y\)<br>
+            \(V_X - 4 - 2 - 4 + 6 - 4 = V_Y\)<br>
+            \(V_X - 10 + 2 = V_Y \implies V_X - 8 = V_Y \implies \mathbf{V_X - V_Y = 8 \text{ V}}\).
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Faculty of Physics</div>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper Set B</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Mobile and tablet responsive rules */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt !important; }
+            .test-name { font-size: 12pt !important; }
+            .exam-details { flex-wrap: wrap; gap: 10px; font-size: 10pt !important; }
+            .exam-details span { width: 48%; }
+            .math-scroll { overflow-x: auto; display: block; max-width: 100%; padding: 5px 0; }
+        }
+
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 500px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 8px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; }
+        
+        /* Ensures SVGs do not blow up on large screens and stay constrained */
+        .circuit-svg { width: 100%; max-width: 320px; height: auto; display: block; margin: 15px auto; }
+        .circuit-svg-wide { max-width: 450px; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .math-scroll { overflow-x: visible; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 14 - Set B: Current Electricity (Part 2)</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Focus on numerical accuracy and logical steps.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> consists of 5 questions of 2 marks each.</li>
+                <li><strong>Section B</strong> consists of 5 questions of 3 marks each.</li>
+                <li><strong>Section C</strong> consists of 5 questions of 5 marks each.</li>
+                <li>Use of log tables is permitted. Calculators are strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">How does the drift velocity of free electrons in a metallic conductor vary with (i) an increase in temperature (keeping potential difference constant), and (ii) an increase in the applied potential difference? Give reasons.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">A uniform metallic wire of resistance \(10 \, \Omega\) is stretched so that its length increases by 10%. Calculate the new resistance of the wire.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">A heating coil is rated at \(100 \text{ W}, 220 \text{ V}\). It is cut into two identical halves and both halves are connected in parallel to the same source of \(220 \text{ V}\). Find the total power consumed by the new combination.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">In a potentiometer arrangement, a cell of emf \(1.25 \text{ V}\) gives a balance point at \(35.0 \text{ cm}\) length of the wire. If the cell is replaced by another cell and the balance point shifts to \(63.0 \text{ cm}\), what is the emf of the second cell?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">The resistance of a platinum wire in a resistance thermometer at the ice point is \(5.00 \, \Omega\) and at the steam point is \(5.23 \, \Omega\). When the thermometer is inserted in a hot bath, the resistance of the platinum wire becomes \(5.795 \, \Omega\). Calculate the temperature of the bath.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer / Numerical Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">A cell of emf '\(E\)' and internal resistance '\(r\)' supplies a current of \(0.5 \text{ A}\) when connected to a \(12 \, \Omega\) resistor, and a current of \(0.25 \text{ A}\) when connected to a \(25 \, \Omega\) resistor. Calculate the values of \(E\) and \(r\).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">In a meter bridge, the balance point is found to be at \(39.5 \text{ cm}\) from the left end A when the known resistor \(Y\) in the right gap is of \(12.5 \, \Omega\).<br>
+        (i) Determine the resistance of \(X\) in the left gap.<br>
+        (ii) What happens if the galvanometer and cell are interchanged at the balance point of the bridge? Would the galvanometer show any current?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">State the working principle of a potentiometer. Explain with the help of a relevant formula how the sensitivity of a potentiometer can be increased.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">24 identical cells, each of emf \(1.5 \text{ V}\) and internal resistance \(0.5 \, \Omega\), are connected in a mixed grouping of \(m\) rows and \(n\) columns. They are configured to send maximum current through an external resistance of \(3 \, \Omega\). Find the values of \(m\) and \(n\), and calculate this maximum current.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">The V-I graph for a non-ideal cell is a straight line intersecting the Voltage axis at \(1.5 \text{ V}\) and the Current axis at \(3.0 \text{ A}\). Deduce:<br>
+        (i) the EMF of the cell.<br>
+        (ii) the internal resistance of the cell.<br>
+        (iii) the maximum power that this cell can deliver to an external circuit.</div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer / Complex Numerical Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Find the equivalent resistance of the infinite ladder network shown below between points A and B. The network consists of series resistors of \(1 \, \Omega\) and parallel (shunt) resistors of \(2 \, \Omega\).
+            
+            <svg viewBox="0 0 450 120" class="circuit-svg circuit-svg-wide" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="res_horiz">
+                        <line x1="0" y1="0" x2="15" y2="0" stroke="black" stroke-width="2"/>
+                        <polyline points="15,0 20,-8 30,8 40,-8 50,8 60,-8 70,8 75,0" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                        <line x1="75" y1="0" x2="90" y2="0" stroke="black" stroke-width="2"/>
+                    </g>
+                    <g id="res_vert">
+                        <line x1="0" y1="0" x2="0" y2="15" stroke="black" stroke-width="2"/>
+                        <polyline points="0,15 -8,20 8,30 -8,40 8,50 -8,60 8,70 0,75" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                        <line x1="0" y1="75" x2="0" y2="90" stroke="black" stroke-width="2"/>
+                    </g>
+                    <circle id="junc" cx="0" cy="0" r="4" fill="black"/>
+                </defs>
+                
+                <!-- Terminals -->
+                <circle cx="20" cy="15" r="4" fill="white" stroke="black" stroke-width="2"/>
+                <text x="5" y="20" font-family="Times New Roman" font-weight="bold" font-size="16">A</text>
+                
+                <circle cx="20" cy="105" r="4" fill="white" stroke="black" stroke-width="2"/>
+                <text x="5" y="110" font-family="Times New Roman" font-weight="bold" font-size="16">B</text>
+
+                <!-- Stage 1 -->
+                <line x1="24" y1="15" x2="50" y2="15" stroke="black" stroke-width="2"/>
+                <use href="#res_horiz" x="50" y="15"/>
+                <line x1="140" y1="15" x2="170" y2="15" stroke="black" stroke-width="2"/>
+                <use href="#junc" x="170" y="15"/>
+                
+                <use href="#res_vert" x="170" y="15"/>
+                
+                <line x1="24" y1="105" x2="170" y2="105" stroke="black" stroke-width="2"/>
+                <use href="#junc" x="170" y="105"/>
+                
+                <text x="95" y="10" text-anchor="middle" font-family="Times New Roman" font-size="14">1 Ω</text>
+                <text x="185" y="65" text-anchor="start" font-family="Times New Roman" font-size="14">2 Ω</text>
+
+                <!-- Stage 2 -->
+                <use href="#res_horiz" x="170" y="15"/>
+                <line x1="260" y1="15" x2="290" y2="15" stroke="black" stroke-width="2"/>
+                <use href="#junc" x="290" y="15"/>
+                
+                <use href="#res_vert" x="290" y="15"/>
+                
+                <line x1="170" y1="105" x2="290" y2="105" stroke="black" stroke-width="2"/>
+                <use href="#junc" x="290" y="105"/>
+                
+                <text x="215" y="10" text-anchor="middle" font-family="Times New Roman" font-size="14">1 Ω</text>
+                <text x="305" y="65" text-anchor="start" font-family="Times New Roman" font-size="14">2 Ω</text>
+
+                <!-- Stage 3 (Partial before infinity) -->
+                <use href="#res_horiz" x="290" y="15"/>
+                <line x1="380" y1="15" x2="400" y2="15" stroke="black" stroke-width="2"/>
+                
+                <line x1="290" y1="105" x2="400" y2="105" stroke="black" stroke-width="2"/>
+                
+                <text x="335" y="10" text-anchor="middle" font-family="Times New Roman" font-size="14">1 Ω</text>
+
+                <!-- Infinity Dots -->
+                <circle cx="420" cy="15" r="2" fill="black"/>
+                <circle cx="435" cy="15" r="2" fill="black"/>
+                <circle cx="450" cy="15" r="2" fill="black"/>
+                
+                <circle cx="420" cy="105" r="2" fill="black"/>
+                <circle cx="435" cy="105" r="2" fill="black"/>
+                <circle cx="450" cy="105" r="2" fill="black"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Apply Kirchhoff's laws to the given electrical circuit to calculate the magnitude and direction of the current flowing through the \(5 \, \Omega\) resistor.
+            
+            <svg viewBox="0 0 350 200" class="circuit-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="batt_vert_up">
+                        <line x1="0" y1="15" x2="0" y2="5" stroke="black" stroke-width="2"/>
+                        <line x1="-12" y1="5" x2="12" y2="5" stroke="black" stroke-width="2"/>
+                        <line x1="-6" y1="-5" x2="6" y2="-5" stroke="black" stroke-width="4"/>
+                        <line x1="0" y1="-5" x2="0" y2="-15" stroke="black" stroke-width="2"/>
+                    </g>
+                    <g id="batt_vert_down">
+                        <line x1="0" y1="-15" x2="0" y2="-5" stroke="black" stroke-width="2"/>
+                        <line x1="-12" y1="-5" x2="12" y2="-5" stroke="black" stroke-width="2"/>
+                        <line x1="-6" y1="5" x2="6" y2="5" stroke="black" stroke-width="4"/>
+                        <line x1="0" y1="5" x2="0" y2="15" stroke="black" stroke-width="2"/>
+                    </g>
+                    <g id="resistor_v">
+                        <line x1="0" y1="-25" x2="0" y2="-15" stroke="black" stroke-width="2"/>
+                        <polyline points="0,-15 -8,-10 8,-2 -8,6 8,14 -8,22 0,27" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                        <line x1="0" y1="27" x2="0" y2="35" stroke="black" stroke-width="2"/>
+                    </g>
+                    <circle id="node_p" cx="0" cy="0" r="4" fill="black"/>
+                </defs>
+
+                <!-- Rails -->
+                <line x1="50" y1="30" x2="300" y2="30" stroke="black" stroke-width="2"/>
+                <line x1="50" y1="170" x2="300" y2="170" stroke="black" stroke-width="2"/>
+
+                <!-- Left Branch -->
+                <line x1="50" y1="30" x2="50" y2="55" stroke="black" stroke-width="2"/>
+                <use href="#batt_vert_up" x="50" y="70"/>
+                <line x1="50" y1="85" x2="50" y2="105" stroke="black" stroke-width="2"/>
+                <use href="#resistor_v" x="50" y="130"/>
+                <line x1="50" y1="165" x2="50" y2="170" stroke="black" stroke-width="2"/>
+                
+                <text x="20" y="75" font-family="Times New Roman" font-size="14">10 V</text>
+                <text x="25" y="135" font-family="Times New Roman" font-size="14">2 Ω</text>
+
+                <!-- Middle Branch -->
+                <line x1="175" y1="30" x2="175" y2="65" stroke="black" stroke-width="2"/>
+                <use href="#resistor_v" x="175" y="90"/>
+                <line x1="175" y1="125" x2="175" y2="170" stroke="black" stroke-width="2"/>
+                <use href="#node_p" x="175" y="30"/>
+                <use href="#node_p" x="175" y="170"/>
+                
+                <text x="195" y="95" font-family="Times New Roman" font-size="14">5 Ω</text>
+
+                <!-- Right Branch -->
+                <line x1="300" y1="30" x2="300" y2="55" stroke="black" stroke-width="2"/>
+                <use href="#batt_vert_down" x="300" y="70"/>
+                <line x1="300" y1="85" x2="300" y2="105" stroke="black" stroke-width="2"/>
+                <use href="#resistor_v" x="300" y="130"/>
+                <line x1="300" y1="165" x2="300" y2="170" stroke="black" stroke-width="2"/>
+
+                <text x="325" y="75" font-family="Times New Roman" font-size="14">4 V</text>
+                <text x="325" y="135" font-family="Times New Roman" font-size="14">3 Ω</text>
+            </svg>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            (a) State the necessary condition for a Wheatstone bridge to be balanced. <span style="float: right;">[1]</span>
+            <div class="sub-question">(b) In the network shown below, calculate the value of the unknown resistance \(R\) for which the galvanometer shows zero deflection. <span style="float: right;">[4]</span></div>
+            
+            <svg viewBox="0 0 350 250" class="circuit-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="res_125">
+                        <line x1="0" y1="0" x2="35" y2="0" stroke="black" stroke-width="2"/>
+                        <polyline points="35,0 40,-8 50,8 60,-8 70,8 80,-8 85,0" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                        <line x1="85" y1="0" x2="125" y2="0" stroke="black" stroke-width="2"/>
+                    </g>
+                    <g id="w_node">
+                        <circle cx="0" cy="0" r="4" fill="black"/>
+                    </g>
+                </defs>
+
+                <!-- Bridge Arms (Mathematically exact 125px lengths at 36.87 degrees) -->
+                <use href="#res_125" transform="translate(75, 100) rotate(-36.87)"/> <!-- A to B -->
+                <use href="#res_125" transform="translate(175, 25) rotate(36.87)"/>  <!-- B to C -->
+                <use href="#res_125" transform="translate(75, 100) rotate(36.87)"/>  <!-- A to D -->
+                
+                <!-- D to C Arm (Parallel Combination) -->
+                <g transform="translate(175, 175) rotate(-36.87)">
+                    <!-- Resistor R (main branch) -->
+                    <use href="#res_125" x="0" y="0"/>
+                    
+                    <!-- Resistor 60 Ohm (parallel branch block) -->
+                    <polyline points="25,0 25,35 40,35" fill="none" stroke="black" stroke-width="2"/>
+                    <polyline points="40,35 45,27 55,43 65,27 75,43 80,35" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                    <polyline points="80,35 100,35 100,0" fill="none" stroke="black" stroke-width="2"/>
+                </g>
+
+                <!-- Galvanometer -->
+                <line x1="175" y1="25" x2="175" y2="175" stroke="black" stroke-width="2"/>
+                <circle cx="175" cy="100" r="16" fill="white" stroke="black" stroke-width="2"/>
+                <text x="175" y="105" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14">G</text>
+
+                <!-- Battery Connection -->
+                <polyline points="75,100 25,100 25,220 145,220" fill="none" stroke="black" stroke-width="2"/>
+                <polyline points="275,100 275,220 205,220" fill="none" stroke="black" stroke-width="2"/>
+                
+                <!-- Battery symbol -->
+                <line x1="145" y1="220" x2="155" y2="220" stroke="black" stroke-width="2"/>
+                <line x1="155" y1="210" x2="155" y2="230" stroke="black" stroke-width="2"/>
+                <line x1="165" y1="215" x2="165" y2="225" stroke="black" stroke-width="4"/>
+                <line x1="165" y1="220" x2="185" y2="220" stroke="black" stroke-width="2"/>
+                <line x1="185" y1="210" x2="185" y2="230" stroke="black" stroke-width="2"/>
+                <line x1="195" y1="215" x2="195" y2="225" stroke="black" stroke-width="4"/>
+                <line x1="195" y1="220" x2="205" y2="220" stroke="black" stroke-width="2"/>
+
+                <!-- Nodes -->
+                <use href="#w_node" x="75" y="100"/> <!-- A -->
+                <use href="#w_node" x="175" y="25"/> <!-- B -->
+                <use href="#w_node" x="275" y="100"/> <!-- C -->
+                <use href="#w_node" x="175" y="175"/> <!-- D -->
+                
+                <!-- Labels for Nodes -->
+                <text x="55" y="105" font-family="Times New Roman" font-weight="bold" font-size="14">A</text>
+                <text x="175" y="15" text-anchor="middle" font-family="Times New Roman" font-weight="bold" font-size="14">B</text>
+                <text x="290" y="105" font-family="Times New Roman" font-weight="bold" font-size="14">C</text>
+                <text x="175" y="195" text-anchor="middle" font-family="Times New Roman" font-weight="bold" font-size="14">D</text>
+
+                <!-- Values -->
+                <text x="110" y="55" font-family="Times New Roman" font-size="14" text-anchor="end">10 Ω</text>
+                <text x="240" y="55" font-family="Times New Roman" font-size="14" text-anchor="start">20 Ω</text>
+                <text x="110" y="155" font-family="Times New Roman" font-size="14" text-anchor="end">15 Ω</text>
+                <text x="225" y="125" font-family="Times New Roman" font-size="14">R</text>
+                <text x="255" y="175" font-family="Times New Roman" font-size="14">60 Ω</text>
+            </svg>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Two heating coils of resistances \(R_1\) and \(R_2\) take times \(t_1 = 15 \text{ min}\) and \(t_2 = 30 \text{ min}\) respectively to boil a certain mass of water when connected individually across a source of constant voltage \(V\). Calculate the time taken to boil the exact same mass of water if these coils are connected:
+            <div class="sub-question">(a) in series across the same source. <span style="float: right;">[2.5]</span></div>
+            <div class="sub-question">(b) in parallel across the same source. <span style="float: right;">[2.5]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            (a) Derive an expression for the equivalent emf and internal resistance of two cells of emfs \(E_1\) and \(E_2\) and internal resistances \(r_1\) and \(r_2\) connected in series. <span style="float: right;">[3]</span>
+            <div class="sub-question">(b) Find the potential difference between points X and Y (\(V_X - V_Y\)) in the given branch of a circuit. A steady current of \(2 \text{ A}\) flows from X to Y. <span style="float: right;">[2]</span></div>
+            
+            <svg viewBox="0 0 450 100" class="circuit-svg circuit-svg-wide" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="batt_h_norm">
+                        <line x1="0" y1="-15" x2="0" y2="15" stroke="black" stroke-width="2"/>
+                        <line x1="12" y1="-8" x2="12" y2="8" stroke="black" stroke-width="4"/>
+                    </g>
+                    <g id="batt_h_rev">
+                        <line x1="0" y1="-8" x2="0" y2="8" stroke="black" stroke-width="4"/>
+                        <line x1="12" y1="-15" x2="12" y2="15" stroke="black" stroke-width="2"/>
+                    </g>
+                    <g id="res_h_s">
+                        <polyline points="0,0 5,-8 15,8 25,-8 35,8 45,-8 50,0" fill="none" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                    </g>
+                </defs>
+
+                <!-- Branch Line -->
+                <circle cx="20" cy="50" r="4" fill="white" stroke="black" stroke-width="2"/>
+                <text x="20" y="35" text-anchor="middle" font-family="Times New Roman" font-weight="bold" font-size="16">X</text>
+                <line x1="24" y1="50" x2="60" y2="50" stroke="black" stroke-width="2"/>
+                
+                <!-- 4V Battery -->
+                <use href="#batt_h_norm" x="60" y="50"/>
+                <text x="66" y="25" text-anchor="middle" font-family="Times New Roman" font-size="14">4V</text>
+                
+                <!-- 1 ohm Internal -->
+                <line x1="72" y1="50" x2="100" y2="50" stroke="black" stroke-width="2"/>
+                <use href="#res_h_s" x="100" y="50"/>
+                <text x="125" y="30" text-anchor="middle" font-family="Times New Roman" font-size="12">1 Ω</text>
+                
+                <!-- 2 ohm Resistor -->
+                <line x1="150" y1="50" x2="190" y2="50" stroke="black" stroke-width="2"/>
+                <use href="#res_h_s" x="190" y="50"/>
+                <text x="215" y="30" text-anchor="middle" font-family="Times New Roman" font-size="14">2 Ω</text>
+
+                <!-- 6V Battery (Reversed) -->
+                <line x1="240" y1="50" x2="280" y2="50" stroke="black" stroke-width="2"/>
+                <use href="#batt_h_rev" x="280" y="50"/>
+                <text x="286" y="25" text-anchor="middle" font-family="Times New Roman" font-size="14">6V</text>
+
+                <!-- 2 ohm Internal -->
+                <line x1="292" y1="50" x2="330" y2="50" stroke="black" stroke-width="2"/>
+                <use href="#res_h_s" x="330" y="50"/>
+                <text x="355" y="30" text-anchor="middle" font-family="Times New Roman" font-size="12">2 Ω</text>
+
+                <!-- End Node Y -->
+                <line x1="380" y1="50" x2="426" y2="50" stroke="black" stroke-width="2"/>
+                <circle cx="430" cy="50" r="4" fill="white" stroke="black" stroke-width="2"/>
+                <text x="430" y="35" text-anchor="middle" font-family="Times New Roman" font-weight="bold" font-size="16">Y</text>
+
+                <!-- Current Arrow -->
+                <line x1="150" y1="75" x2="200" y2="75" stroke="black" stroke-width="2"/>
+                <polyline points="190,70 200,75 190,80" fill="none" stroke="black" stroke-width="2"/>
+                <text x="175" y="95" text-anchor="middle" font-family="Arial" font-style="italic" font-size="14">I = 2 A</text>
+            </svg>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Faculty of Physics</div>
+</body>
+</html>
