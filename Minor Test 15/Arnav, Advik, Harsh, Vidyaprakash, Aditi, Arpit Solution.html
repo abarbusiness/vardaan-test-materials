@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-font: "Times New Roman", Times, serif;
+            --text-color: #000;
+            --bg-color: #fff;
+            --accent-color: #2c3e50;
+        }
+        
+        body { 
+            font-family: var(--primary-font); 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            background-color: #eef2f5; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        .paper-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20mm;
+            box-sizing: border-box;
+            background-color: var(--bg-color);
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            border-radius: 5px;
+        }
+
+        .watermark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-bottom: 3px double #000; 
+            padding-bottom: 15px; 
+            position: relative;
+            z-index: 1;
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: var(--accent-color);
+        }
+        
+        .test-name { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            text-decoration: underline; 
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 35px; 
+            margin-bottom: 25px; 
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            font-size: 14pt; 
+            position: relative;
+            z-index: 1;
+        }
+
+        .solution-box {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            background-color: #f1f5f8;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .ans-content {
+            padding-left: 10px;
+            border-left: 3px solid #3498db;
+        }
+        
+        /* Math container to handle long equations on mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
+
+        .final-answer {
+            font-weight: bold;
+            color: #27ae60;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: #eaaf3;
+            border-left: 3px solid #27ae60;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .paper-container { padding: 15px; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-end; }
+        }
+
+        @media print { 
+            body { background-color: white; padding: 0; }
+            .paper-container { width: 100%; box-shadow: none; padding: 15mm; }
+            .solution-box { page-break-inside: avoid; }
+            -webkit-print-color-adjust: exact; 
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+        
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Detailed Solutions & Marking Scheme: Minor Test 15</div>
+        </div>
+
+        <div class="section-header">SECTION A</div>
+        
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q1. Find the selling price of an article if its cost price is ₹ 500 and the profit made on it is 10%.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Cost Price (CP) = \( \text{₹ } 500 \), Profit % = \( 10\% \).<br>
+                <div class="math-scroll">
+                \[ \text{Selling Price (SP)} = \text{CP} \times \left( 1 + \frac{\text{Profit \%}}{100} \right) \]
+                \[ \text{SP} = 500 \times \left( 1 + \frac{10}{100} \right) = 500 \times \frac{110}{100} \]
+                \[ \text{SP} = 5 \times 110 = 550 \]
+                </div>
+                <div class="final-answer">The selling price of the article is ₹ 550.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q2. A shirt marked at ₹ 800 is sold for ₹ 680 during a festive sale. Find the discount given and the discount percentage.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Marked Price (MP) = \( \text{₹ } 800 \), Selling Price (SP) = \( \text{₹ } 680 \).<br>
+                <div class="math-scroll">
+                \[ \text{Discount} = \text{MP} - \text{SP} = 800 - 680 = \text{₹ } 120 \]
+                \[ \text{Discount \%} = \left( \frac{\text{Discount}}{\text{MP}} \right) \times 100\% \]
+                \[ \text{Discount \%} = \left( \frac{120}{800} \right) \times 100\% = \frac{120}{8}\% = 15\% \]
+                </div>
+                <div class="final-answer">Discount given is ₹ 120 and the Discount Percentage is 15%.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q3. Calculate the VAT (Value Added Tax) charged at 5% on a washing machine bought for ₹ 12,000.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Price of washing machine = \( \text{₹ } 12,000 \), VAT Rate = \( 5\% \).<br>
+                <div class="math-scroll">
+                \[ \text{VAT Amount} = \text{Rate of VAT} \times \text{Price} \]
+                \[ \text{VAT Amount} = \frac{5}{100} \times 12,000 = 5 \times 120 = \text{₹ } 600 \]
+                </div>
+                <div class="final-answer">The VAT charged is ₹ 600.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q4. By selling a textbook for ₹ 250, a bookseller makes a profit of ₹ 50. Find his profit percentage.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Selling Price (SP) = \( \text{₹ } 250 \), Profit = \( \text{₹ } 50 \).<br>
+                First, find the Cost Price (CP).<br>
+                <div class="math-scroll">
+                \[ \text{CP} = \text{SP} - \text{Profit} = 250 - 50 = \text{₹ } 200 \]
+                \[ \text{Profit \%} = \left( \frac{\text{Profit}}{\text{CP}} \right) \times 100\% \]
+                \[ \text{Profit \%} = \left( \frac{50}{200} \right) \times 100\% = \frac{1}{4} \times 100\% = 25\% \]
+                </div>
+                <div class="final-answer">The bookseller's profit percentage is 25%.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q5. The marked price of an electronic toy is ₹ 1,200. A discount of 15% is allowed by the shopkeeper. Find the final selling price of the toy.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Marked Price (MP) = \( \text{₹ } 1,200 \), Discount % = \( 15\% \).<br>
+                <div class="math-scroll">
+                \[ \text{Discount Amount} = \frac{15}{100} \times 1,200 = 15 \times 12 = \text{₹ } 180 \]
+                \[ \text{Selling Price (SP)} = \text{MP} - \text{Discount Amount} \]
+                \[ \text{SP} = 1,200 - 180 = \text{₹ } 1,020 \]
+                </div>
+                <div class="final-answer">The final selling price of the toy is ₹ 1,020.</div>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION B</div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q6. A shopkeeper buys 80 articles for ₹ 2,400 and sells them for a profit of 16%. Find the selling price of one article.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Cost Price (CP) of 80 articles = \( \text{₹ } 2,400 \).<br>
+                <div class="math-scroll">
+                \[ \text{CP of 1 article} = \frac{2400}{80} = \text{₹ } 30 \]
+                </div>
+                Profit % = \( 16\% \).<br>
+                <div class="math-scroll">
+                \[ \text{SP of 1 article} = \text{CP} \times \left(1 + \frac{\text{Profit \%}}{100}\right) \]
+                \[ \text{SP of 1 article} = 30 \times \left(1 + \frac{16}{100}\right) = 30 \times \frac{116}{100} \]
+                \[ \text{SP of 1 article} = 3 \times 11.6 = \text{₹ } 34.80 \]
+                </div>
+                <div class="final-answer">The selling price of one article is ₹ 34.80.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q7. A dining table is marked at ₹ 15,000 and is available at a discount of 20%. Find its selling price. If 5% GST is charged on the selling price, find the total amount the customer has to pay.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Marked Price (MP) = \( \text{₹ } 15,000 \), Discount % = \( 20\% \).<br>
+                <div class="math-scroll">
+                \[ \text{Discount} = \frac{20}{100} \times 15,000 = \text{₹ } 3,000 \]
+                \[ \text{Selling Price (SP)} = \text{MP} - \text{Discount} = 15,000 - 3,000 = \text{₹ } 12,000 \]
+                </div>
+                GST is charged at \( 5\% \) on the SP.<br>
+                <div class="math-scroll">
+                \[ \text{GST Amount} = \frac{5}{100} \times 12,000 = 5 \times 120 = \text{₹ } 600 \]
+                \[ \text{Total Amount to pay} = \text{SP} + \text{GST Amount} = 12,000 + 600 = \text{₹ } 12,600 \]
+                </div>
+                <div class="final-answer">The selling price is ₹ 12,000 and the final amount paid is ₹ 12,600.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q8. Rohan bought a second-hand car for ₹ 45,000 and spent ₹ 5,000 on its repairs and painting. He then sold it for ₹ 55,000. Find his total gain or loss percent.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Purchase Price = \( \text{₹ } 45,000 \)<br>
+                Overhead expenses (Repairs) = \( \text{₹ } 5,000 \)<br>
+                <div class="math-scroll">
+                \[ \text{Total Cost Price (CP)} = \text{Purchase Price} + \text{Overhead Expenses} \]
+                \[ \text{Total CP} = 45,000 + 5,000 = \text{₹ } 50,000 \]
+                </div>
+                Selling Price (SP) = \( \text{₹ } 55,000 \)<br>
+                Since \( \text{SP} > \text{CP} \), Rohan makes a Gain.<br>
+                <div class="math-scroll">
+                \[ \text{Gain} = \text{SP} - \text{CP} = 55,000 - 50,000 = \text{₹ } 5,000 \]
+                \[ \text{Gain \%} = \left( \frac{\text{Gain}}{\text{Total CP}} \right) \times 100\% \]
+                \[ \text{Gain \%} = \left( \frac{5,000}{50,000} \right) \times 100\% = \frac{1}{10} \times 100\% = 10\% \]
+                </div>
+                <div class="final-answer">Rohan's total gain is 10%.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q9. Find the final buying price of a television set, when an 8% sales tax is added on the purchase price of ₹ 15,500.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Purchase Price of TV = \( \text{₹ } 15,500 \)<br>
+                Sales Tax Rate = \( 8\% \)<br>
+                <div class="math-scroll">
+                \[ \text{Sales Tax} = \frac{8}{100} \times 15,500 = 8 \times 155 = \text{₹ } 1,240 \]
+                \[ \text{Final Buying Price} = \text{Purchase Price} + \text{Sales Tax} \]
+                \[ \text{Final Buying Price} = 15,500 + 1,240 = \text{₹ } 16,740 \]
+                </div>
+                <div class="final-answer">The final buying price of the television set is ₹ 16,740.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q10. A shopkeeper marks his goods at 25% above the cost price and then allows a discount of 10% on the marked price. Find his overall gain percent.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Let the Cost Price (CP) of the goods be \( \text{₹ } 100 \).<br>
+                <div class="math-scroll">
+                \[ \text{Marked Price (MP)} = \text{CP} + 25\% \text{ of CP} \]
+                \[ \text{MP} = 100 + 25 = \text{₹ } 125 \]
+                </div>
+                Discount allowed = \( 10\% \) on MP.<br>
+                <div class="math-scroll">
+                \[ \text{Discount} = \frac{10}{100} \times 125 = \text{₹ } 12.50 \]
+                \[ \text{Selling Price (SP)} = \text{MP} - \text{Discount} = 125 - 12.50 = \text{₹ } 112.50 \]
+                </div>
+                Now calculate overall gain on original CP.<br>
+                <div class="math-scroll">
+                \[ \text{Gain} = \text{SP} - \text{CP} = 112.50 - 100 = \text{₹ } 12.50 \]
+                \[ \text{Gain \%} = \left( \frac{12.50}{100} \right) \times 100\% = 12.5\% \]
+                </div>
+                <div class="final-answer">The shopkeeper's overall gain is 12.5%.</div>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION C</div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q11. A man sold two ceiling fans for ₹ 990 each. On one he gains 10% and on the other he loses 10%. Find his total cost price and his total gain or loss percent in the whole transaction.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Selling Price (SP) of each fan = \( \text{₹ } 990 \). Total SP = \( 990 + 990 = \text{₹ } 1980 \).<br><br>
+                <strong>For the first fan (Gain = 10%):</strong>
+                <div class="math-scroll">
+                \[ \text{CP}_1 = \frac{\text{SP} \times 100}{100 + \text{Gain \%}} = \frac{990 \times 100}{100 + 10} = \frac{99000}{110} = \text{₹ } 900 \]
+                </div>
+                <strong>For the second fan (Loss = 10%):</strong>
+                <div class="math-scroll">
+                \[ \text{CP}_2 = \frac{\text{SP} \times 100}{100 - \text{Loss \%}} = \frac{990 \times 100}{100 - 10} = \frac{99000}{90} = \text{₹ } 1100 \]
+                </div>
+                <br><strong>Total Transaction:</strong>
+                <div class="math-scroll">
+                \[ \text{Total Cost Price (CP)} = 900 + 1100 = \text{₹ } 2000 \]
+                \[ \text{Since Total CP } (2000) > \text{Total SP } (1980), \text{ there is a Loss.} \]
+                \[ \text{Total Loss} = 2000 - 1980 = \text{₹ } 20 \]
+                \[ \text{Loss \%} = \left( \frac{\text{Loss}}{\text{Total CP}} \right) \times 100\% = \left( \frac{20}{2000} \right) \times 100\% = 1\% \]
+                </div>
+                <div class="final-answer">His total cost price is ₹ 2,000 and his total loss in the transaction is 1%.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q12. Megha bought a pair of roller skates at a clearance sale where a discount of 20% was given. If the amount she pays after the discount is ₹ 1,600, find the original marked price. Also, find the final billing amount if a 12% GST is applied to the discounted price.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Let the Marked Price (MP) be \( x \).<br>
+                Discount = \( 20\% \) of \( x = 0.20x \).<br>
+                Selling Price (SP) after discount = \( \text{₹ } 1,600 \).<br>
+                <div class="math-scroll">
+                \[ \text{SP} = \text{MP} - \text{Discount} \]
+                \[ 1600 = x - 0.20x \]
+                \[ 1600 = 0.80x \implies x = \frac{1600}{0.80} = \frac{16000}{8} = \text{₹ } 2000 \]
+                </div>
+                So, Marked Price = \( \text{₹ } 2,000 \).<br><br>
+                Now, a GST of 12% is applied to the discounted price (₹ 1,600).<br>
+                <div class="math-scroll">
+                \[ \text{GST Amount} = \frac{12}{100} \times 1600 = 12 \times 16 = \text{₹ } 192 \]
+                \[ \text{Final Billing Amount} = \text{Discounted Price} + \text{GST} = 1600 + 192 = \text{₹ } 1792 \]
+                </div>
+                <div class="final-answer">The original marked price is ₹ 2,000. The final billing amount is ₹ 1,792.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q13. A dealer bought two identical TV sets at ₹ 10,000 each. He sold one at a profit of 10% and the other at a loss of 10%. Calculate the selling price of each TV set. Did he make an overall profit or loss, and by what percentage?</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Cost Price (CP) of each TV = \( \text{₹ } 10,000 \).<br>
+                Total CP for both TVs = \( 10,000 + 10,000 = \text{₹ } 20,000 \).<br><br>
+                <strong>For the first TV (10% Profit):</strong>
+                <div class="math-scroll">
+                \[ \text{Profit} = \frac{10}{100} \times 10,000 = \text{₹ } 1,000 \]
+                \[ \text{SP}_1 = 10,000 + 1,000 = \text{₹ } 11,000 \]
+                </div>
+                <strong>For the second TV (10% Loss):</strong>
+                <div class="math-scroll">
+                \[ \text{Loss} = \frac{10}{100} \times 10,000 = \text{₹ } 1,000 \]
+                \[ \text{SP}_2 = 10,000 - 1,000 = \text{₹ } 9,000 \]
+                </div>
+                <br><strong>Overall Analysis:</strong>
+                <div class="math-scroll">
+                \[ \text{Total SP} = \text{SP}_1 + \text{SP}_2 = 11,000 + 9,000 = \text{₹ } 20,000 \]
+                \[ \text{Since Total CP } (20,000) = \text{Total SP } (20,000) \]
+                </div>
+                There is no gain and no loss.
+                <div class="final-answer">Selling Prices are ₹ 11,000 and ₹ 9,000. He made no profit and no loss (0%).</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q14. The price of a refrigerator is ₹ 24,000. The shopkeeper gives successive discounts of 10% and 5% to a customer. Find the final selling price of the refrigerator. Also, calculate the total equivalent discount given in percentage.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Marked Price (MP) = \( \text{₹ } 24,000 \).<br><br>
+                <strong>First Discount (10%):</strong>
+                <div class="math-scroll">
+                \[ \text{D}_1 = \frac{10}{100} \times 24000 = \text{₹ } 2400 \]
+                \[ \text{Price after 1st discount} = 24000 - 2400 = \text{₹ } 21600 \]
+                </div>
+                <strong>Second Discount (5% on the new price):</strong>
+                <div class="math-scroll">
+                \[ \text{D}_2 = \frac{5}{100} \times 21600 = 5 \times 216 = \text{₹ } 1080 \]
+                \[ \text{Final Selling Price} = 21600 - 1080 = \text{₹ } 20520 \]
+                </div>
+                <strong>Total Equivalent Discount Percentage:</strong>
+                <div class="math-scroll">
+                \[ \text{Total Discount Amount} = 2400 + 1080 = \text{₹ } 3480 \]
+                \[ \text{Equivalent Discount \%} = \left( \frac{\text{Total Discount}}{\text{Initial MP}} \right) \times 100\% \]
+                \[ \text{Equivalent Discount \%} = \left( \frac{3480}{24000} \right) \times 100\% = \frac{348}{24} = 14.5\% \]
+                </div>
+                <div class="final-answer">The final selling price is ₹ 20,520 and the equivalent discount is 14.5%.</div>
+            </div>
+        </div>
+
+        <div class="solution-box">
+            <div class="q-header">
+                <div class="q-text">Q15. A retailer buys a geyser for ₹ 4,800. He marks the price 20% above his cost price. If he gives a 10% discount on the marked price and charges 18% GST on the discounted price, calculate: (a) MP (b) Discount (c) SP (d) Final amount.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <strong>Solution:</strong><br>
+                Given: Cost Price (CP) = \( \text{₹ } 4,800 \).<br><br>
+                <strong>(a) Marked Price (MP):</strong>
+                He marks up by 20%.
+                <div class="math-scroll">
+                \[ \text{Markup} = \frac{20}{100} \times 4800 = \text{₹ } 960 \]
+                \[ \text{MP} = \text{CP} + \text{Markup} = 4800 + 960 = \text{₹ } 5760 \]
+                </div>
+                
+                <strong>(b) Discount amount in rupees:</strong>
+                Discount is 10% on MP.
+                <div class="math-scroll">
+                \[ \text{Discount} = \frac{10}{100} \times 5760 = \text{₹ } 576 \]
+                </div>
+
+                <strong>(c) Selling Price (SP) before tax:</strong>
+                <div class="math-scroll">
+                \[ \text{SP} = \text{MP} - \text{Discount} = 5760 - 576 = \text{₹ } 5184 \]
+                </div>
+
+                <strong>(d) Final total amount paid by customer (including 18% GST):</strong>
+                GST is charged on the Selling Price.
+                <div class="math-scroll">
+                \[ \text{GST} = \frac{18}{100} \times 5184 = 0.18 \times 5184 = \text{₹ } 933.12 \]
+                \[ \text{Final Amount} = \text{SP} + \text{GST} = 5184 + 933.12 = \text{₹ } 6117.12 \]
+                </div>
+                <div class="final-answer">
+                    (a) MP = ₹ 5,760<br>
+                    (b) Discount = ₹ 576<br>
+                    (c) Selling Price = ₹ 5,184<br>
+                    (d) Final Amount = ₹ 6,117.12
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by Team Vardaan (Senior Academic Dean) - Marking Scheme</div>
+    </div>
+</body>
+</html>
