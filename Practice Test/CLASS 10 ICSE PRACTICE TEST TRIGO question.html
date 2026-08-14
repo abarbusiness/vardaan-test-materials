@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- STREAMING_CHUNK:Configuring meta tags and MathJax setup... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- STREAMING_CHUNK:Defining core CSS styles for paper layout... -->
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* STREAMING_CHUNK:Styling headers, details, and sections... */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        /* STREAMING_CHUNK:Styling questions and MathJax overrides... */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            width: calc(100% - 40px);
+        }
+        
+        .math-inline {
+            display: inline;
+            white-space: nowrap;
+        }
+        .math-inline mjx-container, mjx-container[display="false"] {
+            overflow: visible !important;
+            display: inline-block !important;
+            margin: 0 !important;
+        }
+        mjx-container > svg {
+            overflow: visible !important;
+        }
+        
+        /* STREAMING_CHUNK:Setting up responsive media queries... */
+        .math-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            body { 
+                padding: 15px; 
+                margin: 0; 
+                width: 100%;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                gap: 5px; 
+                text-align: left;
+            }
+            .question-container {
+                flex-direction: column;
+            }
+            .q-num {
+                margin-bottom: 5px;
+            }
+            .q-content {
+                width: 100%;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <!-- STREAMING_CHUNK:Rendering header and instructions... -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Mega Test - Trigonometry & Heights and Distances</div>
+        <div class="exam-details">
+            <span>Class: 10</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 150</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Pace yourself strictly due to the 2-hour limit.</li>
+                <li>The paper is divided into four sections: A, B, C, and D.</li>
+                <li>Section A comprises 15 questions of 2 marks each.</li>
+                <li>Section B comprises 15 questions of 3 marks each.</li>
+                <li>Section C comprises 5 questions of 4 marks each.</li>
+                <li>Section D comprises 11 questions of 5 marks each.</li>
+                <li>Write answers neatly and draw clear, precise diagrams for height and distance problems.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section A questions (1-8)... -->
+    <div class="section-header">SECTION A (30 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Evaluate the following expression:
+            <div class="math-block">$$ \frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ} $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sin(A - B) = \frac{1}{2}$</span> and <span class="math-inline">$\cos(A + B) = \frac{1}{2}$</span>, where $0^\circ \lt A + B \le 90^\circ$ and $A \gt B$, find the values of $A$ and $B$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Prove the following trigonometric identity:
+            <div class="math-block">$$ (\sec A + \tan A)(1 - \sin A) = \cos A $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the numerical value of the expression: <span class="math-inline">$9 \sec^2 A - 9 \tan^2 A$</span>. Show the identity used.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The shadow of a vertical tower on level ground is observed to be <span class="math-inline">$\sqrt{3}$</span> times its height. Find the angle of elevation of the sun at that moment.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\tan A = \frac{4}{3}$</span>, find the value of <span class="math-inline">$\sin A + \cos A$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Evaluate: <span class="math-inline">$\frac{\sin^2 63^\circ + \sin^2 27^\circ}{\cos^2 17^\circ + \cos^2 73^\circ}$</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            A ladder $15$ m long just reaches the top of a vertical wall. If the ladder makes an angle of $60^\circ$ with the wall, find the height of the wall.
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section A questions (9-15)... -->
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Prove that <span class="math-inline">$(\sin \theta + \cos \theta)^2 = 1 + 2 \sin \theta \cos \theta$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Find the value of <span class="math-inline">$(\sec^2 \theta - 1)(1 - \text{cosec}^2 \theta)$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sin \theta = \cos \theta$</span>, find the value of <span class="math-inline">$2 \tan^2 \theta + \sin^2 \theta - 1$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            In $\Delta PQR$, right-angled at $Q$, $PR + QR = 25$ cm and $PQ = 5$ cm. Determine the value of $\sin P$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sin(A+2B) = \frac{\sqrt{3}}{2}$</span> and <span class="math-inline">$\cos(A+4B) = 0$</span> (where angles are acute), find the values of $A$ and $B$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Prove that <span class="math-inline">$\frac{\sin^3 \theta + \cos^3 \theta}{\sin \theta + \cos \theta} + \sin \theta \cos \theta = 1$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            A vertical pole casts a shadow of length <span class="math-inline">$2\sqrt{3}$</span> m on the ground when the sun's elevation is $60^\circ$. Find the height of the pole.
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B questions (16-23)... -->
+    <div class="section-header">SECTION B (45 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            If <span class="math-inline">$3 \cot A = 4$</span>, check whether the following equation is true or false. Show complete working.
+            <div class="math-block">$$ \frac{1 - \tan^2 A}{1 + \tan^2 A} = \cos^2 A - \sin^2 A $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            Prove that:
+            <div class="math-block">$$ \frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Prove the following identity by rationalizing the denominator inside the root:
+            <div class="math-block">$$ \sqrt{\frac{1 + \sin A}{1 - \sin A}} = \sec A + \tan A $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^\circ$. Find the length of the string, assuming that there is no slack in the string.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Prove the following important trigonometric identity:
+            <div class="math-block">$$ (\sin A + \text{cosec} A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 A $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sec \theta = x + \frac{1}{4x}$</span>, prove that <span class="math-inline">$\sec \theta + \tan \theta = 2x$</span> or <span class="math-inline">$\frac{1}{2x}$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            Prove that <span class="math-block">$$ \frac{\sin \theta - \cos \theta + 1}{\sin \theta + \cos \theta - 1} = \frac{1}{\sec \theta - \tan \theta} $$</span>
+            using the identity <span class="math-inline">$\sec^2 \theta = 1 + \tan^2 \theta$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            The angle of elevation of the top of a building from the foot of the tower is $30^\circ$ and the angle of elevation of the top of the tower from the foot of the building is $60^\circ$. If the tower is 50 m high, find the height of the building.
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B questions (24-30)... -->
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\frac{\cos \alpha}{\cos \beta} = m$</span> and <span class="math-inline">$\frac{\cos \alpha}{\sin \beta} = n$</span>, show that <span class="math-inline">$(m^2 + n^2) \cos^2 \beta = n^2$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            An observer $1.5$ m tall is $28.5$ m away from a chimney. The angle of elevation of the top of the chimney from her eyes is $45^\circ$. What is the height of the chimney?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            If <span class="math-inline">$x \sin^3 \theta + y \cos^3 \theta = \sin \theta \cos \theta$</span> and <span class="math-inline">$x \sin \theta = y \cos \theta$</span>, prove that <span class="math-inline">$x^2 + y^2 = 1$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">27.</div>
+        <div class="q-content">
+            Prove that: <span class="math-inline">$(1 + \cot A - \text{cosec} A)(1 + \tan A + \sec A) = 2$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">28.</div>
+        <div class="q-content">
+            From the top of a 7 m high building, the angle of elevation of the top of a cable tower is $60^\circ$ and the angle of depression of its foot is $45^\circ$. Determine the height of the tower.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">29.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\cos \theta + \sin \theta = \sqrt{2} \cos \theta$</span>, show that <span class="math-inline">$\cos \theta - \sin \theta = \sqrt{2} \sin \theta$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">30.</div>
+        <div class="q-content">
+            The angle of elevation of the top of a vertical tower from a point on the ground is $60^\circ$. From another point 10 m vertically above the first, its angle of elevation is $45^\circ$. Find the height of the tower.
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section C questions (31-35)... -->
+    <div class="section-header">SECTION C (20 Marks)<span class="marks-info">(Long Answer Type I - 4 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">31.</div>
+        <div class="q-content">
+            Two poles of equal heights are standing opposite each other on either side of the road, which is 80 m wide. From a point between them on the road, the angles of elevation of the top of the poles are $60^\circ$ and $30^\circ$, respectively. Find the height of the poles and the distances of the point from the poles.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">32.</div>
+        <div class="q-content">
+            A TV tower stands vertically on a bank of a canal. From a point on the other bank directly opposite the tower, the angle of elevation of the top of the tower is $60^\circ$. From another point 20 m away from this point on the line joining this point to the foot of the tower, the angle of elevation of the top of the tower is $30^\circ$. Find the height of the tower and the width of the canal.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">33.</div>
+        <div class="q-content">
+            Prove that:
+            <div class="math-block">$$ \frac{\tan^3 \theta}{1 + \tan^2 \theta} + \frac{\cot^3 \theta}{1 + \cot^2 \theta} = \sec \theta \text{cosec} \theta - 2 \sin \theta \cos \theta $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">34.</div>
+        <div class="q-content">
+            If <span class="math-inline">$m = \cos A - \sin A$</span> and <span class="math-inline">$n = \cos A + \sin A$</span>, show that <span class="math-block">$$ \frac{m^2 + n^2}{m^2 - n^2} = -\frac{1}{2} \sec A \text{cosec} A $$</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">35.</div>
+        <div class="q-content">
+            A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of $30^\circ$, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be $60^\circ$. Find the time taken by the car to reach the foot of the tower from this point.
+        </div>
+    </div>
+
+
+    <!-- STREAMING_CHUNK:Rendering Section D questions (36-41)... -->
+    <div class="section-header">SECTION D (55 Marks)<span class="marks-info">(Long Answer Type II - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">36.</div>
+        <div class="q-content">
+            Expressing the ratios in terms of sine and cosine, prove that:
+            <div class="math-block">$$ \frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \text{cosec} \theta $$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">37.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sin \theta + \cos \theta = \sqrt{3}$</span>, then prove that <span class="math-inline">$\tan \theta + \cot \theta = 1$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">38.</div>
+        <div class="q-content">
+            A $1.2$ m tall girl spots a balloon moving with the wind in a horizontal line at a height of $88.2$ m from the ground. The angle of elevation of the balloon from the eyes of the girl at any instant is $60^\circ$. After some time, the angle of elevation reduces to $30^\circ$. Find the distance travelled by the balloon during the interval. 
+            <br><em>(Reference diagram is provided below)</em>
+            <div class="svg-container">
+                <svg width="400" height="260" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="240" x2="380" y2="240" stroke="black" stroke-width="2"/>
+                    <text x="375" y="255" font-size="12" text-anchor="end">Ground Level</text>
+                    <line x1="40" y1="240" x2="40" y2="180" stroke="blue" stroke-width="3"/>
+                    <text x="20" y="215" font-size="12">1.2m</text>
+                    <line x1="40" y1="180" x2="380" y2="180" stroke="black" stroke-dasharray="5,5" stroke-width="1"/>
+                    <line x1="140" y1="180" x2="140" y2="40" stroke="black" stroke-dasharray="3,3" stroke-width="1"/>
+                    <circle cx="140" cy="40" r="15" fill="none" stroke="red" stroke-width="2"/>
+                    <line x1="140" y1="55" x2="140" y2="70" stroke="red" stroke-width="2"/>
+                    <line x1="330" y1="240" x2="330" y2="40" stroke="black" stroke-dasharray="3,3" stroke-width="1"/>
+                    <circle cx="330" cy="40" r="15" fill="none" stroke="red" stroke-width="2"/>
+                    <line x1="330" y1="55" x2="330" y2="70" stroke="red" stroke-width="2"/>
+                    <text x="340" y="140" font-size="12">88.2m</text>
+                    <line x1="40" y1="180" x2="140" y2="40" stroke="green" stroke-width="1.5"/>
+                    <line x1="40" y1="180" x2="330" y2="40" stroke="green" stroke-width="1.5"/>
+                    <path d="M 75 180 A 35 35 0 0 0 62 148" fill="none" stroke="black" stroke-width="1"/>
+                    <text x="70" y="165" font-size="12">60°</text>
+                    <path d="M 100 180 A 60 60 0 0 0 95 152" fill="none" stroke="black" stroke-width="1"/>
+                    <text x="105" y="175" font-size="12">30°</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">39.</div>
+        <div class="q-content">
+            The angle of elevation of an aeroplane from a point on the ground is $60^\circ$. After a flight of $15$ seconds, the angle of elevation changes to $30^\circ$. If the aeroplane is flying at a constant height of <span class="math-inline">$1500\sqrt{3}$</span> m, find the speed of the plane in km/hr.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">40.</div>
+        <div class="q-content">
+            The angle of elevation of a cloud from a point $60$ m above a lake is $30^\circ$ and the angle of depression of the reflection of the cloud in the lake is $60^\circ$. Find the height of the cloud from the surface of the lake.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">41.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\sec \theta + \tan \theta = p$</span>, prove that <span class="math-block">$$ \sin \theta = \frac{p^2 - 1}{p^2 + 1} $$</span>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section D questions (42-46) and footer... -->
+    <div class="question-container">
+        <div class="q-num">42.</div>
+        <div class="q-content">
+            Prove that <span class="math-inline">$\frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \text{cosec} A + \cot A$</span>, using the identity <span class="math-inline">$\text{cosec}^2 A = 1 + \cot^2 A$</span>.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">43.</div>
+        <div class="q-content">
+            An aeroplane is flying at a height of 300 m above the ground. Flying at this height, the angles of depression from the aeroplane of two points on both banks of a river in opposite directions are $45^\circ$ and $60^\circ$ respectively. Find the width of the river. <em>(Take $\sqrt{3} = 1.732$)</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">44.</div>
+        <div class="q-content">
+            Prove that: <span class="math-block">$$ \frac{\tan \theta + \sec \theta - 1}{\tan \theta - \sec \theta + 1} = \frac{1 + \sin \theta}{\cos \theta} $$</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">45.</div>
+        <div class="q-content">
+            A boy standing on a horizontal plane finds a bird flying at a distance of 100 m from him at an elevation of $30^\circ$. A girl standing on the roof of a 20 m high building, finds the angle of elevation of the same bird to be $45^\circ$. Both the boy and the girl are on opposite sides of the bird. Find the distance of the bird from the girl.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">46.</div>
+        <div class="q-content">
+            If <span class="math-inline">$\tan \theta = \frac{1}{\sqrt{7}}$</span>, find the exact numerical value of:
+            <div class="math-block">$$ \frac{\text{cosec}^2 \theta - \sec^2 \theta}{\text{cosec}^2 \theta + \sec^2 \theta} $$</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

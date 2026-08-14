@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- STREAMING_CHUNK:Configuring meta tags and MathJax setup for Solutions... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- STREAMING_CHUNK:Defining CSS layout for solutions... -->
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #1a237e;
+        }
+        .section-header { 
+            text-align: left; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-left: 5px solid #1a237e;
+            font-size: 12pt; 
+        }
+        
+        /* STREAMING_CHUNK:Styling Question/Solution blocks... */
+        .q-block {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        .q-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-text-area {
+            display: flex;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 35px;
+            flex-shrink: 0;
+            color: #1a237e;
+        }
+        .q-text {
+            font-weight: bold;
+            color: #333;
+        }
+        .marks-badge {
+            font-weight: bold;
+            color: #d32f2f;
+            white-space: nowrap;
+            background-color: #ffebee;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+        .solution-area {
+            padding-left: 35px;
+        }
+        .sol-heading {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 5px;
+            color: #2e7d32;
+        }
+        
+        /* STREAMING_CHUNK:MathJax display rules and responsive media queries... */
+        .math-inline {
+            display: inline;
+            white-space: nowrap;
+        }
+        .math-inline mjx-container, mjx-container[display="false"] {
+            overflow: visible !important;
+            display: inline-block !important;
+            margin: 0 !important;
+        }
+        mjx-container > svg {
+            overflow: visible !important;
+        }
+        .math-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            body { 
+                padding: 15px; 
+                margin: 0; 
+                width: 100%;
+            }
+            .q-header-row {
+                flex-direction: column;
+            }
+            .marks-badge {
+                margin-top: 5px;
+                margin-left: 35px;
+            }
+            .solution-area {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- STREAMING_CHUNK:Rendering header and Section A Solutions (1-5)... -->
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">Detailed Solutions: 150-Mark Trigonometry Test</div>
+    </div>
+
+    <div class="section-header">SECTION A (2 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q1.</div>
+                <div class="q-text">Evaluate: <span class="math-inline">$\frac{2 \tan 30^\circ}{1 + \tan^2 30^\circ}$</span></div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Substitute $\tan 30^\circ = \frac{1}{\sqrt{3}}$:</p>
+            <div class="math-block">
+            $$ = \frac{2 \left(\frac{1}{\sqrt{3}}\right)}{1 + \left(\frac{1}{\sqrt{3}}\right)^2} = \frac{\frac{2}{\sqrt{3}}}{1 + \frac{1}{3}} = \frac{\frac{2}{\sqrt{3}}}{\frac{4}{3}} = \frac{2}{\sqrt{3}} \times \frac{3}{4} = \frac{\sqrt{3}}{2} $$
+            </div>
+            <p><strong>Final Answer: $\frac{\sqrt{3}}{2}$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q2.</div>
+                <div class="q-text">If $\sin(A - B) = \frac{1}{2}$ and $\cos(A + B) = \frac{1}{2}$, find A and B.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\sin(A - B) = \frac{1}{2} \implies A - B = 30^\circ$ (1)</p>
+            <p>$\cos(A + B) = \frac{1}{2} \implies A + B = 60^\circ$ (2)</p>
+            <p>Adding (1) and (2): $2A = 90^\circ \implies A = 45^\circ$. Substituting gives $B = 15^\circ$.</p>
+            <p><strong>Final Answer: $A = 45^\circ, B = 15^\circ$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q3.</div>
+                <div class="q-text">Prove: $(\sec A + \tan A)(1 - \sin A) = \cos A$</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \left( \frac{1 + \sin A}{\cos A} \right) (1 - \sin A) = \frac{1 - \sin^2 A}{\cos A} = \frac{\cos^2 A}{\cos A} = \cos A $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q4.</div>
+                <div class="q-text">Find value: $9 \sec^2 A - 9 \tan^2 A$</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Expression: $9 (\sec^2 A - \tan^2 A)$. We know $1 + \tan^2 A = \sec^2 A \implies \sec^2 A - \tan^2 A = 1$.</p>
+            <p>$= 9(1) = 9$.</p>
+            <p><strong>Final Answer: 9</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q5.</div>
+                <div class="q-text">Tower shadow is $\sqrt{3}$ times height. Find sun's elevation.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Let height = $h$, Shadow = $h\sqrt{3}$. $\tan \theta = \frac{h}{h\sqrt{3}} = \frac{1}{\sqrt{3}}$. Thus, $\theta = 30^\circ$.</p>
+            <p><strong>Final Answer: $30^\circ$</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section A Solutions (6-11)... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q6.</div>
+                <div class="q-text">If $\tan A = \frac{4}{3}$, find $\sin A + \cos A$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Perp = 4, Base = 3. Hyp $= \sqrt{16+9} = 5$.</p>
+            <p>$\sin A + \cos A = \frac{4}{5} + \frac{3}{5} = \frac{7}{5}$.</p>
+            <p><strong>Final Answer: $7/5$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q7.</div>
+                <div class="q-text">Evaluate: $\frac{\sin^2 63^\circ + \sin^2 27^\circ}{\cos^2 17^\circ + \cos^2 73^\circ}$</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Using $\sin(90^\circ - \theta) = \cos \theta$: $\frac{\sin^2 63^\circ + \cos^2 63^\circ}{\cos^2 17^\circ + \sin^2 17^\circ} = \frac{1}{1} = 1$.</p>
+            <p><strong>Final Answer: 1</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q8.</div>
+                <div class="q-text">A ladder 15m long makes an angle of $60^\circ$ with the wall. Find height of wall.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Angle is with the wall. $\cos 60^\circ = \frac{\text{Wall Height}}{\text{Ladder}} \implies \frac{1}{2} = \frac{\text{Height}}{15} \implies \text{Height} = 7.5$ m.</p>
+            <p><strong>Final Answer: 7.5 m</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q9.</div>
+                <div class="q-text">Prove: $(\sin \theta + \cos \theta)^2 = 1 + 2 \sin \theta \cos \theta$</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>L.H.S $= \sin^2 \theta + \cos^2 \theta + 2\sin \theta \cos \theta = 1 + 2\sin \theta \cos \theta = \text{R.H.S.}$</p>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q10.</div>
+                <div class="q-text">Find the value of $(\sec^2 \theta - 1)(1 - \text{cosec}^2 \theta)$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$(\tan^2 \theta) \times (-\cot^2 \theta) = -\tan^2 \theta \times \frac{1}{\tan^2 \theta} = -1$.</p>
+            <p><strong>Final Answer: -1</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q11.</div>
+                <div class="q-text">If $\sin \theta = \cos \theta$, find the value of $2 \tan^2 \theta + \sin^2 \theta - 1$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\sin \theta = \cos \theta \implies \theta = 45^\circ$. Sub: $2(1)^2 + (\frac{1}{\sqrt{2}})^2 - 1 = 2 + 0.5 - 1 = 1.5$.</p>
+            <p><strong>Final Answer: 1.5 (or $3/2$)</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section A Solutions (12-15)... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q12.</div>
+                <div class="q-text">In right $\Delta PQR$, $PR + QR = 25$ and $PQ = 5$. Find $\sin P$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>By Pythagoras: $PR^2 - QR^2 = 5^2 = 25 \implies (PR-QR)(25) = 25 \implies PR - QR = 1$.</p>
+            <p>Solving: $PR=13, QR=12$. $\sin P = \frac{QR}{PR} = \frac{12}{13}$.</p>
+            <p><strong>Final Answer: $12/13$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q13.</div>
+                <div class="q-text">If $\sin(A+2B) = \frac{\sqrt{3}}{2}$ and $\cos(A+4B) = 0$, find A and B.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$A+2B = 60^\circ$ and $A+4B = 90^\circ$.</p>
+            <p>Subtracting: $2B = 30^\circ \implies B = 15^\circ$. Substituting $B$, we get $A = 30^\circ$.</p>
+            <p><strong>Final Answer: $A=30^\circ, B=15^\circ$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q14.</div>
+                <div class="q-text">Prove $\frac{\sin^3 \theta + \cos^3 \theta}{\sin \theta + \cos \theta} + \sin \theta \cos \theta = 1$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Expand numerator: $\frac{(\sin \theta + \cos \theta)(\sin^2 \theta + \cos^2 \theta - \sin \theta \cos \theta)}{\sin \theta + \cos \theta} + \sin \theta \cos \theta$</p>
+            <p>$= (1 - \sin \theta \cos \theta) + \sin \theta \cos \theta = 1 = \text{R.H.S.}$</p>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q15.</div>
+                <div class="q-text">Pole shadow is $2\sqrt{3}$ m, sun elevation $60^\circ$. Find pole height.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\tan 60^\circ = \frac{h}{2\sqrt{3}} \implies \sqrt{3} = \frac{h}{2\sqrt{3}} \implies h = \sqrt{3} \times 2\sqrt{3} = 6$ m.</p>
+            <p><strong>Final Answer: 6 m</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B Solutions (16-20)... -->
+    <div class="section-header">SECTION B (3 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q16.</div>
+                <div class="q-text">If $3 \cot A = 4$, check whether $\frac{1 - \tan^2 A}{1 + \tan^2 A} = \cos^2 A - \sin^2 A$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\tan A = \frac{3}{4}$, $\sin A = \frac{3}{5}$, $\cos A = \frac{4}{5}$.</p>
+            <p>L.H.S: $\frac{1 - 9/16}{1 + 9/16} = \frac{7/16}{25/16} = \frac{7}{25}$</p>
+            <p>R.H.S: $(4/5)^2 - (3/5)^2 = \frac{16}{25} - \frac{9}{25} = \frac{7}{25}$</p>
+            <p><strong>Final Answer: TRUE.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q17.</div>
+                <div class="q-text">Prove: $\frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A$</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \frac{\cos^2 A + 1 + 2\sin A + \sin^2 A}{(1 + \sin A)\cos A} = \frac{2 + 2\sin A}{(1 + \sin A)\cos A} = \frac{2}{\cos A} = 2 \sec A $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q18.</div>
+                <div class="q-text">Prove: $\sqrt{\frac{1 + \sin A}{1 - \sin A}} = \sec A + \tan A$</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \sqrt{\frac{(1 + \sin A)^2}{1 - \sin^2 A}} = \frac{1 + \sin A}{\cos A} = \frac{1}{\cos A} + \frac{\sin A}{\cos A} = \sec A + \tan A $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q19.</div>
+                <div class="q-text">Kite height 60m. String elevation $60^\circ$. Find string length.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\sin 60^\circ = \frac{60}{L} \implies \frac{\sqrt{3}}{2} = \frac{60}{L} \implies L = 40\sqrt{3}$ m.</p>
+            <p><strong>Final Answer: $40\sqrt{3}$ m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q20.</div>
+                <div class="q-text">Prove: $(\sin A + \text{cosec} A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 A$</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \sin^2 A + \text{cosec}^2 A + 2 + \cos^2 A + \sec^2 A + 2 = 5 + (1 + \cot^2 A) + (1 + \tan^2 A) $$
+            $$ = 7 + \tan^2 A + \cot^2 A $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B Solutions (21-25)... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q21.</div>
+                <div class="q-text">If $\sec \theta = x + \frac{1}{4x}$, prove $\sec \theta + \tan \theta = 2x$ or $\frac{1}{2x}$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ \tan^2 \theta = \left(x + \frac{1}{4x}\right)^2 - 1 = \left(x - \frac{1}{4x}\right)^2 \implies \tan \theta = \pm \left(x - \frac{1}{4x}\right) $$
+            </div>
+            <p>Case +: $\left(x + \frac{1}{4x}\right) + \left(x - \frac{1}{4x}\right) = 2x$. Case -: equals $\frac{1}{2x}$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q22.</div>
+                <div class="q-text">Prove $\frac{\sin \theta - \cos \theta + 1}{\sin \theta + \cos \theta - 1} = \frac{1}{\sec \theta - \tan \theta}$</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Divide by $\cos \theta$: $\frac{(\tan \theta + \sec \theta) - (\sec^2 \theta - \tan^2 \theta)}{\tan \theta - \sec \theta + 1} = \sec \theta + \tan \theta = \frac{1}{\sec \theta - \tan \theta}$.</p>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q23.</div>
+                <div class="q-text">Building elevation $30^\circ$, tower $60^\circ$. Tower is 50m. Find building height.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Tower base distance $x = \frac{50}{\sqrt{3}}$. Building height $h = x \tan 30^\circ = \frac{50}{\sqrt{3}} \times \frac{1}{\sqrt{3}} = 16.67$ m.</p>
+            <p><strong>Final Answer: $16.67$ m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q24.</div>
+                <div class="q-text">If $\frac{\cos \alpha}{\cos \beta} = m$ and $\frac{\cos \alpha}{\sin \beta} = n$, show $(m^2 + n^2) \cos^2 \beta = n^2$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ \left( \frac{\cos^2 \alpha}{\cos^2 \beta} + \frac{\cos^2 \alpha}{\sin^2 \beta} \right) \cos^2 \beta = \cos^2 \alpha \left( \frac{1}{\cos^2 \beta \sin^2 \beta} \right) \cos^2 \beta = \frac{\cos^2 \alpha}{\sin^2 \beta} = n^2 $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q25.</div>
+                <div class="q-text">Observer $1.5$m tall, $28.5$m from chimney. Elevation $45^\circ$. Find chimney height.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Height above eyes $= 28.5 \times 1 = 28.5$ m. Total $= 28.5 + 1.5 = 30$ m.</p>
+            <p><strong>Final Answer: 30 m.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B Solutions (26-30)... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q26.</div>
+                <div class="q-text">If $x \sin^3 \theta + y \cos^3 \theta = \sin \theta \cos \theta$ and $x \sin \theta = y \cos \theta$, prove $x^2 + y^2 = 1$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Substitute $x \sin \theta = y \cos \theta$: $(y \cos \theta)\sin^2 \theta + y \cos^3 \theta = y \cos \theta(\sin^2 \theta + \cos^2 \theta) = y \cos \theta$.</p>
+            <p>Thus $y \cos \theta = \sin \theta \cos \theta \implies y = \sin \theta$. Then $x = \cos \theta$.</p>
+            <p>$x^2 + y^2 = \cos^2 \theta + \sin^2 \theta = 1$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q27.</div>
+                <div class="q-text">Prove: $(1 + \cot A - \text{cosec} A)(1 + \tan A + \sec A) = 2$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \left( \frac{\sin A + \cos A - 1}{\sin A} \right) \left( \frac{\cos A + \sin A + 1}{\cos A} \right) = \frac{(\sin A + \cos A)^2 - 1}{\sin A \cos A} $$
+            $$ = \frac{1 + 2\sin A \cos A - 1}{\sin A \cos A} = 2 $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q28.</div>
+                <div class="q-text">Building 7m. Tower elev $60^\circ$, dep $45^\circ$. Find tower height.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Dist $x = 7/\tan 45^\circ = 7$ m. Tower height above building $= 7 \tan 60^\circ = 7\sqrt{3}$.</p>
+            <p>Total $= 7 + 7\sqrt{3} = 7(\sqrt{3}+1)$ m.</p>
+            <p><strong>Final Answer: $7(\sqrt{3}+1)$ m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q29.</div>
+                <div class="q-text">If $\cos \theta + \sin \theta = \sqrt{2} \cos \theta$, show $\cos \theta - \sin \theta = \sqrt{2} \sin \theta$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\sin \theta = (\sqrt{2}-1)\cos \theta$. Multiply by $(\sqrt{2}+1)$:</p>
+            <p>$(\sqrt{2}+1)\sin \theta = (2-1)\cos \theta \implies \sqrt{2}\sin \theta + \sin \theta = \cos \theta \implies \cos \theta - \sin \theta = \sqrt{2}\sin \theta$.</p>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q30.</div>
+                <div class="q-text">Tower elevation $60^\circ$. From 10m vertically above, elev $45^\circ$. Find tower height.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Let height $H$, dist $x$. $H = x\sqrt{3}$ and $H-10 = x \tan 45^\circ = x$.</p>
+            <p>Sub $x = H-10$: $H = (H-10)\sqrt{3} \implies H(\sqrt{3}-1) = 10\sqrt{3} \implies H = \frac{10\sqrt{3}(\sqrt{3}+1)}{2} = 5(3+\sqrt{3})$ m.</p>
+            <p><strong>Final Answer: $5(3+\sqrt{3})$ m.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section C Solutions (31-35)... -->
+    <div class="section-header">SECTION C (4 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q31.</div>
+                <div class="q-text">Two equal poles on 80m road. Elevations $60^\circ, 30^\circ$. Find heights and distances.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$h = x\sqrt{3}$ and $h = \frac{80-x}{\sqrt{3}} \implies 3x = 80-x \implies x=20$.</p>
+            <p><strong>Final Answer: Heights = $20\sqrt{3}$ m. Distances = 20m, 60m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q32.</div>
+                <div class="q-text">TV tower on canal. Elevation $60^\circ$. From 20m further, $30^\circ$. Find height & width.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$h = x\sqrt{3}$ and $h = \frac{x+20}{\sqrt{3}} \implies 3x = x+20 \implies x=10$.</p>
+            <p><strong>Final Answer: Height = $10\sqrt{3}$ m, Width = 10m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q33.</div>
+                <div class="q-text">Prove $\frac{\tan^3 \theta}{1 + \tan^2 \theta} + \frac{\cot^3 \theta}{1 + \cot^2 \theta} = \sec \theta \text{cosec} \theta - 2 \sin \theta \cos \theta$</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \frac{\sin^3 \theta}{\cos \theta} + \frac{\cos^3 \theta}{\sin \theta} = \frac{\sin^4 \theta + \cos^4 \theta}{\sin \theta \cos \theta} = \frac{1 - 2\sin^2 \theta \cos^2 \theta}{\sin \theta \cos \theta} $$
+            $$ = \sec \theta \text{cosec} \theta - 2\sin \theta \cos \theta $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q34.</div>
+                <div class="q-text">If $m = \cos A - \sin A, n = \cos A + \sin A$, show $\frac{m^2 + n^2}{m^2 - n^2} = -\frac{1}{2} \sec A \text{cosec} A$</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$m^2+n^2 = 2$ and $m^2-n^2 = -4\sin A\cos A$.</p>
+            <p>Ratio $= \frac{2}{-4\sin A\cos A} = -\frac{1}{2}\sec A\text{cosec} A$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q35.</div>
+                <div class="q-text">Highway car. Tower dep $30^\circ \to 60^\circ$ in 6s. Find time to foot.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$h = d\sqrt{3}$ and $h = (d+6v)/\sqrt{3} \implies 3d = d+6v \implies 2d = 6v \implies d = 3v$.</p>
+            <p>Time $= d/v = 3v/v = 3$ seconds.</p>
+            <p><strong>Final Answer: 3 Seconds.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section D Solutions (36-41)... -->
+    <div class="section-header">SECTION D (5 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q36.</div>
+                <div class="q-text">Prove $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \text{cosec} \theta$</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <div class="math-block">
+            $$ = \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} = \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} = \sec \theta \text{cosec} \theta + 1 $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q37.</div>
+                <div class="q-text">If $\sin \theta + \cos \theta = \sqrt{3}$, prove that $\tan \theta + \cot \theta = 1$.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Squaring: $1 + 2\sin \theta \cos \theta = 3 \implies \sin \theta \cos \theta = 1$.</p>
+            <p>$\tan \theta + \cot \theta = \frac{1}{\sin \theta \cos \theta} = 1$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q38.</div>
+                <div class="q-text">Girl spots balloon. Height 88.2m. Elevation $60^\circ \to 30^\circ$. Find distance.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Height above eyes $= 87$ m. $x = 87/\sqrt{3} = 29\sqrt{3}$ m. $x+y = 87\sqrt{3}$ m.</p>
+            <p>Distance $y = 87\sqrt{3} - 29\sqrt{3} = 58\sqrt{3}$ m.</p>
+            <p><strong>Final Answer: $58\sqrt{3}$ m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q39.</div>
+                <div class="q-text">Plane elevation $60^\circ \to 30^\circ$. Height $1500\sqrt{3}$m. 15s. Find speed in km/hr.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$x = 1500$ m, $x+y = 4500$ m. Dist $y = 3000$ m.</p>
+            <p>Speed $= 3000/15 = 200$ m/s $= 720$ km/hr.</p>
+            <p><strong>Final Answer: 720 km/hr.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q40.</div>
+                <div class="q-text">Cloud elevation $30^\circ$, reflection depression $60^\circ$ from 60m above lake. Find cloud height.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$x = \sqrt{3}(H-60)$ and $x = (H+60)/\sqrt{3}$.</p>
+            <p>$3(H-60) = H+60 \implies 2H = 240 \implies H = 120$ m.</p>
+            <p><strong>Final Answer: 120 m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q41.</div>
+                <div class="q-text">If $\sec \theta + \tan \theta = p$, prove $\sin \theta = \frac{p^2 - 1}{p^2 + 1}$.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\sec \theta - \tan \theta = 1/p$. $2\tan \theta = p - 1/p = \frac{p^2-1}{p}$ and $2\sec \theta = \frac{p^2+1}{p}$.</p>
+            <p>$\sin \theta = \frac{\tan \theta}{\sec \theta} = \frac{p^2-1}{p^2+1}$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section D Solutions (42-46) and footer... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q42.</div>
+                <div class="q-text">Prove $\frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \text{cosec} A + \cot A$.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Divide by $\sin A$: $\frac{\cot A - 1 + \text{cosec} A}{\cot A + 1 - \text{cosec} A}$.</p>
+            <div class="math-block">
+            $$ = \frac{(\cot A + \text{cosec} A) - (\text{cosec}^2 A - \cot^2 A)}{\cot A - \text{cosec} A + 1} = \text{cosec} A + \cot A $$
+            </div>
+            <p><strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q43.</div>
+                <div class="q-text">Aeroplane at 300m. Depression to banks $45^\circ$ and $60^\circ$. Find river width.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Distances $x$ and $y$. $\tan 45^\circ = 300/x \implies x=300$. $\tan 60^\circ = 300/y \implies y = 100\sqrt{3}$.</p>
+            <p>Width $= 300 + 173.2 = 473.2$ m.</p>
+            <p><strong>Final Answer: 473.2 m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q44.</div>
+                <div class="q-text">Prove $\frac{\tan \theta + \sec \theta - 1}{\tan \theta - \sec \theta + 1} = \frac{1 + \sin \theta}{\cos \theta}$.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Substitute $1 = \sec^2 \theta - \tan^2 \theta$ in numerator.</p>
+            <p>Factor out $(\sec \theta + \tan \theta)$, denominator cancels out.</p>
+            <p>Result $= \sec \theta + \tan \theta = \frac{1}{\cos \theta} + \frac{\sin \theta}{\cos \theta}$. <strong>Hence Proved.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q45.</div>
+                <div class="q-text">Boy bird dist 100m, elev $30^\circ$. Girl on 20m building, elev $45^\circ$. Find girl to bird dist.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Bird height $= 100 \sin 30^\circ = 50$ m. Height above girl $= 50 - 20 = 30$ m.</p>
+            <p>Dist $d = 30 / \sin 45^\circ = 30\sqrt{2}$ m.</p>
+            <p><strong>Final Answer: $30\sqrt{2}$ m.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q46.</div>
+                <div class="q-text">If $\tan \theta = \frac{1}{\sqrt{7}}$, evaluate $\frac{\text{cosec}^2 \theta - \sec^2 \theta}{\text{cosec}^2 \theta + \sec^2 \theta}$.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>$\cot \theta = \sqrt{7}$. $\text{cosec}^2 \theta = 1+7=8$. $\sec^2 \theta = 1+1/7 = 8/7$.</p>
+            <p>Expr $= \frac{8 - 8/7}{8 + 8/7} = \frac{56-8}{56+8} = \frac{48}{64} = \frac{3}{4}$.</p>
+            <p><strong>Final Answer: $3/4$</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>
