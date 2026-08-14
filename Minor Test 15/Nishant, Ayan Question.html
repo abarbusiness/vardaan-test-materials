@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; /* Adapted for general screen */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .q-marks { font-weight: bold; width: 40px; text-align: right; flex-shrink: 0; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        .mjx-chtml { white-space: normal !important; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block; }
+        
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 15mm; -webkit-print-color-adjust: exact; } 
+            .watermark { position: fixed; }
+            .exam-details { flex-wrap: nowrap; }
+        }
+        @media (max-width: 600px) {
+            .exam-details { flex-direction: column; align-items: center; }
+            .q-num { width: 25px; }
+            .sub-question { margin-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Science & Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Part I is Science (20 Marks) and Part II is Mathematics (20 Marks) distributed across the sections.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define a 'simple machine'. Give one everyday example of a simple machine.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">What is a lever? Name the three main points of a lever.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">State the fundamental difference between an inclined plane and a wedge.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Convert the following decimals into fractions in their simplest form:
+            <div class="sub-question">(a) \( 0.04 \)</div>
+            <div class="sub-question">(b) \( 2.25 \)</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Arrange the following decimal numbers in ascending order:<br>
+            \( 3.14, \quad 3.41, \quad 3.041, \quad 3.104 \)
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Classify the following into classes of levers (Class I, II, or III) with a brief reason:
+            <div class="sub-question">(a) See-saw</div>
+            <div class="sub-question">(b) Wheelbarrow</div>
+            <div class="sub-question">(c) Sugar tongs</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Explain how a pulley makes our work easier. Differentiate between a fixed pulley and a movable pulley (one key point).</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">What is mechanical advantage? If a machine lifts a load of \( 100 \text{ N} \) using an effort of \( 25 \text{ N} \), calculate its mechanical advantage.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Simplify the following expression:
+            <div class="math-scroll">\[ 14.5 - 7.25 + 3.105 \]</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A piece of cloth is \( 24.5 \) meters long. If it is cut into \( 5 \) equal pieces, what is the length of each piece? Express your final answer as a decimal.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Answer the following questions based on simple machines:
+            <div class="sub-question">(a) Draw a neat, labeled block diagram of a Class II lever showing Load, Effort, and Fulcrum. (3 Marks)</div>
+            <div class="sub-question">(b) Explain the working principle of the 'wheel and axle' with the help of a suitable everyday example. (2 Marks)</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Perform the following mathematical operations (Show all working steps clearly):
+            <div class="sub-question">(a) Multiply \( 4.56 \) by \( 1.2 \) (2.5 Marks)</div>
+            <div class="sub-question">(b) Divide \( 12.96 \) by \( 0.4 \) (2.5 Marks)</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Rahul bought 3.5 kg of apples at ₹ 120.50 per kg and 2.75 kg of oranges at ₹ 80.00 per kg. He gave a ₹ 1000 note to the shopkeeper. Calculate:
+            <div class="sub-question">(a) The total cost of the fruits. (3 Marks)</div>
+            <div class="sub-question">(b) The amount of change he received from the shopkeeper. (2 Marks)</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

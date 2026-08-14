@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-blue: #1565c0;
+            --light-blue: #f5f9ff;
+            --border-color: #0b458a;
+            --text-main: #333;
+            --ans-color: #1b5e20;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 10pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: var(--light-blue); 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 15px; 
+            background-color: rgba(21, 101, 192, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .institute-name { font-size: 18pt; font-weight: bold; color: var(--border-color); margin: 0; }
+        .doc-title { font-size: 13pt; font-weight: bold; margin-top: 5px; }
+        
+        .answer-key-container {
+            background: #ffffff;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .answer-key-title {
+            text-align: center;
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--border-color);
+            text-transform: uppercase;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+        .answer-key-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 6px;
+        }
+        .ak-cell {
+            border: 1px solid #e0e0e0;
+            padding: 3px;
+            text-align: center;
+            border-radius: 4px;
+            background: var(--light-blue);
+        }
+        .ak-q { 
+            font-size: 8pt; 
+            color: #666; 
+            display: block; 
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 2px; 
+            margin-bottom: 2px;
+        }
+        .ak-a { 
+            font-weight: bold; 
+            color: var(--ans-color); 
+            font-size: 10pt;
+        }
+        
+        .sol-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sol-block {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid var(--primary-blue);
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            page-break-inside: avoid;
+        }
+        .sol-q-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 6px;
+        }
+        .q-text { flex: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; margin-right: 5px; }
+        .marks { 
+            font-weight: bold; 
+            color: #d84315; 
+            font-size: 9pt;
+            background: #fbe9e7;
+            padding: 3px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .sol-text { margin-top: 6px; font-size: 9.5pt;}
+        .correct-ans { font-weight: bold; color: var(--ans-color); margin-bottom: 4px; font-size: 10pt;}
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 3px 0;
+            margin: 3px 0;
+            display: block;
+        }
+        
+        @media (max-width: 900px) {
+            .answer-key-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .sol-q-row { flex-direction: column; }
+            .marks { align-self: flex-start; margin-top: 5px; }
+            .answer-key-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">Detailed Solutions: Rapid MCQ Test - Classification of Elements & Periodicity</div>
+    </div>
+
+    <div class="answer-key-container">
+        <div class="answer-key-title">Answer Key Overview</div>
+        <div class="answer-key-grid">
+            <div class="ak-cell"><span class="ak-q">Q.1</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.2</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.3</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.4</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.5</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.6</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.7</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.8</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.9</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.10</span><span class="ak-a">C</span></div>
+            
+            <div class="ak-cell"><span class="ak-q">Q.11</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.12</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.13</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.14</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.15</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.16</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.17</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.18</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.19</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.20</span><span class="ak-a">D</span></div>
+            
+            <div class="ak-cell"><span class="ak-q">Q.21</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.22</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.23</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.24</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.25</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.26</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.27</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.28</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.29</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.30</span><span class="ak-a">D</span></div>
+
+            <div class="ak-cell"><span class="ak-q">Q.31</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.32</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.33</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.34</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.35</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.36</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.37</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.38</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.39</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.40</span><span class="ak-a">B</span></div>
+
+            <div class="ak-cell"><span class="ak-q">Q.41</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.42</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.43</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.44</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.45</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.46</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.47</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.48</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.49</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.50</span><span class="ak-a">B</span></div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">1.</span>The modern periodic law states that the physical and chemical properties of elements are a periodic function of their:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Atomic number</div>
+            <div class="sol-text">Proposed by Henry Moseley, it established that the fundamental property determining an element's characteristics is its atomic number (Z), not atomic mass.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">2.</span>The IUPAC name of the element with atomic number 119 is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Ununennium</div>
+            <div class="sol-text">Using IUPAC roots for atomic numbers > 100: 1 = un, 1 = un, 9 = enn. Suffix is -ium. Hence, Un-un-enn-ium.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">3.</span>Who formulated the Law of Octaves?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Newlands</div>
+            <div class="sol-text">John Newlands arranged elements in increasing order of atomic weights and noted that every eighth element had properties similar to the first, akin to musical octaves.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">4.</span>Eka-Aluminium, predicted by Mendeleev, was later discovered as:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Gallium</div>
+            <div class="sol-text">Mendeleev left gaps for undiscovered elements. The element below Aluminium in group 13 was named Eka-Aluminium, which was later discovered and named Gallium (Ga).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">5.</span>An element with atomic number 114 belongs to which group?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Group 14</div>
+            <div class="sol-text">For elements with Z > 100, the last two digits generally correspond to the group number in the p-block. $Z=114$ has configuration $[Rn] 5f^{14} 6d^{10} 7s^2 7p^2$, placing it in Group $10+2+2 = 14$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">6.</span>The general outer electronic configuration of d-block elements is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) (n-1)d¹⁻¹⁰ ns⁰⁻²</div>
+            <div class="sol-text">In d-block elements, the differentiating electron enters the $(n-1)d$ subshell. The $ns$ orbital can have 0 to 2 electrons (e.g., Pd has $5s^0$, Cr has $4s^1$).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">7.</span>Which block contains metals, non-metals, and metalloids?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) p-block</div>
+            <div class="sol-text">The p-block (Groups 13-18) is the most diverse block. The s, d, and f blocks exclusively contain metals.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">8.</span>The element with the electronic configuration 1s² 2s² 2p⁶ 3s² 3p⁵ belongs to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Period 3, Group 17</div>
+            <div class="sol-text">Principal quantum number $n = 3$ indicates Period 3. Outer configuration $3s^2 3p^5$ gives $2+5 = 7$ valence electrons. Group = $10 + 7 = 17$ (Halogens). The element is Chlorine.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">9.</span>Elements in which the 4f orbitals are progressively filled are called:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Lanthanoids</div>
+            <div class="sol-text">Lanthanoids involve the filling of $4f$ orbitals (Z=58 to 71). Actinoids involve the filling of $5f$ orbitals.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">10.</span>The elements of Group 1 and Group 2 are collectively known as:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) s-block elements</div>
+            <div class="sol-text">The last electron in Group 1 ($ns^1$) and Group 2 ($ns^2$) enters the s-orbital.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">11.</span>Which of the following has the largest atomic radius?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Li</div>
+            <div class="sol-text">Lithium, Beryllium, Boron, and Carbon belong to Period 2. Atomic size decreases across a period from left to right due to increased effective nuclear charge. Hence, Li is the largest.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">12.</span>As we move from left to right in a period, the atomic radius generally:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Decreases</div>
+            <div class="sol-text">Across a period, electrons are added to the same principal shell, but nuclear charge increases, pulling the electron cloud closer to the nucleus.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">13.</span>Among the following, the species with the smallest size is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Al³⁺</div>
+            <div class="sol-text">
+                $\text{Na}^+, \text{Mg}^{2+}, \text{Al}^{3+}$ are isoelectronic (10 electrons each).
+                <div class="math-scroll">Size is inversely proportional to nuclear charge (Z). Al (Z=13) has highest charge, pulling the 10 electrons most strongly, resulting in smallest size.</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">14.</span>An isoelectronic series contains species with the same:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Number of electrons</div>
+            <div class="sol-text">"Iso" means equal. Isoelectronic species are atoms/ions having identical number of electrons but different nuclear charges (protons).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">15.</span>Which is the correct order of increasing size?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Cl⁺ < Cl < Cl⁻</div>
+            <div class="sol-text">For a given element, a cation is always smaller due to greater effective nuclear charge, and an anion is always larger due to increased electron-electron repulsion. Size order: Cation < Neutral Atom < Anion.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">16.</span>The cation is always smaller than its parent atom due to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Increased effective nuclear charge</div>
+            <div class="sol-text">When an electron is lost, electron-electron repulsion decreases while the number of protons remains the same. The nucleus pulls the remaining electrons more tightly inward.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">17.</span>Identify the wrong statement regarding isoelectronic species:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) All species have the same effective nuclear charge.</div>
+            <div class="sol-text">Isoelectronic species have the same number of electrons but different number of protons (Z). Therefore, their effective nuclear charge ($Z_{eff}$) varies.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">18.</span>Which of the following pairs is not isoelectronic?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Fe²⁺, Mn²⁺</div>
+            <div class="sol-text">$\text{Fe}^{2+}$ has $26-2=24$ electrons. $\text{Mn}^{2+}$ has $25-2=23$ electrons. They do not have the same number of electrons.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">19.</span>Down a group, the atomic radius increases primarily due to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Addition of new principal quantum shells</div>
+            <div class="sol-text">As you move down a group, new electron shells (higher principal quantum number, n) are added. This increase in size overrides the increase in nuclear charge due to shielding.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">20.</span>For noble gases, the measured radius is generally:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) van der Waals radius</div>
+            <div class="sol-text">Noble gases do not form stable covalent bonds under normal conditions. Therefore, their size is measured via van der Waals radius (internuclear distance between non-bonded adjacent atoms).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">21.</span>The first ionization enthalpy is maximum for:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Noble gases</div>
+            <div class="sol-text">Noble gases possess a highly stable, completely filled octet ($ns^2 np^6$). Removing an electron disrupts this stable configuration, requiring a massive amount of energy.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">22.</span>Which of the following elements has the lowest first ionization enthalpy?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Rb</div>
+            <div class="sol-text">Ionization enthalpy decreases down a group due to increased size and shielding effect. Among Li, Na, K, Rb, Rubidium (Rb) is the lowest in the group and largest in size.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">23.</span>The correct order of first ionization enthalpy for Be, B, N, and O is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) B < Be < O < N</div>
+            <div class="sol-text">Normally IE increases across a period. Exceptions: Be ($2s^2$) > B ($2s^2 2p^1$) due to stable fully-filled $s$-orbital. N ($2p^3$) > O ($2p^4$) due to stable half-filled $p$-orbital in N.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">24.</span>Why is the first ionization enthalpy of Nitrogen greater than that of Oxygen?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Nitrogen has a stable half-filled 2p orbital.</div>
+            <div class="sol-text">Nitrogen has an exact half-filled configuration ($1s^2 2s^2 2p^3$), conferring extra stability based on Hund's Rule. Oxygen ($2p^4$) has interelectronic repulsion, making it easier to lose one electron.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">25.</span>The second ionization enthalpy is always:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Greater than the first ionization enthalpy.</div>
+            <div class="sol-text">Removing an electron from a neutral atom requires energy ($IE_1$). Removing a second electron from a positive ion ($M^+$) requires significantly more energy because the effective nuclear charge pulling the remaining electrons is higher.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">26.</span>Which element shows an exceptionally high jump between 2nd and 3rd ionization enthalpies?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Mg</div>
+            <div class="sol-text">Magnesium has 2 valence electrons ($3s^2$). Removing them is relatively easy ($IE_1, IE_2$). The 3rd electron must be removed from the stable inner noble gas core ($2p^6$), resulting in a huge jump in $IE_3$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">27.</span>Ionization enthalpy generally decreases down a group due to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Increase in shielding effect and atomic size.</div>
+            <div class="sol-text">Though nuclear charge increases down a group, the addition of inner shells increases the shielding effect and atomic radius, meaning valence electrons are held less tightly.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">28.</span>Which orbital is most penetrating towards the nucleus for a given principal quantum number?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) s-orbital</div>
+            <div class="sol-text">Penetration effect order: $s > p > d > f$. An s-electron spends more time closer to the nucleus compared to electrons in other orbitals of the same principal shell.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">29.</span>The unit of Ionization Enthalpy is usually expressed in:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) kJ/mol</div>
+            <div class="sol-text">Standard thermodynamic quantities like enthalpy are typically measured in kilojoules per mole (kJ mol⁻¹). Alternatively, it is expressed in electron-volts per atom (eV/atom).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">30.</span>For which species is the removal of an electron easiest?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) S²⁻</div>
+            <div class="sol-text">Anions have excess electrons, causing high interelectronic repulsion and a lower effective nuclear charge. $S^{2-}$ has the highest negative charge, making it easiest to remove an electron (lowest ionization enthalpy).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">31.</span>The element with the highest negative electron gain enthalpy is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Chlorine</div>
+            <div class="sol-text">While Fluorine is the most electronegative, Chlorine has the highest negative electron gain enthalpy due to its larger size, accommodating the incoming electron with less repulsion than the tiny F atom.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">32.</span>The electron gain enthalpy of noble gases is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Positive</div>
+            <div class="sol-text">Noble gases have a stable $ns^2 np^6$ configuration. Adding an electron forces it into a higher principal energy level, requiring energy input. Hence, the enthalpy change is positive.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">33.</span>Why is the electron gain enthalpy of Fluorine less negative than that of Chlorine?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) High interelectronic repulsion in the small 2p subshell of F.</div>
+            <div class="sol-text">Fluorine's atom is very small. The incoming electron experiences strong repulsion from the tightly packed 7 valence electrons in the small $2p$ orbitals.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">34.</span>Which group has the most negative electron gain enthalpy?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Group 17 (Halogens)</div>
+            <div class="sol-text">Halogens ($ns^2 np^5$) are one electron short of a stable noble gas configuration. They readily accept an electron and release a large amount of energy in the process.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">35.</span>As we move from left to right in a period, the electron gain enthalpy generally becomes:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) More negative</div>
+            <div class="sol-text">Across a period, effective nuclear charge increases and size decreases. The added electron is more strongly attracted by the nucleus, releasing more energy.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">36.</span>Which of the following statements is correct?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Second electron gain enthalpy is always positive.</div>
+            <div class="sol-text">Adding a second electron to a negatively charged ion (e.g., $O^- \rightarrow O^{2-}$) involves overcoming strong electrostatic repulsion between the anion and the incoming electron, requiring energy input.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">37.</span>Which of the following processes requires energy?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) O⁻(g) + e⁻ → O²⁻(g)</div>
+            <div class="sol-text">This is the second electron gain enthalpy. As explained above, forcing an electron onto an already negatively charged $O^-$ ion requires energy to overcome electrostatic repulsion.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">38.</span>The correct order of electron gain enthalpy with a negative sign is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) O < S < F < Cl</div>
+            <div class="sol-text">Halogens (F, Cl) have more negative values than Chalcogens (O, S). Also, 3rd period elements (Cl, S) have more negative values than 2nd period counterparts (F, O) due to less inter-electronic repulsion.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">39.</span>Which factor does NOT heavily influence electron gain enthalpy?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Isotopic mass</div>
+            <div class="sol-text">Isotopic mass concerns the nucleus (neutrons) and has negligible effect on the chemical attraction of electrons. Atomic size, nuclear charge, and electron configuration govern periodic properties.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">40.</span>Nitrogen has a slightly positive/near-zero electron gain enthalpy because:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) It has a stable half-filled p-orbital.</div>
+            <div class="sol-text">Nitrogen's configuration is $1s^2 2s^2 2p^3$. Adding an electron disrupts the highly stable, symmetrical half-filled state, hence it strongly resists electron gain.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">41.</span>The most electronegative element in the periodic table is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Fluorine</div>
+            <div class="sol-text">Fluorine has the highest tendency to attract shared electrons in a covalent bond due to its extremely small size and high effective nuclear charge. Assigned a value of 4.0 on the Pauling scale.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">42.</span>Electronegativity generally ________ down a group and ________ across a period.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Decreases, Increases</div>
+            <div class="sol-text">Down a group, size increases, and the nucleus's hold on shared electrons weakens. Across a period, size decreases and nuclear charge increases, strengthening the attraction.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">43.</span>Which scale is widely used to measure electronegativity?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Pauling Scale</div>
+            <div class="sol-text">Linus Pauling developed the most commonly used scale based on bond dissociation energies. Fluorine is assigned 4.0, Oxygen 3.5, etc.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">44.</span>The second most electronegative element is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Oxygen</div>
+            <div class="sol-text">Oxygen is assigned an electronegativity of 3.5 on the Pauling scale, trailing only behind Fluorine (4.0).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">45.</span>Which of the following is considered a metalloid?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Silicon</div>
+            <div class="sol-text">Silicon sits on the border between metals and non-metals in the p-block and exhibits properties intermediate between both classes.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">46.</span>Which series of elements occupies the d-block?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Transition elements</div>
+            <div class="sol-text">The d-block elements (Groups 3-12) are termed transition elements because they represent a transition in properties from highly reactive s-block metals to less reactive p-block elements.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">47.</span>The effective nuclear charge (Z_eff) across a period:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Increases</div>
+            <div class="sol-text">
+                <div class="math-scroll">As electrons are added to the same principal shell, shielding ($S$) doesn't increase as rapidly as the nuclear charge ($Z$). Hence $Z_{eff} = Z - S$ increases.</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">48.</span>Among the given ions, which one has the largest size?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) N³⁻</div>
+            <div class="sol-text">
+                $\text{N}^{3-}, \text{O}^{2-}, \text{F}^-, \text{Na}^+$ are isoelectronic (10 e⁻). Size is inversely proportional to atomic number. N (Z=7) has the lowest nuclear charge, exerting the weakest pull, making $\text{N}^{3-}$ the largest.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">49.</span>The minimum ionization energy is required for removing an electron from a:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) 4s orbital</div>
+            <div class="sol-text">Among the choices given, the 4s orbital has the highest principal quantum number (n=4), meaning its electrons are furthest from the nucleus and experience the greatest shielding, hence requiring the least energy to remove.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">50.</span>Elements with atomic numbers greater than 92 are called:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Transuranium elements</div>
+            <div class="sol-text">Elements beyond Uranium (Z=92) are synthetic, radioactive, and are collectively referred to as transuranium elements.</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

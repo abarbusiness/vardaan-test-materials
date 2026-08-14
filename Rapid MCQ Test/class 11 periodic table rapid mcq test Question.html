@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Rapid MCQ Test</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-blue: #1565c0;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 10.5pt; 
+            line-height: 1.4; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-blue);
+            border-bottom: 3px solid var(--primary-blue); 
+            padding: 15px 0; 
+            background-color: transparent; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #000;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 10px; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            padding: 0 10px;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .mcq-container {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid #ccc; 
+            margin-top: 20px;
+        }
+        .question-block {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 15px; 
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        .q-text { margin-bottom: 6px; display: flex; font-weight: normal; }
+        .q-num { min-width: 25px; font-weight: bold; }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 8px;
+            font-size: 10pt;
+            padding-left: 25px;
+        }
+        
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 2px solid var(--primary-blue); 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            .mcq-container { column-count: 1; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+        }
+        @media print { 
+            body { 
+                width: 100%; margin: 0; padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .mcq-container { column-count: 2; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Rapid MCQ Test - Classification of Elements & Periodicity</div>
+        <div class="exam-details">
+            <span>Class: 11</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 15 Minutes</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All 50 questions are compulsory. Each question carries 1 mark.</li>
+                <li>Speed and accuracy are key. Average time per question is ~18 seconds.</li>
+                <li>Syllabus covered: Rationalised NCERT Chapter 3 (Strictly Physical Trends & Configurations).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">1.</span><span>The modern periodic law states that the physical and chemical properties of elements are a periodic function of their:</span></div>
+            <div class="options-grid">
+                <div>A) Atomic mass</div><div>B) Atomic number</div>
+                <div>C) Isotopic mass</div><div>D) Atomic radius</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">2.</span><span>The IUPAC name of the element with atomic number 119 is:</span></div>
+            <div class="options-grid">
+                <div>A) Ununennium</div><div>B) Unununnium</div>
+                <div>C) Unnilennium</div><div>D) Ununoctium</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">3.</span><span>Who formulated the Law of Octaves?</span></div>
+            <div class="options-grid">
+                <div>A) Dobereiner</div><div>B) Mendeleev</div>
+                <div>C) Newlands</div><div>D) Moseley</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">4.</span><span>Eka-Aluminium, predicted by Mendeleev, was later discovered as:</span></div>
+            <div class="options-grid">
+                <div>A) Scandium</div><div>B) Germanium</div>
+                <div>C) Gallium</div><div>D) Tellurium</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">5.</span><span>An element with atomic number 114 belongs to which group?</span></div>
+            <div class="options-grid">
+                <div>A) Group 14</div><div>B) Group 15</div>
+                <div>C) Group 16</div><div>D) Group 17</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">6.</span><span>The general outer electronic configuration of d-block elements is:</span></div>
+            <div class="options-grid">
+                <div>A) ns² np⁶</div><div>B) (n-1)d¹⁻¹⁰ ns⁰⁻²</div>
+                <div>C) (n-2)f¹⁻¹⁴ ns²</div><div>D) (n-1)d¹⁰ ns²</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">7.</span><span>Which block contains metals, non-metals, and metalloids?</span></div>
+            <div class="options-grid">
+                <div>A) s-block</div><div>B) p-block</div>
+                <div>C) d-block</div><div>D) f-block</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">8.</span><span>The element with the electronic configuration 1s² 2s² 2p⁶ 3s² 3p⁵ belongs to:</span></div>
+            <div class="options-grid">
+                <div>A) Period 3, Group 17</div><div>B) Period 2, Group 15</div>
+                <div>C) Period 3, Group 15</div><div>D) Period 2, Group 17</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">9.</span><span>Elements in which the 4f orbitals are progressively filled are called:</span></div>
+            <div class="options-grid">
+                <div>A) Actinoids</div><div>B) Transition elements</div>
+                <div>C) Lanthanoids</div><div>D) Halogens</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">10.</span><span>The elements of Group 1 and Group 2 are collectively known as:</span></div>
+            <div class="options-grid">
+                <div>A) p-block elements</div><div>B) d-block elements</div>
+                <div>C) s-block elements</div><div>D) f-block elements</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">11.</span><span>Which of the following has the largest atomic radius?</span></div>
+            <div class="options-grid">
+                <div>A) Li</div><div>B) Be</div>
+                <div>C) B</div><div>D) C</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">12.</span><span>As we move from left to right in a period, the atomic radius generally:</span></div>
+            <div class="options-grid">
+                <div>A) Increases</div><div>B) Decreases</div>
+                <div>C) Remains constant</div><div>D) First increases, then decreases</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">13.</span><span>Among the following, the species with the smallest size is:</span></div>
+            <div class="options-grid">
+                <div>A) Na⁺</div><div>B) Mg²⁺</div>
+                <div>C) Al³⁺</div><div>D) All have equal size</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">14.</span><span>An isoelectronic series contains species with the same:</span></div>
+            <div class="options-grid">
+                <div>A) Number of protons</div><div>B) Number of neutrons</div>
+                <div>C) Number of electrons</div><div>D) Atomic mass</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">15.</span><span>Which is the correct order of increasing size?</span></div>
+            <div class="options-grid">
+                <div>A) Cl⁻ < Cl < Cl⁺</div><div>B) Cl⁺ < Cl < Cl⁻</div>
+                <div>C) Cl < Cl⁺ < Cl⁻</div><div>D) Cl⁻ < Cl⁺ < Cl</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">16.</span><span>The cation is always smaller than its parent atom due to:</span></div>
+            <div class="options-grid">
+                <div>A) Increased effective nuclear charge</div><div>B) Decreased effective nuclear charge</div>
+                <div>C) Addition of a new shell</div><div>D) Increased electron-electron repulsion</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">17.</span><span>Identify the wrong statement regarding isoelectronic species:</span></div>
+            <div class="options-grid">
+                <div>A) They have same electron count.</div><div>B) Size decreases as positive charge increases.</div>
+                <div>C) Size increases as negative charge increases.</div><div>D) All species have the same effective nuclear charge.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">18.</span><span>Which of the following pairs is not isoelectronic?</span></div>
+            <div class="options-grid">
+                <div>A) Na⁺, Mg²⁺</div><div>B) O²⁻, F⁻</div>
+                <div>C) Fe²⁺, Mn²⁺</div><div>D) N³⁻, Ne</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">19.</span><span>Down a group, the atomic radius increases primarily due to:</span></div>
+            <div class="options-grid">
+                <div>A) Increase in effective nuclear charge</div><div>B) Addition of new principal quantum shells</div>
+                <div>C) Decrease in shielding effect</div><div>D) Loss of electrons</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">20.</span><span>For noble gases, the measured radius is generally:</span></div>
+            <div class="options-grid">
+                <div>A) Covalent radius</div><div>B) Ionic radius</div>
+                <div>C) Metallic radius</div><div>D) van der Waals radius</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">21.</span><span>The first ionization enthalpy is maximum for:</span></div>
+            <div class="options-grid">
+                <div>A) Alkali metals</div><div>B) Alkaline earth metals</div>
+                <div>C) Halogens</div><div>D) Noble gases</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">22.</span><span>Which of the following elements has the lowest first ionization enthalpy?</span></div>
+            <div class="options-grid">
+                <div>A) Li</div><div>B) Na</div>
+                <div>C) K</div><div>D) Rb</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">23.</span><span>The correct order of first ionization enthalpy for Be, B, N, and O is:</span></div>
+            <div class="options-grid">
+                <div>A) B < Be < O < N</div><div>B) Be < B < N < O</div>
+                <div>C) B < Be < N < O</div><div>D) Be < B < O < N</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">24.</span><span>Why is the first ionization enthalpy of Nitrogen greater than that of Oxygen?</span></div>
+            <div class="options-grid">
+                <div>A) Nitrogen is smaller.</div><div>B) Nitrogen has higher nuclear charge.</div>
+                <div>C) Nitrogen has a stable half-filled 2p orbital.</div><div>D) Oxygen has stronger shielding.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">25.</span><span>The second ionization enthalpy is always:</span></div>
+            <div class="options-grid">
+                <div>A) Less than the first ionization enthalpy.</div><div>B) Greater than the first ionization enthalpy.</div>
+                <div>C) Equal to the first ionization enthalpy.</div><div>D) Zero.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">26.</span><span>Which element shows an exceptionally high jump between 2nd and 3rd ionization enthalpies?</span></div>
+            <div class="options-grid">
+                <div>A) Na</div><div>B) Mg</div>
+                <div>C) Al</div><div>D) Si</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">27.</span><span>Ionization enthalpy generally decreases down a group due to:</span></div>
+            <div class="options-grid">
+                <div>A) Increase in nuclear charge.</div><div>B) Increase in shielding effect and atomic size.</div>
+                <div>C) Decrease in atomic size.</div><div>D) Stable configurations.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">28.</span><span>Which orbital is most penetrating towards the nucleus for a given principal quantum number?</span></div>
+            <div class="options-grid">
+                <div>A) s-orbital</div><div>B) p-orbital</div>
+                <div>C) d-orbital</div><div>D) f-orbital</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">29.</span><span>The unit of Ionization Enthalpy is usually expressed in:</span></div>
+            <div class="options-grid">
+                <div>A) kJ/mol</div><div>B) Joules</div>
+                <div>C) Kelvin</div><div>D) Grams</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">30.</span><span>For which species is the removal of an electron easiest?</span></div>
+            <div class="options-grid">
+                <div>A) Ar</div><div>B) K⁺</div>
+                <div>C) Cl⁻</div><div>D) S²⁻</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">31.</span><span>The element with the highest negative electron gain enthalpy is:</span></div>
+            <div class="options-grid">
+                <div>A) Fluorine</div><div>B) Chlorine</div>
+                <div>C) Bromine</div><div>D) Iodine</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">32.</span><span>The electron gain enthalpy of noble gases is:</span></div>
+            <div class="options-grid">
+                <div>A) Highly negative</div><div>B) Zero</div>
+                <div>C) Positive</div><div>D) Slightly negative</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">33.</span><span>Why is the electron gain enthalpy of Fluorine less negative than that of Chlorine?</span></div>
+            <div class="options-grid">
+                <div>A) Fluorine is highly electronegative.</div><div>B) High interelectronic repulsion in the small 2p subshell of F.</div>
+                <div>C) Chlorine is less electronegative.</div><div>D) Fluorine has no d-orbitals.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">34.</span><span>Which group has the most negative electron gain enthalpy?</span></div>
+            <div class="options-grid">
+                <div>A) Group 1 (Alkali metals)</div><div>B) Group 2 (Alkaline earth metals)</div>
+                <div>C) Group 16 (Chalcogens)</div><div>D) Group 17 (Halogens)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">35.</span><span>As we move from left to right in a period, the electron gain enthalpy generally becomes:</span></div>
+            <div class="options-grid">
+                <div>A) Less negative</div><div>B) More negative</div>
+                <div>C) Positive</div><div>D) Remains unchanged</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">36.</span><span>Which of the following statements is correct?</span></div>
+            <div class="options-grid">
+                <div>A) Second electron gain enthalpy is always positive.</div><div>B) First electron gain enthalpy of oxygen is positive.</div>
+                <div>C) Electron gain enthalpy strictly increases down the group.</div><div>D) Noble gases easily accept electrons.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">37.</span><span>Which of the following processes requires energy?</span></div>
+            <div class="options-grid">
+                <div>A) O(g) + e⁻ → O⁻(g)</div><div>B) O⁻(g) + e⁻ → O²⁻(g)</div>
+                <div>C) Cl(g) + e⁻ → Cl⁻(g)</div><div>D) F(g) + e⁻ → F⁻(g)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">38.</span><span>The correct order of electron gain enthalpy with a negative sign is:</span></div>
+            <div class="options-grid">
+                <div>A) O < S < F < Cl</div><div>B) Cl < F < S < O</div>
+                <div>C) S < O < Cl < F</div><div>D) F < Cl < O < S</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">39.</span><span>Which factor does NOT heavily influence electron gain enthalpy?</span></div>
+            <div class="options-grid">
+                <div>A) Atomic size</div><div>B) Nuclear charge</div>
+                <div>C) Electronic configuration</div><div>D) Isotopic mass</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">40.</span><span>Nitrogen has a slightly positive/near-zero electron gain enthalpy because:</span></div>
+            <div class="options-grid">
+                <div>A) It is non-metal.</div><div>B) It has a stable half-filled p-orbital.</div>
+                <div>C) It is diatomic.</div><div>D) Its size is too large.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">41.</span><span>The most electronegative element in the periodic table is:</span></div>
+            <div class="options-grid">
+                <div>A) Oxygen</div><div>B) Nitrogen</div>
+                <div>C) Fluorine</div><div>D) Chlorine</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">42.</span><span>Electronegativity generally ________ down a group and ________ across a period.</span></div>
+            <div class="options-grid">
+                <div>A) Increases, Decreases</div><div>B) Decreases, Increases</div>
+                <div>C) Increases, Increases</div><div>D) Decreases, Decreases</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">43.</span><span>Which scale is widely used to measure electronegativity?</span></div>
+            <div class="options-grid">
+                <div>A) Kelvin Scale</div><div>B) Pauling Scale</div>
+                <div>C) Rutherford Scale</div><div>D) Bohr Scale</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">44.</span><span>The second most electronegative element is:</span></div>
+            <div class="options-grid">
+                <div>A) Chlorine</div><div>B) Oxygen</div>
+                <div>C) Nitrogen</div><div>D) Fluorine</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">45.</span><span>Which of the following is considered a metalloid?</span></div>
+            <div class="options-grid">
+                <div>A) Aluminium</div><div>B) Silicon</div>
+                <div>C) Carbon</div><div>D) Phosphorus</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">46.</span><span>Which series of elements occupies the d-block?</span></div>
+            <div class="options-grid">
+                <div>A) Transition elements</div><div>B) Inner transition elements</div>
+                <div>C) Representative elements</div><div>D) Chalcogens</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">47.</span><span>The effective nuclear charge (Z_eff) across a period:</span></div>
+            <div class="options-grid">
+                <div>A) Decreases</div><div>B) Increases</div>
+                <div>C) Remains constant</div><div>D) First decreases then increases</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">48.</span><span>Among the given ions, which one has the largest size?</span></div>
+            <div class="options-grid">
+                <div>A) N³⁻</div><div>B) O²⁻</div>
+                <div>C) F⁻</div><div>D) Na⁺</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">49.</span><span>The minimum ionization energy is required for removing an electron from a:</span></div>
+            <div class="options-grid">
+                <div>A) 1s orbital</div><div>B) 2s orbital</div>
+                <div>C) 3s orbital</div><div>D) 4s orbital</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">50.</span><span>Elements with atomic numbers greater than 92 are called:</span></div>
+            <div class="options-grid">
+                <div>A) Lanthanoids</div><div>B) Transuranium elements</div>
+                <div>C) Transition metals</div><div>D) Noble gases</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

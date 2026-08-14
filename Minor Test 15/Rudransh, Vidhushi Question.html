@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for Mathematical Formatting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            /* Changed to max-width to allow responsiveness while maintaining A4 look on large screens */
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            text-align: justify;
+        }
+        
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .q-num { width: 30px; }
+        }
+
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .exam-details { flex-direction: row; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MIT 15</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working clearly where necessary.</li>
+                <li>Use of calculators is not permitted.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Find the ratio of \( 5 \text{ km} \) to \( 500 \text{ m} \) in its simplest form.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Are the ratios \( 1:2 \) and \( 2:3 \) equivalent? Justify your answer with a mathematical comparison.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">If the cost of \( 7 \) meters of a certain cloth is \( \text{₹ } 294 \), find the cost of \( 5 \) meters of the same cloth.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">\( 6 \) pipes are required to fill a tank in \( 1 \text{ hour and } 20 \text{ minutes} \). How long will it take if only \( 5 \) pipes of the same type are used?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">The scale of a map is given as \( 1 : 30,000,000 \). Two cities are \( 4 \text{ cm} \) apart on the map. Find the actual distance between them in kilometers.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">A loaded truck travels \( 14 \text{ km} \) in \( 25 \text{ minutes} \). If the speed remains the same, how far can it travel in \( 5 \text{ hours} \)?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">If \( 15 \) workers can build a wall in \( 48 \text{ hours} \), how many workers will be required to do the same work in \( 30 \text{ hours} \)? Assume each worker works at the same rate.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">In a school, there are \( 8 \) periods a day, each of \( 45 \text{ minutes} \) duration. How long would each period be, if the school decides to have \( 9 \) periods a day, assuming the total school hours remain the same?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">A photograph of a bacteria enlarged \( 50,000 \) times attains a length of \( 5 \text{ cm} \). 
+            <div class="sub-question">(i) What is the actual length of the bacteria?</div>
+            <div class="sub-question">(ii) If the photograph is enlarged \( 20,000 \) times only, what would be its enlarged length?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Suppose \( 2 \text{ kg} \) of sugar contains \( 9 \times 10^6 \) crystals. How many sugar crystals are there in:
+            <div class="sub-question">(a) \( 5 \text{ kg} \) of sugar?</div>
+            <div class="sub-question">(b) \( 1.2 \text{ kg} \) of sugar?</div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">A military garrison consisting of \( 1200 \) men is provisioned with food meant to last for \( 60 \text{ days} \). After \( 15 \text{ days} \), a reinforcement of men was expected, but instead, \( 300 \) men leave the garrison. 
+            <br><br>Find exactly how many more days the remaining food will last for the remaining men. State the type of proportion used.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">A train is moving at a uniform speed of \( 75 \text{ km/hr} \). Using the concepts of direct and inverse proportion, calculate the following:
+            <div class="sub-question">(a) How far will it travel in \( 20 \text{ minutes} \)?</div>
+            <div class="sub-question">(b) Find the time required to cover a distance of \( 250 \text{ km} \). Express your answer in hours and minutes.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Two persons could fit new windows in a house in \( 3 \text{ days} \).
+            <div class="sub-question">(a) One of the persons fell ill before the work started. How long would the job take now?</div>
+            <div class="sub-question">(b) How many persons would be needed to fit all the windows in exactly one day?</div>
+            <div class="sub-question">(c) Justify why the number of persons and the number of days taken to complete the job are in inverse proportion.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

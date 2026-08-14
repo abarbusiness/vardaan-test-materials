@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 16px; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 2rem; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 1.25rem; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; font-weight: bold; font-size: 1rem; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 0.95rem; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 1.15rem; }
+        .marks-info { font-size: 0.9rem; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .part-header { text-align: center; font-size: 1.3rem; font-weight: bold; margin-top: 30px; background-color: #f0f0f0; padding: 5px; border: 1px solid #ccc; }
+        .question-container { margin-bottom: 15px; display: flex; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .math-display { overflow-x: auto; overflow-y: hidden; } /* Ensure long equations don't break mobile layout */
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9rem; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 14px; }
+            .institute-name { font-size: 1.5rem; }
+            .exam-details { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+            .part-header { background-color: #e0e0e0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test: Science & Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subjects: Science & Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into Two Parts: PART I (Science - 20 Marks) and PART II (Maths - 20 Marks).</li>
+                <li>Each part is further divided into Sections A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working for mathematical calculations.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="part-header">PART I : SCIENCE (20 Marks)</div>
+    <div class="section-header">SECTION A (4 Marks)<span class="marks-info">(Objective / Short Answer - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            State any two fundamental differences between an Element and a Compound.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            Define contact and non-contact forces. Give one example of each.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (6 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            Identify the most appropriate separation technique used for separating the following mixtures:
+            <div class="sub-question">(a) Iron filings from sand</div>
+            <div class="sub-question">(b) Pure water from a salt solution</div>
+            <div class="sub-question">(c) Mud from muddy water</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            A heavy wooden box is resting on the floor. State any three effects that a force can produce on a body, illustrating them with examples from everyday life.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Define a mixture. (2 Marks)</div>
+            <div class="sub-question">(b) State three distinct properties that differentiate a mixture from a chemical compound. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) What is friction? Which type of force is it (contact or non-contact)? (2 Marks)</div>
+            <div class="sub-question">(b) "Friction is a necessary evil." Justify this statement by stating two advantages and two disadvantages of friction in our daily life. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="part-header" style="page-break-before: always;">PART II : MATHEMATICS (20 Marks)</div>
+    <div class="section-header">SECTION A (4 Marks)<span class="marks-info">(Objective / Short Answer - 2 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            Convert the following fractions into decimals:
+            <div class="sub-question math-display">(a) \( \frac{45}{100} \)</div>
+            <div class="sub-question math-display">(b) \( 7\frac{3}{10} \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            Arrange the following decimal numbers in ascending order:
+            <div class="math-display">\( 3.14, \quad 3.41, \quad 3.04, \quad 3.104, \quad 3.401 \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (6 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            Simplify the following decimal expression:
+            <div class="math-display">\( 14.56 + 23.05 - 8.791 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            A tailor requires \( 2.45 \) meters of cloth to stitch one uniform shirt. Calculate the total length of cloth required to stitch 15 such shirts.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (10 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            Evaluate the following:
+            <div class="sub-question math-display">(a) \( 4.56 \times 1.2 \) &nbsp;&nbsp; (2 Marks)</div>
+            <div class="sub-question math-display">(b) \( 15.12 \div 3.6 \) &nbsp;&nbsp; (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            Rahul went to the market and bought \( 5.5 \text{ kg} \) of apples at the rate of Rs. 120.50 per kg and \( 2.75 \text{ kg} \) of oranges at the rate of Rs. 80.25 per kg. Calculate the total amount paid by Rahul to the shopkeeper. Show all your calculations clearly.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

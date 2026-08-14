@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 15px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 500px; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #d32f2f; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; padding: 5px; background: #f0f0f0; border-radius: 5px; font-size: 13pt; border: 1px solid #ccc; }
+        
+        .question-block { margin-bottom: 30px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; page-break-inside: avoid; }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; font-weight: bold; background: #eef7ff; padding: 8px; border-left: 4px solid #1976d2; border-radius: 0 4px 4px 0;}
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .marks { background: #1976d2; color: white; padding: 4px 8px; border-radius: 12px; font-size: 10pt; font-weight: bold; white-space: nowrap; flex-shrink: 0;}
+        
+        .solution-content { padding-left: 10px; }
+        .step { margin-bottom: 8px; }
+        .step-marks { color: #d32f2f; font-style: italic; font-size: 10.5pt; float: right; }
+        .final-answer { font-weight: bold; border: 1px solid #4caf50; padding: 5px 10px; display: inline-block; margin-top: 5px; border-radius: 4px; background: #f1f8e9;}
+        
+        @media (min-width: 768px) { body { padding: 20mm; } }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } .watermark { position: absolute; } }
+        
+        /* Handling math overflow for smaller screens */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; width: 100%; display: block; padding: 5px 0; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MIT 15 - DETAILED SOLUTIONS & MARKING SCHEME</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Identify the terms and their respective coefficients for the expression: $5xyz^2 - 3zy$.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">The algebraic expression consists of two terms separated by a minus sign. <span class="step-marks">(½ Mark)</span></div>
+            <div class="step"><strong>Term 1:</strong> $5xyz^2$ <br> <strong>Coefficient:</strong> $5$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step"><strong>Term 2:</strong> $-3zy$ (Important: include the sign) <br> <strong>Coefficient:</strong> $-3$ <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Classify the following polynomials as monomials, binomials, or trinomials: (i) $p^2q + pq^2$ (ii) $7mn$</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>(i)</strong> $p^2q + pq^2$ contains two unlike terms. Therefore, it is a <span class="final-answer">Binomial</span>. <span class="step-marks">(1 Mark)</span></div>
+            <div class="step"><strong>(ii)</strong> $7mn$ contains only a single term. Therefore, it is a <span class="final-answer">Monomial</span>. <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Add the following algebraic expressions: $ab - bc$, $bc - ca$, $ca - ab$.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">To add the expressions, we arrange like terms together:</div>
+            <div class="step math-scroll">$(ab - bc) + (bc - ca) + (ca - ab)$ <span class="step-marks">(½ Mark)</span></div>
+            <div class="step math-scroll">$= ab - bc + bc - ca + ca - ab$ </div>
+            <div class="step math-scroll">Grouping like terms: $= (ab - ab) + (-bc + bc) + (-ca + ca)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 0 + 0 + 0 = $ <span class="final-answer">0</span> <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Find the product of the following pair of monomials: $(4p)$ and $(q+r)$.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">Using the distributive property of multiplication over addition:</div>
+            <div class="step">$(4p) \times (q + r)$ <span class="step-marks">(½ Mark)</span></div>
+            <div class="step">$= (4p \times q) + (4p \times r)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= $ <span class="final-answer">$4pq + 4pr$</span> <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Evaluate using the standard identity $(a-b)^2$: $99^2$.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">We can write 99 as $(100 - 1)$. Thus, $99^2 = (100 - 1)^2$. <span class="step-marks">(½ Mark)</span></div>
+            <div class="step">Using identity $(a - b)^2 = a^2 - 2ab + b^2$, where $a = 100, b = 1$:</div>
+            <div class="step math-scroll">$= (100)^2 - 2(100)(1) + (1)^2$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 10000 - 200 + 1$</div>
+            <div class="step">$= 9800 + 1 = $ <span class="final-answer">9801</span> <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Subtract $4a - 7ab + 3b + 12$ from $12a - 9ab + 5b - 3$.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">We write the expression to be subtracted in brackets with a minus sign:</div>
+            <div class="step math-scroll">$(12a - 9ab + 5b - 3) - (4a - 7ab + 3b + 12)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Opening the brackets (changing signs of the second expression):</div>
+            <div class="step math-scroll">$= 12a - 9ab + 5b - 3 - 4a + 7ab - 3b - 12$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Grouping like terms:</div>
+            <div class="step math-scroll">$= (12a - 4a) + (-9ab + 7ab) + (5b - 3b) + (-3 - 12)$</div>
+            <div class="step">$= $ <span class="final-answer">$8a - 2ab + 2b - 15$</span> <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Simplify the expression using a suitable identity: $(2x + 5y)^2$.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">The expression is in the form of $(a + b)^2$.</div>
+            <div class="step">Using the identity: $(a + b)^2 = a^2 + 2ab + b^2$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Here, $a = 2x$ and $b = 5y$. Substituting these values:</div>
+            <div class="step math-scroll">$= (2x)^2 + 2(2x)(5y) + (5y)^2$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 4x^2 + 20xy + 25y^2$</div>
+            <div class="step"><span class="final-answer">$4x^2 + 20xy + 25y^2$</span> <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Using the identity $(x+a)(x+b) = x^2 + (a+b)x + ab$, evaluate $103 \times 104$.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">We can rewrite the numbers as: $103 = (100 + 3)$ and $104 = (100 + 4)$</div>
+            <div class="step">So, $103 \times 104 = (100 + 3)(100 + 4)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Comparing with $(x+a)(x+b)$, we have $x = 100$, $a = 3$, $b = 4$.</div>
+            <div class="step math-scroll">Using identity: $100^2 + (3 + 4) \times 100 + (3 \times 4)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 10000 + (7 \times 100) + 12$</div>
+            <div class="step">$= 10000 + 700 + 12 = $ <span class="final-answer">10712</span> <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Simplify: $(a+b)(2a-3b+c) - (2a-3b)c$</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">First, multiply the terms in the first part:</div>
+            <div class="step math-scroll">$= a(2a - 3b + c) + b(2a - 3b + c) - [2ac - 3bc]$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step math-scroll">$= 2a^2 - 3ab + ac + 2ab - 3b^2 + bc - 2ac + 3bc$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Grouping like terms:</div>
+            <div class="step math-scroll">$= 2a^2 - 3b^2 + (-3ab + 2ab) + (ac - 2ac) + (bc + 3bc)$</div>
+            <div class="step">$= $ <span class="final-answer">$2a^2 - 3b^2 - ab - ac + 4bc$</span> <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Subtract $3pq(p-q)$ from $2pq(p+q)$.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">First, simplify both expressions before subtracting:</div>
+            <div class="step">Expression 1 (to subtract): $3pq(p - q) = 3p^2q - 3pq^2$ <span class="step-marks">(½ Mark)</span></div>
+            <div class="step">Expression 2 (from which to subtract): $2pq(p + q) = 2p^2q + 2pq^2$ <span class="step-marks">(½ Mark)</span></div>
+            <div class="step">Now, perform subtraction: Expression 2 - Expression 1</div>
+            <div class="step math-scroll">$(2p^2q + 2pq^2) - (3p^2q - 3pq^2)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 2p^2q + 2pq^2 - 3p^2q + 3pq^2$</div>
+            <div class="step">Grouping like terms: $(2 - 3)p^2q + (2 + 3)pq^2$</div>
+            <div class="step">$= $ <span class="final-answer">$-p^2q + 5pq^2$</span> <span class="step-marks">(1 Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Show that: $(3x+7)^2 - 84x = (3x-7)^2$</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step">We will solve this by expanding the LHS (Left Hand Side) and proving it equals the RHS (Right Hand Side).</div>
+            <div class="step"><strong>LHS</strong> $= (3x+7)^2 - 84x$</div>
+            <div class="step">Using identity $(a+b)^2 = a^2 + 2ab + b^2$ for $(3x+7)^2$:</div>
+            <div class="step math-scroll">$= [(3x)^2 + 2(3x)(7) + (7)^2] - 84x$ <span class="step-marks">(1.5 Marks)</span></div>
+            <div class="step">$= (9x^2 + 42x + 49) - 84x$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Grouping the 'x' terms together:</div>
+            <div class="step">$= 9x^2 + (42x - 84x) + 49$</div>
+            <div class="step">$= 9x^2 - 42x + 49$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Now observe the RHS: $(3x-7)^2$.</div>
+            <div class="step">Expanding RHS using $(a-b)^2 = a^2 - 2ab + b^2$:</div>
+            <div class="step"><strong>RHS</strong> $= (3x)^2 - 2(3x)(7) + (7)^2$</div>
+            <div class="step">$= 9x^2 - 42x + 49$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Since <strong>LHS = RHS</strong>, the relationship is proved. <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Multiply the binomials: $(a^2 + 2b^2)$ and $(5a - 3b)$.<br>(b) If $x - \frac{1}{x} = 4$, find the value of $x^2 + \frac{1}{x^2}$.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Part (a) [3 Marks]</strong></div>
+            <div class="step">Multiply term by term (FOIL method):</div>
+            <div class="step math-scroll">$(a^2 + 2b^2) \times (5a - 3b)$</div>
+            <div class="step math-scroll">$= a^2(5a - 3b) + 2b^2(5a - 3b)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step math-scroll">$= (a^2 \times 5a) - (a^2 \times 3b) + (2b^2 \times 5a) - (2b^2 \times 3b)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= $ <span class="final-answer">$5a^3 - 3a^2b + 10ab^2 - 6b^3$</span> <span class="step-marks">(1 Mark)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b) [2 Marks]</strong></div>
+            <div class="step">Given: $x - \frac{1}{x} = 4$. Squaring both sides:</div>
+            <div class="step math-scroll">$(x - \frac{1}{x})^2 = (4)^2$ <span class="step-marks">(½ Mark)</span></div>
+            <div class="step">Using identity $(a-b)^2 = a^2 - 2ab + b^2$:</div>
+            <div class="step math-scroll">$x^2 - 2(x)(\frac{1}{x}) + (\frac{1}{x})^2 = 16$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">The $x$ and $1/x$ in the middle term cancel out:</div>
+            <div class="step">$x^2 - 2 + \frac{1}{x^2} = 16$</div>
+            <div class="step">$x^2 + \frac{1}{x^2} = 16 + 2$</div>
+            <div class="step">$= $ <span class="final-answer">18</span> <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Using the identity $a^2 - b^2 = (a+b)(a-b)$, find the value of:<br>(i) $51^2 - 49^2$ <br>(ii) $1.02^2 - 0.98^2$</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="step"><strong>Part (i) [2.5 Marks]</strong></div>
+            <div class="step">Given expression: $51^2 - 49^2$</div>
+            <div class="step">Here, $a = 51$ and $b = 49$. Applying the identity:</div>
+            <div class="step math-scroll">$= (51 + 49)(51 - 49)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Solving the brackets:</div>
+            <div class="step">$= (100) \times (2)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= $ <span class="final-answer">200</span> <span class="step-marks">(½ Mark)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (ii) [2.5 Marks]</strong></div>
+            <div class="step">Given expression: $1.02^2 - 0.98^2$</div>
+            <div class="step">Here, $a = 1.02$ and $b = 0.98$. Applying the identity:</div>
+            <div class="step math-scroll">$= (1.02 + 0.98)(1.02 - 0.98)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">Solving the brackets:</div>
+            <div class="step">$= (2.00) \times (0.04)$ <span class="step-marks">(1 Mark)</span></div>
+            <div class="step">$= 2 \times 0.04 = $ <span class="final-answer">0.08</span> <span class="step-marks">(½ Mark)</span></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - End of Solutions</div>
+</body>
+</html>

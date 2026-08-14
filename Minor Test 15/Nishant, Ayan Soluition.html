@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b30000; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f0f0f0; padding: 5px; }
+        
+        .solution-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-row { display: flex; text-align: left; background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px;}
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; font-weight: bold; }
+        .q-marks { font-weight: bold; width: 40px; text-align: right; flex-shrink: 0; color: #b30000;}
+        
+        .ans-row { display: flex; text-align: left; }
+        .ans-label { font-weight: bold; width: 40px; flex-shrink: 0; color: green;}
+        .ans-content { flex-grow: 1; }
+        
+        .sub-answer { margin-left: 20px; margin-top: 5px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block; padding: 5px 0;}
+        .step-marks { float: right; color: #888; font-size: 10pt; font-style: italic; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 15mm; -webkit-print-color-adjust: exact; } 
+            .watermark { position: fixed; }
+        }
+        @media (max-width: 600px) {
+            .exam-details { flex-direction: column; align-items: center; }
+            .q-num, .ans-label { width: 30px; }
+            .sub-answer { margin-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY & DETAILED SOLUTIONS : Minor Test</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Science & Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">1.</div>
+            <div class="q-content">Define a 'simple machine'. Give one everyday example of a simple machine.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                A simple machine is a mechanical device that changes the direction or magnitude of a force. It helps us to do work more easily by applying less effort over a greater distance. <span class="step-marks">(1 Mark)</span><br>
+                <strong>Example:</strong> A crowbar, a pair of scissors, or a knife. <span class="step-marks">(1 Mark)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">2.</div>
+            <div class="q-content">What is a lever? Name the three main points of a lever.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                A lever is a rigid rod or bar that rests and turns on a fixed point. <span class="step-marks">(0.5 Marks)</span><br>
+                The three main points of a lever are:<br>
+                1. <strong>Fulcrum (F):</strong> The fixed point about which the lever turns.<br>
+                2. <strong>Load (L):</strong> The object to be lifted or moved.<br>
+                3. <strong>Effort (E):</strong> The force applied to the lever to move the load. <span class="step-marks">(1.5 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">3.</div>
+            <div class="q-content">State the fundamental difference between an inclined plane and a wedge.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                An <strong>inclined plane</strong> is a flat, stationary sloping surface used to push or pull loads up or down. <br>
+                A <strong>wedge</strong> is fundamentally two inclined planes placed back-to-back. Unlike a standard inclined plane which is stationary, a wedge moves to do its work (e.g., splitting an object). <span class="step-marks">(2 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">4.</div>
+            <div class="q-content">
+                Convert the following decimals into fractions in their simplest form: (a) \( 0.04 \) (b) \( 2.25 \)
+            </div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <div class="sub-answer">
+                    <strong>(a)</strong> \( 0.04 = \frac{4}{100} \) <br>
+                    Dividing numerator and denominator by 4: \( = \frac{1}{25} \) <span class="step-marks">(1 Mark)</span>
+                </div>
+                <div class="sub-answer">
+                    <strong>(b)</strong> \( 2.25 = \frac{225}{100} \) <br>
+                    Dividing by 25: \( = \frac{9}{4} \text{ or } 2\frac{1}{4} \) <span class="step-marks">(1 Mark)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">5.</div>
+            <div class="q-content">Arrange the following decimal numbers in ascending order: \( 3.14, \quad 3.41, \quad 3.041, \quad 3.104 \)</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                First, convert them to like decimals by adding zeroes:<br>
+                \( 3.140, \quad 3.410, \quad 3.041, \quad 3.104 \)<br>
+                Comparing the decimal parts, the ascending order is:<br>
+                <strong>\( 3.041 < 3.104 < 3.14 < 3.41 \)</strong> <span class="step-marks">(2 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">6.</div>
+            <div class="q-content">Classify the following into classes of levers with a brief reason: (a) See-saw (b) Wheelbarrow (c) Sugar tongs</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <div class="sub-answer"><strong>(a) See-saw:</strong> Class I Lever. Reason: The Fulcrum is exactly between the Load and Effort. <span class="step-marks">(1 Mark)</span></div>
+                <div class="sub-answer"><strong>(b) Wheelbarrow:</strong> Class II Lever. Reason: The Load is between the Fulcrum (wheel) and the Effort (handles). <span class="step-marks">(1 Mark)</span></div>
+                <div class="sub-answer"><strong>(c) Sugar tongs:</strong> Class III Lever. Reason: The Effort is applied in the middle, between the Fulcrum (hinge) and the Load (sugar cube). <span class="step-marks">(1 Mark)</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">7.</div>
+            <div class="q-content">Explain how a pulley makes our work easier. Differentiate between a fixed pulley and a movable pulley.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                A pulley makes work easier by changing the direction of the applied force, allowing us to use our body weight (gravity) to pull downwards to lift a load upwards. <span class="step-marks">(1.5 Marks)</span><br><br>
+                <strong>Difference:</strong><br>
+                A <em>fixed pulley</em> remains attached to a rigid support and only changes the direction of force (Mechanical Advantage = 1). A <em>movable pulley</em> moves with the load, essentially multiplying the effort force (Mechanical Advantage = 2), meaning it requires half the effort to lift the load. <span class="step-marks">(1.5 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">8.</div>
+            <div class="q-content">What is mechanical advantage? If a machine lifts a load of \( 100 \text{ N} \) using an effort of \( 25 \text{ N} \), calculate its mechanical advantage.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <strong>Mechanical Advantage (M.A.)</strong> is the ratio of the Load lifted by the machine to the Effort applied to it. <span class="step-marks">(1 Mark)</span><br>
+                <div class="math-scroll">
+                    \[ M.A. = \frac{\text{Load (L)}}{\text{Effort (E)}} \]
+                    \[ M.A. = \frac{100 \text{ N}}{25 \text{ N}} \]
+                    <strong>\[ M.A. = 4 \]</strong> <span class="step-marks">(2 Marks)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">9.</div>
+            <div class="q-content">Simplify: \( 14.5 - 7.25 + 3.105 \)</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                According to BODMAS/PEMDAS, we first perform addition, then subtraction. However, working left to right or rearranging positive terms works too.<br>
+                Method: Group positive numbers first:<br>
+                <div class="math-scroll">
+                    \( = (14.500 + 3.105) - 7.250 \) <span class="step-marks">(1 Mark)</span><br>
+                    \( = 17.605 - 7.250 \) <span class="step-marks">(1 Mark)</span><br>
+                    <strong>\( = 10.355 \)</strong> <span class="step-marks">(1 Mark)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">10.</div>
+            <div class="q-content">A piece of cloth is \( 24.5 \) meters long. If it is cut into \( 5 \) equal pieces, what is the length of each piece?</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                Total length of cloth = \( 24.5 \text{ m} \) <br>
+                Number of pieces = \( 5 \) <br>
+                Length of each piece = \( 24.5 \div 5 \) <span class="step-marks">(1 Mark)</span><br>
+                <div class="math-scroll">
+                    \( = \frac{24.5}{5} \) <br>
+                    \( = 4.9 \text{ m} \) <span class="step-marks">(2 Marks)</span>
+                </div>
+                <strong>Answer: The length of each piece is \( 4.9 \text{ meters} \).</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">11.</div>
+            <div class="q-content">(a) Draw a neat, labeled block diagram of a Class II lever. (b) Explain the wheel and axle with an example.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <div class="sub-answer">
+                    <strong>(a) Class II Lever Diagram:</strong><br>
+                    <em>(Student must draw a linear bar showing:)</em><br>
+                    - Fulcrum (F) at one extreme end.<br>
+                    - Effort (E) at the other extreme end, acting upwards.<br>
+                    - Load (L) in the middle, acting downwards.<br>
+                    [ F ] ------------------ [ L (down) ] ------------------ [ E (up) ] <span class="step-marks">(3 Marks: 1 mark each for correct placement of F, L, E)</span>
+                </div>
+                <div class="sub-answer">
+                    <strong>(b) Wheel and Axle:</strong><br>
+                    A wheel and axle is a simple machine consisting of a large wheel rigidly secured to a smaller shaft called an axle. When the wheel turns, the axle also turns. A small force applied to the large wheel produces a larger force on the smaller axle, making turning tasks easier. <span class="step-marks">(1 Mark)</span><br>
+                    <strong>Example:</strong> A steering wheel of a car or a doorknob. <span class="step-marks">(1 Mark)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">12.</div>
+            <div class="q-content">Perform: (a) Multiply \( 4.56 \) by \( 1.2 \) (b) Divide \( 12.96 \) by \( 0.4 \)</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <div class="sub-answer">
+                    <strong>(a) \( 4.56 \times 1.2 \)</strong><br>
+                    First, ignore the decimals and multiply: \( 456 \times 12 \)<br>
+                    \( 456 \times 10 = 4560 \)<br>
+                    \( 456 \times 2 = 912 \)<br>
+                    Total = \( 5472 \) <span class="step-marks">(1.5 Marks)</span><br>
+                    Count the total decimal places: 2 (in 4.56) + 1 (in 1.2) = 3 decimal places.<br>
+                    <strong>Final Answer = \( 5.472 \)</strong> <span class="step-marks">(1 Mark)</span>
+                </div>
+                <div class="sub-answer">
+                    <strong>(b) \( 12.96 \div 0.4 \)</strong><br>
+                    Multiply both the dividend and divisor by 10 to make the divisor a whole number:<br>
+                    <div class="math-scroll">
+                    \( = \frac{12.96 \times 10}{0.4 \times 10} = \frac{129.6}{4} \) <span class="step-marks">(1 Mark)</span><br>
+                    Now divide 129.6 by 4:<br>
+                    \( 12 \div 4 = 3 \)<br>
+                    \( 9 \div 4 = 2 \) (remainder 1)<br>
+                    \( 16 \div 4 = 4 \)<br>
+                    <strong>Final Answer = \( 32.4 \)</strong> <span class="step-marks">(1.5 Marks)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="question-row">
+            <div class="q-num">13.</div>
+            <div class="q-content">Rahul bought 3.5 kg of apples at ₹ 120.50/kg and 2.75 kg of oranges at ₹ 80.00/kg. He gave a ₹ 1000 note. Calculate (a) total cost (b) change received.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Ans.</div>
+            <div class="ans-content">
+                <div class="sub-answer">
+                    <strong>(a) Calculating Total Cost:</strong><br>
+                    Cost of apples = \( 3.5 \text{ kg} \times ₹ 120.50 \)<br>
+                    \( = ₹ 421.75 \) <span class="step-marks">(1 Mark)</span><br><br>
+                    Cost of oranges = \( 2.75 \text{ kg} \times ₹ 80.00 \)<br>
+                    \( = ₹ 220.00 \) <span class="step-marks">(1 Mark)</span><br><br>
+                    Total Cost = \( ₹ 421.75 + ₹ 220.00 \)<br>
+                    <strong>Total Cost = \( ₹ 641.75 \)</strong> <span class="step-marks">(1 Mark)</span>
+                </div>
+                <div class="sub-answer">
+                    <strong>(b) Calculating Change Received:</strong><br>
+                    Amount given to shopkeeper = \( ₹ 1000.00 \)<br>
+                    Total Cost of fruits = \( ₹ 641.75 \)<br>
+                    Change = \( 1000.00 - 641.75 \) <span class="step-marks">(1 Mark)</span><br>
+                    <strong>Change Received = \( ₹ 358.25 \)</strong> <span class="step-marks">(1 Mark)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

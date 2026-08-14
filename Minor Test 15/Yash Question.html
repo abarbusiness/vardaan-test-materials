@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between;}
+        .q-wrapper { display: flex; flex-grow: 1;}
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; padding-right: 10px; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sub-q-num { font-weight: normal; width: 30px; flex-shrink: 0;}
+        .q-marks { font-weight: bold; white-space: nowrap; flex-shrink: 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { font-size: 10pt; flex-direction: column; align-items: center; gap: 5px;}
+            .watermark { width: 90%; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test: Science & Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subjects: Science & Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two sections: Section A (Science) and Section B (Mathematics).</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Draw neat and labeled diagrams wherever necessary in Science.</li>
+                <li>Show proper working/steps for Mathematics questions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: SCIENCE (20 Marks)<span class="marks-info">(Physics: Light | Chemistry: Matter and its composition)</span></div>
+    
+    <!-- Short Answer - 2 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">1.</div>
+            <div class="q-content">Define reflection of light. State the two laws of reflection.</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">2.</div>
+            <div class="q-content">Differentiate between an element and a compound based on their composition and separability. (Give two points)</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Medium Answer - 3 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">3.</div>
+            <div class="q-content">Define the term 'intermolecular space'. How does it logically differ in the arrangement of solids, liquids, and gases?</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">4.</div>
+            <div class="q-content">What is a shadow? State the three essential conditions required for a shadow to be formed.</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Long Answer - 5 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">5.</div>
+            <div class="q-content">Explain the Kinetic Theory of Matter. Postulate any three main points regarding the movement, attraction, and arrangement of particles in matter.</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">6.</div>
+            <div class="q-content">
+                (a) What do you understand by 'lateral inversion'? Give one practical example where it is observed.<br>
+                (b) State three primary characteristics of the image formed by a plane mirror.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+
+    <div class="section-header">SECTION B: MATHEMATICS (20 Marks)<span class="marks-info">(Topic: Probability)</span></div>
+    
+    <!-- Short Answer - 2 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">7.</div>
+            <div class="q-content">An unbiased coin is tossed once. What is the probability of getting (i) a head? (ii) a tail?</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">8.</div>
+            <div class="q-content">A standard die is thrown once. Find the probability of getting a prime number.</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Medium Answer - 3 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                A bag contains 4 red balls, 5 blue balls, and 3 green balls. A ball is drawn at random from the bag. Find the probability that the ball drawn is:
+                <div class="sub-question">
+                    <div class="sub-q-num">(i)</div>
+                    <div>a blue ball.</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-num">(ii)</div>
+                    <div>not a red ball.</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">10.</div>
+            <div class="q-content">The letters of the word 'MATHEMATICS' are written on individual identical cards and placed in a bag. One card is drawn at random. What is the probability of drawing a vowel?</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Long Answer - 5 Marks -->
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">11.</div>
+            <div class="q-content">
+                In a class of 40 students, 15 like mathematics, 12 like science, and the remaining students like languages. If a student is chosen at random, find the probability that the student:
+                <div class="sub-question">
+                    <div class="sub-q-num">(i)</div>
+                    <div>likes mathematics.</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-num">(ii)</div>
+                    <div>likes languages.</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-num">(iii)</div>
+                    <div>does not like science.</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                Two coins are tossed simultaneously.
+                <div class="sub-question">
+                    <div class="sub-q-num">(i)</div>
+                    <div>Write down the complete sample space for this experiment.</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-num">(ii)</div>
+                    <div>Find the probability of getting exactly one head.</div>
+                </div>
+                <div class="sub-question">
+                    <div class="sub-q-num">(iii)</div>
+                    <div>Find the probability of getting at least one tail.</div>
+                </div>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

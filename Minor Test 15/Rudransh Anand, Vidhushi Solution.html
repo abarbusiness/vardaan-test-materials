@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - MIT 15 (Ratio & Proportion)</title>
+    <!-- MathJax for Mathematical Formatting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <script>
+        window.MathJax = {
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            },
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #fcfcfc; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 2px solid #2c3e50; 
+            padding-bottom: 15px; 
+        }
+
+        .header h1 { font-size: 20pt; color: #2c3e50; margin: 0; text-transform: uppercase;}
+        .header h2 { font-size: 14pt; color: #e74c3c; margin: 5px 0 0 0;}
+
+        .section-header { 
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            font-size: 13pt; 
+            border-radius: 4px;
+        }
+
+        .solution-container { 
+            margin-bottom: 30px; 
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+
+        /* Question specific layout for marks on the right */
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            background-color: #f4f6f7;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 15px;
+        }
+
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            white-space: nowrap; 
+            color: #e74c3c; 
+            font-weight: bold;
+            font-size: 11pt;
+            background: #ffeaa7;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        .sol-body {
+            padding: 0 10px;
+        }
+        
+        .sol-label { font-weight: bold; color: #27ae60; text-decoration: underline; margin-bottom: 10px; display: inline-block;}
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+
+        .final-answer {
+            background-color: #e8f8f5;
+            border: 1px solid #1abc9c;
+            padding: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-end;}
+            /* Chunking strategy for small screens: Force Mathjax to scroll */
+            .math-scroll {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>VARDAAN LEARNING INSTITUTE</h1>
+        <h2>Detailed Answer Key & Solutions: MIT 15 (Class 8 - Maths)</h2>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q1. Find the ratio of \( 5 \text{ km} \) to \( 500 \text{ m} \) in its simplest form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>To find the ratio, both quantities must be in the same unit.</p>
+            <p>We know that \( 1 \text{ km} = 1000 \text{ m} \).</p>
+            <div class="math-scroll">
+                \[ \text{Therefore, } 5 \text{ km} = 5 \times 1000 \text{ m} = 5000 \text{ m} \]
+            </div>
+            <p>Now, find the ratio:</p>
+            <div class="math-scroll">
+                \[ \text{Ratio} = \frac{5000 \text{ m}}{500 \text{ m}} = \frac{50}{5} = \frac{10}{1} \]
+            </div>
+            <div class="final-answer">Required Ratio = \( 10 : 1 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q2. Are the ratios \( 1:2 \) and \( 2:3 \) equivalent? Justify your answer.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>To compare the ratios, we write them as fractions: \( \frac{1}{2} \) and \( \frac{2}{3} \).</p>
+            <p>To check for equivalence, we can cross-multiply or make the denominators equal.</p>
+            <p><strong>Method (Equal Denominators):</strong> LCM of \( 2 \) and \( 3 \) is \( 6 \).</p>
+            <div class="math-scroll">
+                \[ \frac{1 \times 3}{2 \times 3} = \frac{3}{6} \quad \text{and} \quad \frac{2 \times 2}{3 \times 2} = \frac{4}{6} \]
+            </div>
+            <p>Since \( \frac{3}{6} \neq \frac{4}{6} \), the fractions are not equal.</p>
+            <div class="final-answer">No, the ratios \( 1:2 \) and \( 2:3 \) are NOT equivalent.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q3. If the cost of \( 7 \) meters of a certain cloth is \( \text{₹ } 294 \), find the cost of \( 5 \) meters of the same cloth.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>This is a case of <strong>Direct Proportion</strong>. Let the cost of \( 5 \text{ m} \) of cloth be \( x \).</p>
+            <table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 10px;">
+                <tr><td>Length of cloth (m)</td><td>\( 7 \)</td><td>\( 5 \)</td></tr>
+                <tr><td>Cost (₹)</td><td>\( 294 \)</td><td>\( x \)</td></tr>
+            </table>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{7}{294} &= \frac{5}{x} \\
+                7x &= 294 \times 5 \\
+                x &= \frac{294 \times 5}{7} \\
+                x &= 42 \times 5 \\
+                x &= 210
+                \end{align*}
+            </div>
+            <div class="final-answer">The cost of 5 meters of cloth is ₹ 210.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q4. \( 6 \) pipes are required to fill a tank in \( 1 \text{ hour and } 20 \text{ minutes} \). How long will it take if only \( 5 \) pipes of the same type are used?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>First, convert the time to minutes: \( 1 \text{ hour } 20 \text{ mins} = 60 + 20 = 80 \text{ minutes} \).</p>
+            <p>Fewer pipes will take more time to fill the tank. Hence, it is a case of <strong>Inverse Proportion</strong>.</p>
+            <p>Let the time taken by \( 5 \) pipes be \( y \) minutes.</p>
+            <div class="math-scroll">
+                \begin{align*}
+                x_1 y_1 &= x_2 y_2 \\
+                6 \times 80 &= 5 \times y \\
+                480 &= 5y \\
+                y &= \frac{480}{5} = 96 \text{ minutes}
+                \end{align*}
+            </div>
+            <p>Converting back: \( 96 \text{ minutes} = 1 \text{ hour } 36 \text{ minutes} \).</p>
+            <div class="final-answer">It will take 1 hour and 36 minutes.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q5. The scale of a map is given as \( 1 : 30,000,000 \). Two cities are \( 4 \text{ cm} \) apart on the map. Find the actual distance between them in kilometers.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>Map scale means \( 1 \text{ cm} \) on the map represents \( 30,000,000 \text{ cm} \) in reality.</p>
+            <p>Actual distance for \( 4 \text{ cm} \) on the map = \( 4 \times 30,000,000 \text{ cm} = 120,000,000 \text{ cm} \).</p>
+            <p>Now, convert cm to km. (\( 1 \text{ km} = 100,000 \text{ cm} \))</p>
+            <div class="math-scroll">
+                \[ \text{Distance in km} = \frac{120,000,000}{100,000} \text{ km} = 1200 \text{ km} \]
+            </div>
+            <div class="final-answer">The actual distance is 1200 km.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q6. A loaded truck travels \( 14 \text{ km} \) in \( 25 \text{ minutes} \). If the speed remains the same, how far can it travel in \( 5 \text{ hours} \)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>Since the speed is constant, distance and time are in <strong>Direct Proportion</strong>.</p>
+            <p>Time given = \( 5 \text{ hours} \). Let's convert it to minutes: \( 5 \times 60 = 300 \text{ minutes} \).</p>
+            <p>Let the distance traveled in \( 300 \text{ minutes} \) be \( d \text{ km} \).</p>
+            <table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 10px;">
+                <tr><td>Distance (km)</td><td>\( 14 \)</td><td>\( d \)</td></tr>
+                <tr><td>Time (minutes)</td><td>\( 25 \)</td><td>\( 300 \)</td></tr>
+            </table>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{14}{25} &= \frac{d}{300} \\
+                d &= \frac{14 \times 300}{25} \\
+                d &= 14 \times 12 \\
+                d &= 168
+                \end{align*}
+            </div>
+            <div class="final-answer">The truck can travel 168 km in 5 hours.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q7. If \( 15 \) workers can build a wall in \( 48 \text{ hours} \), how many workers will be required to do the same work in \( 30 \text{ hours} \)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>Less time requires more workers to finish the same job. Therefore, it is a case of <strong>Inverse Proportion</strong>.</p>
+            <p>Let the required number of workers be \( w \).</p>
+            <table border="1" cellpadding="5" style="border-collapse: collapse; margin-bottom: 10px;">
+                <tr><td>Number of workers</td><td>\( 15 \)</td><td>\( w \)</td></tr>
+                <tr><td>Time (hours)</td><td>\( 48 \)</td><td>\( 30 \)</td></tr>
+            </table>
+            <div class="math-scroll">
+                \begin{align*}
+                x_1 y_1 &= x_2 y_2 \\
+                15 \times 48 &= w \times 30 \\
+                w &= \frac{15 \times 48}{30} \\
+                w &= \frac{48}{2} = 24
+                \end{align*}
+            </div>
+            <div class="final-answer">24 workers will be required.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q8. In a school, there are \( 8 \) periods a day, each of \( 45 \text{ minutes} \) duration. How long would each period be, if the school has \( 9 \) periods a day?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>Total school time is fixed. If the number of periods increases, the duration of each period must decrease. Hence, they are in <strong>Inverse Proportion</strong>.</p>
+            <p>Let the new duration of each period be \( p \text{ minutes} \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \text{Number of periods} \times \text{Duration} &= \text{Constant} \\
+                8 \times 45 &= 9 \times p \\
+                360 &= 9p \\
+                p &= \frac{360}{9} = 40
+                \end{align*}
+            </div>
+            <div class="final-answer">Each period would be 40 minutes long.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q9. A photograph of a bacteria enlarged 50,000 times attains a length of 5 cm. (i) Actual length? (ii) Enlarged length if enlarged 20,000 times?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p><strong>(i) Actual length of the bacteria:</strong></p>
+            <p>Actual length = \( \frac{\text{Enlarged Length}}{\text{Magnification Scale}} \)</p>
+            <div class="math-scroll">
+                \[ \text{Actual length} = \frac{5}{50,000} \text{ cm} = \frac{1}{10,000} \text{ cm} = 10^{-4} \text{ cm} \]
+            </div>
+            <p><strong>(ii) If enlarged \( 20,000 \) times:</strong></p>
+            <p>This is a <strong>Direct Proportion</strong> between enlargement scale and length.</p>
+            <p>Let the new length be \( l \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{5}{50000} &= \frac{l}{20000} \\
+                l &= \frac{5 \times 20000}{50000} \\
+                l &= \frac{100000}{50000} = 2 \text{ cm}
+                \end{align*}
+            </div>
+            <div class="final-answer">(i) Actual length = \( 10^{-4} \) cm. (ii) New length = 2 cm.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q10. \( 2 \text{ kg} \) of sugar contains \( 9 \times 10^6 \) crystals. How many in (a) \( 5 \text{ kg} \)? (b) \( 1.2 \text{ kg} \)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>The quantity of sugar and the number of crystals are in <strong>Direct Proportion</strong>.</p>
+            <p><strong>(a) In \( 5 \text{ kg} \) of sugar:</strong> Let the crystals be \( x \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{2}{9 \times 10^6} &= \frac{5}{x} \\
+                2x &= 45 \times 10^6 \\
+                x &= 22.5 \times 10^6 = 2.25 \times 10^7 \text{ crystals}
+                \end{align*}
+            </div>
+            <p><strong>(b) In \( 1.2 \text{ kg} \) of sugar:</strong> Let the crystals be \( y \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{2}{9 \times 10^6} &= \frac{1.2}{y} \\
+                2y &= 1.2 \times 9 \times 10^6 \\
+                2y &= 10.8 \times 10^6 \\
+                y &= 5.4 \times 10^6 \text{ crystals}
+                \end{align*}
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q11. A garrison of \( 1200 \) men has provisions for \( 60 \text{ days} \). After \( 15 \text{ days} \), \( 300 \) men leave. How long will the remaining food last?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p><strong>Step 1: Understand the state of provisions after \( 15 \text{ days} \).</strong></p>
+            <p>Total initial days = \( 60 \). Days passed = \( 15 \).</p>
+            <p>If no one left, the food would have lasted for \( 1200 \) men for \( (60 - 15) = 45 \text{ days} \).</p>
+            <p><strong>Step 2: Identify the new variables.</strong></p>
+            <p>Original men (\( M_1 \)) = \( 1200 \)</p>
+            <p>Original remaining days (\( D_1 \)) = \( 45 \)</p>
+            <p>Number of men leaving = \( 300 \)</p>
+            <p>Remaining men (\( M_2 \)) = \( 1200 - 300 = 900 \)</p>
+            <p>Let the food last for \( D_2 \) days for these \( 900 \) men.</p>
+            <p><strong>Step 3: Apply Inverse Proportion.</strong></p>
+            <p>More men \(\implies\) food lasts for fewer days. Hence, <strong>Inverse Proportion</strong>.</p>
+            <div class="math-scroll">
+                \begin{align*}
+                M_1 \times D_1 &= M_2 \times D_2 \\
+                1200 \times 45 &= 900 \times D_2 \\
+                D_2 &= \frac{1200 \times 45}{900} \\
+                D_2 &= \frac{12 \times 45}{9} \\
+                D_2 &= 12 \times 5 = 60
+                \end{align*}
+            </div>
+            <div class="final-answer">The remaining food will last for exactly 60 days for the remaining men.</div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q12. A train is moving at a uniform speed of \( 75 \text{ km/hr} \). (a) Distance in \( 20 \text{ mins} \)? (b) Time for \( 250 \text{ km} \)?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p>Speed is constant, so Distance and Time are in <strong>Direct Proportion</strong>.</p>
+            <p>Speed = \( 75 \text{ km/hr} \) implies distance = \( 75 \text{ km} \) in \( 60 \text{ minutes} \).</p>
+            
+            <p><strong>(a) Distance traveled in \( 20 \text{ minutes} \):</strong> Let distance be \( d_1 \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{75}{60} &= \frac{d_1}{20} \\
+                d_1 &= \frac{75 \times 20}{60} \\
+                d_1 &= \frac{75}{3} = 25 \text{ km}
+                \end{align*}
+            </div>
+            
+            <p><strong>(b) Time required to cover \( 250 \text{ km} \):</strong> Let time in hours be \( t_2 \).</p>
+            <p>Using km and hours directly:</p>
+            <div class="math-scroll">
+                \begin{align*}
+                \frac{75}{1} &= \frac{250}{t_2} \\
+                75 \times t_2 &= 250 \\
+                t_2 &= \frac{250}{75} = \frac{10}{3} \text{ hours}
+                \end{align*}
+            </div>
+            <p>Convert to hours and minutes: \( \frac{10}{3} \text{ hours} = 3 \text{ hours} \) and \( \frac{1}{3} \text{ hour} \).</p>
+            <p>\( \frac{1}{3} \times 60 \text{ mins} = 20 \text{ mins} \).</p>
+            
+            <div class="final-answer">
+                (a) The train travels 25 km in 20 minutes.<br>
+                (b) It takes 3 hours and 20 minutes to cover 250 km.
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-header">
+            <div class="q-text">Q13. Two persons fit windows in \( 3 \text{ days} \). (a) One person falls ill, time taken? (b) Persons needed for \( 1 \text{ day} \)? (c) Justify proportion type.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <span class="sol-label">Solution:</span>
+            <p><strong>(c) Justification of Proportion:</strong></p>
+            <p>The amount of work (fitting windows) is constant. If the number of persons working decreases, the time taken to complete the job will increase. Similarly, if we want to finish the job in fewer days, we need more persons. Hence, the number of persons and days are in <strong>Inverse Proportion</strong>.</p>
+            
+            <p><strong>(a) One person falls ill:</strong></p>
+            <p>Initial persons (\( P_1 \)) = \( 2 \), Initial days (\( D_1 \)) = \( 3 \).</p>
+            <p>New persons (\( P_2 \)) = \( 2 - 1 = 1 \). Let new days be \( D_2 \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                P_1 \times D_1 &= P_2 \times D_2 \\
+                2 \times 3 &= 1 \times D_2 \\
+                D_2 &= 6
+                \end{align*}
+            </div>
+            <p>The job will now take \( 6 \text{ days} \).</p>
+
+            <p><strong>(b) Persons needed to finish in exactly one day:</strong></p>
+            <p>New target days (\( D_3 \)) = \( 1 \). Let required persons be \( P_3 \).</p>
+            <div class="math-scroll">
+                \begin{align*}
+                P_1 \times D_1 &= P_3 \times D_3 \\
+                2 \times 3 &= P_3 \times 1 \\
+                P_3 &= 6
+                \end{align*}
+            </div>
+            <div class="final-answer">
+                (a) 6 days are required now.<br>
+                (b) 6 persons are needed to complete the work in 1 day.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

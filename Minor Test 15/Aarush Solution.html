@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-tag { font-size: 16pt; font-weight: bold; color: #d32f2f; margin-top: 10px; }
+        
+        .q-block { 
+            margin-bottom: 25px; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 15px; 
+            page-break-inside: avoid;
+        }
+        .q-row { 
+            display: flex; 
+            justify-content: space-between; 
+            background-color: #f9f9f9;
+            padding: 8px;
+            border-left: 4px solid #333;
+            margin-bottom: 10px;
+        }
+        .q-text { font-weight: bold; flex-grow: 1; margin-right: 15px;}
+        .q-marks { font-weight: bold; color: #555; white-space: nowrap; }
+        .s-text { padding-left: 15px; }
+        .step { margin-bottom: 5px; }
+        .final-ans { font-weight: bold; background-color: #e8f5e9; padding: 2px 5px; display: inline-block;}
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            font-size: 13pt; 
+            background-color: #eee;
+            padding: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-row { flex-direction: column; }
+            .q-marks { margin-top: 5px; text-align: right; }
+            /* Breaking long equations on mobile */
+            .math-container { overflow-x: auto; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test: Maths & Science (CBSE)</div>
+        <div class="solution-tag">DETAILED SOLUTIONS</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q1. State whether the following are physical or chemical changes: (a) Melting of wax (b) Rusting of iron</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a) Melting of wax:</strong> Physical change. <em>(1 mark)</em></div>
+            <div class="step"><strong>(b) Rusting of iron:</strong> Chemical change. <em>(1 mark)</em></div>
+            <div class="step"><em>Explanation (optional for student but good for clarity):</em> Melting only changes state (solid to liquid), while rusting forms a new substance (iron oxide).</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q2. Explain briefly why tearing a sheet of paper is considered a physical change while burning the same paper is a chemical change.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step">Tearing paper is a physical change because no new substance is formed; only the shape and size change. <em>(1 mark)</em></div>
+            <div class="step">Burning paper is a chemical change because a chemical reaction occurs with oxygen, forming entirely new substances (ash, carbon dioxide, water vapour). <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q3. Evaluate the following decimal addition and subtraction: (a) \( 15.65 + 3.2 \) (b) \( 24.5 - 11.23 \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a)</strong> Convert to like decimals: \( 15.65 + 3.20 \)</div>
+            <div class="step">\( \phantom{+} 15.65 \)</div>
+            <div class="step">\( \underline{+ \phantom{0}3.20} \)</div>
+            <div class="step"><span class="final-ans">\( \phantom{+} 18.85 \)</span> <em>(1 mark)</em></div>
+            <br>
+            <div class="step"><strong>(b)</strong> Convert to like decimals: \( 24.50 - 11.23 \)</div>
+            <div class="step">\( \phantom{-} 24.50 \)</div>
+            <div class="step">\( \underline{- 11.23} \)</div>
+            <div class="step"><span class="final-ans">\( \phantom{-} 13.27 \)</span> <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q4. Multiply the following decimals: (a) \( 3.5 \times 10 \) (b) \( 1.2 \times 0.4 \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a)</strong> When multiplying by 10, shift the decimal point 1 place to the right.</div>
+            <div class="step">\( 3.5 \times 10 = \)<span class="final-ans">\( 35 \)</span> <em>(1 mark)</em></div>
+            <br>
+            <div class="step"><strong>(b)</strong> Multiply without decimals: \( 12 \times 4 = 48 \).</div>
+            <div class="step">Total decimal places = 1 (from 1.2) + 1 (from 0.4) = 2.</div>
+            <div class="step">Place decimal point 2 places from the right: <span class="final-ans">\( 0.48 \)</span> <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q5. Divide the following decimals: (a) \( 14.5 \div 10 \) (b) \( 3.6 \div 0.6 \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a)</strong> When dividing by 10, shift the decimal point 1 place to the left.</div>
+            <div class="step">\( 14.5 \div 10 = \)<span class="final-ans">\( 1.45 \)</span> <em>(1 mark)</em></div>
+            <br>
+            <div class="step"><strong>(b)</strong> Multiply dividend and divisor by 10 to remove the decimal in the divisor.</div>
+            <div class="step">\( \frac{3.6 \times 10}{0.6 \times 10} = \frac{36}{6} \)</div>
+            <div class="step"><span class="final-ans">\( = 6 \)</span> <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q6. Identify the gas produced when vinegar (acetic acid) is added to baking soda (sodium hydrogencarbonate). Write the word equation for this reaction. What type of change is this?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>Gas produced:</strong> Carbon dioxide (\( CO_2 \)) <em>(1 mark)</em></div>
+            <div class="step"><strong>Word equation:</strong> Vinegar (Acetic acid) + Baking soda (Sodium hydrogencarbonate) \( \rightarrow \) Carbon dioxide + other substances <em>(1 mark)</em></div>
+            <div class="step"><strong>Type of change:</strong> Chemical change (because new substances are formed). <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q7. List three differences between a physical change and a chemical change.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-text">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 5px;">Physical Change</th>
+                    <th style="padding: 5px;">Chemical Change</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">No new substance is formed.</td>
+                    <td style="padding: 5px;">One or more new substances are formed.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Usually reversible.</td>
+                    <td style="padding: 5px;">Usually irreversible (permanent).</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Only physical properties (shape, size, state) change.</td>
+                    <td style="padding: 5px;">Chemical properties and composition change.</td>
+                </tr>
+            </table>
+            <div class="step" style="margin-top: 5px;"><em>(1 mark for each valid point of difference)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q8. Rahul travelled 14.5 km by bus and 2.75 km by auto rickshaw. (a) What is the total distance he travelled? (b) Express the total distance in meters.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a) Total distance:</strong></div>
+            <div class="step">Distance by bus = \( 14.50 \text{ km} \) (converting to like decimal)</div>
+            <div class="step">Distance by auto = \( 2.75 \text{ km} \)</div>
+            <div class="step">Total = \( 14.50 + 2.75 = \)<span class="final-ans">\( 17.25 \text{ km} \)</span> <em>(2 marks)</em></div>
+            <br>
+            <div class="step"><strong>(b) Convert to meters:</strong></div>
+            <div class="step">We know \( 1 \text{ km} = 1000 \text{ m} \)</div>
+            <div class="step">Distance in meters = \( 17.25 \times 1000 \)</div>
+            <div class="step"><span class="final-ans">\( = 17250 \text{ m} \)</span> <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q9. A car covers a distance of 89.1 km in 2.2 hours. What is the average distance covered by it in 1 hour?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step">Total distance covered = \( 89.1 \text{ km} \)</div>
+            <div class="step">Total time taken = \( 2.2 \text{ hours} \) <em>(0.5 marks)</em></div>
+            <div class="step">Distance covered in 1 hour (Average speed) = \( \frac{\text{Total Distance}}{\text{Total Time}} \)</div>
+            <div class="step">\( = \frac{89.1}{2.2} \) <em>(1 mark)</em></div>
+            <div class="step">Multiply numerator and denominator by 10 to remove decimals:</div>
+            <div class="step">\( = \frac{891}{22} \)</div>
+            <div class="step">Dividing 891 by 22: \( 891 \div 22 = 40.5 \)</div>
+            <div class="step">The average distance covered in 1 hour is <span class="final-ans">\( 40.5 \text{ km} \)</span>. <em>(1.5 marks)</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q10. Solve the following expression using the rules of operations on decimals: \( 12.5 + (3.4 \times 2) - 1.5 \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step">According to BODMAS rules, we solve the brackets first.</div>
+            <div class="step">Step 1: Bracket: \( 3.4 \times 2 = 6.8 \) <em>(1 mark)</em></div>
+            <div class="step">Expression becomes: \( 12.5 + 6.8 - 1.5 \)</div>
+            <div class="step">Step 2: Addition: \( 12.5 + 6.8 = 19.3 \) <em>(1 mark)</em></div>
+            <div class="step">Expression becomes: \( 19.3 - 1.5 \)</div>
+            <div class="step">Step 3: Subtraction: \( 19.3 - 1.5 = \)<span class="final-ans">\( 17.8 \)</span> <em>(1 mark)</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q11. (a) Explain the process of rusting of iron. Write the conditions necessary for rusting to occur. (b) Suggest two methods to prevent the rusting of iron.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a) Process and Conditions (3 marks):</strong></div>
+            <div class="step">Rusting is a chemical change where iron reacts with oxygen and moisture to form a new reddish-brown substance called iron oxide (rust). <em>(1 mark)</em></div>
+            <div class="math-container step" style="overflow-x: auto; margin: 5px 0;">
+                \( \text{Iron (Fe)} + \text{Oxygen } (O_2, \text{ from air}) + \text{Water } (H_2O) \rightarrow \text{Rust (Iron oxide, } Fe_2O_3 \cdot xH_2O) \) <em>(1 mark for equation)</em>
+            </div>
+            <div class="step"><strong>Conditions necessary:</strong> The presence of both Oxygen (air) and Water (moisture) is essential for rusting to take place. <em>(1 mark)</em></div>
+            <br>
+            <div class="step"><strong>(b) Prevention methods (2 marks, 1 mark each):</strong></div>
+            <div class="step">1. <strong>Painting/Greasing:</strong> Applying a coat of paint, oil, or grease cuts off the contact of iron with air and moisture.</div>
+            <div class="step">2. <strong>Galvanisation:</strong> Depositing a layer of a more reactive metal like zinc or chromium on iron to protect it from rusting.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q12. When a candle burns, both physical and chemical changes take place. Identify and explain both changes. Give one more example where both occur.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step"><strong>(a) Physical Change (2 marks):</strong></div>
+            <div class="step"><strong>Melting of wax:</strong> The heat of the flame melts the solid wax into liquid wax, and then some of it evaporates into wax vapour. This is a physical change because the substance remains wax, just its state changes from solid to liquid to gas, which is reversible upon cooling.</div>
+            <br>
+            <div class="step"><strong>(b) Chemical Change (2 marks):</strong></div>
+            <div class="step"><strong>Burning of wax vapour:</strong> The wax vapour reacts with oxygen in the air and burns (combustion) to produce heat, light, carbon dioxide, and water vapour. This is a chemical change because entirely new substances are formed, and it is irreversible.</div>
+            <br>
+            <div class="step"><strong>(c) Another Example (1 mark):</strong></div>
+            <div class="step"><strong>Eating/Digestion of food.</strong><br>
+                Physical change: Chewing and breaking food into smaller pieces.<br>
+                Chemical change: Enzymes breaking down the food chemically in the stomach to form new substances for energy.
+            </div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-row">
+            <div class="q-text">Q13. A rectangular garden has a length of 15.75 m and a width of 8.4 m. Find its perimeter, area, and total cost of fencing at ₹ 20.50 per meter.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-text">
+            <div class="step">Given:<br>
+            Length (\( l \)) = \( 15.75 \text{ m} \)<br>
+            Width (\( w \)) = \( 8.4 \text{ m} \)
+            </div>
+            <br>
+            <div class="step"><strong>(a) Perimeter (2 marks):</strong></div>
+            <div class="step">Perimeter of a rectangle = \( 2 \times (l + w) \)</div>
+            <div class="step">\( = 2 \times (15.75 + 8.40) \)</div>
+            <div class="step">\( = 2 \times 24.15 \)</div>
+            <div class="step"><span class="final-ans">\( = 48.3 \text{ m} \)</span></div>
+            <br>
+            <div class="step"><strong>(b) Area (2 marks):</strong></div>
+            <div class="step">Area of a rectangle = \( l \times w \)</div>
+            <div class="step">\( = 15.75 \times 8.4 \)</div>
+            <div class="step">Multiply \( 1575 \times 84 = 132300 \)</div>
+            <div class="step">Total decimal places = 2 + 1 = 3.</div>
+            <div class="step">Area <span class="final-ans">\( = 132.300 \text{ m}^2 \) or \( 132.3 \text{ m}^2 \)</span></div>
+            <br>
+            <div class="step"><strong>(c) Cost of Fencing (1 mark):</strong></div>
+            <div class="step">Fencing is done around the boundary, so we use the perimeter.</div>
+            <div class="step">Cost per meter = ₹ \( 20.50 \)</div>
+            <div class="step">Total Cost = Perimeter \( \times \) Rate</div>
+            <div class="step">\( = 48.3 \times 20.50 \)</div>
+            <div class="step">Multiply \( 483 \times 205 = 99015 \)</div>
+            <div class="step">Adjusting decimals (1 + 1 = 2 places): <span class="final-ans">₹ \( 990.15 \)</span></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Detailed Solutions</div>
+</body>
+</html>

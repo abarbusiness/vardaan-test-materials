@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- Loading MathJax for mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                tags: 'ams'
+            },
+            chtml: {
+                scale: 1,
+                minScale: 0.8
+            }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; color: #2c3e50; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #27ae60; }
+        .exam-details { 
+            display: flex; justify-content: space-between; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 5px 0; background: #f9f9f9;
+        }
+
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 30px; 
+            margin-bottom: 15px; font-size: 14pt; background: #ecf0f1; padding: 5px;
+            border-radius: 4px;
+        }
+        
+        .q-block { 
+            margin-bottom: 25px; 
+            page-break-inside: avoid; 
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 10px; 
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .marks { flex-shrink: 0; color: #c0392b; font-weight: bold; }
+        
+        .solution-title { font-weight: bold; color: #27ae60; margin-bottom: 5px; display: block; font-style: italic;}
+        .solution-content { padding-left: 10px; border-left: 3px solid #27ae60; }
+        .solution-content p { margin: 5px 0; }
+        .solution-content ul { margin: 5px 0; padding-left: 20px;}
+        
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+        
+        /* Mobile and Tablet Responsiveness */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 15px; 
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .q-block { padding: 10px; }
+            .q-header { flex-direction: column; }
+            .marks { text-align: right; margin-top: 5px; font-size: 10pt;}
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">ANSWER KEY: Minor Test</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subjects: Science & Maths</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A: SCIENCE SOLUTIONS (20 Marks)</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define reflection of light. State the two laws of reflection.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>Reflection of Light:</strong> The bouncing back of light rays into the same medium after striking a smooth and polished surface is called reflection of light. <em>(1 Mark)</em></p>
+            <p><strong>Laws of Reflection:</strong> <em>(1 Mark)</em></p>
+            <ul>
+                <li><strong>First Law:</strong> The incident ray, the reflected ray, and the normal at the point of incidence, all lie in the same plane.</li>
+                <li><strong>Second Law:</strong> The angle of incidence ($\angle i$) is always equal to the angle of reflection ($\angle r$).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Differentiate between an element and a compound based on their composition and separability.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 5px;">Basis</th>
+                    <th style="padding: 5px;">Element</th>
+                    <th style="padding: 5px;">Compound</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"><strong>Composition</strong></td>
+                    <td style="padding: 5px;">Made up of only one kind of atoms.</td>
+                    <td style="padding: 5px;">Made up of two or more different types of atoms combined chemically.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"><strong>Separability</strong></td>
+                    <td style="padding: 5px;">Cannot be broken down into simpler substances by physical or chemical means.</td>
+                    <td style="padding: 5px;">Can be separated into its constituent elements by chemical methods.</td>
+                </tr>
+            </table>
+            <p style="font-size: 10pt; color: #555; margin-top:5px;"><em>(1 Mark for each valid differentiating point)</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Define the term 'intermolecular space'. How does it logically differ in the arrangement of solids, liquids, and gases?</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>Intermolecular Space:</strong> The empty space existing between the molecules of matter is known as intermolecular space. <em>(1 Mark)</em></p>
+            <p><strong>Difference in states:</strong> <em>(2 Marks)</em></p>
+            <ul>
+                <li><strong>Solids:</strong> Molecules are tightly packed; hence, intermolecular space is <strong>minimum</strong> (negligible).</li>
+                <li><strong>Liquids:</strong> Molecules are loosely packed compared to solids; hence, intermolecular space is <strong>moderate</strong> (more than solids, less than gases).</li>
+                <li><strong>Gases:</strong> Molecules are very far apart; hence, intermolecular space is <strong>maximum</strong>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q4. What is a shadow? State the three essential conditions required for a shadow to be formed.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>Shadow:</strong> A dark patch formed on a screen when an opaque object blocks the path of light is called a shadow. <em>(1.5 Marks)</em></p>
+            <p><strong>Essential Conditions:</strong> <em>(1.5 Marks - 0.5 each)</em></p>
+            <ol>
+                <li>A source of light.</li>
+                <li>An opaque object to obstruct the light.</li>
+                <li>A screen or surface behind the object on which the shadow can be cast.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Explain the Kinetic Theory of Matter. Postulate any three main points regarding the movement, attraction, and arrangement of particles in matter.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>Kinetic Theory of Matter:</strong> This theory states that all matter is composed of tiny, invisible particles (atoms or molecules) which are in a continuous state of random motion. Because of this motion, they possess kinetic energy. <em>(2 Marks)</em></p>
+            <p><strong>Main Postulates (Any three):</strong> <em>(3 Marks - 1 each)</em></p>
+            <ul>
+                <li><strong>Movement/Kinetic Energy:</strong> The particles of matter are always in continuous random motion. The kinetic energy of particles increases with an increase in temperature.</li>
+                <li><strong>Intermolecular Force of Attraction:</strong> There exists a force of attraction between the particles of matter. This force is maximum in solids and minimum in gases.</li>
+                <li><strong>Intermolecular Space:</strong> There are spaces between the particles of matter. This space varies across the three states (least in solids, most in gases).</li>
+                <li><strong>Arrangement:</strong> The state of matter (solid, liquid, gas) depends entirely on how the particles are arranged due to the balance between intermolecular forces and kinetic energy.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q6. (a) What do you understand by 'lateral inversion'? Give one practical example.<br>(b) State three primary characteristics of the image formed by a plane mirror.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>(a) Lateral Inversion:</strong> <em>(2 Marks)</em><br>
+            The phenomenon where the right side of an object appears as the left side of the image, and vice-versa, when reflected in a plane mirror is called lateral inversion. <br>
+            <em>Example:</em> The word 'AMBULANCE' is written laterally inverted on vehicles so drivers ahead can read it correctly in their rear-view mirrors.</p>
+            <p><strong>(b) Characteristics of Plane Mirror Image:</strong> <em>(3 Marks - 1 each)</em></p>
+            <ul>
+                <li>The image formed is <strong>virtual</strong> (cannot be obtained on a screen) and <strong>erect</strong> (upright).</li>
+                <li>The image is of the <strong>same size</strong> as the object.</li>
+                <li>The image is formed at the <strong>same distance behind the mirror</strong> as the object is in front of it.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B: MATHEMATICS SOLUTIONS (20 Marks)</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q7. An unbiased coin is tossed once. What is the probability of getting (i) a head? (ii) a tail?</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p>Total possible outcomes when a coin is tossed = {Head (H), Tail (T)} = 2</p>
+            <div class="math-container">
+                $$ \text{(i) } P(\text{Head}) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{1}{2} $$
+            </div>
+            <div class="math-container">
+                $$ \text{(ii) } P(\text{Tail}) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{1}{2} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1 Mark for each correct part)</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q8. A standard die is thrown once. Find the probability of getting a prime number.</div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p>Total possible outcomes when a die is thrown = {1, 2, 3, 4, 5, 6}. Therefore, Total outcomes = 6.</p>
+            <p>Favorable outcomes (Prime numbers) = {2, 3, 5}. Number of favorable outcomes = 3.</p>
+            <div class="math-container">
+                $$ P(\text{Prime Number}) = \frac{\text{Number of favorable outcomes}}{\text{Total outcomes}} $$
+            </div>
+            <div class="math-container">
+                $$ P(\text{Prime Number}) = \frac{3}{6} = \frac{1}{2} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1 Mark for identifying primes, 1 Mark for final probability)</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q9. A bag contains 4 red balls, 5 blue balls, and 3 green balls. Find the probability that the ball drawn is: (i) a blue ball. (ii) not a red ball.</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p>Total number of balls in the bag = $4 \text{ (red)} + 5 \text{ (blue)} + 3 \text{ (green)} = 12$ balls.</p>
+            <p>Total possible outcomes = 12.</p>
+            
+            <p><strong>(i) Probability of getting a blue ball:</strong></p>
+            <p>Number of blue balls (Favorable outcomes) = 5.</p>
+            <div class="math-container">
+                $$ P(\text{Blue Ball}) = \frac{5}{12} $$
+            </div>
+            
+            <p><strong>(ii) Probability of getting 'not a red ball':</strong></p>
+            <p>Number of balls that are not red = Total balls - Red balls = $12 - 4 = 8$.<br>
+            (Alternatively, Non-red balls = Blue + Green = $5 + 3 = 8$)</p>
+            <div class="math-container">
+                $$ P(\text{Not Red}) = \frac{8}{12} = \frac{2}{3} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1 Mark for total balls, 1 Mark for part (i), 1 Mark for part (ii))</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q10. The letters of the word 'MATHEMATICS' are written on cards. What is the probability of drawing a vowel?</div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p>Total number of letters in the word 'MATHEMATICS' = 11.<br>
+            So, Total possible outcomes = 11. <em>(1 Mark)</em></p>
+            
+            <p>The vowels in the word 'MATHEMATICS' are: A, E, A, I.</p>
+            <p>Number of vowels (Favorable outcomes) = 4. <em>(1 Mark)</em></p>
+            
+            <div class="math-container">
+                $$ P(\text{Drawing a Vowel}) = \frac{\text{Number of Vowels}}{\text{Total Letters}} = \frac{4}{11} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1 Mark for final probability)</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q11. In a class of 40 students, 15 like mathematics, 12 like science, and the rest like languages. Find the probability that a student chosen at random: (i) likes mathematics. (ii) likes languages. (iii) does not like science.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p>Total number of students (Total outcomes) = 40. <em>(0.5 Mark)</em></p>
+            <p>Students who like Mathematics = 15.<br>
+               Students who like Science = 12.<br>
+               Students who like Languages = $40 - (15 + 12) = 40 - 27 = 13$. <em>(1.5 Marks)</em></p>
+
+            <p><strong>(i) Probability that student likes Mathematics:</strong></p>
+            <div class="math-container">
+                $$ P(\text{Maths}) = \frac{15}{40} = \frac{3}{8} $$
+            </div>
+
+            <p><strong>(ii) Probability that student likes Languages:</strong></p>
+            <div class="math-container">
+                $$ P(\text{Languages}) = \frac{13}{40} $$
+            </div>
+
+            <p><strong>(iii) Probability that student does not like Science:</strong></p>
+            <p>Students who do not like Science = Total students - Students who like Science = $40 - 12 = 28$.<br>
+            (Or, Maths + Languages = $15 + 13 = 28$).</p>
+            <div class="math-container">
+                $$ P(\text{Not Science}) = \frac{28}{40} = \frac{7}{10} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1 Mark for each probability part)</em></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Two coins are tossed simultaneously. (i) Write the sample space. (ii) Probability of getting exactly one head. (iii) Probability of getting at least one tail.</div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <span class="solution-title">Solution:</span>
+        <div class="solution-content">
+            <p><strong>(i) Sample Space:</strong></p>
+            <p>When two coins are tossed, the possible outcomes are:<br>
+            Sample Space (S) = { (H, H), (H, T), (T, H), (T, T) }<br>
+            Total number of possible outcomes = 4. <em>(2 Marks)</em></p>
+
+            <p><strong>(ii) Probability of getting exactly one head:</strong></p>
+            <p>Outcomes with exactly one head = { (H, T), (T, H) }<br>
+            Number of favorable outcomes = 2.</p>
+            <div class="math-container">
+                $$ P(\text{Exactly one head}) = \frac{2}{4} = \frac{1}{2} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1.5 Marks)</em></p>
+
+            <p><strong>(iii) Probability of getting at least one tail:</strong></p>
+            <p>"At least one tail" means 1 tail or 2 tails.<br>
+            Favorable outcomes = { (H, T), (T, H), (T, T) }<br>
+            Number of favorable outcomes = 3.</p>
+            <div class="math-container">
+                $$ P(\text{At least one tail}) = \frac{3}{4} $$
+            </div>
+            <p style="font-size: 10pt; color: #555;"><em>(1.5 Marks)</em></p>
+        </div>
+    </div>
+
+</body>
+</html>

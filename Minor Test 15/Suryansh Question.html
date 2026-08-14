@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .part-header { font-size: 14pt; font-weight: bold; margin-top: 30px; text-align: center; background-color: #f0f0f0; padding: 5px; border: 1px solid #ccc; }
+        .question-container { margin-bottom: 15px; display: flex; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-wrap: break-word; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-bottom: 5px;}
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive adjustments for mobile and tablets */
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; gap: 5px; text-align: center; }
+            .q-num { width: 25px; }
+        }
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .part-header { background-color: transparent !important; border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test - 01</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Science & Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into two parts: Part I (Science) and Part II (Mathematics), each carrying 20 marks.</li>
+                <li>Write the question number clearly before answering.</li>
+                <li>Draw neat, labeled diagrams wherever necessary. Show all mathematical steps clearly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="part-header">PART I : SCIENCE (Metals & Non-Metals) - 20 Marks</div>
+
+    <div class="section-header">Very Short Answer Type Questions <span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define the terms <em>malleability</em> and <em>ductility</em>. Give one example of a metal that exhibits both properties highly.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Why is sodium metal always kept immersed in kerosene oil? State the reason scientifically.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Differentiate between metals and non-metals based on their electrical conductivity. Name one non-metal that is an exception to this rule.</div>
+    </div>
+
+    <div class="section-header">Short Answer Type Questions <span class="marks-info">(Attempt all questions - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">What happens when typical metals react with dilute acids? Explain by writing the word equation for the reaction between Zinc and dilute Hydrochloric acid. Mention how you would test the gas evolved.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">A student placed a copper coin in a beaker containing zinc sulphate solution. Will any reaction occur? Give a reason for your answer and state the underlying principle.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Non-metals are essential for our existence. Justify this statement by listing three vital uses of non-metals in our daily lives or industry.</div>
+    </div>
+
+    <div class="section-header">Long Answer Type Question <span class="marks-info">(Attempt all questions - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            (a) What do you understand by a 'displacement reaction'? (2 marks)<br>
+            (b) What happens when an iron nail is placed in a solution of copper sulphate? Write the word equation and describe the color changes observed in the solution and on the nail. (3 marks)
+        </div>
+    </div>
+
+    <div class="part-header">PART II : MATHEMATICS (Algebraic Expressions) - 20 Marks</div>
+
+    <div class="section-header">Very Short Answer Type Questions <span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            <div class="math-scroll">Identify the terms and their respective numerical coefficients in the expression: \( 5x^2y - 3xy^2 + 7 \)</div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            <div class="math-scroll">Subtract \( 3a - 4b + 5c \) from \( 5a + 2b - 3c \).</div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            <div class="math-scroll">Find the value of the expression \( 2x^2 - 3x + 5 \) when \( x = -2 \).</div>
+        </div>
+    </div>
+
+    <div class="section-header">Short Answer Type Questions <span class="marks-info">(Attempt all questions - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="math-scroll">Simplify the expression and find its value if \( a = 5 \) and \( b = -3 \):<br> \( 2(a^2 + ab) + 3 - ab \)</div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="math-scroll">Add the following algebraic terms: \( 4x^2y, -3xy^2, -5xy^2, \) and \( 5x^2y \). Group the like terms together clearly.</div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="math-scroll">What should be added to \( x^2 + xy + y^2 \) to obtain \( 2x^2 + 3xy \)?</div>
+        </div>
+    </div>
+
+    <div class="section-header">Long Answer Type Question <span class="marks-info">(Attempt all questions - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="math-scroll">(a) From the sum of \( 2y^2 + 3yz \) and \( -y^2 - yz - z^2 \), subtract the sum of \( 3y^2 - z^2 \) and \( -y^2 + yz + z^2 \). (3 marks)</div>
+            </div>
+            <div class="sub-question">
+                (b) Classify the following algebraic expressions as monomials, binomials, or trinomials: (2 marks)
+                <div class="math-scroll" style="margin-top: 5px;">
+                    (i) \( 4y - 7z \) &nbsp;&nbsp;&nbsp; (ii) \( 100 \) &nbsp;&nbsp;&nbsp; (iii) \( x + y - xy \) &nbsp;&nbsp;&nbsp; (iv) \( 5x^2 \)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • All the Best!</div>
+</body>
+</html>

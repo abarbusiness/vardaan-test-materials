@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; /* Reduced padding for mobile */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px; /* Limit size on large screens */
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span {
+            margin: 5px; /* Spacing for wrapped items */
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left; /* Ensure left alignment */
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid; /* Prevent breaking inside a question */
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto; /* Handle long math equations */
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            page-break-inside: avoid;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .q-num { width: 30px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .question-container { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test: Maths & Science (CBSE)</div>
+        <div class="exam-details">
+            <span>Class: 7</span>
+            <span>Subject: Science & Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Science questions are presented first, followed by Maths questions in each section.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            State whether the following are physical or chemical changes:<br>
+            (a) Melting of wax<br>
+            (b) Rusting of iron
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            Explain briefly why tearing a sheet of paper is considered a physical change while burning the same paper is a chemical change.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            Evaluate the following decimal addition and subtraction:<br>
+            (a) \( 15.65 + 3.2 \) <br>
+            (b) \( 24.5 - 11.23 \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            Multiply the following decimals:<br>
+            (a) \( 3.5 \times 10 \) <br>
+            (b) \( 1.2 \times 0.4 \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            Divide the following decimals:<br>
+            (a) \( 14.5 \div 10 \) <br>
+            (b) \( 3.6 \div 0.6 \)
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            Identify the gas produced when vinegar (acetic acid) is added to baking soda (sodium hydrogencarbonate). Write the word equation for this reaction. What type of change is this?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            List three differences between a physical change and a chemical change.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            Rahul travelled \( 14.5 \text{ km} \) by bus and \( 2.75 \text{ km} \) by auto rickshaw to reach his school. 
+            <br>(a) What is the total distance he travelled?
+            <br>(b) Express the total distance in meters.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            A car covers a distance of \( 89.1 \text{ km} \) in \( 2.2 \text{ hours} \). What is the average distance covered by it in 1 hour?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            Solve the following expression using the rules of operations on decimals:<br>
+            \( 12.5 + (3.4 \times 2) - 1.5 \)
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            (a) Explain the process of rusting of iron. Write the conditions necessary for rusting to occur. (3 marks)<br>
+            (b) Suggest two methods to prevent the rusting of iron. (2 marks)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            When a candle burns, both physical and chemical changes take place.<br>
+            (a) Identify and explain the physical change. (2 marks)<br>
+            (b) Identify and explain the chemical change. (2 marks)<br>
+            (c) Give one more example of a daily life process where both changes occur simultaneously. (1 mark)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            A rectangular garden has a length of \( 15.75 \text{ m} \) and a width of \( 8.4 \text{ m} \).<br>
+            (a) Find the perimeter of the garden. (2 marks)<br>
+            (b) Find the area of the garden. (2 marks)<br>
+            (c) If fencing costs ₹ \( 20.50 \) per meter, calculate the total cost of fencing the garden. (1 mark)
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

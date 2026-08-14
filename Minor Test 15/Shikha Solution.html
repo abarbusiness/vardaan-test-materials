@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        window.MathJax = {
+          chtml: { displayAlign: 'left' },
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 16px; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 2rem; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a4f76; }
+        .test-name { font-size: 1.25rem; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; font-weight: bold; font-size: 1rem; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        
+        .part-header { text-align: center; font-size: 1.3rem; font-weight: bold; margin-top: 30px; margin-bottom: 20px; background-color: #f0f0f0; padding: 8px; border: 1px solid #ccc; }
+        .q-wrapper { margin-bottom: 30px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; page-break-inside: avoid; }
+        .q-header { background-color: #f9f9f9; padding: 10px 15px; border-bottom: 1px dashed #ccc; display: flex; justify-content: space-between; align-items: flex-start; }
+        .q-text-area { flex-grow: 1; padding-right: 15px; font-weight: 600; overflow-x: auto; }
+        .q-marks { font-weight: bold; color: #d32f2f; white-space: nowrap; flex-shrink: 0; }
+        .s-body { padding: 15px; }
+        .s-heading { font-weight: bold; color: #2e7d32; text-decoration: underline; margin-bottom: 10px; }
+        
+        .math-break { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block; margin: 10px 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9rem; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 14px; }
+            .institute-name { font-size: 1.5rem; }
+            .exam-details { flex-direction: column; align-items: flex-start; gap: 5px; }
+            .q-header { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-end; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+            .part-header, .q-header { background-color: #f0f0f0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Detailed Solutions & Marking Scheme</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subjects: Science & Maths</span>
+            <span>Test: Minor Test </span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="part-header">PART I : SCIENCE (20 Marks)</div>
+
+    <!-- Q1 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q1. State any two fundamental differences between an Element and a Compound.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;" cellpadding="5">
+                <tr style="background-color: #eee;">
+                    <th>Element</th>
+                    <th>Compound</th>
+                </tr>
+                <tr>
+                    <td>1. It is a pure substance made up of only one kind of atom.</td>
+                    <td>1. It is a pure substance made up of two or more different elements combined chemically.</td>
+                </tr>
+                <tr>
+                    <td>2. It cannot be broken down into simpler substances by physical or chemical means.</td>
+                    <td>2. It can be broken down into its constituent elements by chemical methods.</td>
+                </tr>
+            </table>
+            <p><em>(Award 1 mark for each correct difference)</em></p>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q2. Define contact and non-contact forces. Give one example of each.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <ul>
+                <li><strong>Contact Force:</strong> The force that acts on a body only when it is in physical contact with the object exerting the force. <br>
+                <em>Example:</em> Frictional force, Muscular force. (1 Mark)</li>
+                <li><strong>Non-Contact Force:</strong> The force that acts on a body from a distance without any physical contact. <br>
+                <em>Example:</em> Gravitational force, Magnetic force. (1 Mark)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q3. Identify the most appropriate separation technique used for separating: <br> (a) Iron filings from sand <br> (b) Pure water from a salt solution <br> (c) Mud from muddy water</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <ol type="a">
+                <li><strong>Magnetic Separation</strong> (Since iron is magnetic and sand is non-magnetic).</li>
+                <li><strong>Distillation</strong> (Evaporation leaves salt behind, but distillation allows us to collect pure water by condensation).</li>
+                <li><strong>Filtration or Decantation</strong> (Filtration is the most appropriate as it completely separates suspended mud particles).</li>
+            </ol>
+            <p><em>(1 Mark for each correct technique)</em></p>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q4. A heavy wooden box is resting on the floor. State any three effects that a force can produce on a body, illustrating them with examples from everyday life.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p>A force can produce the following effects (any three):</p>
+            <ol>
+                <li><strong>Force can initiate motion in a stationary object:</strong> Pushing the heavy wooden box makes it move.</li>
+                <li><strong>Force can change the speed or direction of a moving object:</strong> Applying brakes to a moving bicycle.</li>
+                <li><strong>Force can change the shape and size of an object:</strong> Squeezing a rubber ball or stretching a rubber band.</li>
+                <li><strong>Force can stop a moving object:</strong> Catching a moving cricket ball.</li>
+            </ol>
+            <p><em>(1 Mark for each correct effect with an example)</em></p>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q5. (a) Define a mixture. (2 Marks)<br>(b) State three distinct properties that differentiate a mixture from a chemical compound. (3 Marks)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p><strong>(a) Mixture:</strong> A mixture is a substance consisting of two or more elements or compounds mechanically mixed together in any proportion, where they do not combine chemically. <em>(2 Marks)</em></p>
+            <p><strong>(b) Differences:</strong> <em>(1 Mark each, any three)</em></p>
+            <ul>
+                <li><strong>Composition:</strong> In a mixture, constituents can be present in any ratio. In a compound, constituents are present in a fixed mass ratio.</li>
+                <li><strong>Properties:</strong> A mixture shows the properties of its constituent substances. A compound has entirely new properties different from its constituents.</li>
+                <li><strong>Separation:</strong> Constituents of a mixture can be separated by simple physical methods. Constituents of a compound can only be separated by chemical methods.</li>
+                <li><strong>Energy change:</strong> No energy is generally released or absorbed when a mixture is formed. Energy in the form of heat or light is usually released or absorbed during compound formation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q6. (a) What is friction? Which type of force is it? (2 Marks)<br>(b) "Friction is a necessary evil." Justify by stating two advantages and two disadvantages. (3 Marks)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p><strong>(a) Friction:</strong> The force that opposes the relative motion between two surfaces in contact is called friction. It is a <strong>Contact Force</strong>. <em>(1 + 1 = 2 Marks)</em></p>
+            <p><strong>(b) Advantages (Any two for 1.5 Marks):</strong></p>
+            <ul>
+                <li>It allows us to walk on the ground without slipping.</li>
+                <li>It enables vehicles to stop when brakes are applied.</li>
+                <li>It helps us to write on paper using a pen or pencil.</li>
+            </ul>
+            <p><strong>Disadvantages (Any two for 1.5 Marks):</strong></p>
+            <ul>
+                <li>It causes wear and tear of moving parts in machinery and soles of shoes.</li>
+                <li>It produces unnecessary heat, wasting energy (e.g., in car engines).</li>
+                <li>It reduces the efficiency of machines.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="part-header" style="page-break-before: always;">PART II : MATHEMATICS (20 Marks)</div>
+
+    <!-- Q7 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q7. Convert the fractions into decimals: (a) \( \frac{45}{100} \) (b) \( 7\frac{3}{10} \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <div class="math-break">
+                <strong>(a)</strong> \( \frac{45}{100} = 0.45 \) <br>
+                <em>(Logic: There are two zeros in the denominator, so place the decimal point two places from the right). (1 Mark)</em>
+            </div>
+            <div class="math-break">
+                <strong>(b)</strong> \( 7\frac{3}{10} = \frac{73}{10} = 7.3 \) OR \( 7 + 0.3 = 7.3 \) <br>
+                <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q8. Arrange in ascending order: \( 3.14, \quad 3.41, \quad 3.04, \quad 3.104, \quad 3.401 \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p>Step 1: Convert all decimals to like decimals (same number of decimal places, i.e., 3).</p>
+            <div class="math-break">
+                \( 3.140, \quad 3.410, \quad 3.040, \quad 3.104, \quad 3.401 \)
+            </div>
+            <p>Step 2: Compare the whole numbers (all are 3), then compare the decimal parts:</p>
+            <div class="math-break">
+                \( 040 < 104 < 140 < 401 < 410 \)
+            </div>
+            <p>Step 3: Arrange in ascending order:</p>
+            <div class="math-break">
+                <strong>\( 3.04 < 3.104 < 3.14 < 3.401 < 3.41 \)</strong>
+            </div>
+            <p><em>(2 Marks for correct final sequence. 1 Mark if one misplaced).</em></p>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q9. Simplify: \( 14.56 + 23.05 - 8.791 \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p>Step 1: Perform the addition first according to BODMAS rule.</p>
+            <div class="math-break">
+                \( \phantom{+} 14.56 \) <br>
+                \( \underline{+ 23.05} \) <br>
+                \( \phantom{+} 37.61 \) &nbsp;&nbsp;&nbsp;<em>(1.5 Marks)</em>
+            </div>
+            <p>Step 2: Convert to like decimals and perform subtraction.</p>
+            <div class="math-break">
+                \( \phantom{-} 37.610 \) <br>
+                \( \underline{- \phantom{0}8.791} \) <br>
+                <strong>\( \phantom{-} 28.819 \)</strong> &nbsp;&nbsp;&nbsp;<em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q10. A tailor requires \( 2.45 \) meters of cloth to stitch one shirt. Calculate cloth required for 15 shirts.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p>Cloth required for 1 shirt = \( 2.45 \text{ m} \)</p>
+            <p>Number of shirts to be stitched = 15</p>
+            <p>Total cloth required = Cloth for one shirt \( \times \) Total number of shirts</p>
+            <div class="math-break">
+                \( \text{Total Cloth} = 2.45 \times 15 \)
+            </div>
+            <div class="math-break">
+                \( \phantom{\times} 245 \) (ignoring decimal for calculation)<br>
+                \( \underline{\times \phantom{0}15} \)<br>
+                \( 1225 \)<br>
+                \( \underline{2450} \)<br>
+                \( 3675 \)
+            </div>
+            <p>Since there are two decimal places in \( 2.45 \), the final product will have two decimal places.</p>
+            <p><strong>Total cloth required = \( 36.75 \text{ meters} \).</strong></p>
+            <p><em>(Formula/setup: 1 Mark. Calculation: 1 Mark. Final Answer with Units: 1 Mark).</em></p>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q11. Evaluate: (a) \( 4.56 \times 1.2 \) (b) \( 15.12 \div 3.6 \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <div class="math-break">
+                <strong>(a) Multiplication (2 Marks):</strong><br>
+                Ignore decimals and multiply: \( 456 \times 12 = 5472 \) <br>
+                Total decimal places = \( 2 \text{ (from 4.56)} + 1 \text{ (from 1.2)} = 3 \) decimal places. <br>
+                Place decimal 3 digits from the right: <br>
+                <strong>\( 4.56 \times 1.2 = 5.472 \)</strong>
+            </div>
+            <br>
+            <div class="math-break">
+                <strong>(b) Division (3 Marks):</strong><br>
+                \( 15.12 \div 3.6 = \frac{15.12}{3.6} \) <br>
+                Multiply numerator and denominator by 10 to remove decimal from divisor: <br>
+                \( = \frac{151.2}{36} \) <br>
+                Now divide 151.2 by 36: <br>
+                \( 36 \times 4 = 144 \) <br>
+                \( 151 - 144 = 7 \). Bring down 2, making it 72 (place decimal point in quotient). <br>
+                \( 36 \times 2 = 72 \) <br>
+                <strong>Quotient = \( 4.2 \)</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-wrapper">
+        <div class="q-header">
+            <div class="q-text-area">Q12. Rahul bought \( 5.5 \text{ kg} \) of apples at Rs. 120.50/kg and \( 2.75 \text{ kg} \) of oranges at Rs. 80.25/kg. Calculate total amount paid.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="s-body">
+            <div class="s-heading">Solution:</div>
+            <p><strong>Step 1: Cost of Apples (2 Marks)</strong></p>
+            <div class="math-break">
+                Quantity of apples = \( 5.5 \text{ kg} \) <br>
+                Rate per kg = Rs. 120.50 <br>
+                Total cost of apples = \( 5.5 \times 120.50 \) <br>
+                Calculation: \( 12050 \times 55 = 662750 \). Placing decimal 3 places from right (2 from 120.50 + 1 from 5.5): <br>
+                Cost of apples = <strong>Rs. 662.75</strong>
+            </div>
+            
+            <p><strong>Step 2: Cost of Oranges (2 Marks)</strong></p>
+            <div class="math-break">
+                Quantity of oranges = \( 2.75 \text{ kg} \) <br>
+                Rate per kg = Rs. 80.25 <br>
+                Total cost of oranges = \( 2.75 \times 80.25 \) <br>
+                Calculation: \( 8025 \times 275 = 2206875 \). Placing decimal 4 places from right: <br>
+                Cost of oranges = <strong>Rs. 220.6875</strong> (which can be rounded to Rs. 220.69 in real life, but exact calculation is kept for maths).
+            </div>
+
+            <p><strong>Step 3: Total Amount Paid (1 Mark)</strong></p>
+            <div class="math-break">
+                Total Amount = Cost of Apples + Cost of Oranges <br>
+                Total Amount = \( 662.75 + 220.6875 \) <br>
+                Make like decimals: <br>
+                \( \phantom{+} 662.7500 \) <br>
+                \( \underline{+ 220.6875} \) <br>
+                <strong>\( \phantom{+} 883.4375 \)</strong>
+            </div>
+            <p><strong>Final Answer: The total amount paid by Rahul is Rs. 883.4375 (or Rs. 883.44 approx).</strong></p>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b30000; }
+        .exam-details { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .exam-details span { margin: 2px 5px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; background-color: #f2f2f2; padding: 5px; border: 1px solid #ccc; font-size: 13pt; }
+        
+        .sol-container { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-box { display: flex; justify-content: space-between; background-color: #f9f9f9; padding: 10px; border-left: 4px solid #0055aa; margin-bottom: 10px; }
+        .q-text-flex { display: flex; flex-grow: 1;}
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; color: #0055aa; }
+        .q-text { font-style: italic; font-size: 11pt; }
+        .q-marks { font-weight: bold; color: #b30000; white-space: nowrap; margin-left: 10px; }
+        
+        .answer-box { padding-left: 35px; overflow-x: auto; } /* overflow for math equations */
+        .step { margin-bottom: 8px; }
+        .final-ans { font-weight: bold; border: 1px solid #333; padding: 3px 8px; display: inline-block; margin-top: 5px; background-color: #e6f7ff; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            body { padding: 10mm 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .question-box { flex-direction: column; align-items: flex-start; }
+            .q-marks { margin-left: 0; margin-top: 5px; align-self: flex-end; }
+            .answer-box { padding-left: 10px; }
+        }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .answer-box { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTION KEY - MIT 15</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q1.</div>
+                <div class="q-text">Add the following algebraic expressions: $3x^2 - 5x + 7$ and $-2x^2 + 3x - 4$.</div>
+            </div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Arranging the like terms together:</div>
+            <div class="step">
+                \begin{aligned}
+                & (3x^2 - 5x + 7) + (-2x^2 + 3x - 4) \\
+                &= 3x^2 - 2x^2 - 5x + 3x + 7 - 4 \\
+                &= (3 - 2)x^2 + (-5 + 3)x + (7 - 4) \\
+                &= x^2 - 2x + 3
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $x^2 - 2x + 3$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q2.</div>
+                <div class="q-text">Subtract $4a - 7ab + 3b + 12$ from $12a - 9ab + 5b - 3$.</div>
+            </div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">The expression to be subtracted is written inside brackets with a minus sign in front:</div>
+            <div class="step">
+                \begin{aligned}
+                & (12a - 9ab + 5b - 3) - (4a - 7ab + 3b + 12) \\
+                &= 12a - 9ab + 5b - 3 - 4a + 7ab - 3b - 12 \quad \text{(Changing signs)} \\
+                &= (12a - 4a) + (-9ab + 7ab) + (5b - 3b) + (-3 - 12) \\
+                &= 8a - 2ab + 2b - 15
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $8a - 2ab + 2b - 15$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q3.</div>
+                <div class="q-text">Find the product of the binomials: $(3x - 2y)(4x + 5y)$.</div>
+            </div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Multiply each term of the first binomial by each term of the second:</div>
+            <div class="step">
+                \begin{aligned}
+                & (3x - 2y)(4x + 5y) \\
+                &= 3x(4x + 5y) - 2y(4x + 5y) \\
+                &= 12x^2 + 15xy - 8xy - 10y^2 \\
+                &= 12x^2 + 7xy - 10y^2
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $12x^2 + 7xy - 10y^2$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q4.</div>
+                <div class="q-text">Expand the following expression using a suitable identity: $(2p + 3q)^2$.</div>
+            </div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Using the standard identity: $(a + b)^2 = a^2 + 2ab + b^2$</div>
+            <div class="step">Here, $a = 2p$ and $b = 3q$.</div>
+            <div class="step">
+                \begin{aligned}
+                (2p + 3q)^2 &= (2p)^2 + 2(2p)(3q) + (3q)^2 \\
+                &= 4p^2 + 12pq + 9q^2
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $4p^2 + 12pq + 9q^2$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q5.</div>
+                <div class="q-text">Simplify the given expression: $5x(x - 2) - 3x^2 + 10x$.</div>
+            </div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">First, expand the bracket:</div>
+            <div class="step">
+                \begin{aligned}
+                & 5x(x - 2) - 3x^2 + 10x \\
+                &= 5x^2 - 10x - 3x^2 + 10x \\
+                &= (5x^2 - 3x^2) + (-10x + 10x) \\
+                &= 2x^2 + 0
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $2x^2$</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q6.</div>
+                <div class="q-text">Divide the polynomial $15m^3n^2 - 10m^2n^3 + 5mn$ by the monomial $5mn$.</div>
+            </div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Divide each term of the polynomial by the monomial separately:</div>
+            <div class="step">
+                \begin{aligned}
+                & \frac{15m^3n^2 - 10m^2n^3 + 5mn}{5mn} \\
+                &= \frac{15m^3n^2}{5mn} - \frac{10m^2n^3}{5mn} + \frac{5mn}{5mn} \\
+                &= 3m^{3-1}n^{2-1} - 2m^{2-1}n^{3-1} + 1 \\
+                &= 3m^2n - 2mn^2 + 1
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $3m^2n - 2mn^2 + 1$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q7.</div>
+                <div class="q-text">Evaluate the square of $99$ by using a standard algebraic identity.</div>
+            </div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">We can write $99$ as $(100 - 1)$.</div>
+            <div class="step">Using the identity: $(a - b)^2 = a^2 - 2ab + b^2$</div>
+            <div class="step">Here, $a = 100$ and $b = 1$.</div>
+            <div class="step">
+                \begin{aligned}
+                99^2 &= (100 - 1)^2 \\
+                &= (100)^2 - 2(100)(1) + (1)^2 \\
+                &= 10000 - 200 + 1 \\
+                &= 9800 + 1 \\
+                &= 9801
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $9801$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q8.</div>
+                <div class="q-text">Multiply and simplify: $(x + y)(x^2 - xy + y^2)$. What do you observe?</div>
+            </div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Distribute the terms of the binomial into the trinomial:</div>
+            <div class="step">
+                \begin{aligned}
+                & (x + y)(x^2 - xy + y^2) \\
+                &= x(x^2 - xy + y^2) + y(x^2 - xy + y^2) \\
+                &= (x^3 - x^2y + xy^2) + (x^2y - xy^2 + y^3) \\
+                &= x^3 - x^2y + x^2y + xy^2 - xy^2 + y^3 \\
+                &= x^3 + 0 + 0 + y^3 \\
+                &= x^3 + y^3
+                \end{aligned}
+            </div>
+            <div class="step"><strong>Observation:</strong> This is a standard identity for the sum of cubes $(x^3 + y^3)$.</div>
+            <div class="final-ans">Ans: $x^3 + y^3$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q9.</div>
+                <div class="q-text">If $x + \frac{1}{x} = 4$, find the value of $x^2 + \frac{1}{x^2}$.</div>
+            </div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">Given: $x + \frac{1}{x} = 4$</div>
+            <div class="step">Squaring both sides:</div>
+            <div class="step">
+                \begin{aligned}
+                \left(x + \frac{1}{x}\right)^2 &= 4^2 \\
+                x^2 + 2(x)\left(\frac{1}{x}\right) + \left(\frac{1}{x}\right)^2 &= 16 \quad \text{[Using } (a+b)^2 = a^2+2ab+b^2\text{]}\\
+                x^2 + 2 + \frac{1}{x^2} &= 16 \\
+                x^2 + \frac{1}{x^2} &= 16 - 2 \\
+                x^2 + \frac{1}{x^2} &= 14
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $14$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q10.</div>
+                <div class="q-text">Subtract the sum of $3l - 4m - 7n^2$ and $2l + 3m - 4n^2$ from the sum of $9l + 2m - 3n^2$ and $-3l + m + 4n^2$.</div>
+            </div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step"><strong>Step 1:</strong> Find the first sum.</div>
+            <div class="step">
+                \begin{aligned}
+                S_1 &= (3l - 4m - 7n^2) + (2l + 3m - 4n^2) \\
+                &= 5l - m - 11n^2
+                \end{aligned}
+            </div>
+            <div class="step"><strong>Step 2:</strong> Find the second sum.</div>
+            <div class="step">
+                \begin{aligned}
+                S_2 &= (9l + 2m - 3n^2) + (-3l + m + 4n^2) \\
+                &= 6l + 3m + n^2
+                \end{aligned}
+            </div>
+            <div class="step"><strong>Step 3:</strong> Subtract $S_1$ from $S_2$.</div>
+            <div class="step">
+                \begin{aligned}
+                & S_2 - S_1 \\
+                &= (6l + 3m + n^2) - (5l - m - 11n^2) \\
+                &= 6l + 3m + n^2 - 5l + m + 11n^2 \\
+                &= l + 4m + 12n^2
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $l + 4m + 12n^2$</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q11.</div>
+                <div class="q-text">Simplify the following expression by correctly removing the brackets: <br> $2x[3x - (4x - 5)] - 3[x^2 - (2x - 3)]$</div>
+            </div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution:</strong></div>
+            <div class="step">We follow BODMAS rules and open the innermost brackets first.</div>
+            <div class="step">
+                \begin{aligned}
+                & 2x[3x - (4x - 5)] - 3[x^2 - (2x - 3)] \\
+                &= 2x[3x - 4x + 5] - 3[x^2 - 2x + 3] \quad \text{(Removing innermost parentheses)} \\
+                &= 2x[-x + 5] - 3[x^2 - 2x + 3] \quad \text{(Simplifying inside square brackets)} \\
+                &= (2x)(-x) + (2x)(5) - 3(x^2) - 3(-2x) - 3(3) \quad \text{(Multiplying out)} \\
+                &= -2x^2 + 10x - 3x^2 + 6x - 9 \\
+                &= (-2x^2 - 3x^2) + (10x + 6x) - 9 \quad \text{(Grouping like terms)} \\
+                &= -5x^2 + 16x - 9
+                \end{aligned}
+            </div>
+            <div class="final-ans">Ans: $-5x^2 + 16x - 9$</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q12.</div>
+                <div class="q-text">
+                    Use suitable standard identities to solve the following:<br>
+                    (a) Evaluate without direct multiplication: $103 \times 97$.<br>
+                    (b) Prove that: $(3a + 5b)^2 - 60ab = (3a - 5b)^2$.
+                </div>
+            </div>
+            <div class="q-marks">[2 + 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Solution (a):</strong> [2 Marks]</div>
+            <div class="step">We can rewrite the numbers as:</div>
+            <div class="step">
+                \begin{aligned}
+                103 \times 97 &= (100 + 3)(100 - 3)
+                \end{aligned}
+            </div>
+            <div class="step">Using identity: $(a + b)(a - b) = a^2 - b^2$</div>
+            <div class="step">
+                \begin{aligned}
+                &= (100)^2 - (3)^2 \\
+                &= 10000 - 9 \\
+                &= 9991
+                \end{aligned}
+            </div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Solution (b):</strong> [3 Marks]</div>
+            <div class="step">To prove LHS = RHS. Let's solve the LHS (Left Hand Side):</div>
+            <div class="step">
+                \begin{aligned}
+                LHS &= (3a + 5b)^2 - 60ab \\
+                &= [(3a)^2 + 2(3a)(5b) + (5b)^2] - 60ab \quad \text{[Using } (x+y)^2 = x^2+2xy+y^2\text{]}\\
+                &= 9a^2 + 30ab + 25b^2 - 60ab \\
+                &= 9a^2 + (30ab - 60ab) + 25b^2 \\
+                &= 9a^2 - 30ab + 25b^2
+                \end{aligned}
+            </div>
+            <div class="step">Now, expanding RHS (Right Hand Side):</div>
+            <div class="step">
+                \begin{aligned}
+                RHS &= (3a - 5b)^2 \\
+                &= (3a)^2 - 2(3a)(5b) + (5b)^2 \quad \text{[Using } (x-y)^2 = x^2-2xy+y^2\text{]}\\
+                &= 9a^2 - 30ab + 25b^2
+                \end{aligned}
+            </div>
+            <div class="step">Since LHS = RHS, the statement is proved.</div>
+            <div class="final-ans">Hence Proved.</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="question-box">
+            <div class="q-text-flex">
+                <div class="q-num">Q13.</div>
+                <div class="q-text">
+                    The length and breadth of a rectangular field are represented by the expressions $(5x - 2y)$ units and $(3x + 4y)$ units, respectively.<br>
+                    (a) Find the perimeter of the rectangle.<br>
+                    (b) Find the area of the rectangle.
+                </div>
+            </div>
+            <div class="q-marks">[2 + 3 Marks]</div>
+        </div>
+        <div class="answer-box">
+            <div class="step"><strong>Given:</strong></div>
+            <div class="step">Length $(L) = (5x - 2y)$ units</div>
+            <div class="step">Breadth $(B) = (3x + 4y)$ units</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Solution (a): Perimeter</strong> [2 Marks]</div>
+            <div class="step">Formula: $\text{Perimeter} = 2(L + B)$</div>
+            <div class="step">
+                \begin{aligned}
+                \text{Perimeter} &= 2 [ (5x - 2y) + (3x + 4y) ] \\
+                &= 2 [ 5x + 3x - 2y + 4y ] \\
+                &= 2 [ 8x + 2y ] \\
+                &= 16x + 4y \text{ units}
+                \end{aligned}
+            </div>
+            <div class="final-ans">Perimeter: $16x + 4y$ units</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Solution (b): Area</strong> [3 Marks]</div>
+            <div class="step">Formula: $\text{Area} = L \times B$</div>
+            <div class="step">
+                \begin{aligned}
+                \text{Area} &= (5x - 2y)(3x + 4y) \\
+                &= 5x(3x + 4y) - 2y(3x + 4y) \\
+                &= 15x^2 + 20xy - 6xy - 8y^2 \\
+                &= 15x^2 + 14xy - 8y^2 \text{ sq. units}
+                \end{aligned}
+            </div>
+            <div class="final-ans">Area: $15x^2 + 14xy - 8y^2$ sq. units</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Verified Academic Key</div>
+</body>
+</html>
