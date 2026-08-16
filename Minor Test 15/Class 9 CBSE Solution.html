@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            overflow-x: hidden;
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            border-bottom: 1px dashed #000;
+            font-size: 14pt; 
+            padding-bottom: 5px;
+            color: #1565c0;
+        }
+        
+        .q-block { 
+            margin-bottom: 30px; 
+            display: flex;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
+        .q-content-wrapper {
+            flex-grow: 1;
+            padding-right: 20px;
+            max-width: calc(100% - 70px);
+        }
+        .q-marks {
+            font-weight: bold;
+            color: #d32f2f;
+            min-width: 70px;
+            text-align: right;
+            flex-shrink: 0;
+            font-size: 11pt;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .solution-text {
+            margin-top: 10px;
+        }
+        .final-answer {
+            font-weight: bold;
+            border: 1px solid #4caf50;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #e8f5e9;
+            word-break: break-all;
+        }
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 14pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .q-block { 
+                flex-direction: column; 
+            }
+            .q-content-wrapper {
+                max-width: 100%;
+                padding-right: 0;
+            }
+            .q-marks {
+                text-align: left;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ccc;
+            }
+            .MathJax {
+                max-width: 100%;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+            mjx-container[jax="CHTML"][display="true"] {
+                margin: 1em 0 !important;
+                text-align: left !important;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; overflow-x: hidden; } 
+            .q-block { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Detailed Solutions & Marking Scheme: Coordinate Geo & Circles</div>
+        <div style="margin-top: 5px;">Class: 9 CBSE | Subject: Mathematics (New NCERT)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q1. In which quadrant or on which axis do the points \( A(-3, 5) \) and \( B(0, -4) \) lie?</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                For point \( A(-3, 5) \): The x-coordinate is negative and the y-coordinate is positive. Hence, it lies in the <strong>II Quadrant</strong>.<br>
+                For point \( B(0, -4) \): The x-coordinate is zero, which means it lies on the y-axis. Since the y-coordinate is negative, it lies on the <strong>Negative y-axis</strong>.
+                <div class="final-answer">A: II Quadrant, B: y-axis</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q2. Write the coordinates of a point which lies on the x-axis and is at a distance of 7 units in the negative direction of the x-axis. Also, state its perpendicular distance from the y-axis.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                A point on the x-axis has its y-coordinate as \( 0 \).<br>
+                Since it is at a distance of 7 units in the negative direction, its x-coordinate is \( -7 \).<br>
+                Coordinates of the point = \( (-7, 0) \).<br>
+                Perpendicular distance from the y-axis is the absolute value of its x-coordinate = \( |-7| = 7 \) units.
+                <div class="final-answer">Coordinates: \( (-7, 0) \), Distance: 7 units</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q3. If the length of a chord of a circle is 16 cm and it is at a perpendicular distance of 6 cm from the centre of the circle, then find the radius of the circle.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Let \( AB \) be the chord of length 16 cm and \( O \) be the centre. Let \( OM \perp AB \).<br>
+                We know the perpendicular from the centre to a chord bisects the chord.<br>
+                \( AM = MB = \frac{16}{2} = 8 \text{ cm} \).<br>
+                Given distance \( OM = 6 \text{ cm} \).<br>
+                In right \( \Delta OMA \), using Pythagoras theorem:<br>
+                \( OA^2 = OM^2 + AM^2 \)<br>
+                \( OA^2 = 6^2 + 8^2 = 36 + 64 = 100 \)<br>
+                \( OA = \sqrt{100} = 10 \text{ cm} \).
+                <div class="final-answer">Radius = 10 cm</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q4. In a cyclic quadrilateral \( ABCD \), if \( \angle A = 70^\circ \) and \( \angle B = 100^\circ \), find the measure of \( \angle C \) and \( \angle D \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                We know that the sum of opposite angles in a cyclic quadrilateral is \( 180^\circ \).<br>
+                \( \angle A + \angle C = 180^\circ \implies 70^\circ + \angle C = 180^\circ \implies \angle C = 110^\circ \).<br>
+                \( \angle B + \angle D = 180^\circ \implies 100^\circ + \angle D = 180^\circ \implies \angle D = 80^\circ \).
+                <div class="final-answer">\( \angle C = 110^\circ, \angle D = 80^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q5. Find the perpendicular distance of the point \( P(4, -5) \) from the x-axis and the y-axis respectively.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                The perpendicular distance of a point from the x-axis is the absolute value of its y-coordinate.<br>
+                Distance from x-axis = \( |-5| = 5 \) units.<br>
+                The perpendicular distance of a point from the y-axis is the absolute value of its x-coordinate.<br>
+                Distance from y-axis = \( |4| = 4 \) units.
+                <div class="final-answer">From x-axis: 5 units, From y-axis: 4 units</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q6. Plot the points \( P(-2, 3) \), \( Q(4, 3) \), and \( R(4, -2) \) on a Cartesian plane. Find the coordinates of point \( S \) such that \( PQRS \) forms a rectangle.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Since \( PQRS \) is a rectangle, its opposite sides must be parallel to the axes.<br>
+                \( P(-2, 3) \) and \( Q(4, 3) \) share the same y-coordinate, forming a horizontal line.<br>
+                \( Q(4, 3) \) and \( R(4, -2) \) share the same x-coordinate, forming a vertical line.<br>
+                To form a rectangle, point \( S \) must align vertically with \( P \) (same x-coordinate) and horizontally with \( R \) (same y-coordinate).<br>
+                x-coordinate of \( S = -2 \) (from P).<br>
+                y-coordinate of \( S = -2 \) (from R).
+                <div class="svg-container">
+                    <svg width="250" height="250" viewBox="-50 -50 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid Lines & Axes -->
+                        <line x1="-50" y1="0" x2="150" y2="0" stroke="#999" stroke-width="1"/>
+                        <line x1="0" y1="-50" x2="0" y2="150" stroke="#999" stroke-width="1"/>
+                        <text x="140" y="-5" font-family="Times New Roman" font-size="10">x</text>
+                        <text x="5" y="140" font-family="Times New Roman" font-size="10">-y</text>
+                        
+                        <!-- Scale: 1 unit = 10px, Y is flipped in SVG so we multiply Y coords by -10 -->
+                        <!-- P(-2, 3) -> (-20, -30) -->
+                        <!-- Q(4, 3) -> (40, -30) -->
+                        <!-- R(4, -2) -> (40, 20) -->
+                        <!-- S(-2, -2) -> (-20, 20) -->
+                        
+                        <!-- Rectangle -->
+                        <polygon points="-20,-30 40,-30 40,20 -20,20" fill="rgba(0, 150, 255, 0.2)" stroke="blue" stroke-width="1.5"/>
+                        
+                        <!-- Points -->
+                        <circle cx="-20" cy="-30" r="3" fill="red"/>
+                        <circle cx="40" cy="-30" r="3" fill="red"/>
+                        <circle cx="40" cy="20" r="3" fill="red"/>
+                        <circle cx="-20" cy="20" r="3" fill="green"/>
+                        
+                        <!-- Labels -->
+                        <text x="-45" y="-35" font-family="Times New Roman" font-size="12">P(-2,3)</text>
+                        <text x="45" y="-35" font-family="Times New Roman" font-size="12">Q(4,3)</text>
+                        <text x="45" y="25" font-family="Times New Roman" font-size="12">R(4,-2)</text>
+                        <text x="-45" y="25" font-family="Times New Roman" font-size="12" fill="green">S(-2,-2)</text>
+                    </svg>
+                </div>
+                <div class="final-answer">Coordinates of \( S = (-2, -2) \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q7. A chord of a circle is equal to the radius of the circle. Find the angle subtended by the chord at a point on the minor arc and also at a point on the major arc.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Let chord \( AB = \) radius of circle \( r \).<br>
+                In \( \Delta OAB \), \( OA = OB = AB = r \). Therefore, \( \Delta OAB \) is an equilateral triangle.<br>
+                Angle subtended by chord AB at centre, \( \angle AOB = 60^\circ \).<br><br>
+                (i) <strong>At the major arc:</strong> Let point \( P \) be on the major arc.<br>
+                The angle subtended by an arc at the centre is double the angle on the remaining circle.<br>
+                \( \angle APB = \frac{1}{2} \angle AOB = \frac{1}{2} (60^\circ) = 30^\circ \).<br><br>
+                (ii) <strong>At the minor arc:</strong> Let point \( Q \) be on the minor arc.<br>
+                \( APBQ \) forms a cyclic quadrilateral.<br>
+                \( \angle AQB + \angle APB = 180^\circ \implies \angle AQB + 30^\circ = 180^\circ \implies \angle AQB = 150^\circ \).
+                <div class="final-answer">Major arc: \( 30^\circ \), Minor arc: \( 150^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q8. In the given figure, A, B and C are three points on a circle with centre O such that \( \angle BOC = 30^\circ \) and \( \angle AOB = 60^\circ \). If D is a point on the circle other than the arc ABC, find \( \angle ADC \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                From the figure, the total angle subtended by the arc ABC at the centre O is:<br>
+                \( \angle AOC = \angle AOB + \angle BOC \)<br>
+                \( \angle AOC = 60^\circ + 30^\circ = 90^\circ \).<br><br>
+                According to the theorem: The angle subtended by an arc at the centre is double the angle subtended by it at any remaining part of the circle.<br>
+                Therefore, the angle subtended by arc ABC at point D is half of \( \angle AOC \).<br>
+                \( \angle ADC = \frac{1}{2} \angle AOC \)<br>
+                \( \angle ADC = \frac{1}{2} \times 90^\circ = 45^\circ \).
+                <div class="final-answer">\( \angle ADC = 45^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q9. Prove that if chords of congruent circles subtend equal angles at their centres, then the chords are equal in length.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>Given:</strong> Two congruent circles with centres \( O \) and \( O' \). Two chords \( AB \) and \( CD \) such that \( \angle AOB = \angle CO'D \).<br>
+                <strong>To Prove:</strong> \( AB = CD \).<br>
+                <strong>Proof:</strong><br>
+                In \( \Delta AOB \) and \( \Delta CO'D \):<br>
+                1. \( OA = O'C \) (Radii of congruent circles are equal)<br>
+                2. \( OB = O'D \) (Radii of congruent circles are equal)<br>
+                3. \( \angle AOB = \angle CO'D \) (Given)<br>
+                By SAS congruence criterion, \( \Delta AOB \cong \Delta CO'D \).<br>
+                Therefore, \( AB = CD \) (By CPCT - Corresponding Parts of Congruent Triangles).<br>
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q10. \( ABCD \) is a cyclic quadrilateral whose diagonals intersect at a point E. If \( \angle DBC = 70^\circ \), \( \angle BAC = 30^\circ \), find \( \angle BCD \). Further, if \( AB = BC \), find \( \angle ECD \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Angles in the same segment of a circle are equal.<br>
+                Therefore, \( \angle DAC = \angle DBC = 70^\circ \) (Segment DC).<br>
+                Also, \( \angle CDB = \angle BAC = 30^\circ \) (Segment BC).<br><br>
+                In \( \Delta BCD \), total sum of angles = \( 180^\circ \).<br>
+                Wait, let's use angle sum property of the whole quadrilateral or another triangle.<br>
+                \( \angle DAB = \angle DAC + \angle BAC = 70^\circ + 30^\circ = 100^\circ \).<br>
+                Since \( ABCD \) is cyclic, opposite angles sum to \( 180^\circ \).<br>
+                \( \angle DAB + \angle BCD = 180^\circ \implies 100^\circ + \angle BCD = 180^\circ \implies \angle BCD = 80^\circ \).<br><br>
+                Now, given \( AB = BC \).<br>
+                In \( \Delta ABC \), angles opposite to equal sides are equal. So, \( \angle BCA = \angle BAC = 30^\circ \).<br>
+                From the figure, \( \angle BCD = \angle BCA + \angle ECD \).<br>
+                \( 80^\circ = 30^\circ + \angle ECD \implies \angle ECD = 50^\circ \).
+                <div class="final-answer">\( \angle BCD = 80^\circ, \angle ECD = 50^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q11. Plot the points \( A(2, 0) \), \( B(2, 2) \), \( C(0, 2) \) and the origin \( O(0,0) \). Draw the line segments OA, AB, BC and CO. (i) What geometrical figure do you obtain? (ii) Find area. (iii) Coordinates of intersection of diagonals.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Plotting the points on the cartesian plane:
+                <div class="svg-container">
+                    <svg width="250" height="250" viewBox="-20 -20 80 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Grid Lines & Axes -->
+                        <line x1="-10" y1="0" x2="60" y2="0" stroke="#999" stroke-width="1"/>
+                        <line x1="0" y1="-10" x2="0" y2="60" stroke="#999" stroke-width="1"/>
+                        
+                        <!-- Scale: 1 unit = 20px, Y flipped -> negative Y -->
+                        <!-- O(0,0) -> (0,0) -->
+                        <!-- A(2,0) -> (40,0) -->
+                        <!-- B(2,2) -> (40,-40) -->
+                        <!-- C(0,2) -> (0,-40) -->
+                        
+                        <!-- Polygon -->
+                        <polygon points="0,0 40,0 40,-40 0,-40" fill="rgba(255, 165, 0, 0.3)" stroke="orange" stroke-width="2"/>
+                        
+                        <!-- Diagonals -->
+                        <line x1="0" y1="0" x2="40" y2="-40" stroke="gray" stroke-dasharray="4"/>
+                        <line x1="0" y1="-40" x2="40" y2="0" stroke="gray" stroke-dasharray="4"/>
+                        
+                        <!-- Points -->
+                        <circle cx="0" cy="0" r="2" fill="black"/>
+                        <circle cx="40" cy="0" r="2" fill="black"/>
+                        <circle cx="40" cy="-40" r="2" fill="black"/>
+                        <circle cx="0" cy="-40" r="2" fill="black"/>
+                        
+                        <!-- Intersection Point -->
+                        <circle cx="20" cy="-20" r="2" fill="red"/>
+                        
+                        <!-- Labels -->
+                        <text x="-10" y="10" font-family="Times New Roman" font-size="8">O(0,0)</text>
+                        <text x="35" y="10" font-family="Times New Roman" font-size="8">A(2,0)</text>
+                        <text x="45" y="-40" font-family="Times New Roman" font-size="8">B(2,2)</text>
+                        <text x="-25" y="-40" font-family="Times New Roman" font-size="8">C(0,2)</text>
+                        <text x="23" y="-15" font-family="Times New Roman" font-size="8" fill="red">(1, 1)</text>
+                    </svg>
+                </div>
+                (i) <strong>Figure Obtained:</strong> Since \( OA = 2 \) units, \( AB = 2 \) units, \( BC = 2 \) units, and \( CO = 2 \) units, and all interior angles are \( 90^\circ \) (lying on axes and parallel lines), \( OABC \) is a <strong>Square</strong>.<br>
+                (ii) <strong>Area:</strong> Area of square = side \( \times \) side = \( 2 \times 2 = 4 \) sq. units.<br>
+                (iii) <strong>Diagonals Intersection:</strong> Diagonals of a square bisect each other. Midpoint of \( OB \):<br>
+                \( x = \frac{0 + 2}{2} = 1 \), \( y = \frac{0 + 2}{2} = 1 \).
+                <div class="final-answer">(i) Square, (ii) 4 sq. units, (iii) (1, 1)</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q12. (a) Prove that the angle subtended by an arc at the centre is double the angle subtended by it at any remaining part of the circle. (b) Find \( x \) if angle at centre is \( 130^\circ \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>(a) Proof:</strong><br>
+                Given: A circle with centre \( O \) and arc \( PQ \) subtending \( \angle POQ \) at centre and \( \angle PRQ \) at a point \( R \) on the remaining part of circle.<br>
+                To Prove: \( \angle POQ = 2 \angle PRQ \).<br>
+                Construction: Join \( RO \) and extend it to a point \( S \).<br>
+                Proof: <br>
+                In \( \Delta POR \), \( OP = OR \) (radii).<br>
+                Hence, \( \angle OPR = \angle ORP \) (angles opp. to equal sides).<br>
+                By exterior angle property of triangle, exterior \( \angle POS = \angle OPR + \angle ORP = 2 \angle ORP \). ---(i)<br>
+                Similarly, in \( \Delta QOR \), \( OQ = OR \) (radii).<br>
+                \( \angle OQR = \angle ORQ \).<br>
+                Exterior \( \angle QOS = \angle OQR + \angle ORQ = 2 \angle ORQ \). ---(ii)<br>
+                Adding (i) and (ii):<br>
+                \( \angle POS + \angle QOS = 2 \angle ORP + 2 \angle ORQ \)<br>
+                \( \angle POQ = 2(\angle ORP + \angle ORQ) = 2 \angle PRQ \).<br>
+                Hence Proved.<br><br>
+                <strong>(b) Finding \( x \):</strong><br>
+                If the angle at the centre \( \angle POQ = 130^\circ \), using the theorem proved above:<br>
+                Angle at remaining part \( = \frac{1}{2} \times \text{Angle at centre} \).<br>
+                \( x = \frac{1}{2} \times 130^\circ = 65^\circ \).
+                <div class="final-answer">\( x = 65^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q13. Two parallel chords of a circle, whose diameter is 13 cm, are respectively 5 cm and 12 cm in length. Find the distance between them if they lie on opposite sides of the centre of the circle.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Given: Diameter = 13 cm, so Radius \( (r) = \frac{13}{2} = 6.5 \) cm.<br>
+                Let chord \( AB = 5 \) cm and chord \( CD = 12 \) cm. Centre is \( O \).<br>
+                Draw \( OM \perp AB \) and \( ON \perp CD \). Since chords are parallel, \( M, O, N \) are collinear and \( MN \) is the distance between them.<br>
+                Perpendicular from centre bisects the chord:<br>
+                \( AM = \frac{5}{2} = 2.5 \) cm.<br>
+                \( CN = \frac{12}{2} = 6 \) cm.<br><br>
+                In right \( \Delta OMA \):<br>
+                \( OM^2 + AM^2 = OA^2 \)<br>
+                \( OM^2 + (2.5)^2 = (6.5)^2 \)<br>
+                \( OM^2 + 6.25 = 42.25 \)<br>
+                \( OM^2 = 42.25 - 6.25 = 36 \implies OM = 6 \) cm.<br><br>
+                In right \( \Delta ONC \):<br>
+                \( ON^2 + CN^2 = OC^2 \)<br>
+                \( ON^2 + (6)^2 = (6.5)^2 \)<br>
+                \( ON^2 + 36 = 42.25 \)<br>
+                \( ON^2 = 42.25 - 36 = 6.25 \implies ON = 2.5 \) cm.<br><br>
+                Since chords are on opposite sides, total distance \( MN = OM + ON \).<br>
+                \( MN = 6 + 2.5 = 8.5 \) cm.
+                <div class="final-answer">Distance between chords = 8.5 cm</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+</body>
+</html>

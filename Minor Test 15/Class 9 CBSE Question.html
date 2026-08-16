@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            overflow-x: hidden;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            max-width: calc(100% - 30px);
+        }
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 14pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+            .MathJax {
+                max-width: 100%;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+            mjx-container[jax="CHTML"][display="true"] {
+                margin: 1em 0 !important;
+                text-align: left !important;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; overflow-x: hidden; } 
+            .question-container { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15 - Coordinate Geometry & Circles</div>
+        <div class="exam-details">
+            <span>Class: 9 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show all working steps clearly. Missing steps may result in deduction of marks.</li>
+                <li>Use of calculator is not permitted. Keep diagrams neat and labeled.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            In which quadrant or on which axis do the points \( A(-3, 5) \) and \( B(0, -4) \) lie?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Write the coordinates of a point which lies on the x-axis and is at a distance of 7 units in the negative direction of the x-axis. Also, state its perpendicular distance from the y-axis.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            If the length of a chord of a circle is 16 cm and it is at a perpendicular distance of 6 cm from the centre of the circle, then find the radius of the circle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            In a cyclic quadrilateral \( ABCD \), if \( \angle A = 70^\circ \) and \( \angle B = 100^\circ \), find the measure of \( \angle C \) and \( \angle D \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Find the perpendicular distance of the point \( P(4, -5) \) from the x-axis and the y-axis respectively.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Plot the points \( P(-2, 3) \), \( Q(4, 3) \), and \( R(4, -2) \) on a Cartesian plane. Find the coordinates of point \( S \) such that \( PQRS \) forms a rectangle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A chord of a circle is equal to the radius of the circle. Find the angle subtended by the chord at a point on the minor arc and also at a point on the major arc.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            In the given figure, A, B and C are three points on a circle with centre O such that \( \angle BOC = 30^\circ \) and \( \angle AOB = 60^\circ \). If D is a point on the circle other than the arc ABC, find \( \angle ADC \).
+            <div class="svg-container">
+                <svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="110" cy="110" r="90" fill="none" stroke="black" stroke-width="1.5"/>
+                    <circle cx="110" cy="110" r="3" fill="black"/>
+                    <text x="115" y="125" font-family="Times New Roman" font-size="14">O</text>
+                    
+                    <!-- Lines from center -->
+                    <line x1="110" y1="110" x2="20" y2="110" stroke="black" stroke-width="1.5"/> <!-- OA -->
+                    <line x1="110" y1="110" x2="65" y2="32" stroke="black" stroke-width="1.5"/> <!-- OB (60 deg from OA) -->
+                    <line x1="110" y1="110" x2="110" y2="20" stroke="black" stroke-width="1.5"/> <!-- OC (90 deg from OA) -->
+                    
+                    <!-- Point D -->
+                    <line x1="20" y1="110" x2="173.6" y2="173.6" stroke="black" stroke-width="1.5"/> <!-- AD -->
+                    <line x1="110" y1="20" x2="173.6" y2="173.6" stroke="black" stroke-width="1.5"/> <!-- CD -->
+                    
+                    <!-- Labels -->
+                    <text x="5" y="115" font-family="Times New Roman" font-size="14">A</text>
+                    <text x="50" y="25" font-family="Times New Roman" font-size="14">B</text>
+                    <text x="105" y="12" font-family="Times New Roman" font-size="14">C</text>
+                    <text x="180" y="185" font-family="Times New Roman" font-size="14">D</text>
+                    
+                    <!-- Angles -->
+                    <path d="M 45 110 A 65 65 0 0 1 77 53" fill="none" stroke="black" stroke-width="1"/>
+                    <text x="55" y="90" font-family="Times New Roman" font-size="12">60°</text>
+                    
+                    <path d="M 80 47 A 65 65 0 0 1 110 45" fill="none" stroke="black" stroke-width="1"/>
+                    <text x="95" y="55" font-family="Times New Roman" font-size="12">30°</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Prove that if chords of congruent circles subtend equal angles at their centres, then the chords are equal in length.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            \( ABCD \) is a cyclic quadrilateral whose diagonals intersect at a point E. If \( \angle DBC = 70^\circ \), \( \angle BAC = 30^\circ \), find \( \angle BCD \). Further, if \( AB = BC \), find \( \angle ECD \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Plot the points \( A(2, 0) \), \( B(2, 2) \), \( C(0, 2) \) and the origin \( O(0,0) \). Draw the line segments OA, AB, BC and CO. <br>
+            (i) What geometrical figure do you obtain?<br>
+            (ii) Find the area of the figure obtained.<br>
+            (iii) Write the coordinates of the point of intersection of its diagonals.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <strong>(a)</strong> Prove that the angle subtended by an arc at the centre is double the angle subtended by it at any remaining part of the circle. <br>
+            <strong>(b)</strong> Using the above theorem, find the value of \( x \) if the angle at the centre is \( 130^\circ \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Two parallel chords of a circle, whose diameter is 13 cm, are respectively 5 cm and 12 cm in length. Find the distance between them if they lie on opposite sides of the centre of the circle.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
