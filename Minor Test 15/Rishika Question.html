@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* Base A4 Print Layout */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Branding & Header Styles */
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        /* Section & Question Formatting */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; text-align: justify; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .math-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Screen Responsiveness */
+        @media screen and (max-width: 210mm) {
+            body { width: 100%; padding: 15px; margin: 0; box-shadow: none; min-height: auto; }
+        }
+        @media screen and (max-width: 768px) {
+            .exam-details { flex-wrap: wrap; justify-content: center; gap: 10px; text-align: center; }
+            .exam-details span { flex: 1 1 40%; min-width: 120px; }
+            .institute-name { font-size: 20pt; }
+            .q-num { width: 30px; }
+        }
+        @media screen and (max-width: 480px) {
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { width: 100%; text-align: center; padding: 2px 0; }
+            .institute-name { font-size: 16pt; }
+            .test-name { font-size: 12pt; }
+        }
+        
+        /* Print Perfection */
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            @page { margin: 15mm; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15: Algebra & Linear Equations</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show step-by-step working.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Identify the terms and their numerical coefficients in the following algebraic expression: 
+            <div class="math-container">\( 3x^2y - 5xy^2 + 7 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Translate the following statements into mathematical equations:
+            <div class="sub-question">(i) 5 times a number \( x \) decreased by 7 results in 23.</div>
+            <div class="sub-question">(ii) One-fourth of a number \( m \) is 3 more than 7.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Group the like terms together from the following given list of terms:
+            <div class="math-container">\( 4x^2y, \ -3xy^2, \ 7xy, \ -5x^2y, \ 2xy^2 \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Solve the linear equation \( 3p - 10 = 5 \) and verify your result by substituting the root back into the equation.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Find the numerical value of the expression \( a^2 + 2ab + b^2 \) when \( a = 3 \) and \( b = -2 \).
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Subtract the expression \( (3a - 4b - c) \) from \( (4a + 5b - 3c) \). Then, evaluate the resulting expression if \( a=1 \), \( b=-1 \), and \( c=2 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The sum of three consecutive odd integers is 69. Formulate an equation and find the three integers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Simplify the following algebraic expression by combining the like terms:
+            <div class="math-container">\( 7x^2 - 3x + 5 - (2x^2 - 5x - 7) + 4x \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Solve the following linear equation for \( y \):
+            <div class="math-container">\[ \frac{y}{2} - \frac{3}{4} = \frac{5}{4} + \frac{y}{3} \]</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Rahul's father is 26 years younger than Rahul's grandfather and 29 years older than Rahul. The sum of the ages of all three is 135 years. Set up a linear equation to find the present age of each person.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            From the sum of \( 2x^2 + 3xy - 5 \) and \( -4x^2 + 2xy + 7 \), subtract the sum of \( 3x^2 - xy + 2 \) and \( -x^2 - 4xy - 3 \). Show all intermediate addition and subtraction steps clearly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A rational number is such that when you multiply it by \( \frac{5}{2} \) and add \( \frac{2}{3} \) to the product, you get \( -\frac{7}{12} \). Formulate a linear equation in one variable and calculate the original number. Justify your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The perimeter of a rectangular swimming pool is 154 meters. Its length is 2 meters more than twice its breadth. 
+            <div class="sub-question">(a) Write the expressions for the length and breadth in terms of a single variable.</div>
+            <div class="sub-question">(b) Set up the linear equation representing the perimeter.</div>
+            <div class="sub-question">(c) Solve the equation to find the exact length and breadth of the pool.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • Academic Dean Desk</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        /* Responsive adaptations and base styles */
+        :root {
+            --brand-color: #000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            margin: 0 auto; 
+            padding: 15px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--brand-color); 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        @media (min-width: 768px) {
+            body { padding: 30px; }
+        }
+        @media (min-width: 1024px) {
+            body { padding: 20mm; min-height: 297mm; }
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0;
+            gap: 10px;
+        }
+        
+        .exam-details span {
+            flex: 1 1 auto;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .instructions { margin-top: 15px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 25px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 4px; text-decoration: none;}
+        
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; padding-right: 10px; overflow-wrap: break-word;}
+        .q-marks { font-weight: bold; flex-shrink: 0; width: 40px; text-align: right; }
+        
+        .sub-question { margin-left: 15px; margin-top: 8px; display: flex;}
+        .sub-q-num { width: 25px; flex-shrink: 0; font-weight: bold; }
+        .sub-q-content { flex-grow: 1; }
+
+        .footer { margin-top: 50px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12; }
+        }
+    </style>
+    <!-- MathJax for rendering equations cleanly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15 (Mathematics)</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show proper steps and working where necessary.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+            <strong>Syllabus Covered:</strong> Ratio and Proportion, Unitary Method.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions. Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Express the ratio \( 75 \text{ cm} \) to \( 1.5 \text{ m} \) in its simplest form.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">If \( A : B = 3 : 4 \) and \( B : C = 8 : 9 \), find the ratio \( A : C \).</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Determine whether the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion. Show your working.</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">A manufacturing machine produces \( 150 \) widgets in \( 3 \text{ hours} \). How many widgets will it produce in \( 5 \text{ hours} \)?</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Find the mean proportional between \( 9 \) and \( 25 \).</div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Attempt all questions. Medium Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Divide ₹\( 1400 \) among Ram, Shyam, and Mohan in the ratio \( 2 : 3 : 5 \). Find the final share of each person.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">If \( 15 \) men can complete a piece of work in \( 42 \) days, in how many days will \( 35 \) men complete the same work?</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Two numbers are in the ratio \( 5 : 7 \). If \( 3 \) is subtracted from each number, the new ratio becomes \( 2 : 3 \). Find the original numbers.</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The cost of \( 8 \text{ kg} \) of premium rice is ₹\( 360 \). 
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div class="sub-q-content">What will be the cost of \( 15 \text{ kg} \) of this rice?</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div class="sub-q-content">What quantity of rice can be purchased for ₹\( 675 \)?</div>
+            </div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">What specific number must be added to each of the numbers \( 5, 9, 7, \) and \( 12 \) so that the resulting numbers are in continued proportion?</div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Attempt all questions. Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">A military garrison of \( 1200 \) men has provisions for \( 60 \text{ days} \). After \( 15 \text{ days} \), \( 300 \) more men join the garrison. How long will the remaining food last for the newly formed group? Support your answer with a detailed unitary calculation.</div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Solve the following proportional relationships:
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div class="sub-q-content">If \( \frac{3x - 5y}{3x + 5y} = \frac{1}{5} \), find the value of the ratio \( x : y \).</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div class="sub-q-content">Find the fourth proportional to the decimal numbers \( 2.5, 1.5, \) and \( 3.0 \).</div>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A transport bus travels \( 432 \text{ km} \) consuming \( 48 \text{ litres} \) of diesel.
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div class="sub-q-content">How far would the bus travel if it is supplied with \( 20 \text{ litres} \) of diesel?</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div class="sub-q-content">How many litres of diesel are required for the bus to travel a total distance of \( 630 \text{ km} \)?</div>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

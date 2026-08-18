@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: clamp(12pt, 3vw, 14pt); 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f; /* Distinguish solution file visually */
+        }
+        
+        .exam-details { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 10px 0; 
+        }
+        @media (min-width: 600px) {
+            .exam-details {
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+            }
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+        
+        /* Container for Question + Marks + Solution */
+        .qa-container {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        
+        .question-box {
+            display: flex;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #333;
+            margin-bottom: 10px;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .q-marks {
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-left: 10px;
+            white-space: nowrap;
+            color: #d32f2f;
+        }
+
+        .solution-box {
+            padding-left: 10px;
+        }
+        
+        .sol-heading {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+
+        /* Styling for step-by-step marking scheme */
+        .step-mark {
+            float: right;
+            color: #d32f2f;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; padding: 20mm; margin: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: fixed; }
+            .math-scroll { overflow-x: visible; }
+            .qa-container { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15 - DETAILED SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">1.</div>
+            <div class="q-content">Define an exterior angle of a triangle. State the theorem related to the exterior angle of a triangle.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p><strong>Definition:</strong> An exterior angle of a triangle is formed when any one side of the triangle is extended outwards. <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>Theorem:</strong> The Exterior Angle Theorem states that the measure of an exterior angle of a triangle is equal to the sum of the measures of its two interior opposite angles. <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">2.</div>
+            <div class="q-content">Identify the constants and variables in the following algebraic expression:<br>\( 3x^2y - 7xy + \frac{5}{2} - z \)</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>In the given expression \( 3x^2y - 7xy + \frac{5}{2} - z \):</p>
+            <p><strong>Variables:</strong> The literal numbers whose values can change. They are \(x, y, \) and \(z\). <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>Constants:</strong> The fixed numerical values that do not change. The constant term is \( \frac{5}{2} \). (Note: 3 and -7 are coefficients, but \(\frac{5}{2}\) is a pure constant term). <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">3.</div>
+            <div class="q-content">In a triangle \(ABC\), if \(\angle A = 45^\circ\) and \(\angle B = 65^\circ\), find the measure of \(\angle C\). What type of triangle is \(ABC\) based on its angles?</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>According to the angle sum property of a triangle:<br>
+            <div class="math-scroll">\(\angle A + \angle B + \angle C = 180^\circ\)</div></p>
+            <p><div class="math-scroll">\(45^\circ + 65^\circ + \angle C = 180^\circ\)</div></p>
+            <p><div class="math-scroll">\(110^\circ + \angle C = 180^\circ\)</div></p>
+            <p><div class="math-scroll">\(\angle C = 180^\circ - 110^\circ = 70^\circ\)</div> <span class="step-mark">[1 Mark]</span></p>
+            <p>Since all three angles (\(45^\circ, 65^\circ, 70^\circ\)) are less than \(90^\circ\), triangle \(ABC\) is an <strong>acute-angled triangle</strong>. <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">4.</div>
+            <div class="q-content">Write down the algebraic expression for the following statement:<br>"Five times a number \(x\) is subtracted from the sum of \(y\) and \(z\)."</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Step 1: "Sum of \(y\) and \(z\)" is written as \((y + z)\).</p>
+            <p>Step 2: "Five times a number \(x\)" is written as \(5x\).</p>
+            <p>Step 3: Subtracting \(5x\) from \((y + z)\) gives:<br>
+            <div class="math-scroll"><strong>\((y + z) - 5x\)</strong></div> <span class="step-mark">[2 Marks (1 for each correct part)]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">5.</div>
+            <div class="q-content">Is it possible to construct a triangle with side lengths \(3\text{ cm}\), \(4\text{ cm}\), and \(8\text{ cm}\)? Give a valid mathematical reason for your answer.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p><strong>No</strong>, it is not possible. <span class="step-mark">[0.5 Marks]</span></p>
+            <p><strong>Reason:</strong> According to the Triangle Inequality Theorem, the sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side. <span class="step-mark">[0.5 Marks]</span></p>
+            <p>Let's check the given sides: \(3\text{ cm}, 4\text{ cm}, 8\text{ cm}\).</p>
+            <p>Sum of two smaller sides = \(3 + 4 = 7\text{ cm}\).</p>
+            <p>Since \(7\text{ cm}\) is <strong>not greater than</strong> the third side (\(8\text{ cm}\)), a triangle cannot be formed. (\(3 + 4 \ngtr 8\)). <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">6.</div>
+            <div class="q-content">Evaluate the algebraic expression \( 2a^2 - 3ab + b^2 \) when \( a = -2 \) and \( b = 3 \).</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Given expression: \( 2a^2 - 3ab + b^2 \)</p>
+            <p>Substitute \( a = -2 \) and \( b = 3 \) into the expression: <span class="step-mark">[1 Mark for correct substitution]</span></p>
+            <div class="math-scroll">
+                \( = 2(-2)^2 - 3(-2)(3) + (3)^2 \)
+            </div>
+            <p>Calculate the terms:</p>
+            <div class="math-scroll">
+                \( = 2(4) - (-18) + 9 \) <span class="step-mark">[1 Mark for correct squaring and multiplication]</span>
+            </div>
+            <div class="math-scroll">
+                \( = 8 + 18 + 9 \)
+            </div>
+            <div class="math-scroll">
+                <strong>\( = 35 \)</strong> <span class="step-mark">[1 Mark for final correct answer]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">7.</div>
+            <div class="q-content">In an isosceles triangle \(PQR\), \(PQ = PR\). If the vertical angle \(\angle P\) is \(50^\circ\), calculate the base angles \(\angle Q\) and \(\angle R\). State the property used.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Since triangle \(PQR\) is isosceles with \(PQ = PR\), the angles opposite to these equal sides are also equal. Therefore, \(\angle Q = \angle R\). Let \(\angle Q = \angle R = x\). <span class="step-mark">[1 Mark for stating \(\angle Q = \angle R\)]</span></p>
+            <p>Using the Angle Sum Property of a triangle (\(\angle P + \angle Q + \angle R = 180^\circ\)):</p>
+            <p><div class="math-scroll">\(50^\circ + x + x = 180^\circ\)</div> <span class="step-mark">[1 Mark for equation]</span></p>
+            <p><div class="math-scroll">\(2x = 180^\circ - 50^\circ\)</div></p>
+            <p><div class="math-scroll">\(2x = 130^\circ\)</div></p>
+            <p><div class="math-scroll">\(x = \frac{130^\circ}{2} = 65^\circ\)</div></p>
+            <p>Therefore, <strong>\(\angle Q = 65^\circ\)</strong> and <strong>\(\angle R = 65^\circ\)</strong>. <span class="step-mark">[1 Mark for final answer]</span></p>
+            <p><em>Property used:</em> Angles opposite to equal sides of an isosceles triangle are equal, and angle sum property.</p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">8.</div>
+            <div class="q-content">Classify the following algebraic expressions as monomials, binomials, or trinomials. Also, state the degree of expression (b):<br>(a) \( 7pqr \)<br>(b) \( 4x^3 - 2xy^2 + 5 \)<br>(c) \( m^2 - n^2 \)</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>(a) \( 7pqr \) has only one term. It is a <strong>Monomial</strong>. <span class="step-mark">[0.5 Mark]</span></p>
+            <p>(b) \( 4x^3 - 2xy^2 + 5 \) has three terms. It is a <strong>Trinomial</strong>. <span class="step-mark">[0.5 Mark]</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Degree of (b): The terms are \(4x^3\) (degree 3), \(-2xy^2\) (degree \(1+2=3\)), and \(5\) (degree 0). The highest degree is 3. So, <strong>Degree = 3</strong>. <span class="step-mark">[1 Mark]</span></p>
+            <p>(c) \( m^2 - n^2 \) has two terms. It is a <strong>Binomial</strong>. <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">9.</div>
+            <div class="q-content">The exterior angle of a triangle is \(110^\circ\) and one of its interior opposite angles is \(40^\circ\). Find the other two angles of the triangle.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Let the interior angles of the triangle be \(\angle 1, \angle 2, \) and \(\angle 3\).</p>
+            <p>Let Exterior Angle = \(110^\circ\). Let interior opposite angles be \(\angle 1\) and \(\angle 2\). Let \(\angle 1 = 40^\circ\).</p>
+            <p><strong>To find \(\angle 2\):</strong> Using the Exterior Angle Theorem (Exterior Angle = Sum of two interior opposite angles):<br>
+            <div class="math-scroll">\(110^\circ = \angle 1 + \angle 2\)</div> <span class="step-mark">[1 Mark for using theorem]</span><br>
+            <div class="math-scroll">\(110^\circ = 40^\circ + \angle 2\)</div><br>
+            <div class="math-scroll">\(\angle 2 = 110^\circ - 40^\circ = \textbf{70^\circ}\)</div> <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>To find \(\angle 3\):</strong> \(\angle 3\) and the exterior angle form a linear pair on a straight line.<br>
+            <div class="math-scroll">\(\angle 3 + 110^\circ = 180^\circ\)</div><br>
+            <div class="math-scroll">\(\angle 3 = 180^\circ - 110^\circ = \textbf{70^\circ}\)</div> <span class="step-mark">[1 Mark]</span><br>
+            <em>(Alternatively, use angle sum property: \(\angle 1 + \angle 2 + \angle 3 = 180 \Rightarrow 40 + 70 + \angle 3 = 180 \Rightarrow \angle 3 = 70^\circ\))</em></p>
+            <p>The other two angles are \(70^\circ\) and \(70^\circ\).</p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">10.</div>
+            <div class="q-content">Add the following algebraic expressions:<br>\( (3x^2 - 5x + 2) \) and \( (-x^2 + 4x - 6) \)</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Write the expressions with an addition sign between them:</p>
+            <div class="math-scroll">
+                \( (3x^2 - 5x + 2) + (-x^2 + 4x - 6) \)
+            </div>
+            <p>Remove the brackets:</p>
+            <div class="math-scroll">
+                \( 3x^2 - 5x + 2 - x^2 + 4x - 6 \) <span class="step-mark">[1 Mark]</span>
+            </div>
+            <p>Group the like terms together:</p>
+            <div class="math-scroll">
+                \( = (3x^2 - x^2) + (-5x + 4x) + (2 - 6) \) <span class="step-mark">[1 Mark]</span>
+            </div>
+            <p>Combine the coefficients of like terms:</p>
+            <div class="math-scroll">
+                \( = 2x^2 + (-1x) + (-4) \)
+            </div>
+            <div class="math-scroll">
+                <strong>\( = 2x^2 - x - 4 \)</strong> <span class="step-mark">[1 Mark for final answer]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">11.</div>
+            <div class="q-content">In a triangle \(ABC\), the angles are in the ratio \( 2 : 3 : 4 \).<br>(a) Find the measure of each angle of the triangle.<br>(b) Classify the triangle based on its angles.<br>(c) State the property of triangles used to solve this problem.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p><strong>(a)</strong> Let the angles of the triangle be \(2x, 3x,\) and \(4x\). <span class="step-mark">[0.5 Marks]</span></p>
+            <p>Using the angle sum property of a triangle:<br>
+            <div class="math-scroll">\(2x + 3x + 4x = 180^\circ\)</div> <span class="step-mark">[0.5 Marks]</span><br>
+            <div class="math-scroll">\(9x = 180^\circ\)</div><br>
+            <div class="math-scroll">\(x = \frac{180^\circ}{9} = 20^\circ\)</div> <span class="step-mark">[1 Mark]</span></p>
+            <p>Now, calculate each angle:<br>
+            First angle = \(2x = 2 \times 20^\circ = \textbf{40^\circ}\)<br>
+            Second angle = \(3x = 3 \times 20^\circ = \textbf{60^\circ}\)<br>
+            Third angle = \(4x = 4 \times 20^\circ = \textbf{80^\circ}\) <span class="step-mark">[1 Mark for all three correct]</span></p>
+            <p><strong>(b)</strong> Since all three angles (\(40^\circ, 60^\circ, 80^\circ\)) are less than \(90^\circ\), it is an <strong>acute-angled triangle</strong>. <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>(c)</strong> Property used: <strong>Angle Sum Property of a Triangle</strong> (which states that the sum of the interior angles of a triangle is \(180^\circ\)). <span class="step-mark">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">12.</div>
+            <div class="q-content">Simplify the following algebraic expression by opening the brackets and combining like terms:<br>\( 5x - [3y - \{2x - (y - x)\}] \)<br>Show each step of your working clearly.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Expression: \( 5x - [3y - \{2x - (y - x)\}] \)</p>
+            <p>Follow the BODMAS/PEMDAS rule, removing innermost brackets first.</p>
+            <p><strong>Step 1:</strong> Remove the innermost parentheses \((\ )\). Keep in mind the negative sign outside changes the signs inside.<br>
+            <div class="math-scroll">\( = 5x - [3y - \{2x - y + x\}] \)</div> <span class="step-mark">[1.5 Marks]</span></p>
+            <p><strong>Step 2:</strong> Simplify the terms inside the curly braces \(\{\ \}\). Combine like terms \(2x\) and \(x\).<br>
+            <div class="math-scroll">\( = 5x - [3y - \{3x - y\}] \)</div> <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>Step 3:</strong> Remove the curly braces \(\{\ \}\). Again, the negative sign outside changes the signs inside.<br>
+            <div class="math-scroll">\( = 5x - [3y - 3x + y] \)</div> <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>Step 4:</strong> Simplify the terms inside the square brackets \([\ ]\). Combine \(3y\) and \(y\).<br>
+            <div class="math-scroll">\( = 5x - [-3x + 4y] \)</div> <span class="step-mark">[0.5 Marks]</span></p>
+            <p><strong>Step 5:</strong> Remove the square brackets \([\ ]\). The negative sign distributes.<br>
+            <div class="math-scroll">\( = 5x + 3x - 4y \)</div> <span class="step-mark">[0.5 Marks]</span></p>
+            <p><strong>Step 6:</strong> Final simplification by combining \(5x\) and \(3x\).<br>
+            <div class="math-scroll"><strong>\( = 8x - 4y \)</strong></div> <span class="step-mark">[0.5 Marks]</span></p>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">13.</div>
+            <div class="q-content">Consider the algebraic expression: \( 4x^3y - 5x^2y^2 + 7xy^3 - 2 \)<br>(a) How many terms are there in this expression?<br>(b) Write the coefficient of \(x^2\) in the term \( -5x^2y^2 \).<br>(c) What is the numerical coefficient of the term \( 4x^3y \)?<br>(d) Find the degree of the entire algebraic expression. Explain how you arrived at it.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box clearfix">
+            <span class="sol-heading">Solution:</span>
+            <p>Given expression: \( 4x^3y - 5x^2y^2 + 7xy^3 - 2 \)</p>
+            <p><strong>(a)</strong> Terms are separated by '+' or '-' signs. The terms are \(4x^3y\), \(-5x^2y^2\), \(7xy^3\), and \(-2\). Therefore, there are <strong>4 terms</strong>. <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>(b)</strong> The coefficient of \(x^2\) in the term \(-5x^2y^2\) is the remaining part of the term when \(x^2\) is removed. Therefore, the coefficient is <strong>\(-5y^2\)</strong>. <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>(c)</strong> The numerical coefficient is the constant number multiplier of the term. For \(4x^3y\), the numerical coefficient is <strong>4</strong>. <span class="step-mark">[1 Mark]</span></p>
+            <p><strong>(d) Degree of the expression:</strong> <span class="step-mark">[2 Marks]</span><br>
+            To find the degree, calculate the sum of the powers of the variables in each term:<br>
+            - Term 1: \(4x^3y^1 \rightarrow\) sum of powers = \(3 + 1 = 4\)<br>
+            - Term 2: \(-5x^2y^2 \rightarrow\) sum of powers = \(2 + 2 = 4\)<br>
+            - Term 3: \(7x^1y^3 \rightarrow\) sum of powers = \(1 + 3 = 4\)<br>
+            - Term 4: \(-2\) (constant) \(\rightarrow\) degree = \(0\)<br>
+            The highest sum of powers among all the terms is 4. Therefore, the <strong>degree of the algebraic expression is 4</strong>.</p>
+        </div>
+    </div>
+
+    <div class="footer">Solutions Prepared by Academic Dean, Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        /* Base Print Styles & Formatting */
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            box-sizing: border-box;
+        }
+
+        /* Screen specifically for responsiveness (Mobile, Tablet, Laptop) */
+        @media screen {
+            body {
+                width: 100%;
+                max-width: 210mm; /* A4 width */
+                min-height: 297mm; /* A4 height */
+                margin: 20px auto;
+                padding: 5vw; /* Fluid padding for mobile */
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border-radius: 8px;
+            }
+        }
+        
+        /* Print specifics override screen margins */
+        @media print { 
+            body { 
+                width: 210mm; 
+                margin: 0; 
+                padding: 0; 
+                box-shadow: none;
+                -webkit-print-color-adjust: exact; 
+            } 
+        }
+
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        /* Section Styling */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        /* Question Structure */
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; display: flex; }
+        .sub-num { width: 30px; flex-shrink: 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 15</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working clearly where required.</li>
+                <li>Syllabus: Ratio, Speed Time & Distance, The Unitary Method.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Express the ratio 75 cm to 1.5 m in its simplest form.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Convert a speed of 72 km/hr into metres per second (m/s).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">If the cost of 8 dozen bananas is ₹480, find the cost of 1 dozen bananas.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Two numbers are in the ratio 3 : 5. If the sum of the numbers is 120, find the two numbers.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">A cyclist covers a distance of 15 km in 2 hours. Calculate his average speed in km/hr.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Divide an amount of ₹3,600 among A, B, and C in the ratio of 2 : 3 : 4. Find the share of each person.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A train 150 meters long is running at a speed of 54 km/hr. How much time (in seconds) will it take to cross a stationary pole?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">A printing machine can print 1,500 pages in 30 minutes. Using the unitary method, calculate how many pages it will print in 2 hours.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Check if the given ratios form a proportion: 25 g : 30 g and 40 kg : 48 kg. Show your mathematical reasoning.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Rahul travels from his home to school at a speed of 12 km/hr and takes 20 minutes to reach. Find the total distance between his home and the school.</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The cost of 15 meters of cloth is ₹1,425.
+            <div class="sub-question">
+                <div class="sub-num">(i)</div>
+                <div>Find the cost of 8 meters of the same cloth. (2 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(ii)</div>
+                <div>How many meters of cloth can be purchased for ₹3,325? (3 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A car travels from City P to City Q at a speed of 40 km/hr and returns from City Q to City P at a speed of 60 km/hr. The distance between the two cities is 120 km. Calculate:
+            <div class="sub-question">
+                <div class="sub-num">(i)</div>
+                <div>The time taken for the onward journey (P to Q). (1.5 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(ii)</div>
+                <div>The time taken for the return journey (Q to P). (1.5 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(iii)</div>
+                <div>The average speed for the entire journey. (2 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The ratio of the number of boys to the number of girls in a school of 1,200 students is 7 : 5.
+            <div class="sub-question">
+                <div class="sub-num">(i)</div>
+                <div>Find the initial number of boys and girls in the school. (2 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-num">(ii)</div>
+                <div>If 40 more girls are admitted to the school, what will be the new ratio of boys to girls in its simplest form? (3 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan (Academic Dean)</div>
+</body>
+</html>

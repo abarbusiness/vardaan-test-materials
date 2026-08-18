@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+            overflow-x: hidden; /* Strict no horizontal scroll */
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            border-bottom: 1px dashed #000;
+            font-size: 14pt; 
+            padding-bottom: 5px;
+            color: #1565c0;
+        }
+        
+        .q-block { 
+            margin-bottom: 30px; 
+            display: flex;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
+        .q-content-wrapper {
+            flex-grow: 1;
+            padding-right: 20px;
+            max-width: calc(100% - 70px);
+        }
+        .q-marks {
+            font-weight: bold;
+            color: #d32f2f;
+            min-width: 70px;
+            text-align: right;
+            flex-shrink: 0;
+            font-size: 11pt;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .solution-text {
+            margin-top: 10px;
+        }
+        .final-answer {
+            font-weight: bold;
+            border: 1px solid #4caf50;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #e8f5e9;
+            word-break: break-all;
+        }
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        mjx-container {
+            word-wrap: break-word !important;
+            white-space: normal !important;
+            overflow-wrap: break-word !important;
+        }
+        .MathJax {
+            white-space: normal !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+                font-size: 13pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .q-block { 
+                flex-direction: column; 
+            }
+            .q-content-wrapper {
+                max-width: 100%;
+                padding-right: 0;
+            }
+            .q-marks {
+                text-align: left;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ccc;
+            }
+            mjx-container[jax="CHTML"][display="true"] {
+                margin: 1em 0 !important;
+                text-align: left !important;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; overflow-x: hidden; } 
+            .q-block { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Detailed Solutions & Marking Scheme: Trigonometry & Heights and Distances</div>
+        <div style="margin-top: 5px;">Class: 10 CBSE | Subject: Mathematics (Rationalized NCERT)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q1. If \( \tan A = \frac{3}{4} \), find the value of \( \sin A \cos A \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Given, \( \tan A = \frac{3}{4} = \frac{\text{Perpendicular}}{\text{Base}} \).<br>
+                Let Perpendicular \( P = 3k \) and Base \( B = 4k \).<br>
+                By Pythagoras theorem, Hypotenuse \( H = \sqrt{P^2 + B^2} = \sqrt{(3k)^2 + (4k)^2} = \sqrt{9k^2 + 16k^2} = \sqrt{25k^2} = 5k \).<br>
+                Now, \( \sin A = \frac{P}{H} = \frac{3k}{5k} = \frac{3}{5} \)<br>
+                \( \cos A = \frac{B}{H} = \frac{4k}{5k} = \frac{4}{5} \)<br>
+                Therefore, \( \sin A \cos A = \left(\frac{3}{5}\right) \times \left(\frac{4}{5}\right) = \frac{12}{25} \).
+                <div class="final-answer">\( \frac{12}{25} \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q2. Evaluate: \( 2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                We know the trigonometric values:<br>
+                \( \tan 45^\circ = 1 \)<br>
+                \( \cos 30^\circ = \frac{\sqrt{3}}{2} \)<br>
+                \( \sin 60^\circ = \frac{\sqrt{3}}{2} \)<br>
+                Substituting these values in the expression:<br>
+                \( = 2(1)^2 + \left(\frac{\sqrt{3}}{2}\right)^2 - \left(\frac{\sqrt{3}}{2}\right)^2 \)<br>
+                Notice that \( \cos^2 30^\circ \) and \( \sin^2 60^\circ \) cancel each other out.<br>
+                \( = 2(1) + \frac{3}{4} - \frac{3}{4} \)<br>
+                \( = 2 + 0 = 2 \).
+                <div class="final-answer">2</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q3. Prove the identity: \( (1 - \sin^2 \theta) \sec^2 \theta = 1 \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>LHS</strong> = \( (1 - \sin^2 \theta) \sec^2 \theta \)<br>
+                Using the fundamental trigonometric identity \( \sin^2 \theta + \cos^2 \theta = 1 \), we have \( 1 - \sin^2 \theta = \cos^2 \theta \).<br>
+                Substitute this in LHS:<br>
+                LHS = \( (\cos^2 \theta) \sec^2 \theta \)<br>
+                We know that \( \sec \theta = \frac{1}{\cos \theta} \), so \( \sec^2 \theta = \frac{1}{\cos^2 \theta} \).<br>
+                LHS = \( \cos^2 \theta \times \frac{1}{\cos^2 \theta} \)<br>
+                LHS = 1 = <strong>RHS</strong>.
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q4. A tower is \( 10\sqrt{3} \) m high. Find the angle of elevation of its top from a point 30 m away from its foot on the ground.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Let AB be the tower where height \( AB = 10\sqrt{3} \) m.<br>
+                Let C be the point on the ground 30 m away from the foot B. So, \( BC = 30 \) m.<br>
+                Let the angle of elevation \( \angle ACB = \theta \).<br>
+                In right-angled \( \Delta ABC \):<br>
+                \( \tan \theta = \frac{\text{Perpendicular}}{\text{Base}} = \frac{AB}{BC} \)<br>
+                \( \tan \theta = \frac{10\sqrt{3}}{30} \)<br>
+                \( \tan \theta = \frac{\sqrt{3}}{3} = \frac{1}{\sqrt{3}} \)<br>
+                We know that \( \tan 30^\circ = \frac{1}{\sqrt{3}} \).<br>
+                Therefore, \( \theta = 30^\circ \).
+                <div class="final-answer">Angle of elevation = \( 30^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q5. If \( \sin(A - B) = \frac{1}{2} \) and \( \cos(A + B) = \frac{1}{2} \), where \( 0^\circ < A + B \le 90^\circ \) and \( A > B \), find \( A \) and \( B \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Given: \( \sin(A - B) = \frac{1}{2} \).<br>
+                We know \( \sin 30^\circ = \frac{1}{2} \).<br>
+                Therefore, \( A - B = 30^\circ \) &nbsp;&nbsp;&nbsp; ...(Equation 1)<br><br>
+                Also given: \( \cos(A + B) = \frac{1}{2} \).<br>
+                We know \( \cos 60^\circ = \frac{1}{2} \).<br>
+                Therefore, \( A + B = 60^\circ \) &nbsp;&nbsp;&nbsp; ...(Equation 2)<br><br>
+                Adding Eq (1) and Eq (2):<br>
+                \( (A - B) + (A + B) = 30^\circ + 60^\circ \)<br>
+                \( 2A = 90^\circ \implies A = 45^\circ \).<br><br>
+                Substitute \( A = 45^\circ \) in Eq (2):<br>
+                \( 45^\circ + B = 60^\circ \implies B = 15^\circ \).
+                <div class="final-answer">\( A = 45^\circ, B = 15^\circ \)</div>
+            </div>
+        </div>
+        <div class="q-marks">[2 Marks]</div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q6. Prove that: \( \frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>LHS</strong> = \( \frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} \)<br>
+                Taking the Least Common Multiple (LCM) of the denominators:<br>
+                \( = \frac{\cos^2 A + (1 + \sin A)^2}{(1 + \sin A)\cos A} \)<br>
+                Expanding \( (1 + \sin A)^2 \) using \( (a+b)^2 = a^2 + b^2 + 2ab \):<br>
+                \( = \frac{\cos^2 A + 1 + \sin^2 A + 2\sin A}{(1 + \sin A)\cos A} \)<br>
+                Rearranging terms and grouping \( (\sin^2 A + \cos^2 A) \):<br>
+                \( = \frac{(\sin^2 A + \cos^2 A) + 1 + 2\sin A}{(1 + \sin A)\cos A} \)<br>
+                Since \( \sin^2 A + \cos^2 A = 1 \):<br>
+                \( = \frac{1 + 1 + 2\sin A}{(1 + \sin A)\cos A} \)<br>
+                \( = \frac{2 + 2\sin A}{(1 + \sin A)\cos A} \)<br>
+                Taking 2 common in the numerator:<br>
+                \( = \frac{2(1 + \sin A)}{(1 + \sin A)\cos A} \)<br>
+                Cancelling \( (1 + \sin A) \) from numerator and denominator:<br>
+                \( = \frac{2}{\cos A} \)<br>
+                \( = 2 \sec A \) = <strong>RHS</strong>.
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q7. A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with the ground level is \( 30^\circ \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <div class="svg-container">
+                    <svg width="250" height="200" viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ground -->
+                        <line x1="20" y1="170" x2="230" y2="170" stroke="black" stroke-width="2"/>
+                        <!-- Pole -->
+                        <line x1="200" y1="30" x2="200" y2="170" stroke="black" stroke-width="2"/>
+                        <!-- Rope -->
+                        <line x1="30" y1="170" x2="200" y2="30" stroke="blue" stroke-width="2"/>
+                        <!-- Angle Arc -->
+                        <path d="M 60 170 A 30 30 0 0 0 53 151" fill="none" stroke="black" stroke-width="1.5"/>
+                        <text x="75" y="165" font-family="Times New Roman" font-size="14">30°</text>
+                        <!-- Labels -->
+                        <text x="205" y="25" font-family="Times New Roman" font-size="14">A</text>
+                        <text x="205" y="185" font-family="Times New Roman" font-size="14">B</text>
+                        <text x="20" y="185" font-family="Times New Roman" font-size="14">C</text>
+                        <text x="95" y="90" font-family="Times New Roman" font-size="14" fill="blue">20 m</text>
+                        <text x="210" y="105" font-family="Times New Roman" font-size="14">h</text>
+                        <!-- Right angle square -->
+                        <rect x="185" y="155" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+                Let \( AB \) be the vertical pole of height '\( h \)' meters.<br>
+                Let \( AC \) be the rope tightly stretched from top \( A \) to ground point \( C \).<br>
+                Given, length of rope \( AC = 20 \) m.<br>
+                Angle made by rope with ground, \( \angle ACB = 30^\circ \).<br><br>
+                In right-angled triangle \( ABC \) (right angled at \( B \)):<br>
+                To relate the perpendicular (\( AB \)) and hypotenuse (\( AC \)), we use the sine ratio.<br>
+                \( \sin(\angle ACB) = \frac{\text{Perpendicular}}{\text{Hypotenuse}} = \frac{AB}{AC} \)<br>
+                \( \sin 30^\circ = \frac{h}{20} \)<br>
+                We know \( \sin 30^\circ = \frac{1}{2} \).<br>
+                \( \frac{1}{2} = \frac{h}{20} \)<br>
+                \( 2h = 20 \implies h = 10 \) m.<br>
+                Therefore, the height of the vertical pole is 10 meters.
+                <div class="final-answer">Height of pole = 10 m</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q8. If \( x = a \sin \theta \) and \( y = b \tan \theta \), prove that \( \frac{a^2}{x^2} - \frac{b^2}{y^2} = 1 \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                Given: \( x = a \sin \theta \implies \frac{x}{a} = \sin \theta \).<br>
+                Therefore, taking reciprocals on both sides:<br>
+                \( \frac{a}{x} = \frac{1}{\sin \theta} = \csc \theta \) &nbsp;&nbsp;&nbsp; ...(i)<br><br>
+                Given: \( y = b \tan \theta \implies \frac{y}{b} = \tan \theta \).<br>
+                Therefore, taking reciprocals on both sides:<br>
+                \( \frac{b}{y} = \frac{1}{\tan \theta} = \cot \theta \) &nbsp;&nbsp;&nbsp; ...(ii)<br><br>
+                <strong>LHS</strong> = \( \frac{a^2}{x^2} - \frac{b^2}{y^2} \)<br>
+                This can be written as: \( \left(\frac{a}{x}\right)^2 - \left(\frac{b}{y}\right)^2 \).<br>
+                Substituting values from (i) and (ii):<br>
+                LHS = \( (\csc \theta)^2 - (\cot \theta)^2 \)<br>
+                LHS = \( \csc^2 \theta - \cot^2 \theta \).<br>
+                From fundamental trigonometric identities, we know that \( 1 + \cot^2 \theta = \csc^2 \theta \), which means \( \csc^2 \theta - \cot^2 \theta = 1 \).<br>
+                Therefore, LHS = 1 = <strong>RHS</strong>.
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q9. The shadow of a tower standing on a level ground is found to be 40 m longer when the Sun's altitude is \( 30^\circ \) than when it is \( 60^\circ \). Find the height of the tower.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <div class="svg-container">
+                    <svg width="280" height="200" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ground -->
+                        <line x1="10" y1="170" x2="260" y2="170" stroke="black" stroke-width="2"/>
+                        <!-- Tower -->
+                        <line x1="240" y1="30" x2="240" y2="170" stroke="black" stroke-width="2"/>
+                        <!-- Rays -->
+                        <line x1="140" y1="170" x2="240" y2="30" stroke="black" stroke-width="1.5"/>
+                        <line x1="30" y1="170" x2="240" y2="30" stroke="black" stroke-width="1.5"/>
+                        <!-- Angle Arcs -->
+                        <path d="M 160 170 A 20 20 0 0 0 152 153" fill="none" stroke="black" stroke-width="1.2"/>
+                        <text x="175" y="165" font-family="Times New Roman" font-size="14">60°</text>
+                        
+                        <path d="M 60 170 A 30 30 0 0 0 54 154" fill="none" stroke="black" stroke-width="1.2"/>
+                        <text x="75" y="165" font-family="Times New Roman" font-size="14">30°</text>
+                        
+                        <!-- Labels -->
+                        <text x="245" y="25" font-family="Times New Roman" font-size="14">A</text>
+                        <text x="245" y="185" font-family="Times New Roman" font-size="14">B</text>
+                        <text x="135" y="185" font-family="Times New Roman" font-size="14">C</text>
+                        <text x="25" y="185" font-family="Times New Roman" font-size="14">D</text>
+                        <text x="85" y="190" font-family="Times New Roman" font-size="14">40 m</text>
+                        <text x="250" y="105" font-family="Times New Roman" font-size="14">h</text>
+                        <!-- Dimension Line for 40m -->
+                        <line x1="30" y1="195" x2="140" y2="195" stroke="#666" stroke-width="1"/>
+                        <line x1="30" y1="190" x2="30" y2="200" stroke="#666" stroke-width="1"/>
+                        <line x1="140" y1="190" x2="140" y2="200" stroke="#666" stroke-width="1"/>
+                        <!-- Right angle -->
+                        <rect x="225" y="155" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+                Let the height of the tower \( AB \) be '\( h \)' meters.<br>
+                Let \( BC \) be the length of the shadow when the Sun's altitude is \( 60^\circ \). Let \( BC = x \) meters.<br>
+                When Sun's altitude is \( 30^\circ \), the shadow is \( BD \). Given \( BD \) is 40 m longer than \( BC \).<br>
+                So, \( BD = x + 40 \) meters.<br><br>
+                In right \( \Delta ABC \):<br>
+                \( \tan 60^\circ = \frac{AB}{BC} \implies \sqrt{3} = \frac{h}{x} \implies h = x\sqrt{3} \) &nbsp;&nbsp;&nbsp; ...(i)<br><br>
+                In right \( \Delta ABD \):<br>
+                \( \tan 30^\circ = \frac{AB}{BD} \implies \frac{1}{\sqrt{3}} = \frac{h}{x + 40} \)<br>
+                \( \sqrt{3}h = x + 40 \) &nbsp;&nbsp;&nbsp; ...(ii)<br><br>
+                Substitute the value of \( h \) from (i) into (ii):<br>
+                \( \sqrt{3}(x\sqrt{3}) = x + 40 \)<br>
+                \( 3x = x + 40 \)<br>
+                \( 2x = 40 \implies x = 20 \) m.<br><br>
+                Now put \( x = 20 \) in eq (i) to find \( h \):<br>
+                \( h = 20\sqrt{3} \) m.<br>
+                (Optional: If \( \sqrt{3} \approx 1.732 \), \( h \approx 34.64 \) m).
+                <div class="final-answer">Height of tower = \( 20\sqrt{3} \) m</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q10. Prove that: \( \sqrt{\frac{1+\sin A}{1-\sin A}} = \sec A + \tan A \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>LHS</strong> = \( \sqrt{\frac{1+\sin A}{1-\sin A}} \)<br>
+                Rationalize the denominator inside the square root by multiplying numerator and denominator by \( (1 + \sin A) \):<br>
+                \( = \sqrt{\frac{(1+\sin A)(1+\sin A)}{(1-\sin A)(1+\sin A)}} \)<br>
+                Using \( (a-b)(a+b) = a^2 - b^2 \) in the denominator:<br>
+                \( = \sqrt{\frac{(1+\sin A)^2}{1 - \sin^2 A}} \)<br>
+                Using the identity \( 1 - \sin^2 A = \cos^2 A \):<br>
+                \( = \sqrt{\frac{(1+\sin A)^2}{\cos^2 A}} \)<br>
+                Taking the square root on both numerator and denominator:<br>
+                \( = \frac{1+\sin A}{\cos A} \)<br>
+                Splitting the fraction:<br>
+                \( = \frac{1}{\cos A} + \frac{\sin A}{\cos A} \)<br>
+                Using reciprocal and quotient relations (\( \sec A = \frac{1}{\cos A}, \tan A = \frac{\sin A}{\cos A} \)):<br>
+                \( = \sec A + \tan A \) = <strong>RHS</strong>.
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[3 Marks]</div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q11. From the top of a 7 m high building, the angle of elevation of the top of a cable tower is \( 60^\circ \) and the angle of depression of its foot is \( 45^\circ \). Determine the height of the tower.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <div class="svg-container">
+                    <svg width="260" height="220" viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ground -->
+                        <line x1="20" y1="190" x2="240" y2="190" stroke="black" stroke-width="2"/>
+                        <!-- Building -->
+                        <line x1="50" y1="100" x2="50" y2="190" stroke="black" stroke-width="4"/>
+                        <!-- Tower -->
+                        <line x1="200" y1="30" x2="200" y2="190" stroke="black" stroke-width="4"/>
+                        <!-- Horizontal Line of sight -->
+                        <line x1="50" y1="100" x2="200" y2="100" stroke="gray" stroke-dasharray="5,5"/>
+                        <!-- Lines of sight (Elevation & Depression) -->
+                        <line x1="50" y1="100" x2="200" y2="30" stroke="blue" stroke-width="1.5"/>
+                        <line x1="50" y1="100" x2="200" y2="190" stroke="red" stroke-width="1.5"/>
+                        
+                        <!-- Angles -->
+                        <path d="M 80 100 A 30 30 0 0 0 74 89" fill="none" stroke="black" stroke-width="1.2"/>
+                        <text x="90" y="90" font-family="Times New Roman" font-size="12">60°</text>
+                        
+                        <path d="M 80 100 A 30 30 0 0 1 74 114" fill="none" stroke="black" stroke-width="1.2"/>
+                        <text x="90" y="115" font-family="Times New Roman" font-size="12">45°</text>
+    
+                        <!-- Labels -->
+                        <text x="35" y="95" font-family="Times New Roman" font-size="14">A</text>
+                        <text x="35" y="200" font-family="Times New Roman" font-size="14">B</text>
+                        <text x="210" y="25" font-family="Times New Roman" font-size="14">C</text>
+                        <text x="210" y="200" font-family="Times New Roman" font-size="14">D</text>
+                        <text x="210" y="95" font-family="Times New Roman" font-size="14">E</text>
+                        <text x="20" y="150" font-family="Times New Roman" font-size="14">7 m</text>
+                        <text x="220" y="70" font-family="Times New Roman" font-size="14">h</text>
+                        <!-- Right angles -->
+                        <rect x="50" y="175" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                        <rect x="185" y="175" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                        <rect x="185" y="85" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+                Let \( AB \) be the building of height 7 m, so \( AB = 7 \) m.<br>
+                Let \( CD \) be the cable tower of height '\( h \)' m.<br>
+                From top of building \( A \), draw a horizontal line \( AE \) parallel to ground \( BD \). So \( E \) lies on \( CD \).<br>
+                Then \( ED = AB = 7 \) m and \( AE = BD \).<br>
+                Let \( CE = y \) m. Therefore, height of tower \( h = y + 7 \).<br><br>
+                Given: Angle of elevation of top \( C \) from \( A \) is \( \angle CAE = 60^\circ \).<br>
+                Angle of depression of foot \( D \) from \( A \) is \( \angle EAD = 45^\circ \).<br>
+                By alternate interior angles, \( \angle ADB = \angle EAD = 45^\circ \).<br><br>
+                In right \( \Delta ABD \):<br>
+                \( \tan 45^\circ = \frac{AB}{BD} \)<br>
+                \( 1 = \frac{7}{BD} \implies BD = 7 \) m.<br>
+                Since \( AE = BD \), then \( AE = 7 \) m.<br><br>
+                In right \( \Delta AEC \):<br>
+                \( \tan 60^\circ = \frac{CE}{AE} \)<br>
+                \( \sqrt{3} = \frac{y}{7} \implies y = 7\sqrt{3} \) m.<br><br>
+                Height of the tower \( h = CE + ED = y + 7 \).<br>
+                \( h = 7\sqrt{3} + 7 = 7(\sqrt{3} + 1) \) m.
+                <div class="final-answer">Height = \( 7(\sqrt{3} + 1) \) m</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q12. Prove that: \( \frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \csc \theta \).</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <strong>LHS</strong> = \( \frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} \)<br>
+                Convert everything into sine and cosine:<br>
+                \( \tan \theta = \frac{\sin \theta}{\cos \theta}, \cot \theta = \frac{\cos \theta}{\sin \theta} \)<br><br>
+                \( \text{LHS} = \frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}} \)<br>
+                \( = \frac{\frac{\sin \theta}{\cos \theta}}{\frac{\sin \theta - \cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{\frac{\cos \theta - \sin \theta}{\cos \theta}} \)<br>
+                \( = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin \theta(\cos \theta - \sin \theta)} \)<br><br>
+                Note that \( (\cos \theta - \sin \theta) = -(\sin \theta - \cos \theta) \). Adjusting the sign of the second term:<br>
+                \( = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} - \frac{\cos^2 \theta}{\sin \theta(\sin \theta - \cos \theta)} \)<br>
+                Taking \( \frac{1}{\sin \theta - \cos \theta} \) common:<br>
+                \( = \frac{1}{\sin \theta - \cos \theta} \left[ \frac{\sin^2 \theta}{\cos \theta} - \frac{\cos^2 \theta}{\sin \theta} \right] \)<br>
+                \( = \frac{1}{\sin \theta - \cos \theta} \left[ \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta} \right] \)<br><br>
+                Using algebraic identity \( a^3 - b^3 = (a-b)(a^2+ab+b^2) \):<br>
+                \( = \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \sin \theta \cos \theta + \cos^2 \theta)}{(\sin \theta - \cos \theta)(\sin \theta \cos \theta)} \)<br>
+                Cancelling \( (\sin \theta - \cos \theta) \) and using \( \sin^2 \theta + \cos^2 \theta = 1 \):<br>
+                \( = \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} \)<br>
+                \( = \frac{1}{\sin \theta \cos \theta} + \frac{\sin \theta \cos \theta}{\sin \theta \cos \theta} \)<br>
+                \( = (\csc \theta \cdot \sec \theta) + 1 \)<br>
+                \( = 1 + \sec \theta \csc \theta \) = <strong>RHS</strong>.
+                <div class="final-answer">Hence Proved.</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-content-wrapper">
+            <div class="question-text">Q13. A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of \( 30^\circ \), which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be \( 60^\circ \). Find the time taken by the car to reach the foot of the tower from this point.</div>
+            <div class="solution-text">
+                <strong>Solution:</strong><br>
+                <div class="svg-container">
+                    <svg width="280" height="210" viewBox="0 0 280 210" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ground/Highway -->
+                        <line x1="10" y1="170" x2="260" y2="170" stroke="black" stroke-width="2"/>
+                        <!-- Tower -->
+                        <line x1="230" y1="40" x2="230" y2="170" stroke="black" stroke-width="3"/>
+                        <!-- Horizontal Line of sight -->
+                        <line x1="30" y1="40" x2="230" y2="40" stroke="gray" stroke-dasharray="5,5"/>
+                        <!-- Lines of sight -->
+                        <line x1="230" y1="40" x2="40" y2="170" stroke="blue" stroke-width="1.5"/>
+                        <line x1="230" y1="40" x2="130" y2="170" stroke="red" stroke-width="1.5"/>
+                        
+                        <!-- Angles of depression from top -->
+                        <path d="M 190 40 A 40 40 0 0 0 197 63" fill="none" stroke="black" stroke-width="1"/>
+                        <text x="180" y="70" font-family="Times New Roman" font-size="12">60°</text>
+                        
+                        <path d="M 160 40 A 70 70 0 0 0 172 80" fill="none" stroke="black" stroke-width="1"/>
+                        <text x="145" y="80" font-family="Times New Roman" font-size="12">30°</text>
+    
+                        <!-- Interior Alternate Angles on Ground -->
+                        <path d="M 60 170 A 20 20 0 0 0 56 158" fill="none" stroke="black" stroke-width="1"/>
+                        <text x="75" y="165" font-family="Times New Roman" font-size="12">30°</text>
+    
+                        <path d="M 150 170 A 20 20 0 0 0 142 153" fill="none" stroke="black" stroke-width="1"/>
+                        <text x="165" y="165" font-family="Times New Roman" font-size="12">60°</text>
+    
+                        <!-- Labels -->
+                        <text x="240" y="35" font-family="Times New Roman" font-size="14">A (Man)</text>
+                        <text x="240" y="185" font-family="Times New Roman" font-size="14">B</text>
+                        <text x="35" y="190" font-family="Times New Roman" font-size="14">C</text>
+                        <text x="125" y="190" font-family="Times New Roman" font-size="14">D</text>
+                        
+                        <!-- Movement info -->
+                        <text x="85" y="195" font-family="Times New Roman" font-size="12" fill="blue">6 sec</text>
+                        <path d="M 40 175 L 125 175" fill="none" stroke="blue" stroke-width="1" stroke-dasharray="2,2"/>
+                        <polygon points="125,175 120,172 120,178" fill="blue"/>
+                        
+                        <rect x="215" y="155" width="15" height="15" fill="none" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+                Let \( AB \) be the tower of height '\( h \)' m. Let man be at top \( A \).<br>
+                Let \( C \) be the initial position of the car. Angle of depression is \( 30^\circ \), so alternate interior \( \angle ACB = 30^\circ \).<br>
+                Let \( D \) be the position of the car after 6 seconds. Angle of depression is \( 60^\circ \), so alternate interior \( \angle ADB = 60^\circ \).<br>
+                Let the uniform speed of the car be '\( v \)' m/s.<br>
+                Distance covered in 6 seconds = \( CD = 6v \) meters.<br>
+                Let the time taken to reach foot \( B \) from \( D \) be '\( t \)' seconds.<br>
+                Distance \( DB = vt \) meters.<br><br>
+                In right \( \Delta ABD \):<br>
+                \( \tan 60^\circ = \frac{AB}{DB} \implies \sqrt{3} = \frac{h}{vt} \implies h = \sqrt{3}vt \) &nbsp;&nbsp;&nbsp; ...(i)<br><br>
+                In right \( \Delta ABC \):<br>
+                \( \tan 30^\circ = \frac{AB}{BC} = \frac{AB}{CD + DB} \)<br>
+                \( \frac{1}{\sqrt{3}} = \frac{h}{6v + vt} \)<br>
+                \( \sqrt{3}h = v(6 + t) \) &nbsp;&nbsp;&nbsp; ...(ii)<br><br>
+                Substitute the value of \( h \) from (i) into (ii):<br>
+                \( \sqrt{3}(\sqrt{3}vt) = v(6 + t) \)<br>
+                \( 3vt = v(6 + t) \)<br>
+                Since \( v \neq 0 \) (speed of car), we can cancel \( v \):<br>
+                \( 3t = 6 + t \)<br>
+                \( 2t = 6 \implies t = 3 \) seconds.<br><br>
+                Therefore, the car will take 3 seconds to reach the foot of the tower from point \( D \).
+                <div class="final-answer">Time taken = 3 seconds</div>
+            </div>
+        </div>
+        <div class="q-marks">[5 Marks]</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Key</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                tags: 'ams'
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+
+        @media (min-width: 768px) {
+            body { padding: 20mm; }
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #1976d2;
+        }
+        
+        .qa-block {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            page-break-inside: avoid;
+        }
+
+        .question-row { 
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .q-wrapper {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+            color: #333;
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            padding-right: 15px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .q-content mjx-container, .solution-content mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .marks-badge {
+            font-weight: bold;
+            color: #d32f2f;
+            white-space: nowrap;
+            background: #ffebee;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11pt;
+            flex-shrink: 0;
+        }
+        
+        .solution-content {
+            padding-left: 30px;
+            overflow-x: auto;
+        }
+
+        .solution-label {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* Utility to force breaks on long equations on mobile */
+        .math-chunk {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.1; }
+            .qa-block { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTION KEY & MARKING SCHEME - Minor Test 15</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">1.</div>
+                <div class="q-content">
+                    Write the following set in Roster form:<br>
+                    $A = \{x \mid x \text{ is a vowel in the word "EQUATION"}\}$
+                </div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            The word "EQUATION" contains the vowels E, U, A, I, O.<br>
+            In roster form, the elements are listed separated by commas within braces. Order does not matter.<br>
+            <div class="math-chunk">$$A = \{E, U, A, I, O\} \quad \text{or} \quad A = \{A, E, I, O, U\}$$</div>
+            <em>(Note: 2 marks for listing all 5 vowels inside curly braces correctly).</em>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">2.</div>
+                <div class="q-content">
+                    Express the ratio $45\text{ cm}$ to $3\text{ meters}$ in its simplest form.
+                </div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            To find the ratio, both quantities must be in the same unit.<br>
+            We know, $1\text{ meter} = 100\text{ cm}$.<br>
+            Therefore, $3\text{ meters} = 3 \times 100\text{ cm} = 300\text{ cm}$.<br>
+            <div class="math-chunk">
+            $$ \text{Ratio} = \frac{45\text{ cm}}{300\text{ cm}} = \frac{45}{300} $$
+            $$ = \frac{45 \div 15}{300 \div 15} = \frac{3}{20} $$
+            </div>
+            <strong>Answer: The required ratio is $3 : 20$.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">3.</div>
+                <div class="q-content">
+                    State whether the following sets are finite or infinite:<br>
+                    (i) Set of all stars in the universe.<br>
+                    (ii) Set of multiples of $5$ which are less than $100$.
+                </div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            <strong>(i) Infinite Set.</strong> (The number of stars cannot be explicitly counted/has no end).<br>
+            <strong>(ii) Finite Set.</strong> (The elements are $\{5, 10, 15, \dots, 95\}$, which can be counted and has an end).
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">4.</div>
+                <div class="q-content">
+                    Find the value of $x$ if the numbers $3, 12, 15,$ and $x$ are in proportion.
+                </div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            If four numbers $a, b, c, d$ are in proportion, then $a:b :: c:d$.<br>
+            This means the product of extremes equals the product of means ($a \times d = b \times c$).<br>
+            <div class="math-chunk">
+            $$ 3 : 12 :: 15 : x $$
+            $$ 3 \times x = 12 \times 15 $$
+            $$ 3x = 180 $$
+            $$ x = \frac{180}{3} = 60 $$
+            </div>
+            <strong>Answer: $x = 60$.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">5.</div>
+                <div class="q-content">
+                    Find the cardinal number of the set $B = \{x \mid x \text{ is a prime number between } 10 \text{ and } 20\}$.
+                </div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            First, list the elements of set $B$ in roster form. The prime numbers between $10$ and $20$ are $11, 13, 17,$ and $19$.<br>
+            $$ B = \{11, 13, 17, 19\} $$
+            The cardinal number, denoted as $n(B)$, is the total number of distinct elements in the set.<br>
+            <strong>Answer: $n(B) = 4$.</strong>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">6.</div>
+                <div class="q-content">
+                    Divide ₹$1500$ between A and B in the ratio $2:3$.
+                </div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            Total ratio parts = $2 + 3 = 5$ parts.<br>
+            Total amount = ₹$1500$.<br>
+            Value of $1$ part = $\frac{1500}{5} = \text{₹}300$.<br><br>
+            <div class="math-chunk">
+            Share of A = $2 \text{ parts} = 2 \times 300 = \text{₹}600$.<br>
+            Share of B = $3 \text{ parts} = 3 \times 300 = \text{₹}900$.
+            </div>
+            <strong>Answer: A gets ₹$600$ and B gets ₹$900$.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">7.</div>
+                <div class="q-content">
+                    Let $P = \{1, 2, 3, 4, 5\}$ and $Q = \{2, 4, 6, 8\}$. Answer the following:<br>
+                    (i) Write down the set of elements present in P but not in Q.<br>
+                    (ii) Are P and Q equivalent sets? Give a logical reason for your answer.
+                </div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            (i) Elements in P are $1, 2, 3, 4, 5$. Elements in Q are $2, 4, 6, 8$.<br>
+            The elements present in P but NOT in Q are $1, 3,$ and $5$.<br>
+            <strong>Set = $\{1, 3, 5\}$</strong>.<br><br>
+            (ii) For two sets to be equivalent, they must have the same cardinal number.<br>
+            $n(P) = 5$<br>
+            $n(Q) = 4$<br>
+            <strong>Answer: No, P and Q are not equivalent sets because their cardinal numbers are not equal ($5 \neq 4$).</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">8.</div>
+                <div class="q-content">
+                    The ratio of the length to the width of a rectangular playground is $5:3$. If the length of the playground is $80\text{ m}$, calculate its width.
+                </div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            Let the length be $5x$ and the width be $3x$.<br>
+            Given, Length = $80\text{ m}$.<br>
+            <div class="math-chunk">
+            $$ 5x = 80 $$
+            $$ x = \frac{80}{5} = 16 $$
+            </div>
+            Now, calculate the width:<br>
+            $$ \text{Width} = 3x = 3 \times 16 = 48\text{ m} $$
+            <strong>Answer: The width of the playground is $48\text{ m}$.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">9.</div>
+                <div class="q-content">
+                    Rewrite the following set in Set-builder form:<br>
+                    $C = \{5, 10, 15, 20, 25, \dots\}$
+                </div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            Observing the pattern, the elements are multiples of $5$ starting from $5$ to infinity. These are natural numbers multiplied by $5$.<br>
+            In Set-builder form, it can be written as:<br>
+            <div class="math-chunk">
+            $$ C = \{x \mid x \text{ is a multiple of } 5, x \in \mathbb{N}\} $$
+            </div>
+            <em>Alternatively:</em> $C = \{x \mid x = 5n, n \in \mathbb{N}\}$
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">10.</div>
+                <div class="q-content">
+                    The ratio of the number of boys to girls in a school is $5:4$. If there are $800$ boys in the school, find the total number of students.
+                </div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            Let the number of boys be $5x$ and the number of girls be $4x$.<br>
+            Given, number of boys = $800$.<br>
+            <div class="math-chunk">
+            $$ 5x = 800 $$
+            $$ x = \frac{800}{5} = 160 $$
+            </div>
+            Total number of students = Number of boys + Number of girls<br>
+            $$ = 5x + 4x = 9x $$<br>
+            Substituting the value of $x$:<br>
+            $$ = 9 \times 160 = 1440 $$
+            <strong>Answer: The total number of students in the school is $1440$.</strong>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+    
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">11.</div>
+                <div class="q-content">
+                    The cost of $12$ identical pens is ₹$180$. Calculate using the unitary method:<br>
+                    (a) The cost of $25$ such pens.<br>
+                    (b) The number of pens that can be bought for ₹$300$.
+                </div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            <strong>Step 1: Apply unitary method.</strong><br>
+            Cost of $12$ pens = ₹$180$<br>
+            Cost of $1$ pen = $\frac{180}{12} = \text{₹}15$<br><br>
+            
+            <strong>(a) Cost of $25$ pens:</strong><br>
+            Cost of $25$ pens = Cost of $1$ pen $\times 25$<br>
+            <div class="math-chunk">$$ = 15 \times 25 = \text{₹}375 $$</div>
+            
+            <strong>(b) Number of pens for ₹$300$:</strong><br>
+            Number of pens = $\frac{\text{Total Amount}}{\text{Cost of } 1 \text{ pen}}$<br>
+            <div class="math-chunk">$$ = \frac{300}{15} = 20 \text{ pens} $$</div>
+            
+            <strong>Answers: (a) ₹$375$  &nbsp;&nbsp; (b) $20$ pens.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">12.</div>
+                <div class="q-content">
+                    Consider the set $S = \{a, b, c\}$.<br>
+                    (a) Write down all the possible subsets of the set $S$.<br>
+                    (b) Verify the mathematical property that the number of subsets is $2^n$, where $n$ represents the cardinal number of the set.
+                </div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            <strong>(a) Finding all subsets:</strong><br>
+            A subset can have $0, 1, 2,$ or $3$ elements.<br>
+            - Subset with $0$ elements: $\emptyset$ (Empty set)<br>
+            - Subsets with $1$ element: $\{a\}, \{b\}, \{c\}$<br>
+            - Subsets with $2$ elements: $\{a, b\}, \{b, c\}, \{a, c\}$<br>
+            - Subset with $3$ elements: $\{a, b, c\}$ (The set itself)<br>
+            <strong>All subsets:</strong> $\emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b, c\}, \{a, c\}, \{a, b, c\}$.<br><br>
+
+            <strong>(b) Verification:</strong><br>
+            Cardinal number of set S, $n(S) = 3$ (since there are 3 elements: a, b, c).<br>
+            Formula for number of subsets = $2^n$<br>
+            <div class="math-chunk">$$ 2^3 = 2 \times 2 \times 2 = 8 $$</div>
+            By counting the list generated in part (a), we have exactly $8$ subsets.<br>
+            <strong>Hence, the property is verified.</strong>
+        </div>
+    </div>
+
+    <div class="qa-block">
+        <div class="question-row">
+            <div class="q-wrapper">
+                <div class="q-num">13.</div>
+                <div class="q-content">
+                    Three partners Rohan, Rahul, and Raj invest ₹$30,000$, ₹$40,000$, and ₹$50,000$ respectively to start a small business. At the end of the year, they make a total profit of ₹$24,000$. Calculate the share of profit for each partner, assuming the profit is shared in the ratio of their original investments.
+                </div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <span class="solution-label">Solution:</span><br>
+            <strong>Step 1: Find the ratio of investments.</strong><br>
+            Ratio = Rohan : Rahul : Raj<br>
+            Ratio = $30,000 : 40,000 : 50,000$<br>
+            Simplifying by dividing by $10,000$:<br>
+            Ratio = $3 : 4 : 5$<br><br>
+
+            <strong>Step 2: Calculate total parts.</strong><br>
+            Total parts = $3 + 4 + 5 = 12$ parts.<br>
+            Total Profit = ₹$24,000$<br><br>
+
+            <strong>Step 3: Calculate individual shares.</strong><br>
+            <div class="math-chunk">
+            Rohan's Share = $\frac{3}{12} \times 24000 = 3 \times 2000 = \text{₹}6,000$<br><br>
+            Rahul's Share = $\frac{4}{12} \times 24000 = 4 \times 2000 = \text{₹}8,000$<br><br>
+            Raj's Share = $\frac{5}{12} \times 24000 = 5 \times 2000 = \text{₹}10,000$
+            </div><br>
+            <strong>Answer: Rohan receives ₹$6,000$, Rahul receives ₹$8,000$, and Raj receives ₹$10,000$.</strong>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Concept Rigor Division</div>
+</body>
+</html>

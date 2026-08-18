@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* Base styles for printing and general layout */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark styling */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header section styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: clamp(12pt, 3vw, 14pt); 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        /* Exam details responsive grid */
+        .exam-details { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 10px 0; 
+        }
+        @media (min-width: 600px) {
+            .exam-details {
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+            }
+        }
+        
+        /* Instructions and Section headers */
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        
+        /* Question layout */
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto; /* Handle long equations on mobile */
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        
+        /* Utility class for MathJax responsive wrapping */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        
+        /* Footer styling */
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Print specific adjustments */
+        @media print { 
+            body { width: 100%; padding: 20mm; margin: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: fixed; }
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Draw neat and labeled diagrams wherever necessary.</li>
+                <li>Topics Covered: Triangles & Fundamental Concepts of Algebra.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define an exterior angle of a triangle. State the theorem related to the exterior angle of a triangle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Identify the constants and variables in the following algebraic expression:<br>
+            <div class="math-scroll">\( 3x^2y - 7xy + \frac{5}{2} - z \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            In a triangle \(ABC\), if \(\angle A = 45^\circ\) and \(\angle B = 65^\circ\), find the measure of \(\angle C\). What type of triangle is \(ABC\) based on its angles?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Write down the algebraic expression for the following statement:<br>
+            "Five times a number \(x\) is subtracted from the sum of \(y\) and \(z\)."
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Is it possible to construct a triangle with side lengths \(3\text{ cm}\), \(4\text{ cm}\), and \(8\text{ cm}\)? Give a valid mathematical reason for your answer.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Evaluate the algebraic expression \( 2a^2 - 3ab + b^2 \) when \( a = -2 \) and \( b = 3 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            In an isosceles triangle \(PQR\), \(PQ = PR\). If the vertical angle \(\angle P\) is \(50^\circ\), calculate the base angles \(\angle Q\) and \(\angle R\). State the property used.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Classify the following algebraic expressions as monomials, binomials, or trinomials. Also, state the degree of expression (b):<br>
+            (a) \( 7pqr \)<br>
+            (b) \( 4x^3 - 2xy^2 + 5 \)<br>
+            (c) \( m^2 - n^2 \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The exterior angle of a triangle is \(110^\circ\) and one of its interior opposite angles is \(40^\circ\). Find the other two angles of the triangle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Add the following algebraic expressions:<br>
+            <div class="math-scroll">\( (3x^2 - 5x + 2) \) and \( (-x^2 + 4x - 6) \)</div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            In a triangle \(ABC\), the angles are in the ratio \( 2 : 3 : 4 \).<br>
+            (a) Find the measure of each angle of the triangle. (3 Marks)<br>
+            (b) Classify the triangle based on its angles. (1 Mark)<br>
+            (c) State the property of triangles used to solve this problem. (1 Mark)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Simplify the following algebraic expression by opening the brackets and combining like terms:<br>
+            <div class="math-scroll">\( 5x - [3y - \{2x - (y - x)\}] \)</div>
+            Show each step of your working clearly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Consider the algebraic expression: \( 4x^3y - 5x^2y^2 + 7xy^3 - 2 \)<br>
+            (a) How many terms are there in this expression? (1 Mark)<br>
+            (b) Write the coefficient of \(x^2\) in the term \( -5x^2y^2 \). (1 Mark)<br>
+            (c) What is the numerical coefficient of the term \( 4x^3y \)? (1 Mark)<br>
+            (d) Find the degree of the entire algebraic expression. Explain how you arrived at it. (2 Marks)
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

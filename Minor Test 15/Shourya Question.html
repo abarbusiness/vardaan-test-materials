@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            max-width: 210mm; /* A4 width */
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; /* Responsive padding for mobile */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+
+        /* Responsive tablet/desktop padding */
+        @media (min-width: 768px) {
+            body { padding: 20mm; }
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); /* Responsive font size */
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Allows wrapping on small screens */
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        
+        .q-content { 
+            flex-grow: 1; 
+            overflow-wrap: break-word; /* Allows long words/equations to break */
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Ensure MathJax doesn't force a horizontal scroll on the parent */
+        .q-content mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show all necessary workings.</li>
+                <li>Syllabus: Ratio and Proportion, Introduction to Sets.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Write the following set in Roster form:<br>
+            $A = \{x \mid x \text{ is a vowel in the word "EQUATION"}\}$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Express the ratio $45\text{ cm}$ to $3\text{ meters}$ in its simplest form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            State whether the following sets are finite or infinite:
+            <div class="sub-question">(i) Set of all stars in the universe.</div>
+            <div class="sub-question">(ii) Set of multiples of $5$ which are less than $100$.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the value of $x$ if the numbers $3, 12, 15,$ and $x$ are in proportion.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Find the cardinal number of the set $B = \{x \mid x \text{ is a prime number between } 10 \text{ and } 20\}$.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Divide ₹$1500$ between A and B in the ratio $2:3$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Let $P = \{1, 2, 3, 4, 5\}$ and $Q = \{2, 4, 6, 8\}$. Answer the following:
+            <div class="sub-question">(i) Write down the set of elements present in P but not in Q.</div>
+            <div class="sub-question">(ii) Are P and Q equivalent sets? Give a logical reason for your answer.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            The ratio of the length to the width of a rectangular playground is $5:3$. If the length of the playground is $80\text{ m}$, calculate its width.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Rewrite the following set in Set-builder form:<br>
+            $C = \{5, 10, 15, 20, 25, \dots\}$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The ratio of the number of boys to girls in a school is $5:4$. If there are $800$ boys in the school, find the total number of students.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The cost of $12$ identical pens is ₹$180$. Calculate using the unitary method:
+            <div class="sub-question">(a) The cost of $25$ such pens.</div>
+            <div class="sub-question">(b) The number of pens that can be bought for ₹$300$.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Consider the set $S = \{a, b, c\}$.
+            <div class="sub-question">(a) Write down all the possible subsets of the set $S$.</div>
+            <div class="sub-question">(b) Verify the mathematical property that the number of subsets is $2^n$, where $n$ represents the cardinal number of the set.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Three partners Rohan, Rahul, and Raj invest ₹$30,000$, ₹$40,000$, and ₹$50,000$ respectively to start a small business. At the end of the year, they make a total profit of ₹$24,000$. Calculate the share of profit for each partner, assuming the profit is shared in the ratio of their original investments.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Concept Rigor Division</div>
+</body>
+</html>

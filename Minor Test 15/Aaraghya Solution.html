@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <style>
+        /* Responsive adaptations and solution-specific styles */
+        :root {
+            --brand-color: #000;
+            --solution-bg: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            margin: 0 auto; 
+            padding: 15px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.6; 
+            color: var(--brand-color); 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        @media (min-width: 768px) { body { padding: 30px; } }
+        @media (min-width: 1024px) { body { padding: 20mm; min-height: 297mm; } }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px;
+            opacity: 0.08; z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; color: #1a56db; }
+        
+        .exam-details { 
+            display: flex; flex-wrap: wrap; justify-content: space-between; 
+            margin-top: 15px; font-weight: bold; font-size: 11pt; 
+            border-top: 1px solid #000; border-bottom: 1px solid #000; 
+            padding: 8px 0; gap: 10px;
+        }
+        .exam-details span { flex: 1 1 auto; min-width: 120px; text-align: center; }
+
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 30px; 
+            margin-bottom: 20px; text-decoration: underline; font-size: 13pt; 
+        }
+        
+        .qa-container { 
+            margin-bottom: 25px; 
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            page-break-inside: avoid;
+        }
+        .question-box {
+            display: flex;
+            background-color: #fff;
+            padding: 12px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; color: #000;}
+        .q-content { flex-grow: 1; padding-right: 10px; overflow-wrap: break-word; font-weight: 600;}
+        .q-marks { font-weight: bold; flex-shrink: 0; width: 40px; text-align: right; color: #b91c1c; }
+        
+        .solution-box {
+            background-color: var(--solution-bg);
+            padding: 15px;
+            font-size: 11pt;
+        }
+        .solution-label { font-weight: bold; margin-bottom: 10px; text-decoration: underline; color: #047857;}
+        .step { margin-bottom: 8px; }
+        .final-answer { font-weight: bold; background-color: #d1fae5; display: inline-block; padding: 2px 8px; border-radius: 4px; margin-top: 5px;}
+
+        .sub-question { margin-left: 15px; margin-top: 8px; display: flex;}
+        .sub-q-num { width: 25px; flex-shrink: 0; font-weight: bold; }
+        .sub-q-content { flex-grow: 1; }
+        
+        /* Handling MathJax Overflow for mobile screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            max-width: 100%;
+        }
+
+        .footer { margin-top: 50px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .qa-container { border: 1px solid #ccc; }
+            .solution-box { background-color: #f5f5f5 !important; }
+            .final-answer { background-color: #e0e0e0 !important; }
+        }
+    </style>
+    <!-- MathJax for rendering equations cleanly -->
+    <script>
+    MathJax = {
+      chtml: {
+        displayAlign: 'left',
+        displayIndent: '1em'
+      }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 15 - DETAILED SOLUTION KEY</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <!-- Q1 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">1.</div>
+            <div class="q-content">Express the ratio \( 75 \text{ cm} \) to \( 1.5 \text{ m} \) in its simplest form.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">To find the ratio, both quantities must be in the same unit.</div>
+            <div class="step">Convert \( 1.5 \text{ m} \) into cm:</div>
+            <div class="math-scroll">
+                \[ 1.5 \text{ m} = 1.5 \times 100 \text{ cm} = 150 \text{ cm} \]
+            </div>
+            <div class="step">Now, the ratio is \( 75 \text{ cm} : 150 \text{ cm} \)</div>
+            <div class="math-scroll">
+                \[ = \frac{75}{150} = \frac{1}{2} \]
+            </div>
+            <div class="final-answer">Ratio = 1 : 2</div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">2.</div>
+            <div class="q-content">If \( A : B = 3 : 4 \) and \( B : C = 8 : 9 \), find the ratio \( A : C \).</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Given: \( \frac{A}{B} = \frac{3}{4} \) and \( \frac{B}{C} = \frac{8}{9} \)</div>
+            <div class="step">To find \( A:C \), multiply the two ratios:</div>
+            <div class="math-scroll">
+                \[ \frac{A}{B} \times \frac{B}{C} = \frac{3}{4} \times \frac{8}{9} \]
+            </div>
+            <div class="math-scroll">
+                \[ \frac{A}{C} = \frac{3 \times 8}{4 \times 9} = \frac{24}{36} \]
+            </div>
+            <div class="step">Simplifying \( \frac{24}{36} \) by dividing numerator and denominator by 12:</div>
+            <div class="math-scroll">
+                \[ \frac{A}{C} = \frac{2}{3} \]
+            </div>
+            <div class="final-answer">A : C = 2 : 3</div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">3.</div>
+            <div class="q-content">Determine whether the numbers \( 4, 6, 8, \) and \( 12 \) are in proportion.</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Four numbers \(a, b, c, d\) are in proportion if \( \text{Product of Extremes} = \text{Product of Means} \).</div>
+            <div class="step">Here, Extremes are \( 4 \) and \( 12 \). Means are \( 6 \) and \( 8 \).</div>
+            <div class="math-scroll">
+                \[ \text{Product of Extremes} = 4 \times 12 = 48 \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Product of Means} = 6 \times 8 = 48 \]
+            </div>
+            <div class="step">Since \( 48 = 48 \), the condition is satisfied.</div>
+            <div class="final-answer">Yes, they are in proportion.</div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">4.</div>
+            <div class="q-content">A manufacturing machine produces \( 150 \) widgets in \( 3 \text{ hours} \). How many widgets will it produce in \( 5 \text{ hours} \)?</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Using the unitary method (Direct Variation):</div>
+            <div class="step">Widgets produced in \( 3 \text{ hours} = 150 \)</div>
+            <div class="math-scroll">
+                \[ \text{Widgets produced in } 1 \text{ hour} = \frac{150}{3} = 50 \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Widgets produced in } 5 \text{ hours} = 50 \times 5 = 250 \]
+            </div>
+            <div class="final-answer">The machine will produce 250 widgets.</div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">5.</div>
+            <div class="q-content">Find the mean proportional between \( 9 \) and \( 25 \).</div>
+            <div class="q-marks">[2]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Let the mean proportional be \( x \).</div>
+            <div class="step">Then, \( 9, x, \) and \( 25 \) are in continued proportion, meaning \( 9 : x :: x : 25 \).</div>
+            <div class="math-scroll">
+                \[ x \times x = 9 \times 25 \]
+                \[ x^2 = 225 \]
+                \[ x = \sqrt{225} = 15 \]
+            </div>
+            <div class="final-answer">The mean proportional is 15.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <!-- Q6 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">6.</div>
+            <div class="q-content">Divide ₹\( 1400 \) among Ram, Shyam, and Mohan in the ratio \( 2 : 3 : 5 \). Find the final share of each.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Given Ratio = \( 2 : 3 : 5 \)</div>
+            <div class="step">Sum of ratio parts = \( 2 + 3 + 5 = 10 \) parts.</div>
+            <div class="step">Total Amount = ₹\( 1400 \)</div>
+            <div class="step">Value of 1 part:</div>
+            <div class="math-scroll">
+                \[ \frac{1400}{10} = \] ₹\( 140 \)
+            </div>
+            <div class="step">Calculating individual shares:</div>
+            <div class="math-scroll">
+                \[ \text{Ram's share} = 2 \text{ parts} = 2 \times 140 = \] ₹\( 280 \)
+                <br>
+                \[ \text{Shyam's share} = 3 \text{ parts} = 3 \times 140 = \] ₹\( 420 \)
+                <br>
+                \[ \text{Mohan's share} = 5 \text{ parts} = 5 \times 140 = \] ₹\( 700 \)
+            </div>
+            <div class="final-answer">Shares: Ram = ₹280, Shyam = ₹420, Mohan = ₹700</div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">7.</div>
+            <div class="q-content">If \( 15 \) men can complete a piece of work in \( 42 \) days, in how many days will \( 35 \) men complete the same work?</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">This is a case of Inverse Variation (more men = less days).</div>
+            <div class="step">Number of days taken by 15 men = 42 days</div>
+            <div class="step">Number of days taken by 1 man (requires more time):</div>
+            <div class="math-scroll">
+                \[ = 15 \times 42 = 630 \text{ days} \]
+            </div>
+            <div class="step">Number of days taken by 35 men:</div>
+            <div class="math-scroll">
+                \[ = \frac{630}{35} \]
+            </div>
+            <div class="step">Solving the division: \( 630 \div 35 = 18 \)</div>
+            <div class="final-answer">35 men will complete the work in 18 days.</div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">8.</div>
+            <div class="q-content">Two numbers are in the ratio \( 5 : 7 \). If \( 3 \) is subtracted from each number, the new ratio becomes \( 2 : 3 \). Find the original numbers.</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Let the original numbers be \( 5x \) and \( 7x \).</div>
+            <div class="step">According to the problem, if 3 is subtracted from both:</div>
+            <div class="math-scroll">
+                \[ \frac{5x - 3}{7x - 3} = \frac{2}{3} \]
+            </div>
+            <div class="step">Cross multiplying to solve for \( x \):</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} 3(5x - 3) &= 2(7x - 3) \\ 15x - 9 &= 14x - 6 \\ 15x - 14x &= -6 + 9 \\ x &= 3 \end{aligned} \]
+            </div>
+            <div class="step">Now substitute \( x = 3 \) back into the original expressions:</div>
+            <div class="math-scroll">
+                \[ \text{First number} = 5 \times 3 = 15 \]
+                <br>
+                \[ \text{Second number} = 7 \times 3 = 21 \]
+            </div>
+            <div class="final-answer">The original numbers are 15 and 21.</div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">9.</div>
+            <div class="q-content">
+                The cost of \( 8 \text{ kg} \) of premium rice is ₹\( 360 \). 
+                <div class="sub-question"><div class="sub-q-num">(a)</div><div class="sub-q-content">What will be the cost of \( 15 \text{ kg} \) of this rice?</div></div>
+                <div class="sub-question"><div class="sub-q-num">(b)</div><div class="sub-q-content">What quantity of rice can be purchased for ₹\( 675 \)?</div></div>
+            </div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">First, find the cost of \( 1 \text{ kg} \) of rice (Unitary Method):</div>
+            <div class="math-scroll">
+                \[ \text{Cost of 1 kg} = \frac{360}{8} = \] ₹\( 45 \)
+            </div>
+            <div class="step"><strong>(a)</strong> Cost of \( 15 \text{ kg} \) of rice:</div>
+            <div class="math-scroll">
+                \[ = 15 \times 45 = \] ₹\( 675 \)
+            </div>
+            <div class="step"><strong>(b)</strong> Quantity of rice for ₹\( 675 \):</div>
+            <div class="step">From part (a), we already see the answer is 15 kg. Mathematically:</div>
+            <div class="math-scroll">
+                \[ \text{Quantity} = \frac{\text{Total Amount}}{\text{Cost per kg}} = \frac{675}{45} = 15 \text{ kg} \]
+            </div>
+            <div class="final-answer">(a) Cost is ₹675. (b) Quantity is 15 kg.</div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">10.</div>
+            <div class="q-content">What specific number must be added to each of the numbers \( 5, 9, 7, \) and \( 12 \) so that the resulting numbers are in continued proportion?</div>
+            <div class="q-marks">[3]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Let the required number to be added be \( x \).</div>
+            <div class="step">The new numbers will be \( (5+x), (9+x), (7+x), \) and \( (12+x) \).</div>
+            <div class="step">For these to be in proportion:</div>
+            <div class="math-scroll">
+                \[ \frac{5+x}{9+x} = \frac{7+x}{12+x} \]
+            </div>
+            <div class="step">Cross multiplying:</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} (5+x)(12+x) &= (9+x)(7+x) \\ 60 + 5x + 12x + x^2 &= 63 + 9x + 7x + x^2 \end{aligned} \]
+            </div>
+            <div class="step">Subtracting \( x^2 \) from both sides and simplifying:</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} 60 + 17x &= 63 + 16x \\ 17x - 16x &= 63 - 60 \\ x &= 3 \end{aligned} \]
+            </div>
+            <div class="final-answer">The number to be added is 3.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+    
+    <!-- Q11 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">11.</div>
+            <div class="q-content">A military garrison of \( 1200 \) men has provisions for \( 60 \text{ days} \). After \( 15 \text{ days} \), \( 300 \) more men join the garrison. How long will the remaining food last for the newly formed group? Support your answer with a detailed unitary calculation.</div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">Initial state: Provisions are sufficient for 1200 men for 60 days.</div>
+            <div class="step">After 15 days, food has been consumed. </div>
+            <div class="step">Remaining food is sufficient for the original 1200 men for:</div>
+            <div class="math-scroll">
+                \[ 60 - 15 = 45 \text{ days} \]
+            </div>
+            <div class="step">Now, 300 more men join. New total number of men:</div>
+            <div class="math-scroll">
+                \[ 1200 + 300 = 1500 \text{ men} \]
+            </div>
+            <div class="step">Let the remaining food last for \( D \) days for the 1500 men.</div>
+            <div class="step">This is an Inverse Variation problem (more men = fewer days).</div>
+            <div class="math-scroll">
+                \[ M_1 \times D_1 = M_2 \times D_2 \]
+                \[ 1200 \times 45 = 1500 \times D \]
+            </div>
+            <div class="step">Solving for \( D \):</div>
+            <div class="math-scroll">
+                \[ D = \frac{1200 \times 45}{1500} \]
+                \[ D = \frac{12 \times 45}{15} \]
+                \[ D = 12 \times 3 = 36 \]
+            </div>
+            <div class="final-answer">The remaining food will last for 36 days.</div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                Solve the following proportional relationships:
+                <div class="sub-question"><div class="sub-q-num">(a)</div><div class="sub-q-content">If \( \frac{3x - 5y}{3x + 5y} = \frac{1}{5} \), find the value of the ratio \( x : y \).</div></div>
+                <div class="sub-question"><div class="sub-q-num">(b)</div><div class="sub-q-content">Find the fourth proportional to the decimal numbers \( 2.5, 1.5, \) and \( 3.0 \).</div></div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step"><strong>Part (a) [3 Marks]:</strong></div>
+            <div class="step">Given:</div>
+            <div class="math-scroll">
+                \[ \frac{3x - 5y}{3x + 5y} = \frac{1}{5} \]
+            </div>
+            <div class="step">Cross multiply:</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} 5(3x - 5y) &= 1(3x + 5y) \\ 15x - 25y &= 3x + 5y \end{aligned} \]
+            </div>
+            <div class="step">Group like terms together:</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} 15x - 3x &= 5y + 25y \\ 12x &= 30y \\ \frac{x}{y} &= \frac{30}{12} \end{aligned} \]
+            </div>
+            <div class="step">Simplify the fraction (divide by 6):</div>
+            <div class="math-scroll">
+                \[ \frac{x}{y} = \frac{5}{2} \]
+            </div>
+            <div class="final-answer">x : y = 5 : 2</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b) [2 Marks]:</strong></div>
+            <div class="step">Let the fourth proportional be \( p \). Then, \( 2.5, 1.5, 3.0, p \) are in proportion.</div>
+            <div class="math-scroll">
+                \[ \frac{2.5}{1.5} = \frac{3.0}{p} \]
+            </div>
+            <div class="step">Cross multiply:</div>
+            <div class="math-scroll">
+                \[ \begin{aligned} 2.5 \times p &= 1.5 \times 3.0 \\ 2.5p &= 4.5 \\ p &= \frac{4.5}{2.5} = \frac{45}{25} = 1.8 \end{aligned} \]
+            </div>
+            <div class="final-answer">Fourth proportional is 1.8.</div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">13.</div>
+            <div class="q-content">
+                A transport bus travels \( 432 \text{ km} \) consuming \( 48 \text{ litres} \) of diesel.
+                <div class="sub-question"><div class="sub-q-num">(a)</div><div class="sub-q-content">How far would the bus travel if it is supplied with \( 20 \text{ litres} \) of diesel?</div></div>
+                <div class="sub-question"><div class="sub-q-num">(b)</div><div class="sub-q-content">How many litres of diesel are required for the bus to travel a total distance of \( 630 \text{ km} \)?</div></div>
+            </div>
+            <div class="q-marks">[5]</div>
+        </div>
+        <div class="solution-box">
+            <div class="solution-label">Solution:</div>
+            <div class="step">First, establish the base rate (Unitary Method).</div>
+            <div class="step">Distance traveled on 48 litres = 432 km.</div>
+            <div class="math-scroll">
+                \[ \text{Distance on 1 litre} = \frac{432}{48} = 9 \text{ km} \]
+            </div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (a) [2 Marks]:</strong></div>
+            <div class="step">We need to find the distance for 20 litres.</div>
+            <div class="math-scroll">
+                \[ \text{Distance on 20 litres} = 20 \times 9 = 180 \text{ km} \]
+            </div>
+            <div class="final-answer">The bus travels 180 km on 20 litres.</div>
+
+            <div class="step" style="margin-top: 15px;"><strong>Part (b) [3 Marks]:</strong></div>
+            <div class="step">We need to find the diesel required for 630 km.</div>
+            <div class="step">We know that 9 km requires 1 litre of diesel.</div>
+            <div class="math-scroll">
+                \[ \text{Diesel for 1 km} = \frac{1}{9} \text{ litres} \]
+            </div>
+            <div class="math-scroll">
+                \[ \text{Diesel for 630 km} = 630 \times \frac{1}{9} = \frac{630}{9} = 70 \text{ litres} \]
+            </div>
+            <div class="final-answer">70 litres of diesel are required.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

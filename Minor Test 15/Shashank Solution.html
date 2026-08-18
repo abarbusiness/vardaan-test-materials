@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f9f9fb; 
+        }
+        
+        .sol-header { 
+            background-color: #1e3a8a; 
+            color: #fff; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-radius: 8px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        }
+        .sol-header h1 { margin: 0 0 10px 0; font-size: 24pt; font-family: "Times New Roman", Times, serif; text-transform: uppercase; letter-spacing: 1px; }
+        .sol-header h2 { margin: 0; font-size: 16pt; font-weight: 400; color: #e0e7ff; }
+        
+        .section-title { 
+            background-color: #e5e7eb; 
+            padding: 10px 15px; 
+            border-left: 5px solid #2563eb; 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            border-radius: 0 4px 4px 0; 
+        }
+        .q-block { 
+            background-color: #fff; 
+            border: 1px solid #e5e7eb; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin-top: 20px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            border-bottom: 2px dashed #e5e7eb; 
+            padding-bottom: 15px; 
+            margin-bottom: 15px; 
+        }
+        .q-text { font-weight: bold; color: #1f2937; flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            background-color: #fee2e2; 
+            color: #b91c1c; 
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            white-space: nowrap; 
+        }
+        
+        .solution-title { font-weight: bold; color: #16a34a; margin-bottom: 10px; font-size: 11pt; text-transform: uppercase; letter-spacing: 0.5px; }
+        .solution-step { margin-bottom: 8px; }
+        .final-answer { 
+            display: inline-block; 
+            background-color: #dcfce7; 
+            border: 1px solid #86efac; 
+            padding: 8px 15px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            color: #166534; 
+            margin-top: 10px; 
+        }
+        
+        .math-container { 
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            padding: 5px 0; 
+            /* To allow smooth scrolling on iOS */
+            -webkit-overflow-scrolling: touch; 
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .sol-header h1 { font-size: 18pt; }
+            .sol-header h2 { font-size: 12pt; }
+            .q-block { padding: 15px; }
+            .q-header { flex-direction: column; }
+            .q-marks { margin-top: 10px; align-self: flex-start; }
+            .q-text { padding-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sol-header">
+        <h1>Vardaan Learning Institute</h1>
+        <h2>Minor Test 15 - Detailed Solutions (Class 6 ICSE Math)</h2>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">1. Reduce the fraction \(\frac{144}{180}\) to its simplest form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">To reduce the fraction to its simplest form, we find the Highest Common Factor (HCF) of the numerator and the denominator.</div>
+            <div class="solution-step">Numerator = 144, Denominator = 180.</div>
+            <div class="solution-step">Prime factorization of 144 = \(2^4 \times 3^2\)</div>
+            <div class="solution-step">Prime factorization of 180 = \(2^2 \times 3^2 \times 5\)</div>
+            <div class="solution-step">HCF = \(2^2 \times 3^2 = 4 \times 9 = 36\)</div>
+            <div class="solution-step">Dividing both numerator and denominator by 36:</div>
+            <div class="math-container">
+                \[ \frac{144 \div 36}{180 \div 36} = \frac{4}{5} \]
+            </div>
+            <div class="final-answer">Final Answer: \(\frac{4}{5}\)</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">2. Evaluate the following integer expression: \((-15) + (+23) - (-12) - (+5)\)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">First, simplify the signs of the expression:</div>
+            <div class="math-container">
+                \[ = -15 + 23 + 12 - 5 \]
+            </div>
+            <div class="solution-step">Group the positive and negative integers together:</div>
+            <div class="math-container">
+                \[ = (23 + 12) - (15 + 5) \]
+                \[ = 35 - 20 \]
+                \[ = 15 \]
+            </div>
+            <div class="final-answer">Final Answer: 15</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">3. Divide an amount of ₹ 1,200 between A and B in the ratio 3 : 5.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Given ratio = \(3 : 5\)</div>
+            <div class="solution-step">Total parts = \(3 + 5 = 8\) parts.</div>
+            <div class="solution-step">Total amount = ₹ 1,200</div>
+            <div class="solution-step">A's share = \(\frac{3}{8}\) of ₹ 1,200</div>
+            <div class="math-container">
+                \[ \text{A's share} = \frac{3}{8} \times 1200 = 3 \times 150 = \text{₹ } 450 \]
+            </div>
+            <div class="solution-step">B's share = \(\frac{5}{8}\) of ₹ 1,200</div>
+            <div class="math-container">
+                \[ \text{B's share} = \frac{5}{8} \times 1200 = 5 \times 150 = \text{₹ } 750 \]
+            </div>
+            <div class="final-answer">Final Answer: A gets ₹ 450, B gets ₹ 750.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">4. Write down all the prime numbers between 20 and 40.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">A prime number is a number greater than 1 that has exactly two factors: 1 and itself.</div>
+            <div class="solution-step">Let's check the numbers between 20 and 40:</div>
+            <div class="solution-step">
+                21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 39 are divisible by numbers other than 1 and themselves (Composite).
+            </div>
+            <div class="solution-step">The remaining numbers that have exactly two factors are:</div>
+            <div class="final-answer">Final Answer: 23, 29, 31, 37</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">5. Find the Highest Common Factor (HCF) of 36 and 84 using the prime factorization method.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Step 1: Find the prime factorization of each number.</div>
+            <div class="math-container">
+                \[ 36 = 2 \times 18 = 2 \times 2 \times 9 = 2 \times 2 \times 3 \times 3 = 2^2 \times 3^2 \]
+                \[ 84 = 2 \times 42 = 2 \times 2 \times 21 = 2 \times 2 \times 3 \times 7 = 2^2 \times 3 \times 7 \]
+            </div>
+            <div class="solution-step">Step 2: Take the lowest power of common prime factors.</div>
+            <div class="solution-step">Common prime factors are 2 and 3.</div>
+            <div class="solution-step">Lowest power of 2 is \(2^2\). Lowest power of 3 is \(3^1\).</div>
+            <div class="math-container">
+                \[ \text{HCF} = 2^2 \times 3 = 4 \times 3 = 12 \]
+            </div>
+            <div class="final-answer">Final Answer: 12</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">6. Are the numbers 12, 16, 18, and 24 in proportion? Provide mathematical reasoning to justify your answer.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Four numbers \(a, b, c, d\) are in proportion if \(a : b = c : d\), which means the Product of Extremes equals the Product of Means (\(a \times d = b \times c\)).</div>
+            <div class="solution-step">Here, the numbers are 12, 16, 18, and 24.</div>
+            <div class="solution-step">Extremes (first and last terms) = 12 and 24.</div>
+            <div class="math-container">
+                \[ \text{Product of Extremes} = 12 \times 24 = 288 \]
+            </div>
+            <div class="solution-step">Means (middle terms) = 16 and 18.</div>
+            <div class="math-container">
+                \[ \text{Product of Means} = 16 \times 18 = 288 \]
+            </div>
+            <div class="solution-step">Since the Product of Extremes = Product of Means (288 = 288), the numbers are in proportion.</div>
+            <div class="final-answer">Final Answer: Yes, they are in proportion.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">7. At 6:00 AM, the temperature in a town was \(-4^\circ\text{C}\). By noon, the temperature rose by \(7^\circ\text{C}\), and by midnight, it dropped by \(5^\circ\text{C}\). What was the exact temperature at midnight?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Initial temperature at 6:00 AM = \(-4^\circ\text{C}\)</div>
+            <div class="solution-step">Rise in temperature by noon = \(+7^\circ\text{C}\) (Rise indicates addition)</div>
+            <div class="math-container">
+                \[ \text{Temperature at noon} = -4 + 7 = 3^\circ\text{C} \]
+            </div>
+            <div class="solution-step">Drop in temperature by midnight = \(5^\circ\text{C}\) (Drop indicates subtraction)</div>
+            <div class="math-container">
+                \[ \text{Temperature at midnight} = 3 - 5 = -2^\circ\text{C} \]
+            </div>
+            <div class="final-answer">Final Answer: \(-2^\circ\text{C}\)</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">8. Arrange the following fractions in descending order: \(\frac{2}{3}, \frac{3}{4}, \frac{5}{6}, \frac{7}{12}\)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">To compare fractions, we make their denominators equal by finding the LCM of 3, 4, 6, and 12.</div>
+            <div class="solution-step">LCM of 3, 4, 6, 12 is 12.</div>
+            <div class="solution-step">Convert each fraction into an equivalent fraction with denominator 12:</div>
+            <div class="math-container">
+                \begin{align*}
+                \frac{2}{3} &= \frac{2 \times 4}{3 \times 4} = \frac{8}{12} \\
+                \frac{3}{4} &= \frac{3 \times 3}{4 \times 3} = \frac{9}{12} \\
+                \frac{5}{6} &= \frac{5 \times 2}{6 \times 2} = \frac{10}{12} \\
+                \frac{7}{12} &= \frac{7 \times 1}{12 \times 1} = \frac{7}{12}
+                \end{align*}
+            </div>
+            <div class="solution-step">Now compare the numerators: 10 > 9 > 8 > 7.</div>
+            <div class="solution-step">So, \(\frac{10}{12} > \frac{9}{12} > \frac{8}{12} > \frac{7}{12}\)</div>
+            <div class="final-answer">Final Answer: \(\frac{5}{6} > \frac{3}{4} > \frac{2}{3} > \frac{7}{12}\)</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">9. Three bells toll at intervals of 12, 15, and 20 minutes respectively. If they all toll together at 8:00 AM, at what time will they toll together again?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">The time after which they will toll together again is the Least Common Multiple (LCM) of their intervals (12, 15, 20).</div>
+            <div class="solution-step">Prime factorization:</div>
+            <div class="math-container">
+                \[ 12 = 2^2 \times 3 \]
+                \[ 15 = 3 \times 5 \]
+                \[ 20 = 2^2 \times 5 \]
+            </div>
+            <div class="solution-step">LCM = Highest power of all prime factors present = \(2^2 \times 3 \times 5\)</div>
+            <div class="math-container">
+                \[ \text{LCM} = 4 \times 3 \times 5 = 60 \text{ minutes} \]
+            </div>
+            <div class="solution-step">60 minutes = 1 Hour.</div>
+            <div class="solution-step">If they tolled together at 8:00 AM, they will toll together after 1 hour.</div>
+            <div class="math-container">
+                \[ \text{New Time} = 8:00 \text{ AM} + 1 \text{ Hour} = 9:00 \text{ AM} \]
+            </div>
+            <div class="final-answer">Final Answer: 9:00 AM</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">10. In a class of 60 students, \(\frac{2}{5}\) of the total students are girls and the rest are boys. Find the ratio of the number of boys to the total number of students in the class.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Total number of students = 60</div>
+            <div class="solution-step">Number of girls = \(\frac{2}{5}\) of 60</div>
+            <div class="math-container">
+                \[ \text{Girls} = \frac{2}{5} \times 60 = 2 \times 12 = 24 \]
+            </div>
+            <div class="solution-step">Number of boys = Total students - Number of girls</div>
+            <div class="math-container">
+                \[ \text{Boys} = 60 - 24 = 36 \]
+            </div>
+            <div class="solution-step">Ratio of number of boys to total number of students = Boys : Total</div>
+            <div class="math-container">
+                \[ \text{Ratio} = 36 : 60 \]
+            </div>
+            <div class="solution-step">Divide both by 12 (their HCF) to simplify:</div>
+            <div class="math-container">
+                \[ \frac{36}{12} : \frac{60}{12} = 3 : 5 \]
+            </div>
+            <div class="final-answer">Final Answer: 3 : 5</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">11. Simplify the following expression using the correct order of operations (BODMAS):<br>
+            \[ 3 \frac{1}{2} - \left[ \frac{2}{3} \times \left( \frac{5}{6} + \frac{1}{2} \right) \right] \]
+            </div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">According to BODMAS, we solve the inner round brackets ( ) first.</div>
+            <div class="math-container">
+                \[ \left( \frac{5}{6} + \frac{1}{2} \right) \]
+            </div>
+            <div class="solution-step">LCM of 6 and 2 is 6.</div>
+            <div class="math-container">
+                \[ = \left( \frac{5}{6} + \frac{3}{6} \right) = \frac{8}{6} \]
+            </div>
+            <div class="solution-step">Simplifying \(\frac{8}{6}\) by dividing by 2: \(\frac{4}{3}\)</div>
+            
+            <div class="solution-step">Now substitute this back into the square bracket [ ]:</div>
+            <div class="math-container">
+                \[ \left[ \frac{2}{3} \times \frac{4}{3} \right] \]
+            </div>
+            <div class="solution-step">Multiply numerator with numerator and denominator with denominator:</div>
+            <div class="math-container">
+                \[ = \frac{2 \times 4}{3 \times 3} = \frac{8}{9} \]
+            </div>
+            
+            <div class="solution-step">Now, subtract this result from the first fraction. First, convert the mixed fraction to an improper fraction:</div>
+            <div class="math-container">
+                \[ 3 \frac{1}{2} = \frac{(3 \times 2) + 1}{2} = \frac{7}{2} \]
+            </div>
+            <div class="solution-step">Now perform the subtraction:</div>
+            <div class="math-container">
+                \[ \frac{7}{2} - \frac{8}{9} \]
+            </div>
+            <div class="solution-step">LCM of 2 and 9 is 18. Convert to equivalent fractions:</div>
+            <div class="math-container">
+                \[ \frac{7 \times 9}{2 \times 9} - \frac{8 \times 2}{9 \times 2} = \frac{63}{18} - \frac{16}{18} \]
+                \[ = \frac{47}{18} \]
+            </div>
+            <div class="solution-step">Convert back to a mixed fraction:</div>
+            <div class="math-container">
+                \[ 47 \div 18 = 2 \text{ with a remainder of } 11 \rightarrow 2 \frac{11}{18} \]
+            </div>
+            <div class="final-answer">Final Answer: \( 2 \frac{11}{18} \)</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">12. The ratio of the length to the breadth of a rectangular field is 5 : 3. If the perimeter of the field is 128 meters, determine the length and breadth of the field. Also, calculate its total area.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Let the common ratio multiplier be \(x\).</div>
+            <div class="solution-step">Length (\(L\)) = \(5x\)</div>
+            <div class="solution-step">Breadth (\(B\)) = \(3x\)</div>
+            
+            <div class="solution-step">The formula for the perimeter of a rectangle is \(2 \times (L + B)\).</div>
+            <div class="solution-step">Given perimeter = 128 meters.</div>
+            <div class="math-container">
+                \[ 2 \times (5x + 3x) = 128 \]
+                \[ 2 \times (8x) = 128 \]
+                \[ 16x = 128 \]
+            </div>
+            <div class="solution-step">Solving for \(x\):</div>
+            <div class="math-container">
+                \[ x = \frac{128}{16} = 8 \]
+            </div>
+            
+            <div class="solution-step">Now, calculate exact dimensions:</div>
+            <div class="math-container">
+                \[ \text{Length } (L) = 5x = 5 \times 8 = 40 \text{ meters} \]
+                \[ \text{Breadth } (B) = 3x = 3 \times 8 = 24 \text{ meters} \]
+            </div>
+            
+            <div class="solution-step">Calculate the Area of the rectangular field:</div>
+            <div class="math-container">
+                \[ \text{Area} = \text{Length} \times \text{Breadth} \]
+                \[ \text{Area} = 40 \times 24 = 960 \text{ sq. meters} (m^2) \]
+            </div>
+            <div class="final-answer">Final Answer: Length = 40m, Breadth = 24m, Area = 960 m\(^2\)</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">13. Find the greatest number of 4 digits which is exactly divisible by 12, 16, and 24. Show all your working steps clearly.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-content">
+            <div class="solution-title">Solution:</div>
+            <div class="solution-step">Step 1: Find the Least Common Multiple (LCM) of 12, 16, and 24. This will give us the smallest number divisible by all three.</div>
+            <div class="solution-step">Prime Factorization:</div>
+            <div class="math-container">
+                \begin{align*}
+                12 &= 2^2 \times 3 \\
+                16 &= 2^4 \\
+                24 &= 2^3 \times 3 
+                \end{align*}
+            </div>
+            <div class="solution-step">LCM = Highest powers of prime factors = \(2^4 \times 3 = 16 \times 3 = 48\).</div>
+            
+            <div class="solution-step">Step 2: Identify the greatest 4-digit number.</div>
+            <div class="solution-step">The greatest 4-digit number is 9999.</div>
+            
+            <div class="solution-step">Step 3: Divide the greatest 4-digit number by the LCM to find the remainder.</div>
+            <div class="math-container">
+                \[ 9999 \div 48 \]
+            </div>
+            <div class="solution-step">
+                - 48 goes into 99 twice (48 × 2 = 96). Remainder = 3.<br>
+                - Bring down 9 to make 39. 48 goes into 39 zero times. Remainder = 39.<br>
+                - Bring down 9 to make 399. 48 goes into 399 eight times (48 × 8 = 384).<br>
+                - Remainder = 399 - 384 = 15.
+            </div>
+            <div class="math-container">
+                \[ 9999 = (48 \times 208) + 15 \]
+            </div>
+            
+            <div class="solution-step">Step 4: Subtract the remainder from 9999.</div>
+            <div class="solution-step">If we subtract this remainder (15) from 9999, the result will be perfectly divisible by 48 (and therefore divisible by 12, 16, and 24).</div>
+            <div class="math-container">
+                \[ \text{Required Number} = 9999 - 15 = 9984 \]
+            </div>
+            <div class="final-answer">Final Answer: 9984</div>
+        </div>
+    </div>
+
+</body>
+</html>
