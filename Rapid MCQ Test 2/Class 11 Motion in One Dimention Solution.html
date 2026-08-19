@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-orange: #e65100;
+            --light-orange: #fff3e0;
+            --border-color: #e65100;
+            --text-main: #333;
+            --ans-color: #1b5e20;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 10pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: var(--light-orange); 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: 999; /* Setting Z-index as requested */
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 15px; 
+            background-color: rgba(230, 81, 0, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .institute-name { font-size: 18pt; font-weight: bold; color: var(--border-color); margin: 0; }
+        .doc-title { font-size: 13pt; font-weight: bold; margin-top: 5px; }
+        
+        .answer-key-container {
+            background: #ffffff;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .answer-key-title {
+            text-align: center;
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--border-color);
+            text-transform: uppercase;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+        .answer-key-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 6px;
+        }
+        .ak-cell {
+            border: 1px solid #e0e0e0;
+            padding: 3px;
+            text-align: center;
+            border-radius: 4px;
+            background: var(--light-orange);
+        }
+        .ak-q { 
+            font-size: 8pt; 
+            color: #666; 
+            display: block; 
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 2px; 
+            margin-bottom: 2px;
+        }
+        .ak-a { 
+            font-weight: bold; 
+            color: var(--ans-color); 
+            font-size: 10pt;
+        }
+        
+        .sol-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sol-block {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid var(--primary-orange);
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            page-break-inside: avoid;
+        }
+        .sol-q-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 6px;
+        }
+        .q-text { flex: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; margin-right: 5px; }
+        .marks { 
+            font-weight: bold; 
+            color: var(--primary-orange); 
+            font-size: 9pt;
+            background: var(--light-orange);
+            padding: 3px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .sol-text { margin-top: 6px; font-size: 9.5pt;}
+        .correct-ans { font-weight: bold; color: var(--ans-color); margin-bottom: 4px; font-size: 10pt;}
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 3px 0;
+            margin: 3px 0;
+            display: block;
+        }
+        
+        @media (max-width: 900px) {
+            .answer-key-grid { grid-template-columns: repeat(6, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .sol-q-row { flex-direction: column; }
+            .marks { align-self: flex-start; margin-top: 5px; }
+            .answer-key-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">Detailed Solutions: Motion in a Straight Line (30 Qs)</div>
+    </div>
+
+    <div class="answer-key-container">
+        <div class="answer-key-title">Answer Key Overview</div>
+        <div class="answer-key-grid">
+            <div class="ak-cell"><span class="ak-q">Q.1</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.2</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.3</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.4</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.5</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.6</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.7</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.8</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.9</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.10</span><span class="ak-a">C</span></div>
+            
+            <div class="ak-cell"><span class="ak-q">Q.11</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.12</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.13</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.14</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.15</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.16</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.17</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.18</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.19</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.20</span><span class="ak-a">B</span></div>
+
+            <div class="ak-cell"><span class="ak-q">Q.21</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.22</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.23</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.24</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.25</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.26</span><span class="ak-a">D</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.27</span><span class="ak-a">B</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.28</span><span class="ak-a">A</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.29</span><span class="ak-a">C</span></div>
+            <div class="ak-cell"><span class="ak-q">Q.30</span><span class="ak-a">C</span></div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">1.</span>Which of the following is a scalar quantity?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Speed</div>
+            <div class="sol-text">Speed depends only on magnitude and path length, not on direction, making it a scalar. Displacement, velocity, and acceleration are all vectors.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">2.</span>The slope of a position-time graph gives:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Velocity</div>
+            <div class="sol-text">The slope of an x-t graph is $v = \frac{dx}{dt}$, which is the definition of velocity.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">3.</span>The area under a velocity-time graph represents:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Displacement</div>
+            <div class="sol-text">The area is calculated as $\int v \, dt$, which yields the displacement of the particle in that time interval.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">4.</span>A body starts from rest and moves with a constant acceleration of 2 m/s². The distance covered by it in 3 seconds is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 9 m</div>
+            <div class="sol-text">Using the 2nd equation of motion: $s = ut + \frac{1}{2}at^2$. Since $u = 0$, $s = \frac{1}{2}(2)(3)^2 = 9 \text{ m}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">5.</span>A car goes from A to B with speed v₁ and returns from B to A with speed v₂. Its average speed is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 2v₁v₂ / (v₁ + v₂)</div>
+            <div class="sol-text">Let the distance be $x$. Total distance $= 2x$. Total time $= \frac{x}{v_1} + \frac{x}{v_2}$. Average speed $= \frac{\text{Total Distance}}{\text{Total Time}} = \frac{2x}{x(\frac{1}{v_1} + \frac{1}{v_2})} = \frac{2v_1v_2}{v_1 + v_2}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">6.</span>A body is thrown vertically upwards. At the highest point of its path:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Velocity is zero but acceleration is non-zero</div>
+            <div class="sol-text">At maximum height, the body stops momentarily ($v = 0$), but gravity is still pulling it down, so acceleration is $-g \approx -9.8 \text{ m/s}^2$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">7.</span>The ratio of distances fallen by a freely falling body from rest in 1st, 2nd, and 3rd seconds is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 1 : 3 : 5</div>
+            <div class="sol-text">Galileo's law of odd numbers: The distance covered during equal intervals of time for a body falling from rest are in the ratio of odd integers: 1 : 3 : 5 : 7...</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">8.</span>The position x of a particle varies with time t as x = 3t² - 2t + 1. Its velocity at t = 2s is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 10 m/s</div>
+            <div class="sol-text">
+                <div class="math-scroll">Velocity $v = \frac{dx}{dt} = \frac{d}{dt}(3t^2 - 2t + 1) = 6t - 2$.</div>
+                At $t = 2\text{ s}$, $v = 6(2) - 2 = 12 - 2 = 10 \text{ m/s}$.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">9.</span>If the displacement of a particle is directly proportional to the square of time, its motion is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Uniform acceleration</div>
+            <div class="sol-text">If $x \propto t^2$, then $x = kt^2$. Differentiating twice yields acceleration $a = \frac{d^2x}{dt^2} = 2k$, which is a constant.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">10.</span>The odometer of a car measures:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Distance</div>
+            <div class="sol-text">An odometer tracks the total path length traveled by a vehicle, regardless of direction, which defines distance.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">11.</span>Retardation means:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Negative acceleration</div>
+            <div class="sol-text">Retardation implies slowing down, which occurs when acceleration acts in the opposite direction to velocity.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">12.</span>A ball is thrown vertically upwards with a velocity of 20 m/s. The maximum height attained is (take g = 10 m/s²):</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 20 m</div>
+            <div class="sol-text">Using $v^2 = u^2 - 2gh$. At max height, $v=0$. Thus, $0 = (20)^2 - 2(10)h \Rightarrow 20h = 400 \Rightarrow h = 20 \text{ m}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">13.</span>The distance traveled in the n-th second of uniformly accelerated motion is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) u + a(2n - 1) / 2</div>
+            <div class="sol-text">The standard derivation for displacement in the $n^{th}$ second is $S_n = S_n - S_{n-1} = u + \frac{a}{2}(2n - 1)$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">14.</span>The slope of a velocity-time graph gives:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Acceleration</div>
+            <div class="sol-text">Slope $= \frac{\Delta v}{\Delta t}$, which defines the rate of change of velocity, i.e., acceleration.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">15.</span>The relative velocity of two bodies moving in opposite directions with speeds u and v is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) u + v</div>
+            <div class="sol-text">For bodies moving in opposite directions, relative velocity is the sum of their individual speeds: $v_{rel} = u - (-v) = u + v$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">16.</span>A car moving at 72 km/h stops in 10 s after applying brakes. The magnitude of its retardation is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 2 m/s²</div>
+            <div class="sol-text">First, convert km/h to m/s: $u = 72 \times \frac{5}{18} = 20 \text{ m/s}$. Final velocity $v=0$. <br> $a = \frac{v-u}{t} = \frac{0-20}{10} = -2 \text{ m/s}^2$. Retardation magnitude is $2 \text{ m/s}^2$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">17.</span>The stopping distance of a vehicle is directly proportional to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Square of initial velocity</div>
+            <div class="sol-text">Stopping distance $s = \frac{u^2}{2a}$. Thus, $s \propto u^2$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">18.</span>Which of the following graphs cannot possibly represent one-dimensional motion in practice?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) A circle in x-t graph</div>
+            <div class="sol-text">A circle in an x-t graph implies two different positions for a single time instance, and that time reverses, which is physically impossible.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">19.</span>The area under an acceleration-time graph represents:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Change in velocity</div>
+            <div class="sol-text">Since $a = \frac{dv}{dt}$, the integral $\int a \, dt$ (area) yields $\Delta v$ (change in velocity).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">20.</span>Motion under uniform gravity (free fall) is an example of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Uniform acceleration</div>
+            <div class="sol-text">During free fall, the object falls with a constant acceleration of $g$ (approx $9.8 \text{ m/s}^2$).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">21.</span>A boy goes to school at 3 km/h and returns at 2 km/h. If he takes 5 hours in all, the distance of the school is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 6 km</div>
+            <div class="sol-text">Let distance be $d$. Time going $t_1 = d/3$. Time returning $t_2 = d/2$. Total time $t_1 + t_2 = 5$. <br>
+            $\frac{d}{3} + \frac{d}{2} = 5 \Rightarrow \frac{5d}{6} = 5 \Rightarrow d = 6 \text{ km}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">22.</span>The velocity of a particle is v = (10 + 2t²) m/s. Its acceleration at t = 2s is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 8 m/s²</div>
+            <div class="sol-text">Acceleration $a = \frac{dv}{dt} = \frac{d}{dt}(10 + 2t^2) = 4t$. At $t = 2\text{ s}$, $a = 4(2) = 8 \text{ m/s}^2$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">23.</span>For a particle moving with constant acceleration, if its velocity changes from u to v over distance S, its velocity at the midpoint of S is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) √((u² + v²) / 2)</div>
+            <div class="sol-text">
+                <div class="math-scroll">Let velocity at midpoint be $v'$. For first half: $v'^2 = u^2 + 2a(\frac{S}{2}) \dots(i)$</div>
+                <div class="math-scroll">For whole journey: $v^2 = u^2 + 2aS \Rightarrow aS = \frac{v^2 - u^2}{2}$.</div>
+                Substitute in $(i)$: $v'^2 = u^2 + \frac{v^2 - u^2}{2} = \frac{u^2 + v^2}{2}$. Thus, $v' = \sqrt{\frac{u^2 + v^2}{2}}$.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">24.</span>The numerical ratio of displacement to distance is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) &le; 1</div>
+            <div class="sol-text">Distance is the total path length and displacement is the shortest straight line. Hence, $|\text{Displacement}| \le \text{Distance}$, meaning the ratio is at most 1.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">25.</span>If the velocity and acceleration of a body have opposite signs, the body is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Slowing down</div>
+            <div class="sol-text">When acceleration opposes velocity, it means acceleration acts in the direction opposite to motion, causing the body to decelerate (slow down).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">26.</span>A train 100m long is moving at 72 km/h. The time it takes to completely cross a bridge 900m long is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) 50 s</div>
+            <div class="sol-text">Speed $v = 72 \text{ km/h} = 20 \text{ m/s}$. Total distance to cross $= 100 + 900 = 1000 \text{ m}$. Time $t = \frac{1000}{20} = 50 \text{ s}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">27.</span>The kinematic equation v² = u² + 2as is strictly valid only if:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Acceleration is constant</div>
+            <div class="sol-text">The equations of motion are derived under the assumption that acceleration $a$ does not change with time.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">28.</span>If a position-time graph is a straight line parallel to the time axis, the velocity of the body is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Zero</div>
+            <div class="sol-text">A horizontal x-t graph means position is not changing with time. This implies the body is at rest, hence velocity is zero.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">29.</span>A body dropped from the top of a tower reaches the ground in 4 s. The height of the tower is (g = 10 m/s²):</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 80 m</div>
+            <div class="sol-text">Since it is dropped, $u=0$. $s = \frac{1}{2}gt^2 = \frac{1}{2}(10)(4)^2 = 5 \times 16 = 80 \text{ m}$.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text"><span class="q-num">30.</span>The position x of a particle is given by x = (t - 2)². The total distance covered from t = 0 to t = 4 seconds is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 8 m</div>
+            <div class="sol-text">
+                Velocity $v = \frac{dx}{dt} = 2(t-2)$. $v$ is $0$ at $t = 2\text{s}$. The particle reverses direction here.<br>
+                At $t=0$, $x = (0-2)^2 = 4 \text{ m}$. <br>
+                At $t=2$, $x = (2-2)^2 = 0 \text{ m}$. Distance $d_1 = |0-4| = 4 \text{ m}$. <br>
+                At $t=4$, $x = (4-2)^2 = 4 \text{ m}$. Distance $d_2 = |4-0| = 4 \text{ m}$. <br>
+                Total distance $= d_1 + d_2 = 4 + 4 = 8 \text{ m}$.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
