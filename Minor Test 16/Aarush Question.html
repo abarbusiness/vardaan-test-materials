@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper Minor Test 16</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* Base Print and Screen Styling */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Elements */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .exam-details span { margin: 5px 10px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        /* Section and Question Styling */
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; }
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between; width: 100%; }
+        .q-wrapper { display: flex; flex-grow: 1; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; padding-right: 15px; }
+        .q-marks { font-weight: bold; width: 40px; text-align: right; flex-shrink: 0; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        /* Responsive Math Wrapper */
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+        
+        /* Footer */
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Media Queries */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .exam-details span { margin: 2px 0; }
+            .question-container { flex-direction: column; }
+            .q-marks { text-align: left; margin-left: 30px; font-size: 10pt; color: #444; }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .institute-name { font-size: 16pt; }
+            .test-name { font-size: 12pt; }
+        }
+
+        /* Print Specific */
+        @media print { 
+            body { width: 100%; max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Math & Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Steps must be clearly shown for Math questions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">1.</div>
+            <div class="q-content">Find the HCF (Highest Common Factor) of \(36\) and \(84\) using the prime factorization method.</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">2.</div>
+            <div class="q-content">The HCF of two numbers is \(6\) and their LCM is \(36\). If one of the numbers is \(12\), find the other number.</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">3.</div>
+            <div class="q-content">Define conduction. Give one example of a good conductor of heat.</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">4.</div>
+            <div class="q-content">Why do we prefer to wear light-colored clothes in summer?</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">5.</div>
+            <div class="q-content">Name the mode of heat transfer from the sun to the earth. Why cannot convection occur in space?</div>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">6.</div>
+            <div class="q-content">Find the least number which when divided by \(12\), \(16\), and \(24\) leaves a remainder of \(5\) in each case.</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">7.</div>
+            <div class="q-content">Three bells toll at intervals of \(10\), \(15\), and \(20\) minutes respectively. If they all toll together at 8:00 AM, at what time will they next toll together?</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">8.</div>
+            <div class="q-content">Determine the greatest \(3\)-digit number that is exactly divisible by \(8\), \(10\), and \(12\).</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">9.</div>
+            <div class="q-content">Differentiate between sea breeze and land breeze (Mention at least three points).</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">10.</div>
+            <div class="q-content">Explain how heat is transferred in a pan of boiling water. Name the specific process and describe its mechanism.</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">11.</div>
+            <div class="q-content">Find the greatest number that will divide \(445\), \(572\), and \(699\) leaving remainders \(4\), \(5\), and \(6\) respectively.</div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">12.</div>
+            <div class="q-content">
+                (a) What is radiation? Give one daily life example where you experience radiation.<br>
+                (b) Give scientific reasons for the following: The bases of cooking utensils are usually painted black, while their handles are made of plastic or wood.
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-wrapper">
+            <div class="q-num">13.</div>
+            <div class="q-content">
+                (a) Find the LCM of \(24\), \(36\), and \(40\) by the common division method. <i>(3 Marks)</i><br>
+                (b) Why are room heaters typically placed near the floor of a room instead of near the ceiling? <i>(2 Marks)</i>
+            </div>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

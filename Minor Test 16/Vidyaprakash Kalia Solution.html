@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering equations and scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* Base styles */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            font-size: 14pt; 
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .qa-container {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+            page-break-inside: avoid;
+        }
+
+        .question-box {
+            font-weight: bold;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #1976d2;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        
+        .q-num {
+            width: 30px;
+            flex-shrink: 0;
+        }
+
+        .q-text {
+            flex-grow: 1;
+        }
+
+        .marks-right {
+            float: right;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-left: 10px;
+        }
+
+        .solution-box {
+            padding: 10px 10px 10px 40px;
+        }
+
+        .marking-scheme {
+            font-size: 11pt;
+            color: #00796b;
+            font-style: italic;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .math-break {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        /* Table styles for differentiation questions */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .solution-box { padding-left: 15px; }
+            .question-box { flex-direction: column; }
+            .marks-right { align-self: flex-end; margin-top: 5px; }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; } 
+            .watermark { position: fixed; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 - DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <p style="font-weight: bold;">Class: 8 CBSE | Subject: Science | Max Marks: 40</p>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">1.</div>
+            <div class="q-text">Define reflection of light. State the law of reflection relating the angle of incidence and the angle of reflection.<span class="marks-right">[2]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <strong>Reflection of light:</strong> The bouncing back of light rays from a surface (like a mirror) into the same medium is called reflection of light.<br>
+            <strong>Law:</strong> The angle of incidence is always equal to the angle of reflection.<br>
+            In mathematical terms: \(\angle i = \angle r\)
+            <span class="marking-scheme">(1 Mark for definition, 1 Mark for the correct law)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">2.</div>
+            <div class="q-text">Classify the following as elements or compounds:<br>
+            (i) Gold &nbsp;&nbsp;&nbsp; (ii) Water &nbsp;&nbsp;&nbsp; (iii) Oxygen gas (\(O_2\)) &nbsp;&nbsp;&nbsp; (iv) Sodium chloride<span class="marks-right">[2]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            (i) Gold - <strong>Element</strong> (Made of only gold atoms)<br>
+            (ii) Water (\(H_2O\)) - <strong>Compound</strong> (Made of Hydrogen and Oxygen combined chemically)<br>
+            (iii) Oxygen gas (\(O_2\)) - <strong>Element</strong> (Made of only oxygen atoms)<br>
+            (iv) Sodium chloride (\(NaCl\)) - <strong>Compound</strong> (Made of Sodium and Chlorine chemically combined)
+            <span class="marking-scheme">(½ Mark for each correct classification)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">3.</div>
+            <div class="q-text">What is a uniform (homogeneous) mixture? Give one everyday example of a uniform mixture.<span class="marks-right">[2]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            A uniform or homogeneous mixture is one in which the components are evenly distributed throughout, and the individual components cannot be seen separately. It has the same composition throughout.<br>
+            <strong>Example:</strong> Salt dissolved in water, air, or sugar solution (Any one valid example).
+            <span class="marking-scheme">(1 Mark for correct definition, 1 Mark for correct example)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">4.</div>
+            <div class="q-text">A ray of light strikes a plane mirror such that the angle of incidence is 40°. What will be the angle of reflection? Draw a simple ray diagram to represent this.<span class="marks-right">[2]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            According to the laws of reflection, Angle of Incidence (\(\angle i\)) = Angle of Reflection (\(\angle r\)).<br>
+            Since \(\angle i = 40^\circ\), therefore, the <strong>angle of reflection (\(\angle r\)) will also be 40°</strong>.<br>
+            <br>
+            <em>Ray Diagram Requirements:</em> Draw a straight line for the mirror (with shading on one side), a perpendicular dashed line for the normal, an incident ray coming in at roughly 40° to the normal, and a reflected ray going out at 40° to the normal. Arrows must indicate the direction of light.
+            <span class="marking-scheme">(1 Mark for stating 40°, 1 Mark for a correctly labelled diagram with normal, incident ray, reflected ray, and angles)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">5.</div>
+            <div class="q-text">State two main differences between a mixture and a pure substance.<span class="marks-right">[2]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <table>
+                <tr>
+                    <th>Mixture</th>
+                    <th>Pure Substance</th>
+                </tr>
+                <tr>
+                    <td>Consists of two or more different kinds of particles physically mixed together.</td>
+                    <td>Consists of only one kind of particle (atoms or molecules).</td>
+                </tr>
+                <tr>
+                    <td>Components can be separated by physical methods (like filtration, magnetism).</td>
+                    <td>Cannot be separated into simpler substances by physical processes.</td>
+                </tr>
+            </table>
+            <span class="marking-scheme">(1 Mark for each valid point of difference)</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">6.</div>
+            <div class="q-text">Rohan is looking at himself in a plane mirror. He observes that his right hand appears as his left hand in the mirror.<br>
+            (a) Name this phenomenon. (1 Mark)<br>
+            (b) State two other characteristics of the image formed by a plane mirror. (2 Marks)<span class="marks-right">[3]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            (a) This phenomenon is called <strong>Lateral Inversion</strong>.<br>
+            (b) Two other characteristics of an image formed by a plane mirror are:<br>
+            1. The image is <strong>virtual and erect</strong> (upright).<br>
+            2. The image is of the <strong>same size</strong> as the object.<br>
+            <em>(Alternative point: The image is formed at the same distance behind the mirror as the object is in front of it.)</em>
+            <span class="marking-scheme">(1 Mark for Lateral Inversion, 1 Mark each for two correct characteristics)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">7.</div>
+            <div class="q-text">Air is considered a mixture, while water is considered a compound. Justify this statement by giving three reasons based on their properties.<span class="marks-right">[3]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            1. <strong>Retention of properties:</strong> In air, its constituents (Oxygen, Nitrogen, etc.) retain their individual properties. In water, the constituents (Hydrogen and Oxygen) lose their original properties (e.g., Hydrogen is combustible, Oxygen supports combustion, but water extinguishes fire).<br>
+            2. <strong>Separation:</strong> The components of air can be separated by physical methods (like fractional distillation). The components of water can only be separated by chemical or electrochemical methods (electrolysis).<br>
+            3. <strong>Proportion:</strong> The composition of air is not strictly fixed (it varies slightly from place to place). Water has a fixed ratio of Hydrogen and Oxygen by mass (1:8).
+            <span class="marking-scheme">(1 Mark for each valid justification clearly distinguishing between the two)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">8.</div>
+            <div class="q-text">Differentiate between a concave mirror and a convex mirror based on:<br>
+            (a) The nature of their reflecting surfaces.<br>
+            (b) How they affect a parallel beam of light.<br>
+            (c) One common use of each.<span class="marks-right">[3]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Concave Mirror</th>
+                    <th>Convex Mirror</th>
+                </tr>
+                <tr>
+                    <td><strong>(a) Reflecting Surface</strong></td>
+                    <td>Curved inwards (towards the centre of the sphere).</td>
+                    <td>Curved outwards (away from the centre).</td>
+                </tr>
+                <tr>
+                    <td><strong>(b) Effect on parallel light</strong></td>
+                    <td>It <strong>converges</strong> a parallel beam of light to a focus.</td>
+                    <td>It <strong>diverges</strong> a parallel beam of light.</td>
+                </tr>
+                <tr>
+                    <td><strong>(c) Common Use</strong></td>
+                    <td>Used as shaving mirrors, dentists' mirrors, or in vehicle headlights.</td>
+                    <td>Used as rear-view mirrors in vehicles or security mirrors.</td>
+                </tr>
+            </table>
+            <span class="marking-scheme">(1 Mark for each correct point of differentiation)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">9.</div>
+            <div class="q-text">An experiment is conducted where iron filings and sulphur powder are mixed together.<br>
+            (a) How can you separate the iron filings from this unheated mixture? (1 Mark)<br>
+            (b) What happens when this mixture is strongly heated? Name the new substance formed. (2 Marks)<span class="marks-right">[3]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            (a) The iron filings can be separated from the unheated mixture physically by using a <strong>magnet</strong>. The iron filings will be attracted to the magnet, leaving the sulphur behind.<br>
+            (b) When the mixture is strongly heated, a chemical reaction takes place between iron and sulphur. A completely new substance with different properties is formed, which is a compound. The new substance formed is a black mass called <strong>Iron Sulphide (FeS)</strong>.
+            <span class="marking-scheme">(1 Mark for magnet separation. 1 Mark for mentioning chemical reaction/compound formation, 1 Mark for naming Iron Sulphide)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">10.</div>
+            <div class="q-text">Identify the principal focus (F) and centre of curvature (C) in a spherical mirror. What is the relation between the radius of curvature (R) and the focal length (f) of a spherical mirror?<span class="marks-right">[3]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <strong>Centre of Curvature (C):</strong> It is the centre of the hollow glass sphere of which the spherical mirror is a part.<br>
+            <strong>Principal Focus (F):</strong> It is a point on the principal axis where rays of light travelling parallel to the principal axis actually meet (concave mirror) or appear to meet (convex mirror) after reflection.<br>
+            <strong>Relation:</strong> The radius of curvature (R) is twice the focal length (f) of a spherical mirror.<br>
+            <div class="math-break">
+            \[ R = 2f \]  or  \[ f = \frac{R}{2} \]
+            </div>
+            <span class="marking-scheme">(1 Mark for defining C, 1 Mark for defining F, 1 Mark for the correct mathematical relation R=2f)</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">11.</div>
+            <div class="q-text">With the help of ray diagrams, explain the nature, position, and relative size of the image formed by a <strong>concave mirror</strong> in the following two cases:<br>
+            (a) When the object is placed at the centre of curvature (C).<br>
+            (b) When the object is placed between the pole (P) and the principal focus (F).<span class="marks-right">[5]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <strong>(a) Object at Centre of Curvature (C):</strong><br>
+            <em>Diagram requirement:</em> Object at C, ray parallel to axis passes through F, ray through F becomes parallel. Intersection is exactly at C, below the axis.<br>
+            <ul>
+                <li><strong>Position of Image:</strong> At the centre of curvature (C).</li>
+                <li><strong>Nature of Image:</strong> Real and inverted.</li>
+                <li><strong>Size of Image:</strong> Same size as the object.</li>
+            </ul>
+            <span class="marking-scheme">(1.5 Marks for correct ray diagram with arrows, 1 Mark for correctly stating nature, position, and size)</span><br><br>
+            
+            <strong>(b) Object between Pole (P) and Principal Focus (F):</strong><br>
+            <em>Diagram requirement:</em> Object very close to mirror. Ray parallel to axis reflects through F. Ray hitting pole reflects at same angle. These rays diverge, so they must be extended backwards behind the mirror to meet.<br>
+            <ul>
+                <li><strong>Position of Image:</strong> Behind the mirror.</li>
+                <li><strong>Nature of Image:</strong> Virtual and erect.</li>
+                <li><strong>Size of Image:</strong> Magnified (larger than the object).</li>
+            </ul>
+            <span class="marking-scheme">(1.5 Marks for correct ray diagram extending behind mirror, 1 Mark for correctly stating nature, position, and size)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">12.</div>
+            <div class="q-text">(a) Describe an activity to show that compounds have entirely different properties from the constituent elements they are made of. You may use the example of heating sugar or the reaction of water formation. (3 Marks)<br>
+            (b) Classify the following into uniform (homogeneous) and non-uniform (heterogeneous) mixtures:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(i) Salt dissolved in water &nbsp;&nbsp;&nbsp;&nbsp;(ii) Soil &nbsp;&nbsp;&nbsp;&nbsp;(iii) Sprout salad &nbsp;&nbsp;&nbsp;&nbsp;(iv) Air (2 Marks)<span class="marks-right">[5]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <strong>(a) Activity explaining Compound properties (using water as an example):</strong><br>
+            Water (\(H_2O\)) is a compound made of two elements: Hydrogen and Oxygen.<br>
+            <ul>
+                <li><strong>Property of Hydrogen (Element):</strong> It is a highly combustible gas (it burns with a pop sound).</li>
+                <li><strong>Property of Oxygen (Element):</strong> It is a gas that acts as a supporter of combustion (things burn in the presence of oxygen).</li>
+                <li><strong>Property of Water (Compound):</strong> When hydrogen and oxygen chemically combine in a fixed ratio, they form liquid water. Water is neither combustible nor does it support combustion; in fact, it is used to extinguish fires.</li>
+            </ul>
+            This clearly shows that the compound (water) has entirely different physical and chemical properties from its constituent elements. <em>(Alternatively, the heating of sugar to form black carbon and water vapour is acceptable).</em>
+            <span class="marking-scheme">(1 Mark for mentioning the constituent elements, 1 Mark for their individual properties, 1 Mark for contrasting with the compound's property)</span><br><br>
+            
+            <strong>(b) Classification of mixtures:</strong><br>
+            (i) Salt dissolved in water - <strong>Uniform (Homogeneous)</strong><br>
+            (ii) Soil - <strong>Non-uniform (Heterogeneous)</strong><br>
+            (iii) Sprout salad - <strong>Non-uniform (Heterogeneous)</strong><br>
+            (iv) Air - <strong>Uniform (Homogeneous)</strong>
+            <span class="marking-scheme">(½ Mark for each correct classification)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">13.</div>
+            <div class="q-text">(a) State the laws of reflection. (2 Marks)<br>
+            (b) A student places an object 15 cm in front of a plane mirror. What is the distance between the object and its image? (1 Mark)<br>
+            (c) Explain why we cannot see our image in a white sheet of paper, even though light is falling on it and being reflected. Mention the type of reflection occurring on the paper. (2 Marks)<span class="marks-right">[5]</span></div>
+        </div>
+        <div class="solution-box">
+            <strong>Solution:</strong><br>
+            <strong>(a) Laws of Reflection:</strong><br>
+            1. The angle of incidence is always equal to the angle of reflection (\(\angle i = \angle r\)).<br>
+            2. The incident ray, the normal at the point of incidence, and the reflected ray, all lie in the same plane.<br>
+            <span class="marking-scheme">(1 Mark for each correct law)</span><br><br>
+
+            <strong>(b) Distance calculation:</strong><br>
+            In a plane mirror, the image distance behind the mirror is equal to the object distance in front of it. <br>
+            Object distance from mirror = 15 cm.<br>
+            Image distance behind mirror = 15 cm.<br>
+            Total distance between the object and its image = 15 cm + 15 cm = <strong>30 cm</strong>.<br>
+            <span class="marking-scheme">(1 Mark for the correct final answer of 30 cm)</span><br><br>
+
+            <strong>(c) Reflection on a sheet of paper:</strong><br>
+            A white sheet of paper has a microscopic rough and uneven surface. When parallel rays of light fall on this rough surface, they are reflected in many different directions. This type of reflection is called <strong>diffused reflection</strong> (or irregular reflection). Because the reflected rays are scattered and do not form a parallel beam, a clear image cannot be formed, which is why we cannot see our face in a sheet of paper.<br>
+            <span class="marking-scheme">(1 Mark for mentioning diffused/irregular reflection, 1 Mark for explaining scattering due to rough surface)</span>
+        </div>
+    </div>
+
+</body>
+</html>

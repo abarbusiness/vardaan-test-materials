@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions (Class 7)</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+            chtml: { scale: 1, minScale: .5, matchFontHeight: true }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #0277bd; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e1f5fe; padding: 5px; }
+        
+        .q-block { 
+            margin-bottom: 30px; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 5px solid #0277bd;
+            margin-bottom: 15px;
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            flex-shrink: 0; 
+            color: #d32f2f; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .sol-body { margin-left: 10px; }
+        .step { margin-bottom: 6px; }
+        .mark-badge { font-style: italic; color: #d32f2f; font-weight: bold; margin-left: 10px; font-size: 10.5pt;}
+        .concept-note { font-size: 10.5pt; color: #555; background: #fffde7; border-left: 3px solid #fbc02d; padding: 4px 8px; margin: 5px 0; }
+        .final-ans { font-weight: bold; border: 1px solid #0277bd; padding: 5px 10px; display: inline-block; margin-top: 10px; background: #e1f5fe; border-radius: 4px; }
+        
+        .math-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="solution-title">ANSWER KEY & DETAILED SOLUTIONS (MARKING SCHEME)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q1. If the cost of 15 identical articles is ₹ 450, find the cost of 24 such articles.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Direct Variation (More articles = More cost)</div>
+            <div class="step">Cost of 15 articles = ₹ 450</div>
+            <div class="step">Cost of 1 article = \( \frac{450}{15} = \text{₹ } 30 \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Cost of 24 articles = \( 30 \times 24 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 720 \]</div>
+            </div>
+            <div class="final-ans">Ans: The cost of 24 articles is ₹ 720. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q2. If 12 men can complete a piece of work in 8 days, in how many days will 6 men complete the same work?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Inverse Variation (Less men = More days)</div>
+            <div class="step">Days taken by 12 men = 8 days</div>
+            <div class="step">Days taken by 1 man = \( 12 \times 8 = 96 \text{ days} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Days taken by 6 men = \( \frac{96}{6} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 16 \]</div>
+            </div>
+            <div class="final-ans">Ans: 6 men will complete the work in 16 days. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q3. A car takes 4 hours to reach a destination travelling at a speed of 60 km/hr. How long will it take to reach the same destination if it travels at 80 km/hr?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Inverse Variation (Higher speed = Less time for same distance)</div>
+            <div class="step">Total Distance = Speed × Time</div>
+            <div class="step">Distance = \( 60 \times 4 = 240 \text{ km} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">New Time = \( \frac{\text{Distance}}{\text{New Speed}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{240}{80} = 3 \text{ hours} \]</div>
+            </div>
+            <div class="final-ans">Ans: The car will take 3 hours. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q4. A printing machine prints 1500 pages in 5 minutes. How many pages will it print in 12 minutes?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Direct Variation</div>
+            <div class="step">Pages printed in 5 minutes = 1500</div>
+            <div class="step">Pages printed in 1 minute = \( \frac{1500}{5} = 300 \text{ pages} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Pages printed in 12 minutes = \( 300 \times 12 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 3600 \]</div>
+            </div>
+            <div class="final-ans">Ans: The machine will print 3600 pages. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q5. A military garrison of 120 men has provisions for 30 days. How long will the provisions last if the garrison size increases to 150 men?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Inverse Variation</div>
+            <div class="step">Total provision (man-days) = \( 120 \times 30 = 3600 \text{ man-days} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Duration for 150 men = \( \frac{\text{Total Provision}}{\text{New number of men}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3600}{150} = 24 \]</div>
+            </div>
+            <div class="final-ans">Ans: The provisions will last for 24 days. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q6. A can do a piece of work in 10 days and B can do the same work in 15 days. How long will they take to finish the work if they work together?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Time and Work (Unitary approach per day)</div>
+            <div class="step">Work done by A in 1 day = \( \frac{1}{10} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Work done by B in 1 day = \( \frac{1}{15} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Work done by (A + B) in 1 day = \( \frac{1}{10} + \frac{1}{15} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3 + 2}{30} = \frac{5}{30} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{1}{6} \]</div>
+            </div>
+            <div class="step">Since they do \( \frac{1}{6} \text{th} \) of the work in 1 day, total time taken = \( 6 \) days.</div>
+            <div class="final-ans">Ans: Working together, they will finish the work in 6 days. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q7. If 8 women can weave 120 meters of cloth in a day, how many meters of cloth can 12 women weave in a day working at the same rate?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Direct Variation</div>
+            <div class="step">Cloth woven by 8 women = 120 meters</div>
+            <div class="step">Cloth woven by 1 woman = \( \frac{120}{8} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">
+                <div class="math-display">\[ = 15 \text{ meters} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Cloth woven by 12 women = \( 15 \times 12 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 180 \text{ meters} \]</div>
+            </div>
+            <div class="final-ans">Ans: 12 women can weave 180 meters of cloth. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q8. A scout camp has enough food for 200 students for 20 days. After 5 days, 50 students leave the camp. How long will the remaining food last for the remaining students?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Inverse Variation (Adjusting base after a time lapse)</div>
+            <div class="step">Total initial provision is for 200 students for 20 days.</div>
+            <div class="step">After 5 days, remaining food is sufficient for 200 students for \( (20 - 5) = 15 \text{ days} \). <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Total students remaining = \( 200 - 50 = 150 \text{ students} \).</div>
+            <div class="step">Let the remaining food last for \( x \) days.</div>
+            <div class="step">By inverse variation: \( 200 \times 15 = 150 \times x \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{200 \times 15}{150} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 20 \]</div>
+            </div>
+            <div class="final-ans">Ans: The remaining food will last for 20 days. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Tap A can fill an empty tank in 4 hours, while Tap B can empty the full tank in 6 hours. If both taps are opened simultaneously, in how many hours will the empty tank be filled?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Pipes and Cisterns (Filling vs Emptying)</div>
+            <div class="step">Part of tank filled by Tap A in 1 hour = \( \frac{1}{4} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Part of tank emptied by Tap B in 1 hour = \( \frac{1}{6} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Net part of tank filled in 1 hour = \( \frac{1}{4} - \frac{1}{6} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3 - 2}{12} = \frac{1}{12} \]</div>
+            </div>
+            <div class="step">Since \( \frac{1}{12} \text{th} \) of the tank is filled in 1 hour, total time to fill = 12 hours.</div>
+            <div class="final-ans">Ans: The tank will be filled in 12 hours. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q10. A wheel makes 360 revolutions in 1 minute. How many revolutions does it make in 45 seconds?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Direct Variation (Unit conversion necessary)</div>
+            <div class="step">1 minute = 60 seconds <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Revolutions in 60 seconds = 360</div>
+            <div class="step">Revolutions in 1 second = \( \frac{360}{60} = 6 \) <span class="mark-badge">[1.5 Marks]</span></div>
+            <div class="step">Revolutions in 45 seconds = \( 6 \times 45 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 270 \]</div>
+            </div>
+            <div class="final-ans">Ans: The wheel makes 270 revolutions in 45 seconds. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q11. A and B can do a piece of work in 12 days and 18 days respectively. They begin working together, but A leaves after 4 days. <br>(a) Find the fraction of work completed in the first 4 days.<br>(b) How many days will B take to finish the remaining work alone?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (a): Work done in first 4 days</strong></div>
+            <div class="step">A's 1 day work = \( \frac{1}{12} \); B's 1 day work = \( \frac{1}{18} \)</div>
+            <div class="step">(A + B)'s 1 day work = \( \frac{1}{12} + \frac{1}{18} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3 + 2}{36} = \frac{5}{36} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Work done by (A + B) in 4 days = \( 4 \times \frac{5}{36} = \frac{20}{36} = \frac{5}{9} \) <span class="mark-badge">[1.5 Marks]</span></div>
+            <div class="final-ans">Ans (a): \( \frac{5}{9} \) of the work is completed.</div>
+            
+            <br>
+            <div class="step"><strong>Part (b): Remaining Work by B</strong></div>
+            <div class="step">Remaining work = \( 1 - \frac{5}{9} = \frac{4}{9} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Time taken by B to finish remaining work = \( \frac{\text{Remaining Work}}{\text{B's 1 day work}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{\frac{4}{9}}{\frac{1}{18}} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{4}{9} \times \frac{18}{1} = 4 \times 2 = 8 \text{ days} \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="final-ans">Ans (b): B will take 8 days to finish the remaining work.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Working 8 hours a day, 45 men can build a wall in 16 days. <br>(a) Express the total work required in terms of "man-hours".<br>(b) How many men are required to build the same wall in 20 days if they work 6 hours a day?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (a): Total man-hours</strong></div>
+            <div class="step">Total work (man-hours) = Men × Days × Hours/Day</div>
+            <div class="step">
+                <div class="math-display">\[ = 45 \times 16 \times 8 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 5760 \text{ man-hours} \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="final-ans">Ans (a): Total work is 5760 man-hours.</div>
+
+            <br>
+            <div class="step"><strong>Part (b): Men required for new conditions</strong></div>
+            <div class="step">Let the number of men required be \( M \).</div>
+            <div class="step">According to the chain rule, the total man-hours must remain constant for the same wall.</div>
+            <div class="step">New man-hours = \( M \times 20 \times 6 \)</div>
+            <div class="step">
+                <div class="math-display">\[ M \times 120 = 5760 \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ M = \frac{5760}{120} = 48 \]</div>
+            </div>
+            <div class="final-ans">Ans (b): 48 men are required. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q13. A train travelling at a uniform speed of 72 km/hr takes 15 seconds to cross a stationary telegraph pole.<br>(i) Calculate the speed of the train in m/s.<br>(ii) Find the length of the train.<br>(iii) How much time will the same train take to cross a platform which is 200 meters long?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (i): Convert Speed</strong></div>
+            <div class="step">Speed = 72 km/hr</div>
+            <div class="step">To convert to m/s, multiply by \( \frac{5}{18} \).</div>
+            <div class="step">
+                <div class="math-display">\[ = 72 \times \frac{5}{18} = 20 \text{ m/s} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans (i): 20 m/s</div>
+            
+            <br>
+            <div class="step"><strong>Part (ii): Length of the train</strong></div>
+            <div class="step">When crossing a pole, Distance travelled = Length of train.</div>
+            <div class="step">Distance = Speed × Time</div>
+            <div class="step">
+                <div class="math-display">\[ = 20 \text{ m/s} \times 15 \text{ s} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 300 \text{ meters} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans (ii): 300 meters</div>
+
+            <br>
+            <div class="step"><strong>Part (iii): Time to cross platform</strong></div>
+            <div class="step">When crossing a platform, Total Distance = Length of Train + Length of Platform</div>
+            <div class="step">Total Distance = \( 300 + 200 = 500 \text{ meters} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Time = \( \frac{\text{Total Distance}}{\text{Speed}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{500}{20} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 25 \text{ seconds} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans (iii): 25 seconds</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 5px 10px; }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+            .q-num { width: 30px; }
+            /* Math equation chunking for small screens */
+            mjx-container[jax="CHTML"][display="true"] {
+                overflow-x: auto;
+                overflow-y: hidden;
+                max-width: 100%;
+            }
+        }
+        @media print { body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show relevant working steps.</li>
+                <li>Syllabus: Triangles, Lines and Angles.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Find the complement of \( 35^\circ \) and the supplement of \( 110^\circ \).</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Can a triangle have angles measuring \( 45^\circ \), \( 55^\circ \), and \( 90^\circ \)? Justify your answer.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Two supplementary angles are in the ratio \( 3:2 \). Find the measure of both angles.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">The exterior angle of a triangle is \( 115^\circ \) and one of its interior opposite angles is \( 45^\circ \). Find the other interior opposite angle.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Define vertically opposite angles and state their primary mathematical property.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Is it possible to construct a triangle with side lengths \( 5 \text{ cm} \), \( 7 \text{ cm} \), and \( 13 \text{ cm} \)? Give reasons for your answer based on geometric properties.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A transversal intersects two parallel lines. If one pair of consecutive interior (co-interior) angles are represented by \( (2x + 10)^\circ \) and \( (3x - 20)^\circ \), find the value of \( x \) and the measure of both angles.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">The angles of a triangle are in the ratio \( 2:3:4 \). Find the measure of each angle and classify the triangle based on its angles.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Find the measure of an angle which is equal to its own supplement. Show your working steps clearly.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">In an isosceles \( \triangle ABC \), sides \( AB = AC \). If the vertical angle \( \angle A = 50^\circ \), calculate the base angles \( \angle B \) and \( \angle C \).</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Lines \( AB \) and \( CD \) intersect at a point \( O \). If \( \angle AOC = (3x + 10)^\circ \) and \( \angle BOD = (4x - 15)^\circ \), solve for:
+            <div class="sub-question">(a) The value of \( x \).</div>
+            <div class="sub-question">(b) The measure of \( \angle AOC \).</div>
+            <div class="sub-question">(c) The measure of \( \angle AOD \) and \( \angle BOC \).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">In \( \triangle PQR \), side \( QR \) is produced to a point \( S \) forming an exterior angle. If the exterior angle \( \angle PRS = 105^\circ \) and the interior opposite angles are in the ratio \( \angle P : \angle Q = 3:4 \):
+            <br><br>Find all three interior angles of \( \triangle PQR \). Clearly state the geometric theorems you have utilized.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Two parallel lines \( l \) and \( m \) are intersected by a transversal \( t \). A pair of alternate interior angles are given by the expressions \( (4y - 10)^\circ \) and \( (2y + 30)^\circ \).
+            <div class="sub-question">(a) Frame an equation and find the value of \( y \).</div>
+            <div class="sub-question">(b) Find the exact measure of these alternate interior angles.</div>
+            <div class="sub-question">(c) Calculate the measure of the interior angles on the same side of the transversal (co-interior angles) adjacent to them.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

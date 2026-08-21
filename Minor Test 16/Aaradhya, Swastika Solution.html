@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Marking Scheme</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: #fafafa; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a4a76; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; flex-wrap: wrap; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e0e0e0; padding: 5px;}
+        .question-container { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc;}
+        .q-text { font-weight: bold; margin-bottom: 10px; display: flex;}
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        
+        .ans-container { background-color: #fff; border-left: 4px solid #28a745; padding: 10px 15px; margin-top: 10px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; display: flex; flex-direction: column; }
+        .ans-header { font-weight: bold; color: #28a745; margin-bottom: 5px; }
+        .marks-box { position: absolute; top: 10px; right: 10px; background: #dc3545; color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; font-size: 10pt; }
+        .step-marks { float: right; color: #dc3545; font-weight: bold; font-size: 10pt; margin-left: 10px;}
+        
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-bottom: 5px; }
+        .math-block { margin: 10px 0; }
+        
+        @media screen and (max-width: 850px) {
+            body { width: 100%; padding: 10px; margin: 0; min-height: auto; font-size: 11pt; }
+            .institute-name { font-size: 16pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .exam-details span { text-align: center; width: 100%; border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+            .exam-details span:last-child { border-bottom: none; }
+            .watermark { width: 95%; }
+            .marks-box { position: static; display: inline-block; margin-bottom: 10px; align-self: flex-end; }
+        }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; background-color: white;} .ans-container{ box-shadow: none; border-color: #000;} .marks-box, .step-marks { color: #000; border: 1px solid #000; background: none;} .math-scroll { overflow-x: visible; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 16 - DETAILED SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Mathematics & Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q1.</div>
+            <div class="q-content"><div class="math-scroll">Evaluate the following: &nbsp;&nbsp; (i) \( 3^{-2} \) &nbsp;&nbsp;&nbsp;&nbsp; (ii) \( \left(\frac{1}{2}\right)^{-3} \)</div></div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[2 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                <strong>(i) \( 3^{-2} \)</strong><br>
+                Using the law \( a^{-m} = \frac{1}{a^m} \) <span class="step-marks">[1/2 Mark]</span><br>
+                <span class="math-block">\( = \frac{1}{3^2} = \frac{1}{9} \)</span> <span class="step-marks">[1/2 Mark]</span><br><br>
+                <strong>(ii) \( \left(\frac{1}{2}\right)^{-3} \)</strong><br>
+                Using the law \( \left(\frac{a}{b}\right)^{-m} = \left(\frac{b}{a}\right)^m \) <span class="step-marks">[1/2 Mark]</span><br>
+                <span class="math-block">\( = \left(\frac{2}{1}\right)^3 = 2^3 = 8 \)</span> <span class="step-marks">[1/2 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q2.</div>
+            <div class="q-content">The diameter of a specific microscopic cell is \( 0.000000564 \) meters. Express this measurement in standard form. What is the value of the exponent in this notation?</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[2 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                Given decimal: \( 0.000000564 \)<br>
+                To express in standard form (\(k \times 10^n\), where \(1 \le k < 10\)):<br>
+                Move the decimal point 7 places to the right.<br>
+                Standard Form = \( 5.64 \times 10^{-7} \) m <span class="step-marks">[1 Mark]</span><br><br>
+                The value of the exponent is <strong>-7</strong>. <span class="step-marks">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q3.</div>
+            <div class="q-content">Define force. State the standard SI unit used to measure force.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[2 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                <strong>Force:</strong> A push or a pull on an object that produces an acceleration or changes its state of motion or shape is called force. <span class="step-marks">[1 Mark]</span><br><br>
+                <strong>SI Unit:</strong> The SI unit of force is <strong>Newton (N)</strong>. <span class="step-marks">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q4.</div>
+            <div class="q-content">A blacksmith hammers a hot piece of iron while making a tool. How does the force of hammering affect the piece of iron? Identify the type of force involved.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[2 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                <strong>Effect:</strong> The force of hammering changes the <strong>shape</strong> of the hot piece of iron, allowing the blacksmith to mold it into a tool. <span class="step-marks">[1 Mark]</span><br><br>
+                <strong>Type of Force:</strong> It is a <strong>Muscular Force</strong> (which is a type of <strong>Contact Force</strong>). <span class="step-marks">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q5.</div>
+            <div class="q-content">Give any two distinct examples from daily life where a non-contact force is acting on an object.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[2 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                Any two correct examples (1 Mark each): <span class="step-marks">[2 Marks]</span>
+                <ol style="margin-top: 5px;">
+                    <li><strong>Gravitational Force:</strong> An apple falling from a tree to the ground.</li>
+                    <li><strong>Magnetic Force:</strong> A magnet attracting iron nails from a distance.</li>
+                    <li><strong>Electrostatic Force:</strong> A plastic comb rubbed in dry hair attracting tiny bits of paper.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q6.</div>
+            <div class="q-content"><div class="math-scroll">Simplify the following expression: \( \frac{25 \times t^{-4}}{5^{-3} \times 10 \times t^{-8}} \)  (Assume \( t \neq 0 \))</div></div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[3 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                Given: \( \frac{25 \times t^{-4}}{5^{-3} \times 10 \times t^{-8}} \)<br>
+                Step 1: Express 25 and 10 in terms of prime factors. <span class="step-marks">[1 Mark]</span><br>
+                <span class="math-block">\( = \frac{5^2 \times t^{-4}}{5^{-3} \times (2 \times 5) \times t^{-8}} \)</span><br>
+                Step 2: Group the like bases (5, 2, and t).<br>
+                <span class="math-block">\( = \frac{5^2 \times t^{-4}}{5^{-3+1} \times 2 \times t^{-8}} \)</span>
+                <span class="math-block">\( = \frac{5^2 \times t^{-4}}{5^{-2} \times 2 \times t^{-8}} \)</span> <span class="step-marks">[1 Mark]</span><br>
+                Step 3: Apply the quotient law \( \frac{a^m}{a^n} = a^{m-n} \).<br>
+                <span class="math-block">\( = \frac{1}{2} \times 5^{2 - (-2)} \times t^{-4 - (-8)} \)</span><br>
+                <span class="math-block">\( = \frac{1}{2} \times 5^{2 + 2} \times t^{-4 + 8} \)</span><br>
+                <span class="math-block">\( = \frac{1}{2} \times 5^4 \times t^4 \)</span><br>
+                <strong>Final Answer = \( \frac{625 t^4}{2} \)</strong> <span class="step-marks">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q7.</div>
+            <div class="q-content"><div class="math-scroll">Find the value of \( m \) if: \( \left(\frac{5}{3}\right)^{-4} \times \left(\frac{5}{3}\right)^{-5} = \left(\frac{5}{3}\right)^{3m} \)</div></div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[3 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                Given equation: \( \left(\frac{5}{3}\right)^{-4} \times \left(\frac{5}{3}\right)^{-5} = \left(\frac{5}{3}\right)^{3m} \)<br>
+                Step 1: Apply the product law \( a^m \times a^n = a^{m+n} \) on the Left Hand Side (LHS). <span class="step-marks">[1 Mark]</span><br>
+                <span class="math-block">\( \left(\frac{5}{3}\right)^{-4 + (-5)} = \left(\frac{5}{3}\right)^{3m} \)</span><br>
+                <span class="math-block">\( \left(\frac{5}{3}\right)^{-9} = \left(\frac{5}{3}\right)^{3m} \)</span> <span class="step-marks">[1 Mark]</span><br>
+                Step 2: Since the bases on both sides are equal and non-zero, their exponents must be equal. <span class="step-marks">[1/2 Mark]</span><br>
+                \( -9 = 3m \)<br>
+                \( m = \frac{-9}{3} \)<br>
+                <strong>Final Answer: \( m = -3 \)</strong> <span class="step-marks">[1/2 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q8.</div>
+            <div class="q-content">List any three distinct effects that a force can produce on an object.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[3 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                A force can produce the following effects (Any 3 points, 1 Mark each): <span class="step-marks">[3 Marks]</span>
+                <ol style="margin-top: 5px;">
+                    <li>It can make a stationary object move or make a moving object stop.</li>
+                    <li>It can change the speed of a moving object.</li>
+                    <li>It can change the direction of motion of an object.</li>
+                    <li>It can change the shape and size of an object.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q9.</div>
+            <div class="q-content">Describe a simple activity to show that a magnetic force can act from a distance and is a non-contact force.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[3 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                <strong>Activity:</strong> <span class="step-marks">[3 Marks Total]</span><br>
+                <ol style="margin-top: 5px;">
+                    <li>Take a bar magnet and place it flat on a wooden table. <span class="step-marks">[1 Mark]</span></li>
+                    <li>Take a few iron nails and slowly bring them near one of the poles of the magnet without actually letting them touch the magnet. <span class="step-marks">[1 Mark]</span></li>
+                    <li><strong>Observation/Conclusion:</strong> The iron nails will instantly get pulled and jump towards the magnet. This shows that the magnet exerts a pulling force on the nails from a distance, proving that magnetic force is a non-contact force. <span class="step-marks">[1 Mark]</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q10.</div>
+            <div class="q-content">In a game of tug-of-war, Team X pulls the rope with a force of \( 350 \) N towards the East, and Team Y pulls the rope with a force of \( 400 \) N towards the West. Calculate the net force and determine which team will win the game.</div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[3 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                Force applied by Team X = \( 350 \) N (towards East) <span class="step-marks">[0.5 Mark]</span><br>
+                Force applied by Team Y = \( 400 \) N (towards West) <span class="step-marks">[0.5 Mark]</span><br><br>
+                Since the two forces are acting in opposite directions, the net force is the difference between them.<br>
+                Net Force = \( 400 \text{ N} - 350 \text{ N} = 50 \text{ N} \) <span class="step-marks">[1 Mark]</span><br><br>
+                <strong>Conclusion:</strong> Team Y will win the game because the net force of \( 50 \) N is directed towards the West (Team Y's direction). <span class="step-marks">[1 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q11.</div>
+            <div class="q-content"><div class="math-scroll">Simplify the given expression completely by applying the laws of exponents (Show all prime factorization steps): 
+            \[ \frac{3^{-5} \times 10^{-5} \times 125}{5^{-7} \times 6^{-5}} \]</div></div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[5 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                Given: \( \frac{3^{-5} \times 10^{-5} \times 125}{5^{-7} \times 6^{-5}} \)<br><br>
+                Step 1: Write all composite numbers as products of their prime factors.<br>
+                \( 10 = 2 \times 5 \)<br>
+                \( 125 = 5^3 \)<br>
+                \( 6 = 2 \times 3 \)<br>
+                Substituting these back: <span class="step-marks">[1.5 Marks]</span><br>
+                <span class="math-block">\( = \frac{3^{-5} \times (2 \times 5)^{-5} \times 5^3}{5^{-7} \times (2 \times 3)^{-5}} \)</span><br>
+                
+                Step 2: Apply the power of a product law \( (ab)^m = a^m \times b^m \). <span class="step-marks">[1 Mark]</span><br>
+                <span class="math-block">\( = \frac{3^{-5} \times 2^{-5} \times 5^{-5} \times 5^3}{5^{-7} \times 2^{-5} \times 3^{-5}} \)</span><br>
+
+                Step 3: Group terms with the same base together (Bases: 2, 3, 5).<br>
+                Numerator powers of 5: \( 5^{-5} \times 5^3 = 5^{-5+3} = 5^{-2} \) <span class="step-marks">[1 Mark]</span><br>
+                <span class="math-block">\( = \frac{3^{-5} \times 2^{-5} \times 5^{-2}}{5^{-7} \times 2^{-5} \times 3^{-5}} \)</span><br>
+
+                Step 4: Use quotient law \( \frac{a^m}{a^n} = a^{m-n} \). <span class="step-marks">[1 Mark]</span><br>
+                For base 2: \( 2^{-5 - (-5)} = 2^0 \)<br>
+                For base 3: \( 3^{-5 - (-5)} = 3^0 \)<br>
+                For base 5: \( 5^{-2 - (-7)} = 5^{-2 + 7} = 5^5 \)<br>
+
+                Step 5: Simplify.<br>
+                <span class="math-block">\( = 2^0 \times 3^0 \times 5^5 \)</span>
+                <span class="math-block">\( = 1 \times 1 \times 3125 \) (since \(a^0 = 1\))</span><br>
+                <strong>Final Answer = 3125</strong> <span class="step-marks">[0.5 Mark]</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q12.</div>
+            <div class="q-content">
+                Solve the following:<br>
+                (a) The mass of the Earth is \( 5.97 \times 10^{24} \) kg and the mass of the Moon is \( 7.35 \times 10^{22} \) kg. What is their total combined mass? Leave your answer in standard form.<br>
+                (b) Express the number \( 1042.78 \) in its expanded form using exponents.
+            </div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[5 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div class="math-scroll">
+                <strong>Part (a): [3 Marks]</strong><br>
+                Mass of Earth = \( 5.97 \times 10^{24} \) kg<br>
+                Mass of Moon = \( 7.35 \times 10^{22} \) kg<br>
+                Total Mass = \( (5.97 \times 10^{24}) + (7.35 \times 10^{22}) \)<br><br>
+                Step 1: Make the powers of 10 equal to perform addition. <span class="step-marks">[1 Mark]</span><br>
+                \( 5.97 \times 10^{24} = 5.97 \times 10^2 \times 10^{22} = 597 \times 10^{22} \)<br>
+                
+                Step 2: Add the values. <span class="step-marks">[1 Mark]</span><br>
+                Total Mass = \( 597 \times 10^{22} + 7.35 \times 10^{22} \)<br>
+                \( = (597 + 7.35) \times 10^{22} \)<br>
+                \( = 604.35 \times 10^{22} \) kg<br>
+                
+                Step 3: Convert back to standard form. <span class="step-marks">[1 Mark]</span><br>
+                \( = 6.0435 \times 10^2 \times 10^{22} \)<br>
+                <strong>Total Mass = \( 6.0435 \times 10^{24} \) kg</strong><br><br>
+
+                <strong>Part (b): [2 Marks]</strong><br>
+                Given Number: \( 1042.78 \)<br>
+                Using place values: Thousands (3), Hundreds (2), Tens (1), Ones (0), Tenths (-1), Hundredths (-2).<br>
+                Expanded form: <span class="step-marks">[2 Marks]</span><br>
+                <span class="math-block">\( = 1 \times 10^3 + 0 \times 10^2 + 4 \times 10^1 + 2 \times 10^0 + 7 \times 10^{-1} + 8 \times 10^{-2} \)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-text">
+            <div class="q-num">Q13.</div>
+            <div class="q-content">
+                Answer the following questions:<br>
+                (a) Differentiate between Contact and Non-Contact forces giving one example of each. (3 Marks)<br>
+                (b) A boy pushes a toy car with a force of \( 15 \) N. His friend joins him and pushes the car in the same direction with a force of \( 10 \) N. Calculate the net force applied on the car. What would happen to the net force if his friend pushed from the opposite direction with the same \( 10 \) N force? (2 Marks)
+            </div>
+        </div>
+        <div class="ans-container">
+            <span class="marks-box">[5 Marks]</span>
+            <div class="ans-header">Solution:</div>
+            <div>
+                <strong>Part (a): Differences [3 Marks]</strong><br>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;" border="1" cellpadding="5">
+                    <tr>
+                        <th style="background-color: #f2f2f2;">Contact Forces</th>
+                        <th style="background-color: #f2f2f2;">Non-Contact Forces</th>
+                    </tr>
+                    <tr>
+                        <td>Forces that act only when two interacting objects are in physical contact with each other. <span class="step-marks">[1 Mark]</span></td>
+                        <td>Forces that can act between two objects even when they are not in physical contact. <span class="step-marks">[1 Mark]</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example:</strong> Frictional force, Muscular force. <span class="step-marks">[0.5 Mark]</span></td>
+                        <td><strong>Example:</strong> Magnetic force, Gravitational force. <span class="step-marks">[0.5 Mark]</span></td>
+                    </tr>
+                </table>
+                <br>
+                <strong>Part (b): Net Force [2 Marks]</strong><br>
+                <div class="math-scroll">
+                    <strong>Case 1 (Pushing in the same direction):</strong><br>
+                    When forces act in the same direction, they add up.<br>
+                    Net Force = \( 15 \text{ N} + 10 \text{ N} = 25 \text{ N} \) <span class="step-marks">[1 Mark]</span><br><br>
+                    
+                    <strong>Case 2 (Pushing in opposite directions):</strong><br>
+                    When forces act in opposite directions, the net force is the difference between them.<br>
+                    Net Force = \( 15 \text{ N} - 10 \text{ N} = 5 \text{ N} \) (in the direction of the boy's push). <span class="step-marks">[1 Mark]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

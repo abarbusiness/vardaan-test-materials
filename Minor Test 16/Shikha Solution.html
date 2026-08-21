@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions (Class 6 - Ratio, Proportion, Unitary Method)</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+            chtml: { scale: 1, minScale: .5, matchFontHeight: true }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #0277bd; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e1f5fe; padding: 5px; }
+        
+        .q-block { 
+            margin-bottom: 30px; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 5px solid #0277bd;
+            margin-bottom: 15px;
+            word-wrap: break-word; 
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            flex-shrink: 0; 
+            color: #d32f2f; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .sol-body { margin-left: 10px; }
+        .step { margin-bottom: 6px; }
+        .mark-badge { font-style: italic; color: #d32f2f; font-weight: bold; margin-left: 10px; font-size: 10.5pt;}
+        .concept-note { font-size: 10.5pt; color: #555; background: #fffde7; border-left: 3px solid #fbc02d; padding: 4px 8px; margin: 5px 0; }
+        .final-ans { font-weight: bold; border: 1px solid #0277bd; padding: 5px 10px; display: inline-block; margin-top: 10px; background: #e1f5fe; border-radius: 4px; }
+        
+        .math-display {
+            overflow-x: auto; 
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+            max-width: 100%; 
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 (Class 6 - Math - Ratio, Proportion & Unitary Method)</div>
+        <div class="solution-title">ANSWER KEY & DETAILED SOLUTIONS (MARKING SCHEME)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Express the ratio of \( 45 \text{ minutes} \) to \( 1.5 \text{ hours} \) in its simplest form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: A ratio can only be formed when both quantities are in the same unit.</div>
+            <div class="step">First, convert hours into minutes to make units the same.</div>
+            <div class="step">\( 1.5 \text{ hours} = 1.5 \times 60 \text{ minutes} = 90 \text{ minutes} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Now, calculate the ratio:</div>
+            <div class="step">
+                <div class="math-display">\[ \text{Ratio} = \frac{45}{90} \]</div>
+            </div>
+            <div class="step">Dividing numerator and denominator by 45:</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{1}{2} \]</div>
+            </div>
+            <div class="final-ans">Ans: \( 1 : 2 \) <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Check if the numbers \( 12, 16, 18, \) and \( 24 \) are in proportion.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Four numbers \( a, b, c, d \) are in proportion if the product of extremes equals the product of means (\( a \times d = b \times c \)).</div>
+            <div class="step">Extremes (first and last terms) = \( 12 \) and \( 24 \)</div>
+            <div class="step">Means (middle terms) = \( 16 \) and \( 18 \)</div>
+            <div class="step">Product of extremes = \( 12 \times 24 = 288 \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Product of means = \( 16 \times 18 = 288 \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Since, Product of extremes = Product of means</div>
+            <div class="final-ans">Ans: Yes, the numbers are in proportion. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q3. If \( 8 \) notebooks cost \( \text{Rs. } 120 \), what is the cost of \( 5 \) such notebooks?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Unitary Method - Find the value of one unit first, then multiply to find the value of required units.</div>
+            <div class="step">Cost of 8 notebooks = \( \text{Rs. } 120 \)</div>
+            <div class="step">Cost of 1 notebook = \( \frac{120}{8} = \text{Rs. } 15 \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Cost of 5 notebooks = \( 15 \times 5 = \text{Rs. } 75 \)</div>
+            <div class="final-ans">Ans: The cost of 5 notebooks is Rs. 75. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Divide \( \text{Rs. } 500 \) between Aman and Bina in the ratio \( 3 : 2 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: To divide a quantity in a ratio, find the total parts and then distribute according to individual parts.</div>
+            <div class="step">Sum of the ratio terms = \( 3 + 2 = 5 \text{ parts} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Aman's share = \( \frac{3}{5} \times 500 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 3 \times 100 = \text{Rs. } 300 \] <span class="mark-badge">[0.5 Mark]</span></div>
+            </div>
+            <div class="step">Bina's share = \( \frac{2}{5} \times 500 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 2 \times 100 = \text{Rs. } 200 \] <span class="mark-badge">[0.5 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans: Aman gets Rs. 300, Bina gets Rs. 200. <span class="mark-badge">[0.5 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Find the value of \( x \) if \( x : 4 :: 9 : 12 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Using the property of proportion: Product of extremes = Product of means.</div>
+            <div class="step">
+                <div class="math-display">\[ x \times 12 = 4 \times 9 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ 12x = 36 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{36}{12} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 3 \]</div>
+            </div>
+            <div class="final-ans">Ans: The value of \( x \) is 3. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q6. The ratio of boys to girls in a school is \( 5 : 3 \). If there are \( 450 \) boys, find the number of girls and the total number of students in the school.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Let the number of boys be \( 5x \) and girls be \( 3x \).</div>
+            <div class="step">Given, number of boys = \( 450 \)</div>
+            <div class="step">
+                <div class="math-display">\[ 5x = 450 \implies x = \frac{450}{5} = 90 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Number of girls = \( 3x = 3 \times 90 = 270 \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Total number of students = Boys + Girls</div>
+            <div class="step">
+                <div class="math-display">\[ = 450 + 270 = 720 \]</div>
+            </div>
+            <div class="final-ans">Ans: There are 270 girls and a total of 720 students. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Which ratio is greater: \( 5 : 8 \) or \( 3 : 4 \)? Show your working.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Convert ratios to fractions and make the denominators equal (LCM method) to compare them.</div>
+            <div class="step">Write the ratios as fractions: \( \frac{5}{8} \) and \( \frac{3}{4} \)</div>
+            <div class="step">Find the LCM of the denominators (8 and 4). LCM = 8. <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Convert the fractions:</div>
+            <div class="step">\( \frac{5}{8} \) remains \( \frac{5}{8} \)</div>
+            <div class="step">\( \frac{3}{4} = \frac{3 \times 2}{4 \times 2} = \frac{6}{8} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Now compare the numerators: Since \( 6 > 5 \), \( \frac{6}{8} > \frac{5}{8} \).</div>
+            <div class="final-ans">Ans: The ratio \( 3 : 4 \) is greater. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Two numbers are in the ratio \( 4 : 7 \). If their sum is \( 132 \), find the two numbers.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Let the common ratio multiplier be \( x \).</div>
+            <div class="step">So, the two numbers are \( 4x \) and \( 7x \).</div>
+            <div class="step">According to the question, their sum is 132:</div>
+            <div class="step">
+                <div class="math-display">\[ 4x + 7x = 132 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ 11x = 132 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{132}{11} = 12 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">First number = \( 4x = 4 \times 12 = 48 \)</div>
+            <div class="step">Second number = \( 7x = 7 \times 12 = 84 \)</div>
+            <div class="final-ans">Ans: The two numbers are 48 and 84. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q9. A worker earns \( \text{Rs. } 1800 \) in \( 6 \) days. (a) How much will he earn in \( 25 \) days? (b) If he earned \( \text{Rs. } 4200 \), for how many days did he work?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, find the earnings for 1 day (Unitary Method).</div>
+            <div class="step">Earnings in 1 day = \( \frac{1800}{6} = \text{Rs. } 300 \) <span class="mark-badge">[1 Mark]</span></div>
+            <br>
+            <div class="step"><strong>Part (a):</strong></div>
+            <div class="step">Earnings in 25 days = \( 300 \times 25 = \text{Rs. } 7500 \) <span class="mark-badge">[1 Mark]</span></div>
+            <br>
+            <div class="step"><strong>Part (b):</strong></div>
+            <div class="step">To find the number of days worked for Rs. 4200:</div>
+            <div class="step">Number of days = \( \frac{\text{Total Earnings}}{\text{Earnings per day}} = \frac{4200}{300} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 14 \text{ days} \]</div>
+            </div>
+            <div class="final-ans">Ans: (a) He will earn Rs. 7500. (b) He worked for 14 days. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q10. A car travels \( 165 \text{ km} \) in \( 3 \text{ hours} \) at a uniform speed. How much time will it take to travel \( 275 \text{ km} \)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, find the distance traveled in 1 hour (Speed).</div>
+            <div class="step">Distance in 1 hour = \( \frac{165}{3} = 55 \text{ km} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Now, find the time taken to travel 275 km.</div>
+            <div class="step">Time = \( \frac{\text{Total Distance}}{\text{Distance in 1 hour}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ \text{Time} = \frac{275}{55} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ \text{Time} = 5 \text{ hours} \]</div>
+            </div>
+            <div class="final-ans">Ans: It will take 5 hours. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q11. The angles of a triangle are in the ratio \( 2 : 3 : 4 \). (a) Find the measure of each angle. (b) If the smallest angle is halved and the largest angle is doubled, what will be the new ratio of the three angles?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Sum of angles in a triangle is always \( 180^\circ \). Link geometry with ratio concepts.</div>
+            <div class="step"><strong>Part (a): Finding initial angles</strong></div>
+            <div class="step">Let the angles be \( 2x \), \( 3x \), and \( 4x \).</div>
+            <div class="step">Sum of angles = \( 180^\circ \)</div>
+            <div class="step">
+                <div class="math-display">\[ 2x + 3x + 4x = 180^\circ \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ 9x = 180^\circ \implies x = 20^\circ \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="step">Angles are: \( 2(20^\circ) = 40^\circ \), \( 3(20^\circ) = 60^\circ \), \( 4(20^\circ) = 80^\circ \) <span class="mark-badge">[1.5 Marks]</span></div>
+            <br>
+            <div class="step"><strong>Part (b): Finding new ratio</strong></div>
+            <div class="step">Smallest angle (\( 40^\circ \)) is halved = \( \frac{40}{2} = 20^\circ \)</div>
+            <div class="step">Middle angle remains the same = \( 60^\circ \)</div>
+            <div class="step">Largest angle (\( 80^\circ \)) is doubled = \( 80 \times 2 = 160^\circ \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">New Ratio = \( 20 : 60 : 160 \)</div>
+            <div class="step">Dividing all terms by 20:</div>
+            <div class="step">
+                <div class="math-display">\[ = 1 : 3 : 8 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans: (a) Angles are \( 40^\circ, 60^\circ, 80^\circ \). (b) New ratio is \( 1 : 3 : 8 \).</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A printing machine prints \( 1500 \text{ pages} \) in \( 45 \text{ minutes} \). (a) How many pages will it print in \( 2 \text{ hours} \)? (b) How much time (in hours and minutes) will it take to print \( 6000 \text{ pages} \)?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Convert hours to minutes before applying the Unitary Method.</div>
+            <div class="step">First, find pages printed in 1 minute.</div>
+            <div class="step">Pages in 1 minute = \( \frac{1500}{45} = \frac{100}{3} \text{ pages} \) <span class="mark-badge">[1 Mark]</span></div>
+            
+            <br>
+            <div class="step"><strong>Part (a): Pages in 2 hours</strong></div>
+            <div class="step">Convert 2 hours to minutes: \( 2 \times 60 = 120 \text{ minutes} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Pages printed in 120 minutes = \( \left( \frac{100}{3} \right) \times 120 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 100 \times 40 = 4000 \text{ pages} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+
+            <br>
+            <div class="step"><strong>Part (b): Time for 6000 pages</strong></div>
+            <div class="step">Time taken = \( \frac{\text{Total pages}}{\text{Pages per minute}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ \text{Time} = \frac{6000}{\frac{100}{3}} = 6000 \times \frac{3}{100} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 60 \times 3 = 180 \text{ minutes} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Convert 180 minutes to hours: \( \frac{180}{60} = 3 \text{ hours} \).</div>
+            <div class="final-ans">Ans: (a) 4000 pages. (b) 3 hours 0 minutes. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q13. The ratio of the monthly income to the savings of a family is \( 11 : 2 \). If their monthly savings are \( \text{Rs. } 2500 \), find: (a) Total monthly income. (b) Monthly expenditure. (c) Ratio of expenditure to income.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Income = Expenditure + Savings. Link the given absolute value (savings) to its corresponding ratio part.</div>
+            <div class="step">Let the monthly income be \( 11x \) and savings be \( 2x \).</div>
+            <div class="step">Given that savings = \( \text{Rs. } 2500 \)</div>
+            <div class="step">
+                <div class="math-display">\[ 2x = 2500 \implies x = \frac{2500}{2} = 1250 \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            
+            <br>
+            <div class="step"><strong>Part (a): Monthly Income</strong></div>
+            <div class="step">Income = \( 11x = 11 \times 1250 = \text{Rs. } 13,750 \) <span class="mark-badge">[1 Mark]</span></div>
+            
+            <br>
+            <div class="step"><strong>Part (b): Monthly Expenditure</strong></div>
+            <div class="step">Expenditure = Income - Savings</div>
+            <div class="step">
+                <div class="math-display">\[ = 13750 - 2500 = \text{Rs. } 11,250 \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            
+            <br>
+            <div class="step"><strong>Part (c): Ratio of Expenditure to Income</strong></div>
+            <div class="step">Ratio = \( \frac{11250}{13750} \)</div>
+            <div class="step">Dividing numerator and denominator by 250:</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{45}{55} \]</div>
+            </div>
+            <div class="step">Dividing by 5:</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{9}{11} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step"><em>(Alternate quicker method: Expenditure parts = Income parts - Savings parts = 11 - 2 = 9. Ratio = 9:11)</em></div>
+            <div class="final-ans">Ans: (a) Rs. 13,750. (b) Rs. 11,250. (c) \( 9 : 11 \).</div>
+        </div>
+    </div>
+
+</body>
+</html>

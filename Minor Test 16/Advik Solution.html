@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions for Minor Test 16</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a237e;}
+        .test-name { font-size: 15pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-tag { font-size: 13pt; font-weight: bold; color: #d32f2f; margin-top: 8px; }
+
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; background-color: #f0f0f0; padding: 8px; border-radius: 4px; font-size: 13pt; }
+        
+        .q-wrapper { margin-bottom: 25px; page-break-inside: avoid; }
+        
+        .q-row { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .q-content { flex-grow: 1; margin-right: 15px; display: flex;}
+        .q-num { width: 35px; flex-shrink: 0; }
+        .q-text { flex-grow: 1; }
+        
+        .marks-box { 
+            font-weight: bold; 
+            color: #d32f2f; 
+            white-space: nowrap; 
+            background-color: #ffebee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid #ffcdd2;
+            font-size: 11pt;
+        }
+
+        .solution-box { 
+            margin-left: 35px;
+            padding: 15px; 
+            background-color: #f8fbff; 
+            border-left: 4px solid #1976d2; 
+            border-radius: 4px; 
+        }
+        
+        .solution-title { font-weight: bold; color: #1976d2; margin-bottom: 8px; display: block; font-size: 11pt;}
+        
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px 0;
+            margin: 5px 0;
+        }
+
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { border: 1px solid #bdbdbd; padding: 8px; text-align: left; }
+        th { background-color: #e0e0e0; }
+
+        .diagram-placeholder {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            border: 2px dashed #90caf9;
+            background-color: #e3f2fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            color: #1565c0;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .solution-box { margin-left: 0; padding: 10px;}
+        }
+
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 16pt; }
+            .q-num { width: 25px; }
+            .marks-box { font-size: 10pt; padding: 2px 5px;}
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.08 !important; }
+            .solution-box { background-color: transparent; border-left: 2px solid #000; }
+            .marks-box { border: none; background-color: transparent; color: #000; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 - Class 8 ICSE (Science)</div>
+        <div class="solution-tag">Detailed Marking Scheme & Solutions</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">1.</div>
+                <div class="q-text">Define an 'atom'. Name the central, dense part of an atom.</div>
+            </div>
+            <div class="marks-box">[2]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Atom:</strong> An atom is the smallest invisible particle of an element that can take part in a chemical reaction and may or may not exist independently. <em>(1 Mark)</em><br>
+            The central, dense part of an atom is called the <strong>Nucleus</strong>. <em>(1 Mark)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">2.</div>
+                <div class="q-text">Name the three fundamental subatomic particles present in an atom and state their respective electrical charges.</div>
+            </div>
+            <div class="marks-box">[2]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            The three fundamental subatomic particles are:
+            <ul>
+                <li><strong>Protons:</strong> Positively charged (+1)</li>
+                <li><strong>Electrons:</strong> Negatively charged (-1)</li>
+                <li><strong>Neutrons:</strong> Neutral (No charge / 0)</li>
+            </ul>
+            <em>(1 Mark for naming all three, 1 Mark for correct charges)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">3.</div>
+                <div class="q-text">What is meant by the 'Atomic Number' of an element? Write the symbol used to denote it.</div>
+            </div>
+            <div class="marks-box">[2]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Atomic Number:</strong> It is defined as the total number of protons present in the nucleus of an atom of that element. <em>(1 Mark)</em><br>
+            It is denoted by the symbol <strong>Z</strong>. <em>(1 Mark)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">4.</div>
+                <div class="q-text">If an atom contains 6 protons and 6 neutrons, what is its mass number?</div>
+            </div>
+            <div class="marks-box">[2]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <div class="math-container">
+                \[ \text{Mass Number (A)} = \text{Number of Protons} + \text{Number of Neutrons} \]
+                \[ \text{A} = 6 + 6 \]
+                \[ \text{A} = 12 \]
+            </div>
+            The mass number of the atom is <strong>12</strong>. <em>(1 Mark for formula, 1 Mark for correct answer)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">5.</div>
+                <div class="q-text">What are orbits (or electron shells) in an atom?</div>
+            </div>
+            <div class="marks-box">[2]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Orbits (or Shells):</strong> These are the fixed, circular paths or imaginary tracks around the nucleus of an atom in which electrons continuously revolve. They are denoted by K, L, M, N, etc. <em>(2 Marks for a clear definition)</em>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">6.</div>
+                <div class="q-text">State any three key differences between protons and electrons.</div>
+            </div>
+            <div class="marks-box">[3]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <div style="overflow-x: auto;">
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Proton</th>
+                        <th>Electron</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Charge</strong></td>
+                        <td>Positively charged (+1)</td>
+                        <td>Negatively charged (-1)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td>Present inside the nucleus.</td>
+                        <td>Revolve around the nucleus in orbits.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mass</strong></td>
+                        <td>Relatively heavy (approx. 1 amu).</td>
+                        <td>Negligible mass (approx. 1/1837 amu).</td>
+                    </tr>
+                </table>
+            </div>
+            <em>(1 Mark for each correct difference point)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">7.</div>
+                <div class="q-text">An element 'X' has an atomic number of 11. Write its electronic configuration and state its valency.</div>
+            </div>
+            <div class="marks-box">[3]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            Atomic Number (Z) = 11. This means it has 11 electrons.<br>
+            <strong>Electronic Configuration:</strong>
+            <div class="math-container">
+                \[ K=2, L=8, M=1 \quad \text{or simply} \quad 2, 8, 1 \]
+            </div>
+            <em>(1.5 Marks for correct configuration)</em><br><br>
+            <strong>Valency:</strong> The outermost shell (M shell) has 1 electron. It will lose 1 electron to achieve stability (octet). Therefore, its valency is <strong>1 (or +1)</strong>. <br>
+            <em>(1.5 Marks for correct valency)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">8.</div>
+                <div class="q-text">Define the term 'Isotope'. Give one example of isotopes of hydrogen.</div>
+            </div>
+            <div class="marks-box">[3]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Isotopes:</strong> Atoms of the same element that have the same atomic number but different mass numbers are called isotopes. This means they have the same number of protons but a different number of neutrons. <em>(2 Marks)</em><br><br>
+            <strong>Example (Isotopes of Hydrogen):</strong><br>
+            Protium (\( ^{1}_{1}H \)), Deuterium (\( ^{2}_{1}H \)), and Tritium (\( ^{3}_{1}H \)).<br>
+            <em>(1 Mark for mentioning at least one valid example or naming them)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">9.</div>
+                <div class="q-text">Calculate the number of neutrons in a Sodium atom (Given: Mass Number = 23, Atomic Number = 11). Show your working.</div>
+            </div>
+            <div class="marks-box">[3]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            Given:<br>
+            Mass Number (A) = 23<br>
+            Atomic Number (Z) = 11<br>
+            
+            <div class="math-container">
+                \[ \text{Mass Number (A)} = \text{Atomic Number (Z)} + \text{Number of Neutrons (n)} \]
+                \[ n = A - Z \]
+                \[ n = 23 - 11 \]
+                \[ n = 12 \]
+            </div>
+            The number of neutrons in the Sodium atom is <strong>12</strong>.<br>
+            <em>(1 Mark for identifying given values, 1 Mark for formula, 1 Mark for correct calculation)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">10.</div>
+                <div class="q-text">What is 'Valency'? Why do noble gases (like Neon or Argon) have a zero valency?</div>
+            </div>
+            <div class="marks-box">[3]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Valency:</strong> The combining capacity of an element with other elements to form molecules or compounds is known as its valency. It is determined by the number of electrons in its outermost shell. <em>(1.5 Marks)</em><br><br>
+            <strong>Why Noble Gases have Zero Valency:</strong> Noble gases possess a completely filled outermost shell (octet configuration, e.g., 8 electrons in the outermost shell). Because their valence shell is completely full, they are highly stable and do not need to lose, gain, or share electrons. Hence, their combining capacity or valency is zero. <em>(1.5 Marks)</em>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">11.</div>
+                <div class="q-text">
+                    (a) State any three postulates of Dalton's Atomic Theory.<br>
+                    (b) What are molecules? How is a molecule different from an atom?
+                </div>
+            </div>
+            <div class="marks-box">[3+2=5]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>(a) Dalton's Atomic Theory Postulates (Any three):</strong>
+            <ol>
+                <li>All matter is made up of very tiny, indivisible particles called atoms.</li>
+                <li>Atoms can neither be created nor destroyed in a chemical reaction.</li>
+                <li>Atoms of a given element are identical in mass and chemical properties.</li>
+                <li>Atoms of different elements have different masses and chemical properties.</li>
+                <li>Atoms combine in the ratio of small whole numbers to form compounds.</li>
+            </ol>
+            <em>(1 Mark for each correct postulate = 3 Marks)</em><br><br>
+            
+            <strong>(b) Molecules and Difference:</strong><br>
+            A <strong>molecule</strong> is a group of two or more atoms chemically bonded together. It is the smallest particle of a substance (element or compound) that can exist independently and shows all the properties of that substance. <em>(1 Mark)</em><br>
+            <strong>Difference:</strong> An atom is the basic building block and usually cannot exist independently (except noble gases), whereas a molecule is formed by the combination of atoms and is capable of independent existence. <em>(1 Mark)</em>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">12.</div>
+                <div class="q-text">Draw a neat, labeled diagram of a Carbon atom (Atomic number = 6, Mass number = 12). Clearly label the nucleus, protons, neutrons, and show the distribution of electrons in different orbits.</div>
+            </div>
+            <div class="marks-box">[5]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>Calculations for diagram:</strong><br>
+            Atomic Number (Z) = 6 \(\Rightarrow\) Protons = 6, Electrons = 6.<br>
+            Mass Number (A) = 12 \(\Rightarrow\) Neutrons = A - Z = 12 - 6 = 6.<br>
+            Electronic Configuration = 2, 4 (K shell = 2e, L shell = 4e). <em>(1 Mark for correct deduction)</em><br>
+            
+            <div class="diagram-placeholder">
+                [Student draws diagram here] <br><br>
+                Inner Circle: Nucleus (6p+, 6n0)<br>
+                First Orbit (K): 2 electrons<br>
+                Second Orbit (L): 4 electrons
+            </div>
+            
+            <strong>Marking Scheme for Diagram (4 Marks):</strong>
+            <ul>
+                <li>Drawing the central nucleus and labeling it with 6 Protons and 6 Neutrons: <em>(1.5 Marks)</em></li>
+                <li>Drawing the K-shell with exactly 2 electrons: <em>(1 Mark)</em></li>
+                <li>Drawing the L-shell with exactly 4 electrons: <em>(1 Mark)</em></li>
+                <li>Neatness and proper overall labeling (Nucleus, Orbits, Electrons): <em>(0.5 Mark)</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="q-wrapper">
+        <div class="q-row">
+            <div class="q-content">
+                <div class="q-num">13.</div>
+                <div class="q-text">
+                    (a) Define Mass Number.<br>
+                    (b) Write the mathematical relationship between Mass Number (A), Atomic Number (Z), and the number of neutrons (n).<br>
+                    (c) An atom 'Y' has 8 protons, 8 electrons, and 8 neutrons. Find its Atomic Number and Mass Number. Name the element 'Y'.
+                </div>
+            </div>
+            <div class="marks-box">[1+2+2=5]</div>
+        </div>
+        <div class="solution-box">
+            <span class="solution-title">Solution:</span>
+            <strong>(a) Mass Number:</strong><br>
+            The total sum of the number of protons and neutrons present in the nucleus of an atom is called its Mass Number. <em>(1 Mark)</em><br><br>
+            
+            <strong>(b) Mathematical Relationship:</strong><br>
+            <div class="math-container">
+                \[ \text{Mass Number (A)} = \text{Atomic Number (Z)} + \text{Number of Neutrons (n)} \]
+                \[ \text{or} \quad A = Z + n \]
+            </div>
+            <em>(2 Marks)</em><br><br>
+            
+            <strong>(c) Calculations for Atom 'Y':</strong><br>
+            Given: Protons = 8, Neutrons = 8, Electrons = 8.<br>
+            <ul>
+                <li><strong>Atomic Number (Z):</strong> Equal to the number of protons. Hence, <strong>Z = 8</strong>. <em>(0.5 Mark)</em></li>
+                <li><strong>Mass Number (A):</strong> Protons + Neutrons = 8 + 8 = <strong>16</strong>. <em>(0.5 Mark)</em></li>
+                <li><strong>Name of Element:</strong> The element with atomic number 8 is <strong>Oxygen (O)</strong>. <em>(1 Mark)</em></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b30000; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 5px 10px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f4f4f4; padding: 5px; }
+        .question-box { margin-bottom: 25px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        .question-text { font-weight: bold; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .marks { color: #d32f2f; font-weight: bold; white-space: nowrap; margin-left: 15px;}
+        .solution-text { margin-left: 20px; color: #1a4f76; }
+        .step { margin-bottom: 5px; }
+        .final-answer { font-weight: bold; border: 1px solid #1a4f76; padding: 2px 8px; display: inline-block; margin-top: 5px; background-color: #f0f8ff;}
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+            .solution-text { margin-left: 0; }
+            .question-text { flex-direction: column; }
+            .marks { margin-left: 0; margin-top: 5px; text-align: right; }
+            /* Math equation chunking for small screens */
+            mjx-container[jax="CHTML"][display="true"] {
+                overflow-x: auto;
+                overflow-y: hidden;
+                max-width: 100%;
+                /* Adding breathing room for scrollbar */
+                padding-bottom: 5px;
+            }
+        }
+        @media print { body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 - DETAILED SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q1. Find the complement of \( 35^\circ \) and the supplement of \( 110^\circ \).</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Concept:</strong> Complementary angles sum to \( 90^\circ \). Supplementary angles sum to \( 180^\circ \).</div>
+            <div class="step">Complement of \( 35^\circ = 90^\circ - 35^\circ = 55^\circ \). <em>(1 Mark)</em></div>
+            <div class="step">Supplement of \( 110^\circ = 180^\circ - 110^\circ = 70^\circ \). <em>(1 Mark)</em></div>
+            <div class="final-answer">Answers: \( 55^\circ \) and \( 70^\circ \)</div>
+        </div>
+    </div>
+    
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q2. Can a triangle have angles measuring \( 45^\circ \), \( 55^\circ \), and \( 90^\circ \)? Justify your answer.</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Concept:</strong> By the Angle Sum Property of a triangle, the sum of all interior angles must be exactly \( 180^\circ \).</div>
+            <div class="step">Sum of given angles = \( 45^\circ + 55^\circ + 90^\circ = 190^\circ \). <em>(1 Mark)</em></div>
+            <div class="step">Since \( 190^\circ \neq 180^\circ \), a triangle with these angles cannot exist. <em>(1 Mark)</em></div>
+            <div class="final-answer">Answer: No</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q3. Two supplementary angles are in the ratio \( 3:2 \). Find the measure of both angles.</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step">Let the two angles be \( 3x \) and \( 2x \).</div>
+            <div class="step">Since they are supplementary, their sum is \( 180^\circ \).</div>
+            <div class="step">
+                \[ 3x + 2x = 180^\circ \]
+                \[ 5x = 180^\circ \]
+                \[ x = \frac{180}{5} = 36^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="step">First angle = \( 3x = 3 \times 36^\circ = 108^\circ \)</div>
+            <div class="step">Second angle = \( 2x = 2 \times 36^\circ = 72^\circ \) <em>(1 Mark)</em></div>
+            <div class="final-answer">Angles are \( 108^\circ \) and \( 72^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q4. The exterior angle of a triangle is \( 115^\circ \) and one of its interior opposite angles is \( 45^\circ \). Find the other interior opposite angle.</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Theorem:</strong> The measure of an exterior angle of a triangle is equal to the sum of the measures of its two interior opposite angles. <em>(0.5 Mark)</em></div>
+            <div class="step">Let the unknown interior opposite angle be \( x \).</div>
+            <div class="step">
+                \[ 115^\circ = 45^\circ + x \] <em>(0.5 Mark)</em>
+                \[ x = 115^\circ - 45^\circ \]
+                \[ x = 70^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="final-answer">The other interior opposite angle is \( 70^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q5. Define vertically opposite angles and state their primary mathematical property.</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Definition:</strong> Vertically opposite angles are the angles formed opposite to each other when two lines intersect. <em>(1 Mark)</em></div>
+            <div class="step"><strong>Property:</strong> Vertically opposite angles are always strictly equal in measure. <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q6. Is it possible to construct a triangle with side lengths \( 5 \text{ cm} \), \( 7 \text{ cm} \), and \( 13 \text{ cm} \)? Give reasons for your answer based on geometric properties.</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Theorem Used (Triangle Inequality):</strong> The sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side. <em>(1 Mark)</em></div>
+            <div class="step">Let's check the given sides (\( 5, 7, 13 \)):</div>
+            <div class="step">Sum of the two smaller sides = \( 5 \text{ cm} + 7 \text{ cm} = 12 \text{ cm} \). <em>(1 Mark)</em></div>
+            <div class="step">Here, \( 12 \text{ cm} \) is <strong>not greater than</strong> the third side (\( 13 \text{ cm} \)). (\( 12 < 13 \))</div>
+            <div class="step">Therefore, construction is not possible. <em>(1 Mark)</em></div>
+            <div class="final-answer">Answer: Not possible</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q7. A transversal intersects two parallel lines. If one pair of consecutive interior (co-interior) angles are represented by \( (2x + 10)^\circ \) and \( (3x - 20)^\circ \), find the value of \( x \) and the measure of both angles.</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Property:</strong> Consecutive interior (co-interior) angles formed by parallel lines are supplementary (sum = \( 180^\circ \)). <em>(1 Mark)</em></div>
+            <div class="step">
+                \[ (2x + 10)^\circ + (3x - 20)^\circ = 180^\circ \]
+                \[ 5x - 10 = 180 \]
+                \[ 5x = 190 \]
+                \[ x = \frac{190}{5} = 38 \] <em>(1 Mark)</em>
+            </div>
+            <div class="step">Substitute \( x \) back to find the angles:</div>
+            <div class="step">Angle 1: \( 2(38) + 10 = 76 + 10 = 86^\circ \)</div>
+            <div class="step">Angle 2: \( 3(38) - 20 = 114 - 20 = 94^\circ \) <em>(1 Mark)</em></div>
+            <div class="final-answer">\( x = 38 \); Angles are \( 86^\circ \) and \( 94^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q8. The angles of a triangle are in the ratio \( 2:3:4 \). Find the measure of each angle and classify the triangle based on its angles.</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step">Let the angles be \( 2x \), \( 3x \), and \( 4x \).</div>
+            <div class="step">By the Angle Sum Property of a triangle:</div>
+            <div class="step">
+                \[ 2x + 3x + 4x = 180^\circ \]
+                \[ 9x = 180^\circ \]
+                \[ x = 20^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="step">The angles are:
+                <br> \( 2 \times 20^\circ = 40^\circ \)
+                <br> \( 3 \times 20^\circ = 60^\circ \)
+                <br> \( 4 \times 20^\circ = 80^\circ \) <em>(1 Mark)</em>
+            </div>
+            <div class="step">Since all three angles (\( 40^\circ, 60^\circ, 80^\circ \)) are less than \( 90^\circ \), it is an <strong>Acute-Angled Triangle</strong>. <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q9. Find the measure of an angle which is equal to its own supplement. Show your working steps clearly.</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step">Let the required angle be \( x^\circ \).</div>
+            <div class="step">The supplement of this angle will be \( (180 - x)^\circ \). <em>(1 Mark)</em></div>
+            <div class="step">According to the question, the angle is equal to its supplement:</div>
+            <div class="step">
+                \[ x = 180 - x \] <em>(1 Mark)</em>
+                \[ x + x = 180 \]
+                \[ 2x = 180 \]
+                \[ x = 90^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="final-answer">The required angle is \( 90^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q10. In an isosceles \( \triangle ABC \), sides \( AB = AC \). If the vertical angle \( \angle A = 50^\circ \), calculate the base angles \( \angle B \) and \( \angle C \).</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>Theorem:</strong> In a triangle, angles opposite to equal sides are equal. Since \( AB = AC \), we have \( \angle B = \angle C \). <em>(1 Mark)</em></div>
+            <div class="step">Let \( \angle B = \angle C = x^\circ \).</div>
+            <div class="step">By the Angle Sum Property:</div>
+            <div class="step">
+                \[ \angle A + \angle B + \angle C = 180^\circ \]
+                \[ 50^\circ + x + x = 180^\circ \] <em>(1 Mark)</em>
+                \[ 2x = 180^\circ - 50^\circ \]
+                \[ 2x = 130^\circ \]
+                \[ x = 65^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="final-answer">\( \angle B = 65^\circ \) and \( \angle C = 65^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+    
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q11. Lines \( AB \) and \( CD \) intersect at a point \( O \). If \( \angle AOC = (3x + 10)^\circ \) and \( \angle BOD = (4x - 15)^\circ \), solve for: (a) \( x \), (b) \( \angle AOC \), (c) \( \angle AOD \) & \( \angle BOC \).</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>(a) Find \( x \):</strong></div>
+            <div class="step">Since \( AB \) and \( CD \) intersect at \( O \), \( \angle AOC \) and \( \angle BOD \) form a pair of vertically opposite angles. They must be equal.</div>
+            <div class="step">
+                \[ 3x + 10 = 4x - 15 \]
+                \[ 10 + 15 = 4x - 3x \]
+                \[ 25 = x \implies x = 25 \] <em>(2 Marks)</em>
+            </div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>(b) Find \( \angle AOC \):</strong></div>
+            <div class="step">
+                Substitute \( x = 25 \) into the expression:
+                \[ \angle AOC = 3(25) + 10 = 75 + 10 = 85^\circ \] <em>(1 Mark)</em>
+            </div>
+
+            <div class="step" style="margin-top: 10px;"><strong>(c) Find \( \angle AOD \) and \( \angle BOC \):</strong></div>
+            <div class="step">\( \angle AOC \) and \( \angle AOD \) form a linear pair on straight line \( AB \) (or \( CD \)).</div>
+            <div class="step">
+                \[ \angle AOC + \angle AOD = 180^\circ \]
+                \[ 85^\circ + \angle AOD = 180^\circ \]
+                \[ \angle AOD = 180^\circ - 85^\circ = 95^\circ \] <em>(1 Mark)</em>
+            </div>
+            <div class="step">\( \angle BOC \) and \( \angle AOD \) are vertically opposite, so \( \angle BOC = \angle AOD = 95^\circ \). <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q12. In \( \triangle PQR \), side \( QR \) is produced to a point \( S \) forming an exterior angle. If the exterior angle \( \angle PRS = 105^\circ \) and the interior opposite angles are in the ratio \( \angle P : \angle Q = 3:4 \): Find all three interior angles of \( \triangle PQR \). Clearly state the geometric theorems you have utilized.</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step">Let \( \angle P = 3x \) and \( \angle Q = 4x \).</div>
+            <div class="step"><strong>Theorem 1: Exterior Angle Theorem.</strong> The exterior angle of a triangle equals the sum of the two opposite interior angles. <em>(1 Mark)</em></div>
+            <div class="step">
+                \[ \angle PRS = \angle P + \angle Q \]
+                \[ 105^\circ = 3x + 4x \]
+                \[ 105^\circ = 7x \]
+                \[ x = \frac{105}{7} = 15^\circ \] <em>(1.5 Marks)</em>
+            </div>
+            <div class="step">Now, calculate the interior opposite angles:</div>
+            <div class="step">\( \angle P = 3(15) = 45^\circ \)</div>
+            <div class="step">\( \angle Q = 4(15) = 60^\circ \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Theorem 2: Angle Sum Property OR Linear Pair.</strong></div>
+            <div class="step">
+                Method A (Linear Pair): \( \angle PRQ + \angle PRS = 180^\circ \implies \angle PRQ = 180^\circ - 105^\circ = 75^\circ \).<br>
+                Method B (Angle Sum): \( \angle R = 180^\circ - (45^\circ + 60^\circ) = 180^\circ - 105^\circ = 75^\circ \). <em>(1.5 Marks)</em>
+            </div>
+            <div class="final-answer">Interior angles are \( \angle P = 45^\circ \), \( \angle Q = 60^\circ \), and \( \angle PRQ = 75^\circ \)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text">
+            <span>Q13. Two parallel lines \( l \) and \( m \) are intersected by a transversal \( t \). A pair of alternate interior angles are given by the expressions \( (4y - 10)^\circ \) and \( (2y + 30)^\circ \). Find: (a) \( y \), (b) alternate interior angles, (c) co-interior angles.</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="solution-text">
+            <div class="step"><strong>(a) Find \( y \):</strong></div>
+            <div class="step"><strong>Property:</strong> If two parallel lines are cut by a transversal, the alternate interior angles are equal.</div>
+            <div class="step">
+                \[ 4y - 10 = 2y + 30 \]
+                \[ 4y - 2y = 30 + 10 \]
+                \[ 2y = 40 \implies y = 20 \] <em>(2 Marks)</em>
+            </div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>(b) Find the measure of these alternate interior angles:</strong></div>
+            <div class="step">Substitute \( y = 20 \) into either expression:</div>
+            <div class="step">
+                \[ \text{Angle} = 4(20) - 10 = 80 - 10 = 70^\circ \]
+                (Check: \( 2(20) + 30 = 40 + 30 = 70^\circ \)). Both are \( 70^\circ \). <em>(1 Mark)</em>
+            </div>
+
+            <div class="step" style="margin-top: 10px;"><strong>(c) Calculate the interior angles on the same side of transversal (co-interior angles):</strong></div>
+            <div class="step">Co-interior angles are supplementary to the given alternate interior angles (they form a linear pair with the alternate interior angle at the same intersection).</div>
+            <div class="step">
+                Let the co-interior angle be \( z \).
+                \[ z + 70^\circ = 180^\circ \]
+                \[ z = 180^\circ - 70^\circ = 110^\circ \] <em>(2 Marks)</em>
+            </div>
+            <div class="final-answer">Co-interior angles measure \( 110^\circ \) each.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions (Class 6 - Percentage)</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+            chtml: { scale: 1, minScale: .5, matchFontHeight: true }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #0277bd; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e1f5fe; padding: 5px; }
+        
+        .q-block { 
+            margin-bottom: 30px; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 5px solid #0277bd;
+            margin-bottom: 15px;
+            word-wrap: break-word; /* Ensure long text wraps */
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            flex-shrink: 0; 
+            color: #d32f2f; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .sol-body { margin-left: 10px; }
+        .step { margin-bottom: 6px; }
+        .mark-badge { font-style: italic; color: #d32f2f; font-weight: bold; margin-left: 10px; font-size: 10.5pt;}
+        .concept-note { font-size: 10.5pt; color: #555; background: #fffde7; border-left: 3px solid #fbc02d; padding: 4px 8px; margin: 5px 0; }
+        .final-ans { font-weight: bold; border: 1px solid #0277bd; padding: 5px 10px; display: inline-block; margin-top: 10px; background: #e1f5fe; border-radius: 4px; }
+        
+        .math-display {
+            overflow-x: auto; /* Enable horizontal scroll for long equations */
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+            max-width: 100%; /* Prevent overflow */
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 (Class 6 - Mathematics - Percentage)</div>
+        <div class="solution-title">ANSWER KEY & DETAILED SOLUTIONS (MARKING SCHEME)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Express the following as percentages: (a) \( \frac{3}{8} \) (b) \( 0.45 \)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: To convert a fraction or decimal to a percentage, multiply by 100 and add the % sign.</div>
+            <div class="step"><strong>(a)</strong> \( \frac{3}{8} \) as a percentage:</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3}{8} \times 100\% \]</div>
+                <div class="math-display">\[ = \frac{300}{8}\% = 37.5\% \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step"><strong>(b)</strong> \( 0.45 \) as a percentage:</div>
+            <div class="step">
+                <div class="math-display">\[ = 0.45 \times 100\% \]</div>
+                <div class="math-display">\[ = 45\% \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Convert \( 12\frac{1}{2}\% \) into a fraction in its simplest form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: To convert percentage to a fraction, divide by 100 and simplify.</div>
+            <div class="step">First, convert mixed fraction to an improper fraction:</div>
+            <div class="step">\( 12\frac{1}{2}\% = \frac{25}{2}\% \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Now, divide by 100 (which means multiplying the denominator by 100):</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{25}{2 \times 100} \]</div>
+                <div class="math-display">\[ = \frac{25}{200} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Simplifying the fraction (dividing numerator and denominator by 25):</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{1}{8} \]</div>
+            </div>
+            <div class="final-ans">Ans: \( \frac{1}{8} \) <span class="mark-badge">[0.5 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <!-- Fixing MathJax syntax for Rs. -->
+            <div class="q-text">Q3. Find the value of \( 15\% \) of \( \text{Rs. } 400 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: "Percentage of" means multiplying the fraction representation of the percentage by the quantity.</div>
+            <div class="step">Value = \( \frac{15}{100} \times 400 \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">
+                <div class="math-display">\[ = 15 \times 4 \]</div>
+                <div class="math-display">\[ = 60 \]</div>
+            </div>
+            <div class="final-ans">Ans: Rs. 60 <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q4. What percentage is \( 45 \) minutes of \( 2 \) hours?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Both quantities must be in the same unit before forming a fraction to convert to a percentage.</div>
+            <div class="step">Convert 2 hours to minutes:</div>
+            <div class="step">\( 2 \text{ hours} = 2 \times 60 = 120 \text{ minutes} \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Required Percentage = \( \frac{\text{First Quantity}}{\text{Second Quantity}} \times 100\% \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{45}{120} \times 100\% \] <span class="mark-badge">[0.5 Mark]</span></div>
+            </div>
+            <div class="step">Simplifying: \( \frac{45}{120} = \frac{3}{8} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{3}{8} \times 100\% = 37.5\% \]</div>
+            </div>
+            <div class="final-ans">Ans: 37.5% <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Find the value of \( x \) if \( 30\% \) of \( x \) is \( 120 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Finding the total given a percentage part. Form an equation.</div>
+            <div class="step">According to the question:</div>
+            <div class="step">
+                <div class="math-display">\[ \frac{30}{100} \times x = 120 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">Solving for \( x \):</div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{120 \times 100}{30} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 4 \times 100 = 400 \]</div>
+            </div>
+            <div class="final-ans">Ans: \( x = 400 \) <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Out of \( 800 \) students in a school, \( 45\% \) are girls. Find the total number of boys in the school.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Method 1: Find percentage of boys directly. Total is always 100%.</div>
+            <div class="step">Total percentage of students = \( 100\% \)</div>
+            <div class="step">Percentage of boys = \( 100\% - 45\% = 55\% \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Number of boys = \( 55\% \text{ of } 800 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{55}{100} \times 800 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 55 \times 8 = 440 \]</div>
+            </div>
+            <div class="final-ans">Ans: There are 440 boys in the school. <span class="mark-badge">[1 Mark]</span></div>
+            <br>
+            <div class="step"><em>(Alternate Method: Find number of girls = 45% of 800 = 360. Boys = 800 - 360 = 440. Full marks awarded if solved this way).</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <!-- Fixing MathJax syntax for Rs. -->
+            <div class="q-text">Q7. A man saves \( 18\% \) of his monthly income. If his monthly savings amount to \( \text{Rs. } 3600 \), calculate his total monthly income.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Establishing relation between the percentage given and its actual value.</div>
+            <div class="step">Let the total monthly income be \( x \).</div>
+            <div class="step">Savings = \( 18\% \) of income = \( \text{Rs. } 3600 \)</div>
+            <div class="step">Therefore, \( \frac{18}{100} \times x = 3600 \) <span class="mark-badge">[1.5 Marks]</span></div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{3600 \times 100}{18} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 200 \times 100 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 20000 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="final-ans">Ans: His total monthly income is Rs. 20,000. <span class="mark-badge">[0.5 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q8. In an orchard, \( 20\% \) of the trees are mango trees, \( 35\% \) are apple trees, and the remaining are orange trees. Find the percentage of orange trees. If the total number of trees is \( 400 \), find the exact number of orange trees.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part 1: Percentage of Orange Trees</strong></div>
+            <div class="step">Total percentage = \( 100\% \)</div>
+            <div class="step">Percentage of mango + apple trees = \( 20\% + 35\% = 55\% \) <span class="mark-badge">[0.5 Mark]</span></div>
+            <div class="step">Percentage of orange trees = \( 100\% - 55\% = 45\% \) <span class="mark-badge">[1 Mark]</span></div>
+            
+            <br>
+            <div class="step"><strong>Part 2: Number of Orange Trees</strong></div>
+            <div class="step">Total number of trees = 400</div>
+            <div class="step">Number of orange trees = \( 45\% \text{ of } 400 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{45}{100} \times 400 \] <span class="mark-badge">[0.5 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 45 \times 4 = 180 \]</div>
+            </div>
+            <div class="final-ans">Ans: There are 45% orange trees, which equals 180 trees. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Rahul scored \( 36 \) marks out of \( 60 \) in his Mathematics test and \( 40 \) marks out of \( 50 \) in his Science test. In which subject did he perform better conceptually (in terms of percentage)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Comparing performance with different max marks requires converting scores to percentages to form a standard base.</div>
+            <div class="step"><strong>Mathematics:</strong></div>
+            <div class="step">Percentage scored = \( \left( \frac{36}{60} \right) \times 100\% \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 6 \times 10\% = 60\% \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            
+            <div class="step"><strong>Science:</strong></div>
+            <div class="step">Percentage scored = \( \left( \frac{40}{50} \right) \times 100\% \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 40 \times 2\% = 80\% \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            
+            <div class="step">Comparing the two: \( 80\% > 60\% \)</div>
+            <div class="final-ans">Ans: Rahul performed better in Science. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <!-- Fixing MathJax syntax for Rs. -->
+            <div class="q-text">Q10. The cost of a bicycle was \( \text{Rs. } 4500 \). Its price is increased by \( 12\% \). What is the new increased price of the bicycle?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: New Price = Original Price + Increase amount</div>
+            <div class="step">Original Price = \( \text{Rs. } 4500 \)</div>
+            <div class="step">Increase amount = \( 12\% \text{ of } 4500 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{12}{100} \times 4500 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 12 \times 45 = \text{Rs. } 540 \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">New Price = Original Price + Increase</div>
+            <div class="step">
+                <div class="math-display">\[ = 4500 + 540 \]</div>
+            </div>
+            <div class="final-ans">Ans: The new price of the bicycle is Rs. 5040. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Mr. Sharma's monthly salary is \( \text{Rs. } 50,000 \). He spends \( 30\% \) of his salary on food, \( 20\% \) on house rent, \( 15\% \) on the education of his children, and saves the rest. Find: (a) The percentage of his salary that he saves. (b) His total monthly savings in Rupees. (c) The amount spent strictly on food.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (a): Percentage of Savings</strong></div>
+            <div class="step">Total Percentage = 100%</div>
+            <div class="step">Total expenditure % = \( 30\% \text{ (Food)} + 20\% \text{ (Rent)} + 15\% \text{ (Edu)} = 65\% \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Savings percentage = \( 100\% - 65\% = 35\% \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="final-ans">Ans (a): He saves 35% of his salary.</div>
+            
+            <br>
+            <div class="step"><strong>Part (b): Monthly Savings (Rupees)</strong></div>
+            <div class="step">Total Salary = Rs. 50,000</div>
+            <div class="step">Savings Amount = \( 35\% \text{ of } 50,000 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{35}{100} \times 50000 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 35 \times 500 = \text{Rs. } 17,500 \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="final-ans">Ans (b): His total savings is Rs. 17,500.</div>
+
+            <br>
+            <div class="step"><strong>Part (c): Amount spent on Food</strong></div>
+            <div class="step">Expenditure on food = \( 30\% \text{ of } 50,000 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{30}{100} \times 50000 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 30 \times 500 = \text{Rs. } 15,000 \] <span class="mark-badge">[1.5 Marks]</span></div>
+            </div>
+            <div class="final-ans">Ans (c): Amount spent on food is Rs. 15,000.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q12. In an examination, a candidate must secure \( 40\% \) marks to pass. A student gets \( 140 \) marks and fails by \( 20 \) marks. Find the maximum marks of the examination.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: The passing marks are absolute. Find the absolute passing marks first, then equate it to the percentage.</div>
+            <div class="step">Marks obtained by the student = 140</div>
+            <div class="step">Failed by = 20 marks.</div>
+            <div class="step">This means if the student got 20 more marks, they would have exactly reached the passing mark.</div>
+            <div class="step">Passing Marks = Marks Obtained + Failed By</div>
+            <div class="step">
+                <div class="math-display">\[ \text{Passing Marks} = 140 + 20 = 160 \] <span class="mark-badge">[2 Marks]</span></div>
+            </div>
+            
+            <div class="step">Let the maximum marks of the exam be \( x \).</div>
+            <div class="step">We are given that a candidate must secure 40% of the maximum marks to pass.</div>
+            <div class="step">Therefore, \( 40\% \text{ of } x = 160 \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">
+                <div class="math-display">\[ \frac{40}{100} \times x = 160 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = \frac{160 \times 100}{40} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ x = 4 \times 100 = 400 \]</div>
+            </div>
+            <div class="final-ans">Ans: The maximum marks of the examination is 400. <span class="mark-badge">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q13. An alloy consists of \( 40\% \) copper, \( 35\% \) zinc, and the rest is nickel. Find the weight of copper, zinc, and nickel separately in \( 2.4 \text{ kg} \) of the alloy. (Give your final answers in grams).</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="concept-note">Concept: Convert the total quantity into the requested units (grams) first to make calculations simpler.</div>
+            <div class="step"><strong>Step 1: Conversion and Percentage setup</strong></div>
+            <div class="step">Total weight of alloy = \( 2.4 \text{ kg} \)</div>
+            <div class="step">Convert to grams: \( 2.4 \times 1000 = 2400 \text{ grams} \) <span class="mark-badge">[1 Mark]</span></div>
+            <div class="step">Percentage of Nickel = \( 100\% - (40\% + 35\%) = 100\% - 75\% = 25\% \) <span class="mark-badge">[1 Mark]</span></div>
+            
+            <br>
+            <div class="step"><strong>Step 2: Find weights</strong></div>
+            <div class="step">Weight of Copper = \( 40\% \text{ of } 2400 \text{ g} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{40}{100} \times 2400 = 40 \times 24 = 960 \text{ g} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            
+            <div class="step">Weight of Zinc = \( 35\% \text{ of } 2400 \text{ g} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{35}{100} \times 2400 = 35 \times 24 = 840 \text{ g} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+
+            <div class="step">Weight of Nickel = \( 25\% \text{ of } 2400 \text{ g} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{25}{100} \times 2400 = 25 \times 24 = 600 \text{ g} \] <span class="mark-badge">[1 Mark]</span></div>
+            </div>
+            <div class="step"><em>(Check: 960 + 840 + 600 = 2400g. Calculation is correct).</em></div>
+            
+            <div class="final-ans">Ans: Copper = 960 g, Zinc = 840 g, Nickel = 600 g.</div>
+        </div>
+    </div>
+
+</body>
+</html>

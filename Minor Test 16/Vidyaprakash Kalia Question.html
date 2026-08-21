@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- Loading MathJax for rendering chemical formulas and math equations if needed -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* Base styles for printing and general layout */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark styling */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header section styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span {
+            margin: 2px 5px;
+        }
+
+        /* Instructions section */
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+
+        /* Section headers */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+
+        /* Question layout */
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid; /* Prevents questions from splitting across pages when printing */
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        
+        /* Choices for MCQs (if any) */
+        .choices {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+        .choice {
+            width: 50%;
+            margin-bottom: 5px;
+        }
+
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        
+        .marks-right {
+            float: right;
+            font-weight: bold;
+        }
+
+        /* Footer styling */
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive design for tablets and mobile devices */
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .choice { width: 100%; } /* Stack choices on smaller screens */
+        }
+
+        /* Print specific adjustments */
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: fixed; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Science (Physics & Chemistry)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li><strong>Section A</strong> comprises 5 questions of 2 marks each. Focus on definitions and basic concepts.</li>
+                <li><strong>Section B</strong> comprises 5 questions of 3 marks each. Answer these in 30-40 words.</li>
+                <li><strong>Section C</strong> comprises 3 questions of 5 marks each. Answer these in detail (50-70 words).</li>
+                <li>Draw neat and labelled diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define reflection of light. State the law of reflection relating the angle of incidence and the angle of reflection.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Classify the following as elements or compounds:<br>
+            (i) Gold &nbsp;&nbsp;&nbsp; (ii) Water &nbsp;&nbsp;&nbsp; (iii) Oxygen gas (\(O_2\)) &nbsp;&nbsp;&nbsp; (iv) Sodium chloride
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            What is a uniform (homogeneous) mixture? Give one everyday example of a uniform mixture.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            A ray of light strikes a plane mirror such that the angle of incidence is 40°. What will be the angle of reflection? Draw a simple ray diagram to represent this.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            State two main differences between a mixture and a pure substance.
+            <span class="marks-right">[2]</span>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Rohan is looking at himself in a plane mirror. He observes that his right hand appears as his left hand in the mirror.<br>
+            (a) Name this phenomenon. (1 Mark)<br>
+            (b) State two other characteristics of the image formed by a plane mirror. (2 Marks)
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Air is considered a mixture, while water is considered a compound. Justify this statement by giving three reasons based on their properties.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Differentiate between a concave mirror and a convex mirror based on:<br>
+            (a) The nature of their reflecting surfaces.<br>
+            (b) How they affect a parallel beam of light (converging or diverging).<br>
+            (c) One common use of each.
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            An experiment is conducted where iron filings and sulphur powder are mixed together.<br>
+            (a) How can you separate the iron filings from this unheated mixture? (1 Mark)<br>
+            (b) What happens when this mixture is strongly heated? Name the new substance formed. (2 Marks)
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Identify the principal focus (F) and centre of curvature (C) in a spherical mirror. What is the relation between the radius of curvature (R) and the focal length (f) of a spherical mirror?
+            <span class="marks-right">[3]</span>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            With the help of ray diagrams, explain the nature, position, and relative size of the image formed by a <strong>concave mirror</strong> in the following two cases:<br>
+            (a) When the object is placed at the centre of curvature (C). (2.5 Marks)<br>
+            (b) When the object is placed between the pole (P) and the principal focus (F). (2.5 Marks)
+            <span class="marks-right">[5]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            (a) Describe an activity to show that compounds have entirely different properties from the constituent elements they are made of. You may use the example of heating sugar or the reaction of water formation. (3 Marks)<br>
+            (b) Classify the following into uniform (homogeneous) and non-uniform (heterogeneous) mixtures:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(i) Salt dissolved in water<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(ii) Soil<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(iii) Sprout salad<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(iv) Air (2 Marks)
+            <span class="marks-right">[5]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            (a) State the laws of reflection. (2 Marks)<br>
+            (b) A student places an object 15 cm in front of a plane mirror. What is the distance between the object and its image? (1 Mark)<br>
+            (c) Explain why we cannot see our image in a white sheet of paper, even though light is falling on it and being reflected. Mention the type of reflection occurring on the paper. (2 Marks)
+            <span class="marks-right">[5]</span>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

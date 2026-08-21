@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions Minor Test 16</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* Base Print and Screen Styling */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Elements */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; background-color: #f8f9fa; border-radius: 8px; padding-top: 15px;}
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #2c3e50;}
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #c0392b; }
+        
+        /* Solution Boxes */
+        .solution-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            page-break-inside: avoid;
+        }
+        .sol-header {
+            background-color: #e9ecef;
+            padding: 10px 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-marks {
+            font-weight: bold;
+            color: #d35400;
+            background: #fdf2e9;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .sol-body {
+            padding: 15px;
+        }
+        .step { margin-bottom: 8px; }
+        .final-answer {
+            font-weight: bold;
+            color: #27ae60;
+            background-color: #eafaf1;
+            padding: 8px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #bce8f1;
+        }
+        
+        /* Responsive Math Wrapper */
+        .math-scroll { 
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            max-width: 100%; 
+            padding: 5px 0;
+            scrollbar-width: thin;
+        }
+        .math-scroll::-webkit-scrollbar { height: 6px; }
+        .math-scroll::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 3px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Media Queries */
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .sol-header { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS - Minor Test 16</div>
+        <p style="margin-bottom: 0;"><strong>Class 7 | Math (HCF/LCM) & Science (Heat Transfer) | 40 Marks</strong></p>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px;">SECTION A</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q1. Find the HCF of \(36\) and \(84\) using the prime factorization method.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, find the prime factors of each number:</div>
+            <div class="step">\(36 = 2 \times 18 = 2 \times 2 \times 9 = 2 \times 2 \times 3 \times 3 = 2^2 \times 3^2\)</div>
+            <div class="step">\(84 = 2 \times 42 = 2 \times 2 \times 21 = 2 \times 2 \times 3 \times 7 = 2^2 \times 3^1 \times 7^1\)</div>
+            <div class="step">The HCF is the product of the smallest powers of common prime factors.</div>
+            <div class="step">Common factors are \(2\) and \(3\). The smallest powers are \(2^2\) and \(3^1\).</div>
+            <div class="math-scroll">\[ \text{HCF} = 2^2 \times 3 = 4 \times 3 = 12 \]</div>
+            <div class="final-answer">Final Answer: \(12\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q2. The HCF of two numbers is \(6\) and their LCM is \(36\). If one of the numbers is \(12\), find the other number.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">We know the relationship: \(\text{HCF} \times \text{LCM} = \text{Product of the two numbers}\)</div>
+            <div class="step">Let the other number be \(x\).</div>
+            <div class="math-scroll">\[ 6 \times 36 = 12 \times x \]</div>
+            <div class="math-scroll">\[ 216 = 12x \]</div>
+            <div class="math-scroll">\[ x = \frac{216}{12} = 18 \]</div>
+            <div class="final-answer">Final Answer: The other number is \(18\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q3. Define conduction. Give one example of a good conductor of heat.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Conduction:</strong> The process by which heat is transferred from the hotter end to the colder end of an object (or between two objects in contact) without the actual movement of the particles of the medium.</div>
+            <div class="step"><strong>Example:</strong> Metals like Copper, Iron, or Aluminum.</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q4. Why do we prefer to wear light-colored clothes in summer?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">We prefer light-colored clothes in summer because they are poor absorbers (and good reflectors) of radiant heat from the sun. They reflect most of the heat that falls on them, keeping our bodies cool.</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q5. Name the mode of heat transfer from the sun to the earth. Why cannot convection occur in space?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Mode of transfer:</strong> Radiation.</div>
+            <div class="step"><strong>Reason:</strong> Convection requires a material medium (like air or water) for the actual physical movement of heated particles. Since most of space is a vacuum (no material medium), convection cannot occur.</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px; margin-top: 30px;">SECTION B</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q6. Find the least number which when divided by \(12\), \(16\), and \(24\) leaves a remainder of \(5\) in each case.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, find the Least Common Multiple (LCM) of \(12\), \(16\), and \(24\), which will be exactly divisible by them.</div>
+            <div class="step">Prime factorizations:</div>
+            <div class="step">\(12 = 2^2 \times 3\)</div>
+            <div class="step">\(16 = 2^4\)</div>
+            <div class="step">\(24 = 2^3 \times 3\)</div>
+            <div class="step">\(\text{LCM} = 2^4 \times 3 = 16 \times 3 = 48\)</div>
+            <div class="step">The required number leaves a remainder of \(5\), so we add \(5\) to the LCM:</div>
+            <div class="math-scroll">\[ \text{Required Number} = 48 + 5 = 53 \]</div>
+            <div class="final-answer">Final Answer: \(53\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q7. Three bells toll at intervals of \(10\), \(15\), and \(20\) minutes respectively. If they all toll together at 8:00 AM, at what time will they next toll together?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">The time after which they will toll together again is the LCM of their tolling intervals.</div>
+            <div class="step">Find LCM of \(10\), \(15\), and \(20\):</div>
+            <div class="step">\(10 = 2 \times 5\)</div>
+            <div class="step">\(15 = 3 \times 5\)</div>
+            <div class="step">\(20 = 2^2 \times 5\)</div>
+            <div class="step">\(\text{LCM} = 2^2 \times 3 \times 5 = 4 \times 3 \times 5 = 60 \text{ minutes}\)</div>
+            <div class="step">Since \(60 \text{ minutes} = 1 \text{ hour}\), they will toll together \(1 \text{ hour}\) after 8:00 AM.</div>
+            <div class="math-scroll">\[ 8:00 \text{ AM} + 1 \text{ Hour} = 9:00 \text{ AM} \]</div>
+            <div class="final-answer">Final Answer: \(9:00 \text{ AM}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q8. Determine the greatest \(3\)-digit number that is exactly divisible by \(8\), \(10\), and \(12\).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, find the LCM of \(8\), \(10\), and \(12\):</div>
+            <div class="step">\(8 = 2^3\)</div>
+            <div class="step">\(10 = 2 \times 5\)</div>
+            <div class="step">\(12 = 2^2 \times 3\)</div>
+            <div class="step">\(\text{LCM} = 2^3 \times 3 \times 5 = 8 \times 3 \times 5 = 120\)</div>
+            <div class="step">The greatest \(3\)-digit number is \(999\). We divide \(999\) by \(120\) to find the largest multiple.</div>
+            <div class="step">\(999 \div 120 = 8\) with a remainder of \(39\).</div>
+            <div class="step">Subtract the remainder from \(999\) to get the exact multiple:</div>
+            <div class="math-scroll">\[ 999 - 39 = 960 \]</div>
+            <div class="step">(Alternatively, \(120 \times 8 = 960\))</div>
+            <div class="final-answer">Final Answer: \(960\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q9. Differentiate between sea breeze and land breeze (Mention at least three points).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <tr>
+                    <th style="border: 1px solid #ccc; padding: 8px; background-color: #f2f2f2;">Sea Breeze</th>
+                    <th style="border: 1px solid #ccc; padding: 8px; background-color: #f2f2f2;">Land Breeze</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">1. It blows from the sea towards the land.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">1. It blows from the land towards the sea.</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">2. It occurs during the daytime.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">2. It occurs during the night time.</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">3. Caused because land heats up faster than the sea during the day.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">3. Caused because land cools down faster than the sea at night.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q10. Explain how heat is transferred in a pan of boiling water. Name the specific process and describe its mechanism.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Process Name:</strong> Convection.</div>
+            <div class="step"><strong>Mechanism:</strong> When a pan of water is heated on a flame, the water at the bottom (near the heat source) gets hot first.</div>
+            <div class="step">As water heats up, it expands, becomes lighter (less dense), and rises towards the top.</div>
+            <div class="step">The colder, denser water from the top and sides moves down to take its place near the heat source. This water then gets heated and rises, creating a continuous cyclic movement called <strong>convection currents</strong>. This continues until the entire volume of water is heated.</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px; margin-top: 30px;">SECTION C</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q11. Find the greatest number that will divide \(445\), \(572\), and \(699\) leaving remainders \(4\), \(5\), and \(6\) respectively.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">If the required number leaves remainders \(4, 5,\) and \(6\), then it must exactly divide the numbers minus their respective remainders.</div>
+            <div class="step">Let's find the numbers that are exactly divisible:</div>
+            <div class="step">\(445 - 4 = 441\)</div>
+            <div class="step">\(572 - 5 = 567\)</div>
+            <div class="step">\(699 - 6 = 693\)</div>
+            <div class="step">The required greatest number will be the HCF of \(441\), \(567\), and \(693\).</div>
+            <div class="step">Prime factorization:</div>
+            <div class="step">\(441 = 3 \times 147 = 3 \times 3 \times 49 = 3^2 \times 7^2\)</div>
+            <div class="step">\(567 = 3 \times 189 = 3 \times 3 \times 63 = 3^4 \times 7\)</div>
+            <div class="step">\(693 = 3 \times 231 = 3 \times 3 \times 77 = 3^2 \times 7 \times 11\)</div>
+            <div class="step">To find HCF, take the lowest powers of common prime factors (\(3\) and \(7\)):</div>
+            <div class="math-scroll">\[ \text{HCF} = 3^2 \times 7^1 = 9 \times 7 = 63 \]</div>
+            <div class="final-answer">Final Answer: The greatest dividing number is \(63\).</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q12. (a) What is radiation? Give one daily life example.<br>(b) Why bases of utensils are black while handles are plastic/wood?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <strong>Part (a) [2 Marks]</strong>
+            <div class="step"><strong>Radiation:</strong> It is the process of heat transfer from a hot body to a cold body directly, without heating the space in between, and it does not require any material medium.</div>
+            <div class="step"><strong>Example:</strong> Feeling the heat from a campfire when sitting at a distance, or getting warmth from a room heater.</div>
+            
+            <hr style="border-top:1px dashed #ccc; margin:15px 0;">
+            
+            <strong>Part (b) [3 Marks]</strong>
+            <div class="step"><strong>Bases painted black:</strong> Black surfaces are excellent absorbers of radiant heat. Painting the base black ensures the utensil rapidly absorbs maximum heat from the flame, cooking food faster and saving fuel.</div>
+            <div class="step"><strong>Handles made of plastic/wood:</strong> Plastic and wood are insulators (bad conductors of heat). They do not allow the heat from the hot cooking pan to transfer to our hands, allowing us to safely lift the hot utensil without getting burnt.</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q13. (a) Find LCM of \(24\), \(36\), \(40\) by division method.<br>(b) Why are room heaters typically placed near the floor?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <strong>Part (a) [3 Marks]</strong>
+            <div class="step">Using the common division method:</div>
+            <pre style="background: #f4f4f4; padding: 10px; border-radius: 5px; font-family: monospace;">
+  2 | 24, 36, 40
+  ----------------
+  2 | 12, 18, 20
+  ----------------
+  2 |  6,  9, 10
+  ----------------
+  3 |  3,  9,  5
+  ----------------
+  3 |  1,  3,  5
+  ----------------
+  5 |  1,  1,  5
+  ----------------
+    |  1,  1,  1
+            </pre>
+            <div class="step">Multiply all divisors: \(\text{LCM} = 2 \times 2 \times 2 \times 3 \times 3 \times 5\)</div>
+            <div class="math-scroll">\[ \text{LCM} = 8 \times 9 \times 5 = 72 \times 5 = 360 \]</div>
+            <div class="final-answer" style="margin-bottom: 10px;">Ans (a): \(360\)</div>
+
+            <hr style="border-top:1px dashed #ccc; margin:15px 0;">
+            
+            <strong>Part (b) [2 Marks]</strong>
+            <div class="step">Room heaters are placed near the floor because of <strong>convection</strong>. The heater warms the air near it. Warm air is lighter (less dense) and rises to the ceiling. The cold, heavier air from above then sinks down to the floor to take its place. This cold air then gets heated.</div>
+            <div class="step">This continuous cycle sets up convection currents that efficiently heat the entire room from bottom to top.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

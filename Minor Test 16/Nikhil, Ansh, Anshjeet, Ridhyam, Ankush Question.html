@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- MathJax for rendering mathematical symbols -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 0; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none;}
+        
+        .question-container { margin-bottom: 15px; display: flex; width: 100%; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-bottom: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+        }
+        @media screen and (max-width: 1024px) {
+            body { width: 95%; min-height: auto; padding: 15mm; margin: 10px auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        }
+        @media screen and (max-width: 768px) {
+            body { width: 95%; padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .exam-details span { border-bottom: 1px dashed #ccc; padding-bottom: 3px; }
+            .exam-details span:last-child { border-bottom: none; }
+        }
+        @media screen and (max-width: 480px) {
+            body { font-size: 10.5pt; padding: 10px; }
+            .institute-name { font-size: 16pt; }
+            .q-num { width: 25px; }
+            .sub-question { margin-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Use standard set notation.</li>
+                <li>Draw Venn diagrams using pencil and a ruler/compass where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Identify whether the following sets are finite, infinite, empty, or singleton. Give a brief reason for each.
+            <div class="sub-question">(a) Set of natural numbers strictly less than 1.</div>
+            <div class="sub-question">(b) Set of months in a year starting with the letter 'M'.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <div class="math-scroll">Write the following set in Roster form: \( A = \{x \mid x \in \mathbb{W}, 2 < x \le 7\} \). Also, state its cardinal number \( n(A) \).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Given \( P = \{x \mid x \in \mathbb{N}, x < 5\} \) and \( Q = \{x \mid x \text{ is an even natural number less than } 10\} \). Are sets \( P \) and \( Q \) equivalent or equal? Justify your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            <div class="math-scroll">If \( X = \{a, b, c, d\} \) and \( Y = \{c, d, e, f\} \), find the elements of \( X - Y \) and \( Y - X \).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            <div class="math-scroll">Let the Universal set \( \xi = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \), and set \( A = \{2, 4, 6, 8\} \). Find \( A' \) (Complement of A) and determine \( n(A') \).</div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Given the Universal set \( \xi = \{x \mid x \in \mathbb{N}, x \le 10\} \), \( A = \{1, 3, 5, 7, 9\} \), and \( B = \{2, 3, 5, 7\} \). Find:
+            <div class="sub-question">(i) \( (A \cup B)' \)</div>
+            <div class="sub-question">(ii) \( (A \cap B)' \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Draw a clearly labelled Venn diagram to represent the relationship between the following sets:
+            <br>
+            Universal set \( U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\} \)
+            <br>
+            \( A = \{2, 4, 6, 8, 10\} \)
+            <br>
+            \( B = \{1, 2, 3, 4, 5\} \)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            <div class="math-scroll">For two sets A and B, it is given that \( n(A) = 25 \), \( n(B) = 15 \), and \( n(A \cup B) = 30 \). Using the cardinal number formula, calculate:</div>
+            <div class="sub-question">(i) \( n(A \cap B) \)</div>
+            <div class="sub-question">(ii) \( n(A - B) \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Consider the set \( M = \{x, y, z\} \). 
+            <div class="sub-question">(i) List all the possible subsets of set \( M \).</div>
+            <div class="sub-question">(ii) How many proper subsets does set \( M \) have? State the general formula used.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            In a group of 40 students, 25 like to play cricket, 20 like to play football, and 10 like to play both the games. 
+            Find the number of students who like neither cricket nor football.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Let the Universal set \( \xi = \{x \mid 1 \le x \le 15, x \in \mathbb{Z}\} \). 
+            <br>
+            Set \( A = \{\text{Multiples of 3}\} \)
+            <br>
+            Set \( B = \{\text{Multiples of 5}\} \)
+            <div class="sub-question">(a) Draw a Venn diagram to illustrate these sets. (2 marks)</div>
+            <div class="sub-question">(b) List the elements of the following sets: (3 marks)
+                <ul>
+                    <li>(i) \( A \cap B \)</li>
+                    <li>(ii) \( A - B \)</li>
+                    <li>(iii) \( (A \cup B)' \)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            In a class of 60 students, 35 study French, 42 study Spanish, and 12 study neither language. Using a Venn diagram or the cardinal number formula, find out:
+            <div class="sub-question">(i) How many students study both French and Spanish? (2 marks)</div>
+            <div class="sub-question">(ii) How many students study French only? (1.5 marks)</div>
+            <div class="sub-question">(iii) How many students study Spanish only? (1.5 marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Let Universal Set \( U = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \), \( P = \{2, 4, 6, 8\} \), and \( Q = \{2, 3, 5, 7\} \).
+            <div class="sub-question">(a) Verify De Morgan's Law: \( (P \cup Q)' = P' \cap Q' \). Show all intermediate steps clearly. (3 marks)</div>
+            <div class="sub-question">(b) Evaluate the set \( P \cap (Q \cup P') \). (2 marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

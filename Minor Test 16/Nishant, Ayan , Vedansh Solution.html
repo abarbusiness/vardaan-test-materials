@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            chtml: {
+                scale: 1,
+                minScale: .5,
+                matchFontHeight: true
+            }
+        };
+    </script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #d32f2f; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #f4f4f4; padding: 5px; }
+        
+        .q-block { 
+            margin-bottom: 25px; 
+            border-bottom: 1px dashed #ccc; 
+            padding-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            background-color: #f9f9f9;
+            padding: 8px;
+            border-left: 4px solid #000;
+            margin-bottom: 10px;
+        }
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            flex-shrink: 0; 
+            color: #d32f2f; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .sol-body { margin-left: 10px; }
+        .step { margin-bottom: 5px; }
+        .final-ans { font-weight: bold; border: 1px solid #000; padding: 3px 8px; display: inline-block; margin-top: 5px; background: #eef; }
+        
+        /* Math display adjustments for mobile */
+        .math-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="solution-title">ANSWER KEY & DETAILED SOLUTIONS</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q1. If the cost of 8 identical pens is ₹ 120, find the cost of 1 pen.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Cost of 8 pens = ₹ 120</div>
+            <div class="step">Cost of 1 pen = \( \frac{\text{Total Cost}}{\text{Number of pens}} \)</div>
+            <div class="step">
+                <div class="math-display">\[ \text{Cost of 1 pen} = \frac{120}{8} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 15 \]</div>
+            </div>
+            <div class="final-ans">Ans: The cost of 1 pen is ₹ 15.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q2. A train covers a distance of 180 km in 3 hours at a uniform speed. How much distance will it cover in 1 hour?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Distance covered in 3 hours = 180 km</div>
+            <div class="step">Distance covered in 1 hour = \( \frac{180}{3} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 60 \text{ km} \]</div>
+            </div>
+            <div class="final-ans">Ans: The train covers 60 km in 1 hour.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q3. The weight of 5 identical mathematics books is 2.5 kg. What is the total weight of 12 such books?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Weight of 5 books = 2.5 kg</div>
+            <div class="step">Weight of 1 book = \( \frac{2.5}{5} = 0.5 \text{ kg} \)</div>
+            <div class="step">Weight of 12 books = Weight of 1 book × 12</div>
+            <div class="step">
+                <div class="math-display">\[ = 0.5 \times 12 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 6.0 \text{ kg} \]</div>
+            </div>
+            <div class="final-ans">Ans: The weight of 12 books is 6 kg.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q4. If a dozen bananas cost ₹ 60, find the cost of 7 bananas.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">1 dozen = 12 items</div>
+            <div class="step">Cost of 12 bananas = ₹ 60</div>
+            <div class="step">Cost of 1 banana = \( \frac{60}{12} = \text{₹ } 5 \)</div>
+            <div class="step">Cost of 7 bananas = \( 5 \times 7 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 35 \]</div>
+            </div>
+            <div class="final-ans">Ans: The cost of 7 bananas is ₹ 35.</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q5. A daily wage worker earns ₹ 1500 in 5 days. How much money will he earn if he works for 8 days?</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Earnings in 5 days = ₹ 1500</div>
+            <div class="step">Earnings in 1 day = \( \frac{1500}{5} = \text{₹ } 300 \)</div>
+            <div class="step">Earnings in 8 days = \( 300 \times 8 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 2400 \]</div>
+            </div>
+            <div class="final-ans">Ans: The worker will earn ₹ 2400 in 8 days.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q6. If 15 bags of wheat weigh 450 kg, how many such bags will be required to get 1200 kg of wheat?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Weight of 15 bags = 450 kg</div>
+            <div class="step">Weight of 1 bag = \( \frac{450}{15} = 30 \text{ kg} \)  <em>[1 Mark]</em></div>
+            <div class="step">Number of bags required for 1200 kg = \( \frac{\text{Total weight}}{\text{Weight of 1 bag}} \) <em>[1 Mark]</em></div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{1200}{30} \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 40 \]</div>
+            </div>
+            <div class="final-ans">Ans: 40 bags are required. <em>[1 Mark]</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q7. A car travels 228 km on 12 liters of petrol. How many kilometers will it travel on 20 liters of petrol?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Distance traveled on 12 liters = 228 km</div>
+            <div class="step">Distance traveled on 1 liter = \( \frac{228}{12} \) <em>[1 Mark]</em></div>
+            <div class="step">
+                <div class="math-display">\[ = 19 \text{ km} \]</div>
+            </div>
+            <div class="step">Distance traveled on 20 liters = \( 19 \times 20 \) <em>[1 Mark]</em></div>
+            <div class="step">
+                <div class="math-display">\[ = 380 \text{ km} \]</div>
+            </div>
+            <div class="final-ans">Ans: The car will travel 380 km. <em>[1 Mark]</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q8. The rent of a house for 4 months is ₹ 18,000. Find the rent of the same house for a complete year.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Rent for 4 months = ₹ 18,000</div>
+            <div class="step">Rent for 1 month = \( \frac{18000}{4} = \text{₹ } 4500 \) <em>[1 Mark]</em></div>
+            <div class="step">1 complete year = 12 months <em>[1 Mark]</em></div>
+            <div class="step">Rent for 12 months = \( 4500 \times 12 \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 54000 \]</div>
+            </div>
+            <div class="final-ans">Ans: The rent for a year is ₹ 54,000. <em>[1 Mark]</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q9. If 24 meters of cloth costs ₹ 3600, how many meters of the same cloth can be purchased for ₹ 1350?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Length of cloth for ₹ 3600 = 24 m</div>
+            <div class="step">Length of cloth for ₹ 1 = \( \frac{24}{3600} \text{ m} = \frac{1}{150} \text{ m} \) <em>[1.5 Marks]</em></div>
+            <div class="step">Length of cloth for ₹ 1350 = \( \frac{1}{150} \times 1350 \) <em>[0.5 Marks]</em></div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{1350}{150} = 9 \]</div>
+            </div>
+            <div class="final-ans">Ans: 9 meters of cloth can be purchased. <em>[1 Mark]</em></div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q10. A family of 4 members consumes 20 kg of rice in a month. How much rice will be consumed by a family of 7 members in a month?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Rice consumed by 4 members = 20 kg</div>
+            <div class="step">Rice consumed by 1 member = \( \frac{20}{4} = 5 \text{ kg} \) <em>[1.5 Marks]</em></div>
+            <div class="step">Rice consumed by 7 members = \( 5 \times 7 \) <em>[0.5 Marks]</em></div>
+            <div class="step">
+                <div class="math-display">\[ = 35 \text{ kg} \]</div>
+            </div>
+            <div class="final-ans">Ans: The family will consume 35 kg of rice. <em>[1 Mark]</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q11. In an apartment building, the maintenance charge for an apartment with an area of 800 sq. feet is ₹ 3200 per month. <br>(a) What is the maintenance charge per square foot?<br>(b) What will be the maintenance charge for an apartment with an area of 1250 sq. feet?<br>(c) If a resident paid ₹ 5600 as maintenance charge, what is the area of their apartment?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (a):</strong></div>
+            <div class="step">Charge for 800 sq. ft = ₹ 3200</div>
+            <div class="step">Charge for 1 sq. ft = \( \frac{3200}{800} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \text{₹ } 4 \text{ per sq. ft} \] <em>[1.5 Marks]</em></div>
+            </div>
+            
+            <div class="step"><strong>Part (b):</strong></div>
+            <div class="step">Charge for 1250 sq. ft = Charge per sq. ft × 1250</div>
+            <div class="step">
+                <div class="math-display">\[ = 4 \times 1250 = \text{₹ } 5000 \] <em>[1.5 Marks]</em></div>
+            </div>
+
+            <div class="step"><strong>Part (c):</strong></div>
+            <div class="step">Area for charge of ₹ 4 = 1 sq. ft</div>
+            <div class="step">Area for charge of ₹ 5600 = \( \frac{5600}{4} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 1400 \text{ sq. ft} \] <em>[2 Marks]</em></div>
+            </div>
+            <div class="final-ans">Ans: (a) ₹ 4, (b) ₹ 5000, (c) 1400 sq. feet</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A factory produces 25,200 pens in a standard 30-day month. Assuming production is uniform:<br>(a) Find the number of pens produced in a single day.<br>(b) How many pens will be produced in a leap year if the factory operates for 300 days only?<br>(c) How many days will it take to produce 63,000 pens?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (a):</strong></div>
+            <div class="step">Pens produced in 30 days = 25,200</div>
+            <div class="step">Pens produced in 1 day = \( \frac{25200}{30} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 840 \text{ pens} \] <em>[1.5 Marks]</em></div>
+            </div>
+            
+            <div class="step"><strong>Part (b):</strong></div>
+            <div class="step"><em>Note: The mention of a leap year is extra information here, since the working days are explicitly given as 300.</em></div>
+            <div class="step">Pens produced in 300 days = Pens per day × 300</div>
+            <div class="step">
+                <div class="math-display">\[ = 840 \times 300 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 252,000 \text{ pens} \] <em>[1.5 Marks]</em></div>
+            </div>
+
+            <div class="step"><strong>Part (c):</strong></div>
+            <div class="step">Days required to produce 840 pens = 1 day</div>
+            <div class="step">Days required to produce 63,000 pens = \( \frac{63000}{840} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 75 \text{ days} \] <em>[2 Marks]</em></div>
+            </div>
+            <div class="final-ans">Ans: (a) 840 pens, (b) 252,000 pens, (c) 75 days</div>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header">
+            <div class="q-text">Q13. An airplane flies 3150 km in 4.5 hours flying at a constant speed.<br>(i) Calculate the speed of the airplane in km/hr.<br>(ii) How much distance will it cover if it flies for 7 hours?<br>(iii) How much time will it take to cover a distance of 4900 km?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step"><strong>Part (i):</strong></div>
+            <div class="step">Distance in 4.5 hours = 3150 km</div>
+            <div class="step">Distance in 1 hour (Speed) = \( \frac{3150}{4.5} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = \frac{31500}{45} = 700 \text{ km/hr} \] <em>[2 Marks]</em></div>
+            </div>
+            
+            <div class="step"><strong>Part (ii):</strong></div>
+            <div class="step">Distance covered in 7 hours = Speed × Time</div>
+            <div class="step">
+                <div class="math-display">\[ = 700 \times 7 \]</div>
+            </div>
+            <div class="step">
+                <div class="math-display">\[ = 4900 \text{ km} \] <em>[1.5 Marks]</em></div>
+            </div>
+
+            <div class="step"><strong>Part (iii):</strong></div>
+            <div class="step">Time to cover 700 km = 1 hour</div>
+            <div class="step">Time to cover 4900 km = \( \frac{4900}{700} \)</div>
+            <div class="step">
+                <div class="math-display">\[ = 7 \text{ hours} \] <em>[1.5 Marks]</em></div>
+            </div>
+            <div class="final-ans">Ans: (i) 700 km/hr, (ii) 4900 km, (iii) 7 hours</div>
+        </div>
+    </div>
+
+</body>
+</html>

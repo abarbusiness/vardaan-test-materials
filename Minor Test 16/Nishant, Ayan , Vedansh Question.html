@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            width: 100%; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5% 8%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 500px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; text-align: left; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 15px; margin-top: 5px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media (max-width: 768px) {
+            body { padding: 5%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .section-header { font-size: 12pt; }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 6 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show all working clearly. Direct answers will not be awarded full marks.</li>
+                <li>Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">If the cost of 8 identical pens is ₹ 120, find the cost of 1 pen.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">A train covers a distance of 180 km in 3 hours at a uniform speed. How much distance will it cover in 1 hour?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">The weight of 5 identical mathematics books is 2.5 kg. What is the total weight of 12 such books?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">If a dozen bananas cost ₹ 60, find the cost of 7 bananas.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">A daily wage worker earns ₹ 1500 in 5 days. How much money will he earn if he works for 8 days?</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">If 15 bags of wheat weigh 450 kg, how many such bags will be required to get 1200 kg of wheat?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A car travels 228 km on 12 liters of petrol. How many kilometers will it travel on 20 liters of petrol?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">The rent of a house for 4 months is ₹ 18,000. Find the rent of the same house for a complete year.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">If 24 meters of cloth costs ₹ 3600, how many meters of the same cloth can be purchased for ₹ 1350?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A family of 4 members consumes 20 kg of rice in a month. How much rice will be consumed by a family of 7 members in a month, assuming the rate of consumption per person is the same?</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            In an apartment building, the maintenance charge for an apartment with an area of 800 sq. feet is ₹ 3200 per month.
+            <div class="sub-question">(a) What is the maintenance charge per square foot?</div>
+            <div class="sub-question">(b) What will be the maintenance charge for an apartment with an area of 1250 sq. feet?</div>
+            <div class="sub-question">(c) If a resident paid ₹ 5600 as maintenance charge, what is the area of their apartment?</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A factory produces 25,200 pens in a standard 30-day month. Assuming the factory produces an equal number of pens every day:
+            <div class="sub-question">(a) Find the number of pens produced in a single day.</div>
+            <div class="sub-question">(b) How many pens will be produced in a leap year if the factory operates for 300 days only?</div>
+            <div class="sub-question">(c) How many days will it take to produce 63,000 pens?</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            An airplane flies 3150 km in 4.5 hours flying at a constant speed.
+            <div class="sub-question">(i) Calculate the speed of the airplane in km/hr.</div>
+            <div class="sub-question">(ii) How much distance will it cover if it flies for 7 hours?</div>
+            <div class="sub-question">(iii) How much time will it take to cover a distance of 4900 km?</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

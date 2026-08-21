@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        /* Base Print and Screen Styling */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Elements */
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; background-color: #f8f9fa; border-radius: 8px; padding-top: 15px;}
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #2c3e50;}
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; color: #c0392b; }
+        
+        /* Solution Boxes */
+        .solution-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            page-break-inside: avoid;
+        }
+        .sol-header {
+            background-color: #e9ecef;
+            padding: 10px 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-marks {
+            font-weight: bold;
+            color: #d35400;
+            background: #fdf2e9;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .sol-body {
+            padding: 15px;
+        }
+        .step { margin-bottom: 8px; }
+        .final-answer {
+            font-weight: bold;
+            color: #27ae60;
+            background-color: #eafaf1;
+            padding: 8px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #bce8f1;
+        }
+        
+        /* Responsive Math Wrapper - Essential for small screens */
+        .math-scroll { 
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            max-width: 100%; 
+            padding: 5px 0;
+            /* Scrollbar styling for webkit */
+            scrollbar-width: thin;
+        }
+        .math-scroll::-webkit-scrollbar { height: 6px; }
+        .math-scroll::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 3px; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Media Queries */
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .sol-header { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS - Minor Test 16</div>
+        <p style="margin-bottom: 0;"><strong>Class 7 | Mathematics (Exponents) | 40 Marks</strong></p>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px;">SECTION A</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q1. Express the following in exponential form: \(5 \times 5 \times 5 \times 7 \times 7 \times 7 \times 7\)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Group the identical bases together:</div>
+            <div class="math-scroll">\[ = (5 \times 5 \times 5) \times (7 \times 7 \times 7 \times 7) \]</div>
+            <div class="step">Count the occurrences. 5 appears 3 times, and 7 appears 4 times.</div>
+            <div class="final-answer">Final Answer: \(5^3 \times 7^4\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q2. Find the value of: \((-3)^3 \times (-5)^2\)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Evaluate the powers individually:</div>
+            <div class="step">\((-3)^3 = (-3) \times (-3) \times (-3) = -27\) (Negative base with odd power is negative)</div>
+            <div class="step">\((-5)^2 = (-5) \times (-5) = 25\) (Negative base with even power is positive)</div>
+            <div class="step">Multiply the results:</div>
+            <div class="math-scroll">\[ = -27 \times 25 \]</div>
+            <div class="final-answer">Final Answer: \(-675\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q3. Simplify and write in exponential form using laws of exponents: \(2^3 \times 2^4 \times 2^5\)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Using the law of exponents for multiplication with the same base: \(a^m \times a^n = a^{m+n}\)</div>
+            <div class="math-scroll">\[ = 2^{3 + 4 + 5} \]</div>
+            <div class="math-scroll">\[ = 2^{12} \]</div>
+            <div class="final-answer">Final Answer: \(2^{12}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q4. Express \(729\) as a power of \(3\).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Find the prime factorization of 729 by successively dividing by 3:</div>
+            <div class="step">\(729 \div 3 = 243\)</div>
+            <div class="step">\(243 \div 3 = 81\)</div>
+            <div class="step">\(81 \div 3 = 27\)</div>
+            <div class="step">\(27 \div 3 = 9\)</div>
+            <div class="step">\(9 \div 3 = 3\)</div>
+            <div class="step">\(3 \div 3 = 1\)</div>
+            <div class="step">Therefore, \(729 = 3 \times 3 \times 3 \times 3 \times 3 \times 3\)</div>
+            <div class="final-answer">Final Answer: \(3^6\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q5. Write the number \(34,560,000\) in standard form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">To express in standard form (\(k \times 10^n\) where \(1 \leq k < 10\)), move the decimal point 7 places to the left.</div>
+            <div class="math-scroll">\[ 34,560,000 = 3.456 \times 10,000,000 \]</div>
+            <div class="final-answer">Final Answer: \(3.456 \times 10^7\)</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px; margin-top: 30px;">SECTION B</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q6. Simplify and express the result in exponential form: \((5^2)^3 \div 5^4\)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, simplify the power of a power using the law \((a^m)^n = a^{mn}\):</div>
+            <div class="math-scroll">\[ (5^2)^3 = 5^{2 \times 3} = 5^6 \]</div>
+            <div class="step">Now substitute this back into the expression:</div>
+            <div class="math-scroll">\[ = 5^6 \div 5^4 \]</div>
+            <div class="step">Use the division law of exponents \(a^m \div a^n = a^{m-n}\):</div>
+            <div class="math-scroll">\[ = 5^{6 - 4} \]</div>
+            <div class="final-answer">Final Answer: \(5^2\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q7. By what number should \((-4)^3\) be divided so that the quotient may be \(8^2\)?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Let the required number be \(x\).</div>
+            <div class="step">According to the question:</div>
+            <div class="math-scroll">\[ \frac{(-4)^3}{x} = 8^2 \]</div>
+            <div class="step">Evaluate the powers:</div>
+            <div class="step">\((-4)^3 = (-4) \times (-4) \times (-4) = -64\)</div>
+            <div class="step">\(8^2 = 8 \times 8 = 64\)</div>
+            <div class="step">Substitute the values into the equation:</div>
+            <div class="math-scroll">\[ \frac{-64}{x} = 64 \]</div>
+            <div class="step">Solve for \(x\):</div>
+            <div class="math-scroll">\[ -64 = 64 \times x \]</div>
+            <div class="math-scroll">\[ x = \frac{-64}{64} \]</div>
+            <div class="final-answer">Final Answer: \(x = -1\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q8. Simplify: \( \frac{2^5 \times 3^4 \times 4}{3^2 \times 32} \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">First, express all composite numbers (\(4\) and \(32\)) as powers of prime bases:</div>
+            <div class="step">\(4 = 2^2\)</div>
+            <div class="step">\(32 = 2^5\)</div>
+            <div class="step">Substitute these into the expression:</div>
+            <div class="math-scroll">\[ = \frac{2^5 \times 3^4 \times 2^2}{3^2 \times 2^5} \]</div>
+            <div class="step">Group bases in the numerator using \(a^m \times a^n = a^{m+n}\):</div>
+            <div class="math-scroll">\[ = \frac{2^{5+2} \times 3^4}{2^5 \times 3^2} = \frac{2^7 \times 3^4}{2^5 \times 3^2} \]</div>
+            <div class="step">Apply the division law \(a^m \div a^n = a^{m-n}\) for bases 2 and 3:</div>
+            <div class="math-scroll">\[ = 2^{7-5} \times 3^{4-2} \]</div>
+            <div class="math-scroll">\[ = 2^2 \times 3^2 \]</div>
+            <div class="math-scroll">\[ = 4 \times 9 \]</div>
+            <div class="final-answer">Final Answer: \(36\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q9. Compare \(2.7 \times 10^{12}\) and \(1.5 \times 10^8\). State which is larger and why.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">To compare numbers written in standard form, first look at the powers of 10.</div>
+            <div class="step">Number 1: \(2.7 \times 10^{12}\) (Exponent is 12)</div>
+            <div class="step">Number 2: \(1.5 \times 10^8\) (Exponent is 8)</div>
+            <div class="step">Since \(10^{12}\) is much greater than \(10^8\) (\(10^{12} = 10^4 \times 10^8\)), the number with the larger power of 10 is always greater regardless of the decimal part (as long as it's standard form between 1 and 10).</div>
+            <div class="final-answer">Final Answer: \(2.7 \times 10^{12} > 1.5 \times 10^8\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q10. Evaluate: \((3^0 + 4^0 + 5^0) \times (2^0 \times 3^0)\)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <div class="step">Recall the law of exponents: Any non-zero number raised to the power 0 is equal to 1 (\(a^0 = 1\)).</div>
+            <div class="step">Substitute \(1\) for all terms with a power of \(0\):</div>
+            <div class="math-scroll">\[ = (1 + 1 + 1) \times (1 \times 1) \]</div>
+            <div class="step">Perform addition and multiplication in the brackets:</div>
+            <div class="math-scroll">\[ = (3) \times (1) \]</div>
+            <div class="math-scroll">\[ = 3 \]</div>
+            <div class="final-answer">Final Answer: \(3\)</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; color:#34495e; border-bottom:2px solid #34495e; padding-bottom:5px; margin-top: 30px;">SECTION C</h3>
+    
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q11. (a) Simplify: \(\left[ \left( \frac{3}{4} \right)^3 \right]^2 \times \left( \frac{3}{4} \right)^5 \div \left( \frac{3}{4} \right)^7\)<br>(b) Express \(432\) as a product of powers of prime factors.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <strong>Part (a) [3 Marks]</strong>
+            <div class="step">Apply power of a power law \((a^m)^n = a^{mn}\):</div>
+            <div class="math-scroll">\[ \left[ \left( \frac{3}{4} \right)^3 \right]^2 = \left( \frac{3}{4} \right)^{3 \times 2} = \left( \frac{3}{4} \right)^6 \]</div>
+            <div class="step">Expression becomes:</div>
+            <div class="math-scroll">\[ \left( \frac{3}{4} \right)^6 \times \left( \frac{3}{4} \right)^5 \div \left( \frac{3}{4} \right)^7 \]</div>
+            <div class="step">Apply multiplication law \(a^m \times a^n = a^{m+n}\):</div>
+            <div class="math-scroll">\[ = \left( \frac{3}{4} \right)^{6+5} \div \left( \frac{3}{4} \right)^7 = \left( \frac{3}{4} \right)^{11} \div \left( \frac{3}{4} \right)^7 \]</div>
+            <div class="step">Apply division law \(a^m \div a^n = a^{m-n}\):</div>
+            <div class="math-scroll">\[ = \left( \frac{3}{4} \right)^{11-7} = \left( \frac{3}{4} \right)^4 \]</div>
+            <div class="final-answer">Ans (a): \(\left( \frac{3}{4} \right)^4\)</div>
+            
+            <hr style="border-top:1px dashed #ccc; margin:15px 0;">
+            
+            <strong>Part (b) [2 Marks]</strong>
+            <div class="step">Prime factorization of 432:</div>
+            <div class="step">\(432 \div 2 = 216\)</div>
+            <div class="step">\(216 \div 2 = 108\)</div>
+            <div class="step">\(108 \div 2 = 54\)</div>
+            <div class="step">\(54 \div 2 = 27\)</div>
+            <div class="step">\(27 \div 3 = 9\)</div>
+            <div class="step">\(9 \div 3 = 3\)</div>
+            <div class="step">\(3 \div 3 = 1\)</div>
+            <div class="step">Thus, \(432 = 2 \times 2 \times 2 \times 2 \times 3 \times 3 \times 3\)</div>
+            <div class="final-answer">Ans (b): \(2^4 \times 3^3\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q12. (a) Find \(x\) if \(2^x \times 2^3 = 2^8\).<br>(b) Simplify: \( \frac{25 \times 5^2 \times t^8}{10^3 \times t^4} \)</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <strong>Part (a) [2 Marks]</strong>
+            <div class="step">Using law \(a^m \times a^n = a^{m+n}\) on the LHS:</div>
+            <div class="math-scroll">\[ 2^{x+3} = 2^8 \]</div>
+            <div class="step">Since the bases are same on both sides, their exponents must be equal:</div>
+            <div class="math-scroll">\[ x + 3 = 8 \]</div>
+            <div class="math-scroll">\[ x = 8 - 3 = 5 \]</div>
+            <div class="final-answer">Ans (a): \(x = 5\)</div>
+
+            <hr style="border-top:1px dashed #ccc; margin:15px 0;">
+            
+            <strong>Part (b) [3 Marks]</strong>
+            <div class="step">Convert all numbers into prime bases:</div>
+            <div class="step">\(25 = 5^2\)</div>
+            <div class="step">\(10^3 = (2 \times 5)^3 = 2^3 \times 5^3\)</div>
+            <div class="step">Substitute in the expression:</div>
+            <div class="math-scroll">\[ = \frac{5^2 \times 5^2 \times t^8}{2^3 \times 5^3 \times t^4} \]</div>
+            <div class="step">Combine powers of 5 in the numerator:</div>
+            <div class="math-scroll">\[ = \frac{5^{2+2} \times t^8}{2^3 \times 5^3 \times t^4} = \frac{5^4 \times t^8}{2^3 \times 5^3 \times t^4} \]</div>
+            <div class="step">Apply division law for base 5 and base \(t\):</div>
+            <div class="math-scroll">\[ = \frac{5^{4-3} \times t^{8-4}}{2^3} \]</div>
+            <div class="math-scroll">\[ = \frac{5^1 \times t^4}{8} \]</div>
+            <div class="final-answer">Ans (b): \(\frac{5t^4}{8}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-card">
+        <div class="sol-header">
+            <div class="q-text">Q13. (a) Earth to Moon distance: \(384,000,000 \text{ m}\) in standard form.<br>(b) If \(a=2, b=3\), find (i) \((a+b)^2\) (ii) \((a^b + b^a)\).</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-body">
+            <strong>Part (a) [2 Marks]</strong>
+            <div class="step">The decimal point in \(384,000,000\) is at the end. We need to move it 8 places to the left to get a number between 1 and 10.</div>
+            <div class="math-scroll">\[ = 3.84 \times 100,000,000 \]</div>
+            <div class="final-answer">Ans (a): \(3.84 \times 10^8 \text{ m}\)</div>
+
+            <hr style="border-top:1px dashed #ccc; margin:15px 0;">
+            
+            <strong>Part (b) [3 Marks]</strong>
+            <div class="step">Given \(a = 2\) and \(b = 3\).</div>
+            <div class="step"><strong>(i) Find \((a+b)^2\):</strong></div>
+            <div class="step">Substitute the values: \((2 + 3)^2\)</div>
+            <div class="step">First evaluate the brackets: \((5)^2\)</div>
+            <div class="math-scroll">\[ 5^2 = 5 \times 5 = 25 \]</div>
+            <div class="final-answer" style="margin-bottom: 10px;">Ans (b)(i): \(25\)</div>
+            
+            <div class="step"><strong>(ii) Find \((a^b + b^a)\):</strong></div>
+            <div class="step">Substitute the values: \((2^3 + 3^2)\)</div>
+            <div class="step">Evaluate individual powers:</div>
+            <div class="step">\(2^3 = 2 \times 2 \times 2 = 8\)</div>
+            <div class="step">\(3^2 = 3 \times 3 = 9\)</div>
+            <div class="step">Add the results: \(8 + 9 = 17\)</div>
+            <div class="final-answer">Ans (b)(ii): \(17\)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

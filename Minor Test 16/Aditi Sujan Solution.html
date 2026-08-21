@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; background-color: white; position: relative; }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; opacity: 0.12; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a365d; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; text-decoration: underline; color: #2d3748;}
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; font-size: 14pt; background-color: #f7fafc; padding: 10px; border: 1px solid #e2e8f0; border-radius: 5px;}
+        
+        .solution-container { margin-bottom: 30px; border-bottom: 1px dashed #cbd5e0; padding-bottom: 15px;}
+        .q-row { display: flex; justify-content: space-between; margin-bottom: 10px; background-color: #f8fafc; padding: 10px; border-radius: 5px; border-left: 4px solid #4299e1;}
+        .q-text { font-weight: bold; flex-grow: 1; padding-right: 15px;}
+        .marks-tag { font-weight: bold; color: #c53030; white-space: nowrap; }
+        
+        .ans-row { display: flex; margin-top: 10px; }
+        .ans-label { font-weight: bold; width: 60px; color: #276749; flex-shrink: 0;}
+        .ans-content { flex-grow: 1; overflow-x: auto;}
+        .step { margin-bottom: 8px; }
+        .final-answer { font-weight: bold; background-color: #f0fff4; padding: 5px 10px; border: 1px solid #9ae6b4; border-radius: 4px; display: inline-block; margin-top: 10px;}
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* MathJax overflow handling for small screens */
+        .math-container { overflow-x: auto; max-width: 100%; display: block; margin: 5px 0; padding: 5px 0;}
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+        @media (max-width: 768px) {
+            body { padding: 10mm; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-row { flex-direction: column; }
+            .marks-tag { margin-top: 5px; align-self: flex-start; }
+            .ans-row { flex-direction: column; }
+            .ans-label { width: auto; margin-bottom: 5px;}
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 - Detailed Solutions</div>
+    </div>
+
+    <div class="section-header">SECTION A (2 Marks Each)</div>
+    
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q1. Find the cube root of \( -512 \). Explain your reasoning briefly.</div>
+            <div class="marks-tag">[2 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">We know that the cube of a negative number is negative.</div>
+                <div class="step">Let's find the prime factorization of \( 512 \):</div>
+                <div class="step math-container">\( 512 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \)</div>
+                <div class="step math-container">\( 512 = (2 \times 2 \times 2) \times (2 \times 2 \times 2) \times (2 \times 2 \times 2) = 2^3 \times 2^3 \times 2^3 = (2 \times 2 \times 2)^3 = 8^3 \)</div>
+                <div class="step">Therefore, \( \sqrt[3]{512} = 8 \).</div>
+                <div class="step">Since the number is negative, the cube root will be negative.</div>
+                <div class="final-answer">\( \sqrt[3]{-512} = -8 \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q2. Evaluate the following expression using the laws of exponents/cubes: \( \sqrt[3]{64 \times 729} \)</div>
+            <div class="marks-tag">[2 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">Using the property: \( \sqrt[3]{a \times b} = \sqrt[3]{a} \times \sqrt[3]{b} \)</div>
+                <div class="step math-container">\( \sqrt[3]{64 \times 729} = \sqrt[3]{64} \times \sqrt[3]{729} \)</div>
+                <div class="step">We know that \( 64 = 4^3 \) so \( \sqrt[3]{64} = 4 \)</div>
+                <div class="step">And \( 729 = 9^3 \) so \( \sqrt[3]{729} = 9 \)</div>
+                <div class="step math-container">\( = 4 \times 9 \)</div>
+                <div class="final-answer">Answer = 36</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q3. A shopkeeper buys an article for Rs. 450 and sells it for Rs. 540. Find his profit percentage.</div>
+            <div class="marks-tag">[2 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">Cost Price (C.P.) = Rs. 450</div>
+                <div class="step">Selling Price (S.P.) = Rs. 540</div>
+                <div class="step">Since S.P. > C.P., there is a profit.</div>
+                <div class="step math-container">\( \text{Profit} = \text{S.P.} - \text{C.P.} = 540 - 450 = \text{Rs. } 90 \)</div>
+                <div class="step math-container">\( \text{Profit Percentage} = \left( \frac{\text{Profit}}{\text{C.P.}} \right) \times 100 \)</div>
+                <div class="step math-container">\( = \left( \frac{90}{450} \right) \times 100 = \left( \frac{1}{5} \right) \times 100 \)</div>
+                <div class="final-answer">Profit Percentage = \( 20\% \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q4. What is the smallest number by which 81 must be multiplied to make it a perfect cube?</div>
+            <div class="marks-tag">[2 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">First, find the prime factorization of 81.</div>
+                <div class="step math-container">\( 81 = 3 \times 3 \times 3 \times 3 = (3 \times 3 \times 3) \times 3 = 3^3 \times 3 \)</div>
+                <div class="step">To make it a perfect cube, every prime factor must exist in a group of three.</div>
+                <div class="step">Here, one factor '3' is left without a complete triplet. It needs two more '3's.</div>
+                <div class="step math-container">Therefore, we must multiply by \( 3 \times 3 = 9 \).</div>
+                <div class="step">Check: \( 81 \times 9 = 729 = 9^3 \) (which is a perfect cube).</div>
+                <div class="final-answer">Smallest number to be multiplied is 9.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q5. Define Marked Price (M.P.) and State the formula to calculate Discount when M.P. and Selling Price (S.P.) are given.</div>
+            <div class="marks-tag">[2 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step"><strong>Marked Price (M.P.):</strong> The price printed or marked on an article is known as its Marked Price or List Price.</div>
+                <div class="step"><strong>Discount Formula:</strong> Discount is the reduction given on the Marked Price.</div>
+                <div class="final-answer">\( \text{Discount} = \text{Marked Price (M.P.)} - \text{Selling Price (S.P.)} \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (3 Marks Each)</div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q6. Find the smallest number by which \( 1323 \) must be multiplied so that the product becomes a perfect cube. Show the prime factorization clearly.</div>
+            <div class="marks-tag">[3 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">Let us perform the prime factorization of 1323.</div>
+                <div class="step">
+                    \( 1323 \div 3 = 441 \)<br>
+                    \( 441 \div 3 = 147 \)<br>
+                    \( 147 \div 3 = 49 \)<br>
+                    \( 49 \div 7 = 7 \)<br>
+                    \( 7 \div 7 = 1 \)
+                </div>
+                <div class="step math-container">\( 1323 = 3 \times 3 \times 3 \times 7 \times 7 \)</div>
+                <div class="step math-container">Grouping into triplets: \( 1323 = (3 \times 3 \times 3) \times (7 \times 7) \)</div>
+                <div class="step">We can see that the prime factor 7 does not form a complete triplet. One more 7 is required.</div>
+                <div class="step">Thus, to make the product a perfect cube, we must multiply 1323 by 7.</div>
+                <div class="final-answer">The smallest number is 7.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q7. The marked price of a ceiling fan is Rs. 1250. The shopkeeper allows a discount of \( 12\% \) on it. Find the selling price of the fan.</div>
+            <div class="marks-tag">[3 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">Given:</div>
+                <div class="step">Marked Price (M.P.) = Rs. 1250</div>
+                <div class="step">Discount Percentage = \( 12\% \)</div>
+                <div class="step math-container">\( \text{Discount Amount} = 12\% \text{ of M.P.} = \left(\frac{12}{100}\right) \times 1250 \)</div>
+                <div class="step math-container">\( \text{Discount Amount} = \frac{12 \times 125}{10} = \frac{1500}{10} = \text{Rs. } 150 \)</div>
+                <div class="step">We know, \( \text{Selling Price (S.P.)} = \text{M.P.} - \text{Discount} \)</div>
+                <div class="step math-container">\( \text{S.P.} = 1250 - 150 = 1100 \)</div>
+                <div class="final-answer">Selling Price of the fan = Rs. 1100</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q8. Rahul bought a pair of shoes for Rs. 896, which includes a GST of \( 12\% \). What was the original price of the shoes before GST was added?</div>
+            <div class="marks-tag">[3 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">Let the original price of the shoes (before GST) be Rs. \( x \).</div>
+                <div class="step">GST Rate = \( 12\% \)</div>
+                <div class="step math-container">\( \text{Amount of GST} = 12\% \text{ of } x = 0.12x \)</div>
+                <div class="step">Total price paid (including GST) = Rs. 896</div>
+                <div class="step">Equation: \( \text{Original Price} + \text{GST} = \text{Total Price} \)</div>
+                <div class="step math-container">\( x + 0.12x = 896 \)</div>
+                <div class="step math-container">\( 1.12x = 896 \)</div>
+                <div class="step math-container">\( x = \frac{896}{1.12} = \frac{89600}{112} \)</div>
+                <div class="step">Calculating: \( 112 \times 8 = 896 \), so \( x = 800 \).</div>
+                <div class="final-answer">Original price of the shoes = Rs. 800</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q9. By selling an article for Rs. 770, a man incurs a loss of \( 12\% \). For how much should he sell it to gain \( 10\% \)?</div>
+            <div class="marks-tag">[3 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step"><strong>Case 1 (Finding C.P.):</strong></div>
+                <div class="step">Selling Price (S.P. 1) = Rs. 770</div>
+                <div class="step">Loss % = \( 12\% \)</div>
+                <div class="step">Formula: \( \text{C.P.} = \left( \frac{100}{100 - \text{Loss}\%} \right) \times \text{S.P.} \)</div>
+                <div class="step math-container">\( \text{C.P.} = \left( \frac{100}{100 - 12} \right) \times 770 = \left( \frac{100}{88} \right) \times 770 \)</div>
+                <div class="step math-container">\( \text{C.P.} = \left( \frac{25}{22} \right) \times 770 = 25 \times 35 = \text{Rs. } 875 \)</div>
+                <div class="step"><strong>Case 2 (Finding new S.P. for gain):</strong></div>
+                <div class="step">Cost Price (C.P.) = Rs. 875</div>
+                <div class="step">Desired Gain % = \( 10\% \)</div>
+                <div class="step math-container">\( \text{New S.P.} = \text{C.P.} \times \left( \frac{100 + \text{Gain}\%}{100} \right) \)</div>
+                <div class="step math-container">\( \text{New S.P.} = 875 \times \left( \frac{100 + 10}{100} \right) = 875 \times \left(\frac{110}{100}\right) \)</div>
+                <div class="step math-container">\( = 875 \times 1.1 = 962.50 \)</div>
+                <div class="final-answer">He should sell it for Rs. 962.50</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q10. Calculate the cube of the decimal number \( 2.1 \). Show the step-by-step calculation using fractions.</div>
+            <div class="marks-tag">[3 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step">We need to find \( (2.1)^3 \).</div>
+                <div class="step">First, convert the decimal number to a fraction:</div>
+                <div class="step math-container">\( 2.1 = \frac{21}{10} \)</div>
+                <div class="step">Now, cube the fraction:</div>
+                <div class="step math-container">\( (2.1)^3 = \left( \frac{21}{10} \right)^3 \)</div>
+                <div class="step math-container">\( = \frac{21^3}{10^3} = \frac{21 \times 21 \times 21}{10 \times 10 \times 10} \)</div>
+                <div class="step">Calculating numerator: \( 21 \times 21 = 441 \), and \( 441 \times 21 = 9261 \)</div>
+                <div class="step">Calculating denominator: \( 10 \times 10 \times 10 = 1000 \)</div>
+                <div class="step math-container">\( = \frac{9261}{1000} \)</div>
+                <div class="step">Convert back to decimal:</div>
+                <div class="final-answer">\( (2.1)^3 = 9.261 \)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (5 Marks Each)</div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q11. A dealer marks his goods at \( 30\% \) above the cost price. He then allows a discount of \( 10\% \) for cash payment.<br>(a) Find his overall gain or loss percentage.<br>(b) If the selling price of the goods is Rs. 1170, find its cost price.</div>
+            <div class="marks-tag">[5 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step"><strong>Part (a): Let's assume C.P. to simplify percentage calculation.</strong> [3 Marks]</div>
+                <div class="step">Let the Cost Price (C.P.) be Rs. 100.</div>
+                <div class="step">Marked Price is \( 30\% \) above C.P.</div>
+                <div class="step math-container">\( \text{M.P.} = 100 + 30\% \text{ of } 100 = 100 + 30 = \text{Rs. } 130 \)</div>
+                <div class="step">Discount = \( 10\% \) on M.P.</div>
+                <div class="step math-container">\( \text{Discount} = 10\% \text{ of } 130 = \left(\frac{10}{100}\right) \times 130 = \text{Rs. } 13 \)</div>
+                <div class="step">Selling Price (S.P.) = \( \text{M.P.} - \text{Discount} \)</div>
+                <div class="step math-container">\( \text{S.P.} = 130 - 13 = \text{Rs. } 117 \)</div>
+                <div class="step">Since S.P. > C.P. (117 > 100), there is a gain.</div>
+                <div class="step math-container">\( \text{Gain} = \text{S.P.} - \text{C.P.} = 117 - 100 = 17 \)</div>
+                <div class="step math-container">\( \text{Gain Percentage} = \left(\frac{17}{100}\right) \times 100 = 17\% \)</div>
+                <div class="final-answer">(a) Overall Gain = \( 17\% \)</div>
+                
+                <div class="step" style="margin-top:15px;"><strong>Part (b): Using the relationship established in (a).</strong> [2 Marks]</div>
+                <div class="step">From part (a), we know that if C.P. is Rs. 100, then S.P. is Rs. 117.</div>
+                <div class="step">We are given the actual S.P. = Rs. 1170.</div>
+                <div class="step">Let actual C.P. be \( y \). Using proportions:</div>
+                <div class="step math-container">\( \frac{\text{Actual C.P.}}{\text{Assumed C.P.}} = \frac{\text{Actual S.P.}}{\text{Assumed S.P.}} \)</div>
+                <div class="step math-container">\( \frac{y}{100} = \frac{1170}{117} \)</div>
+                <div class="step math-container">\( \frac{y}{100} = 10 \)</div>
+                <div class="step math-container">\( y = 10 \times 100 = 1000 \)</div>
+                <div class="final-answer">(b) Actual Cost Price = Rs. 1000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q12. An electronic item is marked at Rs. 50,000. The shopkeeper offers successive discounts of \( 10\% \) and \( 5\% \) on the marked price. Furthermore, a GST of \( 18\% \) is charged on the discounted price.<br>(a) Calculate the final selling price after discounts.<br>(b) Calculate GST amount.<br>(c) What is final amount billed?</div>
+            <div class="marks-tag">[5 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step"><strong>Part (a): Final Selling Price after discounts</strong> [2 Marks]</div>
+                <div class="step">Marked Price (M.P.) = Rs. 50,000</div>
+                <div class="step">First Discount (\( D_1 \)) = \( 10\% \)</div>
+                <div class="step math-container">\( \text{Price after 1st discount} = \text{M.P.} - (10\% \text{ of M.P.}) \)</div>
+                <div class="step math-container">\( = 50000 - \left(\frac{10}{100} \times 50000\right) = 50000 - 5000 = \text{Rs. } 45,000 \)</div>
+                <div class="step">Second Discount (\( D_2 \)) = \( 5\% \) (calculated on the new price)</div>
+                <div class="step math-container">\( \text{Final S.P.} = 45000 - (5\% \text{ of } 45000) \)</div>
+                <div class="step math-container">\( = 45000 - \left(\frac{5}{100} \times 45000\right) = 45000 - 2250 = \text{Rs. } 42,750 \)</div>
+                <div class="final-answer">(a) Final S.P. before tax = Rs. 42,750</div>
+                
+                <div class="step" style="margin-top:15px;"><strong>Part (b): Calculate GST Amount</strong> [1.5 Marks]</div>
+                <div class="step">GST is calculated on the discounted Selling Price.</div>
+                <div class="step">GST Rate = \( 18\% \)</div>
+                <div class="step math-container">\( \text{GST Amount} = 18\% \text{ of } 42750 \)</div>
+                <div class="step math-container">\( = \frac{18}{100} \times 42750 = 18 \times 427.5 \)</div>
+                <div class="step math-container">\( = \text{Rs. } 7,695 \)</div>
+                <div class="final-answer">(b) GST Amount = Rs. 7,695</div>
+                
+                <div class="step" style="margin-top:15px;"><strong>Part (c): Final amount billed</strong> [1.5 Marks]</div>
+                <div class="step">Final Amount = Selling Price + GST Amount</div>
+                <div class="step math-container">\( \text{Final Amount} = 42750 + 7695 = 50,445 \)</div>
+                <div class="final-answer">(c) Final Billed Amount = Rs. 50,445</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-container">
+        <div class="q-row">
+            <div class="q-text">Q13. Three numbers are in the ratio \( 2 : 3 : 4 \). The sum of their cubes is \( 33957 \).<br>(a) Formulate an algebraic equation.<br>(b) Solve to find the numbers.</div>
+            <div class="marks-tag">[5 Marks]</div>
+        </div>
+        <div class="ans-row">
+            <div class="ans-label">Sol:</div>
+            <div class="ans-content">
+                <div class="step"><strong>Part (a): Formulate algebraic equation</strong> [2 Marks]</div>
+                <div class="step">Let the common ratio multiplier be \( x \).</div>
+                <div class="step">Then the three numbers are \( 2x \), \( 3x \), and \( 4x \).</div>
+                <div class="step">The sum of their cubes is given as 33957.</div>
+                <div class="step math-container">\( (2x)^3 + (3x)^3 + (4x)^3 = 33957 \)</div>
+                <div class="final-answer">(a) Equation: \( 8x^3 + 27x^3 + 64x^3 = 33957 \)</div>
+
+                <div class="step" style="margin-top:15px;"><strong>Part (b): Solve for the numbers</strong> [3 Marks]</div>
+                <div class="step">Simplify the equation:</div>
+                <div class="step math-container">\( (8 + 27 + 64)x^3 = 33957 \)</div>
+                <div class="step math-container">\( 99x^3 = 33957 \)</div>
+                <div class="step math-container">\( x^3 = \frac{33957}{99} \)</div>
+                <div class="step">Let's divide: \( 33957 \div 9 = 3773 \); and \( 99 \div 9 = 11 \). So, \( x^3 = \frac{3773}{11} \)</div>
+                <div class="step">\( 3773 \div 11 = 343 \)</div>
+                <div class="step math-container">\( x^3 = 343 \)</div>
+                <div class="step">Taking cube root on both sides:</div>
+                <div class="step math-container">\( x = \sqrt[3]{343} = \sqrt[3]{7 \times 7 \times 7} = 7 \)</div>
+                <div class="step">Now, find the three numbers:</div>
+                <div class="step math-container">First number = \( 2x = 2(7) = 14 \)</div>
+                <div class="step math-container">Second number = \( 3x = 3(7) = 21 \)</div>
+                <div class="step math-container">Third number = \( 4x = 4(7) = 28 \)</div>
+                <div class="final-answer">(b) The numbers are 14, 21, and 28.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Solutions</div>
+</body>
+</html>

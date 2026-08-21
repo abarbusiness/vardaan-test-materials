@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- Polyfill and MathJax for rendering math symbols correctly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #2c3e50;
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            background-color: #f1f1f1;
+            padding: 5px;
+            font-size: 13pt; 
+            border: 1px solid #ccc;
+        }
+
+        .sol-container {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .sol-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .sol-q-text {
+            flex: 1;
+            padding-right: 15px;
+            color: #333;
+        }
+
+        .sol-marks {
+            white-space: nowrap;
+            color: #c0392b;
+        }
+
+        .sol-answer {
+            margin-top: 10px;
+            padding-left: 12px;
+            text-align: justify;
+        }
+
+        .marking-scheme {
+            font-size: 10.5pt;
+            color: #27ae60;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Responsive Math/Equations */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                padding: 10px;
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 16pt; }
+            .sol-header {
+                flex-direction: column;
+            }
+            .sol-marks {
+                margin-top: 5px;
+                align-self: flex-end;
+            }
+            .math-scroll {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Solutions: Minor Test 16 (Class 8 Science)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q1. What is friction? State the direction in which the force of friction acts.</div>
+            <div class="sol-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> Friction is a force that opposes the relative motion between two surfaces in contact with each other.<br>
+            <strong>Direction:</strong> The force of friction always acts in the direction opposite to the direction of motion (or attempted motion) of the object.
+            <div class="marking-scheme">(1 mark for definition, 1 mark for direction)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q2. Name two liquids that are good conductors of electricity and two liquids that are poor conductors.</div>
+            <div class="sol-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>Good Conductors:</strong> Tap water, lemon juice (or vinegar, salt solution, acid/base solutions).<br>
+            <strong>Poor Conductors:</strong> Distilled water, vegetable oil (or honey, kerosene).
+            <div class="marking-scheme">(1 mark for two good conductors, 1 mark for two poor conductors)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q3. Why are the soles of our shoes grooved? Give a specific reason.</div>
+            <div class="sol-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> The soles of our shoes are grooved to increase the friction between the shoes and the ground. This provides a better grip on the floor, preventing us from slipping while walking or running.
+            <div class="marking-scheme">(1 mark for increasing friction, 1 mark for preventing slipping/better grip)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q4. Write the full form of LED. Why is an LED preferred over a normal bulb while testing the electrical conductivity of weak liquids?</div>
+            <div class="sol-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>Full Form:</strong> Light Emitting Diode.<br>
+            <strong>Reason:</strong> An LED is preferred because it can glow even when a very weak (small) electric current flows through it, whereas a traditional bulb requires a stronger current to heat its filament enough to glow.
+            <div class="marking-scheme">(1 mark for full form, 1 mark for reason)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q5. Define fluid friction. What is the special name given to the frictional force exerted by fluids?</div>
+            <div class="sol-marks">[2 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> Fluid friction is the opposing force exerted by fluids (liquids and gases) on objects moving through them.<br>
+            <strong>Special Name:</strong> The frictional force exerted by fluids is also known as <strong>Drag</strong>.
+            <div class="marking-scheme">(1 mark for definition, 1 mark for 'Drag')</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+    
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q6. Explain why sportsmen and athletes use shoes with spikes.</div>
+            <div class="sol-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> Sportsmen and athletes use shoes with spikes to increase the interlocking between the shoe and the ground. This deliberate modification increases the force of friction. As a result, the spikes provide an excellent grip on the ground, allowing athletes to run faster, stop quickly, and change direction without slipping or falling.
+            <div class="marking-scheme">(1 mark for mentioning increase in interlocking/friction, 1 mark for better grip, 1 mark for practical application/preventing slipping)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q7. Briefly explain the process of electroplating with the help of a basic example. State one of its main uses.</div>
+            <div class="sol-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>Process:</strong> Electroplating is the chemical process of depositing a layer of any desired metal on another material by means of electricity. <br>
+            <strong>Example:</strong> If we want to coat a copper spoon with silver, the copper spoon is connected to the negative terminal (cathode) of a battery, a pure silver rod is connected to the positive terminal (anode), and a silver salt solution is used as the electrolyte. When current passes, silver from the solution deposits on the spoon.<br>
+            <strong>Use:</strong> It is widely used in industry for coating metal objects with a thin layer of a different metal to resist rust/corrosion (e.g., chromium plating on car parts) or for decorative purposes (artificial jewelry).
+            <div class="marking-scheme">(1 mark for definition, 1 mark for example, 1 mark for use)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q8. "Friction is a necessary evil." Justify this statement by giving two examples where friction is useful and one example where it is harmful.</div>
+            <div class="sol-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> Friction is considered a "necessary evil" because, on one hand, it causes wear and tear and wastes energy (evil), but on the other hand, without it, we cannot perform basic daily tasks (necessary).<br>
+            <strong>Useful (Any two):</strong> 
+            <ol>
+                <li>It allows us to walk on the ground without slipping.</li>
+                <li>It enables a pen/pencil to write on paper.</li>
+                <li>It allows vehicles to stop when brakes are applied.</li>
+            </ol>
+            <strong>Harmful (Any one):</strong>
+            <ul>
+                <li>It causes wear and tear on the soles of shoes and tyres of vehicles.</li>
+                <li>It produces unwanted heat in machines, leading to energy loss.</li>
+            </ul>
+            <div class="marking-scheme">(1 mark for each valid example: 2 useful + 1 harmful)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q9. Does pure water (distilled water) conduct electricity? If not, what can we do to make it a good conductor? Explain briefly.</div>
+            <div class="sol-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong> No, pure water (distilled water) does not conduct electricity because it is free of any dissolved salts, meaning it lacks free ions required to carry an electric charge.<br>
+            <strong>How to make it conducting:</strong> We can make distilled water a good conductor of electricity by dissolving a small amount of salt (like common salt/NaCl), a few drops of an acid (like lemon juice or sulphuric acid), or a base into it. This introduces free ions into the water, allowing the electric current to pass through.
+            <div class="marking-scheme">(1 mark for 'No' and reason, 1 mark for adding salt/acid/base, 1 mark for explaining the role of ions)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q10. Differentiate between static friction and sliding friction. Which of the two is greater and why?</div>
+            <div class="sol-marks">[3 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>Static Friction:</strong> The friction that comes into play when we try to move an object which is completely at rest.<br>
+            <strong>Sliding Friction:</strong> The friction that comes into play when an object is already sliding over another surface.<br>
+            <strong>Which is greater:</strong> Static friction is greater than sliding friction.<br>
+            <strong>Reason:</strong> When an object is at rest, the irregularities of its surface have sufficient time to interlock tightly with the irregularities of the floor. However, once the object starts sliding, the contact points do not get enough time to interlock securely, making it slightly easier to keep the object moving.
+            <div class="marking-scheme">(1 mark for definitions, 1 mark for stating static is greater, 1 mark for the interlocking reason)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+    
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q11. (a) What happens when an electric current is passed through water? Write down your observations. <br>(b) Why do we generally add a few drops of lemon juice or dilute sulphuric acid to water before conducting electrolysis?</div>
+            <div class="sol-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>(a)</strong> When an electric current is passed through conducting water (electrolysis of water), a chemical reaction takes place.<br>
+            <em>Observations:</em> 
+            <ul>
+                <li>Bubbles of gas are formed at both the electrodes submerged in the water.</li>
+                <li>Oxygen gas bubbles are evolved at the positive electrode (anode).</li>
+                <li>Hydrogen gas bubbles are evolved at the negative electrode (cathode).</li>
+            </ul>
+            <br>
+            <strong>(b)</strong> Pure water is a poor conductor of electricity because it lacks free ions. Adding a few drops of lemon juice or dilute sulphuric acid (or a pinch of salt) introduces ions into the water, making it a good conductor. This ensures that a strong enough current flows through the circuit to carry out the electrolysis process efficiently.
+            <div class="marking-scheme">(Part a: 1 mark for chemical reaction, 1 mark for Oxygen at anode, 1 mark for Hydrogen at cathode. Part b: 1 mark for pure water being poor conductor, 1 mark for acid adding ions to increase conductivity)</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q12. (a) Explain any three methods used to reduce friction in machines and daily life. <br>(b) Why is it always easier to roll a heavy gas cylinder on the ground than to slide it? Name the specific type of friction involved.</div>
+            <div class="sol-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>(a) Methods to reduce friction:</strong>
+            <ol>
+                <li><strong>Using Lubricants:</strong> Applying oil, grease, or graphite between the moving parts of a machine creates a thin layer that prevents the surfaces from rubbing directly against each other, drastically reducing friction.</li>
+                <li><strong>Using Ball Bearings:</strong> In machines (like ceiling fans or bicycles), ball bearings are used between the moving parts. They convert sliding friction into rolling friction, which is much smaller.</li>
+                <li><strong>Polishing/Smoothing Surfaces:</strong> Making the surfaces smooth by polishing reduces the microscopic irregularities, thereby reducing the interlocking and friction between them. (Another valid point: Streamlining shapes to reduce fluid friction).</li>
+            </ol>
+            <br>
+            <strong>(b)</strong> It is easier to roll a heavy gas cylinder because when a body rolls over the surface of another body, the resistance to its motion is called <strong>rolling friction</strong>. Rolling friction is significantly smaller than sliding friction, requiring much less force to move the heavy cylinder.<br>
+            <em>Type of friction involved:</em> Rolling Friction.
+            <div class="marking-scheme">(Part a: 1 mark each for three valid methods with explanation. Part b: 1 mark for stating rolling friction is less than sliding friction, 1 mark for naming "Rolling Friction")</div>
+        </div>
+    </div>
+
+    <div class="sol-container">
+        <div class="sol-header">
+            <div class="sol-q-text">Q13. (a) Why does an electrician always use rubber gloves and footwear while repairing an electric switch? <br>(b) Describe a simple activity to demonstrate that tap water conducts electricity while distilled water does not.</div>
+            <div class="sol-marks">[5 Marks]</div>
+        </div>
+        <div class="sol-answer">
+            <strong>Answer:</strong><br>
+            <strong>(a)</strong> The human body is a relatively good conductor of electricity. If an electrician touches a live wire, a massive current could pass through their body to the ground, causing a fatal electric shock. Rubber is an excellent insulator (poor conductor) of electricity. Wearing rubber gloves and footwear breaks the electrical circuit, preventing the current from flowing through the electrician's body.<br><br>
+            <strong>(b) Activity:</strong><br>
+            <em>Materials Required:</em> A battery, connecting copper wires, an LED, a small beaker, tap water, and distilled water.<br>
+            <em>Procedure:</em>
+            <ol>
+                <li>Create a simple circuit by connecting the battery to the LED using copper wires, leaving two free ends (electrodes) to be dipped in the liquid.</li>
+                <li>Pour distilled water into the clean beaker. Dip the free ends of the wires into the distilled water (ensure they do not touch each other).</li>
+                <li><em>Observation 1:</em> The LED does not glow, indicating no current is flowing (distilled water is a poor conductor).</li>
+                <li>Empty the beaker, dry it, and now fill it with regular tap water. Dip the free ends of the wire into the tap water.</li>
+                <li><em>Observation 2:</em> The LED glows.</li>
+            </ol>
+            <em>Conclusion:</em> This activity proves that the dissolved salts present in tap water make it a good conductor of electricity, whereas pure distilled water without salts acts as a poor conductor.
+            <div class="marking-scheme">(Part a: 1 mark for human body being conductor/danger of shock, 1 mark for rubber being insulator breaking circuit. Part b: 1 mark for setup, 1 mark for procedure/observations, 1 mark for valid conclusion)</div>
+        </div>
+    </div>
+
+    <div class="footer">Prepared by Academic Dean, Team Vardaan</div>
+</body>
+</html>
