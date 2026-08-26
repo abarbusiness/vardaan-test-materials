@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- STREAMING_CHUNK:Configuring meta tags and MathJax setup for Solutions... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- STREAMING_CHUNK:Defining CSS layout for solutions... -->
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #1a237e;
+        }
+        .section-header { 
+            text-align: left; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-left: 5px solid #1a237e;
+            font-size: 12pt; 
+        }
+        
+        /* STREAMING_CHUNK:Styling Question/Solution blocks... */
+        .q-block {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        .q-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-text-area {
+            display: flex;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 35px;
+            flex-shrink: 0;
+            color: #1a237e;
+        }
+        .q-text {
+            font-weight: bold;
+            color: #333;
+        }
+        .marks-badge {
+            font-weight: bold;
+            color: #d32f2f;
+            white-space: nowrap;
+            background-color: #ffebee;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+        .solution-area {
+            padding-left: 35px;
+        }
+        .sol-heading {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 5px;
+            color: #2e7d32;
+        }
+        
+        /* STREAMING_CHUNK:MathJax display rules and responsive media queries... */
+        .math-inline {
+            display: inline;
+            white-space: nowrap;
+        }
+        .math-inline mjx-container, mjx-container[display="false"] {
+            overflow: visible !important;
+            display: inline-block !important;
+            margin: 0 !important;
+        }
+        mjx-container > svg {
+            overflow: visible !important;
+        }
+        .math-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            body { 
+                padding: 15px; 
+                margin: 0; 
+                width: 100%;
+            }
+            .q-header-row {
+                flex-direction: column;
+            }
+            .marks-badge {
+                margin-top: 5px;
+                margin-left: 35px;
+            }
+            .solution-area {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- STREAMING_CHUNK:Rendering header and Section A Solutions (1-5)... -->
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">Detailed Solutions: Physics HOTS Paper</div>
+    </div>
+
+    <div class="section-header">SECTION A (2 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q1.</div>
+                <div class="q-text">Equivalent resistance across diameter of closed circle wire of resistance R.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>When the wire of resistance $R$ is bent into a circle, the two semicircles across any diameter form two separate parallel paths.</p>
+            <p>The resistance of each semicircle is $\frac{R}{2}$.</p>
+            <p>Since they are in parallel: $\frac{1}{R_{eq}} = \frac{1}{R/2} + \frac{1}{R/2} = \frac{2}{R} + \frac{2}{R} = \frac{4}{R}$.</p>
+            <p><strong>Final Answer: $R_{eq} = \frac{R}{4}$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q2.</div>
+                <div class="q-text">New angle of reflection if mirror rotated by $10^\circ$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Initial angle of incidence $i = 45^\circ$. If the mirror is rotated by an angle $\theta$, the normal rotates by $\theta$. Thus, the angle of incidence changes by $\theta$.</p>
+            <p>New angle of incidence $i' = 45^\circ \pm 10^\circ$. (Depending on direction of rotation, it becomes $55^\circ$ or $35^\circ$).</p>
+            <p>According to laws of reflection, Angle of Reflection = Angle of Incidence.</p>
+            <p><strong>Final Answer: $55^\circ$ or $35^\circ$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q3.</div>
+                <div class="q-text">Power consumed by $1100\text{W}, 220\text{V}$ iron operated on $110\text{V}$.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>First, find the resistance of the iron using $P = \frac{V^2}{R}$.</p>
+            <p>$R = \frac{V^2}{P} = \frac{220 \times 220}{1100} = 44 \Omega$.</p>
+            <p>Now, calculate new power with $V' = 110\text{V}$:</p>
+            <p>$P' = \frac{(V')^2}{R} = \frac{110 \times 110}{44} = \frac{12100}{44} = 275 \text{ W}$.</p>
+            <p><em>(Shortcut: Voltage is halved, so Power becomes $1/4$th. $1100 / 4 = 275\text{W}$)</em>.</p>
+            <p><strong>Final Answer: $275 \text{ W}$</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q4.</div>
+                <div class="q-text">Maximum bending of light among Media A, B, C.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Bending of light depends on the difference in refractive index between two adjacent media.</p>
+            <p>Optical density is highest in Medium C ($n=2.42$).</p>
+            <p>Maximum bending occurs when light travels between the media with the greatest difference in refractive index. Here, light emerging from Medium C ($2.42$) to Air ($1.00$) experiences the greatest change in optical density.</p>
+            <p><strong>Final Answer: Between Medium C and Air.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q5.</div>
+                <div class="q-text">Which is thicker: Copper or Manganin wire of equal length and resistance?</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>We know $R = \rho \frac{l}{A}$. Since $R$ and $l$ are constant for both wires, Area ($A$) is directly proportional to resistivity ($\rho$).</p>
+            <p>Given $\rho_{\text{manganin}} \gt \rho_{\text{copper}}$, it follows that $A_{\text{manganin}} \gt A_{\text{copper}}$.</p>
+            <p><strong>Final Answer: Manganin wire is thicker.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B Solutions (6-10)... -->
+    <div class="section-header">SECTION B (3 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q6.</div>
+                <div class="q-text">Wire length for $10\Omega$ and resistance change on diameter doubling.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Given: $d = 0.5 \text{ mm} = 5 \times 10^{-4} \text{ m}$, $\rho = 1.6 \times 10^{-8} \Omega\cdot\text{m}$, $R = 10 \Omega$.</p>
+            <p>Area $A = \frac{\pi d^2}{4} = \frac{3.14 \times (5 \times 10^{-4})^2}{4} = \frac{3.14 \times 25 \times 10^{-8}}{4} = 19.625 \times 10^{-8} \text{ m}^2$.</p>
+            <p>Length $l = \frac{R \cdot A}{\rho} = \frac{10 \times 19.625 \times 10^{-8}}{1.6 \times 10^{-8}} = \frac{196.25}{1.6} = 122.6 \text{ m}$.</p>
+            <p>If diameter is doubled, Area becomes 4 times ($A \propto d^2$). Since $R \propto 1/A$, the new resistance becomes $\frac{1}{4}$ of original.</p>
+            <p><strong>Final Answer: Length = $122.6 \text{ m}$. New Resistance = $2.5 \Omega$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q7.</div>
+                <div class="q-text">Virtual image by concave mirror. Find focal length and position.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Given: $h_o = 3 \text{ cm}$, $u = -8 \text{ cm}$, $h_i = +4.5 \text{ cm}$ (virtual implies erect).</p>
+            <p>Magnification $m = \frac{h_i}{h_o} = \frac{4.5}{3} = +1.5$.</p>
+            <p>Also $m = -\frac{v}{u} \implies 1.5 = -\frac{v}{-8} \implies v = 1.5 \times 8 = +12 \text{ cm}$ (Image is behind the mirror).</p>
+            <p>Mirror formula: $\frac{1}{f} = \frac{1}{v} + \frac{1}{u} = \frac{1}{12} + \frac{1}{-8} = \frac{2 - 3}{24} = \frac{-1}{24}$.</p>
+            <p><strong>Final Answer: Focal length $f = -24 \text{ cm}$. Image position $v = 12 \text{ cm}$ behind mirror.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q8.</div>
+                <div class="q-text">Number of electrons per second and work done moving $5\text{C}$ across $15\text{V}$.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Current $I = \frac{Q}{t} \implies Q = I \times t$. For $1\text{A}$ in $1\text{s}$, $Q = 1 \text{ C}$.</p>
+            <p>Number of electrons $n = \frac{Q}{e} = \frac{1}{1.6 \times 10^{-19}} = 6.25 \times 10^{18}$ electrons.</p>
+            <p>Work done $W = V \times Q = 15 \text{ V} \times 5 \text{ C} = 75 \text{ J}$.</p>
+            <p><strong>Final Answer: $n = 6.25 \times 10^{18}$. $W = 75 \text{ J}$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q9.</div>
+                <div class="q-text">Verify Snell's Law observation for glass slab.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>According to Snell's Law, refractive index $n = \frac{\sin i}{\sin r}$.</p>
+            <p>Case 1: $n = \frac{\sin 60^\circ}{\sin 40^\circ} = \frac{0.866}{0.642} \approx 1.34$.</p>
+            <p>Case 2: $n = \frac{\sin 40^\circ}{\sin 28^\circ} = \frac{0.642}{0.469} \approx 1.36$.</p>
+            <p>The standard refractive index of typical crown glass is approximately $1.5$. Neither observation is perfectly accurate for standard glass, but Case 2 is slightly closer to a consistent ratio in practical low-index glass/water scenarios. However, the student's readings show a lack of precision, likely yielding a refractive index around $1.35$ rather than $1.5$.</p>
+            <p><strong>Conclusion: Both observations imply a medium less dense than typical glass (closer to water's $1.33$). Based purely on consistency, Case 2 ($1.36$) is a more likely empirical reading.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q10.</div>
+                <div class="q-text">Ratio of heat produced in series vs parallel combinations.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Let the resistance of each wire be $R$.</p>
+            <p>Series resistance $R_s = R + R = 2R$. Heat $H_s = \frac{V^2}{R_s} \times t = \frac{V^2}{2R} \times t$.</p>
+            <p>Parallel resistance $R_p = \frac{R}{2}$. Heat $H_p = \frac{V^2}{R_p} \times t = \frac{V^2}{(R/2)} \times t = \frac{2V^2}{R} \times t$.</p>
+            <p>Ratio $\frac{H_s}{H_p} = \frac{V^2/2R}{2V^2/R} = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}$.</p>
+            <p><strong>Final Answer: $1:4$</strong></p>
+        </div>
+    </div>
+    
+    <!-- STREAMING_CHUNK:Rendering Section B Solutions (11-13)... -->
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q11.</div>
+                <div class="q-text">Concave lens position and magnification.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>For a concave lens, $f$ is negative. Image is always virtual, erect, and on the same side, so $v$ is negative.</p>
+            <p>$f = -15 \text{ cm}$, $v = -10 \text{ cm}$.</p>
+            <p>Lens Formula: $\frac{1}{f} = \frac{1}{v} - \frac{1}{u} \implies \frac{1}{-15} = \frac{1}{-10} - \frac{1}{u}$</p>
+            <p>$\frac{1}{u} = \frac{1}{-10} + \frac{1}{15} = \frac{-3 + 2}{30} = \frac{-1}{30} \implies u = -30 \text{ cm}$.</p>
+            <p>Magnification $m = \frac{v}{u} = \frac{-10}{-30} = \frac{1}{3} = +0.33$.</p>
+            <p><strong>Final Answer: Object distance $30 \text{ cm}$. Magnification $+0.33$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q12.</div>
+                <div class="q-text">Percentage change in resistance on stretching by 20%.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Original length $l$, Original Area $A$. $R = \rho\frac{l}{A}$.</p>
+            <p>New length $l' = l + 0.20l = 1.2l$.</p>
+            <p>Since volume is constant, $A \cdot l = A' \cdot l' \implies A' = \frac{A \cdot l}{1.2l} = \frac{A}{1.2}$.</p>
+            <p>New Resistance $R' = \rho \frac{1.2l}{A/1.2} = 1.44 \rho\frac{l}{A} = 1.44 R$.</p>
+            <p>Percentage increase $= \frac{1.44R - R}{R} \times 100\% = 44\%$.</p>
+            <p>Resistivity depends only on material and temperature, so it remains <strong>unchanged</strong>.</p>
+            <p><strong>Final Answer: Resistance increases by $44\%$. Resistivity remains unchanged.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q13.</div>
+                <div class="q-text">Convex mirror rear-view image calculations.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Given: $R = +3.00 \text{ m} \implies f = +1.50 \text{ m}$. $u = -5.00 \text{ m}$.</p>
+            <p>Mirror Formula: $\frac{1}{v} + \frac{1}{u} = \frac{1}{f} \implies \frac{1}{v} = \frac{1}{1.50} - \frac{1}{-5.00} = \frac{1}{1.50} + \frac{1}{5.00}$.</p>
+            <p>$\frac{1}{v} = \frac{10}{15} + \frac{3}{15} = \frac{13}{15} \implies v = \frac{15}{13} \approx +1.15 \text{ m}$.</p>
+            <p>Magnification $m = -\frac{v}{u} = -\frac{1.15}{-5.00} = +0.23$.</p>
+            <p><strong>Final Answer: Image is virtual, erect, and diminished (0.23 times). Formed $1.15 \text{ m}$ behind mirror.</strong></p>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section C Solutions (14-17)... -->
+    <div class="section-header">SECTION C (4 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q14.</div>
+                <div class="q-text">Circuit diagram calculations (Equivalent R, Current, PD).</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) The $8 \Omega$ and $12 \Omega$ resistors are in parallel.</p>
+            <p>$\frac{1}{R_p} = \frac{1}{8} + \frac{1}{12} = \frac{3 + 2}{24} = \frac{5}{24} \implies R_p = 4.8 \Omega$.</p>
+            <p>The equivalent resistance of this parallel block is in series with the $4 \Omega$ resistor.</p>
+            <p>Total Equivalent Resistance $R_{eq} = 4.8 + 4 = 8.8 \Omega$.</p>
+            <p>(b) Total Current $I = \frac{V}{R_{eq}} = \frac{12}{8.8} = 1.36 \text{ A}$.</p>
+            <p>(c) Potential Difference across the $4 \Omega$ resistor: $V_4 = I \times R = 1.36 \times 4 = 5.44 \text{ V}$.</p>
+            <p><strong>Final Answer: (a) $8.8 \Omega$, (b) $1.36 \text{ A}$, (c) $5.44 \text{ V}$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q15.</div>
+                <div class="q-text">Concave mirror forming magnified real and virtual images.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Real image magnified 3 times $\implies m = -3$. $u = -20 \text{ cm}$.</p>
+            <p>$m = -\frac{v}{u} \implies -3 = -\frac{v}{-20} \implies v = -60 \text{ cm}$.</p>
+            <p>$\frac{1}{f} = \frac{1}{-60} + \frac{1}{-20} = \frac{-1 - 3}{60} = \frac{-4}{60} = \frac{-1}{15} \implies f = -15 \text{ cm}$.</p>
+            <p>(b) Virtual image magnified 3 times $\implies m = +3$.</p>
+            <p>$m = -\frac{v}{u'} \implies 3 = -\frac{v}{u'} \implies v = -3u'$.</p>
+            <p>$\frac{1}{f} = \frac{1}{v} + \frac{1}{u'} \implies \frac{1}{-15} = \frac{1}{-3u'} + \frac{1}{u'} = \frac{-1 + 3}{3u'} = \frac{2}{3u'}$.</p>
+            <p>$3u' = -30 \implies u' = -10 \text{ cm}$.</p>
+            <p><strong>Final Answer: (a) $f = -15 \text{ cm}$. (b) Object should be placed at $10 \text{ cm}$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q16.</div>
+                <div class="q-text">Motor energy consumption and cost calculation.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Power $P = 1100 \text{ W} = 1.1 \text{ kW}$. Time $t = 5 \text{ hrs/day} \times 6 \text{ days} = 30 \text{ hours}$.</p>
+            <p>Energy Consumed $E = P \times t = 1.1 \text{ kW} \times 30 \text{ h} = 33 \text{ kWh}$.</p>
+            <p>(b) Cost = Energy $\times$ Rate $= 33 \times 5.00 = ₹ 165.00$.</p>
+            <p>(c) Commercial unit of electrical energy is Kilowatt-hour (kWh). $1 \text{ kWh} = 1000 \text{ W} \times 3600 \text{ s} = 3.6 \times 10^6 \text{ Joules}$.</p>
+            <p><strong>Final Answer: (a) $33 \text{ kWh}$, (b) $₹ 165$, (c) $1 \text{ kWh} = 3.6 \times 10^6 \text{ J}$.</strong></p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q17.</div>
+                <div class="q-text">Concave mirror shifting magnification from -1/2 to -1/5.</div>
+            </div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>Case 1: $m = -1/2$, $u = -50 \text{ cm}$. $m = -v/u \implies -1/2 = -v/(-50) \implies v = -25 \text{ cm}$.</p>
+            <p>$\frac{1}{f} = \frac{1}{-25} + \frac{1}{-50} = \frac{-2 - 1}{50} = \frac{-3}{50} \implies f = -50/3 \text{ cm}$.</p>
+            <p>Case 2: Required $m = -1/5$. Let new object position be $u'$. $m = -v'/u' \implies -1/5 = -v'/u' \implies v' = u'/5$.</p>
+            <p>$\frac{1}{f} = \frac{1}{v'} + \frac{1}{u'} \implies \frac{-3}{50} = \frac{5}{u'} + \frac{1}{u'} = \frac{6}{u'}$.</p>
+            <p>$-3u' = 300 \implies u' = -100 \text{ cm}$.</p>
+            <p><strong>Final Answer: The object should be placed at $100 \text{ cm}$ in front of the mirror.</strong></p>
+        </div>
+    </div>
+
+
+    <!-- STREAMING_CHUNK:Rendering Section D Solutions (18-22)... -->
+    <div class="section-header">SECTION D (6 Marks Each)</div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q18.</div>
+                <div class="q-text">Ohm's Law, Parallel Derivation, and Meter placement.</div>
+            </div>
+            <div class="marks-badge">[6 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) <strong>Ohm's Law:</strong> The current flowing through a metallic conductor is directly proportional to the potential difference applied across its ends, provided temperature and physical conditions remain constant. $V \propto I \implies V = IR$.</p>
+            <p>(b) <strong>Parallel Derivation:</strong> In parallel, potential difference $V$ across each resistor is same. Total current $I = I_1 + I_2 + I_3$.</p>
+            <p>Using Ohm's Law ($I = V/R$): $\frac{V}{R_p} = \frac{V}{R_1} + \frac{V}{R_2} + \frac{V}{R_3}$. Canceling $V$ gives $\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$.</p>
+            <p>(c) <strong>Meters:</strong> Ammeter has very low resistance. It is placed in series to measure total current without altering circuit resistance. Voltmeter has infinite/very high resistance. It is placed in parallel to draw negligible current while measuring PD. If an ammeter is connected in parallel to a battery, its low resistance causes a massive short-circuit current to flow, which will instantly burn out the ammeter.</p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q19.</div>
+                <div class="q-text">Concave mirror numerical + Ray Diagram.</div>
+            </div>
+            <div class="marks-badge">[6 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Given $h_o = 7.0 \text{ cm}$, $u = -27 \text{ cm}$, $f = -18 \text{ cm}$.</p>
+            <p>$\frac{1}{v} = \frac{1}{f} - \frac{1}{u} = \frac{1}{-18} - \frac{1}{-27} = \frac{-3 + 2}{54} = \frac{-1}{54} \implies v = -54 \text{ cm}$. The screen must be placed $54 \text{ cm}$ in front of the mirror.</p>
+            <p>(b) Magnification $m = -\frac{v}{u} = -\frac{-54}{-27} = -2$.</p>
+            <p>Size of image $h_i = m \times h_o = -2 \times 7.0 = -14.0 \text{ cm}$. The image is Real, Inverted, and Magnified.</p>
+            <p>(c) <strong>Ray Diagram Instructions:</strong> Draw a concave mirror. Mark $P$ (pole). Mark $F$ at $18\text{cm}$ and $C$ at $36\text{cm}$. Place Object $AB$ ($7\text{cm}$ tall) between $C$ and $F$ (at $27\text{cm}$). Ray 1 parallel to axis, reflects through $F$. Ray 2 through $F$, reflects parallel to axis. They meet at $54\text{cm}$ beyond $C$, forming inverted image $A'B'$ ($14\text{cm}$ tall).</p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q20.</div>
+                <div class="q-text">Number of parallel resistors and custom resistor combinations.</div>
+            </div>
+            <div class="marks-badge">[6 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Total resistance required $R_{eq} = \frac{V}{I} = \frac{220}{5} = 44 \Omega$.</p>
+            <p>If $n$ resistors of $176 \Omega$ are in parallel, $R_{eq} = \frac{176}{n}$.</p>
+            <p>$44 = \frac{176}{n} \implies n = \frac{176}{44} = 4$. Thus, <strong>4 resistors</strong> are required.</p>
+            <p>(b) Given three $6 \Omega$ resistors.</p>
+            <p>(i) To get $9 \Omega$: Connect two $6 \Omega$ resistors in parallel, and one in series with this combination.</p>
+            <p>Parallel part: $\frac{1}{R_p} = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} \implies R_p = 3 \Omega$. Total $R = 3 + 6 = 9 \Omega$.</p>
+            <p>(ii) To get $4 \Omega$: Connect two $6 \Omega$ resistors in series, and one in parallel with this combination.</p>
+            <p>Series part: $R_s = 6 + 6 = 12 \Omega$. Total $R_p$: $\frac{1}{R_{total}} = \frac{1}{12} + \frac{1}{6} = \frac{1+2}{12} = \frac{3}{12} \implies R_{total} = 4 \Omega$.</p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q21.</div>
+                <div class="q-text">Absolute refractive index, speed of light, and relative RI.</div>
+            </div>
+            <div class="marks-badge">[6 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Absolute Refractive Index is the ratio of the speed of light in a vacuum ($c$) to the speed of light in the given medium ($v$). $n = \frac{c}{v}$.</p>
+            <p>(b) $n_g = 1.50$, $c = 3 \times 10^8 \text{ m/s}$. Speed in glass $v = \frac{c}{n_g} = \frac{3 \times 10^8}{1.50} = 2 \times 10^8 \text{ m/s}$.</p>
+            <p>(c) Refractive index of diamond w.r.t water $= \frac{n_d}{n_w} = \frac{2.42}{1.33} \approx 1.82$.</p>
+            <p>Because the relative refractive index is greater than 1, it indicates that water is optically rarer than diamond, meaning light travels faster in water than in diamond.</p>
+        </div>
+    </div>
+
+    <div class="q-block">
+        <div class="q-header-row">
+            <div class="q-text-area">
+                <div class="q-num">Q22.</div>
+                <div class="q-text">Lamps in parallel and series: Power, Current, and Brightness.</div>
+            </div>
+            <div class="marks-badge">[6 Marks]</div>
+        </div>
+        <div class="solution-area">
+            <div class="sol-heading">Solution:</div>
+            <p>(a) Since they are in parallel across $220\text{V}$, they operate at rated power.</p>
+            <p>Total Power $P_{total} = 100\text{W} + 60\text{W} = 160\text{W}$.</p>
+            <p>Total Current $I = \frac{P_{total}}{V} = \frac{160}{220} = 0.727 \text{ A}$.</p>
+            <p>(b) Using $R = \frac{V^2}{P}$:</p>
+            <p>$R_{100} = \frac{220^2}{100} = 484 \Omega$. $R_{60} = \frac{220^2}{60} \approx 806.67 \Omega$. Thus, the <strong>$60\text{W}$ lamp has higher resistance</strong>.</p>
+            <p>(c) If connected in series, the same current $I$ flows through both. The power dissipated as heat/light is given by $P = I^2R$.</p>
+            <p>Since $R_{60} \gt R_{100}$, the power dissipated by the $60\text{W}$ lamp ($I^2 \times R_{60}$) is greater than that of the $100\text{W}$ lamp ($I^2 \times R_{100}$). Therefore, in a series connection, the <strong>$60\text{W}$ lamp will glow brighter</strong>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+```eof

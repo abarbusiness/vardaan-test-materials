@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- STREAMING_CHUNK:Configuring meta tags and MathJax setup for Physics Paper... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Physics Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- STREAMING_CHUNK:Defining core CSS styles for paper layout... -->
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* STREAMING_CHUNK:Styling headers, details, and sections... */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        /* STREAMING_CHUNK:Styling questions and MathJax overrides... */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            width: calc(100% - 40px);
+        }
+        
+        .math-inline {
+            display: inline;
+            white-space: nowrap;
+        }
+        .math-inline mjx-container, mjx-container[display="false"] {
+            overflow: visible !important;
+            display: inline-block !important;
+            margin: 0 !important;
+        }
+        mjx-container > svg {
+            overflow: visible !important;
+        }
+        
+        /* STREAMING_CHUNK:Setting up responsive media queries... */
+        .math-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            body { 
+                padding: 15px; 
+                margin: 0; 
+                width: 100%;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                gap: 5px; 
+                text-align: left;
+            }
+            .question-container {
+                flex-direction: column;
+            }
+            .q-num {
+                margin-bottom: 5px;
+            }
+            .q-content {
+                width: 100%;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <!-- STREAMING_CHUNK:Rendering header and instructions... -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">HOTS Major Test - Electricity & Light (Reflection/Refraction)</div>
+        <div class="exam-details">
+            <span>Class: 10</span>
+            <span>Subject: Physics</span>
+            <span>Time: 150 Minutes (2.5 Hours)</span>
+            <span>Max. Marks: 80</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>This paper consists of 22 questions focusing heavily on CBSE High Order Thinking Skills (HOTS) and complex numericals.</li>
+                <li>Section A: Questions 1 to 5 are 2 marks each.</li>
+                <li>Section B: Questions 6 to 13 are 3 marks each.</li>
+                <li>Section C: Questions 14 to 17 are 4 marks each.</li>
+                <li>Section D: Questions 18 to 22 are 6 marks each.</li>
+                <li>Show all working formulas, substitute values with proper SI units, and draw neat scientifically accurate diagrams where asked.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section A questions (1-5)... -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Short Answer Type I - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            A wire of resistance $R$ is bent into the form of a closed circle. What is the equivalent resistance across any diameter of the circle? Justify your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            If the angle of incidence for a light ray incident on a plane mirror is $45^\circ$, and the mirror is rotated by $10^\circ$ keeping the incident ray fixed, what is the new angle of reflection?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            An electric iron is rated at $1100 \text{ W}$, $220 \text{ V}$. If it is operated on $110 \text{ V}$, what will be the power consumed by it? (Assume resistance remains constant).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            A ray of light starting from air passes through medium A ($n = 1.50$), medium B ($n = 1.33$) and medium C ($n = 2.42$). If this ray emerges out in air from C, then for which pair of media is the bending of light maximum? Explain why.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Two wires of equal length, one of copper and the other of manganin, have the same electrical resistance. Which wire is thicker? (Given: resistivity of manganin $\gt$ resistivity of copper).
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section B questions (6-13)... -->
+    <div class="section-header">SECTION B (24 Marks)<span class="marks-info">(Short Answer Type II - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            A copper wire has a diameter of $0.5 \text{ mm}$ and a resistivity of $1.6 \times 10^{-8} \Omega\cdot\text{m}$. What will be the length of this wire to make its resistance $10 \Omega$? How much does the resistance change if the diameter is doubled, keeping length constant?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            An object $3 \text{ cm}$ high is placed at a distance of $8 \text{ cm}$ from a concave mirror, which produces a virtual image $4.5 \text{ cm}$ high. 
+            <br>(i) What is the focal length of the mirror? 
+            <br>(ii) What is the position of the image?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Calculate the number of electrons that would flow per second through the cross-section of a wire when $1 \text{ A}$ current flows in it. Also, calculate the work done in moving a charge of $5 \text{ C}$ across two points having a potential difference of $15 \text{ V}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            A student traces the path of a ray of light through a rectangular glass slab. Tabulating the observations, the student records:
+            <br>Case 1: $i = 60^\circ$, $r = 40^\circ$
+            <br>Case 2: $i = 40^\circ$, $r = 28^\circ$
+            <br>Verify which observation is scientifically correct by calculating the refractive index of glass in both cases. (Given: $\sin 60^\circ = 0.866$, $\sin 40^\circ = 0.642$, $\sin 28^\circ = 0.469$).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Two conducting wires of the same material, equal lengths, and equal diameters are first connected in series and then in parallel in a circuit across the same potential difference. Find the ratio of the heat produced in the series combination to that in the parallel combination.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            A concave lens has a focal length of $15 \text{ cm}$. At what distance should the object from the lens be placed so that it forms an image at $10 \text{ cm}$ from the lens? Also, find the magnification produced by the lens.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            If the length of a uniform wire is increased by $20\%$ by stretching it, find the percentage change in its resistance and state the change in its resistivity.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A convex mirror used for rear-view on an automobile has a radius of curvature of $3.00 \text{ m}$. If a bus is located at $5.00 \text{ m}$ from this mirror, find the position, nature, and size of the image relative to the object.
+        </div>
+    </div>
+
+    <!-- STREAMING_CHUNK:Rendering Section C questions (14-17)... -->
+    <div class="section-header">SECTION C (16 Marks)<span class="marks-info">(Long Answer Type I - 4 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Examine the circuit diagram given below. Calculate:
+            <br>(a) The total equivalent resistance of the circuit.
+            <br>(b) The total current flowing in the circuit.
+            <br>(c) The potential difference across the $4 \Omega$ resistor.
+            <div class="svg-container">
+                <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Battery -->
+                    <line x1="40" y1="90" x2="40" y2="110" stroke="black" stroke-width="2"/>
+                    <line x1="30" y1="80" x2="30" y2="120" stroke="black" stroke-width="4"/>
+                    <text x="50" y="105" font-size="14">12V</text>
+                    <text x="25" y="75" font-size="14">+</text>
+                    
+                    <!-- Wires Left Side -->
+                    <line x1="35" y1="80" x2="35" y2="40" stroke="black" stroke-width="2"/>
+                    <line x1="35" y1="40" x2="100" y2="40" stroke="black" stroke-width="2"/>
+                    
+                    <line x1="35" y1="110" x2="35" y2="160" stroke="black" stroke-width="2"/>
+                    <line x1="35" y1="160" x2="100" y2="160" stroke="black" stroke-width="2"/>
+
+                    <!-- Parallel Branch 1 (Top) -->
+                    <line x1="100" y1="40" x2="150" y2="40" stroke="black" stroke-width="2"/>
+                    <!-- Resistor 1 -->
+                    <polyline points="150,40 155,30 165,50 175,30 185,50 195,30 200,40" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="165" y="25" font-size="14">8 Ω</text>
+                    <line x1="200" y1="40" x2="250" y2="40" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Parallel Branch 2 (Bottom) -->
+                    <line x1="100" y1="160" x2="150" y2="160" stroke="black" stroke-width="2"/>
+                    <!-- Resistor 2 -->
+                    <polyline points="150,160 155,150 165,170 175,150 185,170 195,150 200,160" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="165" y="190" font-size="14">12 Ω</text>
+                    <line x1="200" y1="160" x2="250" y2="160" stroke="black" stroke-width="2"/>
+
+                    <!-- Right Side Connectors -->
+                    <line x1="250" y1="40" x2="250" y2="100" stroke="black" stroke-width="2"/>
+                    <line x1="250" y1="160" x2="250" y2="100" stroke="black" stroke-width="2"/>
+
+                    <!-- Series Resistor -->
+                    <line x1="250" y1="100" x2="280" y2="100" stroke="black" stroke-width="2"/>
+                    <polyline points="280,100 285,90 295,110 305,90 315,110 325,90 330,100" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="295" y="80" font-size="14">4 Ω</text>
+                    <line x1="330" y1="100" x2="380" y2="100" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Return Wire -->
+                    <line x1="380" y1="100" x2="380" y2="180" stroke="black" stroke-width="2"/>
+                    <line x1="380" y1="180" x2="35" y2="180" stroke="black" stroke-width="2"/>
+                    <!-- Ammeter -->
+                    <circle cx="200" cy="180" r="15" fill="white" stroke="black" stroke-width="2"/>
+                    <text x="195" y="185" font-size="14">A</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            An object is placed at a distance of $20 \text{ cm}$ from a concave mirror. A real image magnified three times is formed. Find:
+            <br>(a) The focal length of the mirror.
+            <br>(b) Where must the object be placed to give a virtual image three times the height of the object?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            A motor of $1100 \text{ W}$ runs for 5 hours daily for 6 days. 
+            <br>(a) Find the electrical energy consumed in kWh.
+            <br>(b) Calculate the cost of the electrical energy consumed if the rate is ₹ 5.00 per unit.
+            <br>(c) State the commercial unit of electrical energy and define its relation to Joules.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            When an object is placed at a distance of $50 \text{ cm}$ from a concave spherical mirror, the magnification produced is $-1/2$. Where should the object be placed to get a magnification of $-1/5$?
+        </div>
+    </div>
+
+
+    <!-- STREAMING_CHUNK:Rendering Section D questions (18-22)... -->
+    <div class="section-header">SECTION D (30 Marks)<span class="marks-info">(Long Answer Type II - 6 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            (a) State Ohm's Law and write the conditions under which it strictly applies.
+            <br>(b) Three resistors $R_1, R_2, \text{ and } R_3$ are connected in parallel. Derive the mathematical expression for their equivalent resistance.
+            <br>(c) Explain why an ammeter is always connected in series and a voltmeter in parallel in a circuit. What happens if an ammeter is connected in parallel with the battery?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            An object of size $7.0 \text{ cm}$ is placed at $27 \text{ cm}$ in front of a concave mirror of focal length $18 \text{ cm}$. 
+            <br>(a) At what distance from the mirror should a screen be placed so that a sharp focused image can be obtained? 
+            <br>(b) Find the size and the nature of the image.
+            <br>(c) Draw a ray diagram accurately depicting this image formation, clearly marking C, F, P, object, and image positions.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            (a) How many $176 \Omega$ resistors (in parallel) are required to carry $5 \text{ A}$ on a $220 \text{ V}$ line?
+            <br>(b) Show how you would connect three resistors, each of resistance $6 \Omega$, so that the combination has a resistance of (i) $9 \Omega$ (ii) $4 \Omega$. Support your answer with calculations and schematic diagrams.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            (a) Define the absolute refractive index of a medium.
+            <br>(b) Light enters from air into glass having a refractive index of $1.50$. What is the speed of light in the glass? (Speed of light in vacuum = $3 \times 10^8 \text{ m/s}$).
+            <br>(c) The refractive index of diamond is $2.42$ and that of water is $1.33$. Find the refractive index of diamond with respect to water. What does this value indicate regarding the speed of light in these media?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            (a) Two lamps, one rated $100 \text{ W}$ at $220 \text{ V}$, and the other $60 \text{ W}$ at $220 \text{ V}$, are connected in parallel to electric mains supply. What current is drawn from the line if the supply voltage is $220 \text{ V}$?
+            <br>(b) Which lamp has a higher resistance? Prove it mathematically.
+            <br>(c) If these two lamps were connected in series across the same $220 \text{ V}$ supply, which lamp would glow brighter? Give a detailed scientific reason based on power dissipation.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
+
+
