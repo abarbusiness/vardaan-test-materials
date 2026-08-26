@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Rapid MCQ Test</title>
+    
+    <!-- MathJax for rendering electronic configurations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.4; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: transparent; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #000;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 10px; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            padding: 0 10px;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .mcq-container {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1.5px solid var(--primary-yellow); 
+            margin-top: 20px;
+        }
+        .question-block {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 18px; 
+            background: transparent;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+        }
+        .q-text { margin-bottom: 6px; display: flex; font-weight: normal; }
+        .q-num { min-width: 25px; font-weight: bold; }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 10px;
+            font-size: 10.5pt;
+            padding-left: 25px;
+        }
+        
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 2px solid var(--primary-yellow); 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            .mcq-container { column-count: 1; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+        }
+        @media print { 
+            body { 
+                width: 100%; margin: 0; padding: 0; 
+                -webkit-print-color-adjust: exact; 
+                background-color: transparent;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">15 Min Rapid MCQ Test - Electronic Configuration</div>
+        <div class="exam-details">
+            <span>Class: 11 (CBSE/ICSE)</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 15 Minutes</span>
+            <span>Max. Marks: 30</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All 30 questions are compulsory. Each question carries 1 mark.</li>
+                <li>Speed and accuracy are key. Average time per question is 30 seconds.</li>
+                <li>Select the most appropriate option based on NCERT guidelines. No negative marking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">1.</span><span>The general outer electronic configuration of s-block elements is represented as:</span></div>
+            <div class="options-grid">
+                <div>A) \( ns^{1-2} \)</div><div>B) \( ns^2 \)</div>
+                <div>C) \( ns^1 \)</div><div>D) \( ns^2 np^{1-6} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">2.</span><span>According to NCERT, the correct general electronic configuration for d-block elements is:</span></div>
+            <div class="options-grid">
+                <div>A) \( (n-1)d^{1-10} ns^{1-2} \)</div><div>B) \( (n-1)d^{1-10} ns^{0-2} \)</div>
+                <div>C) \( (n-1)d^{1-10} ns^2 \)</div><div>D) \( nd^{1-10} ns^{1-2} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">3.</span><span>What is the correct electronic configuration of Copper (\( Z=29 \))?</span></div>
+            <div class="options-grid">
+                <div>A) \( [\text{Ar}] 3d^9 4s^2 \)</div><div>B) \( [\text{Ar}] 3d^{10} 4s^1 \)</div>
+                <div>C) \( [\text{Ar}] 3d^{10} 4s^2 \)</div><div>D) \( [\text{Ar}] 3d^8 4s^2 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">4.</span><span>Identify the electronic configuration of the \( \text{Cr}^{3+} \) ion (\( Z=24 \)):</span></div>
+            <div class="options-grid">
+                <div>A) \( [\text{Ar}] 3d^4 \)</div><div>B) \( [\text{Ar}] 3d^2 4s^1 \)</div>
+                <div>C) \( [\text{Ar}] 3d^3 \)</div><div>D) \( [\text{Ar}] 3d^5 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">5.</span><span>Palladium (\( Z=46 \)) exhibits an exceptional configuration. Which of the following is correct?</span></div>
+            <div class="options-grid">
+                <div>A) \( [\text{Kr}] 4d^8 5s^2 \)</div><div>B) \( [\text{Kr}] 4d^{10} 5s^2 \)</div>
+                <div>C) \( [\text{Kr}] 4d^9 5s^1 \)</div><div>D) \( [\text{Kr}] 4d^{10} 5s^0 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">6.</span><span>Which of the following ions possesses a \( 3d^5 \) outer configuration?</span></div>
+            <div class="options-grid">
+                <div>A) \( \text{Mn}^{2+} \)</div><div>B) \( \text{Fe}^{3+} \)</div>
+                <div>C) \( \text{Cr}^{+} \)</div><div>D) All of the above</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">7.</span><span>The element with the electronic configuration \( [\text{Rn}] 5f^{14} 6d^1 7s^2 \) belongs to which block?</span></div>
+            <div class="options-grid">
+                <div>A) s-block</div><div>B) p-block</div>
+                <div>C) d-block</div><div>D) f-block</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">8.</span><span>An element has the outer electronic configuration \( 3s^2 3p^4 \). Which group does it belong to?</span></div>
+            <div class="options-grid">
+                <div>A) Group 4</div><div>B) Group 14</div>
+                <div>C) Group 16</div><div>D) Group 6</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">9.</span><span>What is the period number of the element with the configuration \( [\text{Ar}] 3d^{10} 4s^2 4p^3 \)?</span></div>
+            <div class="options-grid">
+                <div>A) 3</div><div>B) 4</div>
+                <div>C) 5</div><div>D) 15</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">10.</span><span>The total number of unpaired electrons in \( \text{Fe}^{2+} \) (\( Z=26 \)) is:</span></div>
+            <div class="options-grid">
+                <div>A) 4</div><div>B) 5</div>
+                <div>C) 6</div><div>D) 0</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">11.</span><span>Which of the following represents the general electronic configuration of Halogens?</span></div>
+            <div class="options-grid">
+                <div>A) \( ns^2 np^6 \)</div><div>B) \( ns^2 np^5 \)</div>
+                <div>C) \( ns^2 np^4 \)</div><div>D) \( ns^2 nd^5 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">12.</span><span>What is the atomic number of the element whose outermost configuration is \( 4s^1 \) and lies in Group 1?</span></div>
+            <div class="options-grid">
+                <div>A) 11</div><div>B) 19</div>
+                <div>C) 37</div><div>D) 55</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">13.</span><span>Gadolinium (\( Z=64 \)) shows extra stability. Its anomalous configuration is:</span></div>
+            <div class="options-grid">
+                <div>A) \( [\text{Xe}] 4f^8 6s^2 \)</div><div>B) \( [\text{Xe}] 4f^7 5d^1 6s^2 \)</div>
+                <div>C) \( [\text{Xe}] 4f^6 5d^2 6s^2 \)</div><div>D) \( [\text{Xe}] 4f^7 6s^2 6p^1 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">14.</span><span>The element with the configuration \( 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 \) belongs to the family of:</span></div>
+            <div class="options-grid">
+                <div>A) Alkali metals</div><div>B) Alkaline earth metals</div>
+                <div>C) Transition metals</div><div>D) Halogens</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">15.</span><span>How many electrons are present in the 3d-subshell of a \( \text{Zn}^{2+} \) ion (\( Z=30 \))?</span></div>
+            <div class="options-grid">
+                <div>A) 8</div><div>B) 10</div>
+                <div>C) 0</div><div>D) 2</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">16.</span><span>Which of the following elements has the maximum number of unpaired electrons in its ground state?</span></div>
+            <div class="options-grid">
+                <div>A) Mn (\( Z=25 \))</div><div>B) Fe (\( Z=26 \))</div>
+                <div>C) Cr (\( Z=24 \))</div><div>D) Cu (\( Z=29 \))</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">17.</span><span>Identify the group of isoelectronic species among the following:</span></div>
+            <div class="options-grid">
+                <div>A) \( \text{N}^{3-}, \text{O}^{2-}, \text{F}^- \)</div><div>B) \( \text{Na}^+, \text{Mg}^{2+}, \text{Al}^{3+} \)</div>
+                <div>C) Both A and B</div><div>D) None of the above</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">18.</span><span>What is the predicted outer electronic configuration of Unnilennium (\( Z=109 \))?</span></div>
+            <div class="options-grid">
+                <div>A) \( 5f^{14} 6d^7 7s^2 \)</div><div>B) \( 5f^{14} 6d^9 7s^2 \)</div>
+                <div>C) \( 5f^{14} 6d^{10} 7s^1 \)</div><div>D) \( 5f^{14} 6d^8 7s^1 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">19.</span><span>The configuration \( [\text{Kr}] 4d^{10} 5s^1 \) represents which element?</span></div>
+            <div class="options-grid">
+                <div>A) Copper</div><div>B) Silver</div>
+                <div>C) Gold</div><div>D) Zinc</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">20.</span><span>An element with the valence shell configuration \( nd^2 ns^2 \) belongs to:</span></div>
+            <div class="options-grid">
+                <div>A) Group 2</div><div>B) Group 4</div>
+                <div>C) Group 12</div><div>D) Group 14</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">21.</span><span>According to the (n+l) rule, the 4s orbital is filled before the 3d orbital because:</span></div>
+            <div class="options-grid">
+                <div>A) 4s has higher energy than 3d</div><div>B) 4s has lower energy than 3d</div>
+                <div>C) 3d is closer to the nucleus</div><div>D) 4s is spherically symmetrical</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">22.</span><span>If an element has atomic number 35, how many electrons does its valence p-orbital contain?</span></div>
+            <div class="options-grid">
+                <div>A) 3</div><div>B) 4</div>
+                <div>C) 5</div><div>D) 6</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">23.</span><span>Noble gases (excluding Helium) are characterized by the general outer electronic configuration:</span></div>
+            <div class="options-grid">
+                <div>A) \( ns^2 \)</div><div>B) \( ns^2 np^5 \)</div>
+                <div>C) \( ns^2 np^6 \)</div><div>D) \( ns^2 nd^{10} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">24.</span><span>The element with electronic configuration \( 1s^2 2s^2 2p^6 3s^2 3p^3 \) is classified generally as a:</span></div>
+            <div class="options-grid">
+                <div>A) Metal</div><div>B) Non-metal</div>
+                <div>C) Metalloid</div><div>D) Noble gas</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">25.</span><span>Zinc (\( Z=30 \)) is excluded from the family of true transition elements because:</span></div>
+            <div class="options-grid">
+                <div>A) It is highly reactive.</div><div>B) It has completely filled d-orbitals in its ground state.</div>
+                <div>C) It belongs to the s-block.</div><div>D) It is a post-transition metal.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">26.</span><span>What is the atomic number of the element placed immediately below the element with \( Z=15 \) in the periodic table?</span></div>
+            <div class="options-grid">
+                <div>A) 31</div><div>B) 33</div>
+                <div>C) 34</div><div>D) 49</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">27.</span><span>Identify the INCORRECT statement regarding electronic configurations:</span></div>
+            <div class="options-grid">
+                <div>A) Half-filled orbitals are stable.</div><div>B) Fully filled orbitals have min exchange energy.</div>
+                <div>C) Exchange energy is high for half-filled.</div><div>D) Cr achieves a \( 3d^5 \) state.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">28.</span><span>The outermost electronic configuration of the most electronegative element (Fluorine) is:</span></div>
+            <div class="options-grid">
+                <div>A) \( 2s^2 2p^5 \)</div><div>B) \( 3s^2 3p^5 \)</div>
+                <div>C) \( 2s^2 2p^4 \)</div><div>D) \( 3s^2 3p^4 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">29.</span><span>How many electrons can be accommodated in the subshell characterized by \( n=4, l=3 \)?</span></div>
+            <div class="options-grid">
+                <div>A) 10</div><div>B) 14</div>
+                <div>C) 6</div><div>D) 2</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">30.</span><span>The element Oganesson (\( Z=118 \)) is predicted to have the outer electronic configuration:</span></div>
+            <div class="options-grid">
+                <div>A) \( 6s^2 6p^6 \)</div><div>B) \( 7s^2 7p^6 \)</div>
+                <div>C) \( 7s^2 7p^5 \)</div><div>D) \( 7s^2 7d^{10} \)</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan &bull; Best of Luck!</div>
+</body>
+</html>

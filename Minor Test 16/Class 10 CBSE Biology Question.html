@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: #111; 
+            background-color: #fdfdfd; 
+            position: relative; 
+        }
+
+        /* Watermark styling */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Layout */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 12px; 
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #0d233a;
+        }
+
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            text-decoration: underline; 
+            color: #222;
+        }
+
+        .pyq-badge {
+            display: inline-block;
+            background-color: #eef2f7;
+            border: 1px solid #bccbde;
+            font-size: 9pt;
+            font-family: Arial, sans-serif;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-top: 4px;
+            font-weight: bold;
+            color: #1a365d;
+        }
+
+        .exam-details { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 8px;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 5px; 
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            background: #f9f9f9;
+            padding: 8px 12px;
+            border-left: 3px solid #0d233a;
+        }
+
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+
+        /* Section Layouts */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12.5pt; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            clear: both;
+        }
+
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-transform: none;
+        }
+
+        .question-container { 
+            margin-bottom: 16px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 32px; 
+            flex-shrink: 0; 
+        }
+
+        .q-content { 
+            flex-grow: 1; 
+        }
+
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-left: 10px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 15px;
+            margin-top: 6px;
+            padding-left: 5px;
+        }
+
+        .sub-question { 
+            margin-left: 5px; 
+            margin-top: 6px; 
+        }
+
+        .pyq-tag {
+            font-size: 8.5pt;
+            font-weight: bold;
+            color: #718096;
+            font-family: Arial, sans-serif;
+            margin-left: 6px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 11pt;
+            }
+            .institute-name {
+                font-size: 18pt;
+            }
+            .exam-details {
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+                text-align: left;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            .question-container {
+                margin-bottom: 14px;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                max-width: 100%;
+                margin: 0; 
+                padding: 0; 
+                background: #fff;
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark {
+                opacity: 0.10;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Image -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 16 (SURPRISE TEST) — CONTROL AND COORDINATION</div>
+        
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science (Biology)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read questions carefully before answering.</li>
+                <li>The paper consists of <strong>4 Sections</strong>: A (10 Marks), B (10 Marks), C (15 Marks), and D (15 Marks).</li>
+                <li>Emphasis is placed on conceptual clarity, scientific terminology, and diagrammatic understanding.</li>
+                <li>Internal choices are provided in selected long-answer questions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A: 10 Marks -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Very Short Answer Type — 1 Mark Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            Which part of the human brain is responsible for maintaining body posture, balance, and precision of voluntary actions? <span class="pyq-tag">[CBSE 2024, 2026]</span>
+            <div class="options-grid">
+                <div>(a) Cerebrum</div>
+                <div>(b) Cerebellum</div>
+                <div>(c) Medulla oblongata</div>
+                <div>(d) Pons</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            In a synapse, chemical signal transmission occurs when nerve impulse causes the release of neurotransmitters at: <span class="pyq-tag">[CBSE 2025]</span>
+            <div class="options-grid">
+                <div>(a) Dendritic tip of neuron</div>
+                <div>(b) Cell body (Cyton)</div>
+                <div>(c) Axonal end terminal</div>
+                <div>(d) Axon hillock</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            Which hormone regulates carbohydrate, protein, and fat metabolism in the human body to provide the best balance for growth? <span class="pyq-tag">[CBSE 2024, 2025]</span>
+            <div class="options-grid">
+                <div>(a) Insulin</div>
+                <div>(b) Growth Hormone</div>
+                <div>(c) Thyroxin</div>
+                <div>(d) Adrenaline</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            Dwarfism in human beings is caused due to the deficiency of which hormone during childhood? <span class="pyq-tag">[CBSE 2026]</span>
+            <div class="options-grid">
+                <div>(a) Thyroxin</div>
+                <div>(b) Growth Hormone</div>
+                <div>(c) Oestrogen</div>
+                <div>(d) Adrenaline</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            Which organ in the human body functions as both an exocrine gland and an endocrine gland? <span class="pyq-tag">[CBSE 2024]</span>
+            <div class="options-grid">
+                <div>(a) Thyroid</div>
+                <div>(b) Pancreas</div>
+                <div>(c) Liver</div>
+                <div>(d) Adrenal gland</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Assertion (A):</strong> Sudden withdrawal of hand upon accidentally touching a hot object is an example of a reflex action.<br>
+            <strong>Reason (R):</strong> Reflex arcs are formed in the spinal cord to allow rapid response before the message reaches the conscious brain. <span class="pyq-tag">[CBSE 2025, 2026]</span>
+            <div class="options-grid">
+                <div>(a) Both A and R are true, and R is correct explanation of A.</div>
+                <div>(b) Both A and R are true, but R is NOT correct explanation.</div>
+                <div>(c) A is true but R is false.</div>
+                <div>(d) A is false but R is true.</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Assertion (A):</strong> Deficiency of iodine in human diet causes goitre.<br>
+            <strong>Reason (R):</strong> Iodine is essential for the thyroid gland to synthesize thyroxin hormone. <span class="pyq-tag">[CBSE 2024]</span>
+            <div class="options-grid">
+                <div>(a) Both A and R are true, and R is correct explanation of A.</div>
+                <div>(b) Both A and R are true, but R is NOT correct explanation.</div>
+                <div>(c) A is true but R is false.</div>
+                <div>(d) A is false but R is true.</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            The directional growth movement of a seedling stem towards sunlight is termed as: <span class="pyq-tag">[CBSE 2025]</span>
+            <div class="options-grid">
+                <div>(a) Hydrotropism</div>
+                <div>(b) Chemotropism</div>
+                <div>(c) Phototropism</div>
+                <div>(d) Geotropism</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            Name the plant hormone that inhibits growth and causes wilting of leaves. <span class="pyq-tag">[CBSE 2024]</span>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            Where are receptors for gustatory and olfactory sensations located in the human body? <span class="pyq-tag">[CBSE 2025]</span>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+
+    <!-- Section B: 10 Marks -->
+    <div class="section-header">
+        SECTION B (10 Marks)
+        <span class="marks-info">(Short Answer Type I — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            Tabulate two main differences between chemical coordination (hormonal control) and electrical coordination (nervous system control) in animals. <span class="pyq-tag">[CBSE 2024, 2026]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            Trace the path of a reflex action when a person touches a hot plate. Sequence the components from receptor to effector. <span class="pyq-tag">[CBSE 2025]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            Distinguish between the functional roles of sensory neurons and motor neurons in the human nervous system. <span class="pyq-tag">[CBSE 2024]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question-container">
+        <div class="q-num">Q14.</div>
+        <div class="q-content">
+            (a) State the gland that produces Insulin.<br>
+            (b) What is the specific physiological function of insulin, and what medical condition occurs due to its deficiency? <span class="pyq-tag">[CBSE 2024, 2026]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question-container">
+        <div class="q-num">Q15.</div>
+        <div class="q-content">
+            Explain briefly how auxin hormone causes a plant shoot tip to bend towards light coming from one side. <span class="pyq-tag">[CBSE 2025]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+
+    <!-- Section C: 15 Marks -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Short Answer Type II — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q16 -->
+    <div class="question-container">
+        <div class="q-num">Q16.</div>
+        <div class="q-content">
+            (a) Draw a neat labeled structure of a Neuron (nerve cell) showing Cyton, Axon, Dendrite, and Axonal terminal.<br>
+            (b) Explain how an electrical impulse travels across the synaptic cleft between two neurons. <span class="pyq-tag">[CBSE 2025, 2026]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="question-container">
+        <div class="q-num">Q17.</div>
+        <div class="q-content">
+            Identify the specific region of the human brain (Forebrain, Midbrain, or Hindbrain) and its sub-part responsible for controlling each of the following: <span class="pyq-tag">[CBSE 2024, 2025]</span>
+            <div class="sub-question">(i) Thinking, memory, intelligence, and voluntary actions.</div>
+            <div class="sub-question">(ii) Regulation of involuntary actions like blood pressure, salivation, and vomiting.</div>
+            <div class="sub-question">(iii) Precision of voluntary movements like walking in a straight line or picking up a pencil.</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="question-container">
+        <div class="q-num">Q18.</div>
+        <div class="q-content">
+            What is meant by the "Feedback Mechanism" of hormonal regulation? Explain this mechanism using the regulation of blood sugar level by insulin as an example. <span class="pyq-tag">[CBSE 2026]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="question-container">
+        <div class="q-num">Q19.</div>
+        <div class="q-content">
+            Complete the table for the following endocrine glands by stating their hormone and primary physiological function: <span class="pyq-tag">[CBSE 2024, 2025]</span>
+            <div class="sub-question">(a) Thyroid Gland</div>
+            <div class="sub-question">(b) Adrenal Gland</div>
+            <div class="sub-question">(c) Pituitary Gland</div>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="question-container">
+        <div class="q-num">Q20.</div>
+        <div class="q-content">
+            (a) Differentiate between Tropic movements and Nastic movements in plants with two points of distinction.<br>
+            (b) Name the plant hormones responsible for: (i) Promotion of cell division, and (ii) Growth of stem. <span class="pyq-tag">[CBSE 2024]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+
+    <!-- Section D: 15 Marks -->
+    <div class="section-header">
+        SECTION D (15 Marks)
+        <span class="marks-info">(Long Answer Type — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q21 -->
+    <div class="question-container">
+        <div class="q-num">Q21.</div>
+        <div class="q-content">
+            (a) How are the Central Nervous System organs—the Brain and Spinal Cord—protected against mechanical shocks and injury? <span class="pyq-tag">[CBSE 2024]</span><br>
+            (b) Compare electrical nervous communication with chemical hormonal communication on the basis of: (i) Speed of transmission, (ii) Target area specificity, and (iii) Duration of effect. <span class="pyq-tag">[CBSE 2026]</span><br>
+            (c) Why are endocrine glands referred to as "ductless glands"? <span class="pyq-tag">[CBSE 2025]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="question-container">
+        <div class="q-num">Q22.</div>
+        <div class="q-content">
+            (a) Draw a labeled flow schematic / diagram of a Reflex Arc showing: Receptor, Sensory Neuron, Spinal Cord (Relay Neuron), Motor Neuron, and Effector Muscle. <span class="pyq-tag">[CBSE 2025]</span><br>
+            (b) Explain what occurs at a Neuromuscular Junction when a nerve impulse reaches a muscle cell.<br>
+            (c) Why have reflex arcs evolved in animals even though the brain is the principal control center of the body? <span class="pyq-tag">[CBSE 2024, 2026]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="question-container">
+        <div class="q-num">Q23.</div>
+        <div class="q-content">
+            <strong>Read the scenario and answer the questions below:</strong><br>
+            A student walking through a park suddenly encounters a fierce stray dog running towards him. Instantly, his body prepares to either fight or flee.<br><br>
+            (a) Identify the emergency hormone released into his bloodstream during this situation and state its secreting gland. <span class="pyq-tag">[CBSE 2024, 2025]</span><br>
+            (b) Describe three specific physiological changes that take place in his body as a result of this hormonal secretion to help him handle the emergency.<br>
+            (c) A diabetic patient is advised to take low-sugar diet and receive insulin injections. Explain why insulin cannot be administered orally as a tablet and must be injected. <span class="pyq-tag">[CBSE 2026]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Created by Team Vardaan &bull; Vardaan Learning Institute &bull; Academic Excellence Series
+    </div>
+</body>
+</html>

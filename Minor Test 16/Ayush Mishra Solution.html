@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solution Key</title>
+    <!-- MathJax for rendering mathematical notations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <style>
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: #111; 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #0f172a; 
+            padding-bottom: 10px; 
+        }
+
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #0f172a;
+        }
+
+        .solution-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            color: #1e293b;
+            text-decoration: underline; 
+        }
+
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10pt; 
+            border-top: 1px solid #0f172a; 
+            border-bottom: 1px solid #0f172a; 
+            padding: 6px 0; 
+            background-color: #f8fafc;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12pt; 
+            text-transform: uppercase;
+            color: #0f172a;
+            clear: both;
+        }
+
+        .sol-card {
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #0f172a;
+            border-radius: 4px;
+            padding: 12px 15px;
+            margin-bottom: 18px;
+            background-color: #ffffff;
+            page-break-inside: avoid;
+        }
+
+        .q-title {
+            font-weight: bold;
+            font-size: 10.5pt;
+            color: #0f172a;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px dashed #cbd5e1;
+            padding-bottom: 6px;
+        }
+
+        .q-text {
+            font-style: italic;
+            color: #334155;
+            margin-bottom: 10px;
+            background: #f8fafc;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        .ans-block {
+            margin-top: 8px;
+            font-size: 10.5pt;
+        }
+
+        .ans-label {
+            font-weight: bold;
+            color: #15803d;
+            margin-right: 5px;
+        }
+
+        .mark-badge {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: bold;
+            font-size: 8.5pt;
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid #cbd5e1;
+            white-space: nowrap;
+            font-family: Arial, sans-serif;
+        }
+
+        .marks-breakdown {
+            float: right;
+            font-weight: bold;
+            color: #0369a1;
+            font-size: 9pt;
+            font-family: Arial, sans-serif;
+        }
+
+        .concept-note {
+            margin-top: 8px;
+            font-size: 9pt;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 6px 10px;
+            border-radius: 4px;
+            color: #334155;
+        }
+
+        .sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        .sol-table th, .sol-table td {
+            border: 1px solid #cbd5e1;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        .sol-table th {
+            background-color: #f1f5f9;
+            font-weight: bold;
+        }
+
+        .diagram-container {
+            text-align: center;
+            margin: 12px 0;
+            padding: 10px;
+            background-color: #fafafa;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .diagram-caption {
+            font-size: 9pt;
+            font-weight: bold;
+            color: #475569;
+            margin-top: 6px;
+            font-family: Arial, sans-serif;
+        }
+
+        .source-tag {
+            font-size: 8.5pt;
+            color: #0f172a;
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsiveness for math display */
+        .MathJax {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 10.5pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .q-title {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .marks-breakdown {
+                float: none;
+                display: block;
+                margin-top: 4px;
+            }
+            .sol-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+
+        @media print {
+            body { margin: 0; padding: 0; width: 100%; }
+            .sol-card { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">OFFICIAL MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div style="font-size: 10pt; font-weight: bold; margin-top: 4px; color: #334155;">
+            MINOR TEST 15 (SURPRISE TEST) &bull; Class 9 CBSE Mathematics (50 Marks)
+        </div>
+        <div style="font-size: 9.5pt; font-style: italic; color: #475569;">
+            Chapter 6: Measuring Space: Perimeter and Area (Ganit Manjrika NCERT)
+        </div>
+
+        <div class="exam-details">
+            <span>Class: 9 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Topic: Measuring Space: Perimeter & Area</span>
+            <span>Max Marks: 50</span>
+        </div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="section-header">SECTION A — OBJECTIVE & VSA (10 MARKS)</div>
+
+    <!-- Sol 1 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q1. Definition of \(\pi\) (Pi)</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">The mathematical constant \(\pi\) (Pi) is defined as the ratio of which two properties of a circle?</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(b) Circumference to Diameter</strong>
+            <span class="marks-breakdown">[1 Mark for correct option]</span>
+        </div>
+        <div class="concept-note">
+            <strong>Key Concept:</strong> \(\pi = \dfrac{C}{D} = \dfrac{C}{2r}\). It is a universal constant for all circles, approximately equal to \(\frac{22}{7}\) or \(3.14159...\)
+        </div>
+    </div>
+
+    <!-- Sol 2 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q2. Arc Length Formula</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">The length \(l\) of an arc of a circle subtending angle \(\theta^\circ\) at the center...</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(c) \(\dfrac{\theta}{360^\circ} \times 2\pi r\)</strong>
+            <span class="marks-breakdown">[1 Mark for correct option]</span>
+        </div>
+        <div class="concept-note">
+            <strong>Key Concept:</strong> A full circular turn is \(360^\circ\) with perimeter \(2\pi r\). A fraction of \(\theta^\circ\) covers arc length \(l = \dfrac{\theta}{360^\circ} \times 2\pi r\).
+        </div>
+    </div>
+
+    <!-- Sol 3 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q3. Finding radius from Circumference</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">If circumference is \(44\text{ cm}\), what is the radius?</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(b) \(7\text{ cm}\)</strong>
+            <span class="marks-breakdown">[1 Mark for correct answer]</span><br>
+            <strong>Calculation:</strong><br>
+            \(C = 2\pi r \implies 44 = 2 \times \dfrac{22}{7} \times r \implies 44 = \dfrac{44}{7} r \implies r = 7\text{ cm}\).
+        </div>
+    </div>
+
+    <!-- Sol 4 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q4. Cyclic Quadrilateral Area Formula</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Which formula represents area of a cyclic quadrilateral with sides \(a, b, c, d\)?</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(b) Brahmagupta's Formula</strong>
+            <span class="marks-breakdown">[1 Mark for correct option]</span>
+        </div>
+        <div class="concept-note">
+            <strong>Formula:</strong> \(\text{Area} = \sqrt{(s-a)(s-b)(s-c)(s-d)}\) where \(s = \dfrac{a+b+c+d}{2}\).
+        </div>
+    </div>
+
+    <!-- Sol 5 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q5. Perimeter of Semicircle</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Total perimeter of a semicircle including bounding diameter...</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(c) \(\pi r + 2r\)</strong>
+            <span class="marks-breakdown">[1 Mark for correct option]</span>
+        </div>
+        <div class="concept-note">
+            <strong>Breakdown:</strong> Semicircular curved arc \(= \pi r\); Straight diameter boundary \(= 2r\). Total Perimeter \(= \pi r + 2r = r(\pi + 2)\).
+        </div>
+    </div>
+
+    <!-- Sol 6 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q6. Assertion-Reason: Triangles on same base and between same parallels</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Assertion: Triangles on same base & parallels are equal in area...</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(a) Both A and R are true, and R is the correct explanation of A.</strong>
+            <span class="marks-breakdown">[1 Mark]</span>
+        </div>
+    </div>
+
+    <!-- Sol 7 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q7. Assertion-Reason: Heron's formula as special case of Brahmagupta's</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Assertion: Heron's formula is special case of Brahmagupta's...</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> <strong>(a) Both A and R are true, and R is the correct explanation of A.</strong>
+            <span class="marks-breakdown">[1 Mark]</span>
+        </div>
+    </div>
+
+    <!-- Sol 8 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q8. Sector Area Calculation</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Area of sector with \(r = 7\text{ cm}\) and \(\theta = 60^\circ\):</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> \(\dfrac{77}{3}\text{ cm}^2 \approx 25.67\text{ cm}^2\)<br>
+            <strong>Steps:</strong><br>
+            \[\text{Area} = \dfrac{\theta}{360^\circ} \times \pi r^2 = \dfrac{60^\circ}{360^\circ} \times \dfrac{22}{7} \times 7^2 = \dfrac{1}{6} \times 22 \times 7 = \dfrac{154}{6} = \dfrac{77}{3}\text{ cm}^2\]
+            <span class="marks-breakdown">[0.5 mark formula + 0.5 mark calculation = 1 Mark]</span>
+        </div>
+    </div>
+
+    <!-- Sol 9 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q9. Angle subtended by Minute Hand</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Angle subtended by minute hand in \(10\text{ minutes}\):</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> \(60^\circ\)<br>
+            <strong>Steps:</strong> In \(60\text{ minutes}\), minute hand completes \(360^\circ\).<br>
+            In \(10\text{ minutes}\), angle subtended \(= \dfrac{10}{60} \times 360^\circ = 60^\circ\).
+            <span class="marks-breakdown">[1 Mark]</span>
+        </div>
+    </div>
+
+    <!-- Sol 10 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q10. Diagonal of Parallelogram</span>
+            <span class="mark-badge">Total: 1 Mark</span>
+        </div>
+        <div class="q-text">Relationship between areas of two triangles formed by diagonal of a parallelogram:</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span> They are equal in area (\(\text{Area}_1 = \text{Area}_2\)). A diagonal divides a parallelogram into two congruent, equal-area triangles.
+            <span class="marks-breakdown">[1 Mark]</span>
+        </div>
+    </div>
+
+
+    <!-- Section B Solutions -->
+    <div class="section-header">SECTION B — SHORT ANSWER TYPE I (10 MARKS)</div>
+
+    <!-- Sol 11 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q11. Total Perimeter of Sector (\(r = 14\text{ cm}, \theta = 75^\circ\))</span>
+            <span class="mark-badge">Total: 2 Marks</span>
+        </div>
+        <div class="q-text">Find the total perimeter of a sector of radius \(14\text{ cm}\) with sector angle \(75^\circ\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            1. <strong>Arc Length (\(l\)):</strong>
+            \[l = \dfrac{\theta}{360^\circ} \times 2\pi r = \dfrac{75^\circ}{360^\circ} \times 2 \times \dfrac{22}{7} \times 14\]
+            \[l = \dfrac{5}{24} \times 88 = \dfrac{55}{3}\text{ cm} \approx 18.33\text{ cm}\]
+            2. <strong>Total Sector Perimeter (\(P\)):</strong>
+            \[P = l + 2r = \dfrac{55}{3} + 2(14) = \dfrac{55}{3} + 28 = \dfrac{55 + 84}{3} = \dfrac{139}{3}\text{ cm} \approx 46.33\text{ cm}\]
+            <span class="marks-breakdown">[1 Mark arc length + 1 Mark total perimeter = 2 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 12 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q12. Proof of Equal Areas of \(\triangle PCD\) and \(\triangle QCD\)</span>
+            <span class="mark-badge">Total: 2 Marks</span>
+        </div>
+        <div class="q-text">Parallelogram \(ABCD\) with points \(P, Q\) on side \(AB\). Show \(\text{Area}(\triangle PCD) = \text{Area}(\triangle QCD)\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            1. Both \(\triangle PCD\) and \(\triangle QCD\) lie on the same base \(CD\).<br>
+            2. Since \(ABCD\) is a parallelogram, the opposite side \(AB\) is parallel to \(CD\) (\(AB \parallel CD\)).<br>
+            3. Points \(P\) and \(Q\) lie on line \(AB\), so both triangles lie between the same parallel lines \(AB\) and \(CD\).<br>
+            4. Therefore, the perpendicular height \(h\) from line \(AB\) to base \(CD\) is identical for both triangles.<br>
+            \[\text{Area}(\triangle PCD) = \dfrac{1}{2} \times CD \times h = \text{Area}(\triangle QCD)\]
+            <span class="marks-breakdown">[1 Mark stating same base & parallel height + 1 Mark conclusion = 2 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 13 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q13. Area Swept by Wiper Blade</span>
+            <span class="mark-badge">Total: 2 Marks</span>
+        </div>
+        <div class="q-text">Blade length \(r = 28\text{ cm}\), angle \(\theta = 120^\circ\). Find area cleaned.</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            The area swept by one wiper blade is the area of a sector:<br>
+            \[\text{Area} = \dfrac{\theta}{360^\circ} \times \pi r^2 = \dfrac{120^\circ}{360^\circ} \times \dfrac{22}{7} \times 28^2\]
+            \[\text{Area} = \dfrac{1}{3} \times \dfrac{22}{7} \times 784 = \dfrac{1}{3} \times 22 \times 112 = \dfrac{2464}{3}\text{ cm}^2 \approx 821.33\text{ cm}^2\]
+            <span class="marks-breakdown">[1 Mark formula substitution + 1 Mark final calculation = 2 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 14 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q14. Area of a Rhombus</span>
+            <span class="mark-badge">Total: 2 Marks</span>
+        </div>
+        <div class="q-text">Diagonals \(d_1 = 12\text{ cm}, d_2 = 16\text{ cm}\). Calculate area.</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            1. <strong>Formula:</strong> \(\text{Area of Rhombus} = \dfrac{1}{2} \times d_1 \times d_2\)<br>
+            2. <strong>Calculation:</strong>
+            \[\text{Area} = \dfrac{1}{2} \times 12 \times 16 = 6 \times 16 = 96\text{ cm}^2\]
+            <span class="marks-breakdown">[0.5 Mark formula + 1.5 Marks calculation & units = 2 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 15 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q15. Area of Quadrant given Circumference \(44\text{ cm}\)</span>
+            <span class="mark-badge">Total: 2 Marks</span>
+        </div>
+        <div class="q-text">Find area of a quadrant of a circle whose circumference is \(44\text{ cm}\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            1. <strong>Find radius \(r\):</strong>
+            \[2\pi r = 44 \implies 2 \times \dfrac{22}{7} \times r = 44 \implies r = 7\text{ cm}\]
+            2. <strong>Area of Quadrant (\(\frac{1}{4}\) circle):</strong>
+            \[\text{Area} = \dfrac{1}{4} \pi r^2 = \dfrac{1}{4} \times \dfrac{22}{7} \times 7^2 = \dfrac{154}{4} = \dfrac{77}{2}\text{ cm}^2 = 38.5\text{ cm}^2\]
+            <span class="marks-breakdown">[1 Mark radius derivation + 1 Mark quadrant area = 2 Marks]</span>
+        </div>
+    </div>
+
+
+    <!-- Section C Solutions -->
+    <div class="section-header">SECTION C — SHORT ANSWER TYPE II (15 MARKS)</div>
+
+    <!-- Sol 16 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q16. Triangular Field Area & Height (Heron's Formula)</span>
+            <span class="mark-badge">Total: 3 Marks</span>
+        </div>
+        <div class="q-text">Sides \(a = 13\text{ m}, b = 14\text{ m}, c = 15\text{ m}\). Find area and height to side \(15\text{ m}\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            (a) <strong>Heron's Formula Area Calculation:</strong><br>
+            Semi-perimeter \(s = \dfrac{13 + 14 + 15}{2} = \dfrac{42}{2} = 21\text{ m}\).<br>
+            \[\text{Area} = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{21 \times (21-13) \times (21-14) \times (21-15)}\]
+            \[\text{Area} = \sqrt{21 \times 8 \times 7 \times 6} = \sqrt{(7 \times 3) \times (2^3) \times 7 \times (2 \times 3)}\]
+            \[\text{Area} = \sqrt{7^2 \times 3^2 \times 2^4} = 7 \times 3 \times 4 = 84\text{ m}^2\]<br>
+            (b) <strong>Height to side \(c = 15\text{ m}\):</strong><br>
+            \[\text{Area} = \dfrac{1}{2} \times \text{base} \times h \implies 84 = \dfrac{1}{2} \times 15 \times h \implies h = \dfrac{168}{15} = 11.2\text{ m}\]
+            <span class="marks-breakdown">[2 Marks Heron's area + 1 Mark height calculation = 3 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 17 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q17. 400m Track Stagger Calculation</span>
+            <span class="mark-badge">Total: 3 Marks</span>
+        </div>
+        <div class="q-text">Lane 1 radius \(r_1 = 36.8\text{ m}\), Lane width \(w = 1.22\text{ m}\). Find radius and stagger.</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            (a) <strong>Effective Radius of Lane 2 (\(r_2\)):</strong><br>
+            \[r_2 = r_1 + \text{lane width} = 36.8 + 1.22 = 38.02\text{ m}\]<br>
+            (b) <strong>Stagger Distance for one full circular loop (2 semicircles = 1 circle):</strong><br>
+            Difference in circumference between Lane 2 and Lane 1:
+            \[\text{Stagger} = 2\pi r_2 - 2\pi r_1 = 2\pi (r_2 - r_1) = 2\pi w\]
+            \[\text{Stagger} = 2 \times \dfrac{22}{7} \times 1.22 = \dfrac{53.68}{7} \approx 7.67\text{ m}\]
+            <span class="marks-breakdown">[1 Mark radius + 2 Marks stagger formula & derivation = 3 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 18 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q18. Sector and Minor Segment Area (\(r = 10\text{ cm}, \theta = 90^\circ\))</span>
+            <span class="mark-badge">Total: 3 Marks</span>
+        </div>
+        <div class="q-text">Find area of minor sector and minor segment with \(\pi = 3.14\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            (a) <strong>Area of Minor Sector:</strong>
+            \[\text{Area}_{\text{sector}} = \dfrac{90^\circ}{360^\circ} \times \pi r^2 = \dfrac{1}{4} \times 3.14 \times 10^2 = \dfrac{314}{4} = 78.5\text{ cm}^2\]<br>
+            (b) <strong>Area of Triangle formed by radii (\(\angle = 90^\circ\)):</strong>
+            \[\text{Area}_{\text{triangle}} = \dfrac{1}{2} \times r \times r \times \sin 90^\circ = \dfrac{1}{2} \times 10 \times 10 = 50\text{ cm}^2\]<br>
+            (c) <strong>Area of Minor Segment:</strong>
+            \[\text{Area}_{\text{segment}} = \text{Area}_{\text{sector}} - \text{Area}_{\text{triangle}} = 78.5 - 50 = 28.5\text{ cm}^2\]
+            <span class="marks-breakdown">[1 Mark sector area + 1 Mark triangle area + 1 Mark segment area = 3 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 19 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q19. Brahmagupta's Formula for Cyclic Quadrilateral</span>
+            <span class="mark-badge">Total: 3 Marks</span>
+        </div>
+        <div class="q-text">Sides \(a = 3, b = 4, c = 5, d = 6\text{ cm}\). Calculate area.</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            1. <strong>Semi-perimeter \(s\):</strong>
+            \[s = \dfrac{3 + 4 + 5 + 6}{2} = \dfrac{18}{2} = 9\text{ cm}\]
+            2. <strong>Brahmagupta's Formula:</strong>
+            \[\text{Area} = \sqrt{(s-a)(s-b)(s-c)(s-d)}\]
+            \[\text{Area} = \sqrt{(9-3)(9-4)(9-5)(9-6)} = \sqrt{6 \times 5 \times 4 \times 3}\]
+            \[\text{Area} = \sqrt{360} = \sqrt{36 \times 10} = 6\sqrt{10}\text{ cm}^2 \approx 18.97\text{ cm}^2\]
+            <span class="marks-breakdown">[1 Mark semi-perimeter + 1 Mark formula substitution + 1 Mark final radical/decimal value = 3 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 20 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q20. Inscribed Equilateral Triangle Area Ratio</span>
+            <span class="mark-badge">Total: 3 Marks</span>
+        </div>
+        <div class="q-text">Show that ratio of area of inscribed equilateral triangle to circle is \(\dfrac{3\sqrt{3}}{4\pi}\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            (a) For an equilateral triangle inscribed in a circle of radius \(r\), the circumradius \(r = \dfrac{\text{side}}{\sqrt{3}} \implies \text{side } a = \sqrt{3}r\).<br>
+            (b) <strong>Area of Equilateral Triangle:</strong>
+            \[\text{Area}_{\text{triangle}} = \dfrac{\sqrt{3}}{4} a^2 = \dfrac{\sqrt{3}}{4} (\sqrt{3}r)^2 = \dfrac{\sqrt{3}}{4} (3r^2) = \dfrac{3\sqrt{3}}{4} r^2\]
+            (c) <strong>Area of Circle:</strong> \(\text{Area}_{\text{circle}} = \pi r^2\).<br>
+            (d) <strong>Ratio:</strong>
+            \[\text{Ratio} = \dfrac{\text{Area}_{\text{triangle}}}{\text{Area}_{\text{circle}}} = \dfrac{\frac{3\sqrt{3}}{4} r^2}{\pi r^2} = \dfrac{3\sqrt{3}}{4\pi} \approx 0.413\]
+            <span class="marks-breakdown">[1 Mark side derivation + 1 Mark triangle area + 1 Mark ratio derivation = 3 Marks]</span>
+        </div>
+    </div>
+
+
+    <!-- Section D Solutions -->
+    <div class="section-header">SECTION D — LONG ANSWER TYPE (15 MARKS)</div>
+
+    <!-- Sol 21 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q21. Median Area Bisector Proof & Parallelogram Point on Diagonal</span>
+            <span class="mark-badge">Total: 5 Marks</span>
+        </div>
+        <div class="q-text">(a) Prove median bisects triangle area. (b) Prove \(\text{Area}(\triangle PSO) = \text{Area}(\triangle PQO)\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Part (a): Proof that a median bisects triangle area [2.5 Marks]</strong><br>
+            Let \(\triangle ABC\) have median \(AD\) drawn to base \(BC\). So \(BD = DC\).<br>
+            Draw perpendicular altitude \(AN \perp BC\) from vertex \(A\).<br>
+            \[\text{Area}(\triangle ABD) = \dfrac{1}{2} \times BD \times AN\]
+            \[\text{Area}(\triangle ADC) = \dfrac{1}{2} \times DC \times AN\]
+            Since \(BD = DC\), \(\text{Area}(\triangle ABD) = \text{Area}(\triangle ADC)\). Hence proved.<br><br>
+
+            <strong>Part (b): Proof for Parallelogram \(PQRS\) with point \(O\) on diagonal \(PR\) [2.5 Marks]</strong><br>
+            1. The diagonal \(PR\) bisects the parallelogram into two congruent triangles of equal area:
+            \[\text{Area}(\triangle PSR) = \text{Area}(\triangle PQR)\]
+            2. Perpendicular heights \(h_1\) (from \(S\) to line \(PR\)) and \(h_2\) (from \(Q\) to line \(PR\)) are equal (\(h_1 = h_2\)) because \(PR\) passes through center of symmetry of parallelogram.<br>
+            3. For \(\triangle PSO\) and \(\triangle PQO\), base is the common segment \(PO\) on diagonal \(PR\):
+            \[\text{Area}(\triangle PSO) = \dfrac{1}{2} \times PO \times h_1\]
+            \[\text{Area}(\triangle PQO) = \dfrac{1}{2} \times PO \times h_2\]
+            Since \(h_1 = h_2\), \(\text{Area}(\triangle PSO) = \text{Area}(\triangle PQO)\). Hence proved.
+            <span class="marks-breakdown">[2.5 Marks part (a) + 2.5 Marks part (b) = 5 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 22 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q22. Garden Boundary Perimeter & Sector/Segment Calculations</span>
+            <span class="mark-badge">Total: 5 Marks</span>
+        </div>
+        <div class="q-text">(a) Decorative garden boundary perimeter. (b) Sector, arc & segment area for \(r = 21\text{ cm}, \theta = 60^\circ\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Part (a): Garden Boundary Outer Perimeter [2 Marks]</strong><br>
+            Each side of square \(= 14\text{ cm}\). Four semicircles are built on the 4 sides as diameters.<br>
+            Diameter \(d = 14\text{ cm} \implies \text{radius } r = 7\text{ cm}\).<br>
+            Outer perimeter consists of 4 semicircular arcs:<br>
+            \[\text{Perimeter} = 4 \times (\pi r) = 4 \times \dfrac{22}{7} \times 7 = 88\text{ cm}\]<br>
+
+            <strong>Part (b): Circle calculations for \(r = 21\text{ cm}, \theta = 60^\circ\) [3 Marks]</strong><br>
+            (i) <strong>Arc Length (\(l\)):</strong>
+            \[l = \dfrac{60^\circ}{360^\circ} \times 2\pi r = \dfrac{1}{6} \times 2 \times \dfrac{22}{7} \times 21 = 22\text{ cm}\]
+            (ii) <strong>Area of Sector:</strong>
+            \[\text{Area}_{\text{sector}} = \dfrac{60^\circ}{360^\circ} \times \pi r^2 = \dfrac{1}{6} \times \dfrac{22}{7} \times 21^2 = \dfrac{1}{6} \times 22 \times 63 = 231\text{ cm}^2\]
+            (iii) <strong>Area of Minor Segment:</strong><br>
+            The triangle formed by two radii of length \(21\text{ cm}\) with included angle \(60^\circ\) is an equilateral triangle with side \(21\text{ cm}\).
+            \[\text{Area}_{\text{triangle}} = \dfrac{\sqrt{3}}{4} \times 21^2 = \dfrac{1.732}{4} \times 441 \approx 0.433 \times 441 \approx 190.95\text{ cm}^2\]
+            \[\text{Area}_{\text{segment}} = \text{Area}_{\text{sector}} - \text{Area}_{\text{triangle}} = 231 - 190.95 = 40.05\text{ cm}^2\]
+            <span class="marks-breakdown">[2 Marks part (a) + 3 Marks part (b) = 5 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Sol 23 -->
+    <div class="sol-card">
+        <div class="q-title">
+            <span>Q23. Squaring a Rectangle Concept & Quadrilateral Park Area</span>
+            <span class="mark-badge">Total: 5 Marks</span>
+        </div>
+        <div class="q-text">(a) Geometric squaring of rectangle. (b) Quadrilateral \(ABCD\) area with \(\angle C = 90^\circ\).</div>
+        <div class="ans-block">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Part (a): Squaring a Rectangle Concept [2 Marks]</strong><br>
+            1. "Squaring a rectangle" is a classical geometric construction to convert a rectangle of sides \(a\) and \(b\) into a square of identical surface area.<br>
+            2. Since \(\text{Area of Rectangle} = a \times b\) and \(\text{Area of Square} = x^2\), setting areas equal gives:
+            \[x^2 = a \cdot b \implies x = \sqrt{a \cdot b}\]
+            The side \(x\) of the square is the <em>geometric mean</em> of the dimensions \(a\) and \(b\).<br><br>
+
+            <strong>Part (b): Quadrilateral Park Area Calculation [3 Marks]</strong><br>
+            In quadrilateral \(ABCD\), \(\angle C = 90^\circ\), \(BC = 12\text{ m}, CD = 5\text{ m}, AB = 9\text{ m}, AD = 8\text{ m}\).<br>
+            Join diagonal \(BD\) to divide quadrilateral into two triangles: \(\triangle BCD\) and \(\triangle ABD\).<br><br>
+
+            1. <strong>Area and hypotenuse of right triangle \(\triangle BCD\):</strong>
+            \[\text{Area}(\triangle BCD) = \dfrac{1}{2} \times BC \times CD = \dfrac{1}{2} \times 12 \times 5 = 30\text{ m}^2\]
+            By Pythagoras theorem in \(\triangle BCD\):
+            \[BD = \sqrt{BC^2 + CD^2} = \sqrt{12^2 + 5^2} = \sqrt{144 + 25} = \sqrt{169} = 13\text{ m}\]<br>
+
+            2. <strong>Area of \(\triangle ABD\) using Heron's Formula (sides \(9\text{ m}, 8\text{ m}, 13\text{ m}\)):</strong>
+            \[s = \dfrac{9 + 8 + 13}{2} = 15\text{ m}\]
+            \[\text{Area}(\triangle ABD) = \sqrt{15(15-9)(15-8)(15-13)} = \sqrt{15 \times 6 \times 7 \times 2}\]
+            \[\text{Area}(\triangle ABD) = \sqrt{1260} = 6\sqrt{35} \approx 6 \times 5.916 = 35.5\text{ m}^2\]<br>
+
+            3. <strong>Total Area of Park \(ABCD\):</strong>
+            \[\text{Total Area} = \text{Area}(\triangle BCD) + \text{Area}(\triangle ABD) = 30 + 35.5 = 65.5\text{ m}^2\]
+            <span class="marks-breakdown">[2 Marks part (a) + 3 Marks part (b) = 5 Marks]</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Created by Team Vardaan &bull; Vardaan Learning Institute &bull; Academic Excellence Series
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- MathJax for rendering Mathematical equations properly -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        chtml: {
+          displayAlign: 'left',
+          displayIndent: '2em'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #fcfcfc; 
+        }
+        
+        .header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 22pt); font-weight: bold; color: #2c3e50; margin: 0; }
+        .doc-title { font-size: clamp(14pt, 3vw, 16pt); font-weight: bold; margin-top: 8px; color: #e74c3c; }
+        
+        .sol-block { 
+            background: #fff; 
+            border: 1px solid #e0e0e0; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .q-row { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { 
+            background: #2c3e50; 
+            color: white; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-size: 11pt;
+            flex-shrink: 0;
+        }
+        
+        .ans-content { color: #000; }
+        .ans-label { font-weight: bold; color: #27ae60; text-transform: uppercase; font-size: 11pt; margin-bottom: 8px; display: inline-block; }
+        
+        /* Responsive Math Container to prevent overflow on mobile */
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            /* Scrollbar styling */
+            scrollbar-width: thin;
+            scrollbar-color: #bdc3c7 #f1f1f1;
+        }
+        
+        .step-marks { float: right; color: #e67e22; font-size: 10pt; font-style: italic; }
+        
+        .diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .diff-table th, .diff-table td { border: 1px solid #bdc3c7; padding: 8px; text-align: left; }
+        .diff-table th { background-color: #f2f6f8; }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; font-size: 11pt; }
+            .sol-block { padding: 12px; }
+            .q-row { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">SOLUTIONS & MARKING SCHEME - MINOR TEST 17</div>
+        <div style="margin-top: 5px; font-weight: bold; color: #7f8c8d;">Class: 7 ICSE | Subject: Physics & Maths</div>
+    </div>
+
+    <h2 style="text-align: center; color: #2c3e50;">SECTION A</h2>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q1. State the two laws of reflection of light.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>The two laws of reflection are:</p>
+            <ol>
+                <li>The angle of incidence is always equal to the angle of reflection ($\angle i = \angle r$). <span class="step-marks">[1 Mark]</span></li>
+                <li>The incident ray, the reflected ray, and the normal at the point of incidence, all lie in the same plane. <span class="step-marks">[1 Mark]</span></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q2. A car is moving with a speed of 90 km/h. Convert this speed into meters per second (m/s).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>Given, Speed = $90 \text{ km/h}$</p>
+            <p>To convert km/h to m/s, we multiply by $\frac{5}{18}$. <span class="step-marks">[1 Mark for concept]</span></p>
+            <div class="math-container">
+                $$ \text{Speed in m/s} = 90 \times \frac{5}{18} = 5 \times 5 = 25 \text{ m/s} $$
+            </div>
+            <p><strong>Answer:</strong> 25 m/s <span class="step-marks">[1 Mark for correct answer]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q3. Mention any two characteristics of the image formed by a plane mirror.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>Characteristics of an image formed by a plane mirror (Any two):</p>
+            <ul>
+                <li>The image is virtual and erect.</li>
+                <li>The image is laterally inverted.</li>
+                <li>The size of the image is equal to the size of the object.</li>
+                <li>The image is formed as far behind the mirror as the object is in front of it.</li>
+            </ul>
+            <p><span class="step-marks">[1 Mark for each correct point]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q4. A cyclist travels at a constant speed of 15 m/s. Calculate the distance covered by the cyclist in 2 hours (in kilometers).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>Speed = $15 \text{ m/s}$. Time = $2 \text{ hours}$.</p>
+            <p>First, convert speed into km/h:</p>
+            <div class="math-container">
+                $$ \text{Speed} = 15 \times \frac{18}{5} \text{ km/h} = 3 \times 18 = 54 \text{ km/h} $$
+            </div>
+            <p><span class="step-marks">[1 Mark for conversion]</span></p>
+            <p>Distance = Speed $\times$ Time</p>
+            <div class="math-container">
+                $$ \text{Distance} = 54 \text{ km/h} \times 2 \text{ h} = 108 \text{ km} $$
+            </div>
+            <p><strong>Answer:</strong> 108 km <span class="step-marks">[1 Mark for final answer]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q5. Define the terms: (a) Pole of a spherical mirror (b) Principal axis</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <ul>
+                <li><strong>(a) Pole:</strong> The geometric center of the reflecting surface of a spherical mirror is called its pole. It is usually denoted by 'P'. <span class="step-marks">[1 Mark]</span></li>
+                <li><strong>(b) Principal Axis:</strong> The imaginary straight line passing through the pole and the center of curvature of a spherical mirror is called the principal axis. <span class="step-marks">[1 Mark]</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #2c3e50; margin-top: 40px;">SECTION B</h2>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q6. Distinguish between a real image and a virtual image. (Write any three points of difference).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <table class="diff-table">
+                <tr>
+                    <th>Real Image</th>
+                    <th>Virtual Image</th>
+                </tr>
+                <tr>
+                    <td>It can be obtained on a screen.</td>
+                    <td>It cannot be obtained on a screen.</td>
+                </tr>
+                <tr>
+                    <td>It is formed by the actual intersection of reflected rays.</td>
+                    <td>It is formed when reflected rays appear to meet if produced backwards.</td>
+                </tr>
+                <tr>
+                    <td>It is always inverted with respect to the object.</td>
+                    <td>It is always erect with respect to the object.</td>
+                </tr>
+            </table>
+            <p><span class="step-marks">[1 Mark for each correct difference]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q7. A boy walks from his home to school at a speed of 3 km/h and returns back at 2 km/h. If he takes 5 hours in total, find the distance between his home and the school.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>Let the distance between home and school be $x \text{ km}$.</p>
+            <p>Time taken to go to school ($t_1$) = $\frac{\text{Distance}}{\text{Speed}} = \frac{x}{3} \text{ hours}$.</p>
+            <p>Time taken to return ($t_2$) = $\frac{x}{2} \text{ hours}$. <span class="step-marks">[1 Mark]</span></p>
+            <p>Total time taken = $t_1 + t_2 = 5 \text{ hours}$.</p>
+            <div class="math-container">
+                $$ \frac{x}{3} + \frac{x}{2} = 5 $$
+                $$ \frac{2x + 3x}{6} = 5 $$
+                $$ \frac{5x}{6} = 5 $$
+            </div>
+            <p><span class="step-marks">[1 Mark for equation setup]</span></p>
+            <div class="math-container">
+                $$ 5x = 30 \implies x = \frac{30}{5} = 6 \text{ km} $$
+            </div>
+            <p><strong>Answer:</strong> The distance between his home and school is 6 km. <span class="step-marks">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q8. A ray of light strikes a plane mirror such that the angle between the incident ray and the surface of the mirror is 30°. Find (a) angle of incidence (b) angle of reflection (c) Draw diagram.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>Given, Angle with the mirror surface = $30^\circ$.</p>
+            <p><strong>(a) Angle of Incidence ($\angle i$):</strong> The angle between the normal (which is at $90^\circ$ to the surface) and the incident ray.<br>
+            $\angle i = 90^\circ - 30^\circ = 60^\circ$ <span class="step-marks">[1 Mark]</span></p>
+            <p><strong>(b) Angle of Reflection ($\angle r$):</strong> According to the law of reflection, $\angle i = \angle r$.<br>
+            Therefore, $\angle r = 60^\circ$ <span class="step-marks">[1 Mark]</span></p>
+            <p><strong>(c) Ray Diagram:</strong><br>
+            <em>(Students should draw a horizontal line for the mirror with shading on one side. A perpendicular dashed line for the normal. An incident ray coming in at $60^\circ$ to the normal, and reflected ray leaving at $60^\circ$ to the normal. Angles should be clearly labeled.)</em> <span class="step-marks">[1 Mark for correct diagram]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q9. A train 200 meters long crosses a stationary electric pole in 10 seconds. Find the speed of the train in km/h.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p>To cross a stationary pole, the train has to cover a distance equal to its own length.</p>
+            <p>Distance ($D$) = $200 \text{ m}$<br>
+            Time ($T$) = $10 \text{ s}$ <span class="step-marks">[1 Mark for conceptual logic]</span></p>
+            <div class="math-container">
+                $$ \text{Speed in m/s} = \frac{\text{Distance}}{\text{Time}} = \frac{200}{10} = 20 \text{ m/s} $$
+            </div>
+            <p><span class="step-marks">[1 Mark for speed in m/s]</span></p>
+            <p>Converting to km/h:</p>
+            <div class="math-container">
+                $$ \text{Speed in km/h} = 20 \times \frac{18}{5} = 4 \times 18 = 72 \text{ km/h} $$
+            </div>
+            <p><strong>Answer:</strong> 72 km/h <span class="step-marks">[1 Mark for final conversion]</span></p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q10. What is meant by 'Lateral Inversion'? Explain with the help of a daily life example why the word 'AMBULANCE' is written backwards.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p><strong>Lateral Inversion:</strong> The phenomenon due to which the left side of an object appears as the right side in its image, and the right side appears as the left side in a plane mirror, is called lateral inversion. <span class="step-marks">[1.5 Marks]</span></p>
+            <p><strong>Example (AMBULANCE):</strong> The word AMBULANCE is written laterally inverted (backwards) on the front of hospital vans so that when the driver of a vehicle moving ahead looks in their rear-view mirror, the laterally inverted image of the word is inverted again. This makes the word read correctly as 'AMBULANCE', allowing the driver to quickly give way to the emergency vehicle. <span class="step-marks">[1.5 Marks]</span></p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #2c3e50; margin-top: 40px;">SECTION C</h2>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q11. With the help of a neat diagram, explain image formation by a plane mirror. Prove using geometry that the image is at the same distance behind the mirror as the object is in front of it.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p><strong>Diagram:</strong> <span class="step-marks">[2 Marks for accurate diagram with virtual rays backward]</span><br>
+            <em>(Diagram requirement: A point object O in front of plane mirror MM'. Two diverging rays OA and OB strike mirror. Normals drawn at A and B. Reflected rays AC and BD drawn following laws of reflection. Reflected rays produced backward to meet at virtual image I. Perpendicular ON drawn to mirror and extended to I.)</em></p>
+            
+            <p><strong>Geometric Proof:</strong></p>
+            <p>Let ON be perpendicular to the mirror surface from object O, and extended backward to meet the virtual image I.<br>
+            Let an incident ray strike the mirror at an angle of incidence $i$ and reflect at angle $r$. By the law of reflection, $\angle i = \angle r$.</p>
+            <p>Consider the triangles formed by the object, the image, the normal, and the point of incidence (say point A).<br>
+            In $\Delta ONA$ and $\Delta INA$:</p>
+            <div class="math-container">
+                $$ \angle ONA = \angle INA = 90^\circ \text{ (ON is perpendicular to mirror)} $$
+                $$ NA = NA \text{ (Common side)} $$
+            </div>
+            <p>Because the normal at A is parallel to the normal ON, alternate interior angles are equal: $\angle NOA = \angle i$.<br>
+            Also, corresponding angles are equal for the backward extension of the reflected ray: $\angle NIA = \angle r$.</p>
+            <p>Since $\angle i = \angle r$, we get $\angle NOA = \angle NIA$.</p>
+            <p>Therefore, by Angle-Side-Angle (ASA) congruency criterion, $\Delta ONA \cong \Delta INA$. <span class="step-marks">[2 Marks for mathematical logic]</span></p>
+            <p>Since the triangles are congruent, their corresponding parts are equal (CPCTC).<br>
+            Thus, $ON = IN$. <span class="step-marks">[1 Mark for conclusion]</span></p>
+            <p><strong>Conclusion:</strong> The distance of the object in front of the mirror ($ON$) is equal to the distance of the image behind the mirror ($IN$).</p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q12. (a) Train 150m long, speed 72 km/h crosses 250m bridge. Time? (b) Athlete 400m in 50s. Average speed in km/h?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p><strong>Part (a):</strong> <span class="step-marks">[2.5 Marks]</span></p>
+            <p>Total distance to be covered by the train to cross the bridge = Length of Train + Length of Bridge</p>
+            <div class="math-container">
+                $$ \text{Total Distance } (D) = 150 \text{ m} + 250 \text{ m} = 400 \text{ m} $$
+            </div>
+            <p>Speed of train = $72 \text{ km/h}$. Converting to m/s:</p>
+            <div class="math-container">
+                $$ \text{Speed } (S) = 72 \times \frac{5}{18} = 4 \times 5 = 20 \text{ m/s} $$
+            </div>
+            <p>Time taken ($T$) = $\frac{\text{Distance}}{\text{Speed}}$</p>
+            <div class="math-container">
+                $$ T = \frac{400}{20} = 20 \text{ seconds} $$
+            </div>
+            
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+            
+            <p><strong>Part (b):</strong> <span class="step-marks">[2.5 Marks]</span></p>
+            <p>Distance ($D$) = $400 \text{ m}$<br>
+            Time ($T$) = $50 \text{ s}$</p>
+            <p>Average speed in m/s:</p>
+            <div class="math-container">
+                $$ S = \frac{D}{T} = \frac{400}{50} = 8 \text{ m/s} $$
+            </div>
+            <p>Converting to km/h:</p>
+            <div class="math-container">
+                $$ \text{Speed in km/h} = 8 \times \frac{18}{5} = \frac{144}{5} = 28.8 \text{ km/h} $$
+            </div>
+            <p><strong>Answers:</strong> (a) 20 seconds, (b) 28.8 km/h</p>
+        </div>
+    </div>
+
+    <div class="sol-block">
+        <div class="q-row">
+            <div class="q-text">Q13. Car goes A to B at 60 km/h, returns at 40 km/h. (a) Average speed? (b) If total time is 5 hrs, find distance A to B.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <span class="ans-label">Solution:</span>
+            <p><strong>Part (a): Average Speed</strong> <span class="step-marks">[3 Marks]</span></p>
+            <p>Let the distance between City A and City B be $x \text{ km}$.</p>
+            <p>Time taken from A to B ($t_1$) = $\frac{\text{Distance}}{\text{Speed}} = \frac{x}{60} \text{ hours}$.</p>
+            <p>Time taken from B to A ($t_2$) = $\frac{\text{Distance}}{\text{Speed}} = \frac{x}{40} \text{ hours}$.</p>
+            <p>Total Distance = $x + x = 2x$.</p>
+            <p>Total Time = $t_1 + t_2 = \frac{x}{60} + \frac{x}{40}$</p>
+            <div class="math-container">
+                $$ \text{Total Time} = \frac{2x + 3x}{120} = \frac{5x}{120} = \frac{x}{24} \text{ hours} $$
+            </div>
+            <p>Average Speed = $\frac{\text{Total Distance}}{\text{Total Time}}$</p>
+            <div class="math-container">
+                $$ \text{Avg Speed} = \frac{2x}{\frac{x}{24}} = \frac{2x \times 24}{x} = 48 \text{ km/h} $$
+            </div>
+            <p><em>(Alternatively, students can use the formula $\frac{2ab}{a+b} = \frac{2 \times 60 \times 40}{60+40} = 48 \text{ km/h}$)</em></p>
+
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+            
+            <p><strong>Part (b): Distance between A and B</strong> <span class="step-marks">[2 Marks]</span></p>
+            <p>We know Average Speed = $48 \text{ km/h}$ and Total Time = $5 \text{ hours}$.</p>
+            <p>Total Distance covered (round trip) = Average Speed $\times$ Total Time</p>
+            <div class="math-container">
+                $$ \text{Total Distance} = 48 \times 5 = 240 \text{ km} $$
+            </div>
+            <p>Since total distance represents a round trip (A to B and back to A), the exact distance between City A and City B is half of the total distance.</p>
+            <div class="math-container">
+                $$ \text{Distance between A & B} = \frac{240}{2} = 120 \text{ km} $$
+            </div>
+            <p><strong>Answers:</strong> (a) 48 km/h, (b) 120 km</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; color: #7f8c8d; font-size: 10pt;">
+        &copy; Team Vardaan | strictly confidential marking scheme
+    </div>
+
+</body>
+</html>

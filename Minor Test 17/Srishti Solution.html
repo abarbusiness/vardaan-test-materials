@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                tags: 'ams'
+            },
+            chtml: {
+                matchFontHeight: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #2c3e50;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #e74c3c;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #2980b9;
+        }
+        .question-container { 
+            margin-bottom: 25px; 
+            background-color: #fcfcfc;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            color: #333;
+        }
+        .q-content { 
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .solution-block {
+            margin-top: 10px;
+        }
+        .solution-title {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 5px;
+            color: #27ae60;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            white-space: nowrap;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Design for Mobile and Tablets */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 0; 
+                min-height: auto;
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+                font-size: 10pt;
+            }
+            .q-header {
+                flex-direction: column;
+            }
+            .marks {
+                margin-top: 5px;
+                color: #c0392b;
+            }
+            .watermark { width: 95%; }
+        }
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .question-container {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17 - DETAILED SOLUTIONS</div>
+        <div class="exam-details">
+            <span>Class: 7 CBSE</span>
+            <span>Subject: Mathematics (Algebraic Expressions)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q1. Identify the numerical coefficients...</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="q-content">
+            Identify the numerical coefficients of terms (other than constants) in the following expressions:<br>
+            (i) \( 5 - 3t^2 \) &nbsp;&nbsp;&nbsp; (ii) \( 2x - 3y + 5xyz \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>(i) \( 5 - 3t^2 \) :</strong><br>
+            Terms other than constant: \( -3t^2 \)<br>
+            Numerical Coefficient = <strong>\( -3 \)</strong> <i>[1 Mark]</i></p>
+            
+            <p><strong>(ii) \( 2x - 3y + 5xyz \) :</strong><br>
+            Term: \( 2x \) &rarr; Coefficient = <strong>\( 2 \)</strong><br>
+            Term: \( -3y \) &rarr; Coefficient = <strong>\( -3 \)</strong><br>
+            Term: \( 5xyz \) &rarr; Coefficient = <strong>\( 5 \)</strong> <i>[1 Mark]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q2. Like or Unlike terms...</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="q-content">
+            State whether the given pairs of terms are like or unlike terms:<br>
+            (i) \( 14xy \) and \( 42yx \) &nbsp;&nbsp;&nbsp; (ii) \( 4m^2p \) and \( 4mp^2 \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>(i) \( 14xy \) and \( 42yx \):</strong><br>
+            The algebraic factors are \( xy \) and \( yx \) (which is the same as \( xy \)). Since factors are identical, they are <strong>Like Terms</strong>. <i>[1 Mark]</i></p>
+            
+            <p><strong>(ii) \( 4m^2p \) and \( 4mp^2 \):</strong><br>
+            The algebraic factors are \( m^2p \) and \( mp^2 \). Since the powers of the variables are different, they are <strong>Unlike Terms</strong>. <i>[1 Mark]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q3. Classify expressions...</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="q-content">
+            Classify the following expressions as monomials, binomials, or trinomials:<br>
+            (i) \( y^2 \) &nbsp;&nbsp;&nbsp; (ii) \( 1 + x + x^2 \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>(i) \( y^2 \):</strong> Contains only one term. Therefore, it is a <strong>Monomial</strong>. <i>[1 Mark]</i></p>
+            <p><strong>(ii) \( 1 + x + x^2 \):</strong> Contains three unlike terms. Therefore, it is a <strong>Trinomial</strong>. <i>[1 Mark]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q4. Add algebraic expressions...</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="q-content">
+            Add the following algebraic expressions: \( 3mn, -5mn, 8mn, -4mn \).
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>These are all like terms (all contain \( mn \)). We simply add their numerical coefficients:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                \text{Sum} &= 3mn + (-5mn) + 8mn + (-4mn) \\
+                &= (3 - 5 + 8 - 4)mn \\
+                &= (11 - 9)mn \\
+                &= 2mn
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( 2mn \)</strong> <i>[2 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q5. Value of expression...</span>
+            <span class="marks">[2 Marks]</span>
+        </div>
+        <div class="q-content">
+            If \( m = 2 \), find the value of the expression \( 9 - 5m \).
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>Substitute the value of \( m = 2 \) into the expression:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                9 - 5m &= 9 - 5(2) \\
+                &= 9 - 10 \\
+                &= -1
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( -1 \)</strong> <i>[2 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q6. Simplify by combining like terms...</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="q-content">
+            Simplify the following expression by combining like terms: \( p - (p - q) - q - (q - p) \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>First, open the brackets. Be careful with the negative signs outside the brackets:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= p - p + q - q - q + p \\
+                \end{aligned}
+            </div>
+            <p>Now, group the like terms together:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (p - p + p) + (q - q - q) \\
+                &= (1 - 1 + 1)p + (1 - 1 - 1)q \\
+                &= (1)p + (-1)q \\
+                &= p - q
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( p - q \)</strong> <i>[3 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q7. Subtract expressions...</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="q-content">
+            Subtract \( 24ab - 10b - 18a \) from \( 30ab + 12b + 14a \).
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>Set up the subtraction carefully: (Second Expression) - (First Expression)</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (30ab + 12b + 14a) - (24ab - 10b - 18a)
+                \end{aligned}
+            </div>
+            <p>Distribute the negative sign to all terms in the second bracket:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= 30ab + 12b + 14a - 24ab + 10b + 18a
+                \end{aligned}
+            </div>
+            <p>Rearrange and combine like terms:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (30ab - 24ab) + (12b + 10b) + (14a + 18a) \\
+                &= 6ab + 22b + 32a
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( 6ab + 22b + 32a \)</strong> <i>[3 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q8. What should be added...</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="q-content">
+            What should be added to \( x^2 + xy + y^2 \) to obtain \( 2x^2 + 3xy \)?
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>Let the required expression to be added be \( P \). Then,</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                (x^2 + xy + y^2) + P &= 2x^2 + 3xy
+                \end{aligned}
+            </div>
+            <p>To find \( P \), subtract \( (x^2 + xy + y^2) \) from \( (2x^2 + 3xy) \):</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                P &= (2x^2 + 3xy) - (x^2 + xy + y^2) \\
+                P &= 2x^2 + 3xy - x^2 - xy - y^2 \\
+                P &= (2x^2 - x^2) + (3xy - xy) - y^2 \\
+                P &= x^2 + 2xy - y^2
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( x^2 + 2xy - y^2 \) should be added.</strong> <i>[3 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q9. Find the value...</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="q-content">
+            If \( a = 2 \) and \( b = -2 \), find the value of the algebraic expression: \( a^2 + ab + b^2 \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>Substitute the given values into the expression:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                a^2 + ab + b^2 &= (2)^2 + (2)(-2) + (-2)^2 \\
+                \end{aligned}
+            </div>
+            <p>Calculate each term:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= 4 + (-4) + 4 \\
+                &= 4 - 4 + 4 \\
+                &= 4
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( 4 \)</strong> <i>[3 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q10. Perimeter of Triangle...</span>
+            <span class="marks">[3 Marks]</span>
+        </div>
+        <div class="q-content">
+            The sides of a triangle are represented by the expressions \( 2y + 3x \), \( x - y \), and \( 4x - 5y \). Find the perimeter of the triangle.
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p>The perimeter of a triangle is the sum of the lengths of its three sides.</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                \text{Perimeter} &= (2y + 3x) + (x - y) + (4x - 5y)
+                \end{aligned}
+            </div>
+            <p>Group the like terms (\( x \) terms and \( y \) terms) together:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (3x + x + 4x) + (2y - y - 5y) \\
+                &= (3 + 1 + 4)x + (2 - 1 - 5)y \\
+                &= 8x + (1 - 5)y \\
+                &= 8x - 4y
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: The perimeter is \( 8x - 4y \).</strong> <i>[3 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q11. Simplify and Evaluate...</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="q-content">
+            Simplify the given expression and find its value when \( x = 2 \) and \( y = -1 \):<br>
+            \( 2(x^2 - xy) + 3 - xy + 2y \)
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Step 1: Simplify the expression (2.5 Marks)</strong></p>
+            <p>Open the brackets by distributing the 2:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= 2x^2 - 2xy + 3 - xy + 2y
+                \end{aligned}
+            </div>
+            <p>Group and combine the like terms (the \( xy \) terms):</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= 2x^2 + (-2xy - xy) + 2y + 3 \\
+                &= 2x^2 - 3xy + 2y + 3
+                \end{aligned}
+            </div>
+            <p><strong>Step 2: Find the value (2.5 Marks)</strong></p>
+            <p>Substitute \( x = 2 \) and \( y = -1 \) into the simplified expression:</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= 2(2)^2 - 3(2)(-1) + 2(-1) + 3 \\
+                &= 2(4) - (-6) - 2 + 3 \\
+                &= 8 + 6 - 2 + 3 \\
+                &= 14 - 2 + 3 \\
+                &= 12 + 3 \\
+                &= 15
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: Simplified = \( 2x^2 - 3xy + 2y + 3 \), Value = \( 15 \)</strong> <i>[5 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q12. What should be taken away & Evaluation...</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="q-content">
+            (a) What should be taken away from \( 3x^2 - 4y^2 + 5xy + 20 \) to obtain \( -x^2 - y^2 + 6xy + 20 \)?<br>
+            (b) Find the value of the expression \( n^3 + 5n^2 + 5n - 2 \) when \( n = -2 \).
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Part (a) [3 Marks]:</strong><br>
+            Let the expression to be taken away be \( M \).<br>
+            \( (3x^2 - 4y^2 + 5xy + 20) - M = -x^2 - y^2 + 6xy + 20 \)</p>
+            
+            <p>Therefore, \( M = (3x^2 - 4y^2 + 5xy + 20) - (-x^2 - y^2 + 6xy + 20) \)</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                M &= 3x^2 - 4y^2 + 5xy + 20 + x^2 + y^2 - 6xy - 20 \\
+                &= (3x^2 + x^2) + (-4y^2 + y^2) + (5xy - 6xy) + (20 - 20) \\
+                &= 4x^2 - 3y^2 - xy + 0
+                \end{aligned}
+            </div>
+            <p><strong>Answer (a): \( 4x^2 - 3y^2 - xy \) should be taken away.</strong></p>
+
+            <p><strong>Part (b) [2 Marks]:</strong><br>
+            Substitute \( n = -2 \) into the expression \( n^3 + 5n^2 + 5n - 2 \):</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (-2)^3 + 5(-2)^2 + 5(-2) - 2 \\
+                &= -8 + 5(4) - 10 - 2 \\
+                &= -8 + 20 - 10 - 2 \\
+                &= 12 - 10 - 2 \\
+                &= 2 - 2 \\
+                &= 0
+                \end{aligned}
+            </div>
+            <p><strong>Answer (b): The value is 0.</strong></p>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-header">
+            <span>Q13. Sum and Subtraction of expressions...</span>
+            <span class="marks">[5 Marks]</span>
+        </div>
+        <div class="q-content">
+            From the sum of \( 2y^2 + 3yz \), \(-y^2 - yz - z^2\), and \( yz + 2z^2 \), subtract the sum of \( 3y^2 - z^2 \) and \( -y^2 + yz + z^2 \).
+        </div>
+        <div class="solution-block">
+            <div class="solution-title">Solution:</div>
+            <p><strong>Step 1: Find the first sum (Sum 1)</strong> [2 Marks]</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                \text{Sum 1} &= (2y^2 + 3yz) + (-y^2 - yz - z^2) + (yz + 2z^2) \\
+                &= (2y^2 - y^2) + (3yz - yz + yz) + (-z^2 + 2z^2) \\
+                &= y^2 + 3yz + z^2
+                \end{aligned}
+            </div>
+
+            <p><strong>Step 2: Find the second sum (Sum 2)</strong> [1.5 Marks]</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                \text{Sum 2} &= (3y^2 - z^2) + (-y^2 + yz + z^2) \\
+                &= (3y^2 - y^2) + yz + (-z^2 + z^2) \\
+                &= 2y^2 + yz + 0 \\
+                &= 2y^2 + yz
+                \end{aligned}
+            </div>
+
+            <p><strong>Step 3: Subtract Sum 2 from Sum 1</strong> [1.5 Marks]</p>
+            <p>We need to evaluate: \( (\text{Sum 1}) - (\text{Sum 2}) \)</p>
+            <div class="math-scroll">
+                \begin{aligned}
+                &= (y^2 + 3yz + z^2) - (2y^2 + yz) \\
+                &= y^2 + 3yz + z^2 - 2y^2 - yz \\
+                &= (y^2 - 2y^2) + (3yz - yz) + z^2 \\
+                &= -y^2 + 2yz + z^2
+                \end{aligned}
+            </div>
+            <p><strong>Final Answer: \( -y^2 + 2yz + z^2 \)</strong> <i>[5 Marks]</i></p>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

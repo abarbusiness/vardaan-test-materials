@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering mathematical notations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <style>
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: #111; 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 18px; 
+            border-bottom: 2px solid #0f172a; 
+            padding-bottom: 10px; 
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #0f172a;
+        }
+
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            color: #1e293b;
+        }
+
+        .chapter-title {
+            font-size: 11pt;
+            font-style: italic;
+            color: #334155;
+            margin-top: 3px;
+        }
+
+        .exam-details { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 8px;
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10pt; 
+            border-top: 1px solid #0f172a; 
+            border-bottom: 1px solid #0f172a; 
+            padding: 6px 5px; 
+            text-align: center;
+            background-color: #f8fafc;
+        }
+
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            font-style: italic; 
+            text-align: left;
+            background: #f1f5f9;
+            padding: 8px 12px;
+            border-left: 3px solid #0f172a;
+            border-radius: 2px;
+        }
+
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 22px; 
+            margin-bottom: 14px; 
+            text-decoration: underline; 
+            font-size: 12pt; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #0f172a;
+            clear: both;
+        }
+
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-transform: none;
+        }
+
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 34px; 
+            flex-shrink: 0; 
+        }
+
+        .q-content { 
+            flex-grow: 1; 
+        }
+
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-left: 10px;
+            color: #0f172a;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 15px;
+            margin-top: 6px;
+            padding-left: 5px;
+        }
+
+        .sub-question { 
+            margin-left: 5px; 
+            margin-top: 6px; 
+        }
+
+        .ncert-tag {
+            font-size: 8.5pt;
+            font-weight: normal;
+            color: #475569;
+            font-family: Arial, sans-serif;
+            margin-left: 6px;
+        }
+
+        .footer { 
+            margin-top: 35px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #cbd5e1; 
+            padding-top: 10px; 
+            color: #475569; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 18pt;
+            }
+            .exam-details {
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+                text-align: left;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            .question-container {
+                margin-bottom: 12px;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                max-width: 100%;
+                margin: 0; 
+                padding: 0; 
+                background: #fff;
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark {
+                opacity: 0.10;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Image -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 15 (SURPRISE TEST)</div>
+        <div class="chapter-title">Ganit Manjrika (NCERT) — Chapter 6: Measuring Space: Perimeter and Area</div>
+        
+        <div class="exam-details">
+            <span>Class: 9 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read questions carefully before attempting.</li>
+                <li>The question paper consists of <strong>23 questions</strong> divided into <strong>4 Sections</strong>: A (10 Marks), B (10 Marks), C (15 Marks), and D (15 Marks).</li>
+                <li>Use of calculator is not permitted. Use \(\pi = \dfrac{22}{7}\) unless specified otherwise.</li>
+                <li>Write clear formulas, intermediate steps, and appropriate SI units in all calculations.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A: 10 Marks -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Very Short Answer Type — 1 Mark Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            The mathematical constant \(\pi\) (Pi) is defined as the ratio of which two properties of a circle? <span class="ncert-tag">[NCERT Ganit Manjrika]</span>
+            <div class="options-grid">
+                <div>(a) Area to Radius</div>
+                <div>(b) Circumference to Diameter</div>
+                <div>(c) Arc length to Radius</div>
+                <div>(d) Diameter to Circumference</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            The length \(l\) of an arc of a circle of radius \(r\) subtending an angle \(\theta^\circ\) at the center is given by: <span class="ncert-tag">[NCERT Ganit Manjrika]</span>
+            <div class="options-grid">
+                <div>(a) \(\dfrac{\theta}{360^\circ} \times \pi r^2\)</div>
+                <div>(b) \(\dfrac{\theta}{180^\circ} \times 2\pi r\)</div>
+                <div>(c) \(\dfrac{\theta}{360^\circ} \times 2\pi r\)</div>
+                <div>(d) \(\dfrac{\theta}{90^\circ} \times \pi r\)</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            If the circumference of a circular plate is \(44\text{ cm}\), what is its radius? (Take \(\pi = \frac{22}{7}\)) <span class="ncert-tag">[NCERT Ex 6.1]</span>
+            <div class="options-grid">
+                <div>(a) \(14\text{ cm}\)</div>
+                <div>(b) \(7\text{ cm}\)</div>
+                <div>(c) \(3.5\text{ cm}\)</div>
+                <div>(d) \(21\text{ cm}\)</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            Which formula represents the area of a cyclic quadrilateral with side lengths \(a, b, c, d\) and semi-perimeter \(s\)? <span class="ncert-tag">[NCERT Concept]</span>
+            <div class="options-grid">
+                <div>(a) Heron's Formula</div>
+                <div>(b) Brahmagupta's Formula</div>
+                <div>(c) Euler's Formula</div>
+                <div>(d) Pythagoras Theorem</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            What is the total perimeter of a semicircle including its bounding diameter of radius \(r\)? <span class="ncert-tag">[NCERT Concept]</span>
+            <div class="options-grid">
+                <div>(a) \(\pi r\)</div>
+                <div>(b) \(\pi r + r\)</div>
+                <div>(c) \(\pi r + 2r\)</div>
+                <div>(d) \(2\pi r + 2r\)</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Assertion (A):</strong> Triangles on the same base and between the same parallel lines are equal in area.<br>
+            <strong>Reason (R):</strong> The area of a triangle is calculated as \(\frac{1}{2} \times \text{base} \times \text{height}\), and parallel lines remain equidistant throughout. <span class="ncert-tag">[NCERT Concept]</span>
+            <div class="options-grid">
+                <div>(a) Both A and R are true, and R is the correct explanation of A.</div>
+                <div>(b) Both A and R are true, but R is NOT the correct explanation.</div>
+                <div>(c) A is true but R is false.</div>
+                <div>(d) A is false but R is true.</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Assertion (A):</strong> Heron's formula is a special case of Brahmagupta's formula for a cyclic quadrilateral.<br>
+            <strong>Reason (R):</strong> Setting one side \(d = 0\) in Brahmagupta's formula yields Heron's formula \(\sqrt{s(s-a)(s-b)(s-c)}\). <span class="ncert-tag">[NCERT Think & Reflect]</span>
+            <div class="options-grid">
+                <div>(a) Both A and R are true, and R is the correct explanation of A.</div>
+                <div>(b) Both A and R are true, but R is NOT the correct explanation.</div>
+                <div>(c) A is true but R is false.</div>
+                <div>(d) A is false but R is true.</div>
+            </div>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            Find the area of a sector of a circle with radius \(7\text{ cm}\) if the angle of the sector is \(60^\circ\). <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            The minute hand of a clock is \(7\text{ cm}\) long. Calculate the angle subtended at the center by the minute hand in \(10\text{ minutes}\). <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            If a diagonal divides a parallelogram into two triangles, what is the relationship between the areas of these two triangles? <span class="ncert-tag">[NCERT Concept]</span>
+        </div>
+        <div class="q-marks">[1]</div>
+    </div>
+
+
+    <!-- Section B: 10 Marks -->
+    <div class="section-header">
+        SECTION B (10 Marks)
+        <span class="marks-info">(Short Answer Type I — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            Find the total perimeter of a sector of a circle of radius \(14\text{ cm}\) with a sector angle of \(75^\circ\). (Include both curved arc and straight radii). <span class="ncert-tag">[NCERT Ex 6.1]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            Parallelogram \(ABCD\) has points \(P\) and \(Q\) lying on side \(AB\). Show that \(\text{Area}(\triangle PCD) = \text{Area}(\triangle QCD)\). <span class="ncert-tag">[NCERT Ex 6.2]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            A car has a wiper blade of length \(28\text{ cm}\) that sweeps through an angle of \(120^\circ\). Calculate the total area cleaned by a single sweep of one blade. <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question-container">
+        <div class="q-num">Q14.</div>
+        <div class="q-content">
+            Find the area of a rhombus if its diagonals are of lengths \(12\text{ cm}\) and \(16\text{ cm}\). Also state the general formula for the area of a rhombus in terms of its diagonals. <span class="ncert-tag">[NCERT Concept]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question-container">
+        <div class="q-num">Q15.</div>
+        <div class="q-content">
+            The circumference of a circle is \(44\text{ cm}\). Find the area of a quadrant of this circle. <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[2]</div>
+    </div>
+
+
+    <!-- Section C: 15 Marks -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Short Answer Type II — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q16 -->
+    <div class="question-container">
+        <div class="q-num">Q16.</div>
+        <div class="q-content">
+            The sides of a triangular field are \(13\text{ m}\), \(14\text{ m}\), and \(15\text{ m}\).<br>
+            (a) Find the area of the triangular field using Heron's formula.<br>
+            (b) Calculate the height corresponding to the longest side (\(15\text{ m}\)). <span class="ncert-tag">[NCERT Concept]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="question-container">
+        <div class="q-num">Q17.</div>
+        <div class="q-content">
+            In a $400\text{ m}$ running track, two semicircular curves connect two parallel straight lines.
+            Lane 1 has an effective inner radius of \(36.8\text{ m}\). Each lane is \(1.22\text{ m}\) wide.<br>
+            (a) Calculate the effective radius of Lane 2.<br>
+            (b) Determine the stagger distance (extra distance) that a runner in Lane 2 must be given in front of Lane 1 to ensure a fair race along one full circular curve loop. <span class="ncert-tag">[NCERT Think & Reflect]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="question-container">
+        <div class="q-num">Q18.</div>
+        <div class="q-content">
+            A chord of a circle of radius \(10\text{ cm}\) subtends a right angle at the center. Find:<br>
+            (a) Area of the minor sector.<br>
+            (b) Area of the corresponding minor segment. (Take \(\pi = 3.14\)) <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="question-container">
+        <div class="q-num">Q19.</div>
+        <div class="q-content">
+            Using Brahmagupta's formula, calculate the area of a cyclic quadrilateral \(ABCD\) whose side lengths are \(a = 3\text{ cm}\), \(b = 4\text{ cm}\), \(c = 5\text{ cm}\), and \(d = 6\text{ cm}\). Express the final value in exact radical form and approximate decimal form. <span class="ncert-tag">[NCERT Concept]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="question-container">
+        <div class="q-num">Q20.</div>
+        <div class="q-content">
+            An equilateral triangle is inscribed in a circle of radius \(r\).<br>
+            (a) Express the side length of the equilateral triangle in terms of circumradius \(r\).<br>
+            (b) Show that the ratio of the area of the inscribed equilateral triangle to the area of the circle is equal to \(\dfrac{3\sqrt{3}}{4\pi}\). <span class="ncert-tag">[NCERT Ex 6.3]</span>
+        </div>
+        <div class="q-marks">[3]</div>
+    </div>
+
+
+    <!-- Section D: 15 Marks -->
+    <div class="section-header">
+        SECTION D (15 Marks)
+        <span class="marks-info">(Long Answer Type — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q21 -->
+    <div class="question-container">
+        <div class="q-num">Q21.</div>
+        <div class="q-content">
+            (a) Prove that a median of a triangle divides it into two triangles of equal areas. <span class="ncert-tag">[NCERT Concept]</span><br>
+            (b) Given a parallelogram \(PQRS\) and a point \(O\) lying on the diagonal \(PR\). Prove that \(\text{Area}(\triangle PSO) = \text{Area}(\triangle PQO)\). <span class="ncert-tag">[NCERT Ex 6.2]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="question-container">
+        <div class="q-num">Q22.</div>
+        <div class="q-content">
+            (a) A decorative square garden of side length \(14\text{ cm}\) has four semicircular arcs constructed outward on each of its four sides as diameters. Calculate the total perimeter of the outer boundary of this decorative shape.<br>
+            (b) A chord of a circle of radius \(21\text{ cm}\) subtends an angle of \(60^\circ\) at the center. Find:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(i) The length of the arc.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(ii) The area of the sector formed by the arc.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;(iii) The area of the minor segment. (Take \(\sqrt{3} \approx 1.732\)) <span class="ncert-tag">[NCERT Ex 6.1 & 6.3]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="question-container">
+        <div class="q-num">Q23.</div>
+        <div class="q-content">
+            (a) Explain the ancient geometric method of "Squaring a Rectangle" (converting a rectangle of sides \(a\) and \(b\) into a square of equal area). What is the side length \(x\) of the resulting square in terms of \(a\) and \(b\)? <span class="ncert-tag">[NCERT Concept]</span><br>
+            (b) A park is in the shape of a quadrilateral \(ABCD\) with \(\angle C = 90^\circ\), \(AB = 9\text{ m}\), \(BC = 12\text{ m}\), \(CD = 5\text{ m}\), and \(AD = 8\text{ m}\). Calculate the total area of the park using right-triangle properties and Heron's formula. <span class="ncert-tag">[NCERT Concept]</span>
+        </div>
+        <div class="q-marks">[5]</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Created by Team Vardaan &bull; Vardaan Learning Institute &bull; Academic Excellence Series
+    </div>
+</body>
+</html>

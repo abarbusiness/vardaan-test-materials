@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 15mm; }
+        
+        body { 
+            max-width: 210mm; /* Responsive constraint */
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; /* Responsive padding for mobile */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px;
+            opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: clamp(12pt, 2.5vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        
+        .exam-details { 
+            display: flex; flex-wrap: wrap; justify-content: space-between; 
+            margin-top: 15px; font-weight: bold; font-size: clamp(10pt, 2vw, 11pt); 
+            border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; gap: 10px;
+        }
+        .exam-details span { flex: 1 1 45%; text-align: center; }
+        @media (min-width: 768px) {
+            .exam-details span { flex: 1; text-align: center; }
+        }
+        
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        .question-container { margin-bottom: 20px; display: flex; align-items: flex-start; break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; width: 100%; overflow-x: auto;}
+        .sub-question { margin-left: 15px; margin-top: 5px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 10mm; -webkit-print-color-adjust: exact; } 
+            .question-container { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 16: Science & Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subjects: Chemistry & Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Mathematics and Science questions are integrated.</li>
+                <li>Write your answers neatly and legibly. Show all mathematical steps.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define an <strong>element</strong>. Give any two examples of solid elements.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Identify the numerical coefficient and the variables in the algebraic term: \( -12x^2yz \).
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Write the chemical symbols for the following elements:
+            <div class="sub-question">(i) Iron</div>
+            <div class="sub-question">(ii) Sodium</div>
+            <div class="sub-question">(iii) Carbon</div>
+            <div class="sub-question">(iv) Potassium</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Write the algebraic expression for the following statement:<br>
+            <em>"Five times a number \( x \) added to 9."</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            State one main difference between an atom and a molecule.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Classify the following substances into <strong>Elements</strong> and <strong>Compounds</strong>:
+            <br>
+            Water, Oxygen, Carbon dioxide, Gold, Sodium chloride (Common salt), Iron.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Classify the following algebraic expressions as monomial, binomial, or trinomial:
+            <div class="sub-question">(i) \( 4x + 3y \)</div>
+            <div class="sub-question">(ii) \( 7x^2yz \)</div>
+            <div class="sub-question">(iii) \( a^2 + b^2 - 2ab \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Add the given algebraic expressions: 
+                <br> \( (3a - 2b + c) \) and \( (a + 4b - 3c) \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            What is a <strong>compound</strong>? Write any two characteristics of a compound.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Evaluate the algebraic expression \( 3x^2 + 4y - 5 \)<br>
+                when \( x = 2 \) and \( y = 3 \).
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            (a) Write the chemical formulas for the following compounds: 
+            <div class="sub-question">(i) Water &nbsp; (ii) Carbon dioxide &nbsp; (iii) Table Salt (Sodium chloride)</div>
+            (b) Is Air a mixture or a compound? Give one strong reason to support your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Simplify the following expression by grouping and combining the like terms:
+                <br><br>
+                \( 6x^2 - 4x + 8 - 3x^2 + 7x - 5 \)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="math-scroll">
+                Subtract the expression \( (2p^2 - 5p + 4) \) from \( (6p^2 + 3p - 2) \).<br>
+                Show your steps clearly.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

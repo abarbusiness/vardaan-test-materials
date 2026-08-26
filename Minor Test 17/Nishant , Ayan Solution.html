@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Minor Test 17</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fdfbf7;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: var(--bg-light); 
+            margin: 0; 
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 1;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            margin-bottom: 30px; 
+            background: #fff;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #444;
+        }
+        .section-title {
+            background-color: #f5f5f5;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 13pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 30px 0 20px 0;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .solution-block:last-child {
+            border-bottom: none;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        .q-text {
+            font-weight: bold;
+            font-size: 11.5pt;
+            flex-grow: 1;
+            color: #222;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ans-content {
+            margin-left: 20px;
+            color: #333;
+        }
+        .ans-label {
+            color: #2e7d32;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+        .sub-part {
+            margin-top: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #eee;
+        }
+        table.diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table.diff-table th, table.diff-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table.diff-table th {
+            background-color: #f9f9f9;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .ans-content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="doc-title">DETAILED SOLUTIONS: Minor Test 17 (Science)</div>
+        </div>
+
+        <div class="section-title">SECTION A (10 Marks)</div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">1. Define Mechanical Advantage. Write its mathematical formula.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p><strong>Mechanical Advantage (MA)</strong> is defined as the ratio of the load lifted (or overcome) by a machine to the effort applied to the machine.</p>
+                <div class="math-scroll">
+                    \( \text{Mechanical Advantage (MA)} = \frac{\text{Load (L)}}{\text{Effort (E)}} \)
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">2. State any two main points of difference between an atom and a molecule.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <div class="math-scroll">
+                    <table class="diff-table">
+                        <tr>
+                            <th>Atom</th>
+                            <th>Molecule</th>
+                        </tr>
+                        <tr>
+                            <td>1. It is the smallest particle of an element that may or may not have independent existence.</td>
+                            <td>1. It is the smallest particle of an element or a compound capable of independent existence.</td>
+                        </tr>
+                        <tr>
+                            <td>2. An atom consists of protons, neutrons, and electrons.</td>
+                            <td>2. A molecule is formed by the chemical combination of two or more atoms.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">3. What is a Class II lever? Give one common everyday example of it.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p>A <strong>Class II lever</strong> is a lever in which the Load (L) is situated between the Fulcrum (F) and the Effort (E).</p>
+                <p><strong>Example:</strong> A wheelbarrow, a nutcracker, or a bottle opener. (Any one is correct).</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">4. According to the kinetic theory of matter, state the properties of intermolecular space and intermolecular force of attraction in a gaseous state.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <ul>
+                    <li><strong>Intermolecular space:</strong> It is very large (maximum compared to solids and liquids) because the particles are far apart.</li>
+                    <li><strong>Intermolecular force of attraction:</strong> It is negligible (or minimum), which allows the gas particles to move freely in all directions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">5. If the effort arm of a lever is 40 cm and the load arm is 10 cm, calculate its mechanical advantage.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p>Given:</p>
+                <ul>
+                    <li>Effort Arm = 40 cm</li>
+                    <li>Load Arm = 10 cm</li>
+                </ul>
+                <p>By the principle of moments for a lever:</p>
+                <div class="math-scroll">
+                    \( \text{Mechanical Advantage (MA)} = \frac{\text{Effort Arm}}{\text{Load Arm}} \)
+                </div>
+                <div class="math-scroll">
+                    \( \text{MA} = \frac{40 \text{ cm}}{10 \text{ cm}} = 4 \)
+                </div>
+                <p><strong>Ans:</strong> The mechanical advantage is 4.</p>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION B (15 Marks)</div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">6. Explain the process of sublimation with an example. How does this process fundamentally differ from melting?</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p><strong>Sublimation:</strong> It is the process in which a solid changes directly into its gaseous state on heating, without passing through the intermediate liquid state. <br>
+                <strong>Example:</strong> Heating of camphor, dry ice (solid CO₂), or naphthalene balls.</p>
+                <p><strong>Difference from melting:</strong> Melting is the process where a solid changes into a <em>liquid</em> on heating. Sublimation skips the liquid phase entirely and directly becomes a gas.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">7. A crowbar of length 120 cm has its fulcrum situated at a distance of 20 cm from the load. Calculate the mechanical advantage of the crowbar.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p>A crowbar acts as a lever (usually Class I). Let the fulcrum be between the load and effort.</p>
+                <ul>
+                    <li>Total length of crowbar = 120 cm</li>
+                    <li>Load arm (distance from fulcrum to load) = 20 cm</li>
+                </ul>
+                <p>The effort arm will be the remaining length of the crowbar:</p>
+                <div class="math-scroll">
+                    \( \text{Effort Arm} = \text{Total Length} - \text{Load Arm} \)
+                </div>
+                <div class="math-scroll">
+                    \( \text{Effort Arm} = 120 \text{ cm} - 20 \text{ cm} = 100 \text{ cm} \)
+                </div>
+                <div class="math-scroll">
+                    \( \text{MA} = \frac{\text{Effort Arm}}{\text{Load Arm}} = \frac{100}{20} = 5 \)
+                </div>
+                <p><strong>Ans:</strong> The mechanical advantage of the crowbar is 5.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">8. Why do solids possess a definite shape and a definite volume while gases do not? Explain this strictly on the basis of the arrangement of particles.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p><strong>Solids:</strong> In solids, the constituent particles are very closely packed. The <em>intermolecular force of attraction</em> is extremely strong, and the <em>intermolecular space</em> is almost negligible. Because particles cannot move from their fixed positions and can only vibrate, solids retain a definite shape and a definite volume.</p>
+                <p><strong>Gases:</strong> In gases, the particles are very loosely packed. The <em>intermolecular force of attraction</em> is negligible, and the <em>intermolecular spaces</em> are very large. Therefore, particles are free to move in any direction and fill the entire available space, giving gases neither a definite shape nor a definite volume.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">9. Draw a neat, labeled diagram of a single fixed pulley. State its theoretical mechanical advantage and velocity ratio.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p><em>(Student must draw a diagram showing a rigid support, a grooved wheel, a rope passing over it, Load (L) acting downwards on one end, and Effort (E) acting downwards on the other end.)</em></p>
+                <ul>
+                    <li><strong>Mechanical Advantage (MA):</strong> In a theoretical (ideal) single fixed pulley, the Effort required is equal to the Load. Therefore, \( \text{MA} = 1 \).</li>
+                    <li><strong>Velocity Ratio (VR):</strong> The distance moved by the effort is equal to the distance moved by the load. Therefore, \( \text{VR} = 1 \).</li>
+                </ul>
+                <p><em>Note:</em> Its only purpose is to change the direction of the applied effort to a more convenient downward direction.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">10. State the Law of Conservation of Mass. If 4g of carbon reacts completely with 10.6g of oxygen to form carbon dioxide, what will be the total mass of the carbon dioxide formed?</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <p><strong>Law of Conservation of Mass:</strong> It states that mass can neither be created nor destroyed in a chemical reaction. In a closed system, the total mass of the reactants is equal to the total mass of the products.</p>
+                <p><strong>Calculation:</strong></p>
+                <div class="math-scroll">
+                    \( \text{Mass of Reactants} = \text{Mass of Carbon} + \text{Mass of Oxygen} \)
+                </div>
+                <div class="math-scroll">
+                    \( \text{Mass of Reactants} = 4\text{g} + 10.6\text{g} = 14.6\text{g} \)
+                </div>
+                <p>According to the law, Mass of Products = Mass of Reactants.</p>
+                <p><strong>Ans:</strong> The total mass of the carbon dioxide formed is 14.6g.</p>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION C (15 Marks)</div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">11. (a) Define an inclined plane and state its primary use in daily life.<br>(b) A block and tackle system consists of 4 pulleys. If an effort of 200 N is required to lift a load of 600 N, calculate the Mechanical Advantage, Velocity Ratio, and Efficiency of the system.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a)</strong> An <strong>inclined plane</strong> is a rigid, flat sloping surface that connects a lower level to a higher level. <br>
+                    <strong>Use:</strong> It acts as a force multiplier and is used to easily load heavy drums or cargo into trucks by rolling or pushing them up the slope, requiring less effort than lifting them vertically.
+                </div>
+                <div class="sub-part">
+                    <strong>(b)</strong> Given:
+                    <ul>
+                        <li>Number of pulleys (n) = 4. Hence, Velocity Ratio (\( \text{VR} \)) = 4.</li>
+                        <li>Effort (\( \text{E} \)) = 200 N</li>
+                        <li>Load (\( \text{L} \)) = 600 N</li>
+                    </ul>
+                    <p><strong>1. Mechanical Advantage (MA):</strong></p>
+                    <div class="math-scroll">
+                        \( \text{MA} = \frac{\text{L}}{\text{E}} = \frac{600}{200} = 3 \)
+                    </div>
+                    <p><strong>2. Velocity Ratio (VR):</strong> For a block and tackle system, VR = total number of pulleys.</p>
+                    <div class="math-scroll">
+                        \( \text{VR} = 4 \)
+                    </div>
+                    <p><strong>3. Efficiency (\( \eta \)):</strong></p>
+                    <div class="math-scroll">
+                        \( \eta = \left( \frac{\text{MA}}{\text{VR}} \right) \times 100\% = \left( \frac{3}{4} \right) \times 100\% = 75\% \)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">12. (a) What is meant by a chemical formula? Write the chemical formulae for Calcium Carbonate and Magnesium Chloride.<br>(b) Write a balanced chemical equation for the reaction between Hydrogen and Oxygen to form Water.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Chemical Formula:</strong> A chemical formula is a symbolic representation of a molecule of an element or a compound. It denotes the exact number and types of atoms present in one molecule of that substance.<br><br>
+                    <strong>Formulae:</strong>
+                    <ul>
+                        <li>Calcium Carbonate: \( \text{CaCO}_3 \) (Valency of Ca is +2, CO₃ is -2)</li>
+                        <li>Magnesium Chloride: \( \text{MgCl}_2 \) (Valency of Mg is +2, Cl is -1)</li>
+                    </ul>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Balanced Chemical Equation:</strong><br>
+                    Hydrogen gas (\( \text{H}_2 \)) reacts with oxygen gas (\( \text{O}_2 \)) to form liquid water (\( \text{H}_2\text{O} \)).
+                    <div class="math-scroll" style="margin-top: 10px;">
+                        \( 2\text{H}_2(g) + \text{O}_2(g) \longrightarrow 2\text{H}_2\text{O}(l) \)
+                    </div>
+                    <em>(Balancing requires 2 molecules of Hydrogen reacting with 1 molecule of Oxygen to give 2 molecules of Water.)</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text">13. (a) Classify the following substances into elements, compounds, and mixtures: Iron, Air, Water, 22-carat gold.<br>(b) Explain how a pair of scissors (Class I lever) differs from a nutcracker (Class II lever) in terms of the relative position of Load, Effort, and Fulcrum. Draw simple line diagrams for both to support your answer.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="ans-content">
+                <span class="ans-label">Solution:</span>
+                <div class="sub-part">
+                    <strong>(a) Classification:</strong>
+                    <ul>
+                        <li><strong>Iron:</strong> Element (Made of only Fe atoms).</li>
+                        <li><strong>Air:</strong> Mixture (Homogeneous mixture of gases like N₂, O₂, CO₂, etc.).</li>
+                        <li><strong>Water:</strong> Compound (\( \text{H}_2\text{O} \), chemically combined in fixed ratio).</li>
+                        <li><strong>22-carat gold:</strong> Mixture (Alloy of Gold with Copper/Silver).</li>
+                    </ul>
+                </div>
+                <div class="sub-part">
+                    <strong>(b) Difference in Levers:</strong>
+                    <p><strong>Pair of Scissors (Class I lever):</strong> The <strong>Fulcrum (F)</strong> is located exactly in the middle, between the Load (L) at the blades and the Effort (E) applied at the handles. <br>
+                    <em>Configuration:</em> L --- F --- E</p>
+                    
+                    <p><strong>Nutcracker (Class II lever):</strong> The <strong>Load (L)</strong> (the nut) is placed in the middle, between the Fulcrum (F) at the hinge and the Effort (E) applied at the end of the handles.<br>
+                    <em>Configuration:</em> F --- L --- E</p>
+
+                    <p><em>(The student should draw a basic straight line indicating F, L, E relative positions and direction of arrows for both classes.)</em></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

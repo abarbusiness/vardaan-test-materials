@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering Mathematical equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #f9f9f9; 
+        }
+        .paper-container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; }
+        .institute-name { font-size: 22pt; font-weight: bold; color: #2c3e50; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; color: #34495e; }
+        
+        .section-title { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 8px 15px; 
+            margin: 30px 0 20px 0; 
+            font-weight: bold; 
+            border-radius: 4px;
+            font-size: 13pt;
+        }
+        .q-block { 
+            margin-bottom: 25px; 
+            border-bottom: 1px dashed #e2e8f0; 
+            padding-bottom: 15px;
+        }
+        .q-block:last-child { border-bottom: none; }
+        
+        .question-text { 
+            font-weight: bold; 
+            color: #2c3e50; 
+            background-color: #f1f5f9; 
+            padding: 12px; 
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 15px;
+        }
+        
+        .solution-text {
+            padding-left: 15px;
+            color: #166534;
+        }
+        
+        .marks-badge {
+            background-color: #ef4444;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .breakdown {
+            font-size: 10.5pt;
+            color: #64748b;
+            font-style: italic;
+            margin-top: 8px;
+            display: block;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 4px;
+        }
+
+        .math-box {
+            background-color: #f0fdf4;
+            padding: 10px;
+            border-left: 3px solid #22c55e;
+            margin: 10px 0;
+            border-radius: 3px;
+            overflow-x: auto;
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 10px; }
+            .paper-container { padding: 15px; box-shadow: none; border-radius: 0; }
+            .institute-name { font-size: 16pt; }
+            .question-text { flex-direction: column; }
+            .marks-badge { margin-top: 8px; align-self: flex-start; }
+            
+            /* Break long equations for mobile screens */
+            .mjx-chtml { white-space: normal !important; overflow-wrap: break-word; } 
+            .MathJax { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+            
+            /* Add block display to equations on very small screens so they don't break flex/grid layouts */
+            .math-box span.MathJax_Display {
+                 margin: 5px 0 !important;
+                 width: 100% !important;
+                 overflow-x: auto !important;
+            }
+        }
+        @media print {
+            body { background-color: #fff; width: 100%; margin: 0; padding: 0; }
+            .paper-container { box-shadow: none; padding: 0; }
+            .section-title { background-color: #e5e5e5 !important; color: #000 !important; border: 1px solid #000; }
+            .question-text { background-color: #f5f5f5 !important; border-left: 2px solid #000; color: #000 !important; }
+            .solution-text { color: #000 !important; }
+            .marks-badge { background-color: #fff !important; color: #000 !important; border: 1px solid #000; }
+            .math-box { background-color: transparent; border-left: 1px dashed #000; }
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">Answer Key & Detailed Solutions - Minor Test 17</div>
+            <div style="margin-top: 10px; color: #555;">Class: 6 ICSE | Subject: Physics (Force & Matter)</div>
+        </div>
+
+        <div class="section-title">SECTION A (10 Marks)</div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q1. Define matter. Give one example of a substance that exists naturally in all three states of matter.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> Anything that has mass and occupies space (has volume) is called <strong>matter</strong>.<br>
+                <strong>Example:</strong> Water (\(H_2O\)) exists naturally as ice (solid), water (liquid), and water vapour (gas).
+                <span class="breakdown">(1 mark for correct definition, 1 mark for correct example)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q2. What is meant by a 'non-contact force'? State any two examples of non-contact forces.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> The force that acts on an object from a distance, without any physical contact between the interacting bodies, is called a <strong>non-contact force</strong>.<br>
+                <strong>Examples:</strong> 1. Gravitational Force, 2. Magnetic Force (or Electrostatic Force).
+                <span class="breakdown">(1 mark for correct definition, 1 mark for any two correct examples)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q3. Numerical: Two teams play tug-of-war. Team A applies 150 N towards East, Team B applies 120 N towards West. Calculate net (resultant) force and direction.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> Since the forces are acting in opposite directions, the net (resultant) force is the difference between the magnitudes of the two forces.
+                <div class="math-box">
+                    \[ \text{Force by Team A } (F_A) = 150 \text{ N (East)} \]
+                    \[ \text{Force by Team B } (F_B) = 120 \text{ N (West)} \]
+                    \[ \text{Net Force } (F_{net}) = F_A - F_B \]
+                    \[ F_{net} = 150 \text{ N} - 120 \text{ N} = \mathbf{30 \text{ N}} \]
+                </div>
+                <strong>Direction of motion:</strong> The rope will move towards the <strong>East</strong>, because the force applied by Team A is greater.
+                <span class="breakdown">(1 mark for calculation of 30 N, 1 mark for stating the correct direction)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q4. Why do liquids have the ability to flow, whereas solids do not? Explain on the basis of intermolecular forces.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> In liquids, the <strong>intermolecular force of attraction</strong> is weaker compared to solids. Because of this weaker force, the molecules are not held rigidly in fixed positions; they can slide and slip over one another, giving liquids the ability to flow. In solids, strong intermolecular forces hold molecules tightly in fixed positions.
+                <span class="breakdown">(1 mark for stating weaker intermolecular force in liquids, 1 mark for connecting it to molecule sliding/flowing)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q5. State any two practical methods used to reduce friction between the moving parts of a machine.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> Two ways to reduce friction are:<br>
+                1. <strong>Lubrication:</strong> Applying lubricants like oil or grease between the moving parts.<br>
+                2. <strong>Using Ball Bearings:</strong> Converting sliding friction into rolling friction by using metal ball bearings.
+                <span class="breakdown">(1 mark for each valid method)</span>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION B (15 Marks)</div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q6. Distinguish between solids, liquids, and gases on the basis of: (a) Compressibility (b) Intermolecular space (c) Rigidity</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>(a) Compressibility:</strong> Solids cannot be compressed. Liquids are almost incompressible. Gases are highly compressible.<br>
+                <strong>(b) Intermolecular space:</strong> It is minimum (negligible) in solids, larger in liquids, and maximum in gases.<br>
+                <strong>(c) Rigidity:</strong> Solids are highly rigid (cannot change shape). Liquids are not rigid (fluid). Gases are highly non-rigid (highly fluid).
+                <span class="breakdown">(1 mark for each correct comparative point)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q7. Define the terms 'mass' and 'weight'. State any two distinct differences between mass and weight.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>Mass:</strong> The quantity of matter contained in a body is called its mass. <br>
+                <strong>Weight:</strong> The force of gravity with which the Earth (or any celestial body) attracts an object towards its center is called its weight.<br>
+                <strong>Differences (Any two):</strong>
+                <ul>
+                    <li>Mass is constant everywhere, whereas weight varies from place to place depending on gravity.</li>
+                    <li>The SI unit of mass is Kilogram (kg), whereas the SI unit of weight is Newton (N).</li>
+                    <li>Mass is a scalar quantity (only magnitude), whereas weight is a vector quantity (acts downwards).</li>
+                </ul>
+                <span class="breakdown">(1 mark for definitions, 2 marks for any two correct differences)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q8. State any three distinct effects a force can have, giving one everyday example for each effect.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> Three effects of force are:<br>
+                1. <strong>Force can start or stop motion:</strong> A stationary football starts moving when kicked, or catching a moving cricket ball stops it.<br>
+                2. <strong>Force can change the direction of a moving object:</strong> A tennis player hitting an incoming ball with a racket changes its direction.<br>
+                3. <strong>Force can change the shape and size of a body:</strong> Squeezing a lemon, stretching a rubber band, or crushing a can.
+                <span class="breakdown">(1 mark for each correctly stated effect with a relevant example)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q9. Give scientific reasons: (a) Dangerous to step on a banana peel. (b) Tyres have deep treads.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>(a) Banana Peel:</strong> The inner side of a banana peel is very smooth and acts as a lubricant. Stepping on it drastically <strong>reduces the friction</strong> between our foot and the ground, causing us to lose our grip and slip.<br>
+                <strong>(b) Tyres:</strong> Deep treads (grooves) make the surface of the tyre rough. This is done to <strong>increase friction</strong> between the tyre and the road, providing a better grip and preventing the vehicle from skidding on wet roads.
+                <span class="breakdown">(1.5 marks for reduced friction reasoning, 1.5 marks for increased friction/grip reasoning)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q10. A piece of sponge can be compressed easily, yet it is classified as a solid state of matter. Justify.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong> A sponge is classified as a solid because its main solid framework has a definite shape and volume. It appears highly compressible because it has minute holes (pores) throughout its structure in which air gets trapped.<br>
+                When we press or squeeze the sponge, we are merely expelling the <strong>trapped air</strong> out of these holes, allowing it to change its shape temporarily due to the applied force. Once the force is removed, it fills with air again and regains its original shape.
+                <span class="breakdown">(1 mark for identifying trapped air in pores, 1 mark for expulsion of air on squeezing, 1 mark for regaining shape)</span>
+            </div>
+        </div>
+
+        <div class="section-title">SECTION C (15 Marks)</div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q11. (a) Define friction. Is it contact or non-contact? (b) Describe an activity demonstrating force changing direction.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>(a)</strong> <strong>Friction</strong> is a force that comes into play when two surfaces rub against each other; it always opposes the relative motion between the two surfaces. <br>
+                It is a <strong>Contact Force</strong> because it arises only when two solid surfaces are physically touching each other. (2 Marks)<br><br>
+                <strong>(b) Activity/Example:</strong><br>
+                Consider a cricket match. When a bowler bowls the ball, it moves in a specific direction towards the batsman. The batsman uses his bat to apply a <strong>muscular force</strong> on the moving ball. Because of this force, the ball is hit towards the boundary, completely changing its initial path. This demonstrates that a force can change the direction of a moving object. (3 Marks)
+                <span class="breakdown">(1 mark for friction definition, 1 mark for contact force, 3 marks for a clear, well-explained example/activity changing direction)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q12. (a) Experiment to prove air occupies space. (b) What happens to intermolecular space and force when solid melts?</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>(a) Experiment:</strong><br>
+                <em>Materials:</em> A glass trough filled with water, an empty glass tumbler.<br>
+                <em>Procedure:</em> Push the empty glass tumbler upside down (inverted) straight into the water trough. You will notice that water does not enter the tumbler. Now, tilt the tumbler slightly. You will see bubbles of air coming out, and water rushes in to take its place.<br>
+                <em>Conclusion:</em> The "empty" glass was actually filled with air. The water could not enter initially because air occupied the empty space inside the glass. This proves matter (air) occupies space. (3 Marks)<br><br>
+                <strong>(b) Kinetic Theory during Melting:</strong><br>
+                When a solid is heated, its molecules gain kinetic energy and vibrate vigorously. As it melts into a liquid:<br>
+                - The <strong>intermolecular space increases</strong> as molecules move slightly further apart.<br>
+                - The <strong>intermolecular force of attraction decreases</strong> (weakens), allowing molecules to slide over one another instead of being locked in place. (2 Marks)
+                <span class="breakdown">(3 marks for logical steps and conclusion of experiment; 1 mark for space increase, 1 mark for force decrease)</span>
+            </div>
+        </div>
+
+        <div class="q-block">
+            <div class="question-text">
+                <div>Q13. (a) Muscular vs Magnetic force. (b) Numerical: Three friends pushing a box. Calculate Net Resultant force.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-text">
+                <strong>Ans:</strong><br>
+                <strong>(a) Differentiation:</strong><br>
+                - <em>Muscular Force:</em> The contact force exerted by the action of muscles of living beings (e.g., human lifting a heavy bag).<br>
+                - <em>Magnetic Force:</em> The non-contact force exerted by a magnet to attract magnetic materials like iron from a distance. (2 Marks)<br><br>
+                <strong>(b) Numerical on Resultant Force:</strong><br>
+                Forces applied in the same direction add up. Forces in the opposite direction subtract.
+                <div class="math-box">
+                    \[ \text{Total Force towards Right (Rahul + Amit)} = 30 \text{ N} + 25 \text{ N} = 55 \text{ N} \]
+                    \[ \text{Total Force towards Left (Sumit)} = 40 \text{ N} \]
+                    \[ \text{Net Resultant Force } (F_{net}) = \text{Force Right} - \text{Force Left} \]
+                    \[ F_{net} = 55 \text{ N} - 40 \text{ N} = \mathbf{15 \text{ N}} \]
+                </div>
+                <strong>Direction:</strong> Since the total force towards the right (55 N) is greater than the force towards the left (40 N), the box will move towards the <strong>Right</strong>. (3 Marks)
+                <span class="breakdown">(2 marks for differentiation, 1.5 marks for correct calculation of 15 N, 1.5 marks for correctly stating the direction)</span>
+            </div>
+        </div>
+
+        <div class="header" style="border-bottom: none; border-top: 1px solid #e2e8f0; padding-top: 20px; font-size: 11pt; color: #64748b;">
+            End of Solution Document &copy; Team Vardaan
+        </div>
+    </div>
+</body>
+</html>

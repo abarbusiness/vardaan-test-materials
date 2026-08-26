@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            max-width: 600px;
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; display: flex; }
+        .sub-q-num { width: 30px; flex-shrink: 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100%;
+                padding: 15px;
+                font-size: 11pt;
+            }
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .q-num { width: 25px; }
+            .sub-question { margin-left: 10px; }
+            .watermark { width: 90%; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark" onerror="this.style.display='none'">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 17</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Physics (Force & Matter)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working for numericals.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define matter. Give one example of a substance that exists naturally in all three states of matter.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">What is meant by a 'non-contact force'? State any two examples of non-contact forces.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content"><strong>Numerical:</strong> Two teams are playing a game of tug-of-war. Team A applies a force of 150 N towards the East, and Team B applies a force of 120 N towards the West. Calculate the net (resultant) force and state the direction in which the rope will move.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Why do liquids have the ability to flow, whereas solids do not? Explain on the basis of intermolecular forces.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">State any two practical methods used to reduce friction between the moving parts of a machine.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Distinguish between solids, liquids, and gases on the basis of the following properties:
+            <div class="sub-question"><div class="sub-q-num">(a)</div><div>Compressibility</div></div>
+            <div class="sub-question"><div class="sub-q-num">(b)</div><div>Intermolecular space</div></div>
+            <div class="sub-question"><div class="sub-q-num">(c)</div><div>Rigidity</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Define the terms 'mass' and 'weight'. State any two distinct differences between mass and weight.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">A force can produce various effects on an object. State any three distinct effects a force can have, giving one everyday example for each effect.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Give scientific reasons for the following:
+            <div class="sub-question"><div class="sub-q-num">(a)</div><div>It is dangerous and easy to slip on a banana peel thrown on the road.</div></div>
+            <div class="sub-question"><div class="sub-q-num">(b)</div><div>Deep treads (grooves) are made on the tyres of vehicles.</div></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A piece of sponge can be compressed easily when squeezed with our hands, yet it is classified as a solid state of matter. Give scientific reasons to justify this statement.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div>Define friction. Is friction considered a contact force or a non-contact force? (2 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div>Describe a simple activity or example from your daily life to demonstrate that a force can change the direction of a moving object. (3 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div>Describe a simple experiment to prove that matter (using the example of air) occupies space. (3 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div>According to the kinetic theory of matter, what happens to the intermolecular space and intermolecular force when a solid is heated and melts into a liquid? (2 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">
+                <div class="sub-q-num">(a)</div>
+                <div>Differentiate between muscular force and magnetic force giving the basic definition of each. (2 Marks)</div>
+            </div>
+            <div class="sub-question">
+                <div class="sub-q-num">(b)</div>
+                <div><strong>Numerical:</strong> Three friends are pushing a heavy wooden box. Rahul and Amit push the box towards the right with forces of 30 N and 25 N respectively. Sumit pushes the box from the opposite side towards the left with a force of 40 N. Calculate the net (resultant) force acting on the box and state the direction in which the box will move. (3 Marks)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

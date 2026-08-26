@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; }
+        .test-name { font-size: clamp(12pt, 3vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b71c1c; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; background: #e0e0e0; padding: 5px; }
+        
+        .question-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .q-header-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .q-text-container { display: flex; flex-grow: 1; padding-right: 15px; }
+        .q-num { font-weight: bold; width: 30px; flex-shrink: 0; }
+        .q-content { font-weight: bold; color: #333; }
+        
+        .marks-badge { 
+            background: #e3f2fd; 
+            color: #1565c0; 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            white-space: nowrap; 
+            flex-shrink: 0;
+            border: 1px solid #90caf9;
+        }
+        
+        .solution-box {
+            background-color: #fcfcfc;
+            border-left: 4px solid #4CAF50;
+            padding: 12px 15px;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .sol-label { font-weight: bold; color: #2e7d32; margin-bottom: 5px; display: inline-block;}
+        .step-marks { float: right; color: #d32f2f; font-size: 10pt; font-style: italic; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; display: block; padding: 5px 0; }
+        table.diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table.diff-table th, table.diff-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        table.diff-table th { background-color: #f0f0f0; }
+
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .q-header-row { flex-direction: column; }
+            .marks-badge { align-self: flex-end; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">SOLUTIONS & MARKING SCHEME - Minor Test 16</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">1.</div>
+                <div class="q-content">Define lateral inversion. Give one example of a letter in the English alphabet that does not show lateral inversion.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <span class="step-marks">[1 M]</span>
+            <p>The phenomenon where the left side of an object appears as the right side of its image in a plane mirror (and vice-versa) is called lateral inversion.</p>
+            <span class="step-marks">[1 M]</span>
+            <p><strong>Example:</strong> The letter 'A' (or H, I, M, O, T, U, V, W, X, Y) does not show lateral inversion as it is symmetrical.</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">2.</div>
+                <div class="q-content">Define the terms <em>Atomic Number</em> and <em>Mass Number</em> of an atom.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <p><span class="step-marks">[1 M]</span><strong>Atomic Number (Z):</strong> The total number of protons present in the nucleus of an atom is called its atomic number.</p>
+            <p><span class="step-marks">[1 M]</span><strong>Mass Number (A):</strong> The sum of the total number of protons and neutrons present in the nucleus of an atom is called its mass number.</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">3.</div>
+                <div class="q-content">State the two laws of reflection of light.</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <ol>
+                <li><span class="step-marks">[1 M]</span> The angle of incidence is always equal to the angle of reflection. (\( \angle i = \angle r \))</li>
+                <li><span class="step-marks">[1 M]</span> The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">4.</div>
+                <div class="q-content">Write the chemical symbols for the following elements: (a) Potassium (b) Gold (c) Iron (d) Lead</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span> <span class="step-marks">[0.5 M each]</span>
+            <ul>
+                <li>(a) Potassium : <strong>K</strong></li>
+                <li>(b) Gold : <strong>Au</strong></li>
+                <li>(c) Iron : <strong>Fe</strong></li>
+                <li>(d) Lead : <strong>Pb</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">5.</div>
+                <div class="q-content">What is a virtual image? Can it be obtained on a screen?</div>
+            </div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <p><span class="step-marks">[1 M]</span> An image that is formed when reflected light rays appear to meet (but do not actually meet) is called a virtual image.</p>
+            <p><span class="step-marks">[1 M]</span> No, a virtual image cannot be obtained on a screen.</p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+    
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">6.</div>
+                <div class="q-content">Differentiate between an atom and a molecule. (Give any three points of difference).</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span> <span class="step-marks">[1 M per correct point = 3 M]</span>
+            <div class="math-scroll">
+                <table class="diff-table">
+                    <tr><th>Atom</th><th>Molecule</th></tr>
+                    <tr><td>It is the smallest particle of an element.</td><td>It is the smallest particle of an element or a compound.</td></tr>
+                    <tr><td>It may or may not exist independently.</td><td>It is capable of independent existence.</td></tr>
+                    <tr><td>Atoms are highly reactive (except noble gases).</td><td>Molecules are generally less reactive and more stable.</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">7.</div>
+                <div class="q-content">An object is placed 15 cm in front of a plane mirror.<br>(a) What is the distance between the object and its image?<br>(b) State any two characteristics of the image formed by a plane mirror.</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <p><span class="step-marks">[1.5 M]</span> <strong>(a)</strong> In a plane mirror, object distance = image distance. <br>
+            Image is 15 cm behind the mirror. <br>
+            Total distance = Object distance + Image distance = 15 cm + 15 cm = <strong>30 cm</strong>.</p>
+            <p><span class="step-marks">[0.75 M each = 1.5 M]</span> <strong>(b) Characteristics:</strong> 
+                <br>1. The image is virtual and erect.
+                <br>2. It is of the same size as the object. (Or: It is laterally inverted).
+            </p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">8.</div>
+                <div class="q-content">An element 'X' has 11 protons and 12 neutrons in its nucleus.<br>(a) Calculate its atomic number and mass number.<br>(b) Identify and name the element 'X'.<br>(c) What is the valency of this element?</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <p><span class="step-marks">[1 M]</span> <strong>(a)</strong> Atomic number (Z) = Number of protons = <strong>11</strong>. <br>
+               Mass number (A) = Protons + Neutrons = 11 + 12 = <strong>23</strong>.</p>
+            <p><span class="step-marks">[1 M]</span> <strong>(b)</strong> The element with atomic number 11 is <strong>Sodium (Na)</strong>.</p>
+            <p><span class="step-marks">[1 M]</span> <strong>(c)</strong> The valency of Sodium is <strong>1</strong>.</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">9.</div>
+                <div class="q-content">(a) Name the three primary colours of light.<br>(b) What is the speed of light in a vacuum?</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span>
+            <p><span class="step-marks">[1.5 M]</span> <strong>(a)</strong> The three primary colours of light are <strong>Red, Green, and Blue (RGB)</strong>.</p>
+            <p><span class="step-marks">[1.5 M]</span> <strong>(b)</strong> The speed of light in a vacuum is <strong>\( 3 \times 10^8 \text{ m/s} \)</strong> (or \( 3,00,000 \text{ km/s} \)).</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">10.</div>
+                <div class="q-content">Write the chemical formula of the following compounds using the criss-cross method (show the steps):<br>(a) Magnesium chloride (b) Aluminium oxide (c) Calcium hydroxide</div>
+            </div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer:</span> <span class="step-marks">[1 M each]</span>
+            <div class="math-scroll">
+                <p><strong>(a) Magnesium chloride:</strong> Symbols: Mg, Cl. Valencies: Mg (2), Cl (1). <br>
+                Criss-cross: Mg\(_1\)Cl\(_2\) &rarr; <strong>MgCl\(_2\)</strong></p>
+                <p><strong>(b) Aluminium oxide:</strong> Symbols: Al, O. Valencies: Al (3), O (2). <br>
+                Criss-cross: Al\(_2\)O\(_3\) &rarr; <strong>Al\(_2\)O\(_3\)</strong></p>
+                <p><strong>(c) Calcium hydroxide:</strong> Symbols: Ca, OH. Valencies: Ca (2), OH (1). <br>
+                Criss-cross: Ca\(_1\)(OH)\(_2\) &rarr; <strong>Ca(OH)\(_2\)</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+    
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">11.</div>
+                <div class="q-content">(a) State any three main postulates of Dalton's Atomic Theory.<br>(b) Define the term <em>atomicity</em>. State the atomicity of Oxygen gas.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer (a):</span> <span class="step-marks">[1 M per postulate = 3 M]</span>
+            <ul>
+                <li>Matter consists of very small indivisible particles called atoms.</li>
+                <li>Atoms can neither be created nor destroyed.</li>
+                <li>Atoms of a given element are identical in all respects (mass, size, properties). <em>(Accept any valid postulate)</em></li>
+            </ul>
+            <span class="sol-label">Answer (b):</span> 
+            <p><span class="step-marks">[1 M]</span> <strong>Atomicity:</strong> The total number of atoms present in one molecule of an element or compound is called its atomicity.</p>
+            <p><span class="step-marks">[1 M]</span> The atomicity of Oxygen gas (\(O_2\)) is <strong>2</strong> (it is diatomic).</p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">12.</div>
+                <div class="q-content">(a) Differentiate between a real image and a virtual image (any two points).<br>(b) How is a shadow formed? State any two characteristics of a shadow formed by an opaque object.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer (a):</span> <span class="step-marks">[1 M per point = 2 M]</span>
+            <div class="math-scroll">
+                <table class="diff-table">
+                    <tr><th>Real Image</th><th>Virtual Image</th></tr>
+                    <tr><td>Formed when reflected light rays actually meet.</td><td>Formed when light rays appear to meet behind the mirror.</td></tr>
+                    <tr><td>Can be obtained on a screen.</td><td>Cannot be obtained on a screen.</td></tr>
+                    <tr><td>Always inverted.</td><td>Always erect.</td></tr>
+                </table>
+            </div>
+            <span class="sol-label">Answer (b):</span>
+            <p><span class="step-marks">[1 M]</span> <strong>Formation:</strong> A shadow is formed when an opaque object blocks the path of light, creating a dark region behind it.</p>
+            <p><span class="step-marks">[1 M each = 2 M]</span> <strong>Characteristics:</strong>
+                <br>1. A shadow is always black or dark, regardless of the colour of the object.
+                <br>2. It only shows the shape or outline of the object, not the details.
+            </p>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="q-header-row">
+            <div class="q-text-container">
+                <div class="q-num">13.</div>
+                <div class="q-content">(a) Classify the following changes as physical or chemical changes: (i) Rusting of iron (ii) Melting of wax (iii) Burning of paper.<br>(b) State any two differences between metals and non-metals based on their physical properties.</div>
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <span class="sol-label">Answer (a):</span> <span class="step-marks">[1 M each = 3 M]</span>
+            <ul>
+                <li>(i) Rusting of iron: <strong>Chemical Change</strong> (a new substance is formed).</li>
+                <li>(ii) Melting of wax: <strong>Physical Change</strong> (only state changes, no new substance).</li>
+                <li>(iii) Burning of paper: <strong>Chemical Change</strong> (ash and gases are formed).</li>
+            </ul>
+            <span class="sol-label">Answer (b):</span> <span class="step-marks">[1 M per point = 2 M]</span>
+            <div class="math-scroll">
+                <table class="diff-table">
+                    <tr><th>Metals</th><th>Non-metals</th></tr>
+                    <tr><td>Generally lustrous (shiny).</td><td>Generally dull in appearance.</td></tr>
+                    <tr><td>Good conductors of heat and electricity.</td><td>Poor conductors of heat and electricity.</td></tr>
+                    <tr><td>Malleable and ductile.</td><td>Brittle.</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

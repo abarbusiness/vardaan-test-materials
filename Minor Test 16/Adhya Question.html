@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <style>
+        /* Base styles for print and screen */
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto; 
+            padding: 20px; /* Adjusted padding for better screen viewing */
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        /* Watermark styling */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+            max-width: 600px;
+        }
+
+        /* Header section */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            gap: 10px; /* Space between flex items when wrapped */
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+
+        /* Sections and Questions */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; /* slightly smaller width for mobile */
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .math-expr {
+            font-style: italic;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            font-size: 90%;
+            margin: 0 2px;
+        }
+        .fraction span:first-child {
+            border-bottom: 1px solid #000;
+            padding: 0 2px;
+        }
+        .fraction span:last-child {
+            padding: 0 2px;
+        }
+
+        /* Footer */
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { font-size: 10pt; flex-direction: column; align-items: center; }
+            .exam-details span { margin-bottom: 5px; }
+            @page { margin: 10mm; }
+        }
+        
+        @media (max-width: 480px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 16pt; }
+            .q-num { width: 25px; }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show working where necessary.</li>
+                <li>Topics Covered: Ratio and Proportion, Idea of Speed, Distance and Time.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Express the following ratio in its simplest form: 15 : 25
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            A boy runs a distance of 100 meters in 20 seconds. Find his speed.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Find the ratio of 40 cm to 1 meter.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Convert a speed of 18 km/hr into m/s.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If <span class="math-expr">x</span> : 3 = 10 : 15, find the value of <span class="math-expr">x</span>.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Divide ₹600 between Amit and Sumit in the ratio 2 : 3.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A car is moving with a constant speed of 40 km/hr. How much distance will it cover in 3 hours?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Are the numbers 2, 4, 6, and 12 in proportion? Show your working clearly.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            If the cost of 4 pens is ₹48, find the cost of 7 such pens.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Convert a speed of 15 m/s into km/hr.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            In a school, there are 400 boys and 300 girls. Find the ratio of:
+            <div class="sub-question">(i) The number of boys to the number of girls. (2 marks)</div>
+            <div class="sub-question">(ii) The number of girls to the total number of students. (3 marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A bus travels a distance of 180 km in 4 hours.
+            <div class="sub-question">(i) Calculate the speed of the bus in km/hr. (2 marks)</div>
+            <div class="sub-question">(ii) At this speed, how much time will it take to travel 270 km? (3 marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Answer the following questions:
+            <div class="sub-question">(i) Find the value of <span class="math-expr">y</span> if 5, <span class="math-expr">y</span>, 15, and 27 are in proportion. (2.5 marks)</div>
+            <div class="sub-question">(ii) A man walks at a speed of 5 m/s. How far will he walk in 2 minutes? (Give your answer in meters). (2.5 marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- MathJax for rendering electronic configurations in solutions -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: transparent; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #000;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        
+        .solutions-container {
+            margin-top: 20px;
+        }
+        .solution-block {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1.5px dashed var(--primary-yellow);
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .q-text { 
+            font-weight: normal; 
+            margin: 0; 
+            display: flex; 
+            flex-grow: 1; 
+            padding-right: 15px; 
+        }
+        .q-num { 
+            min-width: 25px; 
+            font-weight: bold; 
+        }
+        .marks { 
+            font-weight: bold; 
+            background-color: var(--primary-yellow); 
+            padding: 3px 8px; 
+            border-radius: 4px; 
+            font-size: 9.5pt; 
+            white-space: nowrap; 
+        }
+        
+        .correct-answer {
+            color: #2e7d32; /* Dark Green */
+            font-weight: bold;
+            margin: 5px 0 8px 25px;
+            padding: 6px 10px;
+            background-color: #e8f5e9; /* Light Green background */
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 10.5pt;
+        }
+        .explanation {
+            margin-left: 25px;
+            font-size: 10.5pt;
+            color: #333;
+        }
+        .explanation strong { color: #000; }
+
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 2px solid var(--primary-yellow); 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks { margin-top: 5px; margin-left: 25px; align-self: flex-start; }
+            .explanation, .correct-answer { margin-left: 0; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Electronic Configuration</div>
+    </div>
+
+    <div class="solutions-container">
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">1.</span><span>The general outer electronic configuration of s-block elements is represented as:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: A) \( ns^{1-2} \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> s-block elements consist of Group 1 (Alkali metals, \( ns^1 \)) and Group 2 (Alkaline earth metals, \( ns^2 \)). Therefore, their combined general configuration is \( ns^{1-2} \).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">2.</span><span>According to NCERT, the correct general electronic configuration for d-block elements is:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) \( (n-1)d^{1-10} ns^{0-2} \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Most d-block elements have \( ns^{1-2} \), but Palladium (Pd) has an exceptional configuration of \( [\text{Kr}] 4d^{10} 5s^0 \). Thus, the correct general NCERT formula includes \( ns^0 \), making it \( ns^{0-2} \).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">3.</span><span>What is the correct electronic configuration of Copper (\( Z=29 \))?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) \( [\text{Ar}] 3d^{10} 4s^1 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> An electron jumps from the 4s orbital to the 3d orbital to achieve a fully filled, highly stable \( d^{10} \) state due to symmetry and maximum exchange energy.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">4.</span><span>Identify the electronic configuration of the \( \text{Cr}^{3+} \) ion (\( Z=24 \)):</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) \( [\text{Ar}] 3d^3 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Chromium ground state: \( [\text{Ar}] 3d^5 4s^1 \). To form \( \text{Cr}^{3+} \), remove 3 electrons (first from 4s, then two from 3d). Result: \( [\text{Ar}] 3d^3 \).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">5.</span><span>Palladium (\( Z=46 \)) exhibits an exceptional configuration. Which of the following is correct?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: D) \( [\text{Kr}] 4d^{10} 5s^0 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Palladium transfers both its 5s electrons to the 4d subshell to achieve a completely filled \( 4d^{10} \) configuration, gaining immense stability.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">6.</span><span>Which of the following ions possesses a \( 3d^5 \) outer configuration?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: D) All of the above</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Mn (\( 3d^5 4s^2 \)) \(\rightarrow \text{Mn}^{2+}\) (\( 3d^5 \)). Fe (\( 3d^6 4s^2 \)) \(\rightarrow \text{Fe}^{3+}\) (\( 3d^5 \)). Cr (\( 3d^5 4s^1 \)) \(\rightarrow \text{Cr}^{+}\) (\( 3d^5 \)).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">7.</span><span>The element with the electronic configuration \( [\text{Rn}] 5f^{14} 6d^1 7s^2 \) belongs to which block?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: D) f-block</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> This is Lawrencium (\( Z=103 \)). According to IUPAC/NCERT, it completes the Actinide series, making it an f-block element, despite the last electron theoretically entering the 6d orbital.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">8.</span><span>An element has the outer electronic configuration \( 3s^2 3p^4 \). Which group does it belong to?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) Group 16</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> For p-block elements, Group = 10 + valence electrons (s + p). Valence electrons = 2 + 4 = 6. Group = 10 + 6 = 16 (Sulfur family).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">9.</span><span>What is the period number of the element with the configuration \( [\text{Ar}] 3d^{10} 4s^2 4p^3 \)?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 4</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> The period number is determined by the highest principal quantum number (n) of the outermost shell. The highest 'n' here is 4.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">10.</span><span>The total number of unpaired electrons in \( \text{Fe}^{2+} \) (\( Z=26 \)) is:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: A) 4</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Fe is \( 3d^6 4s^2 \). \( \text{Fe}^{2+} \) is \( 3d^6 \). Filling 5 d-orbitals with 6 electrons gives 1 paired and 4 unpaired electrons according to Hund's Rule.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">11.</span><span>Which of the following represents the general electronic configuration of Halogens?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) \( ns^2 np^5 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Halogens (Group 17) have 7 valence electrons, distributed as 2 in the s-subshell and 5 in the p-subshell.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">12.</span><span>What is the atomic number of the element whose outermost configuration is \( 4s^1 \) and lies in Group 1?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 19</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Full configuration: \( 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 \). Adding electrons: 2+2+6+2+6+1 = 19 (Potassium).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">13.</span><span>Gadolinium (\( Z=64 \)) shows extra stability. Its anomalous configuration is:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) \( [\text{Xe}] 4f^7 5d^1 6s^2 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> To achieve a stable, exactly half-filled f-subshell (\( f^7 \)), one electron enters the 5d orbital instead of the 4f orbital.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">14.</span><span>The element with the configuration \( 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 \) belongs to the family of:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) Alkaline earth metals</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Elements with general outer configuration \( ns^2 \) belong to Group 2, the Alkaline Earth Metals (This is Calcium, Z=20).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">15.</span><span>How many electrons are present in the 3d-subshell of a \( \text{Zn}^{2+} \) ion (\( Z=30 \))?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 10</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Zinc ground state: \( [\text{Ar}] 3d^{10} 4s^2 \). When it forms \( \text{Zn}^{2+} \), it loses the 4s electrons. The 3d subshell retains all 10 electrons.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">16.</span><span>Which of the following elements has the maximum number of unpaired electrons in its ground state?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) Cr (\( Z=24 \))</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Chromium (\( 3d^5 4s^1 \)) has 5 unpaired in 3d and 1 in 4s, totaling 6 unpaired electrons.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">17.</span><span>Identify the group of isoelectronic species among the following:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) Both A and B</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Isoelectronic species have the same number of electrons. Group A (\( \text{N}^{3-}, \text{O}^{2-}, \text{F}^- \)) and Group B (\( \text{Na}^+, \text{Mg}^{2+}, \text{Al}^{3+} \)) all have exactly 10 electrons.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">18.</span><span>What is the predicted outer electronic configuration of Unnilennium (\( Z=109 \))?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: A) \( 5f^{14} 6d^7 7s^2 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Element 109 falls in Group 9 of the d-block. It follows the configuration pattern of that group in the 7th period.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">19.</span><span>The configuration \( [\text{Kr}] 4d^{10} 5s^1 \) represents which element?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) Silver</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> This is the anomalous configuration of Silver (Ag, \( Z=47 \)). An electron shifts from 5s to 4d to achieve a stable fully-filled \( d^{10} \) configuration.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">20.</span><span>An element with the valence shell configuration \( nd^2 ns^2 \) belongs to:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) Group 4</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> For d-block elements, the group number is the sum of (n-1)d and ns electrons. 2+2 = 4 (e.g., Titanium).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">21.</span><span>According to the (n+l) rule, the 4s orbital is filled before the 3d orbital because:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 4s has lower energy than 3d</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Aufbau principle: For 4s, (n+l) = 4+0 = 4. For 3d, (n+l) = 3+2 = 5. Since 4 < 5, 4s is lower in energy.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">22.</span><span>If an element has atomic number 35, how many electrons does its valence p-orbital contain?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) 5</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Atomic number 35 is Bromine: \( [\text{Ar}] 3d^{10} 4s^2 4p^5 \). The valence p-orbital (4p) contains 5 electrons.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">23.</span><span>Noble gases (excluding Helium) are characterized by the general outer electronic configuration:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: C) \( ns^2 np^6 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Noble gases possess a completely filled outermost shell (stable octet), configuration \( ns^2 np^6 \).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">24.</span><span>The element with electronic configuration \( 1s^2 2s^2 2p^6 3s^2 3p^3 \) is classified generally as a:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) Non-metal</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Atomic number 15 (Phosphorus). With 5 valence electrons, it falls on the right side of the periodic table, classifying it as a non-metal.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">25.</span><span>Zinc (\( Z=30 \)) is excluded from the family of true transition elements because:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) It has completely filled d-orbitals in its ground state.</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> A transition element must have incompletely filled d-orbitals in its ground state or stable oxidation states. Zinc (\( 3d^{10} \)) does not.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">26.</span><span>What is the atomic number of the element placed immediately below the element with \( Z=15 \) in the periodic table?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 33</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Z=15 is Period 3. To find the element below it in Period 4, add 18 (due to the d-block elements inserted). 15 + 18 = 33 (Arsenic).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">27.</span><span>Identify the INCORRECT statement regarding electronic configurations:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) Fully filled orbitals have min exchange energy.</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Fully filled and half-filled orbitals actually have <strong>maximum</strong> exchange energy, which contributes to their high stability.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">28.</span><span>The outermost electronic configuration of the most electronegative element (Fluorine) is:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: A) \( 2s^2 2p^5 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Fluorine (Z=9) has the configuration \( 1s^2 2s^2 2p^5 \). Its outermost shell (n=2) is \( 2s^2 2p^5 \).
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">29.</span><span>How many electrons can be accommodated in the subshell characterized by \( n=4, l=3 \)?</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) 14</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> \( l=3 \) is the f-subshell. Number of orbitals = 2l+1 = 7. Each holds 2 electrons. Max electrons = 7 x 2 = 14.
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="q-header">
+                <div class="q-text"><span class="q-num">30.</span><span>The element Oganesson (\( Z=118 \)) is predicted to have the outer electronic configuration:</span></div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-answer">Correct Option: B) \( 7s^2 7p^6 \)</div>
+            <div class="explanation">
+                <strong>Explanation:</strong> Oganesson is a noble gas at the end of the 7th period. It completes the 7th shell p-block, yielding the stable \( 7s^2 7p^6 \) configuration.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan &bull; Best of Luck!</div>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Vardaan Learning Institute</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --correct-bg: #e8f5e9;
+            --correct-text: #2e7d32;
+        }
+        
+        @page { size: A4; margin: 20mm; }
+        
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid var(--primary-yellow); 
+            border-top: 3px solid var(--primary-yellow);
+            padding: 15px 0; 
+        }
+        
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #333;
+        }
+
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            font-size: 13pt; 
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid var(--primary-yellow);
+        }
+        
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 20px; 
+            page-break-inside: avoid;
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .question-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .explanation {
+            margin-left: 20px;
+            border-left: 3px solid #eee;
+            padding-left: 15px;
+            color: #444;
+        }
+
+        /* Responsive Math container to prevent overflow */
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.05 !important; }
+        }
+        
+        @media (max-width: 768px) {
+            body { width: 100%; padding: 15px; margin: 0; min-height: auto; font-size: 10.5pt; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            .explanation { margin-left: 5px; padding-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Minor Test 17 (Class 7 Science)</div>
+    </div>
+
+    <div class="section-header">SECTION A SOLUTIONS</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">1. Define the terms 'opaque' and 'transparent' materials. Give one example of each.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Opaque Materials (1 Mark):</strong> Materials that do not allow light to pass through them at all are called opaque materials. We cannot see through them. <br>
+            <em>Example:</em> Wood, stone, or iron. <br><br>
+            <strong>Transparent Materials (1 Mark):</strong> Materials that allow light to pass through them completely are called transparent materials. We can see through them clearly.<br>
+            <em>Example:</em> Clear glass, pure water, or air.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">2. What is a simple pendulum? Define the term 'time period' in the context of a simple pendulum.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Simple Pendulum (1 Mark):</strong> A simple pendulum consists of a small metallic ball (called a bob) suspended by a long thread from a rigid stand. <br><br>
+            <strong>Time Period (1 Mark):</strong> The time taken by the pendulum to complete one full oscillation (one complete to-and-fro motion) is called its time period.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">3. State the three essential conditions necessary for a shadow to be formed.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            To form a shadow, the following three conditions are strictly required (Partial marking applies):
+            <ul>
+                <li>A source of light.</li>
+                <li>An opaque object to block the path of light.</li>
+                <li>A screen (or surface) behind the object on which the shadow can be formed.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">4. Convert a speed of 54 km/h into m/s. Show your calculation steps clearly.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Formula/Concept:</strong> To convert km/h to m/s, we multiply the value by \( \frac{5}{18} \) (since \( 1 \text{ km} = 1000 \text{ m} \) and \( 1 \text{ hour} = 3600 \text{ s} \)).<br><br>
+            <div class="math-container">
+                \( \text{Speed in m/s} = 54 \times \frac{5}{18} \) <br><br>
+                \( = 3 \times 5 = 15 \text{ m/s} \)
+            </div><br>
+            <strong>Answer:</strong> The speed is <strong>15 m/s</strong>. (1 Mark for formula/substitution, 1 Mark for correct final answer with unit).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">5. Differentiate between uniform motion and non-uniform motion with the help of one example for each.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Uniform Motion (1 Mark):</strong> An object moving along a straight line with a constant speed is said to be in uniform motion. It covers equal distances in equal intervals of time. <br>
+            <em>Example:</em> A car moving on a straight, clear highway at a steady speed of 60 km/h.<br><br>
+            <strong>Non-Uniform Motion (1 Mark):</strong> If the speed of an object moving along a straight line keeps changing, its motion is said to be non-uniform. It covers unequal distances in equal intervals of time. <br>
+            <em>Example:</em> A train approaching a station (slowing down) or a car in crowded city traffic.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B SOLUTIONS</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">6. Describe the basic principle behind the working of a pinhole camera. State the two characteristics of the image formed by it.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Principle (1 Mark):</strong> A pinhole camera works on the principle of the <em>rectilinear propagation of light</em>, which means light travels in a straight line.<br><br>
+            <strong>Characteristics of the Image (2 Marks):</strong>
+            <ol>
+                <li>The image formed is <strong>inverted</strong> (upside down) because light rays traveling in straight lines cross each other at the pinhole.</li>
+                <li>The image is usually <strong>smaller than the object</strong> (diminished) and maintains the color of the object (unlike a shadow).</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">7. A simple pendulum takes 32 seconds to complete 20 oscillations. What is the time period of the pendulum? Calculate its frequency.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Given:</strong><br>
+            Time taken (\( t \)) = 32 seconds<br>
+            Number of oscillations (\( n \)) = 20<br><br>
+            <strong>(a) Time Period (T): (1.5 Marks)</strong><br>
+            <div class="math-container">
+                \( \text{Time Period } (T) = \frac{\text{Total time taken}}{\text{Number of oscillations}} \) <br><br>
+                \( T = \frac{32}{20} = 1.6 \text{ seconds} \)
+            </div><br>
+            <strong>(b) Frequency (f): (1.5 Marks)</strong><br>
+            <div class="math-container">
+                Frequency is the number of oscillations per second. <br>
+                \( f = \frac{\text{Number of oscillations}}{\text{Total time taken}} \) OR \( f = \frac{1}{T} \)<br><br>
+                \( f = \frac{20}{32} = 0.625 \text{ Hz (oscillations per second)} \)
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">8. Explain how a shadow of an object differs from the image of the same object formed by a plane mirror. State any three differences.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <em>(1 Mark for each valid difference)</em>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <tr>
+                    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Shadow</th>
+                    <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Image in a Plane Mirror</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">It is formed when an opaque object blocks light.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">It is formed when light is reflected from a shiny surface.</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">A shadow is always black/dark, regardless of the object's color.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">An image gives all the details and colors of the object.</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">It shows only the outline (shape) of the object, not the details.</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">It shows every minute detail of the object (but laterally inverted).</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">9. Salma takes 15 minutes from her house to reach her school on a bicycle. If the bicycle has a steady speed of 2 m/s, calculate the distance between her house and the school in kilometers.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Given:</strong><br>
+            Time taken (\( t \)) = \( 15 \text{ minutes} \)<br>
+            Speed (\( v \)) = \( 2 \text{ m/s} \)<br><br>
+            <strong>Step 1: Convert time into seconds (1 Mark)</strong>
+            <div class="math-container">
+                \( t = 15 \times 60 \text{ seconds} = 900 \text{ seconds} \)
+            </div><br>
+            <strong>Step 2: Calculate Distance in meters (1 Mark)</strong>
+            <div class="math-container">
+                \( \text{Distance} = \text{Speed} \times \text{Time} \)<br>
+                \( \text{Distance} = 2 \text{ m/s} \times 900 \text{ s} = 1800 \text{ meters} \)
+            </div><br>
+            <strong>Step 3: Convert Distance to Kilometers (1 Mark)</strong>
+            <div class="math-container">
+                Since \( 1000 \text{ m} = 1 \text{ km} \), <br>
+                \( \text{Distance} = \frac{1800}{1000} \text{ km} = 1.8 \text{ km} \)
+            </div><br>
+            <strong>Answer:</strong> The distance between her house and the school is <strong>1.8 km</strong>.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">10. What is a speedometer and an odometer? Why is it important to use standard units of measurement (like SI units) instead of using arbitrary units like handspans or footsteps?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Speedometer (0.5 Mark):</strong> An instrument on a vehicle's dashboard that records and displays the speed directly in km/h.<br>
+            <strong>Odometer (0.5 Mark):</strong> An instrument that measures the distance moved by the vehicle in kilometers.<br><br>
+            <strong>Importance of Standard Units (2 Marks):</strong><br>
+            Arbitrary units like handspans, cubits, or footsteps vary from person to person because the size of body parts is different for everyone. This leads to confusion and inaccurate measurements. To ensure consistency, accuracy, and uniformity in measurements globally (whether in trade, science, or daily life), standard units (like SI units) are strictly required as they remain constant everywhere and for everyone.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C SOLUTIONS</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">
+                11. (a) Describe a simple activity to prove that light travels in a straight line.<br>
+                (b) Why can we not see our clear image in a rough piece of cardboard, even though it reflects light? Explain.
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>(a) Rectilinear Propagation Activity (3 Marks):</strong><br>
+            <ul>
+                <li><em>Setup:</em> Take a lighted candle and fix it on a table. Take a long, straight, hollow rubber or plastic tube.</li>
+                <li><em>Observation 1:</em> Look at the candle flame through the straight tube. The flame is clearly visible.</li>
+                <li><em>Observation 2:</em> Now, bend the tube slightly and try to look at the flame again. This time, the flame is not visible.</li>
+                <li><em>Conclusion:</em> Since the light from the candle could not bend along with the tube, this activity proves that light strictly travels in a straight line.</li>
+            </ul>
+            <strong>(b) Reflection from Cardboard (2 Marks):</strong><br>
+            We cannot see our image in a rough piece of cardboard due to <em>irregular (diffused) reflection</em>. Even though the cardboard reflects light, its rough surface causes parallel incident rays of light to reflect in many different directions. Because the reflected rays scatter and do not remain parallel, a clear image cannot be formed. (A smooth mirror causes regular reflection, preserving the parallel nature of rays to form an image).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">
+                12. (a) The distance between two railway stations is 240 km. A train takes 4 hours to cover this distance. Calculate the speed of the train in km/h.<br>
+                (b) If another express train travels the same distance at a constant speed of 80 km/h, how much time will it take to complete the journey?
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>(a) Speed of the first train (2 Marks):</strong><br>
+            Given: Distance = 240 km, Time = 4 hours.<br>
+            <div class="math-container">
+                \( \text{Speed} = \frac{\text{Distance}}{\text{Time}} \)<br>
+                \( \text{Speed} = \frac{240 \text{ km}}{4 \text{ hours}} = 60 \text{ km/h} \)
+            </div><br>
+            <strong>(b) Time taken by the express train (3 Marks):</strong><br>
+            Given: Distance = 240 km, New Speed = 80 km/h.<br>
+            <div class="math-container">
+                \( \text{Time} = \frac{\text{Distance}}{\text{Speed}} \)<br>
+                \( \text{Time} = \frac{240 \text{ km}}{80 \text{ km/h}} = 3 \text{ hours} \)
+            </div><br>
+            <strong>Final Statement:</strong> The speed of the first train is 60 km/h. The express train will take 3 hours to cover the same distance.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">
+                13. (a) A car moves with a constant speed of 10 km/min. Describe the shape of its distance-time graph.<br>
+                (b) Explain how you can determine the speed of an object directly from its distance-time graph.<br>
+                (c) What will be the shape of a distance-time graph for a truck that is parked (stationary) at a distance of 20 m from the origin?
+            </div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>(a) Shape for Constant Speed (2 Marks):</strong><br>
+            Since the car is moving with a constant speed (uniform motion), it covers equal distances in equal time intervals. Therefore, the distance-time graph will be a <strong>straight line slanting upwards</strong> (inclined to the time axis), passing through the origin (if it starts from zero distance at zero time).<br><br>
+            
+            <strong>(b) Finding Speed from Graph (1 Mark):</strong><br>
+            The speed of an object can be determined by finding the <strong>slope (steepness)</strong> of its distance-time graph. The steeper the line, the higher the speed. (Mathematically: Speed = \(\Delta y / \Delta x\)).<br><br>
+            
+            <strong>(c) Shape for Stationary Object (2 Marks):</strong><br>
+            If a truck is parked at a distance of 20 m, its distance from the origin does not change as time passes. Therefore, the distance-time graph will be a <strong>straight line parallel to the time-axis (X-axis)</strong>, drawn at the 20 m mark on the distance axis (Y-axis).
+        </div>
+    </div>
+
+</body>
+</html>

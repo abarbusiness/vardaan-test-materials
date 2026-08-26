@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solution Paper</title>
+    <!-- MathJax for rendering equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                matchFontHeight: false
+            }
+        };
+    </script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+        }
+        .test-name { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 14pt; 
+            background-color: #f5f5f5;
+            padding: 5px;
+        }
+
+        .qa-container {
+            margin-bottom: 25px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+
+        .question-box {
+            display: flex;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #1976d2;
+            margin-bottom: 15px;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 30px;
+            flex-shrink: 0;
+            color: #1976d2;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+        }
+
+        .q-marks {
+            font-weight: bold;
+            color: #d32f2f;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .solution-box {
+            padding-left: 30px;
+        }
+
+        .sol-heading {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .step {
+            margin-bottom: 8px;
+        }
+
+        .final-answer {
+            font-weight: bold;
+            background-color: #e8f5e9;
+            padding: 5px;
+            display: inline-block;
+            border: 1px solid #a5d6a7;
+            border-radius: 3px;
+        }
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .solution-box { padding-left: 15px; }
+            .math-scroll .MathJax {
+                font-size: 90% !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 16pt; }
+            .q-num { width: 25px; }
+            .question-box { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 5px; font-size: 10pt; }
+            .math-scroll .MathJax {
+                font-size: 85% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 - Solutions & Marking Scheme</div>
+        <p>Class: 6 ICSE | Subject: Mathematics | Max Marks: 40</p>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">1.</div>
+            <div class="q-text">Express the following ratio in its simplest form: 15 : 25</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">We divide both numbers by their highest common factor (HCF).</div>
+            <div class="step">The HCF of 15 and 25 is 5.</div>
+            <div class="math-scroll">
+                $$ \text{Ratio} = \frac{15}{25} = \frac{15 \div 5}{25 \div 5} = \frac{3}{5} $$ (1 Mark)
+            </div>
+            <div class="step final-answer">The simplest form is 3 : 5. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">2.</div>
+            <div class="q-text">A boy runs a distance of 100 meters in 20 seconds. Find his speed.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">Given: Distance = 100 meters, Time = 20 seconds</div>
+            <div class="step">Formula: $\text{Speed} = \frac{\text{Distance}}{\text{Time}}$ (1 Mark)</div>
+            <div class="math-scroll">
+                $$ \text{Speed} = \frac{100}{20} = 5 \text{ m/s} $$
+            </div>
+            <div class="step final-answer">The speed of the boy is 5 m/s. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">3.</div>
+            <div class="q-text">Find the ratio of 40 cm to 1 meter.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">First, make the units same.</div>
+            <div class="step">We know, 1 meter = 100 cm. (1 Mark)</div>
+            <div class="step">Now, find the ratio of 40 cm to 100 cm.</div>
+            <div class="math-scroll">
+                $$ \text{Ratio} = \frac{40}{100} = \frac{4}{10} = \frac{2}{5} $$
+            </div>
+            <div class="step final-answer">The required ratio is 2 : 5. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">4.</div>
+            <div class="q-text">Convert a speed of 18 km/hr into m/s.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">To convert km/hr to m/s, we multiply by $\frac{5}{18}$. (1 Mark)</div>
+            <div class="math-scroll">
+                $$ \text{Speed in m/s} = 18 \times \frac{5}{18} $$
+                $$ = 1 \times 5 = 5 \text{ m/s} $$
+            </div>
+            <div class="step final-answer">The speed is 5 m/s. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">5.</div>
+            <div class="q-text">If $x$ : 3 = 10 : 15, find the value of $x$.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">We can write the proportion as fractions:</div>
+            <div class="math-scroll">
+                $$ \frac{x}{3} = \frac{10}{15} $$ (1 Mark)
+            </div>
+            <div class="step">Cross multiply to find $x$:</div>
+            <div class="math-scroll">
+                $$ 15 \times x = 3 \times 10 $$
+                $$ 15x = 30 $$
+                $$ x = \frac{30}{15} = 2 $$
+            </div>
+            <div class="step final-answer">The value of $x$ is 2. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">6.</div>
+            <div class="q-text">Divide ₹600 between Amit and Sumit in the ratio 2 : 3.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">Total amount = ₹600</div>
+            <div class="step">Ratio = 2 : 3</div>
+            <div class="step">Sum of ratio terms = $2 + 3 = 5$. (1 Mark)</div>
+            <div class="step"><strong>Amit's share:</strong></div>
+            <div class="math-scroll">
+                $$ \text{Amit's share} = \frac{2}{5} \times 600 = 2 \times 120 = ₹240 $$ (1 Mark)
+            </div>
+            <div class="step"><strong>Sumit's share:</strong></div>
+            <div class="math-scroll">
+                $$ \text{Sumit's share} = \frac{3}{5} \times 600 = 3 \times 120 = ₹360 $$ 
+            </div>
+            <div class="step final-answer">Amit gets ₹240 and Sumit gets ₹360. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">7.</div>
+            <div class="q-text">A car is moving with a constant speed of 40 km/hr. How much distance will it cover in 3 hours?</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">Given: Speed = 40 km/hr, Time = 3 hours</div>
+            <div class="step">Formula: $\text{Distance} = \text{Speed} \times \text{Time}$ (1.5 Marks)</div>
+            <div class="math-scroll">
+                $$ \text{Distance} = 40 \times 3 $$
+                $$ \text{Distance} = 120 \text{ km} $$
+            </div>
+            <div class="step final-answer">The car will cover a distance of 120 km. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">8.</div>
+            <div class="q-text">Are the numbers 2, 4, 6, and 12 in proportion? Show your working clearly.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">Numbers are in proportion if the product of extremes equals the product of means.</div>
+            <div class="step">Extremes are the first and last terms: 2 and 12.</div>
+            <div class="step">Means are the middle terms: 4 and 6.</div>
+            <div class="math-scroll">
+                $$ \text{Product of extremes} = 2 \times 12 = 24 $$ (1 Mark)
+            </div>
+            <div class="math-scroll">
+                $$ \text{Product of means} = 4 \times 6 = 24 $$ (1 Mark)
+            </div>
+            <div class="step">Since $24 = 24$ (Product of extremes = Product of means),</div>
+            <div class="step final-answer">Yes, the numbers 2, 4, 6, and 12 are in proportion. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">9.</div>
+            <div class="q-text">If the cost of 4 pens is ₹48, find the cost of 7 such pens.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution: (Using Unitary Method)</div>
+            <div class="step">Cost of 4 pens = ₹48</div>
+            <div class="step">Cost of 1 pen = $\frac{48}{4} = ₹12$. (1.5 Marks)</div>
+            <div class="step">Now, calculate the cost of 7 pens.</div>
+            <div class="math-scroll">
+                $$ \text{Cost of 7 pens} = 7 \times 12 = ₹84 $$
+            </div>
+            <div class="step final-answer">The cost of 7 pens is ₹84. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">10.</div>
+            <div class="q-text">Convert a speed of 15 m/s into km/hr.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">To convert m/s to km/hr, we multiply by $\frac{18}{5}$. (1.5 Marks)</div>
+            <div class="math-scroll">
+                $$ \text{Speed in km/hr} = 15 \times \frac{18}{5} $$
+                $$ = 3 \times 18 = 54 \text{ km/hr} $$
+            </div>
+            <div class="step final-answer">The speed is 54 km/hr. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+    
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">11.</div>
+            <div class="q-text">In a school, there are 400 boys and 300 girls. Find the ratio of:<br>(i) The number of boys to the number of girls.<br>(ii) The number of girls to the total number of students.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step">Number of boys = 400</div>
+            <div class="step">Number of girls = 300</div>
+            <div class="step">Total number of students = $400 + 300 = 700$. (1 Mark)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(i) Ratio of boys to girls:</strong></div>
+            <div class="math-scroll">
+                $$ \text{Ratio} = \frac{400}{300} = \frac{4}{3} $$
+            </div>
+            <div class="step final-answer">The ratio of boys to girls is 4 : 3. (2 Marks)</div>
+
+            <div class="step" style="margin-top: 15px;"><strong>(ii) Ratio of girls to total students:</strong></div>
+            <div class="math-scroll">
+                $$ \text{Ratio} = \frac{300}{700} = \frac{3}{7} $$
+            </div>
+            <div class="step final-answer">The ratio of girls to total students is 3 : 7. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">12.</div>
+            <div class="q-text">A bus travels a distance of 180 km in 4 hours.<br>(i) Calculate the speed of the bus in km/hr.<br>(ii) At this speed, how much time will it take to travel 270 km?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step"><strong>(i) Finding the speed:</strong></div>
+            <div class="step">Distance = 180 km, Time = 4 hours.</div>
+            <div class="step">$\text{Speed} = \frac{\text{Distance}}{\text{Time}}$ (1 Mark)</div>
+            <div class="math-scroll">
+                $$ \text{Speed} = \frac{180}{4} = 45 \text{ km/hr} $$
+            </div>
+            <div class="step final-answer">The speed of the bus is 45 km/hr. (1 Mark)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(ii) Finding time for new distance:</strong></div>
+            <div class="step">New Distance = 270 km, Speed = 45 km/hr.</div>
+            <div class="step">$\text{Time} = \frac{\text{Distance}}{\text{Speed}}$ (1 Mark)</div>
+            <div class="math-scroll">
+                $$ \text{Time} = \frac{270}{45} = 6 \text{ hours} $$
+            </div>
+            <div class="step final-answer">It will take 6 hours to travel 270 km. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-box">
+            <div class="q-num">13.</div>
+            <div class="q-text">Answer the following questions:<br>(i) Find the value of $y$ if 5, $y$, 15, and 27 are in proportion.<br>(ii) A man walks at a speed of 5 m/s. How far will he walk in 2 minutes? (Give your answer in meters).</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="solution-box">
+            <div class="sol-heading">Solution:</div>
+            <div class="step"><strong>(i) Finding $y$ in proportion:</strong></div>
+            <div class="step">The terms 5, $y$, 15, and 27 are in proportion.</div>
+            <div class="math-scroll">
+                $$ \text{Therefore, } \frac{5}{y} = \frac{15}{27} $$ (1 Mark)
+            </div>
+            <div class="step">Cross multiply:</div>
+            <div class="math-scroll">
+                $$ 15 \times y = 5 \times 27 $$
+                $$ 15y = 135 $$
+                $$ y = \frac{135}{15} = 9 $$
+            </div>
+            <div class="step final-answer">The value of $y$ is 9. (1.5 Marks)</div>
+
+            <div class="step" style="margin-top: 15px;"><strong>(ii) Finding distance walked:</strong></div>
+            <div class="step">Speed = 5 m/s. Time = 2 minutes.</div>
+            <div class="step">First, convert time to seconds to match the speed unit.</div>
+            <div class="math-scroll">
+                $$ \text{Time} = 2 \times 60 = 120 \text{ seconds}. $$ (1 Mark)
+            </div>
+            <div class="step">$\text{Distance} = \text{Speed} \times \text{Time}$</div>
+            <div class="math-scroll">
+                $$ \text{Distance} = 5 \times 120 = 600 \text{ meters}. $$
+            </div>
+            <div class="step final-answer">The man will walk 600 meters. (1.5 Marks)</div>
+        </div>
+    </div>
+
+</body>
+</html>

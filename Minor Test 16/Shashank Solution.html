@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 15mm; }
+        
+        body { 
+            max-width: 210mm; 
+            width: 100%;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 5%; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px;
+            opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: clamp(18pt, 4vw, 24pt); font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a365d; }
+        .test-name { font-size: clamp(12pt, 2.5vw, 14pt); font-weight: bold; margin-top: 5px; text-decoration: underline; color: #b91c1c;}
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 14pt; background: #f3f4f6; padding: 5px; border-radius: 4px; }
+        
+        .qa-container { margin-bottom: 25px; border: 1px solid #e5e7eb; border-radius: 8px; padding: 15px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); break-inside: avoid;}
+        
+        .question-row { display: flex; justify-content: space-between; align-items: flex-start; font-weight: bold; border-bottom: 1px dashed #ccc; padding-bottom: 10px; margin-bottom: 10px; color: #1f2937;}
+        .q-text-area { display: flex; flex-grow: 1; }
+        .q-num { width: 35px; flex-shrink: 0; }
+        .marks { flex-shrink: 0; background: #1f2937; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10pt; height: fit-content; margin-left: 10px;}
+        
+        .solution-row { padding-left: 35px; color: #065f46; }
+        .step { margin-bottom: 8px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media print { 
+            body { padding: 10mm; background: none; } 
+            .qa-container { border: 1px solid #000; box-shadow: none; break-inside: avoid; page-break-inside: avoid;}
+            .marks { border: 1px solid #000; color: #000; background: none; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS & MARKING SCHEME - MINOR TEST 16</div>
+        <div style="margin-top: 10px; font-size: 11pt; font-weight: bold;">Class: 6 ICSE | Subjects: Chemistry & Maths</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+    
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">1.</div>
+                <div>Define an <strong>element</strong>. Give any two examples of solid elements.</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Definition:</strong> An element is a pure substance that cannot be broken down into simpler substances by ordinary chemical or physical methods. It is made up of only one kind of atoms. <em>(1 Mark)</em></div>
+            <div class="step"><strong>Examples:</strong> Iron (Fe), Gold (Au), Carbon (C), Silver (Ag) etc. (Any two correct solid elements). <em>(1 Mark, 0.5 each)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">2.</div>
+                <div>Identify the numerical coefficient and the variables in the algebraic term: \( -12x^2yz \).</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Numerical Coefficient:</strong> \( -12 \) <em>(1 Mark - Deduct 0.5 if negative sign is omitted)</em></div>
+            <div class="step"><strong>Variables (Literal coefficients):</strong> \( x, y, \text{ and } z \) <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">3.</div>
+                <div>Write the chemical symbols for: (i) Iron (ii) Sodium (iii) Carbon (iv) Potassium</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step">(i) Iron: <strong>Fe</strong> (from Latin <em>Ferrum</em>)</div>
+            <div class="step">(ii) Sodium: <strong>Na</strong> (from Latin <em>Natrium</em>)</div>
+            <div class="step">(iii) Carbon: <strong>C</strong></div>
+            <div class="step">(iv) Potassium: <strong>K</strong> (from Latin <em>Kalium</em>)</div>
+            <div class="step"><em>(0.5 Marks for each correct symbol. Note: First letter must be capital, second letter small.)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">4.</div>
+                <div>Write the algebraic expression for: "Five times a number \( x \) added to 9."</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step">"Five times a number \( x \)" is written as: \( 5x \) <em>(1 Mark)</em></div>
+            <div class="step">"added to 9" means we add 9 to it: <strong>\( 5x + 9 \)</strong> (or \( 9 + 5x \)) <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">5.</div>
+                <div>State one main difference between an atom and a molecule.</div>
+            </div>
+            <div class="marks">[2 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Atom:</strong> It is the smallest particle of an <em>element</em> that may or may not exist independently.</div>
+            <div class="step"><strong>Molecule:</strong> It is the smallest particle of an <em>element or compound</em> that is capable of independent existence.</div>
+            <div class="step"><em>(2 Marks for a clear, contrasting point)</em></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">6.</div>
+                <div>Classify into Elements and Compounds: Water, Oxygen, Carbon dioxide, Gold, Sodium chloride, Iron.</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Elements:</strong> Oxygen, Gold, Iron. <em>(1.5 Marks - 0.5 each)</em></div>
+            <div class="step"><strong>Compounds:</strong> Water, Carbon dioxide, Sodium chloride. <em>(1.5 Marks - 0.5 each)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">7.</div>
+                <div>Classify as monomial, binomial, or trinomial: (i) \( 4x + 3y \) (ii) \( 7x^2yz \) (iii) \( a^2 + b^2 - 2ab \)</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step">(i) \( 4x + 3y \): It has two distinct terms, so it is a <strong>Binomial</strong>. <em>(1 Mark)</em></div>
+            <div class="step">(ii) \( 7x^2yz \): It is a single product term, so it is a <strong>Monomial</strong>. <em>(1 Mark)</em></div>
+            <div class="step">(iii) \( a^2 + b^2 - 2ab \): It has three distinct terms, so it is a <strong>Trinomial</strong>. <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">8.</div>
+                <div class="math-scroll">Add the expressions: \( (3a - 2b + c) \) and \( (a + 4b - 3c) \)</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Step 1: Write in an addition expression.</strong></div>
+            <div class="math-scroll">\( (3a - 2b + c) + (a + 4b - 3c) \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Step 2: Group the like terms together.</strong></div>
+            <div class="math-scroll">\( = (3a + a) + (-2b + 4b) + (c - 3c) \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Step 3: Combine coefficients.</strong></div>
+            <div class="math-scroll">\( = 4a + 2b - 2c \) <em>(1 Mark for final correct answer)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">9.</div>
+                <div>What is a <strong>compound</strong>? Write any two characteristics of a compound.</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Definition:</strong> A compound is a pure substance formed by the chemical combination of two or more elements in a fixed proportion by mass. <em>(1 Mark)</em></div>
+            <div class="step"><strong>Characteristics:</strong> 
+                <br>1. The properties of a compound are entirely different from the properties of its constituent elements.
+                <br>2. Compounds cannot be separated into their constituents by simple physical methods (requires chemical methods).
+                <br>3. It has a definite molecular formula and fixed melting/boiling points.
+                <br><em>(Any 2 correct characteristics - 1 Mark each)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">10.</div>
+                <div class="math-scroll">Evaluate \( 3x^2 + 4y - 5 \) when \( x = 2 \) and \( y = 3 \).</div>
+            </div>
+            <div class="marks">[3 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step">Given Expression: \( 3x^2 + 4y - 5 \)</div>
+            <div class="step"><strong>Step 1: Substitute the values \( x = 2, y = 3 \).</strong></div>
+            <div class="math-scroll">\( = 3(2)^2 + 4(3) - 5 \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Step 2: Apply BODMAS (calculate squares and multiplication).</strong></div>
+            <div class="math-scroll">\( = 3(4) + 12 - 5 \)</div>
+            <div class="math-scroll">\( = 12 + 12 - 5 \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Step 3: Addition and Subtraction.</strong></div>
+            <div class="math-scroll">\( = 24 - 5 = 19 \) <em>(1 Mark)</em></div>
+            <div class="step"><strong>Final Answer: 19</strong></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">11.</div>
+                <div>(a) Write chemical formulas for (i) Water (ii) Carbon dioxide (iii) Table Salt.<br>(b) Is Air a mixture or a compound? Give reason.</div>
+            </div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>(a) Formulas:</strong> <em>(3 Marks - 1 Mark each)</em>
+                <br>(i) Water: <strong>H<sub>2</sub>O</strong>
+                <br>(ii) Carbon dioxide: <strong>CO<sub>2</sub></strong>
+                <br>(iii) Table Salt (Sodium chloride): <strong>NaCl</strong>
+            </div>
+            <div class="step" style="margin-top: 10px;"><strong>(b) Mixture vs Compound:</strong>
+                <br>Air is a <strong>mixture</strong>. <em>(1 Mark)</em>
+                <br><strong>Reason:</strong> The components of air (Nitrogen, Oxygen, Carbon dioxide, etc.) retain their individual properties and can be separated by physical methods (like fractional distillation). Also, they are not chemically combined in a fixed ratio. <em>(1 Mark for a valid scientific reason)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">12.</div>
+                <div class="math-scroll">Simplify by grouping like terms: \( 6x^2 - 4x + 8 - 3x^2 + 7x - 5 \)</div>
+            </div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step">Expression: \( 6x^2 - 4x + 8 - 3x^2 + 7x - 5 \)</div>
+            <div class="step"><strong>Step 1: Identify and group the like terms together.</strong></div>
+            <div class="math-scroll">\( = (6x^2 - 3x^2) + (-4x + 7x) + (8 - 5) \) <em>(2 Marks)</em></div>
+            
+            <div class="step"><strong>Step 2: Combine the \( x^2 \) terms.</strong></div>
+            <div class="math-scroll">\( 6x^2 - 3x^2 = 3x^2 \) <em>(1 Mark)</em></div>
+            
+            <div class="step"><strong>Step 3: Combine the \( x \) terms.</strong></div>
+            <div class="math-scroll">\( -4x + 7x = +3x \) <em>(1 Mark)</em></div>
+            
+            <div class="step"><strong>Step 4: Combine the constant terms.</strong></div>
+            <div class="math-scroll">\( 8 - 5 = +3 \) </div>
+            
+            <div class="step"><strong>Final Answer:</strong></div>
+            <div class="math-scroll"><strong>\( 3x^2 + 3x + 3 \)</strong> <em>(1 Mark for final combined expression)</em></div>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="question-row">
+            <div class="q-text-area">
+                <div class="q-num">13.</div>
+                <div class="math-scroll">Subtract \( (2p^2 - 5p + 4) \) from \( (6p^2 + 3p - 2) \).</div>
+            </div>
+            <div class="marks">[5 Marks]</div>
+        </div>
+        <div class="solution-row">
+            <div class="step"><strong>Step 1: Set up the subtraction expression correctly.</strong><br>Remember: "Subtract A from B" means "B - A".</div>
+            <div class="math-scroll">\( (6p^2 + 3p - 2) - (2p^2 - 5p + 4) \) <em>(1.5 Marks for correct setup)</em></div>
+            
+            <div class="step"><strong>Step 2: Open the brackets. Change the signs of all terms in the second bracket.</strong></div>
+            <div class="math-scroll">\( = 6p^2 + 3p - 2 - 2p^2 + 5p - 4 \) <em>(1.5 Marks for correct sign changes)</em></div>
+            
+            <div class="step"><strong>Step 3: Group the like terms.</strong></div>
+            <div class="math-scroll">\( = (6p^2 - 2p^2) + (3p + 5p) + (-2 - 4) \) <em>(1 Mark)</em></div>
+            
+            <div class="step"><strong>Step 4: Combine coefficients to get the final answer.</strong></div>
+            <div class="math-scroll">\( = 4p^2 + 8p - 6 \) <em>(1 Mark for the correct final answer)</em></div>
+            
+            <div class="step" style="margin-top:10px; font-style: italic;">
+                *Alternative (Column Method):<br>
+                \( \ \ \ 6p^2 + 3p - 2 \)<br>
+                \( \underline{- (2p^2 - 5p + 4)} \)<br>
+                Change signs: \( (-), (+), (-) \)<br>
+                Result: \( \mathbf{4p^2 + 8p - 6} \)
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

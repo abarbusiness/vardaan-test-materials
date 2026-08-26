@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid var(--text-main); 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid var(--text-main); 
+            border-bottom: 1px solid var(--text-main); 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                font-size: 11pt; 
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+            }
+            .watermark { width: 95%; }
+        }
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 17</div>
+        <div class="exam-details">
+            <span>Class: 6 ICSE</span>
+            <span>Subject: Science (Physics & Chemistry)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+                <li>Use of appropriate scientific units is mandatory in numerical calculations.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define Mechanical Advantage. Write its mathematical formula.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">State any two main points of difference between an atom and a molecule.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">What is a Class II lever? Give one common everyday example of it.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">According to the kinetic theory of matter, state the properties of intermolecular space and intermolecular force of attraction in a gaseous state.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If the effort arm of a lever is 40 cm and the load arm is 10 cm, calculate its mechanical advantage.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Explain the process of sublimation with an example. How does this process fundamentally differ from melting?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A crowbar of length 120 cm has its fulcrum situated at a distance of 20 cm from the load. Calculate the mechanical advantage of the crowbar.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Why do solids possess a definite shape and a definite volume while gases do not? Explain this strictly on the basis of the arrangement of particles.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Draw a neat, labeled diagram of a single fixed pulley. State its theoretical mechanical advantage and velocity ratio.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">State the Law of Conservation of Mass. If 4g of carbon reacts completely with 10.6g of oxygen to form carbon dioxide, what will be the total mass of the carbon dioxide formed?</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Define an inclined plane and state its primary use in daily life. <strong>(2 Marks)</strong></div>
+            <div class="sub-question">(b) A block and tackle system consists of 4 pulleys. If an effort of 200 N is required to lift a load of 600 N, calculate the Mechanical Advantage, Velocity Ratio, and Efficiency of the system. <strong>(3 Marks)</strong></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) What is meant by a chemical formula? Write the chemical formulae for Calcium Carbonate and Magnesium Chloride. <strong>(3 Marks)</strong></div>
+            <div class="sub-question">(b) Write a balanced chemical equation for the reaction between Hydrogen and Oxygen to form Water. <strong>(2 Marks)</strong></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Classify the following substances into elements, compounds, and mixtures: Iron, Air, Water, 22-carat gold. <strong>(2 Marks)</strong></div>
+            <div class="sub-question">(b) Explain how a pair of scissors (Class I lever) differs from a nutcracker (Class II lever) in terms of the relative position of Load, Effort, and Fulcrum. Draw simple line diagrams for both to support your answer. <strong>(3 Marks)</strong></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

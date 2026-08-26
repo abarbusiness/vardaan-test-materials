@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 30px 20px; 
+            box-sizing: border-box; 
+            font-family: "Segoe UI", "Times New Roman", Times, serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: #222; 
+            background-color: #f4f6f8; 
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 3px solid #1a365d; padding-bottom: 15px; }
+        .institute-name { font-size: 20pt; font-weight: bold; color: #1a365d; margin: 0; text-transform: uppercase; }
+        .doc-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #e53e3e; }
+        
+        .section-header { 
+            background-color: #1a365d; 
+            color: white; 
+            padding: 8px 15px; 
+            font-weight: bold; 
+            margin: 30px 0 20px 0; 
+            border-radius: 4px;
+            font-size: 13pt;
+        }
+        
+        .qa-block {
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .question-part {
+            background-color: #edf2f7;
+            padding: 12px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .q-text { font-weight: 600; color: #2d3748; flex-grow: 1; padding-right: 15px; }
+        .marks-badge {
+            background-color: #e53e3e;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .solution-part {
+            padding: 15px;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: #38a169;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        /* Math Equation Responsiveness */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
+        .math-break {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        table.diff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table.diff-table th, table.diff-table td {
+            border: 1px solid #cbd5e0;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        table.diff-table th { background-color: #f7fafc; font-weight: bold; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            .question-part { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            table.diff-table th, table.diff-table td { font-size: 10pt; padding: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="doc-title">Detailed Solutions & Marking Scheme: Minor Test 16</div>
+            <div style="margin-top: 5px; color: #4a5568;">Class: 6 ICSE | Subject: Science & Maths</div>
+        </div>
+
+        <div class="section-header">SECTION A (10 Marks)</div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q1. Define the following terms: (a) Element (b) Compound</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>(a) Element (1 Mark):</strong> An element is a pure substance that cannot be broken down into simpler substances by ordinary chemical methods. It is made up of only one kind of atom.</p>
+                <p><strong>(b) Compound (1 Mark):</strong> A compound is a pure substance formed when two or more elements combine chemically in a fixed ratio by mass.</p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q2. Write the algebraic expression for: (a) 5 added to the variable \( p \) (b) 7 subtracted from twice of \( x \).</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>(a)</strong> The expression for 5 added to \( p \) is: <br>
+                <span class="math-scroll">\( p + 5 \)</span> <em>(1 Mark)</em></p>
+                <p><strong>(b)</strong> Twice of \( x \) is \( 2x \). 7 subtracted from it is: <br>
+                <span class="math-scroll">\( 2x - 7 \)</span> <em>(1 Mark)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q3. Classify the following into elements, compounds, and mixtures: Air, Iron, Water, Soil.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <ul>
+                    <li><strong>Iron:</strong> Element <em>(0.5 Mark)</em></li>
+                    <li><strong>Water:</strong> Compound <em>(0.5 Mark)</em></li>
+                    <li><strong>Air:</strong> Mixture <em>(0.5 Mark)</em></li>
+                    <li><strong>Soil:</strong> Mixture <em>(0.5 Mark)</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q4. Identify the like terms in the given algebraic expression: \( 3x^2 + 2x - 5x^2 + 7 \)</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p>Like terms are terms that have the exact same variable parts and exponents.</p>
+                <p>In the given expression, the terms are: \( 3x^2 \), \( 2x \), \( -5x^2 \), and \( 7 \).</p>
+                <p>The like terms are: <strong>\( 3x^2 \) and \( -5x^2 \)</strong>. <em>(2 Marks)</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q5. Write the chemical symbols for: (a) Sodium (b) Carbon</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>(a) Sodium:</strong> Na <em>(1 Mark)</em></p>
+                <p><strong>(b) Carbon:</strong> C <em>(1 Mark)</em></p>
+                <p><em>(Note: First letter must be capitalized, second letter lowercase).</em></p>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION B (15 Marks)</div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q6. Evaluate the value of the expression \( 3a + 2b - c \) if \( a = 2, b = 3, \) and \( c = 4 \).</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p>Given expression: \( 3a + 2b - c \)</p>
+                <p>Substituting the values \( a = 2, b = 3, c = 4 \):</p>
+                <div class="math-scroll math-break">
+                    <div>\( = 3(2) + 2(3) - (4) \) <em>(1 Mark for correct substitution)</em></div>
+                    <div>\( = 6 + 6 - 4 \) <em>(1 Mark for correct multiplication)</em></div>
+                    <div>\( = 12 - 4 \)</div>
+                    <div>\( = \mathbf{8} \) <em>(1 Mark for final correct answer)</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q7. State any three main differences between a mixture and a compound.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <div class="math-scroll">
+                    <table class="diff-table">
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Mixture</th>
+                            <th>Compound</th>
+                        </tr>
+                        <tr>
+                            <td><strong>1. Composition</strong></td>
+                            <td>Components are mixed in any variable proportion.</td>
+                            <td>Elements are combined chemically in a fixed ratio by mass.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Properties</strong></td>
+                            <td>It shows the properties of its constituent components.</td>
+                            <td>Its properties are entirely different from its constituent elements.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Separation</strong></td>
+                            <td>Components can be easily separated by physical methods (e.g., filtration).</td>
+                            <td>Components can only be separated by chemical or electrochemical methods.</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><em>(1 Mark for each correct valid difference).</em></p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q8. Add the following algebraic expressions: \( (2x + 3y) \) and \( (4x - y) \).</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p>We need to find the sum: \( (2x + 3y) + (4x - y) \)</p>
+                <div class="math-scroll math-break">
+                    <div>Step 1: Open the brackets.</div>
+                    <div>\( = 2x + 3y + 4x - y \) <em>(1 Mark)</em></div>
+                    <br>
+                    <div>Step 2: Group the like terms together.</div>
+                    <div>\( = (2x + 4x) + (3y - y) \) <em>(1 Mark)</em></div>
+                    <br>
+                    <div>Step 3: Add the coefficients of like terms.</div>
+                    <div>\( = \mathbf{6x + 2y} \) <em>(1 Mark for final answer)</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q9. What is meant by a homogeneous mixture? Give two examples.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>Definition:</strong> A homogeneous mixture is a mixture in which the components are uniformly distributed throughout, and it has a single phase. The different parts cannot be seen separately. <em>(1 Mark)</em></p>
+                <p><strong>Examples:</strong> 
+                    <br>1. Sugar dissolved in water (sugar solution) <em>(1 Mark)</em>
+                    <br>2. Air (a uniform mixture of various gases) <em>(1 Mark)</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q10. Write the numerical coefficient of \( x \) in the following algebraic terms: (a) \( 5x \) (b) \( -7xy \) (c) \( x \)</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p>The numerical coefficient is the constant (number) part attached to the variables.</p>
+                <p><strong>(a) \( 5x \) :</strong> The numerical coefficient of \( x \) is <strong>5</strong>. <em>(1 Mark)</em></p>
+                <p><strong>(b) \( -7xy \) :</strong> The numerical coefficient attached to the variables is <strong>-7</strong>. <em>(1 Mark - Deduct 0.5 if negative sign is missed)</em></p>
+                <p><strong>(c) \( x \) :</strong> This can be written as \( 1 \times x \). Hence, the numerical coefficient is <strong>1</strong>. <em>(1 Mark)</em></p>
+            </div>
+        </div>
+
+        <div class="section-header">SECTION C (15 Marks)</div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q11. (a) Why is water considered a compound and not a mixture? Give two reasons. <br>(b) Write the chemical formula for: (i) Carbon dioxide (ii) Water (iii) Sodium chloride</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>(a) Reasons water is a compound:</strong> <em>(2 Marks)</em></p>
+                <ol>
+                    <li>Water (\(H_2O\)) is formed when Hydrogen and Oxygen combine chemically in a fixed ratio by mass (1:8). Mixtures do not have a fixed ratio.</li>
+                    <li>The properties of water are entirely different from its constituent elements (Hydrogen is a combustible gas, Oxygen supports combustion, but water is a liquid used to extinguish fires).</li>
+                </ol>
+                <p><strong>(b) Chemical Formulas:</strong> <em>(3 Marks)</em></p>
+                <ul>
+                    <li>(i) Carbon dioxide: <strong>\( CO_2 \)</strong> <em>(1 Mark)</em></li>
+                    <li>(ii) Water: <strong>\( H_2O \)</strong> <em>(1 Mark)</em></li>
+                    <li>(iii) Sodium chloride: <strong>\( NaCl \)</strong> <em>(1 Mark)</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q12. Simplify the following algebraic expression: \( 5a - [3a - (2a - 3b)] \)</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p>According to BODMAS rules, we first solve the innermost bracket i.e., the round brackets ( ).</p>
+                <div class="math-scroll math-break">
+                    <div>Given: \( 5a - [3a - (2a - 3b)] \)</div>
+                    <br>
+                    <div><strong>Step 1:</strong> Remove the round bracket. The negative sign outside changes the signs inside.</div>
+                    <div>\( = 5a - [3a - 2a + 3b] \) <em>(2 Marks)</em></div>
+                    <br>
+                    <div><strong>Step 2:</strong> Simplify the terms inside the square bracket.</div>
+                    <div>\( = 5a - [a + 3b] \) <em>(1.5 Marks)</em></div>
+                    <br>
+                    <div><strong>Step 3:</strong> Remove the square bracket.</div>
+                    <div>\( = 5a - a - 3b \) <em>(0.5 Marks)</em></div>
+                    <br>
+                    <div><strong>Step 4:</strong> Final calculation.</div>
+                    <div>\( = \mathbf{4a - 3b} \) <em>(1 Mark for final correct answer)</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-block">
+            <div class="question-part">
+                <div class="q-text">Q13. (a) Subtract the expression \( (3p - 4q + 5r) \) from \( (5p + 2q - 3r) \). <br>(b) Write the algebraic expression for: "The sum of \( x \) and \( y \) is multiplied by \( z \)".</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-part">
+                <span class="sol-heading">Solution:</span>
+                <p><strong>Part (a): Subtraction</strong> <em>(3 Marks)</em></p>
+                <div class="math-scroll math-break">
+                    <div>We need to subtract \( (3p - 4q + 5r) \) <strong>from</strong> \( (5p + 2q - 3r) \).</div>
+                    <div>Equation: \( (5p + 2q - 3r) - (3p - 4q + 5r) \) <em>(1 Mark for correct setup)</em></div>
+                    <br>
+                    <div>Step 1: Open brackets (sign changes for the second expression).</div>
+                    <div>\( = 5p + 2q - 3r - 3p + 4q - 5r \) <em>(1 Mark)</em></div>
+                    <br>
+                    <div>Step 2: Group like terms and solve.</div>
+                    <div>\( = (5p - 3p) + (2q + 4q) + (-3r - 5r) \)</div>
+                    <div>\( = \mathbf{2p + 6q - 8r} \) <em>(1 Mark for final answer)</em></div>
+                </div>
+                
+                <hr style="margin: 20px 0; border: 0; border-top: 1px dashed #cbd5e0;">
+                
+                <p><strong>Part (b): Algebraic Expression</strong> <em>(2 Marks)</em></p>
+                <div class="math-scroll math-break">
+                    <div>The sum of \( x \) and \( y \) is: \( (x + y) \) <em>(1 Mark)</em></div>
+                    <div>This sum multiplied by \( z \) is written as:</div>
+                    <div><strong>\( z(x + y) \)</strong> OR <strong>\( (x + y)z \)</strong> <em>(1 Mark)</em></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
