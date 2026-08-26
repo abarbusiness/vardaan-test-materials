@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations and scientific notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a365d; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #c53030; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 14pt; background-color: #f7fafc; padding: 5px; border-radius: 4px;}
+        
+        .qa-container { margin-bottom: 25px; page-break-inside: avoid; border-bottom: 1px dashed #e2e8f0; padding-bottom: 15px;}
+        .q-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; font-weight: bold; color: #2d3748; background-color: #edf2f7; padding: 10px; border-radius: 6px;}
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { flex-shrink: 0; background: #2b6cb0; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11pt; }
+        
+        .ans-text { padding-left: 10px; text-align: justify; }
+        .ans-label { font-weight: bold; color: #276749; text-decoration: underline; margin-bottom: 5px; display: inline-block;}
+        .marking-scheme { color: #c53030; font-size: 10pt; font-style: italic; display: block; margin-top: 8px;}
+        
+        table.diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px; }
+        table.diff-table th, table.diff-table td { border: 1px solid #000; padding: 8px; text-align: left; }
+        table.diff-table th { background-color: #f0f0f0; }
+
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 15px; margin: 0; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 95%; }
+            .q-row { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+            .q-text { padding-right: 0; }
+            table.diff-table th, table.diff-table td { font-size: 10pt; padding: 4px; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Practice Test: Metals and Non-Metals (Class 10)</div>
+        <div class="solution-title">ANSWER KEY & DETAILED EXPLANATIONS</div>
+    </div>
+
+    <div class="section-header">SECTION A (Objective Type)</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q1. A metal 'M' does not liberate hydrogen gas from dilute hydrochloric acid but reacts with oxygen to form a black compound. Which of the following best describes the reaction of metal 'M' with silver nitrate solution?</div>
+            <div class="q-marks">[1 Mark]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Correct Option:</span> <strong>(b) It displaces silver and the solution turns blue.</strong><br>
+            <strong>Explanation:</strong> The metal 'M' is Copper (Cu). Copper is below hydrogen in the reactivity series, so it doesn't liberate \(H_2\) from dil. HCl. It reacts with oxygen to form black Copper(II) oxide (\(CuO\)). When Copper reacts with Silver Nitrate (\(AgNO_3\)), being more reactive than Silver, it displaces Ag to form Copper Nitrate \(Cu(NO_3)_2\), which is a blue-coloured solution. <br>
+            Reaction: \( Cu(s) + 2AgNO_3(aq) \rightarrow Cu(NO_3)_2(aq) + 2Ag(s) \)
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q2. An element 'X' reacts with oxygen to give a compound with a high melting point. This compound is also highly soluble in water. The element 'X' is likely to be:</div>
+            <div class="q-marks">[1 Mark]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Correct Option:</span> <strong>(a) Calcium</strong><br>
+            <strong>Explanation:</strong> Calcium reacts with oxygen to form Calcium Oxide (\(CaO\)), an ionic compound which has a very high melting point. Calcium oxide is highly soluble in water, forming Calcium Hydroxide (limewater), an exothermic reaction. Carbon forms \(CO_2\) (gas), Silicon forms \(SiO_2\) (insoluble in water), and Iron forms Iron oxides (insoluble in water).
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q3. Assertion (A): When zinc is added to an aqueous solution of iron (II) sulphate, the green colour of the solution gradually fades. <br> Reason (R): Zinc is less reactive than iron and cannot displace it from its salt solution.</div>
+            <div class="q-marks">[1 Mark]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Correct Option:</span> <strong>(c) A is true, but R is false.</strong><br>
+            <strong>Explanation:</strong> The assertion is true because Zinc displaces Iron from Iron (II) sulphate, turning the green solution to a colourless Zinc sulphate solution. The reason is false because Zinc is actually <strong>more</strong> reactive than Iron (placed above Iron in the reactivity series), which is why the displacement occurs.
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q4. Assertion (A): Hydrogen gas is generally not evolved when a metal reacts with dilute nitric acid (\(HNO_3\)). <br> Reason (R): Nitric acid is a strong oxidising agent; it oxidises the \(H_2\) produced to water and itself gets reduced to a nitrogen oxide.</div>
+            <div class="q-marks">[1 Mark]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Correct Option:</span> <strong>(a) Both A and R are true, and R is the correct explanation of A.</strong><br>
+            <strong>Explanation:</strong> Nitric acid (\(HNO_3\)) is a very strong oxidising agent. When a metal reacts with it, the hydrogen gas initially produced is immediately oxidised to form water (\(H_2O\)), while the nitric acid gets reduced to nitrogen oxides (like \(NO, NO_2\)). (Exceptions are Magnesium and Manganese which react with very dilute \(HNO_3\) to evolve \(H_2\)).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (Short Answer Type)</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q5. A lustrous, divalent element 'M' reacts vigorously with cold water to form a basic solution and liberates a gas that catches fire easily. <br>(a) Identify the gas and reason for catching fire. (b) Identify 'M' and write the equation.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a)</strong> The gas liberated is <strong>Hydrogen gas (\(H_2\))</strong>. It catches fire because the reaction of highly reactive metals with water is highly exothermic; the heat evolved is sufficient to ignite the hydrogen gas produced.<br>
+            <strong>(b)</strong> The element 'M' is <strong>Calcium (Ca)</strong>. <em>(Note: While Sodium and Potassium react violently, they are monovalent. The question specifies a 'divalent' element, and Calcium reacts with cold water exothermically, though usually less violently than Na, the heat can sometimes ignite bubbles if conditions trap them, or more accurately, the question might be slightly misframed for 'divalent catching fire' standard text, but Calcium is the only divalent metal reacting with cold water. Let's assume standard text logic: Barium is another, but not in syllabus focus. Given standard CBSE context, often students confuse valency. If we stick to 'divalent' and 'cold water', it must be Calcium.)</em><br>
+            Equation: 
+            <div class="math-scroll">
+                $$ Ca(s) + 2H_2O(l) \rightarrow Ca(OH)_2(aq) + H_2(g) + \text{Heat} $$
+            </div>
+            <span class="marking-scheme">(½ mark for naming Hydrogen, ½ mark for 'exothermic heat' reason. ½ mark for Calcium, ½ mark for balanced equation.)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q6. You are given three metals: Sodium, Magnesium, and Copper. Suggest an experimental method using only water (in different physical states) to arrange these metals in the decreasing order of their reactivity. State expected observations.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Method & Observations:</strong><br>
+            1. <strong>Action with Cold Water:</strong> Drop small pieces of the three metals separately into beakers containing cold water.
+               <ul>
+                   <li><strong>Sodium (Na):</strong> Reacts violently and catches fire, indicating very high reactivity.</li>
+                   <li><strong>Magnesium (Mg) & Copper (Cu):</strong> No visible reaction with cold water.</li>
+               </ul>
+            2. <strong>Action with Hot Water/Steam:</strong> Heat the water for the remaining two metals.
+               <ul>
+                   <li><strong>Magnesium (Mg):</strong> Reacts with hot water to form bubbles of hydrogen gas and floats, indicating moderate reactivity.</li>
+                   <li><strong>Copper (Cu):</strong> Does not react even with boiling water or steam. It remains unreacted, indicating very low reactivity.</li>
+               </ul>
+            <strong>Conclusion:</strong> Decreasing order of reactivity is <strong>Na > Mg > Cu</strong>.<br>
+            <span class="marking-scheme">(1 mark for correctly distinguishing Na with cold water, 1 mark for distinguishing Mg and Cu with hot water/steam)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q7. A non-metal 'X' exists in two different physical forms 'Y' and 'Z'. 'Y' is the hardest natural substance known, while 'Z' is a good conductor of electricity. Identify 'X', 'Y', and 'Z'. Explain the structural difference causing conductivity.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            • Non-metal <strong>'X' is Carbon</strong>.<br>
+            • Form <strong>'Y' is Diamond</strong> (hardest natural substance).<br>
+            • Form <strong>'Z' is Graphite</strong> (good conductor of electricity).<br>
+            <strong>Structural Difference (Reason for Conductivity):</strong> In diamond, each carbon atom is bonded to four other carbon atoms in a rigid 3D structure, leaving no free electrons. In graphite, each carbon atom is bonded to only three other carbon atoms in hexagonal layers. This leaves one valence electron free (delocalised) per carbon atom. The presence of these free, mobile electrons allows graphite to conduct electricity.<br>
+            <span class="marking-scheme">(1 mark for identifying Carbon, Diamond, Graphite. 1 mark for explaining the free electron in graphite vs no free electron in diamond.)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q8. An element 'A' burns with a golden flame in air. It reacts with another element 'B' (atomic number 17) to give a product 'C'. (a) Identify A, B, C. (b) Predict physical state and conductivity of 'C'. Justify.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Identification:</strong><br>
+            • Element <strong>'A' is Sodium (Na)</strong> (Burns with a characteristic golden-yellow flame).<br>
+            • Element <strong>'B' is Chlorine (Cl)</strong> (Atomic number 17).<br>
+            • Product <strong>'C' is Sodium Chloride (NaCl)</strong>, formed by the reaction \( 2Na + Cl_2 \rightarrow 2NaCl \).<br>
+            <strong>(b) State and Conductivity:</strong><br>
+            • <strong>Physical State:</strong> Compound 'C' (NaCl) will be a <strong>solid</strong> at room temperature.<br>
+            • <strong>Conductivity:</strong> It will <strong>NOT</strong> conduct electricity in the solid state.<br>
+            • <strong>Justification:</strong> NaCl is an <strong>ionic compound</strong> formed by the complete transfer of electrons. In the solid state, the \(Na^+\) and \(Cl^-\) ions are held together in a rigid crystal lattice by strong electrostatic forces of attraction. Because the ions are not free to move, it cannot conduct electricity. (It conducts only in molten or aqueous state when ions become mobile).<br>
+            <span class="marking-scheme">(1.5 marks for correct identification of A, B, C. 0.5 mark for 'Solid', 1 mark for 'ionic bond, rigid structure, no free ions' reasoning.)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q9. Carbon can reduce copper oxide to copper, but it cannot reduce calcium oxide to calcium. Explain why. Give the chemical equation for the reduction of copper oxide by carbon.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Reasoning:</strong><br>
+            The ability of carbon to reduce a metal oxide depends on the reactivity of the metal. <br>
+            1. <strong>Calcium</strong> is highly reactive and is placed high in the reactivity series. It has a much stronger affinity (attraction) for oxygen than carbon does. Therefore, carbon cannot pull the oxygen away from calcium oxide.<br>
+            2. <strong>Copper</strong> is a less reactive metal placed much lower in the reactivity series. It has a lower affinity for oxygen compared to carbon. Thus, when heated, carbon is strong enough to easily strip oxygen from copper oxide, reducing it to copper metal while getting oxidised itself.<br>
+            <br>
+            <strong>Chemical Equation:</strong><br>
+            <div class="math-scroll">
+                $$ 2CuO(s) + C(s) \xrightarrow{\Delta} 2Cu(s) + CO_2(g) $$
+            </div>
+            <em>(Note: Formation of CO is also acceptable depending on conditions, i.e., \( CuO + C \rightarrow Cu + CO \))</em><br>
+            <span class="marking-scheme">(2 marks for explaining the difference based on affinity for oxygen/reactivity series. 1 mark for correct balanced equation.)</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (Case Study Based)</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q10. Based on the displacement reaction table:<br> (a) Identify most/least reactive metals.<br> (b) Q + Copper Sulphate observation.<br> (c) Increasing order of reactivity.<br> (d) Which metal is likely Silver?</div>
+            <div class="q-marks">[4 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Most and Least Reactive:</strong><br>
+            • <strong>Most Reactive: Metal Q.</strong> Reason: It displaces Iron from Iron (II) sulphate. Among the given salts (Zn, Fe, Cu, Ag), displacing Fe means it is highly reactive (only beaten by Zinc which it couldn't displace). It displaces the most number of metals from the table.<br>
+            • <strong>Least Reactive: Metal S.</strong> Reason: It cannot displace any of the metals from their salt solutions, not even Silver, which is the least reactive among the salts provided.<br>
+            
+            <strong>(b) Observation with Copper Sulphate & Reaction Type:</strong><br>
+            • Since Metal Q displaced Iron, it is more reactive than Iron and definitely more reactive than Copper. Therefore, a displacement reaction will occur.<br>
+            • <strong>Observation:</strong> The blue colour of Copper (II) sulphate solution will fade (or change colour depending on Q's salt), and a reddish-brown deposit of copper metal will be formed on Metal Q.<br>
+            • <strong>Type of reaction:</strong> Single Displacement Reaction.<br>
+
+            <strong>(c) Increasing Order of Reactivity:</strong><br>
+            Based on displacement: Q > P > R > S.<br>
+            Therefore, increasing order is: <strong>S < R < P < Q</strong>.<br>
+
+            <strong>(d) Metal likely to be Silver (Ag):</strong><br>
+            • <strong>Metal S</strong> is most likely Silver. Silver is placed at the bottom of the reactivity series among common metals and cannot displace Copper, Iron, or Zinc from their solutions, which matches the behavior of S (no reaction with anything).<br>
+            
+            <span class="marking-scheme">(1.5 marks for part a with reason, 1 mark for part b observation & type, 1 mark for part c correct order, 0.5 mark for part d identifying S)</span>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Confident Academic Assessment</div>
+</body>
+</html>

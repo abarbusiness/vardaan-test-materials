@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Vardaan Learning Institute</title>
+    
+    <!-- MathJax Configuration and Script -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                macros: {
+                    // Custom macros if needed
+                }
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            width: 100%; 
+            max-width: 210mm;
+            margin: 0 auto; 
+            padding: 20mm; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; opacity: 0.05; 
+            z-index: -1; pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #333;
+        }
+
+        .section-title {
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 13pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 30px 0 20px 0;
+        }
+        
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .question-text {
+            flex-grow: 1;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+
+        .q-num {
+            margin-right: 5px;
+        }
+        
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .solution-body {
+            margin-left: 10px;
+        }
+
+        .solution-heading {
+            font-weight: bold;
+            color: #444;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        
+        .final-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 15px 0 5px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 5px;
+        }
+
+        /* Small screen math chunking */
+        .math-chunk {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive Design Rules */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            /* Break long equations on smaller screens */
+            .mjx-chtml { white-space: normal !important; word-wrap: break-word; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { position: absolute; }
+            .solution-block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 15 - VECTOR ALGEBRA</div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-title">SECTION A (Short Answer Type)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">1.</span> Find the unit vector in the direction of the vector $\vec{a} = 2\hat{i} + 3\hat{j} + \hat{k}$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Given vector: $\vec{a} = 2\hat{i} + 3\hat{j} + \hat{k}$</p>
+            <p>The magnitude of the vector $\vec{a}$ is given by:</p>
+            <div class="math-container">
+                $$ |\vec{a}| = \sqrt{(2)^2 + (3)^2 + (1)^2} = \sqrt{4 + 9 + 1} = \sqrt{14} $$
+            </div>
+            <p>The unit vector in the direction of $\vec{a}$ is $\hat{a} = \frac{\vec{a}}{|\vec{a}|}$.</p>
+            <div class="final-answer">
+                $\hat{a} = \frac{1}{\sqrt{14}}(2\hat{i} + 3\hat{j} + \hat{k}) \text{  or  } \frac{2}{\sqrt{14}}\hat{i} + \frac{3}{\sqrt{14}}\hat{j} + \frac{1}{\sqrt{14}}\hat{k}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">2.</span> Find the projection of the vector $\hat{i} + 3\hat{j} + 7\hat{k}$ on the vector $7\hat{i} - \hat{j} + 8\hat{k}$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Let $\vec{a} = \hat{i} + 3\hat{j} + 7\hat{k}$ and $\vec{b} = 7\hat{i} - \hat{j} + 8\hat{k}$.</p>
+            <p>The projection of vector $\vec{a}$ on vector $\vec{b}$ is given by the formula: $\frac{\vec{a} \cdot \vec{b}}{|\vec{b}|}$</p>
+            <p>Step 1: Find the dot product $\vec{a} \cdot \vec{b}$</p>
+            <div class="math-container">
+                $$ \vec{a} \cdot \vec{b} = (1)(7) + (3)(-1) + (7)(8) = 7 - 3 + 56 = 60 $$
+            </div>
+            <p>Step 2: Find the magnitude of $\vec{b}$</p>
+            <div class="math-container">
+                $$ |\vec{b}| = \sqrt{(7)^2 + (-1)^2 + (8)^2} = \sqrt{49 + 1 + 64} = \sqrt{114} $$
+            </div>
+            <div class="final-answer">
+                $\text{Projection} = \frac{60}{\sqrt{114}}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">3.</span> Find the angle between the vectors $\vec{a} = \hat{i} - \hat{j} + \hat{k}$ and $\vec{b} = \hat{i} + \hat{j} - \hat{k}$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>The angle $\theta$ between two vectors $\vec{a}$ and $\vec{b}$ is given by: $\cos \theta = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}$</p>
+            <p>Calculating the dot product:</p>
+            <div class="math-container">
+                $$ \vec{a} \cdot \vec{b} = (1)(1) + (-1)(1) + (1)(-1) = 1 - 1 - 1 = -1 $$
+            </div>
+            <p>Calculating the magnitudes:</p>
+            <div class="math-container">
+                $$ |\vec{a}| = \sqrt{1^2 + (-1)^2 + 1^2} = \sqrt{3} $$
+                $$ |\vec{b}| = \sqrt{1^2 + 1^2 + (-1)^2} = \sqrt{3} $$
+            </div>
+            <p>Substituting into the formula:</p>
+            <div class="math-container">
+                $$ \cos \theta = \frac{-1}{\sqrt{3} \times \sqrt{3}} = \frac{-1}{3} $$
+            </div>
+            <div class="final-answer">
+                $\theta = \cos^{-1}\left(-\frac{1}{3}\right)$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">4.</span> Write two different non-zero vectors having the same direction.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Two vectors have the same direction if their direction cosines are identical, or simply if one is a positive scalar multiple of the other.</p>
+            <p>Let the first vector be: $\vec{a} = \hat{i} + \hat{j} + \hat{k}$</p>
+            <p>Let the second vector be scalar multiple (e.g., multiply by 2): $\vec{b} = 2\hat{i} + 2\hat{j} + 2\hat{k}$</p>
+            <div class="final-answer">
+                $\vec{a} = \hat{i} + \hat{j} + \hat{k}$ and $\vec{b} = 2\hat{i} + 2\hat{j} + 2\hat{k}$ <br>
+                <span style="font-size: 9pt; font-weight: normal;">(Note: Any two vectors $\vec{v}$ and $k\vec{v}$ where $k > 0$ are correct.)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">5.</span> For what value of $\lambda$ are the vectors $\vec{a} = 2\hat{i} + \lambda\hat{j} + \hat{k}$ and $\vec{b} = \hat{i} - 2\hat{j} + 3\hat{k}$ perpendicular to each other?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Two non-zero vectors are perpendicular if and only if their dot product is zero. Thus, $\vec{a} \cdot \vec{b} = 0$.</p>
+            <div class="math-container">
+                $$ (2\hat{i} + \lambda\hat{j} + \hat{k}) \cdot (\hat{i} - 2\hat{j} + 3\hat{k}) = 0 $$
+                $$ (2)(1) + (\lambda)(-2) + (1)(3) = 0 $$
+                $$ 2 - 2\lambda + 3 = 0 $$
+                $$ 5 - 2\lambda = 0 \implies 2\lambda = 5 $$
+            </div>
+            <div class="final-answer">
+                $\lambda = \frac{5}{2}$
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-title">SECTION B (Short Answer Type)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">6.</span> Find a vector of magnitude $5$ units perpendicular to each of the vectors $(\vec{a} + \vec{b})$ and $(\vec{a} - \vec{b})$, where $\vec{a} = \hat{i} + \hat{j} + \hat{k}$ and $\vec{b} = \hat{i} + 2\hat{j} + 3\hat{k}$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>First, find the vectors $\vec{u} = (\vec{a} + \vec{b})$ and $\vec{v} = (\vec{a} - \vec{b})$:</p>
+            <div class="math-container">
+                $$ \vec{u} = (\hat{i} + \hat{j} + \hat{k}) + (\hat{i} + 2\hat{j} + 3\hat{k}) = 2\hat{i} + 3\hat{j} + 4\hat{k} $$
+                $$ \vec{v} = (\hat{i} + \hat{j} + \hat{k}) - (\hat{i} + 2\hat{j} + 3\hat{k}) = 0\hat{i} - \hat{j} - 2\hat{k} $$
+            </div>
+            <p>A vector perpendicular to both $\vec{u}$ and $\vec{v}$ is given by their cross product $\vec{u} \times \vec{v}$:</p>
+            <div class="math-container">
+                $$ \vec{u} \times \vec{v} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 2 & 3 & 4 \\ 0 & -1 & -2 \end{vmatrix} $$
+                $$ = \hat{i}(-6 - (-4)) - \hat{j}(-4 - 0) + \hat{k}(-2 - 0) $$
+                $$ = -2\hat{i} + 4\hat{j} - 2\hat{k} $$
+            </div>
+            <p>Magnitude of this normal vector $\vec{n}$:</p>
+            <div class="math-container">
+                $$ |\vec{n}| = \sqrt{(-2)^2 + 4^2 + (-2)^2} = \sqrt{4 + 16 + 4} = \sqrt{24} = 2\sqrt{6} $$
+            </div>
+            <p>The unit normal vector is $\hat{n} = \frac{\vec{n}}{|\vec{n}|} = \frac{-2\hat{i} + 4\hat{j} - 2\hat{k}}{2\sqrt{6}} = \frac{-\hat{i} + 2\hat{j} - \hat{k}}{\sqrt{6}}$.</p>
+            <p>The required vector has a magnitude of 5. Hence, it is $\pm 5\hat{n}$.</p>
+            <div class="final-answer">
+                $\text{Required Vector} = \pm \frac{5}{\sqrt{6}} (-\hat{i} + 2\hat{j} - \hat{k})$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">7.</span> If $\vec{a}, \vec{b}, \vec{c}$ are unit vectors such that $\vec{a} + \vec{b} + \vec{c} = \vec{0}$, find the value of the expression: $\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Given that $\vec{a}, \vec{b}, \vec{c}$ are unit vectors, their magnitudes are: $|\vec{a}| = |\vec{b}| = |\vec{c}| = 1$.</p>
+            <p>We are given that $\vec{a} + \vec{b} + \vec{c} = \vec{0}$. Squaring both sides, we get:</p>
+            <div class="math-container">
+                $$ |\vec{a} + \vec{b} + \vec{c}|^2 = 0 $$
+                $$ (\vec{a} + \vec{b} + \vec{c}) \cdot (\vec{a} + \vec{b} + \vec{c}) = 0 $$
+                $$ |\vec{a}|^2 + |\vec{b}|^2 + |\vec{c}|^2 + 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) = 0 $$
+            </div>
+            <p>Substituting the magnitudes:</p>
+            <div class="math-container">
+                $$ (1)^2 + (1)^2 + (1)^2 + 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) = 0 $$
+                $$ 3 + 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) = 0 $$
+                $$ 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) = -3 $$
+            </div>
+            <div class="final-answer">
+                $\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a} = -\frac{3}{2}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">8.</span> Find the area of a parallelogram whose adjacent sides are determined by the vectors $\vec{a} = \hat{i} - \hat{j} + 3\hat{k}$ and $\vec{b} = 2\hat{i} - 7\hat{j} + \hat{k}$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>The area of a parallelogram with adjacent sides $\vec{a}$ and $\vec{b}$ is given by $|\vec{a} \times \vec{b}|$.</p>
+            <p>Calculating the cross product:</p>
+            <div class="math-container">
+                $$ \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & -1 & 3 \\ 2 & -7 & 1 \end{vmatrix} $$
+                $$ = \hat{i}(-1 - (-21)) - \hat{j}(1 - 6) + \hat{k}(-7 - (-2)) $$
+                $$ = \hat{i}(20) - \hat{j}(-5) + \hat{k}(-5) = 20\hat{i} + 5\hat{j} - 5\hat{k} $$
+            </div>
+            <p>Now, finding the magnitude for the area:</p>
+            <div class="math-container">
+                $$ \text{Area} = |\vec{a} \times \vec{b}| = \sqrt{(20)^2 + (5)^2 + (-5)^2} $$
+                $$ = \sqrt{400 + 25 + 25} = \sqrt{450} = \sqrt{225 \times 2} = 15\sqrt{2} $$
+            </div>
+            <div class="final-answer">
+                $\text{Area} = 15\sqrt{2} \text{ sq. units}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">9.</span> Let $\vec{a}, \vec{b}$ and $\vec{c}$ be three vectors such that $|\vec{a}| = 3$, $|\vec{b}| = 4$, and $|\vec{c}| = 5$. If each vector is perpendicular to the sum of the other two, find the magnitude of the vector $|\vec{a} + \vec{b} + \vec{c}|$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Given each vector is perpendicular to the sum of the other two:</p>
+            <div class="math-container">
+                $$ \vec{a} \cdot (\vec{b} + \vec{c}) = 0 \implies \vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c} = 0 \quad \text{--- (i)} $$
+                $$ \vec{b} \cdot (\vec{a} + \vec{c}) = 0 \implies \vec{b}\cdot\vec{a} + \vec{b}\cdot\vec{c} = 0 \quad \text{--- (ii)} $$
+                $$ \vec{c} \cdot (\vec{a} + \vec{b}) = 0 \implies \vec{c}\cdot\vec{a} + \vec{c}\cdot\vec{b} = 0 \quad \text{--- (iii)} $$
+            </div>
+            <p>Adding equations (i), (ii), and (iii):</p>
+            <div class="math-container">
+                $$ 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) = 0 $$
+            </div>
+            <p>We need to find $|\vec{a} + \vec{b} + \vec{c}|$. Consider its square:</p>
+            <div class="math-container">
+                $$ |\vec{a} + \vec{b} + \vec{c}|^2 = |\vec{a}|^2 + |\vec{b}|^2 + |\vec{c}|^2 + 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a}) $$
+                $$ = (3)^2 + (4)^2 + (5)^2 + 0 $$
+                $$ = 9 + 16 + 25 = 50 $$
+            </div>
+            <p>Therefore, taking the square root:</p>
+            <div class="final-answer">
+                $|\vec{a} + \vec{b} + \vec{c}| = \sqrt{50} = 5\sqrt{2}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">10.</span> Find the direction cosines of the vector joining the points $A(1, 2, -3)$ and $B(-1, -2, 1)$, directed from $A$ to $B$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>First, find the vector $\vec{AB}$. The position vectors are $\vec{OA} = \hat{i} + 2\hat{j} - 3\hat{k}$ and $\vec{OB} = -\hat{i} - 2\hat{j} + \hat{k}$.</p>
+            <div class="math-container">
+                $$ \vec{AB} = \text{P.V. of } B - \text{P.V. of } A $$
+                $$ \vec{AB} = (-1 - 1)\hat{i} + (-2 - 2)\hat{j} + (1 - (-3))\hat{k} $$
+                $$ \vec{AB} = -2\hat{i} - 4\hat{j} + 4\hat{k} $$
+            </div>
+            <p>Next, find the magnitude of vector $\vec{AB}$:</p>
+            <div class="math-container">
+                $$ |\vec{AB}| = \sqrt{(-2)^2 + (-4)^2 + (4)^2} = \sqrt{4 + 16 + 16} = \sqrt{36} = 6 $$
+            </div>
+            <p>The direction cosines $(l, m, n)$ are given by dividing the components of the vector by its magnitude:</p>
+            <div class="math-container">
+                $$ l = \frac{-2}{6}, \quad m = \frac{-4}{6}, \quad n = \frac{4}{6} $$
+            </div>
+            <div class="final-answer">
+                $\text{Direction Cosines} = \left(-\frac{1}{3}, -\frac{2}{3}, \frac{2}{3}\right)$
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-title">SECTION C (Long Answer Type)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">11.</span> Let $\vec{a} = \hat{i} + 4\hat{j} + 2\hat{k}$, $\vec{b} = 3\hat{i} - 2\hat{j} + 7\hat{k}$ and $\vec{c} = 2\hat{i} - \hat{j} + 4\hat{k}$. Find a vector $\vec{d}$ which is perpendicular to both $\vec{a}$ and $\vec{b}$, and satisfies the condition $\vec{c}\cdot\vec{d} = 15$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Since $\vec{d}$ is perpendicular to both $\vec{a}$ and $\vec{b}$, it must be parallel to their cross product $(\vec{a} \times \vec{b})$. Let's find $\vec{a} \times \vec{b}$:</p>
+            <div class="math-container">
+                $$ \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 4 & 2 \\ 3 & -2 & 7 \end{vmatrix} $$
+                $$ = \hat{i}(28 - (-4)) - \hat{j}(7 - 6) + \hat{k}(-2 - 12) $$
+                $$ = 32\hat{i} - \hat{j} - 14\hat{k} $$
+            </div>
+            <p>Therefore, $\vec{d}$ can be expressed as a scalar multiple of this cross product:</p>
+            <div class="math-container">
+                $$ \vec{d} = \lambda(32\hat{i} - \hat{j} - 14\hat{k}) \quad \text{for some scalar } \lambda $$
+            </div>
+            <p>We are given the condition $\vec{c} \cdot \vec{d} = 15$. Substitute $\vec{c}$ and $\vec{d}$:</p>
+            <div class="math-container">
+                $$ (2\hat{i} - \hat{j} + 4\hat{k}) \cdot [\lambda(32\hat{i} - \hat{j} - 14\hat{k})] = 15 $$
+                $$ \lambda [ (2)(32) + (-1)(-1) + (4)(-14) ] = 15 $$
+                $$ \lambda [ 64 + 1 - 56 ] = 15 $$
+                $$ \lambda [ 9 ] = 15 \implies \lambda = \frac{15}{9} = \frac{5}{3} $$
+            </div>
+            <p>Substitute $\lambda$ back into the expression for $\vec{d}$:</p>
+            <div class="math-container">
+                $$ \vec{d} = \frac{5}{3}(32\hat{i} - \hat{j} - 14\hat{k}) $$
+            </div>
+            <div class="final-answer">
+                $\vec{d} = \frac{160}{3}\hat{i} - \frac{5}{3}\hat{j} - \frac{70}{3}\hat{k}$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">12.</span> Prove by vector method that the diagonals of a rhombus bisect each other at right angles.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>Let $OACB$ be a rhombus with origin at $O$. Let the position vectors of $A$ and $B$ be $\vec{a}$ and $\vec{b}$ respectively. Then, position vector of $C$ (using triangle law in $\Delta OAC$ where $\vec{AC} = \vec{OB} = \vec{b}$) is $\vec{a} + \vec{b}$.</p>
+            <p>Because $OACB$ is a rhombus, adjacent sides are equal in length. Therefore, $|\vec{a}| = |\vec{b}|$.</p>
+            <p><strong>Part 1: Proving Diagonals are at Right Angles (Perpendicular)</strong></p>
+            <p>The vectors representing the diagonals are $\vec{OC}$ and $\vec{AB}$.</p>
+            <div class="math-container">
+                <span class="math-chunk">$\vec{OC} = \vec{a} + \vec{b}$</span><br>
+                <span class="math-chunk">$\vec{AB} = \text{P.V. of } B - \text{P.V. of } A = \vec{b} - \vec{a}$</span>
+            </div>
+            <p>To check for perpendicularity, we take their dot product:</p>
+            <div class="math-container">
+                $$ \vec{OC} \cdot \vec{AB} = (\vec{b} + \vec{a}) \cdot (\vec{b} - \vec{a}) = |\vec{b}|^2 - |\vec{a}|^2 $$
+            </div>
+            <p>Since $|\vec{a}| = |\vec{b}|$, then $|\vec{b}|^2 - |\vec{a}|^2 = 0$. <br>
+            Hence, $\vec{OC} \cdot \vec{AB} = 0$, which means the diagonals intersect at $90^\circ$.</p>
+            
+            <p><strong>Part 2: Proving Diagonals Bisect Each Other</strong></p>
+            <p>Find the position vector of the midpoint of diagonal $OC$:</p>
+            <div class="math-container">
+                $$ \text{Midpoint of } OC = \frac{\vec{0} + (\vec{a} + \vec{b})}{2} = \frac{\vec{a} + \vec{b}}{2} $$
+            </div>
+            <p>Find the position vector of the midpoint of diagonal $AB$:</p>
+            <div class="math-container">
+                $$ \text{Midpoint of } AB = \frac{\vec{a} + \vec{b}}{2} $$
+            </div>
+            <p>Since the midpoints coincide, the diagonals bisect each other.</p>
+            <div class="final-answer">
+                Hence proved, the diagonals of a rhombus bisect each other at right angles.
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text"><span class="q-num">13.</span> Use vectors to find the area of the triangle with vertices $A(1, 1, 2)$, $B(2, 3, 5)$ and $C(1, 5, 5)$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="solution-body">
+            <div class="solution-heading">Solution:</div>
+            <p>The area of a triangle formed by vectors $\vec{AB}$ and $\vec{AC}$ as adjacent sides is given by $\frac{1}{2}|\vec{AB} \times \vec{AC}|$.</p>
+            <p>First, find the vectors $\vec{AB}$ and $\vec{AC}$:</p>
+            <div class="math-container">
+                $$ \vec{AB} = (2-1)\hat{i} + (3-1)\hat{j} + (5-2)\hat{k} = \hat{i} + 2\hat{j} + 3\hat{k} $$
+                $$ \vec{AC} = (1-1)\hat{i} + (5-1)\hat{j} + (5-2)\hat{k} = 0\hat{i} + 4\hat{j} + 3\hat{k} $$
+            </div>
+            <p>Next, find the cross product $\vec{AB} \times \vec{AC}$:</p>
+            <div class="math-container">
+                $$ \vec{AB} \times \vec{AC} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 2 & 3 \\ 0 & 4 & 3 \end{vmatrix} $$
+                $$ = \hat{i}(6 - 12) - \hat{j}(3 - 0) + \hat{k}(4 - 0) $$
+                $$ = -6\hat{i} - 3\hat{j} + 4\hat{k} $$
+            </div>
+            <p>Calculate the magnitude of this cross product:</p>
+            <div class="math-container">
+                $$ |\vec{AB} \times \vec{AC}| = \sqrt{(-6)^2 + (-3)^2 + 4^2} $$
+                $$ = \sqrt{36 + 9 + 16} = \sqrt{61} $$
+            </div>
+            <p>Now, calculate the area:</p>
+            <div class="math-container">
+                $$ \text{Area} = \frac{1}{2}|\vec{AB} \times \vec{AC}| = \frac{1}{2}\sqrt{61} $$
+            </div>
+            <div class="final-answer">
+                $\text{Area} = \frac{\sqrt{61}}{2} \text{ sq. units}$
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

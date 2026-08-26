@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations and scientific notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; color: #1a365d; }
+        .test-name { font-size: 16pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .solution-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #c53030; }
+        
+        .section-header { text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; text-decoration: underline; font-size: 14pt; background-color: #f7fafc; padding: 5px; border-radius: 4px;}
+        
+        .qa-container { margin-bottom: 25px; page-break-inside: avoid; border-bottom: 1px dashed #e2e8f0; padding-bottom: 15px;}
+        .q-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; font-weight: bold; color: #2d3748; background-color: #edf2f7; padding: 10px; border-radius: 6px;}
+        .q-text { flex-grow: 1; padding-right: 15px; }
+        .q-marks { flex-shrink: 0; background: #2b6cb0; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11pt; }
+        
+        .ans-text { padding-left: 10px; text-align: justify; }
+        .ans-label { font-weight: bold; color: #276749; text-decoration: underline; margin-bottom: 5px; display: inline-block;}
+        .marking-scheme { color: #c53030; font-size: 10pt; font-style: italic; }
+        
+        table.diff-table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px; }
+        table.diff-table th, table.diff-table td { border: 1px solid #000; padding: 8px; text-align: left; }
+        table.diff-table th { background-color: #f0f0f0; }
+
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 15px; margin: 0; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 95%; }
+            .q-row { flex-direction: column; }
+            .q-marks { align-self: flex-end; margin-top: 5px; }
+            .q-text { padding-right: 0; }
+            table.diff-table th, table.diff-table td { font-size: 10pt; padding: 4px; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16 (Surprise Test)</div>
+        <div class="solution-title">ANSWER KEY & DETAILED SOLUTIONS</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q1. Define a mixture. Give one example each of a homogeneous and a heterogeneous mixture.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Mixture:</strong> A mixture is constituted by more than one kind of pure form of matter (substances) mixed in any proportion, where the constituents retain their original properties.<br>
+            <strong>Examples:</strong><br>
+            • Homogeneous mixture: Salt dissolved in water, Air, Lemonade. (Any one)<br>
+            • Heterogeneous mixture: Sand and salt, Oil and water, Soil. (Any one)<br>
+            <span class="marking-scheme">(1 mark for correct definition, ½ mark each for correct examples)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q2. A student shines a beam of light through a true solution of sugar and a colloidal solution of milk. What will be her observation in both cases? Give a reason for your answer.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Observation:</strong><br>
+            • In the sugar solution (true solution), the path of the light beam will <strong>not</strong> be visible.<br>
+            • In the milk (colloidal solution), the path of the light beam will be clearly <strong>visible</strong>.<br>
+            <strong>Reason:</strong> The particles of a true solution are too small (less than 1 nm) to scatter a beam of light. However, colloidal particles are large enough to scatter the beam of light passing through it, a phenomenon known as the Tyndall effect.<br>
+            <span class="marking-scheme">(1 mark for correct observations, 1 mark for correct reasoning)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q3. Identify the solute and the solvent in the following mixtures:<br>(a) Tincture of iodine<br>(b) Aerated drinks (like soda water)</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Tincture of iodine:</strong><br>
+            • Solute: Iodine (solid)<br>
+            • Solvent: Alcohol (liquid)<br>
+            <strong>(b) Aerated drinks:</strong><br>
+            • Solute: Carbon dioxide gas (\(CO_2\))<br>
+            • Solvent: Water (liquid)<br>
+            <span class="marking-scheme">(½ mark for each correct identification)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q4. Name the physical separation technique you would use to separate:<br>(a) Butter from curd<br>(b) Iron pins mixed in sand</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a)</strong> Centrifugation (or churning)<br>
+            <strong>(b)</strong> Magnetic Separation<br>
+            <span class="marking-scheme">(1 mark for each correct technique)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q5. What is an emulsion? Give one practical example of an emulsion from daily life.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Emulsion:</strong> A colloidal dispersion in which both the dispersed phase and the dispersion medium are liquids (usually immiscible liquids like oil and water).<br>
+            <strong>Example:</strong> Milk, Face cream, Butter, Mayonnaise. (Any one)<br>
+            <span class="marking-scheme">(1 mark for definition, 1 mark for correct example)</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q6. Differentiate between a true solution, a suspension, and a colloid on the basis of: (a) Particle size (b) Stability (c) Appearance.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span>
+            <div class="math-scroll">
+                <table class="diff-table">
+                    <tr>
+                        <th>Property</th>
+                        <th>True Solution</th>
+                        <th>Suspension</th>
+                        <th>Colloid</th>
+                    </tr>
+                    <tr>
+                        <td><strong>(a) Particle Size</strong></td>
+                        <td>Less than 1 nm (\(10^{-9}\text{ m}\))</td>
+                        <td>More than 100 nm</td>
+                        <td>Between 1 nm and 100 nm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Stability</strong></td>
+                        <td>Highly stable (particles do not settle)</td>
+                        <td>Unstable (particles settle down)</td>
+                        <td>Stable (particles do not settle)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(c) Appearance</strong></td>
+                        <td>Transparent and clear</td>
+                        <td>Opaque</td>
+                        <td>Translucent</td>
+                    </tr>
+                </table>
+            </div>
+            <span class="marking-scheme">(1 mark for each correctly differentiated property across all three types)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q7. A solution contains 40 g of common salt dissolved in 320 g of water. Calculate the concentration in terms of mass by mass percentage of the solution.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            Given:<br>
+            Mass of solute (common salt) = \( 40 \text{ g} \)<br>
+            Mass of solvent (water) = \( 320 \text{ g} \)<br>
+            <br>
+            <strong>Step 1: Calculate Total Mass of Solution</strong><br>
+            Mass of solution = Mass of solute + Mass of solvent<br>
+            Mass of solution = \( 40 \text{ g} + 320 \text{ g} = 360 \text{ g} \)<br>
+            <br>
+            <strong>Step 2: Apply the Concentration Formula</strong><br>
+            <div class="math-scroll">
+                $$ \text{Mass percentage of solution} = \left( \frac{\text{Mass of solute}}{\text{Mass of solution}} \right) \times 100 $$
+                $$ = \left( \frac{40}{360} \right) \times 100 $$
+                $$ = \left( \frac{1}{9} \right) \times 100 $$
+                $$ = 11.11\% $$
+            </div>
+            The concentration of the solution is <strong>11.11%</strong>.<br>
+            <span class="marking-scheme">(1 mark for calculating total mass, 1 mark for correct formula substitution, 1 mark for final answer)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q8. State the principle used in the process of chromatography. Mention any two important applications of chromatography in real life.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>Principle:</strong> Chromatography is based on the principle that different components of a mixture have different solubilities in the same solvent. As the solvent rises on the filter paper, it takes along the dissolved substances. The component that is more soluble in water/solvent rises faster, causing the separation of components.<br>
+            <strong>Applications (Any two):</strong><br>
+            1. To separate colors in a dye.<br>
+            2. To separate pigments from natural colors (like chlorophyll from leaves).<br>
+            3. To separate drugs from blood in forensic science.<br>
+            <span class="marking-scheme">(1.5 marks for correct principle, 1.5 marks for two valid applications)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q9. How can we obtain different gases from air? Draw a simple flow diagram to illustrate the sequential steps.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            Air can be separated into its component gases by the process of <strong>Fractional Distillation</strong>.<br><br>
+            <strong>Flow Diagram:</strong><br>
+            <div style="background: #fdfdfd; border: 1px solid #ccc; padding: 10px; text-align: center; margin: 10px 0; border-radius: 5px;">
+                Air<br>
+                ↓ <em>(Compress and cool by increasing pressure and decreasing temperature)</em><br>
+                Liquid Air<br>
+                ↓ <em>(Allow to warm up slowly in fractional distillation column)</em><br>
+                Gases get separated at different heights based on their boiling points.<br>
+                (e.g., Nitrogen distils first, then Argon, then Oxygen)
+            </div>
+            <span class="marking-scheme">(1 mark for identifying fractional distillation, 2 marks for correct logical flow diagram)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q10. Two miscible liquids 'A' and 'B' have boiling points that differ by more than 25 K. <br>(a) Name the specific technique used to separate them.<br>(b) State the underlying principle of this separation technique.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Name of Technique:</strong> Simple Distillation.<br>
+            <strong>(b) Principle:</strong> Distillation is used for the separation of components of a mixture containing two miscible liquids that boil without decomposition and have a sufficient difference in their boiling points (more than 25 K). The liquid with the lower boiling point vaporizes first, gets condensed in the condenser, and is collected separately, leaving the liquid with the higher boiling point behind.<br>
+            <span class="marking-scheme">(1 mark for 'Distillation', 2 marks for stating the principle accurately)</span>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q11. (a) What is the Tyndall effect? Which of the following will show the Tyndall effect: Salt solution, Milk, Copper sulphate solution, Starch solution?<br>(b) Classify as chemical or physical changes with a reason:<br>(i) Rusting of an almirah (ii) Melting of ice (iii) Burning of paper</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Tyndall Effect:</strong> The phenomenon of scattering of a beam of light by colloidal particles, which makes the path of the light beam visible.<br>
+            <strong>Mixtures showing Tyndall effect:</strong> Milk and Starch solution (as they are colloids). <em>Salt solution and copper sulphate solution are true solutions and will not show it.</em><br>
+            <strong>(b) Classification:</strong><br>
+            (i) <strong>Rusting of an almirah:</strong> Chemical change. Reason: A new chemical substance (iron oxide/rust) is formed, and the change is irreversible.<br>
+            (ii) <strong>Melting of ice:</strong> Physical change. Reason: Only the physical state changes from solid to liquid; the chemical composition (\(H_2O\)) remains the same. It is reversible.<br>
+            (iii) <strong>Burning of paper:</strong> Chemical change. Reason: Paper reacts with oxygen to form new substances (ash, carbon dioxide, water vapor) and the original paper cannot be recovered.<br>
+            <span class="marking-scheme">(1 mark for Tyndall definition, 1 mark for correct identification. 1 mark each for correct classification and reasoning of the three changes)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q12. A mixture contains common salt and ammonium chloride.<br>(a) Name the property of ammonium chloride that allows separation.<br>(b) Describe the step-by-step method.<br>(c) Draw a labelled diagram of the setup.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Property:</strong> Sublimation. Ammonium chloride changes directly from solid to gaseous state on heating, bypassing the liquid state.<br>
+            <strong>(b) Method (Sublimation):</strong><br>
+            1. Take the mixture in a china dish.<br>
+            2. Place an inverted glass funnel over the china dish.<br>
+            3. Put a cotton plug at the stem of the funnel to prevent vapors from escaping.<br>
+            4. Heat the mixture gently using a burner.<br>
+            5. Ammonium chloride vaporizes, rises, and condenses on the cooler inner walls of the funnel to form solid sublimate. Salt remains behind in the china dish.<br>
+            <strong>(c) Diagram Requirements:</strong> <em>(Since this is text-based, teachers will look for these labels)</em><br>
+            The diagram should clearly show: China dish, Burner/Tripod stand, Inverted funnel, Cotton plug at the top, Solidified ammonium chloride on inner walls, and Mixture of salt & ammonium chloride at the bottom.<br>
+            <span class="marking-scheme">(1 mark for naming Sublimation, 2 marks for sequential correct steps, 2 marks for a well-labelled diagram in the student's sheet)</span>
+        </div>
+    </div>
+
+    <div class="qa-container">
+        <div class="q-row">
+            <div class="q-text">Q13. (a) State any three major differences between a mixture and a compound.<br>(b) Describe a logical sequence to separate a mixture of sand, iron filings, and common salt.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="ans-text">
+            <span class="ans-label">Answer:</span><br>
+            <strong>(a) Differences:</strong>
+            <div class="math-scroll">
+                <table class="diff-table">
+                    <tr>
+                        <th>Mixture</th>
+                        <th>Compound</th>
+                    </tr>
+                    <tr>
+                        <td>1. Elements or compounds just mix together to form a mixture; no new compound is formed.</td>
+                        <td>1. Elements react to form new chemical compounds.</td>
+                    </tr>
+                    <tr>
+                        <td>2. A mixture has a variable composition.</td>
+                        <td>2. The composition of each new substance is always fixed.</td>
+                    </tr>
+                    <tr>
+                        <td>3. Shows the properties of its constituent substances.</td>
+                        <td>3. The new substance has totally different chemical properties.</td>
+                    </tr>
+                    <tr>
+                        <td>4. Constituents can be separated easily by physical methods.</td>
+                        <td>4. Constituents can be separated only by chemical or electrochemical reactions.</td>
+                    </tr>
+                </table>
+                <em>(Any three valid differences fetch 3 marks)</em>
+            </div>
+            
+            <strong>(b) Separation Sequence:</strong><br>
+            To separate Sand, Iron filings, and Salt, follow these steps in exact order:<br>
+            1. <strong>Magnetic Separation:</strong> Roll a strong magnet over the dry mixture. The iron filings will get attracted to the magnet and are separated out.<br>
+            2. <strong>Dissolution & Filtration:</strong> Add water to the remaining mixture of sand and salt, and stir well. Salt is soluble in water, but sand is not. Pass the mixture through filter paper. Sand will remain on the filter paper as residue (separated), and salt solution will pass through as filtrate.<br>
+            3. <strong>Evaporation/Boiling:</strong> Heat the filtrate (salt solution) in a china dish. The water evaporates, leaving the solid common salt behind.<br>
+            <span class="marking-scheme">(3 marks for the table (1 each), 2 marks for the correct logical sequence: Magnetism -> Filtration -> Evaporation)</span>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Confident Academic Assessment</div>
+</body>
+</html>

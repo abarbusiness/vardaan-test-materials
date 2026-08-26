@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Practice Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; max-width: 100%; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; font-size: 12pt; 
+            line-height: 1.5; color: #000; background-color: white; position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; text-transform: uppercase; }
+        
+        .exam-details { 
+            display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+            margin-top: 15px; font-weight: bold; font-size: 11pt; 
+            border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 5px; 
+        }
+        
+        .instructions { margin-top: 15px; font-size: 10.5pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 30px; margin-bottom: 20px; 
+            text-decoration: underline; font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 4px; text-decoration: none;}
+        
+        .question-container { margin-bottom: 20px; display: flex; align-items: flex-start; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; font-size: 12pt; }
+        .q-content { flex-grow: 1; word-wrap: break-word; overflow-wrap: break-word; }
+        
+        .math-overflow { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+        
+        .footer { margin-top: 50px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11.5pt; width: 100%; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; border: none; gap: 5px; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+            .q-num { width: 25px; }
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.1 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">RIGOROUS PRACTICE MODULE</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 90 Minutes</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>Topics Covered:</strong>
+            <ul>
+                <li>Real Numbers</li>
+                <li>Pair of Linear Equations in Two Variables</li>
+                <li>Quadratic Equations</li>
+                <li>Coordinate Geometry</li>
+            </ul>
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A comprises 5 questions of 2 marks each.</li>
+                <li>Section B comprises 5 questions of 3 marks each.</li>
+                <li>Section C comprises 5 questions of 5 marks each.</li>
+                <li>Show complete working for every question.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Short Answer Type I - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Find the greatest number of six digits exactly divisible by 18, 24, and 36.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Determine whether the points \( (a, a) \), \( (-a, -a) \) and \( (-a\sqrt{3}, a\sqrt{3}) \) form an equilateral triangle. Justify your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Solve for \( x \) and \( y \): 
+            <div class="math-overflow">
+                \[ 99x + 101y = 499 \]
+                \[ 101x + 99y = 501 \]
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the values of \( k \) for which the quadratic equation \( (k+4)x^2 + (k+1)x + 1 = 0 \) has equal roots.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If two positive integers \( p \) and \( q \) can be expressed as \( p = ab^2 \) and \( q = a^3b \); where \( a, b \) being prime numbers, then prove that \( \text{LCM}(p, q) \times \text{HCF}(p, q) = p \times q \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type II - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Find the ratio in which the y-axis divides the line segment joining the points \( (-4, -6) \) and \( (10, 12) \). Also, find the coordinates of the point of division.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Solve the following pair of linear equations graphically:
+            <div class="math-overflow">
+                \[ x - y + 1 = 0 \]
+                \[ 3x + 2y - 12 = 0 \]
+            </div>
+            Determine the vertices of the triangle formed by these lines and the x-axis.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Prove that \( \sqrt{p} + \sqrt{q} \) is an irrational number, given that \( p \) and \( q \) are prime numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Solve for \( x \):
+            <div class="math-overflow">
+                \[ \frac{1}{a + b + x} = \frac{1}{a} + \frac{1}{b} + \frac{1}{x}, \text{ where } a+b \neq 0, x \neq 0, x \neq -(a+b) \]
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Find the point on the x-axis which is equidistant from the points \( (7, 6) \) and \( (-3, 4) \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Places A and B are 100 km apart on a highway. One car starts from A and another from B at the same time. If the cars travel in the same direction at different speeds, they meet in 5 hours. If they travel towards each other, they meet in 1 hour. What are the speeds of the two cars?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Find the area of the rhombus whose vertices taken in order are the points \( (3, 0) \), \( (4, 5) \), \( (-1, 4) \) and \( (-2, -1) \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            A fraction becomes \( \frac{9}{11} \) if 2 is added to both the numerator and the denominator. If 3 is added to both the numerator and the denominator it becomes \( \frac{5}{6} \). Find the fraction algebraically.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            Find the roots of the following quadratic equation using the method of completing the square:
+            <div class="math-overflow">
+                \[ 2x^2 - 7x + 3 = 0 \]
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

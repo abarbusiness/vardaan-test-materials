@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left', displayIndent: '1em' },
+            tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #222;
+            --border-color: #d1d5db;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; max-width: 100%; margin: 0 auto; padding: 20px; box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 11.5pt; 
+            line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; }
+        
+        .header { text-align: center; margin-bottom: 30px; border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); padding: 15px 0; }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1.5px; }
+        .test-name { font-size: 13pt; font-weight: 600; margin-top: 8px; letter-spacing: 0.5px; color: #444; }
+        
+        .solution-block { border-bottom: 2px solid #f3f4f6; padding-bottom: 25px; margin-bottom: 25px; page-break-inside: avoid; }
+        
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; background-color: #f9fafb; padding: 12px; border-radius: 6px; border-left: 4px solid var(--primary-yellow); }
+        .q-num { font-weight: bold; margin-right: 10px; flex-shrink: 0; }
+        .q-text { flex-grow: 1; padding-right: 15px; font-weight: 500; }
+        .marks-badge { background-color: #111; color: var(--primary-yellow); padding: 4px 10px; border-radius: 4px; font-size: 10pt; font-weight: bold; white-space: nowrap; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        .explanation { margin-left: 10px; font-size: 11pt; color: #333; }
+        .step { margin-bottom: 8px; }
+        .final-answer { margin-top: 15px; padding: 10px 15px; background-color: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 4px; font-weight: 600; display: inline-block; }
+        
+        .math-wrapper { overflow-x: auto; overflow-y: hidden; padding: 5px 0; margin: 5px 0; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; width: 100%; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            .q-text { padding-right: 0; }
+            .explanation { margin-left: 0; }
+        }
+        
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: RIGOROUS PRACTICE MODULE</div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q1.</span>
+            <div class="q-text">Find the greatest number of six digits exactly divisible by 18, 24, and 36.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> First, find the Least Common Multiple (LCM) of 18, 24, and 36.</div>
+            <div class="step">Prime factorization:
+                <br>\( 18 = 2 \times 3^2 \)
+                <br>\( 24 = 2^3 \times 3 \)
+                <br>\( 36 = 2^2 \times 3^2 \)
+            </div>
+            <div class="step">LCM(18, 24, 36) = \( 2^3 \times 3^2 = 8 \times 9 = 72 \).</div>
+            <div class="step"><strong>Step 2:</strong> The greatest six-digit number is 999999.</div>
+            <div class="step"><strong>Step 3:</strong> Divide 999999 by 72 to find the remainder.</div>
+            <div class="step">\( 999999 \div 72 = 13888 \) with a remainder of \( 63 \).</div>
+            <div class="step"><strong>Step 4:</strong> Subtract the remainder from the greatest six-digit number.</div>
+            <div class="math-wrapper">
+                \[ 999999 - 63 = 999936 \]
+            </div>
+            <div class="final-answer">Final Answer: The greatest six-digit number is 999936.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q2.</span>
+            <div class="q-text">Determine whether the points \( (a, a) \), \( (-a, -a) \) and \( (-a\sqrt{3}, a\sqrt{3}) \) form an equilateral triangle.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the points be \( A(a, a) \), \( B(-a, -a) \) and \( C(-a\sqrt{3}, a\sqrt{3}) \). Use distance formula \( d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} \).</div>
+            <div class="step"><strong>Step 2:</strong> Find length AB:</div>
+            <div class="math-wrapper">
+                \[ AB^2 = (-a - a)^2 + (-a - a)^2 = (-2a)^2 + (-2a)^2 = 4a^2 + 4a^2 = 8a^2 \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Find length BC:</div>
+            <div class="math-wrapper">
+                \[ BC^2 = (-a\sqrt{3} - (-a))^2 + (a\sqrt{3} - (-a))^2 \]
+                \[ = a^2(-\sqrt{3} + 1)^2 + a^2(\sqrt{3} + 1)^2 \]
+                \[ = a^2(3 + 1 - 2\sqrt{3}) + a^2(3 + 1 + 2\sqrt{3}) \]
+                \[ = a^2(4 - 2\sqrt{3} + 4 + 2\sqrt{3}) = 8a^2 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Find length AC:</div>
+            <div class="math-wrapper">
+                \[ AC^2 = (-a\sqrt{3} - a)^2 + (a\sqrt{3} - a)^2 \]
+                \[ = a^2(-\sqrt{3} - 1)^2 + a^2(\sqrt{3} - 1)^2 \]
+                \[ = a^2(3 + 1 + 2\sqrt{3}) + a^2(3 + 1 - 2\sqrt{3}) = 8a^2 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Since \( AB^2 = BC^2 = AC^2 \), it implies \( AB = BC = AC \).</div>
+            <div class="final-answer">Final Answer: Yes, the points form an equilateral triangle because all three sides are equal.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q3.</span>
+            <div class="q-text">Solve for \( x \) and \( y \): \( 99x + 101y = 499 \) and \( 101x + 99y = 501 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Add the two equations.</div>
+            <div class="math-wrapper">
+                \[ (99x + 101y) + (101x + 99y) = 499 + 501 \]
+                \[ 200x + 200y = 1000 \implies x + y = 5 \quad \text{--- (Eq 1)} \]
+            </div>
+            <div class="step"><strong>Step 2:</strong> Subtract the first equation from the second.</div>
+            <div class="math-wrapper">
+                \[ (101x + 99y) - (99x + 101y) = 501 - 499 \]
+                \[ 2x - 2y = 2 \implies x - y = 1 \quad \text{--- (Eq 2)} \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Add (Eq 1) and (Eq 2).</div>
+            <div class="math-wrapper">
+                \[ (x + y) + (x - y) = 5 + 1 \implies 2x = 6 \implies x = 3 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Substitute \( x = 3 \) in (Eq 1).</div>
+            <div class="math-wrapper">
+                \[ 3 + y = 5 \implies y = 2 \]
+            </div>
+            <div class="final-answer">Final Answer: \( x = 3 \), \( y = 2 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q4.</span>
+            <div class="q-text">Find the values of \( k \) for which \( (k+4)x^2 + (k+1)x + 1 = 0 \) has equal roots.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> For real and equal roots, the discriminant \( D = b^2 - 4ac = 0 \).</div>
+            <div class="step">Here, \( a = (k+4) \), \( b = (k+1) \), and \( c = 1 \).</div>
+            <div class="step"><strong>Step 2:</strong> Substitute the values into the discriminant formula.</div>
+            <div class="math-wrapper">
+                \[ (k+1)^2 - 4(k+4)(1) = 0 \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Expand and simplify.</div>
+            <div class="math-wrapper">
+                \[ k^2 + 2k + 1 - 4k - 16 = 0 \]
+                \[ k^2 - 2k - 15 = 0 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Factorize the quadratic equation.</div>
+            <div class="math-wrapper">
+                \[ k^2 - 5k + 3k - 15 = 0 \]
+                \[ k(k - 5) + 3(k - 5) = 0 \]
+                \[ (k - 5)(k + 3) = 0 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Find the roots.</div>
+            <div class="math-wrapper">
+                \[ k = 5 \text{ or } k = -3 \]
+            </div>
+            <div class="final-answer">Final Answer: The values of \( k \) are \( 5 \) and \( -3 \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q5.</span>
+            <div class="q-text">If \( p = ab^2 \) and \( q = a^3b \); \( a, b \) being primes, prove \( \text{LCM}(p, q) \times \text{HCF}(p, q) = p \times q \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Find the Highest Common Factor (HCF). Take the smallest power of each common prime factor.</div>
+            <div class="math-wrapper">
+                \[ \text{HCF}(p, q) = \text{HCF}(ab^2, a^3b) = a^1 \times b^1 = ab \]
+            </div>
+            <div class="step"><strong>Step 2:</strong> Find the Least Common Multiple (LCM). Take the highest power of each prime factor involved.</div>
+            <div class="math-wrapper">
+                \[ \text{LCM}(p, q) = \text{LCM}(ab^2, a^3b) = a^3 \times b^2 = a^3b^2 \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Calculate LHS: \( \text{LCM}(p, q) \times \text{HCF}(p, q) \).</div>
+            <div class="math-wrapper">
+                \[ \text{LHS} = (a^3b^2) \times (ab) = a^{(3+1)} \times b^{(2+1)} = a^4b^3 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Calculate RHS: Product of the numbers \( p \times q \).</div>
+            <div class="math-wrapper">
+                \[ \text{RHS} = p \times q = (ab^2) \times (a^3b) = a^{(1+3)} \times b^{(2+1)} = a^4b^3 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Compare LHS and RHS.</div>
+            <div class="math-wrapper">
+                \[ \text{LHS} = \text{RHS} \]
+            </div>
+            <div class="final-answer">Final Answer: Hence Proved.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q6.</span>
+            <div class="q-text">Find the ratio in which y-axis divides the line segment joining \( (-4, -6) \) and \( (10, 12) \). Find the coordinates.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the y-axis divide the line segment joining \( A(-4, -6) \) and \( B(10, 12) \) at point \( P \) in the ratio \( k:1 \).</div>
+            <div class="step"><strong>Step 2:</strong> The x-coordinate of any point on the y-axis is 0. So, coordinates of \( P \) are \( (0, y) \).</div>
+            <div class="step"><strong>Step 3:</strong> Using section formula for x-coordinate:</div>
+            <div class="math-wrapper">
+                \[ x = \frac{m_1x_2 + m_2x_1}{m_1 + m_2} \]
+                \[ 0 = \frac{k(10) + 1(-4)}{k + 1} \]
+                \[ 0 = 10k - 4 \implies 10k = 4 \implies k = \frac{4}{10} = \frac{2}{5} \]
+            </div>
+            <div class="step">So, the ratio is \( 2:5 \).</div>
+            <div class="step"><strong>Step 4:</strong> Now, find the y-coordinate using the section formula with \( k = 2/5 \):</div>
+            <div class="math-wrapper">
+                \[ y = \frac{\frac{2}{5}(12) + 1(-6)}{\frac{2}{5} + 1} \]
+                \[ y = \frac{\frac{24}{5} - 6}{\frac{7}{5}} = \frac{\frac{24 - 30}{5}}{\frac{7}{5}} = \frac{-6}{7} \]
+            </div>
+            <div class="final-answer">Final Answer: The ratio is 2:5 and the point of division is \( (0, -\frac{6}{7}) \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q7.</span>
+            <div class="q-text">Solve graphically: \( x - y + 1 = 0 \), \( 3x + 2y - 12 = 0 \). Find vertices of triangle with x-axis.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Find coordinates for line \( x - y + 1 = 0 \implies y = x + 1 \)</div>
+            <div class="step">If \( x = 0, y = 1 \). Point: \( (0, 1) \)</div>
+            <div class="step">If \( y = 0, x = -1 \). Point: \( (-1, 0) \) - (This is a vertex on x-axis)</div>
+            <div class="step">If \( x = 2, y = 3 \). Point: \( (2, 3) \)</div>
+            
+            <div class="step"><strong>Step 2:</strong> Find coordinates for line \( 3x + 2y - 12 = 0 \implies y = \frac{12 - 3x}{2} \)</div>
+            <div class="step">If \( x = 0, y = 6 \). Point: \( (0, 6) \)</div>
+            <div class="step">If \( y = 0, 3x = 12 \implies x = 4 \). Point: \( (4, 0) \) - (This is a vertex on x-axis)</div>
+            <div class="step">If \( x = 2, y = 3 \). Point: \( (2, 3) \)</div>
+
+            <div class="step"><strong>Step 3:</strong> The solution to the pair of equations is the point of intersection, which is \( (2, 3) \).</div>
+            <div class="step"><strong>Step 4:</strong> The vertices of the triangle formed by these lines and the x-axis are the point of intersection and the points where lines cut the x-axis (y=0).</div>
+            <div class="final-answer">Final Answer: Solution is \( x=2, y=3 \). Vertices are \( (2, 3) \), \( (-1, 0) \), and \( (4, 0) \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q8.</span>
+            <div class="q-text">Prove that \( \sqrt{p} + \sqrt{q} \) is an irrational number, given that \( p \) and \( q \) are prime numbers.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let us assume, to the contrary, that \( \sqrt{p} + \sqrt{q} \) is a rational number, say \( a \).</div>
+            <div class="math-wrapper">
+                \[ \sqrt{p} + \sqrt{q} = a \]
+                \[ \sqrt{p} = a - \sqrt{q} \]
+            </div>
+            <div class="step"><strong>Step 2:</strong> Squaring both sides:</div>
+            <div class="math-wrapper">
+                \[ p = (a - \sqrt{q})^2 \]
+                \[ p = a^2 + q - 2a\sqrt{q} \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Rearranging the terms to isolate the square root:</div>
+            <div class="math-wrapper">
+                \[ 2a\sqrt{q} = a^2 + q - p \]
+                \[ \sqrt{q} = \frac{a^2 + q - p}{2a} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Since \( p \) and \( q \) are prime integers and \( a \) is rational, \( \frac{a^2 + q - p}{2a} \) is a rational number.</div>
+            <div class="step">This implies that \( \sqrt{q} \) is a rational number.</div>
+            <div class="step"><strong>Step 5:</strong> However, we know that the square root of a prime number is irrational. Therefore, \( \sqrt{q} \) is an irrational number.</div>
+            <div class="step">This contradicts our result in Step 4.</div>
+            <div class="step"><strong>Step 6:</strong> The contradiction has arisen because of our incorrect assumption that \( \sqrt{p} + \sqrt{q} \) is rational.</div>
+            <div class="final-answer">Final Answer: Hence, \( \sqrt{p} + \sqrt{q} \) is an irrational number.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q9.</span>
+            <div class="q-text">Solve for \( x \): \( \frac{1}{a + b + x} = \frac{1}{a} + \frac{1}{b} + \frac{1}{x} \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Transpose the term \( 1/x \) to the LHS.</div>
+            <div class="math-wrapper">
+                \[ \frac{1}{a + b + x} - \frac{1}{x} = \frac{1}{a} + \frac{1}{b} \]
+            </div>
+            <div class="step"><strong>Step 2:</strong> Take the LCM on both sides.</div>
+            <div class="math-wrapper">
+                \[ \frac{x - (a + b + x)}{x(a + b + x)} = \frac{b + a}{ab} \]
+                \[ \frac{x - a - b - x}{x(a + b + x)} = \frac{a + b}{ab} \]
+                \[ \frac{-(a + b)}{x(a + b + x)} = \frac{a + b}{ab} \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Since \( a+b \neq 0 \), we can divide both sides by \( (a+b) \).</div>
+            <div class="math-wrapper">
+                \[ \frac{-1}{x^2 + ax + bx} = \frac{1}{ab} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Cross-multiply.</div>
+            <div class="math-wrapper">
+                \[ -ab = x^2 + ax + bx \]
+                \[ x^2 + ax + bx + ab = 0 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Factorize by grouping.</div>
+            <div class="math-wrapper">
+                \[ x(x + a) + b(x + a) = 0 \]
+                \[ (x + a)(x + b) = 0 \]
+            </div>
+            <div class="step"><strong>Step 6:</strong> Equate each factor to zero.</div>
+            <div class="math-wrapper">
+                \[ x + a = 0 \implies x = -a \]
+                \[ x + b = 0 \implies x = -b \]
+            </div>
+            <div class="final-answer">Final Answer: The values of \( x \) are \( -a \) and \( -b \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q10.</span>
+            <div class="q-text">Find the point on the x-axis which is equidistant from \( (7, 6) \) and \( (-3, 4) \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the point on the x-axis be \( P(x, 0) \). Let the given points be \( A(7, 6) \) and \( B(-3, 4) \).</div>
+            <div class="step"><strong>Step 2:</strong> Given that \( P \) is equidistant from \( A \) and \( B \), so \( PA = PB \).</div>
+            <div class="step">Therefore, \( PA^2 = PB^2 \).</div>
+            <div class="step"><strong>Step 3:</strong> Use distance formula.</div>
+            <div class="math-wrapper">
+                \[ (x - 7)^2 + (0 - 6)^2 = (x - (-3))^2 + (0 - 4)^2 \]
+                \[ (x - 7)^2 + 36 = (x + 3)^2 + 16 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Expand the squares.</div>
+            <div class="math-wrapper">
+                \[ x^2 - 14x + 49 + 36 = x^2 + 6x + 9 + 16 \]
+                \[ x^2 - 14x + 85 = x^2 + 6x + 25 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Simplify and solve for x.</div>
+            <div class="math-wrapper">
+                \[ -14x + 85 = 6x + 25 \]
+                \[ 85 - 25 = 6x + 14x \]
+                \[ 60 = 20x \implies x = 3 \]
+            </div>
+            <div class="final-answer">Final Answer: The point on the x-axis is \( (3, 0) \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q11.</span>
+            <div class="q-text">Places A and B are 100 km apart. Cars start from A and B. Same direction = 5 hours to meet, Opposite direction = 1 hour. Find speeds.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the speed of the car starting from A be \( x \text{ km/h} \) and from B be \( y \text{ km/h} \). Assume \( x > y \).</div>
+            <div class="step"><strong>Step 2: Case I (Same direction):</strong></div>
+            <div class="step">Relative speed = \( (x - y) \text{ km/h} \). Distance = 100 km. Time = 5 hours.</div>
+            <div class="math-wrapper">
+                \[ \text{Distance} = \text{Speed} \times \text{Time} \]
+                \[ 100 = (x - y) \times 5 \]
+                \[ x - y = 20 \quad \text{--- (Eq 1)} \]
+            </div>
+            <div class="step"><strong>Step 3: Case II (Opposite direction):</strong></div>
+            <div class="step">Relative speed = \( (x + y) \text{ km/h} \). Distance = 100 km. Time = 1 hour.</div>
+            <div class="math-wrapper">
+                \[ 100 = (x + y) \times 1 \]
+                \[ x + y = 100 \quad \text{--- (Eq 2)} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Solve the linear equations. Add (Eq 1) and (Eq 2).</div>
+            <div class="math-wrapper">
+                \[ (x - y) + (x + y) = 20 + 100 \]
+                \[ 2x = 120 \implies x = 60 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Substitute \( x = 60 \) in (Eq 2).</div>
+            <div class="math-wrapper">
+                \[ 60 + y = 100 \implies y = 40 \]
+            </div>
+            <div class="final-answer">Final Answer: Speed of car A is 60 km/h and car B is 40 km/h.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q12.</span>
+            <div class="q-text">Find area of rhombus whose vertices in order are \( (3, 0) \), \( (4, 5) \), \( (-1, 4) \) and \( (-2, -1) \).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Area of a rhombus = \( \frac{1}{2} \times (\text{Product of its diagonals}) = \frac{1}{2} \times d_1 \times d_2 \).</div>
+            <div class="step">Let the vertices be \( A(3, 0) \), \( B(4, 5) \), \( C(-1, 4) \) and \( D(-2, -1) \).</div>
+            <div class="step">The diagonals are AC and BD.</div>
+            <div class="step"><strong>Step 2:</strong> Find length of diagonal AC using distance formula.</div>
+            <div class="math-wrapper">
+                \[ AC = \sqrt{(-1 - 3)^2 + (4 - 0)^2} \]
+                \[ AC = \sqrt{(-4)^2 + 4^2} = \sqrt{16 + 16} = \sqrt{32} = 4\sqrt{2} \text{ units} \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Find length of diagonal BD.</div>
+            <div class="math-wrapper">
+                \[ BD = \sqrt{(-2 - 4)^2 + (-1 - 5)^2} \]
+                \[ BD = \sqrt{(-6)^2 + (-6)^2} = \sqrt{36 + 36} = \sqrt{72} = 6\sqrt{2} \text{ units} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Calculate Area.</div>
+            <div class="math-wrapper">
+                \[ \text{Area} = \frac{1}{2} \times AC \times BD \]
+                \[ \text{Area} = \frac{1}{2} \times 4\sqrt{2} \times 6\sqrt{2} \]
+                \[ \text{Area} = \frac{1}{2} \times 24 \times 2 = 24 \text{ sq units} \]
+            </div>
+            <div class="final-answer">Final Answer: The area of the rhombus is 24 square units.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q13.</span>
+            <div class="q-text">A train travels 360 km. If speed had been 5 km/h more, it would have taken 1 hour less. Find speed.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the original speed of the train be \( x \text{ km/h} \). Distance = 360 km.</div>
+            <div class="step">Original time taken \( t_1 = \frac{360}{x} \text{ hours} \).</div>
+            <div class="step"><strong>Step 2:</strong> New speed = \( (x + 5) \text{ km/h} \).</div>
+            <div class="step">New time taken \( t_2 = \frac{360}{x + 5} \text{ hours} \).</div>
+            <div class="step"><strong>Step 3:</strong> Formulate the equation. The difference in time is 1 hour.</div>
+            <div class="math-wrapper">
+                \[ t_1 - t_2 = 1 \]
+                \[ \frac{360}{x} - \frac{360}{x + 5} = 1 \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Solve the equation.</div>
+            <div class="math-wrapper">
+                \[ 360 \left( \frac{x + 5 - x}{x(x + 5)} \right) = 1 \]
+                \[ \frac{360 \times 5}{x^2 + 5x} = 1 \]
+                \[ 1800 = x^2 + 5x \]
+                \[ x^2 + 5x - 1800 = 0 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Factorize the quadratic equation. Numbers multiplying to -1800 and adding to 5 are 45 and -40.</div>
+            <div class="math-wrapper">
+                \[ x^2 + 45x - 40x - 1800 = 0 \]
+                \[ x(x + 45) - 40(x + 45) = 0 \]
+                \[ (x - 40)(x + 45) = 0 \]
+            </div>
+            <div class="step"><strong>Step 6:</strong> Determine roots. \( x = 40 \) or \( x = -45 \). Since speed cannot be negative, \( x = 40 \).</div>
+            <div class="final-answer">Final Answer: The original speed of the train is 40 km/h.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q14.</span>
+            <div class="q-text">A fraction becomes \( 9/11 \) if 2 is added to num and den. If 3 is added it becomes \( 5/6 \). Find fraction.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the numerator be \( x \) and denominator be \( y \). Fraction is \( \frac{x}{y} \).</div>
+            <div class="step"><strong>Step 2: Case 1:</strong> Add 2 to both.</div>
+            <div class="math-wrapper">
+                \[ \frac{x + 2}{y + 2} = \frac{9}{11} \]
+                \[ 11(x + 2) = 9(y + 2) \implies 11x + 22 = 9y + 18 \]
+                \[ 11x - 9y = -4 \quad \text{--- (Eq 1)} \]
+            </div>
+            <div class="step"><strong>Step 3: Case 2:</strong> Add 3 to both.</div>
+            <div class="math-wrapper">
+                \[ \frac{x + 3}{y + 3} = \frac{5}{6} \]
+                \[ 6(x + 3) = 5(y + 3) \implies 6x + 18 = 5y + 15 \]
+                \[ 6x - 5y = -3 \quad \text{--- (Eq 2)} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> Solve using substitution. From (Eq 2): \( 6x = 5y - 3 \implies x = \frac{5y - 3}{6} \)</div>
+            <div class="step">Substitute in (Eq 1):</div>
+            <div class="math-wrapper">
+                \[ 11 \left( \frac{5y - 3}{6} \right) - 9y = -4 \]
+                \[ \frac{55y - 33}{6} - 9y = -4 \]
+            </div>
+            <div class="step">Multiply by 6:</div>
+            <div class="math-wrapper">
+                \[ 55y - 33 - 54y = -24 \]
+                \[ y = -24 + 33 \implies y = 9 \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Find x.</div>
+            <div class="math-wrapper">
+                \[ x = \frac{5(9) - 3}{6} = \frac{45 - 3}{6} = \frac{42}{6} = 7 \]
+            </div>
+            <div class="final-answer">Final Answer: The fraction is \( 7/9 \).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-num">Q15.</span>
+            <div class="q-text">Find roots using completing the square: \( 2x^2 - 7x + 3 = 0 \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Divide the entire equation by the coefficient of \( x^2 \) (which is 2) to make it 1.</div>
+            <div class="math-wrapper">
+                \[ x^2 - \frac{7}{2}x + \frac{3}{2} = 0 \]
+            </div>
+            <div class="step"><strong>Step 2:</strong> Move the constant term to the right side.</div>
+            <div class="math-wrapper">
+                \[ x^2 - \frac{7}{2}x = -\frac{3}{2} \]
+            </div>
+            <div class="step"><strong>Step 3:</strong> Take half of the coefficient of \( x \), which is \( -\frac{7}{4} \), square it, and add it to both sides.</div>
+            <div class="math-wrapper">
+                \[ x^2 - \frac{7}{2}x + \left(-\frac{7}{4}\right)^2 = -\frac{3}{2} + \left(-\frac{7}{4}\right)^2 \]
+                \[ x^2 - \frac{7}{2}x + \frac{49}{16} = -\frac{3}{2} + \frac{49}{16} \]
+            </div>
+            <div class="step"><strong>Step 4:</strong> The left side is now a perfect square. Simplify the right side.</div>
+            <div class="math-wrapper">
+                \[ \left(x - \frac{7}{4}\right)^2 = \frac{-24 + 49}{16} \]
+                \[ \left(x - \frac{7}{4}\right)^2 = \frac{25}{16} \]
+            </div>
+            <div class="step"><strong>Step 5:</strong> Take the square root of both sides.</div>
+            <div class="math-wrapper">
+                \[ x - \frac{7}{4} = \pm \frac{5}{4} \]
+            </div>
+            <div class="step"><strong>Step 6:</strong> Solve for x.</div>
+            <div class="math-wrapper">
+                \[ x = \frac{7}{4} + \frac{5}{4} = \frac{12}{4} = 3 \]
+                \[ \text{Or, } x = \frac{7}{4} - \frac{5}{4} = \frac{2}{4} = \frac{1}{2} \]
+            </div>
+            <div class="final-answer">Final Answer: The roots are \( 3 \) and \( 1/2 \).</div>
+        </div>
+    </div>
+
+</body>
+</html>
