@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Competitive Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        
+        body { 
+            width: 100%; max-width: 210mm; margin: 0 auto; padding: 20px; box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; font-size: 11pt; 
+            line-height: 1.4; color: var(--text-main); background-color: white; position: relative; 
+        }
+        
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%; opacity: 0.05; z-index: -1; pointer-events: none; }
+        
+        .header { text-align: center; margin-bottom: 25px; border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); padding: 15px 0; }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1.5px; }
+        .test-name { font-size: 13pt; font-weight: bold; margin-top: 8px; letter-spacing: 0.5px; color: #333; }
+        .exam-details { display: flex; justify-content: space-between; margin-top: 15px; font-size: 11pt; font-weight: bold; color: #444; }
+        
+        .section-header { text-align: center; margin-top: 30px; margin-bottom: 20px; font-size: 14pt; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ddd; padding-bottom: 8px;}
+        
+        .mcq-container { 
+            column-count: 2; column-gap: 40px; column-rule: 1.5px solid var(--primary-yellow); 
+        }
+        .question-block { break-inside: avoid; margin-bottom: 20px; display: flex; flex-direction: column;}
+        .q-row { display: flex; margin-bottom: 10px; }
+        .q-num { width: 28px; flex-shrink: 0; font-weight: bold; color: #222; }
+        .q-content { flex-grow: 1; font-weight: 500; }
+        
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; padding-left: 28px; color: #333; }
+        .option-item { display: flex; }
+        .opt-lbl { font-weight: bold; margin-right: 5px; }
+        
+        @media screen and (max-width: 768px) {
+            .mcq-container { column-count: 1; column-rule: none; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; gap: 8px; align-items: center; }
+            .header { padding: 10px 0; }
+            .institute-name { font-size: 18pt; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">COMPETITIVE SURPRISE TEST</div>
+        <div class="exam-details">
+            <span>Class: 6 & 7</span>
+            <span>Subjects: Math, Science, SST</span>
+            <span>Time: 60 Minutes</span>
+            <span>Max. Marks: 50</span>
+        </div>
+    </div>
+
+    <div class="section-header">Section A: Mathematics & Logical Reasoning</div>
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">1.</div><div class="q-content">Evaluate: \( 5 + 2 \times 3 - 8 \div 4 \)</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 3.25</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 9</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 19</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 5</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">2.</div><div class="q-content">What is the sum of the first five prime numbers?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 18</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 28</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 26</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 27</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">3.</div><div class="q-content">Find the ratio of 45 minutes to 1.5 hours in its simplest form.</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 1:2</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 1:3</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 2:1</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 3:4</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">4.</div><div class="q-content">If \( x - 15 = -2 \), what is the value of \( x \)?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> -17</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> -13</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 13</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 17</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">5.</div><div class="q-content">A man walks 5 km North, turns right and walks 3 km, turns right again and walks 5 km. How far is he from his starting point?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 0 km</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 3 km</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 5 km</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 8 km</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">6.</div><div class="q-content">The perimeter of a square is 64 cm. What is its area?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 128 cm²</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 256 cm²</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 64 cm²</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 512 cm²</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">7.</div><div class="q-content">Which of the following fractions is the largest?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> \( \frac{3}{4} \)</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> \( \frac{7}{8} \)</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> \( \frac{5}{6} \)</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> \( \frac{2}{3} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">8.</div><div class="q-content">Find the next number in the series: 2, 6, 12, 20, 30, __</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 40</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 42</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 44</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 48</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">9.</div><div class="q-content">If 15 pens cost ₹225, what is the cost of 8 pens?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> ₹120</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> ₹105</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> ₹110</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> ₹135</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">10.</div><div class="q-content">Two angles of a triangle are 45° and 65°. What is the third angle?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 60°</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 70°</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 80°</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 90°</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">11.</div><div class="q-content">What is 25% of 400?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 50</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 75</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 100</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 125</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">12.</div><div class="q-content">Simplify: \( (-5) \times (-4) \times (-3) \)</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 60</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> -60</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 20</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> -20</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">13.</div><div class="q-content">The LCM of 12 and 18 is:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 6</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 24</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 36</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 72</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">14.</div><div class="q-content">Express 0.045 as a fraction in simplest form.</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> \( \frac{9}{200} \)</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> \( \frac{9}{20} \)</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> \( \frac{45}{100} \)</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> \( \frac{9}{1000} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">15.</div><div class="q-content">A car travels at a speed of 60 km/h. How long will it take to cover 150 km?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 2 hours</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 2.5 hours</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 3 hours</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 3.5 hours</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">16.</div><div class="q-content">If \( a = 2 \) and \( b = 3 \), find the value of \( a^2 + b^2 \).</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 10</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 13</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 25</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 36</div>
+            </div>
+        </div>
+        
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">17.</div><div class="q-content">How many lines of symmetry does a regular hexagon have?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 3</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 4</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 6</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 8</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">Section B: Science & Environment</div>
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">18.</div><div class="q-content">Which part of the plant is primarily responsible for photosynthesis?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Roots</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Stem</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Leaf</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Flower</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">19.</div><div class="q-content">The standard unit of measuring force is:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Joule</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Newton</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Watt</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Pascal</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">20.</div><div class="q-content">Which vitamin is produced in the human body by exposure to sunlight?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Vitamin A</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Vitamin B</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Vitamin C</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Vitamin D</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">21.</div><div class="q-content">The process of conversion of water vapor into liquid water is called:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Evaporation</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Condensation</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Precipitation</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Transpiration</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">22.</div><div class="q-content">Which of the following is a reversible change?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Baking a cake</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Melting of ice</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Burning of paper</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Rusting of iron</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">23.</div><div class="q-content">A device that breaks or completes a circuit is called a:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Battery</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Wire</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Switch</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Bulb</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">24.</div><div class="q-content">Which acid is naturally found in lemons and oranges?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Lactic acid</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Acetic acid</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Citric acid</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Hydrochloric acid</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">25.</div><div class="q-content">Animals that eat both plants and other animals are called:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Herbivores</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Carnivores</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Omnivores</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Scavengers</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">26.</div><div class="q-content">Sound cannot travel through:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Air</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Water</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Solid steel</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Vacuum</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">27.</div><div class="q-content">The innermost part of a flower, containing the female reproductive organs, is the:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Stamen</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Petal</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Pistil</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Sepal</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">28.</div><div class="q-content">Which planet is known as the "Red Planet"?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Venus</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Mars</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Jupiter</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Saturn</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">29.</div><div class="q-content">The gas most abundant in Earth's atmosphere is:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Oxygen</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Carbon Dioxide</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Nitrogen</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Hydrogen</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">30.</div><div class="q-content">Which of these materials is a good conductor of electricity?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Wood</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Plastic</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Rubber</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Copper</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">31.</div><div class="q-content">The joint in the human shoulder is an example of a:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Hinge joint</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Pivot joint</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Ball and socket joint</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Fixed joint</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">32.</div><div class="q-content">Blue litmus paper turns red when introduced to a substance. The substance is:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Acidic</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Basic</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Neutral</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Salty</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">33.</div><div class="q-content">What is the SI unit of electric current?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Volt</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Ampere</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Ohm</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Watt</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">34.</div><div class="q-content">Which of the following is responsible for carrying oxygen in human blood?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> White blood cells</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Platelets</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Plasma</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Hemoglobin</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">Section C: Social Studies (History, Geography, Civics)</div>
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">35.</div><div class="q-content">The Great Bath, an ancient structure, was found in which Indus Valley city?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Harappa</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Lothal</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Mohenjo-Daro</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Kalibangan</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">36.</div><div class="q-content">The network of intersecting lines of latitude and longitude is called a:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Hemisphere</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Grid</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Axis</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Equator</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">37.</div><div class="q-content">Which emperor is famous for adopting 'Dhamma' after the Kalinga war?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Chandragupta</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Bindusara</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Ashoka</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Akbar</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">38.</div><div class="q-content">The local government at the village level in India is known as:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Municipal Council</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Gram Panchayat</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Zila Parishad</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Lok Sabha</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">39.</div><div class="q-content">The imaginary line that divides the Earth into Northern and Southern hemispheres is:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Tropic of Cancer</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Prime Meridian</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Equator</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Tropic of Capricorn</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">40.</div><div class="q-content">Who wrote the book 'Arthashastra'?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Megasthenes</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Chanakya</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Kalidasa</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Aryabhata</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">41.</div><div class="q-content">A form of government where citizens elect their representatives is called a:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Monarchy</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Dictatorship</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Democracy</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Oligarchy</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">42.</div><div class="q-content">The lowest layer of Earth's atmosphere, where weather occurs, is the:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Stratosphere</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Troposphere</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Mesosphere</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Thermosphere</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">43.</div><div class="q-content">Which movement of the Earth causes changes in seasons?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Rotation</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Revolution</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Gravitation</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Spin</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">44.</div><div class="q-content">The historical period before written records were kept is known as:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Medieval History</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Prehistory</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Modern History</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Ancient History</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">45.</div><div class="q-content">Indian Standard Time (IST) is calculated from the longitude of:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 0°</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 23.5° N</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 82.5° E</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 180°</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">46.</div><div class="q-content">Which document acts as the supreme law of a democratic country like India?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> The Penal Code</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> The Constitution</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> The Parliament Rulebook</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> The Magna Carta</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">47.</div><div class="q-content">The manuscript texts of ancient India were usually written on:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Copper plates</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Palm leaves</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Papyrus</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Clay tablets</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">48.</div><div class="q-content">A narrow zone of the earth where land, water, and air interact to support life is the:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Lithosphere</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Hydrosphere</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Atmosphere</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Biosphere</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">49.</div><div class="q-content">The founder of Buddhism was:</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> Mahavira</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> Siddhartha Gautama</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> Ashoka</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> Chandragupta</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-row"><div class="q-num">50.</div><div class="q-content">If it is 12:00 Noon at the Prime Meridian (0°), what is the time at 15° East longitude?</div></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-lbl">a)</span> 11:00 AM</div>
+                <div class="option-item"><span class="opt-lbl">b)</span> 12:15 PM</div>
+                <div class="option-item"><span class="opt-lbl">c)</span> 1:00 PM</div>
+                <div class="option-item"><span class="opt-lbl">d)</span> 3:00 PM</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

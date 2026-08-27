@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 600px;
+            opacity: 0.05; 
+            z-index: 0; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid var(--primary-yellow); 
+            border-top: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: white;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f9f9f9;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .solution-content {
+            padding-left: 15px;
+        }
+        
+        /* Math display chunking for small screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 5px;
+            margin: 10px 0;
+        }
+        
+        /* Responsive tweaks */
+        @media screen and (max-width: 768px) {
+            .container { margin: 0; padding: 15px; border-radius: 0; }
+            .question-header { flex-direction: column; gap: 10px; }
+            .marks-badge { align-self: flex-start; }
+            .solution-content { padding-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="doc-title">DETAILED SOLUTIONS: Minor Test 17 (Ratio and Proportion)</div>
+            <div style="font-size: 10pt; margin-top: 5px;">Class 8 | Mathematics | Max Marks: 40</div>
+        </div>
+
+        <h3 style="text-align: center; text-decoration: underline;">SECTION A</h3>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">1. Find the ratio of 5 km to 500 m.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>To find the ratio, both quantities must be in the same unit. Let's convert kilometers to meters.</p>
+                <div class="math-scroll">
+                    \[ 1 \text{ km} = 1000 \text{ m} \]
+                    \[ 5 \text{ km} = 5 \times 1000 \text{ m} = 5000 \text{ m} \]
+                </div>
+                <p>Now, find the ratio of 5000 m to 500 m:</p>
+                <div class="math-scroll">
+                    \[ \text{Ratio} = \frac{5000}{500} = \frac{50}{5} = \frac{10}{1} \]
+                </div>
+                <p><strong>Answer:</strong> The ratio is <strong>10 : 1</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">2. Express the ratio 45 : 108 in its simplest form.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>To simplify, we divide both the numerator and denominator by their Highest Common Factor (HCF).</p>
+                <p>Factors of 45: 1, 3, 5, 9, 15, 45<br>
+                   Factors of 108: 1, 2, 3, 4, 6, 9, 12, ...<br>
+                   The HCF of 45 and 108 is 9.
+                </p>
+                <div class="math-scroll">
+                    \[ \frac{45}{108} = \frac{45 \div 9}{108 \div 9} = \frac{5}{12} \]
+                </div>
+                <p><strong>Answer:</strong> The simplest form is <strong>5 : 12</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">3. Are the ratios 25 g : 30 g and 40 kg : 48 kg in proportion? Justify your answer.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Two ratios are in proportion if their simplified forms are equal.</p>
+                <p>First ratio: \( \frac{25}{30} \)</p>
+                <div class="math-scroll">
+                    \[ \frac{25 \div 5}{30 \div 5} = \frac{5}{6} \implies 5 : 6 \]
+                </div>
+                <p>Second ratio: \( \frac{40}{48} \)</p>
+                <div class="math-scroll">
+                    \[ \frac{40 \div 8}{48 \div 8} = \frac{5}{6} \implies 5 : 6 \]
+                </div>
+                <p><strong>Answer:</strong> Since both ratios simplify to 5 : 6, <strong>Yes, they are in proportion.</strong></p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">4. Find the value of x if 3 : 4 :: x : 20.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Since the quantities are in proportion, the product of extremes equals the product of means.</p>
+                <div class="math-scroll">
+                    \[ 3 : 4 = x : 20 \implies \frac{3}{4} = \frac{x}{20} \]
+                </div>
+                <p>By cross-multiplying:</p>
+                <div class="math-scroll">
+                    \[ 4 \times x = 3 \times 20 \]
+                    \[ 4x = 60 \]
+                    \[ x = \frac{60}{4} = 15 \]
+                </div>
+                <p><strong>Answer:</strong> The value of <strong>x is 15</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">5. Out of 40 students in a class, 16 are girls. Find the ratio of the number of girls to the number of boys in the simplest form.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Total students = 40</p>
+                <p>Number of girls = 16</p>
+                <p>Number of boys = Total students - Number of girls</p>
+                <div class="math-scroll">
+                    \[ \text{Boys} = 40 - 16 = 24 \]
+                </div>
+                <p>Ratio of girls to boys = 16 : 24</p>
+                <div class="math-scroll">
+                    \[ \frac{16}{24} = \frac{16 \div 8}{24 \div 8} = \frac{2}{3} \]
+                </div>
+                <p><strong>Answer:</strong> The ratio of girls to boys is <strong>2 : 3</strong>.</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; text-decoration: underline;">SECTION B</h3>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">6. Divide ₹ 1,500 between Amit and Sumit in the ratio of 3 : 2.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Total ratio parts = \( 3 + 2 = 5 \) parts.</p>
+                <p>Total amount = ₹ 1,500.</p>
+                <p>Value of one part:</p>
+                <div class="math-scroll">
+                    \[ \frac{1500}{5} = 300 \]
+                </div>
+                <p>Amit's share (3 parts):</p>
+                <div class="math-scroll">
+                    \[ 3 \times 300 = \text{₹ } 900 \]
+                </div>
+                <p>Sumit's share (2 parts):</p>
+                <div class="math-scroll">
+                    \[ 2 \times 300 = \text{₹ } 600 \]
+                </div>
+                <p><strong>Answer:</strong> Amit gets <strong>₹ 900</strong> and Sumit gets <strong>₹ 600</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">7. The lengths of the sides of a triangle are in the ratio 2 : 3 : 4. If the perimeter of the triangle is 63 cm, find the length of each side.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Let the lengths of the sides be \( 2x, 3x, \) and \( 4x \).</p>
+                <p>The perimeter is the sum of all sides.</p>
+                <div class="math-scroll">
+                    \[ 2x + 3x + 4x = 63 \]
+                    \[ 9x = 63 \]
+                    \[ x = \frac{63}{9} = 7 \text{ cm} \]
+                </div>
+                <p>Now, calculate each side:</p>
+                <ul>
+                    <li>First side = \( 2x = 2 \times 7 = 14 \text{ cm} \)</li>
+                    <li>Second side = \( 3x = 3 \times 7 = 21 \text{ cm} \)</li>
+                    <li>Third side = \( 4x = 4 \times 7 = 28 \text{ cm} \)</li>
+                </ul>
+                <p><strong>Answer:</strong> The sides are <strong>14 cm, 21 cm, and 28 cm</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">8. A car travels 165 km in 3 hours. How far will it travel in 5 hours, assuming the speed remains uniform?</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>This problem can be solved using the unitary method or direct proportion.</p>
+                <p><strong>Method (Unitary):</strong></p>
+                <p>Distance traveled in 3 hours = 165 km.</p>
+                <p>Distance traveled in 1 hour (Speed):</p>
+                <div class="math-scroll">
+                    \[ \frac{165}{3} = 55 \text{ km/hr} \]
+                </div>
+                <p>Distance traveled in 5 hours:</p>
+                <div class="math-scroll">
+                    \[ 55 \text{ km/hr} \times 5 \text{ hr} = 275 \text{ km} \]
+                </div>
+                <p><strong>Answer:</strong> The car will travel <strong>275 km</strong> in 5 hours.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">9. Two numbers are in the ratio 5 : 8. If the sum of the numbers is 182, find the two numbers.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Let the two numbers be \( 5x \) and \( 8x \).</p>
+                <p>According to the question, their sum is 182.</p>
+                <div class="math-scroll">
+                    \[ 5x + 8x = 182 \]
+                    \[ 13x = 182 \]
+                    \[ x = \frac{182}{13} = 14 \]
+                </div>
+                <p>Substitute the value of x back to find the numbers:</p>
+                <ul>
+                    <li>First number = \( 5x = 5 \times 14 = 70 \)</li>
+                    <li>Second number = \( 8x = 8 \times 14 = 112 \)</li>
+                </ul>
+                <p><strong>Answer:</strong> The two numbers are <strong>70 and 112</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">10. A map is given with a scale of 2 cm = 1000 km. What is the actual distance between two places in kms, if the distance on the map is 2.5 cm?</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>This is a case of direct proportion. Let the actual distance be \( x \) km.</p>
+                <div class="math-scroll">
+                    \[ \frac{\text{Map Distance}_1}{\text{Actual Distance}_1} = \frac{\text{Map Distance}_2}{\text{Actual Distance}_2} \]
+                </div>
+                <div class="math-scroll">
+                    \[ \frac{2}{1000} = \frac{2.5}{x} \]
+                </div>
+                <p>Cross-multiplying:</p>
+                <div class="math-scroll">
+                    \[ 2x = 1000 \times 2.5 \]
+                    \[ 2x = 2500 \]
+                    \[ x = \frac{2500}{2} = 1250 \text{ km} \]
+                </div>
+                <p><strong>Answer:</strong> The actual distance is <strong>1250 km</strong>.</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; text-decoration: underline;">SECTION C</h3>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">11. In a school library, the ratio of math books to science books is 4 : 5. If there are 320 math books, find (a) number of science books, (b) total books, (c) new ratio if 40 more science books are added.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Let the number of math books be \( 4x \) and science books be \( 5x \).</p>
+                <p>We are given that math books = 320.</p>
+                <div class="math-scroll">
+                    \[ 4x = 320 \implies x = \frac{320}{4} = 80 \]
+                </div>
+                <p><strong>(a) Number of science books:</strong></p>
+                <div class="math-scroll">
+                    \[ 5x = 5 \times 80 = 400 \text{ books} \]
+                </div>
+                <p><strong>(b) Total number of math and science books:</strong></p>
+                <div class="math-scroll">
+                    \[ \text{Total} = 320 \text{ (Math)} + 400 \text{ (Science)} = 720 \text{ books} \]
+                </div>
+                <p><strong>(c) New ratio:</strong></p>
+                <p>If 40 more science books are added, the new number of science books = \( 400 + 40 = 440 \).</p>
+                <p>The number of math books remains 320.</p>
+                <div class="math-scroll">
+                    \[ \text{New Ratio} = \frac{320}{440} = \frac{32}{44} = \frac{8}{11} \]
+                </div>
+                <p><strong>Answers:</strong> (a) <strong>400</strong>, (b) <strong>720</strong>, (c) <strong>8 : 11</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">12. A certain amount is divided among A, B, and C in ratio 2:3:5. (a) If C gets ₹ 1,500 more than B, what is the total amount? (b) Find the share of A.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p>Let the shares of A, B, and C be \( 2x \), \( 3x \), and \( 5x \) respectively.</p>
+                <p>According to the condition, C's share is ₹ 1,500 more than B's share.</p>
+                <div class="math-scroll">
+                    \[ 5x - 3x = 1500 \]
+                    \[ 2x = 1500 \]
+                    \[ x = \frac{1500}{2} = 750 \]
+                </div>
+                <p><strong>(a) Total amount distributed:</strong></p>
+                <p>Total amount = \( 2x + 3x + 5x = 10x \)</p>
+                <div class="math-scroll">
+                    \[ \text{Total} = 10 \times 750 = \text{₹ } 7,500 \]
+                </div>
+                <p><strong>(b) Share of A:</strong></p>
+                <p>A's share = \( 2x \)</p>
+                <div class="math-scroll">
+                    \[ \text{A's share} = 2 \times 750 = \text{₹ } 1,500 \]
+                </div>
+                <p><strong>Answers:</strong> (a) Total amount is <strong>₹ 7,500</strong>. (b) A's share is <strong>₹ 1,500</strong>.</p>
+            </div>
+        </div>
+
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">13. (a) Check if 4, 12, 36 are in continued proportion. (b) A machine fills 840 bottles in 6 hours. How many bottles in 5 hours?</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="solution-content">
+                <p><strong>Part (a) [2 Marks]: Continued Proportion</strong></p>
+                <p>Three numbers a, b, c are in continued proportion if \( a : b :: b : c \), which means \( b^2 = ac \).</p>
+                <p>Here, a = 4, b = 12, c = 36.</p>
+                <div class="math-scroll">
+                    \[ b^2 = 12^2 = 144 \]
+                    \[ a \times c = 4 \times 36 = 144 \]
+                </div>
+                <p>Since \( b^2 = ac \), the numbers 4, 12, and 36 are <strong>in continued proportion</strong>.</p>
+                <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+                <p><strong>Part (b) [3 Marks]: Unitary Method</strong></p>
+                <p>Number of bottles filled in 6 hours = 840</p>
+                <p>Number of bottles filled in 1 hour:</p>
+                <div class="math-scroll">
+                    \[ \frac{840}{6} = 140 \text{ bottles} \]
+                </div>
+                <p>Number of bottles filled in 5 hours:</p>
+                <div class="math-scroll">
+                    \[ 140 \times 5 = 700 \text{ bottles} \]
+                </div>
+                <p><strong>Answer:</strong> The machine will fill <strong>700 bottles</strong> in 5 hours.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

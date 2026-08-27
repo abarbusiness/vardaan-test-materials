@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for scientific and mathematical notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 5px; }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; text-align: justify; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                margin: 0;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+            }
+            .question-container {
+                flex-direction: column;
+            }
+            .q-num {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .watermark {
+                width: 90%;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 70%; opacity: 0.1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17</div>
+        <div class="exam-details">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show clear steps for numerical problems.</li>
+                <li>Diagrams should be drawn with a pencil where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define atomic number and mass number of an element. How are they related to each other?</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Define the term 'work' in Physics. State the SI unit of work and define it.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Write any two fundamental postulates of Dalton's Atomic Theory.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">State the difference between potential energy and kinetic energy. Give one common example of a body possessing kinetic energy.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">An atom has \(11\) protons and \(12\) neutrons in its nucleus. Calculate its atomic mass and write down its electronic configuration.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Dalton's atomic theory was a milestone in Chemistry, but it had its limitations. Mention any three major drawbacks of Dalton's atomic theory based on modern atomic structure discoveries.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A boy of mass \(40 \text{ kg}\) climbs up a flight of \(20\) steps, each \(20 \text{ cm}\) high, in \(10\) seconds. Calculate:
+            <div class="sub-question">(i) the total work done by the boy.</div>
+            <div class="sub-question">(ii) the power developed by him.</div>
+            <div style="margin-top: 5px;"><em>(Take \(g = 10 \text{ m/s}^2\))</em></div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Explain the \(2n^2\) rule (Bohr-Bury scheme) for the distribution of electrons in different shells. Using this rule, find the maximum number of electrons that can be accommodated in the M shell.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Define power. How is power mathematically related to work and time? Name the commercial unit of electrical energy and state its relationship with Joules.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">State any three main observations made by Ernest Rutherford during his alpha-particle scattering experiment on gold foil.</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question"><strong>(a)</strong> Describe Rutherford's nuclear model of the atom based on the conclusions derived from his scattering experiment. Mention three key features of this model. <em>(3 Marks)</em></div>
+            <div class="sub-question"><strong>(b)</strong> Draw a comparative table to distinguish between a proton, a neutron, and an electron with respect to their relative mass, relative electrical charge, and specific location within the atom. <em>(2 Marks)</em></div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question"><strong>(a)</strong> State the Law of Conservation of Energy. Give one practical example where this law is demonstrated. <em>(2 Marks)</em></div>
+            <div class="sub-question"><strong>(b)</strong> A car weighing \(1000 \text{ kg}\) is moving with a velocity of \(20 \text{ m/s}\). On applying brakes, it comes to rest in \(10\) seconds. Calculate the initial kinetic energy of the car and the power exerted by the brakes to stop the car. <em>(3 Marks)</em></div>
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question"><strong>(a)</strong> Consider an element having atomic number \(17\) and mass number \(35\). Determine the number of protons, neutrons, and electrons. Draw a neat diagram showing its atomic structure (distribution of electrons in shells and contents of the nucleus). <em>(3 Marks)</em></div>
+            <div class="sub-question"><strong>(b)</strong> A force of \(50 \text{ N}\) acts on a heavy box and displaces it by \(4 \text{ m}\) in the direction of the force. Calculate the work done. Under what condition will the same force do exactly zero work, even if the body undergoes a displacement of \(4 \text{ m}\)? <em>(2 Marks)</em></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

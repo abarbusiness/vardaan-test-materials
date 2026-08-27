@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Vardaan Learning Institute</title>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+            "HTML-CSS": { linebreaks: { automatic: true } },
+            SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --secondary-bg: #fffde7;
+            --text-main: #212121;
+            --success: #2e7d32;
+            --success-bg: #e8f5e9;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #ffffff;
+            position: relative;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid var(--primary-yellow); 
+            border-top: 3px solid var(--primary-yellow);
+            padding: 15px 0; 
+            background-color: var(--secondary-bg);
+            border-radius: 4px;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #444;
+        }
+        .section-title {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 14pt;
+            border-radius: 4px;
+            margin: 30px 0 20px 0;
+            display: inline-block;
+        }
+
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f9f9f9;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-yellow);
+            margin-bottom: 15px;
+        }
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+            margin: 0;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .correct-answer { 
+            color: var(--success); 
+            background-color: var(--success-bg); 
+            padding: 8px 12px; 
+            margin: 5px 0 12px 25px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            display: inline-block; 
+            border: 1px solid #c8e6c9;
+        }
+        .explanation {
+            margin-left: 25px;
+            padding-right: 10px;
+            overflow-x: auto;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        table.division {
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table.division td {
+            padding: 2px 8px;
+            text-align: right;
+            font-family: monospace;
+            font-size: 12pt;
+        }
+        .div-line {
+            border-bottom: 1px solid #000;
+        }
+        .div-left {
+            border-right: 1px solid #000;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            .correct-answer, .explanation { margin-left: 10px; }
+            .institute-name { font-size: 16pt; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Background -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="Vardaan Watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 17 (Squares & Cubes)</div>
+    </div>
+
+    <div class="section-title">SECTION A</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find the square root of 729 using the prime factorization method.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 27</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Perform prime factorization of 729.</div>
+            <div class="step">
+                $729 \div 3 = 243$<br>
+                $243 \div 3 = 81$<br>
+                $81 \div 3 = 27$<br>
+                $27 \div 3 = 9$<br>
+                $9 \div 3 = 3$<br>
+                $3 \div 3 = 1$
+            </div>
+            <div class="step"><strong>Step 2:</strong> Write 729 as a product of its prime factors:</div>
+            <div class="step">$729 = \underline{3 \times 3} \times \underline{3 \times 3} \times \underline{3 \times 3}$</div>
+            <div class="step"><strong>Step 3:</strong> Pair the factors and take one number from each pair:</div>
+            <div class="step">$\sqrt{729} = 3 \times 3 \times 3 = 27$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Is 243 a perfect cube? Give mathematical reasoning to support your answer.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: No, 243 is not a perfect cube.</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Find the prime factorization of 243.</div>
+            <div class="step">$243 = 3 \times 3 \times 3 \times 3 \times 3$</div>
+            <div class="step"><strong>Step 2:</strong> Group the factors in triplets.</div>
+            <div class="step">$243 = (3 \times 3 \times 3) \times 3 \times 3$</div>
+            <div class="step"><strong>Reasoning:</strong> After grouping the prime factors in triplets, the prime factor 3 is left over twice (it does not form a complete triplet). Therefore, 243 is not a perfect cube.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Find the smallest whole number by which 392 must be multiplied so that the product becomes a perfect cube.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 7</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Find the prime factorization of 392.</div>
+            <div class="step">$392 = 2 \times 196 = 2 \times 2 \times 98 = 2 \times 2 \times 2 \times 49 = 2 \times 2 \times 2 \times 7 \times 7$</div>
+            <div class="step"><strong>Step 2:</strong> Group factors in triplets.</div>
+            <div class="step">$392 = (2 \times 2 \times 2) \times 7 \times 7$</div>
+            <div class="step"><strong>Step 3:</strong> The prime factor 7 does not appear in a group of three. To make it a perfect cube, we need one more 7.</div>
+            <div class="step">Therefore, 392 must be multiplied by <strong>7</strong>.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Without doing any calculation, explain why the numbers 153 and 257 are surely not perfect squares.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Due to their unit digits (3 and 7).</div>
+        <div class="explanation">
+            <div class="step"><strong>Reasoning:</strong> We know that the square of any integer always ends with the digits 0, 1, 4, 5, 6, or 9 at units place.</div>
+            <div class="step">A perfect square can never end with 2, 3, 7, or 8.</div>
+            <div class="step">- The number <strong>153</strong> ends in <strong>3</strong>.</div>
+            <div class="step">- The number <strong>257</strong> ends in <strong>7</strong>.</div>
+            <div class="step">Hence, neither 153 nor 257 can be perfect squares.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Evaluate: (i) $\sqrt{0.0009}$ (ii) $\sqrt[3]{0.008}$</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: (i) 0.03 &nbsp; (ii) 0.2</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (i):</strong></div>
+            <div class="step">$\sqrt{0.0009} = \sqrt{\frac{9}{10000}} = \frac{\sqrt{9}}{\sqrt{10000}} = \frac{3}{100} = 0.03$</div>
+            <br>
+            <div class="step"><strong>Part (ii):</strong></div>
+            <div class="step">$\sqrt[3]{0.008} = \sqrt[3]{\frac{8}{1000}} = \frac{\sqrt[3]{8}}{\sqrt[3]{1000}} = \frac{2}{10} = 0.2$</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Find the smallest square number that is perfectly divisible by each of the numbers 4, 9, and 10.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 900</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Find the LCM of the given numbers to find the smallest number divisible by 4, 9, and 10.</div>
+            <div class="step">LCM(4, 9, 10) = 180.</div>
+            <div class="step"><strong>Step 2:</strong> Check if 180 is a perfect square by prime factorization.</div>
+            <div class="step">$180 = 2 \times 2 \times 3 \times 3 \times 5 = (2 \times 2) \times (3 \times 3) \times 5$</div>
+            <div class="step"><strong>Step 3:</strong> Since the prime factor 5 is not in a pair, 180 is not a perfect square.</div>
+            <div class="step">To make it a perfect square, we must multiply 180 by 5.</div>
+            <div class="step">Smallest square number = $180 \times 5 = 900$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Find the cube root of 13824 by the prime factorization method.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 24</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Prime factorize 13824.</div>
+            <div class="step">
+                $13824 \div 2 = 6912$<br>
+                $6912 \div 2 = 3456$<br>
+                $3456 \div 2 = 1728$<br>
+                $1728 \div 2 = 864$<br>
+                $864 \div 2 = 432$<br>
+                $432 \div 2 = 216$<br>
+                $216 \div 2 = 108$<br>
+                $108 \div 2 = 54$<br>
+                $54 \div 2 = 27$<br>
+                $27 = 3 \times 3 \times 3$
+            </div>
+            <div class="step"><strong>Step 2:</strong> Write as product:</div>
+            <div class="step">$13824 = \underline{2 \times 2 \times 2} \times \underline{2 \times 2 \times 2} \times \underline{2 \times 2 \times 2} \times \underline{3 \times 3 \times 3}$</div>
+            <div class="step"><strong>Step 3:</strong> Take one factor from each triplet:</div>
+            <div class="step">$\sqrt[3]{13824} = 2 \times 2 \times 2 \times 3 = 8 \times 3 = 24$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Find the smallest whole number by which 9408 must be divided so that the quotient is a perfect square. Also, find the square root of the quotient.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Divide by 3; Square root is 56.</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Prime factorize 9408.</div>
+            <div class="step">
+                $9408 = 2 \times 4704 = 2^2 \times 2352 = 2^3 \times 1176 = 2^4 \times 588 = 2^5 \times 294 = 2^6 \times 147 = 2^6 \times 3 \times 49 = 2^6 \times 3 \times 7^2$
+            </div>
+            <div class="step">$9408 = \underline{2 \times 2} \times \underline{2 \times 2} \times \underline{2 \times 2} \times \underline{7 \times 7} \times 3$</div>
+            <div class="step"><strong>Step 2:</strong> The prime factor 3 is without a pair. Thus, 9408 must be <strong>divided by 3</strong> to make the quotient a perfect square.</div>
+            <div class="step"><strong>Step 3:</strong> Quotient = $9408 \div 3 = 3136$.</div>
+            <div class="step"><strong>Step 4:</strong> $\sqrt{3136} = 2 \times 2 \times 2 \times 7 = 8 \times 7 = 56$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. A gardener has 1000 plants. He wants to plant these such that the number of rows and columns remain the same. Find the minimum number of plants he needs more.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 24 plants</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the number of rows and columns be $x$. Total plants needed = $x \times x = x^2$.</div>
+            <div class="step">We need to find a perfect square just greater than 1000.</div>
+            <div class="step"><strong>Step 2:</strong> Find the square root of 1000 to identify the nearest squares.</div>
+            <div class="step">$31^2 = 31 \times 31 = 961$. (This is less than 1000, so he will have plants left over, but he wants to ADD plants).</div>
+            <div class="step">The next whole number is 32.</div>
+            <div class="step">$32^2 = 32 \times 32 = 1024$.</div>
+            <div class="step"><strong>Step 3:</strong> To arrange them in a $32 \times 32$ grid, he needs 1024 plants.</div>
+            <div class="step">Number of plants he needs more = $1024 - 1000 = 24$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Find the value of $\sqrt[3]{-2744}$ and clearly state the property used for negative cube roots.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: -14</div>
+        <div class="explanation">
+            <div class="step"><strong>Property Used:</strong> The cube root of a negative number is negative. Mathematically, $\sqrt[3]{-x} = -\sqrt[3]{x}$.</div>
+            <div class="step"><strong>Step 1:</strong> We need to find $\sqrt[3]{-2744} = -\sqrt[3]{2744}$.</div>
+            <div class="step"><strong>Step 2:</strong> Prime factorize 2744.</div>
+            <div class="step">$2744 = 2 \times 1372 = 2^2 \times 686 = 2^3 \times 343 = 2^3 \times 7^3$</div>
+            <div class="step">$2744 = (2 \times 7)^3 = 14^3$.</div>
+            <div class="step"><strong>Step 3:</strong> Therefore, $\sqrt[3]{2744} = 14$.</div>
+            <div class="step">Applying the property: $\sqrt[3]{-2744} = -14$.</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Using the long division method, find the square root of: (a) 12.25 &nbsp; (b) 42.25</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: (a) 3.5 &nbsp; (b) 6.5</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): $\sqrt{12.25}$</strong></div>
+            <div class="step">Place bars over the integral and decimal parts: $\overline{12}.\overline{25}$</div>
+            <table class="division">
+                <tr><td></td><td></td><td>3 . 5</td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td class="div-left">3</td><td>12 .</td><td>25</td></tr>
+                <tr><td class="div-left"></td><td>-9</td><td></td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td class="div-left">65</td><td>3</td><td>25</td></tr>
+                <tr><td class="div-left"></td><td>-3</td><td>25</td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td></td><td></td><td>0</td></tr>
+            </table>
+            <div class="step">Hence, $\sqrt{12.25} = 3.5$</div>
+            <br>
+            <div class="step"><strong>Part (b): $\sqrt{42.25}$</strong></div>
+            <div class="step">Place bars: $\overline{42}.\overline{25}$</div>
+            <table class="division">
+                <tr><td></td><td></td><td>6 . 5</td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td class="div-left">6</td><td>42 .</td><td>25</td></tr>
+                <tr><td class="div-left"></td><td>-36</td><td></td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td class="div-left">125</td><td>6</td><td>25</td></tr>
+                <tr><td class="div-left"></td><td>-6</td><td>25</td></tr>
+                <tr><td></td><td class="div-line" colspan="2"></td></tr>
+                <tr><td></td><td></td><td>0</td></tr>
+            </table>
+            <div class="step">Hence, $\sqrt{42.25} = 6.5$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Three numbers are in the ratio $2 : 3 : 4$. If the sum of their cubes is $33957$, find all the three original numbers.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: 14, 21, and 28</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Let the common ratio multiplier be $x$. Therefore, the three numbers are $2x$, $3x$, and $4x$.</div>
+            <div class="step"><strong>Step 2:</strong> According to the problem, the sum of their cubes is 33957.</div>
+            <div class="step">$(2x)^3 + (3x)^3 + (4x)^3 = 33957$</div>
+            <div class="step"><strong>Step 3:</strong> Expand the cubes:</div>
+            <div class="step">$8x^3 + 27x^3 + 64x^3 = 33957$</div>
+            <div class="step"><strong>Step 4:</strong> Add the terms:</div>
+            <div class="step">$(8 + 27 + 64)x^3 = 33957$</div>
+            <div class="step">$99x^3 = 33957$</div>
+            <div class="step"><strong>Step 5:</strong> Solve for $x^3$:</div>
+            <div class="step">$x^3 = \frac{33957}{99}$</div>
+            <div class="step">$x^3 = 343$</div>
+            <div class="step"><strong>Step 6:</strong> Find the cube root of 343.</div>
+            <div class="step">$x = \sqrt[3]{343} = 7$ (since $7 \times 7 \times 7 = 343$)</div>
+            <div class="step"><strong>Step 7:</strong> Calculate the original numbers:</div>
+            <div class="step">First number = $2x = 2(7) = 14$</div>
+            <div class="step">Second number = $3x = 3(7) = 21$</div>
+            <div class="step">Third number = $4x = 4(7) = 28$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Find the greatest 4-digit number which is a perfect square.<br>(b) Find the least number that must be subtracted from 5607 so as to get a perfect square. Also, find the square root of this perfect square.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: (a) 9801 &nbsp; (b) Subtract 131; Root is 74</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Greatest 4-digit perfect square</strong></div>
+            <div class="step">The greatest 4-digit number is 9999.</div>
+            <div class="step">We find the square root of 9999 by long division:</div>
+            <div class="step">Grouping: $\overline{99}\overline{99}$</div>
+            <div class="step">$9 \times 9 = 81$. Remainder = $99 - 81 = 18$.</div>
+            <div class="step">Bring down 99. New dividend = 1899. Divisor becomes $9 \times 2 = 18$.</div>
+            <div class="step">Place 9 next to 18 to make 189. $189 \times 9 = 1701$.</div>
+            <div class="step">Remainder = $1899 - 1701 = 198$.</div>
+            <div class="step">This means $9999$ is $198$ more than the square of $99$.</div>
+            <div class="step">Greatest 4-digit perfect square = $9999 - 198 = 9801$. ($99^2 = 9801$).</div>
+            <br>
+            <div class="step"><strong>Part (b): Subtract from 5607</strong></div>
+            <div class="step">We find the square root of 5607 by long division:</div>
+            <div class="step">Grouping: $\overline{56}\overline{07}$</div>
+            <div class="step">$7 \times 7 = 49$. Remainder = $56 - 49 = 7$.</div>
+            <div class="step">Bring down 07. New dividend = 707. Divisor becomes $7 \times 2 = 14$.</div>
+            <div class="step">Place 4 next to 14. $144 \times 4 = 576$. (Note: $145 \times 5 = 725$, which is $>707$).</div>
+            <div class="step">Remainder = $707 - 576 = 131$.</div>
+            <div class="step">Since the remainder is 131, we must subtract <strong>131</strong> from 5607 to get a perfect square.</div>
+            <div class="step">Perfect square = $5607 - 131 = 5476$.</div>
+            <div class="step">The square root of 5476 is the quotient, which is <strong>74</strong>.</div>
+        </div>
+    </div>
+
+</body>
+</html>

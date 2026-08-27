@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 900px;
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .solution-title { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            text-decoration: underline; 
+        }
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 15px;
+        }
+        .q-text {
+            font-weight: bold;
+            font-size: 11.5pt;
+            flex-grow: 1;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .final-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 10px 0 15px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+        .explanation {
+            margin-left: 15px;
+            border-left: 3px solid #eee;
+            padding-left: 15px;
+            overflow-x: auto;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        /* Math display for smaller screens */
+        .math-display {
+            overflow-x: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 5px; padding-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS: Minor Test 17 (Class 8 ICSE Maths)</div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find the sum of the rational numbers \(\frac{3}{7}\) and \(\frac{-5}{7}\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: \(\frac{-2}{7}\)</div>
+        <div class="explanation">
+            <div class="step">Since the denominators are the same, we can directly add the numerators.</div>
+            <div class="step math-display">
+                \[ \frac{3}{7} + \left(\frac{-5}{7}\right) = \frac{3 - 5}{7} \]
+            </div>
+            <div class="step">
+                \[ = \frac{-2}{7} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Simplify using laws of exponents: \( 3^4 \times 3^2 \div 3^5 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: 3</div>
+        <div class="explanation">
+            <div class="step">Using the product law of exponents (\(a^m \times a^n = a^{m+n}\)):</div>
+            <div class="step math-display">
+                \[ 3^4 \times 3^2 = 3^{4+2} = 3^6 \]
+            </div>
+            <div class="step">Using the quotient law of exponents (\(a^m \div a^n = a^{m-n}\)):</div>
+            <div class="step math-display">
+                \[ 3^6 \div 3^5 = 3^{6-5} = 3^1 \]
+            </div>
+            <div class="step">\( 3^1 = 3 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. If \( 4A + 15 = 47 \), find the value of the unknown number \( A \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: A = 8</div>
+        <div class="explanation">
+            <div class="step">Given equation: \( 4A + 15 = 47 \)</div>
+            <div class="step">Subtract 15 from both sides (transpose 15 to RHS):</div>
+            <div class="step math-display">\[ 4A = 47 - 15 \]</div>
+            <div class="step math-display">\[ 4A = 32 \]</div>
+            <div class="step">Divide both sides by 4:</div>
+            <div class="step math-display">\[ A = \frac{32}{4} = 8 \]</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Evaluate: \(\frac{3}{4}\) of \(36\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: 27</div>
+        <div class="explanation">
+            <div class="step">The word 'of' in mathematics indicates multiplication.</div>
+            <div class="step math-display">
+                \[ \frac{3}{4} \times 36 \]
+            </div>
+            <div class="step">Simplify by cancelling 36 with 4:</div>
+            <div class="step math-display">
+                \[ = 3 \times 9 \]
+            </div>
+            <div class="step">
+                \[ = 27 \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. If Set \(A = \{1, 3, 5, 7\}\) and Set \(B = \{5, 7, 9, 11\}\), find the union of the two sets (\(A \cup B\)).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: \(A \cup B = \{1, 3, 5, 7, 9, 11\}\)</div>
+        <div class="explanation">
+            <div class="step">The union of two sets contains all the distinct elements present in either Set A or Set B.</div>
+            <div class="step">Combining the elements and removing duplicates:</div>
+            <div class="step">\(A = \{1, 3, 5, 7\}\)</div>
+            <div class="step">\(B = \{5, 7, 9, 11\}\)</div>
+            <div class="step">\(A \cup B = \{1, 3, 5, 7, 9, 11\}\)</div>
+        </div>
+    </div>
+
+    <!-- Section B Solutions -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Find any three rational numbers lying between \(\frac{1}{3}\) and \(\frac{1}{2}\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: \(\frac{9}{24}, \frac{10}{24}, \frac{11}{24}\) (Other correct equivalents accepted)</div>
+        <div class="explanation">
+            <div class="step">First, make the denominators equal by finding the LCM of 3 and 2, which is 6.</div>
+            <div class="step math-display">\[ \frac{1}{3} = \frac{1 \times 2}{3 \times 2} = \frac{2}{6} \]</div>
+            <div class="step math-display">\[ \frac{1}{2} = \frac{1 \times 3}{2 \times 3} = \frac{3}{6} \]</div>
+            <div class="step">To find 3 rational numbers, multiply numerator and denominator by (3+1) = 4:</div>
+            <div class="step math-display">\[ \frac{2 \times 4}{6 \times 4} = \frac{8}{24} \]</div>
+            <div class="step math-display">\[ \frac{3 \times 4}{6 \times 4} = \frac{12}{24} \]</div>
+            <div class="step">The rational numbers between \(\frac{8}{24}\) and \(\frac{12}{24}\) are:</div>
+            <div class="step"><strong>\(\frac{9}{24}, \frac{10}{24}, \frac{11}{24}\)</strong> (which can also be simplified to \(\frac{3}{8}, \frac{5}{12}, \frac{11}{24}\)).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Express \( 1024 \) as a power of \( 2 \). Show your prime factorization steps.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: \( 2^{10} \)</div>
+        <div class="explanation">
+            <div class="step">Perform continuous division by 2 (prime factorization):</div>
+            <div class="step">
+                1024 &divide; 2 = 512<br>
+                512 &divide; 2 = 256<br>
+                256 &divide; 2 = 128<br>
+                128 &divide; 2 = 64<br>
+                64 &divide; 2 = 32<br>
+                32 &divide; 2 = 16<br>
+                16 &divide; 2 = 8<br>
+                8 &divide; 2 = 4<br>
+                4 &divide; 2 = 2<br>
+                2 &divide; 2 = 1
+            </div>
+            <div class="step">Counting the number of 2s, we multiplied 2 by itself 10 times.</div>
+            <div class="step math-display">\[ 1024 = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 = 2^{10} \]</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Using the divisibility test, check whether the number \( 4563 \) is divisible by \( 9 \). State the rule clearly.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: Yes, 4563 is divisible by 9.</div>
+        <div class="explanation">
+            <div class="step"><strong>Rule:</strong> A number is divisible by 9 if the sum of its digits is divisible by 9.</div>
+            <div class="step">Let's find the sum of the digits of 4563:</div>
+            <div class="step math-display">\[ \text{Sum} = 4 + 5 + 6 + 3 = 18 \]</div>
+            <div class="step">Since 18 is completely divisible by 9 (\(18 \div 9 = 2\)), the original number 4563 is also divisible by 9.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. A rectangular board is \( 3\frac{1}{2} \text{ m} \) long and \( 2\frac{1}{4} \text{ m} \) wide. Calculate its perimeter.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: \( 11\frac{1}{2} \text{ m} \) (or \(\frac{23}{2} \text{ m}\))</div>
+        <div class="explanation">
+            <div class="step">Convert mixed fractions to improper fractions:</div>
+            <div class="step">Length (\(L\)) = \( 3\frac{1}{2} = \frac{7}{2} \text{ m} \)</div>
+            <div class="step">Breadth (\(B\)) = \( 2\frac{1}{4} = \frac{9}{4} \text{ m} \)</div>
+            <div class="step">Formula for Perimeter = \( 2 \times (L + B) \)</div>
+            <div class="step math-display">
+                \[ \text{Perimeter} = 2 \times \left( \frac{7}{2} + \frac{9}{4} \right) \]
+            </div>
+            <div class="step">LCM of 2 and 4 is 4. Make denominators same:</div>
+            <div class="step math-display">
+                \[ = 2 \times \left( \frac{14}{4} + \frac{9}{4} \right) \]
+            </div>
+            <div class="step math-display">
+                \[ = 2 \times \left( \frac{23}{4} \right) \]
+            </div>
+            <div class="step math-display">
+                \[ = \frac{23}{2} \text{ m} = 11\frac{1}{2} \text{ m} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Let Universal Set, \( U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\} \). Given \( P = \{2, 4, 6, 8, 10\} \) and \( Q = \{1, 2, 3, 4, 5\} \), find a) \( P \cap Q \), b) \( P' \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: a) \(\{2, 4\}\) &nbsp;&nbsp; b) \(\{1, 3, 5, 7, 9\}\)</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Find \( P \cap Q \) (Intersection)</strong></div>
+            <div class="step">The intersection of Sets P and Q includes elements that are common to both sets.</div>
+            <div class="step">\( P = \{2, 4, 6, 8, 10\} \) and \( Q = \{1, 2, 3, 4, 5\} \)</div>
+            <div class="step">Common elements = 2, 4. Thus, <strong>\( P \cap Q = \{2, 4\} \)</strong>.</div>
+            <br>
+            <div class="step"><strong>Part (b): Find \( P' \) (Complement of P)</strong></div>
+            <div class="step">The complement of P includes all elements in the Universal Set \(U\) that are NOT in Set P.</div>
+            <div class="step">\( U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\} \)</div>
+            <div class="step">\( P = \{2, 4, 6, 8, 10\} \)</div>
+            <div class="step">Removing P elements from U leaves the odd numbers. Thus, <strong>\( P' = \{1, 3, 5, 7, 9\} \)</strong>.</div>
+        </div>
+    </div>
+
+    <!-- Section C Solutions -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Simplify: \( \left(\frac{1}{2}\right)^{-2} + \left(\frac{1}{3}\right)^{-2} + \left(\frac{1}{4}\right)^{-2} \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: 29</div>
+        <div class="explanation">
+            <div class="step">Using the law of exponents: \( (x/y)^{-n} = (y/x)^n \). Negative exponent means taking the reciprocal of the base.</div>
+            <div class="step math-display">
+                \[ \left(\frac{1}{2}\right)^{-2} = (2)^2 = 4 \]
+            </div>
+            <div class="step math-display">
+                \[ \left(\frac{1}{3}\right)^{-2} = (3)^2 = 9 \]
+            </div>
+            <div class="step math-display">
+                \[ \left(\frac{1}{4}\right)^{-2} = (4)^2 = 16 \]
+            </div>
+            <div class="step">Now, substitute the values back into the expression:</div>
+            <div class="step math-display">
+                \[ 4 + 9 + 16 \]
+            </div>
+            <div class="step">Add the numbers step by step:</div>
+            <div class="step math-display">
+                \[ 13 + 16 = 29 \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A student reads \(\frac{1}{5}\) of a storybook in 1 hour. a) What fraction is read in \(2\frac{1}{2}\) hours? b) If book = 150 pages, how many pages read?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: a) \(\frac{1}{2}\) of the book &nbsp;&nbsp; b) 75 pages</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Fraction read in \(2\frac{1}{2}\) hours</strong> (3 Marks)</div>
+            <div class="step">Fraction read in 1 hour = \(\frac{1}{5}\)</div>
+            <div class="step">Time given = \( 2\frac{1}{2} \text{ hours} = \frac{5}{2} \text{ hours} \)</div>
+            <div class="step">Fraction read in \(\frac{5}{2}\) hours = (Fraction per hour) &times; (Total time)</div>
+            <div class="step math-display">
+                \[ = \frac{1}{5} \times \frac{5}{2} \]
+            </div>
+            <div class="step">Cancel out the 5s in numerator and denominator.</div>
+            <div class="step math-display">
+                \[ = \frac{1}{2} \text{ of the book} \]
+            </div>
+            <br>
+            <div class="step"><strong>Part (b): Pages read</strong> (2 Marks)</div>
+            <div class="step">Total number of pages in the book = 150</div>
+            <div class="step">Pages read = \(\frac{1}{2}\) of Total Pages</div>
+            <div class="step math-display">
+                \[ = \frac{1}{2} \times 150 \]
+            </div>
+            <div class="step">
+                \[ = 75 \text{ pages} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Class of 50 students. 30 like Math (M), 25 like Science (S), 15 like both. a) Draw Venn diagram. b) Only Math. c) Neither subject.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="final-answer">Answer: b) 15 students &nbsp;&nbsp; c) 10 students</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Venn Diagram Construction</strong> (2 Marks)</div>
+            <div class="step">
+                Let \(n(U) = 50\) (Total students).<br>
+                Let \(n(M) = 30\) (Like Math).<br>
+                Let \(n(S) = 25\) (Like Science).<br>
+                Intersection \(n(M \cap S) = 15\) (Like both).
+            </div>
+            <div class="step">
+                <em>Venn Diagram logic:</em> Draw two intersecting circles inside a rectangle. The intersection part gets 15. The Math-only part gets \(30 - 15 = 15\). The Science-only part gets \(25 - 15 = 10\).
+            </div>
+            <br>
+            <div class="step"><strong>Part (b): Students who like ONLY Mathematics</strong> (1.5 Marks)</div>
+            <div class="step">
+                Number of students liking only Math = Total liking Math &minus; Those liking both.
+            </div>
+            <div class="step math-display">
+                \[ n(\text{Only M}) = n(M) - n(M \cap S) \]
+                \[ = 30 - 15 = 15 \text{ students} \]
+            </div>
+            <br>
+            <div class="step"><strong>Part (c): Students who like NEITHER subject</strong> (1.5 Marks)</div>
+            <div class="step">
+                First, find the total number of students who like at least one subject (Math OR Science):
+            </div>
+            <div class="step math-display">
+                \[ n(M \cup S) = n(M) + n(S) - n(M \cap S) \]
+                \[ = 30 + 25 - 15 = 55 - 15 = 40 \]
+            </div>
+            <div class="step">
+                Now, find those who like neither (outside the circles):
+            </div>
+            <div class="step math-display">
+                \[ n(\text{Neither}) = n(U) - n(M \cup S) \]
+                \[ = 50 - 40 = 10 \text{ students} \]
+            </div>
+        </div>
+    </div>
+</body>
+</html>

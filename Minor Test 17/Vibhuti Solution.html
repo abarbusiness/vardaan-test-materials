@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering algebraic equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            margin: 0 0 5px 0; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            color: #333; 
+        }
+        
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            margin-bottom: 15px; 
+            gap: 15px;
+        }
+        .q-text { 
+            font-weight: bold; 
+            flex-grow: 1; 
+            font-size: 11.5pt;
+        }
+        .marks-badge { 
+            background-color: var(--primary-yellow); 
+            color: #000; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 10pt; 
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .answer-heading {
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 5px;
+        }
+        .explanation { 
+            margin-left: 20px; 
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #1565c0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .math-scroll {
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            word-wrap: break-word;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 17 (Algebraic Expressions)</div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION A</h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Identify the terms and their coefficients for the following algebraic expression: \( 5xyz^2 - 3zy \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            The expression is \( 5xyz^2 - 3zy \). It has two terms.
+            <div class="step">1. <b>First Term:</b> \( 5xyz^2 \) <br>
+                <b>Coefficient:</b> \( 5 \) (1 Mark)</div>
+            <div class="step">2. <b>Second Term:</b> \( -3zy \) <br>
+                <b>Coefficient:</b> \( -3 \) (1 Mark)</div>
+            <i>Note: The negative sign must be included with the coefficient.</i>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Classify the following polynomials as monomials, binomials, or trinomials: (i) \( x + y \) (ii) \( 1000 \) (iii) \( x + x^2 + x^3 + x^4 \) (iv) \( 7 + y + 5x \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">(i) \( x + y \) : It has 2 terms. Hence, it is a <b>Binomial</b>. (0.5 Mark)</div>
+            <div class="step">(ii) \( 1000 \) : It has 1 term. Hence, it is a <b>Monomial</b>. (0.5 Mark)</div>
+            <div class="step">(iii) \( x + x^2 + x^3 + x^4 \) : It has 4 terms. It does not fit in the three categories. It is simply a polynomial (or multinomial). (0.5 Mark)</div>
+            <div class="step">(iv) \( 7 + y + 5x \) : It has 3 terms. Hence, it is a <b>Trinomial</b>. (0.5 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Add the following algebraic expressions: \( ab - bc \), \( bc - ca \), and \( ca - ab \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">We need to add: \( (ab - bc) + (bc - ca) + (ca - ab) \)</div>
+            <div class="step">Grouping the like terms together:</div>
+            <div class="math-scroll">\( = (ab - ab) + (-bc + bc) + (-ca + ca) \) (1 Mark)</div>
+            <div class="step">\( = 0 + 0 + 0 \)</div>
+            <div class="step"><b>Ans: 0</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Subtract \( 4a - 7ab + 3b + 12 \) from \( 12a - 9ab + 5b - 3 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Writing the expressions, reversing the signs of the polynomial to be subtracted:</div>
+            <div class="math-scroll">\( = (12a - 9ab + 5b - 3) - (4a - 7ab + 3b + 12) \)</div>
+            <div class="math-scroll">\( = 12a - 9ab + 5b - 3 - 4a + 7ab - 3b - 12 \) (1 Mark)</div>
+            <div class="step">Grouping like terms:</div>
+            <div class="math-scroll">\( = (12a - 4a) + (-9ab + 7ab) + (5b - 3b) + (-3 - 12) \)</div>
+            <div class="math-scroll"><b>\( = 8a - 2ab + 2b - 15 \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Find the product of the following pairs of monomials: (i) \( 4, 7p \) (ii) \( -4p, 7pq \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">(i) \( 4 \times 7p = (4 \times 7) \times p = \) <b>\( 28p \)</b> (1 Mark)</div>
+            <div class="step">(ii) \( -4p \times 7pq = (-4 \times 7) \times (p \times p \times q) = \) <b>\( -28p^2q \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION B</h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Simplify the expression \( 3x(4x - 5) + 3 \) and find its value for \( x = 3 \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><b>Step 1: Simplify the expression</b></div>
+            <div class="math-scroll">\( = 3x(4x - 5) + 3 \)</div>
+            <div class="math-scroll">\( = (3x \times 4x) - (3x \times 5) + 3 \)</div>
+            <div class="math-scroll">\( = 12x^2 - 15x + 3 \) (1.5 Marks)</div>
+            <div class="step"><b>Step 2: Substitute \( x = 3 \)</b></div>
+            <div class="math-scroll">\( = 12(3)^2 - 15(3) + 3 \)</div>
+            <div class="math-scroll">\( = 12(9) - 45 + 3 \)</div>
+            <div class="math-scroll">\( = 108 - 45 + 3 \)</div>
+            <div class="math-scroll">\( = 111 - 45 \) <b>\( = 66 \)</b> (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Multiply the binomials: \( (2x + 5) \) and \( (4x - 3) \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Using distributive property:</div>
+            <div class="math-scroll">\( = (2x + 5) \times (4x - 3) \)</div>
+            <div class="math-scroll">\( = 2x(4x - 3) + 5(4x - 3) \) (1 Mark)</div>
+            <div class="math-scroll">\( = (2x \times 4x) - (2x \times 3) + (5 \times 4x) - (5 \times 3) \)</div>
+            <div class="math-scroll">\( = 8x^2 - 6x + 20x - 15 \) (1 Mark)</div>
+            <div class="step">Combining like terms:</div>
+            <div class="math-scroll"><b>\( = 8x^2 + 14x - 15 \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Using the suitable standard identity, evaluate: \( (102)^2 \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">We can write \( 102 \) as \( (100 + 2) \).</div>
+            <div class="step">Therefore, \( (102)^2 = (100 + 2)^2 \)</div>
+            <div class="step">Using the identity: <b>\( (a + b)^2 = a^2 + 2ab + b^2 \)</b> (1 Mark)</div>
+            <div class="step">Here, \( a = 100 \), \( b = 2 \)</div>
+            <div class="math-scroll">\( = (100)^2 + 2(100)(2) + (2)^2 \) (1 Mark)</div>
+            <div class="math-scroll">\( = 10000 + 400 + 4 \)</div>
+            <div class="math-scroll"><b>\( = 10404 \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Subtract \( 3pq(p - q) \) from \( 2pq(p + q) \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">First, simplify both expressions:</div>
+            <div class="math-scroll">Expression 1: \( 3pq(p - q) = 3p^2q - 3pq^2 \) (0.5 Mark)</div>
+            <div class="math-scroll">Expression 2: \( 2pq(p + q) = 2p^2q + 2pq^2 \) (0.5 Mark)</div>
+            <div class="step">Now subtract Expression 1 from Expression 2:</div>
+            <div class="math-scroll">\( = (2p^2q + 2pq^2) - (3p^2q - 3pq^2) \)</div>
+            <div class="math-scroll">\( = 2p^2q + 2pq^2 - 3p^2q + 3pq^2 \) (1 Mark)</div>
+            <div class="step">Grouping like terms:</div>
+            <div class="math-scroll">\( = (2p^2q - 3p^2q) + (2pq^2 + 3pq^2) \)</div>
+            <div class="math-scroll"><b>\( = -p^2q + 5pq^2 \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Using the identity \( (a - b)^2 = a^2 - 2ab + b^2 \), find the value of \( (99)^2 \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">We can write \( 99 \) as \( (100 - 1) \).</div>
+            <div class="step">Therefore, \( (99)^2 = (100 - 1)^2 \)</div>
+            <div class="step">Using the given identity: <b>\( (a - b)^2 = a^2 - 2ab + b^2 \)</b></div>
+            <div class="step">Here, \( a = 100 \), \( b = 1 \)</div>
+            <div class="math-scroll">\( = (100)^2 - 2(100)(1) + (1)^2 \) (1.5 Marks)</div>
+            <div class="math-scroll">\( = 10000 - 200 + 1 \)</div>
+            <div class="math-scroll">\( = 9800 + 1 \)</div>
+            <div class="math-scroll"><b>\( = 9801 \)</b> (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; text-decoration: underline;">SECTION C</h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) Simplify: \( (a + b)(2a - 3b + c) - (2a - 3b)c \) <br> (b) Add: \( p(p-q) \), \( q(q-r) \) and \( r(r-p) \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><b>Part (a) - Simplify (3 Marks)</b></div>
+            <div class="math-scroll">Expression: \( (a + b)(2a - 3b + c) - (2a - 3b)c \)</div>
+            <div class="step">Expand the first part:</div>
+            <div class="math-scroll">\( = a(2a - 3b + c) + b(2a - 3b + c) - [c(2a) - c(3b)] \)</div>
+            <div class="math-scroll">\( = 2a^2 - 3ab + ac + 2ab - 3b^2 + bc - (2ac - 3bc) \) (1.5 Marks)</div>
+            <div class="step">Open the bracket and combine like terms:</div>
+            <div class="math-scroll">\( = 2a^2 - ab + ac - 3b^2 + bc - 2ac + 3bc \)</div>
+            <div class="math-scroll"><b>\( = 2a^2 - 3b^2 - ab - ac + 4bc \)</b> (1.5 Marks)</div>
+            <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
+            <div class="step"><b>Part (b) - Add (2 Marks)</b></div>
+            <div class="step">Simplify the expressions first:</div>
+            <div class="math-scroll">\( p(p-q) = p^2 - pq \)</div>
+            <div class="math-scroll">\( q(q-r) = q^2 - qr \)</div>
+            <div class="math-scroll">\( r(r-p) = r^2 - rp \) (1 Mark for simplifications)</div>
+            <div class="step">Now add them:</div>
+            <div class="math-scroll">\( = (p^2 - pq) + (q^2 - qr) + (r^2 - rp) \)</div>
+            <div class="math-scroll"><b>\( = p^2 + q^2 + r^2 - pq - qr - rp \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Using suitable identities, evaluate: (i) \( 71^2 \) (ii) \( 297 \times 303 \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><b>Part (i) Evaluate \( 71^2 \) (2.5 Marks)</b></div>
+            <div class="step">\( 71^2 = (70 + 1)^2 \)</div>
+            <div class="step">Using identity \( (a + b)^2 = a^2 + 2ab + b^2 \), where \( a=70, b=1 \): (0.5 Mark)</div>
+            <div class="math-scroll">\( = (70)^2 + 2(70)(1) + (1)^2 \) (1 Mark)</div>
+            <div class="math-scroll">\( = 4900 + 140 + 1 \)</div>
+            <div class="math-scroll"><b>\( = 5041 \)</b> (1 Mark)</div>
+            <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
+            <div class="step"><b>Part (ii) Evaluate \( 297 \times 303 \) (2.5 Marks)</b></div>
+            <div class="step">We can write \( 297 = (300 - 3) \) and \( 303 = (300 + 3) \).</div>
+            <div class="step">\( \therefore 297 \times 303 = (300 - 3)(300 + 3) \)</div>
+            <div class="step">Using identity \( (a - b)(a + b) = a^2 - b^2 \), where \( a=300, b=3 \): (0.5 Mark)</div>
+            <div class="math-scroll">\( = (300)^2 - (3)^2 \) (1 Mark)</div>
+            <div class="math-scroll">\( = 90000 - 9 \)</div>
+            <div class="math-scroll"><b>\( = 89991 \)</b> (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Show that: <br> (i) \( (3x + 7)^2 - 84x = (3x - 7)^2 \) <br> (ii) \( (a - b)(a + b) + (b - c)(b + c) + (c - a)(c + a) = 0 \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><b>Part (i) Prove: \( (3x + 7)^2 - 84x = (3x - 7)^2 \) (2.5 Marks)</b></div>
+            <div class="step">Solving LHS:</div>
+            <div class="math-scroll">\( \text{LHS} = (3x + 7)^2 - 84x \)</div>
+            <div class="step">Using \( (a+b)^2 = a^2 + 2ab + b^2 \):</div>
+            <div class="math-scroll">\( = [(3x)^2 + 2(3x)(7) + (7)^2] - 84x \)</div>
+            <div class="math-scroll">\( = 9x^2 + 42x + 49 - 84x \) (1 Mark)</div>
+            <div class="math-scroll">\( = 9x^2 - 42x + 49 \) (0.5 Mark)</div>
+            <div class="step">Now solving RHS:</div>
+            <div class="math-scroll">\( \text{RHS} = (3x - 7)^2 \)</div>
+            <div class="step">Using \( (a-b)^2 = a^2 - 2ab + b^2 \):</div>
+            <div class="math-scroll">\( = (3x)^2 - 2(3x)(7) + (7)^2 \)</div>
+            <div class="math-scroll">\( = 9x^2 - 42x + 49 \) (0.5 Mark)</div>
+            <div class="step">Since <b>LHS = RHS</b>, Hence Proved. (0.5 Mark)</div>
+            
+            <hr style="border-top: 1px dashed #ccc; margin: 15px 0;">
+            <div class="step"><b>Part (ii) Prove: \( (a - b)(a + b) + (b - c)(b + c) + (c - a)(c + a) = 0 \) (2.5 Marks)</b></div>
+            <div class="step">Using the identity \( (x - y)(x + y) = x^2 - y^2 \) for each term: (1 Mark)</div>
+            <div class="math-scroll">Term 1: \( (a - b)(a + b) = a^2 - b^2 \)</div>
+            <div class="math-scroll">Term 2: \( (b - c)(b + c) = b^2 - c^2 \)</div>
+            <div class="math-scroll">Term 3: \( (c - a)(c + a) = c^2 - a^2 \) (0.5 Mark)</div>
+            <div class="step">Substituting these into the LHS expression:</div>
+            <div class="math-scroll">\( \text{LHS} = (a^2 - b^2) + (b^2 - c^2) + (c^2 - a^2) \)</div>
+            <div class="math-scroll">\( = a^2 - a^2 - b^2 + b^2 - c^2 + c^2 \) (0.5 Mark)</div>
+            <div class="math-scroll">\( = 0 \)</div>
+            <div class="step">Since <b>LHS = RHS = 0</b>, Hence Proved. (0.5 Mark)</div>
+        </div>
+    </div>
+
+</body>
+</html>
