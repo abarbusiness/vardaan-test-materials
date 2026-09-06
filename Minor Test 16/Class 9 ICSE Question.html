@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        .question-container { margin-bottom: 15px; display: flex; width: 100%; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; overflow-x: auto; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        table.data-table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+        }
+        table.data-table th, table.data-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        @media screen and (max-width: 768px) {
+            body { width: 100%; padding: 10px; margin: 0; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            table.data-table { width: 100%; font-size: 11pt; }
+            .q-content { overflow-x: auto; }
+        }
+        @media print { body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 9 ICSE</span>
+            <span>Subject: Mathematics (Statistics)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show all calculations clearly.</li>
+                <li>Use graph paper where required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Find the mean of the first five prime numbers.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">The mean of 8 observations is 15. If each observation is multiplied by 2, what will be the new mean? Justify your answer.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Find the median of the following ungrouped data: 25, 34, 31, 23, 22, 26, 35, 28, 20, 32.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Convert the following inclusive class intervals into exclusive class intervals: 10-19, 20-29, 30-39. Also, write the true class limits of the second interval.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">For the data set: 14, 17, 13, 14, 14, 3, 15, 1, 17, 14. Find the mode of the given data.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">The mean of 5 numbers is 18. If one number is excluded, the mean of the remaining numbers becomes 16. Find the excluded number.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Calculate the mean of the following discrete frequency distribution:
+            <table class="data-table">
+                <tr><th>\(x\)</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
+                <tr><th>\(f\)</th><td>4</td><td>12</td><td>20</td><td>28</td><td>36</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Find the median of the following frequency distribution:
+            <table class="data-table">
+                <tr><th>Marks (\(x\))</th><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+                <tr><th>No. of Students (\(f\))</th><td>3</td><td>12</td><td>18</td><td>12</td><td>3</td><td>2</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">If the mean of the following data is 20.6, find the missing frequency \(p\).
+            <table class="data-table">
+                <tr><th>\(x\)</th><td>10</td><td>15</td><td>\(p\)</td><td>25</td><td>35</td></tr>
+                <tr><th>\(f\)</th><td>3</td><td>10</td><td>25</td><td>7</td><td>5</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A grouped frequency distribution table is given below. Construct a cumulative frequency table (less than type) for it.
+            <table class="data-table">
+                <tr><th>Class Interval</th><td>0-10</td><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td></tr>
+                <tr><th>Frequency</th><td>5</td><td>12</td><td>15</td><td>10</td><td>8</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Draw a histogram and a frequency polygon on the same graph sheet for the following data (Use graph paper):
+            <table class="data-table">
+                <tr><th>Class Interval</th><td>10-20</td><td>20-30</td><td>30-40</td><td>40-50</td><td>50-60</td></tr>
+                <tr><th>Frequency</th><td>8</td><td>12</td><td>15</td><td>9</td><td>6</td></tr>
+            </table>
+            <em>Note: Clearly state the coordinates used to plot the frequency polygon.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">The marks obtained by 40 students of a class out of 100 are given below:
+            <br><br>
+            80, 10, 30, 70, 60, 50, 50, 40, 40, 20, 40, 90, 50, 37, 70, 80, 60, 50, 20, 10,<br>
+            40, 50, 60, 70, 80, 90, 50, 40, 30, 20, 50, 40, 60, 70, 50, 50, 60, 80, 90, 40.
+            <br><br>
+            <div class="sub-question">(i) Construct a grouped frequency distribution table with class intervals 0-20, 20-40, 40-60, 60-80, 80-100.</div>
+            <div class="sub-question">(ii) Find the class mark and class size of the 3rd class interval.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(i) The mean of 5 observations \(x, x+2, x+4, x+6, x+8\) is 11. Find the value of \(x\) and calculate the mean of the first 3 observations. (3 Marks)</div>
+            <div class="sub-question">(ii) State any two differences between a Bar Graph and a Histogram. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan </div>
+</body>
+</html>

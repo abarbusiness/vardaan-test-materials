@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --secondary-yellow: #fff9c4;
+            --text-main: #212121;
+            --border-color: #e0e0e0;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #fafafa;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            margin: 0; 
+            color: #000;
+        }
+        .sol-title {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+        .solution-block { 
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1.5px dashed var(--primary-yellow);
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 11pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .ans-explanation {
+            margin-left: 15px;
+        }
+        .step { margin-bottom: 8px; }
+        .final-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 15px 0 5px 0; 
+            border-left: 4px solid #2e7d32;
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+        }
+        table.data-table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+        table.data-table th, table.data-table td {
+            border: 1px solid #000;
+            padding: 6px;
+            text-align: center;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 5px;
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 18pt; }
+            .solution-block { padding: 15px; }
+            .q-header { flex-direction: column; gap: 10px; }
+            .marks-badge { align-self: flex-start; }
+            .ans-explanation { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sol-title">DETAILED SOLUTIONS: Minor Test 16 (Statistics)</div>
+    </div>
+
+    <h3 style="text-align: center; border-bottom: 2px solid #ccc; padding-bottom: 5px;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find the mean of the first five prime numbers.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Step 1:</strong> Identify the first five prime numbers.</div>
+            <div class="step">The first five prime numbers are: 2, 3, 5, 7, and 11.</div>
+            <div class="step"><strong>Step 2:</strong> Apply the mean formula.</div>
+            <div class="step math-scroll">
+                \[ \text{Mean} = \frac{\text{Sum of observations}}{\text{Total number of observations}} \]
+                \[ \text{Mean} = \frac{2 + 3 + 5 + 7 + 11}{5} = \frac{28}{5} \]
+                \[ \text{Mean} = 5.6 \]
+            </div>
+            <div class="final-answer">Answer: 5.6</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. The mean of 8 observations is 15. If each observation is multiplied by 2, what will be the new mean? Justify your answer.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Property of Mean:</strong> If each observation of a data set is multiplied by a constant \(k\), the new mean is also multiplied by \(k\).</div>
+            <div class="step">Old Mean = 15</div>
+            <div class="step">Multiplier (\(k\)) = 2</div>
+            <div class="step math-scroll">
+                \[ \text{New Mean} = \text{Old Mean} \times 2 \]
+                \[ \text{New Mean} = 15 \times 2 = 30 \]
+            </div>
+            <div class="final-answer">Answer: 30</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Find the median of the following ungrouped data: 25, 34, 31, 23, 22, 26, 35, 28, 20, 32.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Step 1:</strong> Arrange data in ascending order.</div>
+            <div class="step">20, 22, 23, 25, 26, 28, 31, 32, 34, 35</div>
+            <div class="step"><strong>Step 2:</strong> Find the number of observations (\(n\)).</div>
+            <div class="step">Here, \(n = 10\) (which is an even number).</div>
+            <div class="step"><strong>Step 3:</strong> Apply median formula for even \(n\).</div>
+            <div class="step math-scroll">
+                \[ \text{Median} = \frac{\left(\frac{n}{2}\right)^{\text{th}} \text{term} + \left(\frac{n}{2} + 1\right)^{\text{th}} \text{term}}{2} \]
+                \[ \text{Median} = \frac{5^{\text{th}} \text{term} + 6^{\text{th}} \text{term}}{2} \]
+                \[ \text{Median} = \frac{26 + 28}{2} = \frac{54}{2} = 27 \]
+            </div>
+            <div class="final-answer">Answer: 27</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Convert the following inclusive class intervals into exclusive class intervals: 10-19, 20-29, 30-39. Also, write the true class limits of the second interval.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Step 1:</strong> Find the adjustment factor.</div>
+            <div class="step">Difference between lower limit of second class and upper limit of first class = \(20 - 19 = 1\).</div>
+            <div class="step">Adjustment factor = \(1 / 2 = 0.5\).</div>
+            <div class="step"><strong>Step 2:</strong> Subtract 0.5 from lower limits and add 0.5 to upper limits.</div>
+            <div class="step">
+                <ul>
+                    <li>10-19 becomes 9.5 - 19.5</li>
+                    <li>20-29 becomes 19.5 - 29.5</li>
+                    <li>30-39 becomes 29.5 - 39.5</li>
+                </ul>
+            </div>
+            <div class="step"><strong>Step 3:</strong> True class limits of the second interval.</div>
+            <div class="final-answer">Exclusive Intervals: 9.5-19.5, 19.5-29.5, 29.5-39.5 | True Limits of 2nd: 19.5 to 29.5</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. For the data set: 14, 17, 13, 14, 14, 3, 15, 1, 17, 14. Find the mode of the given data.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Definition:</strong> Mode is the observation that occurs most frequently in the data set.</div>
+            <div class="step">Let's count the frequencies:
+                <ul>
+                    <li>14 occurs 4 times.</li>
+                    <li>17 occurs 2 times.</li>
+                    <li>13, 3, 15, 1 occur 1 time each.</li>
+                </ul>
+            </div>
+            <div class="step">Since 14 has the highest frequency (4), it is the mode.</div>
+            <div class="final-answer">Answer: 14</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 40px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. The mean of 5 numbers is 18. If one number is excluded, the mean of the remaining numbers becomes 16. Find the excluded number.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step math-scroll">
+                \[ \text{Sum of 5 numbers} = \text{Mean} \times \text{Number of observations} \]
+                \[ \text{Sum of 5 numbers} = 18 \times 5 = 90 \]
+            </div>
+            <div class="step math-scroll">
+                If one number is excluded, remaining numbers = 4.<br>
+                \[ \text{New Sum of 4 numbers} = 16 \times 4 = 64 \]
+            </div>
+            <div class="step math-scroll">
+                \[ \text{Excluded Number} = (\text{Sum of 5 numbers}) - (\text{Sum of 4 numbers}) \]
+                \[ \text{Excluded Number} = 90 - 64 = 26 \]
+            </div>
+            <div class="final-answer">Answer: 26</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Calculate the mean of the following discrete frequency distribution. (x: 5,10,15,20,25 | f: 4,12,20,28,36)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step">Construct the frequency table to find \(\Sigma f\) and \(\Sigma fx\):</div>
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>\(x\)</th><th>\(f\)</th><th>\(fx\)</th></tr>
+                    <tr><td>5</td><td>4</td><td>20</td></tr>
+                    <tr><td>10</td><td>12</td><td>120</td></tr>
+                    <tr><td>15</td><td>20</td><td>300</td></tr>
+                    <tr><td>20</td><td>28</td><td>560</td></tr>
+                    <tr><td>25</td><td>36</td><td>900</td></tr>
+                    <tr style="font-weight: bold;"><td>Total</td><td>\(\Sigma f = 100\)</td><td>\(\Sigma fx = 1900\)</td></tr>
+                </table>
+            </div>
+            <div class="step math-scroll">
+                \[ \text{Mean } (\bar{x}) = \frac{\Sigma fx}{\Sigma f} = \frac{1900}{100} = 19 \]
+            </div>
+            <div class="final-answer">Answer: 19</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Find the median of the following frequency distribution. (x: 10,11,12,13,14,15 | f: 3,12,18,12,3,2)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step">Prepare the Cumulative Frequency (cf) table:</div>
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>Marks (\(x\))</th><th>Frequency (\(f\))</th><th>Cumulative Frequency (cf)</th></tr>
+                    <tr><td>10</td><td>3</td><td>3</td></tr>
+                    <tr><td>11</td><td>12</td><td>15</td></tr>
+                    <tr><td>12</td><td>18</td><td>33</td></tr>
+                    <tr><td>13</td><td>12</td><td>45</td></tr>
+                    <tr><td>14</td><td>3</td><td>48</td></tr>
+                    <tr><td>15</td><td>2</td><td>50</td></tr>
+                </table>
+            </div>
+            <div class="step">Here, \(N = \Sigma f = 50\) (Even number).</div>
+            <div class="step math-scroll">
+                \[ \text{Median} = \frac{\text{Value of } \left(\frac{50}{2}\right)^{\text{th}} \text{ obs.} + \text{Value of } \left(\frac{50}{2} + 1\right)^{\text{th}} \text{ obs.}}{2} \]
+                \[ \text{Median} = \frac{\text{Value of } 25^{\text{th}} \text{ obs.} + \text{Value of } 26^{\text{th}} \text{ obs.}}{2} \]
+            </div>
+            <div class="step">From the cf column, observations from 16th to 33rd are all 12.</div>
+            <div class="step">Therefore, 25th obs = 12 and 26th obs = 12.</div>
+            <div class="step math-scroll">\[ \text{Median} = \frac{12 + 12}{2} = 12 \]</div>
+            <div class="final-answer">Answer: 12</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. If the mean of the data is 20.6, find the missing frequency \(p\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>\(x\)</th><th>\(f\)</th><th>\(fx\)</th></tr>
+                    <tr><td>10</td><td>3</td><td>30</td></tr>
+                    <tr><td>15</td><td>10</td><td>150</td></tr>
+                    <tr><td>\(p\)</td><td>25</td><td>\(25p\)</td></tr>
+                    <tr><td>25</td><td>7</td><td>175</td></tr>
+                    <tr><td>35</td><td>5</td><td>175</td></tr>
+                    <tr style="font-weight: bold;"><td>Total</td><td>\(\Sigma f = 50\)</td><td>\(\Sigma fx = 530 + 25p\)</td></tr>
+                </table>
+            </div>
+            <div class="step math-scroll">
+                \[ \text{Mean} = \frac{\Sigma fx}{\Sigma f} \]
+                \[ 20.6 = \frac{530 + 25p}{50} \]
+                \[ 20.6 \times 50 = 530 + 25p \]
+                \[ 1030 = 530 + 25p \]
+                \[ 25p = 1030 - 530 \]
+                \[ 25p = 500 \implies p = \frac{500}{25} = 20 \]
+            </div>
+            <div class="final-answer">Answer: p = 20</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Construct a cumulative frequency table (less than type) for the given grouped distribution.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step">A "less than" cumulative frequency table is created using the upper limits of the class intervals.</div>
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>Marks (Less than)</th><th>Frequency (\(f\))</th><th>Cumulative Frequency (cf)</th></tr>
+                    <tr><td>Less than 10</td><td>5</td><td>5</td></tr>
+                    <tr><td>Less than 20</td><td>12</td><td>5 + 12 = 17</td></tr>
+                    <tr><td>Less than 30</td><td>15</td><td>17 + 15 = 32</td></tr>
+                    <tr><td>Less than 40</td><td>10</td><td>32 + 10 = 42</td></tr>
+                    <tr><td>Less than 50</td><td>8</td><td>42 + 8 = 50</td></tr>
+                </table>
+            </div>
+            <div class="final-answer">Cumulative Frequencies: 5, 17, 32, 42, 50</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 40px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Draw a histogram and a frequency polygon on the same graph sheet. State the coordinates used for the polygon.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Step 1: Histogram Construction (Theory)</strong></div>
+            <div class="step">
+                - X-axis: Class intervals (10-20, 20-30... 50-60). Take a kink (\(\approx\)) from 0 to 10 if starting directly from 10.<br>
+                - Y-axis: Frequency (scale: 1 cm = 2 units).<br>
+                - Draw contiguous rectangles with base as class interval and height proportional to frequency.
+            </div>
+            <div class="step"><strong>Step 2: Frequency Polygon Coordinates</strong></div>
+            <div class="step">
+                To draw the polygon over the histogram, we mark the midpoints of the top of each rectangle (class marks). We also add a preceding class (0-10) and a succeeding class (60-70) with frequency 0 to anchor the polygon to the X-axis.
+            </div>
+            <div class="step">
+                Class Marks (\(x_i\)) = \(\frac{\text{Lower Limit} + \text{Upper Limit}}{2}\)
+            </div>
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>Class</th><th>Class Mark (\(x\))</th><th>Frequency (\(y\))</th><th>Coordinate (x,y)</th></tr>
+                    <tr><td>0-10 (Preceding)</td><td>5</td><td>0</td><td>(5, 0)</td></tr>
+                    <tr><td>10-20</td><td>15</td><td>8</td><td>(15, 8)</td></tr>
+                    <tr><td>20-30</td><td>25</td><td>12</td><td>(25, 12)</td></tr>
+                    <tr><td>30-40</td><td>35</td><td>15</td><td>(35, 15)</td></tr>
+                    <tr><td>40-50</td><td>45</td><td>9</td><td>(45, 9)</td></tr>
+                    <tr><td>50-60</td><td>55</td><td>6</td><td>(55, 6)</td></tr>
+                    <tr><td>60-70 (Succeeding)</td><td>65</td><td>0</td><td>(65, 0)</td></tr>
+                </table>
+            </div>
+            <div class="step">Join the points (5,0), (15,8), (25,12), (35,15), (45,9), (55,6), and (65,0) with straight lines using a ruler.</div>
+            <div class="final-answer">Polygon Points: (5,0), (15,8), (25,12), (35,15), (45,9), (55,6), (65,0)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Construct a grouped frequency distribution table with intervals 0-20, 20-40... Find class mark and class size of 3rd interval.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>(i) Frequency Distribution Table:</strong></div>
+            <div class="step">Use tally marks to count data strictly into exclusive intervals. (e.g., 20 goes to 20-40, not 0-20).</div>
+            <div class="math-scroll">
+                <table class="data-table">
+                    <tr><th>Class Interval</th><th>Data Points Counted</th><th>Frequency (\(f\))</th></tr>
+                    <tr><td>0 - 20</td><td>10, 10</td><td>2</td></tr>
+                    <tr><td>20 - 40</td><td>30, 20, 37, 20, 30, 20</td><td>6</td></tr>
+                    <tr><td>40 - 60</td><td>50, 50, 40, 40, 40, 50, 50, 40, 50, 40, 50, 40, 50, 50, 50, 40</td><td>16</td></tr>
+                    <tr><td>60 - 80</td><td>70, 60, 70, 60, 60, 70, 70, 60, 60, 70</td><td>10</td></tr>
+                    <tr><td>80 - 100</td><td>80, 90, 80, 80, 90, 80, 90, 80, 90</td><td>6</td></tr>
+                    <tr style="font-weight: bold;"><td>Total</td><td></td><td>40</td></tr>
+                </table>
+            </div>
+            <div class="step"><strong>(ii) Third Class Interval:</strong></div>
+            <div class="step">The 3rd class interval is 40 - 60.</div>
+            <div class="step math-scroll">
+                \[ \text{Class Mark} = \frac{\text{Lower limit} + \text{Upper limit}}{2} = \frac{40 + 60}{2} = 50 \]
+                \[ \text{Class Size} = \text{Upper limit} - \text{Lower limit} = 60 - 40 = 20 \]
+            </div>
+            <div class="final-answer">Class Mark = 50, Class Size = 20</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (i) Mean of x, x+2, x+4, x+6, x+8 is 11. Find x and mean of first 3 obs. (ii) Differences between Bar Graph & Histogram.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-explanation">
+            <div class="step"><strong>Part (i): [3 Marks]</strong></div>
+            <div class="step math-scroll">
+                \[ \text{Mean} = \frac{x + (x+2) + (x+4) + (x+6) + (x+8)}{5} = 11 \]
+                \[ \frac{5x + 20}{5} = 11 \]
+                \[ 5x + 20 = 55 \]
+                \[ 5x = 35 \implies x = 7 \]
+            </div>
+            <div class="step">First 3 observations are: \(x, x+2, x+4\) \(\rightarrow 7, 9, 11\).</div>
+            <div class="step math-scroll">
+                \[ \text{Mean of first 3} = \frac{7 + 9 + 11}{3} = \frac{27}{3} = 9 \]
+            </div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (ii): [2 Marks]</strong></div>
+            <div class="step"><strong>Differences between Bar Graph and Histogram:</strong></div>
+            <div class="math-scroll">
+                <table class="data-table" style="text-align: left;">
+                    <tr><th>Bar Graph</th><th>Histogram</th></tr>
+                    <tr><td>1. Used for discrete/categorical data.</td><td>1. Used for continuous grouped data.</td></tr>
+                    <tr><td>2. There are gaps between consecutive bars.</td><td>2. There are no gaps between consecutive rectangles.</td></tr>
+                </table>
+            </div>
+            <div class="final-answer">Answer (i): x = 7, Mean = 9</div>
+        </div>
+    </div>
+
+</body>
+</html>
