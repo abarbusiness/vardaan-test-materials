@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 19 (Class 8)</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+
+        .mcq-container {
+            column-count: 2; 
+            column-gap: 40px; 
+            column-rule: 1.5px solid var(--primary-yellow);
+        }
+        .question-block {
+            break-inside: avoid; 
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .options-grid {
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 4px 10px; 
+            padding-left: 25px;
+        }
+
+        .subj-container {
+            margin-top: 10px;
+        }
+        .subj-question {
+            display: flex;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 30px;
+            flex-shrink: 0;
+        }
+        .q-content {
+            flex-grow: 1;
+        }
+        .sub-question {
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 0;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .mcq-container {
+                column-count: 1;
+                column-rule: none;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .mcq-container { column-count: 2; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 19 : General Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 8</span>
+            <span>Subject: General Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper consists of 18 questions divided into 3 sections.</li>
+                <li><strong>Section A:</strong> 10 Multiple Choice Questions of 1 mark each.</li>
+                <li><strong>Section B:</strong> 5 Short Answer Questions of 3 marks each.</li>
+                <li><strong>Section C:</strong> 3 Long Answer/Competency Questions of 5 marks each.</li>
+                <li>Use of calculators is strictly prohibited. Show clear steps for Section B and C.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Objective Type - Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="mcq-container">
+        <div class="question-block">
+            <div class="question-text">Q1. What is the multiplicative inverse of \( \frac{-3}{4} \)?</div>
+            <div class="options-grid">
+                <div>(a) \( \frac{3}{4} \)</div>
+                <div>(b) \( \frac{4}{3} \)</div>
+                <div>(c) \( \frac{-4}{3} \)</div>
+                <div>(d) \( \frac{-3}{4} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q2. The value of \( (2^{-1} \times 4^{-1}) \div 2^{-2} \) is:</div>
+            <div class="options-grid">
+                <div>(a) 2</div>
+                <div>(b) \( \frac{1}{2} \)</div>
+                <div>(c) 4</div>
+                <div>(d) \( \frac{1}{4} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q3. What is the square root of 12.25?</div>
+            <div class="options-grid">
+                <div>(a) 3.5</div>
+                <div>(b) 2.5</div>
+                <div>(c) 4.5</div>
+                <div>(d) 3.25</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q4. If \( 2x - 3 = 7 \), then what is the value of \( x \)?</div>
+            <div class="options-grid">
+                <div>(a) 2</div>
+                <div>(b) 5</div>
+                <div>(c) 10</div>
+                <div>(d) -2</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q5. The sum of the exterior angles of any regular polygon is always:</div>
+            <div class="options-grid">
+                <div>(a) 180°</div>
+                <div>(b) 360°</div>
+                <div>(c) 540°</div>
+                <div>(d) 90°</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q6. Which of the following is a perfect cube?</div>
+            <div class="options-grid">
+                <div>(a) 243</div>
+                <div>(b) 343</div>
+                <div>(c) 441</div>
+                <div>(d) 100</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q7. The standard form of 0.000064 is:</div>
+            <div class="options-grid">
+                <div>(a) \( 64 \times 10^{-6} \)</div>
+                <div>(b) \( 6.4 \times 10^{-5} \)</div>
+                <div>(c) \( 6.4 \times 10^5 \)</div>
+                <div>(d) \( 0.64 \times 10^{-4} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q8. 25% of 120 is equal to:</div>
+            <div class="options-grid">
+                <div>(a) 40</div>
+                <div>(b) 30</div>
+                <div>(c) 25</div>
+                <div>(d) 20</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q9. The volume of a cube with side length 4 cm is:</div>
+            <div class="options-grid">
+                <div>(a) 16 cm³</div>
+                <div>(b) 32 cm³</div>
+                <div>(c) 64 cm³</div>
+                <div>(d) 12 cm³</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q10. The degree of the polynomial \( 4x^3 - 5x^2 + 2 \) is:</div>
+            <div class="options-grid">
+                <div>(a) 1</div>
+                <div>(b) 2</div>
+                <div>(c) 3</div>
+                <div>(d) 4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="subj-container">
+        <div class="subj-question">
+            <div class="q-num">Q11.</div>
+            <div class="q-content">
+                Find any three rational numbers between \( \frac{1}{4} \) and \( \frac{1}{2} \).
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q12.</div>
+            <div class="q-content">
+                Simplify the following algebraic expression by multiplying the binomials:<br>
+                \( (2x + 5)(4x - 3) \)
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q13.</div>
+            <div class="q-content">
+                The sum of three consecutive multiples of 8 is 888. Find these multiples.
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q14.</div>
+            <div class="q-content">
+                An electronic gadget was sold for ₹ 540, making a profit of 20%. Calculate the Cost Price (CP) of the gadget.
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q15.</div>
+            <div class="q-content">
+                Simplify using laws of exponents: <br>
+                \( \displaystyle \frac{3^{-5} \times 10^{-5} \times 125}{5^{-7} \times 6^{-5}} \)
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer / Competency Based - 5 Marks Each)</span></div>
+    
+    <div class="subj-container">
+        <div class="subj-question">
+            <div class="q-num">Q16.</div>
+            <div class="q-content">
+                <strong>(Competency - Mensuration in Real Life)</strong><br>
+                A cylindrical water tank has a radius of 1.4 m and a height of 5 m.<br>
+                <div class="sub-question">(i) Find the Curved Surface Area (CSA) of the tank.</div>
+                <div class="sub-question">(ii) Find the Total Surface Area (TSA) of the tank (Assume it is closed at the top and bottom).</div>
+                <div class="sub-question">(iii) If the cost of painting the outside curved surface is ₹ 20 per sq.m, find the total cost of painting.</div>
+                <div class="sub-question">(iv) Calculate the volume of the tank in liters. (Given: 1 \(m^3\) = 1000 Liters, use \(\pi = \frac{22}{7}\)).</div>
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q17.</div>
+            <div class="q-content">
+                <strong>(Real-life Application - Commercial Mathematics)</strong><br>
+                Ramesh borrows ₹ 25,000 from a bank to start a small business. The bank charges interest at the rate of 8% per annum compounded annually for a period of 2 years.<br>
+                <div class="sub-question">(i) Write down the formula for calculating the amount under compound interest.</div>
+                <div class="sub-question">(ii) Calculate the total amount Ramesh has to pay back at the end of 2 years.</div>
+                <div class="sub-question">(iii) Find the total compound interest paid by Ramesh over these 2 years.</div>
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q18.</div>
+            <div class="q-content">
+                <strong>(Integration - Geometry and Algebra)</strong><br>
+                In a parallelogram ABCD, two adjacent angles are given by \( \angle A = (3x + 15)^\circ \) and \( \angle B = (5x - 35)^\circ \).<br>
+                <div class="sub-question">(i) State the geometrical property regarding the adjacent angles of a parallelogram.</div>
+                <div class="sub-question">(ii) Form an equation and solve it to find the value of \(x\).</div>
+                <div class="sub-question">(iii) Find the exact measures of \( \angle A \) and \( \angle B \).</div>
+                <div class="sub-question">(iv) Hence, write down the measures of \( \angle C \) and \( \angle D \).</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Senior Academic Council</div>
+</body>
+</html>

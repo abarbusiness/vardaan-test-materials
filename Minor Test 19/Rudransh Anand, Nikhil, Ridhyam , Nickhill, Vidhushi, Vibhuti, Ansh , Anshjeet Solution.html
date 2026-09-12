@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 8)</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm;
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #d32f2f;
+        }
+
+        .section-title {
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 13pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 25px 0 15px 0;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        .sol-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .sol-question {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        
+        .correct-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 6px 12px; 
+            margin: 5px 0 10px 25px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+
+        .explanation {
+            margin-left: 25px;
+        }
+        
+        .math-overflow {
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body { 
+                padding: 10px; 
+                margin: 0;
+            }
+            .explanation, .correct-answer {
+                margin-left: 10px;
+            }
+            .sol-header {
+                flex-direction: column;
+            }
+            .marks-badge {
+                margin-top: 8px;
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Minor Test 19 (Class 8 General Maths)</div>
+    </div>
+
+    <div class="section-title">SECTION A - Objective Type</div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q1. What is the multiplicative inverse of \( \frac{-3}{4} \)?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (c) \( \frac{-4}{3} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The multiplicative inverse (or reciprocal) of a rational number \( \frac{a}{b} \) is \( \frac{b}{a} \). 
+            Therefore, the multiplicative inverse of \( \frac{-3}{4} \) is \( \frac{4}{-3} \), which is written in standard form as \( \frac{-4}{3} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q2. The value of \( (2^{-1} \times 4^{-1}) \div 2^{-2} \) is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) \( \frac{1}{2} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Using the law of exponents \( a^{-m} = \frac{1}{a^m} \):<br>
+            \( (2^{-1} \times 4^{-1}) \div 2^{-2} = \left(\frac{1}{2} \times \frac{1}{4}\right) \div \frac{1}{2^2} \)<br>
+            \( = \frac{1}{8} \div \frac{1}{4} = \frac{1}{8} \times 4 = \frac{4}{8} = \frac{1}{2} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q3. What is the square root of 12.25?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (a) 3.5</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Ignore the decimal point temporarily to find the square root of 1225. We know \( 35 \times 35 = 1225 \). 
+            Since there are two decimal places in 12.25, the square root will have one decimal place. 
+            Thus, \( \sqrt{12.25} = 3.5 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q4. If \( 2x - 3 = 7 \), then what is the value of \( x \)?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 5</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Solve the linear equation: <br>
+            \( 2x - 3 = 7 \)<br>
+            \( 2x = 7 + 3 \)<br>
+            \( 2x = 10 \)<br>
+            \( x = \frac{10}{2} = 5 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q5. The sum of the exterior angles of any regular polygon is always:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 360°</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            By the property of polygons, the sum of all the exterior angles (taking one at each vertex) of any convex polygon is exactly 360°.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q6. Which of the following is a perfect cube?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 343</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Let's verify: \( 7 \times 7 \times 7 = 343 \). Therefore, 343 is a perfect cube. (Note: 243 is \( 3^5 \), 441 is \( 21^2 \), 100 is \( 10^2 \)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q7. The standard form of 0.000064 is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) \( 6.4 \times 10^{-5} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            To write in standard form (scientific notation), move the decimal point 5 places to the right to get a number between 1 and 10. <br>
+            This gives 6.4. Since we moved the decimal right, the exponent is negative 5. Result: \( 6.4 \times 10^{-5} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q8. 25% of 120 is equal to:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 30</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            \( 25\% = \frac{25}{100} = \frac{1}{4} \). <br>
+            \( \frac{1}{4} \text{ of } 120 = \frac{120}{4} = 30 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q9. The volume of a cube with side length 4 cm is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (c) 64 cm³</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Volume of a cube = \( \text{side}^3 \).<br>
+            \( V = 4 \times 4 \times 4 = 64 \text{ cm}^3 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q10. The degree of the polynomial \( 4x^3 - 5x^2 + 2 \) is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (c) 3</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The degree of a polynomial in one variable is the highest power of the variable present in the polynomial. 
+            In \( 4x^3 - 5x^2 + 2 \), the highest power of \(x\) is 3.
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B - Short Answer Type</div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q11. Find any three rational numbers between \( \frac{1}{4} \) and \( \frac{1}{2} \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            First, find a common denominator for the two fractions. Let's use 8.<br>
+            \( \frac{1}{4} = \frac{2}{8} \) and \( \frac{1}{2} = \frac{4}{8} \). <em>[1 Mark for common denominator setup]</em><br><br>
+            Since we need three rational numbers, there is only one integer between numerators 2 and 4. We need to expand the gap by multiplying numerator and denominator by a larger number, say 4.<br>
+            <div class="math-overflow">
+                \( \frac{2 \times 4}{8 \times 4} = \frac{8}{32} \)<br>
+                \( \frac{4 \times 4}{8 \times 4} = \frac{16}{32} \) <em>[1 Mark for expanding]</em>
+            </div><br>
+            Now we can easily pick three rational numbers between \( \frac{8}{32} \) and \( \frac{16}{32} \):<br>
+            <strong>\( \frac{9}{32}, \frac{10}{32}, \frac{11}{32} \)</strong> <em>[1 Mark for correct final values. Note: Other valid fractions are acceptable]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q12. Simplify: \( (2x + 5)(4x - 3) \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            We use the distributive property (FOIL method) to multiply the binomials.<br>
+            \( (2x + 5)(4x - 3) \)<br>
+            \( = 2x(4x - 3) + 5(4x - 3) \) <em>[1 Mark for distributive setup]</em><br>
+            <div class="math-overflow">
+                \( = (2x \cdot 4x) - (2x \cdot 3) + (5 \cdot 4x) - (5 \cdot 3) \)<br>
+                \( = 8x^2 - 6x + 20x - 15 \) <em>[1 Mark for correct multiplication]</em>
+            </div><br>
+            Combine like terms (\(-6x\) and \(+20x\)):<br>
+            <strong>\( = 8x^2 + 14x - 15 \)</strong> <em>[1 Mark for final simplified expression]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q13. The sum of three consecutive multiples of 8 is 888. Find these multiples.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let the three consecutive multiples of 8 be \( 8x \), \( 8(x+1) \), and \( 8(x+2) \).<br>
+            Alternatively, let the multiples be \( x, x+8, x+16 \). Let's use the latter for simplicity.<br>
+            Equation: \( x + (x + 8) + (x + 16) = 888 \) <em>[1 Mark for forming equation]</em><br><br>
+            Solving for \( x \):<br>
+            \( 3x + 24 = 888 \)<br>
+            \( 3x = 888 - 24 \)<br>
+            \( 3x = 864 \) <em>[1 Mark for simplifying to 3x = 864]</em><br>
+            \( x = \frac{864}{3} = 288 \).<br><br>
+            The multiples are:<br>
+            1st multiple = 288<br>
+            2nd multiple = 288 + 8 = 296<br>
+            3rd multiple = 296 + 8 = 304<br>
+            <strong>The multiples are 288, 296, and 304.</strong> <em>[1 Mark for calculating all three multiples]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q14. Gadget sold for ₹ 540, profit of 20%. Calculate Cost Price (CP).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Selling Price (SP) = ₹ 540<br>
+            Profit % = 20%<br>
+            Let the Cost Price be \( x \).<br>
+            We know that, \( \text{SP} = \text{CP} + \text{Profit} \).<br>
+            Profit = 20% of CP = \( 0.20x \) <em>[1 Mark for conceptual setup/formula]</em><br><br>
+            So, \( x + 0.20x = 540 \)<br>
+            \( 1.20x = 540 \) <em>[1 Mark for equation formation]</em><br>
+            \( x = \frac{540}{1.20} \)<br>
+            \( x = \frac{54000}{120} = 450 \)<br>
+            <strong>The Cost Price of the gadget is ₹ 450.</strong> <em>[1 Mark for final correct value]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q15. Simplify: \( \displaystyle \frac{3^{-5} \times 10^{-5} \times 125}{5^{-7} \times 6^{-5}} \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            First, prime factorize the composite numbers: <br>
+            \( 10 = 2 \times 5 \), \( 125 = 5^3 \), \( 6 = 2 \times 3 \).<br>
+            Substitute these into the expression: <em>[1 Mark for prime factorization]</em><br>
+            <div class="math-overflow">
+                \( = \frac{3^{-5} \times (2 \times 5)^{-5} \times 5^3}{5^{-7} \times (2 \times 3)^{-5}} \)
+            </div><br>
+            Apply the law \( (ab)^m = a^m b^m \):<br>
+            <div class="math-overflow">
+                \( = \frac{3^{-5} \times 2^{-5} \times 5^{-5} \times 5^3}{5^{-7} \times 2^{-5} \times 3^{-5}} \) <em>[1 Mark for expanding]</em>
+            </div><br>
+            Group the terms with the same base and apply the laws of exponents (\( \frac{a^m}{a^n} = a^{m-n} \) and \( a^m \cdot a^n = a^{m+n} \)):<br>
+            <div class="math-overflow">
+                \( = 2^{-5 - (-5)} \times 3^{-5 - (-5)} \times 5^{-5 + 3 - (-7)} \)<br>
+                \( = 2^0 \times 3^0 \times 5^{-2 + 7} \)<br>
+                \( = 1 \times 1 \times 5^5 \)
+            </div><br>
+            <strong>\( = 5^5 \text{ (or } 3125) \)</strong> <em>[1 Mark for correct final answer]</em>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C - Long Answer / Competency Based</div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q16. Cylindrical tank: r = 1.4 m, h = 5 m. Find CSA, TSA, Cost of painting outside curved surface @ ₹ 20/m², Volume in Liters.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Given: Radius (\(r\)) = 1.4 m, Height (\(h\)) = 5 m, \(\pi = \frac{22}{7}\).<br><br>
+
+            <strong>(i) Curved Surface Area (CSA):</strong><br>
+            \( \text{CSA} = 2\pi rh \)<br>
+            \( = 2 \times \frac{22}{7} \times 1.4 \times 5 \)<br>
+            \( = 2 \times 22 \times 0.2 \times 5 = 44 \text{ m}^2 \) <em>[1.5 Marks]</em><br><br>
+
+            <strong>(ii) Total Surface Area (TSA):</strong><br>
+            \( \text{TSA} = 2\pi r(r + h) \)<br>
+            \( = 2 \times \frac{22}{7} \times 1.4 \times (1.4 + 5) \)<br>
+            \( = 44 \times 0.2 \times 6.4 \)<br>
+            \( = 8.8 \times 6.4 = 56.32 \text{ m}^2 \) <em>[1.5 Marks]</em><br><br>
+
+            <strong>(iii) Cost of painting curved surface:</strong><br>
+            Cost = CSA \( \times \) Rate<br>
+            \( \text{Cost} = 44 \times 20 = \text{₹ } 880 \) <em>[1 Mark]</em><br><br>
+
+            <strong>(iv) Volume in liters:</strong><br>
+            \( \text{Volume (m}^3) = \pi r^2 h = \frac{22}{7} \times 1.4 \times 1.4 \times 5 \)<br>
+            \( = 22 \times 0.2 \times 1.4 \times 5 = 30.8 \text{ m}^3 \).<br>
+            Since 1 m³ = 1000 Liters, Volume = \( 30.8 \times 1000 = 30,800 \) Liters. <em>[1 Mark]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q17. Ramesh borrows ₹ 25,000 at 8% p.a. compounded annually for 2 years. Formula, Amount after 2 yrs, Total Compound Interest.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Principal (\(P\)) = ₹ 25,000<br>
+            Rate (\(R\)) = 8% per annum<br>
+            Time (\(n\)) = 2 years<br><br>
+
+            <strong>(i) Formula for Amount (Compound Interest):</strong><br>
+            \( A = P\left(1 + \frac{R}{100}\right)^n \) <em>[1 Mark]</em><br><br>
+            
+            <strong>(ii) Total Amount after 2 years:</strong><br>
+            <div class="math-overflow">
+                \( A = 25000 \left(1 + \frac{8}{100}\right)^2 \)<br>
+                \( A = 25000 \left(\frac{108}{100}\right)^2 \)<br>
+                \( A = 25000 \times \frac{108}{100} \times \frac{108}{100} \) <em>[1.5 Marks for substitution]</em>
+            </div><br>
+            Simplifying zeroes:<br>
+            \( A = 2.5 \times 108 \times 108 \)<br>
+            \( A = 2.5 \times 11664 = \text{₹ } 29,160 \) <em>[1.5 Marks for correct calculation of Amount]</em><br><br>
+            
+            <strong>(iii) Total Compound Interest (CI):</strong><br>
+            \( \text{CI} = \text{Amount} (A) - \text{Principal} (P) \)<br>
+            \( \text{CI} = 29160 - 25000 = \text{₹ } 4,160 \) <em>[1 Mark]</em>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="sol-question">Q18. Parallelogram ABCD: \(\angle A = (3x + 15)^\circ\), \(\angle B = (5x - 35)^\circ\). Find property, x, \(\angle A, \angle B, \angle C, \angle D\).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            <strong>(i) Geometrical property:</strong><br>
+            In a parallelogram, adjacent angles are supplementary (their sum is 180°). <em>[1 Mark]</em><br><br>
+            
+            <strong>(ii) Form an equation and solve for x:</strong><br>
+            \( \angle A + \angle B = 180^\circ \)<br>
+            \( (3x + 15) + (5x - 35) = 180 \) <em>[1 Mark]</em><br>
+            \( 8x - 20 = 180 \)<br>
+            \( 8x = 200 \)<br>
+            \( x = \frac{200}{8} = 25 \) <em>[1 Mark]</em><br><br>
+            
+            <strong>(iii) Exact measures of \(\angle A\) and \(\angle B\):</strong><br>
+            \( \angle A = 3(25) + 15 = 75 + 15 = 90^\circ \) <em>[0.5 Mark]</em><br>
+            \( \angle B = 5(25) - 35 = 125 - 35 = 90^\circ \) <em>[0.5 Mark]</em><br>
+            <em>(Note: Since adjacent angles are 90°, this parallelogram is actually a rectangle.)</em><br><br>
+
+            <strong>(iv) Measures of \(\angle C\) and \(\angle D\):</strong><br>
+            In a parallelogram, opposite angles are equal.<br>
+            Therefore, \( \angle C = \angle A = 90^\circ \) <em>[0.5 Mark]</em><br>
+            And \( \angle D = \angle B = 90^\circ \) <em>[0.5 Mark]</em>
+        </div>
+    </div>
+
+    <div class="footer">Prepared by Academic Dean - Team Vardaan (30+ Years CBSE/ICSE Expertise)</div>
+</body>
+</html>

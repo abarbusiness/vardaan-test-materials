@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 17</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 10px; 
+            border-top: 3px solid var(--primary-yellow);
+            padding-top: 10px;
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: var(--text-main);
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 10mm; 
+                margin: 0;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px; 
+            }
+            .question-container { 
+                flex-direction: column; 
+            }
+            .q-num { 
+                width: auto; 
+                margin-bottom: 5px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17: MENSURATION</div>
+        <div class="exam-details">
+            <span>Class: 8</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show proper steps and formulas used. Write your answers neatly.</li>
+                <li>Use of calculator is strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Find the volume of a cube whose edge length is \( 6 \text{ cm} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">The dimensions of a cuboidal box are \( 4 \text{ cm} \times 3 \text{ cm} \times 2 \text{ cm} \). Find its Total Surface Area (TSA).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">The radius of the base of a cylinder is \( 7 \text{ cm} \) and its height is \( 10 \text{ cm} \). Find its Curved Surface Area (CSA). \( \left(\text{Assume } \pi = \frac{22}{7}\right) \)</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">If each side of a cube is doubled, how many times will its new volume be compared to its original volume?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">A cylindrical tank has a base area of \( 154 \text{ cm}^2 \) and a height of \( 5 \text{ cm} \). What is the total volume of the tank?</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Find the height of a cylinder whose volume is \( 1.54 \text{ m}^3 \) and the diameter of the base is \( 140 \text{ cm} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A closed cylindrical water tank of radius \( 7 \text{ m} \) and height \( 3 \text{ m} \) is to be made from a sheet of metal. How much sheet of metal is required?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">A cuboidal room has dimensions \( 5 \text{ m} \times 4 \text{ m} \times 3 \text{ m} \). Find the cost of white-washing the walls of the room and the ceiling at the rate of \( \text{₹} 7.50 \text{ per m}^2 \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">The lateral surface area of a hollow cylinder is \( 4224 \text{ cm}^2 \). It is cut along its height and formed into a rectangular sheet of width \( 33 \text{ cm} \). Find the perimeter of the rectangular sheet.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Three identical solid cubes of side \( 4 \text{ cm} \) each are joined end to end to form a single cuboid. Find the total surface area of the resulting cuboid.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">A godown is in the form of a cuboid measuring \( 60 \text{ m} \times 40 \text{ m} \times 30 \text{ m} \). Find the maximum number of cuboidal boxes that can be stored in it if the volume of one box is \( 0.8 \text{ m}^3 \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">A metallic solid cylinder of radius \( 8 \text{ cm} \) and height \( 2 \text{ cm} \) is melted and completely converted into a new right circular cylinder of radius \( 4 \text{ cm} \). 
+            <div class="sub-question">(a) Find the height of the new cylinder formed.</div>
+            <div class="sub-question">(b) Find the curved surface area (CSA) of the new cylinder.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Solve the following geometric problems:
+            <div class="sub-question"><strong>(a)</strong> A rectangular block has dimensions \( 10 \text{ cm} \times 8 \text{ cm} \times 6 \text{ cm} \). Calculate its volume. <em>(2 Marks)</em></div>
+            <div class="sub-question"><strong>(b)</strong> A solid wooden cube of side '<i>a</i>' is cut strictly parallel to one of its faces to form two perfectly equal cuboidal halves. Prove mathematically what the ratio will be between the Total Surface Area of the <u>original cube</u> to the Total Surface Area of <u>one</u> of the resulting cuboidal halves. <em>(3 Marks)</em></div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures</div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Vardaan Learning Institute</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            position: relative;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0 0 10px 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+        }
+        .section-header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 12pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 25px 0 15px 0;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        .q-text {
+            flex: 1;
+            background-color: #fafafa;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #333;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 10pt;
+            white-space: nowrap;
+            font-weight: bold;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .ans-body {
+            margin-left: 10px;
+            padding-left: 15px;
+            border-left: 2px solid #e0e0e0;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 8px 0;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+        .final-answer {
+            display: inline-block;
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .ans-body { margin-left: 0px; padding-left: 10px; }
+            body { padding: 15px; }
+            .q-text { padding: 8px 10px; font-size: 10.5pt; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 13 (Motion in 2D)</div>
+    </div>
+
+    <div class="section-header">SECTION A (2 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. A boat has a velocity of \( 5\text{ m/s} \) in still water. It crosses a river of width \( 200\text{ m} \) flowing at \( 3\text{ m/s} \) along the shortest possible path. Find the time taken to cross the river.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Velocity of boat in still water, \( v_b = 5 \text{ m/s} \).<br>
+            Velocity of river, \( v_r = 3 \text{ m/s} \).<br>
+            Width of river, \( d = 200 \text{ m} \).<br><br>
+            For the shortest path (straight across), the resultant velocity \( v_{res} \) must be strictly perpendicular to the river flow.
+            <div class="math-scroll">
+                $$ v_{res} = \sqrt{v_b^2 - v_r^2} $$
+                $$ v_{res} = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ m/s} $$
+            </div>
+            Time taken, \( t = \frac{\text{Distance}}{v_{res}} \)
+            <div class="math-scroll">
+                $$ t = \frac{200}{4} = 50 \text{ s} $$
+            </div>
+            <div class="final-answer">Final Answer: 50 seconds</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. A bullet is dropped from a certain height. Simultaneously, another bullet is fired horizontally from exactly the same height. Which one will hit the ground first and why?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>Both bullets will hit the ground simultaneously.</strong><br><br>
+            <strong>Reason:</strong> The vertical motion of an object is completely independent of its horizontal motion. For both bullets, the initial vertical velocity (\( u_y \)) is exactly <strong>zero</strong>.<br>
+            They are subjected to the same vertical acceleration due to gravity (\( a_y = g \)) and have to cover the same vertical downward displacement (\( y \)).<br>
+            Using \( y = u_y t + \frac{1}{2}gt^2 \), we get \( y = 0 + \frac{1}{2}gt^2 \implies t = \sqrt{\frac{2y}{g}} \).<br>
+            Since \( y \) and \( g \) are the same for both, the time taken (\( t \)) is identical.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Two projectiles are thrown with the same initial velocity at angles \( (45^\circ - \theta) \) and \( (45^\circ + \theta) \) with the horizontal. What is the ratio of their horizontal ranges? Show your reasoning.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Let the first angle be \( \alpha_1 = 45^\circ - \theta \) and the second angle be \( \alpha_2 = 45^\circ + \theta \).<br>
+            Sum of the angles: \( \alpha_1 + \alpha_2 = (45^\circ - \theta) + (45^\circ + \theta) = 90^\circ \).<br><br>
+            Because the angles are complementary (they add up to \( 90^\circ \)), their horizontal ranges are strictly equal.<br>
+            <strong>Proof:</strong>
+            <div class="math-scroll">
+                $$ R_1 = \frac{u^2 \sin(2\alpha_1)}{g} = \frac{u^2 \sin(90^\circ - 2\theta)}{g} = \frac{u^2 \cos(2\theta)}{g} $$
+                $$ R_2 = \frac{u^2 \sin(2\alpha_2)}{g} = \frac{u^2 \sin(90^\circ + 2\theta)}{g} = \frac{u^2 \cos(2\theta)}{g} $$
+            </div>
+            Therefore, \( R_1 = R_2 \).
+            <div class="final-answer">Ratio = 1 : 1</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Rain is falling vertically downwards with a speed of \( 30\text{ m/s} \). A woman rides a bicycle with a speed of \( 10\text{ m/s} \) in the east to west direction. What is the magnitude and direction of the relative velocity of the rain with respect to the woman?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Let vertically downward be the negative y-axis (\( -\hat{j} \)) and West be the negative x-axis (\( -\hat{i} \)).<br>
+            Velocity of rain, \( \vec{v}_r = -30\hat{j} \text{ m/s} \).<br>
+            Velocity of woman, \( \vec{v}_w = -10\hat{i} \text{ m/s} \).<br><br>
+            Relative velocity of rain w.r.t woman, \( \vec{v}_{rw} = \vec{v}_r - \vec{v}_w \)
+            <div class="math-scroll">
+                $$ \vec{v}_{rw} = -30\hat{j} - (-10\hat{i}) = 10\hat{i} - 30\hat{j} $$
+            </div>
+            <strong>Magnitude:</strong>
+            <div class="math-scroll">
+                $$ |\vec{v}_{rw}| = \sqrt{(10)^2 + (-30)^2} = \sqrt{100 + 900} = \sqrt{1000} \approx 31.62 \text{ m/s} $$
+            </div>
+            <strong>Direction:</strong> Let \( \alpha \) be the angle with the vertical.
+            <div class="math-scroll">
+                $$ \tan\alpha = \frac{v_w}{v_r} = \frac{10}{30} = \frac{1}{3} $$
+            </div>
+            <div class="final-answer">Magnitude = 31.62 m/s | Direction = \( \tan^{-1}(1/3) \) from the vertical towards West.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. A ball is thrown at an angle of \( 30^\circ \) to the horizontal. Calculate the ratio of the kinetic energy of the ball at the highest point of its trajectory to its initial kinetic energy.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Let initial velocity be \( u \) and mass be \( m \).<br>
+            Initial Kinetic Energy, \( K_i = \frac{1}{2}mu^2 \).<br><br>
+            At the highest point, the vertical component of velocity is zero. The ball only has its horizontal velocity component, which remains constant throughout the flight.<br>
+            Velocity at highest point, \( v = u_x = u\cos(30^\circ) = u\left(\frac{\sqrt{3}}{2}\right) \).<br><br>
+            Kinetic Energy at highest point, \( K_f = \frac{1}{2}mv^2 \)
+            <div class="math-scroll">
+                $$ K_f = \frac{1}{2}m\left(u\frac{\sqrt{3}}{2}\right)^2 = \frac{1}{2}m\left(\frac{3u^2}{4}\right) = \frac{3}{4} \left(\frac{1}{2}mu^2\right) = \frac{3}{4} K_i $$
+            </div>
+            <div class="final-answer">Ratio (\( K_f : K_i \)) = 3 : 4</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (3 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. A man can swim at \( 4\text{ km/h} \) in still water. How long does he take to cross a river \( 1\text{ km} \) wide if the river flows steadily at \( 3\text{ km/h} \) and he makes his strokes strictly normal to the river current? How far down the river does he go when he reaches the other bank?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Velocity of man in still water, \( v_m = 4 \text{ km/h} \) (perpendicular to flow).<br>
+            Velocity of river, \( v_r = 3 \text{ km/h} \).<br>
+            Width of river, \( d = 1 \text{ km} \).<br><br>
+            <strong>Step 1: Time taken to cross</strong><br>
+            The man crosses the river due to his perpendicular velocity component, which is entirely \( v_m \).
+            <div class="math-scroll">
+                $$ t = \frac{d}{v_m} = \frac{1 \text{ km}}{4 \text{ km/h}} = 0.25 \text{ hours} = 15 \text{ minutes} $$
+            </div>
+            <strong>Step 2: Drift (Distance moved down the river)</strong><br>
+            The drift is caused by the river current pushing him sideways during the time \( t \) he takes to cross.
+            <div class="math-scroll">
+                $$ \text{Drift } (x) = v_r \times t = 3 \text{ km/h} \times 0.25 \text{ h} = 0.75 \text{ km} = 750 \text{ m} $$
+            </div>
+            <div class="final-answer">Time = 15 mins | Drift = 750 meters</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. An airplane is flying horizontally at a height of \( 490\text{ m} \) with a velocity of \( 360\text{ km/h} \). A food packet is released from it. Calculate the time taken by the packet to reach the ground and its horizontal range. (Take \( g = 9.8\text{ m/s}^2 \)).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            This is a case of horizontal projection.<br>
+            Initial horizontal velocity, \( u_x = 360 \text{ km/h} = 360 \times \frac{5}{18} = 100 \text{ m/s} \).<br>
+            Initial vertical velocity, \( u_y = 0 \).<br>
+            Vertical displacement, \( y = 490 \text{ m} \).<br><br>
+            <strong>1. Time to reach ground (\( t \)):</strong><br>
+            Using vertical motion equation: \( y = u_y t + \frac{1}{2}gt^2 \)
+            <div class="math-scroll">
+                $$ 490 = 0 + \frac{1}{2}(9.8)t^2 $$
+                $$ 490 = 4.9t^2 \implies t^2 = \frac{490}{4.9} = 100 $$
+                $$ t = 10 \text{ s} $$
+            </div>
+            <strong>2. Horizontal Range (\( R \)):</strong><br>
+            Horizontal velocity remains constant.
+            <div class="math-scroll">
+                $$ R = u_x \times t = 100 \text{ m/s} \times 10 \text{ s} = 1000 \text{ m} $$
+            </div>
+            <div class="final-answer">Time = 10 s | Horizontal Range = 1000 m (or 1 km)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. The equation of trajectory of a projectile is given by \( y = \sqrt{3}x - \frac{g x^2}{2} \). Calculate the angle of projection and the initial velocity of the projectile.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            The standard equation of trajectory for a projectile fired at an angle \( \theta \) with velocity \( u \) is:
+            <div class="math-scroll">
+                $$ y = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta} $$
+            </div>
+            Given equation: \( y = \sqrt{3}x - \frac{g x^2}{2} \).<br><br>
+            <strong>1. Angle of Projection (\( \theta \)):</strong><br>
+            Comparing the coefficient of \( x \):
+            <div class="math-scroll">
+                $$ \tan\theta = \sqrt{3} \implies \theta = 60^\circ $$
+            </div>
+            <strong>2. Initial Velocity (\( u \)):</strong><br>
+            Comparing the coefficient of \( x^2 \):
+            <div class="math-scroll">
+                $$ \frac{g}{2u^2\cos^2\theta} = \frac{g}{2} $$
+                $$ u^2\cos^2(60^\circ) = 1 $$
+                $$ u^2 \left(\frac{1}{2}\right)^2 = 1 \implies u^2 \left(\frac{1}{4}\right) = 1 $$
+                $$ u^2 = 4 \implies u = 2 \text{ m/s} $$
+            </div>
+            <div class="final-answer">Angle = 60° | Initial Velocity = 2 m/s</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. An aircraft is flying at a speed of \( 400\text{ km/h} \) due north. A strong wind starts blowing at \( 100\text{ km/h} \) from east to west. Find the magnitude and direction of the resultant velocity of the aircraft.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Velocity of aircraft, \( \vec{v}_a = 400\hat{j} \text{ km/h} \) (North).<br>
+            Velocity of wind, \( \vec{v}_w = -100\hat{i} \text{ km/h} \) (East to West means towards West).<br><br>
+            Resultant velocity of the aircraft relative to the ground, \( \vec{v}_{res} = \vec{v}_a + \vec{v}_w \).
+            <div class="math-scroll">
+                $$ \vec{v}_{res} = -100\hat{i} + 400\hat{j} $$
+            </div>
+            <strong>Magnitude:</strong>
+            <div class="math-scroll">
+                $$ |\vec{v}_{res}| = \sqrt{(-100)^2 + (400)^2} = \sqrt{10000 + 160000} = \sqrt{170000} $$
+                $$ |\vec{v}_{res}| = 100\sqrt{17} \approx 412.31 \text{ km/h} $$
+            </div>
+            <strong>Direction:</strong> Let \( \alpha \) be the angle made with North (y-axis).
+            <div class="math-scroll">
+                $$ \tan\alpha = \frac{|\vec{v}_w|}{|\vec{v}_a|} = \frac{100}{400} = \frac{1}{4} = 0.25 $$
+            </div>
+            <div class="final-answer">Velocity = 412.31 km/h | Direction = \( \tan^{-1}(0.25) \) West of North</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Mathematically prove that the maximum horizontal range is exactly four times the maximum height attained by a projectile when it is fired at an angle that provides the maximum horizontal range.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            For maximum horizontal range, the angle of projection must be <strong>\( \theta = 45^\circ \)</strong>.<br><br>
+            <strong>Step 1: Formula for Maximum Range (\( R_{max} \))</strong>
+            <div class="math-scroll">
+                $$ R = \frac{u^2 \sin(2\theta)}{g} $$
+                $$ R_{max} = \frac{u^2 \sin(2 \times 45^\circ)}{g} = \frac{u^2 \sin(90^\circ)}{g} = \frac{u^2}{g} \quad \text{--- (Eq 1)} $$
+            </div>
+            <strong>Step 2: Formula for Height at \( 45^\circ \) (\( H \))</strong>
+            <div class="math-scroll">
+                $$ H = \frac{u^2 \sin^2(\theta)}{2g} = \frac{u^2 \sin^2(45^\circ)}{2g} $$
+                $$ H = \frac{u^2 (1/\sqrt{2})^2}{2g} = \frac{u^2 (1/2)}{2g} = \frac{u^2}{4g} $$
+            </div>
+            From Eq 1, we can substitute \( \frac{u^2}{g} \) with \( R_{max} \):
+            <div class="math-scroll">
+                $$ H = \frac{R_{max}}{4} \implies R_{max} = 4H $$
+            </div>
+            Hence, verified that maximum horizontal range is four times the maximum height at this angle.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (5 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. A projectile is fired from the top of a \( 40\text{ m} \) high tower with an initial velocity of \( 20\text{ m/s} \) at an angle of \( 30^\circ \) above the horizontal. Find: (a) Total time taken to hit the ground. (b) Horizontal distance from the base. (c) Magnitude of striking velocity. (Take \( g = 10\text{ m/s}^2 \))</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Let the point of projection be the origin (0,0). Taking upward as positive and downward as negative.<br>
+            Initial velocity, \( u = 20 \text{ m/s} \). Angle, \( \theta = 30^\circ \).<br>
+            \( u_x = 20\cos(30^\circ) = 20(\sqrt{3}/2) = 10\sqrt{3} \text{ m/s} \).<br>
+            \( u_y = 20\sin(30^\circ) = 20(1/2) = 10 \text{ m/s} \).<br>
+            Vertical displacement to reach the ground, \( s_y = -40 \text{ m} \). Acceleration, \( a_y = -10 \text{ m/s}^2 \).<br><br>
+
+            <strong>(a) Time of flight (\( t \)):</strong>
+            <div class="math-scroll">
+                $$ s_y = u_yt + \frac{1}{2}a_yt^2 $$
+                $$ -40 = 10t + \frac{1}{2}(-10)t^2 $$
+                $$ -40 = 10t - 5t^2 $$
+            </div>
+            Divide by 5 and rearrange:
+            <div class="math-scroll">
+                $$ t^2 - 2t - 8 = 0 $$
+                $$ (t-4)(t+2) = 0 $$
+            </div>
+            Since time cannot be negative, <strong>\( t = 4 \text{ s} \)</strong>.<br><br>
+
+            <strong>(b) Horizontal distance (Range, \( R \)):</strong>
+            <div class="math-scroll">
+                $$ R = u_x \times t = 10\sqrt{3} \times 4 = 40\sqrt{3} \text{ m} \approx 69.28 \text{ m} $$
+            </div><br>
+
+            <strong>(c) Striking Velocity (\( v \)):</strong><br>
+            Final horizontal velocity, \( v_x = u_x = 10\sqrt{3} \text{ m/s} \).<br>
+            Final vertical velocity, \( v_y = u_y + a_yt = 10 + (-10)(4) = 10 - 40 = -30 \text{ m/s} \).<br>
+            Magnitude of velocity:
+            <div class="math-scroll">
+                $$ v = \sqrt{v_x^2 + v_y^2} = \sqrt{(10\sqrt{3})^2 + (-30)^2} = \sqrt{300 + 900} = \sqrt{1200} $$
+                $$ v = 20\sqrt{3} \text{ m/s} \approx 34.64 \text{ m/s} $$
+            </div>
+            <div class="final-answer">Time = 4s | Range = \( 40\sqrt{3} \) m | Velocity = \( 20\sqrt{3} \) m/s</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A river is flowing due east with a steady speed of \( 3\text{ m/s} \). A swimmer can swim in still water at a speed of \( 4\text{ m/s} \).<br>
+            (a) Shortest possible path angle.<br>
+            (b) Resultant velocity.<br>
+            (c) Time for shortest path (river width = 100m).<br>
+            (d) Horizontal drift for shortest time.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Given: \( v_r = 3 \text{ m/s} \) (East), \( v_b = 4 \text{ m/s} \), Width \( d = 100 \text{ m} \).<br><br>
+            
+            <strong>(a) Angle for shortest path:</strong><br>
+            To cross straight across, the swimmer must swim upstream at an angle \( \alpha \) with the vertical (y-axis).
+            <div class="math-scroll">
+                $$ \sin\alpha = \frac{v_r}{v_b} = \frac{3}{4} $$
+                $$ \alpha = \sin^{-1}(0.75) $$
+            </div>
+            Angle with the direction of river flow = \( 90^\circ + \sin^{-1}(3/4) \).<br><br>
+
+            <strong>(b) Resultant Velocity (\( v_{res} \)):</strong><br>
+            For shortest path, the resultant velocity is perpendicular to the flow.
+            <div class="math-scroll">
+                $$ v_{res} = \sqrt{v_b^2 - v_r^2} = \sqrt{4^2 - 3^2} = \sqrt{16 - 9} = \sqrt{7} \text{ m/s} \approx 2.65 \text{ m/s} $$
+            </div><br>
+
+            <strong>(c) Time taken for shortest path:</strong>
+            <div class="math-scroll">
+                $$ t_{shortest\_path} = \frac{d}{v_{res}} = \frac{100}{\sqrt{7}} \text{ s} \approx 37.8 \text{ s} $$
+            </div><br>
+
+            <strong>(d) Horizontal drift for shortest time:</strong><br>
+            For shortest time, he must swim exactly perpendicular to the flow.
+            <div class="math-scroll">
+                $$ t_{min} = \frac{d}{v_b} = \frac{100}{4} = 25 \text{ s} $$
+            </div>
+            The drift is purely due to the river's flow during this minimum time:
+            <div class="math-scroll">
+                $$ \text{Drift} = v_r \times t_{min} = 3 \times 25 = 75 \text{ m} $$
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Based on the principles of projectile motion:<br>
+            (a) Prove that there are two angles of projection for a given initial velocity for which the horizontal range is the same.<br>
+            (b) A body is projected with a velocity \( u \) such that its horizontal range is \( R \). If \( t_1 \) and \( t_2 \) are the times of flight for the two possible angles of projection, derive \( t_1 t_2 = \frac{2R}{g} \).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Proof of Two Angles for Same Range:</strong><br>
+            The horizontal range \( R \) for an angle \( \theta \) is:
+            <div class="math-scroll">
+                $$ R = \frac{u^2 \sin(2\theta)}{g} \quad \text{--- (Eq 1)} $$
+            </div>
+            Let's substitute another angle \( (90^\circ - \theta) \) into the range formula:
+            <div class="math-scroll">
+                $$ R' = \frac{u^2 \sin(2(90^\circ - \theta))}{g} = \frac{u^2 \sin(180^\circ - 2\theta)}{g} $$
+            </div>
+            Since \( \sin(180^\circ - x) = \sin(x) \):
+            <div class="math-scroll">
+                $$ R' = \frac{u^2 \sin(2\theta)}{g} \quad \text{--- (Eq 2)} $$
+            </div>
+            Comparing (Eq 1) and (Eq 2), \( R = R' \). Thus, for complementary angles \( \theta \) and \( (90^\circ - \theta) \), the horizontal range is the same.<br><br>
+
+            <strong>(b) Derivation of \( t_1 t_2 = \frac{2R}{g} \):</strong><br>
+            Time of flight for first angle (\( \theta \)):
+            <div class="math-scroll">
+                $$ t_1 = \frac{2u \sin\theta}{g} $$
+            </div>
+            Time of flight for second angle (\( 90^\circ - \theta \)):
+            <div class="math-scroll">
+                $$ t_2 = \frac{2u \sin(90^\circ - \theta)}{g} = \frac{2u \cos\theta}{g} $$
+            </div>
+            Now, find the product \( t_1 \times t_2 \):
+            <div class="math-scroll">
+                $$ t_1 t_2 = \left( \frac{2u \sin\theta}{g} \right) \left( \frac{2u \cos\theta}{g} \right) = \frac{4u^2 \sin\theta \cos\theta}{g^2} $$
+            </div>
+            Rearranging to group terms for the Range formula \( R = \frac{u^2 (2\sin\theta\cos\theta)}{g} \):
+            <div class="math-scroll">
+                $$ t_1 t_2 = \frac{2}{g} \left[ \frac{u^2 (2 \sin\theta \cos\theta)}{g} \right] $$
+                $$ t_1 t_2 = \frac{2}{g} [ R ] $$
+                $$ t_1 t_2 = \frac{2R}{g} $$
+            </div>
+            <em>Hence Derived.</em>
+        </div>
+    </div>
+</body>
+</html>

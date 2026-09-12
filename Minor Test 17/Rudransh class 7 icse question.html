@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering any mathematical equations properly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 11pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            text-align: justify;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            background: #fff;
+            padding: 5px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 1024px) {
+            body { width: 100%; min-height: auto; padding: 15mm; }
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; margin: 0; width: 100%; }
+            .header .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; gap: 8px; align-items: center;}
+            .q-num { width: 25px; }
+            .question-container { flex-direction: row; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12; }
+        }
+        
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 17</div>
+        <div class="exam-details">
+            <span>Class: 7 ICSE</span>
+            <span>Subject: Mathematics (Triangles & Pythagoras Theorem)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+                <li>Use of calculator is not permitted.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">State the 'Angle Sum Property' and the 'Exterior Angle Property' of a triangle.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Is it possible to construct a triangle with side lengths 5 cm, 8 cm, and 14 cm? Give a mathematical reason to support your answer.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">In \(\triangle ABC\), \(\angle A = 50^\circ\) and \(\angle B = 60^\circ\). Find the measure of the exterior angle formed by producing side \(BC\).</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">State the Pythagoras Theorem. For a right-angled triangle with hypotenuse \(c\) and legs \(a\) and \(b\), write the mathematical equation representing the theorem.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Determine if a triangle with side lengths 9 cm, 12 cm, and 15 cm is a right-angled triangle. Show your working.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            In \(\triangle PQR\), the exterior angle at \(R\) is \(130^\circ\). If the interior opposite angles \(\angle P\) and \(\angle Q\) are in the ratio \(2:3\), find the measure of all three interior angles of the triangle.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The lengths of two sides of a triangle are 12 cm and 18 cm. Between what two distinct positive values must the length of the third side fall? Explain the property you used to find the range.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            A ladder 13 m long is placed against a wall such that its foot is at a distance of 5 m from the base of the wall. Find the height at which the ladder reaches the wall.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            In \(\triangle LMN\), \(LM = LN\) (isosceles triangle). If the exterior angle formed at vertex \(N\) is \(110^\circ\), find the measures of all the interior angles of \(\triangle LMN\).
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            A tree breaks due to a storm and the broken part bends so that the top of the tree touches the ground at a distance of 8 m from the base of the tree. If the point where it broke is 6 m above the ground, what was the total original height of the tree before it broke?
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div style="margin-bottom: 10px;">Find the value of \(x\) and \(y\) in the given figure. Give geometrical reasons for each step.</div>
+            <div class="svg-container">
+                <svg width="360" height="210" viewBox="0 0 360 210" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Base line BD extending further left and right -->
+                    <line x1="20" y1="150" x2="340" y2="150" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Triangle ABC with A(120,30), B(60,150), C(240,150) -->
+                    <polygon points="120,30 60,150 240,150" fill="none" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Labels for vertices -->
+                    <text x="45" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">B</text>
+                    <text x="115" y="22" font-family="Times New Roman" font-size="14" font-weight="bold">A</text>
+                    <text x="235" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">C</text>
+                    <text x="325" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">D</text>
+                    
+                    <!-- Angle x at vertex A (pointing downwards inside vertex A) -->
+                    <path d="M 105 60 Q 120 70 135 60" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="114" y="88" font-family="Times New Roman" font-size="14" font-style="italic">x</text>
+                    
+                    <!-- Angle 55° at vertex B (interior angle between line AB and line BC) -->
+                    <path d="M 85 150 A 25 25 0 0 0 78 133" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="92" y="132" font-family="Times New Roman" font-size="13">55°</text>
+                    
+                    <!-- Angle y at vertex C (interior angle between line AC and line BC) -->
+                    <path d="M 215 133 A 25 25 0 0 0 208 150" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="194" y="132" font-family="Times New Roman" font-size="13">y</text>
+                    
+                    <!-- Exterior angle 120° at vertex C (between line AC extended / line CD) -->
+                    <path d="M 270 150 A 30 30 0 0 0 262 130" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="276" y="132" font-family="Times New Roman" font-size="13">120°</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Rohan walks 15 km towards North, then turns West and walks 8 km. 
+            <ol style="margin-top: 5px; padding-left: 20px;">
+                <li>Draw a neat labeled sketch representing his path.</li>
+                <li>Calculate his shortest straight-line distance from the starting point.</li>
+                <li>State the theorem used to find this distance.</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            In a rhombus \(ABCD\), the lengths of the diagonals \(AC\) and \(BD\) are 24 cm and 10 cm respectively. 
+            <br><em>(Hint: The diagonals of a rhombus bisect each other at right angles).</em>
+            <ol style="margin-top: 5px; padding-left: 20px;">
+                <li>Draw a rough sketch of the rhombus and mark the intersection point of diagonals as \(O\).</li>
+                <li>Find the length of one side of the rhombus using Pythagoras Theorem.</li>
+                <li>Calculate the perimeter of the rhombus.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

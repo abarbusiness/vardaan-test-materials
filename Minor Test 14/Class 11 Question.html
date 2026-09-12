@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Chemistry Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            position: relative;
+        }
+        .surprise-badge {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            background-color: #d32f2f;
+            color: white;
+            padding: 5px 12px;
+            font-size: 10pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transform: rotate(10deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            .surprise-badge { top: -10px; right: 10px; font-size: 8pt; transform: rotate(0deg); }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 14: CLASSIFICATION OF ELEMENTS & PERIODICITY</div>
+        <div class="exam-details">
+            <span>Class: 11</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 60</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Follow strictly the rationalised NCERT syllabus.</li>
+                <li><strong>Section A:</strong> Q1 to Q10 are very short answer/MCQ/Assertion-Reason type questions carrying 1 mark each.</li>
+                <li><strong>Section B:</strong> Q11 to Q15 are short answer questions carrying 2 marks each.</li>
+                <li><strong>Section C:</strong> Q16 to Q20 are short answer questions carrying 3 marks each.</li>
+                <li><strong>Section D:</strong> Q21 to Q25 are long answer questions carrying 5 marks each.</li>
+                <li>Write precise answers. Use appropriate chemical symbols and electronic configurations where required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Very Short Answer / Objective Type - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Write the official IUPAC name and the symbol of the element with atomic number 114.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Which element out of \( \text{F} \) and \( \text{Cl} \) has a more negative electron gain enthalpy?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Identify the element which has the general outer electronic configuration of \( \text{ns}^2 \text{np}^5 \) and belongs to the 3rd period.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Arrange the following in decreasing order of their ionic radius: \( \text{Mg}^{2+}, \text{O}^{2-}, \text{Na}^+, \text{F}^-, \text{N}^{3-} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Why is the first ionization enthalpy of Nitrogen higher than that of Oxygen?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">What is the basic difference between the approach of Mendeleev's Periodic Law and the Modern Periodic Law?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Write the general outer electronic configuration of the d-block elements.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Name the most electronegative element and the element with the highest electron gain enthalpy in the periodic table.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content"><strong>Assertion (A):</strong> The radius of a cation is always smaller than its parent atom.<br>
+        <strong>Reason (R):</strong> A cation is formed by the loss of one or more electrons, resulting in an increase in effective nuclear charge per electron. <br>
+        <em>(a) Both A and R are true and R is the correct explanation of A.<br>
+        (b) Both A and R are true but R is not the correct explanation of A.<br>
+        (c) A is true but R is false.<br>
+        (d) A is false but R is true.</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">How does the basic character of oxides vary down a group in the periodic table?</div>
+    </div>
+
+    <div class="section-header">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Explain why the electron gain enthalpy of noble gases is large and positive.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">The first ionization enthalpy (\( \Delta_iH_1 \)) of Magnesium is higher than that of Aluminum, but its second ionization enthalpy (\( \Delta_iH_2 \)) is lower than that of Aluminum. Explain why.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Predict the period, group number, and block of the element with atomic number 35. State whether it is a metal or a non-metal.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">Define electronegativity. How is it different from electron gain enthalpy? State one key difference.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">Consider the elements \( \text{B}, \text{C}, \text{N}, \text{F}, \text{Si} \). 
+        <div class="sub-question">(a) Which of these is a metalloid?</div>
+        <div class="sub-question">(b) Arrange them in increasing order of their non-metallic character.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            What are isoelectronic species? Give the formula of a species that will be isoelectronic with each of the following atoms or ions:
+            <div class="sub-question">(i) \( \text{F}^- \)</div>
+            <div class="sub-question">(ii) \( \text{Ar} \)</div>
+            <div class="sub-question">(iii) \( \text{Mg}^{2+} \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            The first (\( \Delta_iH_1 \)) and second (\( \Delta_iH_2 \)) ionization enthalpies (in \( \text{kJ mol}^{-1} \)) and the (\( \Delta_{eg}H \)) electron gain enthalpy (in \( \text{kJ mol}^{-1} \)) of three elements I, II, and III are given below:
+            <table style="width: 80%; margin: 10px auto; border-collapse: collapse; text-align: center;" border="1">
+                <tr><th>Elements</th><th>\( \Delta_iH_1 \)</th><th>\( \Delta_iH_2 \)</th><th>\( \Delta_{eg}H \)</th></tr>
+                <tr><td>I</td><td>520</td><td>7300</td><td>-60</td></tr>
+                <tr><td>II</td><td>1681</td><td>3374</td><td>-328</td></tr>
+                <tr><td>III</td><td>2372</td><td>5251</td><td>+48</td></tr>
+            </table>
+            Identify the element which is likely to be:
+            <div class="sub-question">(a) a reactive non-metal</div>
+            <div class="sub-question">(b) an active alkali metal</div>
+            <div class="sub-question">(c) a noble gas</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Consider the elements \( \text{N}, \text{P}, \text{O} \) and \( \text{S} \).
+            <div class="sub-question">(a) Arrange them in the increasing order of their first ionization enthalpy. Give a valid reason.</div>
+            <div class="sub-question">(b) Arrange them in increasing order of their non-metallic character.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            Explain the following phenomena based on periodic properties:
+            <div class="sub-question">(a) Halogens act as strong oxidizing agents.</div>
+            <div class="sub-question">(b) The atomic radius of Gallium (135 pm) is less than that of Aluminum (143 pm).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Write the chemical equations to show that:
+            <div class="sub-question">(a) \( \text{Na}_2\text{O} \) is a basic oxide.</div>
+            <div class="sub-question">(b) \( \text{Cl}_2\text{O}_7 \) is an acidic oxide.</div>
+            <div class="sub-question">(c) \( \text{Al}_2\text{O}_3 \) is amphoteric in nature (write only one reaction showing its acidic or basic behavior).</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION D (25 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            An element 'X' has an atomic number of 34.
+            <div class="sub-question">(a) Write the complete electronic configuration of element 'X'.</div>
+            <div class="sub-question">(b) Predict its group number, period number, and block in the periodic table.</div>
+            <div class="sub-question">(c) Is it a metal or a non-metal? Justify.</div>
+            <div class="sub-question">(d) Predict the formula of the compound it forms with Sodium (\( \text{Na} \)).</div>
+            <div class="sub-question">(e) Compare its first ionization enthalpy with that of the element having atomic number 33, and state the reason.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            (a) State the Modern Periodic Law. What is the fundamental property on which it is based? <br>
+            (b) What is meant by the 'shielding effect' (or screening effect)? How does it affect the magnitude of ionization enthalpy of an element down a group?<br>
+            (c) Why are elements of group 1 called alkali metals and elements of group 17 called halogens?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            Account for the following observations thoroughly:
+            <div class="sub-question">(a) The radius of \( \text{Na}^+ \) (95 pm) is significantly less than that of \( \text{Na} \) atom (186 pm), but the radius of \( \text{Cl}^- \) (181 pm) is more than that of \( \text{Cl} \) atom (99 pm).</div>
+            <div class="sub-question">(b) Among alkali metals, Lithium (\( \text{Li} \)) shows anomalous properties compared to the rest of the group members. Give two reasons for this behavior.</div>
+            <div class="sub-question">(c) Covalency of Aluminum in \( [\text{Al}(\text{H}_2\text{O})_6]^{3+} \) is 6, while its oxidation state is +3. Explain.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            (a) Discuss the factors that influence the magnitude of electron gain enthalpy of elements.<br>
+            (b) Why is the second electron gain enthalpy of oxygen always positive, even though its first electron gain enthalpy is negative?<br>
+            (c) Justify why the third period of the periodic table contains 8 elements and not 18 elements.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            Describe the general trends in the following properties of elements across a period (from left to right) and down a group (from top to bottom). Support your answers with the underlying atomic reasons:
+            <div class="sub-question">(a) Atomic radius</div>
+            <div class="sub-question">(b) Metallic character</div>
+            <div class="sub-question">(c) Valency (with respect to Hydrogen or Oxygen)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures through Excellence</div>
+</body>
+</html>

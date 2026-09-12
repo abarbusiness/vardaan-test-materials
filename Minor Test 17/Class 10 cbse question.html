@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 17</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; line-height: 1.6; color: var(--text-main); 
+            background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 70%; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; justify-content: space-between; flex-wrap: wrap; 
+            margin-top: 15px; font-weight: bold; font-size: 11pt; 
+            border-bottom: 1px dashed var(--primary-yellow); padding-bottom: 10px; 
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;}
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; 
+            text-decoration: underline; font-size: 13pt; background: #fffde7; padding: 5px; border-radius: 4px;
+        }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; }
+        
+        /* Question Layout */
+        .question-container { margin-bottom: 15px; display: flex; break-inside: avoid; }
+        .q-num { font-weight: bold; width: 35px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        
+        /* MCQ Specific Layout */
+        .mcq-container { 
+            column-count: 2; column-gap: 40px; column-rule: 1.5px solid var(--primary-yellow); 
+        }
+        .question-block { break-inside: avoid; margin-bottom: 18px; }
+        .options-grid { 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; padding-left: 25px; margin-top: 5px;
+        }
+        .option-item { display: flex; align-items: baseline; }
+        .option-label { font-weight: bold; margin-right: 5px; }
+        
+        /* SVG Diagram Container */
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; overflow-x: auto; }
+        
+        .footer { 
+            margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; 
+            border-top: 2px solid var(--primary-yellow); padding-top: 10px; color: #555; 
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) { 
+            .mcq-container { column-count: 1; column-rule: none; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .question-container { flex-direction: column; }
+            .q-num { width: 100%; margin-bottom: 5px; }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .mcq-container { column-count: 2; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17: CURRENT ELECTRICITY</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science (Physics)</span>
+            <span>Time: 1.5 Hours</span>
+            <span>Max. Marks: 60</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper consists of 25 questions divided into 5 sections: A, B, C, D, and E.</li>
+                <li><strong>Section A:</strong> Q1 to Q10 are objective type questions carrying 1 mark each.</li>
+                <li><strong>Section B:</strong> Q11 to Q15 are short answer type questions carrying 2 marks each.</li>
+                <li><strong>Section C:</strong> Q16 to Q20 are short answer type questions carrying 3 marks each.</li>
+                <li><strong>Section D:</strong> Q21 to Q23 are long answer type questions carrying 5 marks each.</li>
+                <li><strong>Section E:</strong> Q24 & Q25 are case-based/competency questions carrying 5 marks each.</li>
+                <li>Use of calculators is not permitted. Write proper SI units in numericals.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Objective Type Questions - 1 Mark Each)</span></div>
+    <div class="mcq-container">
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">1.</div>
+                <div class="q-content">The rate of flow of electric charges is called:</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> Electric potential</div>
+                <div class="option-item"><span class="option-label">(b)</span> Electrical resistance</div>
+                <div class="option-item"><span class="option-label">(c)</span> Electric current</div>
+                <div class="option-item"><span class="option-label">(d)</span> Electric power</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">2.</div>
+                <div class="q-content">A piece of wire of resistance \( R \) is cut into five equal parts. These parts are then connected in parallel. If the equivalent resistance of this combination is \( R' \), then the ratio \( R/R' \) is:</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> \( 1/25 \)</div>
+                <div class="option-item"><span class="option-label">(b)</span> \( 1/5 \)</div>
+                <div class="option-item"><span class="option-label">(c)</span> \( 5 \)</div>
+                <div class="option-item"><span class="option-label">(d)</span> \( 25 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">3.</div>
+                <div class="q-content">Which of the following terms does not represent electrical power in a circuit?</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> \( I^2R \)</div>
+                <div class="option-item"><span class="option-label">(b)</span> \( IR^2 \)</div>
+                <div class="option-item"><span class="option-label">(c)</span> \( VI \)</div>
+                <div class="option-item"><span class="option-label">(d)</span> \( V^2/R \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">4.</div>
+                <div class="q-content">An electric bulb is rated 220 V and 100 W. When it is operated on 110 V, the power consumed will be:</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> 100 W</div>
+                <div class="option-item"><span class="option-label">(b)</span> 75 W</div>
+                <div class="option-item"><span class="option-label">(c)</span> 50 W</div>
+                <div class="option-item"><span class="option-label">(d)</span> 25 W</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">5.</div>
+                <div class="q-content">How much work is done in moving a charge of 2 C across two points having a potential difference of 12 V?</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> 6 J</div>
+                <div class="option-item"><span class="option-label">(b)</span> 24 J</div>
+                <div class="option-item"><span class="option-label">(c)</span> 14 J</div>
+                <div class="option-item"><span class="option-label">(d)</span> 10 J</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">6.</div>
+                <div class="q-content">The resistivity of a given metallic wire depends upon:</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> its length</div>
+                <div class="option-item"><span class="option-label">(b)</span> its thickness</div>
+                <div class="option-item"><span class="option-label">(c)</span> its shape</div>
+                <div class="option-item"><span class="option-label">(d)</span> nature of material</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">7.</div>
+                <div class="q-content">Ammeter is always connected in ________ in a circuit.</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> series</div>
+                <div class="option-item"><span class="option-label">(b)</span> parallel</div>
+                <div class="option-item"><span class="option-label">(c)</span> mixed</div>
+                <div class="option-item"><span class="option-label">(d)</span> anywhere</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">8.</div>
+                <div class="q-content">The commercial unit of electrical energy is kilowatt-hour (kWh). 1 kWh is equal to:</div>
+            </div>
+            <div class="options-grid">
+                <div class="option-item"><span class="option-label">(a)</span> \( 3.6 \times 10^5 \text{ J} \)</div>
+                <div class="option-item"><span class="option-label">(b)</span> \( 3.6 \times 10^6 \text{ J} \)</div>
+                <div class="option-item"><span class="option-label">(c)</span> \( 36 \times 10^6 \text{ J} \)</div>
+                <div class="option-item"><span class="option-label">(d)</span> \( 3.6 \times 10^4 \text{ J} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block" style="grid-column: 1 / -1; padding-top: 10px;">
+            <strong>Directions for Q9 & Q10:</strong> In the following questions, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br>
+            (a) Both A and R are true and R is the correct explanation of A.<br>
+            (b) Both A and R are true but R is NOT the correct explanation of A.<br>
+            (c) A is true but R is false.<br>
+            (d) A is false but R is true.
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">9.</div>
+                <div class="q-content"><strong>Assertion (A):</strong> The connecting wires are generally made of copper.<br><strong>Reason (R):</strong> Copper has a very high electrical resistivity.</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-container">
+                <div class="q-num">10.</div>
+                <div class="q-content"><strong>Assertion (A):</strong> Series arrangement is not used for domestic circuits.<br><strong>Reason (R):</strong> In a series circuit, if one component fails, the circuit is broken and none of the components works.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header" style="clear:both;">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Define 1 Ohm. Calculate the current flowing through a resistor of \( 5\ \Omega \) when a potential difference of 10 V is applied across its ends.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            (a) Why is tungsten used almost exclusively for the filament of electric lamps?<br>
+            (b) Why are the conductors of electric heating devices, such as bread-toasters and electric irons, made of an alloy rather than a pure metal?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">A wire of a given material having length \( l \) and area of cross-section \( A \) has a resistance of \( 4\ \Omega \). What would be the resistance of another wire of the same material having length \( l/2 \) and area of cross-section \( 2A \)?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">Draw a schematic diagram of a circuit consisting of a battery of three cells of 2 V each, a \( 5\ \Omega \) resistor, an \( 8\ \Omega \) resistor, and a \( 12\ \Omega \) resistor, and a plug key, all connected in series.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">How much current will an electric heater coil draw from a 220 V source, if the resistance of the heater coil is \( 100\ \Omega \)? What will be the current if the same heater is connected to a 110 V source?</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">State Ohm's law. Draw a labelled circuit diagram to verify this law in the laboratory, clearly indicating the positive and negative terminals of the battery and the respective meters.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">Compute the heat generated while transferring 96,000 coulombs of charge in one hour through a potential difference of 50 V.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">In the given circuit diagram, \( R_1 = 10\ \Omega, R_2 = 40\ \Omega, R_3 = 30\ \Omega, R_4 = 20\ \Omega, \) and \( R_5 = 60\ \Omega \). A 12 V battery is connected to the arrangement. Calculate:<br>
+            (a) The total resistance in the circuit.<br>
+            (b) The total current flowing in the circuit.
+            <div class="svg-container">
+                <svg width="450" height="250" viewBox="0 0 450 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left Wire & Ammeter -->
+                    <line x1="40" y1="180" x2="40" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="40" y1="75" x2="70" y2="75" stroke="black" stroke-width="2"/>
+                    
+                    <circle cx="90" cy="75" r="18" fill="white" stroke="black" stroke-width="2"/>
+                    <text x="83" y="81" font-size="16" font-weight="bold" font-family="Arial">A</text>
+                    <text x="60" y="65" font-size="14" font-family="Arial">+</text>
+                    <text x="110" y="65" font-size="14" font-family="Arial">-</text>
+                    
+                    <line x1="108" y1="75" x2="140" y2="75" stroke="black" stroke-width="2"/>
+                    
+                    <!-- First Parallel Combo (R1, R2) -->
+                    <line x1="140" y1="40" x2="140" y2="110" stroke="black" stroke-width="2"/>
+                    <line x1="140" y1="40" x2="160" y2="40" stroke="black" stroke-width="2"/>
+                    <line x1="140" y1="110" x2="160" y2="110" stroke="black" stroke-width="2"/>
+                    
+                    <!-- R1 -->
+                    <polyline points="160,40 168,32 184,48 200,32 216,48 224,40" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="165" y="22" font-size="13" font-family="Arial">10 Ω (R₁)</text>
+                    
+                    <!-- R2 -->
+                    <polyline points="160,110 168,102 184,118 200,102 216,118 224,110" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="165" y="138" font-size="13" font-family="Arial">40 Ω (R₂)</text>
+                    
+                    <line x1="224" y1="40" x2="244" y2="40" stroke="black" stroke-width="2"/>
+                    <line x1="224" y1="110" x2="244" y2="110" stroke="black" stroke-width="2"/>
+                    <line x1="244" y1="40" x2="244" y2="110" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Wire between parallel combos -->
+                    <line x1="244" y1="75" x2="274" y2="75" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Second Parallel Combo (R3, R4, R5) -->
+                    <line x1="274" y1="30" x2="274" y2="120" stroke="black" stroke-width="2"/>
+                    <line x1="274" y1="30" x2="294" y2="30" stroke="black" stroke-width="2"/>
+                    <line x1="274" y1="75" x2="294" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="274" y1="120" x2="294" y2="120" stroke="black" stroke-width="2"/>
+                    
+                    <!-- R3 -->
+                    <polyline points="294,30 302,22 318,38 334,22 350,38 358,30" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="300" y="15" font-size="13" font-family="Arial">30 Ω (R₃)</text>
+                    
+                    <!-- R4 -->
+                    <polyline points="294,75 302,67 318,83 334,67 350,83 358,75" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="295" y="60" font-size="13" font-family="Arial">20 Ω (R₄)</text>
+                    
+                    <!-- R5 -->
+                    <polyline points="294,120 302,112 318,128 334,112 350,128 358,120" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="300" y="145" font-size="13" font-family="Arial">60 Ω (R₅)</text>
+                    
+                    <line x1="358" y1="30" x2="378" y2="30" stroke="black" stroke-width="2"/>
+                    <line x1="358" y1="75" x2="378" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="358" y1="120" x2="378" y2="120" stroke="black" stroke-width="2"/>
+                    <line x1="378" y1="30" x2="378" y2="120" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Right Wire down to bottom -->
+                    <line x1="378" y1="75" x2="410" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="410" y1="75" x2="410" y2="180" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Bottom Wire (Battery & Key) -->
+                    <line x1="410" y1="180" x2="270" y2="180" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Key (K) -->
+                    <path d="M 270 170 A 12 12 0 0 0 270 190" fill="none" stroke="black" stroke-width="2"/>
+                    <path d="M 240 170 A 12 12 0 0 1 240 190" fill="none" stroke="black" stroke-width="2"/>
+                    <circle cx="255" cy="180" r="3" fill="black"/>
+                    <text x="250" y="210" font-size="14" font-family="Arial">K</text>
+                    
+                    <line x1="240" y1="180" x2="190" y2="180" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Battery (12V) -->
+                    <line x1="190" y1="160" x2="190" y2="200" stroke="black" stroke-width="2"/>
+                    <line x1="180" y1="170" x2="180" y2="190" stroke="black" stroke-width="4"/>
+                    <line x1="170" y1="160" x2="170" y2="200" stroke="black" stroke-width="2"/>
+                    <line x1="160" y1="170" x2="160" y2="190" stroke="black" stroke-width="4"/>
+                    
+                    <text x="145" y="165" font-size="16" font-family="Arial">+</text>
+                    <text x="195" y="165" font-size="16" font-family="Arial">-</text>
+                    <text x="160" y="220" font-size="14" font-family="Arial">12 V</text>
+                    
+                    <line x1="160" y1="180" x2="40" y2="180" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">Give reason for the following:<br>
+            (a) Why is an ammeter always connected in series in a circuit?<br>
+            (b) How does the resistance of a wire vary with its area of cross-section?<br>
+            (c) Why is a voltmeter connected in parallel with the component across which potential difference is to be measured?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">An electric iron of resistance \( 20\ \Omega \) takes a current of 5 A. Calculate the heat developed in 30 s. Also, calculate the electric power consumed by the iron.</div>
+    </div>
+
+    <!-- Section D -->
+    <div class="section-header">SECTION D (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            (a) Deduce the expression for the equivalent resistance of the parallel combination of three resistors \( R_1, R_2 \) and \( R_3 \).<br>
+            (b) Several electric bulbs designed to be used on a 220 V electric supply line, are rated 10 W. How many lamps can be connected in parallel with each other across the two wires of 220 V line if the maximum allowable current is 5 A?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            (a) State Joule's law of heating and express it mathematically.<br>
+            (b) Two conducting wires of the same material and of equal lengths and equal diameters are first connected in series and then parallel in a circuit across the same potential difference. Find the ratio of heat produced in series and parallel combinations.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            (a) What is electrical resistivity? Write its SI unit.<br>
+            (b) A copper wire has a diameter of 0.5 mm and a resistivity of \( 1.6 \times 10^{-8}\ \Omega\text{ m} \). What will be the length of this wire to make its resistance \( 10\ \Omega \)? (Take \( \pi = 3.14 \))<br>
+            (c) How much does the resistance change if the diameter is doubled? Explain.
+        </div>
+    </div>
+
+    <!-- Section E -->
+    <div class="section-header">SECTION E (10 Marks)<span class="marks-info">(Case Based/Competency Questions - 5 Marks Each)</span></div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            <strong>Case Study 1: V-I Characteristics</strong><br>
+            A student sets up a circuit to study the relationship between the potential difference (V) across a nichrome wire and the current (I) flowing through it. He records multiple readings and plots a graph between V and I, which comes out to be a straight line passing through the origin.<br><br>
+            (i) What fundamental law of electricity is verified by this straight-line graph? (1 Mark)<br>
+            (ii) If the resistance of the nichrome wire used is \( 10\ \Omega \), calculate the current flowing through it when the potential difference across it is 5 V. (2 Marks)<br>
+            (iii) If the experiment is performed for a long time and the wire gets heated significantly, will the V-I graph still remain a straight line? What happens to the resistance of the wire upon heating and why? (2 Marks)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            <strong>Case Study 2: Domestic Electric Circuits</strong><br>
+            In our homes, we receive supply of electric power through a main supply. Household circuits are always connected in parallel combinations to ensure that appliances operate correctly and independently.<br><br>
+            (i) Give one primary advantage of connecting electrical appliances in parallel rather than in series. (1 Mark)<br>
+            (ii) A television is rated 200 W and operates on a 220 V supply. Calculate the current drawn by it. (2 Marks)<br>
+            (iii) In a household, three tube lights of 40 W each and two fans of 60 W each are used for 5 hours a day. Calculate the electrical energy consumed in 30 days and the total cost if the rate of electricity is Rs. 5.00 per kWh. (2 Marks)
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan • All rights reserved</div>
+</body>
+</html>

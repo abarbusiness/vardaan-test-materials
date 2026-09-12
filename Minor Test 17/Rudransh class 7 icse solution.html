@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Minor Test</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #fafafa;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px; 
+            background: #fff;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: #333;
+        }
+        
+        .solution-block { 
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding: 20px; 
+            margin-bottom: 25px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 11pt;
+            gap: 15px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+        }
+        .q-text {
+            flex-grow: 1;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .answer-content {
+            margin-left: 20px;
+            color: #2c3e50;
+            border-left: 3px solid #4CAF50;
+            padding-left: 15px;
+        }
+        .answer-heading {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-size: 12pt;
+        }
+        .section-title {
+            background: var(--primary-yellow);
+            color: #000;
+            padding: 10px 15px;
+            font-size: 14pt;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 30px 0 20px 0;
+            text-align: center;
+        }
+        
+        ul, ol { margin-top: 5px; margin-bottom: 10px; }
+        
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        .svg-container {
+            text-align: center;
+            margin: 15px 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .header .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 8px; align-self: flex-start; }
+            .answer-content { margin-left: 5px; }
+            
+            .mjx-chtml {
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-title">DETAILED SOLUTIONS: Minor Test 17<br>(Class 7 ICSE - Triangles & Pythagoras Theorem)</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. State the 'Angle Sum Property' and the 'Exterior Angle Property' of a triangle.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>Angle Sum Property:</strong> The sum of the measures of the three interior angles of a triangle is always equal to \(180^\circ\). (1 Mark)</div>
+            <div class="step"><strong>Exterior Angle Property:</strong> The measure of any exterior angle of a triangle is equal to the sum of the measures of its two interior opposite angles. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. Is it possible to construct a triangle with side lengths 5 cm, 8 cm, and 14 cm? Give a mathematical reason to support your answer.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>Property:</strong> According to the Triangle Inequality Theorem, the sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side. (1 Mark)</div>
+            <div class="step"><strong>Verification:</strong> Adding the two smaller sides:<br>
+            <div class="math-container">
+            \( 5 \text{ cm} + 8 \text{ cm} = 13 \text{ cm} \)
+            </div>
+            Since \(13 \text{ cm} < 14 \text{ cm}\) (the sum of the two smaller sides is less than the third side), it is <strong>not possible</strong> to construct this triangle. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. In \(\triangle ABC\), \(\angle A = 50^\circ\) and \(\angle B = 60^\circ\). Find the measure of the exterior angle formed by producing side \(BC\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Let the exterior angle formed by producing side \(BC\) at vertex \(C\) be \(\angle ACD\).</div>
+            <div class="step">By the Exterior Angle Property:<br>
+            Exterior \(\angle ACD = \angle A + \angle B\) (1 Mark)</div>
+            <div class="step">
+            <div class="math-container">
+            \(\angle ACD = 50^\circ + 60^\circ\)
+            <br>
+            \(\angle ACD = 110^\circ\)
+            </div>
+            The measure of the exterior angle is \(110^\circ\). (1 Mark)
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. State the Pythagoras Theorem. For a right-angled triangle with hypotenuse \(c\) and legs \(a\) and \(b\), write the mathematical equation representing the theorem.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>Pythagoras Theorem:</strong> In a right-angled triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides. (1 Mark)</div>
+            <div class="step"><strong>Equation:</strong> If \(c\) is the hypotenuse, and \(a\), \(b\) are the legs, then:<br>
+            <div class="math-container">
+            \(c^2 = a^2 + b^2\)
+            </div>
+            (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. Determine if a triangle with side lengths 9 cm, 12 cm, and 15 cm is a right-angled triangle. Show your working.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">We check the converse of Pythagoras Theorem, where the longest side (15 cm) is tested as the hypotenuse.</div>
+            <div class="step">Square of the longest side:<br>
+            <div class="math-container">\(15^2 = 225\)</div> (0.5 Mark)</div>
+            <div class="step">Sum of the squares of the other two sides:<br>
+            <div class="math-container">
+            \(9^2 + 12^2 = 81 + 144 = 225\)
+            </div> (1 Mark)</div>
+            <div class="step">Since \(15^2 = 9^2 + 12^2\), the given side lengths satisfy the Pythagoras theorem. Therefore, <strong>yes</strong>, it is a right-angled triangle. (0.5 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. In \(\triangle PQR\), the exterior angle at \(R\) is \(130^\circ\). If the interior opposite angles \(\angle P\) and \(\angle Q\) are in the ratio \(2:3\), find the measure of all three interior angles of the triangle.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Let \(\angle P = 2x\) and \(\angle Q = 3x\). (0.5 Mark)</div>
+            <div class="step">By the Exterior Angle Property:<br>
+            \(\text{Exterior } \angle R = \angle P + \angle Q\)<br>
+            <div class="math-container">
+            \(130^\circ = 2x + 3x\)<br>
+            \(130^\circ = 5x\)<br>
+            \(x = \frac{130^\circ}{5} = 26^\circ\)
+            </div> (1.5 Marks)</div>
+            <div class="step">Calculating interior angles:<br>
+            \(\angle P = 2 \times 26^\circ = 52^\circ\)<br>
+            \(\angle Q = 3 \times 26^\circ = 78^\circ\)<br>
+            Interior \(\angle R = 180^\circ - 130^\circ = 50^\circ\) (linear pair with exterior angle) (1 Mark)</div>
+            <p><strong>Final Answer:</strong> The interior angles are \(52^\circ\), \(78^\circ\), and \(50^\circ\).</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. The lengths of two sides of a triangle are 12 cm and 18 cm. Between what two distinct positive values must the length of the third side fall? Explain the property you used to find the range.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>Property Used:</strong> Triangle Inequality Theorem, which states that the third side must be less than the sum of the other two sides and greater than their difference. (1 Mark)</div>
+            <div class="step">Let the third side be \(x\).<br>
+            <strong>Upper limit:</strong> \(x < 12 + 18 \implies x < 30 \text{ cm}\) (1 Mark)</div>
+            <div class="step"><strong>Lower limit:</strong> \(x > 18 - 12 \implies x > 6 \text{ cm}\) (1 Mark)</div>
+            <p><strong>Final Answer:</strong> The third side must fall between <strong>6 cm and 30 cm</strong> (\(6 < x < 30\)).</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. A ladder 13 m long is placed against a wall such that its foot is at a distance of 5 m from the base of the wall. Find the height at which the ladder reaches the wall.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Let the height reached by the ladder be \(h\) meters. The wall, ground, and ladder form a right-angled triangle.</div>
+            <div class="step">Here, hypotenuse \(c = 13\text{ m}\), base \(b = 5\text{ m}\). (0.5 Mark)</div>
+            <div class="step">Applying Pythagoras Theorem:<br>
+            <div class="math-container">
+            \(h^2 + b^2 = c^2\)<br>
+            \(h^2 + 5^2 = 13^2\) (1 Mark)<br>
+            \(h^2 + 25 = 169\)<br>
+            \(h^2 = 169 - 25 = 144\)<br>
+            \(h = \sqrt{144} = 12 \text{ m}\)
+            </div> (1.5 Marks)</div>
+            <p><strong>Final Answer:</strong> The ladder reaches a height of <strong>12 m</strong>.</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. In \(\triangle LMN\), \(LM = LN\) (isosceles triangle). If the exterior angle formed at vertex \(N\) is \(110^\circ\), find the measures of all the interior angles of \(\triangle LMN\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Since \(LM = LN\), angles opposite to them are equal: \(\angle M = \angle N\) (interior). (0.5 Mark)</div>
+            <div class="step">Interior \(\angle N = 180^\circ - 110^\circ = 70^\circ\) (linear pair). (1 Mark)</div>
+            <div class="step">Therefore, \(\angle M = 70^\circ\). (0.5 Mark)</div>
+            <div class="step">Using Angle Sum Property: \(\angle L + \angle M + \angle N = 180^\circ\)<br>
+            <div class="math-container">
+            \(\angle L + 70^\circ + 70^\circ = 180^\circ \implies \angle L + 140^\circ = 180^\circ \implies \angle L = 40^\circ\)
+            </div> (1 Mark)</div>
+            <p><strong>Final Answer:</strong> \(\angle L = 40^\circ\), \(\angle M = 70^\circ\), \(\angle N = 70^\circ\).</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. A tree breaks due to a storm and the broken part bends so that the top of the tree touches the ground at a distance of 8 m from the base of the tree. If the point where it broke is 6 m above the ground, what was the total original height of the tree before it broke?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step">Let the remaining upright trunk be \(p = 6\text{ m}\), base distance from base to top on ground be \(b = 8\text{ m}\), and the broken part be hypotenuse \(h\). (0.5 Mark)</div>
+            <div class="step">Using Pythagoras Theorem:<br>
+            <div class="math-container">
+            \(h^2 = 6^2 + 8^2 = 36 + 64 = 100 \implies h = 10 \text{ m}\)
+            </div> (1.5 Marks)</div>
+            <div class="step">Total original height = upright trunk + broken part = \(6\text{ m} + 10\text{ m} = 16\text{ m}\). (1 Mark)</div>
+            <p><strong>Final Answer:</strong> The original height was <strong>16 m</strong>.</p>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. Find the value of \(x\) and \(y\) in the given figure. Give geometrical reasons for each step.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="svg-container">
+                <svg width="360" height="210" viewBox="0 0 360 210" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20" y1="150" x2="340" y2="150" stroke="black" stroke-width="2"/>
+                    <polygon points="120,30 60,150 240,150" fill="none" stroke="black" stroke-width="2"/>
+                    <text x="45" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">B</text>
+                    <text x="115" y="22" font-family="Times New Roman" font-size="14" font-weight="bold">A</text>
+                    <text x="235" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">C</text>
+                    <text x="325" y="172" font-family="Times New Roman" font-size="14" font-weight="bold">D</text>
+                    <path d="M 105 60 Q 120 70 135 60" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="114" y="88" font-family="Times New Roman" font-size="14" font-style="italic">x</text>
+                    <path d="M 85 150 A 25 25 0 0 0 78 133" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="92" y="132" font-family="Times New Roman" font-size="13">55°</text>
+                    <path d="M 215 133 A 25 25 0 0 0 208 150" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="194" y="132" font-family="Times New Roman" font-size="13">y</text>
+                    <path d="M 270 150 A 30 30 0 0 0 262 130" fill="none" stroke="black" stroke-width="1.2"/>
+                    <text x="276" y="132" font-family="Times New Roman" font-size="13">120°</text>
+                </svg>
+            </div>
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>Finding \(y\):</strong><br>
+            Angles \(y\) and \(120^\circ\) form a linear pair on straight line \(BD\).<br>
+            <div class="math-container">
+            \(y + 120^\circ = 180^\circ \implies y = 180^\circ - 120^\circ = 60^\circ\)
+            </div> (2 Marks)</div>
+            
+            <div class="step"><strong>Finding \(x\):</strong><br>
+            Using the Exterior Angle Property on \(\triangle ABC\):<br>
+            Exterior angle at \(C\) (\(120^\circ\)) is equal to the sum of its two interior opposite angles (\(\angle A + \angle B\)).<br>
+            <div class="math-container">
+            \(x + 55^\circ = 120^\circ \implies x = 120^\circ - 55^\circ = 65^\circ\)
+            </div> (3 Marks)</div>
+            
+            <p><strong>Final Answer:</strong> \(x = 65^\circ\) and \(y = 60^\circ\).</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. Rohan walks 15 km towards North, then turns West and walks 8 km.<br>
+            a) Draw a neat labeled sketch.<br>
+            b) Calculate his shortest distance from the starting point.<br>
+            c) State the theorem used.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>a) Labeled Sketch: (1.5 Marks)</strong></div>
+            <div class="svg-container">
+                <svg width="220" height="180" viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="160" y1="150" x2="160" y2="30" stroke="blue" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="160" y1="30" x2="60" y2="30" stroke="blue" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="160" y1="150" x2="60" y2="30" stroke="red" stroke-width="2"/>
+                    <rect x="150" y="30" width="10" height="10" fill="none" stroke="black"/>
+                    <circle cx="160" cy="150" r="3" fill="black"/>
+                    <text x="165" y="160" font-family="Arial" font-size="11">A (Start)</text>
+                    <circle cx="160" cy="30" r="3" fill="black"/>
+                    <text x="168" y="25" font-family="Arial" font-size="11">B</text>
+                    <circle cx="60" cy="30" r="3" fill="black"/>
+                    <text x="30" y="25" font-family="Arial" font-size="11">C (End)</text>
+                    <text x="170" y="95" font-family="Arial" font-size="11">15 km</text>
+                    <text x="100" y="22" font-family="Arial" font-size="11">8 km</text>
+                </svg>
+            </div>
+            
+            <div class="step"><strong>b) Calculating Shortest Distance: (2.5 Marks)</strong><br>
+            Shortest distance is hypotenuse \(AC\):<br>
+            <div class="math-container">
+            \(AC^2 = 15^2 + 8^2 = 225 + 64 = 289 \implies AC = \sqrt{289} = 17 \text{ km}\)
+            </div></div>
+            
+            <div class="step"><strong>c) Theorem Used: (1 Mark)</strong> Pythagoras Theorem.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. In a rhombus \(ABCD\), diagonals \(AC\) and \(BD\) are 24 cm and 10 cm respectively.<br>
+            a) Draw a rough sketch.<br>
+            b) Find the length of one side.<br>
+            c) Calculate the perimeter.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="answer-heading">Solution:</div>
+            <div class="step"><strong>a) Rough Sketch: (1 Mark)</strong></div>
+            <div class="svg-container">
+                <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="100,20 180,75 100,130 20,75" fill="none" stroke="black" stroke-width="2"/>
+                    <line x1="20" y1="75" x2="180" y2="75" stroke="gray" stroke-dasharray="4"/>
+                    <line x1="100" y1="20" x2="100" y2="130" stroke="gray" stroke-dasharray="4"/>
+                    <rect x="100" y="75" width="8" height="8" fill="none" stroke="black"/>
+                    <text x="95" y="15" font-family="Arial" font-size="13">A</text>
+                    <text x="185" y="80" font-family="Arial" font-size="13">B</text>
+                    <text x="95" y="145" font-family="Arial" font-size="13">C</text>
+                    <text x="5" y="80" font-family="Arial" font-size="13">D</text>
+                    <text x="85" y="70" font-family="Arial" font-size="13">O</text>
+                </svg>
+            </div>
+            
+            <div class="step"><strong>b) Finding length of one side: (3 Marks)</strong><br>
+            Diagonals bisect at \(90^\circ\). Half diagonals are \(AO = \frac{24}{2} = 12\text{ cm}\) and \(BO = \frac{10}{2} = 5\text{ cm}\).<br>
+            In right \(\triangle AOB\):<br>
+            <div class="math-container">
+            \(AB^2 = 12^2 + 5^2 = 144 + 25 = 169 \implies AB = 13 \text{ cm}\)
+            </div></div>
+            
+            <div class="step"><strong>c) Calculating perimeter: (1 Mark)</strong><br>
+            \(\text{Perimeter} = 4 \times \text{side} = 4 \times 13 = 52 \text{ cm}\).</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            position: relative;
+        }
+        .surprise-badge {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            background-color: #d32f2f;
+            color: white;
+            padding: 5px 12px;
+            font-size: 10pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transform: rotate(10deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            .surprise-badge { top: -10px; right: 10px; font-size: 8pt; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .surprise-badge { border: 1px solid #000; color: #000; background-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <div class="surprise-badge">Surprise Test</div>
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 13: MOTION IN TWO DIMENSIONS</div>
+        <div class="exam-details">
+            <span>Class: 11</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly. Use of a non-programmable calculator is permitted. Take \( g = 9.8\text{ m/s}^2 \) unless specified otherwise.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">A boat has a velocity of \( 5\text{ m/s} \) in still water. It crosses a river of width \( 200\text{ m} \) flowing at \( 3\text{ m/s} \) along the shortest possible path. Find the time taken to cross the river.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">A bullet is dropped from a certain height. Simultaneously, another bullet is fired horizontally from exactly the same height. Which one will hit the ground first and why? (Neglect air resistance).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Two projectiles are thrown with the same initial velocity at angles \( (45^\circ - \theta) \) and \( (45^\circ + \theta) \) with the horizontal. What is the ratio of their horizontal ranges? Show your reasoning.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Rain is falling vertically downwards with a speed of \( 30\text{ m/s} \). A woman rides a bicycle with a speed of \( 10\text{ m/s} \) in the east to west direction. What is the magnitude and direction of the relative velocity of the rain with respect to the woman?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">A ball is thrown at an angle of \( 30^\circ \) to the horizontal. Calculate the ratio of the kinetic energy of the ball at the highest point of its trajectory to its initial kinetic energy.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">A man can swim at \( 4\text{ km/h} \) in still water. How long does he take to cross a river \( 1\text{ km} \) wide if the river flows steadily at \( 3\text{ km/h} \) and he makes his strokes strictly normal to the river current? How far down the river does he go when he reaches the other bank?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">An airplane is flying horizontally at a height of \( 490\text{ m} \) with a velocity of \( 360\text{ km/h} \). A food packet is released from it. Calculate the time taken by the packet to reach the ground and its horizontal range. (Take \( g = 9.8\text{ m/s}^2 \)).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">The equation of trajectory of a projectile is given by \( y = \sqrt{3}x - \frac{g x^2}{2} \). Calculate the angle of projection and the initial velocity of the projectile.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">An aircraft is flying at a speed of \( 400\text{ km/h} \) due north. A strong wind starts blowing at \( 100\text{ km/h} \) from east to west. Find the magnitude and direction of the resultant velocity of the aircraft.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Mathematically prove that the maximum horizontal range is exactly four times the maximum height attained by a projectile when it is fired at an angle that provides the maximum horizontal range.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            A projectile is fired from the top of a \( 40\text{ m} \) high tower with an initial velocity of \( 20\text{ m/s} \) at an angle of \( 30^\circ \) above the horizontal. Find:
+            <div class="sub-question">(a) The total time taken by the projectile to hit the ground.</div>
+            <div class="sub-question">(b) The horizontal distance from the base of the tower where it hits the ground.</div>
+            <div class="sub-question">(c) The magnitude of the velocity with which it strikes the ground. <br><i>(Take \( g = 10\text{ m/s}^2 \))</i></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A river is flowing due east with a steady speed of \( 3\text{ m/s} \). A swimmer can swim in still water at a speed of \( 4\text{ m/s} \).
+            <div class="sub-question">(a) If he wants to cross the river along the shortest possible path, at what angle should he swim with respect to the river flow?</div>
+            <div class="sub-question">(b) What is his resultant velocity relative to the ground in this case?</div>
+            <div class="sub-question">(c) If the river is \( 100\text{ m} \) wide, find the time taken to cross the river along the shortest path.</div>
+            <div class="sub-question">(d) If he decides to cross in the shortest possible <em>time</em> instead, what will be his horizontal drift downstream?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Based on the principles of projectile motion:
+            <div class="sub-question">(a) Prove that there are two angles of projection for a given initial velocity for which the horizontal range is the same.</div>
+            <div class="sub-question">(b) A body is projected with a velocity \( u \) such that its horizontal range is \( R \). If \( t_1 \) and \( t_2 \) are the times of flight for the two possible angles of projection to get this exact same range, derive the relation: \( t_1 t_2 = \frac{2R}{g} \).</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures</div>
+</body>
+</html>
