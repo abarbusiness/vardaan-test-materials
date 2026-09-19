@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 ICSE Math Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            background-color: #fcf8e3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 10pt;
+        }
+        
+        .answer-content {
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            background: #fafafa;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+
+        /* Responsive constraints */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-end; }
+            .answer-content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 18 (ICSE Math - Factorization)</div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q1. Factorise by taking out the highest common factor: \( 12x^2y^3 - 21x^3y^2 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Find the Highest Common Factor (HCF) of the numerical coefficients \(12\) and \(21\), which is \(3\).</div>
+            <div class="step"><strong>Step 2:</strong> Find the HCF of the literal coefficients. The lowest power of \(x\) is \(x^2\), and for \(y\) is \(y^2\). So, common variable factor is \(x^2y^2\).</div>
+            <div class="step">Taking out the overall common factor \( 3x^2y^2 \):</div>
+            <div class="math-block">
+                $$ = 3x^2y^2 \left( \frac{12x^2y^3}{3x^2y^2} - \frac{21x^3y^2}{3x^2y^2} \right) $$
+                $$ = 3x^2y^2(4y - 7x) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( 3x^2y^2(4y - 7x) \) <span style="color: grey; font-size: 0.9em;">(2 Marks for correct factorization)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q2. Factorise the given expression completely: \( a(x + y) + b(x + y) \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Observe that the binomial \( (x + y) \) is common to both terms.</div>
+            <div class="step">Taking out \( (x + y) \) as the common factor:</div>
+            <div class="math-block">
+                $$ = (x + y)(a + b) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x + y)(a + b) \) <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q3. Factorise using the identity for the difference of two squares: \( x^2 - 81 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Express both terms as perfect squares.</div>
+            <div class="math-block">
+                $$ x^2 - 81 = (x)^2 - (9)^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for rewriting as squares)</span></div>
+            <div class="step"><strong>Step 2:</strong> Use the identity \( a^2 - b^2 = (a - b)(a + b) \).</div>
+            <div class="math-block">
+                $$ = (x - 9)(x + 9) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x - 9)(x + 9) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q4. Factorise the quadratic trinomial: \( p^2 - p - 42 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> We need to split the middle term (\(-1p\)) into two terms whose sum is \(-1\) and whose product is \(-42\).</div>
+            <div class="step">The numbers are \(-7\) and \(+6\).</div>
+            <div class="math-block">
+                $$ = p^2 - 7p + 6p - 42 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct splitting)</span></div>
+            <div class="step"><strong>Step 2:</strong> Group the terms and factorise.</div>
+            <div class="math-block">
+                $$ = p(p - 7) + 6(p - 7) $$
+                $$ = (p - 7)(p + 6) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (p - 7)(p + 6) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q5. Evaluate using factorization: \( (9.8)^2 - (0.2)^2 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Apply the difference of squares identity: \( a^2 - b^2 = (a - b)(a + b) \).</div>
+            <div class="math-block">
+                $$ = (9.8 - 0.2)(9.8 + 0.2) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for applying identity)</span></div>
+            <div class="step"><strong>Step 2:</strong> Simplify the brackets.</div>
+            <div class="math-block">
+                $$ = (9.6) \times (10.0) $$
+                $$ = 96 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 96 <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q6. Factorise by grouping the terms appropriately: \( ax + bx - ay - by \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Group the first two terms together and the last two terms together.</div>
+            <div class="math-block">
+                $$ = (ax + bx) - (ay + by) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct grouping with sign consideration)</span></div>
+            <div class="step"><strong>Step 2:</strong> Take out common factors from each group.</div>
+            <div class="math-block">
+                $$ = x(a + b) - y(a + b) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for extracting common terms)</span></div>
+            <div class="step"><strong>Step 3:</strong> Take out the common binomial factor \( (a + b) \).</div>
+            <div class="math-block">
+                $$ = (a + b)(x - y) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (a + b)(x - y) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q7. Factorise completely: \( 16a^4 - 81b^4 \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Express as a difference of squares.</div>
+            <div class="math-block">
+                $$ = (4a^2)^2 - (9b^2)^2 $$
+                $$ = (4a^2 - 9b^2)(4a^2 + 9b^2) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for first factorization)</span></div>
+            <div class="step"><strong>Step 2:</strong> Notice that the first bracket is again a difference of squares: \( (2a)^2 - (3b)^2 \). The second bracket cannot be factorised further with real numbers.</div>
+            <div class="math-block">
+                $$ = ((2a)^2 - (3b)^2)(4a^2 + 9b^2) $$
+                $$ = (2a - 3b)(2a + 3b)(4a^2 + 9b^2) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (2a - 3b)(2a + 3b)(4a^2 + 9b^2) \) <span style="color: grey; font-size: 0.9em;">(1.5 Marks for complete factorization)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q8. Factorise by splitting the middle term: \( 2x^2 + 7x + 6 \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Find two numbers whose product is \( 2 \times 6 = 12 \) and whose sum is \( 7 \).</div>
+            <div class="step">The numbers are \( 4 \) and \( 3 \).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for identifying correct numbers)</span></div>
+            <div class="step"><strong>Step 2:</strong> Split the middle term and factorise by grouping.</div>
+            <div class="math-block">
+                $$ = 2x^2 + 4x + 3x + 6 $$
+                $$ = 2x(x + 2) + 3(x + 2) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for grouping correctly)</span></div>
+            <div class="math-block">
+                $$ = (x + 2)(2x + 3) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x + 2)(2x + 3) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q9. Factorise the expression: \( (x - y)^2 - 4(x - y) - 21 \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Let \( (x - y) = a \). The expression becomes:</div>
+            <div class="math-block">
+                $$ a^2 - 4a - 21 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct substitution)</span></div>
+            <div class="step"><strong>Step 2:</strong> Factorise by splitting the middle term. Find two numbers that multiply to \(-21\) and add to \(-4\). These are \(-7\) and \(+3\).</div>
+            <div class="math-block">
+                $$ = a^2 - 7a + 3a - 21 $$
+                $$ = a(a - 7) + 3(a - 7) $$
+                $$ = (a - 7)(a + 3) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for factorizing substituted equation)</span></div>
+            <div class="step"><strong>Step 3:</strong> Substitute back \( (x - y) \) for \( a \).</div>
+            <div class="math-block">
+                $$ = (x - y - 7)(x - y + 3) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x - y - 7)(x - y + 3) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q10. Factorise using standard identities: \( 25(a - b)^2 - 16(a + b)^2 \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Express as a difference of two squares.</div>
+            <div class="math-block">
+                $$ = [5(a - b)]^2 - [4(a + b)]^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for setting up identity form)</span></div>
+            <div class="step"><strong>Step 2:</strong> Apply \( X^2 - Y^2 = (X - Y)(X + Y) \).</div>
+            <div class="math-block">
+                $$ = [5(a - b) - 4(a + b)][5(a - b) + 4(a + b)] $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for applying identity)</span></div>
+            <div class="step"><strong>Step 3:</strong> Expand the inner brackets and simplify.</div>
+            <div class="math-block">
+                $$ = [5a - 5b - 4a - 4b][5a - 5b + 4a + 4b] $$
+                $$ = (a - 9b)(9a - b) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (a - 9b)(9a - b) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q11(a). Factorise completely: \( x^4 - y^4 \)</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Express as a difference of squares:</div>
+            <div class="math-block">
+                $$ = (x^2)^2 - (y^2)^2 $$
+                $$ = (x^2 - y^2)(x^2 + y^2) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+            <div class="step">Factorise the first bracket further:</div>
+            <div class="math-block">
+                $$ = (x - y)(x + y)(x^2 + y^2) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x - y)(x + y)(x^2 + y^2) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q11(b). Factorise: \( x^2 - 1 - 2a - a^2 \)</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Group the last three terms and take negative sign common:</div>
+            <div class="math-block">
+                $$ = x^2 - (1 + 2a + a^2) $$
+                $$ = x^2 - (a^2 + 2a + 1) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for identifying perfect square trinomial)</span></div>
+            <div class="step">Recognise the perfect square: \( (a + 1)^2 = a^2 + 2a + 1 \)</div>
+            <div class="math-block">
+                $$ = x^2 - (a + 1)^2 $$
+            </div>
+            <div class="step">Apply difference of squares identity:</div>
+            <div class="math-block">
+                $$ = [x - (a + 1)][x + (a + 1)] $$
+                $$ = (x - a - 1)(x + a + 1) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x - a - 1)(x + a + 1) \) <span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q12(a). Factorise the quadratic expression: \( 3x^2 - 14x + 8 \)</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Find two numbers whose product is \( 3 \times 8 = 24 \) and whose sum is \(-14\). The numbers are \(-12\) and \(-2\).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for splitting middle term correctly)</span></div>
+            <div class="math-block">
+                $$ = 3x^2 - 12x - 2x + 8 $$
+                $$ = 3x(x - 4) - 2(x - 4) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(0.5 Marks for correct grouping)</span></div>
+            <div class="math-block">
+                $$ = (x - 4)(3x - 2) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x - 4)(3x - 2) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q12(b). Area of rectangle is \( 2x^2 + 9x - 5 \). Find possible expressions for length and breadth.</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Since Area = Length \( \times \) Breadth, we need to factorise the area polynomial.</div>
+            <div class="step">We need two numbers that multiply to \( 2 \times -5 = -10 \) and add up to \( 9 \). The numbers are \( 10 \) and \( -1 \).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for logic and splitting)</span></div>
+            <div class="math-block">
+                $$ \text{Area} = 2x^2 + 10x - x - 5 $$
+                $$ = 2x(x + 5) - 1(x + 5) $$
+                $$ = (x + 5)(2x - 1) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for complete factorization)</span></div>
+            <div class="step">Therefore, the dimensions represent the length and breadth.</div>
+            <div class="step"><strong>Final Answer:</strong> Length and breadth are \( (x + 5) \) and \( (2x - 1) \) or vice-versa. <span style="color: grey; font-size: 0.9em;">(0.5 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q13(a). Factorise by rearranging and grouping the terms: \( xy(z^2 + 1) + z(x^2 + y^2) \)</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">First, expand the brackets to remove current grouping:</div>
+            <div class="math-block">
+                $$ = xyz^2 + xy + zx^2 + zy^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(0.5 Marks for expansion)</span></div>
+            <div class="step">Rearrange terms to form new groups. Let's group the 1st with the 3rd, and the 2nd with the 4th.</div>
+            <div class="math-block">
+                $$ = (zx^2 + xyz^2) + (zy^2 + xy) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for new valid grouping)</span></div>
+            <div class="step">Take out common factors from each new group:</div>
+            <div class="math-block">
+                $$ = zx(x + yz) + y(yz + x) $$
+            </div>
+            <div class="step">Note that \( (x + yz) \) is the same as \( (yz + x) \). Take it out as a common factor.</div>
+            <div class="math-block">
+                $$ = (x + yz)(zx + y) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( (x + yz)(zx + y) \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q13(b). Evaluate using the algebraic formula for the difference of two squares: \( 105 \times 95 \)</div>
+            <div class="marks-badge">[2.5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Express both numbers in terms of a common base (100).</div>
+            <div class="math-block">
+                $$ = (100 + 5)(100 - 5) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for proper setup)</span></div>
+            <div class="step">Apply the identity: \( (a + b)(a - b) = a^2 - b^2 \) where \( a = 100 \) and \( b = 5 \).</div>
+            <div class="math-block">
+                $$ = (100)^2 - (5)^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(0.5 Marks)</span></div>
+            <div class="step">Calculate the squares and subtract:</div>
+            <div class="math-block">
+                $$ = 10000 - 25 $$
+                $$ = 9975 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 9975 <span style="color: grey; font-size: 0.9em;">(1 Mark for final calculation)</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

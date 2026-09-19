@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            background-color: #fcf8e3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 10pt;
+        }
+        
+        .answer-content {
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            background: #fafafa;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+
+        /* Responsive constraints */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-end; }
+            .answer-content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 18 (Mathematics - Class 8 CBSE)</div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q1. Reanna has a special chocolate that triples every day if not eaten. If she has 1 chocolate on day 1, express the number of chocolates she will have on day \( n \) in exponential form.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Day 1: \( 1 \) chocolate</div>
+            <div class="step">Day 2: \( 1 \times 3 = 3^1 \) chocolates</div>
+            <div class="step">Day 3: \( 3 \times 3 = 3^2 \) chocolates</div>
+            <div class="step">Following the pattern, on Day \( n \), the exponent is one less than the day number.</div>
+            <div class="step"><strong>Final Answer:</strong> The number of chocolates on day \( n \) is \( 3^{n-1} \). <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q2. How many \( 1 \times 1 \) unit squares and \( 8 \times 8 \) squares can be made on a standard \( 8 \times 8 \) chess board?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">A standard chess board is an \( 8 \times 8 \) grid.</div>
+            <div class="step">The number of \( 1 \times 1 \) squares is \( 8 \times 8 = 64 \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">The number of \( 8 \times 8 \) squares is simply the entire board itself, which is \( 1 \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step"><strong>Final Answer:</strong> 64 and 1 respectively.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q3. Use the special case of the distributive property to perform the quick multiplication: \( 14 \times 17 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">We can write \( 17 \) as \( (10 + 7) \).</div>
+            <div class="math-block">
+                $$ 14 \times 17 = 14 \times (10 + 7) $$
+            </div>
+            <div class="step">Using distributive property \( a(b + c) = ab + ac \):</div>
+            <div class="math-block">
+                $$ = (14 \times 10) + (14 \times 7) $$
+                $$ = 140 + 98 $$
+                $$ = 238 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 238 <span style="color: grey; font-size: 0.9em;">(2 Marks for correct application and result)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q4. Without actually computing, determine whether the arithmetic expression \( 53 \times 47 \) has an even or odd parity. Give a reason.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Observe the parity of both multipliers:</div>
+            <div class="step">\( 53 \) is an Odd number.</div>
+            <div class="step">\( 47 \) is an Odd number.</div>
+            <div class="step">According to the parity rules, the product of two odd numbers is always an odd number (\( \text{Odd} \times \text{Odd} = \text{Odd} \)). <span style="color: grey; font-size: 0.9em;">(1 Mark for reasoning)</span></div>
+            <div class="step"><strong>Final Answer:</strong> The parity is Odd. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q5. Using the rules of divisibility, check if the number 417 is divisible by 3. Show your working.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Rule:</strong> A number is divisible by 3 if the sum of its digits is divisible by 3.</div>
+            <div class="step">Sum of digits of 417 = \( 4 + 1 + 7 = 12 \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Since 12 is a multiple of 3 (divisible by 3), the original number is also divisible by 3.</div>
+            <div class="step"><strong>Final Answer:</strong> Yes, 417 is divisible by 3. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q6. A car travels 275 km in 5 hours. How many kilometers will it cover in 3.5 hours?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Distance covered in 5 hours = \( 275 \) km.</div>
+            <div class="step">Distance covered in 1 hour = \( \frac{275}{5} = 55 \) km. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Distance covered in 3.5 hours = \( 55 \times 3.5 \)</div>
+            <div class="math-block">
+                $$ = 55 \times \frac{7}{2} = \frac{385}{2} = 192.5 \text{ km} $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 192.5 km <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q7. Find the digital root of the number 352.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">To find the digital root, we add the digits repeatedly until a single-digit number is obtained.</div>
+            <div class="step">Sum 1: \( 3 + 5 + 2 = 10 \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Since 10 is not a single digit, we add its digits again.</div>
+            <div class="step">Sum 2: \( 1 + 0 = 1 \).</div>
+            <div class="step"><strong>Final Answer:</strong> The digital root is 1. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q8. Name the quadrilateral in which two non-overlapping pairs of adjacent sides are equal, and whose longer diagonal bisects the shorter diagonal at \( 90^\circ \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Based on the properties defined in the syllabus, a quadrilateral with exactly two distinct consecutive pairs of sides of equal length is called a kite. Its diagonals intersect at right angles, and one diagonal bisects the other.</div>
+            <div class="step"><strong>Final Answer:</strong> Kite <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q9. Express the number 25 as the sum of two consecutive natural numbers.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the two consecutive numbers be \( x \) and \( x + 1 \).</div>
+            <div class="math-block">
+                $$ x + (x + 1) = 25 $$
+                $$ 2x + 1 = 25 $$
+                $$ 2x = 24 \implies x = 12 $$
+            </div>
+            <div class="step">So the numbers are 12 and 13.</div>
+            <div class="step"><strong>Final Answer:</strong> \( 12 + 13 = 25 \) <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q10. Write the algebraic expression for a 2-digit number in its generalised form, assuming the tens digit is \( x \) and the ones digit is \( y \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">A 2-digit number is formed by multiplying the tens digit by 10 and adding the ones digit.</div>
+            <div class="step"><strong>Final Answer:</strong> The generalised form is \( 10x + y \). <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q11. Prove algebraically that the sum of any four consecutive integers always has an even parity.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the four consecutive integers be \( n \), \( n+1 \), \( n+2 \), and \( n+3 \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Sum = \( n + (n+1) + (n+2) + (n+3) \)</div>
+            <div class="math-block">
+                $$ = 4n + 6 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for finding the sum)</span></div>
+            <div class="step">Factorizing out a 2, we get:</div>
+            <div class="math-block">
+                $$ = 2(2n + 3) $$
+            </div>
+            <div class="step">Since the sum is a multiple of 2 (it has 2 as a factor), it must be an even number, regardless of the value of \( n \).</div>
+            <div class="step"><strong>Final Answer:</strong> Hence Proved. <span style="color: grey; font-size: 0.9em;">(1 Mark for reasoning)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q12. The income of Shobha is ₹1,44,000 in 15 months. Apply proportional reasoning to find how much she will earn in 7 months.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the income in 7 months be ₹\( x \). Using proportional ratios:</div>
+            <div class="math-block">
+                $$ \frac{\text{Income}}{\text{Months}} = \frac{144000}{15} = \frac{x}{7} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for setting up proportion)</span></div>
+            <div class="step">First, find the income per month:</div>
+            <div class="math-block">
+                $$ \frac{144000}{15} = 9600 \text{ (per month)} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for unit value)</span></div>
+            <div class="step">Now, calculate income for 7 months:</div>
+            <div class="math-block">
+                $$ x = 9600 \times 7 = 67200 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Shobha will earn \text{₹ 67,200}. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q13. State the congruence rule used to prove that the opposite sides of a rectangle are equal. Show the steps of proof by drawing a diagonal in rectangle ABCD.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Draw diagonal \( AC \) in rectangle \( ABCD \). A rectangle is a parallelogram where all angles are \( 90^\circ \). Therefore \( AB \parallel DC \) and \( AD \parallel BC \).</div>
+            <div class="step">In \( \Delta ABC \) and \( \Delta CDA \):</div>
+            <div class="step">1. \( \angle BAC = \angle DCA \) (Alternate interior angles, since \( AB \parallel DC \))</div>
+            <div class="step">2. \( AC = CA \) (Common diagonal)</div>
+            <div class="step">3. \( \angle BCA = \angle DAC \) (Alternate interior angles, since \( AD \parallel BC \))</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for listing criteria)</span></div>
+            <div class="step">Therefore, \( \Delta ABC \cong \Delta CDA \) by <strong>ASA (Angle-Side-Angle)</strong> congruence rule. <span style="color: grey; font-size: 0.9em;">(0.5 Marks for Rule)</span></div>
+            <div class="step">By CPCT (Corresponding Parts of Congruent Triangles), \( AB = CD \) and \( AD = BC \).</div>
+            <div class="step"><strong>Final Answer:</strong> Proved using ASA congruence. <span style="color: grey; font-size: 0.9em;">(1 Mark for conclusion)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q14. Test the divisibility of the number 661314 by 11. Clearly state the rule and show your calculation.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Rule:</strong> A number is divisible by 11 if the difference between the sum of digits at odd places and the sum of digits at even places is either 0 or a multiple of 11. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">For the number 661314:</div>
+            <div class="step">Sum of digits at odd places (1st, 3rd, 5th from right) = \( 4 + 3 + 6 = 13 \).</div>
+            <div class="step">Sum of digits at even places (2nd, 4th, 6th from right) = \( 1 + 1 + 6 = 8 \).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct sums)</span></div>
+            <div class="step">Difference = \( 13 - 8 = 5 \).</div>
+            <div class="step">Since 5 is neither 0 nor a multiple of 11, the number is not divisible by 11.</div>
+            <div class="step"><strong>Final Answer:</strong> Not divisible by 11. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q15. In a quadrilateral, the four angles are in the ratio 2 : 3 : 5 : 8. Find the measure of each angle.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the angles be \( 2x \), \( 3x \), \( 5x \), and \( 8x \).</div>
+            <div class="step">By the angle sum property of a quadrilateral, the sum of all interior angles is \( 360^\circ \).</div>
+            <div class="math-block">
+                $$ 2x + 3x + 5x + 8x = 360^\circ $$
+                $$ 18x = 360^\circ $$
+                $$ x = 20^\circ $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for finding x)</span></div>
+            <div class="step">Now, calculate each angle:</div>
+            <div class="step">1st angle = \( 2 \times 20 = 40^\circ \)</div>
+            <div class="step">2nd angle = \( 3 \times 20 = 60^\circ \)</div>
+            <div class="step">3rd angle = \( 5 \times 20 = 100^\circ \)</div>
+            <div class="step">4th angle = \( 8 \times 20 = 160^\circ \)</div>
+            <div class="step"><strong>Final Answer:</strong> \( 40^\circ \), \( 60^\circ \), \( 100^\circ \), \( 160^\circ \) <span style="color: grey; font-size: 0.9em;">(1.5 Marks for final angles)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q16. Perform the multiplication \( 24 \times 102 \) systematically by expanding the algebraic expression using the distributive property.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Express 102 as \( (100 + 2) \).</div>
+            <div class="math-block">
+                $$ 24 \times 102 = 24 \times (100 + 2) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct setup)</span></div>
+            <div class="step">Apply the distributive property \( a(b + c) = ab + ac \):</div>
+            <div class="math-block">
+                $$ = (24 \times 100) + (24 \times 2) $$
+                $$ = 2400 + 48 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for expansion)</span></div>
+            <div class="step">Add the terms together:</div>
+            <div class="math-block">
+                $$ = 2448 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 2448 <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q17. The sum of six consecutive numbers is 87. Formulate an equation and find all six numbers.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the six consecutive numbers be \( x \), \( x+1 \), \( x+2 \), \( x+3 \), \( x+4 \), and \( x+5 \).</div>
+            <div class="step">Sum of these numbers = 87.</div>
+            <div class="math-block">
+                $$ x + (x+1) + (x+2) + (x+3) + (x+4) + (x+5) = 87 $$
+                $$ 6x + 15 = 87 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for formulation)</span></div>
+            <div class="step">Solve for \( x \):</div>
+            <div class="math-block">
+                $$ 6x = 87 - 15 $$
+                $$ 6x = 72 $$
+                $$ x = 12 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(0.5 Marks for finding x)</span></div>
+            <div class="step">The numbers are 12, 13, 14, 15, 16, 17.</div>
+            <div class="step"><strong>Final Answer:</strong> 12, 13, 14, 15, 16, 17 <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q18. A map has a scale of 1 cm = 2 km. If the distance between two colonies on the map is 3.5 cm, use the method of cross-multiplication (Rule of Three) to find the actual distance.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">According to the Rule of Three, we set up a proportion:</div>
+            <div class="math-block">
+                $$ \frac{\text{Map Distance}_1}{\text{Actual Distance}_1} = \frac{\text{Map Distance}_2}{\text{Actual Distance}_2} $$
+                $$ \frac{1 \text{ cm}}{2 \text{ km}} = \frac{3.5 \text{ cm}}{x \text{ km}} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for setting proportion)</span></div>
+            <div class="step">Using cross-multiplication (Product of means = Product of extremes):</div>
+            <div class="math-block">
+                $$ 1 \times x = 3.5 \times 2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for cross multiplying)</span></div>
+            <div class="step">Solve for \( x \):</div>
+            <div class="math-block">
+                $$ x = 7 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> The actual distance is 7 km. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q19. Show that when we add an even number that is a multiple of 4 to an even number that is NOT a multiple of 4, the sum leaves a remainder of 2 when divided by 4.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the first even number be a multiple of 4, denoted as \( 4m \).</div>
+            <div class="step">Let the second even number not be a multiple of 4. Such numbers leave a remainder of 2 when divided by 4, denoted as \( 4n + 2 \).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for algebraic representation)</span></div>
+            <div class="step">Adding them together:</div>
+            <div class="math-block">
+                $$ \text{Sum} = 4m + (4n + 2) $$
+                $$ = 4m + 4n + 2 $$
+                $$ = 4(m + n) + 2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for factorization)</span></div>
+            <div class="step">The expression \( 4(m + n) \) is clearly a multiple of 4. Therefore, \( 4(m + n) + 2 \) will leave a remainder of 2 when divided by 4.</div>
+            <div class="step"><strong>Final Answer:</strong> Hence shown. <span style="color: grey; font-size: 0.9em;">(1 Mark for logical conclusion)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q20. Gautam has two pocket money options...</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Option 1:</strong> ₹100 everyday for 10 days.</div>
+            <div class="math-block">
+                $$ \text{Total} = 100 \times 10 = \text{₹ 1000} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step"><strong>Option 2:</strong> Exponential growth starting at ₹2 and doubling.</div>
+            <div class="math-block">
+                $$ \text{Total} = 2^1 + 2^2 + 2^3 + \dots + 2^{10} $$
+                $$ = 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256 + 512 + 1024 $$
+                $$ = 2046 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for calculation of sequence)</span></div>
+            <div class="step">Comparing the two options, ₹2046 is greater than ₹1000.</div>
+            <div class="step"><strong>Final Answer:</strong> Option 2 yields \text{₹ 2046}, so Gautam should choose Option 2. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q21. (a) Define a rhombus. (b) Prove geometrically that the diagonals of a rhombus bisect each other at right angles.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Definition:</strong> A rhombus is a special type of parallelogram in which all four sides are of equal length. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step"><strong>(b) Proof:</strong> Let \( ABCD \) be a rhombus with diagonals \( AC \) and \( BD \) intersecting at point \( O \).</div>
+            <div class="step">Since a rhombus is a parallelogram, we know its diagonals bisect each other. Thus, \( OA = OC \) and \( OB = OD \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Consider \( \Delta AOB \) and \( \Delta AOD \):</div>
+            <div class="step">1. \( AB = AD \) (Sides of a rhombus are equal)</div>
+            <div class="step">2. \( OA = OA \) (Common side)</div>
+            <div class="step">3. \( OB = OD \) (Diagonals bisect each other)</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for criteria)</span></div>
+            <div class="step">Therefore, \( \Delta AOB \cong \Delta AOD \) by <strong>SSS (Side-Side-Side)</strong> congruence rule.</div>
+            <div class="step">By CPCT, \( \angle AOB = \angle AOD \).</div>
+            <div class="step">Since \( BD \) is a straight line, \( \angle AOB + \angle AOD = 180^\circ \) (Linear Pair).</div>
+            <div class="math-block">
+                $$ 2 \angle AOB = 180^\circ \implies \angle AOB = 90^\circ $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Hence, the diagonals bisect each other at right angles. <span style="color: grey; font-size: 0.9em;">(1.5 Marks for logical conclusion)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q22. If 15 envelopes cost ₹750, solve using proportional reasoning: (a) Cost of 36 envelopes? (b) How many for ₹450?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">First, establish the base ratio or unit cost:</div>
+            <div class="math-block">
+                $$ \text{Unit Cost} = \frac{750}{15} = \text{₹ 50 per envelope} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for unit cost)</span></div>
+            <div class="step"><strong>(a) Cost of 36 envelopes:</strong></div>
+            <div class="step">Let the cost be \( x \).</div>
+            <div class="math-block">
+                $$ \frac{15}{750} = \frac{36}{x} \implies x = 36 \times 50 $$
+                $$ x = 1800 $$
+            </div>
+            <div class="step"><strong>Answer (a):</strong> \text{₹ 1800} <span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+            <div class="step"><strong>(b) Number of envelopes for ₹450:</strong></div>
+            <div class="step">Let the number of envelopes be \( y \).</div>
+            <div class="math-block">
+                $$ \frac{15}{750} = \frac{y}{450} \implies 750y = 15 \times 450 $$
+                $$ y = \frac{6750}{750} = \frac{450}{50} = 9 $$
+            </div>
+            <div class="step"><strong>Answer (b):</strong> 9 envelopes <span style="color: grey; font-size: 0.9em;">(2.5 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q23. (a) Write the generalised expanded form of a 3-digit number. (b) Prove the test of divisibility by 9 using this form.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Generalised Form:</strong> A 3-digit number with digits \( x \), \( y \), and \( z \) (from left to right) is written as:</div>
+            <div class="math-block">
+                $$ 100x + 10y + z $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step"><strong>(b) Proof of Divisibility by 9:</strong></div>
+            <div class="step">We can rewrite the generalized form by grouping multiples of 9:</div>
+            <div class="math-block">
+                $$ 100x + 10y + z = (99x + x) + (9y + y) + z $$
+                $$ = (99x + 9y) + (x + y + z) $$
+                $$ = 9(11x + y) + (x + y + z) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for algebraic manipulation)</span></div>
+            <div class="step">The first part, \( 9(11x + y) \), is clearly a multiple of 9 and therefore always divisible by 9.</div>
+            <div class="step">For the entire number to be divisible by 9, the remaining part, which is \( (x + y + z) \), must also be divisible by 9.</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for reasoning)</span></div>
+            <div class="step">Notice that \( (x + y + z) \) is exactly the sum of the digits of the original number.</div>
+            <div class="step"><strong>Final Answer:</strong> Thus, a number is divisible by 9 if and only if the sum of its digits is divisible by 9. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q24. (a) The sum of four consecutive numbers is 58. Find them. (b) If \( p \) is the greatest of five consecutive numbers, write the others.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Part (a):</strong> Let the four consecutive numbers be \( x, x+1, x+2, x+3 \).</div>
+            <div class="math-block">
+                $$ x + (x+1) + (x+2) + (x+3) = 58 $$
+                $$ 4x + 6 = 58 $$
+                $$ 4x = 52 \implies x = 13 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for solving equation)</span></div>
+            <div class="step"><strong>Answer (a):</strong> The numbers are 13, 14, 15, and 16. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step"><strong>Part (b):</strong> If \( p \) is the greatest number, the number immediately preceding it is \( p - 1 \).</div>
+            <div class="step">Continuing this pattern backwards, we subtract 1 each time.</div>
+            <div class="step"><strong>Answer (b):</strong> The other four numbers are \( (p - 1), (p - 2), (p - 3), \text{ and } (p - 4) \). <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q25. (a) Differentiate between convex and concave quadrilateral. (b) State three properties of a Kite.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Convex vs Concave Quadrilateral:</strong></div>
+            <div class="step">- <strong>Convex:</strong> A quadrilateral in which all interior angles are less than \( 180^\circ \), and both diagonals lie entirely inside the figure.</div>
+            <div class="step">- <strong>Concave:</strong> A quadrilateral in which at least one interior angle is greater than \( 180^\circ \) (reflex angle), and at least one diagonal lies partially or completely outside the figure.</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for correct differentiation)</span></div>
+            <div class="step"><strong>(b) Properties of a Kite:</strong></div>
+            <div class="step">1. It has two non-overlapping pairs of adjacent sides that are equal in length.</div>
+            <div class="step">2. The diagonals intersect at right angles (\( 90^\circ \)).</div>
+            <div class="step">3. The longer diagonal bisects the shorter diagonal. (Additionally, the longer diagonal bisects the angles at the vertices it connects).</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(3 Marks - 1 mark for each correct property)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q26. (a) Digital Root of 5910821. (b) Correlation with remainder by 9. (c) 10,000 in exponential form.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Digital Root:</strong> The digital root is a single-digit value obtained by repeatedly summing the digits of a number.</div>
+            <div class="math-block">
+                $$ 5910821 \rightarrow 5 + 9 + 1 + 0 + 8 + 2 + 1 = 26 $$
+                $$ 26 \rightarrow 2 + 6 = 8 $$
+            </div>
+            <div class="step"><strong>Answer (a):</strong> The digital root is 8. <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+            <div class="step"><strong>(b) Correlation:</strong> The digital root of a number is exactly equal to the remainder obtained when that number is divided by 9. The only exception is when the remainder is 0, in which case the digital root is 9.</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for stating rule and exception)</span></div>
+            <div class="step"><strong>(c) Exponential Form:</strong> 10,000 has four zeros.</div>
+            <div class="math-block">
+                $$ 10,000 = 10 \times 10 \times 10 \times 10 = 10^4 $$
+            </div>
+            <div class="step"><strong>Answer (c):</strong> \( 10^4 \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            background-color: #fcf8e3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 10pt;
+        }
+        
+        .answer-content {
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            background: #fafafa;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+
+        /* Responsive constraints */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-end; }
+            .answer-content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 19 (General Mathematics - Class 6 & 7)</div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q1. Evaluate the following expression involving integers: \( -15 + 8 - (-12) \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Given expression: \( -15 + 8 - (-12) \)</div>
+            <div class="step">First, resolve the double negative sign. Subtracting a negative is the same as adding a positive.</div>
+            <div class="math-block">
+                $$ = -15 + 8 + 12 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for sign correction)</span></div>
+            <div class="step">Next, add the positive numbers together: \( 8 + 12 = 20 \)</div>
+            <div class="math-block">
+                $$ = -15 + 20 $$
+                $$ = 5 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 5 <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q2. Find the Lowest Common Multiple (LCM) of the numbers 12 and 18.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Using prime factorization method:</div>
+            <div class="step">Factors of 12 = \( 2 \times 2 \times 3 = 2^2 \times 3^1 \) <span style="color: grey; font-size: 0.9em;">(0.5 Marks)</span></div>
+            <div class="step">Factors of 18 = \( 2 \times 3 \times 3 = 2^1 \times 3^2 \) <span style="color: grey; font-size: 0.9em;">(0.5 Marks)</span></div>
+            <div class="step">To find LCM, take the highest power of each prime factor present:</div>
+            <div class="math-block">
+                $$ \text{LCM} = 2^2 \times 3^2 = 4 \times 9 = 36 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> The LCM of 12 and 18 is 36. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q3. Express the fraction \( \frac{3}{4} \) as a percentage and as a decimal.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>To Percentage:</strong> Multiply the fraction by 100%.</div>
+            <div class="math-block">
+                $$ \frac{3}{4} \times 100\% = 3 \times 25\% = 75\% $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for Percentage)</span></div>
+            <div class="step"><strong>To Decimal:</strong> Convert the percentage to decimal or divide 3 by 4.</div>
+            <div class="math-block">
+                $$ \frac{75}{100} = 0.75 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 75% and 0.75 <span style="color: grey; font-size: 0.9em;">(1 Mark for Decimal)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q4. Simplify the algebraic expression: \( 3x + 5y - 2x + y \) and find its value when \( x = 2 \) and \( y = 3 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Combine like terms to simplify the expression:</div>
+            <div class="math-block">
+                $$ (3x - 2x) + (5y + y) = x + 6y $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for Simplification)</span></div>
+            <div class="step">Substitute \( x = 2 \) and \( y = 3 \) into the simplified expression:</div>
+            <div class="math-block">
+                $$ (2) + 6(3) $$
+                $$ = 2 + 18 = 20 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Simplified: \( x + 6y \), Value: 20 <span style="color: grey; font-size: 0.9em;">(1 Mark for Evaluation)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q5. Find the perimeter of a regular hexagon with a side length of \( 5 \text{ cm} \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">A regular hexagon has 6 equal sides. <span style="color: grey; font-size: 0.9em;">(1 Mark for recognizing properties)</span></div>
+            <div class="step">Perimeter = \( 6 \times \text{side length} \)</div>
+            <div class="math-block">
+                $$ \text{Perimeter} = 6 \times 5 \text{ cm} = 30 \text{ cm} $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> 30 cm <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q6. A car travels a distance of \( 220 \text{ km} \) in \( 4 \text{ hours} \). Using the unitary method, find how far it will travel in \( 7 \text{ hours} \) at the same uniform speed.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Step 1: Find the distance traveled in 1 hour (Unit value).</div>
+            <div class="math-block">
+                $$ \text{Distance in 1 hr} = \frac{220}{4} = 55 \text{ km/hr} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for finding unit rate)</span></div>
+            <div class="step">Step 2: Multiply unit rate by the desired time (7 hours).</div>
+            <div class="math-block">
+                $$ \text{Distance in 7 hrs} = 55 \times 7 $$
+                $$ = 385 \text{ km} $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> The car will travel 385 km. <span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q7. Solve the following linear equation for \( m \): \( 3(m - 2) + 5 = 14 \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Step 1: Use the distributive property to expand the brackets.</div>
+            <div class="math-block">
+                $$ 3m - 6 + 5 = 14 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for expansion)</span></div>
+            <div class="step">Step 2: Combine the constant terms on the left side.</div>
+            <div class="math-block">
+                $$ 3m - 1 = 14 $$
+            </div>
+            <div class="step">Step 3: Add 1 to both sides to isolate the variable term.</div>
+            <div class="math-block">
+                $$ 3m = 14 + 1 $$
+                $$ 3m = 15 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for simplifying equation)</span></div>
+            <div class="step">Step 4: Divide by 3.</div>
+            <div class="math-block">
+                $$ m = \frac{15}{3} = 5 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( m = 5 \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q8. A rectangular garden is \( 25 \text{ m} \) long and \( 16 \text{ m} \) wide. Find the area of the garden. Also, find the cost of fencing it at the rate of ₹ 15 per metre.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Area of Rectangle:</strong> Length × Breadth</div>
+            <div class="math-block">
+                $$ \text{Area} = 25 \text{ m} \times 16 \text{ m} = 400 \text{ m}^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for Area)</span></div>
+            <div class="step"><strong>Perimeter for fencing:</strong> \( 2 \times (\text{Length} + \text{Breadth}) \)</div>
+            <div class="math-block">
+                $$ \text{Perimeter} = 2 \times (25 + 16) = 2 \times 41 = 82 \text{ m} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for Perimeter)</span></div>
+            <div class="step"><strong>Cost of fencing:</strong> Perimeter × Rate per metre</div>
+            <div class="math-block">
+                $$ \text{Cost} = 82 \times 15 = 1230 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Area = \( 400 \text{ m}^2 \), Cost = ₹ 1230 <span style="color: grey; font-size: 0.9em;">(1 Mark for Final Cost)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q9. Two angles of a triangle are \( 45^\circ \) and \( 60^\circ \). Find the measure of the third angle. Based on the measure of its angles, what type of triangle is this?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">By the angle sum property of a triangle, the sum of all three interior angles is \( 180^\circ \).</div>
+            <div class="step">Let the third angle be \( x \).</div>
+            <div class="math-block">
+                $$ 45^\circ + 60^\circ + x = 180^\circ $$
+                $$ 105^\circ + x = 180^\circ $$
+                $$ x = 180^\circ - 105^\circ = 75^\circ $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for finding third angle)</span></div>
+            <div class="step">Since all three angles (\( 45^\circ, 60^\circ, 75^\circ \)) are less than \( 90^\circ \), it is an acute-angled triangle.</div>
+            <div class="step"><strong>Final Answer:</strong> Third angle = \( 75^\circ \). Type: Acute-angled triangle. <span style="color: grey; font-size: 0.9em;">(1 Mark for identification)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q10. Divide ₹ 1500 between two brothers, A and B, in the ratio 3 : 2. How much does each brother receive?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the common ratio multiplier be \( x \). The shares are \( 3x \) and \( 2x \).</div>
+            <div class="step">Total sum = \( 3x + 2x = 1500 \)</div>
+            <div class="math-block">
+                $$ 5x = 1500 $$
+                $$ x = \frac{1500}{5} = 300 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1.5 Marks for finding x)</span></div>
+            <div class="step">Share of A = \( 3x = 3 \times 300 = 900 \)</div>
+            <div class="step">Share of B = \( 2x = 2 \times 300 = 600 \)</div>
+            <div class="step"><strong>Final Answer:</strong> A gets ₹ 900 and B gets ₹ 600. <span style="color: grey; font-size: 0.9em;">(1.5 Marks for final shares)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q11. (a) Simplify: \( \left( \frac{2}{3} \times \frac{9}{4} \right) \div \frac{3}{2} \) (b) Fraction of book left to read.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Part (a):</strong> First, solve the brackets (multiplication).</div>
+            <div class="math-block">
+                $$ \left( \frac{2}{3} \times \frac{9}{4} \right) = \frac{2 \times 9}{3 \times 4} = \frac{18}{12} $$
+            </div>
+            <div class="step">Simplify the fraction: \( \frac{18}{12} = \frac{3}{2} \)</div>
+            <div class="step">Now perform the division by multiplying by the reciprocal:</div>
+            <div class="math-block">
+                $$ \frac{3}{2} \div \frac{3}{2} = \frac{3}{2} \times \frac{2}{3} = \frac{6}{6} = 1 $$
+            </div>
+            <div class="step"><strong>Answer (a):</strong> 1 <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+            <br>
+            <div class="step"><strong>Part (b):</strong> Fraction read on Monday = \( \frac{1}{4} \)</div>
+            <div class="step">Fraction read on Tuesday = \( \frac{3}{8} \)</div>
+            <div class="step">Total fraction read = \( \frac{1}{4} + \frac{3}{8} \)</div>
+            <div class="step">LCM of 4 and 8 is 8. Convert to common denominators:</div>
+            <div class="math-block">
+                $$ = \frac{2}{8} + \frac{3}{8} = \frac{5}{8} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for finding total read)</span></div>
+            <div class="step">Fraction left to read = Total Book (1) - Fraction Read</div>
+            <div class="math-block">
+                $$ = 1 - \frac{5}{8} = \frac{8}{8} - \frac{5}{8} = \frac{3}{8} $$
+            </div>
+            <div class="step"><strong>Answer (b):</strong> \( \frac{3}{8} \) of the book is left. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q12. (a) Construct and solve algebraic equation. (b) Prime factors of 108 in exponential form.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Part (a):</strong> Let the unknown number be \( x \).</div>
+            <div class="step">"Five times a number" = \( 5x \).</div>
+            <div class="step">"Decreased by 7 gives 23" becomes:</div>
+            <div class="math-block">
+                $$ 5x - 7 = 23 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for Equation Formulation)</span></div>
+            <div class="step">Solving for \( x \):</div>
+            <div class="math-block">
+                $$ 5x = 23 + 7 $$
+                $$ 5x = 30 $$
+                $$ x = \frac{30}{5} = 6 $$
+            </div>
+            <div class="step"><strong>Answer (a):</strong> The equation is \( 5x - 7 = 23 \) and the number is 6. <span style="color: grey; font-size: 0.9em;">(2 Marks for solving)</span></div>
+            <br>
+            <div class="step"><strong>Part (b):</strong> Find prime factorization of 108 by dividing by smallest primes.</div>
+            <div class="step">108 ÷ 2 = 54</div>
+            <div class="step">54 ÷ 2 = 27</div>
+            <div class="step">27 ÷ 3 = 9</div>
+            <div class="step">9 ÷ 3 = 3</div>
+            <div class="step">3 ÷ 3 = 1</div>
+            <div class="step">The factors are \( 2 \times 2 \times 3 \times 3 \times 3 \).</div>
+            <div class="step"><strong>Answer (b):</strong> In exponential form: \( 2^2 \times 3^3 \). <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q13. Tiling a rectangular floor of \( 8 \text{ m} \times 6 \text{ m} \) with square tiles of side \( 0.5 \text{ m} \).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Area of the floor:</strong></div>
+            <div class="step">Area of rectangle = Length × Breadth</div>
+            <div class="math-block">
+                $$ \text{Area of Floor} = 8 \text{ m} \times 6 \text{ m} = 48 \text{ m}^2 $$
+            </div>
+            <div class="step"><strong>Answer (a):</strong> \( 48 \text{ m}^2 \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <br>
+            <div class="step"><strong>(b) Area of one square tile:</strong></div>
+            <div class="step">Area of square = Side × Side</div>
+            <div class="math-block">
+                $$ \text{Area of Tile} = 0.5 \text{ m} \times 0.5 \text{ m} = 0.25 \text{ m}^2 $$
+            </div>
+            <div class="step"><strong>Answer (b):</strong> \( 0.25 \text{ m}^2 \) <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+            <br>
+            <div class="step"><strong>(c) Total number of tiles required:</strong></div>
+            <div class="step">Number of tiles = (Total Area of Floor) / (Area of One Tile)</div>
+            <div class="math-block">
+                $$ \text{Number of tiles} = \frac{48}{0.25} $$
+            </div>
+            <div class="step">To remove the decimal, multiply numerator and denominator by 100:</div>
+            <div class="math-block">
+                $$ = \frac{4800}{25} = 192 $$
+            </div>
+            <div class="step"><strong>Answer (c):</strong> 192 tiles are required. <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

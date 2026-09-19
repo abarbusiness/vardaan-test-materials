@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 16</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            position: relative;
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 16: CHEMICAL BONDING & MOLECULAR STRUCTURE</div>
+        <div class="exam-details">
+            <span>Class: 11</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Follow strictly the rationalised NCERT syllabus.</li>
+                <li><strong>Section A:</strong> Q1 to Q10 are very short answer/objective type questions carrying 1 mark each.</li>
+                <li><strong>Section B:</strong> Q11 to Q15 are short answer questions carrying 2 marks each.</li>
+                <li><strong>Section C:</strong> Q16 to Q20 are short answer questions carrying 3 marks each.</li>
+                <li><strong>Section D:</strong> Q21 to Q23 are long answer questions carrying 5 marks each.</li>
+                <li>Write precise answers. Use clear diagrams and molecular orbital charts where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Very Short Answer / Objective Type - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Draw the Lewis dot structure of the carbonate ion, \( \text{CO}_3^{2-} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Identify the molecule that has a zero dipole moment: \( \text{NH}_3 \), \( \text{NF}_3 \), \( \text{BF}_3 \), or \( \text{H}_2\text{O} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">State the essential condition for the formation of a hydrogen bond.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Comparing \( \text{O}_2 \) and \( \text{O}_2^+ \), which species has a shorter bond length?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">How many sigma (\( \sigma \)) and pi (\( \pi \)) bonds are present in a molecule of ethyne (\( \text{C}_2\text{H}_2 \))?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content"><strong>Assertion (A):</strong> The molecule \( \text{SF}_6 \) is stable despite having an expanded octet.<br>
+        <strong>Reason (R):</strong> Sulfur has vacant d-orbitals which allow it to expand its valence shell.<br>
+        <em>(a) Both A and R are true and R explains A.<br>
+        (b) Both A and R are true but R does not explain A.<br>
+        (c) A is true but R is false.<br>
+        (d) A is false but R is true.</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">What is the shape of the \( \text{ClF}_3 \) molecule according to VSEPR theory?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Which out of o-nitrophenol and p-nitrophenol has a higher boiling point and why?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Write the state of hybridization of carbon in methane (\( \text{CH}_4 \)) and ethene (\( \text{C}_2\text{H}_4 \)).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">Define the term 'Bond Order' in the context of Molecular Orbital Theory.</div>
+    </div>
+
+    <div class="section-header">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Calculate the formal charge on the central oxygen atom in an ozone (\( \text{O}_3 \)) molecule.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">Explain why water (\( \text{H}_2\text{O} \)) is a liquid at room temperature whereas hydrogen sulfide (\( \text{H}_2\text{S} \)) is a gas.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">Predict the shape and hybridization of the \( \text{XeF}_4 \) molecule.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">Although both \( \text{NH}_3 \) and \( \text{H}_2\text{O} \) undergo sp³ hybridization, their bond angles are 107° and 104.5° respectively. Explain this difference.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">Give two main points of difference between a Sigma (\( \sigma \)) bond and a Pi (\( \pi \)) bond.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Define dipole moment. Explain why \( \text{NH}_3 \) has a much higher dipole moment (\( 1.47 \, \text{D} \)) than \( \text{NF}_3 \) (\( 0.23 \, \text{D} \)) despite Fluorine being more electronegative than Nitrogen.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            What is meant by hybridization? Describe the hybridization involved in the \( \text{PCl}_5 \) molecule. Why are the axial bonds in \( \text{PCl}_5 \) slightly longer than the equatorial bonds?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Write the molecular orbital electronic configuration for the \( \text{O}_2 \) molecule. Using this configuration, calculate its bond order and explain its paramagnetic behavior.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            State the basic postulates of the VSEPR theory. Based on this theory, predict the shape of the \( \text{BrF}_5 \) molecule.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Define resonance. Explain the concept of resonance with reference to the carbonate ion (\( \text{CO}_3^{2-} \)), confirming that all three C-O bonds are of equal length.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION D (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            (a) Differentiate between Intermolecular and Intramolecular hydrogen bonding with one example each.<br>
+            (b) Discuss the shape of the following molecules using the VSEPR model: 
+            <div class="sub-question">(i) \( \text{SF}_4 \)</div>
+            <div class="sub-question">(ii) \( \text{PH}_3 \)</div>
+            (c) Why does \( \text{BeCl}_2 \) possess a zero dipole moment although the Be-Cl bond is polar?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            (a) Explain the Molecular Orbital Theory (MOT). Differentiate between bonding and antibonding molecular orbitals (any two points).<br>
+            (b) Write the molecular orbital configuration for \( \text{N}_2 \), \( \text{N}_2^+ \), and \( \text{N}_2^- \).<br>
+            (c) Calculate their respective bond orders and arrange them in decreasing order of their stability.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            (a) What is Lattice Enthalpy? How does it affect the stability of ionic compounds?<br>
+            (b) State Fajan's rules. Using these rules, explain why Silver Chloride (\( \text{AgCl} \)) shows covalent character while Sodium Chloride (\( \text{NaCl} \)) is highly ionic.<br>
+            (c) State the octet rule. Give two examples of molecules that act as exceptions by demonstrating an expanded octet.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures through Excellence</div>
+</body>
+</html>

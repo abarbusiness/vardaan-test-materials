@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 Math Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            background-color: #fcf8e3;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 10pt;
+        }
+        
+        .answer-content {
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 10px 0;
+            background: #fafafa;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+        .highlight-point {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        /* Responsive constraints */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; }
+            .question-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-end; }
+            .answer-content { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 18 (General Mathematics - Class 8)</div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q1. Evaluate: \( \left( \frac{1}{2} \right)^{-2} + \left( \frac{1}{3} \right)^{-2} + \left( \frac{1}{4} \right)^{-2} \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Concept:</strong> Using the law of exponents \( \left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n \).</div>
+            <div class="math-block">
+                $$ = (2)^2 + (3)^2 + (4)^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for inverting fractions)</span></div>
+            <div class="math-block">
+                $$ = 4 + 9 + 16 $$
+                $$ = 29 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( 29 \) <span style="color: grey; font-size: 0.9em;">(1 Mark for final correct evaluation)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q2. Find the smallest natural number by which \(2560\) must be multiplied so that the product becomes a perfect cube.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Find the prime factorisation of \(2560\).</div>
+            <div class="math-block">
+                $$ 2560 = 256 \times 10 = (2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2) \times (2 \times 5) $$
+                $$ 2560 = 2^9 \times 5^1 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct prime factorisation)</span></div>
+            <div class="step"><strong>Step 2:</strong> Grouping into triples.</div>
+            <div class="step">\(2560 = (2^3) \times (2^3) \times (2^3) \times 5^1\). Here, the prime factor \(5\) does not appear in a group of three. To make it a perfect cube, we need to complete the triplet for \(5\).</div>
+            <div class="step">Required multiplier = \( 5 \times 5 = 25 \).</div>
+            <div class="step"><strong>Final Answer:</strong> 25 <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q3. Solve for \(x\): \( 3(x - 3) = 5(2x + 1) \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Expanding the brackets on both sides:</div>
+            <div class="math-block">
+                $$ 3x - 9 = 10x + 5 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for expanding correctly)</span></div>
+            <div class="step">Transposing variable terms to one side and constants to the other:</div>
+            <div class="math-block">
+                $$ 3x - 10x = 5 + 9 $$
+                $$ -7x = 14 $$
+                $$ x = \frac{14}{-7} $$
+                $$ x = -2 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \(x = -2\) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q4. Find the measure of each exterior angle of a regular polygon having 15 sides.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Formula:</strong> The sum of exterior angles of any polygon is always \(360^\circ\). For a regular polygon with \(n\) sides, each exterior angle = \( \frac{360^\circ}{n} \). <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            <div class="step">Here, \(n = 15\).</div>
+            <div class="math-block">
+                $$ \text{Each exterior angle} = \frac{360^\circ}{15} $$
+                $$ = 24^\circ $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \(24^\circ\) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q5. Factorise: \( p^2 - 10p + 25 \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Comparing the given expression with the standard algebraic identity: \( a^2 - 2ab + b^2 = (a - b)^2 \)</div>
+            <div class="math-block">
+                $$ p^2 - 10p + 25 = (p)^2 - 2(p)(5) + (5)^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for rewriting in identity form)</span></div>
+            <div class="math-block">
+                $$ = (p - 5)^2 \text{ or } (p - 5)(p - 5) $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \((p - 5)^2\) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q6. A shopkeeper marks his goods at 20% above the cost price and allows a discount of 10%. Find his overall gain percentage.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the Cost Price (CP) be ₹ 100.</div>
+            <div class="step">Marked Price (MP) = CP + 20% of CP</div>
+            <div class="math-block">
+                $$ MP = 100 + \left(\frac{20}{100} \times 100\right) = \text{₹ } 120 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for calculating MP)</span></div>
+            <div class="step">Discount = 10% on MP</div>
+            <div class="math-block">
+                $$ \text{Discount} = \frac{10}{100} \times 120 = \text{₹ } 12 $$
+                $$ \text{Selling Price (SP)} = MP - \text{Discount} = 120 - 12 = \text{₹ } 108 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for calculating SP)</span></div>
+            <div class="step">Gain = SP - CP = 108 - 100 = ₹ 8</div>
+            <div class="math-block">
+                $$ \text{Gain \%} = \left(\frac{\text{Gain}}{CP}\right) \times 100\% = \left(\frac{8}{100}\right) \times 100\% = 8\% $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Overall gain is 8%. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q7. A garrison of 1200 men has provisions for 60 days. After 15 days, 300 men leave. How long will the remaining food last?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">After 15 days, the food remaining is sufficient for the original 1200 men for \(60 - 15 = 45\) days.</div>
+            <div class="step">Let the remaining food last for \(x\) days for the remaining men.</div>
+            <div class="step">Number of men remaining = \( 1200 - 300 = 900 \) men.</div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for identifying new values: M1=1200, D1=45, M2=900)</span></div>
+            <div class="step">This is a case of <strong>Inverse Proportion</strong> (more men, fewer days).</div>
+            <div class="math-block">
+                $$ 1200 \times 45 = 900 \times x $$
+                $$ x = \frac{1200 \times 45}{900} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for setting up equation)</span></div>
+            <div class="math-block">
+                $$ x = \frac{12 \times 45}{9} = 12 \times 5 = 60 \text{ days.} $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> The remaining food will last for 60 days. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q8. Subtract \( 3l(l - 4m + 5n) \) from \( 4l(10n - 3m + 2l) \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Expand both algebraic expressions.</div>
+            <div class="math-block">
+                Expression 1: $$ 3l(l - 4m + 5n) = 3l^2 - 12lm + 15ln $$
+                Expression 2: $$ 4l(10n - 3m + 2l) = 40ln - 12lm + 8l^2 $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct expansion)</span></div>
+            <div class="step"><strong>Step 2:</strong> Subtract Expression 1 from Expression 2.</div>
+            <div class="math-block">
+                $$ = (40ln - 12lm + 8l^2) - (3l^2 - 12lm + 15ln) $$
+            </div>
+            <div class="step"><strong>Step 3:</strong> Remove brackets and change signs.</div>
+            <div class="math-block">
+                $$ = 40ln - 12lm + 8l^2 - 3l^2 + 12lm - 15ln $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct sign change)</span></div>
+            <div class="step"><strong>Step 4:</strong> Combine like terms.</div>
+            <div class="math-block">
+                $$ = (8l^2 - 3l^2) + (-12lm + 12lm) + (40ln - 15ln) $$
+                $$ = 5l^2 + 0 + 25ln $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> \( 5l^2 + 25ln \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q9. The area of a rhombus is \( 240 \text{ cm}^2 \) and one diagonal is \( 16 \text{ cm} \). Find the other diagonal and perimeter.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1: Find the other diagonal (\(d_2\)).</strong></div>
+            <div class="step">Area of rhombus = \( \frac{1}{2} \times d_1 \times d_2 \)</div>
+            <div class="math-block">
+                $$ 240 = \frac{1}{2} \times 16 \times d_2 $$
+                $$ 240 = 8 \times d_2 \implies d_2 = \frac{240}{8} = 30 \text{ cm} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for correct \(d_2\))</span></div>
+            <div class="step"><strong>Step 2: Find the side of the rhombus.</strong></div>
+            <div class="step">The diagonals of a rhombus bisect each other at right angles (\(90^\circ\)). Thus, they form 4 right-angled triangles with legs as half the diagonals.</div>
+            <div class="step">Leg 1 = \( \frac{16}{2} = 8 \text{ cm} \), Leg 2 = \( \frac{30}{2} = 15 \text{ cm} \)</div>
+            <div class="step">Using Pythagoras theorem for the side (\(a\)):</div>
+            <div class="math-block">
+                $$ a^2 = 8^2 + 15^2 = 64 + 225 = 289 $$
+                $$ a = \sqrt{289} = 17 \text{ cm} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for applying Pythagoras and finding side)</span></div>
+            <div class="step"><strong>Step 3: Perimeter.</strong></div>
+            <div class="math-block">
+                $$ \text{Perimeter} = 4 \times \text{side} = 4 \times 17 = 68 \text{ cm} $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> Other diagonal = 30 cm, Perimeter = 68 cm. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q10. Find any three rational numbers between \( \frac{-1}{2} \) and \( \frac{1}{4} \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>Step 1:</strong> Make the denominators same. The LCM of 2 and 4 is 4.</div>
+            <div class="math-block">
+                $$ \frac{-1}{2} = \frac{-1 \times 2}{2 \times 2} = \frac{-2}{4} $$
+                $$ \frac{1}{4} = \frac{1 \times 1}{4 \times 1} = \frac{1}{4} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for converting to common denominator)</span></div>
+            <div class="step"><strong>Step 2:</strong> To find more numbers easily, multiply numerator and denominator of both by a scalar (e.g., 10).</div>
+            <div class="math-block">
+                $$ \frac{-2}{4} = \frac{-20}{40} $$
+                $$ \frac{1}{4} = \frac{10}{40} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(1 Mark for expanding range)</span></div>
+            <div class="step"><strong>Step 3:</strong> Pick any three numbers between \(\frac{-20}{40}\) and \(\frac{10}{40}\).</div>
+            <div class="step">For instance: \(\frac{-10}{40}, \frac{0}{40}, \frac{5}{40}\) which simplifies to \( \frac{-1}{4}, 0, \frac{1}{8} \).</div>
+            <div class="step"><em>(Note: Any valid rational numbers within range will be awarded full marks).</em></div>
+            <div class="step"><strong>Final Answer:</strong> \( \frac{-1}{4}, 0, \frac{1}{8} \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <h3 style="text-decoration: underline; text-align: center; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q11. A closed cylindrical tank of radius \( 7 \text{ m} \) and height \( 3 \text{ m} \) is made from a metal sheet. Find (a) sheet required, (b) cost at ₹50 per sq.m.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step"><strong>(a) Metal Sheet Required:</strong></div>
+            <div class="step">Since it is a <em>closed</em> cylindrical tank, the total sheet required equals the Total Surface Area (TSA) of the cylinder.</div>
+            <div class="step">Radius (\(r\)) = 7 m, Height (\(h\)) = 3 m.</div>
+            <div class="math-block">
+                $$ \text{TSA} = 2\pi r(r + h) $$
+                $$ = 2 \times \frac{22}{7} \times 7 \times (7 + 3) $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for identifying correct formula and substitution)</span></div>
+            <div class="math-block">
+                $$ = 2 \times 22 \times 10 = 44 \times 10 = 440 \text{ m}^2 $$
+            </div>
+            <div class="step">Sheet required = \( 440 \text{ m}^2 \) <span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Total Cost:</strong></div>
+            <div class="step">Cost of 1 \( \text{m}^2 \) of metal sheet = ₹ 50.</div>
+            <div class="math-block">
+                $$ \text{Total Cost} = \text{Area} \times \text{Rate} $$
+                $$ \text{Total Cost} = 440 \times 50 $$
+                $$ = \text{₹ } 22,000 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> (a) \(440 \text{ m}^2\) (b) ₹ 22,000 <span style="color: grey; font-size: 0.9em;">(1.5 Marks)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q12. The digits of a two-digit number differ by 3. Interchanged number + Original number = 143. Find original numbers.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Let the unit digit be \( x \) and the ten's digit be \( y \).</div>
+            <div class="step">Therefore, the Original Number = \( 10y + x \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            
+            <div class="step">When digits are interchanged:</div>
+            <div class="step">New Number = \( 10x + y \)</div>
+            
+            <div class="step"><strong>Condition 1:</strong> Sum of original and new number is 143.</div>
+            <div class="math-block">
+                $$ (10y + x) + (10x + y) = 143 $$
+                $$ 11x + 11y = 143 $$
+                $$ 11(x + y) = 143 $$
+                $$ x + y = \frac{143}{11} = 13 \quad \text{--- (Equation I)} $$
+            </div>
+            <div class="step"><span style="color: grey; font-size: 0.9em;">(2 Marks for forming Equation I)</span></div>
+            
+            <div class="step"><strong>Condition 2:</strong> The digits differ by 3. This gives two cases:</div>
+            <div class="step"><em>Case A:</em> \( y - x = 3 \) (Ten's digit is larger)</div>
+            <div class="step"><em>Case B:</em> \( x - y = 3 \) (Unit's digit is larger)</div>
+            
+            <div class="step"><strong>Solving Case A:</strong></div>
+            <div class="math-block">
+                $$ y + x = 13 $$
+                $$ y - x = 3 $$
+                $$ \text{Adding both: } 2y = 16 \implies y = 8 $$
+                $$ \text{If } y = 8 \text{, then } x = 13 - 8 = 5 $$
+            </div>
+            <div class="step">Original Number = \( 10(8) + 5 = 85 \) <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+            
+            <div class="step"><strong>Solving Case B:</strong></div>
+            <div class="math-block">
+                $$ x + y = 13 $$
+                $$ x - y = 3 $$
+                $$ \text{Adding both: } 2x = 16 \implies x = 8 $$
+                $$ \text{If } x = 8 \text{, then } y = 13 - 8 = 5 $$
+            </div>
+            <div class="step">Original Number = \( 10(5) + 8 = 58 \)</div>
+            
+            <div class="step"><strong>Final Answer:</strong> The possible original numbers are <strong>85</strong> or <strong>58</strong>. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="q-text">Q13. Arun borrows ₹ 16,000 for \( 1 \frac{1}{2} \) years at 10% p.a. Calculate amount if compounded half-yearly vs annually. Find the difference in interest.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="step">Principal (P) = ₹ 16,000, Rate (R) = 10% p.a., Time (T) = \( 1 \frac{1}{2} \) years = 1.5 years.</div>
+            
+            <div class="step"><strong>(a) Compounded Half-Yearly:</strong></div>
+            <div class="step">Since compounded half-yearly, Rate (\(R'\)) = 5% per half-year. Number of half-years (\(n\)) = 3.</div>
+            <div class="math-block">
+                $$ A_1 = P\left(1 + \frac{R'}{100}\right)^n = 16000\left(1 + \frac{5}{100}\right)^3 $$
+                $$ A_1 = 16000\left(\frac{105}{100}\right)^3 = 16000\left(\frac{21}{20}\right)^3 $$
+                $$ A_1 = 16000 \times \frac{21}{20} \times \frac{21}{20} \times \frac{21}{20} = 16000 \times \frac{9261}{8000} = 2 \times 9261 = \text{₹ } 18,522 $$
+            </div>
+            <div class="step">Interest (Half-yearly) = \( 18522 - 16000 \) = ₹ 2,522 <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Compounded Annually:</strong></div>
+            <div class="step">For \( 1 \frac{1}{2} \) years annually, calculate Amount for 1 year using CI formula, then Simple Interest (SI) for the remaining \( \frac{1}{2} \) year on that amount.</div>
+            <div class="step">Amount after 1 year (\(A_{1yr}\)):</div>
+            <div class="math-block">
+                $$ A_{1yr} = 16000\left(1 + \frac{10}{100}\right)^1 = 16000 \times \frac{11}{10} = \text{₹ } 17,600 $$
+            </div>
+            <div class="step">SI for the next half year on Principal ₹ 17,600:</div>
+            <div class="math-block">
+                $$ SI = \frac{P \times R \times T}{100} = \frac{17600 \times 10 \times (1/2)}{100} = \frac{8800}{10} = \text{₹ } 880 $$
+            </div>
+            <div class="step">Total Amount (\(A_2\)) = \( 17600 + 880 \) = ₹ 18,480</div>
+            <div class="step">Interest (Annually) = \( 18480 - 16000 \) = ₹ 2,480 <span style="color: grey; font-size: 0.9em;">(2 Marks)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Comparison:</strong></div>
+            <div class="step">Interest compounded half-yearly (₹ 2,522) is MORE than compounded annually (₹ 2,480).</div>
+            <div class="math-block">
+                $$ \text{Difference} = 2522 - 2480 = \text{₹ } 42 $$
+            </div>
+            <div class="step"><strong>Final Answer:</strong> He pays ₹ 42 more when compounded half-yearly. <span style="color: grey; font-size: 0.9em;">(1 Mark)</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

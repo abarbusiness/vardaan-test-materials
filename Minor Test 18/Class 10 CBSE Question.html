@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            width: calc(100% - 35px);
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        
+        /* MathJax Overflow handling for small screens */
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 1024px) {
+            body { width: 100%; min-height: auto; margin: 0; padding: 20px; }
+            .exam-details { flex-wrap: wrap; gap: 10px; }
+        }
+        @media screen and (max-width: 768px) {
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; border: none; }
+            .exam-details span { padding: 3px 0; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; font-size: 11pt; }
+            .q-num { width: 25px; }
+            .q-content { width: calc(100% - 25px); }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 18 - Metals and Non-metals</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A comprises 5 questions of 2 marks each.</li>
+                <li>Section B comprises 5 questions of 3 marks each.</li>
+                <li>Section C comprises 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Use chemical equations where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Name two metals that form amphoteric oxides. Write the balanced chemical equation for the reaction of one of these oxides with sodium hydroxide.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            When calcium is dropped in water, it starts floating, whereas potassium catches fire immediately. Give scientific reasons to explain these observations.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Give reasons for the following:
+            <div class="sub-question">(i) Iodine is a non-metal, yet it is lustrous.</div>
+            <div class="sub-question">(ii) Sodium metal is always kept immersed in kerosene oil.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            What is anodising? State one major advantage of this process in everyday life.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            A jeweller dipped old and dull gold ornaments in a specific fuming liquid mixture which completely dissolved the gold. Name the liquid mixture and state its chemical composition.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            An element 'X' displaces element 'Y' from its salt solution but cannot displace element 'Z'. 
+            <div class="sub-question">(a) Arrange X, Y, and Z in increasing order of their reactivity.</div>
+            <div class="sub-question">(b) What specific type of chemical reaction is this?</div>
+            <div class="sub-question">(c) Give one practical industrial application of highly reactive metals displacing less reactive metals.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Explain the formation of magnesium chloride (\(MgCl_2\)) by the transfer of electrons. Also, explain why ionic compounds generally possess high melting points. (Atomic numbers: Mg = 12, Cl = 17)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Copper does not react with dilute \(HCl\) but reacts with dilute \(HNO_3\). Explain why. Also, name two metals that react with very dilute \(HNO_3\) to evolve hydrogen gas.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Differentiate between the processes of 'Roasting' and 'Calcination' used in metallurgy, supporting your answer with one suitable balanced chemical equation for each.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            What is a thermit reaction? Write its balanced chemical equation. State one crucial engineering application where this reaction is heavily utilised.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Account for the following:
+            <div class="sub-question">(a) What happens when zinc granules are added to a blue-coloured copper sulphate solution? Write the chemical equation and state the physical observation. (2 marks)</div>
+            <div class="sub-question">(b) Why is it strictly advised not to store silver nitrate solution in a copper vessel? (1.5 marks)</div>
+            <div class="sub-question">(c) State the reason why aluminium, despite being a highly reactive metal, is extensively used for making cooking utensils. (1.5 marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            During the extraction of metals, electrolytic refining is used to obtain metals of high purity.
+            <div class="sub-question">(a) Explain the process of electrolytic refining of Copper. Clearly identify the materials used as the Anode, the Cathode, and the Electrolyte. (3 marks)</div>
+            <div class="sub-question">(b) Where do the insoluble impurities collect in this setup, and what is this collection technically called? (1 mark)</div>
+            <div class="sub-question">(c) Name two other metals (besides copper) that are commonly purified using this method. (1 mark)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            An element 'A' (Atomic number 11) reacts with an element 'B' (Atomic number 8) to form a stable compound.
+            <div class="sub-question">(a) Write the electron dot structures of element A, element B, and the compound formed. (2 marks)</div>
+            <div class="sub-question">(b) State the exact nature of the chemical bond formed between them. (1 mark)</div>
+            <div class="sub-question">(c) Will this compound conduct electricity in its solid state? Justify your answer with a valid scientific reason. (1 mark)</div>
+            <div class="sub-question">(d) How does this compound behave when dissolved in water? (1 mark)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Minor Test Series</div>
+</body>
+</html>

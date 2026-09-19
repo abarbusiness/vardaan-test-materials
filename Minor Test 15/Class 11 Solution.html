@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Chemistry - Vardaan Learning Institute</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            position: relative;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0 0 10px 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+        }
+        .section-header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 12pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 25px 0 15px 0;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        .q-text {
+            flex: 1;
+            background-color: #fafafa;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #333;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 10pt;
+            white-space: nowrap;
+            font-weight: bold;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .ans-body {
+            margin-left: 10px;
+            padding-left: 15px;
+            border-left: 2px solid #e0e0e0;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 8px 0;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+        .correct-answer {
+            display: inline-block;
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .ans-body { margin-left: 0px; padding-left: 10px; }
+            body { padding: 15px; }
+            .q-text { padding: 8px 10px; font-size: 10.5pt; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 15 (Classification of Elements)</div>
+    </div>
+
+    <div class="section-header">SECTION A (1 Mark Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Write the IUPAC name and symbol for the element with atomic number 114.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">Name: Flerovium (Official) or Ununquadium (Systematic), Symbol: Fl or Uuq</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. What is the general outer electronic configuration of d-block elements?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">\( (n-1)\text{d}^{1-10} \, n\text{s}^{0-2} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Name the most electronegative element in the periodic table.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">Fluorine (F)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Arrange the following in decreasing order of their ionic radii: \( \text{O}^{2-} \), \( \text{F}^- \), \( \text{Na}^+ \), \( \text{Mg}^{2+} \).</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">\( \text{O}^{2-} > \text{F}^- > \text{Na}^+ > \text{Mg}^{2+} \)</div><br>
+            <strong>Explanation:</strong> These are isoelectronic species (all have 10 electrons). In isoelectronic species, the ionic radius decreases as the nuclear charge (atomic number) increases.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Define Ionization Enthalpy.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            Ionization enthalpy is defined as the minimum amount of energy required to remove the most loosely bound electron from an isolated gaseous atom in its ground state.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Write the formula of the compound formed by the element Eka-aluminium (predicted by Mendeleev) with oxygen.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">\( \text{Ga}_2\text{O}_3 \) (or \( \text{Ea}_2\text{O}_3 \))</div><br>
+            <strong>Explanation:</strong> Eka-aluminium is Gallium (Group 13), which has a valency of +3. Oxygen has a valency of -2.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Assertion: First IE of N > O. Reason: N has exactly half-filled p-orbitals.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">(a) Both A and R are true and R is the correct explanation of A.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Give one example to illustrate the diagonal relationship.</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">Lithium (Li) and Magnesium (Mg) OR Beryllium (Be) and Aluminium (Al)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. The elements of Group 16 are collectively known as what?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">Chalcogens (Ore forming elements)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. What is the characteristic valency of alkaline earth metals?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="ans-body">
+            <div class="correct-answer">+2 (or 2)</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (2 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Why is the electron gain enthalpy of Fluorine less negative than that of Chlorine?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            This is due to the very small size of the Fluorine atom. Because of its compact 2p subshell, there are strong inter-electronic repulsions among the already existing 7 valence electrons.<br>
+            Therefore, the incoming electron does not feel much attraction from the nucleus compared to Chlorine, which has a larger 3p subshell and lower electron density (less repulsion). Thus, adding an electron to Cl releases more energy.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Explain shielding effect and how it impacts ionization enthalpy down a group.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>Shielding Effect:</strong> The inner core electrons act as a shield or screen between the nucleus and the outermost valence electrons, reducing the effective nuclear charge felt by the outer electrons.<br>
+            <strong>Impact on IE:</strong> As we move down a group, the number of inner shells increases, which greatly increases the shielding effect. This outweighs the increase in nuclear charge, causing the valence electrons to be held less tightly. Consequently, the Ionization Enthalpy <em>decreases</em> down a group.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. What are transition elements? Why are Zn, Cd, Hg not considered typical?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>Transition Elements:</strong> Elements that have incompletely filled d-orbitals in their ground state or in any of their common oxidation states.<br>
+            <strong>Zn, Cd, Hg:</strong> These elements (Group 12) have completely filled d-orbitals (e.g., Zinc is \( [\text{Ar}] 3\text{d}^{10} 4\text{s}^2 \)) in their ground state as well as in their common oxidation state (+2). Therefore, they do not exhibit the typical properties of transition elements (like variable valency, colored ions).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q14. Arrange N, P, O, S in order of increasing (i) 1st IE (ii) Non-metallic character.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(i) Increasing 1st Ionization Enthalpy:</strong> \( \text{S} < \text{P} < \text{O} < \text{N} \)<br>
+            <em>Reason:</em> Down the group IE decreases (S < O, P < N). Across a period IE increases, but due to half-filled stability, Group 15 > Group 16 (N > O, P > S).<br><br>
+            <strong>(ii) Increasing Non-metallic character:</strong> \( \text{P} < \text{S} < \text{N} < \text{O} \)<br>
+            <em>Reason:</em> Non-metallic character increases across a period and decreases down a group. O is top right (most non-metallic), P is bottom left (least).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q15. How does metallic character vary along a period and down a group?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>Along a period:</strong> Metallic character <em>decreases</em> from left to right. <em>Reason:</em> The effective nuclear charge increases and atomic size decreases, making it harder to lose electrons.<br>
+            <strong>Down a group:</strong> Metallic character <em>increases</em> from top to bottom. <em>Reason:</em> Atomic size increases and the shielding effect increases, lowering the ionization enthalpy, making it easier to lose electrons.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (3 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q16. First IE of Al is lower than Mg. Explain this anomaly.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            Electronic configurations:<br>
+            \( \text{Mg (12): } 1\text{s}^2 2\text{s}^2 2\text{p}^6 3\text{s}^2 \)<br>
+            \( \text{Al (13): } 1\text{s}^2 2\text{s}^2 2\text{p}^6 3\text{s}^2 3\text{p}^1 \)<br><br>
+            To ionize Mg, an electron must be removed from the fully filled and stable 3s orbital. To ionize Al, an electron must be removed from the 3p orbital.<br>
+            <strong>Penetration Effect:</strong> The 3s orbital is more penetrating (closer to the nucleus) than the 3p orbital. The 3p electron of Al is more strongly shielded by the inner core and the 3s electrons than the 3s electron of Mg is shielded. Thus, less energy is required to remove the loosely bound 3p electron of Al than the firmly bound 3s electron of Mg.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q17. (a) Isoelectronic species? (b) Isoelectronic with Ne (c) Isoelectronic with Ar.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a)</strong> Isoelectronic species are atoms or ions of different elements that contain the same total number of electrons.<br><br>
+            <strong>(b) Isoelectronic with Neon (10 electrons):</strong><br>
+            - Cation: \( \text{Na}^+ \) or \( \text{Mg}^{2+} \)<br>
+            - Anion: \( \text{O}^{2-} \) or \( \text{F}^- \)<br><br>
+            <strong>(c) Isoelectronic with Argon (18 electrons):</strong><br>
+            - Cation: \( \text{K}^+ \) or \( \text{Ca}^{2+} \)<br>
+            - Anion: \( \text{S}^{2-} \) or \( \text{Cl}^- \)
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q18. Anomalous behavior of the first element of s and p blocks. State two reasons.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            The first element of each group in the s- and p-blocks (like Li in Group 1, Be in Group 2, F in Group 17) differs significantly in physical and chemical properties from the heavier members of its own group.<br><br>
+            <strong>Main reasons for anomalous behavior:</strong><br>
+            1. <strong>Small size:</strong> Exceptionally small atomic and ionic radii compared to rest of the group.<br>
+            2. <strong>High charge-to-radius ratio (High polarizing power):</strong> Leads to higher covalent character in their compounds.<br>
+            3. <strong>High electronegativity and ionization enthalpy.</strong><br>
+            4. <strong>Absence of vacant d-orbitals:</strong> Restricts their maximum covalency to 4 (e.g., Boron forms \( \text{BF}_4^- \), not \( \text{BF}_6^{3-} \)), whereas heavier members can expand their octet. (Any two valid reasons acceptable).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q19. (a) Factors affecting electronegativity. (b) Difference from electron gain enthalpy.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Factors on which electronegativity depends:</strong><br>
+            - <em>Atomic Radius:</em> Smaller atoms have a stronger pull on shared electrons (higher electronegativity).<br>
+            - <em>Nuclear Charge:</em> Higher effective nuclear charge increases the attraction for shared electron pairs.<br>
+            - <em>Hybridization state:</em> Greater s-character increases electronegativity (e.g., \( \text{sp} > \text{sp}^2 > \text{sp}^3 \)).<br><br>
+            <strong>(b) Key Difference:</strong><br>
+            Electron gain enthalpy is an <em>absolute energy measurement</em> (thermodynamic property) of an isolated gaseous atom tending to gain an electron. Electronegativity is a <em>relative tendency</em> of an atom within a molecule to attract the shared pair of electrons towards itself (it is not a measurable energy quantity and has no units).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q20. Predict stable formulas: (a) Si and O (b) Al and Br (c) Ca and I.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Silicon and Oxygen:</strong> Si (Group 14) has a valency of 4. O (Group 16) has a valency of 2. <br>
+            Formula: <strong>\( \text{SiO}_2 \)</strong><br><br>
+            <strong>(b) Aluminium and Bromine:</strong> Al (Group 13) has a valency of 3. Br (Group 17) has a valency of 1.<br>
+            Formula: <strong>\( \text{AlBr}_3 \)</strong><br><br>
+            <strong>(c) Calcium and Iodine:</strong> Ca (Group 2) has a valency of 2. I (Group 17) has a valency of 1.<br>
+            Formula: <strong>\( \text{CaI}_2 \)</strong>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION D (5 Marks Each)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q21. (a) Define Electron Gain Enthalpy. (b) Noble gases. (c) Trends across period/group.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Electron Gain Enthalpy (\( \Delta_{eg}H \)):</strong> It is the enthalpy change accompanying the process when an electron is added to a neutral gaseous atom to convert it into a negative ion.<br><br>
+            
+            <strong>(b) Noble Gases:</strong> Noble gases have completely filled valence shell orbitals (\( \text{ns}^2\text{np}^6 \)). They are highly stable. Adding an extra electron requires it to enter a higher principal quantum energy level. This process is highly unfavorable and requires energy to be supplied. Hence, they have large <em>positive</em> electron gain enthalpies.<br><br>
+            
+            <strong>(c) Trends:</strong><br>
+            - <strong>Across a period (Left to Right):</strong> It becomes more negative. <em>Reason:</em> Effective nuclear charge increases and atomic size decreases, making it easier for the nucleus to attract the incoming electron.<br>
+            - <strong>Down a group (Top to Bottom):</strong> It becomes less negative. <em>Reason:</em> Atomic size and shielding effect increase, meaning the added electron is further from the nucleus and feels less electrostatic attraction.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q22. (a) Modern Periodic Law. (b) s and p block definitions & configurations. (c) Z=24 element.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Modern Periodic Law:</strong> The physical and chemical properties of the elements are periodic functions of their atomic numbers.<br><br>
+            
+            <strong>(b) Block Classifications:</strong><br>
+            - <strong>s-block elements:</strong> Elements in which the last electron enters the outermost s-orbital. <br>
+            <em>General configuration:</em> <strong>\( \text{ns}^{1-2} \)</strong> (where n = 2 to 7).<br>
+            - <strong>p-block elements:</strong> Elements in which the last electron enters the outermost p-orbital.<br>
+            <em>General configuration:</em> <strong>\( \text{ns}^2\text{np}^{1-6} \)</strong> (where n = 2 to 7).<br><br>
+            
+            <strong>(c) Element with Z = 24:</strong><br>
+            Electronic Configuration: \( 1\text{s}^2 2\text{s}^2 2\text{p}^6 3\text{s}^2 3\text{p}^6 4\text{s}^1 3\text{d}^5 \) (Chromium - exception case).<br>
+            - <strong>Period Number:</strong> 4 (Since the highest principal quantum number is 4).<br>
+            - <strong>Block:</strong> d-block (Since the last filled subshell before stability shift is 3d).<br>
+            - <strong>Group Number:</strong> 6 (Number of ns electrons + (n-1)d electrons = 1 + 5 = 6).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q23. (a) 3rd period, 17th group. (b) Predict IE for Al. (c) \( \text{Na}^+ \) vs \( \text{Mg}^{2+} \).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-body">
+            <strong>(a) Element identification:</strong><br>
+            3rd period means principal shell n=3. 17th group means halogens. The element is <strong>Chlorine (Cl)</strong>. Its atomic number is <strong>17</strong>.<br><br>
+            
+            <strong>(b) Predicting IE for Al:</strong><br>
+            Aluminium (Z=13) configuration: \( 1\text{s}^2 2\text{s}^2 2\text{p}^6 3\text{s}^2 3\text{p}^1 \).<br>
+            Magnesium (Z=12) configuration: \( 1\text{s}^2 2\text{s}^2 2\text{p}^6 3\text{s}^2 \).<br>
+            Generally, IE increases across a period (Na < Mg < Al < Si). However, there is a drop from Mg to Al because removing a single 3p electron from Al is energetically easier than breaking the stable, fully filled, and more penetrating 3s subshell of Mg. Therefore, the IE of Al must be lower than Mg (737 kJ/mol) but higher than Na (496 kJ/mol).<br>
+            Prediction: The value will be closer to <strong>575 kJ/mol</strong>.<br><br>
+            
+            <strong>(c) \( \text{Na}^+ \) vs \( \text{Mg}^{2+} \) size:</strong><br>
+            Both are isoelectronic with 10 electrons (\( 1\text{s}^2 2\text{s}^2 2\text{p}^6 \)). <br>
+            \( \text{Na}^+ \) has 11 protons holding 10 electrons.<br>
+            \( \text{Mg}^{2+} \) has 12 protons holding 10 electrons.<br>
+            Because \( \text{Mg}^{2+} \) has a higher effective nuclear charge (more protons pulling the same number of electrons), its electron cloud is pulled closer to the nucleus. Therefore, <strong>\( \text{Mg}^{2+} \) is smaller in size</strong>.
+        </div>
+    </div>
+
+</body>
+</html>

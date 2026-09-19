@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #000; 
+            padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            width: calc(100% - 40px);
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 5px; 
+        }
+        .math-block {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Media Queries */
+        @media screen and (max-width: 1024px) {
+            body { width: 100%; min-height: auto; margin: 0; padding: 20px; }
+            .exam-details { flex-wrap: wrap; gap: 10px; }
+        }
+        @media screen and (max-width: 768px) {
+            .institute-name { font-size: 18pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; align-items: center; border: none; }
+            .exam-details span { padding: 3px 0; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; font-size: 11pt; }
+            .q-num { width: 25px; }
+            .q-content { width: calc(100% - 25px); }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 18 - Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 2 Hours</span>
+            <span>Max. Marks: 80</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A comprises 10 questions of 2 marks each.</li>
+                <li>Section B comprises 10 questions of 3 marks each.</li>
+                <li>Section C comprises 6 questions of 5 marks each.</li>
+                <li>Show all essential steps of working. Write your answers neatly and legibly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (20 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Reanna has a special chocolate that triples every day if not eaten. If she has 1 chocolate on day 1, express the number of chocolates she will have on day \( n \) in exponential form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            How many \( 1 \times 1 \) unit squares and \( 8 \times 8 \) squares can be made on a standard \( 8 \times 8 \) chess board?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Use the special case of the distributive property to perform the quick multiplication: \( 14 \times 17 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Without actually computing, determine whether the arithmetic expression \( 53 \times 47 \) has an even or odd parity. Give a reason for your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Using the rules of divisibility, check if the number 417 is divisible by 3. Show your working.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            A car travels 275 km in 5 hours. How many kilometers will it cover in 3.5 hours?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Find the digital root of the number 352.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Name the quadrilateral in which two non-overlapping pairs of adjacent sides are equal, and whose longer diagonal bisects the shorter diagonal at \( 90^\circ \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Express the number 25 as the sum of two consecutive natural numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Write the algebraic expression for a 2-digit number in its generalised form, assuming the tens digit is \( x \) and the ones digit is \( y \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (30 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Prove algebraically that the sum of any four consecutive integers always has an even parity.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            The income of Shobha is ₹1,44,000 in 15 months. Apply proportional reasoning to find how much she will earn in 7 months.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            State the congruence rule used to prove that the opposite sides of a rectangle are equal. Show the steps of proof by drawing a diagonal in rectangle ABCD.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">
+            Test the divisibility of the number 661314 by 11. Clearly state the rule and show your calculation.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">
+            In a quadrilateral, the four angles are in the ratio 2 : 3 : 5 : 8. Find the measure of each angle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            Perform the multiplication \( 24 \times 102 \) systematically by expanding the algebraic expression using the distributive property.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            The sum of six consecutive numbers is 87. Formulate an equation and find all six numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            A map has a scale of 1 cm = 2 km. If the distance between two colonies on the map is 3.5 cm, use the method of cross-multiplication (Rule of Three) to find the actual distance.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            Show that when we add an even number that is a multiple of 4 to an even number that is NOT a multiple of 4, the sum leaves a remainder of 2 when divided by 4.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Gautam has two pocket money options for 10 days: <br>
+            <strong>Option 1:</strong> Take ₹100 every day. <br>
+            <strong>Option 2:</strong> Take ₹2 on the first day, and double the amount of the previous day every subsequent day.<br>
+            Calculate the total amount in both cases and state which option he should choose.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (30 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Define a rhombus. (1 Mark)</div>
+            <div class="sub-question">(b) Using congruent triangles, prove geometrically that the diagonals of a rhombus bisect each other at right angles. (4 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            If 15 envelopes cost ₹750, solve the following using proportional reasoning:
+            <div class="sub-question">(a) What will be the cost of 36 such envelopes? (2.5 Marks)</div>
+            <div class="sub-question">(b) How many envelopes can be bought for ₹450? (2.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Write the generalised expanded form of a 3-digit number having \( x \), \( y \), and \( z \) at the hundreds, tens, and ones places respectively. (1 Mark)</div>
+            <div class="sub-question">(b) Using this generalised form, derive and prove the test of divisibility by 9. (4 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">24.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) The sum of four consecutive numbers is 58. Find the numbers algebraically. (3 Marks)</div>
+            <div class="sub-question">(b) If \( p \) is the greatest of five consecutive numbers, write the algebraic expressions for the other four numbers in terms of \( p \). (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">25.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Differentiate between a convex and a concave quadrilateral. (2 Marks)</div>
+            <div class="sub-question">(b) State any three specific properties of a Kite. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">26.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) What is the "Digital Root" of a number? Calculate the digital root of 5910821. (2 Marks)</div>
+            <div class="sub-question">(b) State the correlation between the digital root of a number and the remainder when that number is divided by 9. (2 Marks)</div>
+            <div class="sub-question">(c) Express the number 10,000 in exponential form with base 10. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Minor Test Series (CBSE)</div>
+</body>
+</html>

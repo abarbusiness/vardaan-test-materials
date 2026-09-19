@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 15</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            position: relative;
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .exam-details { flex-direction: column; text-align: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 15: CLASSIFICATION OF ELEMENTS & PERIODICITY</div>
+        <div class="exam-details">
+            <span>Class: 11</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Follow strictly the rationalised NCERT syllabus.</li>
+                <li><strong>Section A:</strong> Q1 to Q10 are very short answer/objective type questions carrying 1 mark each.</li>
+                <li><strong>Section B:</strong> Q11 to Q15 are short answer questions carrying 2 marks each.</li>
+                <li><strong>Section C:</strong> Q16 to Q20 are short answer questions carrying 3 marks each.</li>
+                <li><strong>Section D:</strong> Q21 to Q23 are long answer questions carrying 5 marks each.</li>
+                <li>Write precise answers. Show all logical reasoning where anomalous trends are asked.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Very Short Answer / Objective Type - 1 Mark Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Write the IUPAC name and symbol for the element with atomic number 114.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">What is the general outer electronic configuration of d-block elements?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Name the most electronegative element in the periodic table.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Arrange the following in decreasing order of their ionic radii: \( \text{O}^{2-} \), \( \text{F}^- \), \( \text{Na}^+ \), \( \text{Mg}^{2+} \).</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Define Ionization Enthalpy.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">Write the formula of the compound formed by the element Eka-aluminium (predicted by Mendeleev) with oxygen.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content"><strong>Assertion (A):</strong> The first ionization enthalpy of Nitrogen is greater than that of Oxygen.<br>
+        <strong>Reason (R):</strong> Nitrogen has exactly half-filled p-orbitals which provides extra stability.<br>
+        <em>(a) Both A and R are true and R is the correct explanation of A.<br>
+        (b) Both A and R are true but R is not the correct explanation of A.<br>
+        (c) A is true but R is false.<br>
+        (d) A is false but R is true.</em></div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Give one example to illustrate the diagonal relationship in the periodic table.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">The elements of Group 16 are collectively known as what?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">What is the characteristic valency of alkaline earth metals?</div>
+    </div>
+
+    <div class="section-header">SECTION B (10 Marks)<span class="marks-info">(Short Answer Type - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Why is the electron gain enthalpy of Fluorine less negative than that of Chlorine?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">Explain the shielding effect (screening effect) and mention how it impacts the ionization enthalpy down a group.</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">What are transition elements? Why are Zinc, Cadmium, and Mercury not considered as typical transition elements?</div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">14.</div>
+        <div class="q-content">Consider the elements N, P, O, and S. Arrange them in order of:
+            <div class="sub-question">(i) Increasing first ionization enthalpy</div>
+            <div class="sub-question">(ii) Increasing non-metallic character</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">15.</div>
+        <div class="q-content">How does the metallic character of elements vary along a period and down a group in the periodic table? Give reasons.</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">16.</div>
+        <div class="q-content">
+            The first ionization enthalpy of Aluminium (\( \text{Al} \)) is lower than that of Magnesium (\( \text{Mg} \)). Explain this anomaly clearly with respect to their electronic configurations and orbital penetration.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">17.</div>
+        <div class="q-content">
+            (a) What do you understand by isoelectronic species?<br>
+            (b) Name a cation and an anion that will be isoelectronic with the Neon (\( \text{Ne} \)) atom.<br>
+            (c) Name a cation and an anion that will be isoelectronic with the Argon (\( \text{Ar} \)) atom.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">18.</div>
+        <div class="q-content">
+            Discuss the anomalous behavior of the first element of each group in the s- and p-blocks (e.g., Lithium and Beryllium). State any two reasons for this anomalous behavior.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">19.</div>
+        <div class="q-content">
+            (a) Explain the factors on which the electronegativity of an element depends.<br>
+            (b) How does electronegativity differ from electron gain enthalpy? (Mention one key difference).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">20.</div>
+        <div class="q-content">
+            Predict the formulas of the stable compounds formed by the following pairs of elements using their respective group numbers and typical oxidation states:
+            <div class="sub-question">(a) Silicon and Oxygen</div>
+            <div class="sub-question">(b) Aluminium and Bromine</div>
+            <div class="sub-question">(c) Calcium and Iodine</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION D (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">21.</div>
+        <div class="q-content">
+            (a) Define Electron Gain Enthalpy (\( \Delta_{eg}H \)).<br>
+            (b) Why do noble gases have large positive values of electron gain enthalpy?<br>
+            (c) How does electron gain enthalpy vary in general when we move from left to right across a period and from top to bottom in a group? Explain the reasons for these trends.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">22.</div>
+        <div class="q-content">
+            (a) State the Modern Periodic Law.<br>
+            (b) Based on electronic configurations, elements are classified into s, p, d, and f blocks. Define s-block and p-block elements and write their general outer electronic configurations.<br>
+            (c) State the group number and period number of the element with atomic number 24. Also, identify its block.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">23.</div>
+        <div class="q-content">
+            (a) Write the atomic number of the element present in the third period and seventeenth group of the periodic table.<br>
+            (b) The first ionization enthalpy values (in kJ/mol) of the third period elements Na, Mg, and Si are respectively 496, 737, and 786. Predict whether the first IE value for Al will be closer to 575 or 760 kJ/mol? Justify your prediction thoroughly using electronic configuration.<br>
+            (c) Between \( \text{Na}^+ \) and \( \text{Mg}^{2+} \), which ion is smaller in size and why?
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures through Excellence</div>
+</body>
+</html>
