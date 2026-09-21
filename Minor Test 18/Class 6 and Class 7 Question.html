@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 18</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        
+        /* Section Headers */
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+
+        /* MCQ Specific Styling */
+        .mcq-container {
+            column-count: 2; 
+            column-gap: 40px; 
+            column-rule: 1.5px solid var(--primary-yellow);
+        }
+        .question-block {
+            break-inside: avoid; 
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .options-grid {
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 4px 10px; 
+            padding-left: 25px;
+        }
+
+        /* Subjective Specific Styling */
+        .subj-container {
+            margin-top: 10px;
+        }
+        .subj-question {
+            display: flex;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 30px;
+            flex-shrink: 0;
+        }
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 0;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .mcq-container {
+                column-count: 1;
+                column-rule: none;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .mcq-container { column-count: 2; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 18 : General Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 6 & 7 (Combined)</span>
+            <span>Subject: General Maths</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>The question paper consists of 18 questions divided into 3 sections.</li>
+                <li><strong>Section A:</strong> 10 Multiple Choice Questions of 1 mark each.</li>
+                <li><strong>Section B:</strong> 5 Short Answer Questions of 3 marks each.</li>
+                <li><strong>Section C:</strong> 3 Long Answer/Competency Questions of 5 marks each.</li>
+                <li>Use of calculators is strictly prohibited. Show clear steps for Section B and C.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Objective Type - Attempt all questions - 1 Mark Each)</span></div>
+    
+    <div class="mcq-container">
+        <div class="question-block">
+            <div class="question-text">Q1. What is the value of \( (-15) + (+8) \)?</div>
+            <div class="options-grid">
+                <div>(a) \( -23 \)</div>
+                <div>(b) \( -7 \)</div>
+                <div>(c) \( +7 \)</div>
+                <div>(d) \( +23 \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q2. Which of the following fractions is the largest?</div>
+            <div class="options-grid">
+                <div>(a) \( \frac{1}{2} \)</div>
+                <div>(b) \( \frac{3}{4} \)</div>
+                <div>(c) \( \frac{2}{5} \)</div>
+                <div>(d) \( \frac{5}{8} \)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q3. If \( x = 3 \), find the value of \( 2x + 5 \).</div>
+            <div class="options-grid">
+                <div>(a) 10</div>
+                <div>(b) 11</div>
+                <div>(c) 16</div>
+                <div>(d) 8</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q4. The ratio of 500g to 2kg is:</div>
+            <div class="options-grid">
+                <div>(a) 1:4</div>
+                <div>(b) 4:1</div>
+                <div>(c) 1:2</div>
+                <div>(d) 500:2</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q5. A piece of string is 20 cm long. What will be the length of each side if the string is used to form a square?</div>
+            <div class="options-grid">
+                <div>(a) 10 cm</div>
+                <div>(b) 4 cm</div>
+                <div>(c) 5 cm</div>
+                <div>(d) 20 cm</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q6. The product of \( 2.5 \times 0.4 \) is:</div>
+            <div class="options-grid">
+                <div>(a) 10.0</div>
+                <div>(b) 0.1</div>
+                <div>(c) 100</div>
+                <div>(d) 1.0</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q7. What is the average (mean) of the first 5 natural numbers?</div>
+            <div class="options-grid">
+                <div>(a) 3</div>
+                <div>(b) 4</div>
+                <div>(c) 5</div>
+                <div>(d) 15</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q8. The fraction \( \frac{3}{4} \) expressed as a percentage is:</div>
+            <div class="options-grid">
+                <div>(a) 34%</div>
+                <div>(b) 75%</div>
+                <div>(c) 60%</div>
+                <div>(d) 80%</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q9. Which property is shown by the equation \( a + b = b + a \)?</div>
+            <div class="options-grid">
+                <div>(a) Associative</div>
+                <div>(b) Distributive</div>
+                <div>(c) Commutative</div>
+                <div>(d) Closure</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text">Q10. The temperature in Shimla was 5°C. At night, it dropped by 7°C. What was the night temperature?</div>
+            <div class="options-grid">
+                <div>(a) 12°C</div>
+                <div>(b) -2°C</div>
+                <div>(c) 2°C</div>
+                <div>(d) -12°C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="subj-container">
+        <div class="subj-question">
+            <div class="q-num">Q11.</div>
+            <div class="q-content">
+                Simplify the given expression: \( \frac{2}{3} + \frac{1}{4} - \frac{1}{6} \)
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q12.</div>
+            <div class="q-content">
+                Form an algebraic equation and solve it: <br>
+                <em>"I think of a number, multiply it by 4 and add 7 to the product. The final result is 35. Find the number."</em>
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q13.</div>
+            <div class="q-content">
+                Divide an amount of ₹ 1500 between Amit and Sumit in the ratio 2:3. How much will each of them get?
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q14.</div>
+            <div class="q-content">
+                Find the total cost of fencing a rectangular park of length 50m and breadth 30m, if the cost of fencing is ₹ 15 per metre.
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q15.</div>
+            <div class="q-content">
+                In a class test containing 20 questions, 3 marks are given for every correct answer and (-1) mark is given for every incorrect answer. Radhika attempted 15 questions in total. If she got 10 correct answers and 5 incorrect answers, what is her total score?
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer / Competency Based - 5 Marks Each)</span></div>
+    
+    <div class="subj-container">
+        <div class="subj-question">
+            <div class="q-num">Q16.</div>
+            <div class="q-content">
+                <strong>(Competency - Area & Perimeter)</strong><br>
+                A rectangular classroom floor is 10m long and 8m wide. A square carpet of side 6m is placed perfectly in the center of the floor.<br>
+                (i) Find the total area of the classroom floor.<br>
+                (ii) Find the area of the carpet.<br>
+                (iii) Calculate the area of the floor that is NOT covered by the carpet.<br>
+                (iv) If the cost of the carpet is ₹ 120 per sq.m, find the total cost of the carpet.
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q17.</div>
+            <div class="q-content">
+                <strong>(Real-life Application - Fractions)</strong><br>
+                Rahul's monthly salary is ₹ 40,000. He plans his budget strictly. He spends \( \frac{1}{4} \) of his salary on house rent, \( \frac{3}{8} \) on food and groceries, and saves the remaining amount in his bank account.<br>
+                (i) Calculate the exact amount he spends on house rent.<br>
+                (ii) Calculate the exact amount he spends on food and groceries.<br>
+                (iii) Find his total monthly savings.<br>
+                (iv) What fraction of his total income does he manage to save?
+            </div>
+        </div>
+
+        <div class="subj-question">
+            <div class="q-num">Q18.</div>
+            <div class="q-content">
+                <strong>(Algebra & Geometry Integration)</strong><br>
+                The length of a rectangular garden is exactly twice its breadth. The total perimeter of this garden is 72 cm.<br>
+                (i) Let the breadth be '\(x\)'. Write down the expression for the length.<br>
+                (ii) Form an equation using the perimeter formula.<br>
+                (iii) Solve the equation to find the actual length and breadth in cm.<br>
+                (iv) Calculate the total area of the garden.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Senior Academic Council</div>
+</body>
+</html>

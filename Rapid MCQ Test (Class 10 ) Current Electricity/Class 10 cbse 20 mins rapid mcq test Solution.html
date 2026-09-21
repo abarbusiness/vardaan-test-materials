@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    
+    <!-- Load MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --light-yellow: #fffdf2;
+            --border-color: #c89600;
+            --text-main: #333;
+            --ans-color: #1b5e20;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: var(--light-yellow); 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 15px; 
+            background-color: rgba(251, 192, 45, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .institute-name { font-size: 20pt; font-weight: bold; color: #b78100; margin: 0; }
+        .doc-title { font-size: 14pt; font-weight: bold; margin-top: 10px; }
+        
+        .sol-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .sol-block {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            position: relative;
+        }
+        .sol-q-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: 600;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+        }
+        .q-text { flex: 1; padding-right: 15px; }
+        .marks { 
+            font-weight: bold; 
+            color: #d84315; 
+            font-size: 10pt;
+            background: #fbe9e7;
+            padding: 3px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .sol-text { 
+            margin-top: 8px; 
+        }
+        .correct-ans {
+            font-weight: bold;
+            color: var(--ans-color);
+            margin-bottom: 8px;
+        }
+        
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .sol-q-row { flex-direction: column; }
+            .marks { align-self: flex-start; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">Detailed Solutions: 20 Min Rapid MCQ Test (Current Electricity)</div>
+    </div>
+
+    <div class="sol-container">
+        
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">1. What is the SI unit of electric charge?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Coulomb</div>
+            <div class="sol-text">The SI unit of electric charge is Coulomb (C).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">2. How many electrons constitute one coulomb of charge?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 6.25 &times; 10<sup>18</sup></div>
+            <div class="sol-text">
+                Using quantization of charge, \( Q = ne \)<br>
+                \( 1 = n \times 1.6 \times 10^{-19} \)<br>
+                \( n = \frac{1}{1.6 \times 10^{-19}} = 6.25 \times 10^{18} \) electrons.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">3. An instrument used for measuring electric potential difference is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Voltmeter</div>
+            <div class="sol-text">A voltmeter is specifically designed to measure the potential difference between two points in a circuit.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">4. A voltmeter is always connected in ________ in a circuit.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Parallel</div>
+            <div class="sol-text">Because a voltmeter has very high resistance and measures the potential drop across two points, it must be connected in parallel.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">5. How much work is done in moving a charge of 2C across two points having a potential difference of 12V?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 24 J</div>
+            <div class="sol-text">
+                Potential difference \( V = \frac{W}{Q} \)<br>
+                \( W = V \times Q = 12 \, \text{V} \times 2 \, \text{C} = 24 \, \text{J} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">6. If the current through a resistor is doubled, the heat produced will become:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Four times</div>
+            <div class="sol-text">
+                According to Joule's law of heating, \( H = I^2Rt \).<br>
+                If \( I \) becomes \( 2I \), then new heat \( H' = (2I)^2Rt = 4I^2Rt = 4H \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">7. Which of the following represents Ohm's law?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) V = IR</div>
+            <div class="sol-text">Ohm's law states that potential difference is directly proportional to current, hence \( V = IR \).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">8. The slope of a V-I graph for an ohmic conductor represents:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Resistance</div>
+            <div class="sol-text">
+                Slope \( = \frac{\Delta V}{\Delta I} \). By Ohm's law, \( \frac{V}{I} = R \). Thus, the slope gives the resistance.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">9. What is the SI unit of resistivity?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Ohm-meter</div>
+            <div class="sol-text">
+                \( R = \rho \frac{L}{A} \Rightarrow \rho = \frac{RA}{L} \). <br>
+                Units: \( \frac{\Omega \cdot \text{m}^2}{\text{m}} = \Omega \cdot \text{m} \) (Ohm-meter).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">10. Resistivity of a metallic wire depends on:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Material & Temperature</div>
+            <div class="sol-text">Resistivity is an intrinsic property of the material and varies with temperature. It does not depend on physical dimensions (length or area).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">11. If a wire of resistance R is stretched to double its original length, its new resistance will be:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 4R</div>
+            <div class="sol-text">
+                When stretched, volume remains constant. If length becomes \( 2L \), area becomes \( \frac{A}{2} \).<br>
+                <div class="math-scroll">\( R' = \rho \frac{2L}{A/2} = 4 \left( \rho \frac{L}{A} \right) = 4R \)</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">12. Which material has the lowest electrical resistivity at room temperature?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Silver</div>
+            <div class="sol-text">Silver is the best conductor of electricity among metals, meaning it has the lowest resistivity.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">13. When three resistors of 2&Omega;, 3&Omega;, and 6&Omega; are connected in parallel, their equivalent resistance is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 1 &Omega;</div>
+            <div class="sol-text">
+                <div class="math-scroll">\( \frac{1}{R_p} = \frac{1}{2} + \frac{1}{3} + \frac{1}{6} = \frac{3+2+1}{6} = \frac{6}{6} = 1 \)</div>
+                Therefore, \( R_p = 1 \, \Omega \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">14. In a series circuit, which physical quantity remains constant across all resistors?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Current</div>
+            <div class="sol-text">In a series connection, there is only one path for the flow of charge, so the current remains the same throughout the circuit.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">15. Two resistors of 10&Omega; and 20&Omega; are joined in series across a 6V battery. The current in the circuit is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 0.2 A</div>
+            <div class="sol-text">
+                Total resistance \( R_s = 10 + 20 = 30 \, \Omega \).<br>
+                Current \( I = \frac{V}{R_s} = \frac{6}{30} = 0.2 \, \text{A} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">16. What is the maximum resistance which can be made using five resistors each of 1/5 &Omega;?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) 1 &Omega;</div>
+            <div class="sol-text">
+                Maximum resistance is obtained in series.<br>
+                \( R_{max} = 5 \times \frac{1}{5} = 1 \, \Omega \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">17. What is the minimum resistance which can be made using five resistors each of 1/5 &Omega;?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 1/25 &Omega;</div>
+            <div class="sol-text">
+                Minimum resistance is obtained in parallel.<br>
+                <div class="math-scroll">\( \frac{1}{R_{min}} = 5 \times \left(\frac{1}{1/5}\right) = 5 \times 5 = 25 \Rightarrow R_{min} = \frac{1}{25} \, \Omega \)</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">18. The commercial unit of electrical energy is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Kilowatt-hour</div>
+            <div class="sol-text">Electrical energy for commercial purposes is measured in Board of Trade Units, which is Kilowatt-hour (kWh).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">19. 1 kWh is numerically equal to:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Both B and C</div>
+            <div class="sol-text">
+                \( 1 \, \text{kWh} = 1000 \, \text{W} \times 3600 \, \text{s} = 3,600,000 \, \text{J} \)<br>
+                This can be written as \( 3.6 \times 10^6 \, \text{J} \) or \( 36 \times 10^5 \, \text{J} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">20. Electric power can be represented by which formula?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) P = V<sup>2</sup>/R</div>
+            <div class="sol-text">
+                Power \( P = VI \). Substituting \( I = \frac{V}{R} \), we get \( P = \frac{V^2}{R} \). (A, C, D are incorrect formulas).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">21. A bulb is rated 220V and 100W. When operated on 110V, the power consumed will be:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) 25 W</div>
+            <div class="sol-text">
+                Resistance of bulb is constant. \( R = \frac{V^2}{P} = \frac{(220)^2}{100} = 484 \, \Omega \).<br>
+                New power \( P' = \frac{(V')^2}{R} = \frac{(110)^2}{484} = \frac{12100}{484} = 25 \, \text{W} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">22. The heating element of an electric iron is made of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Nichrome</div>
+            <div class="sol-text">Nichrome (an alloy of nickel, chromium, manganese, and iron) is used because it has high resistivity and does not oxidize easily at high temperatures.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">23. Alloys are usually used in electrical heating devices because:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Both B and C</div>
+            <div class="sol-text">Alloys have higher resistivity than pure metals, do not oxidize (burn) readily at high temperatures, and have high melting points.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">24. An electric fuse is based on the principle of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Heating effect of current</div>
+            <div class="sol-text">When excessive current flows, the fuse wire heats up according to Joule's law and melts, breaking the circuit.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">25. A fuse wire should have:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) High resistance, low melting point</div>
+            <div class="sol-text">High resistance ensures it generates enough heat to melt quickly, and a low melting point ensures it breaks the circuit before damage occurs to appliances.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">26. Which of the following does NOT represent electrical power in a circuit?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) IR<sup>2</sup></div>
+            <div class="sol-text">Power formulas are \( P = VI \), \( P = I^2R \), and \( P = \frac{V^2}{R} \). \( IR^2 \) is incorrect.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">27. Two identical resistors are first connected in series and then in parallel to a battery. The ratio of heat produced in series to parallel is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 1:4</div>
+            <div class="sol-text">
+                Let resistance be \( R \). In series, \( R_s = 2R \). In parallel, \( R_p = \frac{R}{2} \).<br>
+                For constant voltage, \( H = \frac{V^2}{R_{eq}} t \).<br>
+                <div class="math-scroll">\( \frac{H_s}{H_p} = \frac{R_p}{R_s} = \frac{R/2}{2R} = \frac{1}{4} \). Ratio is 1:4.</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">28. A current of 0.5A is drawn by a filament of an electric bulb for 10 mins. Find the amount of electric charge that flows.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 300 C</div>
+            <div class="sol-text">
+                \( t = 10 \, \text{mins} = 600 \, \text{s} \).<br>
+                \( Q = I \times t = 0.5 \, \text{A} \times 600 \, \text{s} = 300 \, \text{C} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">29. What is the resistance of an ideal ammeter?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Zero</div>
+            <div class="sol-text">An ideal ammeter is connected in series and should not alter the circuit current; thus, it must have zero resistance.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">30. What is the resistance of an ideal voltmeter?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Infinite</div>
+            <div class="sol-text">An ideal voltmeter is connected in parallel and should not draw any current from the circuit; thus, it must have infinite resistance.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">31. If the radius of a conducting wire is doubled, its resistance becomes:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) One-fourth</div>
+            <div class="sol-text">
+                Area \( A = \pi r^2 \). If radius is doubled, new area \( A' = \pi (2r)^2 = 4\pi r^2 = 4A \).<br>
+                Since \( R \propto \frac{1}{A} \), new resistance becomes \( \frac{1}{4} \)th.
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">32. Kilowatt is a unit of:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Electric power</div>
+            <div class="sol-text">Kilowatt (kW) measures the rate of doing work or consuming energy, which is Electric Power.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">33. Tungsten is used for making bulb filaments because:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) It has a very high melting point</div>
+            <div class="sol-text">Tungsten has an extremely high melting point (approx 3380&deg;C) allowing it to become white hot and emit light without melting.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">34. In parallel combination of electrical appliances, what happens if one appliance stops working?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Others continue to work</div>
+            <div class="sol-text">In a parallel circuit, each appliance has its own path for current. If one path breaks, current continues to flow through the other branches.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">35. Three resistors 1&Omega;, 2&Omega;, and 3&Omega; are connected in series. The potential difference across the 3&Omega; resistor is 3V. What is the battery voltage?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 6 V</div>
+            <div class="sol-text">
+                Current in series circuit \( I = \frac{V_3}{R_3} = \frac{3}{3} = 1 \, \text{A} \).<br>
+                Total resistance \( R_{eq} = 1 + 2 + 3 = 6 \, \Omega \).<br>
+                Battery voltage \( V = I \times R_{eq} = 1 \times 6 = 6 \, \text{V} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">36. A wire of resistance 10&Omega; is bent to form a closed circle. The resistance across any two diametrically opposite points is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 2.5 &Omega;</div>
+            <div class="sol-text">
+                The circle splits the wire into two semi-circles of resistance \( 5 \, \Omega \) each, connected in parallel.<br>
+                <div class="math-scroll">\( \frac{1}{R_{eq}} = \frac{1}{5} + \frac{1}{5} = \frac{2}{5} \Rightarrow R_{eq} = 2.5 \, \Omega \).</div>
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">37. The physical quantity having the unit J/C is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: D) Potential Difference</div>
+            <div class="sol-text">Potential difference \( V = \frac{W}{Q} \), where Work is in Joules (J) and Charge is in Coulombs (C). 1 J/C = 1 Volt.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">38. Which effect of electric current is utilized in an electric toaster?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Heating effect</div>
+            <div class="sol-text">Toasters convert electrical energy into heat energy through high-resistance heating elements.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">39. Calculate the current if 500C of charge passes through a circuit in 100 seconds.</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) 5 A</div>
+            <div class="sol-text">
+                \( I = \frac{Q}{t} = \frac{500}{100} = 5 \, \text{A} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">40. Resistivity of a wire depends on its length. (True or False)</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) False</div>
+            <div class="sol-text">Resistivity is a material property. It depends on the nature of the material and temperature, not on dimensions like length or area.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">41. The direction of conventional electric current is taken as:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Opposite to flow of electrons</div>
+            <div class="sol-text">By convention, current flows from the positive terminal to the negative terminal, which is opposite to the movement of negatively charged electrons.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">42. The equivalent resistance of n identical resistors connected in parallel is x. If they are connected in series, the resistance will be:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) n<sup>2</sup>x</div>
+            <div class="sol-text">
+                Let individual resistance be \( R \).<br>
+                In parallel: \( x = \frac{R}{n} \Rightarrow R = nx \).<br>
+                In series: \( R_s = n \times R = n(nx) = n^2x \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">43. Device used to maintain a potential difference across a conductor is:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Cell/Battery</div>
+            <div class="sol-text">A cell or battery provides the chemical energy needed to maintain a constant potential difference across a circuit.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">44. What is the resistance of a 100W, 220V bulb?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 484 &Omega;</div>
+            <div class="sol-text">
+                Using \( P = \frac{V^2}{R} \),<br>
+                \( R = \frac{V^2}{P} = \frac{(220)^2}{100} = \frac{48400}{100} = 484 \, \Omega \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">45. If area of cross-section of a wire is doubled, while keeping length constant, resistance will:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) Halve</div>
+            <div class="sol-text">
+                Resistance is inversely proportional to cross-sectional area (\( R \propto \frac{1}{A} \)). If area becomes \( 2A \), resistance becomes \( \frac{R}{2} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">46. Which gas is typically filled in electric bulbs to prolong the life of the filament?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Argon or Nitrogen</div>
+            <div class="sol-text">Chemically inactive gases like Argon and Nitrogen are used to prevent the hot tungsten filament from oxidizing.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">47. A circuit has a resistance of 12&Omega;. A 24V battery is connected to it. What is the current?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: B) 2 A</div>
+            <div class="sol-text">
+                Using Ohm's Law, \( I = \frac{V}{R} = \frac{24}{12} = 2 \, \text{A} \).
+            </div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">48. Ohm's law is valid only when:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: A) Temperature remains constant</div>
+            <div class="sol-text">Ohm's law strictly applies providing the physical conditions like temperature of the conductor remain constant, because resistance changes with temperature.</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">49. The work done in moving a unit positive charge from one point to another is called:</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) Potential difference</div>
+            <div class="sol-text">By definition, potential difference between two points is the work done per unit charge (\( V = \frac{W}{Q} \)).</div>
+        </div>
+
+        <div class="sol-block">
+            <div class="sol-q-row">
+                <div class="q-text">50. How many 176 &Omega; resistors (in parallel) are required to carry 5 A on a 220 V line?</div>
+                <div class="marks">[1 Mark]</div>
+            </div>
+            <div class="correct-ans">Answer: C) 4</div>
+            <div class="sol-text">
+                Required total resistance \( R_{eq} = \frac{V}{I} = \frac{220}{5} = 44 \, \Omega \).<br>
+                For \( n \) resistors of \( 176 \, \Omega \) in parallel, \( R_{eq} = \frac{176}{n} \).<br>
+                <div class="math-scroll">\( \frac{176}{n} = 44 \Rightarrow n = \frac{176}{44} = 4 \).</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Rapid MCQ Test</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000; /* Pure black for standard, crisp printing */
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.4; 
+            color: var(--text-main); 
+            background-color: #ffffff; /* Strictly white background */
+            position: relative; 
+        }
+        
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: transparent; /* Removed yellow background block */
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #000;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 10px; 
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            padding: 0 10px;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .mcq-container {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1.5px solid var(--primary-yellow); /* Thin yellow dividing line */
+            margin-top: 20px;
+        }
+        .question-block {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 18px; /* Clean spacing instead of container boxes */
+            background: transparent;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+        }
+        .q-text { margin-bottom: 6px; display: flex; }
+        .q-num { min-width: 25px; font-weight: bold; }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 10px;
+            font-size: 10.5pt;
+            padding-left: 25px;
+        }
+        
+        .footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 2px solid var(--primary-yellow); 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            .mcq-container { column-count: 1; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+        }
+        @media print { 
+            body { 
+                width: 100%; margin: 0; padding: 0; 
+                -webkit-print-color-adjust: exact; 
+                background-color: transparent;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">20 Minute Rapid MCQ Test - Current Electricity</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science (Physics)</span>
+            <span>Time: 20 Minutes</span>
+            <span>Max. Marks: 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All 50 questions are compulsory. Each question carries 1 mark.</li>
+                <li>Speed and accuracy are key. Average time per question is 24 seconds.</li>
+                <li>Select the most appropriate option. No negative marking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">1.</span><span>What is the SI unit of electric charge?</span></div>
+            <div class="options-grid">
+                <div>A) Volt</div><div>B) Ampere</div>
+                <div>C) Coulomb</div><div>D) Ohm</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">2.</span><span>How many electrons constitute one coulomb of charge?</span></div>
+            <div class="options-grid">
+                <div>A) 6.25 &times; 10<sup>18</sup></div><div>B) 6.25 &times; 10<sup>-18</sup></div>
+                <div>C) 1.6 &times; 10<sup>-19</sup></div><div>D) 1.6 &times; 10<sup>19</sup></div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">3.</span><span>An instrument used for measuring electric potential difference is:</span></div>
+            <div class="options-grid">
+                <div>A) Ammeter</div><div>B) Galvanometer</div>
+                <div>C) Voltmeter</div><div>D) Potentiometer</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">4.</span><span>A voltmeter is always connected in ________ in a circuit.</span></div>
+            <div class="options-grid">
+                <div>A) Series</div><div>B) Parallel</div>
+                <div>C) Mixed combination</div><div>D) Any of these</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">5.</span><span>How much work is done in moving a charge of 2C across two points having a potential difference of 12V?</span></div>
+            <div class="options-grid">
+                <div>A) 6 J</div><div>B) 24 J</div>
+                <div>C) 14 J</div><div>D) 10 J</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">6.</span><span>If the current through a resistor is doubled, the heat produced will become:</span></div>
+            <div class="options-grid">
+                <div>A) Half</div><div>B) Double</div>
+                <div>C) Four times</div><div>D) One-fourth</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">7.</span><span>Which of the following represents Ohm's law?</span></div>
+            <div class="options-grid">
+                <div>A) I = VR</div><div>B) V = I/R</div>
+                <div>C) V = IR</div><div>D) R = VI</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">8.</span><span>The slope of a V-I graph for an ohmic conductor represents:</span></div>
+            <div class="options-grid">
+                <div>A) Conductance</div><div>B) Resistance</div>
+                <div>C) Resistivity</div><div>D) Potential</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">9.</span><span>What is the SI unit of resistivity?</span></div>
+            <div class="options-grid">
+                <div>A) Ohm</div><div>B) Ohm-meter</div>
+                <div>C) Ohm/meter</div><div>D) Mho</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">10.</span><span>Resistivity of a metallic wire depends on:</span></div>
+            <div class="options-grid">
+                <div>A) Its length</div><div>B) Its shape</div>
+                <div>C) Its thickness</div><div>D) Material & Temperature</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">11.</span><span>If a wire of resistance R is stretched to double its original length, its new resistance will be:</span></div>
+            <div class="options-grid">
+                <div>A) R/2</div><div>B) 2R</div>
+                <div>C) 4R</div><div>D) R/4</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">12.</span><span>Which material has the lowest electrical resistivity at room temperature?</span></div>
+            <div class="options-grid">
+                <div>A) Copper</div><div>B) Iron</div>
+                <div>C) Silver</div><div>D) Tungsten</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">13.</span><span>When three resistors of 2&Omega;, 3&Omega;, and 6&Omega; are connected in parallel, their equivalent resistance is:</span></div>
+            <div class="options-grid">
+                <div>A) 1 &Omega;</div><div>B) 11 &Omega;</div>
+                <div>C) 6 &Omega;</div><div>D) 2 &Omega;</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">14.</span><span>In a series circuit, which physical quantity remains constant across all resistors?</span></div>
+            <div class="options-grid">
+                <div>A) Voltage</div><div>B) Current</div>
+                <div>C) Power</div><div>D) Resistance</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">15.</span><span>Two resistors of 10&Omega; and 20&Omega; are joined in series across a 6V battery. The current in the circuit is:</span></div>
+            <div class="options-grid">
+                <div>A) 0.6 A</div><div>B) 0.2 A</div>
+                <div>C) 30 A</div><div>D) 5 A</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">16.</span><span>What is the maximum resistance which can be made using five resistors each of 1/5 &Omega;?</span></div>
+            <div class="options-grid">
+                <div>A) 1/25 &Omega;</div><div>B) 10 &Omega;</div>
+                <div>C) 5 &Omega;</div><div>D) 1 &Omega;</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">17.</span><span>What is the minimum resistance which can be made using five resistors each of 1/5 &Omega;?</span></div>
+            <div class="options-grid">
+                <div>A) 1/25 &Omega;</div><div>B) 1/5 &Omega;</div>
+                <div>C) 1 &Omega;</div><div>D) 25 &Omega;</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">18.</span><span>The commercial unit of electrical energy is:</span></div>
+            <div class="options-grid">
+                <div>A) Joule</div><div>B) Watt</div>
+                <div>C) Kilowatt-hour</div><div>D) Kilowatt</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">19.</span><span>1 kWh is numerically equal to:</span></div>
+            <div class="options-grid">
+                <div>A) 3.6 &times; 10<sup>5</sup> J</div><div>B) 3.6 &times; 10<sup>6</sup> J</div>
+                <div>C) 36 &times; 10<sup>5</sup> J</div><div>D) Both B and C</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">20.</span><span>Electric power can be represented by which formula?</span></div>
+            <div class="options-grid">
+                <div>A) P = IR<sup>2</sup></div><div>B) P = V<sup>2</sup>/R</div>
+                <div>C) P = V/R<sup>2</sup></div><div>D) P = I<sup>2</sup>/R</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">21.</span><span>A bulb is rated 220V and 100W. When operated on 110V, the power consumed will be:</span></div>
+            <div class="options-grid">
+                <div>A) 100 W</div><div>B) 75 W</div>
+                <div>C) 50 W</div><div>D) 25 W</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">22.</span><span>The heating element of an electric iron is made of:</span></div>
+            <div class="options-grid">
+                <div>A) Copper</div><div>B) Nichrome</div>
+                <div>C) Aluminium</div><div>D) Iron</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">23.</span><span>Alloys are usually used in electrical heating devices because:</span></div>
+            <div class="options-grid">
+                <div>A) Low resistivity</div><div>B) Do not oxidize easily at high temp</div>
+                <div>C) High melting point</div><div>D) Both B and C</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">24.</span><span>An electric fuse is based on the principle of:</span></div>
+            <div class="options-grid">
+                <div>A) Magnetic effect of current</div><div>B) Chemical effect of current</div>
+                <div>C) Heating effect of current</div><div>D) Electromagnetic induction</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">25.</span><span>A fuse wire should have:</span></div>
+            <div class="options-grid">
+                <div>A) High resistance, high melting point</div><div>B) Low resistance, low melting point</div>
+                <div>C) High resistance, low melting point</div><div>D) Low resistance, high melting point</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">26.</span><span>Which of the following does NOT represent electrical power in a circuit?</span></div>
+            <div class="options-grid">
+                <div>A) I<sup>2</sup>R</div><div>B) IR<sup>2</sup></div>
+                <div>C) VI</div><div>D) V<sup>2</sup>/R</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">27.</span><span>Two identical resistors are first connected in series and then in parallel to a battery. The ratio of heat produced in series to parallel is:</span></div>
+            <div class="options-grid">
+                <div>A) 1:2</div><div>B) 2:1</div>
+                <div>C) 1:4</div><div>D) 4:1</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">28.</span><span>A current of 0.5A is drawn by a filament of an electric bulb for 10 mins. Find the amount of electric charge that flows.</span></div>
+            <div class="options-grid">
+                <div>A) 5 C</div><div>B) 50 C</div>
+                <div>C) 300 C</div><div>D) 30 C</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">29.</span><span>What is the resistance of an ideal ammeter?</span></div>
+            <div class="options-grid">
+                <div>A) Infinite</div><div>B) Zero</div>
+                <div>C) Very high</div><div>D) 1 Ohm</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">30.</span><span>What is the resistance of an ideal voltmeter?</span></div>
+            <div class="options-grid">
+                <div>A) Infinite</div><div>B) Zero</div>
+                <div>C) Very low</div><div>D) 100 Ohms</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">31.</span><span>If the radius of a conducting wire is doubled, its resistance becomes:</span></div>
+            <div class="options-grid">
+                <div>A) Half</div><div>B) One-fourth</div>
+                <div>C) Double</div><div>D) Four times</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">32.</span><span>Kilowatt is a unit of:</span></div>
+            <div class="options-grid">
+                <div>A) Electrical energy</div><div>B) Electric power</div>
+                <div>C) Electric potential</div><div>D) Charge</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">33.</span><span>Tungsten is used for making bulb filaments because:</span></div>
+            <div class="options-grid">
+                <div>A) It has a very high melting point</div><div>B) It has low resistivity</div>
+                <div>C) It emits light easily</div><div>D) It is very cheap</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">34.</span><span>In parallel combination of electrical appliances, what happens if one appliance stops working?</span></div>
+            <div class="options-grid">
+                <div>A) Whole circuit breaks</div><div>B) Voltage drops to zero</div>
+                <div>C) Others continue to work</div><div>D) Current becomes excessively high</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">35.</span><span>Three resistors 1&Omega;, 2&Omega;, and 3&Omega; are connected in series. The potential difference across the 3&Omega; resistor is 3V. What is the battery voltage?</span></div>
+            <div class="options-grid">
+                <div>A) 3 V</div><div>B) 6 V</div>
+                <div>C) 9 V</div><div>D) 12 V</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">36.</span><span>A wire of resistance 10&Omega; is bent to form a closed circle. The resistance across any two diametrically opposite points is:</span></div>
+            <div class="options-grid">
+                <div>A) 10 &Omega;</div><div>B) 5 &Omega;</div>
+                <div>C) 2.5 &Omega;</div><div>D) 20 &Omega;</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">37.</span><span>The physical quantity having the unit J/C is:</span></div>
+            <div class="options-grid">
+                <div>A) Current</div><div>B) Resistance</div>
+                <div>C) Power</div><div>D) Potential Difference</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">38.</span><span>Which effect of electric current is utilized in an electric toaster?</span></div>
+            <div class="options-grid">
+                <div>A) Magnetic effect</div><div>B) Chemical effect</div>
+                <div>C) Heating effect</div><div>D) None of these</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">39.</span><span>Calculate the current if 500C of charge passes through a circuit in 100 seconds.</span></div>
+            <div class="options-grid">
+                <div>A) 5 A</div><div>B) 0.2 A</div>
+                <div>C) 50 A</div><div>D) 5000 A</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">40.</span><span>Resistivity of a wire depends on its length. (True or False)</span></div>
+            <div class="options-grid">
+                <div>A) True</div><div>B) False</div>
+                <div>C) Depends on area</div><div>D) Partially true</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">41.</span><span>The direction of conventional electric current is taken as:</span></div>
+            <div class="options-grid">
+                <div>A) Direction of flow of electrons</div><div>B) Opposite to flow of electrons</div>
+                <div>C) Direction of flow of neutrons</div><div>D) Random direction</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">42.</span><span>The equivalent resistance of n identical resistors connected in parallel is x. If they are connected in series, the resistance will be:</span></div>
+            <div class="options-grid">
+                <div>A) nx</div><div>B) x/n</div>
+                <div>C) n<sup>2</sup>x</div><div>D) x/n<sup>2</sup></div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">43.</span><span>Device used to maintain a potential difference across a conductor is:</span></div>
+            <div class="options-grid">
+                <div>A) Ammeter</div><div>B) Cell/Battery</div>
+                <div>C) Voltmeter</div><div>D) Galvanometer</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">44.</span><span>What is the resistance of a 100W, 220V bulb?</span></div>
+            <div class="options-grid">
+                <div>A) 2.2 &Omega;</div><div>B) 484 &Omega;</div>
+                <div>C) 220 &Omega;</div><div>D) 48.4 &Omega;</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">45.</span><span>If area of cross-section of a wire is doubled, while keeping length constant, resistance will:</span></div>
+            <div class="options-grid">
+                <div>A) Double</div><div>B) Halve</div>
+                <div>C) Become four times</div><div>D) Remain same</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">46.</span><span>Which gas is typically filled in electric bulbs to prolong the life of the filament?</span></div>
+            <div class="options-grid">
+                <div>A) Oxygen</div><div>B) Hydrogen</div>
+                <div>C) Argon or Nitrogen</div><div>D) Carbon dioxide</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">47.</span><span>A circuit has a resistance of 12&Omega;. A 24V battery is connected to it. What is the current?</span></div>
+            <div class="options-grid">
+                <div>A) 0.5 A</div><div>B) 2 A</div>
+                <div>C) 288 A</div><div>D) 12 A</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">48.</span><span>Ohm's law is valid only when:</span></div>
+            <div class="options-grid">
+                <div>A) Temperature remains constant</div><div>B) Current remains constant</div>
+                <div>C) Voltage remains constant</div><div>D) Both B and C</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">49.</span><span>The work done in moving a unit positive charge from one point to another is called:</span></div>
+            <div class="options-grid">
+                <div>A) Electric field</div><div>B) Electric current</div>
+                <div>C) Potential difference</div><div>D) Electric resistance</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">50.</span><span>How many 176 &Omega; resistors (in parallel) are required to carry 5 A on a 220 V line?</span></div>
+            <div class="options-grid">
+                <div>A) 2</div><div>B) 3</div>
+                <div>C) 4</div><div>D) 5</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan with ❤️ &bull; Best of Luck!</div>
+</body>
+</html>

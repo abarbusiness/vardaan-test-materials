@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #fafafa;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-bottom: 3px solid var(--primary-yellow); 
+            border-top: 3px solid var(--primary-yellow);
+            padding: 15px 0; 
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .doc-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #333;
+        }
+        
+        .solution-block {
+            background-color: white;
+            border-bottom: 2px dashed var(--primary-yellow);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            page-break-inside: avoid;
+        }
+        
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        
+        .q-text {
+            font-weight: 600;
+            font-size: 11.5pt;
+            flex-grow: 1;
+        }
+        
+        .q-marks {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .correct-answer {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+            padding: 8px 12px;
+            margin: 10px 0 15px 0;
+            border-left: 4px solid #4caf50;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .explanation {
+            margin-left: 10px;
+            padding-left: 15px;
+            border-left: 2px solid #eee;
+        }
+
+        .math-scroll {
+            display: block;
+            padding: 8px 0;
+            overflow: visible;
+            word-wrap: break-word;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 10px; }
+            .explanation { margin-left: 0; padding-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 16 (Mathematics)</div>
+    </div>
+
+    <!-- SECTION A SOLUTIONS -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find \( \frac{dy}{dx} \) if \( y = x^{\sin x} \), where \( x > 0 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( x^{\sin x} \left( \cos x \ln x + \frac{\sin x}{x} \right) \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Given, \( y = x^{\sin x} \)<br>
+            Taking natural logarithm on both sides:<br>
+            <span class="math-scroll">\( \ln y = \ln(x^{\sin x}) \)</span>
+            <span class="math-scroll">\( \ln y = \sin x \cdot \ln x \)</span><br>
+            Differentiating both sides with respect to \( x \) using the product rule:<br>
+            <span class="math-scroll">\( \frac{1}{y} \frac{dy}{dx} = \frac{d}{dx}(\sin x) \cdot \ln x + \sin x \cdot \frac{d}{dx}(\ln x) \)</span>
+            <span class="math-scroll">\( \frac{1}{y} \frac{dy}{dx} = \cos x \cdot \ln x + \sin x \cdot \left(\frac{1}{x}\right) \)</span><br>
+            Multiplying by \( y \) on both sides:<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = y \left( \cos x \ln x + \frac{\sin x}{x} \right) \)</span><br>
+            Substitute back \( y = x^{\sin x} \):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = x^{\sin x} \left( \cos x \ln x + \frac{\sin x}{x} \right) \)</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Find the Cartesian equation of the line passing through the point \( (1, 2, -4) \) and parallel to the given line \( \frac{x-3}{2} = \frac{y+1}{7} = \frac{z-2}{-3} \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( \frac{x-1}{2} = \frac{y-2}{7} = \frac{z+4}{-3} \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            The required line is parallel to the line \( \frac{x-3}{2} = \frac{y+1}{7} = \frac{z-2}{-3} \).<br>
+            Therefore, the direction ratios (DRs) of the required line are proportional to \( (2, 7, -3) \).<br>
+            The required line passes through the point \( (x_1, y_1, z_1) = (1, 2, -4) \).<br>
+            The Cartesian equation of a line passing through a point and having direction ratios \( (a, b, c) \) is given by:<br>
+            <span class="math-scroll">\( \frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c} \)</span><br>
+            Substituting the values:<br>
+            <span class="math-scroll">\( \frac{x - 1}{2} = \frac{y - 2}{7} = \frac{z - (-4)}{-3} \)</span><br>
+            <span class="math-scroll">\( \frac{x - 1}{2} = \frac{y - 2}{7} = \frac{z + 4}{-3} \)</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. If \( x = a(\theta - \sin \theta) \) and \( y = a(1 + \cos \theta) \), find \( \frac{dy}{dx} \) in its simplest form.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( -\cot\left(\frac{\theta}{2}\right) \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Given parametric equations:<br>
+            \( x = a(\theta - \sin \theta) \) and \( y = a(1 + \cos \theta) \)<br>
+            Differentiate with respect to \( \theta \):<br>
+            <span class="math-scroll">\( \frac{dx}{d\theta} = a(1 - \cos \theta) \)</span>
+            <span class="math-scroll">\( \frac{dy}{d\theta} = a(0 - \sin \theta) = -a \sin \theta \)</span><br>
+            Using the chain rule for parametric functions:<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = \frac{\left(\frac{dy}{d\theta}\right)}{\left(\frac{dx}{d\theta}\right)} = \frac{-a \sin \theta}{a(1 - \cos \theta)} = \frac{-\sin \theta}{1 - \cos \theta} \)</span><br>
+            Applying half-angle trigonometric identities (\( \sin \theta = 2\sin(\theta/2)\cos(\theta/2) \) and \( 1 - \cos \theta = 2\sin^2(\theta/2) \)):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = \frac{-2 \sin\left(\frac{\theta}{2}\right) \cos\left(\frac{\theta}{2}\right)}{2 \sin^2\left(\frac{\theta}{2}\right)} \)</span><br>
+            <span class="math-scroll">\( \frac{dy}{dx} = -\frac{\cos\left(\frac{\theta}{2}\right)}{\sin\left(\frac{\theta}{2}\right)} = -\cot\left(\frac{\theta}{2}\right) \)</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Find the direction cosines of the straight line whose vector equation is \( \vec{r} = (2\hat{i} - \hat{j} + 3\hat{k}) + \lambda(3\hat{i} - 2\hat{j} + 6\hat{k}) \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( \frac{3}{7}, \frac{-2}{7}, \frac{6}{7} \) or \( \frac{-3}{7}, \frac{2}{7}, \frac{-6}{7} \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            The vector equation of a line is \( \vec{r} = \vec{a} + \lambda\vec{b} \), where \( \vec{b} \) is the direction vector.<br>
+            Here, the direction vector is \( \vec{b} = 3\hat{i} - 2\hat{j} + 6\hat{k} \).<br>
+            Thus, the Direction Ratios (DRs) of the line are proportional to \( a = 3, b = -2, c = 6 \).<br>
+            To find the Direction Cosines (DCs), we first find the magnitude of the direction vector:<br>
+            <span class="math-scroll">\( |\vec{b}| = \sqrt{a^2 + b^2 + c^2} = \sqrt{3^2 + (-2)^2 + 6^2} = \sqrt{9 + 4 + 36} = \sqrt{49} = 7 \)</span><br>
+            The Direction Cosines \( (l, m, n) \) are given by \( \left( \pm\frac{a}{|\vec{b}|}, \pm\frac{b}{|\vec{b}|}, \pm\frac{c}{|\vec{b}|} \right) \):<br>
+            <span class="math-scroll">\( l = \frac{3}{7}, \quad m = \frac{-2}{7}, \quad n = \frac{6}{7} \)</span><br>
+            (Taking the positive set is standard unless specified otherwise).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Differentiate \( \sin^{-1}\left(\frac{2x}{1+x^2}\right) \) with respect to \( x \), assuming \( -1 < x < 1 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( \frac{2}{1+x^2} \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let \( y = \sin^{-1}\left(\frac{2x}{1+x^2}\right) \).<br>
+            Use substitution method. Let \( x = \tan \theta \). Since \( -1 < x < 1 \), \( -\frac{\pi}{4} < \theta < \frac{\pi}{4} \).<br>
+            Substitute \( x \) in the expression:<br>
+            <span class="math-scroll">\( y = \sin^{-1}\left(\frac{2 \tan \theta}{1 + \tan^2 \theta}\right) \)</span><br>
+            We know the trigonometric identity: \( \sin 2\theta = \frac{2 \tan \theta}{1 + \tan^2 \theta} \).<br>
+            <span class="math-scroll">\( y = \sin^{-1}(\sin 2\theta) \)</span><br>
+            Since \( \theta \in (-\pi/4, \pi/4) \), \( 2\theta \in (-\pi/2, \pi/2) \), which is the principal value branch of \( \sin^{-1} \).<br>
+            Therefore, \( y = 2\theta \).<br>
+            Substituting back \( \theta = \tan^{-1} x \):<br>
+            <span class="math-scroll">\( y = 2 \tan^{-1} x \)</span><br>
+            Differentiate with respect to \( x \):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = 2 \cdot \frac{d}{dx}(\tan^{-1} x) = 2 \left( \frac{1}{1+x^2} \right) = \frac{2}{1+x^2} \)</span>
+        </div>
+    </div>
+
+    <!-- SECTION B SOLUTIONS -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Find the shortest distance between the following pair of skew lines:<br>
+            \( \vec{r} = (\hat{i} + 2\hat{j} + 3\hat{k}) + \lambda(\hat{i} - 3\hat{j} + 2\hat{k}) \)<br>
+            \( \vec{r} = (4\hat{i} + 5\hat{j} + 6\hat{k}) + \mu(2\hat{i} + 3\hat{j} + \hat{k}) \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( \frac{3}{\sqrt{19}} \) units</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Comparing given equations with \( \vec{r} = \vec{a}_1 + \lambda \vec{b}_1 \) and \( \vec{r} = \vec{a}_2 + \mu \vec{b}_2 \):<br>
+            \( \vec{a}_1 = \hat{i} + 2\hat{j} + 3\hat{k}, \quad \vec{b}_1 = \hat{i} - 3\hat{j} + 2\hat{k} \)<br>
+            \( \vec{a}_2 = 4\hat{i} + 5\hat{j} + 6\hat{k}, \quad \vec{b}_2 = 2\hat{i} + 3\hat{j} + \hat{k} \)<br><br>
+            1) Find \( \vec{a}_2 - \vec{a}_1 \):<br>
+            <span class="math-scroll">\( \vec{a}_2 - \vec{a}_1 = (4-1)\hat{i} + (5-2)\hat{j} + (6-3)\hat{k} = 3\hat{i} + 3\hat{j} + 3\hat{k} \)</span><br>
+            
+            2) Find \( \vec{b}_1 \times \vec{b}_2 \) (Cross Product):<br>
+            <span class="math-scroll">\( \vec{b}_1 \times \vec{b}_2 = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & -3 & 2 \\ 2 & 3 & 1 \end{vmatrix} \)</span>
+            <span class="math-scroll">\( = \hat{i}(-3 - 6) - \hat{j}(1 - 4) + \hat{k}(3 - (-6)) \)</span>
+            <span class="math-scroll">\( = -9\hat{i} + 3\hat{j} + 9\hat{k} \)</span><br>
+            
+            3) Find magnitude \( |\vec{b}_1 \times \vec{b}_2| \):<br>
+            <span class="math-scroll">\( |\vec{b}_1 \times \vec{b}_2| = \sqrt{(-9)^2 + 3^2 + 9^2} = \sqrt{81 + 9 + 81} = \sqrt{171} = 3\sqrt{19} \)</span><br>
+            
+            4) Apply Shortest Distance Formula:<br>
+            <span class="math-scroll">\( d = \left| \frac{(\vec{b}_1 \times \vec{b}_2) \cdot (\vec{a}_2 - \vec{a}_1)}{|\vec{b}_1 \times \vec{b}_2|} \right| \)</span>
+            <span class="math-scroll">\( (\vec{b}_1 \times \vec{b}_2) \cdot (\vec{a}_2 - \vec{a}_1) = (-9)(3) + (3)(3) + (9)(3) = -27 + 9 + 27 = 9 \)</span><br>
+            <span class="math-scroll">\( d = \left| \frac{9}{3\sqrt{19}} \right| = \frac{3}{\sqrt{19}} \) units.</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. If \( x^y + y^x = a^b \), find \( \frac{dy}{dx} \).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( -\frac{y \cdot x^{y-1} + y^x \cdot \ln y}{x^y \cdot \ln x + x \cdot y^{x-1}} \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let \( u = x^y \) and \( v = y^x \). Given equation becomes \( u + v = a^b \).<br>
+            Differentiating wrt \( x \): \( \frac{du}{dx} + \frac{dv}{dx} = 0 \) &nbsp; --- (1)<br><br>
+            
+            For \( u = x^y \):<br>
+            Take log on both sides: \( \ln u = y \ln x \)<br>
+            Differentiating: <span class="math-scroll">\( \frac{1}{u}\frac{du}{dx} = y \cdot \frac{1}{x} + \ln x \cdot \frac{dy}{dx} \)</span>
+            <span class="math-scroll">\( \frac{du}{dx} = u \left( \frac{y}{x} + \ln x \cdot \frac{dy}{dx} \right) = x^y \left( \frac{y}{x} + \ln x \cdot \frac{dy}{dx} \right) = y x^{y-1} + x^y \ln x \cdot \frac{dy}{dx} \)</span><br><br>
+            
+            For \( v = y^x \):<br>
+            Take log: \( \ln v = x \ln y \)<br>
+            Differentiating: <span class="math-scroll">\( \frac{1}{v}\frac{dv}{dx} = x \cdot \frac{1}{y}\frac{dy}{dx} + \ln y \cdot 1 \)</span>
+            <span class="math-scroll">\( \frac{dv}{dx} = v \left( \frac{x}{y}\frac{dy}{dx} + \ln y \right) = y^x \left( \frac{x}{y}\frac{dy}{dx} + \ln y \right) = x y^{x-1} \cdot \frac{dy}{dx} + y^x \ln y \)</span><br><br>
+            
+            Substitute into (1):<br>
+            <span class="math-scroll">\( y x^{y-1} + x^y \ln x \frac{dy}{dx} + x y^{x-1} \frac{dy}{dx} + y^x \ln y = 0 \)</span><br>
+            Collect \( \frac{dy}{dx} \) terms:<br>
+            <span class="math-scroll">\( \frac{dy}{dx} \left( x^y \ln x + x y^{x-1} \right) = -\left( y x^{y-1} + y^x \ln y \right) \)</span><br>
+            <span class="math-scroll">\( \frac{dy}{dx} = -\frac{y x^{y-1} + y^x \ln y}{x^y \ln x + x y^{x-1}} \)</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Find the coordinates of the foot of the perpendicular drawn from the point \( P(2, -1, 5) \) to the line \( \frac{x-11}{10} = \frac{y+2}{-4} = \frac{z+8}{-11} \).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( (1, 2, 3) \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let the line be \( L: \frac{x-11}{10} = \frac{y+2}{-4} = \frac{z+8}{-11} = \lambda \).<br>
+            Any general point on this line can be written as \( Q(10\lambda + 11, -4\lambda - 2, -11\lambda - 8) \).<br>
+            If \( Q \) is the foot of the perpendicular from \( P(2, -1, 5) \) to the line \( L \), then the line segment \( PQ \) will be perpendicular to the line \( L \).<br><br>
+            
+            Direction ratios (DRs) of the line \( L \): \( (10, -4, -11) \).<br>
+            Direction ratios of \( PQ \):<br>
+            <span class="math-scroll">\( ((10\lambda + 11) - 2, (-4\lambda - 2) - (-1), (-11\lambda - 8) - 5) \)</span>
+            <span class="math-scroll">\( = (10\lambda + 9, -4\lambda - 1, -11\lambda - 13) \)</span><br><br>
+            
+            Since \( PQ \) is perpendicular to \( L \), the dot product of their DRs is zero:<br>
+            <span class="math-scroll">\( 10(10\lambda + 9) + (-4)(-4\lambda - 1) + (-11)(-11\lambda - 13) = 0 \)</span>
+            <span class="math-scroll">\( 100\lambda + 90 + 16\lambda + 4 + 121\lambda + 143 = 0 \)</span>
+            <span class="math-scroll">\( 237\lambda + 237 = 0 \)</span>
+            <span class="math-scroll">\( \lambda = -1 \)</span><br><br>
+            
+            Substitute \( \lambda = -1 \) in coordinates of \( Q \):<br>
+            \( x = 10(-1) + 11 = 1 \)<br>
+            \( y = -4(-1) - 2 = 2 \)<br>
+            \( z = -11(-1) - 8 = 3 \)<br>
+            The foot of the perpendicular is \( (1, 2, 3) \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. If \( y = (\tan^{-1} x)^2 \), show that \( (x^2+1)^2 \frac{d^2y}{dx^2} + 2x(x^2+1) \frac{dy}{dx} = 2 \).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Proof (See steps)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Given, \( y = (\tan^{-1} x)^2 \).<br>
+            Differentiate with respect to \( x \):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = y_1 = 2(\tan^{-1} x) \cdot \frac{d}{dx}(\tan^{-1} x) \)</span>
+            <span class="math-scroll">\( y_1 = 2(\tan^{-1} x) \cdot \frac{1}{1+x^2} \)</span><br>
+            Cross-multiply to remove the denominator (this simplifies finding the second derivative):<br>
+            <span class="math-scroll">\( (1+x^2)y_1 = 2\tan^{-1} x \)</span><br><br>
+            
+            Differentiate again with respect to \( x \) using the product rule on LHS:<br>
+            <span class="math-scroll">\( (1+x^2) \cdot \frac{d}{dx}(y_1) + y_1 \cdot \frac{d}{dx}(1+x^2) = 2 \cdot \frac{d}{dx}(\tan^{-1} x) \)</span>
+            <span class="math-scroll">\( (1+x^2)y_2 + y_1(2x) = 2 \left( \frac{1}{1+x^2} \right) \)</span><br><br>
+            
+            Multiply the entire equation by \( (1+x^2) \):<br>
+            <span class="math-scroll">\( (1+x^2)^2 y_2 + 2x(1+x^2)y_1 = 2 \)</span><br>
+            Writing \( y_2 \) as \( \frac{d^2y}{dx^2} \) and \( y_1 \) as \( \frac{dy}{dx} \):<br>
+            <span class="math-scroll">\( (x^2+1)^2 \frac{d^2y}{dx^2} + 2x(x^2+1) \frac{dy}{dx} = 2 \)</span><br>
+            <strong>Hence Proved.</strong>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. If \( x = a \cos t + a t \sin t \) and \( y = a \sin t - a t \cos t \), evaluate \( \frac{d^2y}{dx^2} \) at \( t = \frac{\pi}{4} \).</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: \( \frac{8\sqrt{2}}{a\pi} \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Find \( \frac{dx}{dt} \):<br>
+            <span class="math-scroll">\( \frac{dx}{dt} = -a \sin t + a (1 \cdot \sin t + t \cdot \cos t) = -a \sin t + a \sin t + a t \cos t = a t \cos t \)</span><br>
+            
+            Find \( \frac{dy}{dt} \):<br>
+            <span class="math-scroll">\( \frac{dy}{dt} = a \cos t - a (1 \cdot \cos t + t(-\sin t)) = a \cos t - a \cos t + a t \sin t = a t \sin t \)</span><br>
+            
+            Find \( \frac{dy}{dx} \):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = \frac{\left(\frac{dy}{dt}\right)}{\left(\frac{dx}{dt}\right)} = \frac{a t \sin t}{a t \cos t} = \tan t \)</span><br>
+            
+            Find \( \frac{d^2y}{dx^2} \):<br>
+            <strong>Caution:</strong> differentiate with respect to \( x \), not \( t \).<br>
+            <span class="math-scroll">\( \frac{d^2y}{dx^2} = \frac{d}{dx}(\tan t) = \frac{d}{dt}(\tan t) \cdot \frac{dt}{dx} \)</span>
+            <span class="math-scroll">\( \frac{d^2y}{dx^2} = \sec^2 t \cdot \frac{1}{\left(\frac{dx}{dt}\right)} = \sec^2 t \cdot \frac{1}{a t \cos t} = \frac{\sec^3 t}{a t} \)</span><br>
+            
+            Evaluate at \( t = \pi/4 \):<br>
+            <span class="math-scroll">\( \left. \frac{d^2y}{dx^2} \right|_{t=\pi/4} = \frac{(\sec(\pi/4))^3}{a (\pi/4)} = \frac{(\sqrt{2})^3}{a\pi/4} \)</span>
+            <span class="math-scroll">\( = \frac{2\sqrt{2}}{a\pi/4} = \frac{8\sqrt{2}}{a\pi} \)</span>
+        </div>
+    </div>
+
+    <!-- SECTION C SOLUTIONS -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. If \( y = e^{a \cos^{-1} x} \) where \( -1 \le x \le 1 \), prove that: \( (1-x^2)\frac{d^2y}{dx^2} - x\frac{dy}{dx} - a^2y = 0 \).</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Proof (See steps)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Given: \( y = e^{a \cos^{-1} x} \)<br>
+            Differentiate both sides with respect to \( x \):<br>
+            <span class="math-scroll">\( \frac{dy}{dx} = e^{a \cos^{-1} x} \cdot \frac{d}{dx}(a \cos^{-1} x) \)</span>
+            <span class="math-scroll">\( y_1 = y \cdot \left( \frac{-a}{\sqrt{1-x^2}} \right) \)</span><br>
+            Squaring both sides to simplify the expression before second derivative:<br>
+            <span class="math-scroll">\( y_1^2 = \frac{a^2 y^2}{1-x^2} \)</span><br>
+            <span class="math-scroll">\( (1-x^2) y_1^2 = a^2 y^2 \)</span><br><br>
+            
+            Differentiate implicitly with respect to \( x \) again:<br>
+            <span class="math-scroll">\( \frac{d}{dx}[(1-x^2) y_1^2] = \frac{d}{dx}[a^2 y^2] \)</span>
+            <span class="math-scroll">\( (1-x^2) \cdot \frac{d}{dx}(y_1^2) + y_1^2 \cdot \frac{d}{dx}(1-x^2) = a^2 \cdot \frac{d}{dx}(y^2) \)</span>
+            <span class="math-scroll">\( (1-x^2) (2 y_1 y_2) + y_1^2 (-2x) = a^2 (2 y y_1) \)</span><br><br>
+            
+            Divide the entire equation by \( 2y_1 \) (assuming \( y_1 \neq 0 \)):<br>
+            <span class="math-scroll">\( (1-x^2) y_2 - x y_1 = a^2 y \)</span><br>
+            Rearranging the terms:<br>
+            <span class="math-scroll">\( (1-x^2) y_2 - x y_1 - a^2 y = 0 \)</span><br>
+            Substituting back the standard derivative notations:<br>
+            <span class="math-scroll">\( (1-x^2)\frac{d^2y}{dx^2} - x\frac{dy}{dx} - a^2y = 0 \)</span><br>
+            <strong>Hence Proved.</strong>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Find the image of the point \( (1, 6, 3) \) in the line \( \frac{x}{1} = \frac{y-1}{2} = \frac{z-2}{3} \). Also, write the equation of the line joining the given point and its image, and find the perpendicular distance from the point to the given line.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Image: \( (1, 0, 7) \), Eq: \( \frac{x-1}{0} = \frac{y-6}{-6} = \frac{z-3}{4} \), Distance: \( \sqrt{13} \) units.</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let \( P(1, 6, 3) \) be the given point and the line be \( L: \frac{x}{1} = \frac{y-1}{2} = \frac{z-2}{3} = \lambda \).<br>
+            Let \( Q \) be the foot of perpendicular from \( P \) to \( L \).<br>
+            Any point on \( L \) is \( Q(\lambda, 2\lambda+1, 3\lambda+2) \).<br><br>
+            
+            1) <strong>Find Foot of Perpendicular (Q):</strong><br>
+            Direction ratios (DRs) of \( PQ \): \( (\lambda - 1, 2\lambda + 1 - 6, 3\lambda + 2 - 3) = (\lambda - 1, 2\lambda - 5, 3\lambda - 1) \).<br>
+            DRs of line \( L \) are \( (1, 2, 3) \).<br>
+            Since \( PQ \perp L \), dot product of DRs is 0:<br>
+            <span class="math-scroll">\( 1(\lambda - 1) + 2(2\lambda - 5) + 3(3\lambda - 1) = 0 \)</span>
+            <span class="math-scroll">\( \lambda - 1 + 4\lambda - 10 + 9\lambda - 3 = 0 \)</span>
+            <span class="math-scroll">\( 14\lambda - 14 = 0 \implies \lambda = 1 \)</span><br>
+            Coordinates of foot \( Q \) (put \( \lambda=1 \)): \( Q(1, 2(1)+1, 3(1)+2) = (1, 3, 5) \).<br><br>
+            
+            2) <strong>Find Image (P'):</strong><br>
+            Let the image of \( P \) be \( P'(x', y', z') \). \( Q \) is the midpoint of \( PP' \).<br>
+            <span class="math-scroll">\( \frac{x' + 1}{2} = 1 \implies x' = 1 \)</span>
+            <span class="math-scroll">\( \frac{y' + 6}{2} = 3 \implies y' = 0 \)</span>
+            <span class="math-scroll">\( \frac{z' + 3}{2} = 5 \implies z' = 7 \)</span><br>
+            Image is <strong>\( P'(1, 0, 7) \)</strong>.<br><br>
+            
+            3) <strong>Equation of line joining \( P \) and \( P' \):</strong><br>
+            Passes through \( P(1, 6, 3) \) and \( P'(1, 0, 7) \).<br>
+            DRs of \( PP' \): \( (1-1, 0-6, 7-3) = (0, -6, 4) \).<br>
+            Equation: <strong>\( \frac{x-1}{0} = \frac{y-6}{-6} = \frac{z-3}{4} \)</strong>.<br><br>
+            
+            4) <strong>Perpendicular Distance (PQ):</strong><br>
+            Distance between \( P(1, 6, 3) \) and \( Q(1, 3, 5) \):<br>
+            <span class="math-scroll">\( PQ = \sqrt{(1-1)^2 + (3-6)^2 + (5-3)^2} = \sqrt{0 + (-3)^2 + 2^2} = \sqrt{9 + 4} = \) <strong>\( \sqrt{13} \) units</strong>.</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Show that the lines \( \frac{x+1}{3} = \frac{y+3}{5} = \frac{z+5}{7} \) and \( \frac{x-2}{1} = \frac{y-4}{3} = \frac{z-6}{5} \) intersect each other. Find their point of intersection.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Answer: Point of Intersection: \( (1/2, -1/2, -3/2) \)</div>
+        <div class="explanation">
+            <strong>Step-by-step Solution:</strong><br>
+            Let \( L_1 : \frac{x+1}{3} = \frac{y+3}{5} = \frac{z+5}{7} = \lambda \)<br>
+            Let \( L_2 : \frac{x-2}{1} = \frac{y-4}{3} = \frac{z-6}{5} = \mu \)<br><br>
+            
+            Any general point on \( L_1 \) is \( P(3\lambda - 1, 5\lambda - 3, 7\lambda - 5) \).<br>
+            Any general point on \( L_2 \) is \( Q(\mu + 2, 3\mu + 4, 5\mu + 6) \).<br><br>
+            
+            If the lines intersect, they must have a common point. Thus, for some values of \( \lambda \) and \( \mu \), \( P \) and \( Q \) must be identical.<br>
+            Equating corresponding coordinates:<br>
+            1) \( 3\lambda - 1 = \mu + 2 \implies 3\lambda - \mu = 3 \) &nbsp; --- (Eq. i)<br>
+            2) \( 5\lambda - 3 = 3\mu + 4 \implies 5\lambda - 3\mu = 7 \) &nbsp; --- (Eq. ii)<br>
+            3) \( 7\lambda - 5 = 5\mu + 6 \implies 7\lambda - 5\mu = 11 \) &nbsp; --- (Eq. iii)<br><br>
+            
+            Solve (Eq. i) and (Eq. ii):<br>
+            From (i), \( \mu = 3\lambda - 3 \).<br>
+            Substitute in (ii):<br>
+            <span class="math-scroll">\( 5\lambda - 3(3\lambda - 3) = 7 \)</span>
+            <span class="math-scroll">\( 5\lambda - 9\lambda + 9 = 7 \)</span>
+            <span class="math-scroll">\( -4\lambda = -2 \implies \lambda = \frac{1}{2} \)</span><br>
+            Find \( \mu \): <span class="math-scroll">\( \mu = 3(1/2) - 3 = \frac{3}{2} - 3 = -\frac{3}{2} \)</span>.<br><br>
+            
+            Check if these values satisfy (Eq. iii):<br>
+            LHS: \( 7(1/2) - 5(-3/2) = \frac{7}{2} + \frac{15}{2} = \frac{22}{2} = 11 \).<br>
+            RHS: \( 11 \).<br>
+            LHS = RHS. Since the third equation is satisfied, the lines <strong>intersect</strong>.<br><br>
+            
+            <strong>Point of Intersection:</strong><br>
+            Substitute \( \lambda = 1/2 \) into the coordinates of \( P \) (or \( \mu = -3/2 \) into \( Q \)):<br>
+            <span class="math-scroll">\( x = 3(1/2) - 1 = 1/2 \)</span>
+            <span class="math-scroll">\( y = 5(1/2) - 3 = -1/2 \)</span>
+            <span class="math-scroll">\( z = 7(1/2) - 5 = -3/2 \)</span><br>
+            The point of intersection is <strong>\( (1/2, -1/2, -3/2) \)</strong>.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            color: #333;
+        }
+
+        /* Solution specific styles */
+        .section-title {
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 13pt;
+            border-left: 5px solid var(--primary-yellow);
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            font-weight: bold;
+            color: #222;
+            flex: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .correct-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 6px 12px; 
+            margin: 5px 0 12px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+
+        .explanation {
+            margin-left: 10px;
+            color: #444;
+        }
+
+        /* Container to allow horizontal scrolling of long math equations on small screens */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+
+        /* Step-by-step styling */
+        .step {
+            margin-bottom: 8px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 12px; 
+                margin: 0;
+            }
+            .question-header {
+                flex-direction: column;
+            }
+            .marks-badge {
+                margin-top: 8px;
+                align-self: flex-start;
+            }
+            .explanation {
+                margin-left: 0;
+            }
+            .institute-name {
+                font-size: 18pt;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Minor Test 18 (General Maths)</div>
+    </div>
+
+    <div class="section-title">Section A (Objective Type)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q1. What is the value of \( (-15) + (+8) \)?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) \( -7 \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            When adding integers with different signs, we subtract their absolute values and assign the sign of the larger absolute value.<br>
+            \( |-15| = 15 \) and \( |+8| = 8 \).<br>
+            Difference = \( 15 - 8 = 7 \).<br>
+            Since 15 is greater and carries a negative sign, the result is \( -7 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q2. Which of the following fractions is the largest? \( \frac{1}{2}, \frac{3}{4}, \frac{2}{5}, \frac{5}{8} \)</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) \( \frac{3}{4} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Convert each fraction to a decimal or find a common denominator (LCM of 2, 4, 5, 8 is 40):
+            <div class="math-scroll">
+                <ul>
+                    <li>\( \frac{1}{2} = 0.50 \) (or \( \frac{20}{40} \))</li>
+                    <li>\( \frac{3}{4} = 0.75 \) (or \( \frac{30}{40} \))</li>
+                    <li>\( \frac{2}{5} = 0.40 \) (or \( \frac{16}{40} \))</li>
+                    <li>\( \frac{5}{8} = 0.625 \) (or \( \frac{25}{40} \))</li>
+                </ul>
+            </div>
+            Comparing the values, \( 0.75 \) is the largest, hence \( \frac{3}{4} \) is the largest fraction.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q3. If \( x = 3 \), find the value of \( 2x + 5 \).</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 11</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Substitute \( x = 3 \) into the expression:<br>
+            \( 2(3) + 5 \)<br>
+            \( = 6 + 5 \)<br>
+            \( = 11 \)
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q4. The ratio of 500g to 2kg is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (a) 1:4</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            To find the ratio, both quantities must be in the same unit. Convert 2kg to grams:<br>
+            \( 2\text{ kg} = 2 \times 1000\text{ g} = 2000\text{ g} \).<br>
+            Now, find the ratio:<br>
+            \( \frac{500}{2000} = \frac{5}{20} = \frac{1}{4} \).<br>
+            Therefore, the ratio is 1:4.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q5. A piece of string is 20 cm long. What will be the length of each side if the string is used to form a square?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (c) 5 cm</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The total length of the string forms the perimeter of the square.<br>
+            Perimeter of a square = \( 4 \times \text{side} \)<br>
+            \( 20 = 4 \times \text{side} \)<br>
+            \( \text{Side} = \frac{20}{4} = 5\text{ cm} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q6. The product of \( 2.5 \times 0.4 \) is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (d) 1.0</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            First, multiply the numbers ignoring the decimals: \( 25 \times 4 = 100 \).<br>
+            Count the total decimal places in the original numbers (1 in 2.5 + 1 in 0.4 = 2 decimal places).<br>
+            Place the decimal point 2 places from the right in the product: \( 1.00 = 1.0 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q7. What is the average (mean) of the first 5 natural numbers?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (a) 3</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The first 5 natural numbers are 1, 2, 3, 4, 5.<br>
+            Sum = \( 1 + 2 + 3 + 4 + 5 = 15 \).<br>
+            Average = \( \frac{\text{Sum of observations}}{\text{Number of observations}} = \frac{15}{5} = 3 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q8. The fraction \( \frac{3}{4} \) expressed as a percentage is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) 75%</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            To convert a fraction to a percentage, multiply by 100%.<br>
+            \( \frac{3}{4} \times 100\% = 3 \times 25\% = 75\% \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q9. Which property is shown by the equation \( a + b = b + a \)?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (c) Commutative</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The commutative property of addition states that changing the order of the operands does not change the sum. Hence, \( a + b = b + a \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q10. The temperature in Shimla was 5°C. At night, it dropped by 7°C. What was the night temperature?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Answer: (b) -2°C</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Initial temperature = 5°C.<br>
+            Drop in temperature implies subtraction.<br>
+            Night temperature = \( 5^\circ\text{C} - 7^\circ\text{C} = -2^\circ\text{C} \).
+        </div>
+    </div>
+
+    <div class="section-title">Section B (Short Answer Type)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q11. Simplify the given expression: \( \frac{2}{3} + \frac{1}{4} - \frac{1}{6} \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: \( \frac{3}{4} \)</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">1. Find the Least Common Multiple (LCM) of the denominators 3, 4, and 6. 
+            LCM(3, 4, 6) = 12. <em>(1 Mark)</em></div>
+            <div class="step">2. Make the denominators equal by finding equivalent fractions:</div>
+            <div class="math-scroll">
+                \[ \frac{2 \times 4}{3 \times 4} + \frac{1 \times 3}{4 \times 3} - \frac{1 \times 2}{6 \times 2} \]
+                \[ = \frac{8}{12} + \frac{3}{12} - \frac{2}{12} \quad \text{(1 Mark)} \]
+            </div>
+            <div class="step">3. Combine the numerators over the common denominator:</div>
+            <div class="math-scroll">
+                \[ = \frac{8 + 3 - 2}{12} = \frac{11 - 2}{12} = \frac{9}{12} \]
+            </div>
+            <div class="step">4. Simplify the fraction to its lowest terms by dividing numerator and denominator by 3:</div>
+            <div class="math-scroll">
+                \[ = \frac{9 \div 3}{12 \div 3} = \frac{3}{4} \quad \text{(1 Mark)} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q12. Form an algebraic equation and solve it: <br><em>"I think of a number, multiply it by 4 and add 7 to the product. The final result is 35. Find the number."</em></div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: The number is 7</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">1. Let the unknown number be \( x \). <em>(0.5 Mark)</em></div>
+            <div class="step">2. Multiply the number by 4: \( 4x \)</div>
+            <div class="step">3. Add 7 to the product: \( 4x + 7 \)</div>
+            <div class="step">4. Set the expression equal to the final result to form the equation:
+            <div class="math-scroll">
+                \[ 4x + 7 = 35 \quad \text{(1 Mark for equation)} \]
+            </div>
+            </div>
+            <div class="step">5. Solve the equation: Subtract 7 from both sides:
+            <div class="math-scroll">
+                \[ 4x = 35 - 7 \]
+                \[ 4x = 28 \quad \text{(0.5 Mark)} \]
+            </div>
+            </div>
+            <div class="step">6. Divide by 4:
+            <div class="math-scroll">
+                \[ x = \frac{28}{4} = 7 \quad \text{(1 Mark for final answer)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q13. Divide an amount of ₹ 1500 between Amit and Sumit in the ratio 2:3. How much will each of them get?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Amit gets ₹ 600, Sumit gets ₹ 900</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">1. The given ratio is 2 : 3.</div>
+            <div class="step">2. Find the total number of ratio parts:
+            <div class="math-scroll">
+                \[ \text{Total parts} = 2 + 3 = 5 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step">3. Calculate Amit's share:
+            <div class="math-scroll">
+                \[ \text{Amit's share} = \frac{2}{5} \times 1500 = 2 \times 300 = ₹ 600 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step">4. Calculate Sumit's share:
+            <div class="math-scroll">
+                \[ \text{Sumit's share} = \frac{3}{5} \times 1500 = 3 \times 300 = ₹ 900 \quad \text{(1 Mark)} \]
+            </div>
+            (Alternatively, Sumit's share = Total - Amit's share = 1500 - 600 = ₹ 900).
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q14. Find the total cost of fencing a rectangular park of length 50m and breadth 30m, if the cost of fencing is ₹ 15 per metre.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: ₹ 2400</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">1. Identify the formula for the perimeter of a rectangle since fencing goes around the boundary:
+            <div class="math-scroll">
+                \[ \text{Perimeter} = 2 \times (\text{Length} + \text{Breadth}) \quad \text{(0.5 Mark)} \]
+            </div>
+            </div>
+            <div class="step">2. Substitute the given values (L = 50m, B = 30m):
+            <div class="math-scroll">
+                \[ \text{Perimeter} = 2 \times (50 + 30) = 2 \times 80 = 160\text{ m} \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+            <div class="step">3. Calculate the total cost of fencing:
+            <div class="math-scroll">
+                \[ \text{Total Cost} = \text{Perimeter} \times \text{Rate per metre} \]
+                \[ \text{Total Cost} = 160 \times 15 = ₹ 2400 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q15. In a class test containing 20 questions, 3 marks are given for every correct answer and (-1) mark is given for every incorrect answer. Radhika attempted 15 questions in total. If she got 10 correct answers and 5 incorrect answers, what is her total score?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: 25 Marks</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">1. Calculate the marks awarded for correct answers:
+            <div class="math-scroll">
+                \[ \text{Marks for 10 correct answers} = 10 \times (+3) = +30 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step">2. Calculate the marks deducted for incorrect answers:
+            <div class="math-scroll">
+                \[ \text{Marks for 5 incorrect answers} = 5 \times (-1) = -5 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step">3. Calculate the total score:
+            <div class="math-scroll">
+                \[ \text{Total Score} = 30 + (-5) = 30 - 5 = 25 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">Section C (Long Answer / Competency Based)</div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q16. A rectangular classroom floor is 10m long and 8m wide. A square carpet of side 6m is placed perfectly in the center of the floor.<br>
+                (i) Find the total area of the classroom floor.<br>
+                (ii) Find the area of the carpet.<br>
+                (iii) Calculate the area of the floor that is NOT covered by the carpet.<br>
+                (iv) If the cost of the carpet is ₹ 120 per sq.m, find the total cost of the carpet.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answers: (i) 80 m², (ii) 36 m², (iii) 44 m², (iv) ₹ 4320</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step"><strong>(i) Total area of the classroom floor:</strong><br>
+            The floor is a rectangle. 
+            <div class="math-scroll">
+                \[ \text{Area of rectangle} = \text{Length} \times \text{Breadth} = 10\text{m} \times 8\text{m} = 80\text{ m}^2 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(ii) Area of the carpet:</strong><br>
+            The carpet is a square.
+            <div class="math-scroll">
+                \[ \text{Area of square} = \text{side} \times \text{side} = 6\text{m} \times 6\text{m} = 36\text{ m}^2 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(iii) Area NOT covered by the carpet:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Uncovered Area} = \text{Total Area of Floor} - \text{Area of Carpet} \]
+                \[ \text{Uncovered Area} = 80\text{ m}^2 - 36\text{ m}^2 = 44\text{ m}^2 \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(iv) Total cost of the carpet:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Total Cost} = \text{Area of Carpet} \times \text{Rate} \]
+                \[ \text{Total Cost} = 36 \times 120 = ₹ 4320 \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="question-header">
+            <div class="question-text">Q17. Rahul's monthly salary is ₹ 40,000. He plans his budget strictly. He spends \( \frac{1}{4} \) of his salary on house rent, \( \frac{3}{8} \) on food and groceries, and saves the remaining amount in his bank account.<br>
+                (i) Calculate the exact amount he spends on house rent.<br>
+                (ii) Calculate the exact amount he spends on food and groceries.<br>
+                (iii) Find his total monthly savings.<br>
+                (iv) What fraction of his total income does he manage to save?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answers: (i) ₹ 10,000, (ii) ₹ 15,000, (iii) ₹ 15,000, (iv) \( \frac{3}{8} \)</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step">Total Salary = ₹ 40,000</div>
+            <div class="step"><strong>(i) Amount spent on house rent:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Rent} = \frac{1}{4} \text{ of } 40,000 = \frac{1}{4} \times 40,000 = ₹ 10,000 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(ii) Amount spent on food and groceries:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Food} = \frac{3}{8} \text{ of } 40,000 = \frac{3}{8} \times 40,000 = 3 \times 5,000 = ₹ 15,000 \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(iii) Total monthly savings:</strong><br>
+            First, find total expenditure.
+            <div class="math-scroll">
+                \[ \text{Total Expenditure} = 10,000 + 15,000 = ₹ 25,000 \]
+                \[ \text{Savings} = \text{Total Salary} - \text{Total Expenditure} \]
+                \[ \text{Savings} = 40,000 - 25,000 = ₹ 15,000 \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(iv) Fraction of income saved:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Fraction saved} = \frac{\text{Savings}}{\text{Total Income}} = \frac{15,000}{40,000} = \frac{15}{40} = \frac{3}{8} \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block" style="border-bottom: none;">
+        <div class="question-header">
+            <div class="question-text">Q18. The length of a rectangular garden is exactly twice its breadth. The total perimeter of this garden is 72 cm.<br>
+                (i) Let the breadth be '\(x\)'. Write down the expression for the length.<br>
+                (ii) Form an equation using the perimeter formula.<br>
+                (iii) Solve the equation to find the actual length and breadth in cm.<br>
+                (iv) Calculate the total area of the garden.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answers: (i) \(2x\), (ii) \( 2(2x + x) = 72 \), (iii) B = 12cm, L = 24cm, (iv) 288 cm²</div>
+        <div class="explanation">
+            <strong>Step-by-Step Solution:</strong>
+            <div class="step"><strong>(i) Expression for the length:</strong><br>
+            Let Breadth (\(B\)) = \(x\). Since length is twice the breadth, <br>
+            Length (\(L\)) = \( 2x \) \quad <em>(1 Mark)</em>
+            </div>
+            <div class="step"><strong>(ii) Form the equation:</strong><br>
+            Formula for perimeter is \( P = 2(L + B) \). Given \( P = 72 \).<br>
+            <div class="math-scroll">
+                \[ 2(2x + x) = 72 \quad \text{(1 Mark)} \]
+            </div>
+            </div>
+            <div class="step"><strong>(iii) Solve the equation:</strong><br>
+            <div class="math-scroll">
+                \begin{align*}
+                2(3x) &= 72 \\
+                6x &= 72 \\
+                x &= \frac{72}{6} \\
+                x &= 12
+                \end{align*}
+            </div>
+            Breadth (\(B\)) = \( x = 12\text{ cm} \).<br>
+            Length (\(L\)) = \( 2x = 2(12) = 24\text{ cm} \). \quad <em>(1.5 Marks)</em>
+            </div>
+            <div class="step"><strong>(iv) Calculate the total area:</strong><br>
+            <div class="math-scroll">
+                \[ \text{Area} = \text{Length} \times \text{Breadth} \]
+                \[ \text{Area} = 24\text{ cm} \times 12\text{ cm} = 288\text{ cm}^2 \quad \text{(1.5 Marks)} \]
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Senior Academic Council</div>
+</body>
+</html>
