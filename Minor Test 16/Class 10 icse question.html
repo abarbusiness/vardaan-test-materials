@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+        .instructions ul { 
+            margin: 5px 0 0 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive styling for Mobile, Tablet, and Laptop */
+        @media screen and (max-width: 1024px) {
+            body { width: 90%; padding: 15mm; margin: 20px auto; min-height: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            .institute-name { font-size: 20pt; }
+        }
+        @media screen and (max-width: 768px) {
+            body { width: 95%; padding: 10mm; font-size: 11pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+        }
+        @media screen and (max-width: 480px) {
+            body { width: 100%; padding: 10px; margin: 0; box-shadow: none; border-radius: 0; font-size: 11pt;}
+            .q-num { width: 25px; }
+            .institute-name { font-size: 16pt; }
+            .math { overflow-x: auto; display: block; } /* For chunking long equations on mobile */
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; box-shadow: none; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Chemistry (HCl & Ammonia)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write balanced chemical equations wherever necessary.</li>
+                <li>Answers must be exact and based strictly on ICSE curriculum guidelines.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Name the drying agent used in the laboratory preparation of hydrogen chloride gas. Why is concentrated sulphuric acid chosen for this purpose?
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Write the balanced chemical equation for the action of warm water on Magnesium nitride (\(Mg_3N_2\)). Name the pungent-smelling gas evolved.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            How is "back suction" avoided during the preparation of hydrochloric acid by dissolving hydrogen chloride gas in water? Name the special arrangement used.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            State your observation when ammonium hydroxide is added dropwise and then in excess to an aqueous solution of copper (II) sulphate.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            What is aqua regia? State its unique chemical property regarding noble metals.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Differentiate between the burning of ammonia in oxygen and the catalytic oxidation of ammonia by stating the conditions and writing the balanced chemical equations for both.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Write balanced chemical equations for the reaction of dilute hydrochloric acid with:
+            <div class="sub-question">(a) Sodium sulphite</div>
+            <div class="sub-question">(b) Lead nitrate solution</div>
+            <div class="sub-question">(c) Sodium hydrogen carbonate (Sodium bicarbonate)</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Dry ammonia gas is passed over heated Copper (II) oxide. 
+            <div class="sub-question">(a) State what you observe.</div>
+            <div class="sub-question">(b) Write the balanced chemical equation for this reaction.</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Explain the Fountain Experiment for Hydrogen Chloride gas. State the two specific properties of hydrogen chloride gas demonstrated by this experiment.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Write balanced equations for the reaction of chlorine gas with:
+            <div class="sub-question">(a) Excess of ammonia.</div>
+            <div class="sub-question">(b) Ammonia, where chlorine is in excess.</div>
+            Name the highly explosive product formed in one of these reactions.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            With reference to the laboratory preparation of ammonia from ammonium chloride:
+            <div class="sub-question">(a) Write the balanced chemical equation for the reaction.</div>
+            <div class="sub-question">(b) Why is calcium hydroxide preferred over sodium hydroxide for this preparation?</div>
+            <div class="sub-question">(c) Name the drying agent used for ammonia and explain why concentrated sulphuric acid is NOT used to dry the gas.</div>
+            <div class="sub-question">(d) How is the ammonia gas collected?</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            With reference to the manufacture of ammonia by Haber's Process:
+            <div class="sub-question">(a) State the reactants and their ratio used in the process.</div>
+            <div class="sub-question">(b) State the optimum temperature, pressure, and the catalyst used.</div>
+            <div class="sub-question">(c) Write the balanced chemical equation for the process.</div>
+            <div class="sub-question">(d) State two important uses of ammonia.</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Give balanced chemical equations and appropriate observations for the following:
+            <div class="sub-question">(a) Dilute hydrochloric acid is added to iron (II) sulphide. (Identify the gas evolved).</div>
+            <div class="sub-question">(b) Silver nitrate solution is added to dilute hydrochloric acid, followed by the addition of excess ammonium hydroxide to the product.</div>
+            <div class="sub-question">(c) Aqueous ammonia is added drop by drop to iron (III) chloride solution.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
