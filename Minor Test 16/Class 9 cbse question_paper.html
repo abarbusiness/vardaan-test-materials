@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+        .instructions ul { 
+            margin: 5px 0 0 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive styling for Mobile, Tablet, and Laptop */
+        @media screen and (max-width: 1024px) {
+            body { width: 90%; padding: 15mm; margin: 20px auto; min-height: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            .institute-name { font-size: 20pt; }
+        }
+        @media screen and (max-width: 768px) {
+            body { width: 95%; padding: 10mm; font-size: 11pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+        }
+        @media screen and (max-width: 480px) {
+            body { width: 100%; padding: 10px; margin: 0; box-shadow: none; border-radius: 0; font-size: 11pt;}
+            .q-num { width: 25px; }
+            .institute-name { font-size: 16pt; }
+            .math { overflow-x: auto; display: block; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; box-shadow: none; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 16</div>
+        <div class="exam-details">
+            <span>Class: 9 CBSE</span>
+            <span>Subject: Science (Physics)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A has 5 questions of 2 marks each.</li>
+                <li>Section B has 5 questions of 3 marks each.</li>
+                <li>Section C has 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly, use standard SI units, and show calculations where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            A person carrying a heavy load on his head walks on a horizontal road. Explain scientifically why the work done by him against gravity is considered to be zero.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Differentiate between Class II and Class III levers based on the positions of the fulcrum, load, and effort. Which of these levers always acts as a speed multiplier?
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Define 1 Watt of power. Express the commercial unit of energy, 1 kilowatt-hour (kWh), in Joules.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            If the velocity of an object is doubled while its mass remains constant, what will be the effect on its kinetic energy? Justify your answer using the relevant formula.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Does the gravitational potential energy of an object depend on the path taken to raise it to a certain height? State the formula for gravitational potential energy.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Define positive and negative work. Give one real-life example of negative work. What is the nature of the work done by frictional force when a block slides on a table?
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Derive the mathematical expression for the kinetic energy (\(E_k\)) of an object of mass \(m\) moving with a uniform velocity \(v\), assuming it started from rest.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            An electric bulb of 60 W is used for 6 hours per day. Calculate the 'units' of electrical energy consumed in a span of 30 days by this bulb.
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            What is a block and tackle system? If a block and tackle system has 4 pulleys in total, state its ideal velocity ratio (VR) and ideal mechanical advantage (MA). Why is the efficiency of a practical pulley system always less than 100%?
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Calculate the amount of work to be done to increase the velocity of a car from 30 km/h to 60 km/h, given that the mass of the car is 1500 kg.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) State the Law of Conservation of Energy. (1 Mark)</div>
+            <div class="sub-question">(b) Using the example of an object of mass \(m\) falling freely from a height \(h\), theoretically trace the energy transformations and prove that the total mechanical energy remains constant throughout its path. (4 Marks)</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A practical machine requires an effort of 200 N to lift a load of 800 N. The effort moves through a distance of 10 m while the load moves through a distance of 2 m in the same time interval. Calculate:
+            <div class="sub-question">(a) The Mechanical Advantage (MA) of the machine. (1.5 Marks)</div>
+            <div class="sub-question">(b) The Velocity Ratio (VR) of the machine. (1.5 Marks)</div>
+            <div class="sub-question">(c) The Efficiency (\(\eta\)) of the machine as a percentage. (1 Mark)</div>
+            <div class="sub-question">(d) Explain why the efficiency of this machine is not 100%. (1 Mark)</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) An object is pushed up an inclined plane of length \(l\) and vertical height \(h\). State the formula for the ideal mechanical advantage of this inclined plane. (1 Mark)</div>
+            <div class="sub-question">(b) A porter lifts a luggage of 15 kg from the ground and puts it on his head 1.5 m above the ground. Calculate the work done by him on the luggage. (Take \(g = 10 \text{ m/s}^2\)) (2 Marks)</div>
+            <div class="sub-question">(c) If the porter takes exactly 5 seconds to lift the luggage from the ground to his head, calculate his average power. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan with ♥ | Powered by VARDAAN COMET</div>
+</body>
+</html>

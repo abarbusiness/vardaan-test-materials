@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 CBSE Minor Test 19 Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-black: #111111;
+            --accent-yellow: #fbc02d;
+            --light-bg: #fafafa;
+            --border-color: #222222;
+            --text-dark: #222222;
+        }
+        * { 
+            box-sizing: border-box; 
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+        }
+        *::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        body { 
+            width: 100%; 
+            max-width: 920px; 
+            margin: 0 auto; 
+            padding: 25px 30px; 
+            font-family: "Times New Roman", Times, Georgia, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: #ffffff; 
+            position: relative; 
+            overflow: visible;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 75%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double var(--border-color); 
+            padding-bottom: 12px; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #000;
+        }
+        .sub-header {
+            font-size: 10.5pt;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            color: #444;
+        }
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 6px 10px; 
+            background-color: #fafafa;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            background: #ffffff;
+            padding: 10px 14px;
+            border: 1px dashed #777;
+            border-radius: 4px;
+        }
+        .instructions ul { margin: 4px 0; padding-left: 20px; }
+        .instructions li { margin-bottom: 2px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12pt; 
+            letter-spacing: 0.5px;
+            background-color: #f2f2f2;
+            padding: 5px 0;
+            border-radius: 4px;
+        }
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 14px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            min-width: 38px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow: visible;
+            word-wrap: break-word;
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-left: 10px;
+        }
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 15px;
+            margin-top: 6px;
+            padding-left: 10px;
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+        }
+        .case-study-box {
+            background-color: #fcfcfc;
+            border: 1px solid #ddd;
+            border-left: 4px solid var(--accent-yellow);
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 10.5pt; }
+            .institute-name { font-size: 17pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { font-size: 9.5pt; justify-content: space-around; }
+            .mcq-options { grid-template-columns: 1fr; }
+            .q-num { min-width: 32px; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 14pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 4px; }
+            .q-marks { float: none; display: inline-block; margin-top: 4px; color: #333; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 12mm; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.08; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 19 — MATHEMATICS (STANDARD & BASIC)</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 10 CBSE</span>
+            <span><strong>Topic:</strong> Full Syllabus (Units 1 - 8)</span>
+            <span><strong>Time:</strong> 2 Hours</span>
+            <span><strong>Max. Marks:</strong> 80 Marks</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>This question paper contains <strong>38 questions</strong> divided into <strong>5 Sections</strong>: A, B, C, D, and E.</li>
+                <li><strong>Section A</strong> consists of 20 Multiple Choice Questions (MCQs) of 1 mark each (Q1 to Q20). Questions 19 and 20 are Assertion-Reason based.</li>
+                <li><strong>Section B</strong> consists of 5 Very Short Answer (VSA) type questions of 2 marks each (Q21 to Q25).</li>
+                <li><strong>Section C</strong> consists of 6 Short Answer (SA) type questions of 3 marks each (Q26 to Q31).</li>
+                <li><strong>Section D</strong> consists of 4 Long Answer (LA) type questions of 5 marks each (Q32 to Q35).</li>
+                <li><strong>Section E</strong> consists of 3 Case-Based integrated units of assessment of 4 marks each (Q36 to Q38) with sub-parts.</li>
+                <li>All Questions are compulsory. However, internal choices have been provided in 2 questions of 2 marks, 2 questions of 3 marks, 2 questions of 5 marks, and 2 marks sub-questions of Case Study questions.</li>
+                <li>Use of calculators is strictly prohibited. Take $\pi = \frac{22}{7}$ wherever applicable.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (20 Marks)
+        <span class="marks-info">(Multiple Choice Questions — 20 Questions $\times$ 1 Mark Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If two positive integers $a$ and $b$ are written as $a = x^3 y^2$ and $b = x y^3$, where $x, y$ are prime numbers, then $\text{HCF}(a, b)$ is:
+            <div class="mcq-options">
+                <div>(a) $x y$</div>
+                <div>(b) $x y^2$</div>
+                <div>(c) $x^3 y^3$</div>
+                <div>(d) $x^2 y^2$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If one zero of the quadratic polynomial $x^2 + 3x + k$ is $2$, then the value of $k$ is:
+            <div class="mcq-options">
+                <div>(a) $10$</div>
+                <div>(b) $-10$</div>
+                <div>(c) $-7$</div>
+                <div>(d) $-2$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The pair of linear equations $kx + 3y = -(k - 3)$ and $12x + ky = -k$ has infinitely many solutions. The value of $k$ is:
+            <div class="mcq-options">
+                <div>(a) $k = 6$</div>
+                <div>(b) $k = -6$</div>
+                <div>(c) $k = 0$</div>
+                <div>(d) $k = 12$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The quadratic equation $2x^2 - kx + 8 = 0$ has real and equal roots. The value(s) of $k$ is/are:
+            <div class="mcq-options">
+                <div>(a) $8$ only</div>
+                <div>(b) $-8$ only</div>
+                <div>(c) $\pm 8$</div>
+                <div>(d) $\pm 16$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The $11^{\text{th}}$ term of the Arithmetic Progression $-3, -\frac{1}{2}, 2, \dots$ is:
+            <div class="mcq-options">
+                <div>(a) $28$</div>
+                <div>(b) $22$</div>
+                <div>(c) $-38$</div>
+                <div>(d) $-46\frac{1}{2}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            In $\Delta ABC$, $DE \parallel BC$ such that $AD = 3\text{ cm}$, $DB = 5\text{ cm}$, and $AC = 5.6\text{ cm}$. The length of $AE$ is:
+            <div class="mcq-options">
+                <div>(a) $2.1\text{ cm}$</div>
+                <div>(b) $3.1\text{ cm}$</div>
+                <div>(c) $1.8\text{ cm}$</div>
+                <div>(d) $2.8\text{ cm}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The distance of the point $P(-6, 8)$ from the origin $(0,0)$ is:
+            <div class="mcq-options">
+                <div>(a) $8$ units</div>
+                <div>(b) $2\sqrt{7}$ units</div>
+                <div>(c) $10$ units</div>
+                <div>(d) $6$ units</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The value of $\frac{\tan 65^\circ}{\cot 25^\circ}$ is:
+            <div class="mcq-options">
+                <div>(a) $0$</div>
+                <div>(b) $1$</div>
+                <div>(c) $\frac{1}{\sqrt{3}}$</div>
+                <div>(d) $\sqrt{3}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If the angle of elevation of the top of a tower from a point on the ground, which is $30\text{ m}$ away from the foot of the tower, is $30^\circ$, then the height of the tower is:
+            <div class="mcq-options">
+                <div>(a) $10\sqrt{3}\text{ m}$</div>
+                <div>(b) $30\sqrt{3}\text{ m}$</div>
+                <div>(c) $10\text{ m}$</div>
+                <div>(d) $15\sqrt{3}\text{ m}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If $\text{HCF}(306, 657) = 9$, then $\text{LCM}(306, 657)$ is equal to:
+            <div class="mcq-options">
+                <div>(a) $22338$</div>
+                <div>(b) $22383$</div>
+                <div>(c) $23238$</div>
+                <div>(d) $22833$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If the graph of a polynomial $p(x)$ intersects the x-axis at 3 distinct points and touches it at 1 point, then the total number of zeroes of $p(x)$ is:
+            <div class="mcq-options">
+                <div>(a) $3$</div>
+                <div>(b) $4$</div>
+                <div>(c) $2$</div>
+                <div>(d) $1$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The lines represented by $x = a$ and $y = b$ graphically are:
+            <div class="mcq-options">
+                <div>(a) Parallel</div>
+                <div>(b) Intersecting at $(b, a)$</div>
+                <div>(c) Coincident</div>
+                <div>(d) Intersecting at $(a, b)$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The discriminant of the quadratic equation $3x^2 - 2x + \frac{1}{3} = 0$ is:
+            <div class="mcq-options">
+                <div>(a) $0$</div>
+                <div>(b) $1$</div>
+                <div>(c) $-1$</div>
+                <div>(d) $2\sqrt{3}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question-container">
+        <div class="q-num">Q14.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            In an Arithmetic Progression, if $a_{18} - a_{14} = 32$, then the common difference $d$ is:
+            <div class="mcq-options">
+                <div>(a) $4$</div>
+                <div>(b) $-8$</div>
+                <div>(c) $8$</div>
+                <div>(d) $-4$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question-container">
+        <div class="q-num">Q15.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If the ratio of areas of two similar triangles is $16 : 25$, then the ratio of their corresponding sides is:
+            <div class="mcq-options">
+                <div>(a) $25 : 16$</div>
+                <div>(b) $4 : 5$</div>
+                <div>(c) $5 : 4$</div>
+                <div>(d) $256 : 625$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="question-container">
+        <div class="q-num">Q16.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The coordinates of the point which divides the line segment joining $A(1, 3)$ and $B(4, 6)$ internally in the ratio $1 : 2$ are:
+            <div class="mcq-options">
+                <div>(a) $(2, 4)$</div>
+                <div>(b) $(3, 5)$</div>
+                <div>(c) $(2.5, 4.5)$</div>
+                <div>(d) $(1.5, 3.5)$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="question-container">
+        <div class="q-num">Q17.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            If $\sec \theta + \tan \theta = x$, then the value of $\sec \theta - \tan \theta$ is:
+            <div class="mcq-options">
+                <div>(a) $x^2$</div>
+                <div>(b) $\frac{1}{x}$</div>
+                <div>(c) $1 - x$</div>
+                <div>(d) $\sqrt{x}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="question-container">
+        <div class="q-num">Q18.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            The ratio in which the y-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$ is:
+            <div class="mcq-options">
+                <div>(a) $1 : 5$</div>
+                <div>(b) $5 : 1$</div>
+                <div>(c) $2 : 3$</div>
+                <div>(d) $3 : 2$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assertion Reason Instructions -->
+    <div style="background: #fdfdfd; border: 1px solid #ccc; padding: 8px 12px; margin: 15px 0; font-size: 9.5pt; border-radius: 4px;">
+        <strong>Direction for Q19 & Q20:</strong> In question numbers 19 and 20, a statement of <strong>Assertion (A)</strong> is followed by a statement of <strong>Reason (R)</strong>. Choose the correct option:
+        <br>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).
+        <br>(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).
+        <br>(c) (A) is true but (R) is false.
+        <br>(d) (A) is false but (R) is true.
+    </div>
+
+    <!-- Q19 -->
+    <div class="question-container">
+        <div class="q-num">Q19.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            <strong>Assertion (A):</strong> The number $\sqrt{p}$ is an irrational number if $p$ is a prime number.<br>
+            <strong>Reason (R):</strong> The square root of all positive integers is always an irrational number.
+        </div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="question-container">
+        <div class="q-num">Q20.</div>
+        <div class="q-content">
+            <span class="q-marks">[1 Mark]</span>
+            <strong>Assertion (A):</strong> If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.<br>
+            <strong>Reason (R):</strong> All similar triangles are congruent to each other.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (10 Marks)
+        <span class="marks-info">(Very Short Answer Type — 5 Questions $\times$ 2 Marks Each)</span>
+    </div>
+
+    <!-- Q21 -->
+    <div class="question-container">
+        <div class="q-num">Q21.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Prove that $5 - \sqrt{3}$ is an irrational number, given that $\sqrt{3}$ is irrational.
+        </div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="question-container">
+        <div class="q-num">Q22.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the zeroes of the quadratic polynomial $4s^2 - 4s + 1$ and verify the relationship between the zeroes and the coefficients.
+        </div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="question-container">
+        <div class="q-num">Q23.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Solve the linear equations $2x + 3y = 11$ and $2x - 4y = -24$. Hence, find the value of '$m$' for which $y = mx + 3$.
+            <br><strong>OR</strong><br>
+            For what value of $p$ does the pair of linear equations given below have a unique solution?
+            $$4x + py + 8 = 0$$
+            $$2x + 2y + 2 = 0$$
+        </div>
+    </div>
+
+    <!-- Q24 -->
+    <div class="question-container">
+        <div class="q-num">Q24.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            In an isosceles triangle $ABC$ with $AB = AC$, $E$ is a point on side $CB$ produced. If $AD \perp BC$ and $EF \perp AC$, prove that $\Delta ABD \sim \Delta ECF$.
+        </div>
+    </div>
+
+    <!-- Q25 -->
+    <div class="question-container">
+        <div class="q-num">Q25.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Evaluate the following trigonometric expression:
+            $$\frac{5\cos^2 60^\circ + 4\sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$$
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (18 Marks)
+        <span class="marks-info">(Short Answer Type — 6 Questions $\times$ 3 Marks Each)</span>
+    </div>
+
+    <!-- Q26 -->
+    <div class="question-container">
+        <div class="q-num">Q26.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Find the sum of all three-digit natural numbers which are divisible by $7$.
+        </div>
+    </div>
+
+    <!-- Q27 -->
+    <div class="question-container">
+        <div class="q-num">Q27.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Solve the following quadratic equation for $x$:
+            $$\frac{1}{x+4} - \frac{1}{x-7} = \frac{11}{30}, \quad (x \neq -4, 7)$$
+        </div>
+    </div>
+
+    <!-- Q28 -->
+    <div class="question-container">
+        <div class="q-num">Q28.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Find the ratio in which the line $2x + y - 4 = 0$ divides the line segment joining the points $A(2, -2)$ and $B(3, 7)$. Also, find the coordinates of the point of division.
+            <br><strong>OR</strong><br>
+            If $A(-2, -2)$ and $B(2, -4)$ are two points, find the coordinates of $P$ such that $AP = \frac{3}{7}AB$ and $P$ lies on the line segment $AB$.
+        </div>
+    </div>
+
+    <!-- Q29 -->
+    <div class="question-container">
+        <div class="q-num">Q29.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Prove the following trigonometric identity:
+            $$\frac{\sin \theta - 2\sin^3 \theta}{2\cos^3 \theta - \cos \theta} = \tan \theta$$
+        </div>
+    </div>
+
+    <!-- Q30 -->
+    <div class="question-container">
+        <div class="q-num">Q30.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            State and prove the <strong>Basic Proportionality Theorem (Thales Theorem)</strong>.
+        </div>
+    </div>
+
+    <!-- Q31 -->
+    <div class="question-container">
+        <div class="q-num">Q31.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of $30^\circ$, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be $60^\circ$. Find the time taken by the car to reach the foot of the tower from this point.
+            <br><strong>OR</strong><br>
+            As observed from the top of a $75\text{ m}$ high lighthouse from the sea-level, the angles of depression of two ships are $30^\circ$ and $45^\circ$. If one ship is exactly behind the other on the same side of the lighthouse, find the distance between the two ships.
+        </div>
+    </div>
+
+    <!-- Section D -->
+    <div class="section-header">
+        SECTION D (20 Marks)
+        <span class="marks-info">(Long Answer Type — 4 Questions $\times$ 5 Marks Each)</span>
+    </div>
+
+    <!-- Q32 -->
+    <div class="question-container">
+        <div class="q-num">Q32.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            Solve the following pair of linear equations graphically:
+            $$2x + 3y = 12$$
+            $$x - y = 1$$
+            Find the coordinates of the vertices of the triangle formed by these lines and the y-axis. Also, calculate the area of the region bounded by these lines and the y-axis.
+        </div>
+    </div>
+
+    <!-- Q33 -->
+    <div class="question-container">
+        <div class="q-num">Q33.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            A motorboat whose speed is $18\text{ km/h}$ in still water takes $1\text{ hour}$ more to go $24\text{ km}$ upstream than to return downstream to the same spot. Determine the speed of the stream.
+            <br><strong>OR</strong><br>
+            Two water taps together can fill a tank in $9\frac{3}{8}\text{ hours}$. The tap of larger diameter takes $10\text{ hours}$ less than the smaller one to fill the tank separately. Find the time in which each tap can separately fill the tank.
+        </div>
+    </div>
+
+    <!-- Q34 -->
+    <div class="question-container">
+        <div class="q-num">Q34.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            A cash prize fund of ₹$2,800$ is to be used to give 4 cash prizes to students of a school for their overall academic performance. If each prize is ₹$200$ less than its preceding prize:
+            <div class="sub-question"><strong>(a)</strong> Find the value of each of the 4 cash prizes. <span style="float:right;"><strong>[3 Marks]</strong></span></div>
+            <div class="sub-question"><strong>(b)</strong> If $n$ such prizes were awarded following the same rule, derive an expression for the total sum $S_n$ in terms of $n$. <span style="float:right;"><strong>[2 Marks]</strong></span></div>
+        </div>
+    </div>
+
+    <!-- Q35 -->
+    <div class="question-container">
+        <div class="q-num">Q35.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            From the top of a $7\text{ m}$ high building, the angle of elevation of the top of a cable tower is $60^\circ$ and the angle of depression of its foot is $45^\circ$. Determine the total height of the cable tower. (Take $\sqrt{3} = 1.732$)
+        </div>
+    </div>
+
+    <!-- Section E -->
+    <div class="section-header">
+        SECTION E (12 Marks)
+        <span class="marks-info">(Case-Based Competency Integrated Questions — 3 Questions $\times$ 4 Marks Each)</span>
+    </div>
+
+    <!-- Q36 Case Study 1 -->
+    <div class="question-container">
+        <div class="q-num">Q36.</div>
+        <div class="q-content">
+            <span class="q-marks">[4 Marks]</span>
+            <div class="case-study-box">
+                <strong>CASE STUDY 1: Classroom Seating Plan (Coordinate Geometry)</strong><br>
+                In a modern digital smart classroom, four friends $A, B, C,$ and $D$ are seated at specific grid positions for a group activity. The teacher tracks their coordinates using an interactive grid board calibrated in meters:
+                $A(3, 4)$, $B(6, 7)$, $C(9, 4)$, and $D(6, 1)$.
+            </div>
+            <div class="sub-question">
+                <strong>(i)</strong> Find the distance between student $A$ and student $C$. <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(ii)</strong> Find the coordinates of the midpoint of the line segment joining student $B$ and student $D$. <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(iii)</strong> Check whether the quadrilateral $ABCD$ formed by these four seating positions is a <strong>square</strong>. Justify your answer using the distance formula. <span style="float:right;"><strong>[2 Marks]</strong></span>
+                <br><strong>OR</strong><br>
+                Find the length of the diagonal $BD$ and determine the area enclosed by the quadrilateral $ABCD$. <span style="float:right;"><strong>[2 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q37 Case Study 2 -->
+    <div class="question-container">
+        <div class="q-num">Q37.</div>
+        <div class="q-content">
+            <span class="q-marks">[4 Marks]</span>
+            <div class="case-study-box">
+                <strong>CASE STUDY 2: Highway Bridge Arch Design (Polynomials)</strong><br>
+                An infrastructure company designs a parabolic arch bridge over a river. Mathematically, the profile of the arch is represented by the quadratic polynomial:
+                $$p(x) = -x^2 + 2x + 8$$
+                where $x$ represents the horizontal distance in meters from the central pillar, and $p(x)$ represents the height of the arch above the water level.
+            </div>
+            <div class="sub-question">
+                <strong>(i)</strong> Find the zeroes of the polynomial $p(x)$ to determine where the arch touches the bridge platform level ($p(x) = 0$). <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(ii)</strong> Calculate the maximum height of the parabolic arch above the bridge deck level (which occurs at $x = 1\text{ m}$). <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(iii)</strong> Find a new quadratic polynomial whose zeroes are <strong>twice</strong> the zeroes of the original polynomial $p(x)$. <span style="float:right;"><strong>[2 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q38 Case Study 3 -->
+    <div class="question-container">
+        <div class="q-num">Q38.</div>
+        <div class="q-content">
+            <span class="q-marks">[4 Marks]</span>
+            <div class="case-study-box">
+                <strong>CASE STUDY 3: Drone Surveying & Coastline Monitoring (Applications of Trigonometry)</strong><br>
+                A high-precision surveillance drone is hovering stationary at a vertical height of $100\text{ m}$ above sea level. The drone camera tracks two cargo ships, $Ship\ A$ and $Ship\ B$, which are moving directly towards the observation tower along a straight line. The angles of depression of $Ship\ A$ and $Ship\ B$ as observed from the drone are $30^\circ$ and $45^\circ$ respectively.
+            </div>
+            <div class="sub-question">
+                <strong>(i)</strong> Find the horizontal distance of $Ship\ B$ (closer ship) from the vertical line directly beneath the drone. <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(ii)</strong> Find the horizontal distance of $Ship\ A$ (farther ship) from the point directly beneath the drone. <span style="float:right;"><strong>[1 Mark]</strong></span>
+            </div>
+            <div class="sub-question">
+                <strong>(iii)</strong> Calculate the exact distance between $Ship\ A$ and $Ship\ B$. Express your answer in simplified radical form and decimal form (Take $\sqrt{3} = 1.732$). <span style="float:right;"><strong>[2 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan with ❤️
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 30px 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .solution-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .section-header { 
+            background-color: #f5f5f5;
+            padding: 10px;
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            border-left: 5px solid var(--primary-yellow);
+            font-size: 12pt; 
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .answer-content {
+            margin-left: 15px;
+            padding: 10px 15px;
+            background-color: #fafafa;
+            border-left: 3px solid #4CAF50;
+        }
+        .sub-part {
+            margin-bottom: 15px;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            display: block;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px 10px; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 5px; align-self: flex-start; }
+            .answer-content { margin-left: 0; padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS: Minor Test 16 (Class 9 CBSE - Physics)</div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. A person carrying a heavy load on his head walks on a horizontal road. Explain scientifically why the work done by him against gravity is considered to be zero.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Explanation:</strong> Work done is calculated as \(W = F \times s \cos\theta\). When the person walks on a horizontal road, the displacement of the load is in the horizontal direction, but the force of gravity acts vertically downwards.</p>
+            <p>Since the angle (\(\theta\)) between the force of gravity and the displacement is \(90^\circ\), and \(\cos(90^\circ) = 0\), the work done against gravity is zero. <em>(2 Marks for conceptual clarity and angle explanation)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Differentiate between Class II and Class III levers based on the positions of the fulcrum, load, and effort. Which of these levers always acts as a speed multiplier?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Class II Lever:</strong> The Load is situated between the Fulcrum and the Effort. (e.g., wheelbarrow). <em>(0.5 Mark)</em></p>
+            <p><strong>Class III Lever:</strong> The Effort is situated between the Fulcrum and the Load. (e.g., human forearm). <em>(0.5 Mark)</em></p>
+            <p><strong>Speed Multiplier:</strong> <strong>Class III Levers</strong> always act as speed multipliers because their effort arm is always shorter than the load arm (Mechanical Advantage < 1). <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Define 1 Watt of power. Express the commercial unit of energy, 1 kilowatt-hour (kWh), in Joules.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>1 Watt:</strong> Power is said to be 1 Watt when 1 Joule of work is done in 1 second. (1 W = 1 J/s). <em>(1 Mark)</em></p>
+            <p><strong>Commercial Unit in Joules:</strong> 
+            <br>1 kWh = 1 kW \(\times\) 1 h
+            <br>1 kWh = 1000 W \(\times\) 3600 s = \(3,600,000 \text{ J}\) or \(3.6 \times 10^6 \text{ J}\). <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. If the velocity of an object is doubled while its mass remains constant, what will be the effect on its kinetic energy? Justify your answer using the relevant formula.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Effect:</strong> The kinetic energy will become <strong>four times</strong> its original value. <em>(1 Mark)</em></p>
+            <p><strong>Justification:</strong> The formula for kinetic energy is \(E_k = \frac{1}{2}mv^2\). Since Kinetic energy is directly proportional to the square of velocity (\(v^2\)), doubling the velocity (\(2v\)) makes the energy \((2)^2 = 4\) times greater. <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Does the gravitational potential energy of an object depend on the path taken to raise it to a certain height? State the formula for gravitational potential energy.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Path Dependence:</strong> No, the work done by gravity depends only on the vertical height difference between the initial and final positions, not on the path taken. This represents the conservative nature of gravitational force. <em>(1 Mark)</em></p>
+            <p><strong>Formula:</strong> Gravitational Potential Energy (\(E_p\)) = \(mgh\) (where m = mass, g = acceleration due to gravity, h = height). <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Define positive and negative work. Give one real-life example of negative work. What is the nature of the work done by frictional force when a block slides on a table?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Positive Work:</strong> Work is positive when the force and the displacement are in the same direction. <em>(1 Mark)</em></p>
+            <p><strong>Negative Work:</strong> Work is negative when the force and displacement are in opposite directions (\(\theta = 180^\circ\)). <em>(1 Mark)</em></p>
+            <p><strong>Frictional Force:</strong> The work done by frictional force when a block slides on a table is an example of <strong>Negative Work</strong>, as friction opposes the motion (acts in the opposite direction of displacement). <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Derive the mathematical expression for the kinetic energy (\(E_k\)) of an object of mass \(m\) moving with a uniform velocity \(v\), assuming it started from rest.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p>Let an object of mass \(m\) start from rest (\(u = 0\)) and attain a uniform velocity \(v\) over a displacement \(s\) due to a uniform force \(F\).</p>
+            <p>Work done, \(W = F \times s\)</p>
+            <p>From Newton's second law, \(F = m \times a\). <em>(1 Mark)</em></p>
+            <p>From the third equation of motion: \(v^2 - u^2 = 2as\). Since \(u = 0\), we have \(v^2 = 2as \implies s = \frac{v^2}{2a}\). <em>(1 Mark)</em></p>
+            <p>Substituting \(F\) and \(s\) into the work equation:</p>
+            <div class="math-scroll">
+                \[ W = (m \times a) \times \left(\frac{v^2}{2a}\right) = \frac{1}{2}mv^2 \]
+            </div>
+            <p>Since work done on an object is stored as its kinetic energy, \(E_k = \frac{1}{2}mv^2\). <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. An electric bulb of 60 W is used for 6 hours per day. Calculate the 'units' of electrical energy consumed in a span of 30 days by this bulb.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p>Power of bulb, \(P = 60 \text{ W} = \frac{60}{1000} \text{ kW} = 0.06 \text{ kW}\). <em>(1 Mark)</em></p>
+            <p>Total time in 30 days, \(t = 6 \text{ hours/day} \times 30 \text{ days} = 180 \text{ hours}\). <em>(1 Mark)</em></p>
+            <p>Energy consumed, \(E = P \times t\)</p>
+            <div class="math-scroll">
+                \[ E = 0.06 \text{ kW} \times 180 \text{ h} = 10.8 \text{ kWh} \]
+            </div>
+            <p>Therefore, the energy consumed in 30 days is <strong>10.8 units</strong>. <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. What is a block and tackle system? If a block and tackle system has 4 pulleys in total, state its ideal velocity ratio (VR) and ideal mechanical advantage (MA). Why is the efficiency of a practical pulley system always less than 100%?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Definition:</strong> A block and tackle system is a combination of fixed and movable pulleys used to lift heavy loads conveniently acting as a force multiplier. <em>(1 Mark)</em></p>
+            <p><strong>Ideal VR & MA:</strong> For a system with total pulleys \(n = 4\), ideally:
+            <br>Velocity Ratio (VR) = \(n = 4\)
+            <br>Mechanical Advantage (MA) = \(n = 4\) <em>(1 Mark)</em></p>
+            <p><strong>Practical Efficiency:</strong> Efficiency is always less than 100% because energy is inevitably lost due to friction in the bearings of the pulleys and in lifting the weight of the movable pulley block and the string itself. <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Calculate the amount of work to be done to increase the velocity of a car from 30 km/h to 60 km/h, given that the mass of the car is 1500 kg.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p>Mass, \(m = 1500 \text{ kg}\)</p>
+            <p>Initial velocity, \(u = 30 \text{ km/h} = 30 \times \frac{5}{18} \text{ m/s} = \frac{25}{3} \text{ m/s}\). <em>(0.5 Mark)</em></p>
+            <p>Final velocity, \(v = 60 \text{ km/h} = 60 \times \frac{5}{18} \text{ m/s} = \frac{50}{3} \text{ m/s}\). <em>(0.5 Mark)</em></p>
+            <p>Initial kinetic energy, \(E_{ki} = \frac{1}{2} m u^2 = \frac{1}{2} \times 1500 \times \left(\frac{25}{3}\right)^2 = \frac{1500 \times 625}{2 \times 9} = 52083.33 \text{ J}\)</p>
+            <p>Final kinetic energy, \(E_{kf} = \frac{1}{2} m v^2 = \frac{1}{2} \times 1500 \times \left(\frac{50}{3}\right)^2 = \frac{1500 \times 2500}{2 \times 9} = 208333.33 \text{ J}\). <em>(1 Mark for evaluating KEs)</em></p>
+            <p>Work done = Change in kinetic energy (\(E_{kf} - E_{ki}\))</p>
+            <div class="math-scroll">
+                \[ W = 208333.33 \text{ J} - 52083.33 \text{ J} = 156250 \text{ J} \]
+            </div>
+            <p>The work done is <strong>156250 Joules</strong>. <em>(1 Mark)</em></p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) State the Law of Conservation of Energy. (b) Using the example of an object of mass \(m\) falling freely from a height \(h\), theoretically trace the energy transformations and prove that the total mechanical energy remains constant throughout its path.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="sub-part">
+                <strong>(a) Law of Conservation of Energy:</strong> Energy can neither be created nor destroyed; it can only be transformed from one form to another. The total energy before and after transformation always remains constant. <em>(1 Mark)</em>
+            </div>
+            <div class="sub-part">
+                <strong>(b) Proof of Free Fall:</strong> Let an object of mass \(m\) fall freely from a height \(h\). Let's evaluate total mechanical energy (Potential Energy + Kinetic Energy) at key points.
+                <p><strong>1. At the start (highest point, height \(h\)):</strong>
+                <br>Velocity \(v = 0 \implies \text{Kinetic Energy (KE)} = 0\).
+                <br>Potential Energy (PE) = \(mgh\).
+                <br>Total Energy = PE + KE = \(mgh + 0 = mgh\). <em>(1 Mark)</em></p>
+
+                <p><strong>2. As it falls (at some intermediate height):</strong>
+                <br>The height decreases, hence PE decreases. Due to gravitational acceleration, its velocity increases, meaning KE increases. The lost potential energy is exactly converted into kinetic energy. <em>(1 Mark)</em></p>
+
+                <p><strong>3. Just before hitting the ground (height = 0):</strong>
+                <br>Height \(h = 0 \implies \text{PE} = 0\).
+                <br>According to the 3rd equation of motion (\(v^2 = u^2 + 2gh\)), since \(u=0\), \(v^2 = 2gh\).
+                <br>KE = \(\frac{1}{2}mv^2 = \frac{1}{2}m(2gh) = mgh\).
+                <br>Total Energy = PE + KE = \(0 + mgh = mgh\). <em>(1 Mark)</em></p>
+
+                <p><strong>Conclusion:</strong> At any point in its path, the sum of its potential and kinetic energy (Total Mechanical Energy) remains constant (\(mgh\)). <em>(1 Mark)</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A practical machine requires an effort of 200 N to lift a load of 800 N. The effort moves through a distance of 10 m while the load moves through a distance of 2 m in the same time interval. Calculate: (a) MA (b) VR (c) Efficiency (d) Explain why it is not 100%.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <p><strong>Given:</strong> Load (\(L\)) = 800 N, Effort (\(E\)) = 200 N, Displacement of Effort (\(d_e\)) = 10 m, Displacement of Load (\(d_l\)) = 2 m.</p>
+            <div class="sub-part">
+                <strong>(a) Mechanical Advantage (MA):</strong>
+                <div class="math-scroll">\[ MA = \frac{\text{Load}}{\text{Effort}} = \frac{800}{200} = 4 \]</div>
+                <em>(1.5 Marks)</em>
+            </div>
+            <div class="sub-part">
+                <strong>(b) Velocity Ratio (VR):</strong>
+                <div class="math-scroll">\[ VR = \frac{\text{Distance moved by Effort } (d_e)}{\text{Distance moved by Load } (d_l)} = \frac{10}{2} = 5 \]</div>
+                <em>(1.5 Marks)</em>
+            </div>
+            <div class="sub-part">
+                <strong>(c) Efficiency (\(\eta\)):</strong>
+                <div class="math-scroll">\[ \eta = \left( \frac{MA}{VR} \right) \times 100\% = \left( \frac{4}{5} \right) \times 100\% = 80\% \]</div>
+                <em>(1 Mark)</em>
+            </div>
+            <div class="sub-part">
+                <strong>(d) Reason for efficiency < 100%:</strong> It is a practical machine, not an ideal one. 20% of the input energy is wasted/lost in overcoming friction between the moving parts and lifting the weight of the machine's moving parts itself. <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Ideal MA of inclined plane. (b) Calculate work done to lift 15 kg by 1.5m. (c) Calculate power if lifted in 5s.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="answer-content">
+            <div class="sub-part">
+                <strong>(a) Ideal MA of Inclined Plane:</strong>
+                <div class="math-scroll">\[ MA = \frac{\text{Length of plane } (l)}{\text{Vertical height } (h)} \text{ or } MA = \frac{1}{\sin\theta} \]</div>
+                <em>(1 Mark)</em>
+            </div>
+            <div class="sub-part">
+                <strong>(b) Work Done calculation:</strong>
+                <p>Mass of luggage, \(m = 15 \text{ kg}\)</p>
+                <p>Displacement (height), \(s = h = 1.5 \text{ m}\)</p>
+                <p>Force required to lift is equal to its weight: \(F = mg = 15 \text{ kg} \times 10 \text{ m/s}^2 = 150 \text{ N}\)</p>
+                <p>Work done, \(W = F \times s = 150 \text{ N} \times 1.5 \text{ m} = 225 \text{ Joules}\). <em>(2 Marks)</em></p>
+            </div>
+            <div class="sub-part">
+                <strong>(c) Power calculation:</strong>
+                <p>Time, \(t = 5 \text{ seconds}\)</p>
+                <p>Power, \(P = \frac{\text{Work Done}}{\text{Time Taken}}\)</p>
+                <div class="math-scroll">\[ P = \frac{225 \text{ J}}{5 \text{ s}} = 45 \text{ Watts (W)} \]</div>
+                <p>The average power of the porter is <strong>45 W</strong>. <em>(2 Marks)</em></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

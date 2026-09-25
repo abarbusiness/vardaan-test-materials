@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 Minor Test 18 Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-black: #111111;
+            --accent-yellow: #fbc02d;
+            --light-bg: #fafafa;
+            --border-color: #222222;
+            --text-dark: #222222;
+        }
+        * { 
+            box-sizing: border-box; 
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+        }
+        *::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        body { 
+            width: 100%; 
+            max-width: 920px; 
+            margin: 0 auto; 
+            padding: 25px 30px; 
+            font-family: "Times New Roman", Times, Georgia, serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: #ffffff; 
+            position: relative; 
+            overflow: visible;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 75%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double var(--border-color); 
+            padding-bottom: 12px; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #000;
+        }
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 6px 10px; 
+            background-color: #fafafa;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            background: #ffffff;
+            padding: 10px 14px;
+            border: 1px dashed #777;
+            border-radius: 4px;
+        }
+        .instructions ul { margin: 4px 0; padding-left: 20px; }
+        .instructions li { margin-bottom: 2px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12pt; 
+            letter-spacing: 0.5px;
+            background-color: #f2f2f2;
+            padding: 5px 0;
+            border-radius: 4px;
+        }
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 14px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            min-width: 38px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow: visible;
+            word-wrap: break-word;
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-left: 10px;
+        }
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 15px;
+            margin-top: 6px;
+            padding-left: 10px;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 10.5pt; }
+            .institute-name { font-size: 17pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { font-size: 9.5pt; justify-content: space-around; }
+            .mcq-options { grid-template-columns: 1fr; }
+            .q-num { min-width: 32px; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 14pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 4px; }
+            .q-marks { float: none; display: inline-block; margin-top: 4px; color: #333; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 12mm; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.08; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 18 — SURPRISE TEST (MATHEMATICS)</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 8</span>
+            <span><strong>Subject:</strong> Mathematics</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40 Marks</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>This question paper contains <strong>13 questions</strong> divided into <strong>3 Sections</strong>: A, B, and C.</li>
+                <li><strong>Section A</strong> consists of 5 Objective / Multiple Choice Questions of 2 marks each (Q1 to Q5).</li>
+                <li><strong>Section B</strong> consists of 5 Short Answer Questions of 3 marks each (Q6 to Q10).</li>
+                <li><strong>Section C</strong> consists of 3 Long Answer / Concept Application Questions of 5 marks each (Q11 to Q13).</li>
+                <li>All questions are compulsory. Show clean calculations wherever required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Multiple Choice & Concept Check — 5 Questions $\times$ 2 Marks Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            What is the additive inverse of the product of $-\frac{3}{7}$ and $\frac{14}{9}$?
+            <div class="mcq-options">
+                <div>(a) $-\frac{2}{3}$</div>
+                <div>(b) $\frac{2}{3}$</div>
+                <div>(c) $\frac{3}{2}$</div>
+                <div>(d) $-\frac{3}{2}$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            If $3x - 5 = 2x + 7$, then the value of $x^2 - 10$ is equal to:
+            <div class="mcq-options">
+                <div>(a) $134$</div>
+                <div>(b) $12$</div>
+                <div>(c) $144$</div>
+                <div>(d) $154$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            The sum of interior angles of a convex polygon with $6$ sides (Hexagon) is:
+            <div class="mcq-options">
+                <div>(a) $360^\circ$</div>
+                <div>(b) $540^\circ$</div>
+                <div>(c) $720^\circ$</div>
+                <div>(d) $900^\circ$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            By what smallest number should $180$ be multiplied to make it a perfect square?
+            <div class="mcq-options">
+                <div>(a) $2$</div>
+                <div>(b) $3$</div>
+                <div>(c) $5$</div>
+                <div>(d) $10$</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            A shopkeeper bought a shirt for ₹$800$ and sold it for ₹$960$. What is his profit percentage?
+            <div class="mcq-options">
+                <div>(a) $15\%$</div>
+                <div>(b) $20\%$</div>
+                <div>(c) $25\%$</div>
+                <div>(d) $16.6\%$</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type — 5 Questions $\times$ 3 Marks Each)</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Represent $\frac{-3}{5}$ and $\frac{7}{5}$ on the same number line.
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Solve the linear equation for $x$:
+            $$\frac{x + 3}{2} - \frac{2x - 1}{3} = \frac{5}{6}$$
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            In a parallelogram $ABCD$, angle $\angle A = (2x + 10)^\circ$ and adjacent angle $\angle B = (3x - 20)^\circ$. Find the value of $x$ and measure of all four angles of the parallelogram.
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Find the square root of $1764$ using the prime factorization method.
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Simplify using algebraic identities: $(2a + 3b)^2 - (2a - 3b)^2$.
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Application Type — 3 Questions $\times$ 5 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            The perimeter of a rectangular park is $180\text{ m}$. If its length is $10\text{ m}$ more than twice its breadth:
+            <br>(a) Formulate a linear equation representing this situation. <strong>[2 Marks]</strong>
+            <br>(b) Find the dimensions (length and breadth) of the rectangular park. <strong>[2 Marks]</strong>
+            <br>(c) Calculate the area of the park. <strong>[1 Mark]</strong>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            Rohan invested ₹$12,500$ in a bank for $2$ years at an interest rate of $10\%$ per annum.
+            <br>(a) Calculate the Simple Interest (S.I.) and total amount if interest is calculated simply. <strong>[2 Marks]</strong>
+            <br>(b) Calculate the Compound Interest (C.I.) compounded annually. <strong>[2 Marks]</strong>
+            <br>(c) Find the extra gain Rohan receives by choosing compound interest over simple interest. <strong>[1 Mark]</strong>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            In the quadrilateral $PQRS$, diagonal $PR = 16\text{ cm}$. The perpendicular distances (offsets) to $PR$ from opposite vertices $Q$ and $S$ are $h_1 = 6\text{ cm}$ and $h_2 = 8\text{ cm}$ respectively.
+            <br>(a) Draw a clear rough sketch of quadrilateral $PQRS$ with its given diagonal and offsets. <strong>[2 Marks]</strong>
+            <br>(b) Derive the formula for the area of a general quadrilateral given a diagonal and its offsets. <strong>[1 Mark]</strong>
+            <br>(c) Calculate the total area of quadrilateral $PQRS$. <strong>[2 Marks]</strong>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan
+    </div>
+</body>
+</html>

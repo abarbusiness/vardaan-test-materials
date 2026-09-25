@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Minor Test 17)</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --dark-heading: #111111;
+            --text-color: #222222;
+            --success-bg: #e8f5e9;
+            --success-border: #2e7d32;
+            --tip-bg: #fffde7;
+            --tip-border: #f57f17;
+        }
+        * { box-sizing: border-box; }
+        body { 
+            width: 100%; 
+            max-width: 920px; 
+            margin: 0 auto; 
+            padding: 25px 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 10.5pt; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffdf5;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: var(--dark-heading);
+            letter-spacing: 1px;
+        }
+        .solution-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            color: #333; 
+            margin-top: 5px; 
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px; 
+            font-weight: bold; 
+            font-size: 10pt; 
+            border-top: 1px solid #eee; 
+            padding-top: 8px; 
+        }
+        
+        .section-divider {
+            background-color: #222;
+            color: #fff;
+            padding: 6px 14px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 30px 0 20px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            font-weight: bold;
+            font-size: 10.5pt;
+            color: var(--dark-heading);
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 2px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .correct-answer { 
+            color: var(--success-border); 
+            background-color: var(--success-bg); 
+            padding: 6px 12px; 
+            margin: 8px 0 12px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block; 
+            border: 1px solid #c8e6c9;
+        }
+        .solution-content {
+            padding-left: 5px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .step-label {
+            font-weight: bold;
+            color: #444;
+        }
+        .teacher-note {
+            background-color: var(--tip-bg);
+            border-left: 3px solid var(--tip-border);
+            padding: 6px 10px;
+            margin-top: 10px;
+            font-size: 9.5pt;
+            color: #5d4037;
+            border-radius: 0 4px 4px 0;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 2px 0;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 10pt; }
+            .institute-name { font-size: 16pt; }
+            .q-header { flex-direction: column; gap: 6px; }
+            .marks-badge { align-self: flex-start; }
+            .math-scroll { font-size: 9.5pt; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 13pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+        }
+        @media print {
+            body { padding: 10mm; width: 100%; -webkit-print-color-adjust: exact; }
+            .solution-block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS & MARKING SCHEME — MINOR TEST 17</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Mathematics (AP & GP)</span>
+            <span>Max Marks: 40</span>
+            <span>Duration: 1 Hour</span>
+        </div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-divider">SECTION A (10 Marks) — Short Answer / Conceptual Questions</div>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find the 15th term of the Arithmetic Progression (A.P.): $-10, -6, -2, 2, \dots$</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $T_{15} = 46$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Given A.P.:</span> $-10, -6, -2, 2, \dots$</div>
+            <div class="step">First term ($a$) = $-10$</div>
+            <div class="step">Common difference ($d$) = $T_2 - T_1 = -6 - (-10) = -6 + 10 = 4$</div>
+            <div class="step">Formula for the $n^{\text{th}}$ term of an A.P. is:</div>
+            <div class="math-scroll">$$T_n = a + (n - 1)d$$</div>
+            <div class="step">Substituting $n = 15$, $a = -10$, and $d = 4$:</div>
+            <div class="math-scroll">
+                $$T_{15} = -10 + (15 - 1) \times 4$$<br>
+                $$T_{15} = -10 + 14 \times 4$$<br>
+                $$T_{15} = -10 + 56 = 46$$
+            </div>
+            <div class="teacher-note">
+                <strong>ICSE Board Tip:</strong> Always double check the sign when calculating $d = T_2 - T_1$. A common error is writing $d = -6 - 10 = -16$.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. If the $4^{\text{th}}$ and $9^{\text{th}}$ terms of a G.P. are $54$ and $13122$ respectively, find the common ratio ($r$).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Common ratio $r = 3$</div>
+        <div class="solution-content">
+            <div class="step">Let the first term of the G.P. be $a$ and common ratio be $r$.</div>
+            <div class="step">Formula for $n^{\text{th}}$ term of G.P. is $T_n = a \cdot r^{n-1}$.</div>
+            <div class="step">Given:</div>
+            <div class="math-scroll">
+                $$T_4 = a \cdot r^3 = 54 \quad \text{--- (Equation 1)}$$<br>
+                $$T_9 = a \cdot r^8 = 13122 \quad \text{--- (Equation 2)}$$
+            </div>
+            <div class="step">Dividing Equation (2) by Equation (1):</div>
+            <div class="math-scroll">
+                $$\frac{a \cdot r^8}{a \cdot r^3} = \frac{13122}{54}$$<br>
+                $$r^5 = 243$$<br>
+                $$r^5 = 3^5 \implies r = 3$$
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Which term of the Arithmetic Progression $5, 8, 11, 14, \dots$ is equal to $68$?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $22^{\text{nd}}$ term</div>
+        <div class="solution-content">
+            <div class="step">Given A.P.: $5, 8, 11, 14, \dots$</div>
+            <div class="step">First term ($a$) = $5$, Common difference ($d$) = $8 - 5 = 3$.</div>
+            <div class="step">Let $T_n = 68$.</div>
+            <div class="math-scroll">
+                $$T_n = a + (n - 1)d = 68$$<br>
+                $$5 + (n - 1) \times 3 = 68$$<br>
+                $$3(n - 1) = 68 - 5 = 63$$<br>
+                $$n - 1 = \frac{63}{3} = 21 \implies n = 22$$
+            </div>
+            <div class="step">Hence, the $22^{\text{nd}}$ term of the given A.P. is $68$.</div>
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Find the $5^{\text{th}}$ term from the end of the Geometric Progression: $3, 6, 12, \dots, 1536$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $96$</div>
+        <div class="solution-content">
+            <div class="step">Given G.P.: $3, 6, 12, \dots, 1536$</div>
+            <div class="step">Last term ($l$) = $1536$, Common ratio ($r$) = $\frac{6}{3} = 2$.</div>
+            <div class="step">Formula for $n^{\text{th}}$ term from the end of a G.P. is:</div>
+            <div class="math-scroll">
+                $$\text{Term from end} = \frac{l}{r^{n-1}}$$
+            </div>
+            <div class="step">For $n = 5$:</div>
+            <div class="math-scroll">
+                $$T_{5\text{ (end)}} = \frac{1536}{2^{5-1}} = \frac{1536}{2^4} = \frac{1536}{16} = 96$$
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Find the sum of the first $20$ terms of an A.P. whose $n^{\text{th}}$ term is given by $T_n = 3n + 5$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $S_{20} = 730$</div>
+        <div class="solution-content">
+            <div class="step">Given $T_n = 3n + 5$.</div>
+            <div class="step">First term ($a$) = $T_1 = 3(1) + 5 = 8$.</div>
+            <div class="step">$20^{\text{th}}$ term ($l$) = $T_{20} = 3(20) + 5 = 65$.</div>
+            <div class="step">Sum formula using first and last terms:</div>
+            <div class="math-scroll">
+                $$S_n = \frac{n}{2}(a + l)$$<br>
+                $$S_{20} = \frac{20}{2}(8 + 65) = 10 \times 73 = 730$$
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-divider">SECTION B (15 Marks) — Short Answer Type Questions</div>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. The sum of three consecutive terms in an Arithmetic Progression is $24$ and their product is $440$. Find the three numbers.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: The numbers are $5, 8, 11$ (or $11, 8, 5$)</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Step 1: Assume standard terms</span></div>
+            <div class="step">Let three consecutive terms in A.P. be $(a - d)$, $a$, and $(a + d)$.</div>
+            
+            <div class="step"><span class="step-label">Step 2: Use Sum Condition</span></div>
+            <div class="math-scroll">
+                $$(a - d) + a + (a + d) = 24$$<br>
+                $$3a = 24 \implies a = 8$$
+            </div>
+
+            <div class="step"><span class="step-label">Step 3: Use Product Condition</span></div>
+            <div class="math-scroll">
+                $$(a - d) \times a \times (a + d) = 440$$<br>
+                $$a(a^2 - d^2) = 440$$
+            </div>
+            <div class="step">Substitute $a = 8$:</div>
+            <div class="math-scroll">
+                $$8(8^2 - d^2) = 440$$<br>
+                $$64 - d^2 = \frac{440}{8} = 55$$<br>
+                $$d^2 = 64 - 55 = 9 \implies d = \pm 3$$
+            </div>
+
+            <div class="step"><span class="step-label">Step 4: Find the numbers</span></div>
+            <div class="step">&bull; If $d = 3$: Numbers are $(8-3), 8, (8+3) \implies \mathbf{5, 8, 11}$.</div>
+            <div class="step">&bull; If $d = -3$: Numbers are $(8+3), 8, (8-3) \implies \mathbf{11, 8, 5}$.</div>
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Determine the sum of the first $10$ terms of the Geometric Progression: $2, 6, 18, 54, \dots$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $S_{10} = 59048$</div>
+        <div class="solution-content">
+            <div class="step">Given G.P.: $2, 6, 18, 54, \dots$</div>
+            <div class="step">First term ($a$) = $2$, Common ratio ($r$) = $\frac{6}{2} = 3 > 1$.</div>
+            <div class="step">Formula for sum of $n$ terms of a G.P. when $r > 1$:</div>
+            <div class="math-scroll">
+                $$S_n = \frac{a(r^n - 1)}{r - 1}$$
+            </div>
+            <div class="step">For $n = 10$:</div>
+            <div class="math-scroll">
+                $$S_{10} = \frac{2(3^{10} - 1)}{3 - 1} = \frac{2(3^{10} - 1)}{2} = 3^{10} - 1$$
+            </div>
+            <div class="step">Since $3^{10} = 59049$:</div>
+            <div class="math-scroll">
+                $$S_{10} = 59049 - 1 = 59048$$
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. How many terms of the A.P. $24, 21, 18, \dots$ must be taken so that their sum is $99$? Explain the reason for getting a double answer.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $n = 6$ or $n = 11$</div>
+        <div class="solution-content">
+            <div class="step">Given A.P.: $24, 21, 18, \dots$</div>
+            <div class="step">$a = 24$, $d = 21 - 24 = -3$, $S_n = 99$.</div>
+            <div class="step">Formula: $S_n = \frac{n}{2}[2a + (n - 1)d]$</div>
+            <div class="math-scroll">
+                $$99 = \frac{n}{2}[2(24) + (n - 1)(-3)]$$<br>
+                $$198 = n[48 - 3n + 3]$$<br>
+                $$198 = n[51 - 3n]$$<br>
+                $$3n^2 - 51n + 198 = 0$$
+            </div>
+            <div class="step">Dividing by 3:</div>
+            <div class="math-scroll">
+                $$n^2 - 17n + 66 = 0$$<br>
+                $$(n - 6)(n - 11) = 0 \implies n = 6 \quad \text{or} \quad n = 11$$
+            </div>
+            <div class="teacher-note">
+                <strong>Explanation of Double Answer (1 Mark in Board Exam):</strong><br>
+                The common difference is negative ($d = -3$). The terms from the $7^{\text{th}}$ to the $11^{\text{th}}$ term are $9, 6, 3, 0, -3$. Their sum is $9 + 6 + 3 + 0 + (-3) + (-6) + (-9) = 0$. Hence, adding these 5 terms does not increase or decrease the sum of the first 6 terms.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. If $(x + 1)$, $3x$, and $(4x + 12)$ are three consecutive terms of a Geometric Progression, determine the possible real values of $x$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 4$ or $x = -\frac{3}{5}$</div>
+        <div class="solution-content">
+            <div class="step">For three numbers $A, B, C$ to be in G.P., $B^2 = A \cdot C$.</div>
+            <div class="step">Here $A = (x + 1)$, $B = 3x$, $C = (4x + 12)$.</div>
+            <div class="math-scroll">
+                $$(3x)^2 = (x + 1)(4x + 12)$$<br>
+                $$9x^2 = 4x^2 + 12x + 4x + 12$$<br>
+                $$9x^2 = 4x^2 + 16x + 12$$<br>
+                $$5x^2 - 16x - 12 = 0$$
+            </div>
+            <div class="step">Factorizing the quadratic equation ($5 \times -12 = -60 \implies -20 \times 3$):</div>
+            <div class="math-scroll">
+                $$5x^2 - 20x + 3x - 12 = 0$$<br>
+                $$5x(x - 4) + 3(x - 4) = 0$$<br>
+                $$(5x + 3)(x - 4) = 0$$
+            </div>
+            <div class="step">Thus, $x = 4$ or $x = -\frac{3}{5}$.</div>
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Find three numbers in Geometric Progression such that their sum is $19$ and their product is $216$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: The numbers are $4, 6, 9$</div>
+        <div class="solution-content">
+            <div class="step">Let three terms in G.P. be $\frac{a}{r}, a, ar$.</div>
+            <div class="step"><span class="step-label">Product Condition:</span></div>
+            <div class="math-scroll">
+                $$\left(\frac{a}{r}\right) \times a \times (ar) = 216 \implies a^3 = 216 \implies a = 6$$
+            </div>
+            <div class="step"><span class="step-label">Sum Condition:</span></div>
+            <div class="math-scroll">
+                $$\frac{6}{r} + 6 + 6r = 19 \implies 6\left(\frac{1}{r} + r\right) = 13$$<br>
+                $$\frac{6(1 + r^2)}{r} = 13 \implies 6r^2 - 13r + 6 = 0$$
+            </div>
+            <div class="step">Solving quadratic equation ($6 \times 6 = 36 \implies -9 \times -4$):</div>
+            <div class="math-scroll">
+                $$6r^2 - 9r - 4r + 6 = 0 \implies 3r(2r - 3) - 2(2r - 3) = 0$$<br>
+                $$(3r - 2)(2r - 3) = 0 \implies r = \frac{3}{2} \quad \text{or} \quad r = \frac{2}{3}$$
+            </div>
+            <div class="step">For $r = \frac{3}{2}$, numbers are $\frac{6}{3/2}, 6, 6\left(\frac{3}{2}\right) \implies \mathbf{4, 6, 9}$.</div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-divider">SECTION C (15 Marks) — Long Answer Type Questions</div>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) $4^{\text{th}}$ term is 3 times first term; $7^{\text{th}}$ term exceeds twice $3^{\text{rd}}$ term by 1.<br>(b) Loan repayment problem.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answers: (a) $a = 3, d = 2$ | (b) $n = 20$ months</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Part (a) [2.5 Marks]:</span></div>
+            <div class="step">Given $T_4 = 3a \implies a + 3d = 3a \implies 2a = 3d \implies a = \frac{3}{2}d \quad \text{--- (1)}$</div>
+            <div class="step">Also, $T_7 = 2 T_3 + 1$:</div>
+            <div class="math-scroll">
+                $$a + 6d = 2(a + 2d) + 1$$<br>
+                $$a + 6d = 2a + 4d + 1 \implies a - 2d = -1 \quad \text{--- (2)}$$
+            </div>
+            <div class="step">Substituting (1) into (2):</div>
+            <div class="math-scroll">
+                $$\frac{3}{2}d - 2d = -1 \implies -\frac{1}{2}d = -1 \implies d = 2$$<br>
+                $$a = \frac{3}{2}(2) = 3$$
+            </div>
+
+            <div class="step" style="margin-top: 15px;"><span class="step-label">Part (b) [2.5 Marks]:</span></div>
+            <div class="step">Total loan amount ($S_n$) = ₹32,500</div>
+            <div class="step">First installment ($a$) = ₹200, Monthly increase ($d$) = ₹150.</div>
+            <div class="math-scroll">
+                $$S_n = \frac{n}{2}[2(200) + (n - 1)150] = 32500$$<br>
+                $$n[400 + 150n - 150] = 65000$$<br>
+                $$150n^2 + 250n - 65000 = 0$$
+            </div>
+            <div class="step">Divide by 50:</div>
+            <div class="math-scroll">
+                $$3n^2 + 5n - 1300 = 0$$<br>
+                $$3n^2 + 65n - 60n - 1300 = 0$$<br>
+                $$n(3n + 65) - 20(3n + 65) = 0 \implies (n - 20)(3n + 65) = 0$$
+            </div>
+            <div class="step">Since $n$ cannot be negative, $n = 20$ months.</div>
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Sum of $7 + 77 + 777 + \dots n$ terms.<br>(b) Proof for $x^2, b^2, y^2$ in A.P.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: (a) $S_n = \frac{70}{81}(10^n - 1) - \frac{7n}{9}$ | (b) Proof Complete</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Part (a) [3 Marks]:</span></div>
+            <div class="math-scroll">
+                $$S_n = 7 + 77 + 777 + \dots \text{ to } n \text{ terms}$$<br>
+                $$S_n = 7(1 + 11 + 111 + \dots \text{ to } n \text{ terms})$$<br>
+                $$S_n = \frac{7}{9}(9 + 99 + 999 + \dots \text{ to } n \text{ terms})$$<br>
+                $$S_n = \frac{7}{9}[(10 - 1) + (10^2 - 1) + (10^3 - 1) + \dots + (10^n - 1)]$$<br>
+                $$S_n = \frac{7}{9}\left[(10 + 10^2 + \dots + 10^n) - (1 + 1 + \dots n \text{ times})\right]$$<br>
+                $$S_n = \frac{7}{9}\left[\frac{10(10^n - 1)}{10 - 1} - n\right] = \frac{70}{81}(10^n - 1) - \frac{7n}{9}$$
+            </div>
+
+            <div class="step" style="margin-top: 15px;"><span class="step-label">Part (b) [2 Marks]:</span></div>
+            <div class="step">&bull; $a, b, c$ in A.P. $\implies 2b = a + c \quad \text{--- (1)}$</div>
+            <div class="step">&bull; $a, x, b$ in G.P. $\implies x^2 = ab \quad \text{--- (2)}$</div>
+            <div class="step">&bull; $b, y, c$ in G.P. $\implies y^2 = bc \quad \text{--- (3)}$</div>
+            <div class="step">To prove $x^2, b^2, y^2$ are in A.P., we must show $x^2 + y^2 = 2b^2$.</div>
+            <div class="math-scroll">
+                $$\text{L.H.S.} = x^2 + y^2 = ab + bc = b(a + c)$$
+            </div>
+            <div class="step">From (1), substitute $(a + c) = 2b$:</div>
+            <div class="math-scroll">
+                $$\text{L.H.S.} = b(2b) = 2b^2 = \text{R.H.S.}$$
+            </div>
+            <div class="step">Hence, $x^2, b^2, y^2$ are in Arithmetic Progression. <strong>(Proved)</strong></div>
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Given $S_n = 2n^2 + 5n$, find $T_n$ and $T_{25}$.<br>(b) G.P. with $T_3 = 12, T_6 = 96$, find $S_8$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answers: (a) $T_n = 4n + 3, T_{25} = 103$ | (b) $S_8 = 765$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Part (a) [2 Marks]:</span></div>
+            <div class="step">We know that $T_n = S_n - S_{n-1}$.</div>
+            <div class="math-scroll">
+                $$S_n = 2n^2 + 5n$$<br>
+                $$S_{n-1} = 2(n-1)^2 + 5(n-1) = 2(n^2 - 2n + 1) + 5n - 5 = 2n^2 + n - 3$$
+            </div>
+            <div class="step">Subtracting $S_{n-1}$ from $S_n$:</div>
+            <div class="math-scroll">
+                $$T_n = (2n^2 + 5n) - (2n^2 + n - 3) = 4n + 3$$
+            </div>
+            <div class="step">For $25^{\text{th}}$ term:</div>
+            <div class="math-scroll">
+                $$T_{25} = 4(25) + 3 = 103$$
+            </div>
+
+            <div class="step" style="margin-top: 15px;"><span class="step-label">Part (b) [3 Marks]:</span></div>
+            <div class="step">Given $T_3 = a \cdot r^2 = 12$ and $T_6 = a \cdot r^5 = 96$.</div>
+            <div class="math-scroll">
+                $$\frac{T_6}{T_3} = \frac{a \cdot r^5}{a \cdot r^2} = \frac{96}{12} \implies r^3 = 8 \implies r = 2$$
+            </div>
+            <div class="step">Substitute $r = 2$ into $T_3$:</div>
+            <div class="math-scroll">
+                $$a(2^2) = 12 \implies 4a = 12 \implies a = 3$$
+            </div>
+            <div class="step">Calculate sum of first 8 terms ($S_8$):</div>
+            <div class="math-scroll">
+                $$S_8 = \frac{a(r^8 - 1)}{r - 1} = \frac{3(2^8 - 1)}{2 - 1} = 3(256 - 1) = 3 \times 255 = 765$$
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Verified Solutions by Academic Dean &bull; Vardaan Learning Institute &bull; ICSE Board Syllabus
+    </div>
+</body>
+</html>

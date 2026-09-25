@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 Minor Test 18 Detailed Solutions</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --dark-heading: #111111;
+            --text-color: #222222;
+            --success-bg: #e8f5e9;
+            --success-border: #2e7d32;
+            --tip-bg: #fffde7;
+            --tip-border: #f57f17;
+            --diagram-bg: #fdfdfd;
+            --diagram-border: #e0e0e0;
+        }
+        * { 
+            box-sizing: border-box; 
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+        }
+        *::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        body { 
+            width: 100%; 
+            max-width: 920px; 
+            margin: 0 auto; 
+            padding: 25px 30px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 10.5pt; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            background-color: #ffffff; 
+            position: relative; 
+            overflow: visible;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffdf5;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: var(--dark-heading);
+            letter-spacing: 1px;
+        }
+        .solution-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            color: #333; 
+            margin-top: 5px; 
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px; 
+            font-weight: bold; 
+            font-size: 10pt; 
+            border-top: 1px solid #eee; 
+            padding-top: 8px; 
+        }
+        
+        .section-divider {
+            background-color: #222;
+            color: #fff;
+            padding: 6px 14px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 30px 0 20px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            font-weight: bold;
+            font-size: 10.5pt;
+            color: var(--dark-heading);
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 2px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .correct-answer { 
+            color: var(--success-border); 
+            background-color: var(--success-bg); 
+            padding: 6px 12px; 
+            margin: 8px 0 12px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block; 
+            border: 1px solid #c8e6c9;
+        }
+        .solution-content {
+            padding-left: 5px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .step-label {
+            font-weight: bold;
+            color: #444;
+        }
+        .teacher-note {
+            background-color: var(--tip-bg);
+            border-left: 3px solid var(--tip-border);
+            padding: 6px 10px;
+            margin-top: 10px;
+            font-size: 9.5pt;
+            color: #5d4037;
+            border-radius: 0 4px 4px 0;
+        }
+        .math-scroll {
+            overflow: visible;
+            max-width: 100%;
+            padding: 4px 0;
+            word-wrap: break-word;
+        }
+
+        /* SVG Diagram Container Styling */
+        .diagram-card {
+            background-color: var(--diagram-bg);
+            border: 1px solid var(--diagram-border);
+            border-radius: 6px;
+            padding: 12px;
+            margin: 14px 0;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .diagram-title {
+            font-weight: bold;
+            font-size: 9.5pt;
+            color: #444;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .diagram-svg {
+            width: 100%;
+            max-width: 520px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 10pt; }
+            .institute-name { font-size: 16pt; }
+            .q-header { flex-direction: column; gap: 6px; }
+            .marks-badge { align-self: flex-start; }
+            .math-scroll { font-size: 9.5pt; }
+            .diagram-svg { max-width: 100%; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 13pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+        }
+        @media print {
+            body { padding: 10mm; width: 100%; -webkit-print-color-adjust: exact; }
+            .solution-block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS & MARKING SCHEME — MINOR TEST 18</div>
+        <div class="exam-details">
+            <span>Class: 8</span>
+            <span>Subject: Mathematics</span>
+            <span>Max Marks: 40</span>
+            <span>Duration: 1 Hour</span>
+        </div>
+    </div>
+
+    <div class="section-divider">SECTION A (10 Marks) — Objective Solutions</div>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Additive inverse of the product of $-\frac{3}{7}$ and $\frac{14}{9}$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (b) $\frac{2}{3}$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Step 1:</span> Find the product:</div>
+            <div class="math-scroll">$$\text{Product} = \left(-\frac{3}{7}\right) \times \left(\frac{14}{9}\right) = -\frac{3 \times 14}{7 \times 9} = -\frac{42}{63} = -\frac{2}{3}$$</div>
+            <div class="step"><span class="step-label">Step 2:</span> Find the additive inverse (change sign):</div>
+            <div class="math-scroll">$$\text{Additive Inverse of } \left(-\frac{2}{3}\right) = +\frac{2}{3}$$</div>
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Value of $x^2 - 10$ if $3x - 5 = 2x + 7$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (a) $134$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Step 1:</span> Solve for $x$:</div>
+            <div class="math-scroll">$$3x - 2x = 7 + 5 \implies x = 12$$</div>
+            <div class="step"><span class="step-label">Step 2:</span> Evaluate $x^2 - 10$:</div>
+            <div class="math-scroll">$$x^2 - 10 = (12)^2 - 10 = 144 - 10 = 134$$</div>
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Sum of interior angles of a convex polygon with 6 sides.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (c) $720^\circ$</div>
+        <div class="solution-content">
+            <div class="step">Formula for the sum of interior angles of an $n$-sided polygon:</div>
+            <div class="math-scroll">$$\text{Sum} = (n - 2) \times 180^\circ$$</div>
+            <div class="step">For $n = 6$:</div>
+            <div class="math-scroll">$$\text{Sum} = (6 - 2) \times 180^\circ = 4 \times 180^\circ = 720^\circ$$</div>
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Smallest multiplier to make $180$ a perfect square.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (c) $5$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Prime Factorization of 180:</span></div>
+            <div class="math-scroll">$$180 = 2 \times 2 \times 3 \times 3 \times 5 = 2^2 \times 3^2 \times 5^1$$</div>
+            <div class="step">Here, $5$ is unpaired. Multiplying by $5$ gives $180 \times 5 = 900 = 30^2$.</div>
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Profit percentage for C.P. = ₹800 and S.P. = ₹960.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (b) $20\%$</div>
+        <div class="solution-content">
+            <div class="math-scroll">$$\text{Profit} = \text{S.P.} - \text{C.P.} = 960 - 800 = \text{₹}160$$</div>
+            <div class="math-scroll">$$\text{Profit } \% = \left(\frac{\text{Profit}}{\text{C.P.}}\right) \times 100 = \left(\frac{160}{800}\right) \times 100 = 20\%$$</div>
+        </div>
+    </div>
+
+    <div class="section-divider">SECTION B (15 Marks) — Short Answer Solutions</div>
+
+    <!-- Q6 Solution (Number Line Diagram) -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Represent $-\frac{3}{5}$ and $\frac{7}{5}$ on the same number line.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Number Line Representation Completed</div>
+        <div class="solution-content">
+            <div class="step">Each whole unit is divided into 5 equal sub-divisions:</div>
+
+            <div class="diagram-card">
+                <div class="diagram-title">Number Line Diagram for Q6</div>
+                <svg class="diagram-svg" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Main Axis Line -->
+                    <line x1="30" y1="60" x2="420" y2="60" stroke="#111" stroke-width="2.5"/>
+                    <!-- Arrows -->
+                    <polygon points="30,60 40,54 40,66" fill="#111"/>
+                    <polygon points="420,60 410,54 410,66" fill="#111"/>
+                    
+                    <!-- Major Ticks: -1 (90), 0 (180), 1 (270), 2 (360) -->
+                    <!-- Div 180 to 270 = 90px = 1 unit. So 1/5 unit = 18px -->
+
+                    <!-- Ticks and labels -->
+                    <!-- -1 (x=90) -->
+                    <line x1="90" y1="50" x2="90" y2="70" stroke="#111" stroke-width="2"/>
+                    <text x="90" y="90" font-size="12" font-weight="bold" text-anchor="middle">-1</text>
+
+                    <!-- -3/5 (x = 180 - 3*18 = 126) -->
+                    <line x1="126" y1="53" x2="126" y2="67" stroke="#d32f2f" stroke-width="2"/>
+                    <circle cx="126" cy="60" r="5" fill="#d32f2f"/>
+                    <text x="126" y="38" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">-3/5</text>
+
+                    <!-- 0 (x=180) -->
+                    <line x1="180" y1="48" x2="180" y2="72" stroke="#111" stroke-width="2.5"/>
+                    <text x="180" y="90" font-size="13" font-weight="bold" text-anchor="middle">0</text>
+
+                    <!-- 1 (x=270) -->
+                    <line x1="270" y1="50" x2="270" y2="70" stroke="#111" stroke-width="2"/>
+                    <text x="270" y="90" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+
+                    <!-- 7/5 = 1 2/5 (x = 270 + 2*18 = 306) -->
+                    <line x1="306" y1="53" x2="306" y2="67" stroke="#1976d2" stroke-width="2"/>
+                    <circle cx="306" cy="60" r="5" fill="#1976d2"/>
+                    <text x="306" y="38" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">7/5</text>
+
+                    <!-- 2 (x=360) -->
+                    <line x1="360" y1="50" x2="360" y2="70" stroke="#111" stroke-width="2"/>
+                    <text x="360" y="90" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+                </svg>
+            </div>
+
+            <div class="step">&bull; $-\frac{3}{5}$ lies to the left of $0$ between $0$ and $-1$.</div>
+            <div class="step">&bull; $\frac{7}{5} = 1\frac{2}{5}$ lies to the right of $0$ between $1$ and $2$.</div>
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Solve $\frac{x + 3}{2} - \frac{2x - 1}{3} = \frac{5}{6}$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 6$</div>
+        <div class="solution-content">
+            <div class="step">Take LCM of denominators $2$ and $3$ on LHS, which is $6$:</div>
+            <div class="math-scroll">$$\frac{3(x + 3) - 2(2x - 1)}{6} = \frac{5}{6}$$</div>
+            <div class="step">Multiply both sides by $6$:</div>
+            <div class="math-scroll">$$3(x + 3) - 2(2x - 1) = 5$$</div>
+            <div class="math-scroll">$$3x + 9 - 4x + 2 = 5$$</div>
+            <div class="math-scroll">$$-x + 11 = 5 \implies -x = 5 - 11 \implies -x = -6 \implies x = 6$$</div>
+        </div>
+    </div>
+
+    <!-- Q8 Solution (Parallelogram SVG Diagram) -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Parallelogram $ABCD$ with adjacent angles $\angle A = (2x + 10)^\circ$ and $\angle B = (3x - 20)^\circ$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Angles: $\angle A = 86^\circ, \angle B = 94^\circ, \angle C = 86^\circ, \angle D = 94^\circ$</div>
+        <div class="solution-content">
+            
+            <div class="diagram-card">
+                <div class="diagram-title">Parallelogram Angle Geometry for Q8</div>
+                <svg class="diagram-svg" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="60,140 220,140 270,40 110,40" fill="#fffdf5" stroke="#111" stroke-width="2.5"/>
+                    <text x="45" y="155" font-size="13" font-weight="bold">A</text>
+                    <text x="230" y="155" font-size="13" font-weight="bold">B</text>
+                    <text x="280" y="35" font-size="13" font-weight="bold">C</text>
+                    <text x="95" y="35" font-size="13" font-weight="bold">D</text>
+                    <text x="75" y="130" font-size="11" fill="#d32f2f" font-weight="bold">86°</text>
+                    <text x="200" y="130" font-size="11" fill="#1976d2" font-weight="bold">94°</text>
+                    <text x="240" y="55" font-size="11" fill="#d32f2f" font-weight="bold">86°</text>
+                    <text x="120" y="55" font-size="11" fill="#1976d2" font-weight="bold">94°</text>
+                </svg>
+            </div>
+
+            <div class="step">Adjacent angles of a parallelogram are supplementary ($\text{Sum} = 180^\circ$):</div>
+            <div class="math-scroll">$$\angle A + \angle B = 180^\circ \implies (2x + 10) + (3x - 20) = 180$$</div>
+            <div class="math-scroll">$$5x - 10 = 180 \implies 5x = 190 \implies x = 38$$</div>
+            <div class="step"><span class="step-label">Calculations for angles:</span></div>
+            <div class="math-scroll">$$\angle A = 2(38) + 10 = 76 + 10 = 86^\circ$$</div>
+            <div class="math-scroll">$$\angle B = 3(38) - 20 = 114 - 20 = 94^\circ$$</div>
+            <div class="step">Since opposite angles of a parallelogram are equal:</div>
+            <div class="math-scroll">$$\angle C = \angle A = 86^\circ, \quad \angle D = \angle B = 94^\circ$$</div>
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Square root of $1764$ by prime factorization.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $\sqrt{1764} = 42$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">Prime Factorization Steps:</span></div>
+            <div class="math-scroll">$$1764 \div 2 = 882$$</div>
+            <div class="math-scroll">$$882 \div 2 = 441$$</div>
+            <div class="math-scroll">$$441 \div 3 = 147$$</div>
+            <div class="math-scroll">$$147 \div 3 = 49$$</div>
+            <div class="math-scroll">$$49 \div 7 = 7$$</div>
+            <div class="math-scroll">$$7 \div 7 = 1$$</div>
+            <div class="step"><span class="step-label">Pairing Factors:</span></div>
+            <div class="math-scroll">$$1764 = (2 \times 2) \times (3 \times 3) \times (7 \times 7)$$</div>
+            <div class="math-scroll">$$\sqrt{1764} = 2 \times 3 \times 7 = 42$$</div>
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Simplify $(2a + 3b)^2 - (2a - 3b)^2$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $24ab$</div>
+        <div class="solution-content">
+            <div class="step">Using identity $x^2 - y^2 = (x + y)(x - y)$ where $x = (2a + 3b)$ and $y = (2a - 3b)$:</div>
+            <div class="math-scroll">$$\text{Expression} = [(2a + 3b) + (2a - 3b)] \times [(2a + 3b) - (2a - 3b)]$$</div>
+            <div class="math-scroll">$$= [4a] \times [2a + 3b - 2a + 3b] = [4a] \times [6b] = 24ab$$</div>
+        </div>
+    </div>
+
+    <div class="section-divider">SECTION C (15 Marks) — Long Answer Solutions</div>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Rectangular park: Perimeter $= 180\text{ m}$, length is $10\text{ m}$ more than twice breadth.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Breadth $= 26.67\text{ m}$, Length $= 63.33\text{ m}$, Area $= 1688.89\text{ m}^2$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">(a) Formulating Equation [2 Marks]:</span></div>
+            <div class="step">Let breadth of the rectangle $= x\text{ m}$.</div>
+            <div class="step">Then length $= (2x + 10)\text{ m}$.</div>
+            <div class="math-scroll">$$\text{Perimeter} = 2(\text{Length} + \text{Breadth}) \implies 2[(2x + 10) + x] = 180$$</div>
+            <div class="math-scroll">$$2(3x + 10) = 180 \implies 6x + 20 = 180$$</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(b) Finding Dimensions [2 Marks]:</span></div>
+            <div class="math-scroll">$$6x = 180 - 20 = 160 \implies x = \frac{160}{6} = \frac{80}{3} = 26.67\text{ m}$$</div>
+            <div class="math-scroll">$$\text{Breadth } = \frac{80}{3}\text{ m} \approx 26.67\text{ m}$$</div>
+            <div class="math-scroll">$$\text{Length } = 2\left(\frac{80}{3}\right) + 10 = \frac{160}{3} + \frac{30}{3} = \frac{190}{3}\text{ m} \approx 63.33\text{ m}$$</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(c) Calculating Area [1 Mark]:</span></div>
+            <div class="math-scroll">$$\text{Area} = \text{Length} \times \text{Breadth} = \left(\frac{190}{3}\right) \times \left(\frac{80}{3}\right) = \frac{15200}{9} \approx 1688.89\text{ m}^2$$</div>
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Investment ₹$12,500$ for $2$ years at $10\%$ per annum (S.I. vs C.I.).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Gain from C.I. over S.I. = ₹$125$</div>
+        <div class="solution-content">
+            <div class="step"><span class="step-label">(a) Simple Interest Calculation [2 Marks]:</span></div>
+            <div class="math-scroll">$$\text{S.I.} = \frac{P \times R \times T}{100} = \frac{12500 \times 10 \times 2}{100} = \text{₹}2,500$$</div>
+            <div class="math-scroll">$$\text{Total Amount (S.I.)} = 12500 + 2500 = \text{₹}15,000$$</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(b) Compound Interest Calculation [2 Marks]:</span></div>
+            <div class="math-scroll">$$A = P\left(1 + \frac{R}{100}\right)^T = 12500\left(1 + \frac{10}{100}\right)^2 = 12500\left(\frac{11}{10}\right)^2$$</div>
+            <div class="math-scroll">$$A = 12500 \times \frac{121}{100} = 125 \times 121 = \text{₹}15,125$$</div>
+            <div class="math-scroll">$$\text{C.I.} = A - P = 15125 - 12500 = \text{₹}2,625$$</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(c) Extra Gain [1 Mark]:</span></div>
+            <div class="math-scroll">$$\text{Extra Gain} = \text{C.I.} - \text{S.I.} = 2625 - 2500 = \text{₹}125$$</div>
+        </div>
+    </div>
+
+    <!-- Q13 Solution (Quadrilateral Area Diagram) -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Quadrilateral $PQRS$ with diagonal $PR = 16\text{ cm}$ and offsets $6\text{ cm}$ and $8\text{ cm}$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Total Area $= 112\text{ cm}^2$</div>
+        <div class="solution-content">
+            
+            <div class="diagram-card">
+                <div class="diagram-title">Quadrilateral PQRS Sketch with Diagonal and Offsets</div>
+                <svg class="diagram-svg" viewBox="0 0 360 210" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Diagonal PR -->
+                    <line x1="40" y1="110" x2="320" y2="110" stroke="#111" stroke-width="2.5"/>
+                    <!-- Offsets Q -> PR and S -> PR -->
+                    <line x1="160" y1="40" x2="160" y2="110" stroke="#d32f2f" stroke-width="2" stroke-dasharray="4,2"/>
+                    <line x1="200" y1="180" x2="200" y2="110" stroke="#1976d2" stroke-width="2" stroke-dasharray="4,2"/>
+                    <!-- Outer Polygon -->
+                    <polygon points="40,110 160,40 320,110 200,180" fill="#fffdf5" stroke="#111" stroke-width="2"/>
+                    <!-- Right Angle Symbols -->
+                    <rect x="150" y="100" width="10" height="10" fill="none" stroke="#d32f2f" stroke-width="1.5"/>
+                    <rect x="200" y="100" width="10" height="10" fill="none" stroke="#1976d2" stroke-width="1.5"/>
+                    <!-- Vertex Labels -->
+                    <text x="22" y="115" font-size="13" font-weight="bold">P</text>
+                    <text x="160" y="28" font-size="13" font-weight="bold" text-anchor="middle">Q</text>
+                    <text x="330" y="115" font-size="13" font-weight="bold">R</text>
+                    <text x="200" y="198" font-size="13" font-weight="bold" text-anchor="middle">S</text>
+                    <!-- Measurements -->
+                    <text x="180" y="128" font-size="11" font-weight="bold" fill="#333">PR = 16 cm</text>
+                    <text x="135" y="75" font-size="11" font-weight="bold" fill="#d32f2f">h1 = 6 cm</text>
+                    <text x="212" y="150" font-size="11" font-weight="bold" fill="#1976d2">h2 = 8 cm</text>
+                </svg>
+            </div>
+
+            <div class="step"><span class="step-label">(a) Sketch [2 Marks]:</span> Drawing provided above cleanly.</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(b) Derivation [1 Mark]:</span></div>
+            <div class="math-scroll">$$\text{Area}(PQRS) = \text{Area}(\Delta PQR) + \text{Area}(\Delta PSR)$$</div>
+            <div class="math-scroll">$$\text{Area} = \frac{1}{2} \times d \times h_1 + \frac{1}{2} \times d \times h_2 = \frac{1}{2} \times d \times (h_1 + h_2)$$</div>
+
+            <div class="step" style="margin-top: 10px;"><span class="step-label">(c) Calculation [2 Marks]:</span></div>
+            <div class="math-scroll">$$\text{Area} = \frac{1}{2} \times 16 \times (6 + 8) = 8 \times 14 = 112\text{ cm}^2$$</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan
+    </div>
+</body>
+</html>

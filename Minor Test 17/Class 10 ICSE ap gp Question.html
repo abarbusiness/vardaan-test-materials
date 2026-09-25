@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 ICSE AP & GP Question Paper</title>
+    <!-- MathJax for rendering Mathematical Equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-color: #000000;
+            --accent-yellow: #fbc02d;
+            --light-bg: #fdfdfd;
+            --border-color: #222222;
+        }
+        * { box-sizing: border-box; }
+        body { 
+            width: 100%; 
+            max-width: 900px; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 25px 30px; 
+            font-family: "Times New Roman", Times, Georgia, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: #000; 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 75%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 3px double var(--border-color); 
+            padding-bottom: 12px; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #111;
+        }
+        .sub-header {
+            font-size: 10.5pt;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            color: #444;
+        }
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 6px 10px; 
+            background-color: #fafafa;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            background: #fdfdfd;
+            padding: 8px 12px;
+            border: 1px dashed #aaa;
+            border-radius: 4px;
+        }
+        .instructions ul { margin: 4px 0; padding-left: 20px; }
+        .instructions li { margin-bottom: 2px; }
+        
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12pt; 
+            letter-spacing: 0.5px;
+        }
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 16px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            min-width: 38px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto;
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            margin-left: 10px;
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 6px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        /* Responsive Styles for Tablet and Mobile */
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 17pt; }
+            .test-name { font-size: 12pt; }
+            .exam-details { font-size: 9.5pt; justify-content: space-around; }
+            .question-container { margin-bottom: 14px; }
+            .q-num { min-width: 30px; }
+        }
+        @media screen and (max-width: 480px) {
+            body { padding: 10px; }
+            .institute-name { font-size: 14pt; }
+            .exam-details { flex-direction: column; align-items: center; gap: 4px; }
+            .q-marks { float: none; display: inline-block; margin-top: 4px; color: #333; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 12mm; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.08; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17 — MATHEMATICS</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 10 ICSE</span>
+            <span><strong>Topic:</strong> AP & GP</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40 Marks</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written on the paper provided separately.</li>
+                <li>You will not be allowed to write during the first 10 minutes. This time is to be spent in reading the question paper.</li>
+                <li>The paper consists of <strong>Three Sections: A, B, and C</strong>. All sections are compulsory.</li>
+                <li>Mathematical calculations, tables, and working must be shown clearly alongside the answers.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Attempt all questions — 5 Questions $\times$ 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the 15th term of the Arithmetic Progression (A.P.): $-10, -6, -2, 2, \dots$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            If the $4^{\text{th}}$ and $9^{\text{th}}$ terms of a Geometric Progression (G.P.) are $54$ and $13122$ respectively, find the common ratio ($r$) of the progression.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Which term of the Arithmetic Progression $5, 8, 11, 14, \dots$ is equal to $68$?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the $5^{\text{th}}$ term from the end of the Geometric Progression: $3, 6, 12, \dots, 1536$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the sum of the first $20$ terms of an A.P. whose $n^{\text{th}}$ term is given by $T_n = 3n + 5$.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type — 5 Questions $\times$ 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            The sum of three consecutive terms in an Arithmetic Progression is $24$ and their product is $440$. Find the three numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Determine the sum of the first $10$ terms of the Geometric Progression: $2, 6, 18, 54, \dots$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            How many terms of the A.P. $24, 21, 18, \dots$ must be taken so that their sum is $99$? Explain the reason for getting a double answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            If $(x + 1)$, $3x$, and $(4x + 12)$ are three consecutive terms of a Geometric Progression, determine the possible real values of $x$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Find three numbers in Geometric Progression such that their sum is $19$ and their product is $216$.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Type — 3 Questions $\times$ 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                <strong>(a)</strong> The $4^{\text{th}}$ term of an A.P. is equal to $3$ times its first term, and its $7^{\text{th}}$ term exceeds twice its $3^{\text{rd}}$ term by $1$. Find the first term ($a$) and the common difference ($d$). <span style="float:right;"><strong>[2.5 Marks]</strong></span>
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(b)</strong> A person repays a loan of ₹32,500 by paying ₹200 in the first month and then increasing the payment by ₹150 every month. How many months will it take him to completely clear the loan? <span style="float:right;"><strong>[2.5 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                <strong>(a)</strong> Find the sum of $n$ terms of the geometric sequence: $7 + 77 + 777 + \dots \text{to } n \text{ terms}$. <span style="float:right;"><strong>[3 Marks]</strong></span>
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(b)</strong> If $a, b, c$ are in Arithmetic Progression, and $a, x, b$ as well as $b, y, c$ are in Geometric Progression, prove that $x^2, b^2, y^2$ are in Arithmetic Progression. <span style="float:right;"><strong>[2 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                <strong>(a)</strong> The sum of the first $n$ terms of an A.P. is given by $S_n = 2n^2 + 5n$. Find the general formula for its $n^{\text{th}}$ term ($T_n$) and hence calculate its $25^{\text{th}}$ term. <span style="float:right;"><strong>[2 Marks]</strong></span>
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                <strong>(b)</strong> The $3^{\text{rd}}$ term of a Geometric Progression is $12$ and its $6^{\text{th}}$ term is $96$. Calculate the sum of the first $8$ terms of this progression. <span style="float:right;"><strong>[3 Marks]</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan &bull; Vardaan Learning Institute;
+    </div>
+</body>
+</html>
