@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 6 ICSE Biology Question Paper</title>
+    <!-- MathJax for chemical and biological notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in ICSE School Curriculum</div>
+        <div class="test-name">MINOR TEST 20 — THE LEAF (BIOLOGY)</div>
+        
+        <div class="exam-details">
+            <span>Class: VI (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Read all questions carefully. Answer neatly and concisely in accurate scientific terms.</li>
+                <li>The paper comprises 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Support long answers with neat labeling or simple word equations where applicable.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Basic Recall — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate botanical terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The thin, flat, broad green expanse of a leaf is known as the leaf blade or ____________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The small stalk that attaches the leaf base to the main stem or branch is called the ____________.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False. Correct the false statement(s):</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Parallel venation is a characteristic feature of dicotyledonous plants such as mustard and pea.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Plant leaves lose excess water in the form of water vapour through microscopic pores called stomata.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>Define the following scientific terms in one clear sentence each:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Leaf Venation
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Phyllotaxy
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Give one word or technical term for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Modified thread-like spring structure of a leaf that coils around support to help weak stems climb.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The leaf arrangement on a stem where three or more leaves arise at a single node forming a ring.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Match the items in Column A with their correct function or modification in Column B:</strong>
+            <span style="float: right;">[2]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Column A</th>
+                        <th>Column B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(i) Cactus spines</td>
+                        <td>(A) Vegetative reproduction through leaf margin buds</td>
+                    </tr>
+                    <tr>
+                        <td>(ii) Bryophyllum leaf</td>
+                        <td>(B) Reduces water loss through transpiration and provides protection</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type Questions — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Simple vs Compound Leaf:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Differentiate between a <strong>Simple Leaf</strong> and a <strong>Compound Leaf</strong> based on leaf margin incision. Give one suitable example for each type of leaf.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Arrangement of Leaves (Phyllotaxy):</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Briefly describe the three main patterns of leaf arrangement on a stem: <strong>(i) Alternate</strong>, <strong>(ii) Opposite</strong>, and <strong>(iii) Whorled</strong>. Provide one plant example for any one pattern.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Types of Leaf Venation:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What is the difference between <strong>Reticulate Venation</strong> and <strong>Parallel Venation</strong>? (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Identify which type of venation is found in (i) Rose leaf and (ii) Maize leaf. (1)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Functions & Importance of Transpiration:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Explain how transpiration takes place through leaves. State two vital benefits that transpiration provides to a growing plant.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Special Adaptation in Insectivorous Plants:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Why do plants like Pitcher Plant or Venus Flytrap trap and digest insects despite having green leaves for photosynthesis? Explain how the leaf blade of a Pitcher Plant is modified for this purpose.
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Detailed Concepts — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Structure of a Typical Leaf & Photosynthesis:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe the structure of a typical green leaf by explaining the role of the following parts: (i) Petiole, (ii) Lamina, (iii) Midrib, and (iv) Veins. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Write the word equation for <strong>photosynthesis</strong> occurring in green leaves, specifying all raw materials and necessary conditions. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Leaf Modifications & Vegetative Propagation:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe any THREE leaf modifications found in nature (e.g., Leaf Tendrils, Leaf Spines, Scale Leaves) along with their functional significance and one plant example each. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Explain how vegetative propagation takes place in <em>Bryophyllum</em> leaves with the help of adventitious buds. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Experimental Demonstration & Gas Exchange:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe a simple experiment using a clear polythene bag tied over a potted leafy plant to demonstrate transpiration in leaves. What observation proves that leaves release water vapour? (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Explain the role of <strong>stomata</strong> and <strong>guard cells</strong> in controlling gas exchange during daytime photosynthesis and nighttime respiration. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Prepared by Academic Evaluation Panel | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 6 ICSE Biology)</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VI (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Topic: Flower & Respiratory System (Minor Test 20)</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Petals (Corolla) (b) Nostrils.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Petal (or Corolla)</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Nostrils</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True/False: (a) Respiration energy release (b) Male reproductive part.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) True.</strong> Respiration breaks down digested food in cells to release energy. <em>[1 Mark]</em></li>
+                <li><strong>(b) False.</strong> Correction: The male reproductive part of a flower is called the <strong>stamen</strong> (The pistil is the female reproductive part). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Give one word: (a) Pollination (b) Diaphragm.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pollination</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Diaphragm</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Match the following: Anther & Gills.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Anther</strong> \(\rightarrow\) <strong>(B)</strong> Produces yellow pollen grains. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Gills</strong> \(\rightarrow\) <strong>(A)</strong> Respiratory organ in Fish. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Multiple Choice: Essential whorl & Alveoli.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) iii) Stamens.</strong> Stamens are essential because they take direct part in reproduction. <em>[1 Mark]</em></li>
+                <li><strong>(b) iii) Alveoli.</strong> Tiny air sacs inside the lungs where gas exchange takes place. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Four Whorls of a Flower & Classification.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Four Whorls (Outside to Inside):</strong> <em>[1.5 Marks - 0.5 Mark per pair]</em>
+                    <br>1. <strong>Calyx</strong> (made of Sepals)
+                    <br>2. <strong>Corolla</strong> (made of Petals)
+                    <br>3. <strong>Androecium</strong> (made of Stamens)
+                    <br>4. <strong>Gynoecium / Pistil</strong> (made of Carpels)
+                </li>
+                <li><strong>Classification:</strong> <em>[1.5 Marks]</em>
+                    <br>• <strong>Non-essential Whorls:</strong> Calyx and Corolla (They protect reproductive organs and attract insects).
+                    <br>• <strong>Essential Whorls:</strong> Androecium and Gynoecium (They produce male and female cells for reproduction).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Breathing vs Respiration Comparison.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Breathing</th>
+                        <th>Respiration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nature</strong></td>
+                        <td>A physical/mechanical process of taking in oxygen and giving out \(\text{CO}_2\). <em>[1 Mark]</em></td>
+                        <td>A biochemical process where glucose is broken down to release energy. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location & Energy</strong></td>
+                        <td>Occurs outside cells (in respiratory organs); No energy is released. <em>[0.5 Mark]</em></td>
+                        <td>Occurs inside living cells; Energy is released in the form of ATP. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Unisexual Flowers vs Bisexual Flowers.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Difference:</strong> <em>[2 Marks]</em>
+                    <br>• <strong>Unisexual Flower:</strong> Contains <em>either</em> male parts (stamens) or female parts (pistil) only.
+                    <br>• <strong>Bisexual Flower:</strong> Contains <em>both</em> male (stamens) and female (pistil) parts in the same flower.
+                </li>
+                <li><strong>(b) Examples:</strong> <em>[1 Mark - 0.5 Mark each]</em>
+                    <br>• Unisexual: Papaya / Cucumber / Corn.
+                    <br>• Bisexual: Mustard / Rose / Hibiscus.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Breathing Organs in Animals.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Earthworm:</strong> Moist and slimy skin. <em>[1 Mark]</em></li>
+                <li><strong>(b) Fish:</strong> Gills. <em>[1 Mark]</em></li>
+                <li><strong>(c) Cockroach:</strong> Air holes called <strong>Spiracles</strong> (connected to trachea). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Inhalation and Exhalation Movements.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) During Inhalation (Taking air in):</strong> <em>[1.5 Marks]</em>
+                    <br>• Ribcage moves <strong>upwards and outwards</strong>.
+                    <br>• Diaphragm moves <strong>downwards (flattens)</strong> to enlarge chest cavity.
+                </li>
+                <li><strong>(ii) During Exhalation (Giving air out):</strong> <em>[1.5 Marks]</em>
+                    <br>• Ribcage moves <strong>downwards and inwards</strong>.
+                    <br>• Diaphragm moves <strong>upwards</strong> back to its dome-shaped resting position.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Stamen, Pistil Structure & Pollination.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Parts of Stamen and Pistil:</strong> <em>[2.5 Marks]</em>
+                    <br>• <strong>Stamen:</strong> Made of two parts — <strong>Anther</strong> (contains pollen grains) and <strong>Filament</strong> (thin stalk). <em>[1 Mark]</em>
+                    <br>• <strong>Pistil:</strong> Made of three parts — <strong>Stigma</strong> (sticky top), <strong>Style</strong> (middle tube), and <strong>Ovary</strong> (swollen base with ovules). <em>[1.5 Marks]</em>
+                </li>
+                <li><strong>(b) Pollination & Types:</strong> <em>[2.5 Marks]</em>
+                    <br>• <strong>Pollination:</strong> Transfer of pollen grains from the anther to the stigma of a flower. <em>[0.5 Mark]</em>
+                    <br>• <strong>Self-pollination:</strong> Pollen lands on the stigma of the <em>same flower</em> or another flower on the <em>same plant</em>. <em>[1 Mark]</em>
+                    <br>• <strong>Cross-pollination:</strong> Pollen lands on the stigma of a flower on a <em>different plant of the same kind</em>. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Human Respiratory Air Pathway & Nasal Hair/Mucus.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pathway of Air in Humans:</strong> <em>[3 Marks]</em>
+                    <br>Nostrils \(\rightarrow\) Nasal Cavity \(\rightarrow\) Pharynx (Throat) \(\rightarrow\) Windpipe (Trachea) \(\rightarrow\) Bronchi \(\rightarrow\) Lungs \(\rightarrow\) Alveoli.
+                </li>
+                <li><strong>(b) Role of Fine Hair and Mucus in Nasal Cavity:</strong> <em>[2 Marks]</em>
+                    <br>• They trap dust particles, dirt, and microscopic germs present in inhaled air.
+                    <br>• Mucus also moistens and warms the air entering the respiratory tract, protecting lungs from harm.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Fertilisation & Respiration in Plant Organs.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Fertilisation & Post-fertilisation:</strong> <em>[2.5 Marks]</em>
+                    <br>• <strong>Fertilisation:</strong> The process of fusion of male gamete with female gamete inside the ovule to form a zygote. <em>[0.5 Mark]</em>
+                    <br>• <strong>Ovary</strong> develops into the <strong>Fruit</strong>. <em>[1 Mark]</em>
+                    <br>• <strong>Ovules</strong> develop into <strong>Seeds</strong>. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Structures for Plant Respiration:</strong> <em>[2.5 Marks]</em>
+                    <br>• Plants take in oxygen and give out carbon dioxide during respiration. <em>[0.5 Mark]</em>
+                    <br>• <strong>Leaves:</strong> Gas exchange occurs through microscopic pores called <strong>Stomata</strong>. <em>[1 Mark]</em>
+                    <br>• <strong>Woody Stems:</strong> Gas exchange occurs through tiny openings called <strong>Lenticels</strong> on the bark. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

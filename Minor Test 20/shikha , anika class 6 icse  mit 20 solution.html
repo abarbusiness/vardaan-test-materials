@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 6 ICSE Biology Detailed Solutions</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .equation-box {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-weight: bold;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VI (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Topic: Cell & Respiratory System (Minor Test 20)</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Cell (b) Trachea.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Cell</strong> (or biological cell). <em>[1 Mark]</em></li>
+                <li><strong>(b) Trachea</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True / False: (a) Cell wall in animal cells (b) Diaphragm movement in exhalation.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Animal cells do not have a cell wall; only plant cells have a cell wall made up of cellulose. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> During exhalation, the diaphragm relaxes and moves upward back into its dome shape. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Give one word: (a) Powerhouse of cell (b) Gas exchange sacs in lungs.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Mitochondria</strong> (Singular: Mitochondrion). <em>[1 Mark]</em></li>
+                <li><strong>(b) Alveoli</strong> (Singular: Alveolus). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Match the following: Chloroplast & Gills.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Chloroplast</strong> \(\rightarrow\) <strong>(B)</strong> Contains chlorophyll for photosynthesis. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Gills</strong> \(\rightarrow\) <strong>(A)</strong> Respiratory organ in fish. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Multiple Choice: Control center of cell & Epiglottis function.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) ii) Nucleus.</strong> Nucleus controls all activities and cell functions. <em>[1 Mark]</em></li>
+                <li><strong>(b) i) Epiglottis.</strong> The epiglottis covers the glottis while swallowing to prevent food from entering the windpipe. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section B Solutions -->
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Plant Cell vs Animal Cell Differences.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Plant Cell</th>
+                        <th>Animal Cell</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cell Wall</strong></td>
+                        <td>Cell wall present (outer boundary made of cellulose). <em>[1 Mark]</em></td>
+                        <td>Cell wall absent (outermost layer is cell membrane). <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plastids / Chloroplasts</strong></td>
+                        <td>Present (helps in photosynthesis). <em>[0.5 Mark]</em></td>
+                        <td>Absent. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vacuoles</strong></td>
+                        <td>Has one large central vacuole.</td>
+                        <td>Has small, temporary vacuoles (or absent).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Definitions of Breathing and Respiration + Major Difference.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Breathing:</strong> It is a physical process of taking in air rich in oxygen and giving out air rich in carbon dioxide. <em>[1 Mark]</em></li>
+                <li><strong>(b) Respiration:</strong> It is a chemical process taking place in cells where glucose is broken down in the presence of oxygen to release energy. <em>[1 Mark]</em></li>
+                <li><strong>(c) Key Difference:</strong> Breathing is a physical process occurring outside the cells (extracellular), whereas respiration is a biochemical process occurring inside the cells (intracellular). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Functions of Cell Membrane, Cytoplasm, and Nucleus.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cell Membrane:</strong> Protects the cell and selectively regulates the entry and exit of substances into and out of the cell. <em>[1 Mark]</em></li>
+                <li><strong>(b) Cytoplasm:</strong> A jelly-like liquid where most cellular chemical reactions and metabolic processes occur. <em>[1 Mark]</em></li>
+                <li><strong>(c) Nucleus:</strong> Controls all vital functions and activities of the cell and contains genetic material (chromosomes). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Human Respiratory Pathway Sequence.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Correct Sequence</div>
+            <div class="equation-box">
+                \[\text{Nostrils} \rightarrow \text{Nasal Cavity} \rightarrow \text{Pharynx} \rightarrow \text{Trachea} \rightarrow \text{Bronchi} \rightarrow \text{Lungs}\]
+            </div>
+            <p><em>[0.5 Mark for each correctly placed step in the order]</em></p>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Respiration in Insects and Earthworms.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Insect Openings:</strong> Tiny air holes present on the sides of a cockroach or insect's body are called <strong>Spiracles</strong>. Air enters through spiracles into air tubes called <strong>tracheae</strong>. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Earthworm Respiration:</strong> Earthworms absorb oxygen directly through their <strong>moist, thin, and slimy skin</strong>, which has a rich supply of blood capillaries. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section C Solutions -->
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Discovery of Cell & Types of Organisms.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Discovery of Cell:</strong> <em>[2 Marks]</em>
+                    <br>• The cell was discovered by <strong>Robert Hooke</strong> in <strong>1665</strong>. <em>[1 Mark]</em>
+                    <br>• He examined thin slices of <strong>cork</strong> (bark of an oak tree) under his primitive microscope and observed honeycomb-like compartments. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Types of Organisms:</strong> <em>[3 Marks]</em>
+                    <br>• <strong>Unicellular Organisms:</strong> Organisms made up of a <em>single cell</em> that performs all life functions. <em>Example:</em> <strong>Amoeba</strong> or <strong>Paramecium</strong>. <em>[1.5 Marks]</em>
+                    <br>• <strong>Multicellular Organisms:</strong> Organisms made up of <em>many cells</em> working together. <em>Example:</em> <strong>Humans</strong>, plants, or dogs. <em>[1.5 Marks]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Mechanism of Inhalation/Exhalation & Nasal Hair Role.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Movements during Breathing:</strong> <em>[3 Marks]</em>
+                    <br>i) <em>Inhalation (Breathing In):</em> Ribcage moves <strong>upward and outward</strong>. Diaphragm contracts and moves <strong>downward (flattens)</strong>, expanding the chest cavity. <em>[1.5 Marks]</em>
+                    <br>ii) <em>Exhalation (Breathing Out):</em> Ribcage moves <strong>downward and inward</strong>. Diaphragm relaxes and moves <strong>upward (dome-shaped)</strong>, reducing chest cavity size. <em>[1.5 Marks]</em>
+                </li>
+                <li><strong>(b) Role of Fine Hairs and Mucus:</strong> <em>[2 Marks]</em>
+                    <br>• Fine hairs and sticky mucus inside the nasal cavity trap dust, dirt, germs, and foreign particles present in the air.
+                    <br>• They filter and warm the inhaled air so that clean, humidified air enters the delicate lungs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Stomata in Plants & Aerobic Respiration Equation.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Stomata:</strong> <em>[2.5 Marks]</em>
+                    <br>• Stomata are microscopic, minute pores surrounded by guard cells, located mostly on the <strong>underside of leaves</strong>. <em>[1 Mark]</em>
+                    <br>• <em>Role:</em> They facilitate the exchange of gases (\(\text{O}_2\) and \(\text{CO}_2\)) during respiration/photosynthesis and allow water vapor to escape during transpiration. <em>[1.5 Marks]</em>
+                </li>
+                <li><strong>(b) Respiration Equation & Energy:</strong> <em>[2.5 Marks]</em>
+                    <br>• <em>Word Equation:</em> <em>[1.5 Marks]</em>
+                    <div class="equation-box">
+                        \[\text{Glucose} + \text{Oxygen} \rightarrow \text{Carbon Dioxide} + \text{Water} + \text{Energy (ATP)}\]
+                    </div>
+                    <br>• <em>Energy Currency:</em> The main energy released during respiration is stored in the form of <strong>ATP (Adenosine Triphosphate)</strong> molecules, which power cellular functions. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

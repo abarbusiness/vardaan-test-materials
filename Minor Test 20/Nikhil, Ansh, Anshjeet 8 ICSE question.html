@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 ICSE Biology Minor Test 20</title>
+    <!-- MathJax for rendering subscripts and biological notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+            --bg-card: #ffffff;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in ICSE Board Academics</div>
+        <div class="test-name">MINOR TEST 20 — CIRCULATORY SYSTEM</div>
+        
+        <div class="exam-details">
+            <span>Class: VIII ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written neatly on the answer sheet provided separately.</li>
+                <li>You will not be allowed to write during the first 5 minutes. This time is to be spent in reading the question paper.</li>
+                <li>The paper consists of 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Technical biological terms must be spelled correctly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Objective-Short Type — Attempt All Questions)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Name the following biological terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The pale yellow liquid matrix of blood left behind when all cellular components are removed.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The double-walled membranous sac that encloses and protects the human heart from mechanical shocks.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>Differentiate between an Artery and a Vein based on the following specific criteria:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Nature of lumen diameter and thickness of muscular wall.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Presence or absence of internal valves.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>State the exact structural location and primary physiological function of the Sinoatrial Node (SA Node) in the human heart.</strong>
+            <span style="float: right;">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Define the term <em>Double Circulation</em>. Name its two component circulatory pathways.</strong>
+            <span style="float: right;">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Give the scientific biological terminology for:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Red Blood Corpuscles that contain the respiratory pigment Hemoglobin.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The specialized White Blood Cells (Leukocytes) responsible for producing protective antibodies.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type — 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Give appropriate scientific reasons for each of the following observations:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The muscular walls of the ventricles are significantly thicker than those of the atria.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Mature mammalian Red Blood Cells (RBCs) lack a nucleus, mitochondria, and endoplasmic reticulum. State one structural advantage of losing the nucleus.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Complete the comparative table regarding human blood cellular elements:</strong>
+            <span style="float: right;">[3]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Blood Cell Type</th>
+                        <th>Structural Shape</th>
+                        <th>Average Lifespan</th>
+                        <th>Primary Biological Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Erythrocytes</strong></td>
+                        <td>Biconcave disc shape</td>
+                        <td>(i) ____________</td>
+                        <td>Transport of \(\text{O}_2\) and \(\text{CO}_2\)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thrombocytes</strong></td>
+                        <td>(ii) ____________</td>
+                        <td>3 to 5 days</td>
+                        <td>(iii) ____________</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Regarding the Lymphatic System:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What is <em>lymph</em> and how is tissue fluid formed from blood capillaries?
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> State two key structural or compositional differences between Blood and Lymph.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Answer the following questions regarding Human Blood Groups and Transfusion:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Why is blood group 'O' designated as the <em>Universal Donor</em>?
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Why is blood group 'AB' designated as the <em>Universal Acceptor</em>?
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Name the antigen present on RBC surface that determines whether a blood group is Rh-positive or Rh-negative.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Trace the pathway:</strong>
+            <span style="float: right;">[3]</span>
+            <p style="margin: 4px 0 8px 0;">Trace the exact sequential flow of a deoxygenated blood cell returning from the upper body organs (head and arms) back to the lungs for oxygenation. List all blood vessels, chambers, and valves involved in proper order.</p>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Descriptive Type — 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Human Heart Internal Anatomy and Cardiac Flow:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Construct a neat schematic flow diagram illustrating blood movement through the four chambers of the human heart during systemic and pulmonary circulation. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Describe the location and specific mechanical role of:
+                <div style="margin-left: 20px; margin-top: 4px;">
+                    (i) Bicuspid (Mitral) Valve<br>
+                    (ii) Pulmonary Semilunar Valve (2)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Blood Pressure and Cardiovascular Dynamics:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Define <em>Blood Pressure</em>. Mention the standard normal resting blood pressure reading of a healthy adult human, indicating proper units. (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Differentiate between <strong>Systolic Pressure</strong> and <strong>Diastolic Pressure</strong> with reference to cardiac activity. (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> What is <em>Hypertension</em>? Mention one harmful health effect of persistent untreated hypertension on vital human organs. (1)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Blood Coagulation Mechanism and Capillary Exchange:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe the step-by-step cascade mechanism of blood clotting (coagulation) when a blood vessel suffers an injury. Mention the key factors, enzymes, and proteins involved. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Describe two structural features of blood capillaries that render them uniquely adapted for the rapid exchange of gases, nutrients, and metabolic wastes between blood and tissue cells. (2)
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Created by Team Vardaan | Strictly aligned with ICSE Class 8 Biology Syllabus (Selina Concise)</span>
+    </div>
+</body>
+</html>

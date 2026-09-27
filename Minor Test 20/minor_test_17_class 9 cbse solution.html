@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions: Minor Test 17 | Vardaan Learning Institute</title>
+    
+    <!-- SVG-based MathJax Configuration for Zero Text-Overlapping -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global',
+                blacker: 0
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #111111;
+            --success-green: #2e7d32;
+            --success-bg: #e8f5e9;
+            --card-bg: #ffffff;
+            --border-light: #e0e0e0;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 500px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3.5px solid var(--primary-yellow);
+            border-bottom: 3.5px solid var(--primary-yellow);
+            padding: 12px 0;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .solution-title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #d81b60;
+            margin-top: 6px;
+            text-transform: uppercase;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fffde7;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #fff59d;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            background-color: #fafafa;
+            padding: 10px 14px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 2px 4px 4px 2px;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 10px;
+            line-height: 1.5;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .correct-answer {
+            color: var(--success-green);
+            background-color: var(--success-bg);
+            padding: 6px 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+
+        .explanation {
+            margin-left: 5px;
+            color: #222;
+        }
+
+        .explanation p { 
+            margin: 8px 0; 
+            line-height: 1.8;
+        }
+
+        .step-heading {
+            font-weight: bold;
+            color: #1565c0;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+
+        /* Prevent MathJax SVG Overlap */
+        .math-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 8px 0;
+            margin: 8px 0;
+            display: block;
+        }
+
+        /* SVG Atomic Schematics */
+        .diagram-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .diagram-card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 10pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+        }
+
+        /* Ensure MathJax SVG sits inline nicely without collapsing height & prevent print boldness */
+        mjx-container {
+            display: inline-block !important;
+            margin: 0 1px !important;
+            vertical-align: middle !important;
+            font-weight: normal !important;
+        }
+
+        mjx-container[jax="SVG"] path,
+        mjx-container[jax="SVG"] use,
+        mjx-container[jax="SVG"] g,
+        mjx-container[jax="SVG"] svg {
+            stroke: none !important;
+            stroke-width: 0 !important;
+        }
+
+        mjx-container[jax="SVG"][display="true"] {
+            display: block !important;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+
+        @media print {
+            body { 
+                padding: 0; 
+                width: 100%; 
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            mjx-container,
+            mjx-container * {
+                font-weight: normal !important;
+            }
+            mjx-container[jax="SVG"] path,
+            mjx-container[jax="SVG"] use,
+            mjx-container[jax="SVG"] g,
+            mjx-container[jax="SVG"] svg {
+                stroke: none !important;
+                stroke-width: 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 12px; font-size: 10.5pt; line-height: 1.7; }
+            .institute-name { font-size: 15pt; }
+            .solution-title { font-size: 11pt; }
+            .meta-info { flex-direction: column; gap: 4px; }
+            .q-header { flex-direction: column; gap: 6px; }
+            .marks-badge { align-self: flex-start; }
+            .explanation { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED MARKING SCHEME &amp; SOLUTIONS: MINOR TEST 17</div>
+        <div class="meta-info">
+            <span><strong>Class:</strong> 9 CBSE</span>
+            <span><strong>Subject:</strong> Science (Chemistry)</span>
+            <span><strong>Chapter:</strong> Journey Inside the Atom</span>
+            <span><strong>Max Marks:</strong> 40 Marks</span>
+        </div>
+    </div>
+
+    <!-- SECTION A SOLUTIONS -->
+    <h3 style="border-bottom: 2px solid var(--primary-yellow); padding-bottom: 4px; color: #333;">SECTION A: SHORT CONCEPT SOLUTIONS (10 Marks)</h3>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. State any two key postulates proposed by Niels Bohr that explained atomic stability.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <div class="correct-answer">Key Postulates of Bohr's Atomic Model:</div>
+            <p><strong>1. Stationary Orbits/Energy Levels:</strong> Electrons revolve around the nucleus only in certain permitted, discrete circular orbits called <em>stationary states</em> or <em>energy levels</em> (labeled K, L, M, N or \(n=1, 2, 3, 4\)). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            <p><strong>2. Non-Radiative Motion:</strong> While revolving inside these allowed discrete orbits, the electron does <strong>not radiate or lose energy</strong>. Hence, the electron does not spiral into the nucleus, ensuring atomic stability. <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Define Atomic Number (\(Z\)) and Mass Number (\(A\)). Write the standard notation for Carbon (\(6p, 6n\)).</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p><strong>Atomic Number (\(Z\)):</strong> The total number of protons present inside the nucleus of an atom of an element. (\(Z = \text{Number of protons}\)) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p><strong>Mass Number (\(A\)):</strong> The total sum of the number of protons and neutrons (nucleons) present inside the nucleus of an atom. (\(A = p^+ + n^0\)) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <div class="correct-answer">Standard Chemical Notation for Carbon:</div>
+            <p>For Carbon: Atomic Number \(Z = 6\), Mass Number \(A = 6 + 6 = 12\).</p>
+            <div class="math-display">
+                $$\mathbf{_{6}^{12}\text{C}}$$
+            </div>
+            <p style="text-align: right; color:#d81b60; font-weight:bold;">[1 Mark]</p>
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. An atom contains 12 protons and 12 neutrons. Find: (a) \(Z\) and \(A\), (b) Electronic configuration.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">(a) Atomic Number and Mass Number Calculation:</p>
+            <p>&bull; Atomic Number (\(Z\)) = Number of protons = <strong>12</strong> <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>&bull; Mass Number (\(A\)) = Protons + Neutrons = \(12 + 12 = \mathbf{24}\) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p class="step-heading">(b) Electronic Configuration:</p>
+            <p>Since the atom is electrically neutral, total electrons = total protons = 12.</p>
+            <p>&bull; Distribution in shells: <strong>K = 2, L = 8, M = 2</strong> (or simply <strong>2, 8, 2</strong>). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Differentiate between Isotopes and Isobars. Give one example of an isobaric pair.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <table style="width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 10pt;">
+                <tr style="background: #f5f5f5;">
+                    <th style="border: 1px solid #ccc; padding: 8px;">Feature</th>
+                    <th style="border: 1px solid #ccc; padding: 8px;">Isotopes</th>
+                    <th style="border: 1px solid #ccc; padding: 8px;">Isobars</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;"><strong>Atomic Number (\(Z\))</strong></td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Same</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Different</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;"><strong>Mass Number (\(A\))</strong></td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Different</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Same</td>
+                </tr>
+            </table>
+            <p style="color:#d81b60; font-weight:bold;">[1 Mark for differentiation table]</p>
+            <div class="correct-answer">Example of Isobaric Pair:</div>
+            <p>Calcium (\(_{20}^{40}\text{Ca}\)) and Argon (\(_{18}^{40}\text{Ar}\)) — both have mass number \(A = 40\), but different atomic numbers (\(Z=20\) and \(Z=18\)). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Write chemical symbols and Latin/German name origins for Iron, Sodium, Potassium, and Gold.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p>(a) <strong>Iron:</strong> Symbol = <strong>Fe</strong> &nbsp;|&nbsp; Origin = <em>Ferrum</em> (Latin) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>(b) <strong>Sodium:</strong> Symbol = <strong>Na</strong> &nbsp;|&nbsp; Origin = <em>Natrium</em> (Latin) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>(c) <strong>Potassium:</strong> Symbol = <strong>K</strong> &nbsp;|&nbsp; Origin = <em>Kalium</em> (Latin) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>(d) <strong>Gold:</strong> Symbol = <strong>Au</strong> &nbsp;|&nbsp; Origin = <em>Aurum</em> (Latin) <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- SECTION B SOLUTIONS -->
+    <h3 style="border-bottom: 2px solid var(--primary-yellow); padding-bottom: 4px; color: #333; margin-top: 35px;">SECTION B: SHORT ANSWER SOLUTIONS (15 Marks)</h3>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Describe Thomson's atomic model. Why was it discarded after the gold foil experiment?</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">Thomson's Model (Plum Pudding / Watermelon Model):</p>
+            <p>Proposed by J.J. Thomson in 1898. According to this model:</p>
+            <p>1. An atom consists of a sphere of positively charged matter. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>2. Negatively charged electrons are embedded uniformly throughout this positive sphere, like seeds in a watermelon or raisins in a plum pudding. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            
+            <p class="step-heading">Reason for Discarding Thomson's Model:</p>
+            <p>In Rutherford's \(\alpha\)-ray scattering experiment, a small fraction of \(\alpha\)-particles bounced back (\(180^\circ\) deflection) and many were scattered through large angles. Thomson's model predicted that positive charge was spread out thinly across the entire volume, which could never produce a concentrated electrostatic force strong enough to deflect fast-moving, heavy \(\alpha\)-particles. Thus, it failed to explain the existence of a dense positive nucleus. <span style="color:#d81b60; font-weight:bold;">[2 Marks]</span></p>
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. State Bohr-Bury rules for electron distribution. Calculate capacities for K, L, and M shells.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">Bohr-Bury Rules:</p>
+            <p><strong>Rule 1:</strong> The maximum number of electrons that can occupy a given shell is given by the formula \(2n^2\), where \(n\) is the shell number (orbit index). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            <p><strong>Rule 2:</strong> The outermost valence shell cannot hold more than 8 electrons, even if it has capacity for more. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p><strong>Rule 3:</strong> Electrons are filled stepwise in shells from inner to outer order (K \(\rightarrow\) L \(\rightarrow\) M). Inner shells must be filled completely before filling outer shells. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            
+            <p class="step-heading">Capacity Calculation (\(2n^2\)):</p>
+            <div class="math-display">
+                $$\text{K-shell } (n=1): 2 \times (1)^2 = \mathbf{2 \text{ electrons}}$$
+                $$\text{L-shell } (n=2): 2 \times (2)^2 = \mathbf{8 \text{ electrons}}$$
+                $$\text{M-shell } (n=3): 2 \times (3)^2 = \mathbf{18 \text{ electrons}}$$
+            </div>
+            <p style="text-align: right; color:#d81b60; font-weight:bold;">[1 Mark]</p>
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Calculate the average atomic mass of Chlorine (\(75\%\) \(^{35}\text{Cl}\) and \(25\%\) \(^{37}\text{Cl}\)).</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">Step-by-Step Calculation:</p>
+            <p>Given Isotope 1: \(^{35}\text{Cl}\) with isotopic mass = \(35\text{ u}\) and abundance = \(75\%\).</p>
+            <p>Given Isotope 2: \(^{37}\text{Cl}\) with isotopic mass = \(37\text{ u}\) and abundance = \(25\%\).</p>
+            
+            <p>Formula for Weighted Average Atomic Mass:</p>
+            <div class="math-display">
+                $$\text{Average Atomic Mass} = \left( \text{Mass}_1 \times \frac{\text{Abundance}_1}{100} \right) + \left( \text{Mass}_2 \times \frac{\text{Abundance}_2}{100} \right)$$
+            </div>
+            <p style="text-align: right; color:#d81b60; font-weight:bold;">[1 Mark]</p>
+            
+            <p>Substituting the given values:</p>
+            <div class="math-display">
+                $$\text{Average Atomic Mass} = \left( 35 \times \frac{75}{100} \right) + \left( 37 \times \frac{25}{100} \right)$$
+            </div>
+            <div class="math-display">
+                $$\text{Average Atomic Mass} = \left( 35 \times \frac{3}{4} \right) + \left( 37 \times \frac{1}{4} \right)$$
+            </div>
+            <div class="math-display">
+                $$\text{Average Atomic Mass} = \frac{105}{4} + \frac{37}{4} = \frac{142}{4} = \mathbf{35.5 \text{ u}}$$
+            </div>
+            <div class="correct-answer">Final Answer: 35.5 u</div>
+            <p style="text-align: right; color:#d81b60; font-weight:bold;">[2 Marks]</p>
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Define Valency. How is valency determined for Sodium (\(Z=11\)) and Oxygen (\(Z=8\))?</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p><strong>Valency:</strong> The combining capacity of an atom of an element, which is equal to the number of electrons lost, gained, or shared by the atom to complete its octet (8 electrons in valence shell, or 2 in duplet). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            
+            <p class="step-heading">(a) Sodium (\(Z=11\)):</p>
+            <p>&bull; Electronic configuration = 2, 8, 1 (Valence electrons = 1).</p>
+            <p>&bull; Since valence electrons \(\le 4\), Sodium readily loses 1 electron to achieve octet.</p>
+            <p>&bull; <strong>Valency of Sodium = 1</strong>. <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+
+            <p class="step-heading">(b) Oxygen (\(Z=8\)):</p>
+            <p>&bull; Electronic configuration = 2, 6 (Valence electrons = 6).</p>
+            <p>&bull; Since valence electrons \(> 4\), Oxygen gains 2 electrons to complete its octet.</p>
+            <p>&bull; <strong>Valency = \(8 - \text{Valence electrons} = 8 - 6 = \mathbf{2}\)</strong>. <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Element X has Mass Number = 35, Neutrons = 18. Find Z, configuration, identity, and valency.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">(a) Atomic Number and Total Electrons:</p>
+            <p>We know, \(\text{Mass Number } (A) = \text{Protons } (Z) + \text{Neutrons } (n)\)</p>
+            <p>\(35 = Z + 18 \implies Z = 35 - 18 = \mathbf{17}\).</p>
+            <p>Since atom is neutral, Total Electrons = \(Z = \mathbf{17}\). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+
+            <p class="step-heading">(b) Electronic Configuration &amp; Valence Electrons:</p>
+            <p>&bull; Electronic Configuration (K, L, M) = <strong>2, 8, 7</strong>.</p>
+            <p>&bull; Number of Valence Electrons = <strong>7</strong>. <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+
+            <p class="step-heading">(c) Identity and Valency:</p>
+            <p>&bull; Element with \(Z = 17\) is <strong>Chlorine (\(\text{Cl}\))</strong>.</p>
+            <p>&bull; Valency = \(8 - 7 = \mathbf{1}\). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- SECTION C SOLUTIONS -->
+    <h3 style="border-bottom: 2px solid var(--primary-yellow); padding-bottom: 4px; color: #333; margin-top: 35px;">SECTION C: LONG ANSWER SOLUTIONS (15 Marks)</h3>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Detailed observations, conclusions, and limitations of Rutherford's Gold Foil Experiment.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">(a) &amp; (b) Observations and Corresponding Conclusions:</p>
+            
+            <p><strong>Observation 1:</strong> Most of the high-energy \(\alpha\)-particles passed straight through the gold foil without any deflection. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p><em>Conclusion 1:</em> Most of the space inside an atom is completely empty. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            
+            <p><strong>Observation 2:</strong> A few \(\alpha\)-particles were deflected from their straight path by small and large angles. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p><em>Conclusion 2:</em> The positive charge of the atom is not spread throughout, but concentrated in a very small volume at the center that repels positively charged \(\alpha\)-particles. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+
+            <p><strong>Observation 3:</strong> Extremely few \(\alpha\)-particles (about 1 in 12,000) rebounded back along their original path (\(180^\circ\) deflection). <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p><em>Conclusion 3:</em> All the positive charge and nearly all the mass of the gold atom are concentrated in an extremely tiny, dense region at the center called the <strong>nucleus</strong>. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+
+            <p class="step-heading">(c) Drawback/Limitation of Rutherford's Model:</p>
+            <p>According to classical electromagnetic theory, any charged particle (like an electron) revolving in a circular orbit undergoes continuous acceleration. An accelerating charged particle must continuously radiate energy. As a result, the revolving electron would lose energy continuously, its orbit would shrink spirally inward, and it would ultimately collapse into the nucleus within a fraction of a second. If this were true, matter could not exist stably. Rutherford's model could not explain this atomic stability. <span style="color:#d81b60; font-weight:bold;">[2 Marks]</span></p>
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Discovery of neutron and Protium uniqueness. (b) Isotopes and 3 medical/industrial uses.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">Part (a): Discovery of Neutron &amp; Uniqueness of Protium [2.5 Marks]</p>
+            <p>&bull; <strong>Discoverer:</strong> James Chadwick in 1932. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>&bull; <strong>Properties:</strong> Symbol = \(n^0\), Relative charge = \(0\) (neutral), Mass \(\approx 1.675 \times 10^{-27}\text{ kg}\) (nearly equal to proton). <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>&bull; <strong>Location:</strong> Located inside the dense nucleus along with protons. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>&bull; <strong>Uniqueness of Protium (\(^{1}_{1}\text{H}\)):</strong> Protium is the <em>only stable neutral atom in the universe that contains zero neutrons</em> in its nucleus (\(1p^+, 0n^0, 1e^-\)). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+
+            <p class="step-heading">Part (b): Definition &amp; Applications of Isotopes [2.5 Marks]</p>
+            <p>&bull; <strong>Isotopes:</strong> Atoms of the same element having the same atomic number (\(Z\)) but different mass numbers (\(A\)). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            <p>&bull; <strong>Applications:</strong></p>
+            <p>1. <strong>Uranium-235 (\(^{235}_{92}\text{U}\)):</strong> Used as nuclear fuel in power reactors to generate electricity. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>2. <strong>Cobalt-60 (\(^{60}_{27}\text{Co}\)):</strong> Used in radiotherapy for the treatment of cancer. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+            <p>3. <strong>Iodine-131 (\(^{131}_{53}\text{I}\)):</strong> Used in the medical treatment of goitre and thyroid diseases. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Atomic schematics for Nitrogen and Magnesium. (b) Explanation for inert nature of noble gases.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <p class="step-heading">Part (a): Electronic Schematics [2.5 Marks]</p>
+            <p><strong>(i) Nitrogen (\(Z=7\)):</strong> Electronic configuration = 2, 5 (K=2, L=5).</p>
+            <p><strong>(ii) Magnesium (\(Z=12\)):</strong> Electronic configuration = 2, 8, 2 (K=2, L=8, M=2).</p>
+
+            <div class="diagram-box">
+                <!-- SVG Nitrogen -->
+                <div class="diagram-card">
+                    <strong>Nitrogen Atom (\(Z=7\))</strong><br>
+                    <svg width="150" height="150" viewBox="0 0 150 150">
+                        <circle cx="75" cy="75" r="14" fill="#ffcdd2" stroke="#e57373" stroke-width="2"/>
+                        <text x="75" y="79" font-size="10" text-anchor="middle" font-weight="bold">7p, 7n</text>
+                        <!-- K Shell -->
+                        <circle cx="75" cy="75" r="32" fill="none" stroke="#90caf9" stroke-width="1.5" stroke-dasharray="3 3"/>
+                        <circle cx="75" cy="43" r="4" fill="#1e88e5"/>
+                        <circle cx="75" cy="107" r="4" fill="#1e88e5"/>
+                        <!-- L Shell -->
+                        <circle cx="75" cy="75" r="55" fill="none" stroke="#a5d6a7" stroke-width="1.5"/>
+                        <circle cx="75" cy="20" r="4" fill="#43a047"/>
+                        <circle cx="130" cy="75" r="4" fill="#43a047"/>
+                        <circle cx="75" cy="130" r="4" fill="#43a047"/>
+                        <circle cx="20" cy="75" r="4" fill="#43a047"/>
+                        <circle cx="36" cy="36" r="4" fill="#43a047"/>
+                    </svg>
+                    <br><small>Config: K=2, L=5</small>
+                </div>
+
+                <!-- SVG Magnesium -->
+                <div class="diagram-card">
+                    <strong>Magnesium Atom (\(Z=12\))</strong><br>
+                    <svg width="160" height="160" viewBox="0 0 160 160">
+                        <circle cx="80" cy="80" r="15" fill="#ffcdd2" stroke="#e57373" stroke-width="2"/>
+                        <text x="80" y="84" font-size="9" text-anchor="middle" font-weight="bold">12p,12n</text>
+                        <!-- K Shell -->
+                        <circle cx="80" cy="80" r="30" fill="none" stroke="#90caf9" stroke-width="1.5"/>
+                        <circle cx="80" cy="50" r="3.5" fill="#1e88e5"/>
+                        <circle cx="80" cy="110" r="3.5" fill="#1e88e5"/>
+                        <!-- L Shell -->
+                        <circle cx="80" cy="80" r="50" fill="none" stroke="#a5d6a7" stroke-width="1.5"/>
+                        <circle cx="80" cy="30" r="3.5" fill="#43a047"/>
+                        <circle cx="130" cy="80" r="3.5" fill="#43a047"/>
+                        <circle cx="80" cy="130" r="3.5" fill="#43a047"/>
+                        <circle cx="30" cy="80" r="3.5" fill="#43a047"/>
+                        <circle cx="115" cy="45" r="3.5" fill="#43a047"/>
+                        <circle cx="115" cy="115" r="3.5" fill="#43a047"/>
+                        <circle cx="45" cy="115" r="3.5" fill="#43a047"/>
+                        <circle cx="45" cy="45" r="3.5" fill="#43a047"/>
+                        <!-- M Shell -->
+                        <circle cx="80" cy="80" r="70" fill="none" stroke="#ffcc80" stroke-width="1.5"/>
+                        <circle cx="80" cy="10" r="3.5" fill="#fb8c00"/>
+                        <circle cx="80" cy="150" r="3.5" fill="#fb8c00"/>
+                    </svg>
+                    <br><small>Config: K=2, L=8, M=2</small>
+                </div>
+            </div>
+
+            <p class="step-heading">Part (b): Inert Nature of Noble Gases [2.5 Marks]</p>
+            <p>&bull; <strong>Neon (\(Z=10\)):</strong> Electronic configuration = 2, 8 (Outer shell has 8 electrons = Complete Octet). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            <p>&bull; <strong>Argon (\(Z=18\)):</strong> Electronic configuration = 2, 8, 8 (Outer shell has 8 electrons = Complete Octet). <span style="color:#d81b60; font-weight:bold;">[1 Mark]</span></p>
+            <p>&bull; An atom attains maximum chemical stability when its outermost shell possesses a completely filled octet (8 electrons). Because Neon and Argon already possess stable octet configurations, they have zero tendency to gain, lose, or share electrons. Hence, their chemical combining capacity (valency) is <strong>zero</strong> and they are chemically inert. <span style="color:#d81b60; font-weight:bold;">[0.5 Mark]</span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan &bull; Complete Solution Key &bull; Vardaan Learning Institute
+    </div>
+</body>
+</html>

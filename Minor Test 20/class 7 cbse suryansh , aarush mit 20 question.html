@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 7 CBSE Science Minor Test 20</title>
+    <!-- MathJax for rendering biological and chemical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+            --bg-card: #ffffff;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Watermark Image -->
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <!-- Institutional Header -->
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in CBSE School Academics</div>
+        <div class="test-name">MINOR TEST 20 — ADOLESCENCE & LIFE PROCESSES IN PLANTS</div>
+        
+        <div class="exam-details">
+            <span>Class: VII (CBSE)</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Read all questions carefully before attempting. Write neat and clean answers.</li>
+                <li>The paper consists of 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Label simple diagrams or chemical equations wherever required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Basic Concept Recall — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate scientific terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The process by which green plants synthesize their own food using carbon dioxide and water in the presence of sunlight is called ____________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The period of life when the body undergoes changes leading to reproductive maturity is known as ____________.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False. Correct the false statement(s):</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Xylem tissue transports synthesized food food from leaves to other non-green parts of the plant.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Pituitary gland is called the master gland because its hormones control the functioning of other endocrine glands.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>Define the following scientific terms in one clear sentence each:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Transpiration
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Puberty
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Give one word or technical term for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The primary male hormone secreted by the testes responsible for secondary sexual characteristics.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The specialized vascular tissue that transports water and mineral nutrients upward from roots in plants.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Match the terms in Column A with their correct corresponding function in Column B:</strong>
+            <span style="float: right;">[2]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Column A</th>
+                        <th>Column B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(i) Thyroid Gland</td>
+                        <td>(A) Transports food produced in leaves to all plant parts</td>
+                    </tr>
+                    <tr>
+                        <td>(ii) Phloem Tissue</td>
+                        <td>(B) Secretes Thyroxine hormone regulating body metabolism</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type Questions — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Nutrition in Plants:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Differentiate between <strong>Autotrophic Nutrition</strong> and <strong>Heterotrophic Nutrition</strong> in plants. State one suitable example for each mode of nutrition.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Transpiration in Plants:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What is meant by transpiration? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> State two vital functions/benefits of transpiration for a living plant. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Physical Changes during Adolescence:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                State any three major physical changes that take place in boys and girls during the onset of adolescence.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Gas Exchange in Plants:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                What are <strong>stomata</strong>? Describe their role in the two key life processes of plants: (i) Photosynthesis and (ii) Respiration.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Nutritional Needs of Adolescents:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Why is a balanced diet particularly crucial during adolescence? (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Name two essential minerals/nutrients needed in increased quantities during adolescence and state their importance. (1.5)
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Conceptual Questions — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Transport of Substances & Photosynthesis in Plants:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe the structure and distinct roles of <strong>Xylem</strong> and <strong>Phloem</strong> tissues in transporting materials throughout a plant. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Write the balanced word equation or chemical equation for <strong>photosynthesis</strong> in green plants, indicating all necessary raw materials and end products. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Endocrine System & Hormones in Humans:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>hormones</strong>? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Complete the table or describe the location, hormone released, and primary role for any TWO of the following endocrine glands: (i) Thyroid Gland, (ii) Adrenal Gland, (iii) Pancreas. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Mention why Pancreas is considered both an exocrine and an endocrine gland. (1)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Secondary Sexual Characteristics & Health Hygiene:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>Secondary Sexual Characteristics</strong>? List two such characteristics in males and two in females. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Explain why maintaining personal hygiene and engaging in regular physical exercise are essential for growing adolescents. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Prepared by Academic Panel | Vardaan Learning Institute (CBSE Curriculum)</span>
+    </div>
+</body>
+</html>

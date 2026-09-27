@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 6 ICSE Biology: The Leaf)</title>
+    <!-- MathJax for chemical and biological notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .equation-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 8px 0;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VI (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Topic: The Leaf (Minor Test 20)</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Leaf blade/Lamina (b) Petiole.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Lamina (or Leaf Blade)</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Petiole</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True/False: (a) Parallel venation in dicots (b) Transpiration through stomata.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Correction: Parallel venation is a characteristic feature of <strong>monocotyledonous plants</strong> (e.g., grass, maize, banana), whereas dicot plants show reticulate venation. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> Stomata open to facilitate gas exchange and release water vapour during transpiration. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Definitions: (a) Leaf Venation (b) Phyllotaxy.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Leaf Venation:</strong> The arrangement or pattern of veins and veinlets distributed in the lamina of a leaf. <em>[1 Mark]</em></li>
+                <li><strong>(b) Phyllotaxy:</strong> The systematic arrangement of leaves on the stem or branch of a plant. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. One Word Terms: (a) Coiling leaf structure (b) Ring of leaves at a node.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Leaf Tendril</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Whorled Phyllotaxy</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Match the following: Cactus spines & Bryophyllum.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Cactus spines</strong> \(\rightarrow\) <strong>(B)</strong> Reduces water loss through transpiration and provides protection. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Bryophyllum leaf</strong> \(\rightarrow\) <strong>(A)</strong> Vegetative reproduction through leaf margin buds. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Simple Leaf vs Compound Leaf.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Simple Leaf</th>
+                        <th>Compound Leaf</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lamina Division</strong></td>
+                        <td>The lamina is entire and undivided. If incisions are present, they do not touch the midrib. <em>[1 Mark]</em></td>
+                        <td>The lamina incision reaches down to the midrib, breaking the leaf blade into small distinct parts called <strong>leaflets</strong>. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td>Mango, Mango, Hibiscus, Peepal. <em>[0.5 Mark]</em></td>
+                        <td>Rose, Neem, Pea plant. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Patterns of Leaf Arrangement (Phyllotaxy).</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>1. Alternate Phyllotaxy:</strong> Only a single leaf arises at each node in an alternating sequence (e.g., Sunflower, Mango, Hibiscus). <em>[1 Mark]</em></li>
+                <li><strong>2. Opposite Phyllotaxy:</strong> A pair of leaves arises opposite to each other at the same node (e.g., Guava, Tulsi/Calotropis). <em>[1 Mark]</em></li>
+                <li><strong>3. Whorled Phyllotaxy:</strong> Three or more leaves grow at a single node forming a circular whorl or ring (e.g., Oleander/Nerium). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Reticulate vs Parallel Venation and Examples.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Comparison:</strong> <em>[2 Marks]</em>
+                    <br>• <strong>Reticulate Venation:</strong> Veins and veinlets branch randomly to form an irregular network/web. Common in dicot plants.
+                    <br>• <strong>Parallel Venation:</strong> Veins run parallel to one another from the leaf base to the apex without forming a network. Common in monocot plants.
+                </li>
+                <li><strong>(b) Identification:</strong> <em>[1 Mark]</em>
+                    <br>• (i) Rose leaf \(\rightarrow\) <strong>Reticulate Venation</strong> <em>[0.5 Mark]</em>
+                    <br>• (ii) Maize leaf \(\rightarrow\) <strong>Parallel Venation</strong> <em>[0.5 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Process & Benefits of Transpiration in Plants.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Process:</strong> Excess absorbed water travels up through xylem tissue to leaves and evaporates into the atmosphere as water vapour through microscopic stomata. <em>[1 Mark]</em></li>
+                <li><strong>Two Vital Benefits:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. <strong>Cooling Effect:</strong> Evaporative loss cools leaf surfaces, protecting cells from scorching heat under bright sunlight.
+                    <br>2. <strong>Transpiration Pull:</strong> Creates a strong suction force that pulls water and dissolved mineral nutrients upward from roots to tall branches.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Insectivorous Plants & Modification in Pitcher Plant.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Reason for trapping insects:</strong> Insectivorous plants grow in swampy, nitrogen-deficient soils. They digest captured insects to satisfy their nitrogen requirement for building proteins. <em>[1.5 Marks]</em></li>
+                <li><strong>Modification of Pitcher Plant:</strong> <em>[1.5 Marks]</em>
+                    <br>• The leaf lamina modifies into a hollow pitcher-shaped vessel filled with digestive fluids.
+                    <br>• The apex of the leaf forms a movable lid that closes after an insect enters.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Parts of a Typical Leaf & Photosynthesis Word Equation.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Four Main Parts of a Leaf:</strong> <em>[3 Marks]</em>
+                    <br>• <strong>Petiole:</strong> Stalk attaching lamina to stem, positioning leaf to capture maximum sunlight.
+                    <br>• <strong>Lamina:</strong> Flat green area containing chlorophyll where food synthesis occurs.
+                    <br>• <strong>Midrib:</strong> Central thick main vein running along the center of the lamina providing strength.
+                    <br>• <strong>Veins:</strong> Vascular strands branching from midrib that conduct water, minerals, and synthesized food.
+                </li>
+                <li><strong>(b) Photosynthesis Word Equation:</strong> <em>[2 Marks]</em>
+                    <div class="equation-box">
+                        $$\text{Carbon Dioxide} + \text{Water} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{Glucose (Food)} + \text{Oxygen}$$
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Leaf Modifications & Vegetative Reproduction in Bryophyllum.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Three Leaf Modifications:</strong> <em>[3 Marks - 1 Mark each]</em>
+                    <br>1. <strong>Leaf Tendrils:</strong> Leaves modify into coiled thread-like structures for climbing support (e.g., Pea plant).
+                    <br>2. <strong>Leaf Spines:</strong> Leaves reduce into sharp needles to minimize transpiration and deter herbivores (e.g., Cactus/Opuntia).
+                    <br>3. <strong>Scale Leaves:</strong> Thin dry or fleshy leaves protecting axillary buds or storing food (e.g., Onion, Ginger).
+                </li>
+                <li><strong>(b) Reproduction in Bryophyllum:</strong> <em>[2 Marks]</em>
+                    <br>• <em>Bryophyllum</em> leaves possess notch-like margins containing special **adventitious buds**.
+                    <br>• When a leaf detaches and falls on moist soil, these buds sprout roots and shoots, growing into new independent plantlets.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Transpiration Experiment & Gas Exchange in Stomata.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Transpiration Experiment:</strong> <em>[3 Marks]</em>
+                    <br>• <strong>Setup:</strong> Take a well-watered potted leafy plant. Cover a healthy leafy shoot with a transparent polythene bag and tie its neck tightly around the stem base. Place in bright sunlight for 2-3 hours.
+                    <br>• <strong>Observation:</strong> Tiny droplets of water collect on the inner surface of the transparent polythene bag.
+                    <br>• <strong>Inference:</strong> Proves that plant leaves lose excess water in the form of water vapour via transpiration.
+                </li>
+                <li><strong>(b) Stomata & Guard Cells Function:</strong> <em>[2 Marks]</em>
+                    <br>• Stomata are microscopic pores guarded by two bean-shaped **guard cells**.
+                    <br>• Guard cells swell and open stomata during daytime to absorb carbon dioxide (\(\text{CO}_2\)) for photosynthesis, and regulate oxygen (\(\text{O}_2\)) release during plant respiration.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

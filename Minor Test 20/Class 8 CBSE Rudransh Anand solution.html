@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 8 CBSE Science)</title>
+    <!-- MathJax for rendering biological and chemical notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VIII CBSE</span>
+            <span>Subject: Science</span>
+            <span>Topic: Microorganisms & Cell</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & CONCEPT RECALL (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Cell observer name (b) Bacteria turning milk to curd.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Expected Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Anton van Leeuwenhoek</strong> (or Robert Hooke for cork cell discovery; Leeuwenhoek observed living cell). <em>[1 Mark]</em></li>
+                <li><strong>(b) Lactobacillus</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True/False: (a) Plant cells lack cell wall (b) Yeast dough rising due to CO₂.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Correction: Plant cells have a rigid <strong>cell wall</strong> outside the plasma membrane, whereas animal cells lack a cell wall. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> (Yeast produces \(\text{CO}_2\) gas during respiration which fills the dough and makes it rise). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Define: (a) Pseudopodia (b) Fermentation.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pseudopodia:</strong> Temporary finger-like projections or "false feet" extended by unicellular organisms like <em>Amoeba</em> for movement and capturing food. <em>[1 Mark]</em></li>
+                <li><strong>(b) Fermentation:</strong> The biological process of conversion of sugars into alcohol and carbon dioxide by microorganisms like yeast in anaerobic conditions. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Microorganisms for: (a) Malaria (b) Citrus Canker.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Plasmodium</strong> (Protozoan carried by female <em>Anopheles</em> mosquito). <em>[1 Mark]</em></li>
+                <li><strong>(b) Xanthomonas citri / Bacteria</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Technical terms for: (a) Control centre of cell (b) Green plastids.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Nucleus</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Chloroplasts</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER & REASONING (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Differentiate between Plant Cell and Animal Cell.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Plant Cell</th>
+                        <th>Animal Cell</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>(a) Cell Wall</strong></td>
+                        <td>Present (made of cellulose). <em>[0.5 Mark]</em></td>
+                        <td>Absent. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Plastids</strong></td>
+                        <td>Present (e.g., chloroplasts). <em>[0.5 Mark]</em></td>
+                        <td>Absent. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(c) Vacuoles</strong></td>
+                        <td>Single, large central vacuole. <em>[0.5 Mark]</em></td>
+                        <td>Multiple, small temporary vacuoles. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Antibiotics: Definition, example, and two precautions.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Definition & Example:</strong> Medicines that kill or stop the growth of disease-causing bacteria. <em>Example:</em> Penicillin / Streptomycin / Amoxicillin. <em>[1 Mark]</em></li>
+                <li><strong>(b) Precautions:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. Antibiotics should be taken only on the advice of a qualified doctor.
+                    <br>2. Complete the full course prescribed by the doctor, even if symptoms disappear earlier.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Unicellular vs Multicellular & nerve cell shape.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Unicellular vs Multicellular:</strong> <em>[1.5 Marks]</em>
+                    <br>• <strong>Unicellular:</strong> Organisms composed of a single cell (e.g., <em>Amoeba</em>, <em>Paramecium</em>).
+                    <br>• <strong>Multicellular:</strong> Organisms composed of many cells working together (e.g., Humans, Rose plant).
+                </li>
+                <li><strong>(b) Nerve Cell Function & Structure:</strong> <em>[1.5 Marks]</em>
+                    <br>Nerve cells are long and branched so they can receive and transfer control signals (impulses) efficiently across long distances in the body, helping coordinate brain activities.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Pasteurisation & action of salt/sugar in preservation.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pasteurisation:</strong> Milk is heated to about \(70^\circ\text{C}\) for 15 to 30 seconds and then suddenly chilled and stored. Discovered by <strong>Louis Pasteur</strong>. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Preservation Mechanism:</strong> Salt and sugar draw moisture out of microbial cells by osmosis, creating a dry environment that inhibits the growth of bacteria and fungi. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Nucleus function, Chromosomes, and Genes.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Primary Function:</strong> Controls all metabolic activities of the cell and regulates cell division. <em>[1 Mark]</em></li>
+                <li><strong>(b) Chromosomes & Genes:</strong> Thread-like structures present inside the nucleus that are visible during cell division. They carry <strong>Genes</strong>, which are functional units of inheritance that transfer genetic traits from parents to offspring. <em>[2 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER & DETAILED EXPLANATIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Detailed Cell Structure: Plasma Membrane, Cytoplasm, and Cell Wall.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cell Membrane:</strong> <em>[2 Marks]</em>
+                    <br>• Outer delicate boundary of animal cells. It encloses the cytoplasm and nucleus.
+                    <br>• <strong>Selectively Permeable:</strong> It allows only specific substance molecules to pass in and out while blocking unwanted substances.
+                </li>
+                <li><strong>(b) Cytoplasm & Organelles:</strong> <em>[1.5 Marks]</em>
+                    <br>• Jelly-like fluid matrix between the plasma membrane and nucleus.
+                    <br>• <em>Organelles present:</em> Mitochondria, Endoplasmic Reticulum, Golgi Apparatus, Vacuoles.
+                </li>
+                <li><strong>(c) Need for Cell Wall in Plants:</strong> <em>[1.5 Marks]</em>
+                    <br>Plants cannot move to shelter themselves from weather extremes. The rigid cellulose cell wall protects plant cells against variations in temperature, high wind speed, atmospheric moisture, and mechanical pressure.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Microorganisms: Nitrogen Fixation, Decomposers, and Vaccines.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Nitrogen Fixation by Rhizobium:</strong> <em>[2 Marks]</em>
+                    <br><em>Rhizobium</em> bacteria live in the root nodules of leguminous plants. They convert free atmospheric nitrogen gas (\(\text{N}_2\)) into usable nitrogenous compounds (nitrates) in the soil, which plants absorb to make proteins, thereby increasing soil fertility naturally.
+                </li>
+                <li><strong>(b) Role of Decomposers:</strong> <em>[1.5 Marks]</em>
+                    <br>Decomposers break down dead plant materials, dead animals, and organic wastes into simple inorganic substances that mix with the soil and recycle nutrients back into the ecosystem, keeping the environment clean.
+                </li>
+                <li><strong>(c) Vaccines & Immunity:</strong> <em>[1.5 Marks]</em>
+                    <br>A vaccine contains dead or weakened microbes introduced into the body. The body produces protective proteins called <strong>antibodies</strong> to fight them. These antibodies remain stored in the body, providing immunity against future infections by the same pathogen.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Pathogens, Disease Transmission Table, and Mosquito Control.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pathogens & Communicable Diseases:</strong> <em>[2 Marks]</em>
+                    <br>• <strong>Pathogens:</strong> Disease-causing microorganisms.
+                    <br>• Microbes spread through air (coughing/sneezing droplets), water, food, or direct contact from an infected person to a healthy person.
+                </li>
+                <li><strong>(b) Completed Table:</strong> <em>[2 Marks - 0.5 Mark each]</em>
+                    <table class="sol-table">
+                        <thead>
+                            <tr>
+                                <th>Human Disease</th>
+                                <th>Causative Microorganism</th>
+                                <th>Mode of Transmission</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuberculosis</td>
+                                <td><strong>(i) Bacteria</strong></td>
+                                <td>Air</td>
+                            </tr>
+                            <tr>
+                                <td>Chicken Pox</td>
+                                <td>Virus</td>
+                                <td><strong>(ii) Air / Contact</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Cholera</td>
+                                <td><strong>(iii) Bacteria</strong></td>
+                                <td>Water / Food</td>
+                            </tr>
+                            <tr>
+                                <td>Malaria</td>
+                                <td>Protozoa</td>
+                                <td><strong>(iv) Female Anopheles Mosquito</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li><strong>(c) Preventive Measure against Mosquitoes:</strong> Do not allow water to collect in coolers, tires, or flower pots. Keeping surroundings dry prevents mosquitoes from laying eggs. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Senior CBSE Science Examiners | Vardaan Learning Institute Academic Cell</span>
+    </div>
+</body>
+</html>

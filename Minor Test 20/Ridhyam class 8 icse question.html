@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 ICSE Biology Minor Test 20
+    </title>
+    <!-- MathJax for chemical and biological notation rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+            --bg-card: #ffffff;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in ICSE Board Academics</div>
+        <div class="test-name">MINOR TEST — THE ENDOCRINE SYSTEM</div>
+        
+        <div class="exam-details">
+            <span>Class: VIII ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written neatly on the answer sheet provided separately.</li>
+                <li>You will not be allowed to write during the first 5 minutes. This time is to be spent in reading the question paper.</li>
+                <li>The paper consists of 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Technical biological terms must be spelled correctly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Objective-Short Type — Attempt All Questions)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Name the following biological terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Chemical messengers secreted by ductless glands directly into the bloodstream.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The gland attached to the base of the brain that controls the activity of other endocrine glands.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>Differentiate between an Exocrine Gland and an Endocrine Gland based on:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Presence or absence of ducts.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Mode of transport of secretions to target organs.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>State the exact anatomical location and primary hormone secreted by the Thyroid Gland.</strong>
+            <span style="float: right;">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>State two important general characteristics of hormones.</strong>
+            <span style="float: right;">[2]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Give the technical biological terms for:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The deficiency disease caused due to lack of Insulin hormone in the body.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The swelling of the neck gland caused by deficiency of iodine in the diet.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type — 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Give appropriate scientific reasons for each of the following statements:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Pituitary gland is called the <em>"Master Gland"</em> of the human body.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Adrenaline is known as the <em>"Emergency Hormone"</em> or <em>"Fight or Flight Hormone"</em>.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Complete the comparative table regarding human endocrine glands:</strong>
+            <span style="float: right;">[3]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Endocrine Gland</th>
+                        <th>Hormone Secreted</th>
+                        <th>Primary Biological Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Beta cells of Pancreas</strong></td>
+                        <td>(i) ____________</td>
+                        <td>Lowers blood glucose levels by converting glucose to glycogen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thyroid Gland</strong></td>
+                        <td>Thyroxine</td>
+                        <td>(ii) ____________</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Testes (in Males)</strong></td>
+                        <td>(iii) ____________</td>
+                        <td>Stimulates development of male secondary sexual characters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Regarding the Pancreas as a dual functioning gland:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Why is Pancreas called a <em>heterocrine gland</em> (mixed gland)?
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Name the special endocrine cell clusters present in the pancreas and the two key opposing hormones they secrete.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Differentiate between Nervous Control and Hormonal Control based on:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Speed of transmission of signal.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Duration of response effect.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Medium of transmission.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Gonadal Hormones and Puberty:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Name the main female hormone secreted by the ovaries during puberty.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> State two secondary sexual characteristics induced by this hormone in females.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Detailed Type — 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Detailed Study of the Thyroid Gland:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Which essential mineral element is necessary for the synthesis of Thyroxine hormone? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Describe the main symptoms and cause of:
+                <div style="margin-left: 20px; margin-top: 4px;">
+                    (i) Simple Goitre<br>
+                    (ii) Cretinism in young children (2)
+                </div>
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> What happens when there is hypersecretion (over-secretion) of Thyroxine in an adult human? State two symptoms. (2)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Growth Hormone and Pituitary Disorders:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Name the hormone secreted by the anterior lobe of the pituitary gland responsible for body growth and development. (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Differentiate between <strong>Dwarfism</strong> and <strong>Gigantism</strong> with reference to age of occurrence, level of hormone secretion, and physical characteristics. (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> What condition occurs due to hypersecretion of Growth Hormone in adults after normal skeleton growth has stopped? State its characteristic symptoms. (2)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Adrenal Glands and Emergency Responses:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> State the exact location of the Adrenal Glands in the human body. (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Name the inner part and outer part of the adrenal gland. (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Explain three specific physiological changes brought about by Adrenaline in the body when a person encounters a sudden frightening or dangerous situation. (3)
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Created by Team Vardaan | Aligned with ICSE Class 8 Biology Syllabus</span>
+    </div>
+</body>
+</html>

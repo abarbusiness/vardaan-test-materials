@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 6 Science)</title>
+    <!-- MathJax for rendering biological and chemical notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VI</span>
+            <span>Subject: Science</span>
+            <span>Topic: Leaf & Plant Adaptation</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Expanded green part of leaf (b) Microscopic pores.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Lamina</strong> (or Leaf Blade). <em>[1 Mark]</em></li>
+                <li><strong>(b) Stomata</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True/False: (a) Desert plant leaf width (b) Grass leaf venation.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Correction: Desert plants have <strong>small, modified, or spine-like leaves</strong> to minimize water loss by transpiration. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> Grass leaves have parallel venation where veins run parallel to each other. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Definitions: (a) Leaf Venation (b) Adaptation.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Leaf Venation:</strong> The arrangement or pattern of veins and veinlets on the blade/lamina of a leaf. <em>[1 Mark]</em></li>
+                <li><strong>(b) Adaptation:</strong> Special physical or behavioral features developed by an organism that help it survive in its specific habitat. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. One Word Terms: (a) Green pigment (b) Coiled climbing structure.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Chlorophyll</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Leaf Tendril</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Match the following: Cactus & Pitcher Plant.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Cactus</strong> \(\rightarrow\) <strong>(B)</strong> Leaves modified into sharp spines to reduce water loss. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Pitcher Plant</strong> \(\rightarrow\) <strong>(A)</strong> Leaves modified into a pitcher to catch insects. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER & REASONING (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Difference between Reticulate and Parallel Venation.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Reticulate Venation</th>
+                        <th>Parallel Venation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Vein Pattern</strong></td>
+                        <td>Veins form a net-like web pattern. <em>[1 Mark]</em></td>
+                        <td>Veins run parallel to one another. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td>Pea, Rose, Mango, Mustard. <em>[0.5 Mark]</em></td>
+                        <td>Grass, Wheat, Maize, Banana. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Three main functions of a leaf.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>1. Photosynthesis:</strong> Leaves prepare food for the plant using carbon dioxide, water, and sunlight in the presence of chlorophyll. <em>[1 Mark]</em></li>
+                <li><strong>2. Transpiration:</strong> Leaves release excess water vapour into the air through stomata, creating a cooling effect and pull for nutrients. <em>[1 Mark]</em></li>
+                <li><strong>3. Respiration (Gas Exchange):</strong> Leaves take in oxygen for respiration and release carbon dioxide through stomata. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Simple Leaf vs Compound Leaf.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Simple Leaf:</strong> A leaf in which the lamina/blade is single and undivided (or not completely divided down to the midrib). <em>Example:</em> Mango, Peepal, Hibiscus. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Compound Leaf:</strong> A leaf in which the blade is completely divided into small individual leaf-like segments called <em>leaflets</em>. <em>Example:</em> Rose, Neem, Tamarind. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Advantages of leaf spines in Cactus.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>1. Reduces Transpiration:</strong> Spines drastically cut down surface area, minimizing loss of water by evaporation. <em>[1 Mark]</em></li>
+                <li><strong>2. Protection:</strong> Sharp spines protect the plant from being eaten by grazing desert animals. <em>[1 Mark]</em></li>
+                <li><strong>3. Trapping Dew/Moisture:</strong> Spines help collect tiny drops of morning dew that trickle down to the roots. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Insectivorous Plants: Definition and why they trap insects.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Definition:</strong> Plants that trap, digest, and absorb nutrients from small insects are called insectivorous (or carnivorous) plants. <em>[1 Mark]</em></li>
+                <li><strong>(b) Reason:</strong> These plants grow in <strong>nitrogen-deficient soil</strong> (like marshy or boggy areas). Although they make carbohydrate food through photosynthesis, they trap and digest insects to fulfill their <strong>nitrogen needs</strong> required for growth. <em>[2 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER & DETAILED CONCEPTS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Parts of a leaf & Leaf Tendrils explanation.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Main Parts of a Leaf:</strong> <em>[3 Marks - 1 Mark each]</em>
+                    <br>• <strong>Petiole:</strong> The short stalk that attaches the leaf blade to the stem.
+                    <br>• <strong>Lamina (Blade):</strong> The flat, broad, green part of the leaf where food preparation occurs.
+                    <br>• <strong>Midrib and Veins:</strong> Midrib is the main central thick vein. Side veins branch off from it to transport water, minerals, and synthesized food throughout the leaf.
+                </li>
+                <li><strong>(b) Leaf Modifications & Leaf Tendrils:</strong> <em>[2 Marks]</em>
+                    <br>• <em>Leaf Modifications:</em> Changes in the structure of leaves to perform functions other than photosynthesis (e.g., support, defense, storage).
+                    <br>• <em>Leaf Tendril:</em> In weak-stemmed plants (e.g., Pea plant), parts of leaves are modified into thin, coiled, thread-like structures called tendrils that coil around supports to help the plant climb upright.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Leaf Adaptations in Submerged, Mountain, and Floating Plants.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Submerged Aquatic Leaves (e.g., Hydrilla/Tape grass):</strong> <em>[2 Marks]</em>
+                    <br>• Leaves are thin, narrow, ribbon-like or finely divided so water currents pass through them easily without tearing them.
+                    <br>• Stomata are absent; gases are absorbed directly across the thin leaf surface.
+                </li>
+                <li><strong>(b) Mountain/Hilly Trees Leaves (e.g., Pine/Fir):</strong> <em>[2 Marks]</em>
+                    <br>• Leaves are thin and <strong>needle-like</strong> with a thick waxy coating to prevent water loss and survive freezing temperatures.
+                    <br>• The needle shape prevents heavy snow from accumulating on branches, allowing snow to slide off easily.
+                </li>
+                <li><strong>(c) Floating Water Lily Stomata Position:</strong> <em>[1 Mark]</em>
+                    <br>Stomata are present only on the upper surface exposed to air because the lower surface remains submerged in water where gas exchange with air is impossible.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Transpiration, Benefits, and Guard Cells.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Transpiration:</strong> The biological process by which plants lose excess water in the form of water vapour through stomata present on the leaves. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Two Benefits of Transpiration:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. <strong>Cooling Effect:</strong> Evaporation of water keeps the plant cool during hot summer days.
+                    <br>2. <strong>Suction Pull:</strong> It creates a transpiration pull that helps draw water and dissolved mineral nutrients upward from roots to top leaves.
+                </li>
+                <li><strong>(c) Guard Cells:</strong> <em>[1.5 Marks]</em>
+                    <br>Each stomatal pore is surrounded by two kidney-shaped <strong>Guard Cells</strong>. They regulate the opening and closing of the stomata based on the plant's water levels.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Senior Academic Panel | Vardaan Learning Institute</span>
+    </div>
+</body>
+</html>

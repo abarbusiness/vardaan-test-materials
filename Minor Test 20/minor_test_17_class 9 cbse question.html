@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Test 17 - Question Paper | Vardaan Learning Institute</title>
+    
+    <!-- MathJax Configuration -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            chtml: { mtextInheritFont: true, scale: 1.0 },
+            options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --bg-card: #f9f9fb;
+            --border-color: #e0e0e0;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 0;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1.5px;
+            color: #000;
+        }
+
+        .sub-header {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #444;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        .test-name {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+        }
+
+        .exam-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 6px 10px;
+            background-color: #fafafa;
+        }
+
+        .exam-details span {
+            margin: 2px 8px;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 10pt;
+            background: #fffde7;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12pt;
+            text-transform: uppercase;
+            background-color: #f5f5f5;
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 35px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            color: #333;
+            margin-left: 10px;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 6px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 10pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+        }
+
+        /* Responsiveness for Tablets and Mobile Devices */
+        @media screen and (max-width: 768px) {
+            body { padding: 12px; font-size: 11pt; }
+            .institute-name { font-size: 16pt; letter-spacing: 0.5px; }
+            .test-name { font-size: 12pt; }
+            .exam-details { flex-direction: column; text-align: left; }
+            .exam-details span { margin: 2px 0; }
+            .q-num { width: 28px; }
+            .q-marks { float: none; display: inline-block; margin-top: 4px; font-style: italic; }
+        }
+
+        @media print {
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+            .instructions { background: transparent !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-header">EXCELLENCE IN ACADEMIC CONCEPTUAL LEARNING</div>
+        <div class="test-name">MINOR TEST 17 (CHAPTER 8: JOURNEY INSIDE THE ATOM)</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 9 CBSE</span>
+            <span><strong>Subject:</strong> Science (Chemistry)</span>
+            <span><strong>Time Allowed:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40 Marks</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read the paper carefully before answering.</li>
+                <li>The question paper consists of 13 questions divided into three sections: A, B, and C.</li>
+                <li><strong>Section A:</strong> Q1 to Q5 carry 2 marks each (Short Concept Questions).</li>
+                <li><strong>Section B:</strong> Q6 to Q10 carry 3 marks each (Analytical & Numerical Questions).</li>
+                <li><strong>Section C:</strong> Q11 to Q13 carry 5 marks each (Long Answer & Descriptive Questions).</li>
+                <li>Write clear, legible, and structurally organized responses. Use neat chemical notations where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Concept Recall & Rapid Assessment — 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            State any two key postulates proposed by Niels Bohr that successfully explained why electrons do not lose energy and fall into the nucleus of an atom.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Define <strong>Atomic Number ($Z$)</strong> and <strong>Mass Number ($A$)</strong>. Write the standard chemical notation ($_{Z}^{A}\text{X}$) for a Carbon atom that contains $6$ protons and $6$ neutrons.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            An atom of an element contains $12$ protons and $12$ neutrons in its nucleus. Calculate:
+            <div class="sub-question">(a) Its atomic number and mass number.</div>
+            <div class="sub-question">(b) Its electronic configuration in K, L, and M shells.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Differentiate between <strong>Isotopes</strong> and <strong>Isobars</strong> on the basis of their atomic number and mass number. Give one example of an isobaric pair.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Write the official IUPAC chemical symbols and their Latin/German name origins for the following elements:
+            <div class="sub-question">(a) Iron &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Sodium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) Potassium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (d) Gold</div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer & Conceptual Reasoning — 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Briefly describe J.J. Thomson's 'Plum Pudding' or 'Watermelon' model of an atom. Explain why this model was eventually discarded after Geiger and Marsden conducted Rutherford's gold foil experiment.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            State the rules proposed by Bohr and Bury for the distribution of electrons in different shells of an atom. Calculate the maximum electron holding capacity for the K-shell ($n=1$), L-shell ($n=2$), and M-shell ($n=3$).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Naturally occurring Chlorine exists in two isotopic forms: $^{35}_{17}\text{Cl}$ with relative abundance of $75\%$, and $^{37}_{17}\text{Cl}$ with relative abundance of $25\%$. Show step-by-step mathematical calculation to determine the weighted average atomic mass of Chlorine in unified atomic mass units ($\text{u}$).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Define the term <strong>Valency</strong>. Explain how valency is determined for:
+            <div class="sub-question">(a) An element with valence electrons $\le 4$ (e.g., Sodium, $Z=11$).</div>
+            <div class="sub-question">(b) An element with valence electrons $> 4$ (e.g., Oxygen, $Z=8$).</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            An atom of element $\text{X}$ has a mass number of $35$ and contains $18$ neutrons in its nucleus.
+            <div class="sub-question">(a) Determine its atomic number and total number of electrons.</div>
+            <div class="sub-question">(b) Write its electronic configuration and state its number of valence electrons.</div>
+            <div class="sub-question">(c) Identify element $\text{X}$ and write its valency.</div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Analytical Derivations — 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            Rutherford's $\alpha$-particle scattering (gold foil) experiment led to the discovery of the atomic nucleus.
+            <div class="sub-question">(a) List the three main observations made during the gold foil experiment.</div>
+            <div class="sub-question">(b) Write the corresponding structural conclusion drawn from each observation.</div>
+            <div class="sub-question">(c) What major drawback/limitation of Rutherford's nuclear model prevented it from explaining atomic stability?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            Answer the following questions:
+            <div class="sub-question">
+                <strong>(a) [2.5 Marks]</strong> Who discovered the neutron? State its relative charge, symbol, and location inside an atom. Why is Protium ($^{1}_{1}\text{H}$) unique among all neutral atoms regarding neutrons?
+            </div>
+            <div class="sub-question">
+                <strong>(b) [2.5 Marks]</strong> Define Isotopes. State three important applications of specific radioactive isotopes in the fields of medicine, energy, and archaeology.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            Answer the following questions:
+            <div class="sub-question">
+                <strong>(a) [2.5 Marks]</strong> Draw structured schematic shell diagrams showing electron distribution for:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (i) Nitrogen atom ($Z=7$)
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) Magnesium atom ($Z=12$)
+            </div>
+            <div class="sub-question">
+                <strong>(b) [2.5 Marks]</strong> Explain why noble gases like Neon ($Z=10$) and Argon ($Z=18$) exhibit zero valency and do not react easily with other elements under normal conditions.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan &bull; Vardaan Learning Institute &bull; Comprehensive Assessment Series
+    </div>
+</body>
+</html>

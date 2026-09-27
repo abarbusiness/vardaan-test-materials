@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions & Marking Scheme: Minor Test 17 (Class 9 ICSE Physics - Heat)</title>
+    
+    <!-- SVG-based MathJax Configuration for Zero Text Overlapping -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: { 
+                fontCache: 'global',
+                blacker: 0
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --accent-blue: #1565c0;
+            --success-green: #2e7d32;
+            --success-bg: #e8f5e9;
+            --text-main: #111111;
+            --border-color: #e0e0e0;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.85;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            max-width: 500px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3.5px solid var(--primary-yellow);
+            border-bottom: 3.5px solid var(--primary-yellow);
+            padding: 14px 10px;
+            background: #f1f8e9;
+            border-radius: 6px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-header {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #d81b60;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .designer-tag {
+            font-size: 10pt;
+            font-weight: bold;
+            color: var(--success-green);
+            margin-top: 4px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            background: #fffde7;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #fff59d;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 8px 14px;
+            font-weight: bold;
+            font-size: 11pt;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .sol-card {
+            border-bottom: 2px dashed var(--primary-yellow);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .q-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fafafa;
+            border-left: 4px solid var(--success-green);
+            padding: 10px 14px;
+            font-weight: bold;
+            border-radius: 2px;
+            margin-bottom: 12px;
+            gap: 10px;
+        }
+
+        .q-title-text {
+            flex-grow: 1;
+            font-size: 11pt;
+            color: #000000;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000000;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .ans-box {
+            margin-left: 5px;
+            color: #111;
+        }
+
+        .ans-box p {
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+
+        .key-concept {
+            background-color: var(--success-bg);
+            border: 1px solid #c8e6c9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+
+        .step-head {
+            font-weight: bold;
+            color: var(--accent-blue);
+            margin-top: 12px;
+        }
+
+        .mark-split {
+            color: #d81b60;
+            font-weight: bold;
+            font-size: 9.5pt;
+        }
+
+        /* Prevent MathJax SVG Overlap */
+        .math-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 6px 0;
+            margin: 8px 0;
+            text-align: center;
+            display: block;
+        }
+
+        .diagram-box {
+            border: 1px solid #b0bec5;
+            background-color: #fcfcfc;
+            padding: 12px;
+            text-align: center;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+        }
+
+        /* MathJax Styling: Prevent boldness & outlines in print and display */
+        mjx-container {
+            display: inline-block !important;
+            margin: 0 1px !important;
+            vertical-align: middle !important;
+            font-weight: normal !important;
+        }
+
+        mjx-container[jax="SVG"] path,
+        mjx-container[jax="SVG"] use,
+        mjx-container[jax="SVG"] g,
+        mjx-container[jax="SVG"] svg {
+            stroke: none !important;
+            stroke-width: 0 !important;
+        }
+
+        @media print {
+            body { 
+                padding: 0; 
+                width: 100%; 
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            mjx-container,
+            mjx-container * {
+                font-weight: normal !important;
+            }
+            mjx-container[jax="SVG"] path,
+            mjx-container[jax="SVG"] use,
+            mjx-container[jax="SVG"] g,
+            mjx-container[jax="SVG"] svg {
+                stroke: none !important;
+                stroke-width: 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 12px; font-size: 10pt; }
+            .institute-name { font-size: 15pt; }
+            .meta-info { flex-direction: column; gap: 4px; }
+            .q-header-flex { flex-direction: column; gap: 6px; }
+            .ans-box { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-header">DETAILED MARKING SCHEME &amp; SOLUTIONS: MINOR TEST 17</div>
+        <div class="designer-tag">Academic Subject: Class 9 ICSE Physics (Topic: Heat)</div>
+        <div class="meta-info">
+            <span><strong>Date:</strong> 26th September 2026</span>
+            <span><strong>Class:</strong> 9 ICSE Board</span>
+            <span><strong>Max Marks:</strong> 40 Marks</span>
+            <span><strong>Time Allowed:</strong> 1 Hour</span>
+        </div>
+    </div>
+
+    <!-- SECTION A SOLUTIONS -->
+    <div class="section-banner">
+        SECTION A: SHORT CONCEPT SOLUTIONS (16 MARKS)
+    </div>
+
+    <!-- Solution Q1 -->
+    <div class="sol-card">
+        <div class="q-header-flex">
+            <div class="q-title-text">Q1. Short Concept Questions (8 Sub-parts)</div>
+            <span class="marks-badge">[8 Marks]</span>
+        </div>
+        <div class="ans-box">
+            <p><strong>(i) Definition of 1 calorie:</strong> <br>1 calorie is the amount of heat energy required to raise the temperature of $1\text{ g}$ of pure water through $1^\circ\text{C}$ (specifically from $14.5^\circ\text{C}$ to $15.5^\circ\text{C}$). <br><strong>Relationship:</strong> $1\text{ cal} = 4.186\text{ J} \approx \mathbf{4.2\text{ J}}$. <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(ii) S.I. unit of temperature:</strong> <br>The S.I. unit of temperature is <strong>Kelvin</strong> (Symbol: $\mathbf{K}$). <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(iii) Relationship between $\alpha$ and $\gamma$:</strong> <br>$\gamma = 3\alpha$ &nbsp; or &nbsp; $\alpha : \gamma = 1 : 3$. <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(iv) Temperature of maximum density of water:</strong> <br>At $\mathbf{4^\circ\text{C}}$ (or $277\text{ K}$), water has its maximum density ($1000\text{ kg/m}^3$ or $1\text{ g/cm}^3$). <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(v) Apparatus name:</strong> <br><strong>Hope's Apparatus</strong>. <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(vi) Small gaps in railway tracks:</strong> <br>Gaps allow space for linear expansion of steel rails during hot summers without bending or buckling the tracks. <span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(vii) Converting $37^\circ\text{C}$ to Fahrenheit:</strong></p>
+            <div class="math-display">
+                $$\frac{C}{5} = \frac{F - 32}{9} \implies \frac{37}{5} = \frac{F - 32}{9} \implies 7.4 \times 9 = F - 32 \implies 66.6 + 32 = \mathbf{98.6^\circ\text{F}}$$
+            </div>
+            <p><span class="mark-split">[1 Mark]</span></p>
+
+            <p><strong>(viii) Volume change of water from $4^\circ\text{C}$ to $0^\circ\text{C}$:</strong> <br>When cooled from $4^\circ\text{C}$ to $0^\circ\text{C}$, the volume of water <strong>expands / increases</strong> (Anomalous behavior). <span class="mark-split">[1 Mark]</span></p>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="sol-card">
+        <div class="q-header-flex">
+            <div class="q-title-text">Q2. Reasoning &amp; Short Calculation Questions</div>
+            <span class="marks-badge">[8 Marks]</span>
+        </div>
+        <div class="ans-box">
+            <p class="step-head">(a) Difference between Heat and Temperature:</p>
+            <ul>
+                <li><strong>Heat:</strong> Form of internal energy transferred due to temperature difference. S.I. unit: Joule ($\text{J}$).</li>
+                <li><strong>Temperature:</strong> Thermal condition/degree of hotness or coldness that determines direction of heat flow. S.I. unit: Kelvin ($\text{K}$).</li>
+            </ul>
+            <p><span class="mark-split">[2 Marks: 1 mark per point]</span></p>
+
+            <p class="step-head">(b) Bimetallic Strip Mechanism &amp; Application:</p>
+            <p><strong>Reason:</strong> Brass expands more than iron for the same rise in temperature because coefficient of linear expansion for brass is greater than iron ($\alpha_{\text{brass}} > \alpha_{\text{iron}}$). Thus, the strip bends with brass on the outer convex curve.</p>
+            <p><strong>Application:</strong> Used in electric irons, thermostats, or fire alarms as an automatic switch. <span class="mark-split">[2 Marks]</span></p>
+
+            <p class="step-head">(c) Survival of Aquatic Life in Cold Winter:</p>
+            <p>As weather cools, surface water reaches $4^\circ\text{C}$, becomes densest, and sinks to the bottom. Further cooling below $4^\circ\text{C}$ makes top water lighter, freezing into ice at $0^\circ\text{C}$. Since ice is a poor conductor of heat, the bottom layer remains liquid at $4^\circ\text{C}$, allowing aquatic organisms to survive safely underneath. <span class="mark-split">[2 Marks]</span></p>
+
+            <p class="step-head">(d) Numerical Calculation (Linear Expansion):</p>
+            <p><strong>Given:</strong> Initial length $L_0 = 100\text{ cm}$, Temperature change $\Delta T = 120^\circ\text{C} - 20^\circ\text{C} = 100^\circ\text{C}$, $\alpha = 1.9 \times 10^{-5}\text{ }^\circ\text{C}^{-1}$.</p>
+            <div class="math-display">
+                $$\text{Increase in length } (\Delta L) = L_0 \times \alpha \times \Delta T$$
+            </div>
+            <div class="math-display">
+                $$\Delta L = 100 \times (1.9 \times 10^{-5}) \times 100 = 1.9 \times 10^{-1} = \mathbf{0.19\text{ cm}} \quad (\text{or } 1.9\text{ mm})$$
+            </div>
+            <p><span class="mark-split">[2 Marks: 1 mark for formula substitution, 1 mark for final answer]</span></p>
+        </div>
+    </div>
+
+    <!-- SECTION B SOLUTIONS -->
+    <div class="section-banner">
+        SECTION B: STRUCTURED LONG ANSWER SOLUTIONS (24 MARKS)
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="sol-card">
+        <div class="q-header-flex">
+            <div class="q-title-text">Q3. Temperature Scales &amp; Numerical Conversions</div>
+            <span class="marks-badge">[8 Marks]</span>
+        </div>
+        <div class="ans-box">
+            <p class="step-head">(a) Derivation of Celsius to Fahrenheit Formula:</p>
+            <p>For any temperature scale: $\frac{\text{Reading} - \text{LFP}}{\text{UFP} - \text{LFP}} = \text{Constant}$.</p>
+            <p>For Celsius scale: LFP $= 0^\circ\text{C}$, UFP $= 100^\circ\text{C}$.</p>
+            <p>For Fahrenheit scale: LFP $= 32^\circ\text{F}$, UFP $= 212^\circ\text{F}$.</p>
+            <div class="math-display">
+                $$\frac{C - 0}{100 - 0} = \frac{F - 32}{212 - 32} \implies \frac{C}{100} = \frac{F - 32}{180} \implies \mathbf{\frac{C}{5} = \frac{F - 32}{9}}$$
+            </div>
+            <p><span class="mark-split">[3 Marks: 1 mark for LFP/UFP identification, 2 marks for derivation]</span></p>
+
+            <p class="step-head">(b) Equal Reading Temperature Calculation:</p>
+            <p>Let the temperature at which $C = F = x$.</p>
+            <div class="math-display">
+                $$\frac{x}{5} = \frac{x - 32}{9} \implies 9x = 5(x - 32) \implies 9x = 5x - 160$$
+            </div>
+            <div class="math-display">
+                $$4x = -160 \implies x = \mathbf{-40}$$
+            </div>
+            <div class="key-concept">
+                Thus, at <strong>$-40^\circ\text{C}$ and $-40^\circ\text{F}$</strong>, both thermometers show identical numerical value.
+            </div>
+            <p><span class="mark-split">[3 Marks]</span></p>
+
+            <p class="step-head">(c) Converting $-40^\circ\text{C}$ to Kelvin:</p>
+            <div class="math-display">
+                $$T(K) = t(^\circ\text{C}) + 273.15 \approx -40 + 273 = \mathbf{233\text{ K}}$$
+            </div>
+            <p><span class="mark-split">[2 Marks]</span></p>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="sol-card">
+        <div class="q-header-flex">
+            <div class="q-title-text">Q4. Anomalous Expansion of Water &amp; Hope's Experiment</div>
+            <span class="marks-badge">[8 Marks]</span>
+        </div>
+        <div class="ans-box">
+            <p class="step-head">(a) Definition &amp; Volume-Temperature Graph:</p>
+            <p><strong>Anomalous Expansion:</strong> The unusual behavior of water by which it contracts on heating from $0^\circ\text{C}$ to $4^\circ\text{C}$ (volume decreases) and expands when heated above $4^\circ\text{C}$.</p>
+            
+            <div class="diagram-box">
+                <strong>Graph: Volume of $1\text{ g}$ Water vs Temperature</strong>
+                <div class="math-display">
+                    $$\text{At } 0^\circ\text{C}: V \approx 1.00013\text{ cm}^3 \longrightarrow \text{At } 4^\circ\text{C}: V_{\text{min}} = 1.00000\text{ cm}^3 \longrightarrow \text{At } 10^\circ\text{C}: V \uparrow$$
+                </div>
+                <p><em>(U-shaped curve reaching minimum volume strictly at $4^\circ\text{C}$)</em></p>
+            </div>
+            <p><span class="mark-split">[3 Marks: 1.5 marks definition, 1.5 marks graph]</span></p>
+
+            <p class="step-head">(b) Hope's Apparatus Readings:</p>
+            <p>1. Initially, water is filled at room temperature ($\approx 12^\circ\text{C}$). Both thermometers read $12^\circ\text{C}$.</p>
+            <p>2. When freezing mixture (ice + salt) is added to central trough, water near middle cools, becomes denser, and sinks down. Thus, lower thermometer temperature drops rapidly to <strong>$4^\circ\text{C}$</strong> and remains steady.</p>
+            <p>3. Water further cooling from $4^\circ\text{C}$ to $0^\circ\text{C}$ becomes lighter, moves upwards. Thus, upper thermometer temperature drops to <strong>$0^\circ\text{C}$</strong> and ice begins to form at top.</p>
+            <p><span class="mark-split">[3 Marks: 1.5 marks upper thermometer $0^\circ\text{C}$, 1.5 marks lower $4^\circ\text{C}$]</span></p>
+
+            <p class="step-head">(c) Bursting of Glass Water Bottles in Freezer:</p>
+            <p>When water freezes into ice at $0^\circ\text{C}$, its volume expands due to anomalous expansion. Since glass is rigid and cannot stretch, the enormous outward pressure exerted by expanding ice breaks the bottle. <span class="mark-split">[2 Marks]</span></p>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="sol-card">
+        <div class="q-header-flex">
+            <div class="q-title-text">Q5. Coefficients of Expansion &amp; Practical Applications</div>
+            <span class="marks-badge">[8 Marks]</span>
+        </div>
+        <div class="ans-box">
+            <p class="step-head">(a) Definitions &amp; Ratio of Coefficients:</p>
+            <ol>
+                <li><strong>Linear Expansion ($\alpha$):</strong> Increase in length per unit original length per degree rise in temperature ($\alpha = \frac{\Delta L}{L_0 \Delta T}$).</li>
+                <li><strong>Superficial Expansion ($\beta$):</strong> Increase in surface area per unit original area per degree rise in temperature ($\beta = \frac{\Delta A}{A_0 \Delta T}$).</li>
+                <li><strong>Cubical Expansion ($\gamma$):</strong> Increase in volume per unit original volume per degree rise in temperature ($\gamma = \frac{\Delta V}{V_0 \Delta T}$).</li>
+            </ol>
+            <div class="key-concept">
+                <strong>Ratio:</strong> $\alpha : \beta : \gamma = 1 : 2 : 3$ &nbsp; or &nbsp; $\beta = 2\alpha$, $\gamma = 3\alpha$.
+            </div>
+            <p><span class="mark-split">[3 Marks]</span></p>
+
+            <p class="step-head">(b) Reasoning for Practical Observations:</p>
+            <p>1. <strong>Telephone wires sagging:</strong> In winter, wires contract. If installed tight in summer, they would snap in winter due to tension. Hence, left loose in summer.</p>
+            <p>2. <strong>Cracking of thick glass tumbler:</strong> Glass is a poor conductor of heat. When hot water is poured, inner surface expands rapidly while outer surface remains cold. Unequal thermal expansion creates internal stress, cracking the glass. <span class="mark-split">[3 Marks]</span></p>
+
+            <p class="step-head">(c) Numerical Calculation (Volume Expansion):</p>
+            <p><strong>Given:</strong> Initial volume $V_0 = 500\text{ cm}^3$, $\Delta T = 110^\circ\text{C} - 10^\circ\text{C} = 100^\circ\text{C}$, $\gamma = 3.6 \times 10^{-5}\text{ }^\circ\text{C}^{-1}$.</p>
+            <div class="math-display">
+                $$\Delta V = V_0 \times \gamma \times \Delta T$$
+            </div>
+            <div class="math-display">
+                $$\Delta V = 500 \times (3.6 \times 10^{-5}) \times 100 = 50000 \times 3.6 \times 10^{-5} = \mathbf{1.8\text{ cm}^3}$$
+            </div>
+            <p><span class="mark-split">[2 Marks]</span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Team Vardaan &bull; Class 9 ICSE Physics Solution Key &bull; Selina Concise Physics &bull; 26/09/2026
+    </div>
+</body>
+</html>

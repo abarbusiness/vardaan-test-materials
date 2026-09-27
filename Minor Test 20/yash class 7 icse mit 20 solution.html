@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 7 ICSE Biology Detailed Solutions</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .equation-box {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-weight: bold;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VII (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Topic: Photosynthesis (Minor Test 20)</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Green pigment in leaves (b) Stored glucose form.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Chlorophyll</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Starch</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True / False: (a) Oxygen absorbed during photosynthesis (b) Iodine starch test.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Oxygen gas is released (liberated) during photosynthesis, whereas carbon dioxide is absorbed from the air. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> Iodine solution reacts with starch to produce a characteristic dark blue-black color. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Give one word: (a) Microscopic pores on leaf surface (b) Self-food producing organisms.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Stomata</strong> (Singular: Stoma). <em>[1 Mark]</em></li>
+                <li><strong>(b) Autotrophs</strong> (or Autotrophic organisms). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Match the following: Chloroplast & Xylem.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Chloroplast</strong> \(\rightarrow\) <strong>(B)</strong> Site of photosynthesis in a plant cell. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Xylem</strong> \(\rightarrow\) <strong>(A)</strong> Water transportation to leaves. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Multiple Choice: Byproduct gas & Removal of starch process.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) iii) Oxygen.</strong> Oxygen gas is released as a byproduct during the photosynthetic process. <em>[1 Mark]</em></li>
+                <li><strong>(b) ii) De-starching.</strong> Keeping a plant in the dark uses up its existing starch reserves, de-starching the leaf. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section B Solutions -->
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Definition of Photosynthesis and Chemical Equation.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Definition:</strong> Photosynthesis is the biological process by which green plants prepare their own food (glucose) from carbon dioxide and water in the presence of sunlight and chlorophyll, releasing oxygen as a byproduct. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Equation:</strong> <em>[1.5 Marks]</em>
+                    <div class="equation-box">
+                        \[\text{Carbon Dioxide} + \text{Water} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{Glucose} + \text{Oxygen}\]
+                        \[\text{OR} \quad 6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2\]
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Role of Stomata and Chlorophyll in Photosynthesis.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Stomata:</strong> They are tiny pores located on the leaf surface that facilitate the entry of carbon dioxide gas from atmospheric air into the leaf and the exit of oxygen gas produced during photosynthesis. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Chlorophyll:</strong> It is a green pigment located inside chloroplasts that traps and absorbs solar energy (sunlight) necessary to drive the chemical reaction of food synthesis. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Concept of De-starching and Starch Reagent.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Reason for De-starching:</strong> The plant is kept in darkness so that it cannot perform fresh photosynthesis. In the absence of light, the plant uses up all the previously stored starch in its leaves for energy. This ensures that any starch detected during the experiment is formed newly. <em>[2 Marks]</em></li>
+                <li><strong>(b) Reagent:</strong> Dilute <strong>Iodine Solution</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Autotrophic vs Heterotrophic Nutrition.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Autotrophic Nutrition</th>
+                        <th>Heterotrophic Nutrition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Food Synthesis</strong></td>
+                        <td>Organisms manufacture their own food from simple inorganic substances. <em>[1 Mark]</em></td>
+                        <td>Organisms cannot manufacture their own food and depend on plants/animals. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chlorophyll</strong></td>
+                        <td>Requires chlorophyll and sunlight.</td>
+                        <td>Chlorophyll is absent.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td>Green plants (e.g., Mango tree, Rose). <em>[0.5 Mark]</em></td>
+                        <td>Animals and humans (e.g., Cow, Lion, Human). <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Raw Materials for Photosynthesis and Their Sources.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Raw Materials & Sources Breakdown</div>
+            <ul class="step-list">
+                <li>1. <strong>Carbon Dioxide (\(\text{CO}_2\)):</strong> Obtained from atmospheric air through stomata on leaves. <em>[0.75 Mark]</em></li>
+                <li>2. <strong>Water (\(\text{H}_2\text{O}\)):</strong> Absorbed from soil by root hairs and transported to leaves via xylem vessels. <em>[0.75 Mark]</em></li>
+                <li>3. <strong>Sunlight:</strong> Radiant energy trapped directly from the Sun. <em>[0.75 Mark]</em></li>
+                <li>4. <strong>Chlorophyll:</strong> Already present inside the chloroplasts of green leaf cells. <em>[0.75 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section C Solutions -->
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Experiment: Oxygen Gas Release During Photosynthesis.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Apparatus Required:</strong> A large glass beaker, water, short-stemmed glass funnel, test tube, and fresh <em>Hydrilla</em> twigs. <em>[1 Mark]</em></li>
+                <li><strong>(b) Brief Procedure:</strong> <em>[2 Marks]</em>
+                    <br>• Place fresh <em>Hydrilla</em> twigs inside the beaker filled with water.
+                    <br>• Invert a glass funnel over the twigs.
+                    <br>• Fill a test tube completely with water and invert it over the stem of the funnel carefully without letting air enter.
+                    <br>• Place the entire setup in direct bright sunlight for a few hours.
+                </li>
+                <li><strong>(c) Observation & Gas Test:</strong> <em>[2 Marks]</em>
+                    <br>• <em>Observation:</em> Tiny gas bubbles rise continuously from the twigs and collect at the top of the test tube, displacing water downward.
+                    <br>• <em>Test:</em> Bring a glowing wooden splint near the mouth of the inverted test tube. The glowing splint bursts into flame, confirming that the collected gas is <strong>Oxygen</strong>.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Structural Adaptations of Leaf for Photosynthesis.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Leaf Structural Adaptations (Any 4 points)</div>
+            <ul class="step-list">
+                <li>1. <strong>Broad Flat Lamina (Blade):</strong> Provides a large surface area to absorb maximum solar light and exchange gases efficiently. <em>[1.25 Marks]</em></li>
+                <li>2. <strong>Thin Structure:</strong> Allows easy penetration of sunlight and rapid diffusion of gases through all cell layers. <em>[1.25 Marks]</em></li>
+                <li>3. <strong>Presence of Numerous Stomata:</strong> Allows rapid intake of carbon dioxide gas and release of oxygen gas. <em>[1.25 Marks]</em></li>
+                <li>4. <strong>Network of Veins (Xylem & Phloem):</strong> Provides continuous transport of water to photosynthetic cells and carries prepared food away to other plant parts. <em>[1.25 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Starch Test Procedure in a Leaf & Safety Precaution.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Step-by-Step Procedure:</strong> <em>[3.5 Marks]</em>
+                    <br>i) Pluck a fresh green leaf from a plant exposed to sunlight for a few hours.
+                    <br>ii) Boil the leaf in water for 2-3 minutes to kill the leaf cells and render them permeable. <em>[1 Mark]</em>
+                    <br>iii) Transfer the leaf to a beaker containing alcohol and boil it in a water bath to remove chlorophyll (bleaching the leaf pale white). <em>[1 Mark]</em>
+                    <br>iv) Wash the de-colorized leaf thoroughly in warm water to soften it. <em>[0.5 Mark]</em>
+                    <br>v) Place the leaf flat on a white tile and add a few drops of dilute iodine solution.
+                    <br>vi) <em>Observation:</em> The leaf turns <strong>blue-black</strong>, proving the presence of starch. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Safety Precaution (Water Bath):</strong> <em>[1.5 Marks]</em>
+                    <br>• Alcohol is highly volatile and highly inflammable.
+                    <br>• If heated directly over a burner flame, alcohol can catch fire immediately. Therefore, it is always heated safely inside a <strong>water bath</strong>.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

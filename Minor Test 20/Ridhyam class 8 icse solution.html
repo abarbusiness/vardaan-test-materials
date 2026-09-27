@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 8 ICSE Biology)</title>
+    <!-- MathJax for rendering subscripts and chemical notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VIII ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Topic: Endocrine System</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & CONCEPT RECALL (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Name the following terms: (a) Chemical messengers secreted by ductless glands (b) Gland controlling other glands.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Expected Terminology</div>
+            <ul class="step-list">
+                <li><strong>(a) Hormones</strong> (Chemical regulatory substances released directly into blood). <em>[1 Mark]</em></li>
+                <li><strong>(b) Pituitary Gland</strong> (Located at base of brain). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Differentiate between Exocrine and Endocrine glands.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Exocrine Gland</th>
+                        <th>Endocrine Gland</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>(a) Presence of Ducts</strong></td>
+                        <td>Glands with ducts (Duct glands). <em>[0.5 Mark]</em></td>
+                        <td>Ductless glands. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Transport Medium</strong></td>
+                        <td>Secretions carried through ducts to site of action. <em>[0.5 Mark]</em></td>
+                        <td>Secretions poured directly into bloodstream. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Location and main hormone of Thyroid Gland.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Location:</strong> Situated in the neck region, attached to the windpipe (trachea) just below the larynx. <em>[1 Mark]</em></li>
+                <li><strong>Hormone Secreted:</strong> <strong>Thyroxine</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Two key characteristics of hormones.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li>1. Secreted in extremely small quantities and act on specific target organs/tissues. <em>[1 Mark]</em></li>
+                <li>2. They are non-protein or protein compounds carried by blood, and are neither stored (except thyroxine) nor reused in the body. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Technical biological terms for: (a) Deficiency of Insulin (b) Neck swelling due to Iodine lack.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Diabetes Mellitus</strong> (characterized by high blood sugar). <em>[1 Mark]</em></li>
+                <li><strong>(b) Simple Goitre</strong> (enlargement of thyroid gland). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER & REASONING (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Give reasons: (a) Pituitary as 'Master Gland' (b) Adrenaline as 'Emergency Hormone'.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Master Gland Reason:</strong> Pituitary gland secretes tropic hormones (like TSH, ACTH) that control and regulate the secretions and functioning of all other major endocrine glands in the body. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Emergency Hormone Reason:</strong> Adrenaline prepares the body to face stressful, fear, or emergency situations ("fight or flight") by rapidly increasing heart rate, breathing, and blood sugar levels. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Complete table for Endocrine Glands, Hormones, and Functions.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Completed Matrix</div>
+            <ul class="step-list">
+                <li><strong>(i) Insulin</strong> (Secreted by Beta cells of Islets of Langerhans). <em>[1 Mark]</em></li>
+                <li><strong>(ii) Regulates Basal Metabolic Rate (BMR)</strong> and body growth/development. <em>[1 Mark]</em></li>
+                <li><strong>(iii) Testosterone</strong> (Male sex hormone). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Pancreas as Heterocrine Gland & Islets of Langerhans.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Heterocrine Gland:</strong> It possesses both <em>exocrine parts</em> (secretes pancreatic juice via duct into duodenum for digestion) and <em>endocrine parts</em> (secretes hormones directly into blood). <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Cell Clusters & Hormones:</strong> Endocrine part consists of <strong>Islets of Langerhans</strong>, which secrete:
+                    <br>1. <strong>Insulin</strong> (Lowers blood glucose).
+                    <br>2. <strong>Glucagon</strong> (Raises blood glucose). <em>[1.5 Marks]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Differentiate between Nervous Control and Hormonal Control.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Nervous Control</th>
+                        <th>Hormonal Control</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>(a) Speed of Signal</strong></td>
+                        <td>Very rapid / immediate transmission. <em>[0.5 Mark]</em></td>
+                        <td>Slow transmission via bloodstream. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Duration of Effect</strong></td>
+                        <td>Short-lasting effect. <em>[0.5 Mark]</em></td>
+                        <td>Long-lasting / prolonged effect. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(c) Transmission Medium</strong></td>
+                        <td>Electro-chemical impulses via nerves. <em>[0.5 Mark]</em></td>
+                        <td>Chemical messenger transported by blood plasma. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Female Ovarian Hormone and Secondary Sexual Characters.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Main Hormone:</strong> <strong>Estrogen</strong> (or Oestrogen). <em>[1 Mark]</em></li>
+                <li><strong>(b) Secondary Sexual Characteristics:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. Development and enlargement of mammary glands (breasts).
+                    <br>2. Broadening of hips/pelvis and onset of menstrual cycle.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER & DETAILED EXPLANATIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Thyroid Gland: Essential element, Disorders (Goitre, Cretinism), and Hypersecretion.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Essential Element:</strong> <strong>Iodine</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Disorders Description:</strong> <em>[2 Marks]</em>
+                    <br>• <strong>(i) Simple Goitre:</strong> Caused due to deficiency of iodine in food/water. Leads to enlargement of the thyroid gland, causing a swollen neck. <em>[1 Mark]</em>
+                    <br>• <strong>(ii) Cretinism:</strong> Hyposecretion of thyroxine in infants/young children. Leads to dwarfism, mental retardation, and defective physical development. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(c) Hypersecretion Symptoms (Exophthalmic Goitre):</strong> <em>[2 Marks]</em>
+                    <br>Excess secretion causes hyperthyroidism.
+                    <br>• Symptoms: Bulging eyes (exophthalmos), increased rate of heartbeat, high metabolism, and weight loss.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Pituitary Growth Hormone: Dwarfism, Gigantism, and Acromegaly.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Growth Hormone:</strong> <strong>Somatotropin / Growth Hormone (GH)</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Dwarfism vs Gigantism:</strong> <em>[2 Marks]</em>
+                    <table class="sol-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Dwarfism</th>
+                                <th>Gigantism</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Secretion Level</strong></td>
+                                <td>Hyposecretion (under-secretion) during childhood.</td>
+                                <td>Hypersecretion (over-secretion) during childhood.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Physical Feature</strong></td>
+                                <td>Stunted physical growth; small height with normal proportion.</td>
+                                <td>Abnormal increase in bone length; extra tall height.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li><strong>(c) Acromegaly:</strong> <em>[2 Marks]</em>
+                    <br>• Condition caused by hypersecretion of Growth Hormone in adults after skeletal growth is complete.
+                    <br>• Symptoms: Abnormal enlargement of facial bones, jaw, hands, and feet (gorilla-like appearance).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Adrenal Glands: Location, Structure, and Physiological Actions of Adrenaline.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Location:</strong> Situated like a cap on top of each of the two <strong>kidneys</strong> (suprarenal glands). <em>[1 Mark]</em></li>
+                <li><strong>(b) Structure Parts:</strong> <em>[1 Mark]</em>
+                    <br>• Outer part: <strong>Adrenal Cortex</strong>.
+                    <br>• Inner part: <strong>Adrenal Medulla</strong>.
+                </li>
+                <li><strong>(c) Physiological Actions of Adrenaline:</strong> <em>[3 Marks - 1 Mark each point]</em>
+                    <br>1. <strong>Increased Heartbeat & BP:</strong> Pumps more blood to muscles to supply oxygen and glucose.
+                    <br>2. <strong>Increased Breathing Rate:</strong> Dilates bronchioles to absorb maximum oxygen.
+                    <br>3. <strong>Elevated Blood Sugar:</strong> Stimulates liver to break down glycogen into glucose for quick energy.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Senior ICSE Biology Examiners | Vardaan Learning Institute Academic Cell</span>
+    </div>
+</body>
+</html>

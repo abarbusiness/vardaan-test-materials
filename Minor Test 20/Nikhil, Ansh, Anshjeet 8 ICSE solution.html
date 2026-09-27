@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 8 ICSE Biology)</title>
+    <!-- MathJax for rendering subscripts and chemical notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VIII ICSE</span>
+            <span>Subject: Biology</span>
+            <span>Topic: Circulatory System</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & CONCEPT RECALL (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Name the following biological terms: (a) Fluid part of blood without cells (b) Sac protecting the heart.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Expected ICSE Terminology</div>
+            <ul class="step-list">
+                <li><strong>(a) Plasma</strong> (Pale yellow fluid matrix containing 90-92% water, plasma proteins, salts, and nutrients). <em>[1 Mark]</em></li>
+                <li><strong>(b) Pericardium</strong> (Double-walled membranous envelope filled with pericardial fluid to reduce friction). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Differentiate between Artery and Vein based on lumen/wall thickness and internal valves.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Artery</th>
+                        <th>Vein</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>(a) Muscular Wall & Lumen</strong></td>
+                        <td>Thick, elastic, muscular walls with a <strong>narrow lumen</strong>. <em>[0.5 Mark]</em></td>
+                        <td>Thin, less muscular walls with a <strong>wide lumen</strong>. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>(b) Internal Valves</strong></td>
+                        <td><strong>Valves absent</strong> (except at base of aorta and pulmonary artery). <em>[0.5 Mark]</em></td>
+                        <td><strong>Valves present</strong> throughout to prevent backflow of blood. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. State the exact location and primary function of the SA Node (Pacemaker).</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Location:</strong> Situated in the upper right wall of the <strong>Right Atrium</strong> near the opening of the superior vena cava. <em>[1 Mark]</em></li>
+                <li><strong>Function:</strong> It generates electrical impulses that initiate and maintain the rhythmic contraction (heartbeat) of the heart muscles. Hence, it is known as the <em>natural pacemaker</em>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Define Double Circulation and name its two component pathways.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Definition:</strong> Double circulation is a circulatory system in which blood passes through the heart <strong>twice</strong> to complete one full circuit throughout the body. <em>[1 Mark]</em></li>
+                <li><strong>Two Pathways:</strong>
+                    <ol>
+                        <li><strong>Pulmonary Circulation:</strong> Path between Heart and Lungs. <em>[0.5 Mark]</em></li>
+                        <li><strong>Systemic Circulation:</strong> Path between Heart and Rest of the Body organs. <em>[0.5 Mark]</em></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Technical terminology for: (a) Red Blood Cells (b) Antibody producing WBCs.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Erythrocytes</strong> <em>[1 Mark]</em></li>
+                <li><strong>(b) Lymphocytes</strong> (a specialized category of agranulocytic leukocytes). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER & REASONING (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Give scientific reasons: (a) Thicker ventricular walls (b) Absence of nucleus in mature RBCs.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Ventricular Walls:</strong> Atria only pump blood into the adjacent ventricles (short distance/low pressure), whereas ventricles must pump blood with high force to distant organs (left ventricle pumps blood through Aorta to the entire body). Thus, ventricles require thicker muscular walls (\(\text{myocardium}\)) to withstand and exert high pressure. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Enucleated RBCs Adaptation:</strong> 
+                    <br>1. Loss of nucleus creates a biconcave shape that increases the <strong>surface-area-to-volume ratio</strong> for rapid diffusion of oxygen. <em>[1 Mark]</em>
+                    <br>2. It accommodates more <strong>Hemoglobin</strong> molecules within the cell to carry maximal oxygen. <em>[0.5 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Complete the comparative table for Erythrocytes and Thrombocytes.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Completed Table Matrix</div>
+            <ul class="step-list">
+                <li><strong>(i) Average Lifespan of Erythrocytes:</strong> Approximately <strong>120 days</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Shape of Thrombocytes (Platelets):</strong> Small, irregular, membrane-bound <strong>cell fragments</strong> (non-nucleated). <em>[1 Mark]</em></li>
+                <li><strong>(iii) Function of Thrombocytes:</strong> Initiate <strong>blood clotting (coagulation)</strong> to prevent excess blood loss upon injury. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. (a) What is lymph and tissue fluid formation? (b) Two differences between Blood and Lymph.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Lymph Definition:</strong> As blood flows through arterial capillaries under high pressure, water and small soluble solutes filter out through thin capillary walls into intercellular spaces, forming <em>interstitial fluid</em> (tissue fluid). When this fluid enters lymphatic capillaries, it is called <strong>lymph</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Differences between Blood and Lymph:</strong> <em>[2 Marks - 1 Mark each point]</em></li>
+            </ul>
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Blood</th>
+                        <th>Lymph</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Composition</strong></td>
+                        <td>Contains RBCs, WBCs, Platelets, and high plasma proteins. Red in color.</td>
+                        <td>Lacks RBCs and Platelets; contains mainly Lymphocytes. Colorless/pale yellow.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flow Direction</strong></td>
+                        <td>Circulates in a closed circular loop (Heart \(\rightarrow\) Arteries \(\rightarrow\) Tissues \(\rightarrow\) Veins \(\rightarrow\) Heart).</td>
+                        <td>Flows in a single direction from body tissues toward the heart.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. ABO Blood group system: (a) Universal Donor (b) Universal Acceptor (c) Rh antigen.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Universal Donor (Group O):</strong> RBCs of Group O lack both Antigen A and Antigen B on their surface. Therefore, donating Group O blood does not trigger an immune reaction (agglutination) in any recipient. <em>[1 Mark]</em></li>
+                <li><strong>(b) Universal Acceptor (Group AB):</strong> Plasma of Group AB lacks both Anti-A and Anti-B antibodies. Hence, an individual with AB blood can receive RBCs from any blood group without antibody attack. <em>[1 Mark]</em></li>
+                <li><strong>(c) Rh Factor Antigen:</strong> <strong>Rhesus Antigen (Rh D Antigen)</strong> first discovered in Rhesus monkeys. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Sequential pathway of deoxygenated blood returning from upper body back to the lungs.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Correct Sequential Pathway</div>
+            <p style="margin-top: 5px;">
+                Superior Vena Cava \(\rightarrow\) Right Atrium \(\rightarrow\) Tricuspid Valve \(\rightarrow\) Right Ventricle \(\rightarrow\) Pulmonary Semilunar Valve \(\rightarrow\) Pulmonary Artery \(\rightarrow\) Lungs.
+            </p>
+            <div style="font-size: 9.5pt; color: #444; background: #f9f9f9; padding: 6px; border-radius: 4px;">
+                <em>Marking Breakdown:</em>
+                <br>• Entry via Superior Vena Cava to Right Atrium: <em>[0.5 Mark]</em>
+                <br>• Flow through Tricuspid Valve into Right Ventricle: <em>[1 Mark]</em>
+                <br>• Exit via Pulmonary Semilunar Valve into Pulmonary Artery: <em>[1 Mark]</em>
+                <br>• Arrival at Lungs for oxygen exchange: <em>[0.5 Mark]</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER & DETAILED EXPLANATIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Heart Flow Diagram & Valves Mechanism: (a) Flow Chart (b) Tricuspid and Semilunar Valves.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <p><strong>(a) Flow Diagram of Blood Circulation in Human Heart:</strong> <em>[3 Marks]</em></p>
+            <div style="background: #fdfefe; border: 1px solid #ddd; padding: 10px; font-family: monospace; font-size: 9.5pt; text-align: center; border-radius: 4px; line-height: 1.8;">
+                [Deoxygenated Blood from Body Parts]<br>
+                \(\downarrow\)<br>
+                <strong>Vena Cava (Superior & Inferior)</strong><br>
+                \(\downarrow\)<br>
+                <strong>Right Atrium</strong> \(\xrightarrow{\text{Tricuspid Valve}}\) <strong>Right Ventricle</strong><br>
+                \(\downarrow\)<br>
+                <strong>Pulmonary Artery</strong> (via Pulmonary Semilunar Valve)<br>
+                \(\downarrow\)<br>
+                [<strong>LUNGS</strong> - Oxygenation Takes Place]<br>
+                \(\downarrow\)<br>
+                <strong>Pulmonary Veins</strong><br>
+                \(\downarrow\)<br>
+                <strong>Left Atrium</strong> \(\xrightarrow{\text{Bicuspid/Mitral Valve}}\) <strong>Left Ventricle</strong><br>
+                \(\downarrow\)<br>
+                <strong>Aorta</strong> (via Aortic Semilunar Valve)<br>
+                \(\downarrow\)<br>
+                [Oxygenated Blood Distributed to Whole Body]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) Valves & Mechanism:</strong> <em>[2 Marks - 1 Mark each]</em></p>
+            <ul class="step-list">
+                <li><strong>(i) Bicuspid (Mitral) Valve:</strong> Located between Left Atrium and Left Ventricle. It allows unidirectional flow of oxygenated blood from left atrium to left ventricle and strictly prevents backward flow during ventricular systole.</li>
+                <li><strong>(ii) Pulmonary Semilunar Valve:</strong> Located at the opening of the Right Ventricle into the Pulmonary Artery. It prevents blood from flowing back into the right ventricle when the ventricle relaxes (diastole).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Blood Pressure Dynamics: (a) Definition & Standard values (b) Systolic vs Diastolic (c) Hypertension.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Blood Pressure Definition & Value:</strong> 
+                    <br>The lateral pressure exerted by flowing blood against the walls of major arteries as it is pumped by the heart. <em>[1 Mark]</em>
+                    <br>Standard normal resting reading: <strong>120 / 80 mmHg</strong> (Millimeters of Mercury). <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Systolic vs Diastolic Pressure:</strong> <em>[2 Marks]</em>
+                    <br>• <strong>Systolic Pressure:</strong> Maximum pressure exerted in arteries during <em>ventricular contraction (systole)</em>. Normal value \(\approx 120\text{ mmHg}\).
+                    <br>• <strong>Diastolic Pressure:</strong> Minimum pressure remaining in arteries during <em>ventricular relaxation (diastole)</em>. Normal value \(\approx 80\text{ mmHg}\).
+                </li>
+                <li><strong>(c) Hypertension:</strong> 
+                    <br>A clinical condition characterized by persistent, abnormally high blood pressure (consistently exceeding \(140/90\text{ mmHg}\)). <em>[0.5 Mark]</em>
+                    <br><em>Risk/Damage:</em> Can lead to damage of renal capillaries (kidney failure), rupture of cerebral arteries (stroke/brain hemorrhage), or cardiac arrest. <em>[0.5 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Cascade of blood clotting mechanism (b) Structural features of Capillaries.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <p><strong>(a) Blood Clotting Mechanism (Coagulation Cascade):</strong> <em>[3 Marks]</em></p>
+            <ol class="step-list">
+                <li><strong>Step 1 (Release of Thromboplastin):</strong> Injured tissue cells and ruptured platelets at the wound site release an enzyme called <em>Thromboplastin / Thrombokinase</em>. <em>[1 Mark]</em></li>
+                <li><strong>Step 2 (Conversion of Prothrombin):</strong> In the presence of Calcium ions (\(\text{Ca}^{2+}\)) and Vitamin K, thrombokinase converts inactive plasma protein <strong>Prothrombin</strong> into active <strong>Thrombin</strong>. <em>[1 Mark]</em></li>
+                <li><strong>Step 3 (Meshwork Formation):</strong> Thrombin converts soluble plasma protein <strong>Fibrinogen</strong> into insoluble thread-like <strong>Fibrin</strong> strands. Fibrin fibers form a mesh trapped with blood cells to form a solid clot (scab), stopping hemorrhage. <em>[1 Mark]</em></li>
+            </ol>
+
+            <p style="margin-top: 10px;"><strong>(b) Structural Adaptations of Capillaries for Diffusion:</strong> <em>[2 Marks - 1 Mark each]</em></p>
+            <ul class="step-list">
+                <li><strong>1. Extremely Thin Walls:</strong> Made up of a single layer of squamous epithelial cells called <em>endothelium</em>, allowing rapid passive diffusion of \(\text{O}_2\), \(\text{CO}_2\), glucose, and metabolic wastes.</li>
+                <li><strong>2. Narrow Diameter & Vast Network:</strong> Microscopic diameter (just wide enough for RBCs to pass in single file) reduces flow velocity and brings blood in close contact with surrounding tissue cells.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Senior ICSE Biology Examiners | Vardaan Learning Institute Academic Cell</span>
+    </div>
+</body>
+</html>

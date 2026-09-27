@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 7 CBSE Science)</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .equation-box {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-weight: bold;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VII (CBSE)</span>
+            <span>Subject: Science</span>
+            <span>Topic: Respiration in Organisms (Minor Test 20)</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Cellular respiration (b) Spiracles.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Cellular</strong> (or Cellular respiration). <em>[1 Mark]</em></li>
+                <li><strong>(b) Spiracles</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True / False: (a) Heavy exercise breathing rate (b) Plant respiration gas exchange.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> During heavy exercise, the breathing rate of a person increases (to supply more oxygen to cells). <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> Plants take in oxygen and release carbon dioxide during respiration (just like animals). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Give one word: (a) Yeast (b) Diaphragm.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Yeast</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Diaphragm</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Match the following: Earthworm & Fish.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Earthworm</strong> \(\rightarrow\) <strong>(B)</strong> Moist Skin. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Fish</strong> \(\rightarrow\) <strong>(A)</strong> Gills. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Multiple Choice: Muscle cramps & Exhalation movement.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) ii) Lactic Acid.</strong> Accumulation of lactic acid in muscle cells causes painful cramps. <em>[1 Mark]</em></li>
+                <li><strong>(b) iii) Downwards and Inwards.</strong> During exhalation, ribs move down and inward to reduce chest volume. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Aerobic vs Anaerobic Respiration Comparison.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Aerobic Respiration</th>
+                        <th>Anaerobic Respiration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Oxygen Requirement</strong></td>
+                        <td>Takes place in the <strong>presence of oxygen</strong>. <em>[1 Mark]</em></td>
+                        <td>Takes place in the <strong>absence of oxygen</strong>. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>End Products</strong></td>
+                        <td>Carbon dioxide (\(\text{CO}_2\)) and Water (\(\text{H}_2\text{O}\)). <em>[0.5 Mark]</em></td>
+                        <td>Alcohol and \(\text{CO}_2\) (in yeast) OR Lactic acid (in muscle cells). <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Energy Released</strong></td>
+                        <td>Releases a large amount of energy.</td>
+                        <td>Releases a much smaller amount of energy.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Cause of Muscle Cramps & Hot Water Bath Relief.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cause of Cramps:</strong> During heavy physical exertion, the demand for energy is high, but the supply of oxygen to muscle cells is limited. Therefore, muscle cells respire anaerobically to meet the energy demand, breaking down glucose into <strong>lactic acid</strong>. Accumulation of lactic acid causes muscle cramps. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Relief Mechanism:</strong> A hot water bath or massage <strong>improves blood circulation</strong> in the body. As a result, the supply of oxygen to muscle cells increases, leading to the complete breakdown of lactic acid into carbon dioxide and water. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Respiration in Earthworm and Cockroach.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Earthworm Respiration:</strong> Earthworms breathe through their <strong>skin</strong>. Their skin feels <strong>moist and slimy</strong> to touch. Gases can easily pass through this moist surface directly into blood vessels. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Insect Respiratory System:</strong> Insects like cockroaches have a network of air tubes called <strong>tracheae</strong> (or tracheal system) inside their body for exchange of gases. <em>[1.5 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Movements during Inhalation and Exhalation.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Inhalation (Breathing In):</strong> <em>[1.5 Marks]</em>
+                    <br>• The ribcage moves <strong>upwards and outwards</strong>.
+                    <br>• The diaphragm contracts and moves <strong>downwards</strong> (flattens), enlarging the chest cavity so air rushes into the lungs.
+                </li>
+                <li><strong>(ii) Exhalation (Breathing Out):</strong> <em>[1.5 Marks]</em>
+                    <br>• The ribcage moves <strong>downwards and inwards</strong>.
+                    <br>• The diaphragm relaxes and moves <strong>upwards</strong> back to its dome shape, pushing air out of the lungs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Stomata & Root Respiration in Plants.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Leaf Pores:</strong> Tiny pores on the surface of leaves called <strong>Stomata</strong> (singular: Stoma) facilitate gas exchange. <em>[1 Mark]</em></li>
+                <li><strong>(b) Root Respiration:</strong> Like all living cells, root cells require oxygen to release energy. Roots take in air from the <strong>small air spaces present between the soil particles</strong> through root hairs. <em>[2 Marks]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Cellular Respiration Definition & Word Equations.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cellular Respiration:</strong> The process of breakdown of food (glucose) in the cells of an organism to release energy is called cellular respiration. It takes place inside the <strong>cells (cytoplasm and mitochondria)</strong> of all living organisms. <em>[2 Marks]</em></li>
+                <li><strong>(b) Word Equations:</strong>
+                    <br>i) <em>Aerobic Respiration (With Oxygen):</em> <em>[1.5 Marks]</em>
+                    <div class="equation-box">
+                        \[\text{Glucose} \xrightarrow{\text{With Oxygen}} \text{Carbon Dioxide} + \text{Water} + \text{Energy}\]
+                    </div>
+                    <br>ii) <em>Anaerobic Respiration in Human Muscles (Without Oxygen):</em> <em>[1.5 Marks]</em>
+                    <div class="equation-box">
+                        \[\text{Glucose} \xrightarrow[\text{in Muscles}]{\text{Without Oxygen}} \text{Lactic Acid} + \text{Energy}\]
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Human Respiratory Pathway & Cause of Sneezing.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Path of Inhaled Air:</strong> <em>[3 Marks]</em>
+                    <br>Air enters through <strong>Nostrils</strong> \(\rightarrow\) passes into <strong>Nasal Cavity</strong> \(\rightarrow\) travels down the <strong>Windpipe (Trachea)</strong> \(\rightarrow\) enters <strong>Lungs</strong> (via Bronchi and Bronchioles).
+                </li>
+                <li><strong>(b) Reason for Sneezing:</strong> <em>[2 Marks]</em>
+                    <br>• When we breathe in air containing unwanted foreign particles (like dust, pollen, or smoke), these particles get trapped in the hair present in our nasal cavity.
+                    <br>• Sometimes particles irritate the lining of the cavity, triggering a sneeze response to <strong>expel foreign dust particles</strong> so that clean air enters our lungs.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Gills Functioning in Fish & Breathing Rate of Athletes.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Respiration in Fish (Gills):</strong> <em>[2.5 Marks]</em>
+                    <br>• Fish use special respiratory organs called <strong>gills</strong> to breathe underwater.
+                    <br>• Gills are projections of the skin that are richly supplied with <strong>blood vessels</strong> for gas exchange.
+                    <br>• As water passes over the gills, dissolved oxygen from the water is absorbed into the blood, and carbon dioxide is released into the water.
+                </li>
+                <li><strong>(b) Increased Breathing Rate in Athletes:</strong> <em>[2.5 Marks]</em>
+                    <br>• During a sprint race, the athlete's muscle cells work very hard and require a large amount of extra energy.
+                    <br>• To release more energy, food needs to be broken down faster, which demands a greater supply of oxygen.
+                    <br>• Therefore, the athlete breathes faster and deeper to bring more oxygen into the body and quickly clear out extra carbon dioxide generated.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (CBSE Division)</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 7 CBSE Science)</title>
+    <!-- MathJax for rendering chemical and biological notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .equation-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 8px 0;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VII (CBSE)</span>
+            <span>Subject: Science</span>
+            <span>Topic: Adolescence & Life Processes in Plants</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Food synthesis process in plants (b) Period of physical changes leading to reproductive maturity.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Photosynthesis</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Adolescence</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True/False: (a) Role of Xylem tissue (b) Pituitary gland function.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Correction: <strong>Phloem tissue</strong> transports food (sugars) from leaves to other parts of the plant, whereas Xylem transports water and minerals. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> The pituitary gland secretes tropic hormones that stimulate and regulate other endocrine glands like thyroid, adrenal, and gonads. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Definitions: (a) Transpiration (b) Puberty.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Transpiration:</strong> The process of loss of excess water in the form of water vapour from the aerial parts of a plant, mainly through stomata. <em>[1 Mark]</em></li>
+                <li><strong>(b) Puberty:</strong> The specific period or age at which an adolescent's reproductive organs become sexually mature and functional. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. One Word Terms: (a) Primary male hormone (b) Water-conducting vascular tissue.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Testosterone</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Xylem</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Match the following: Thyroid Gland & Phloem Tissue.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) Thyroid Gland</strong> \(\rightarrow\) <strong>(B)</strong> Secretes Thyroxine hormone regulating body metabolism. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Phloem Tissue</strong> \(\rightarrow\) <strong>(A)</strong> Transports food produced in leaves to all plant parts. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B: SHORT ANSWER & REASONING (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Autotrophic vs Heterotrophic Nutrition in Plants.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Autotrophic Nutrition</th>
+                        <th>Heterotrophic Nutrition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Definition</strong></td>
+                        <td>Organisms synthesize their own organic food using simple inorganic substances (\(\text{CO}_2\), water, sunlight). <em>[1 Mark]</em></td>
+                        <td>Organisms cannot make their own food and depend on other organisms for nutrition. <em>[1 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td>Green plants (e.g., Rose, Mango, Grass). <em>[0.5 Mark]</em></td>
+                        <td>Cuscuta (Amarbel) / Insectivorous plants like Pitcher Plant. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Transpiration & its two vital benefits in plants.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Definition of Transpiration:</strong> Evaporation of water from leaves and stems into the atmosphere via microscopic stomatal pores. <em>[1 Mark]</em></li>
+                <li><strong>(b) Two Functions/Benefits:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. <strong>Suction Pull (Transpiration Pull):</strong> Creates a continuous upward pull that draws water and dissolved mineral ions from roots to high leaves.
+                    <br>2. <strong>Cooling Effect:</strong> Evaporative loss prevents plant tissue from overheating under bright sunlight.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Three major physical changes during adolescence.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Key Physical Changes (1 Mark each for any 3 points):</div>
+            <ul class="step-list">
+                <li>1. <strong>Increase in Height & Weight:</strong> Rapid growth of long bones in limbs resulting in sudden increase in stature.</li>
+                <li>2. <strong>Change in Body Shape:</strong> Broader shoulders and chest in boys; widening of pelvic region in girls.</li>
+                <li>3. <strong>Voice Changes & Hair Growth:</strong> Enlargement of voice box (Adam's apple) leading to deeper voice in boys; development of facial/body hair.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Role of Stomata in Photosynthesis and Respiration.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>Definition of Stomata:</strong> Microscopic pore openings present on the surface of plant leaves surrounded by two kidney-shaped guard cells. <em>[1 Mark]</em></li>
+                <li><strong>Role in Photosynthesis:</strong> Stomata allow uptake of \(\text{CO}_2\) from surrounding air into leaves and release oxygen gas (\(\text{O}_2\)) as a byproduct. <em>[1 Mark]</em></li>
+                <li><strong>Role in Respiration:</strong> Stomata allow absorption of atmospheric oxygen (\(\text{O}_2\)) for cellular breakdown of glucose and release carbon dioxide (\(\text{CO}_2\)). <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Nutritional needs of adolescents & two essential minerals.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Importance of Balanced Diet:</strong> Adolescence involves intense growth of muscle, bones, and organs. A balanced meal containing proteins, carbohydrates, fats, vitamins, and minerals supports rapid bodily transformation and health. <em>[1.5 Marks]</em></li>
+                <li><strong>(b) Two Essential Minerals:</strong> <em>[1.5 Marks]</em>
+                    <br>• <strong>Iron:</strong> Essential for blood formation (hemoglobin construction) to meet increased blood volume requirements.
+                    <br>• <strong>Calcium:</strong> Crucial for skeletal growth, bone density, and teeth strength.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C: LONG ANSWER & DETAILED CONCEPTS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Xylem vs Phloem & Photosynthesis Chemical Equation.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Transport Tissues (Xylem vs Phloem):</strong> <em>[3 Marks]</em>
+                    <br>• <strong>Xylem:</strong> Consists of hollow dead cells (tracheids, vessels) forming a continuous network from roots to leaves. It conducts water and dissolved mineral salts unidirectionally (upward). <em>[1.5 Marks]</em>
+                    <br>• <strong>Phloem:</strong> Made of living vascular cells (sieve tubes, companion cells). It conducts organic food (sucrose/glucose) multidirectionally from green leaves to all storage and growing parts. <em>[1.5 Marks]</em>
+                </li>
+                <li><strong>(b) Photosynthesis Chemical/Word Equation:</strong> <em>[2 Marks]</em>
+                    <div class="equation-box">
+                        $$\text{Carbon Dioxide} + \text{Water} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{Glucose} + \text{Oxygen}$$
+                        $$\text{OR}$$
+                        $$6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow[\text{Chlorophyll}]{\text{Sunlight}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$$
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Endocrine System, Hormones & Dual Role of Pancreas.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Definition of Hormones:</strong> Chemical messengers secreted in tiny amounts directly into blood by ductless endocrine glands to regulate specific body processes. <em>[1 Mark]</em></li>
+                <li><strong>(b) Endocrine Glands (Any 2 described):</strong> <em>[3 Marks - 1.5 Marks each]</em>
+                    <br>1. <strong>Thyroid Gland:</strong> Located in neck region. Secretes <em>Thyroxine</em>. Controls body metabolism, energy production, and physical development.
+                    <br>2. <strong>Adrenal Gland:</strong> Located above kidney caps. Secretes <em>Adrenaline</em>. Prepares the body to deal with emergency stress situations ("fight or flight" response).
+                    <br>3. <strong>Pancreas:</strong> Located near stomach. Secretes <em>Insulin</em>. Regulates blood sugar levels.
+                </li>
+                <li><strong>(c) Dual Function of Pancreas:</strong> It acts as an <strong>exocrine gland</strong> by producing digestive pancreatic juice into ducts, and as an <strong>endocrine gland</strong> by secreting insulin hormone directly into the bloodstream. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Secondary Sexual Characters, Personal Hygiene & Exercise.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Secondary Sexual Characters:</strong> Physical traits that distinguish mature males from females but are not directly involved in reproduction. <em>[1 Mark]</em>
+                    <br>• <em>In Males:</em> Growth of facial beard/moustache, broadening of chest/shoulders, deepening of voice. <em>[1 Mark]</em>
+                    <br>• <em>In Females:</em> Enlargement of breasts, broadening of hips/pelvis, onset of menstruation. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Importance of Hygiene & Physical Exercise:</strong> <em>[2 Marks - 1 Mark each]</em>
+                    <br>1. <strong>Personal Hygiene:</strong> Increased activity of sweat and oil glands during puberty can cause body odor and bacterial skin infections if daily bathing and clean clothing are neglected.
+                    <br>2. <strong>Physical Exercise:</strong> Keeping active through walking, running, or outdoor games promotes bone strength, builds healthy muscles, improves blood circulation, and maintains mental health.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (CBSE Division)</span>
+    </div>
+</body>
+</html>

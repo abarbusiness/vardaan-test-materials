@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 6 ICSE Biology Question Paper</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in ICSE Curriculum</div>
+        <div class="test-name">MINOR TEST 20 — THE FLOWER & RESPIRATORY SYSTEM (BIOLOGY)</div>
+        
+        <div class="exam-details">
+            <span>Class: VI (ICSE)</span>
+            <span>Subject: Biology</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answer all questions neatly as per Class 6 ICSE Biology syllabus guidelines.</li>
+                <li>The question paper comprises 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Use clear scientific terminology.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Recall Questions — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with suitable scientific terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The brightly coloured part of a flower that attracts insects is called the ____________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Air enters the human body through two external openings called ____________.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False. Correct the false statement:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Respiration releases energy from the food we eat.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The male reproductive part of a flower is called the pistil.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>Give one word for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The transfer of pollen grains from the anther to the stigma of a flower.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The flexible muscular sheet located below the lungs that helps in breathing.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Match the terms in Column A with their correct partner in Column B:</strong>
+            <span style="float: right;">[2]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Column A</th>
+                        <th>Column B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(i) Anther</td>
+                        <td>(A) Respiratory organ in Fish</td>
+                    </tr>
+                    <tr>
+                        <td>(ii) Gills</td>
+                        <td>(B) Produces yellow pollen grains</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Choose the correct answer for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Which of the following is an essential whorl of a flower?
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Calyx &nbsp;&nbsp;&nbsp;&nbsp; ii) Corolla &nbsp;&nbsp;&nbsp;&nbsp; iii) Stamens &nbsp;&nbsp;&nbsp;&nbsp; iv) Thalamus
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Gas exchange in human lungs occurs inside tiny air sacs called:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Bronchi &nbsp;&nbsp;&nbsp;&nbsp; ii) Trachea &nbsp;&nbsp;&nbsp;&nbsp; iii) Alveoli &nbsp;&nbsp;&nbsp;&nbsp; iv) Nostrils
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Questions — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Whorls of a Flower:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Name the four whorls of a typical flower in order from outside to inside. Classify them into <strong>non-essential</strong> and <strong>essential</strong> whorls.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Breathing vs Respiration:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Differentiate between <strong>Breathing</strong> and <strong>Respiration</strong> based on:
+                <br>• Nature of the process (Physical vs Chemical)
+                <br>• Location where it takes place
+                <br>• Release of energy
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Types of Flowers:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What is the main difference between a <strong>Unisexual flower</strong> and a <strong>Bisexual flower</strong>? (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Give one example of each type of flower. (1)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Respiration in Animals:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Name the primary respiratory organ or structure used for breathing in each of the following animals:
+                <br>(a) Earthworm
+                <br>(b) Fish
+                <br>(c) Cockroach
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Mechanism of Breathing:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Describe the movement of the <strong>Ribcage</strong> and the <strong>Diaphragm</strong> during:
+                <br>(i) Inhalation (Breathing in)
+                <br>(ii) Exhalation (Breathing out)
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Descriptive Questions — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Reproductive Structure of a Flower & Pollination:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Name the parts that make up:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;i) A Stamen (Male reproductive part) (1)
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;ii) A Pistil / Carpel (Female reproductive part) (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> What is <strong>Pollination</strong>? Differentiate between <strong>Self-pollination</strong> and <strong>Cross-pollination</strong>. (2.5)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Human Respiratory Organs & Pathway of Air:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Trace the correct pathway of inhaled air starting from the nostrils to the alveoli in human lungs. (3)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Explain the role of fine hair and mucus present inside the nasal cavity. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Fertilisation & Plant Respiration:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Define <strong>Fertilisation</strong> in plants. What do the following flower parts develop into after fertilisation?
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;i) Ovary &nbsp;&nbsp;&nbsp;&nbsp; ii) Ovules (2.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> How do plants perform gas exchange during respiration? Mention the specific structures present on:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;i) Leaves &nbsp;&nbsp;&nbsp;&nbsp; ii) Woody stems (2.5)
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Prepared by Academic Evaluation Board | Vardaan Learning Institute (ICSE Division)</span>
+    </div>
+</body>
+</html>

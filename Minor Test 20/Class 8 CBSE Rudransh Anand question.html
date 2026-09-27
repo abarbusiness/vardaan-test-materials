@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 CBSE Science Minor Test 20</title>
+    <!-- MathJax for rendering chemical and scientific symbols -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+            --bg-card: #ffffff;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11.5pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 30px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in CBSE Board Academics</div>
+        <div class="test-name">MINOR TEST 20 — THE INVISIBLE LIVING WORLD & CELL</div>
+        
+        <div class="exam-details">
+            <span>Class: VIII CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written neatly on the answer sheet provided separately.</li>
+                <li>First 5 minutes are allotted for reading the question paper carefully.</li>
+                <li>The paper consists of 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Labelled diagrams should be drawn wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Objective-Short Type — Attempt All Questions)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate scientific terms:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The scientist who first observed and named live biological cells under a microscope was ____________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The bacterium responsible for converting milk into curd is ____________.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False. Correct the false statements:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Plant cells lack a cell wall around their plasma membrane.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Yeast reproduces rapidly and produces carbon dioxide (\(\text{CO}_2\)) during respiration, which makes dough rise.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>Define the following terms in one sentence each:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Pseudopodia
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Fermentation
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Name the microscopic organism responsible for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Malaria in humans (Protozoan).
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Citrus Canker disease in plants (Bacterium).
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Give one word or technical biological term for:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The control centre of the cell containing genetic material.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Green-coloured plastids present in plant cells that help in photosynthesis.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type — 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Differentiate between a Plant Cell and an Animal Cell based on the following three criteria:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Cell Wall
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Plastids
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Size and number of Vacuoles
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Role of Microorganisms in Daily Life:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>Antibiotics</strong>? Name one common antibiotic.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> State two important precautions to be kept in mind while taking antibiotics.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Cell Diversity and Structure:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Distinguish between <strong>Unicellular</strong> and <strong>Multicellular</strong> organisms with one example each.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Why are nerve cells (neurons) long and branched? What is their main function?
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Food Preservation Methods:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What is <strong>Pasteurisation</strong> of milk? Who discovered this method?
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> How does salt or sugar prevent food spoilage in pickles and jams?
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Nuclear Structure & Heredity:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> State the primary function of the <strong>Nucleus</strong> in a cell.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> What are <strong>Chromosomes</strong>? Where are they located inside the cell and what units do they carry?
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Detailed Type — 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Detailed Study of Cell Components:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Describe the structure and function of the <strong>Cell Membrane (Plasma Membrane)</strong>. Why is it called selectively permeable? (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> What is the jelly-like substance present between the nucleus and the plasma membrane called? Mention any two cell organelles present in it. (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Why do plant cells require a rigid Cell Wall while animal cells do not? (1.5)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Microorganisms — Biological & Environmental Importance:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Explain how leguminous plants (like peas and beans) increase soil fertility with the help of <em>Rhizobium</em> bacteria. (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> How do decomposers (bacteria and fungi) clean up the environment? (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> What are <strong>Vaccines</strong> and how do they build immunity against diseases in the human body? (1.5)
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Harmful Microorganisms & Disease Transmission:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>Pathogens</strong>? How do communicable diseases spread from an infected person to a healthy person? (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Complete the table given below regarding human diseases caused by microbes: (2)
+                <table class="exam-table" style="margin-top: 6px;">
+                    <thead>
+                        <tr>
+                            <th>Human Disease</th>
+                            <th>Causative Microorganism</th>
+                            <th>Mode of Transmission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuberculosis</td>
+                            <td>(i) ____________</td>
+                            <td>Air</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Pox</td>
+                            <td>Virus</td>
+                            <td>(ii) ____________</td>
+                        </tr>
+                        <tr>
+                            <td>Cholera</td>
+                            <td>(iii) ____________</td>
+                            <td>Water / Food</td>
+                        </tr>
+                        <tr>
+                            <td>Malaria</td>
+                            <td>Protozoa</td>
+                            <td>(iv) ____________</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> State one effective preventive measure to stop the breeding of mosquitoes. (1)
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Created by Team Vardaan | Aligned with CBSE Class 8 Science Syllabus</span>
+    </div>
+</body>
+</html>
