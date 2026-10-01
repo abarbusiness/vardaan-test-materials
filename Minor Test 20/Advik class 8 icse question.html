@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 ICSE Chemistry - Minor Test 20 Question Paper</title>
+    <!-- MathJax for rendering chemical equations and mathematical expressions -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-dark: #111111;
+            --bg-light: #ffffff;
+            --border-color: #d1d5db;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: var(--bg-light); 
+            position: relative; 
+        }
+
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 10px; 
+            background-color: #fffdf5;
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #1a1a1a;
+        }
+
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #333;
+        }
+
+        .topic-badge {
+            font-size: 10pt;
+            font-weight: normal;
+            font-style: italic;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid var(--text-dark); 
+            border-bottom: 1px solid var(--text-dark); 
+            padding: 6px 4px; 
+            gap: 8px;
+            background-color: #ffffff;
+        }
+
+        .exam-details span {
+            flex: 1 1 20%;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 10pt; 
+            background-color: #f9fafb;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            font-size: 12.5pt; 
+            background-color: #f4f4f5;
+            padding: 6px 10px;
+            border-left: 5px solid var(--primary-yellow);
+            border-right: 5px solid var(--primary-yellow);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-transform: none;
+            color: #444;
+        }
+
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+            font-size: 11pt;
+        }
+
+        .q-content { 
+            flex-grow: 1; 
+        }
+
+        .q-marks {
+            font-weight: bold;
+            font-size: 10pt;
+            float: right;
+            color: #333;
+            margin-left: 10px;
+        }
+
+        .sub-question { 
+            margin-left: 10px; 
+            margin-top: 6px; 
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        /* Equation and Table formatting */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10.5pt;
+        }
+
+        th, td {
+            border: 1px solid #71717a;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f5;
+            font-weight: bold;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px dashed #a1a1aa; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsive Breakpoints for Screens */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .test-name {
+                font-size: 12pt;
+            }
+
+            .exam-details {
+                font-size: 9.5pt;
+            }
+
+            .exam-details span {
+                flex: 1 1 45%;
+                text-align: left;
+            }
+
+            .section-header {
+                font-size: 11pt;
+            }
+
+            .q-num {
+                width: 28px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details span {
+                flex: 1 1 100%;
+            }
+
+            .q-marks {
+                float: none;
+                display: block;
+                margin-top: 4px;
+                text-align: right;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                max-width: 100%;
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+                background-color: white;
+            } 
+            .header {
+                background-color: transparent !important;
+            }
+            .instructions {
+                background-color: #f8f8f8 !important;
+            }
+            .section-header {
+                background-color: #f0f0f0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Vardaan Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 20 — CLASS VIII ICSE</div>
+        <div class="topic-badge">Syllabus: Atomic Structure | The Language of Chemistry | Chemical Reactions</div>
+        
+        <div class="exam-details">
+            <span><strong>Class:</strong> 8 ICSE</span>
+            <span><strong>Subject:</strong> Chemistry</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written neatly on the answer sheet provided separately.</li>
+                <li>You will not be allowed to write during the first 10 minutes. This time is to be spent in reading the question paper.</li>
+                <li>The paper consists of <strong>Three Sections: Section A (10 Marks), Section B (15 Marks), and Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory. Show chemical equations and state symbols wherever applicable.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Basic Conceptual Recall — 5 Questions x 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Define the term <strong>'Valency'</strong>. State the variable valency exhibited by Iron in:</div>
+            <div class="sub-question">
+                (a) $\text{FeCl}_2$<br>
+                (b) $\text{FeCl}_3$
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>An atom of Aluminium has an Atomic Number ($Z$) of $13$ and a Mass Number ($A$) of $27$. Determine:</div>
+            <div class="sub-question">
+                (a) The number of protons, electrons, and neutrons present in an atom of Aluminium.<br>
+                (b) Its electronic configuration ($K, L, M$ shell representation).
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Differentiate between a <strong>Chemical Symbol</strong> and a <strong>Radical</strong>. Give one example with chemical formula/symbol for each.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Write the balanced chemical equation with proper state symbols for the action of heat on solid Calcium Carbonate ($\text{CaCO}_3$). Identify the gaseous product formed.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Classify the following reactions as Combination, Decomposition, Displacement, or Double Displacement:</div>
+            <div class="sub-question">
+                (a) $\text{Zn}\,(s) + \text{CuSO}_4\,(aq) \rightarrow \text{ZnSO}_4\,(aq) + \text{Cu}\,(s)$<br>
+                (b) $2\text{Mg}\,(s) + \text{O}_2\,(g) \xrightarrow{\Delta} 2\text{MgO}\,(s)$
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer & Application Type — 5 Questions x 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>Using the <strong>Criss-Cross Method</strong>, derive the chemical formulas for the following compounds:</div>
+            <div class="sub-question">
+                (a) Aluminium Sulphate<br>
+                (b) Calcium Hydroxide<br>
+                (c) Ammonium Phosphate
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>State three main postulates of <strong>Dalton's Atomic Theory</strong> regarding the nature of matter and atoms. Mention one modern modification to his theory.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>Balance the following chemical equations by step-by-step inspection:</div>
+            <div class="sub-question">
+                (a) $\text{Fe} + \text{H}_2\text{O} \rightarrow \text{Fe}_3\text{O}_4 + \text{H}_2$<br>
+                (b) $\text{KClO}_3 \xrightarrow{\Delta} \text{KCl} + \text{O}_2$<br>
+                (c) $\text{NaOH} + \text{H}_2\text{SO}_4 \rightarrow \text{Na}_2\text{SO}_4 + \text{H}_2\text{O}$
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>Give a balanced chemical equation and state your visual observation for each of the following chemical changes:</div>
+            <div class="sub-question">
+                (a) Dilute Hydrochloric acid ($\text{HCl}$) is added to Zinc granules ($\text{Zn}$).<br>
+                (b) Barium Chloride solution ($\text{BaCl}_2$) is mixed with Sodium Sulphate solution ($\text{Na}_2\text{SO}_4$).<br>
+                (c) Copper Carbonate powder ($\text{CuCO}_3$) is heated strongly in a dry test tube.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>Differentiate between a <strong>Combination Reaction</strong> and a <strong>Decomposition Reaction</strong> based on:</div>
+            <div class="sub-question">
+                (a) Number of reactants vs products.<br>
+                (b) Energy requirements (Exothermic vs Endothermic nature).<br>
+                (c) Provide one balanced chemical equation for each type.
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Numerical/Derivation Type — 3 Questions x 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                (a) Tabulate the three fundamental subatomic particles—<strong>Electron, Proton, and Neutron</strong>—with respect to:
+                <ol type="i" style="margin: 4px 0 8px 20px;">
+                    <li>Discoverer</li>
+                    <li>Relative Charge</li>
+                    <li>Relative Mass (in amu)</li>
+                    <li>Location in an atom</li>
+                </ol>
+                <span style="font-weight: bold;">(3 Marks)</span>
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                (b) Phosphorus has an Atomic Number $Z = 15$ and Mass Number $A = 31$. Represent its atomic structure schematically showing the nucleus and distribution of electrons in $K, L, M$ shells.
+                <span style="font-weight: bold;">(2 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                (a) State the <strong>Law of Conservation of Mass</strong>. <span style="font-weight: bold;">(1 Mark)</span>
+            </div>
+            <div class="sub-question" style="margin-top: 6px;">
+                (b) In a laboratory experiment, $10.0\,\text{g}$ of Calcium Carbonate ($\text{CaCO}_3$) on strong heating completely decomposed to form $5.6\,\text{g}$ of Calcium Oxide ($\text{CaO}$) residue and Carbon Dioxide gas ($\text{CO}_2$).
+                <ol type="i" style="margin: 4px 0 8px 20px;">
+                    <li>Calculate the mass of Carbon Dioxide gas released into the atmosphere.</li>
+                    <li>Explain how this result verifies the Law of Conservation of Mass.</li>
+                </ol>
+                <span style="font-weight: bold;">(2 Marks)</span>
+            </div>
+            <div class="sub-question" style="margin-top: 6px;">
+                (c) Explain why a chemical equation must always be balanced in accordance with the Law of Conservation of Mass. <span style="font-weight: bold;">(2 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div>Define each of the following types of chemical reactions and write ONE complete balanced chemical equation with state symbols for each:</div>
+            <div class="sub-question">
+                (a) Thermal Decomposition Reaction <span style="font-weight: bold;">(2 Marks)</span><br>
+                (b) Neutralization Reaction <span style="font-weight: bold;">(1.5 Marks)</span><br>
+                (c) Single Displacement Reaction <span style="font-weight: bold;">(1.5 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        *** END OF QUESTION PAPER ***<br>
+        Created by Team Vardaan with ❤️ | Vardaan Learning Institute
+    </div>
+</body>
+</html>

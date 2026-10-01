@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 CBSE Science Solutions</title>
+    <!-- MathJax for scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --badge-bg: #fff8e1;
+            --badge-border: #fbc02d;
+            --correct-bg: #e8f5e9;
+            --correct-text: #1b5e20;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #c67c00;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-size: 10pt;
+            font-weight: bold;
+            background: #fafafa;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+
+        .section-banner {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 8px;
+            background-color: #fcfcfc;
+            padding: 6px 8px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .marks-badge {
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: #8c6b00;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .ans-body {
+            margin-left: 12px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-list {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .step-list li {
+            margin-bottom: 4px;
+        }
+
+        table.sol-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 10pt;
+        }
+
+        table.sol-table th, table.sol-table td {
+            border: 1px solid #ccc;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.sol-table th {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .exam-meta {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .marks-badge {
+                align-self: flex-start;
+            }
+
+            .ans-body {
+                margin-left: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">MARKING SCHEME & DETAILED SOLUTIONS</div>
+        <div class="exam-meta">
+            <span>Class: VIII (CBSE)</span>
+            <span>Subject: Science</span>
+            <span>Topic: Invisible Living World & Cell Structure</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <!-- Section A Solutions -->
+    <div class="section-banner">SECTION A: OBJECTIVE & RECALL SOLUTIONS (10 MARKS)</div>
+
+    <!-- Solution Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Fill in the blanks: (a) Alcohol producing microorganism (b) Cell control center organelle.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Model Answers</div>
+            <ul class="step-list">
+                <li><strong>(a) Yeast</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Nucleus</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. True / False: (a) Virus reproduction outside host (b) Plant cell wall presence.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) False.</strong> Viruses cannot reproduce outside a living host cell; they multiply only inside host organisms. <em>[1 Mark]</em></li>
+                <li><strong>(b) True.</strong> Plant cells contain a tough, rigid cell wall made of cellulose outside the plasma membrane. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Give one word: (a) Malaria parasite carrier (b) Fluid between nucleus and membrane.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Female <em>Anopheles</em> mosquito</strong>. <em>[1 Mark]</em></li>
+                <li><strong>(b) Cytoplasm</strong>. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Match Column A and Column B: <em>Rhizobium</em> & Chloroplast.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(i) <em>Rhizobium</em> bacterium</strong> \(\rightarrow\) <strong>(B)</strong> Fixes atmospheric nitrogen in root nodules. <em>[1 Mark]</em></li>
+                <li><strong>(ii) Chloroplast</strong> \(\rightarrow\) <strong>(A)</strong> Site of photosynthesis in green plant cells. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Multiple Choice: Sugar to alcohol conversion & Plant specific organelle.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) ii) Fermentation.</strong> The conversion of sugar into alcohol by yeast is called fermentation. <em>[1 Mark]</em></li>
+                <li><strong>(b) iii) Cell Wall.</strong> Cell wall is present in plant cells for protection and rigidity, but absent in animal cells. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section B Solutions -->
+    <div class="section-banner">SECTION B: SHORT ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Three Beneficial Uses of Microorganisms in Daily Life.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <div class="key-concept">Key Uses of Microorganisms (Any 3 points)</div>
+            <ul class="step-list">
+                <li>1. <strong>Food Production:</strong> <em>Lactobacillus</em> bacteria convert milk into curd, and Yeast causes fermentation in bread dough making it fluffy. <em>[1 Mark]</em></li>
+                <li>2. <strong>Commercial & Medicinal Uses:</strong> Microorganisms are used in manufacturing alcohol, wines, vaccines, and antibiotics (e.g., Penicillin). <em>[1 Mark]</em></li>
+                <li>3. <strong>Agriculture & Environment:</strong> Nitrogen-fixing bacteria (like <em>Rhizobium</em>) enrich soil fertility, while decomposer microbes clean the environment by breaking down dead organic waste into simple nutrients. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Differentiate Between Plant Cell and Animal Cell.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <table class="sol-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Plant Cell</th>
+                        <th>Animal Cell</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cell Wall</strong></td>
+                        <td>Present (made of cellulose). <em>[0.5 Mark]</em></td>
+                        <td>Absent. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plastids (Chloroplasts)</strong></td>
+                        <td>Present in green cells. <em>[0.5 Mark]</em></td>
+                        <td>Absent. <em>[0.5 Mark]</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vacuoles</strong></td>
+                        <td>Contains a single, large central vacuole. <em>[0.5 Mark]</em></td>
+                        <td>Contains multiple small, temporary vacuoles. <em>[0.5 Mark]</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Solution Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Antibiotics and Vaccines Explanation.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Antibiotics:</strong> Medicines produced by microorganisms (fungi/bacteria) that kill or stop the growth of disease-causing microorganisms. <em>[1 Mark]</em>
+                    <br>• <em>First Discovered Antibiotic:</em> <strong>Penicillin</strong> (discovered by Alexander Fleming). <em>[0.5 Mark]</em>
+                </li>
+                <li><strong>(b) Vaccine:</strong> A biological preparation containing dead or weakened microbes introduced into the body to stimulate antibody production. <em>[1 Mark]</em>
+                    <br>• <em>Protection Mechanism:</em> The antibodies created remain in the body to protect against future infection by the same pathogen (immunity). <em>[0.5 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Functions of Cell Membrane, Cell Wall, and Vacuole.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cell Membrane (Plasma Membrane):</strong> It bounds the cell contents, gives shape to the cell, and regulates the entry and exit of selected substances in and out of the cell. <em>[1 Mark]</em></li>
+                <li><strong>(b) Cell Wall:</strong> Provides rigidity, mechanical strength, structural support, and protection against high temperature, wind, and moisture to plant cells. <em>[1 Mark]</em></li>
+                <li><strong>(c) Large Central Vacuole:</strong> Stores cell sap, water, waste products, and nutrients, maintaining turgidity and shape of the plant cell. <em>[1 Mark]</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Food Spoilage and Preservation Techniques.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Cause of Food Spoilage:</strong> Microorganisms (bacteria and fungi) grow rapidly on moist food at room temperature, releasing toxic substances that spoil taste, smell, and color. <em>[1 Mark]</em></li>
+                <li><strong>(b) Preservation Methods:</strong>
+                    <br>i) <em>Preservation by Salt/Sugar:</em> Removes moisture from food cells through osmosis, preventing microbial growth in pickles, jams, and jellies. <em>[1 Mark]</em>
+                    <br>ii) <em>Pasteurisation:</em> Heating milk to about \(70^\circ\text{C}\) for 15 to 30 seconds and then suddenly chilling it to prevent microbial growth. Discovered by Louis Pasteur. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section C Solutions -->
+    <div class="section-banner">SECTION C: LONG ANSWER SOLUTIONS (15 MARKS)</div>
+
+    <!-- Solution Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Pathogens, Communicable Diseases, and Housefly Transmission.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Pathogens:</strong> Disease-causing microorganisms present in air, water, food, or vectors are called pathogens. <em>[1 Mark]</em></li>
+                <li><strong>(b) Disease Examples:</strong> <em>[2 Marks]</em>
+                    <br>• <em>Bacterial Diseases:</em> Tuberculosis (TB), Cholera / Typhoid. <em>[1 Mark]</em>
+                    <br>• <em>Viral Diseases:</em> Polio, Chickenpox / Common Cold. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(c) Role of Houseflies as Disease Carriers:</strong> <em>[2 Marks]</em>
+                    <br>• Houseflies sit on garbage and animal excreta, where disease-causing pathogens stick to their legs and bodies.
+                    <br>• When these flies land on uncovered food, they transfer pathogens to the food. Consuming this contaminated food leads to diseases like cholera and dysentery.
+                    <br>• <em>Prevention Measure:</em> Keep food covered at all times and keep surroundings clean to avoid fly breeding.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Structural Components of Cell and Nucleus.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Three Basic Components of a Cell:</strong> <em>[1.5 Marks]</em>
+                    <br>1. Cell Membrane (Plasma Membrane) <em>[0.5 Mark]</em>
+                    <br>2. Cytoplasm <em>[0.5 Mark]</em>
+                    <br>3. Nucleus <em>[0.5 Mark]</em>
+                </li>
+                <li><strong>(b) Structure and Components of Nucleus:</strong> <em>[3.5 Marks]</em>
+                    <br>• <em>Nuclear Membrane:</em> Double-layered porous membrane that separates the nucleus from cytoplasm and allows selective substance exchange. <em>[1 Mark]</em>
+                    <br>• <em>Nucleolus:</em> Small, dense spherical body located inside the nucleus involved in protein synthesis. <em>[0.5 Mark]</em>
+                    <br>• <em>Chromosomes & Genes:</em> Thread-like structures present inside nucleoplasm carrying <strong>Genes</strong>. <em>[1 Mark]</em>
+                    <br>• <em>Function of Genes:</em> Gene is the basic unit of inheritance in living organisms; it controls the transfer of hereditary characters from parents to offspring. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Solution Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Scientific Discoveries & Nerve Cell Structure/Function.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="ans-body">
+            <ul class="step-list">
+                <li><strong>(a) Discovery of Cell:</strong> <em>[2 Marks]</em>
+                    <br>• Discovered by <strong>Robert Hooke</strong> in the year <strong>1665</strong>. <em>[1 Mark]</em>
+                    <br>• He examined thin slices of <strong>cork</strong> (bark of a tree) under his simple magnifying device and observed honeycomb-like compartmental boxes. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(b) Discovery of Fermentation:</strong> <em>[1 Mark]</em>
+                    <br>• Discovered by French scientist <strong>Louis Pasteur</strong> in <strong>1857</strong>. <em>[1 Mark]</em>
+                </li>
+                <li><strong>(c) Nerve Cell (Neuron) - Shape and Function:</strong> <em>[2 Marks]</em>
+                    <br>• <em>Shape:</em> Long and branched structure with thin extensions. <em>[1 Mark]</em>
+                    <br>• <em>Function:</u> Receives, conducts, and transfers messages/nerve impulses between organs and the brain to control and coordinate body actions. <em>[1 Mark]</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF SOLUTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Verified by Academic Evaluation Board | Vardaan Learning Institute (CBSE Division)</span>
+    </div>
+</body>
+</html>

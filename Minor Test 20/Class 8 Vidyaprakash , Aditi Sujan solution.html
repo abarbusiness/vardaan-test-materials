@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Minor Test 21 Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --success-green: #2e7d32;
+            --success-bg: #e8f5e9;
+            --text-dark: #111111;
+            --bg-light: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: var(--bg-light); 
+            position: relative; 
+        }
+
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 10px; 
+            background-color: #fffdf5;
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #1a1a1a;
+        }
+
+        .test-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: var(--primary-dark);
+            text-transform: uppercase;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 5px 10px;
+            background-color: #fff;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            font-size: 13pt; 
+            background-color: #f4f4f5;
+            padding: 8px 10px;
+            border-left: 6px solid var(--primary-yellow);
+            border-right: 6px solid var(--primary-yellow);
+            text-transform: uppercase;
+        }
+
+        /* Solution Block Format */
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+            page-break-inside: avoid;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            background-color: #fafafa;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-dark);
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            color: #1a1a1a;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .correct-answer-box { 
+            color: var(--success-green); 
+            background-color: var(--success-bg); 
+            padding: 8px 12px; 
+            margin: 8px 0 12px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            border-left: 4px solid var(--success-green);
+            font-size: 10.5pt;
+        }
+
+        .explanation {
+            margin-left: 5px;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #27272a;
+        }
+
+        .explanation p {
+            margin: 6px 0;
+        }
+
+        .key-point {
+            font-weight: bold;
+            color: #18181b;
+        }
+
+        .step-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin: 8px 0;
+        }
+
+        /* MathJax Overflow handling on Mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .test-title {
+                font-size: 12pt;
+            }
+
+            .meta-info {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .marks-badge {
+                align-self: flex-end;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-title">DETAILED SOLUTIONS & MARKING SCHEME: MINOR TEST 20</div>
+        <div class="meta-info">
+            <span>Class: 8</span>
+            <span>Subject: Mathematics</span>
+            <span>Topic: Compound Interest</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <!-- SECTION A SOLUTIONS -->
+    <div class="section-header">SECTION A — SOLUTIONS & MARKING SCHEME (10 MARKS)</div>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. State the formula for Amount ($A$) and Compound Interest ($CI$) compounded (a) annually and (b) half-yearly.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Answer: (a) $A = P\left(1 + \frac{r}{100}\right)^n$ | (b) $A = P\left(1 + \frac{r}{200}\right)^{2n}$; $CI = A - P$.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">(a) Interest Compounded Annually:</span></p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r}{100}\right)^n \quad \text{and} \quad CI = A - P$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark)</span>
+            
+            <p style="margin-top: 8px;"><span class="key-point">(b) Interest Compounded Half-Yearly (Semi-Annually):</span></p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r/2}{100}\right)^{2n} = P \left(1 + \frac{r}{200}\right)^{2n} \quad \text{and} \quad CI = A - P$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark)</span>
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Compound interest on $\text{₹ } 5,000$ for $2$ years at $10\%$ per annum compounded annually.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Amount $A = \text{₹ } 6,050$, Compound Interest $CI = \text{₹ } 1,050$.
+        </div>
+        <div class="explanation">
+            <div class="step-box">
+                <p>Given: Principal ($P$) = $\text{₹ } 5,000$, Rate ($r$) = $10\%$ p.a., Time ($n$) = $2$ years.</p>
+                <div class="math-scroll">
+                    $$A = P \left(1 + \frac{r}{100}\right)^n = 5000 \left(1 + \frac{10}{100}\right)^2 = 5000 \left(\frac{11}{10}\right)^2$$
+                    $$A = 5000 \times \frac{121}{100} = 50 \times 121 = \text{₹ } 6,050$$
+                </div>
+                <span style="color: #2563eb;">(1 Mark for Amount calculation)</span>
+                <div class="math-scroll" style="margin-top: 6px;">
+                    $$CI = A - P = 6050 - 5000 = \mathbf{\text{₹ } 1,050}$$
+                </div>
+                <span style="color: #2563eb;">(1 Mark for CI calculation)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Difference between $SI$ and $CI$ on $\text{₹ } 8,000$ for $1$ year at $5\%$ p.a. compounded half-yearly.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Difference = $CI - SI = 405 - 400 = \text{₹ } 5$.
+        </div>
+        <div class="explanation">
+            <div class="step-box">
+                <p><strong>1. Simple Interest ($SI$):</strong></p>
+                <div class="math-scroll">
+                    $$SI = \frac{P \times r \times t}{100} = \frac{8000 \times 5 \times 1}{100} = \text{₹ } 400$$
+                </div>
+                <p><strong>2. Compound Interest ($CI$) Compounded Half-yearly:</strong></p>
+                <p>For $1$ year, number of half-years ($2n$) = $2$. Adjusted rate ($r'$) = $\frac{5}{2} = 2.5\%$.</p>
+                <div class="math-scroll">
+                    $$A = 8000 \left(1 + \frac{2.5}{100}\right)^2 = 8000 \left(\frac{41}{40}\right)^2 = 8000 \times \frac{1681}{1600} = 5 \times 1681 = \text{₹ } 8,405$$
+                    $$CI = A - P = 8405 - 8000 = \text{₹ } 405$$
+                </div>
+                <p><strong>3. Difference:</strong></p>
+                <div class="math-scroll">
+                    $$\text{Difference} = CI - SI = 405 - 400 = \mathbf{\text{₹ } 5}$$
+                </div>
+                <span style="color: #2563eb;">(1 Mark for SI & CI computation + 1 Mark for difference)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Compound Amount on $\text{₹ } 10,000$ at $10\%$ p.a. for $1$ year compounded semi-annually.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Final Amount $A = \text{₹ } 11,025$.
+        </div>
+        <div class="explanation">
+            <p>Given: $P = \text{₹ } 10,000$, Rate per half-year = $\frac{10}{2}\% = 5\%$, Time period ($2n$) = $2$ half-years.</p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r}{200}\right)^{2n} = 10000 \left(1 + \frac{5}{100}\right)^2$$
+                $$A = 10000 \times \left(\frac{21}{20}\right)^2 = 10000 \times \frac{441}{400} = 25 \times 441 = \mathbf{\text{₹ } 11,025}$$
+            </div>
+            <span style="color: #2563eb;">(2 Marks)</span>
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Depreciated value of a machine costing $\text{₹ } 25,000$ at $10\%$ p.a. after $1$ year.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Value after 1 year = $\text{₹ } 22,500$.
+        </div>
+        <div class="explanation">
+            <p>Depreciation Formula: $V = P \left(1 - \frac{r}{100}\right)^n$</p>
+            <div class="math-scroll">
+                $$V = 25000 \left(1 - \frac{10}{100}\right)^1 = 25000 \times \frac{9}{10} = \mathbf{\text{₹ } 22,500}$$
+            </div>
+            <span style="color: #2563eb;">(2 Marks)</span>
+        </div>
+    </div>
+
+    <!-- SECTION B SOLUTIONS -->
+    <div class="section-header">SECTION B — SOLUTIONS & MARKING SCHEME (15 MARKS)</div>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Find principal if difference between $CI$ and $SI$ for $2$ years at $10\%$ p.a. is $\text{₹ } 150$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Principal ($P$) = $\text{₹ } 15,000$.
+        </div>
+        <div class="explanation">
+            <div class="step-box">
+                <p>Let the principal sum be $P$.</p>
+                <p><strong>Simple Interest ($SI$):</strong></p>
+                <div class="math-scroll">
+                    $$SI = \frac{P \times 10 \times 2}{100} = \frac{20P}{100} = 0.20 P$$
+                </div>
+                <p><strong>Compound Interest ($CI$):</strong></p>
+                <div class="math-scroll">
+                    $$A = P \left(1 + \frac{10}{100}\right)^2 = P \left(\frac{11}{10}\right)^2 = 1.21 P$$
+                    $$CI = A - P = 1.21 P - P = 0.21 P$$
+                </div>
+                <p><strong>Given Difference:</strong> $CI - SI = \text{₹ } 150$</p>
+                <div class="math-scroll">
+                    $$0.21 P - 0.20 P = 150 \implies 0.01 P = 150$$
+                    $$P = \frac{150}{0.01} = \mathbf{\text{₹ } 15,000}$$
+                </div>
+                <span style="color: #2563eb;">(1 Mark for SI & CI expressions + 1 Mark for equation setup + 1 Mark for final value)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. $CI$ on $\text{₹ } 12,500$ at $12\%$ p.a. for $1.5$ years compounded half-yearly.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Amount $A = \text{₹ } 14,887.70$, $CI = \text{₹ } 2,387.70$.
+        </div>
+        <div class="explanation">
+            <p>Given: $P = \text{₹ } 12,500$, Annual Rate ($r$) = $12\% \implies$ Half-yearly rate ($r'$) = $6\%$.</p>
+            <p>Time period ($n$) = $1.5$ years $\implies$ Number of half-years ($2n$) = $3$.</p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r'}{100}\right)^{2n} = 12500 \left(1 + \frac{6}{100}\right)^3 = 12500 \left(\frac{53}{50}\right)^3$$
+                $$A = 12500 \times \frac{1,48,877}{1,25,000} = \frac{1,48,877}{10} = \mathbf{\text{₹ } 14,887.70}$$
+            </div>
+            <span style="color: #2563eb;">(2 Marks for Amount)</span>
+            <div class="math-scroll" style="margin-top: 6px;">
+                $$CI = A - P = 14887.70 - 12500 = \mathbf{\text{₹ } 2,387.70}$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark for CI)</span>
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Amount and $CI$ on $\text{₹ } 20,000$ with successive annual interest rates of $8\%$ and $10\%$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Amount = $\text{₹ } 23,760$, $CI = \text{₹ } 3,760$.
+        </div>
+        <div class="explanation">
+            <p>For successive annual rates $r_1 = 8\%$ and $r_2 = 10\%$, formula for Amount:</p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r_1}{100}\right) \left(1 + \frac{r_2}{100}\right)$$
+                $$A = 20000 \left(1 + \frac{8}{100}\right) \left(1 + \frac{10}{100}\right) = 20000 \times \frac{108}{100} \times \frac{110}{100}$$
+                $$A = 20000 \times 1.08 \times 1.10 = \mathbf{\text{₹ } 23,760}$$
+            </div>
+            <span style="color: #2563eb;">(2 Marks for Amount)</span>
+            <div class="math-scroll" style="margin-top: 6px;">
+                $$CI = A - P = 23760 - 20000 = \mathbf{\text{₹ } 3,760}$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark for CI)</span>
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Value of a motorcycle costing $\text{₹ } 80,000$ after $2$ years at $10\%$ p.a. depreciation.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Depreciated Value = $\text{₹ } 64,800$.
+        </div>
+        <div class="explanation">
+            <p>Given: Initial Cost ($P$) = $\text{₹ } 80,000$, Depreciation rate ($r$) = $10\%$ p.a., Time ($n$) = $2$ years.</p>
+            <div class="math-scroll">
+                $$V = P \left(1 - \frac{r}{100}\right)^n = 80000 \left(1 - \frac{10}{100}\right)^2$$
+                $$V = 80000 \times \left(\frac{9}{10}\right)^2 = 80000 \times \frac{81}{100} = 800 \times 81 = \mathbf{\text{₹ } 64,800}$$
+            </div>
+            <span style="color: #2563eb;">(3 Marks: 1 mark formula + 2 marks calculation)</span>
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Population of town in 2022 is $1,76,400$ growing at $5\%$ p.a. Find (a) Population in 2024, (b) Population in 2020.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: (a) Population in 2024 = $1,94,481$ | (b) Population in 2020 = $1,60,000$.
+        </div>
+        <div class="explanation">
+            <p><strong>(a) Population in 2024 ($2$ years later):</strong></p>
+            <div class="math-scroll">
+                $$P_{2024} = P_{2022} \left(1 + \frac{5}{100}\right)^2 = 176400 \times \left(\frac{21}{20}\right)^2$$
+                $$P_{2024} = 176400 \times \frac{441}{400} = 441 \times 441 = \mathbf{1,94,481}$$
+            </div>
+            <span style="color: #2563eb;">(1.5 Marks)</span>
+
+            <p style="margin-top: 10px;"><strong>(b) Population in 2020 ($2$ years ago):</strong></p>
+            <div class="math-scroll">
+                $$P_{2022} = P_{2020} \left(1 + \frac{5}{100}\right)^2 \implies 176400 = P_{2020} \times \frac{441}{400}$$
+                $$P_{2020} = 176400 \times \frac{400}{441} = 400 \times 400 = \mathbf{1,60,000}$$
+            </div>
+            <span style="color: #2563eb;">(1.5 Marks)</span>
+        </div>
+    </div>
+
+    <!-- SECTION C SOLUTIONS -->
+    <div class="section-header">SECTION C — SOLUTIONS & MARKING SCHEME (15 MARKS)</div>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) Rate percent if $\text{₹ } 4,000$ becomes $\text{₹ } 4,840$ in $2$ years. (b) Time for $\text{₹ } 8,000$ to become $\text{₹ } 9,261$ at $5\%$ p.a.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: (a) Rate ($r$) = $10\%$ p.a. | (b) Time ($n$) = $3$ years.
+        </div>
+        <div class="explanation">
+            <p><strong>Part (a): Find Rate Percent ($r$)</strong></p>
+            <p>Given: $P = 4000$, $A = 4840$, $n = 2$ years.</p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r}{100}\right)^2 \implies 4840 = 4000 \left(1 + \frac{r}{100}\right)^2$$
+                $$\frac{4840}{4000} = \left(1 + \frac{r}{100}\right)^2 \implies \frac{121}{100} = \left(1 + \frac{r}{100}\right)^2$$
+                $$\left(\frac{11}{10}\right)^2 = \left(1 + \frac{r}{100}\right)^2 \implies 1 + \frac{r}{100} = \frac{11}{10}$$
+                $$\frac{r}{100} = \frac{11}{10} - 1 = \frac{1}{10} \implies r = \mathbf{10\% \text{ p.a.}}$$
+            </div>
+            <span style="color: #2563eb;">(2.5 Marks)</span>
+
+            <p style="margin-top: 12px;"><strong>Part (b): Find Time Period ($n$)</strong></p>
+            <p>Given: $P = 8000$, $A = 9261$, $r = 5\%$.</p>
+            <div class="math-scroll">
+                $$A = P \left(1 + \frac{r}{100}\right)^n \implies 9261 = 8000 \left(1 + \frac{5}{100}\right)^n$$
+                $$\frac{9261}{8000} = \left(\frac{21}{20}\right)^n \implies \left(\frac{21}{20}\right)^3 = \left(\frac{21}{20}\right)^n$$
+                $$\text{Comparing exponents: } n = \mathbf{3 \text{ years}}$$
+            </div>
+            <span style="color: #2563eb;">(2.5 Marks)</span>
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Compare half-yearly vs annual compounding for $\text{₹ } 16,000$ at $10\%$ p.a. for $1.5$ years.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: (a) Half-Yearly $CI = \text{₹ } 2,522$ | (b) Annual $CI = \text{₹ } 2,480$ | (c) Extra Gain = $\text{₹ } 42$.
+        </div>
+        <div class="explanation">
+            <p>Given: Principal ($P$) = $\text{₹ } 16,000$, Rate ($r$) = $10\%$ p.a., Time = $1 \frac{1}{2}$ years.</p>
+            
+            <p><strong>(a) Compounded Half-Yearly:</strong></p>
+            <p>Rate per half-year ($r'$) = $5\%$, Number of half-years ($2n$) = $3$.</p>
+            <div class="math-scroll">
+                $$A_1 = 16000 \left(1 + \frac{5}{100}\right)^3 = 16000 \times \left(\frac{21}{20}\right)^3 = 16000 \times \frac{9261}{8000} = 2 \times 9261 = \text{₹ } 18,522$$
+                $$CI_1 = 18522 - 16000 = \mathbf{\text{₹ } 2,522}$$
+            </div>
+            <span style="color: #2563eb;">(2.5 Marks)</span>
+
+            <p style="margin-top: 10px;"><strong>(b) Compounded Annually for $1 \frac{1}{2}$ years:</strong></p>
+            <p>Amount for $1^{\text{st}}$ full year: $A_1' = 16000 \left(1 + \frac{10}{100}\right) = \text{₹ } 17,600$.</p>
+            <p>Interest for remaining $\frac{1}{2}$ year on $\text{₹ } 17,600$: $SI = \frac{17600 \times 10 \times 1/2}{100} = \text{₹ } 880$.</p>
+            <p>Total Amount ($A_2$) = $17600 + 880 = \text{₹ } 18,480$.</p>
+            <div class="math-scroll">
+                $$CI_2 = 18480 - 16000 = \mathbf{\text{₹ } 2,480}$$
+            </div>
+            <span style="color: #2563eb;">(2 Marks)</span>
+
+            <p style="margin-top: 10px;"><strong>(c) Extra Gain:</strong></p>
+            <div class="math-scroll">
+                $$\text{Extra Gain} = CI_1 - CI_2 = 2522 - 2480 = \mathbf{\text{₹ } 42}$$
+            </div>
+            <span style="color: #2563eb;">(0.5 Mark)</span>
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. A sum amounts to $\text{₹ } 12,100$ in $2$ years and $\text{₹ } 13,310$ in $3$ years. Find rate of interest and principal sum.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: (a) Rate ($r$) = $10\%$ p.a. | (b) Principal Sum ($P$) = $\text{₹ } 10,000$.
+        </div>
+        <div class="explanation">
+            <p><strong>(a) Find Rate of Interest ($r\%$):</strong></p>
+            <p>Amount after 2 years ($A_2$) = $\text{₹ } 12,100$</p>
+            <p>Amount after 3 years ($A_3$) = $\text{₹ } 13,310$</p>
+            <p>The difference in amounts is the interest earned on $\text{₹ } 12,100$ for $1$ year.</p>
+            <div class="math-scroll">
+                $$\text{Interest for } 3^{\text{rd}} \text{ year} = 13310 - 12100 = \text{₹ } 1,210$$
+                $$r = \frac{\text{Interest} \times 100}{\text{Principal for year } 3 \times 1} = \frac{1210 \times 100}{12100 \times 1} = \mathbf{10\% \text{ p.a.}}$$
+            </div>
+            <span style="color: #2563eb;">(2.5 Marks)</span>
+
+            <p style="margin-top: 12px;"><strong>(b) Find Original Principal ($P$):</strong></p>
+            <p>Using $A_2 = 12,100$, $r = 10\%$, and $n = 2$ years:</p>
+            <div class="math-scroll">
+                $$12100 = P \left(1 + \frac{10}{100}\right)^2 \implies 12100 = P \left(\frac{11}{10}\right)^2$$
+                $$12100 = P \times \frac{121}{100} \implies P = \frac{12100 \times 100}{121} = \mathbf{\text{₹ } 10,000}$$
+            </div>
+            <span style="color: #2563eb;">(2.5 Marks)</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        *** END OF SOLUTION PAPER ***<br>
+        Verified by Academic Assessment Directorate | Vardaan Learning Institute
+    </div>
+</body>
+</html>

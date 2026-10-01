@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 ICSE Chemistry - Minor Test 20 Detailed Solutions</title>
+    <!-- MathJax Configuration for rendering math and chemistry scripts -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --success-green: #2e7d32;
+            --success-bg: #e8f5e9;
+            --text-dark: #111111;
+            --bg-light: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: var(--bg-light); 
+            position: relative; 
+        }
+
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 10px; 
+            background-color: #fffdf5;
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #1a1a1a;
+        }
+
+        .test-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: var(--primary-dark);
+            text-transform: uppercase;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 5px 10px;
+            background-color: #fff;
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            font-size: 13pt; 
+            background-color: #f4f4f5;
+            padding: 8px 10px;
+            border-left: 6px solid var(--primary-yellow);
+            border-right: 6px solid var(--primary-yellow);
+            text-transform: uppercase;
+        }
+
+        /* Solution Block Format */
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+            page-break-inside: avoid;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 11pt;
+            background-color: #fafafa;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-dark);
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            color: #1a1a1a;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .correct-answer-box { 
+            color: var(--success-green); 
+            background-color: var(--success-bg); 
+            padding: 8px 12px; 
+            margin: 8px 0 12px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            border-left: 4px solid var(--success-green);
+            font-size: 10.5pt;
+        }
+
+        .explanation {
+            margin-left: 5px;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #27272a;
+        }
+
+        .explanation p {
+            margin: 6px 0;
+        }
+
+        .key-point {
+            font-weight: bold;
+            color: #18181b;
+        }
+
+        .step-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin: 8px 0;
+        }
+
+        /* MathJax Overflow handling on Mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+
+        /* Table formatting */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10pt;
+        }
+
+        th, td {
+            border: 1px solid #a1a1aa;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f5;
+            font-weight: bold;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .test-title {
+                font-size: 12pt;
+            }
+
+            .meta-info {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+
+            .q-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .marks-badge {
+                align-self: flex-end;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-title">DETAILED SOLUTIONS & MARKING SCHEME: MINOR TEST 20</div>
+        <div class="meta-info">
+            <span>Class: 8 ICSE</span>
+            <span>Subject: Chemistry</span>
+            <span>Topic: Atomic Structure & Reactions</span>
+            <span>Max Marks: 40</span>
+        </div>
+    </div>
+
+    <!-- SECTION A SOLUTIONS -->
+    <div class="section-header">SECTION A — SOLUTIONS & MARKING SCHEME (10 MARKS)</div>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define Valency. State the variable valency exhibited by Iron in (a) $\text{FeCl}_2$ and (b) $\text{FeCl}_3$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Valency = Combining capacity of an atom. Valency of Fe in $\text{FeCl}_2$ = 2 (Ferrous); in $\text{FeCl}_3$ = 3 (Ferric).
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">1. Definition of Valency:</span> Valency is defined as the combining capacity of an element with other atoms to form a chemical bond. It corresponds to the number of electrons lost, gained, or shared by an atom to achieve a stable octet or duplet configuration. <span style="color: #2563eb;">(1 Mark)</span></p>
+            <p><span class="key-point">2. Variable Valency of Iron ($\text{Fe}$):</span></p>
+            <ul>
+                <li>In $\text{FeCl}_2$ (Iron(II) chloride / Ferrous chloride), Iron exhibits a valency of <strong>2</strong> ($\text{Fe}^{2+}$). <span style="color: #2563eb;">(0.5 Mark)</span></li>
+                <li>In $\text{FeCl}_3$ (Iron(III) chloride / Ferric chloride), Iron exhibits a valency of <strong>3</strong> ($\text{Fe}^{3+}$). <span style="color: #2563eb;">(0.5 Mark)</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Aluminium atom ($Z = 13, A = 27$). Find protons, electrons, neutrons and give electronic configuration.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Protons = 13, Electrons = 13, Neutrons = 14. Electronic Configuration = 2, 8, 3.
+        </div>
+        <div class="explanation">
+            <div class="step-box">
+                <p><span class="key-point">Step-by-step Calculation:</span></p>
+                <p>Given: Atomic Number ($Z$) = 13, Mass Number ($A$) = 27.</p>
+                <ul>
+                    <li><strong>Number of Protons ($p$)</strong> = Atomic Number ($Z$) = <strong>13</strong> <span style="color: #2563eb;">(0.5 Mark)</span></li>
+                    <li><strong>Number of Electrons ($e$)</strong> = Number of Protons (for a neutral atom) = <strong>13</strong> <span style="color: #2563eb;">(0.5 Mark)</span></li>
+                    <li><strong>Number of Neutrons ($n$)</strong> = Mass Number ($A$) - Atomic Number ($Z$) = $27 - 13 = \mathbf{14}$ <span style="color: #2563eb;">(0.5 Mark)</span></li>
+                </ul>
+                <p><span class="key-point">Electronic Configuration:</span> With 13 electrons distributed in shells $K, L, M$:</p>
+                <div class="math-scroll">
+                    $$\text{Configuration} = K: 2,\; L: 8,\; M: 3 \quad \text{or simply } (2, 8, 3)$$
+                </div>
+                <span style="color: #2563eb;">(0.5 Mark)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Differentiate between a Chemical Symbol and a Radical with examples.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Correct Answer: Symbol represents a single element; Radical is a group of atoms carrying an overall net charge.
+        </div>
+        <div class="explanation">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Chemical Symbol</th>
+                            <th>Radical</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Definition</strong></td>
+                            <td>A short abbreviation representing one atom of a specific chemical element.</td>
+                            <td>An atom or a group of bonded atoms that carries a positive or negative charge and acts as a single unit during chemical reactions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example</strong></td>
+                            <td>Sodium ($\text{Na}$), Hydrogen ($\text{H}$), Chlorine ($\text{Cl}$)</td>
+                            <td>Ammonium ion ($\text{NH}_4^+$), Carbonate ion ($\text{CO}_3^{2-}$), Sulphate ion ($\text{SO}_4^{2-}$)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span style="color: #2563eb;">(1 Mark for key differences + 1 Mark for valid examples)</span></p>
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Thermal decomposition of Calcium Carbonate ($\text{CaCO}_3$). Balanced equation & gaseous product name.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Balanced Equation: $\text{CaCO}_3\,(s) \xrightarrow{\Delta} \text{CaO}\,(s) + \text{CO}_2\,(g)\uparrow$. Gas: Carbon Dioxide.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">Balanced Chemical Equation:</span></p>
+            <div class="math-scroll">
+                $$\text{CaCO}_3\,(s) \xrightarrow{\text{Heat (\Delta)}} \text{CaO}\,(s) + \text{CO}_2\,(g)\uparrow$$
+            </div>
+            <p><span style="color: #2563eb;">(1.5 Marks for balanced equation with state symbols)</span></p>
+            <p><span class="key-point">Gaseous Product Formed:</span> <strong>Carbon Dioxide gas ($\text{CO}_2$)</strong>, which turns lime water milky. <span style="color: #2563eb;">(0.5 Mark)</span></p>
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Classify the given chemical reactions.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ (a) Single Displacement Reaction | (b) Direct Combination (Synthesis) Reaction.
+        </div>
+        <div class="explanation">
+            <p>(a) $\text{Zn}\,(s) + \text{CuSO}_4\,(aq) \rightarrow \text{ZnSO}_4\,(aq) + \text{Cu}\,(s)$</p>
+            <p><strong>Type:</strong> <strong>Single Displacement Reaction</strong> (Zinc being more reactive than Copper displaces Copper from Copper sulphate solution). <span style="color: #2563eb;">(1 Mark)</span></p>
+            
+            <p>(b) $2\text{Mg}\,(s) + \text{O}_2\,(g) \xrightarrow{\Delta} 2\text{MgO}\,(s)$</p>
+            <p><strong>Type:</strong> <strong>Combination Reaction / Synthesis Reaction</strong> (Two reactants combine to form a single product, Magnesium Oxide). <span style="color: #2563eb;">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <!-- SECTION B SOLUTIONS -->
+    <div class="section-header">SECTION B — SOLUTIONS & MARKING SCHEME (15 MARKS)</div>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Criss-Cross Method for (a) Aluminium Sulphate, (b) Calcium Hydroxide, (c) Ammonium Phosphate.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Formulas: (a) $\text{Al}_2(\text{SO}_4)_3$, (b) $\text{Ca}(\text{OH})_2$, (c) $(\text{NH}_4)_3\text{PO}_4$.
+        </div>
+        <div class="explanation">
+            <div class="step-box">
+                <p><strong>(a) Aluminium Sulphate:</strong></p>
+                <ul>
+                    <li>Symbols/Radicals: $\text{Al}$ and $\text{SO}_4$</li>
+                    <li>Valencies: $\text{Al} = +3$, $\text{SO}_4 = -2$</li>
+                    <li>Criss-cross valencies: $\text{Al}_2(\text{SO}_4)_3$</li>
+                </ul>
+                <p><strong>Chemical Formula:</strong> $\mathbf{\text{Al}_2(\text{SO}_4)_3}$ <span style="color: #2563eb;">(1 Mark)</span></p>
+
+                <p><strong>(b) Calcium Hydroxide:</strong></p>
+                <ul>
+                    <li>Symbols/Radicals: $\text{Ca}$ and $\text{OH}$</li>
+                    <li>Valencies: $\text{Ca} = +2$, $\text{OH} = -1$</li>
+                    <li>Criss-cross valencies: $\text{Ca}_1(\text{OH})_2$</li>
+                </ul>
+                <p><strong>Chemical Formula:</strong> $\mathbf{\text{Ca}(\text{OH})_2}$ <span style="color: #2563eb;">(1 Mark)</span></p>
+
+                <p><strong>(c) Ammonium Phosphate:</strong></p>
+                <ul>
+                    <li>Radicals: $\text{NH}_4$ and $\text{PO}_4$</li>
+                    <li>Valencies: $\text{NH}_4 = +1$, $\text{PO}_4 = -3$</li>
+                    <li>Criss-cross valencies: $(\text{NH}_4)_3(\text{PO}_4)_1$</li>
+                </ul>
+                <p><strong>Chemical Formula:</strong> $\mathbf{(\text{NH}_4)_3\text{PO}_4}$ <span style="color: #2563eb;">(1 Mark)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. State three postulates of Dalton's Atomic Theory and one modern modification.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Key Points: Matter made of tiny indivisible atoms; Atoms of same element identical; Chemical combination in whole numbers.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">Three Main Postulates of Dalton's Atomic Theory:</span></p>
+            <ol>
+                <li>Matter is made up of extremely small, indivisible particles called <strong>atoms</strong>.</li>
+                <li>Atoms of a given element are identical in mass, size, and chemical properties.</li>
+                <li>Atoms combine in simple whole-number ratios to form compounds. <span style="color: #2563eb;">(2 Marks, 0.67 marks each)</span></li>
+            </ol>
+            <p><span class="key-point">One Modern Modification:</span></p>
+            <p>Dalton stated that atoms are indivisible. Modern atomic theory modified this: <em>Atoms are divisible into smaller subatomic particles—protons, neutrons, and electrons.</em> (Alternatively: Atoms of the same element can have different atomic masses, known as <strong>isotopes</strong>). <span style="color: #2563eb;">(1 Mark)</span></p>
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Balance chemical equations: (a) $\text{Fe} + \text{H}_2\text{O}$, (b) $\text{KClO}_3$, (c) $\text{NaOH} + \text{H}_2\text{SO}_4$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Balanced Equations provided with step-by-step coefficient adjustments.
+        </div>
+        <div class="explanation">
+            <p><strong>(a) Iron with Steam:</strong></p>
+            <div class="math-scroll">
+                $$3\text{Fe} + 4\text{H}_2\text{O} \rightarrow \text{Fe}_3\text{O}_4 + 4\text{H}_2$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark)</span>
+
+            <p><strong>(b) Thermal Decomposition of Potassium Chlorate:</strong></p>
+            <div class="math-scroll">
+                $$2\text{KClO}_3 \xrightarrow{\Delta} 2\text{KCl} + 3\text{O}_2$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark)</span>
+
+            <p><strong>(c) Neutralization of Sodium Hydroxide with Sulphuric Acid:</strong></p>
+            <div class="math-scroll">
+                $$2\text{NaOH} + \text{H}_2\text{SO}_4 \rightarrow \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark)</span>
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Visual observations and balanced equations for specified reactions.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Detailed observations & equations for Zn+HCl, BaCl2+Na2SO4, CuCO3 heating.
+        </div>
+        <div class="explanation">
+            <p><strong>(a) $\text{Zn} + \text{dil. HCl}$:</strong></p>
+            <ul>
+                <li><strong>Observation:</strong> Rapid effervescence/bubbles of a colorless, odorless gas (Hydrogen) that burns with a pop sound.</li>
+                <li><strong>Equation:</strong> $\text{Zn}\,(s) + 2\text{HCl}\,(aq) \rightarrow \text{ZnCl}_2\,(aq) + \text{H}_2\,(g)\uparrow$</li>
+            </ul>
+            <span style="color: #2563eb;">(1 Mark: 0.5 for equation + 0.5 for observation)</span>
+
+            <p><strong>(b) $\text{BaCl}_2 + \text{Na}_2\text{SO}_4$:</strong></p>
+            <ul>
+                <li><strong>Observation:</strong> Formation of an insoluble <strong>white precipitate</strong> of Barium Sulphate ($\text{BaSO}_4$).</li>
+                <li><strong>Equation:</strong> $\text{BaCl}_2\,(aq) + \text{Na}_2\text{SO}_4\,(aq) \rightarrow \text{BaSO}_4\,(s)\downarrow + 2\text{NaCl}\,(aq)$</li>
+            </ul>
+            <span style="color: #2563eb;">(1 Mark: 0.5 for equation + 0.5 for observation)</span>
+
+            <p><strong>(c) Strong Heating of Copper Carbonate ($\text{CuCO}_3$):</strong></p>
+            <ul>
+                <li><strong>Observation:</strong> Green powder turns into a <strong>black residue</strong> (Copper(II) Oxide) with evolution of a gas that turns lime water milky.</li>
+                <li><strong>Equation:</strong> $\text{CuCO}_3\,(s) \xrightarrow{\Delta} \text{CuO}\,(s) + \text{CO}_2\,(g)\uparrow$</li>
+            </ul>
+            <span style="color: #2563eb;">(1 Mark: 0.5 for equation + 0.5 for observation)</span>
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Differentiate Combination and Decomposition Reactions with balanced equations.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Combination: $A + B \rightarrow AB$ (Exothermic). Decomposition: $AB \rightarrow A + B$ (Endothermic).
+        </div>
+        <div class="explanation">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Combination Reaction</th>
+                            <th>Decomposition Reaction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Reactants & Products</strong></td>
+                            <td>Two or more substances combine to form a single product.</td>
+                            <td>A single complex compound breaks down into two or more simpler substances.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Energy Change</strong></td>
+                            <td>Generally <strong>Exothermic</strong> (heat is released).</td>
+                            <td>Generally <strong>Endothermic</strong> (heat, light, or electricity is absorbed).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Balanced Equation</strong></td>
+                            <td>$\text{C}\,(s) + \text{O}_2\,(g) \rightarrow \text{CO}_2\,(g)$</td>
+                            <td>$2\text{H}_2\text{O}\,(l) \xrightarrow{\text{Electricity}} 2\text{H}_2\,(g) + \text{O}_2\,(g)$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span style="color: #2563eb;">(1 Mark per row = 3 Marks Total)</span>
+        </div>
+    </div>
+
+    <!-- SECTION C SOLUTIONS -->
+    <div class="section-header">SECTION C — SOLUTIONS & MARKING SCHEME (15 MARKS)</div>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Subatomic particles comparison table & Phosphorus ($Z=15, A=31$) shell distribution diagram description.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Table completed with Discoverer, Charge, Mass, Location + Phosphorus Bohr configuration: $K=2, L=8, M=5$.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">(a) Table of Subatomic Particles:</span></p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subatomic Particle</th>
+                            <th>Discoverer</th>
+                            <th>Relative Charge</th>
+                            <th>Relative Mass (amu)</th>
+                            <th>Location in Atom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Electron ($e^-$)</strong></td>
+                            <td>J.J. Thomson</td>
+                            <td>$-1$ (Negative)</td>
+                            <td>$\frac{1}{1837} \approx 0.00055$</td>
+                            <td>Extra-nuclear region (shells)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Proton ($p^+$)</strong></td>
+                            <td>E. Rutherford / Goldstein</td>
+                            <td>$+1$ (Positive)</td>
+                            <td>$1$ amu</td>
+                            <td>Inside the Nucleus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Neutron ($n^0$)</strong></td>
+                            <td>James Chadwick</td>
+                            <td>$0$ (Neutral)</td>
+                            <td>$1$ amu</td>
+                            <td>Inside the Nucleus</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span style="color: #2563eb;">(3 Marks: 1 Mark for each subatomic particle row)</span>
+
+            <p style="margin-top: 12px;"><span class="key-point">(b) Schematic Structure of Phosphorus ($Z = 15, A = 31$):</span></p>
+            <div class="step-box">
+                <ul>
+                    <li><strong>Protons</strong> = $15$, <strong>Neutrons</strong> = $31 - 15 = 16$. Nucleus contains $15p^+ + 16n^0$.</li>
+                    <li><strong>Electronic Configuration:</strong> $15e^-$ distributed as:
+                        <ul>
+                            <li><strong>$K$-shell:</strong> 2 electrons</li>
+                            <li><strong>$L$-shell:</strong> 8 electrons</li>
+                            <li><strong>$M$-shell:</strong> 5 electrons (Valence electrons = 5)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><em>Structure representation:</em> Nucleus at center $[15p, 16n]$, surrounded by 3 concentric circles (K shell = 2 dots, L shell = 8 dots, M shell = 5 dots).</p>
+            </div>
+            <span style="color: #2563eb;">(2 Marks: 1 mark for correct nucleus composition + 1 mark for shell diagram configuration)</span>
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Law of Conservation of Mass definition, numerical calculation, and importance of balancing equations.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Mass of $\text{CO}_2 = 10.0\,\text{g} - 5.6\,\text{g} = 4.4\,\text{g}$. Mass of Reactants = Mass of Products.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">(a) Law of Conservation of Mass:</span></p>
+            <p>The Law of Conservation of Mass states that <em>matter can neither be created nor destroyed in a chemical reaction</em>. Consequently, the total mass of reactants before a reaction is always equal to the total mass of products formed after the reaction. <span style="color: #2563eb;">(1 Mark)</span></p>
+
+            <p><span class="key-point">(b) Numerical Verification:</span></p>
+            <div class="step-box">
+                <p><strong>Reaction Equation:</strong> $\text{CaCO}_3\,(s) \xrightarrow{\Delta} \text{CaO}\,(s) + \text{CO}_2\,(g)$</p>
+                <ul>
+                    <li>Mass of Reactant ($\text{CaCO}_3$) = $10.0\,\text{g}$</li>
+                    <li>Mass of Solid Product ($\text{CaO}$) = $5.6\,\text{g}$</li>
+                    <li>Let mass of $\text{CO}_2$ produced = $x\,\text{g}$</li>
+                </ul>
+                <p>According to Law of Conservation of Mass:</p>
+                <div class="math-scroll">
+                    $$\text{Total Mass of Reactants} = \text{Total Mass of Products}$$
+                    $$10.0\,\text{g} = 5.6\,\text{g} + x$$
+                    $$x = 10.0\,\text{g} - 5.6\,\text{g} = \mathbf{4.4\,\text{g}}$$
+                </div>
+                <p><strong>Conclusion:</strong> The mass of $\text{CO}_2$ gas evolved is $4.4\,\text{g}$. Since total initial mass ($10\,\text{g}$) equals final total mass ($5.6\,\text{g} + 4.4\,\text{g} = 10\,\text{g}$), the experiment verifies the Law of Conservation of Mass. <span style="color: #2563eb;">(2 Marks)</span></p>
+            </div>
+
+            <p><span class="key-point">(c) Why Equations Must Be Balanced:</span></p>
+            <p>In a chemical reaction, atoms are neither created nor destroyed; they are simply rearranged. Therefore, the total number of atoms of each element on the reactant side (left) must equal the total number of atoms of that element on the product side (right). Balancing ensures compliance with the Law of Conservation of Mass. <span style="color: #2563eb;">(2 Marks)</span></p>
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Definitions and balanced equations for (a) Thermal Decomposition, (b) Neutralization, (c) Single Displacement.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer-box">
+            ✔ Definitions + Complete chemical equations with state symbols provided.
+        </div>
+        <div class="explanation">
+            <p><span class="key-point">(a) Thermal Decomposition Reaction:</span></p>
+            <p><strong>Definition:</strong> A decomposition reaction brought about by the absorption of heat energy, where a compound breaks down into two or more simpler substances. <span style="color: #2563eb;">(1 Mark)</span></p>
+            <div class="math-scroll">
+                $$2\text{Pb(NO}_3)_2\,(s) \xrightarrow{\Delta} 2\text{PbO}\,(s) + 4\text{NO}_2\,(g)\uparrow + \text{O}_2\,(g)\uparrow$$
+            </div>
+            <span style="color: #2563eb;">(1 Mark for balanced equation with state symbols)</span>
+
+            <p style="margin-top: 10px;"><span class="key-point">(b) Neutralization Reaction:</span></p>
+            <p><strong>Definition:</strong> A chemical reaction between an acid and a base (alkali) to form salt and water as the only products. <span style="color: #2563eb;">(0.75 Mark)</span></p>
+            <div class="math-scroll">
+                $$\text{HCl}\,(aq) + \text{NaOH}\,(aq) \rightarrow \text{NaCl}\,(aq) + \text{H}_2\text{O}\,(l)$$
+            </div>
+            <span style="color: #2563eb;">(0.75 Mark for equation)</span>
+
+            <p style="margin-top: 10px;"><span class="key-point">(c) Single Displacement Reaction:</span></p>
+            <p><strong>Definition:</strong> A reaction in which a more reactive element displaces a less reactive element from its aqueous salt solution. <span style="color: #2563eb;">(0.75 Mark)</span></p>
+            <div class="math-scroll">
+                $$\text{Fe}\,(s) + \text{CuSO}_4\,(aq) \rightarrow \text{FeSO}_4\,(aq) + \text{Cu}\,(s)$$
+            </div>
+            <span style="color: #2563eb;">(0.75 Mark for equation)</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        *** END OF SOLUTION PAPER ***<br>
+        Verified by Academic Assessment Directorate | Vardaan Learning Institute
+    </div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script>
+        MathJax = {
+            loader: {load: ['[tex]/cancel']},
+            tex: { packages: {'[+]': ['cancel']}, inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fafafa;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; background-color: var(--bg-light);
+        }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 8px; color: #333; }
+        .section-title {
+            background-color: #eee; padding: 8px; font-weight: bold; text-align: center;
+            border-radius: 4px; margin: 30px 0 20px 0; border-left: 5px solid var(--primary-yellow); border-right: 5px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); padding-bottom: 20px; margin-bottom: 20px; page-break-inside: avoid;
+        }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 15px; }
+        .q-text { flex-grow: 1; font-weight: bold; color: #333; font-style: italic; }
+        .marks-badge {
+            background-color: var(--primary-yellow); padding: 3px 10px; border-radius: 4px; 
+            font-weight: bold; font-size: 0.9em; min-width: 75px; text-align: center; flex-shrink: 0; white-space: nowrap;
+        }
+        .explanation { 
+            margin-left: 25px; background-color: #fff9e6; padding: 15px; border-radius: 5px; border-left: 4px solid #f9a825;
+        }
+        .step { margin-bottom: 8px; }
+        
+        table { border-collapse: collapse; margin-top: 10px; width: 100%; max-width: 600px; background-color: white; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f1f1f1; font-weight: bold; }
+
+        @media print { body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } }
+        @media screen and (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 0; padding: 10px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 20</div>
+        <div style="font-size: 11pt; margin-top: 8px; color: #555;">Class 6 (ICSE) | Physics (Force Around Us) | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define 'Force'. Give one example of a push and one example of a pull from your daily life.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Force:</strong> A push or a pull acting on an object is called force. It tends to change the object's state of rest or uniform motion. (1 Mark)</div>
+            <div class="step"><strong>Example of Push:</strong> Pushing a door to close it. (0.5 Mark)</div>
+            <div class="step"><strong>Example of Pull:</strong> Pulling a drawer to open it. (0.5 Mark)</div>
+            <div class="step"><em>(Accept any other valid daily life examples)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. What do you understand by a non-contact force? Give two examples of non-contact forces.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Non-contact Force:</strong> A force that can act on an object from a distance without coming into physical contact with it is called a non-contact force. (1 Mark)</div>
+            <div class="step"><strong>Examples:</strong> (1) Gravitational force, (2) Magnetic force, (3) Electrostatic force. (Any two for 1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. A rubber band stretches when it is pulled from both ends. Which effect of force is demonstrated here? State one other effect a force can have on an object.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Effect demonstrated:</strong> Force can change the shape and size of an object. (1 Mark)</div>
+            <div class="step"><strong>Other effect:</strong> Force can change the speed or direction of a moving object (or it can start/stop motion). (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Define 'Frictional force'. Does this force oppose or support the motion of a moving object?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Frictional force:</strong> The force that acts between two surfaces in contact and opposes the relative motion of the objects is called frictional force (or friction). (1 Mark)</div>
+            <div class="step">It always <strong>opposes</strong> the motion of a moving object. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. What is electrostatic force? Give a common everyday activity that demonstrates this force.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Electrostatic force:</strong> The force exerted by a charged body on another charged or uncharged body is called electrostatic force. (1 Mark)</div>
+            <div class="step"><strong>Example:</strong> Rubbing a plastic scale on dry hair makes the scale electrically charged, which then attracts tiny pieces of paper. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Differentiate between contact and non-contact forces. Support your answer with one example of each.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contact Force</th>
+                            <th>Non-Contact Force</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Forces that act only when two bodies are in physical contact with each other. (1 Mark)</td>
+                            <td>Forces that act between two bodies without any physical contact between them. (1 Mark)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example:</strong> Muscular force, Frictional force. (0.5 Mark)</td>
+                            <td><strong>Example:</strong> Gravitational force, Magnetic force. (0.5 Mark)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Name the specific type of force acting in the following cases: (i) A ripe apple falling from a tree. (ii) A plastic comb attracting bits of paper. (iii) A horse pulling a cart.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(i)</strong> Gravitational Force (force of gravity). (1 Mark)</div>
+            <div class="step"><strong>(ii)</strong> Electrostatic Force. (1 Mark)</div>
+            <div class="step"><strong>(iii)</strong> Muscular Force (also accept contact force/pull). (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Why do we tend to slip easily when we walk on a smooth, wet floor? Explain this phenomenon in terms of force.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">We are able to walk on the ground safely due to the <strong>frictional force</strong> between our shoes and the ground, which gives us a proper grip. (1 Mark)</div>
+            <div class="step">When a floor is smooth and wet, the layer of water acts as a lubricant and severely <strong>reduces the friction</strong> between our feet and the floor. (1 Mark)</div>
+            <div class="step">Due to this lack of sufficient opposing frictional force, our feet fail to grip the floor, causing us to slip. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. List any three major effects a force can produce on a body. Give one practical example for each effect mentioned.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>1. Force can make a stationary object move:</strong> Kicking a resting football makes it move. (1 Mark)</div>
+            <div class="step"><strong>2. Force can change the direction of a moving object:</strong> A batsman hitting a cricket ball changes its direction of motion. (1 Mark)</div>
+            <div class="step"><strong>3. Force can change the shape and size of an object:</strong> Squeezing a toothpaste tube or stretching a rubber band. (1 Mark)</div>
+            <div class="step"><em>(Accept other valid effects like stopping a moving body or changing speed)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. A bar magnet is brought close to a mixture containing iron nails and wooden toothpicks. What will you observe? Which specific force is responsible for this observation?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Observation:</strong> The iron nails will quickly get attracted and stick to the ends (poles) of the bar magnet, while the wooden toothpicks will remain unaffected and stay behind. (2 Marks)</div>
+            <div class="step"><strong>Force responsible:</strong> Magnetic Force. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) What is meant by 'Muscular Force'? Provide two instances. (b) Explain why a football rolling gradually slows down and halts. Name the force and state its type.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Muscular Force:</strong> The force resulting from the action of muscles in humans or animals is called muscular force. (1 Mark)<br>
+            <strong>Instances:</strong> Lifting a school bag, a bullock pulling a cart. (1 Mark)</div>
+            <div class="step"><strong>(b) Slowing of football:</strong> When a football rolls on the ground, the surface of the ground rubs against the surface of the ball. This rubbing creates a force that acts in the direction opposite to the motion of the ball. (1.5 Marks)</div>
+            <div class="step">This opposing force is called <strong>Frictional Force</strong>. (1 Mark)</div>
+            <div class="step">Since friction occurs only when the ball is touching the ground, it is a <strong>Contact Force</strong>. (0.5 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Explain the concept of gravitational force in detail. How is gravitational force different from magnetic force? Provide examples.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Gravitational Force:</strong> Every object in the universe pulls every other object towards itself. This force of attraction is called gravitational force. In our daily lives, the Earth pulls all objects towards its center with a massive gravitational force, called gravity. (2 Marks)</div>
+            <div class="step"><strong>Differences:</strong><br>
+                1. <em>Attraction/Repulsion:</em> Gravitational force is <em>always</em> an attractive force. Magnetic force can be both attractive (unlike poles) and repulsive (like poles). (1.5 Marks) <br>
+                2. <em>Material Dependency:</em> Gravitational force acts between <em>all</em> objects having mass. Magnetic force acts only between magnets or specific magnetic materials (like iron, nickel, cobalt). (1.5 Marks)
+            </div>
+            <div class="step"><strong>Examples:</strong> A leaf falling from a tree (Gravity). A magnet picking up iron pins (Magnetic).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) "Force can change the state of motion and shape." Justify with examples. (b) Classify forces as Contact/Non-Contact: (i) Kicking a ball (ii) Leaves falling (iii) Magnets repelling.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Changing state of motion:</strong> A goalkeeper catching a fast-moving football applies force to bring it to a state of rest. (1 Mark)<br>
+            <strong>Changing shape:</strong> A potter applies force with his hands to change a lump of wet clay into a beautifully shaped pot. (1 Mark)</div>
+            <div class="step"><strong>(b) Classification:</strong></div>
+            <div class="step">(i) Kicking a football — <strong>Contact Force</strong> (muscular interaction). (1 Mark)</div>
+            <div class="step">(ii) Leaves falling from a branch — <strong>Non-Contact Force</strong> (gravity pulls from a distance). (1 Mark)</div>
+            <div class="step">(iii) Two magnets repelling each other — <strong>Non-Contact Force</strong> (magnetic force acts across space). (1 Mark)</div>
+        </div>
+    </div>
+
+</body>
+</html>

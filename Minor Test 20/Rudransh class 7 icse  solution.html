@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 1,
+                minScale: 0.8
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fafafa;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 600px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: var(--bg-light);
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            color: #333;
+        }
+        .section-title {
+            background-color: #eee;
+            padding: 8px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 4px;
+            margin: 30px 0 20px 0;
+            border-left: 5px solid var(--primary-yellow);
+            border-right: 5px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 20px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 15px;
+        }
+        .q-text {
+            flex-grow: 1;
+            font-weight: bold;
+            color: #333;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow); 
+            padding: 3px 10px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 0.9em; 
+            min-width: 75px; 
+            text-align: center;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .explanation { 
+            margin-left: 25px; 
+            background-color: #fff9e6;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #f9a825;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+        .final-answer {
+            color: #2e7d32; 
+            font-weight: bold; 
+            margin-top: 10px;
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } 
+        }
+        @media screen and (max-width: 600px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 0; padding: 10px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 20</div>
+        <div style="font-size: 11pt; margin-top: 8px; color: #555;">Class 7 (ICSE) | Mathematics | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <!-- Q1 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Simplify: $(2^3 \times 2^4) \div 2^5$</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Apply the product law of exponents ($a^m \times a^n = a^{m+n}$) to the numerator.</div>
+            <div class="math-scroll">$(2^3 \times 2^4) = 2^{3+4} = 2^7$</div>
+            <div class="step"><strong>Step 2:</strong> Apply the quotient law of exponents ($a^m \div a^n = a^{m-n}$).</div>
+            <div class="math-scroll">$2^7 \div 2^5 = 2^{7-5} = 2^2$</div>
+            <div class="final-answer">Final Answer: $2^2$ (or $4$)</div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Convert $35\%$ into a fraction in simplest form, and into a decimal.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Fraction Form:</strong> To convert a percentage to a fraction, divide by $100$.</div>
+            <div class="math-scroll">$35\% = \frac{35}{100}$</div>
+            <div class="step">Divide numerator and denominator by $5$: $\frac{35 \div 5}{100 \div 5} = \frac{7}{20}$</div>
+            <div class="step"><strong>Decimal Form:</strong> $35\% = \frac{35}{100} = 0.35$</div>
+            <div class="final-answer">Final Answer: Fraction = $\frac{7}{20}$, Decimal = $0.35$</div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Add: $3x - 4y + 2z$ and $2x + 5y - z$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Write the expressions together and group the like terms:</div>
+            <div class="math-scroll">$(3x - 4y + 2z) + (2x + 5y - z)$</div>
+            <div class="math-scroll">$= (3x + 2x) + (-4y + 5y) + (2z - z)$</div>
+            <div class="math-scroll">$= 5x + y + z$</div>
+            <div class="final-answer">Final Answer: $5x + y + z$</div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. In $\triangle ABC$, $\angle A = 50^\circ$, $\angle B = 70^\circ$. Find $\angle C$. Name the triangle based on its angles.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">By the Angle Sum Property of a triangle, the sum of interior angles is $180^\circ$.</div>
+            <div class="math-scroll">$\angle A + \angle B + \angle C = 180^\circ$</div>
+            <div class="math-scroll">$50^\circ + 70^\circ + \angle C = 180^\circ$</div>
+            <div class="math-scroll">$120^\circ + \angle C = 180^\circ \implies \angle C = 180^\circ - 120^\circ = 60^\circ$</div>
+            <div class="step">Since all three angles ($50^\circ, 70^\circ, 60^\circ$) are less than $90^\circ$, it is an acute-angled triangle.</div>
+            <div class="final-answer">Final Answer: $\angle C = 60^\circ$; Acute-angled triangle.</div>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Evaluate $2a^2 - 3b + 4$ when $a = 2, b = -1$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Substitute the given values into the expression:</div>
+            <div class="math-scroll">$= 2(2)^2 - 3(-1) + 4$</div>
+            <div class="step">Calculate the exponent and multiply:</div>
+            <div class="math-scroll">$= 2(4) + 3 + 4$ (Note: $-3 \times -1 = +3$)</div>
+            <div class="math-scroll">$= 8 + 3 + 4 = 15$</div>
+            <div class="final-answer">Final Answer: $15$</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <!-- Q6 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Rohan scored $45$ marks out of $60$. Find his percentage. If passing criteria is $40\%$, did he pass?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1: Calculate Percentage</strong></div>
+            <div class="math-scroll">$\text{Percentage} = \left(\frac{\text{Marks Obtained}}{\text{Total Marks}}\right) \times 100\%$</div>
+            <div class="math-scroll">$= \left(\frac{45}{60}\right) \times 100\%$</div>
+            <div class="math-scroll">$= \left(\frac{3}{4}\right) \times 100\% = 3 \times 25\% = 75\%$</div>
+            <div class="step"><strong>Step 2: Conclusion</strong></div>
+            <div class="step">Rohan scored $75\%$. Since $75\%$ is strictly greater than the passing mark of $40\%$, he successfully passed the test.</div>
+            <div class="final-answer">Final Answer: $75\%$; Yes, he passed.</div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Exterior angle is $110^\circ$, one interior opposite angle is $45^\circ$. Find the other two interior angles.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1: Use Exterior Angle Property</strong></div>
+            <div class="step">The exterior angle of a triangle is equal to the sum of its two interior opposite angles. Let the unknown interior opposite angle be $x$.</div>
+            <div class="math-scroll">$110^\circ = 45^\circ + x$</div>
+            <div class="math-scroll">$x = 110^\circ - 45^\circ = 65^\circ$</div>
+            <div class="step"><strong>Step 2: Find the third angle</strong></div>
+            <div class="step">The exterior angle and the adjacent interior angle form a linear pair (sum $= 180^\circ$). Let this angle be $y$.</div>
+            <div class="math-scroll">$110^\circ + y = 180^\circ \implies y = 70^\circ$</div>
+            <div class="step">(Alternatively, use angle sum property: $180^\circ - (45^\circ + 65^\circ) = 70^\circ$).</div>
+            <div class="final-answer">Final Answer: The other two angles are $65^\circ$ and $70^\circ$.</div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Simplify and express with a positive exponent: $\left(\frac{-3}{4}\right)^5 \times \left(\frac{-3}{4}\right)^{-3}$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Use the law of exponents for multiplication with the same base: $a^m \times a^n = a^{m+n}$</div>
+            <div class="math-scroll">Here, the base $a = \frac{-3}{4}$, $m = 5$, and $n = -3$.</div>
+            <div class="math-scroll">$= \left(\frac{-3}{4}\right)^{5 + (-3)}$</div>
+            <div class="math-scroll">$= \left(\frac{-3}{4}\right)^{2}$</div>
+            <div class="step">The exponent $2$ is already positive, so the requirement is satisfied.</div>
+            <div class="final-answer">Final Answer: $\left(\frac{-3}{4}\right)^{2}$</div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Subtract $4p^2q - 3pq + 5pq^2 - 8p + 7q - 10$ from $18 - 3p - 11q + 5pq - 2pq^2 + 5p^2q$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">To subtract, we reverse the signs of all terms in the expression to be subtracted and add:</div>
+            <div class="math-scroll">$= (5p^2q - 2pq^2 + 5pq - 3p - 11q + 18) - (4p^2q + 5pq^2 - 3pq - 8p + 7q - 10)$</div>
+            <div class="step">Distribute the negative sign:</div>
+            <div class="math-scroll">$= 5p^2q - 2pq^2 + 5pq - 3p - 11q + 18 - 4p^2q - 5pq^2 + 3pq + 8p - 7q + 10$</div>
+            <div class="step">Group like terms together:</div>
+            <div class="math-scroll">$= (5p^2q - 4p^2q) + (-2pq^2 - 5pq^2) + (5pq + 3pq) + (-3p + 8p) + (-11q - 7q) + (18 + 10)$</div>
+            <div class="math-scroll">$= p^2q - 7pq^2 + 8pq + 5p - 18q + 28$</div>
+            <div class="final-answer">Final Answer: $p^2q - 7pq^2 + 8pq + 5p - 18q + 28$</div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Is it possible to construct a triangle with side lengths $3\text{ cm}$, $6\text{ cm}$, and $7\text{ cm}$? Reason your answer.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">According to the Triangle Inequality Theorem, the sum of the lengths of any two sides of a triangle must always be strictly greater than the length of the third side.</div>
+            <div class="step">Let's check all three conditions:</div>
+            <div class="math-scroll">1. $3 + 6 = 9 > 7$ (True)</div>
+            <div class="math-scroll">2. $3 + 7 = 10 > 6$ (True)</div>
+            <div class="math-scroll">3. $6 + 7 = 13 > 3$ (True)</div>
+            <div class="step">Since all three conditions are satisfied, a triangle with these dimensions can be formed.</div>
+            <div class="final-answer">Final Answer: Yes, it is possible because the sum of any two sides is greater than the third side.</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <!-- Q11 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Mr. Sharma earns ₹ $25,000$ per month. He spends $20\%$ on rent and $40\%$ on food. Find (a) Total spend on rent and food, (b) Monthly savings, (c) Savings as a fraction of total income.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>a) Total Amount Spent:</strong></div>
+            <div class="math-scroll">Rent = $20\%$ of ₹ $25,000 = \frac{20}{100} \times 25000 = \text{₹ } 5,000$</div>
+            <div class="math-scroll">Food = $40\%$ of ₹ $25,000 = \frac{40}{100} \times 25000 = \text{₹ } 10,000$</div>
+            <div class="math-scroll">Total Spent = $5000 + 10000 = \text{₹ } 15,000$</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>b) Monthly Savings:</strong></div>
+            <div class="math-scroll">Savings = Total Income $-$ Total Expenditure</div>
+            <div class="math-scroll">$= 25,000 - 15,000 = \text{₹ } 10,000$</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>c) Fraction of Savings:</strong></div>
+            <div class="math-scroll">$\text{Fraction} = \frac{\text{Savings}}{\text{Total Income}} = \frac{10000}{25000}$</div>
+            <div class="math-scroll">Divide by $5000$ on both numerator and denominator: $\frac{2}{5}$</div>
+            
+            <div class="final-answer">Final Answers: (a) ₹ $15,000$ &nbsp; (b) ₹ $10,000$ &nbsp; (c) $\frac{2}{5}$</div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Simplify: $2x(x - y^2) - 3y(xy + 2x) - xy(x + y)$. Find its value when $x = -1, y = 2$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>a) Simplifying the Expression:</strong></div>
+            <div class="step">Expand each bracket carefully:</div>
+            <div class="math-scroll">$= (2x^2 - 2xy^2) - (3xy^2 + 6xy) - (x^2y + xy^2)$</div>
+            <div class="step">Remove brackets (be mindful of negative signs):</div>
+            <div class="math-scroll">$= 2x^2 - 2xy^2 - 3xy^2 - 6xy - x^2y - xy^2$</div>
+            <div class="step">Group the $xy^2$ terms together ($-2 - 3 - 1 = -6$):</div>
+            <div class="math-scroll">$= 2x^2 - x^2y - 6xy^2 - 6xy$</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>b) Substitution & Evaluation:</strong></div>
+            <div class="step">Substitute $x = -1$ and $y = 2$ into the simplified equation:</div>
+            <div class="math-scroll">$= 2(-1)^2 - (-1)^2(2) - 6(-1)(2)^2 - 6(-1)(2)$</div>
+            <div class="step">Calculate exponents first: $(-1)^2 = 1, (2)^2 = 4$</div>
+            <div class="math-scroll">$= 2(1) - (1)(2) - 6(-1)(4) - (-12)$</div>
+            <div class="math-scroll">$= 2 - 2 - (-24) + 12$</div>
+            <div class="math-scroll">$= 2 - 2 + 24 + 12 = 36$</div>
+            
+            <div class="final-answer">Final Answer: Simplified = $2x^2 - x^2y - 6xy^2 - 6xy$; Value = $36$</div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. a) In a right-angled triangle, the acute angles are in the ratio $2:3$. Find them. b) Angles of a triangle are $x^\circ, (x-20)^\circ, (x+50)^\circ$. Find $x$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>a) Acute Angles of a Right Triangle:</strong></div>
+            <div class="step">One angle is $90^\circ$. By angle sum property, the sum of the remaining two acute angles is $180^\circ - 90^\circ = 90^\circ$.</div>
+            <div class="step">Let the angles be $2a$ and $3a$.</div>
+            <div class="math-scroll">$2a + 3a = 90^\circ \implies 5a = 90^\circ \implies a = 18^\circ$</div>
+            <div class="step">The angles are: $2 \times 18^\circ = 36^\circ$ and $3 \times 18^\circ = 54^\circ$.</div>
+            
+            <div class="step" style="margin-top:10px;"><strong>b) Finding x using Angle Sum Property:</strong></div>
+            <div class="step">The sum of all angles in a triangle is $180^\circ$.</div>
+            <div class="math-scroll">$x + (x - 20) + (x + 50) = 180$</div>
+            <div class="math-scroll">$3x + 30 = 180$</div>
+            <div class="math-scroll">$3x = 180 - 30 = 150$</div>
+            <div class="math-scroll">$x = \frac{150}{3} = 50$</div>
+            
+            <div class="final-answer">Final Answers: (a) $36^\circ$ and $54^\circ$ &nbsp; (b) $x = 50$</div>
+        </div>
+    </div>
+</body>
+</html>

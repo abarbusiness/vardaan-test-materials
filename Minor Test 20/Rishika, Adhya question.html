@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; line-height: 1.5; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; gap: 10px;
+        }
+        .instructions { 
+            margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; 
+        }
+        .instructions ul { 
+            margin: 5px 0; padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; 
+            text-decoration: underline; font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; 
+        }
+        .question-container { 
+            margin-bottom: 15px; display: flex; align-items: flex-start; page-break-inside: avoid; 
+        }
+        .q-num { 
+            font-weight: bold; width: 40px; flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; 
+            border-top: 1px solid #ccc; padding-top: 10px; color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; } 
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .q-num { width: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 20</div>
+        <div class="exam-details">
+            <span>Class: 6 & 7</span>
+            <span>Subject: Basic Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Keep your calculations neat and clean.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers step-by-step. Illustrate with examples where necessary.</li>
+                <li>Marks for each question are indicated in the respective sections.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Evaluate the following using BODMAS rule: 
+            $$ 45 + 3 \times 5 - 10 $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Find the Lowest Common Multiple (LCM) of $12$ and $18$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Convert the fraction $\frac{3}{4}$ into a decimal and a percentage.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the perimeter of a rectangle whose length is $8 \text{ cm}$ and breadth is $5 \text{ cm}$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Solve the simple equation for $x$: 
+            $$ 2x + 5 = 15 $$
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            A shopkeeper bought a bag for ₹$400$ and sold it for ₹$520$. Find his total profit and the profit percentage.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Simplify the fraction $\frac{36}{48}$ to its lowest terms. Also, find an equivalent fraction of $\frac{36}{48}$ with a denominator of $12$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            The angles of a triangle are in the ratio $1 : 2 : 3$. Find the measure of each angle of the triangle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            A car travels a distance of $240 \text{ km}$ in $4 \text{ hours}$. How much distance will it cover in $7 \text{ hours}$ if it travels at the same constant speed?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The perimeter of a square is $24 \text{ cm}$. Find the length of its side and calculate the area of the square.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Solve the following basic operations:
+            <div class="sub-question"><strong>(a)</strong> Add the mixed fractions: $3 \frac{1}{2} + 2 \frac{1}{4}$. (2 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Subtract $14.56$ from $25.3$. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Answer the following based on exponents and factors:
+            <div class="sub-question"><strong>(a)</strong> Simplify the following using the laws of exponents and find its value: <br> $$ \frac{2^5 \times 3^4}{2^3 \times 3^2} $$ (3 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Express the number $120$ as a product of its prime factors. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Word problems based on numbers and ratios:
+            <div class="sub-question"><strong>(a)</strong> The sum of two consecutive integers is $27$. Form an equation and find the two integers. (3 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Find the ratio of $500 \text{ ml}$ to $2 \text{ Litres}$ in its simplest form. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

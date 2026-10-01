@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 CBSE Science Question Paper</title>
+    <!-- MathJax for scientific notations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-main: #111111;
+            --border-color: #000000;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 850px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 550px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 10pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            color: #444;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 6px;
+            text-decoration: underline;
+            color: #111;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 4px;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            text-transform: none;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .q-num {
+            font-weight: bold;
+            width: 42px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .sub-question {
+            margin-left: 5px;
+            margin-top: 6px;
+        }
+
+        .sub-q-num {
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+        }
+
+        table.exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10.5pt;
+        }
+
+        table.exam-table th, table.exam-table td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: left;
+        }
+
+        table.exam-table th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 10.5pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .exam-details {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                text-align: left;
+                padding: 8px;
+            }
+
+            .question-container {
+                flex-direction: row;
+            }
+
+            .q-num {
+                width: 32px;
+            }
+
+            table.exam-table {
+                font-size: 9.5pt;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .sub-question {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">Excellence in CBSE Curriculum</div>
+        <div class="test-name">MINOR TEST 20 — THE INVISIBLE LIVING WORLD & CELL STRUCTURE</div>
+        
+        <div class="exam-details">
+            <span>Class: VIII (CBSE)</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Read all questions carefully and write your answers neatly according to Class 8 CBSE Science standards.</li>
+                <li>The paper consists of 3 Sections: <strong>Section A (10 Marks)</strong>, <strong>Section B (15 Marks)</strong>, and <strong>Section C (15 Marks)</strong>.</li>
+                <li>All questions are compulsory.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Recall Questions — 2 Marks Each)</span>
+    </div>
+
+    <!-- Q1 -->
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <strong>Fill in the blanks with appropriate scientific words:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The microorganism widely used in the commercial production of alcohol and wine is ____________.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The cell organelle that acts as the control center of cell activities is the ____________.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <strong>State whether the following statements are True or False:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Viruses can reproduce independently outside the body of a host cell.
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Plant cells possess an additional rigid outer layer surrounding the cell membrane called the cell wall.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <strong>Give one scientific word for each of the following:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The insect carrier that transmits the parasite of malaria (<em>Plasmodium</em>).
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> The jelly-like substance present between the nucleus and the plasma membrane in a cell.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <strong>Match Column A with Column B:</strong>
+            <span style="float: right;">[2]</span>
+            <table class="exam-table">
+                <thead>
+                    <tr>
+                        <th>Column A (Microorganism / Organelle)</th>
+                        <th>Column B (Function / Feature)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(i) <em>Rhizobium</em> bacterium</td>
+                        <td>(A) Site of photosynthesis in green plant cells</td>
+                    </tr>
+                    <tr>
+                        <td>(ii) Chloroplast</td>
+                        <td>(B) Fixes atmospheric nitrogen in root nodules</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <strong>Choose the correct option for each question:</strong>
+            <span style="float: right;">[2]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> The process of biological conversion of sugar into alcohol by yeast is called:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Pasteurisation &nbsp;&nbsp;&nbsp;&nbsp; ii) Fermentation &nbsp;&nbsp;&nbsp;&nbsp; iii) Nitrogen Fixation &nbsp;&nbsp;&nbsp;&nbsp; iv) Vaccine
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Which of the following structures is present in a plant cell but ABSENT in an animal cell?
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i) Cell Membrane &nbsp;&nbsp;&nbsp;&nbsp; ii) Cytoplasm &nbsp;&nbsp;&nbsp;&nbsp; iii) Cell Wall &nbsp;&nbsp;&nbsp;&nbsp; iv) Nucleus
+            </div>
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Questions — 3 Marks Each)</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <strong>Friendly Microorganisms:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Microorganisms play a very important role in our daily lives. State <strong>three</strong> beneficial uses of microorganisms in food production, agriculture, or medicine.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <strong>Plant Cell vs Animal Cell:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Tabulate <strong>three</strong> clear differences between a <strong>Plant Cell</strong> and an <strong>Animal Cell</strong> based on cell wall, plastids, and vacuole size.
+            </div>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <strong>Medicinal Use of Microorganisms:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>Antibiotics</strong>? Name the first antibiotic discovered. (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> What is a <strong>Vaccine</strong>? How does it protect our body against diseases? (1.5)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <strong>Cell Parts & Functions:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                Write <strong>one</strong> main function of each of the following cell components:
+                <br>• (a) Cell Membrane (Plasma Membrane)
+                <br>• (b) Cell Wall
+                <br>• (c) Large Central Vacuole
+            </div>
+        </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <strong>Food Preservation Methods:</strong>
+            <span style="float: right;">[3]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Why does cooked food get spoiled if kept at room temperature for a long time? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Explain how food is preserved using:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;i) Common Salt or Sugar (1)
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;ii) Pasteurisation (1)
+            </div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Questions — 5 Marks Each)</span>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <strong>Harmful Microorganisms & Disease Transmission:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> What are <strong>Pathogens</strong>? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Name <strong>two</strong> human diseases caused by bacteria and <strong>two</strong> caused by viruses. (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> How do houseflies act as carriers in spreading communicable diseases? State one measure to prevent housefly breeding. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <strong>Structure of the Cell & Nucleus:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> State the <strong>three</strong> basic components present in all eukaryotic cells. (1.5)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Describe the structure and components of the <strong>Nucleus</strong> (Nuclear membrane, Nucleolus, and Chromosomes). What is the function of genes present on chromosomes? (3.5)
+            </div>
+        </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <strong>Discovery of Cell, Fermentation & Specialized Cells:</strong>
+            <span style="float: right;">[5]</span>
+            <div class="sub-question">
+                <span class="sub-q-num">(a)</span> Who discovered the cell, in which year, and what material did he observe under his microscope? (2)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(b)</span> Who discovered the process of Fermentation, and in which year? (1)
+            </div>
+            <div class="sub-question">
+                <span class="sub-q-num">(c)</span> Mention the special shape and function of a <strong>Nerve Cell (Neuron)</strong> in the human body. (2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        — END OF QUESTION PAPER — <br>
+        <span style="font-size: 8.5pt; font-weight: normal;">Prepared by Academic Evaluation Board | Vardaan Learning Institute (CBSE Division)</span>
+    </div>
+</body>
+</html>

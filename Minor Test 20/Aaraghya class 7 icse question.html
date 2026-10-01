@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <!-- MathJax for rendering mathematical equations -->
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); padding: 15px 0; 
+        }
+        .institute-name { font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; }
+        .exam-details { 
+            display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; gap: 10px;
+        }
+        .instructions { margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; text-decoration: underline; font-size: 13pt; }
+        .marks-info { font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; }
+        
+        .question-container { margin-bottom: 15px; display: flex; align-items: flex-start; page-break-inside: avoid; }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        
+        table { border-collapse: collapse; width: 100%; max-width: 400px; margin: 10px 0; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: center; }
+
+        .footer { margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555; }
+        
+        /* Responsive Design */
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; } 
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .q-num { width: 30px; }
+            table { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 20</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics (Probability & Statistics)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Show all calculations clearly.</li>
+                <li>Marks for each question are indicated in the respective sections.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define the terms 'Range' and 'Mean' in the context of statistics.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Find the mean of the first five prime numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            A fair coin is tossed once. What is the probability of getting a tail?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            What is a tally mark? Draw the tally mark representation for the number 13.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            The marks obtained by 7 students in a surprise test are: 15, 20, 15, 18, 14, 20, 15. Find the mode of the given data.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Find the median of the following set of observations: $24, 36, 46, 17, 18, 25, 35$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A standard die is rolled once. Find the probability of getting:
+            <div class="sub-question">(i) an even number.</div>
+            <div class="sub-question">(ii) a number strictly greater than 4.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            A bag contains 4 red balls, 5 blue balls, and 3 green balls. One ball is drawn at random from the bag. Find the probability that the ball drawn is:
+            <div class="sub-question">(i) red.</div>
+            <div class="sub-question">(ii) not green.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The mean of 5 observations $x, x+2, x+4, x+6, \text{ and } x+8$ is $11$. Find the value of $x$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The weights (in kg) of 8 students in a sports club are: $45, 50, 48, 52, 49, 45, 51, 46$. 
+            Find the range and the mean weight of the students.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            The following data shows the number of children in 20 families of a particular locality:
+            <br>
+            $2, 1, 3, 1, 2, 3, 2, 2, 4, 1, 2, 1, 4, 3, 2, 1, 2, 3, 2, 1$
+            <div class="sub-question"><strong>(a)</strong> Prepare a frequency distribution table for the above data using tally marks. (3 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Find the mode of the data based on your table. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A box contains 25 identical cards numbered consecutively from 1 to 25. A card is drawn from the box at random. Find the probability that the number on the drawn card is:
+            <div class="sub-question"><strong>(a)</strong> a multiple of 5. (2 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> a prime number. (2 Marks)</div>
+            <div class="sub-question"><strong>(c)</strong> a perfect square. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The runs scored by a batsman in 7 consecutive matches are as follows: $45, 89, 12, 105, 56, 34, 78$.
+            <div class="sub-question"><strong>(a)</strong> Calculate the mean runs scored by the batsman. (2 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Calculate the median runs scored. (2 Marks)</div>
+            <div class="sub-question"><strong>(c)</strong> If he scores 50 runs in his 8th match, will his new median score increase or decrease? (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

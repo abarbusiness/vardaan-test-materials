@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <!-- MathJax Configuration with require package for strike-throughs -->
+    <script>
+        MathJax = {
+            loader: {load: ['[tex]/cancel']},
+            tex: { packages: {'[+]': ['cancel']}, inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fafafa;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; background-color: var(--bg-light);
+        }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 8px; color: #333; }
+        .section-title {
+            background-color: #eee; padding: 8px; font-weight: bold; text-align: center;
+            border-radius: 4px; margin: 30px 0 20px 0; border-left: 5px solid var(--primary-yellow); border-right: 5px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); padding-bottom: 20px; margin-bottom: 20px; page-break-inside: avoid;
+        }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 15px; }
+        .q-text { flex-grow: 1; font-weight: bold; color: #333; font-style: italic; }
+        .marks-badge {
+            background-color: var(--primary-yellow); padding: 3px 10px; border-radius: 4px; 
+            font-weight: bold; font-size: 0.9em; min-width: 75px; text-align: center; flex-shrink: 0; white-space: nowrap;
+        }
+        .correct-answer {
+            color: #2e7d32; background-color: #e8f5e9; padding: 6px 10px; margin: 5px 0 8px 25px; 
+            border-radius: 4px; font-weight: bold; display: inline-block;
+        }
+        .explanation { 
+            margin-left: 25px; background-color: #fff9e6; padding: 15px; border-radius: 5px; border-left: 4px solid #f9a825;
+        }
+        .step { margin-bottom: 8px; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 5px 0; }
+        
+        table { border-collapse: collapse; margin-top: 10px; width: 100%; max-width: 400px; background-color: white; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f1f1f1; }
+
+        @media print { body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } }
+        @media screen and (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation, .correct-answer { margin-left: 0; padding: 10px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 20</div>
+        <div style="font-size: 11pt; margin-top: 8px; color: #555;">Class 7 (ICSE) | Mathematics (Probability & Statistics) | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define the terms 'Range' and 'Mean' in the context of statistics.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Range:</strong> The difference between the highest and the lowest observations in a given set of data is called its range. <br> $Range = Highest \ observation - Lowest \ observation$</div>
+            <div class="step"><strong>Mean:</strong> The mean (or arithmetic mean) is the sum of all observations divided by the total number of observations. <br> $Mean = \frac{\text{Sum of all observations}}{\text{Total number of observations}}$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Find the mean of the first five prime numbers.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Mean = 5.6</div>
+        <div class="explanation">
+            <div class="step">The first five prime numbers are: $2, 3, 5, 7, 11$.</div>
+            <div class="step">Total number of observations (n) = $5$.</div>
+            <div class="step math-scroll">Sum of observations = $2 + 3 + 5 + 7 + 11 = 28$</div>
+            <div class="step math-scroll">$Mean = \frac{28}{5} = 5.6$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. A fair coin is tossed once. What is the probability of getting a tail?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Probability = 1/2</div>
+        <div class="explanation">
+            <div class="step">When a fair coin is tossed, the possible outcomes are Head (H) and Tail (T).</div>
+            <div class="step">Total number of possible outcomes = 2.</div>
+            <div class="step">Number of favorable outcomes (getting a Tail) = 1.</div>
+            <div class="step math-scroll">$P(\text{Tail}) = \frac{\text{Favorable outcomes}}{\text{Total outcomes}} = \frac{1}{2}$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. What is a tally mark? Draw the tally mark representation for the number 13.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Tally Marks:</strong> They are a quick way of keeping track of numbers in groups of five. They are represented as vertical strokes where every fifth stroke is drawn diagonally across the previous four.</div>
+            <div class="step"><strong>Representation of 13:</strong><br>
+                $\bcancel{||||} \quad \bcancel{||||} \quad |||$ <br>
+                (Two groups of 5 and three loose vertical lines).
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. The marks obtained by 7 students in a surprise test are: 15, 20, 15, 18, 14, 20, 15. Find the mode of the given data.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Mode = 15</div>
+        <div class="explanation">
+            <div class="step">Mode is the observation that occurs most frequently in the data set.</div>
+            <div class="step">Let's count the frequency of each mark:
+                <ul>
+                    <li>14 occurs 1 time.</li>
+                    <li>15 occurs 3 times.</li>
+                    <li>18 occurs 1 time.</li>
+                    <li>20 occurs 2 times.</li>
+                </ul>
+            </div>
+            <div class="step">Since 15 occurs the maximum number of times (3 times), the mode is 15.</div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Find the median of the following set of observations: 24, 36, 46, 17, 18, 25, 35.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Median = 25</div>
+        <div class="explanation">
+            <div class="step">First, arrange the data in ascending order: <br>$17, 18, 24, 25, 35, 36, 46$. (1 Mark)</div>
+            <div class="step">Total number of observations (n) = $7$ (which is odd).</div>
+            <div class="step">Formula for median when n is odd: <br>
+                $Median = \left( \frac{n + 1}{2} \right)^{\text{th}} \text{term}$ (1 Mark)
+            </div>
+            <div class="step math-scroll">
+                $Median = \left( \frac{7 + 1}{2} \right)^{\text{th}} \text{term} = \left( \frac{8}{2} \right)^{\text{th}} \text{term} = 4^{\text{th}} \text{term}$
+            </div>
+            <div class="step">The 4th term in the ordered data is 25. Therefore, Median = 25. (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. A standard die is rolled once. Find the probability of getting: (i) an even number. (ii) a number strictly greater than 4.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Total possible outcomes when a die is rolled = $\{1, 2, 3, 4, 5, 6\}$. Total outcomes = $6$. (1 Mark)</div>
+            <div class="step"><strong>(i) Probability of an even number:</strong> <br>
+                Favorable outcomes = $\{2, 4, 6\}$. Number of favorable outcomes = $3$. <br>
+                $P(\text{Even}) = \frac{3}{6} = \frac{1}{2}$. (1 Mark)
+            </div>
+            <div class="step"><strong>(ii) Probability of a number strictly greater than 4:</strong> <br>
+                Favorable outcomes (numbers > 4) = $\{5, 6\}$. Number of favorable outcomes = $2$. <br>
+                $P(>4) = \frac{2}{6} = \frac{1}{3}$. (1 Mark)
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. A bag contains 4 red balls, 5 blue balls, and 3 green balls. One ball is drawn at random. Find the probability that the ball drawn is (i) red. (ii) not green.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Total number of balls in the bag = $4 \text{ (red)} + 5 \text{ (blue)} + 3 \text{ (green)} = 12$. Total outcomes = 12. (1 Mark)</div>
+            <div class="step"><strong>(i) Probability of drawing a red ball:</strong> <br>
+                Number of red balls = $4$. <br>
+                $P(\text{Red}) = \frac{4}{12} = \frac{1}{3}$. (1 Mark)
+            </div>
+            <div class="step"><strong>(ii) Probability of drawing a ball that is not green:</strong> <br>
+                A ball is "not green" if it is red or blue. Number of favorable outcomes = $4 + 5 = 9$. <br>
+                $P(\text{Not Green}) = \frac{9}{12} = \frac{3}{4}$. (1 Mark)
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. The mean of 5 observations $x, x+2, x+4, x+6, \text{ and } x+8$ is 11. Find the value of $x$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">$x = 7$</div>
+        <div class="explanation">
+            <div class="step math-scroll">Given Mean = $11$ and Total observations = $5$.</div>
+            <div class="step math-scroll">$Mean = \frac{\text{Sum of observations}}{\text{Number of observations}}$</div>
+            <div class="step math-scroll">
+                $11 = \frac{x + (x+2) + (x+4) + (x+6) + (x+8)}{5}$ (1 Mark)
+            </div>
+            <div class="step math-scroll">
+                $11 = \frac{5x + 20}{5}$
+            </div>
+            <div class="step math-scroll">
+                $55 = 5x + 20$ (1 Mark)
+            </div>
+            <div class="step math-scroll">
+                $5x = 55 - 20$ <br>
+                $5x = 35$ <br>
+                $x = 7$ (1 Mark)
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. The weights (in kg) of 8 students are: 45, 50, 48, 52, 49, 45, 51, 46. Find the range and the mean weight.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Range:</strong> <br>
+                Highest weight = $52$ kg, Lowest weight = $45$ kg. <br>
+                $Range = 52 - 45 = 7$ kg. (1 Mark)
+            </div>
+            <div class="step"><strong>Mean Weight:</strong> <br>
+                Sum of weights = $45 + 50 + 48 + 52 + 49 + 45 + 51 + 46 = 386$ kg. (1 Mark)
+            </div>
+            <div class="step math-scroll">
+                $Mean = \frac{386}{8} = 48.25$ kg. (1 Mark)
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. The following data shows the number of children in 20 families: 2, 1, 3, 1, 2, 3, 2, 2, 4, 1, 2, 1, 4, 3, 2, 1, 2, 3, 2, 1. (a) Prepare a frequency distribution table. (b) Find the mode.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Frequency Distribution Table:</strong> (3 Marks)
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number of Children (Observation)</th>
+                            <th>Tally Marks</th>
+                            <th>Number of Families (Frequency)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>$\bcancel{||||} \ |$</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$\bcancel{||||} \ |||$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$||||$</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>$||$</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Total</strong></td>
+                            <td><strong>20</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="step"><strong>(b) Mode:</strong> (2 Marks)<br>
+                From the table, the highest frequency is 8, which corresponds to the observation '2'. <br>
+                Therefore, the Mode of the data is <strong>2</strong>.
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. A box contains 25 identical cards numbered from 1 to 25. Find the probability that the drawn card is (a) a multiple of 5 (b) a prime number (c) a perfect square.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Total cards (Total outcomes) = $25$.</div>
+            
+            <div class="step"><strong>(a) A multiple of 5:</strong> (2 Marks)<br>
+                Multiples of 5 from 1 to 25 = $\{5, 10, 15, 20, 25\}$. Favorable outcomes = $5$. <br>
+                $P(\text{Multiple of 5}) = \frac{5}{25} = \frac{1}{5}$.
+            </div>
+            
+            <div class="step"><strong>(b) A prime number:</strong> (2 Marks)<br>
+                Prime numbers from 1 to 25 = $\{2, 3, 5, 7, 11, 13, 17, 19, 23\}$. Favorable outcomes = $9$. <br>
+                $P(\text{Prime Number}) = \frac{9}{25}$.
+            </div>
+            
+            <div class="step"><strong>(c) A perfect square:</strong> (1 Mark)<br>
+                Perfect squares from 1 to 25 = $\{1, 4, 9, 16, 25\}$. Favorable outcomes = $5$. <br>
+                $P(\text{Perfect Square}) = \frac{5}{25} = \frac{1}{5}$.
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Runs scored in 7 matches: 45, 89, 12, 105, 56, 34, 78. (a) Mean runs. (b) Median runs. (c) Will the median increase or decrease if 50 runs are scored in the 8th match?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Mean Runs:</strong> (2 Marks)<br>
+                Sum of runs = $45 + 89 + 12 + 105 + 56 + 34 + 78 = 419$. <br>
+                $Mean = \frac{419}{7} = 59.85$ (approx).
+            </div>
+            
+            <div class="step"><strong>(b) Median Runs:</strong> (2 Marks)<br>
+                Arrange in ascending order: $12, 34, 45, 56, 78, 89, 105$. <br>
+                Number of observations ($n$) = 7 (odd). <br>
+                $Median = \left(\frac{7+1}{2}\right)^{\text{th}} \text{term} = 4^{\text{th}} \text{term}$. <br>
+                The 4th term is 56. <strong>Median = 56.</strong>
+            </div>
+
+            <div class="step"><strong>(c) Change in Median:</strong> (1 Mark)<br>
+                If 50 runs are scored in the 8th match, the new data in ascending order is: <br>
+                $12, 34, 45, 50, 56, 78, 89, 105$. <br>
+                Now $n = 8$ (even). The median is the average of the 4th and 5th terms. <br>
+                $New \ Median = \frac{50 + 56}{2} = \frac{106}{2} = 53$. <br>
+                The old median was 56 and the new median is 53. Therefore, the median will <strong>decrease</strong>.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

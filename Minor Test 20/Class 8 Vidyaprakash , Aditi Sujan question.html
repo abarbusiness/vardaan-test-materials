@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Minor Test 21 Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-dark: #111111;
+            --bg-light: #ffffff;
+            --border-color: #d1d5db;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @page { 
+            size: A4; 
+            margin: 15mm 20mm; 
+        }
+
+        body { 
+            width: 100%;
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-dark); 
+            background-color: var(--bg-light); 
+            position: relative; 
+        }
+
+        /* Watermark */
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        /* Header Styling */
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 10px; 
+            background-color: #fffdf5;
+        }
+
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+            color: #1a1a1a;
+        }
+
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #333;
+        }
+
+        .topic-badge {
+            font-size: 10pt;
+            font-weight: normal;
+            font-style: italic;
+            color: #555;
+            margin-top: 4px;
+        }
+
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid var(--text-dark); 
+            border-bottom: 1px solid var(--text-dark); 
+            padding: 6px 4px; 
+            gap: 8px;
+            background-color: #ffffff;
+        }
+
+        .exam-details span {
+            flex: 1 1 20%;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 10pt; 
+            background-color: #f9fafb;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            font-size: 12.5pt; 
+            background-color: #f4f4f5;
+            padding: 6px 10px;
+            border-left: 5px solid var(--primary-yellow);
+            border-right: 5px solid var(--primary-yellow);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-transform: none;
+            color: #444;
+        }
+
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+            font-size: 11pt;
+        }
+
+        .q-content { 
+            flex-grow: 1; 
+        }
+
+        .q-marks {
+            font-weight: bold;
+            font-size: 10pt;
+            float: right;
+            color: #333;
+            margin-left: 10px;
+        }
+
+        .sub-question { 
+            margin-left: 10px; 
+            margin-top: 6px; 
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px dashed #a1a1aa; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* MathJax Overflow handling on Mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 2px 0;
+        }
+
+        /* Responsive Breakpoints for Screens */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 11pt;
+            }
+
+            .institute-name {
+                font-size: 18pt;
+            }
+
+            .test-name {
+                font-size: 12pt;
+            }
+
+            .exam-details {
+                font-size: 9.5pt;
+            }
+
+            .exam-details span {
+                flex: 1 1 45%;
+                text-align: left;
+            }
+
+            .section-header {
+                font-size: 11pt;
+            }
+
+            .q-num {
+                width: 28px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name {
+                font-size: 15pt;
+            }
+
+            .exam-details span {
+                flex: 1 1 100%;
+            }
+
+            .q-marks {
+                float: none;
+                display: block;
+                margin-top: 4px;
+                text-align: right;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                max-width: 100%;
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+                background-color: white;
+            } 
+            .header {
+                background-color: transparent !important;
+            }
+            .instructions {
+                background-color: #f8f8f8 !important;
+            }
+            .section-header {
+                background-color: #f0f0f0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Vardaan Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 20 — CLASS VIII MATHEMATICS</div>
+        <div class="topic-badge">Topic: Compound Interest (Applications & Computations)</div>
+        
+        <div class="exam-details">
+            <span><strong>Class:</strong> 8</span>
+            <span><strong>Subject:</strong> Mathematics</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40</span>
+        </div>
+
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Answers to this paper must be written neatly on the answer sheet provided separately.</li>
+                <li>First 10 minutes are allotted exclusively for reading the question paper. Do not start writing during this period.</li>
+                <li>The paper consists of <strong>Three Sections: Section A (10 Marks), Section B (15 Marks), and Section C (15 Marks)</strong>.</li>
+                <li>All steps and mathematical calculations must be shown clearly. Rough work should be done on the designated margin.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective & Fundamental Recall — 5 Questions x 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>State the formula to calculate the total Amount ($A$) and Compound Interest ($CI$) on a principal sum $P$ at an annual interest rate $r\%$ per annum for $n$ years when the interest is:</div>
+            <div class="sub-question">
+                (a) Compounded annually.<br>
+                (b) Compounded half-yearly.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Calculate the compound interest on a principal amount of $\text{₹ } 5,000$ for $2$ years at $10\%$ per annum compounded annually.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>Find the difference between Simple Interest ($SI$) and Compound Interest ($CI$) on $\text{₹ } 8,000$ for $1$ year at $5\%$ per annum when the compound interest is compounded half-yearly.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>A sum of $\text{₹ } 10,000$ is invested at $10\%$ per annum for $1$ year. Calculate the final compound amount if the interest is compounded semi-annually.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            <div>The value of a machine costing $\text{₹ } 25,000$ depreciates at the rate of $10\%$ per annum. Calculate its depreciated value after $1$ year.</div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer & Application Type — 5 Questions x 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>The difference between Simple Interest and Compound Interest on a certain sum of money invested at $10\%$ per annum for $2$ years, compounded annually, is $\text{₹ } 150$. Find the principal sum.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>Find the compound interest on $\text{₹ } 12,500$ at $12\%$ per annum for $1 \frac{1}{2}$ years (1.5 years) when the interest is compounded half-yearly.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>A sum of $\text{₹ } 20,000$ is borrowed for $2$ years at compound interest. If the rate of interest for the first year is $8\%$ per annum and for the second year is $10\%$ per annum, find the total amount and compound interest payable at the end of $2$ years.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>A motorcycle was purchased for $\text{₹ } 80,000$. Its value depreciates at a rate of $10\%$ per annum. Calculate its market value at the end of $2$ years.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            <div>The population of a growing town in the year 2022 was $1,76,400$. If the rate of growth of population is $5\%$ per annum, find:</div>
+            <div class="sub-question">
+                (a) The estimated population in the year 2024.<br>
+                (b) The population in the year 2020.
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer & Numerical Derivation Type — 3 Questions x 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div class="sub-question">
+                (a) At what rate percent per annum will a principal sum of $\text{₹ } 4,000$ amount to $\text{₹ } 4,840$ in $2$ years, compounded annually? <span style="font-weight: bold;">(2.5 Marks)</span>
+            </div>
+            <div class="sub-question" style="margin-top: 10px;">
+                (b) In how many years will $\text{₹ } 8,000$ amount to $\text{₹ } 9,261$ at $5\%$ per annum compound interest compounded annually? <span style="font-weight: bold;">(2.5 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div>A person deposited $\text{₹ } 16,000$ in a bank for $1 \frac{1}{2}$ years at $10\%$ per annum.</div>
+            <div class="sub-question">
+                (a) Calculate the compound interest earned if the interest is compounded <strong>half-yearly</strong>. <span style="font-weight: bold;">(2.5 Marks)</span><br>
+                (b) Calculate the compound interest earned if the interest is compounded <strong>annually</strong>. <span style="font-weight: bold;">(2 Marks)</span><br>
+                (c) Find the extra gain/interest obtained by choosing half-yearly compounding over annual compounding. <span style="font-weight: bold;">(0.5 Mark)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            <div>A certain sum of money placed at compound interest (compounded annually) amounts to $\text{₹ } 12,100$ at the end of $2$ years and to $\text{₹ } 13,310$ at the end of $3$ years.</div>
+            <div class="sub-question">
+                (a) Find the annual rate of interest ($r\%$). <span style="font-weight: bold;">(2.5 Marks)</span><br>
+                (b) Determine the original principal sum ($P$) invested. <span style="font-weight: bold;">(2.5 Marks)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        *** END OF QUESTION PAPER ***<br>
+        Created by Team Vardaan | Vardaan Learning Institute
+    </div>
+</body>
+</html>

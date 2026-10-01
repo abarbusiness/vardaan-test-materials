@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script>
+        MathJax = {
+            loader: {load: ['[tex]/cancel']},
+            tex: { packages: {'[+]': ['cancel']}, inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fafafa;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; background-color: var(--bg-light);
+        }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 8px; color: #333; }
+        .section-title {
+            background-color: #eee; padding: 8px; font-weight: bold; text-align: center;
+            border-radius: 4px; margin: 30px 0 20px 0; border-left: 5px solid var(--primary-yellow); border-right: 5px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); padding-bottom: 20px; margin-bottom: 20px; page-break-inside: avoid;
+        }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 15px; }
+        .q-text { flex-grow: 1; font-weight: bold; color: #333; overflow-x: auto; }
+        .marks-badge {
+            background-color: var(--primary-yellow); padding: 3px 10px; border-radius: 4px; 
+            font-weight: bold; font-size: 0.9em; min-width: 75px; text-align: center; flex-shrink: 0; white-space: nowrap;
+        }
+        .explanation { 
+            margin-left: 25px; background-color: #fff9e6; padding: 15px; border-radius: 5px; border-left: 4px solid #f9a825; overflow-x: auto;
+        }
+        .step { margin-bottom: 8px; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } }
+        @media screen and (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 0; padding: 10px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 20</div>
+        <div style="font-size: 11pt; margin-top: 8px; color: #555;">Class 6 & 7 | Basic Mathematics | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Evaluate the following using BODMAS rule: $ 45 + 3 \times 5 - 10 $</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">According to BODMAS, we first perform Multiplication, then Addition, and finally Subtraction.</div>
+            <div class="step">Expression: $ 45 + 3 \times 5 - 10 $</div>
+            <div class="step">Step 1 (Multiply): $= 45 + 15 - 10 $ &nbsp; <em>(1 Mark)</em></div>
+            <div class="step">Step 2 (Add): $= 60 - 10 $</div>
+            <div class="step">Step 3 (Subtract): $= 50 $ &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>Final Answer: 50</strong></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Find the Lowest Common Multiple (LCM) of $12$ and $18$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Multiples of $12$: $12, 24, 36, 48, 60, \dots$</div>
+            <div class="step">Multiples of $18$: $18, 36, 54, 72, \dots$</div>
+            <div class="step">Alternatively, by prime factorization: 
+                <br> $12 = 2 \times 2 \times 3 = 2^2 \times 3$
+                <br> $18 = 2 \times 3 \times 3 = 2 \times 3^2$ 
+                <br> <em>(1 Mark for correct approach/factors)</em>
+            </div>
+            <div class="step">$\text{LCM} = 2^2 \times 3^2 = 4 \times 9 = 36$ &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>Final Answer: LCM is 36</strong></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Convert the fraction $\frac{3}{4}$ into a decimal and a percentage.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Decimal:</strong> $\frac{3}{4} = 3 \div 4 = 0.75$ &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>Percentage:</strong> $\frac{3}{4} \times 100\% = 3 \times 25\% = 75\%$ &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Find the perimeter of a rectangle whose length is $8 \text{ cm}$ and breadth is $5 \text{ cm}$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given: $\text{Length } (l) = 8 \text{ cm}$, $\text{Breadth } (b) = 5 \text{ cm}$.</div>
+            <div class="step">Formula for Perimeter of Rectangle $= 2 \times (l + b)$ &nbsp; <em>(1 Mark)</em></div>
+            <div class="step">Perimeter $= 2 \times (8 + 5)$</div>
+            <div class="step">Perimeter $= 2 \times 13 = 26 \text{ cm}$ &nbsp; <em>(1 Mark for correct answer with units)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Solve the simple equation for $x$: $ 2x + 5 = 15 $</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given equation: $2x + 5 = 15$</div>
+            <div class="step">Subtract 5 from both sides (transpose 5 to RHS):<br>
+                $2x = 15 - 5$<br>
+                $2x = 10$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Divide both sides by 2:<br>
+                $x = \frac{10}{2}$<br>
+                $x = 5$ &nbsp; <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. A shopkeeper bought a bag for ₹$400$ and sold it for ₹$520$. Find his total profit and the profit percentage.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Cost Price (C.P.) $= \text{₹}400$<br>
+                Selling Price (S.P.) $= \text{₹}520$</div>
+            <div class="step">Since $\text{S.P.} > \text{C.P.}$, there is a profit. <br>
+                $\text{Profit} = \text{S.P.} - \text{C.P.} = 520 - 400 = \text{₹}120$ &nbsp; <em>(1.5 Marks)</em>
+            </div>
+            <div class="step">
+                $\text{Profit Percentage} = \left( \frac{\text{Profit}}{\text{C.P.}} \right) \times 100\%$ <br>
+                $= \left( \frac{120}{400} \right) \times 100\%$ <br>
+                $= \frac{120}{4} = 30\%$ &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Simplify the fraction $\frac{36}{48}$ to its lowest terms. Also, find an equivalent fraction of $\frac{36}{48}$ with a denominator of $12$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Lowest terms:</strong> The Highest Common Factor (HCF) of 36 and 48 is 12. <br>
+                Dividing numerator and denominator by 12: <br>
+                $\frac{36 \div 12}{48 \div 12} = \frac{3}{4}$ &nbsp; <em>(1.5 Marks)</em>
+            </div>
+            <div class="step"><strong>Equivalent fraction with denominator 12:</strong><br>
+                We need $\frac{36}{48} = \frac{x}{12}$. <br>
+                Since $48 \div 4 = 12$, we divide the numerator by 4 as well. <br>
+                $\frac{36 \div 4}{48 \div 4} = \frac{9}{12}$ &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. The angles of a triangle are in the ratio $1 : 2 : 3$. Find the measure of each angle of the triangle.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Let the angles of the triangle be $x$, $2x$, and $3x$. &nbsp; <em>(0.5 Mark)</em></div>
+            <div class="step">According to the angle sum property of a triangle, the sum of all interior angles is $180^\circ$.<br>
+                $x + 2x + 3x = 180^\circ$ <br>
+                $6x = 180^\circ$ &nbsp; <em>(1 Mark)</em><br>
+                $x = \frac{180^\circ}{6} = 30^\circ$ &nbsp; <em>(0.5 Mark)</em>
+            </div>
+            <div class="step">Now, calculate the three angles:<br>
+                First angle $= x = 30^\circ$<br>
+                Second angle $= 2x = 2 \times 30^\circ = 60^\circ$<br>
+                Third angle $= 3x = 3 \times 30^\circ = 90^\circ$ &nbsp; <em>(1 Mark for all three angles)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. A car travels a distance of $240 \text{ km}$ in $4 \text{ hours}$. How much distance will it cover in $7 \text{ hours}$ if it travels at the same constant speed?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">We will use the Unitary Method.</div>
+            <div class="step">Distance covered in $4 \text{ hours} = 240 \text{ km}$.</div>
+            <div class="step">Distance covered in $1 \text{ hour}$ (Speed) $= \frac{240}{4} = 60 \text{ km}$. &nbsp; <em>(1.5 Marks)</em></div>
+            <div class="step">Therefore, Distance covered in $7 \text{ hours} = 60 \times 7 = 420 \text{ km}$. &nbsp; <em>(1.5 Marks)</em></div>
+            <div class="step"><strong>Final Answer: 420 km</strong></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. The perimeter of a square is $24 \text{ cm}$. Find the length of its side and calculate the area of the square.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Formula for Perimeter of a square $= 4 \times \text{side}$.</div>
+            <div class="step">Given Perimeter $= 24 \text{ cm}$. <br>
+                $4 \times \text{side} = 24$<br>
+                $\text{Side} = \frac{24}{4} = 6 \text{ cm}$. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+            <div class="step">Formula for Area of a square $= \text{side} \times \text{side}$ (or $\text{side}^2$).<br>
+                $\text{Area} = 6 \times 6 = 36 \text{ cm}^2$. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) Add the mixed fractions: $3 \frac{1}{2} + 2 \frac{1}{4}$. (2 Marks)<br>
+            (b) Subtract $14.56$ from $25.3$. (3 Marks)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Addition of fractions:</strong></div>
+            <div class="step">Convert mixed fractions to improper fractions: <br>
+                $3 \frac{1}{2} = \frac{(3 \times 2) + 1}{2} = \frac{7}{2}$ <br>
+                $2 \frac{1}{4} = \frac{(2 \times 4) + 1}{4} = \frac{9}{4}$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Make denominators same (LCM of 2 and 4 is 4): <br>
+                $\frac{7 \times 2}{2 \times 2} + \frac{9}{4} = \frac{14}{4} + \frac{9}{4} = \frac{23}{4}$ <br>
+                Convert back to mixed fraction: $5 \frac{3}{4}$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step" style="margin-top: 15px;"><strong>(b) Decimal Subtraction:</strong></div>
+            <div class="step">Align the decimal points correctly. Convert $25.3$ to $25.30$ to match decimal places.<br>
+                &nbsp;&nbsp; $25.30$<br>
+                $- 14.56$<br>
+                ---------<br>
+                &nbsp;&nbsp; $10.74$ &nbsp; <em>(3 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Simplify using laws of exponents: $\frac{2^5 \times 3^4}{2^3 \times 3^2}$ (3 Marks)<br>
+            (b) Express $120$ as a product of its prime factors. (2 Marks)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Laws of Exponents:</strong></div>
+            <div class="step">Using the quotient law: $\frac{a^m}{a^n} = a^{m-n}$ &nbsp; <em>(1 Mark for stating or applying the law correctly)</em></div>
+            <div class="step">
+                $= \left(\frac{2^5}{2^3}\right) \times \left(\frac{3^4}{3^2}\right)$<br>
+                $= 2^{5-3} \times 3^{4-2}$<br>
+                $= 2^2 \times 3^2$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">
+                $= 4 \times 9 = 36$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step" style="margin-top: 15px;"><strong>(b) Prime Factorization:</strong></div>
+            <div class="step">
+                Divide $120$ by the smallest prime number (2):<br>
+                $120 = 2 \times 60$<br>
+                $60 = 2 \times 30$<br>
+                $30 = 2 \times 15$<br>
+                $15 = 3 \times 5$<br>
+                $5 = 5 \times 1$ &nbsp; <em>(1 Mark for correct steps)</em>
+            </div>
+            <div class="step">Therefore, $120 = 2 \times 2 \times 2 \times 3 \times 5$ or $2^3 \times 3 \times 5$. &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) The sum of two consecutive integers is $27$. Form an equation and find the two integers. (3 Marks)<br>
+            (b) Find the ratio of $500 \text{ ml}$ to $2 \text{ Litres}$ in its simplest form. (2 Marks)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Consecutive Integers:</strong></div>
+            <div class="step">Let the first integer be $x$. <br>
+                Then, the next consecutive integer will be $x + 1$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">According to the question, their sum is $27$:<br>
+                $x + (x + 1) = 27$<br>
+                $2x + 1 = 27$<br>
+                $2x = 27 - 1 = 26$ &nbsp; <em>(1 Mark)</em><br>
+                $x = \frac{26}{2} = 13$
+            </div>
+            <div class="step">So, the first integer is $13$, and the second integer is $13 + 1 = 14$. <br>
+                <strong>The integers are 13 and 14.</strong> &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step" style="margin-top: 15px;"><strong>(b) Ratios:</strong></div>
+            <div class="step">To find the ratio, both quantities must have the same units. <br>
+                Convert $2 \text{ Litres}$ to milliliters ($\text{ml}$).<br>
+                We know, $1 \text{ Litre} = 1000 \text{ ml}$.<br>
+                Therefore, $2 \text{ Litres} = 2 \times 1000 = 2000 \text{ ml}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Now, find the ratio:<br>
+                $\text{Ratio} = \frac{500 \text{ ml}}{2000 \text{ ml}}$<br>
+                Divide both by 500:<br>
+                $\text{Ratio} = \frac{1}{4} = 1:4$ &nbsp; <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

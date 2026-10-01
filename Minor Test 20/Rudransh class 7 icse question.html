@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 1,
+                minScale: 0.8
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 4px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            width: calc(100% - 35px);
+        }
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding-bottom: 5px;
+        }
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; }
+        }
+        @media screen and (max-width: 600px) {
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            body { padding: 15px; }
+            .q-num { width: 25px; }
+            .q-content { width: calc(100% - 25px); }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 20</div>
+        <div class="exam-details">
+            <span>Class: 7 (ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly, showing all necessary steps.</li>
+                <li>Use of calculators is strictly prohibited.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Simplify the following expression using laws of exponents and write the final answer in exponential form: 
+            <div class="math-scroll">$(2^3 \times 2^4) \div 2^5$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Convert $35\%$ into a fraction in its simplest form, and also express it as a decimal.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Add the following algebraic expressions:<br>
+            <div class="math-scroll">$3x - 4y + 2z$ and $2x + 5y - z$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            In $\triangle ABC$, it is given that $\angle A = 50^\circ$ and $\angle B = 70^\circ$. Find the measure of $\angle C$. Based on the angles, name the type of triangle this forms.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Evaluate the value of the algebraic expression $2a^2 - 3b + 4$ when $a = 2$ and $b = -1$.
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Rohan scored $45$ marks out of a total of $60$ marks in a Mathematics test. Calculate his percentage score. If the passing criteria is $40\%$, did Rohan pass the test?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            The exterior angle of a triangle measures $110^\circ$, and one of its interior opposite angles is $45^\circ$. Find the measures of the other two interior angles of the triangle.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Simplify the expression below and express the result in power notation with a positive exponent:
+            <div class="math-scroll">$\left(\frac{-3}{4}\right)^5 \times \left(\frac{-3}{4}\right)^{-3}$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Subtract the expression $4p^2q - 3pq + 5pq^2 - 8p + 7q - 10$ from $18 - 3p - 11q + 5pq - 2pq^2 + 5p^2q$.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Is it geometrically possible to construct a triangle with side lengths $3 \text{ cm}$, $6 \text{ cm}$, and $7 \text{ cm}$? Provide a mathematical reason for your answer.
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Mr. Sharma earns ₹ $25,000$ per month. He spends $20\%$ of his monthly income on house rent and $40\%$ of his income on food. He saves the remaining amount. 
+            <div class="sub-question">a) Calculate the total amount he spends on rent and food combined.</div>
+            <div class="sub-question">b) Find his monthly savings.</div>
+            <div class="sub-question">c) Express his savings as a fraction of his total income in its simplest form.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Consider the algebraic expression: $2x(x - y^2) - 3y(xy + 2x) - xy(x + y)$
+            <div class="sub-question">a) Simplify the expression by expanding the brackets and grouping like terms.</div>
+            <div class="sub-question">b) Hence, find the numerical value of the simplified expression when $x = -1$ and $y = 2$.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Answer the following questions based on the properties of triangles:
+            <div class="sub-question">a) In a right-angled triangle, the two acute angles are in the ratio $2:3$. Find the exact measure of both acute angles.</div>
+            <div class="sub-question">b) The angles of a different triangle are given as $x^\circ$, $(x - 20)^\circ$, and $(x + 50)^\circ$. Form an equation and find the value of $x$.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
