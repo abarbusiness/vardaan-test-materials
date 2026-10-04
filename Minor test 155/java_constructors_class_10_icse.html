@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FORMAT: Chapter Name - Subject -->
+    <title>Constructors in Java - Vardaan Learning Institute</title>
+    <style>
+        /* */
+        /* --- CSS VARIABLES (Vardaan Theming) --- */
+        :root {
+            /* Light Mode Palette */
+            --yellow-bg: #fff9c4;
+            --yellow-border: #fbc02d;
+            --green-bg: #e8f5e9;
+            --green-border: #43a047;
+            --blue-bg: #e3f2fd;
+            --blue-border: #1e88e5;
+            --pink-bg: #fce4ec;
+            --pink-border: #d81b60;
+            --text-main: #000000;
+            --paper-bg: #ffffff;
+            --accent-purple: #7e57c2;
+            --meta-text: #666666;
+            --example-bg: rgba(255,255,255,0.6);
+            --example-text: #444444;
+            --toggle-bg: #eee;
+            --toggle-border: #ccc;
+            --icon-fill: #000;
+        }
+
+        /* --- DARK MODE VARIABLES --- */
+        html.dark-mode {
+            --yellow-bg: #3f3a00;
+            --yellow-border: #fdd835;
+            --green-bg: #0f2e13;
+            --green-border: #81c784;
+            --blue-bg: #0d1b2a;
+            --blue-border: #64b5f6;
+            --pink-bg: #300815;
+            --pink-border: #f06292;
+            --text-main: #e0e0e0;
+            --paper-bg: #121212;
+            --accent-purple: #d1c4e9;
+            --meta-text: #aaaaaa;
+            --example-bg: rgba(255,255,255,0.1);
+            --example-text: #cccccc;
+            --toggle-bg: #333;
+            --toggle-border: #555;
+            --icon-fill: #fff;
+        }
+
+        /* */
+        /* --- GLOBAL LAYOUT --- */
+        body {
+            background-color: var(--paper-bg);
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-main);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* --- WATERMARK OVERLAY --- */
+        .watermark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.3s ease;
+            mix-blend-mode: multiply;
+        }
+
+        .watermark-image {
+            opacity: 0.1;
+            max-width: 80%;
+            transition: all 0.3s ease;
+        }
+
+        html.dark-mode .watermark-overlay {
+            mix-blend-mode: screen; 
+        }
+
+        html.dark-mode .watermark-image {
+            filter: invert(1); 
+            opacity: 0.15;
+        }
+
+        /* */
+        /* --- PAPER SHEET CONTAINER --- */
+        .paper-sheet {
+            background-color: var(--paper-bg);
+            width: 210mm;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20mm;
+            box-sizing: border-box;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        @media screen and (max-width: 768px) {
+            .paper-sheet { padding: 10mm 5mm; }
+        }
+
+        /* --- BRANDING HEADER --- */
+        .branding-header {
+            text-align: center;
+            margin-bottom: 5px;
+            border-bottom: 3px double var(--blue-border);
+            padding-bottom: 15px;
+        }
+
+        .institute-name {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--blue-border);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .institute-name { font-size: 1.6rem; }
+            .system-name { font-size: 0.9rem; }
+        }
+
+        .system-name {
+            font-size: 1.1rem;
+            color: var(--meta-text);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            color: #666666; 
+            margin-top: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: none; /* Hidden on screen by default */
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-info a { color: inherit; text-decoration: none; }
+
+        /* */
+        /* --- BRANDING FOOTER --- */
+        .branding-footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--toggle-border);
+            color: var(--meta-text);
+        }
+
+        .created-by { font-size: 1rem; margin-bottom: 5px; font-weight: bold; }
+        .powered-by { font-size: 0.9rem; color: var(--pink-border); font-style: italic; }
+
+        /* --- TYPOGRAPHY & ELEMENTS --- */
+        h1 {
+            font-size: 2.2rem;
+            color: var(--blue-border);
+            text-align: center;
+            margin-top: 5px; 
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--blue-border);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--pink-border);
+            margin-top: 40px;
+            border-left: 5px solid var(--pink-border);
+            padding-left: 15px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: var(--accent-purple);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-purple);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+        }
+
+        p, li { font-size: 1.05rem; line-height: 1.6; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        strong { color: var(--pink-border); }
+
+        pre {
+            background-color: var(--toggle-bg);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--toggle-border);
+            border-left: 5px solid var(--blue-border);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            font-family: 'Consolas', 'Courier New', Courier, monospace;
+            color: var(--text-main);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+            margin: 15px 0;
+        }
+
+        /* --- INFO BOXES --- */
+        .info-box {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .info-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .blue-box { background-color: var(--blue-bg); border: 2px solid var(--blue-border); border-radius: 8px; padding: 20px; margin: 25px 0; position: relative; }
+        .green-box { background-color: var(--green-bg); border: 2px solid var(--green-border); border-radius: 8px; padding: 20px; margin: 25px 0; position: relative; }
+        .yellow-box { background-color: var(--yellow-bg); border: 2px solid var(--yellow-border); border-radius: 8px; padding: 20px; margin: 25px 0; position: relative; }
+
+        .box-label {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--paper-bg);
+            padding: 2px 10px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: 2px solid;
+            border-radius: 4px;
+        }
+
+        .blue-box .box-label { color: var(--blue-border); border-color: var(--blue-border); }
+        .green-box .box-label { color: var(--green-border); border-color: var(--green-border); }
+        .yellow-box .box-label { color: #f9a825; border-color: var(--yellow-border); }
+
+        /* */
+        /* --- THEME TOGGLE --- */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--toggle-bg);
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .icon-sun, .icon-moon {
+            position: absolute;
+            transition: all 0.5s ease;
+            stroke: var(--icon-fill);
+        }
+
+        .icon-sun { opacity: 0; transform: scale(0.5) rotate(-90deg); }
+        html.dark-mode .icon-moon { opacity: 0; transform: scale(0.5) rotate(90deg); }
+        html.dark-mode .icon-sun { opacity: 1; transform: scale(1) rotate(0deg); }
+
+        /* --- STRICT PRINT CONFIGURATION --- */
+        @media print {
+            body { 
+                background-color: #ffffff !important; 
+                color: #000000 !important;
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+            .paper-sheet { width: 100% !important; margin: 0 !important; padding: 0 !important; box-shadow: none !important; }
+            .theme-toggle { display: none !important; }
+            .branding-footer { display: block !important; page-break-inside: avoid; } /* Print display rule updated */
+            .contact-info { display: flex !important; } /* Force show in print */
+            
+            .watermark-overlay {
+                display: flex !important;
+                position: fixed !important;
+                z-index: -1 !important;
+                opacity: 0.1 !important;
+                mix-blend-mode: normal !important; 
+                left: 0 !important;
+                top: 0 !important;
+                width: 100vw !important;
+                height: 100vh !important;
+            }
+            .watermark-image { filter: none !important; max-width: 80% !important; display: block !important; }
+
+            @page {
+                size: A4;
+                margin: 2cm;
+                @bottom-left { content: none; }
+                @bottom-right { content: none; }
+                @bottom-center {
+                    content: counter(page);
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #d81b60; 
+                    color: #ffffff;
+                    border-radius: 50%;
+                    font-family: 'Segoe UI', sans-serif;
+                    font-size: 11pt;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 30px;
+                    margin: 0 auto;
+                }
+            }
+            h1, h2, h3 { page-break-after: avoid; }
+            pre, .blue-box, .green-box, .yellow-box { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- -->
+    <!-- COMPONENT: Watermark (Do Not Modify URL) -->
+    <div class="watermark-overlay">
+        <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Vardaan Watermark" class="watermark-image">
+    </div>
+
+    <!-- COMPONENT: Dark Mode Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+        <!-- Moon Icon -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun Icon -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <!-- MAIN CONTAINER -->
+    <div class="paper-sheet">
+        
+        <!-- BRANDING HEADER (MANDATORY) -->
+        <div class="branding-header">
+            <div class="institute-name">Vardaan Learning Institute</div>
+            <div class="system-name">Class 10 Computer Applications • Chapter Notes</div>
+            
+            <div class="contact-info">
+                <span>🌐 vardaanlearning.com</span>
+                <span>📞 9508841336</span>
+            </div>
+        </div>
+
+        <h1>CONSTRUCTORS IN JAVA</h1>
+        
+        <h2>1. The Problem: Why do we even need this?</h2>
+        <p><strong>Picture this:</strong> You're coding a <code>Student</code> management system. Every time a new student object is created, you want them to <em>automatically</em> get a name and roll number. </p>
+        <p>In a standard class, it's just a blank blueprint:</p>
+<pre>
+class Student {
+    String name;
+    int roll;
+}
+</pre>
+        <p>Without a constructor, you have to do the heavy lifting manually every single time:</p>
+<pre>
+Student s1 = new Student();
+// Yawn... doing it manually
+s1.name = "Abhishek";
+s1.roll = 10;
+</pre>
+        <div class="blue-box info-box">
+            <span class="box-label">The Magic Solution</span>
+            <p><strong>What if values just initialized themselves upon birth of the object?</strong><br>
+            That’s exactly what a <strong>constructor</strong> does. It's the setup team that runs the moment an object is created!</p>
+        </div>
+
+        <h2>2. Basic Definition & The Golden Rules</h2>
+        <p>A constructor is a <strong>special member function</strong> that gets fired off <em>automatically</em> when an object is created in memory.</p>
+        
+        <div class="yellow-box info-box">
+            <span class="box-label">Memorize These Rules (Exam V.V.I)</span>
+            <p><strong>Your 4 Pillars of Constructors:</strong></p>
+            <ul style="list-style-type: disc;">
+                <li>The name <strong>MUST exactly match</strong> the class name. Case-sensitive!</li>
+                <li>It has <strong>NO return type</strong>. Don't even write <code>void</code>.</li>
+                <li>It triggers <strong>automatically</strong> the split second you use the <code>new</code> keyword.</li>
+                <li>Its sole purpose in life is to <strong>initialize instance variables</strong>.</li>
+            </ul>
+        </div>
+
+        <h2>3. Let's See It In Action!</h2>
+<pre>
+class Student {
+    
+    // Boom! Here is the constructor
+    Student() {
+        System.out.println("Constructor called automatically!");
+    }
+    
+    public static void main(String args[]) {
+        Student s1 = new Student(); // The trigger!
+    }
+}
+</pre>
+        <p><strong>Anatomy of object creation:</strong></p>
+        <p><code>Student s1 = new Student();</code></p>
+        <ul style="border-left: 3px solid var(--blue-border); padding-left: 15px; list-style: none; margin-left: 10px;">
+            <li>[new] <code>new Student()</code> &rarr; Allocates fresh memory for the object.</li>
+            <li>[call] <code>Student()</code> &rarr; <strong>Calls our constructor function!</strong></li>
+        </ul>
+
+        <h2>4. The ICSE Logic Flow</h2>
+        <div class="green-box info-box">
+            <span class="box-label">Behind The Scenes</span>
+            <p><strong>How Java actually reads your mind:</strong></p>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; font-weight: bold; font-size: 1.1rem; color: var(--green-border); background: var(--example-bg); padding: 15px; border-radius: 8px;">
+                <span>Object created via 'new'</span>
+                <span>&darr;</span>
+                <span>Constructor fires immediately</span>
+                <span>&darr;</span>
+                <span>Values initialized (name="Abhishek", roll=10)</span>
+                <span>&darr;</span>
+                <span>Object is now ready for use</span>
+            </div>
+        </div>
+
+        <h2>5. Level Up: Parameterized Constructors</h2>
+        <p><strong>The problem with defaults:</strong> "Wait, we can't hardcode 'Abhishek' for every single student!"</p>
+        <p><strong>The fix:</strong> We pass custom values directly through the brackets when we create the object.</p>
+<pre>
+class Student {
+    String name;
+    int roll;
+    
+    // Parameterized Constructor accepting custom data
+    Student(String n, int r) {
+        name = n;
+        roll = r;
+    }
+    
+    public static void main(String args[]) {
+        // Passing arguments on the fly!
+        Student s1 = new Student("Abhishek", 10);
+        Student s2 = new Student("Rahul", 20);
+    }
+}
+</pre>
+        <div style="background: var(--example-bg); padding: 15px; border-radius: 8px; border: 2px dashed var(--meta-text); display: flex; flex-wrap: wrap; justify-content: space-around; font-family: monospace; font-size: 1.1rem; margin-bottom: 20px;">
+            <div>"Abhishek" &rarr; <strong style="color: var(--blue-border);">n</strong> &rarr; <strong style="color: var(--pink-border);">name</strong></div>
+            <div>10 &rarr; <strong style="color: var(--blue-border);">r</strong> &rarr; <strong style="color: var(--pink-border);">roll</strong></div>
+        </div>
+
+        <div class="yellow-box info-box">
+            <span class="box-label">Pro-Tip: The 'this' Keyword</span>
+            <p>Want to use the exact same variable names for parameters to keep things clean? Use the <strong><code>this</code></strong> keyword to avoid confusing Java!</p>
+<pre>
+Student(String name, int roll) {
+    this.name = name; // 'this' points to the class variable
+    this.roll = roll; // no 'this' means the parameter
+}
+</pre>
+        </div>
+
+        <h2>6. The Two Flavors (Syllabus Strict)</h2>
+        <p>For your Class 10 boards, stick to these two primary types:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div style="background: var(--paper-bg); border: 2px solid var(--toggle-border); padding: 15px; border-radius: 8px;">
+                <h4 style="margin-top: 0; color: var(--text-main);">1. Default Constructor</h4>
+                <p style="font-size: 0.95rem;">Has absolutely <strong>no parameters</strong> in the brackets. Good for basic defaults.</p>
+<pre style="margin-bottom: 0;">Student() {
+    name = "Unknown";
+}</pre>
+            </div>
+            <div style="background: var(--paper-bg); border: 2px solid var(--toggle-border); padding: 15px; border-radius: 8px;">
+                <h4 style="margin-top: 0; color: var(--text-main);">2. Parameterized</h4>
+                <p style="font-size: 0.95rem;">Takes <strong>arguments</strong> in the brackets to allow custom initialization.</p>
+<pre style="margin-bottom: 0;">Student(String n) {
+    name = n;
+}</pre>
+            </div>
+        </div>
+
+        <div class="blue-box info-box">
+            <span class="box-label">The Invisible Helper</span>
+            <p><strong>Fun Fact:</strong> If you forget to write a constructor, Java quietly creates an invisible, empty default constructor for you behind the scenes! It sets numbers to <code>0</code> and Strings to <code>null</code>.</p>
+        </div>
+
+        <h2>7. The Big Gun: Constructor Overloading</h2>
+        <p><strong>What is it?</strong> Having multiple constructors in the same class, with the same name, but <em>different parameter lists</em>.</p>
+<pre>
+class Student {
+    Student() { ... }                  // Type 1: Empty
+    Student(String name) { ... }       // Type 2: One String
+    Student(String name, int r) { ... }// Type 3: String & Int
+}
+</pre>
+        <p>Java automatically figures out which one to call based on the data you pass in <code>new Student(...)</code>.</p>
+
+        <h2 style="page-break-before: always;">8. ICSE Board Level: Crack The Code</h2>
+        <p>Let's test your reflexes with actual board-style snippet questions.</p>
+
+        <div class="green-box info-box">
+            <span class="box-label">Q1. Guess The Output</span>
+<pre style="margin-top: 10px;">
+class Box {
+    Box() { System.out.print("Empty "); }
+    Box(int s) { System.out.print("Size " + s); }
+    public static void main(String args[]) {
+        Box b1 = new Box();
+        Box b2 = new Box(5);
+    }
+}
+</pre>
+            <p style="margin-bottom: 0;"><strong>Answer:</strong> <code>Empty Size 5</code> <br><em>(Note the print statement keeps them on the same line!)</em></p>
+        </div>
+
+        <div class="blue-box info-box">
+            <span class="box-label">Q2. Spot the Crime</span>
+<pre style="margin-top: 10px;">
+class Car {
+    int speed;
+    void Car(int s) { speed = s; }
+}
+</pre>
+            <p style="margin-bottom: 0;"><strong>The Crime:</strong> The word <code>void</code>. Constructors <strong>never</strong> have a return type. By adding void, it became a normal method. <br><strong>The Fix:</strong> Remove <code>void</code>.</p>
+        </div>
+
+        <h2 style="page-break-before: always;">9. The Ultimate 2-Mark Showdown</h2>
+        <p>This difference table is an absolute favorite in Section A of your ICSE paper.</p>
+        
+        <div style="overflow-x: auto; margin-bottom: 30px;">
+            <table style="width: 100%; min-width: 500px; border-collapse: separate; border-spacing: 0; border: 2px solid var(--blue-border); border-radius: 8px; overflow: hidden; background: var(--paper-bg); font-size: 1.05rem;">
+                <thead>
+                    <tr style="background: var(--blue-bg);">
+                        <th style="padding: 15px; border-bottom: 2px solid var(--blue-border); border-right: 1px solid var(--blue-border); color: var(--blue-border); width: 50%; text-align: left;">Constructor</th>
+                        <th style="padding: 15px; border-bottom: 2px solid var(--blue-border); color: var(--blue-border); width: 50%; text-align: left;">Method (Function)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid var(--toggle-border); border-right: 1px solid var(--blue-border);">Name <strong>MUST be exactly the same</strong> as the class name.</td>
+                        <td style="padding: 15px; border-bottom: 1px solid var(--toggle-border);">Name can be anything (except the class name, ideally).</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-bottom: 1px solid var(--toggle-border); border-right: 1px solid var(--blue-border);">Has <strong>NO return type</strong> (not even void).</td>
+                        <td style="padding: 15px; border-bottom: 1px solid var(--toggle-border);"><strong>MUST</strong> have a return type (like void, int).</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px; border-right: 1px solid var(--blue-border);">Fires <strong>automatically</strong> when an object is created.</td>
+                        <td style="padding: 15px;">Must be called <strong>explicitly</strong> using the dot operator (<code>obj.display()</code>).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>10. Final Boss: Self-Test</h2>
+        <ul style="list-style-type: disc;">
+            <li>What happens if you give a constructor a return type?</li>
+            <li>Can you have a class without writing a single constructor? How?</li>
+            <li>Explain constructor overloading in one simple sentence.</li>
+        </ul>
+        <p style="text-align: center; font-weight: bold; margin-top: 30px; color: var(--pink-border);">You're now ready to crush Constructors in your boards!</p>
+
+        <!-- BRANDING FOOTER (MANDATORY) -->
+        <div class="branding-footer">
+            <p class="created-by">Created by Team Vardaan ❤️</p>
+            <p class="powered-by">Powered by Vardaan Comet</p>
+        </div>
+
+    </div>
+
+    <!-- THEME TOGGLE SCRIPT -->
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
