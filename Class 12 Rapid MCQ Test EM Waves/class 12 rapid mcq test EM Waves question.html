@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Rapid MCQ Test</title>
+    <!-- MathJax for rendering equations -->
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            color: var(--text-main); 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box;
+            background-color: white; 
+            position: relative;
+            max-width: 210mm;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            margin-bottom: 25px; 
+        }
+        .institute-name { 
+            margin: 0; 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .test-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+        }
+        .instructions { 
+            margin-bottom: 20px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: center;
+        }
+        .mcq-container { 
+            column-count: 2; 
+            column-gap: 40px; 
+            column-rule: 1.5px solid var(--primary-yellow); 
+        }
+        .question-block { 
+            break-inside: avoid; 
+            margin-bottom: 18px; 
+        }
+        .q-text { 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+        }
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 4px 10px; 
+            padding-left: 25px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+            column-span: all;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) { 
+            .mcq-container { column-count: 1; column-rule: none; } 
+            .options-grid { grid-template-columns: 1fr; }
+            .test-details { flex-direction: column; align-items: center; gap: 5px;}
+        }
+        @media print {
+            body { max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="Watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">RAPID MCQ TEST: ELECTROMAGNETIC WAVES</div>
+        <div class="test-details">
+            <span>Class: 12</span>
+            <span>Subject: Physics</span>
+            <span>Time: 15 Mins</span>
+            <span>Max. Marks: 30</span>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        Attempt all 30 questions. Each question carries 1 mark. Speed and accuracy are key!
+    </div>
+
+    <div class="mcq-container">
+        <!-- Q1 -->
+        <div class="question-block">
+            <div class="q-text">1. The basic source of electromagnetic waves is:</div>
+            <div class="options-grid">
+                <div>(a) A charge at rest</div>
+                <div>(b) A charge in uniform motion</div>
+                <div>(c) An oscillating charge</div>
+                <div>(d) A constant current</div>
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question-block">
+            <div class="q-text">2. Displacement current arises due to:</div>
+            <div class="options-grid">
+                <div>(a) Changing magnetic field</div>
+                <div>(b) Changing electric field</div>
+                <div>(c) Steady electric field</div>
+                <div>(d) Flow of electrons</div>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-block">
+            <div class="q-text">3. In an electromagnetic wave in vacuum, the ratio of the amplitudes of the electric and magnetic fields (\(E_0/B_0\)) is equal to:</div>
+            <div class="options-grid">
+                <div>(a) Speed of light in vacuum</div>
+                <div>(b) Permeability of free space</div>
+                <div>(c) Permittivity of free space</div>
+                <div>(d) Impedance of free space</div>
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-block">
+            <div class="q-text">4. The phase difference between the electric and magnetic fields in an electromagnetic wave is:</div>
+            <div class="options-grid">
+                <div>(a) \(\pi/2\)</div>
+                <div>(b) \(\pi\)</div>
+                <div>(c) \(0\)</div>
+                <div>(d) \(\pi/4\)</div>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-block">
+            <div class="q-text">5. The direction of propagation of an electromagnetic wave is given by the direction of:</div>
+            <div class="options-grid">
+                <div>(a) \(\vec{E}\)</div>
+                <div>(b) \(\vec{B}\)</div>
+                <div>(c) \(\vec{E} \times \vec{B}\)</div>
+                <div>(d) \(\vec{B} \times \vec{E}\)</div>
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question-block">
+            <div class="q-text">6. Which of the following EM waves has the maximum frequency?</div>
+            <div class="options-grid">
+                <div>(a) X-rays</div>
+                <div>(b) Gamma rays</div>
+                <div>(c) Microwaves</div>
+                <div>(d) Radio waves</div>
+            </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="question-block">
+            <div class="q-text">7. Momentum transferred by an EM wave of total energy \(U\) to a completely absorbing surface is:</div>
+            <div class="options-grid">
+                <div>(a) \(U/c\)</div>
+                <div>(b) \(2U/c\)</div>
+                <div>(c) \(U/c^2\)</div>
+                <div>(d) \(Uc\)</div>
+            </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question-block">
+            <div class="q-text">8. Electromagnetic waves used in radar systems for aircraft navigation are:</div>
+            <div class="options-grid">
+                <div>(a) Infrared waves</div>
+                <div>(b) Ultraviolet rays</div>
+                <div>(c) Microwaves</div>
+                <div>(d) X-rays</div>
+            </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="question-block">
+            <div class="q-text">9. Welder's glasses are used to protect the eyes primarily from:</div>
+            <div class="options-grid">
+                <div>(a) Infrared rays</div>
+                <div>(b) Visible light</div>
+                <div>(c) Ultraviolet rays</div>
+                <div>(d) Microwaves</div>
+            </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="question-block">
+            <div class="q-text">10. The speed of electromagnetic waves in a medium of permittivity \(\epsilon\) and permeability \(\mu\) is:</div>
+            <div class="options-grid">
+                <div>(a) \(\sqrt{\mu \epsilon}\)</div>
+                <div>(b) \(1/\sqrt{\mu \epsilon}\)</div>
+                <div>(c) \(\sqrt{\mu / \epsilon}\)</div>
+                <div>(d) \(\sqrt{\epsilon / \mu}\)</div>
+            </div>
+        </div>
+
+        <!-- Q11 -->
+        <div class="question-block">
+            <div class="q-text">11. Which of the following is NOT an electromagnetic wave?</div>
+            <div class="options-grid">
+                <div>(a) Cosmic rays</div>
+                <div>(b) Gamma rays</div>
+                <div>(c) \(\beta\)-rays</div>
+                <div>(d) X-rays</div>
+            </div>
+        </div>
+
+        <!-- Q12 -->
+        <div class="question-block">
+            <div class="q-text">12. The mathematical expression for displacement current \(I_d\) is:</div>
+            <div class="options-grid">
+                <div>(a) \(\mu_0 \frac{d\Phi_E}{dt}\)</div>
+                <div>(b) \(\epsilon_0 \frac{d\Phi_E}{dt}\)</div>
+                <div>(c) \(\frac{1}{\epsilon_0} \frac{d\Phi_E}{dt}\)</div>
+                <div>(d) \(\epsilon_0 \frac{d\Phi_B}{dt}\)</div>
+            </div>
+        </div>
+
+        <!-- Q13 -->
+        <div class="question-block">
+            <div class="q-text">13. The ozone layer in the earth's atmosphere absorbs:</div>
+            <div class="options-grid">
+                <div>(a) X-rays</div>
+                <div>(b) Gamma rays</div>
+                <div>(c) Ultraviolet radiations</div>
+                <div>(d) Infrared radiations</div>
+            </div>
+        </div>
+
+        <!-- Q14 -->
+        <div class="question-block">
+            <div class="q-text">14. TV remote controls use:</div>
+            <div class="options-grid">
+                <div>(a) Microwaves</div>
+                <div>(b) Infrared waves</div>
+                <div>(c) UV rays</div>
+                <div>(d) Radio waves</div>
+            </div>
+        </div>
+
+        <!-- Q15 -->
+        <div class="question-block">
+            <div class="q-text">15. In an EM wave, the average energy density of the electric field (\(u_E\)) and magnetic field (\(u_B\)) are related as:</div>
+            <div class="options-grid">
+                <div>(a) \(u_E > u_B\)</div>
+                <div>(b) \(u_E < u_B\)</div>
+                <div>(c) \(u_E = u_B\)</div>
+                <div>(d) \(u_E = c \cdot u_B\)</div>
+            </div>
+        </div>
+
+        <!-- Q16 -->
+        <div class="question-block">
+            <div class="q-text">16. Electromagnetic waves are deflected by:</div>
+            <div class="options-grid">
+                <div>(a) Electric field only</div>
+                <div>(b) Magnetic field only</div>
+                <div>(c) Both electric & magnetic fields</div>
+                <div>(d) Neither electric nor magnetic fields</div>
+            </div>
+        </div>
+
+        <!-- Q17 -->
+        <div class="question-block">
+            <div class="q-text">17. Which of the following relates wavelength (\(\lambda\)), frequency (\(\nu\)), and speed of an EM wave (\(c\))?</div>
+            <div class="options-grid">
+                <div>(a) \(c = \lambda / \nu\)</div>
+                <div>(b) \(c = \nu \lambda\)</div>
+                <div>(c) \(c = \nu / \lambda\)</div>
+                <div>(d) \(\lambda = c \nu\)</div>
+            </div>
+        </div>
+
+        <!-- Q18 -->
+        <div class="question-block">
+            <div class="q-text">18. The wavelength range of the visible spectrum is approximately:</div>
+            <div class="options-grid">
+                <div>(a) 10 nm to 400 nm</div>
+                <div>(b) 400 nm to 700 nm</div>
+                <div>(c) 700 nm to 1 mm</div>
+                <div>(d) 1 mm to 1 m</div>
+            </div>
+        </div>
+
+        <!-- Q19 -->
+        <div class="question-block">
+            <div class="q-text">19. The Greenhouse effect is mainly due to:</div>
+            <div class="options-grid">
+                <div>(a) UV rays</div>
+                <div>(b) X-rays</div>
+                <div>(c) Infrared rays</div>
+                <div>(d) Microwaves</div>
+            </div>
+        </div>
+
+        <!-- Q20 -->
+        <div class="question-block">
+            <div class="q-text">20. Which waves are produced by the radioactive decay of the nucleus?</div>
+            <div class="options-grid">
+                <div>(a) X-rays</div>
+                <div>(b) Microwaves</div>
+                <div>(c) Gamma rays</div>
+                <div>(d) UV rays</div>
+            </div>
+        </div>
+
+        <!-- Q21 -->
+        <div class="question-block">
+            <div class="q-text">21. The generalized Ampere's circuital law (Ampere-Maxwell law) is given by:</div>
+            <div class="options-grid">
+                <div style="grid-column: 1 / -1;">(a) \(\oint \vec{B} \cdot d\vec{l} = \mu_0 I_c\)</div>
+                <div style="grid-column: 1 / -1;">(b) \(\oint \vec{B} \cdot d\vec{l} = \mu_0 (I_c + \epsilon_0 \frac{d\Phi_E}{dt})\)</div>
+                <div style="grid-column: 1 / -1;">(c) \(\oint \vec{B} \cdot d\vec{l} = \mu_0 \epsilon_0 \frac{d\Phi_E}{dt}\)</div>
+                <div style="grid-column: 1 / -1;">(d) \(\oint \vec{E} \cdot d\vec{l} = -\frac{d\Phi_B}{dt}\)</div>
+            </div>
+        </div>
+
+        <!-- Q22 -->
+        <div class="question-block">
+            <div class="q-text">22. If an EM wave is propagating along the +z-axis and the electric field is along the +x-axis, then the magnetic field is along the:</div>
+            <div class="options-grid">
+                <div>(a) +y-axis</div>
+                <div>(b) -y-axis</div>
+                <div>(c) +z-axis</div>
+                <div>(d) -x-axis</div>
+            </div>
+        </div>
+
+        <!-- Q23 -->
+        <div class="question-block">
+            <div class="q-text">23. The quantity \(\sqrt{\mu_0 / \epsilon_0}\) has the unit of:</div>
+            <div class="options-grid">
+                <div>(a) Velocity</div>
+                <div>(b) Resistance (Ohm)</div>
+                <div>(c) Energy</div>
+                <div>(d) Inductance</div>
+            </div>
+        </div>
+
+        <!-- Q24 -->
+        <div class="question-block">
+            <div class="q-text">24. Cellular phones transmit voice communications using:</div>
+            <div class="options-grid">
+                <div>(a) Infrared waves</div>
+                <div>(b) Ultra High Frequency (UHF) radio waves</div>
+                <div>(c) Ultraviolet rays</div>
+                <div>(d) Gamma rays</div>
+            </div>
+        </div>
+
+        <!-- Q25 -->
+        <div class="question-block">
+            <div class="q-text">25. Which waves are heavily used in the study of crystal structures?</div>
+            <div class="options-grid">
+                <div>(a) X-rays</div>
+                <div>(b) Radio waves</div>
+                <div>(c) Microwaves</div>
+                <div>(d) Infrared rays</div>
+            </div>
+        </div>
+
+        <!-- Q26 -->
+        <div class="question-block">
+            <div class="q-text">26. Water purifiers commonly use which of the following to kill bacteria?</div>
+            <div class="options-grid">
+                <div>(a) Gamma rays</div>
+                <div>(b) Infrared rays</div>
+                <div>(c) UV rays</div>
+                <div>(d) Microwaves</div>
+            </div>
+        </div>
+
+        <!-- Q27 -->
+        <div class="question-block">
+            <div class="q-text">27. The speed of an electromagnetic wave in vacuum is independent of its:</div>
+            <div class="options-grid">
+                <div>(a) Frequency</div>
+                <div>(b) Wavelength</div>
+                <div>(c) Intensity</div>
+                <div>(d) All of these</div>
+            </div>
+        </div>
+
+        <!-- Q28 -->
+        <div class="question-block">
+            <div class="q-text">28. While a capacitor is charging, the conduction current \(I_c\) and displacement current \(I_d\) are related as:</div>
+            <div class="options-grid">
+                <div>(a) \(I_c > I_d\)</div>
+                <div>(b) \(I_c < I_d\)</div>
+                <div>(c) \(I_c = I_d\)</div>
+                <div>(d) \(I_d = 0\)</div>
+            </div>
+        </div>
+
+        <!-- Q29 -->
+        <div class="question-block">
+            <div class="q-text">29. The pressure exerted by an EM wave of intensity \(I\) on a perfectly reflecting surface is:</div>
+            <div class="options-grid">
+                <div>(a) \(I/c\)</div>
+                <div>(b) \(2I/c\)</div>
+                <div>(c) \(I/c^2\)</div>
+                <div>(d) \(c/I\)</div>
+            </div>
+        </div>
+
+        <!-- Q30 -->
+        <div class="question-block">
+            <div class="q-text">30. LASIK eye surgery utilizes highly focused:</div>
+            <div class="options-grid">
+                <div>(a) Infrared lasers</div>
+                <div>(b) X-rays</div>
+                <div>(c) Ultraviolet lasers</div>
+                <div>(d) Microwaves</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | All the Best!</div>
+</body>
+</html>

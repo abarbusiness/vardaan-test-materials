@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 11 Chemistry Minor Test 17</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a1a1a;
+            --text-main: #222222;
+            --border-color: #000000;
+            --bg-light: #fdfdfd;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 900px;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 25px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 500px;
+            opacity: 0.08;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 5px;
+        }
+
+        .institute-name {
+            font-size: 22pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1.2px;
+            color: #000;
+        }
+
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 4px;
+            text-decoration: underline;
+            color: #333;
+        }
+
+        .exam-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 10px;
+            background-color: #fafafa;
+        }
+
+        .exam-details span {
+            padding: 2px 5px;
+        }
+
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            font-style: italic;
+            text-align: left;
+            background: #fffdf0;
+            border-left: 3px solid var(--primary-yellow);
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .instructions ul {
+            margin: 4px 0 0 0;
+            padding-left: 18px;
+        }
+
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12pt;
+            letter-spacing: 0.5px;
+            background-color: #f5f5f5;
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .question-container {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num {
+            font-weight: bold;
+            min-width: 35px;
+            flex-shrink: 0;
+        }
+
+        .q-content {
+            flex-grow: 1;
+        }
+
+        .q-marks {
+            font-weight: bold;
+            float: right;
+            margin-left: 10px;
+            font-size: 10pt;
+        }
+
+        .mcq-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 15px;
+            margin-top: 6px;
+            padding-left: 5px;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 6px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ddd;
+            padding-top: 12px;
+            color: #666;
+        }
+
+        /* MathJax overflow protection on mobile */
+        .MathJax, .mjx-chtml {
+            max-width: 100% !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+        }
+
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .test-name {
+                font-size: 11pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .mcq-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+            .watermark {
+                opacity: 0.1;
+            }
+        }
+    </style>
+</head>
+<body class="tex2jax_process">
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17 — CHEMICAL BONDING &amp; MOLECULAR STRUCTURE</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 11 (CBSE/ISC)</span>
+            <span><strong>Subject:</strong> Chemistry</span>
+            <span><strong>Time Allowed:</strong> 1.5 Hours</span>
+            <span><strong>Max. Marks:</strong> 50</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read questions carefully before answering.</li>
+                <li><strong>Section A</strong> contains 10 objective/VSA questions of 1 mark each.</li>
+                <li><strong>Section B</strong> contains 5 short-answer questions of 2 marks each.</li>
+                <li><strong>Section C</strong> contains 5 analytical questions of 3 marks each.</li>
+                <li><strong>Section D</strong> contains 3 long-answer questions of 5 marks each with internal parts.</li>
+                <li>Use neat diagrams and clear chemical equations wherever required.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Objective &amp; Very Short Answer Type — 1 Mark Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            Which of the following molecules has a non-zero dipole moment despite having symmetric polar covalent bonds?
+            <div class="mcq-options">
+                <div>(A) $\text{BF}_3$</div>
+                <div>(B) $\text{CCl}_4$</div>
+                <div>(C) $\text{NH}_3$</div>
+                <div>(D) $\text{CO}_2$</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            According to Molecular Orbital Theory, what is the bond order of the peroxide ion ($\text{O}_2^{2-}$)?
+            <div class="mcq-options">
+                <div>(A) $1.0$</div>
+                <div>(B) $1.5$</div>
+                <div>(C) $2.0$</div>
+                <div>(D) $2.5$</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            What is the shape of $\text{XeF}_4$ molecule according to VSEPR theory?
+            <div class="mcq-options">
+                <div>(A) Tetrahedral</div>
+                <div>(B) Square Planar</div>
+                <div>(C) See-Saw</div>
+                <div>(D) Octahedral</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            According to Fajan's rules, which halide possesses the highest covalent character?
+            <div class="mcq-options">
+                <div>(A) $\text{LiF}$</div>
+                <div>(B) $\text{LiCl}$</div>
+                <div>(C) $\text{LiBr}$</div>
+                <div>(D) $\text{LiI}$</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            The hybridisation of the central atom in gaseous phosphorus pentachloride ($\text{PCl}_5$) is:
+            <div class="mcq-options">
+                <div>(A) $sp^3$</div>
+                <div>(B) $sp^3d$</div>
+                <div>(C) $sp^3d^2$</div>
+                <div>(D) $dsp^2$</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            Calculate the formal charge on the central oxygen atom in the Ozone ($\text{O}_3$) molecule.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            State the type of atomic orbital overlap involved in forming a $\pi$ (pi) bond.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            Why is the molecule $\text{He}_2$ predicted to be non-existent using molecular orbital theory?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            <strong>Assertion (A):</strong> Oxygen molecule ($\text{O}_2$) is paramagnetic in nature.<br>
+            <strong>Reason (R):</strong> $\text{O}_2$ molecule contains two unpaired electrons in antibonding $\pi^*$ molecular orbitals.<br>
+            <em>(A) Both A and R are correct, R is correct explanation of A.<br>
+            (B) Both A and R are correct, R is not correct explanation of A.<br>
+            (C) A is correct, R is false.<br>
+            (D) A is false, R is correct.</em>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[1]</span>
+            Why does water ($\text{H}_2\text{O}$) have a much higher boiling point than hydrogen sulphide ($\text{H}_2\text{S}$)?
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (10 Marks)
+        <span class="marks-info">(Short Answer Type I — 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[2]</span>
+            In a $\text{PCl}_5$ molecule, all five $\text{P-Cl}$ bond lengths are not identical. Explain why axial bonds are longer and weaker than equatorial bonds.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[2]</span>
+            Out of $o$-nitrophenol and $p$-nitrophenol, which compound is steam volatile and why? Mention the type of Hydrogen bonding present in each.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[2]</span>
+            Differentiate clearly between a $\sigma$ (sigma) bond and a $\pi$ (pi) bond on the basis of:
+            <div class="sub-question">(i) Mode of orbital overlap</div>
+            <div class="sub-question">(ii) Relative bond strength and freedom of rotation</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q14.</div>
+        <div class="q-content">
+            <span class="q-marks">[2]</span>
+            Draw the resonance structures of the carbonate ion ($\text{CO}_3^{2-}$). Calculate the average formal charge on each oxygen atom.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q15.</div>
+        <div class="q-content">
+            <span class="q-marks">[2]</span>
+            Although both $\text{BeH}_2$ and $\text{H}_2\text{O}$ are triatomic molecules, $\text{BeH}_2$ is linear ($\text{bond angle } 180^\circ$) whereas $\text{H}_2\text{O}$ is bent ($\text{bond angle } 104.5^\circ$). Explain using VSEPR theory.
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Short Answer Type II — 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q16.</div>
+        <div class="q-content">
+            <span class="q-marks">[3]</span>
+            Using VSEPR Theory, predict the hybridisation, geometry, shape, and total number of lone pairs on the central atom for:
+            <div class="sub-question">(i) $\text{SF}_4$</div>
+            <div class="sub-question">(ii) $\text{ClF}_3$</div>
+            <div class="sub-question">(iii) $\text{BrF}_5$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q17.</div>
+        <div class="q-content">
+            <span class="q-marks">[3]</span>
+            Explain why the dipole moment of ammonia ($\text{NH}_3$, $\mu = 1.47\text{ D}$) is significantly higher than that of nitrogen trifluoride ($\text{NF}_3$, $\mu = 0.24\text{ D}$), even though fluorine is much more electronegative than hydrogen. Illustrate with vector dipole diagrams.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q18.</div>
+        <div class="q-content">
+            <span class="q-marks">[3]</span>
+            Write the molecular orbital electronic configuration for Nitrogen molecule ($\text{N}_2$). 
+            <div class="sub-question">(i) Calculate its bond order.</div>
+            <div class="sub-question">(ii) Predict its magnetic behaviour.</div>
+            <div class="sub-question">(iii) Compare its stability with $\text{N}_2^+$ ion.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q19.</div>
+        <div class="q-content">
+            <span class="q-marks">[3]</span>
+            State Fajan's Rules regarding covalent character in ionic compounds. Arrange the following sets of compounds in increasing order of their covalent character, giving proper justification:
+            <div class="sub-question">(a) $\text{NaCl}, \text{MgCl}_2, \text{AlCl}_3$</div>
+            <div class="sub-question">(b) $\text{LiF}, \text{LiCl}, \text{LiBr}, \text{LiI}$</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q20.</div>
+        <div class="q-content">
+            <span class="q-marks">[3]</span>
+            Describe $sp^3d^2$ hybridisation taking Sulfur Hexafluoride ($\text{SF}_6$) as an example. Draw its 3D geometric structure, specify all bond angles, and state why all six $\text{S-F}$ bonds are equivalent.
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION D (15 Marks)
+        <span class="marks-info">(Long Answer Type — 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q21.</div>
+        <div class="q-content">
+            <span class="q-marks">[5]</span>
+            Based on Molecular Orbital Theory (MOT):
+            <div class="sub-question">(a) Write the ground-state molecular orbital electronic configurations for the species: $\text{O}_2$, $\text{O}_2^+$, $\text{O}_2^-$, and $\text{O}_2^{2-}$. <span style="float:right;">[2]</span></div>
+            <div class="sub-question">(b) Calculate the bond order for each of the four species. <span style="float:right;">[1.5]</span></div>
+            <div class="sub-question">(c) Arrange these species in increasing order of: <span style="float:right;">[1.5]</span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp; (i) Bond Stability &nbsp;&nbsp;&nbsp;&nbsp; (ii) Bond Length
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q22.</div>
+        <div class="q-content">
+            <span class="q-marks">[5]</span>
+            Answer the following questions on hybridisation and molecular geometry:
+            <div class="sub-question">(a) Define <em>Hybridisation</em>. List three salient features of hybrid orbitals. <span style="float:right;">[2]</span></div>
+            <div class="sub-question">(b) Describe the hybridisation involved in $\text{XeF}_4$. Draw its orbital arrangement showing lone pair-lone pair interactions and justify why lone pairs occupy axial positions. <span style="float:right;">[3]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q23.</div>
+        <div class="q-content">
+            <span class="q-marks">[5]</span>
+            Answer the following questions regarding Hydrogen Bonding:
+            <div class="sub-question">(a) What is Hydrogen bonding? What are the necessary conditions for its formation? <span style="float:right;">[1.5]</span></div>
+            <div class="sub-question">(b) Differentiate between <em>Intermolecular</em> and <em>Intramolecular</em> Hydrogen bonding with one distinct example and structure for each. <span style="float:right;">[2]</span></div>
+            <div class="sub-question">(c) Explain on the basis of hydrogen bonding why ice has a lower density than liquid water and floats on it. <span style="float:right;">[1.5]</span></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        *** End of Question Paper — Created by Team Vardaan ***
+    </div>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            color: var(--text-main); 
+            margin: 0 auto; 
+            padding: 20px; 
+            max-width: 800px;
+            box-sizing: border-box;
+            background-color: white; 
+            position: relative;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            margin-bottom: 25px; 
+        }
+        .institute-name { 
+            margin: 0; 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px; 
+            page-break-inside: avoid;
+        }
+        .sol-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            margin-bottom: 10px; 
+        }
+        .q-text { 
+            font-weight: bold; 
+            flex-grow: 1; 
+        }
+        .marks-badge { 
+            background-color: var(--primary-yellow); 
+            color: #000; 
+            font-weight: bold; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 10pt; 
+            white-space: nowrap; 
+            margin-left: 15px; 
+        }
+        .correct-answer { 
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 6px 10px; 
+            margin: 5px 0 8px 25px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block; 
+        }
+        .explanation { 
+            margin-left: 25px; 
+            line-height: 1.5; 
+        }
+        .math-chunk { 
+            display: inline-block; 
+            word-break: break-all; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            .sol-header { flex-direction: column; }
+            .marks-badge { margin-left: 0; margin-top: 8px; align-self: flex-start; }
+            .explanation, .correct-answer { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="Watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: ELECTROMAGNETIC WAVES</div>
+    </div>
+
+    <!-- Solution 1 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">1. The basic source of electromagnetic waves is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) An oscillating charge</div>
+        <div class="explanation">
+            According to Maxwell's theory, an oscillating electric charge produces a time-varying electric field, which in turn produces a time-varying magnetic field. These mutually regenerating fields propagate through space as electromagnetic waves. A charge at rest produces only an electrostatic field, and a charge in uniform motion produces steady electric and magnetic fields.
+        </div>
+    </div>
+
+    <!-- Solution 2 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">2. Displacement current arises due to:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) Changing electric field</div>
+        <div class="explanation">
+            Maxwell introduced the concept of displacement current (\(I_d\)) to remove the inconsistency in Ampere's circuital law. It exists purely due to a time-varying electric field (or electric flux) in a region, given by \(I_d = \epsilon_0 \frac{d\Phi_E}{dt}\).
+        </div>
+    </div>
+
+    <!-- Solution 3 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">3. In an electromagnetic wave in vacuum, the ratio of the amplitudes of the electric and magnetic fields (\(E_0/B_0\)) is equal to:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (a) Speed of light in vacuum</div>
+        <div class="explanation">
+            The amplitudes of the electric and magnetic fields in an EM wave are related by the formula <span class="math-chunk">\(c = \frac{E_0}{B_0}\)</span>, where \(c\) is the speed of light in vacuum (\(3 \times 10^8 \text{ m/s}\)).
+        </div>
+    </div>
+
+    <!-- Solution 4 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">4. The phase difference between the electric and magnetic fields in an electromagnetic wave is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) 0</div>
+        <div class="explanation">
+            In an electromagnetic wave, both the electric field vector (\(\vec{E}\)) and the magnetic field vector (\(\vec{B}\)) oscillate in phase with each other. They reach their maxima and minima at the same time and at the same point in space.
+        </div>
+    </div>
+
+    <!-- Solution 5 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">5. The direction of propagation of an electromagnetic wave is given by the direction of:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) \(\vec{E} \times \vec{B}\)</div>
+        <div class="explanation">
+            Electromagnetic waves are transverse in nature. The electric field (\(\vec{E}\)) and magnetic field (\(\vec{B}\)) are mutually perpendicular and both are perpendicular to the direction of wave propagation. The cross product \(\vec{E} \times \vec{B}\) gives the Poynting vector, which defines the direction of propagation.
+        </div>
+    </div>
+
+    <!-- Solution 6 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">6. Which of the following EM waves has the maximum frequency?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) Gamma rays</div>
+        <div class="explanation">
+            In the electromagnetic spectrum, as we move from Radio waves to Gamma rays, the wavelength decreases and the frequency increases. Gamma rays have the shortest wavelength and hence the highest frequency.
+        </div>
+    </div>
+
+    <!-- Solution 7 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">7. Momentum transferred by an EM wave of total energy \(U\) to a completely absorbing surface is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (a) \(U/c\)</div>
+        <div class="explanation">
+            EM waves carry momentum. If an EM wave of total energy \(U\) is incident on a completely absorbing surface, the momentum transferred is given by <span class="math-chunk">\(p = \frac{U}{c}\)</span>.
+        </div>
+    </div>
+
+    <!-- Solution 8 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">8. Electromagnetic waves used in radar systems for aircraft navigation are:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Microwaves</div>
+        <div class="explanation">
+            Microwaves have short wavelengths (in the range of millimeters to centimeters), which makes them suitable for radar systems. Because of their short wavelengths, they do not diffract (bend) much around objects and can form sharp beams required for precise aircraft navigation.
+        </div>
+    </div>
+
+    <!-- Solution 9 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">9. Welder's glasses are used to protect the eyes primarily from:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Ultraviolet rays</div>
+        <div class="explanation">
+            Welding arcs produce highly intense ultraviolet (UV) radiations which are harmful to the eyes and can cause permanent damage (photokeratitis). Welder's glasses are specially designed to absorb these UV rays.
+        </div>
+    </div>
+
+    <!-- Solution 10 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">10. The speed of electromagnetic waves in a medium of permittivity \(\epsilon\) and permeability \(\mu\) is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) \(1/\sqrt{\mu \epsilon}\)</div>
+        <div class="explanation">
+            The velocity of an EM wave in any medium is determined by the electrical and magnetic properties of that medium. It is given by the formula <span class="math-chunk">\(v = \frac{1}{\sqrt{\mu \epsilon}}\)</span>, where \(\mu\) is the permeability and \(\epsilon\) is the permittivity of the medium.
+        </div>
+    </div>
+
+    <!-- Solution 11 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">11. Which of the following is NOT an electromagnetic wave?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) \(\beta\)-rays</div>
+        <div class="explanation">
+            \(\beta\)-rays (beta rays) are streams of high-energy, high-speed electrons or positrons emitted by certain types of radioactive nuclei. They are particulate matter with mass and charge, unlike EM waves which are composed of oscillating electric and magnetic fields (photons) with no rest mass.
+        </div>
+    </div>
+
+    <!-- Solution 12 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">12. The mathematical expression for displacement current \(I_d\) is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) \(\epsilon_0 \frac{d\Phi_E}{dt}\)</div>
+        <div class="explanation">
+            Maxwell defined displacement current as <span class="math-chunk">\(I_d = \epsilon_0 \frac{d\Phi_E}{dt}\)</span>, where \(\Phi_E\) is the electric flux. It accounts for the changing electric field acting as a source of the magnetic field.
+        </div>
+    </div>
+
+    <!-- Solution 13 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">13. The ozone layer in the earth's atmosphere absorbs:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Ultraviolet radiations</div>
+        <div class="explanation">
+            The stratospheric ozone layer effectively absorbs the vast majority of harmful high-frequency Ultraviolet (UV-B and UV-C) radiations emitted by the sun, protecting life on Earth from radiation damage.
+        </div>
+    </div>
+
+    <!-- Solution 14 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">14. TV remote controls use:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) Infrared waves</div>
+        <div class="explanation">
+            Infrared (IR) waves are commonly used in domestic electronic applications such as TV remote controls, burglar alarms, and night vision devices. The remote has a small LED that flashes IR light to transmit signals to the TV.
+        </div>
+    </div>
+
+    <!-- Solution 15 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">15. In an EM wave, the average energy density of the electric field (\(u_E\)) and magnetic field (\(u_B\)) are related as:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) \(u_E = u_B\)</div>
+        <div class="explanation">
+            In an electromagnetic wave, the energy is equally distributed between the electric and magnetic fields. The average electric energy density (\(\frac{1}{2}\epsilon_0 E^2\)) is equal to the average magnetic energy density (\(\frac{1}{2\mu_0} B^2\)).
+        </div>
+    </div>
+
+    <!-- Solution 16 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">16. Electromagnetic waves are deflected by:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (d) Neither electric nor magnetic fields</div>
+        <div class="explanation">
+            Electromagnetic waves consist of uncharged particles (photons) or oscillating fields. Since they carry no net electric charge, they are not deflected by external electric or magnetic fields.
+        </div>
+    </div>
+
+    <!-- Solution 17 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">17. Which of the following relates wavelength (\(\lambda\)), frequency (\(\nu\)), and speed of an EM wave (\(c\))?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) \(c = \nu \lambda\)</div>
+        <div class="explanation">
+            For any wave, the wave speed is the product of its frequency and wavelength. For electromagnetic waves propagating in vacuum, this universal wave equation is expressed as <span class="math-chunk">\(c = \nu \lambda\)</span>.
+        </div>
+    </div>
+
+    <!-- Solution 18 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">18. The wavelength range of the visible spectrum is approximately:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) 400 nm to 700 nm</div>
+        <div class="explanation">
+            The visible spectrum, which is the portion of the EM spectrum that human eyes can detect, lies roughly between 400 nm (violet) and 700 nm (red) according to standard NCERT data.
+        </div>
+    </div>
+
+    <!-- Solution 19 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">19. The Greenhouse effect is mainly due to:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Infrared rays</div>
+        <div class="explanation">
+            Infrared rays, also known as heat waves, are absorbed by greenhouse gases (like \(CO_2, CH_4\)) in the atmosphere. The earth absorbs short-wavelength radiation from the sun and re-radiates it as longer-wavelength infrared radiation, which gets trapped, warming the earth.
+        </div>
+    </div>
+
+    <!-- Solution 20 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">20. Which waves are produced by the radioactive decay of the nucleus?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Gamma rays</div>
+        <div class="explanation">
+            Gamma rays (\(\gamma\)-rays) are high-energy photons emitted during the radioactive decay of atomic nuclei when an excited nucleus transitions to a lower energy state.
+        </div>
+    </div>
+
+    <!-- Solution 21 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">21. The generalized Ampere's circuital law (Ampere-Maxwell law) is given by:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) \(\oint \vec{B} \cdot d\vec{l} = \mu_0 (I_c + \epsilon_0 \frac{d\Phi_E}{dt})\)</div>
+        <div class="explanation">
+            Maxwell modified Ampere's law by adding the displacement current term (\(I_d\)) to the conduction current (\(I_c\)) to ensure logical consistency when fields are time-dependent. Thus, <span class="math-chunk">\(\oint \vec{B} \cdot d\vec{l} = \mu_0(I_c + I_d)\)</span>.
+        </div>
+    </div>
+
+    <!-- Solution 22 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">22. If an EM wave is propagating along the +z-axis and the electric field is along the +x-axis, then the magnetic field is along the:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (a) +y-axis</div>
+        <div class="explanation">
+            The direction of propagation is given by \(\vec{E} \times \vec{B}\). Here, direction is \(\hat{k}\) (z-axis) and \(\vec{E}\) is \(\hat{i}\) (x-axis). Let \(\vec{B}\) be \(\hat{j}\) (y-axis). Then, \(\hat{i} \times \hat{j} = \hat{k}\), which satisfies the condition.
+        </div>
+    </div>
+
+    <!-- Solution 23 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">23. The quantity \(\sqrt{\mu_0 / \epsilon_0}\) has the unit of:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) Resistance (Ohm)</div>
+        <div class="explanation">
+            The quantity \(\sqrt{\frac{\mu_0}{\epsilon_0}}\) is called the characteristic impedance of free space. Its value is approximately \(377 \Omega\), and its unit is Ohms (\(\Omega\)).
+        </div>
+    </div>
+
+    <!-- Solution 24 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">24. Cellular phones transmit voice communications using:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) Ultra High Frequency (UHF) radio waves</div>
+        <div class="explanation">
+            Cellular phones utilize ultra-high frequency (UHF) radio waves (and microwaves) to transmit information. This band provides the necessary bandwidth for carrying audio and data signals over the cellular network.
+        </div>
+    </div>
+
+    <!-- Solution 25 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">25. Which waves are heavily used in the study of crystal structures?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (a) X-rays</div>
+        <div class="explanation">
+            The wavelength of X-rays is of the same order of magnitude as the interatomic spacing in crystals (\(\sim 1 \text{ \AA}\)). Due to this, X-rays exhibit diffraction when passed through crystals (Bragg's Law), revealing their structural arrangement.
+        </div>
+    </div>
+
+    <!-- Solution 26 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">26. Water purifiers commonly use which of the following to kill bacteria?</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) UV rays</div>
+        <div class="explanation">
+            Ultraviolet (UV) rays have sufficient energy to destroy the DNA of microorganisms, bacteria, and viruses, thereby rendering them inactive. This makes UV radiation highly effective for water sterilization.
+        </div>
+    </div>
+
+    <!-- Solution 27 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">27. The speed of an electromagnetic wave in vacuum is independent of its:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (d) All of these</div>
+        <div class="explanation">
+            The speed of an EM wave in vacuum is an absolute constant (\(c = 3 \times 10^8 \text{ m/s}\)). It does not depend on the wave's frequency, wavelength, or intensity.
+        </div>
+    </div>
+
+    <!-- Solution 28 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">28. While a capacitor is charging, the conduction current \(I_c\) and displacement current \(I_d\) are related as:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) \(I_c = I_d\)</div>
+        <div class="explanation">
+            To maintain the continuity of current in a circuit, the conduction current \(I_c\) flowing through the connecting wires is exactly equal in magnitude to the displacement current \(I_d\) flowing between the plates of the capacitor.
+        </div>
+    </div>
+
+    <!-- Solution 29 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">29. The pressure exerted by an EM wave of intensity \(I\) on a perfectly reflecting surface is:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (b) \(2I/c\)</div>
+        <div class="explanation">
+            For a perfectly reflecting surface, the change in momentum is double that of an absorbing surface (since the wave bounces back). Therefore, the radiation pressure is <span class="math-chunk">\(P = \frac{2I}{c}\)</span>.
+        </div>
+    </div>
+
+    <!-- Solution 30 -->
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="q-text">30. LASIK eye surgery utilizes highly focused:</div>
+            <div class="marks-badge">[1 Mark]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (c) Ultraviolet lasers</div>
+        <div class="explanation">
+            LASIK eye surgery employs Excimer lasers, which operate in the ultraviolet (UV) range. UV lasers are capable of breaking molecular bonds in the cornea with extreme precision without causing thermal damage to surrounding tissue.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Solutions generated by Senior Physics Faculty</div>
+</body>
+</html>

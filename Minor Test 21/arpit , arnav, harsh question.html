@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 21</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.10; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 11pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 8px; 
+        }
+        .svg-container {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+            .watermark { width: 90%; }
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-wrap: wrap; gap: 10px; }
+            .exam-details span { width: 45%; }
+            .watermark { width: 95%; }
+            .question-container { flex-direction: column; }
+            .q-num { width: 100%; margin-bottom: 5px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.10 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 21: Linear Equations & Parallel Lines</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show proper steps and workings. Draw neat diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Attempt all questions - 2 Marks Each)</span>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Solve for $x$: 
+            $$ \frac{3x - 2}{2} = 5 $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Two parallel lines are intersected by a transversal. If one interior angle is $65^\circ$, find the measure of the co-interior angle on the same side of the transversal.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            The sum of two consecutive multiples of $3$ is $39$. Form the linear equation representing this situation and find the two numbers.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            In the given figure, lines $l$ and $m$ are parallel, and $t$ is a transversal. If $\angle 1 = 50^\circ$, find the value of $\angle x$ and $\angle y$.
+            <div class="svg-container">
+                <svg width="240" height="150" viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Lines -->
+                    <line x1="30" y1="50" x2="210" y2="50" stroke="black" stroke-width="2"/>
+                    <line x1="30" y1="100" x2="210" y2="100" stroke="black" stroke-width="2"/>
+                    <!-- Transversal -->
+                    <line x1="60" y1="0" x2="180" y2="150" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Labels -->
+                    <text x="15" y="55" font-family="Times New Roman" font-size="14" font-style="italic">l</text>
+                    <text x="15" y="105" font-family="Times New Roman" font-size="14" font-style="italic">m</text>
+                    <text x="50" y="15" font-family="Times New Roman" font-size="14" font-style="italic">t</text>
+                    
+                    <!-- Angle 1 (50°) Top-Left -->
+                    <path d="M 85 50 A 15 15 0 0 1 90.6 38.3" fill="none" stroke="black"/>
+                    <text x="65" y="42" font-family="Times New Roman" font-size="12">50°</text>
+                    
+                    <!-- Angle y Bottom-Right -->
+                    <path d="M 115 50 A 15 15 0 0 1 109.4 61.7" fill="none" stroke="black"/>
+                    <text x="115" y="68" font-family="Times New Roman" font-size="14" font-style="italic">y</text>
+
+                    <!-- Angle x Bottom-Right -->
+                    <path d="M 155 100 A 15 15 0 0 1 149.4 111.7" fill="none" stroke="black"/>
+                    <text x="155" y="118" font-family="Times New Roman" font-size="14" font-style="italic">x</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Solve the following equation: 
+            $$ 2(x - 3) = 3(x - 4) $$
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type - 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            In the figure below, ray $AB \parallel$ ray $CD$. A point $O$ is situated between them. If $\angle OAB = 45^\circ$ and $\angle OCD = 35^\circ$, find the measure of reflex $\angle AOC$. (Hint: Draw a line through $O$ parallel to $AB$).
+            <div class="svg-container">
+                <svg width="260" height="150" viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Rays -->
+                    <line x1="50" y1="30" x2="220" y2="30" stroke="black" stroke-width="2"/>
+                    <polygon points="220,25 230,30 220,35" fill="black"/>
+                    <line x1="50" y1="120" x2="220" y2="120" stroke="black" stroke-width="2"/>
+                    <polygon points="220,115 230,120 220,125" fill="black"/>
+                    
+                    <!-- Zigzag lines -->
+                    <line x1="50" y1="30" x2="130" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="50" y1="120" x2="130" y2="75" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Labels -->
+                    <text x="40" y="25" font-family="Times New Roman" font-size="14">A</text>
+                    <text x="210" y="20" font-family="Times New Roman" font-size="14">B</text>
+                    <text x="40" y="135" font-family="Times New Roman" font-size="14">C</text>
+                    <text x="210" y="140" font-family="Times New Roman" font-size="14">D</text>
+                    <text x="140" y="80" font-family="Times New Roman" font-size="14">O</text>
+                    
+                    <!-- Angles -->
+                    <path d="M 70 30 A 20 20 0 0 1 65 38" fill="none" stroke="black"/>
+                    <text x="75" y="45" font-family="Times New Roman" font-size="12">45°</text>
+                    <path d="M 70 120 A 20 20 0 0 0 65 110" fill="none" stroke="black"/>
+                    <text x="75" y="112" font-family="Times New Roman" font-size="12">35°</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Ten years ago, a father was $3$ times as old as his son. After $10$ years from now, the father will be twice as old as his son. Find their present ages.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            The digits of a two-digit number differ by $3$. If the digits are interchanged, and the resulting number is added to the original number, we get $143$. Find the original number.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            In the given diagram, line $l \parallel m$ and line $p \parallel q$. If one of the angles formed is $70^\circ$ as shown, find the values of $x, y$, and $z$ giving geometrical reasons.
+            <div class="svg-container">
+                <svg width="240" height="180" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Horizontals -->
+                    <line x1="30" y1="60" x2="210" y2="60" stroke="black" stroke-width="2"/>
+                    <line x1="30" y1="120" x2="210" y2="120" stroke="black" stroke-width="2"/>
+                    <!-- Slanted -->
+                    <line x1="69" y1="10" x2="136" y2="170" stroke="black" stroke-width="2"/>
+                    <line x1="119" y1="10" x2="186" y2="170" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Labels -->
+                    <text x="15" y="65" font-family="Times New Roman" font-style="italic">l</text>
+                    <text x="15" y="125" font-family="Times New Roman" font-style="italic">m</text>
+                    <text x="65" y="20" font-family="Times New Roman" font-style="italic">p</text>
+                    <text x="115" y="20" font-family="Times New Roman" font-style="italic">q</text>
+                    
+                    <!-- 70°: Bottom-Right -->
+                    <path d="M 105 60 A 15 15 0 0 1 95.8 73.8" fill="none" stroke="black"/>
+                    <text x="105" y="75" font-family="Times New Roman" font-size="12">70°</text>
+                    
+                    <!-- x: Top-Right -->
+                    <path d="M 134.2 46.2 A 15 15 0 0 1 155 60" fill="none" stroke="black"/>
+                    <text x="148" y="50" font-family="Times New Roman" font-style="italic" font-size="14">x</text>
+
+                    <!-- z: Top-Left -->
+                    <path d="M 100 120 A 15 15 0 0 1 109.2 106.2" fill="none" stroke="black"/>
+                    <text x="96" y="112" font-family="Times New Roman" font-style="italic" font-size="14">z</text>
+                    
+                    <!-- y: Bottom-Left -->
+                    <path d="M 150 120 A 15 15 0 0 0 170.8 133.8" fill="none" stroke="black"/>
+                    <text x="153" y="138" font-family="Times New Roman" font-style="italic" font-size="14">y</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Solve the linear equation for $x$:
+            $$ \frac{x+2}{6} - \left(\frac{11-x}{3} - \frac{1}{4}\right) = \frac{3x-4}{12} $$
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Type - 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Two parallel lines $AB$ and $CD$ are intersected by a transversal $XY$ at points $P$ and $Q$ respectively. If the interior angles on the same side of the transversal are in the ratio $2:3$, find the measure of all the eight angles formed. Support your answer with a rough sketch and proper geometrical reasoning for each pair of angles.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) A rational number is such that its numerator is $5$ less than its denominator. If $3$ is added to both the numerator and the denominator, the new fraction becomes $\frac{3}{4}$. Find the original rational number. (3 Marks)</div>
+            <div class="sub-question">(b) Solve for $x$: $$ \frac{2x+5}{3} - \frac{x-1}{4} = 3 $$ (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A motorboat goes downstream on a river and covers a certain distance in $4$ hours. It covers the same distance upstream in $5$ hours. If the speed of the stream is $3 \text{ km/hr}$, find the speed of the motorboat in still water and the total distance covered by the boat in one direction.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

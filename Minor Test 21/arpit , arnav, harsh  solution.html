@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: #333;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-weight: bold;
+            background-color: rgba(251, 192, 45, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+            overflow-x: auto;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .correct-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 10px 0 15px 0; 
+            border-left: 4px solid #2e7d32;
+            border-radius: 0 4px 4px 0; 
+            font-weight: bold; 
+            display: inline-block;
+        }
+        .explanation {
+            margin-left: 10px;
+            overflow-x: auto;
+        }
+        .step {
+            margin-bottom: 5px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+        }
+        @media (max-width: 768px) {
+            body { padding: 12px; font-size: 11pt; }
+            .q-header { flex-direction: column; gap: 10px; }
+            .marks-badge { align-self: flex-start; }
+            .institute-name { font-size: 18pt; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.05 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Minor Test 21</div>
+    </div>
+
+    <!-- SECTION A -->
+    <h3 style="text-align: center; text-decoration: underline;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Solve for $x$: $\frac{3x - 2}{2} = 5$</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 4$</div>
+        <div class="explanation">
+            <div class="step"><strong>Step 1:</strong> Multiply both sides by 2 to eliminate the denominator.</div>
+            <div class="step">$$ 3x - 2 = 5 \times 2 $$</div>
+            <div class="step">$$ 3x - 2 = 10 $$</div>
+            <div class="step"><strong>Step 2:</strong> Add 2 to both sides.</div>
+            <div class="step">$$ 3x = 10 + 2 $$</div>
+            <div class="step">$$ 3x = 12 $$</div>
+            <div class="step"><strong>Step 3:</strong> Divide by 3.</div>
+            <div class="step">$$ x = \frac{12}{3} = 4 $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Two parallel lines are intersected by a transversal. If one interior angle is $65^\circ$, find the measure of the co-interior angle on the same side of the transversal.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $115^\circ$</div>
+        <div class="explanation">
+            <div class="step"><strong>Property:</strong> The sum of co-interior angles (consecutive interior angles) on the same side of a transversal intersecting two parallel lines is always $180^\circ$ (supplementary).</div>
+            <div class="step">Let the unknown angle be $x$.</div>
+            <div class="step">$$ x + 65^\circ = 180^\circ $$</div>
+            <div class="step">$$ x = 180^\circ - 65^\circ $$</div>
+            <div class="step">$$ x = 115^\circ $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. The sum of two consecutive multiples of $3$ is $39$. Form the linear equation representing this situation and find the two numbers.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Equation: $x + (x+3) = 39$. Numbers are $18$ and $21$.</div>
+        <div class="explanation">
+            <div class="step">Let the first multiple of $3$ be $x$.</div>
+            <div class="step">Then the next consecutive multiple of $3$ will be $(x + 3)$.</div>
+            <div class="step">According to the question:</div>
+            <div class="step">$$ x + (x + 3) = 39 $$</div>
+            <div class="step">$$ 2x + 3 = 39 $$</div>
+            <div class="step">$$ 2x = 36 \implies x = 18 $$</div>
+            <div class="step">First number $= 18$. Second number $= 18 + 3 = 21$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. In the given figure, $l \parallel m$ and $t$ is transversal. $\angle 1 = 50^\circ$. Find $\angle x$ and $\angle y$.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $\angle x = 50^\circ, \angle y = 50^\circ$</div>
+        <div class="explanation">
+            <div class="step"><strong>For $\angle y$:</strong> $\angle y$ and $\angle 1$ ($50^\circ$) are vertically opposite angles. Vertically opposite angles are equal.</div>
+            <div class="step">$$ \therefore \angle y = 50^\circ $$</div>
+            <div class="step"><strong>For $\angle x$:</strong> Based on the diagram, $\angle x$ and $\angle y$ are corresponding angles (both are on the bottom-right of their respective intersections). Since line $l \parallel m$, corresponding angles are equal.</div>
+            <div class="step">$$ \therefore \angle x = \angle y = 50^\circ $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Solve: $2(x - 3) = 3(x - 4)$</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 6$</div>
+        <div class="explanation">
+            <div class="step">Expand the brackets on both sides:</div>
+            <div class="step">$$ 2x - 6 = 3x - 12 $$</div>
+            <div class="step">Transposing $2x$ to RHS and $-12$ to LHS:</div>
+            <div class="step">$$ -6 + 12 = 3x - 2x $$</div>
+            <div class="step">$$ 6 = x $$</div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Ray $AB \parallel$ ray $CD$. $O$ is between them. $\angle OAB = 45^\circ$, $\angle OCD = 35^\circ$. Find reflex $\angle AOC$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Reflex $\angle AOC = 280^\circ$</div>
+        <div class="explanation">
+            <div class="step"><strong>Construction:</strong> Draw a line $PQ$ passing through $O$ parallel to $AB$ (and hence parallel to $CD$).</div>
+            <div class="step">Since $AB \parallel PQ$ and $AO$ is the transversal:</div>
+            <div class="step">$\angle AOP = \angle OAB = 45^\circ$ (Alternate Interior Angles)</div>
+            <div class="step">Since $CD \parallel PQ$ and $CO$ is the transversal:</div>
+            <div class="step">$\angle COP = \angle OCD = 35^\circ$ (Alternate Interior Angles)</div>
+            <div class="step">Interior $\angle AOC = \angle AOP + \angle COP = 45^\circ + 35^\circ = 80^\circ$.</div>
+            <div class="step">Reflex $\angle AOC = 360^\circ - \text{Interior } \angle AOC = 360^\circ - 80^\circ = 280^\circ$.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Ten years ago, father was $3$ times son's age. After $10$ years, father will be twice as old. Find present ages.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Son = $30$ years, Father = $70$ years</div>
+        <div class="explanation">
+            <div class="step">Let the age of the son <strong>10 years ago</strong> be $x$.</div>
+            <div class="step">Then, father's age 10 years ago was $3x$.</div>
+            <div class="step"><strong>Present Ages:</strong> Son $= x + 10$, Father $= 3x + 10$.</div>
+            <div class="step"><strong>Ages after 10 years:</strong> Son $= (x + 10) + 10 = x + 20$. Father $= (3x + 10) + 10 = 3x + 20$.</div>
+            <div class="step">Given that after 10 years, father is twice as old as son:</div>
+            <div class="step">$$ 3x + 20 = 2(x + 20) $$</div>
+            <div class="step">$$ 3x + 20 = 2x + 40 $$</div>
+            <div class="step">$$ 3x - 2x = 40 - 20 \implies x = 20 $$</div>
+            <div class="step">Present age of son $= 20 + 10 = 30$ years.</div>
+            <div class="step">Present age of father $= 3(20) + 10 = 60 + 10 = 70$ years.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Digits of a two-digit number differ by $3$. Original + Reversed = $143$. Find original number.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Number is $85$ or $58$</div>
+        <div class="explanation">
+            <div class="step">Let the unit's digit be $x$. Since digits differ by 3, let ten's digit be $(x + 3)$.</div>
+            <div class="step">Original Number $= 10(x + 3) + x = 10x + 30 + x = 11x + 30$.</div>
+            <div class="step">Number obtained on reversing digits $= 10(x) + (x + 3) = 11x + 3$.</div>
+            <div class="step">Sum of the numbers $= 143$:</div>
+            <div class="step">$$ (11x + 30) + (11x + 3) = 143 $$</div>
+            <div class="step">$$ 22x + 33 = 143 $$</div>
+            <div class="step">$$ 22x = 110 \implies x = 5 $$</div>
+            <div class="step">Unit digit $= 5$. Ten's digit $= 5 + 3 = 8$. Number is $85$.</div>
+            <div class="step">(Note: If we took ten's digit as $x$ and unit's as $x+3$, the number would be $58$. Both are correct).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Line $l \parallel m$ and $p \parallel q$. One angle is $70^\circ$. Find $x, y, z$.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 110^\circ, z = 70^\circ, y = 110^\circ$</div>
+        <div class="explanation">
+            <div class="step"><strong>For $z$:</strong> Lines $l \parallel m$ are intersected by transversal $p$. $\angle z$ (top-left) and the $70^\circ$ angle (bottom-right) form a pair of alternate interior angles.</div>
+            <div class="step">$$ \therefore z = 70^\circ $$</div>
+            <div class="step"><strong>For $x$:</strong> Lines $p \parallel q$ are intersected by transversal $l$. The angle corresponding to $70^\circ$ at the right intersection ($l, q$) is also $70^\circ$ (bottom-right). $\angle x$ (top-right) and this $70^\circ$ angle form a linear pair on line $l$.</div>
+            <div class="step">$$ \therefore x = 180^\circ - 70^\circ = 110^\circ $$</div>
+            <div class="step"><strong>For $y$:</strong> Lines $p \parallel q$ are intersected by transversal $m$. $\angle y$ (bottom-left) corresponds to the bottom-left angle at intersection ($l, q$). This angle is vertically opposite to $\angle x$. Therefore, $y$ is equal to $x$.</div>
+            <div class="step">$$ \therefore y = x = 110^\circ $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Solve: $\frac{x+2}{6} - \left(\frac{11-x}{3} - \frac{1}{4}\right) = \frac{3x-4}{12}$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: $x = 11$</div>
+        <div class="explanation">
+            <div class="step">First, open the bracket:</div>
+            <div class="step">$$ \frac{x+2}{6} - \frac{11-x}{3} + \frac{1}{4} = \frac{3x-4}{12} $$</div>
+            <div class="step">Multiply entire equation by the LCM of denominators $(6, 3, 4, 12)$, which is $12$:</div>
+            <div class="step">$$ 12 \left( \frac{x+2}{6} \right) - 12 \left( \frac{11-x}{3} \right) + 12 \left( \frac{1}{4} \right) = 12 \left( \frac{3x-4}{12} \right) $$</div>
+            <div class="step">$$ 2(x + 2) - 4(11 - x) + 3 = 3x - 4 $$</div>
+            <div class="step">$$ 2x + 4 - 44 + 4x + 3 = 3x - 4 $$</div>
+            <div class="step">$$ 6x - 37 = 3x - 4 $$</div>
+            <div class="step">$$ 6x - 3x = -4 + 37 $$</div>
+            <div class="step">$$ 3x = 33 \implies x = 11 $$</div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. $AB \parallel CD$, transversal $XY$. Interior angles on same side are in ratio $2:3$. Find all 8 angles.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Angles are $72^\circ, 108^\circ, 72^\circ, 108^\circ, 72^\circ, 108^\circ, 72^\circ, 108^\circ$</div>
+        <div class="explanation">
+            <div class="step">Let the two interior angles on the same side of transversal be $2x$ and $3x$.</div>
+            <div class="step">We know that consecutive interior angles (co-interior) sum to $180^\circ$.</div>
+            <div class="step">$$ 2x + 3x = 180^\circ $$</div>
+            <div class="step">$$ 5x = 180^\circ \implies x = 36^\circ $$</div>
+            <div class="step">The two angles are $2(36^\circ) = 72^\circ$ and $3(36^\circ) = 108^\circ$.</div>
+            <div class="step">Let these be $\angle 3 = 108^\circ$ and $\angle 6 = 72^\circ$ (standard numbering).</div>
+            <div class="step"><strong>Finding remaining angles:</strong></div>
+            <div class="step">1. Vertically opposite to $\angle 3$ is $\angle 1 = 108^\circ$.</div>
+            <div class="step">2. Linear pair with $\angle 3$ is $\angle 4 = 180^\circ - 108^\circ = 72^\circ$.</div>
+            <div class="step">3. Vertically opposite to $\angle 4$ is $\angle 2 = 72^\circ$.</div>
+            <div class="step">4. Alternate interior to $\angle 3$ is $\angle 5 = 108^\circ$.</div>
+            <div class="step">5. Alternate interior to $\angle 4$ is $\angle 6 = 72^\circ$.</div>
+            <div class="step">6. Vertically opposite to $\angle 5$ is $\angle 7 = 108^\circ$.</div>
+            <div class="step">7. Vertically opposite to $\angle 6$ is $\angle 8 = 72^\circ$.</div>
+            <div class="step"><em>All four acute angles are $72^\circ$, and all four obtuse angles are $108^\circ$.</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12(a). Rational number: Numerator is $5$ less than denominator. If $3$ is added to both, it becomes $3/4$. Find original. (3m)<br>
+            Q12(b). Solve: $\frac{2x+5}{3} - \frac{x-1}{4} = 3$. (2m)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">(a) Original fraction = $\frac{12}{17}$. (b) $x = \frac{13}{5}$</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a):</strong></div>
+            <div class="step">Let the denominator be $x$. Then, numerator is $x - 5$.</div>
+            <div class="step">Original fraction $= \frac{x - 5}{x}$.</div>
+            <div class="step">Adding $3$ to both: $$ \frac{x - 5 + 3}{x + 3} = \frac{3}{4} $$</div>
+            <div class="step">$$ \frac{x - 2}{x + 3} = \frac{3}{4} $$</div>
+            <div class="step">Cross multiply: $4(x - 2) = 3(x + 3) \implies 4x - 8 = 3x + 9 \implies x = 17$.</div>
+            <div class="step">Numerator $= 17 - 5 = 12$. Rational number $= \frac{12}{17}$.</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b):</strong></div>
+            <div class="step">$$ \frac{2x+5}{3} - \frac{x-1}{4} = 3 $$</div>
+            <div class="step">Take LCM of $3$ and $4$ which is $12$:</div>
+            <div class="step">$$ \frac{4(2x+5) - 3(x-1)}{12} = 3 $$</div>
+            <div class="step">$$ \frac{8x + 20 - 3x + 3}{12} = 3 $$</div>
+            <div class="step">$$ 5x + 23 = 36 $$</div>
+            <div class="step">$$ 5x = 13 \implies x = \frac{13}{5} = 2.6 $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Motorboat goes downstream in $4$ hrs, upstream in $5$ hrs. Speed of stream $= 3 \text{ km/hr}$. Find speed of boat in still water and total distance one-way.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">Boat speed = $27 \text{ km/hr}$, Distance = $120 \text{ km}$</div>
+        <div class="explanation">
+            <div class="step">Let the speed of the motorboat in still water be $v \text{ km/hr}$.</div>
+            <div class="step">Speed of stream $= 3 \text{ km/hr}$.</div>
+            <div class="step">Downstream speed $= (v + 3) \text{ km/hr}$.</div>
+            <div class="step">Upstream speed $= (v - 3) \text{ km/hr}$.</div>
+            <div class="step">Distance $= \text{Speed} \times \text{Time}$. Since distance covered upstream and downstream is the same:</div>
+            <div class="step">$$ \text{Distance Downstream} = \text{Distance Upstream} $$</div>
+            <div class="step">$$ 4(v + 3) = 5(v - 3) $$</div>
+            <div class="step">$$ 4v + 12 = 5v - 15 $$</div>
+            <div class="step">$$ 12 + 15 = 5v - 4v \implies v = 27 $$</div>
+            <div class="step">Speed of boat in still water $= 27 \text{ km/hr}$.</div>
+            <div class="step">Total distance in one direction $= 4(v + 3) = 4(27 + 3) = 4(30) = 120 \text{ km}$.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

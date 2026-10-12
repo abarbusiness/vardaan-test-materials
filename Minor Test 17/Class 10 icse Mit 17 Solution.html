@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script>
+        MathJax = {
+            loader: {load: ['[tex]/cancel']},
+            tex: { packages: {'[+]': ['cancel']}, inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fafafa;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; line-height: 1.6; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px; opacity: 0.05; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; background-color: var(--bg-light);
+        }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .test-name { font-size: 14pt; font-weight: bold; margin-top: 8px; color: #333; }
+        .section-title {
+            background-color: #eee; padding: 8px; font-weight: bold; text-align: center;
+            border-radius: 4px; margin: 30px 0 20px 0; border-left: 5px solid var(--primary-yellow); border-right: 5px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); padding-bottom: 20px; margin-bottom: 20px; page-break-inside: avoid;
+        }
+        .q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 15px; }
+        .q-text { flex-grow: 1; font-weight: bold; color: #333; overflow-x: auto; }
+        .marks-badge {
+            background-color: var(--primary-yellow); padding: 3px 10px; border-radius: 4px; 
+            font-weight: bold; font-size: 0.9em; min-width: 75px; text-align: center; flex-shrink: 0; white-space: nowrap;
+        }
+        .explanation { 
+            margin-left: 25px; background-color: #fff9e6; padding: 15px; border-radius: 5px; border-left: 4px solid #f9a825; overflow-x: auto;
+        }
+        .step { margin-bottom: 8px; }
+        
+        @media print { body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } }
+        @media screen and (max-width: 768px) {
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 5px; }
+            .explanation { margin-left: 0; padding: 10px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: MINOR TEST 17</div>
+        <div style="font-size: 11pt; margin-top: 8px; color: #555;">Class 10 ICSE | Physics (Current Electricity) | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define the electromotive force (e.m.f.) of a cell. Write its SI unit.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Electromotive Force (e.m.f.):</strong> It is defined as the work done in moving a unit positive charge once around the complete circuit (both inside and outside the cell). Alternatively, it is the potential difference between the terminals of a cell when no current is drawn from it (open circuit). &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>SI Unit:</strong> The SI unit of e.m.f. is Volt (V) or Joules per Coulomb ($\text{J C}^{-1}$). &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. A metallic wire of resistance $R$ is stretched to double its original length. What will be its new resistance? Justify your answer.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Let original length be $l$ and original cross-sectional area be $A$. <br> Original Resistance $R = \rho \frac{l}{A}$.</div>
+            <div class="step">When the wire is stretched, its volume remains constant. Therefore, if length is doubled ($l' = 2l$), the cross-sectional area becomes half ($A' = \frac{A}{2}$). &nbsp; <em>(1 Mark)</em></div>
+            <div class="step">New Resistance $R' = \rho \frac{l'}{A'} = \rho \frac{2l}{\frac{A}{2}} = 4 \left( \rho \frac{l}{A} \right) = 4R$.</div>
+            <div class="step"><strong>Final Answer:</strong> The new resistance will be <strong>4 times</strong> the original resistance. &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. State Ohm's Law. Name one material or component that is a non-ohmic conductor.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Ohm's Law:</strong> It states that the electric current flowing through a metallic conductor is directly proportional to the potential difference applied across its ends, provided physical conditions (like temperature, mechanical strain, etc.) remain constant. &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>Non-Ohmic Conductor:</strong> Light Emitting Diode (LED), Junction Diode, Transistor, or Filament of an electric bulb. (Any one) &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Calculate the equivalent resistance when two resistors of $3 \Omega$ and $6 \Omega$ are connected in parallel.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">For resistors in parallel, the equivalent resistance ($R_p$) is given by: <br>
+                $\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2}$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">
+                $\frac{1}{R_p} = \frac{1}{3} + \frac{1}{6} = \frac{2 + 1}{6} = \frac{3}{6} = \frac{1}{2}$
+            </div>
+            <div class="step">Therefore, $R_p = 2 \Omega$. &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. What are the factors on which the internal resistance of a cell depends? (State any two).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">The internal resistance of a cell depends on (any two of the following):
+                <ul>
+                    <li>The surface area of the electrodes (larger area $\rightarrow$ lesser resistance).</li>
+                    <li>The distance between the electrodes (larger distance $\rightarrow$ greater resistance).</li>
+                    <li>The nature and concentration of the electrolyte.</li>
+                    <li>The temperature of the electrolyte (higher temperature $\rightarrow$ lesser resistance).</li>
+                </ul>
+                <em>(1 Mark for each correct point)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Differentiate between electromotive force (e.m.f.) and terminal voltage of a cell. (Write any two points). State the mathematical relation between them when current is drawn from the cell.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Differences:</strong> (Any two, 1 Mark each)
+                <table style="width: 100%; border-collapse: collapse; margin-top: 5px;" border="1">
+                    <tr><th style="padding: 5px;">Electromotive Force (e.m.f.)</th><th style="padding: 5px;">Terminal Voltage</th></tr>
+                    <tr><td style="padding: 5px;">It is the potential difference between terminals when no current is drawn (open circuit).</td><td style="padding: 5px;">It is the potential difference between terminals when current is drawn (closed circuit).</td></tr>
+                    <tr><td style="padding: 5px;">It depends on the nature of electrodes and electrolyte.</td><td style="padding: 5px;">It depends on the current drawn from the cell and the internal resistance.</td></tr>
+                    <tr><td style="padding: 5px;">It is always slightly greater than the terminal voltage (while discharging).</td><td style="padding: 5px;">It is always less than the e.m.f. (while discharging).</td></tr>
+                </table>
+            </div>
+            <div class="step" style="margin-top: 10px;"><strong>Relation:</strong> <br>
+                $E = V + Ir$ (or $V = E - Ir$) <br>
+                Where $E$ = e.m.f., $V$ = terminal voltage, $I$ = current, $r$ = internal resistance. &nbsp; <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. A steady current of $2 \text{ A}$ flows through a circuit for $10 \text{ minutes}$. Calculate the amount of electric charge that flows through the circuit. Also, find the total number of electrons transferred during this time. (Given $e = 1.6 \times 10^{-19} \text{ C}$)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given: Current ($I$) $= 2 \text{ A}$, Time ($t$) $= 10 \text{ minutes} = 10 \times 60 = 600 \text{ s}$.</div>
+            <div class="step"><strong>Charge ($Q$):</strong> <br>
+                $Q = I \times t = 2 \times 600 = 1200 \text{ Coulombs (C)}$. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+            <div class="step"><strong>Number of electrons ($n$):</strong> <br>
+                Using quantization of charge, $Q = n \times e$ <br>
+                $n = \frac{Q}{e} = \frac{1200}{1.6 \times 10^{-19}}$ <br>
+                $n = \frac{12000}{16} \times 10^{19} = 750 \times 10^{19} = 7.5 \times 10^{21}$ electrons. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Define specific resistance (resistivity). Write its SI unit. Does the specific resistance of a conductor depend on its length or cross-sectional area?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Definition:</strong> Specific resistance (or resistivity) of a material is the resistance offered by a conductor of that material having unit length and unit cross-sectional area. &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>SI Unit:</strong> Ohm-meter ($\Omega \cdot \text{m}$). &nbsp; <em>(1 Mark)</em></div>
+            <div class="step"><strong>Dependency:</strong> No, specific resistance does <strong>not</strong> depend on the length or cross-sectional area of the conductor. It is a characteristic property of the material and only depends on the nature of the material and its temperature. &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Calculate the total electrical energy consumed (in kWh) by a $100 \text{ W}$ bulb operating for $5 \text{ hours}$ and a $400 \text{ W}$ refrigerator operating for $2 \text{ hours}$ in a single day.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Energy consumed by the bulb ($E_1$):<br>
+                $E_1 = \text{Power} \times \text{Time} = 100 \text{ W} \times 5 \text{ h} = 500 \text{ Wh}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Energy consumed by the refrigerator ($E_2$):<br>
+                $E_2 = \text{Power} \times \text{Time} = 400 \text{ W} \times 2 \text{ h} = 800 \text{ Wh}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Total Energy ($E$) $= E_1 + E_2 = 500 + 800 = 1300 \text{ Wh}$. <br>
+                Converting to kWh: $\frac{1300}{1000} = 1.3 \text{ kWh}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Two resistors of $4 \Omega$ and $6 \Omega$ are connected in series to a $5 \text{ V}$ battery. Calculate (i) total current, (ii) potential difference across $4 \Omega$ resistor.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(i) Total Current:</strong><br>
+                In a series circuit, Equivalent Resistance ($R_s$) $= 4 \Omega + 6 \Omega = 10 \Omega$. &nbsp; <em>(0.5 Mark)</em><br>
+                Using Ohm's law, $I = \frac{V}{R_s} = \frac{5}{10} = 0.5 \text{ A}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step"><strong>(ii) Potential difference across $4 \Omega$ resistor ($V_1$):</strong><br>
+                In a series circuit, current remains the same. So, $I = 0.5 \text{ A}$. <br>
+                $V_1 = I \times R_1 = 0.5 \times 4 = 2.0 \text{ V}$. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) Derive an expression for equivalent resistance ($R_p$) of three resistors in parallel. (b) Why is parallel combination preferred in domestic wiring? (Two reasons)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Derivation (3 Marks):</strong></div>
+            <div class="step">Let three resistors $R_1$, $R_2$, and $R_3$ be connected in parallel across a battery of potential difference $V$.</div>
+            <div class="step">In a parallel combination, the potential difference across each resistor is the same ($V$), but the total current $I$ divides into $I_1$, $I_2$, and $I_3$ through the respective resistors. <br>
+                So, $I = I_1 + I_2 + I_3$  --- (Eq 1) &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">According to Ohm's Law: $I_1 = \frac{V}{R_1}$, $I_2 = \frac{V}{R_2}$, and $I_3 = \frac{V}{R_3}$. <br>
+                If $R_p$ is the equivalent resistance of the entire parallel combination, then total current $I = \frac{V}{R_p}$.
+            </div>
+            <div class="step">Substituting these values in Eq 1:<br>
+                $\frac{V}{R_p} = \frac{V}{R_1} + \frac{V}{R_2} + \frac{V}{R_3}$ &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">Canceling $V$ from both sides:<br>
+                <strong>$\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$</strong> &nbsp; <em>(1 Mark)</em>
+            </div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Advantages of Parallel Circuit (2 Marks):</strong></div>
+            <div class="step">1. <strong>Independent Operation:</strong> Each appliance has its own switch. If one appliance stops working (or is switched off), the others continue to work normally. &nbsp; <em>(1 Mark)</em></div>
+            <div class="step">2. <strong>Full Voltage:</strong> Every appliance gets the same supply voltage (e.g., 220V) as that of the main line, ensuring they run efficiently at their rated power. (Alternatively, overall equivalent resistance is reduced, drawing sufficient current). &nbsp; <em>(1 Mark)</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Cell $E=2 \text{ V}, r=1.2 \Omega$, Ammeter $R=0.8 \Omega$, and parallel resistors $4.5 \Omega$ and $9 \Omega$. Calculate: (a) External equivalent resistance (b) Ammeter reading (c) P.d. across parallel combination.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Equivalent resistance of the external circuit:</strong></div>
+            <div class="step">First, find the equivalent resistance of the parallel combination ($R_p$) of $4.5 \Omega$ and $9 \Omega$.<br>
+                $\frac{1}{R_p} = \frac{1}{4.5} + \frac{1}{9} = \frac{2}{9} + \frac{1}{9} = \frac{3}{9} = \frac{1}{3}$ <br>
+                $R_p = 3 \Omega$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step">This parallel combination is in series with the ammeter.<br>
+                Total external resistance ($R_{ext}$) $= R_p + \text{Resistance of Ammeter}$<br>
+                $R_{ext} = 3 \Omega + 0.8 \Omega = 3.8 \Omega$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Ammeter reading (Total Current $I$):</strong></div>
+            <div class="step">Total resistance of the entire circuit $= R_{ext} + \text{internal resistance } (r)$.<br>
+                $R_{total} = 3.8 + 1.2 = 5.0 \Omega$. &nbsp; <em>(0.5 Mark)</em>
+            </div>
+            <div class="step">Using $I = \frac{E}{R_{total}}$ <br>
+                $I = \frac{2}{5} = 0.4 \text{ A}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+
+            <div class="step" style="margin-top: 15px;"><strong>(c) Potential difference across the parallel combination ($V_p$):</strong></div>
+            <div class="step">The total current $I = 0.4 \text{ A}$ flows into the parallel block.<br>
+                $V_p = I \times R_p = 0.4 \text{ A} \times 3 \Omega = 1.2 \text{ V}$. &nbsp; <em>(1.5 Marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) V-I graph for Ohmic conductor and its slope. (b) Heater rated $220 \text{ V}, 2 \text{ kW}$. Calculate (i) safe current, (ii) resistance, (iii) cost of running 2 hours/day for 30 days @ ₹5/kWh.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) V-I Graph:</strong></div>
+            <div class="step">The V-I graph for an Ohmic conductor is a <strong>straight line passing through the origin</strong>. &nbsp; <em>(1 Mark for stating or conceptualizing a straight line)</em></div>
+            <div class="step"><strong>Slope:</strong> If Voltage ($V$) is plotted on the Y-axis and Current ($I$) on the X-axis, the slope of the graph ($\frac{\Delta V}{\Delta I}$) represents the <strong>Resistance ($R$)</strong> of the conductor. &nbsp; <em>(1 Mark)</em></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Numericals for the Heater:</strong></div>
+            <div class="step">Given: Power ($P$) $= 2 \text{ kW} = 2000 \text{ W}$, Voltage ($V$) $= 220 \text{ V}$.</div>
+            <div class="step"><strong>(i) Safe Current ($I$):</strong><br>
+                $P = V \times I \implies I = \frac{P}{V} = \frac{2000}{220} = \frac{100}{11} \approx 9.09 \text{ A}$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step"><strong>(ii) Resistance ($R$):</strong><br>
+                $R = \frac{V^2}{P} = \frac{220 \times 220}{2000} = \frac{48400}{2000} = 24.2 \Omega$. &nbsp; <em>(1 Mark)</em>
+            </div>
+            <div class="step"><strong>(iii) Cost of usage:</strong><br>
+                Energy consumed in 1 day $= \text{Power (kW)} \times \text{Time (h)} = 2 \text{ kW} \times 2 \text{ h} = 4 \text{ kWh}$.<br>
+                Total Energy in 30 days $= 4 \times 30 = 120 \text{ kWh}$ (or units).<br>
+                Total Cost $= \text{Total Energy} \times \text{Rate} = 120 \times 5 = \text{₹ } 600$. &nbsp; <em>(1 Mark)</em>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

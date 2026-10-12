@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 16pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            color: #333;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-weight: bold;
+            background-color: rgba(251, 192, 45, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+            overflow-x: auto;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .correct-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 10px 0 15px 0; 
+            border-left: 4px solid #2e7d32;
+            border-radius: 0 4px 4px 0; 
+            font-weight: bold; 
+            display: inline-block;
+        }
+        .explanation {
+            margin-left: 10px;
+            overflow-x: auto;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+        }
+        @media (max-width: 768px) {
+            body { padding: 12px; font-size: 11pt; }
+            .q-header { flex-direction: column; gap: 10px; }
+            .marks-badge { align-self: flex-start; }
+            .institute-name { font-size: 18pt; }
+            /* Breaking long equations on mobile */
+            .math-break { display: block; margin-top: 5px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.05 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Minor Test 21 (Pressure)</div>
+    </div>
+
+    <h3 style="text-align: center; text-decoration: underline;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define pressure. What is the SI unit of pressure?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Pressure is Force per unit area. Unit: Pascal (Pa).</div>
+        <div class="explanation">
+            <div class="step"><strong>Definition:</strong> The force acting perpendicularly on a unit area of a surface is called pressure. Formula: $\text{Pressure} = \frac{\text{Force}}{\text{Area}}$.</div>
+            <div class="step"><strong>SI Unit:</strong> The SI unit of pressure is Newton per square metre ($\text{N/m}^2$), which is also called <strong>Pascal (Pa)</strong>.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Why do school bags have wide and broad straps?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: To reduce pressure on the shoulders by increasing area.</div>
+        <div class="explanation">
+            <div class="step">We know that $\text{Pressure} = \frac{\text{Force}}{\text{Area}}$. This means pressure is inversely proportional to the area of contact.</div>
+            <div class="step">School bags have wide straps to increase the area over which the weight (force) of the bag is distributed. An increased area results in a decreased pressure on the child's shoulders, making it more comfortable to carry.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. What happens to the pressure exerted by a liquid as the depth increases?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Liquid pressure increases with depth.</div>
+        <div class="explanation">
+            <div class="step">The pressure exerted by a liquid increases uniformly with the increase in depth.</div>
+            <div class="step">This is because as depth increases, the weight of the water column pushing down from above also increases, resulting in greater pressure at the bottom.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Define atmospheric pressure. Why are our bodies not crushed by it?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Pressure by air envelope. Balanced by internal blood pressure.</div>
+        <div class="explanation">
+            <div class="step"><strong>Definition:</strong> The pressure exerted by the weight of the air (atmosphere) column over a unit area on the Earth's surface is known as atmospheric pressure.</div>
+            <div class="step"><strong>Reason:</strong> Our bodies are not crushed under this massive pressure because the pressure of the fluids (like blood) inside our bodies is equal to the atmospheric pressure outside. Thus, it cancels out the external pressure.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. A force of $100\text{ N}$ is applied to an area of $2\text{ m}^2$. Calculate the pressure.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Pressure = $50\text{ Pa}$</div>
+        <div class="explanation">
+            <div class="step">Given: Force ($F$) $= 100\text{ N}$</div>
+            <div class="step">Area ($A$) $= 2\text{ m}^2$</div>
+            <div class="step">$$ \text{Pressure } (P) = \frac{\text{Force } (F)}{\text{Area } (A)} $$</div>
+            <div class="step">$$ P = \frac{100\text{ N}}{2\text{ m}^2} = 50\text{ N/m}^2 \text{ or } 50\text{ Pa} $$</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 30px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Explain scientifically why it is much easier to cut an apple with a sharp knife rather than a blunt knife.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Sharp knife has less area, generating more pressure for cutting.</div>
+        <div class="explanation">
+            <div class="step">1. A sharp knife has a very thin edge, meaning the area of contact with the apple is extremely small.</div>
+            <div class="step">2. A blunt knife has a thicker edge, which means a relatively larger area of contact.</div>
+            <div class="step">3. According to the formula $\text{Pressure} = \frac{\text{Force}}{\text{Area}}$, for the same amount of force applied by our hand, the smaller area of a sharp knife produces a much larger pressure on the apple. This high pressure easily cuts through the apple.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Describe a simple experiment to show that liquids exert pressure on the walls of the container.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Experiment: Bulging rubber balloon on a side tube.</div>
+        <div class="explanation">
+            <div class="step"><strong>Experiment Setup:</strong> Take a glass tube open at both ends. Attach a short glass tube near the bottom on its side. Tie a thin rubber balloon tightly to the mouth of this side tube.</div>
+            <div class="step"><strong>Procedure:</strong> Start pouring water from the top of the main glass tube.</div>
+            <div class="step"><strong>Observation:</strong> As the water level rises in the tube, the rubber balloon attached to the side tube starts bulging outwards.</div>
+            <div class="step"><strong>Conclusion:</strong> The balloon bulges out because the water column exerts a sideways force. This proves that liquids exert pressure on the walls of their container.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. (a) Porters place a round piece of cloth on their heads. (b) Tractors have broad tyres.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Final Answer: Both scenarios increase area to decrease pressure.</div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Porters and round cloth:</strong> A round piece of cloth increases the area of contact between the heavy load and the porter's head. Since $\text{Pressure} \propto \frac{1}{\text{Area}}$, the larger area reduces the pressure on the head, making it less painful to carry the heavy load.</div>
+            <div class="step" style="margin-top: 10px;"><strong>(b) Tractors and broad tyres:</strong> Tractors are heavy machines used in muddy fields. Broad tyres drastically increase the surface area of the vehicle in contact with the ground. This reduces the pressure exerted on the soil, preventing the heavy tractor from sinking into the soft earth.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Calculate pressure from $800\text{ N}$ force on $2.0\text{ m}^2$. What if the area is halved?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Initial Pressure = $400\text{ Pa}$. New Pressure = $800\text{ Pa}$.</div>
+        <div class="explanation">
+            <div class="step"><strong>Part 1: Initial Pressure</strong></div>
+            <div class="step">$$ P_1 = \frac{F}{A_1} = \frac{800\text{ N}}{2.0\text{ m}^2} = 400\text{ Pa} $$</div>
+            <div class="step" style="margin-top: 10px;"><strong>Part 2: Area is halved</strong></div>
+            <div class="step">New Area ($A_2$) $= \frac{2.0}{2} = 1.0\text{ m}^2$</div>
+            <div class="step">Force ($F$) remains $800\text{ N}$.</div>
+            <div class="step">$$ P_2 = \frac{F}{A_2} = \frac{800\text{ N}}{1.0\text{ m}^2} = 800\text{ Pa} $$</div>
+            <div class="step"><em>Conclusion: Halving the area doubles the pressure.</em></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. What is a barometer? Liquid used? Why astronauts wear spacesuits?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="correct-answer">Device to measure atmospheric pressure; Mercury; To counter internal body pressure.</div>
+        <div class="explanation">
+            <div class="step"><strong>Barometer:</strong> It is a scientific instrument used to measure atmospheric pressure.</div>
+            <div class="step"><strong>Liquid Used:</strong> Mercury is conventionally used in a standard barometer.</div>
+            <div class="step"><strong>Astronaut Spacesuits:</strong> In space, there is a vacuum, meaning there is no atmospheric pressure outside. However, the blood and fluids inside an astronaut's body still exert high outward pressure. Without atmospheric pressure to balance it, blood vessels would burst. Special pressurized suits provide artificial external pressure to keep astronauts safe.</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 30px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. (a) Properties of liquid pressure. (b) Pressure of $250\text{ N}$ block on $0.5\text{ m}^2$.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">(a) Acts in all directions, increases with depth, equal at same depth. (b) $500\text{ Pa}$.</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Properties of Liquid Pressure (3 Marks)</strong></div>
+            <div class="step">1. Liquid exerts pressure on the walls and the base of the container holding it.</div>
+            <div class="step">2. The pressure exerted by a liquid increases with an increase in the depth of the liquid.</div>
+            <div class="step">3. At any given depth, a liquid exerts equal pressure in all directions.</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b): Numerical (2 Marks)</strong></div>
+            <div class="step">Weight of block (Force $F$) $= 250\text{ N}$. Area ($A$) $= 0.5\text{ m}^2$.</div>
+            <div class="step">$$ \text{Pressure } (P) = \frac{F}{A} $$</div>
+            <div class="step">$$ P = \frac{250}{0.5} <span class="math-break">= \frac{250 \times 10}{5} = 500\text{ Pa}</span> $$</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Activity for equal pressure at same depth. (b) Why deep-sea divers wear special suits?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">(a) Bottle with holes at same level. (b) To withstand high pressure at ocean depths.</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Activity (3 Marks)</strong></div>
+            <div class="step">1. Take an empty plastic bottle. Drill 3-4 small holes all around the bottle at exactly the same height from the bottom.</div>
+            <div class="step">2. Fill the bottle with water.</div>
+            <div class="step">3. <strong>Observation:</strong> You will notice that water streams coming out of all the holes fall at the exact same distance from the base of the bottle.</div>
+            <div class="step">4. <strong>Conclusion:</strong> Since the water is pushed out with equal force in all directions at that specific height, it proves that liquids exert equal pressure at the same depth.</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b): Deep-Sea Divers (2 Marks)</strong></div>
+            <div class="step">As depth increases, the pressure exerted by the water increases tremendously. Deep down in the ocean, the water pressure is high enough to crush a human body. Divers wear specially designed rigid suits to protect themselves from this immense crushing liquid pressure.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) Atmospheric pressure using rubber sucker. (b) Nose bleeding at high altitudes.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="correct-answer">(a) Vacuum created inside, external air pressure holds it. (b) Low external pressure causes vessels to burst.</div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a): Rubber Sucker (3 Marks)</strong></div>
+            <div class="step">A rubber sucker looks like a small concave rubber cup.</div>
+            <div class="step">When we press a rubber sucker firmly against a smooth, flat surface (like a wall), most of the air trapped between its cup and the surface is forced out.</div>
+            <div class="step">This creates a partial vacuum (low pressure) inside the cup. The atmospheric pressure acting on the outside of the sucker is much higher.</div>
+            <div class="step">This immense external atmospheric pressure pushes the sucker firmly against the wall, causing it to stick tightly. It takes a significant pulling force to overcome this atmospheric pressure to detach it.</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Part (b): Nose Bleeding (2 Marks)</strong></div>
+            <div class="step">Atmospheric pressure decreases as altitude increases. At very high altitudes (like high mountains), the atmospheric pressure becomes much lower than normal. However, the blood pressure inside our bodies remains high. Due to this pressure difference, the delicate blood vessels in the nose may burst outwards, causing nosebleeds.</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

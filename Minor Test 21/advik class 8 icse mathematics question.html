@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 8 ICSE Minor Test 21 Question Paper</title>
+    <!-- MathJax for rendering equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #111111;
+            --bg-card: #ffffff;
+            --border-color: #000000;
+        }
+        body {
+            width: 100%;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        .paper-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            text-decoration: underline;
+            color: #222;
+        }
+        .exam-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 6px 4px;
+            background-color: #fffde7;
+        }
+        .exam-details span {
+            padding: 2px 5px;
+        }
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background-color: #fcfcfc;
+            border: 1px solid #eee;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12pt;
+            background-color: #fff9c4;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #fbc02d;
+            position: relative;
+            z-index: 1;
+        }
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            color: #444;
+        }
+        .question-container {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+            page-break-inside: avoid;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 45px;
+            flex-shrink: 0;
+            font-size: 11pt;
+        }
+        .q-content {
+            flex-grow: 1;
+            overflow-x: auto;
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 15px;
+            margin-top: 8px;
+            padding-left: 5px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 10pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Mobile and Tablet Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .paper-container {
+                padding: 12px;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .test-name {
+                font-size: 11pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            .question-container {
+                flex-direction: column;
+            }
+            .q-num {
+                margin-bottom: 4px;
+            }
+            .q-marks {
+                float: none;
+                display: inline-block;
+                margin-bottom: 6px;
+            }
+        }
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                -webkit-print-color-adjust: exact;
+            }
+            .paper-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="paper-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">MINOR TEST 21 - MATHEMATICS (CLASS VIII ICSE)</div>
+            <div class="exam-details">
+                <span>Class: 8th ICSE</span>
+                <span>Subject: Mathematics</span>
+                <span>Topics: Factorisation &amp; Percent and Percentage</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 40</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory. Read questions carefully before answering.</li>
+                    <li>The paper consists of three sections: <strong>Section A</strong> (10 Marks), <strong>Section B</strong> (15 Marks), and <strong>Section C</strong> (15 Marks).</li>
+                    <li>Show clear steps in calculations and simplify all algebraic expressions completely.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECTION A -->
+        <div class="section-header">
+            SECTION A (10 Marks)
+            <span class="marks-info">(5 Questions &mdash; 2 Marks Each)</span>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-container">
+            <div class="q-num">Q1.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                What percentage is $15$ of $75$?
+                <div class="options-grid">
+                    <div>(A) $15\%$</div>
+                    <div>(B) $20\%$</div>
+                    <div>(C) $25\%$</div>
+                    <div>(D) $30\%$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container">
+            <div class="q-num">Q2.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                Factorise the expression completely: $16x^2 - 81y^2$.
+                <div class="options-grid">
+                    <div>(A) $(4x - 9y)(4x + 9y)$</div>
+                    <div>(B) $(4x - 9y)^2$</div>
+                    <div>(C) $(16x - 9y)(x + 9y)$</div>
+                    <div>(D) $(4x + 9y)^2$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container">
+            <div class="q-num">Q3.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                A student scores $360$ marks out of a total of $450$ marks in an examination. Calculate his score as a percentage.
+                <div class="options-grid">
+                    <div>(A) $75\%$</div>
+                    <div>(B) $80\%$</div>
+                    <div>(C) $82\%$</div>
+                    <div>(D) $85\%$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-container">
+            <div class="q-num">Q4.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                The original price of an article increases from $\text{₹}800$ to $\text{₹}960$. Calculate the percentage increase in price.
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-container">
+            <div class="q-num">Q5.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                Factorise the quadratic expression by splitting the middle term: $x^2 - 7x + 12$.
+            </div>
+        </div>
+
+        <!-- SECTION B -->
+        <div class="section-header">
+            SECTION B (15 Marks)
+            <span class="marks-info">(5 Questions &mdash; 3 Marks Each)</span>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-container">
+            <div class="q-num">Q6.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Factorise the quadratic trinomial completely:
+                $$2a^2 + 7a + 3$$
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-container">
+            <div class="q-num">Q7.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Out of a total monthly salary of $\text{₹}45,000$, Mr. Sharma spends $20\%$ on house rent, $40\%$ on household expenses, and $15\%$ on education. How much money does he save each month?
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-container">
+            <div class="q-num">Q8.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Factorise the following polynomial expression completely into real algebraic factors:
+                $$x^4 - 16y^4$$
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-container">
+            <div class="q-num">Q9.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                The price of sugar rises by $25\%$. By what percentage must a household reduce its consumption of sugar so that its total expenditure on sugar remains unchanged?
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-container">
+            <div class="q-num">Q10.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Factorise by grouping and applying algebraic identities:
+                $$a^2 - b^2 - 2bc - c^2$$
+            </div>
+        </div>
+
+        <!-- SECTION C -->
+        <div class="section-header">
+            SECTION C (15 Marks)
+            <span class="marks-info">(3 Questions &mdash; 5 Marks Each)</span>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question-container">
+            <div class="q-num">Q11.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                In an annual examination, $85\%$ of the total candidates passed. It was found that $45$ candidates failed the examination.
+                <br><br>
+                (a) Find the total number of candidates who appeared in the examination. [3 Marks]
+                <br>
+                (b) If $60\%$ of the total appeared candidates were boys, calculate the number of girls who appeared in the examination. [2 Marks]
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question-container">
+            <div class="q-num">Q12.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                Factorise the following algebraic expressions completely:
+                <br><br>
+                (a) $x^2 + \frac{1}{x^2} - 2 - 5x + \frac{5}{x}$ [2.5 Marks]
+                <br>
+                (b) $8x^3 + 27y^3$ [2.5 Marks]
+            </div>
+        </div>
+
+        <!-- Question 13 (HOTS) -->
+        <div class="question-container">
+            <div class="q-num">Q13.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                <strong>[HIGH-ORDER THINKING SKILL (HOTS)]</strong><br>
+                An electronics factory produced a total batch of electronic components. During quality control inspection, $8\%$ of the total components were found defective. Of the remaining non-defective components, $75\%$ were sold in the domestic market, and the remaining $2,070$ non-defective components were exported abroad.
+                <br><br>
+                (a) Determine the total number of electronic components produced by the factory. [2.5 Marks]<br>
+                (b) The production cost equation polynomial is given by $1000x^3 - 125$. Factorise this polynomial completely into linear and quadratic factors. [1.5 Marks]<br>
+                (c) If defective items are sold at a $60\%$ discount on cost price while non-defective exported items are sold at a $20\%$ profit, calculate the net profit or loss percentage earned on the sum of these two batches combined. [1 Mark]
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            End of Question Paper &mdash; Created by Team Vardaan Learning Institute
+        </div>
+    </div>
+</body>
+</html>

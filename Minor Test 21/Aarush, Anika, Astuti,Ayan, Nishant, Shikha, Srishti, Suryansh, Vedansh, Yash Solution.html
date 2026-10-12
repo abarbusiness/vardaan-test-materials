@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .surprise-test {
+             color: red;
+             font-weight: bold;
+             font-size: 16pt;
+             margin-top: 5px;
+             text-transform: uppercase;
+             animation: blink 1.5s linear infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 2px 5px; }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* MathJax Overflow Fix for Small Screens */
+        mjx-container[jax="CHTML"][display="true"] {
+            display: block;
+            text-align: left;
+            margin: 1em 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin-bottom: 5px; }
+            .institute-name { font-size: 18pt; }
+        }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <div class="surprise-test">*** SURPRISE TEST ***</div>
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 21: Basic Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 6 & 7</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Show rough work clearly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Calculate the sum of the smallest 4-digit number and the largest 3-digit number.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Solve the following operations involving integers:
+            <div class="sub-question">(i) \( -15 + 8 \)</div>
+            <div class="sub-question">(ii) \( -4 \times (-6) \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Convert the following fractions into decimals:
+            <div class="sub-question">(i) \( \frac{3}{4} \)</div>
+            <div class="sub-question">(ii) \( \frac{7}{10} \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find the perimeter of a rectangle whose length is \( 12 \) cm and breadth is \( 5 \) cm.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Write the algebraic expression for: "Five times a number \( x \) decreased by \( 3 \)".
+        </div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Evaluate the following expression using the order of operations (BODMAS):<br>
+            $$ 25 - (15 \div 3) + 4 \times 2 $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A piece of wire is \( \frac{7}{8} \) meters long. It is cut into two pieces. If one piece is \( \frac{1}{4} \) meters long, how long is the other piece?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Solve the simple equation to find the value of \( y \):
+            $$ 3y + 5 = 20 $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Find the HCF (Highest Common Factor) and LCM (Lowest Common Multiple) of \( 12 \) and \( 18 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The marks obtained by \( 7 \) students in a math test are: \( 15, 18, 12, 14, 20, 16, 12 \).
+            <div class="sub-question">(i) Find the range of the marks.</div>
+            <div class="sub-question">(ii) Find the mean (average) marks.</div>
+        </div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            An orchard has \( 450 \) trees. Out of these, \( 30\% \) are apple trees, \( \frac{2}{5} \) are mango trees, and the rest are orange trees.
+            <div class="sub-question">(a) How many apple trees are there? (2 Marks)</div>
+            <div class="sub-question">(b) How many mango trees are there? (2 Marks)</div>
+            <div class="sub-question">(c) How many orange trees are there? (1 Mark)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A rectangular garden is \( 40 \) m long and \( 25 \) m wide.
+            <div class="sub-question">(a) Find the area of the garden. (2 Marks)</div>
+            <div class="sub-question">(b) A path of width \( 2 \) m is built outside around the garden. Find the total area of the garden including the path. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Simplify the following algebraic expressions:
+            <div class="sub-question">(a) Add: \( (3x^2 - 4x + 5) \) and \( (2x^2 + 7x - 2) \) (2.5 Marks)</div>
+            <div class="sub-question">(b) Subtract: \( (5a - 3b + 2c) \) from \( (8a + 2b - 4c) \) (2.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

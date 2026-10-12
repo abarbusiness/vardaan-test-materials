@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Class 11 Chemistry Minor Test 17</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1b5e20;
+            --bg-solution: #f4fbf7;
+            --border-green: #a5d6a7;
+            --text-dark: #111111;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            max-width: 500px;
+            opacity: 0.05;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3.5px solid var(--primary-yellow);
+            border-bottom: 3.5px solid var(--primary-yellow);
+            padding: 12px 5px;
+            background-color: #fffde7;
+            border-radius: 6px;
+        }
+
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            color: #000;
+        }
+
+        .solution-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #2e7d32;
+        }
+
+        .section-banner {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            padding: 6px 12px;
+            margin: 25px 0 15px 0;
+            border-radius: 4px;
+            font-size: 11pt;
+            letter-spacing: 0.5px;
+        }
+
+        .solution-block {
+            border: 1px solid #e0e0e0;
+            border-bottom: 2px solid var(--primary-yellow);
+            padding: 14px 16px;
+            margin-bottom: 18px;
+            border-radius: 6px;
+            background-color: #ffffff;
+            page-break-inside: avoid;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+            color: #000;
+        }
+
+        .marks-badge {
+            background-color: #fff59d;
+            color: #000;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: bold;
+            white-space: nowrap;
+            border: 1px solid #fbc02d;
+        }
+
+        .correct-answer {
+            color: #1b5e20;
+            background-color: #e8f5e9;
+            padding: 5px 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .explanation {
+            margin-top: 8px;
+            padding-left: 5px;
+            color: #222;
+        }
+
+        .key-concept {
+            background-color: #f1f8e9;
+            border-left: 3px solid #689f38;
+            padding: 6px 10px;
+            margin: 8px 0;
+            font-size: 9.5pt;
+            border-radius: 2px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9.5pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #555;
+        }
+
+        /* Responsive equations & MathJax container */
+        .MathJax_Display, .mjx-chtml {
+            max-width: 100% !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 10pt;
+            }
+            .institute-name {
+                font-size: 15pt;
+            }
+            .solution-title {
+                font-size: 11pt;
+            }
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .marks-badge {
+                align-self: flex-start;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body class="tex2jax_process">
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS &amp; MARKING SCHEME: MINOR TEST 17</div>
+        <div><strong>Class:</strong> 11 Chemistry | <strong>Topic:</strong> Chemical Bonding and Molecular Structure</div>
+    </div>
+
+    <div class="section-banner">SECTION A — DETAILED SOLUTIONS (10 Marks)</div>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Which of the following molecules has a non-zero dipole moment despite having polar bonds?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $\text{NH}_3$</div>
+        <div class="explanation">
+            <strong>Detailed Explanation:</strong>
+            $\text{BF}_3$ (Trigonal Planar), $\text{CCl}_4$ (Tetrahedral), and $\text{CO}_2$ (Linear) possess completely symmetrical geometries. Their individual bond dipoles cancel each other out vectorially, yielding a net dipole moment $\mu = 0$. <br>
+            In $\text{NH}_3$, the trigonal pyramidal geometry with one lone pair leads to a resultant bond dipole that reinforces the lone pair orbital dipole, giving a net dipole moment $\mu = 1.47\text{ D} \neq 0$.
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. According to Molecular Orbital Theory, what is the bond order of the peroxide ion ($\text{O}_2^{2-}$)?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $1.0$</div>
+        <div class="explanation">
+            <strong>Detailed Explanation:</strong>
+            Total electrons in $\text{O}_2^{2-} = 16 + 2 = 18\text{ e}^-$.<br>
+            MO Configuration: $\sigma 1s^2, \sigma^* 1s^2, \sigma 2s^2, \sigma^* 2s^2, \sigma 2p_z^2, (\pi 2p_x^2 = \pi 2p_y^2), (\pi^* 2p_x^2 = \pi^* 2p_y^2)$.<br>
+            Number of bonding electrons ($N_b$) = 10, antibonding electrons ($N_a$) = 8.<br>
+            $$\text{Bond Order} = \frac{N_b - N_a}{2} = \frac{10 - 8}{2} = 1.0$$
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. What is the shape of $\text{XeF}_4$ molecule according to VSEPR theory?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Square Planar</div>
+        <div class="explanation">
+            <strong>Detailed Explanation:</strong>
+            Central atom $\text{Xe}$ has 8 valence electrons + 4 fluorine bond pairs = 12 electrons (6 electron pairs).<br>
+            Steric Number = 6 ($sp^3d^2$ hybridisation). Geometry = Octahedral.<br>
+            With 4 bond pairs and 2 lone pairs ($AB_4E_2$), the two lone pairs occupy axial positions to minimize repulsions ($180^\circ$ apart), resulting in a <strong>Square Planar</strong> shape.
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. According to Fajan's rules, which halide possesses the highest covalent character?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (D) $\text{LiI}$</div>
+        <div class="explanation">
+            <strong>Detailed Explanation:</strong>
+            According to Fajan's Rules, covalent character increases with a smaller cation size and a larger anion size.<br>
+            For lithium halides ($\text{LiF, LiCl, LiBr, LiI}$), the cation $\text{Li}^+$ is identical. Among the anions ($\text{F}^-, \text{Cl}^-, \text{Br}^-, \text{I}^-$), the iodide ion ($\text{I}^-$) has the largest size, making it most easily polarized by $\text{Li}^+$. Hence, $\text{LiI}$ has the maximum covalent character.
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. The hybridisation of the central atom in gaseous phosphorus pentachloride ($\text{PCl}_5$) is:</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $sp^3d$</div>
+        <div class="explanation">
+            <strong>Detailed Explanation:</strong>
+            $\text{P}$ (Group 15) has 5 valence electrons, forming 5 single bonds with chlorine atoms.<br>
+            Total electron pairs = 5 bond pairs + 0 lone pairs = 5 $\to sp^3d$ hybridisation (Trigonal bipyramidal geometry).
+        </div>
+    </div>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Calculate the formal charge on the central oxygen atom in Ozone ($\text{O}_3$).</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            Structure of Ozone: $\text{O}_{(1)} = \text{O}_{(2)}^+ - \text{O}_{(3)}^-$, where Central atom is atom (2).<br>
+            Formula: $\text{Formal Charge} = V - L - \frac{1}{2}S$<br>
+            Where $V = 6$ (valence $\text{e}^-$), $L = 2$ (lone pair $\text{e}^-$), $S = 6$ (shared bonding $\text{e}^-$).<br>
+            $$\text{Formal Charge on Central O} = 6 - 2 - \frac{1}{2}(6) = +1$$
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. State the type of atomic orbital overlap involved in forming a $\pi$ (pi) bond.</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            A $\pi$ bond is formed by the <strong>lateral (sideways) overlap</strong> of atomic orbitals ($p-p$ or $d-p$) whose axes are parallel to each other and perpendicular to the internuclear axis.
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Why is the molecule $\text{He}_2$ predicted to be non-existent using molecular orbital theory?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            Electronic configuration of $\text{He}_2 (4\text{e}^-) = \sigma 1s^2, \sigma^* 1s^2$.<br>
+            $N_b = 2$, $N_a = 2$.<br>
+            $$\text{Bond Order} = \frac{N_b - N_a}{2} = \frac{2 - 2}{2} = 0$$
+            A bond order of zero means no net attractive force holds the atoms together; hence $\text{He}_2$ does not exist.
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Assertion-Reasoning on paramagnetic nature of $\text{O}_2$.</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Both A and R are correct, R is correct explanation of A.</div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            According to MOT, the valence shell electron configuration of $\text{O}_2$ ends in $(\pi^* 2p_x^1 = \pi^* 2p_y^1)$. The presence of these two unpaired electrons in antibonding molecular orbitals causes $\text{O}_2$ to be paramagnetic.
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Why does water ($\text{H}_2\text{O}$) have a much higher boiling point than $\text{H}_2\text{S}$?</div>
+            <span class="marks-badge">[1 Mark]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            Oxygen is highly electronegative, enabling $\text{H}_2\text{O}$ molecules to form extensive <strong>intermolecular hydrogen bonds</strong>. Hydrogen sulphide ($\text{H}_2\text{S}$) experiences only weak van der Waals forces because sulfur is less electronegative and larger in size. Significant thermal energy is required to break H-bonds in water, leading to its higher boiling point.
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION B — DETAILED SOLUTIONS (10 Marks)</div>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. In $\text{PCl}_5$, why are axial bonds longer and weaker than equatorial bonds?</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            $\text{PCl}_5$ has a trigonal bipyramidal structure with $sp^3d$ hybridisation.<br>
+            • The three <strong>equatorial</strong> $\text{P-Cl}$ bonds lie in one plane at bond angles of $120^\circ$.<br>
+            • The two <strong>axial</strong> $\text{P-Cl}$ bonds lie perpendicular to the equatorial plane at an angle of $90^\circ$ to the equatorial bonds.<br>
+            • Axial bond pairs experience greater repulsion from three equatorial bond pairs at $90^\circ$, whereas equatorial bond pairs experience repulsion from only two axial pairs at $90^\circ$.<br>
+            To minimize repulsion, axial bonds stretch, making them <strong>longer ($240\text{ pm}$) and weaker</strong> than equatorial bonds ($202\text{ pm}$).
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. Steam volatility of $o$-nitrophenol vs $p$-nitrophenol and type of H-bonding.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            • <strong>$o$-Nitrophenol</strong> is steam volatile due to <strong>intramolecular hydrogen bonding</strong> (chelation within the same molecule between $-\text{OH}$ and $-\text{NO}_2$ groups). This reduces intermolecular attraction, lowering its boiling point.<br>
+            • <strong>$p$-Nitrophenol</strong> forms <strong>intermolecular hydrogen bonding</strong> (between adjacent molecules), causing molecular association. It requires higher energy to break these bonds, making it less volatile.<br>
+            <div class="key-concept"><strong>Marking Breakdown:</strong> Correct choice + Intramolecular H-bonding reason (1 Mark); Explanation of Intermolecular H-bonding in para-isomer (1 Mark).</div>
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Differences between $\sigma$ (sigma) and $\pi$ (pi) bonds.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            <table border="1" style="width:100%; border-collapse:collapse; margin-top:5px; text-align:left;">
+                <tr style="background-color:#f5f5f5;">
+                    <th style="padding:6px;">Property</th>
+                    <th style="padding:6px;">$\sigma$ (Sigma) Bond</th>
+                    <th style="padding:6px;">$\pi$ (Pi) Bond</th>
+                </tr>
+                <tr>
+                    <td style="padding:6px;"><strong>(i) Mode of Overlap</strong></td>
+                    <td style="padding:6px;">Formed by axial / end-to-end (head-on) overlap along internuclear axis.</td>
+                    <td style="padding:6px;">Formed by lateral / sideways overlap perpendicular to internuclear axis.</td>
+                </tr>
+                <tr>
+                    <td style="padding:6px;"><strong>(ii) Strength &amp; Rotation</strong></td>
+                    <td style="padding:6px;">Strong bond due to large orbital overlap; free rotation around bond axis is possible.</td>
+                    <td style="padding:6px;">Weaker bond due to smaller extent of overlap; free rotation is restricted.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Q14 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q14. Resonance structures of carbonate ion ($\text{CO}_3^{2-}$) and average formal charge on oxygen.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            Carbonate ion exhibits three equivalent resonance structures:<br>
+            1. $[\text{O}=\text{C}(-\text{O}^-)_2]$ &nbsp;&nbsp;&nbsp; 2. $[^-\text{O}-\text{C}(=\text{O})-\text{O}^-]$ &nbsp;&nbsp;&nbsp; 3. $[(^-\text{O})_2\text{C}=\text{O}]$<br><br>
+            <strong>Formal Charge Calculation:</strong><br>
+            Total negative charge = $-2$ units spread over $3$ oxygen atoms.<br>
+            $$\text{Average Formal Charge on each Oxygen atom} = \frac{\text{Total Charge}}{\text{Number of Oxygen Atoms}} = \frac{-2}{3} = -0.67$$
+        </div>
+    </div>
+
+    <!-- Q15 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q15. VSEPR explanation for geometry of $\text{BeH}_2$ vs $\text{H}_2\text{O}$.</div>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            • <strong>In $\text{BeH}_2$:</strong> Central $\text{Be}$ atom has 2 bond pairs and 0 lone pairs. Repulsion between bond pairs is minimized at $180^\circ$, giving it a <strong>Linear geometry</strong>.<br>
+            • <strong>In $\text{H}_2\text{O}$:</strong> Central $\text{O}$ atom has 2 bond pairs and 2 lone pairs (Total 4 electron pairs, $sp^3$). According to VSEPR theory, lone pair-lone pair ($lp-lp$) repulsion > lone pair-bond pair ($lp-bp$) repulsion > bond pair-bond pair ($bp-bp$) repulsion.<br>
+            The two lone pairs compress the $\text{H-O-H}$ bond angle from regular tetrahedral $109.5^\circ$ down to $104.5^\circ$, resulting in a <strong>Bent / V-shaped geometry</strong>.
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION C — DETAILED SOLUTIONS (15 Marks)</div>
+
+    <!-- Q16 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q16. Predict hybridisation, geometry, shape, and lone pairs for $\text{SF}_4$, $\text{ClF}_3$, $\text{BrF}_5$.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution (1 Mark each):</strong><br>
+            <strong>(i) $\text{SF}_4$:</strong><br>
+            Valence $\text{e}^- (\text{S}) = 6$. Bond pairs = 4, Lone pairs = 1. Total steric number = 5.<br>
+            • Hybridisation: $sp^3d$<br>
+            • Electron Geometry: Trigonal bipyramidal<br>
+            • Molecular Shape: <strong>See-Saw</strong><br>
+            • Lone pairs: 1 (occupies equatorial position).<br><br>
+
+            <strong>(ii) $\text{ClF}_3$:</strong><br>
+            Valence $\text{e}^- (\text{Cl}) = 7$. Bond pairs = 3, Lone pairs = 2. Total steric number = 5.<br>
+            • Hybridisation: $sp^3d$<br>
+            • Electron Geometry: Trigonal bipyramidal<br>
+            • Molecular Shape: <strong>T-shaped</strong><br>
+            • Lone pairs: 2 (occupy equatorial positions).<br><br>
+
+            <strong>(iii) $\text{BrF}_5$:</strong><br>
+            Valence $\text{e}^- (\text{Br}) = 7$. Bond pairs = 5, Lone pairs = 1. Total steric number = 6.<br>
+            • Hybridisation: $sp^3d^2$<br>
+            • Electron Geometry: Octahedral<br>
+            • Molecular Shape: <strong>Square Pyramidal</strong><br>
+            • Lone pairs: 1.
+        </div>
+    </div>
+
+    <!-- Q17 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q17. Explain dipole moment comparison between $\text{NH}_3$ and $\text{NF}_3$ with vector diagrams.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            Both molecules have trigonal pyramidal shape with one lone pair on Nitrogen.<br>
+            • <strong>In $\text{NH}_3$:</strong> Nitrogen is more electronegative than Hydrogen. Bond dipoles of the three $\text{N-H}$ bonds act in the direction towards Nitrogen. The orbital dipole due to the lone pair on Nitrogen acts in the same upward direction. The resultants add up, producing a large net dipole moment ($\mu = 1.47\text{ D}$).<br>
+            $$\vec{\mu}_{\text{net}} = \vec{\mu}_{\text{lone pair}} + \vec{\mu}_{\text{bonds}}$$
+            • <strong>In $\text{NF}_3$:</strong> Fluorine is more electronegative than Nitrogen. Bond dipoles of the three $\text{N-F}$ bonds act downwards (towards Fluorine). The lone pair orbital dipole acts upwards. Thus, the bond dipoles oppose the lone pair dipole, partially canceling each other out, resulting in a very low net dipole moment ($\mu = 0.24\text{ D}$).
+        </div>
+    </div>
+
+    <!-- Q18 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q18. MOT configuration, Bond order, Magnetic property, and stability of $\text{N}_2$ vs $\text{N}_2^+$.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            $\text{N}_2$ has 14 electrons ($\le 14\text{e}^-$ configuration energy level sequence):<br>
+            $$\text{MO Config: } \sigma 1s^2, \sigma^* 1s^2, \sigma 2s^2, \sigma^* 2s^2, (\pi 2p_x^2 = \pi 2p_y^2), \sigma 2p_z^2$$<br>
+            (i) <strong>Bond Order calculation:</strong> $N_b = 10$, $N_a = 4$.
+            $$\text{BO} = \frac{10 - 4}{2} = 3.0$$
+            (ii) <strong>Magnetic Behaviour:</strong> Diamagnetic (all electrons are paired).<br>
+            (iii) <strong>Stability comparison with $\text{N}_2^+$:</strong><br>
+            $\text{N}_2^+$ has 13 electrons $\to N_b = 9, N_a = 4 \implies \text{BO} = \frac{9-4}{2} = 2.5$.<br>
+            Higher bond order corresponds to higher bond dissociation energy and greater stability. Therefore, <strong>$\text{N}_2$ is more stable than $\text{N}_2^+$</strong>.
+        </div>
+    </div>
+
+    <!-- Q19 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q19. Fajan's Rules and covalent character ordering.</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            <strong>Fajan's Rules State:</strong><br>
+            1. Smaller cation size &amp; higher positive charge $\to$ greater polarizing power.<br>
+            2. Larger anion size &amp; higher negative charge $\to$ higher polarisability.<br>
+            3. Pseudo-noble gas configuration ($18\text{ e}^-$ valence shell) cations impart greater covalent character.<br><br>
+
+            <strong>Ordering Justification:</strong><br>
+            <strong>(a) $\text{NaCl} < \text{MgCl}_2 < \text{AlCl}_3$:</strong> Cation charge increases ($\text{Na}^+ < \text{Mg}^{2+} < \text{Al}^{3+}$) and cation size decreases ($\text{Na}^+ > \text{Mg}^{2+} > \text{Al}^{3+}$). Higher charge density increases polarising power $\to$ Covalent character increases.<br>
+            <strong>(b) $\text{LiF} < \text{LiCl} < \text{LiBr} < \text{LiI}$:</strong> Anion size increases ($\text{F}^- < \text{Cl}^- < \text{Br}^- < \text{I}^-$). Larger anions are more easily distorted by $\text{Li}^+$ $\to$ Polarisability and covalent character increase.
+        </div>
+    </div>
+
+    <!-- Q20 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q20. $sp^3d^2$ hybridisation in Sulfur Hexafluoride ($\text{SF}_6$).</div>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            • In ground state, $\text{S ([Ne]} 3s^2 3p^4)$ has 2 unpaired electrons. In 2nd excited state, one $3s$ and one $3p$ electron are promoted to $3d$ orbitals giving 6 unpaired electrons ($\text{[Ne]} 3s^1 3p_x^1 3p_y^1 3p_z^1 3d_{z^2}^1 3d_{x^2-y^2}^1$).<br>
+            • Intermixing of one $3s$, three $3p$, and two $3d$ orbitals yields 6 equivalent $sp^3d^2$ hybrid orbitals directed towards corners of an octahedron.<br>
+            • <strong>Geometry &amp; Shape:</strong> Regular Octahedral.<br>
+            • <strong>Bond Angles:</strong> All $\text{F-S-F}$ bond angles are $90^\circ$ (and $180^\circ$ for trans pairs).<br>
+            • <strong>Equivalence:</strong> All 6 $\text{S-F}$ bonds are identical because all corners of a regular octahedron are geometrically equivalent.
+        </div>
+    </div>
+
+    <div class="section-banner">SECTION D — DETAILED SOLUTIONS (15 Marks)</div>
+
+    <!-- Q21 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q21. Comprehensive MOT study of Oxygen species ($\text{O}_2, \text{O}_2^+, \text{O}_2^-, \text{O}_2^{2-}$).</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            <strong>(a) Molecular Orbital Configurations (2 Marks):</strong><br>
+            Base Core: $[KK] = \sigma 1s^2 \sigma^* 1s^2$<br>
+            • $\text{O}_2 (16\text{e}^-): [KK] \, \sigma 2s^2 \, \sigma^* 2s^2 \, \sigma 2p_z^2 \, (\pi 2p_x^2 = \pi 2p_y^2) \, (\pi^* 2p_x^1 = \pi^* 2p_y^1)$<br>
+            • $\text{O}_2^+ (15\text{e}^-): [KK] \, \sigma 2s^2 \, \sigma^* 2s^2 \, \sigma 2p_z^2 \, (\pi 2p_x^2 = \pi 2p_y^2) \, (\pi^* 2p_x^1 = \pi^* 2p_y^0)$<br>
+            • $\text{O}_2^- (17\text{e}^-): [KK] \, \sigma 2s^2 \, \sigma^* 2s^2 \, \sigma 2p_z^2 \, (\pi 2p_x^2 = \pi 2p_y^2) \, (\pi^* 2p_x^2 = \pi^* 2p_y^1)$<br>
+            • $\text{O}_2^{2-} (18\text{e}^-): [KK] \, \sigma 2s^2 \, \sigma^* 2s^2 \, \sigma 2p_z^2 \, (\pi 2p_x^2 = \pi 2p_y^2) \, (\pi^* 2p_x^2 = \pi^* 2p_y^2)$<br><br>
+
+            <strong>(b) Bond Order Calculations (1.5 Marks):</strong><br>
+            • $\text{O}_2$: $\text{BO} = \frac{10 - 6}{2} = 2.0$<br>
+            • $\text{O}_2^+$: $\text{BO} = \frac{10 - 5}{2} = 2.5$<br>
+            • $\text{O}_2^-$: $\text{BO} = \frac{10 - 7}{2} = 1.5$<br>
+            • $\text{O}_2^{2-}$: $\text{BO} = \frac{10 - 8}{2} = 1.0$<br><br>
+
+            <strong>(c) Ordering Properties (1.5 Marks):</strong><br>
+            Higher Bond Order $\implies$ Higher Bond Energy (Stability) &amp; Shorter Bond Length.<br>
+            (i) <strong>Increasing Order of Stability:</strong>
+            $$\text{O}_2^{2-} < \text{O}_2^- < \text{O}_2 < \text{O}_2^+$$
+            (ii) <strong>Increasing Order of Bond Length:</strong>
+            $$\text{O}_2^+ < \text{O}_2 < \text{O}_2^- < \text{O}_2^{2-}$$
+        </div>
+    </div>
+
+    <!-- Q22 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q22. Hybridisation definition, features, and detailed structure of $\text{XeF}_4$.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            <strong>(a) Hybridisation &amp; Salient Features (2 Marks):</strong><br>
+            <em>Definition:</em> The process of intermixing of atomic orbitals of slightly different energies of the same atom to redistribute their energies, forming a new set of equivalent orbitals of identical shape and energy.<br>
+            <em>Features:</em><br>
+            1. Number of hybrid orbitals produced equals the number of atomic orbitals hybridized.<br>
+            2. Hybrid orbitals form stronger bonds than pure atomic orbitals.<br>
+            3. They orient in space in specific directions to minimize electron pair repulsion.<br><br>
+
+            <strong>(b) Hybridisation and Structure of $\text{XeF}_4$ (3 Marks):</strong><br>
+            • Central Xenon atom valence configuration: $5s^2 5p^6$. In 2nd excited state, 2 electrons shift to $5d \to 5s^2 5p_x^2 5p_y^1 5p_z^1 5d_1^1 5d_2^1$.<br>
+            • Intermixing of one $5s$, three $5p$, and two $5d$ orbitals gives six $sp^3d^2$ hybrid orbitals.<br>
+            • Steric count: 4 bond pairs + 2 lone pairs.<br>
+            • Geometry: Octahedral base. The 2 lone pairs occupy <strong>axial positions at $180^\circ$ to each other</strong> to eliminate $lp-lp$ repulsion at $90^\circ$.<br>
+            • Resulting molecular shape is <strong>Square Planar</strong> with $\text{F-Xe-F}$ bond angles of $90^\circ$.
+        </div>
+    </div>
+
+    <!-- Q23 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q23. Hydrogen Bonding: Definition, types, and density anomaly of ice.</div>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="explanation">
+            <strong>Detailed Solution:</strong><br>
+            <strong>(a) Definition &amp; Conditions (1.5 Marks):</strong><br>
+            The electrostatic attractive force binding the Hydrogen atom of one molecule (covalently attached to a highly electronegative atom) to an electronegative atom ($\text{F, O, N}$) of the same or another molecule.<br>
+            <em>Conditions:</em> (i) High electronegativity of attached atom. (ii) Small atomic size of electronegative element.<br><br>
+
+            <strong>(b) Intermolecular vs Intramolecular H-Bonding (2 Marks):</strong><br>
+            • <strong>Intermolecular H-Bonding:</strong> Formed between two different molecules of the same or different compounds.<br>
+            <em>Example:</em> Water ($\text{H}_2\text{O}\cdots\text{H-O-H}\cdots\text{H}_2\text{O}$) or Hydrogen Fluoride ($\text{H-F}\cdots\text{H-F}$).<br>
+            • <strong>Intramolecular H-Bonding:</strong> Formed within the same single molecule between Hydrogen and an electronegative atom.<br>
+            <em>Example:</em> $o$-Nitrophenol or Salicylaldehyde.<br><br>
+
+            <strong>(c) Anomaly of Ice Floating on Water (1.5 Marks):</strong><br>
+            In ice structure, each water molecule is tetrahedrally surrounded by four other water molecules through intermolecular hydrogen bonds, forming a 3D <strong>open cage-like crystalline lattice</strong> with substantial empty interstitial space.<br>
+            When ice melts into liquid water at $0^\circ\text{C}$, some H-bonds break, causing the cage structure to collapse. Water molecules pack closer together, making liquid water denser than ice. Hence, ice has lower density and floats on water.
+        </div>
+    </div>
+
+    <div class="footer">
+        *** End of Detailed Solutions — Prepared by Senior Academic Faculty, Vardaan Learning Institute ***
+    </div>
+</body>
+</html>

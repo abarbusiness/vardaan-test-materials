@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Class 8)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .solution-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .explanation {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .final-answer {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+            padding: 8px 12px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        /* MathJax Overflow Fix for Small Screens */
+        mjx-container[jax="CHTML"][display="true"] {
+            display: block;
+            text-align: left;
+            margin: 1em 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 5px; align-self: flex-start; }
+            .explanation { margin-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS: Minor Test 21 (Class 8)</div>
+    </div>
+
+    <!-- SECTION A -->
+    <h3 style="text-align: center; text-decoration: underline;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. Evaluate using laws of exponents: \( 3^{-2} \times 3^5 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">According to the law of exponents: \( a^m \times a^n = a^{m+n} \)</div>
+            <div class="step">$$ 3^{-2} \times 3^5 = 3^{-2 + 5} $$</div>
+            <div class="step">$$ = 3^3 $$</div>
+            <div class="step">$$ = 3 \times 3 \times 3 = 27 $$</div>
+            <div class="final-answer">Answer: \( 27 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. Find the square root of \( 729 \) using the prime factorization method.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Prime factorization of \( 729 \):</div>
+            <div class="step">\( 729 = 3 \times 243 \)</div>
+            <div class="step">\( 243 = 3 \times 81 \)</div>
+            <div class="step">\( 81 = 3 \times 27 \)</div>
+            <div class="step">\( 27 = 3 \times 9 \)</div>
+            <div class="step">\( 9 = 3 \times 3 \)</div>
+            <div class="step">Therefore, \( 729 = \underline{3 \times 3} \times \underline{3 \times 3} \times \underline{3 \times 3} \)</div>
+            <div class="step">Taking one prime number from each pair:</div>
+            <div class="step">\( \sqrt{729} = 3 \times 3 \times 3 = 27 \)</div>
+            <div class="final-answer">Answer: \( 27 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. Find two rational numbers between \( \frac{1}{4} \) and \( \frac{1}{2} \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">First, make the denominators the same. Let's use a common multiple like \( 16 \).</div>
+            <div class="step">\( \frac{1}{4} = \frac{1 \times 4}{4 \times 4} = \frac{4}{16} \)</div>
+            <div class="step">\( \frac{1}{2} = \frac{1 \times 8}{2 \times 8} = \frac{8}{16} \)</div>
+            <div class="step">The rational numbers between \( \frac{4}{16} \) and \( \frac{8}{16} \) are \( \frac{5}{16}, \frac{6}{16}, \frac{7}{16} \).</div>
+            <div class="step"><em>(Note: Any two correct rational numbers will be awarded full marks, there are infinite rational numbers between any two fractions.)</em></div>
+            <div class="final-answer">Answer: For example, \( \frac{5}{16} \) and \( \frac{7}{16} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. Add: \( 4p^2q - 3pq + 5pq^2 \) and \( -10p^2q + 7pq - 4pq^2 \).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Write the expressions and combine the like terms:</div>
+            <div class="step">$$ (4p^2q - 10p^2q) + (-3pq + 7pq) + (5pq^2 - 4pq^2) $$</div>
+            <div class="step">Solve the coefficients:</div>
+            <div class="step">\( (4 - 10)p^2q = -6p^2q \)</div>
+            <div class="step">\( (-3 + 7)pq = +4pq \)</div>
+            <div class="step">\( (5 - 4)pq^2 = +1pq^2 \)</div>
+            <div class="final-answer">Answer: \( -6p^2q + 4pq + pq^2 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. Two adjacent angles of a parallelogram have equal measure. Find the measure of each of the angles of the parallelogram.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Let the two adjacent angles be \( x \) and \( x \) (since they are equal).</div>
+            <div class="step">We know that the sum of adjacent angles of a parallelogram is \( 180^{\circ} \) (supplementary).</div>
+            <div class="step">$$ x + x = 180^{\circ} $$</div>
+            <div class="step">$$ 2x = 180^{\circ} $$</div>
+            <div class="step">$$ x = 90^{\circ} $$</div>
+            <div class="step">Opposite angles of a parallelogram are equal. Therefore, all four angles are \( 90^{\circ} \).</div>
+            <div class="final-answer">Answer: Each angle measures \( 90^{\circ} \)</div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 40px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. Solve for \( x \): \( \frac{x}{2} - \frac{1}{5} = \frac{x}{3} + \frac{1}{4} \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Bring variables to one side and constants to the other side:</div>
+            <div class="step">$$ \frac{x}{2} - \frac{x}{3} = \frac{1}{4} + \frac{1}{5} $$</div>
+            <div class="step">Take LCM on both sides. LCM of \( (2, 3) = 6 \) and LCM of \( (4, 5) = 20 \).</div>
+            <div class="step">$$ \frac{3x - 2x}{6} = \frac{5 + 4}{20} $$</div>
+            <div class="step">$$ \frac{x}{6} = \frac{9}{20} $$</div>
+            <div class="step">Cross multiply to isolate \( x \):</div>
+            <div class="step">$$ x = \frac{9 \times 6}{20} = \frac{54}{20} $$</div>
+            <div class="step">Simplify the fraction by dividing numerator and denominator by 2:</div>
+            <div class="step">$$ x = \frac{27}{10} \text{ or } 2.7 $$</div>
+            <div class="final-answer">Answer: \( x = \frac{27}{10} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. The area of a rhombus is \( 240 \text{ cm}^2 \) and one of the diagonals is \( 16 \text{ cm} \). Find the length of the other diagonal.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Area of a rhombus = \( \frac{1}{2} \times d_1 \times d_2 \)</div>
+            <div class="step">Given: Area = \( 240 \text{ cm}^2 \) and \( d_1 = 16 \text{ cm} \). Let the other diagonal be \( d_2 \).</div>
+            <div class="step">$$ 240 = \frac{1}{2} \times 16 \times d_2 $$</div>
+            <div class="step">$$ 240 = 8 \times d_2 $$</div>
+            <div class="step">$$ d_2 = \frac{240}{8} $$</div>
+            <div class="step">$$ d_2 = 30 \text{ cm} $$</div>
+            <div class="final-answer">Answer: The length of the other diagonal is \( 30 \text{ cm} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. Simplify: \( \frac{8^{-1} \times 5^3}{2^{-4}} \)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">First, express base 8 as a power of 2: \( 8 = 2^3 \). Therefore, \( 8^{-1} = (2^3)^{-1} = 2^{-3} \).</div>
+            <div class="step">Substitute this back into the expression:</div>
+            <div class="step">$$ \frac{2^{-3} \times 5^3}{2^{-4}} $$</div>
+            <div class="step">Use the division law of exponents for base 2: \( \frac{a^m}{a^n} = a^{m-n} \)</div>
+            <div class="step">$$ = 2^{-3 - (-4)} \times 5^3 $$</div>
+            <div class="step">$$ = 2^{-3 + 4} \times 5^3 $$</div>
+            <div class="step">$$ = 2^1 \times 125 $$</div>
+            <div class="step">$$ = 2 \times 125 = 250 $$</div>
+            <div class="final-answer">Answer: \( 250 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. Use a suitable algebraic identity to evaluate \( (102)^2 \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">We can write \( 102 \) as \( (100 + 2) \).</div>
+            <div class="step">So, \( (102)^2 = (100 + 2)^2 \)</div>
+            <div class="step">Use the identity: \( (a + b)^2 = a^2 + b^2 + 2ab \)</div>
+            <div class="step">Here, \( a = 100 \) and \( b = 2 \).</div>
+            <div class="step">$$ = (100)^2 + (2)^2 + 2(100)(2) $$</div>
+            <div class="step">$$ = 10000 + 4 + 400 $$</div>
+            <div class="step">$$ = 10404 $$</div>
+            <div class="final-answer">Answer: \( 10404 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. Find the smallest number by which \( 256 \) must be multiplied to obtain a perfect cube.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Find the prime factorization of 256:</div>
+            <div class="step">\( 256 = 2 \times 128 \)</div>
+            <div class="step">\( = 2 \times 2 \times 64 \)</div>
+            <div class="step">\( = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \)</div>
+            <div class="step">Group them into triplets (groups of 3):</div>
+            <div class="step">\( 256 = (\underline{2 \times 2 \times 2}) \times (\underline{2 \times 2 \times 2}) \times (\underline{2 \times 2}) \)</div>
+            <div class="step">The prime factor 2 does not appear in a full group of three. We are short of one '2' in the last group.</div>
+            <div class="step">Therefore, 256 must be multiplied by 2 to make it a perfect cube.</div>
+            <div class="final-answer">Answer: \( 2 \)</div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 40px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. The ages of Rahul and Haroon are in the ratio \( 5:7 \). Four years later, the sum of their ages will be \( 56 \) years. What are their present ages?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Let the present age of Rahul be \( 5x \) years and Haroon be \( 7x \) years.</div>
+            <div class="step">Four years later:</div>
+            <div class="step">Rahul's age = \( (5x + 4) \) years</div>
+            <div class="step">Haroon's age = \( (7x + 4) \) years</div>
+            <div class="step">According to the problem, the sum of their ages will be 56:</div>
+            <div class="step">$$ (5x + 4) + (7x + 4) = 56 $$</div>
+            <div class="step">$$ 12x + 8 = 56 $$</div>
+            <div class="step">$$ 12x = 56 - 8 $$</div>
+            <div class="step">$$ 12x = 48 $$</div>
+            <div class="step">$$ x = \frac{48}{12} = 4 $$</div>
+            <div class="step">Now, find their present ages:</div>
+            <div class="step">Rahul's present age = \( 5x = 5(4) = 20 \) years</div>
+            <div class="step">Haroon's present age = \( 7x = 7(4) = 28 \) years</div>
+            <div class="final-answer">Answer: Rahul is 20 years old, Haroon is 28 years old</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. A suitcase with dimensions \( 80 \text{ cm} \times 48 \text{ cm} \times 24 \text{ cm} \) is to be covered with a tarpaulin cloth. How many meters of tarpaulin of width \( 96 \text{ cm} \) is required to cover \( 100 \) such suitcases?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">First, find the Total Surface Area (TSA) of one suitcase (which is a cuboid).</div>
+            <div class="step">Given: \( l = 80 \text{ cm}, b = 48 \text{ cm}, h = 24 \text{ cm} \)</div>
+            <div class="step">$$ \text{TSA} = 2(lb + bh + hl) $$</div>
+            <div class="step">$$ \text{TSA} = 2(80 \times 48 + 48 \times 24 + 24 \times 80) $$</div>
+            <div class="step">$$ \text{TSA} = 2(3840 + 1152 + 1920) $$</div>
+            <div class="step">$$ \text{TSA} = 2(6912) = 13824 \text{ cm}^2 $$</div>
+            <div class="step" style="margin-top: 10px;">Area of tarpaulin cloth needed for 100 suitcases = \( 100 \times 13824 = 1382400 \text{ cm}^2 \)</div>
+            <div class="step">The tarpaulin is a rectangle with area = Length \( \times \) Width.</div>
+            <div class="step">$$ 1382400 = \text{Length} \times 96 $$</div>
+            <div class="step">$$ \text{Length} = \frac{1382400}{96} = 14400 \text{ cm} $$</div>
+            <div class="step">Convert cm to meters (\( 1 \text{ m} = 100 \text{ cm} \)):</div>
+            <div class="step">$$ \text{Length} = \frac{14400}{100} = 144 \text{ m} $$</div>
+            <div class="final-answer">Answer: \( 144 \text{ m} \) of tarpaulin is required.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. Solve the following algebraic problems:<br>(a) Simplify: \( (3x - 5y)^2 - (3x + 5y)^2 \)<br>(b) Solve: \( 5x + \frac{7}{2} = \frac{3}{2}x - 14 \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Simplify (2.5 Marks):</strong></div>
+            <div class="step">Using the identity \( (a-b)^2 - (a+b)^2 = -4ab \). </div>
+            <div class="step">Here \( a = 3x \) and \( b = 5y \).</div>
+            <div class="step">$$ = -4(3x)(5y) $$</div>
+            <div class="step">$$ = -60xy $$</div>
+            <div class="step"><em>(Alternatively, you can expand both brackets and subtract: \( (9x^2 - 30xy + 25y^2) - (9x^2 + 30xy + 25y^2) = -60xy \))</em></div>
+            <div class="final-answer">(a) Answer: \( -60xy \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Solve the equation (2.5 Marks):</strong></div>
+            <div class="step">$$ 5x + \frac{7}{2} = \frac{3}{2}x - 14 $$</div>
+            <div class="step">Bring \( x \) terms to the left side and constants to the right side:</div>
+            <div class="step">$$ 5x - \frac{3}{2}x = -14 - \frac{7}{2} $$</div>
+            <div class="step">Take LCM on both sides (LCM = 2):</div>
+            <div class="step">$$ \frac{10x - 3x}{2} = \frac{-28 - 7}{2} $$</div>
+            <div class="step">$$ \frac{7x}{2} = \frac{-35}{2} $$</div>
+            <div class="step">Cancel the denominators:</div>
+            <div class="step">$$ 7x = -35 $$</div>
+            <div class="step">$$ x = \frac{-35}{7} = -5 $$</div>
+            <div class="final-answer">(b) Answer: \( x = -5 \)</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555;">
+        Solutions by Team Vardaan
+    </div>
+</body>
+</html>

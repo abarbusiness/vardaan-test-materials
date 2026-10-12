@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .solution-title { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 10px; 
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: black;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .explanation {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .final-answer {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+            padding: 8px 12px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        /* MathJax Overflow Fix for Small Screens */
+        mjx-container[jax="CHTML"][display="true"] {
+            display: block;
+            text-align: left;
+            margin: 1em 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 5px; align-self: flex-start; }
+            .explanation { margin-left: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS: Minor Test 21 (Basic Mathematics)</div>
+    </div>
+
+    <!-- SECTION A -->
+    <h3 style="text-align: center; text-decoration: underline;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. Calculate the sum of the smallest 4-digit number and the largest 3-digit number.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Smallest 4-digit number = \( 1000 \)</div>
+            <div class="step">Largest 3-digit number = \( 999 \)</div>
+            <div class="step">Sum = \( 1000 + 999 \)</div>
+            <div class="final-answer">Answer: \( 1999 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. Solve the following operations involving integers: <br> (i) \( -15 + 8 \) <br> (ii) \( -4 \times (-6) \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(i)</strong> When adding integers with different signs, subtract the smaller absolute value from the larger absolute value and keep the sign of the larger number.<br>
+            \( |-15| - |8| = 15 - 8 = 7 \). Since \( 15 \) is larger and negative, the result is \( -7 \).</div>
+            <div class="final-answer">(i) Answer: \( -7 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(ii)</strong> The product of two negative integers is always a positive integer.<br>
+            \( 4 \times 6 = 24 \)</div>
+            <div class="final-answer">(ii) Answer: \( 24 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. Convert the following fractions into decimals: <br> (i) \( \frac{3}{4} \) <br> (ii) \( \frac{7}{10} \)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(i)</strong> To convert \( \frac{3}{4} \) to a decimal, divide the numerator by the denominator: \( 3 \div 4 \). Alternatively, multiply the numerator and denominator by 25 to make the denominator 100: \( \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = 0.75 \).</div>
+            <div class="final-answer">(i) Answer: \( 0.75 \)</div>
+
+            <div class="step" style="margin-top: 15px;"><strong>(ii)</strong> Fractions with 10 as the denominator can be written directly by placing the decimal point one place to the left.</div>
+            <div class="final-answer">(ii) Answer: \( 0.7 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. Find the perimeter of a rectangle whose length is \( 12 \) cm and breadth is \( 5 \) cm.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given: Length (\( l \)) = \( 12 \) cm, Breadth (\( b \)) = \( 5 \) cm.</div>
+            <div class="step">Formula for the perimeter of a rectangle = \( 2 \times (l + b) \)</div>
+            <div class="step">$$ Perimeter = 2 \times (12 + 5) $$</div>
+            <div class="step">$$ Perimeter = 2 \times (17) $$</div>
+            <div class="step">$$ Perimeter = 34 \text{ cm} $$</div>
+            <div class="final-answer">Answer: \( 34 \text{ cm} \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. Write the algebraic expression for: "Five times a number \( x \) decreased by \( 3 \)".</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">"Five times a number \( x \)" translates to \( 5x \).</div>
+            <div class="step">"decreased by 3" means we subtract 3 from that product.</div>
+            <div class="step">Therefore, the expression is \( 5x - 3 \).</div>
+            <div class="final-answer">Answer: \( 5x - 3 \)</div>
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 40px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. Evaluate the following expression using the order of operations (BODMAS): $$ 25 - (15 \div 3) + 4 \times 2 $$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">According to BODMAS (Brackets, Orders, Division/Multiplication, Addition/Subtraction):</div>
+            <div class="step"><strong>Step 1: Brackets</strong> Evaluate \( (15 \div 3) = 5 \)</div>
+            <div class="step">Expression becomes: \( 25 - 5 + 4 \times 2 \)</div>
+            <div class="step"><strong>Step 2: Multiplication</strong> Evaluate \( 4 \times 2 = 8 \)</div>
+            <div class="step">Expression becomes: \( 25 - 5 + 8 \)</div>
+            <div class="step"><strong>Step 3: Addition & Subtraction</strong> (Left to right)</div>
+            <div class="step">\( 25 - 5 = 20 \)</div>
+            <div class="step">\( 20 + 8 = 28 \)</div>
+            <div class="final-answer">Answer: \( 28 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. A piece of wire is \( \frac{7}{8} \) meters long. It is cut into two pieces. If one piece is \( \frac{1}{4} \) meters long, how long is the other piece?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Total length of wire = \( \frac{7}{8} \) m</div>
+            <div class="step">Length of one piece = \( \frac{1}{4} \) m</div>
+            <div class="step">Length of the other piece = Total length \( - \) Length of one piece</div>
+            <div class="step">$$ \text{Length} = \frac{7}{8} - \frac{1}{4} $$</div>
+            <div class="step">To subtract, find the LCM of denominators \( 8 \) and \( 4 \), which is \( 8 \).</div>
+            <div class="step">Convert \( \frac{1}{4} \) to an equivalent fraction with denominator \( 8 \): \( \frac{1 \times 2}{4 \times 2} = \frac{2}{8} \)</div>
+            <div class="step">$$ \text{Length} = \frac{7}{8} - \frac{2}{8} = \frac{7 - 2}{8} = \frac{5}{8} \text{ m} $$</div>
+            <div class="final-answer">Answer: The other piece is \( \frac{5}{8} \) meters long.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. Solve the simple equation to find the value of \( y \): $$ 3y + 5 = 20 $$</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given equation: \( 3y + 5 = 20 \)</div>
+            <div class="step">Transpose \( +5 \) to the Right Hand Side (RHS), it becomes \( -5 \).</div>
+            <div class="step">$$ 3y = 20 - 5 $$</div>
+            <div class="step">$$ 3y = 15 $$</div>
+            <div class="step">Divide both sides by \( 3 \) to isolate \( y \).</div>
+            <div class="step">$$ y = \frac{15}{3} $$</div>
+            <div class="step">$$ y = 5 $$</div>
+            <div class="final-answer">Answer: \( y = 5 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. Find the HCF and LCM of \( 12 \) and \( 18 \).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Prime Factorization:</strong></div>
+            <div class="step">\( 12 = 2 \times 2 \times 3 = 2^2 \times 3^1 \)</div>
+            <div class="step">\( 18 = 2 \times 3 \times 3 = 2^1 \times 3^2 \)</div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>Finding HCF (Highest Common Factor):</strong></div>
+            <div class="step">Product of the smallest power of each common prime factor.</div>
+            <div class="step">Common factors are \( 2 \) and \( 3 \). Smallest powers: \( 2^1 \) and \( 3^1 \).</div>
+            <div class="step">\( HCF = 2^1 \times 3^1 = 2 \times 3 = 6 \)</div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>Finding LCM (Lowest Common Multiple):</strong></div>
+            <div class="step">Product of the greatest power of each prime factor involved.</div>
+            <div class="step">Greatest powers: \( 2^2 \) and \( 3^2 \).</div>
+            <div class="step">\( LCM = 2^2 \times 3^2 = 4 \times 9 = 36 \)</div>
+            
+            <div class="final-answer">Answer: HCF = \( 6 \), LCM = \( 36 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. The marks obtained by \( 7 \) students in a math test are: \( 15, 18, 12, 14, 20, 16, 12 \). <br> (i) Find the range of the marks. <br> (ii) Find the mean (average) marks.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">First, let's arrange the data in ascending order: \( 12, 12, 14, 15, 16, 18, 20 \)</div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>(i) Range:</strong></div>
+            <div class="step">Range = Highest Value \( - \) Lowest Value</div>
+            <div class="step">Range = \( 20 - 12 = 8 \)</div>
+            <div class="final-answer">(i) Range = \( 8 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(ii) Mean:</strong></div>
+            <div class="step">Mean = \( \frac{\text{Sum of all observations}}{\text{Total number of observations}} \)</div>
+            <div class="step">$$ \text{Mean} = \frac{15 + 18 + 12 + 14 + 20 + 16 + 12}{7} $$</div>
+            <div class="step">$$ \text{Mean} = \frac{107}{7} $$</div>
+            <div class="step">$$ \text{Mean} = 15.28 \text{ (approx)} $$</div>
+            <div class="final-answer">(ii) Mean = \( 15.28 \)</div>
+        </div>
+    </div>
+
+    <!-- SECTION C -->
+    <h3 style="text-align: center; text-decoration: underline; margin-top: 40px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. An orchard has \( 450 \) trees. Out of these, \( 30\% \) are apple trees, \( \frac{2}{5} \) are mango trees, and the rest are orange trees. <br> (a) How many apple trees are there? <br> (b) How many mango trees are there? <br> (c) How many orange trees are there?</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Total number of trees = \( 450 \)</div>
+            
+            <div class="step" style="margin-top: 10px;"><strong>(a) Apple Trees (2 Marks):</strong></div>
+            <div class="step">Apple trees = \( 30\% \) of Total trees</div>
+            <div class="step">$$ = \frac{30}{100} \times 450 $$</div>
+            <div class="step">$$ = 3 \times 45 = 135 \text{ trees} $$</div>
+            <div class="final-answer">(a) Apple Trees = \( 135 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Mango Trees (2 Marks):</strong></div>
+            <div class="step">Mango trees = \( \frac{2}{5} \) of Total trees</div>
+            <div class="step">$$ = \frac{2}{5} \times 450 $$</div>
+            <div class="step">$$ = 2 \times 90 = 180 \text{ trees} $$</div>
+            <div class="final-answer">(b) Mango Trees = \( 180 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(c) Orange Trees (1 Mark):</strong></div>
+            <div class="step">Orange trees = Total trees \( - \) (Apple trees \( + \) Mango trees)</div>
+            <div class="step">$$ = 450 - (135 + 180) $$</div>
+            <div class="step">$$ = 450 - 315 $$</div>
+            <div class="step">$$ = 135 \text{ trees} $$</div>
+            <div class="final-answer">(c) Orange Trees = \( 135 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. A rectangular garden is \( 40 \) m long and \( 25 \) m wide. <br> (a) Find the area of the garden. <br> (b) A path of width \( 2 \) m is built outside around the garden. Find the total area of the garden including the path.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Area of the garden (2 Marks):</strong></div>
+            <div class="step">Length (\( l \)) = \( 40 \) m, Breadth (\( b \)) = \( 25 \) m</div>
+            <div class="step">Area = Length \( \times \) Breadth</div>
+            <div class="step">$$ \text{Area} = 40 \times 25 = 1000 \text{ m}^2 $$</div>
+            <div class="final-answer">(a) Area of Garden = \( 1000 \text{ m}^2 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Total area including path (3 Marks):</strong></div>
+            <div class="step">The path is built <em>outside</em> the garden. We need to add the path width twice (for both sides) to the original length and breadth.</div>
+            <div class="step">New Length (including path) = \( 40 + 2 + 2 = 44 \) m</div>
+            <div class="step">New Breadth (including path) = \( 25 + 2 + 2 = 29 \) m</div>
+            <div class="step">Total Area = New Length \( \times \) New Breadth</div>
+            <div class="step">$$ \text{Total Area} = 44 \times 29 $$</div>
+            <div class="step">$$ \text{Total Area} = 1276 \text{ m}^2 $$</div>
+            <div class="final-answer">(b) Total Area = \( 1276 \text{ m}^2 \)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. Simplify the following algebraic expressions: <br> (a) Add: \( (3x^2 - 4x + 5) \) and \( (2x^2 + 7x - 2) \) <br> (b) Subtract: \( (5a - 3b + 2c) \) from \( (8a + 2b - 4c) \)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>(a) Addition (2.5 Marks):</strong></div>
+            <div class="step">Place like terms together:</div>
+            <div class="step">$$ (3x^2 + 2x^2) + (-4x + 7x) + (5 - 2) $$</div>
+            <div class="step">Combine the coefficients:</div>
+            <div class="step">$$ = 5x^2 + 3x + 3 $$</div>
+            <div class="final-answer">(a) Answer: \( 5x^2 + 3x + 3 \)</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>(b) Subtraction (2.5 Marks):</strong></div>
+            <div class="step">Subtracting the first expression <em>from</em> the second means:</div>
+            <div class="step">$$ (8a + 2b - 4c) - (5a - 3b + 2c) $$</div>
+            <div class="step">Distribute the negative sign to all terms inside the second bracket:</div>
+            <div class="step">$$ = 8a + 2b - 4c - 5a + 3b - 2c $$</div>
+            <div class="step">Group like terms together:</div>
+            <div class="step">$$ = (8a - 5a) + (2b + 3b) + (-4c - 2c) $$</div>
+            <div class="step">Combine the coefficients:</div>
+            <div class="step">$$ = 3a + 5b - 6c $$</div>
+            <div class="final-answer">(b) Answer: \( 3a + 5b - 6c \)</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555;">
+        Solutions by Team Vardaan
+    </div>
+</body>
+</html>

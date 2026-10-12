@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            chtml: { scale: 1, minScale: 0.8 }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; max-width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20px; 
+            box-sizing: border-box; font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; line-height: 1.5; color: var(--text-main); background-color: white; position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+            width: 80%; max-width: 600px; opacity: 0.12; z-index: -1; pointer-events: none; 
+        }
+        .header { 
+            text-align: center; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 10px; 
+        }
+        .institute-name { 
+            font-size: 24pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; font-weight: bold; margin-top: 5px; text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; 
+            font-weight: bold; font-size: 11pt; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; gap: 10px;
+        }
+        .instructions { 
+            margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left; 
+        }
+        .instructions ul { 
+            margin: 5px 0; padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; font-weight: bold; margin-top: 25px; margin-bottom: 15px; 
+            text-decoration: underline; font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; font-weight: normal; font-style: italic; display: block; margin-top: 2px; text-decoration: none; 
+        }
+        .question-container { 
+            margin-bottom: 15px; display: flex; align-items: flex-start; page-break-inside: avoid; 
+        }
+        .q-num { 
+            font-weight: bold; width: 40px; flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; 
+            border-top: 1px solid #ccc; padding-top: 10px; color: #555; 
+        }
+        
+        @media print { 
+            body { width: 100%; margin: 0; padding: 15px; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12 !important; } 
+        }
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .q-num { width: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 17</div>
+        <div class="exam-details">
+            <span>Class: 10 ICSE</span>
+            <span>Subject: Physics (Current Electricity)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Keep your calculations neat and clean.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers step-by-step. Include correct SI units in all numericals.</li>
+                <li>Marks for each question are indicated in the respective sections.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define the electromotive force (e.m.f.) of a cell. Write its SI unit.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            A metallic wire of resistance $R$ is stretched to double its original length. What will be its new resistance? Justify your answer.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            State Ohm's Law. Name one material or component that is a non-ohmic conductor.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Calculate the equivalent resistance when two resistors of $3 \Omega$ and $6 \Omega$ are connected in parallel.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            What are the factors on which the internal resistance of a cell depends? (State any two).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Differentiate between electromotive force (e.m.f.) and terminal voltage of a cell. (Write any two points). State the mathematical relation between them when current is drawn from the cell.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            A steady current of $2 \text{ A}$ flows through a circuit for $10 \text{ minutes}$. Calculate the amount of electric charge that flows through the circuit. Also, find the total number of electrons transferred during this time. (Given charge on an electron, $e = 1.6 \times 10^{-19} \text{ C}$)
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Define specific resistance (resistivity). Write its SI unit. Does the specific resistance of a conductor depend on its length or cross-sectional area?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Calculate the total electrical energy consumed (in kWh) by a $100 \text{ W}$ bulb operating for $5 \text{ hours}$ and a $400 \text{ W}$ refrigerator operating for $2 \text{ hours}$ in a single day.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            Two resistors of $4 \Omega$ and $6 \Omega$ are connected in series to a $5 \text{ V}$ battery. Calculate:
+            <div class="sub-question">(i) The total current flowing in the circuit.</div>
+            <div class="sub-question">(ii) The potential difference across the $4 \Omega$ resistor.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Answer the following based on household circuits:
+            <div class="sub-question"><strong>(a)</strong> Three resistors $R_1$, $R_2$, and $R_3$ are connected in parallel. Derive an expression for the equivalent resistance ($R_p$) of the combination. (3 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> Why is a parallel combination of electrical appliances preferred over a series combination in domestic wiring? (State two reasons). (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A cell of e.m.f. $2 \text{ V}$ and internal resistance $1.2 \Omega$ is connected to an ammeter of resistance $0.8 \Omega$ and two external resistors of $4.5 \Omega$ and $9 \Omega$ which are connected in parallel to each other. Calculate:
+            <div class="sub-question"><strong>(a)</strong> The equivalent resistance of the external circuit. (2 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> The reading of the ammeter (total current drawn from the cell). (1.5 Marks)</div>
+            <div class="sub-question"><strong>(c)</strong> The potential difference across the parallel combination of the $4.5 \Omega$ and $9 \Omega$ resistors. (1.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Answer the following questions based on practical electricity:
+            <div class="sub-question"><strong>(a)</strong> Draw a neat and labeled V-I graph for an Ohmic conductor. What physical quantity does the slope of this graph represent (if V is on the Y-axis and I is on the X-axis)? (2 Marks)</div>
+            <div class="sub-question"><strong>(b)</strong> An electric heater is rated $220 \text{ V}, 2 \text{ kW}$. Calculate:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;(i) The safe current required for the heater.
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;(ii) Its electrical resistance.
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;(iii) The cost of using it for $2 \text{ hours}$ daily for $30 \text{ days}$, if electrical energy costs ₹ $5.00$ per kWh. (3 Marks)
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

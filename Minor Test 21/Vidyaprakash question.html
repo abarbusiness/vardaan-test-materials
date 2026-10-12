@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                displayAlign: 'left',
+                displayIndent: '2em'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        @page { size: A4; margin: 20mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 11pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 20px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto;
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 8px; 
+        }
+        .svg-container {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 1024px) {
+            body { width: 100%; padding: 15mm; }
+            .watermark { width: 90%; }
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .exam-details { flex-wrap: wrap; gap: 10px; }
+            .exam-details span { width: 45%; }
+            .watermark { width: 95%; }
+            .question-container { flex-direction: column; }
+            .q-num { width: 100%; margin-bottom: 5px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.10 !important; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 21: Pressure</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Science (Physics)</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Show proper steps and formulas for numerical questions. Draw neat diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Attempt all questions - 2 Marks Each)</span>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Define pressure. What is the SI unit of pressure?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Why do school bags have wide and broad straps?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            What happens to the pressure exerted by a liquid as the depth increases?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Define atmospheric pressure. Why are our bodies not crushed by the heavy atmospheric pressure?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            A force of $100\text{ N}$ is applied to an area of $2\text{ m}^2$. Calculate the pressure exerted on the object.
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type - 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Explain scientifically why it is much easier to cut an apple with a sharp knife rather than a blunt knife.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Describe a simple experiment (with reasoning) to show that liquids exert pressure on the walls of the container.
+            <div class="svg-container">
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Base surface -->
+                    <line x1="10" y1="180" x2="190" y2="180" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Glass Tube -->
+                    <path d="M 80 40 L 80 150 A 5 5 0 0 0 85 155 L 115 155 A 5 5 0 0 0 120 150 L 120 40" fill="none" stroke="black" stroke-width="2"/>
+                    <ellipse cx="100" cy="40" rx="20" ry="5" fill="none" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Side tube with balloon -->
+                    <line x1="120" y1="130" x2="140" y2="130" stroke="black" stroke-width="2"/>
+                    <line x1="120" y1="145" x2="140" y2="145" stroke="black" stroke-width="2"/>
+                    <!-- Rubber balloon bulging out -->
+                    <path d="M 140 130 C 170 120, 170 155, 140 145" fill="#87CEEB" stroke="black" stroke-width="1.5"/>
+                    
+                    <!-- Water inside -->
+                    <path d="M 81 70 L 81 150 A 4 4 0 0 0 85 154 L 119 154 L 119 130 L 140 130 C 168 122, 168 153, 140 145 L 119 145 L 119 70 Z" fill="#87CEEB" opacity="0.6"/>
+                    <line x1="81" y1="70" x2="119" y2="70" stroke="#0077be" stroke-width="1"/>
+                    
+                    <!-- Labels -->
+                    <text x="35" y="100" font-family="Times New Roman" font-size="12">Water</text>
+                    <line x1="68" y1="95" x2="80" y2="95" stroke="black" stroke-width="1"/>
+                    <text x="145" y="110" font-family="Times New Roman" font-size="12">Bulging</text>
+                    <text x="145" y="123" font-family="Times New Roman" font-size="12">balloon</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            Give scientific reasons for the following observations:
+            <div class="sub-question">(a) Porters place a round piece of cloth on their heads when they have to carry heavy loads.</div>
+            <div class="sub-question">(b) Heavy duty trucks and tractors have very broad and wide tyres.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            Calculate the pressure produced by a force of $800\text{ N}$ acting on an area of $2.0\text{ m}^2$. What will be the new pressure if the contact area is halved while the force remains the same?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            What is a barometer? Name the liquid conventionally used in a standard barometer. Why are astronauts required to wear specially designed pressurized spacesuits?
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Type - 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) State any three fundamental properties of the pressure exerted by liquids. (3 Marks)</div>
+            <div class="sub-question">(b) A solid metallic block weighs $250\text{ N}$. When it is placed on a wooden plank, the area of contact is $0.5\text{ m}^2$. Calculate the pressure exerted by the block on the plank. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) With the help of the given diagram, describe an activity to demonstrate that liquids exert equal pressure at the same depth. (3 Marks)</div>
+            <div class="svg-container">
+                <svg width="220" height="200" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Water Streams -->
+                    <path d="M 75 140 Q 40 140 25 180" fill="none" stroke="#0077be" stroke-width="2" stroke-dasharray="4,2"/>
+                    <path d="M 145 140 Q 180 140 195 180" fill="none" stroke="#0077be" stroke-width="2" stroke-dasharray="4,2"/>
+                    <!-- Base -->
+                    <line x1="10" y1="180" x2="210" y2="180" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Plastic Bottle -->
+                    <rect x="75" y="40" width="70" height="140" rx="5" fill="none" stroke="black" stroke-width="2"/>
+                    <rect x="95" y="15" width="30" height="25" fill="none" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Water inside -->
+                    <rect x="76" y="60" width="68" height="119" fill="#87CEEB" opacity="0.6"/>
+                    <line x1="76" y1="60" x2="144" y2="60" stroke="#0077be" stroke-width="1"/>
+                    
+                    <!-- Holes -->
+                    <circle cx="75" cy="140" r="3" fill="black"/>
+                    <circle cx="145" cy="140" r="3" fill="black"/>
+                    
+                    <text x="110" y="100" font-family="Times New Roman" font-size="12" text-anchor="middle">Water</text>
+                    <text x="25" y="195" font-family="Times New Roman" font-size="12">Same distance</text>
+                    <text x="180" y="195" font-family="Times New Roman" font-size="12">Same distance</text>
+                </svg>
+            </div>
+            <div class="sub-question">(b) Deep-sea divers wear specially designed suits. Explain why. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) Explain the phenomenon of atmospheric pressure using the example of a rubber sucker sticking to a smooth wall. Support your explanation with the provided diagram. (3 Marks)</div>
+            <div class="svg-container">
+                <svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Wall -->
+                    <rect x="180" y="20" width="20" height="110" fill="#ddd" stroke="black"/>
+                    <text x="210" y="75" font-family="Times New Roman" font-size="12">Smooth</text>
+                    <text x="210" y="90" font-family="Times New Roman" font-size="12">Wall</text>
+                    
+                    <!-- Sucker -->
+                    <path d="M 140 45 C 175 45, 180 75, 180 75 C 180 75, 175 105, 140 105 C 150 75, 150 75, 140 45 Z" fill="#ff7f50" stroke="black" stroke-width="1.5"/>
+                    <path d="M 120 70 L 142 70 L 142 80 L 120 80 Z" fill="#333"/>
+                    
+                    <!-- Atmospheric Pressure Arrows -->
+                    <line x1="70" y1="50" x2="125" y2="60" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                    <line x1="60" y1="75" x2="115" y2="75" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                    <line x1="70" y1="100" x2="125" y2="90" stroke="black" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                    
+                    <text x="10" y="80" font-family="Times New Roman" font-size="12">Atmospheric</text>
+                    <text x="20" y="95" font-family="Times New Roman" font-size="12">Pressure</text>
+                    
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+            <div class="sub-question">(b) Why do some people experience nose bleeding when they travel to very high altitudes? (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions Minor Test 18</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fdfdfd;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: var(--bg-light); 
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%; opacity: 0.05; z-index: -1; pointer-events: none; }
+        .header { text-align: center; margin-bottom: 30px; border-top: 3px solid var(--primary-yellow); border-bottom: 3px solid var(--primary-yellow); padding: 15px 0; background-color: white;}
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; letter-spacing: 1px; }
+        .doc-title { font-size: 14pt; font-weight: bold; margin-top: 8px; color: #333;}
+        
+        .section-header { text-align: left; font-weight: bold; margin-top: 30px; margin-bottom: 20px; font-size: 13pt; color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 5px;}
+        
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .q-text {
+            flex-grow: 1;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 10pt;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .sol-content {
+            margin-left: 10px;
+        }
+        
+        .final-answer {
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 15px 0 5px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .step { margin-bottom: 8px; }
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: inline-block;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            .sol-content { margin-left: 0; }
+            .institute-name { font-size: 18pt; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 18 (Class 9 Maths)</div>
+        <div style="font-size: 10pt; color: #666; margin-top: 5px;">Coordinate Geometry & Algebra (Syllabus: Ganit Manjrika)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Write the coordinates of the point which lies on both the x-axis and y-axis. What is this point called?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">The only point that lies on both the x-axis (where <span class="math-container">\(y=0\)</span>) and the y-axis (where <span class="math-container">\(x=0\)</span>) is where they intersect.</div>
+            <div class="final-answer">Coordinates: <span class="math-container">\((0, 0)\)</span></div><br>
+            <div class="final-answer">Name: Origin</div>
+            <div style="font-size: 9pt; color: gray; margin-top: 5px;">(1 mark for coordinates, 1 mark for name)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Find the value of the polynomial <span class="math-container">\(p(x) = 5x - 4x^2 + 3\)</span> at <span class="math-container">\(x = -1\)</span>.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">Given polynomial: <span class="math-container">\(p(x) = 5x - 4x^2 + 3\)</span></div>
+            <div class="step">Substitute <span class="math-container">\(x = -1\)</span> into the polynomial:</div>
+            <div class="step"><span class="math-container">\(p(-1) = 5(-1) - 4(-1)^2 + 3\)</span></div>
+            <div class="step"><span class="math-container">\(p(-1) = -5 - 4(1) + 3\)</span></div>
+            <div class="step"><span class="math-container">\(p(-1) = -5 - 4 + 3\)</span></div>
+            <div class="step"><span class="math-container">\(p(-1) = -9 + 3\)</span></div>
+            <div class="final-answer">Value of <span class="math-container">\(p(-1) = -6\)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. In which quadrant or on which axis do each of the points <span class="math-container">\((-2, 4)\)</span> and <span class="math-container">\((0, -3)\)</span> lie?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">For point <span class="math-container">\((-2, 4)\)</span>: x-coordinate is negative, y-coordinate is positive.</div>
+            <div class="final-answer"><span class="math-container">\((-2, 4)\)</span> lies in Quadrant II</div><br>
+            <div class="step" style="margin-top: 10px;">For point <span class="math-container">\((0, -3)\)</span>: x-coordinate is zero, y-coordinate is non-zero.</div>
+            <div class="final-answer"><span class="math-container">\((0, -3)\)</span> lies on the y-axis (specifically, negative y-axis)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Check whether <span class="math-container">\(x + 1\)</span> is a factor of the polynomial <span class="math-container">\(p(x) = x^3 + x^2 + x + 1\)</span>.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">By Factor Theorem, <span class="math-container">\(x + 1\)</span> is a factor of <span class="math-container">\(p(x)\)</span> if <span class="math-container">\(p(-1) = 0\)</span>.</div>
+            <div class="step">Let's evaluate <span class="math-container">\(p(-1)\)</span>:</div>
+            <div class="step"><span class="math-container">\(p(-1) = (-1)^3 + (-1)^2 + (-1) + 1\)</span></div>
+            <div class="step"><span class="math-container">\(p(-1) = -1 + 1 - 1 + 1\)</span></div>
+            <div class="step"><span class="math-container">\(p(-1) = 0\)</span></div>
+            <div class="final-answer">Since remainder is 0, YES, <span class="math-container">\(x + 1\)</span> is a factor.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Write the equation <span class="math-container">\(x = 3y\)</span> in the form <span class="math-container">\(ax + by + c = 0\)</span> and indicate the values of <span class="math-container">\(a, b,\)</span> and <span class="math-container">\(c\)</span>.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">Given equation: <span class="math-container">\(x = 3y\)</span></div>
+            <div class="step">Rearranging to standard form <span class="math-container">\(ax + by + c = 0\)</span>:</div>
+            <div class="final-answer"><span class="math-container">\(x - 3y + 0 = 0\)</span></div><br>
+            <div class="step" style="margin-top: 10px;">Comparing coefficients:</div>
+            <div class="final-answer"><span class="math-container">\(a = 1, b = -3, c = 0\)</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. Plot the points <span class="math-container">\(A(1, 1)\)</span>, <span class="math-container">\(B(1, -2)\)</span>, <span class="math-container">\(C(-3, -2)\)</span>, and <span class="math-container">\(D(-3, 1)\)</span>. Identify the figure and find its area.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step"><em>(Students should plot this on a graph paper. Ensure accurate placement in respective quadrants.)</em></div>
+            <div class="step">Upon plotting and joining A-B-C-D-A, we observe:</div>
+            <ul style="margin-top: 5px; margin-bottom: 5px;">
+                <li><span class="math-container">\(AB\)</span> is parallel to y-axis (length = <span class="math-container">\(|1 - (-2)| = 3\)</span> units)</li>
+                <li><span class="math-container">\(CD\)</span> is parallel to y-axis (length = <span class="math-container">\(|1 - (-2)| = 3\)</span> units)</li>
+                <li><span class="math-container">\(AD\)</span> is parallel to x-axis (length = <span class="math-container">\(|1 - (-3)| = 4\)</span> units)</li>
+                <li><span class="math-container">\(BC\)</span> is parallel to x-axis (length = <span class="math-container">\(|1 - (-3)| = 4\)</span> units)</li>
+            </ul>
+            <div class="step">Since opposite sides are equal and angles are <span class="math-container">\(90^\circ\)</span> (due to axis parallel lines), the figure is a rectangle.</div>
+            <div class="final-answer">Figure formed is a Rectangle.</div><br>
+            <div class="step" style="margin-top: 10px;">Area = length &times; breadth = <span class="math-container">\(AD \times AB\)</span> = <span class="math-container">\(4 \times 3\)</span></div>
+            <div class="final-answer">Area = 12 square units</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Factorise: <span class="math-container">\(12x^2 - 7x + 1\)</span></div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">We use splitting the middle term method.</div>
+            <div class="step">We need two numbers that multiply to <span class="math-container">\((12 \times 1) = 12\)</span> and add to <span class="math-container">\(-7\)</span>.</div>
+            <div class="step">The numbers are <span class="math-container">\(-4\)</span> and <span class="math-container">\(-3\)</span>.</div>
+            <div class="step"><span class="math-container">\(12x^2 - 4x - 3x + 1\)</span></div>
+            <div class="step">Group terms: <span class="math-container">\((12x^2 - 4x) - (3x - 1)\)</span></div>
+            <div class="step">Take out common factors: <span class="math-container">\(4x(3x - 1) - 1(3x - 1)\)</span></div>
+            <div class="step">Factor out <span class="math-container">\((3x - 1)\)</span>:</div>
+            <div class="final-answer"><span class="math-container">\((3x - 1)(4x - 1)\)</span></div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Express the linear equation "The cost of a notebook is twice the cost of a pen" and find three solutions.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">Let the cost of a notebook be <span class="math-container">\(Rs. x\)</span></div>
+            <div class="step">Let the cost of a pen be <span class="math-container">\(Rs. y\)</span></div>
+            <div class="step">According to the problem: Cost of notebook = 2 &times; Cost of pen</div>
+            <div class="final-answer">Equation: <span class="math-container">\(x = 2y\)</span> or <span class="math-container">\(x - 2y = 0\)</span></div><br>
+            <div class="step" style="margin-top: 10px;">Finding three solutions (assuming <span class="math-container">\(y\)</span> values to find <span class="math-container">\(x\)</span>):</div>
+            <ul style="margin-top: 5px;">
+                <li>If <span class="math-container">\(y = 10\)</span> (pen costs Rs.10), then <span class="math-container">\(x = 2(10) = 20\)</span>. Solution: <span class="math-container">\((20, 10)\)</span></li>
+                <li>If <span class="math-container">\(y = 15\)</span> (pen costs Rs.15), then <span class="math-container">\(x = 2(15) = 30\)</span>. Solution: <span class="math-container">\((30, 15)\)</span></li>
+                <li>If <span class="math-container">\(y = 20\)</span> (pen costs Rs.20), then <span class="math-container">\(x = 2(20) = 40\)</span>. Solution: <span class="math-container">\((40, 20)\)</span></li>
+            </ul>
+            <div class="final-answer">Three solutions: <span class="math-container">\((20, 10), (30, 15), (40, 20)\)</span></div>
+            <div style="font-size: 9pt; color: gray; margin-top: 5px;">(Note: Any valid mathematical solution like (0,0), (2,1) is correct, but contextual values are better).</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Evaluate using a suitable identity: <span class="math-container">\((104)^3\)</span></div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">We can write <span class="math-container">\(104\)</span> as <span class="math-container">\((100 + 4)\)</span>.</div>
+            <div class="step">Using identity: <span class="math-container">\((a + b)^3 = a^3 + b^3 + 3ab(a + b)\)</span></div>
+            <div class="step">Here, <span class="math-container">\(a = 100\)</span> and <span class="math-container">\(b = 4\)</span>.</div>
+            <div class="step" style="margin-top: 10px;">
+                <div class="math-container">\((100 + 4)^3 = (100)^3 + (4)^3 + 3(100)(4)(100 + 4)\)</span></div>
+            </div>
+            <div class="step">
+                <div class="math-container">\(= 1000000 + 64 + 1200(104)\)</div>
+            </div>
+            <div class="step">
+                <div class="math-container">\(= 1000000 + 64 + 124800\)</div>
+            </div>
+            <div class="step">
+                <div class="math-container">\(= 1124864\)</div>
+            </div>
+            <div class="final-answer">Final Value = 1,124,864</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Find the value of <span class="math-container">\(k\)</span>, if <span class="math-container">\(x - 1\)</span> is a factor of <span class="math-container">\(p(x) = kx^2 - \sqrt{2}x + 1\)</span>.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step">If <span class="math-container">\(x - 1\)</span> is a factor of <span class="math-container">\(p(x)\)</span>, then by Factor Theorem, <span class="math-container">\(p(1) = 0\)</span>.</div>
+            <div class="step">Given <span class="math-container">\(p(x) = kx^2 - \sqrt{2}x + 1\)</span></div>
+            <div class="step">Substitute <span class="math-container">\(x = 1\)</span>:</div>
+            <div class="step"><span class="math-container">\(p(1) = k(1)^2 - \sqrt{2}(1) + 1 = 0\)</span></div>
+            <div class="step"><span class="math-container">\(k - \sqrt{2} + 1 = 0\)</span></div>
+            <div class="step"><span class="math-container">\(k = \sqrt{2} - 1\)</span></div>
+            <div class="final-answer"><span class="math-container">\(k = \sqrt{2} - 1\)</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Factorise the cubic polynomial: <span class="math-container">\(p(x) = x^3 - 23x^2 + 142x - 120\)</span></div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step"><strong>Step 1: Find one root using trial and error (Factor Theorem).</strong></div>
+            <div class="step">Factors of constant term -120 are &plusmn;1, &plusmn;2, &plusmn;3, etc.</div>
+            <div class="step">Let's try <span class="math-container">\(x = 1\)</span>:</div>
+            <div class="step"><span class="math-container">\(p(1) = (1)^3 - 23(1)^2 + 142(1) - 120\)</span></div>
+            <div class="step"><span class="math-container">\(p(1) = 1 - 23 + 142 - 120\)</span></div>
+            <div class="step"><span class="math-container">\(p(1) = 143 - 143 = 0\)</span></div>
+            <div class="step">Since <span class="math-container">\(p(1) = 0\)</span>, therefore <span class="math-container">\((x - 1)\)</span> is a factor.</div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Step 2: Divide <span class="math-container">\(p(x)\)</span> by <span class="math-container">\((x - 1)\)</span> to find the quadratic quotient.</strong></div>
+            <div class="step">Using long division or synthetic division:</div>
+            <div class="step" style="font-family: monospace; white-space: pre;">
+      x² - 22x + 120
+    _________________________
+x-1 | x³ - 23x² + 142x - 120
+    - (x³ -  x²)
+    -------------
+         - 22x² + 142x
+       - (-22x² +  22x)
+         ---------------
+                  120x - 120
+                - (120x - 120)
+                  ------------
+                             0
+            </div>
+            <div class="step">Quotient is <span class="math-container">\(q(x) = x^2 - 22x + 120\)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Step 3: Factorise the quadratic quotient.</strong></div>
+            <div class="step"><span class="math-container">\(x^2 - 22x + 120\)</span></div>
+            <div class="step">Find numbers that multiply to 120 and add to -22. They are -10 and -12.</div>
+            <div class="step"><span class="math-container">\(= x^2 - 10x - 12x + 120\)</span></div>
+            <div class="step"><span class="math-container">\(= x(x - 10) - 12(x - 10)\)</span></div>
+            <div class="step"><span class="math-container">\(= (x - 10)(x - 12)\)</span></div>
+            
+            <div class="step" style="margin-top: 15px;"><strong>Step 4: Combine all factors.</strong></div>
+            <div class="final-answer"><span class="math-container">\(p(x) = (x - 1)(x - 10)(x - 12)\)</span></div>
+            <div style="font-size: 9pt; color: gray; margin-top: 5px;">(1.5 marks for finding first factor, 2 marks for division, 1.5 marks for splitting middle term)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (a) Expand: <span class="math-container">\((-2x + 5y - 3z)^2\)</span>. (b) Find value: <span class="math-container">\((-12)^3 + (7)^3 + (5)^3\)</span> without calculating cubes.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step"><strong>Part (a) [2.5 Marks]</strong></div>
+            <div class="step">Identity used: <span class="math-container">\((a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca\)</span></div>
+            <div class="step">Here <span class="math-container">\(a = -2x, b = 5y, c = -3z\)</span></div>
+            <div class="step" style="margin-top: 10px;">
+                <div class="math-container">\((-2x + 5y - 3z)^2 = (-2x)^2 + (5y)^2 + (-3z)^2 + 2(-2x)(5y) + 2(5y)(-3z) + 2(-3z)(-2x)\)</div>
+            </div>
+            <div class="final-answer">
+                <div class="math-container">\(= 4x^2 + 25y^2 + 9z^2 - 20xy - 30yz + 12zx\)</div>
+            </div>
+
+            <div class="step" style="margin-top: 20px;"><strong>Part (b) [2.5 Marks]</strong></div>
+            <div class="step">Let <span class="math-container">\(x = -12, y = 7, z = 5\)</span></div>
+            <div class="step">Check their sum: <span class="math-container">\(x + y + z = -12 + 7 + 5 = -12 + 12 = 0\)</span></div>
+            <div class="step">Identity: If <span class="math-container">\(x + y + z = 0\)</span>, then <span class="math-container">\(x^3 + y^3 + z^3 = 3xyz\)</span></div>
+            <div class="step" style="margin-top: 10px;">
+                <div class="math-container">\((-12)^3 + (7)^3 + (5)^3 = 3(-12)(7)(5)\)</div>
+            </div>
+            <div class="step">
+                <div class="math-container">\(= 3(-12)(35)\)</div>
+            </div>
+            <div class="step">
+                <div class="math-container">\(= -36 \times 35\)</div>
+            </div>
+            <div class="final-answer">Value = -1260</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. Draw graph of <span class="math-container">\(2x + y = 6\)</span>. Check if <span class="math-container">\((3, 0)\)</span> and <span class="math-container">\((1, 5)\)</span> lie on it. Find axes intercepts.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-content">
+            <div class="step"><strong>Step 1: Find points to draw the graph (2 marks)</strong></div>
+            <div class="step">Equation: <span class="math-container">\(y = 6 - 2x\)</span></div>
+            <table style="width: 50%; border-collapse: collapse; margin: 10px 0;">
+                <tr><th style="border: 1px solid #ccc; padding: 5px;">x</th><td style="border: 1px solid #ccc; padding: 5px;">0</td><td style="border: 1px solid #ccc; padding: 5px;">1</td><td style="border: 1px solid #ccc; padding: 5px;">2</td><td style="border: 1px solid #ccc; padding: 5px;">3</td></tr>
+                <tr><th style="border: 1px solid #ccc; padding: 5px;">y</th><td style="border: 1px solid #ccc; padding: 5px;">6</td><td style="border: 1px solid #ccc; padding: 5px;">4</td><td style="border: 1px solid #ccc; padding: 5px;">2</td><td style="border: 1px solid #ccc; padding: 5px;">0</td></tr>
+            </table>
+            <div class="step"><em>(Students must draw Cartesian plane and plot line passing through (0,6), (1,4), (2,2), (3,0))</em></div>
+
+            <div class="step" style="margin-top: 15px;"><strong>Step 2: Checking points algebraically (1.5 marks)</strong></div>
+            <div class="step">For <span class="math-container">\((3, 0)\)</span>: LHS = <span class="math-container">\(2(3) + 0 = 6 + 0 = 6\)</span>. RHS = <span class="math-container">\(6\)</span>. LHS = RHS.</div>
+            <div class="final-answer">Yes, <span class="math-container">\((3, 0)\)</span> lies on the line.</div><br>
+            <div class="step" style="margin-top: 5px;">For <span class="math-container">\((1, 5)\)</span>: LHS = <span class="math-container">\(2(1) + 5 = 2 + 5 = 7\)</span>. RHS = <span class="math-container">\(6\)</span>. LHS &ne; RHS.</div>
+            <div class="final-answer">No, <span class="math-container">\((1, 5)\)</span> does not lie on the line.</div>
+
+            <div class="step" style="margin-top: 15px;"><strong>Step 3: Finding Coordinates where it cuts axes (1.5 marks)</strong></div>
+            <div class="step">Cuts x-axis when <span class="math-container">\(y = 0\)</span>. From table/equation, if <span class="math-container">\(y=0, 2x=6 \implies x=3\)</span>.</div>
+            <div class="final-answer">Cuts x-axis at: <span class="math-container">\((3, 0)\)</span></div><br>
+            <div class="step" style="margin-top: 5px;">Cuts y-axis when <span class="math-container">\(x = 0\)</span>. From table/equation, if <span class="math-container">\(x=0, y=6\)</span>.</div>
+            <div class="final-answer">Cuts y-axis at: <span class="math-container">\((0, 6)\)</span></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; font-size: 10pt; font-weight: bold; border-top: 1px solid #ccc; padding-top: 10px; color: #555;">End of Solutions</div>
+</body>
+</html>

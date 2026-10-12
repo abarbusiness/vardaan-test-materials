@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .surprise-test {
+             color: red;
+             font-weight: bold;
+             font-size: 16pt;
+             margin-top: 5px;
+             text-transform: uppercase;
+             animation: blink 1.5s linear infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .exam-details span { margin: 2px 5px; }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 30px; 
+            flex-shrink: 0; 
+        }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 5px; }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* MathJax Overflow Fix for Small Screens */
+        mjx-container[jax="CHTML"][display="true"] {
+            display: block;
+            text-align: left;
+            margin: 1em 0;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin-bottom: 5px; }
+            .institute-name { font-size: 18pt; }
+        }
+        @media print { 
+            body { width: 100%; max-width: none; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <div class="surprise-test">*** SURPRISE TEST ***</div>
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MIT 18: Basic Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 9</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Show rough work clearly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Rationalize the denominator of \( \frac{1}{\sqrt{7} - 2} \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Find the value of \( k \) if \( x - 1 \) is a factor of the polynomial \( p(x) = 4x^3 + 3x^2 - 4x + k \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            In which quadrant or on which axis do the points \( (-2, 4) \) and \( (3, -1) \) lie?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Find any two different solutions for the linear equation \( 2x + y = 7 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            If two interior angles on the same side of a transversal intersecting two parallel lines are in the ratio \( 2:3 \), find the measure of the greater angle.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            Express \( 0.\overline{47} \) in the form \( \frac{p}{q} \), where \( p \) and \( q \) are integers and \( q \neq 0 \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Factorize completely using a suitable algebraic identity: 
+            $$ 64a^3 - 27b^3 - 144a^2b + 108ab^2 $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            In \( \triangle ABC \), \( \angle A = 50^\circ \). If the bisectors of \( \angle B \) and \( \angle C \) meet at point \( O \), find the measure of \( \angle BOC \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            The angles of a quadrilateral are in the ratio \( 3:5:9:13 \). Find the measure of all the angles of the quadrilateral.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            The curved surface area of a right circular cylinder of height \( 14 \text{ cm} \) is \( 88 \text{ cm}^2 \). Find the diameter of the base of the cylinder. (Take \( \pi = \frac{22}{7} \))
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            Simplify the following expression using laws of exponents:
+            $$ \left(\frac{81}{16}\right)^{-\frac{3}{4}} \times \left[ \left(\frac{25}{9}\right)^{-\frac{3}{2}} \div \left(\frac{5}{2}\right)^{-3} \right] $$
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            Let \( R_1 \) and \( R_2 \) be the remainders when the polynomials \( p(x) = x^3 + 2x^2 - 5ax - 7 \) and \( q(x) = x^3 + ax^2 - 12x + 6 \) are divided by \( (x + 1) \) and \( (x - 2) \) respectively. If \( 2R_1 + R_2 = 6 \), find the value of \( a \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            A solid cube of side \( 12 \text{ cm} \) is cut into eight smaller cubes of equal volume. 
+            <div class="sub-question">(a) What will be the side of the new cube? (3 Marks)</div>
+            <div class="sub-question">(b) Find the ratio between the surface area of the original large cube to the surface area of one new small cube. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
