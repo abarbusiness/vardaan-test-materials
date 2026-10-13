@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 12px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #333;
+        }
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            font-size: 14pt; 
+            background-color: #fff9c4;
+            padding: 5px 10px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 15px;
+        }
+        .q-text {
+            font-weight: bold;
+            flex-grow: 1;
+            color: #333;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .ans-content {
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #fafafa;
+            border-left: 3px solid #ccc;
+        }
+        .ans-content p { margin: 5px 0; }
+        .ans-content ul { margin: 5px 0; padding-left: 20px; }
+        
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+            }
+            .q-header {
+                flex-direction: column;
+            }
+            .marks-badge {
+                align-self: flex-start;
+                margin-top: 5px;
+            }
+            .ans-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-title">DETAILED SOLUTIONS: Minor Test 22 - Combustion and Flame</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Define a combustible substance. Classify the following into combustible and non-combustible substances: Wood, Glass, Iron, Kerosene.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Combustible Substance:</strong> Materials that readily catch fire and burn easily in the presence of oxygen are called combustible substances. (1 Mark)</p>
+            <p><strong>Classification (1 Mark - 0.25 each):</strong></p>
+            <ul>
+                <li><strong>Combustible:</strong> Wood, Kerosene</li>
+                <li><strong>Non-combustible:</strong> Glass, Iron</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. What is meant by the 'ignition temperature' of a substance? Why doesn't a piece of wood catch fire on its own at room temperature?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Ignition Temperature:</strong> The lowest temperature at which a substance catches fire is called its ignition temperature. (1 Mark)</p>
+            <p><strong>Reason:</strong> A piece of wood does not catch fire on its own because the normal room temperature is much lower than the ignition temperature of wood. Heat must be supplied externally to reach its ignition temperature. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. Define the calorific value of a fuel. Name the fuel that has the highest calorific value among common fuels and state its value.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Calorific Value:</strong> The precise amount of heat energy produced on the complete combustion of exactly 1 kilogram (1 kg) of a specific fuel is called its calorific value. (1 Mark)</p>
+            <p><strong>Highest Value Fuel:</strong> Hydrogen gas has the highest calorific value. (0.5 Marks)</p>
+            <p><strong>Value:</strong> Its calorific value is <span class="math-container">\(150,000\text{ kJ/kg}\)</span>. (0.5 Marks)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Do all burning substances produce a flame? Name one substance that produces a flame during combustion and one that does not.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p>No, not all burning substances produce a flame. Only those substances which vaporise (turn into gas) during burning produce flames. (1 Mark)</p>
+            <p><strong>Produces a flame:</strong> Kerosene oil or molten wax. (0.5 Marks)</p>
+            <p><strong>Does not produce a flame:</strong> Solid charcoal (it simply glows red hot). (0.5 Marks)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Why is carbon dioxide (\(CO_2\)) considered the best extinguisher for fires involving electrical equipment and inflammable materials like petrol?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p>Carbon dioxide (<span class="math-container">\(CO_2\)</span>) is heavier than oxygen, so it covers the fire like a blanket. This cuts off contact between the fuel and atmospheric oxygen, effectively extinguishing the fire. Additionally, it does not conduct electricity, making it safe for electrical fires. (2 Marks)</p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. What is the 'Fire Triangle'? List the three essential conditions represented in this triangle that must be met simultaneously for a fire to start.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Fire Triangle:</strong> It represents the three essential conditions that must be met simultaneously for a fire to start and continue burning. If even one is removed, the fire extinguishes. (1.5 Marks)</p>
+            <p><strong>Three Conditions (1.5 Marks - 0.5 each):</strong></p>
+            <ul>
+                <li><strong>Fuel</strong> (Combustible Substance)</li>
+                <li><strong>Oxygen</strong> (Air supply)</li>
+                <li><strong>Heat</strong> (Attaining the Ignition Temperature)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. Differentiate between Rapid Combustion and Spontaneous Combustion. Give one suitable example of each from your everyday observation or chemical studies.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Rapid Combustion:</strong> The combustion in which a substance burns very fast and quickly produces large amounts of heat and light. <br>
+            <em>Example:</em> Turning on a gas stove (LPG burner) with a lighter. (1.5 Marks)</p>
+            <p><strong>Spontaneous Combustion:</strong> The combustion in which a material bursts into flames suddenly on its own, without any external heat applied. <br>
+            <em>Example:</em> White phosphorus catches fire instantly when simply exposed to room temperature air. (1.5 Marks)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Give scientific reasons: (a) Water should not be used to extinguish oil or petrol fires. (b) LPG is considered a much better domestic fuel than traditional wood.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>(a) Water on oil fires (1.5 Marks):</strong> Water is heavier than oil or petrol. When poured, it sinks below the oil. The oil continues to float on top of the water and keeps burning, which can cause the fire to spread further.</p>
+            <p><strong>(b) LPG over Wood (1.5 Marks):</strong> LPG has a much higher calorific value (<span class="math-container">\(55,000\text{ kJ/kg}\)</span>) than wood (<span class="math-container">\(17,000\text{ kJ/kg}\)</span>), producing far more heat per kg. Also, LPG undergoes complete combustion without producing harmful smoke or toxic ash, making it cleaner.</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. What is global warming? Name the gas whose increased concentration in the atmosphere traps heat, and mention two of its environmental consequences.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Global Warming:</strong> Widespread combustion releases massive quantities of heat-trapping gases into the air. This causes an increase in the average temperature of the Earth's atmosphere, known as global warming. (1 Mark)</p>
+            <p><strong>Responsible Gas:</strong> Carbon dioxide (<span class="math-container">\(CO_2\)</span>). (1 Mark)</p>
+            <p><strong>Consequences (1 Mark - 0.5 each):</strong> It leads to the melting of polar glaciers and causes devastating flooding in coastal regions.</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. How does the burning of coal and diesel contribute to the formation of 'acid rain'? What harmful impacts does acid rain have on the environment?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>Formation of Acid Rain (1.5 Marks):</strong> Burning coal and diesel releases highly toxic oxides of sulphur and nitrogen into the atmosphere. These gases dissolve in falling rainwater, forming sulfuric acid and nitric acid, which fall down as acid rain.</p>
+            <p><strong>Harmful Impacts (1.5 Marks):</strong> Acid rain destroys agricultural crops, ruins soil fertility, and corrodes/damages historical monuments.</p>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. Describe the physical structure of a candle flame in detail. Explain the characteristics (colour, level of combustion, and temperature) of its outermost, middle, and innermost zones.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p>A candle flame has three distinct zones based on the amount of oxygen received and the extent of combustion (1 Mark for general intro/structure):</p>
+            <ul>
+                <li><strong>Outermost Zone (Blue):</strong> This is the zone of <em>complete combustion</em> because it receives maximum oxygen from the surrounding air. It is non-luminous (does not produce much light) but is the <em>hottest</em> part of the flame. (1.5 Marks)</li>
+                <li><strong>Middle Zone (Yellow):</strong> This is the zone of <em>partial combustion</em>. Unburnt carbon particles glow brightly due to the heat, making this the luminous, bright zone. It is <em>moderately hot</em>. (1.5 Marks)</li>
+                <li><strong>Innermost Zone (Black):</strong> This dark zone near the wick contains unburnt wax vapours due to the lack of oxygen. It is the <em>least hot</em> part of the entire flame. (1 Marks)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. The increasing global consumption and burning of fossil fuels directly threatens the health of humans and the environment. Elaborate on any five harmful effects of burning fuels.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p>The burning of fuels leads to the following harmful effects <em>(Award 1 mark for each valid point explained, max 5 points)</em>:</p>
+            <ul>
+                <li><strong>Release of Unburnt Carbon Particles:</strong> Fuels like wood and coal release fine soot into the air, acting as dangerous pollutants that cause severe respiratory diseases like asthma.</li>
+                <li><strong>Carbon Monoxide Production:</strong> Incomplete combustion due to a lack of oxygen produces Carbon Monoxide (<span class="math-container">\(CO\)</span>), a highly poisonous gas.</li>
+                <li><strong>Global Warming:</strong> Widespread combustion releases massive quantities of Carbon dioxide (<span class="math-container">\(CO_2\)</span>) which traps heat, causing global warming and the melting of polar glaciers.</li>
+                <li><strong>Acid Rain Formation:</strong> Burning coal/diesel releases oxides of sulphur and nitrogen. These dissolve in rainwater to form acid rain.</li>
+                <li><strong>Environmental & Structural Damage:</strong> Acid rain severely destroys agricultural crops, damages soil fertility, and degrades historical monuments.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. (a) A goldsmith uses a metallic blowpipe to direct a specific zone of a flame to melt gold and silver. Which zone is used and why? (b) Why is it considered highly fatal to sleep in a closed room with a burning coal fire inside? Explain the chemical reason behind it.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="ans-content">
+            <p><strong>(a) Goldsmith and Flame (2 Marks):</strong><br>
+            A goldsmith blows air through a metallic blowpipe to direct the <strong>outermost zone</strong> (blue/non-luminous zone) of the flame. (1 Mark)<br>
+            <strong>Reason:</strong> The outermost zone receives maximum oxygen, undergoes complete combustion, and is the hottest part of the flame, providing the extremely high temperature required to melt noble metals like gold and silver. (1 Mark)</p>
+            
+            <p><strong>(b) Sleeping with a coal fire (3 Marks):</strong><br>
+            When a coal fire burns in a heavily closed room, the oxygen gets consumed quickly, leading to a restricted supply of air. (1 Mark)<br>
+            In the absence of sufficient oxygen, <em>incomplete combustion</em> of the coal takes place, which produces a highly poisonous gas called <strong>Carbon Monoxide (<span class="math-container">\(CO\)</span>)</strong> instead of Carbon dioxide. (1 Mark)<br>
+            Inhaling this carbon monoxide heavily poisons the blood, which can be fatal and cause death during sleep. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Powered by Vardaan Comet</div>
+</body>
+</html>

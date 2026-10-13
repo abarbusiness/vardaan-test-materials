@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Minor Test 22</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; max-width: 600px; 
+            opacity: 0.08; z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; font-weight: bold; 
+            text-transform: uppercase; margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; font-weight: bold; 
+            margin-top: 5px; text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 15px; font-weight: bold; 
+            font-size: 11pt; border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; padding: 5px 0; 
+        }
+        .exam-details span {
+            margin: 5px 10px;
+        }
+        .instructions { 
+            margin-top: 10px; font-size: 10pt; font-style: italic; text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        .section-header { 
+            text-align: center; font-weight: bold; 
+            margin-top: 25px; margin-bottom: 15px; 
+            text-decoration: underline; font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; font-weight: normal; 
+            font-style: italic; display: block; margin-top: 2px; 
+            text-decoration: none;
+        }
+        .question-container { 
+            margin-bottom: 15px; display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { font-weight: bold; width: 40px; flex-shrink: 0; }
+        .q-content { flex-grow: 1; }
+        .sub-question { margin-left: 20px; margin-top: 8px; }
+        
+        .footer { 
+            margin-top: 40px; text-align: center; 
+            font-size: 10pt; font-weight: bold; 
+            border-top: 1px solid #ccc; padding-top: 10px; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 20pt; }
+            .exam-details { flex-direction: column; align-items: center; }
+            .exam-details span { margin: 2px 0; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .watermark { opacity: 0.12; }
+        }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 22</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Science & Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly. Use proper units where necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define pressure. Write its mathematical formula and SI unit.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">Find the simplest ratio of \( 5 \text{ m} \) to \( 10 \text{ km} \).</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Give a scientific reason: Why do school bags have wide straps?</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Are the ratios \( 1:2 \) and \( 2:3 \) equivalent? Justify your answer.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">State any two common applications or effects of atmospheric pressure in our daily life.</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">If 15 workers can build a wall in 48 hours, how many workers will be required to do the same work in 30 hours? Identify the type of proportion used.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">A force of \( 100 \text{ N} \) is applied perpendicular to an area of \( 2 \text{ m}^2 \). Calculate the pressure exerted on the surface.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Rohan has Rs 3000. He decides to divide this amount among his three children A, B, and C in the ratio \( 2:3:5 \). Find the amount received by each child.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">Describe a simple activity to demonstrate that liquids exert pressure on the walls of their container.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">A car travels \( 432 \text{ km} \) on \( 48 \text{ litres} \) of petrol. How far would it travel on \( 20 \text{ litres} \) of petrol assuming the consumption rate is uniform?</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            (a) Explain why a sharp knife cuts objects more easily than a blunt knife. <em>(2 marks)</em>
+            <div class="sub-question">
+                (b) A wooden block of mass \( 5 \text{ kg} \) is kept on a tabletop. The dimensions of the wooden block are \( 40 \text{ cm} \times 20 \text{ cm} \times 10 \text{ cm} \). Calculate the pressure exerted by the wooden block on the tabletop if it is made to lie with its dimensions: <br>
+                (i) \( 20 \text{ cm} \times 10 \text{ cm} \) <br>
+                (ii) \( 40 \text{ cm} \times 20 \text{ cm} \) <br>
+                <em>(Take \( g = 10 \text{ m/s}^2 \))</em> <em>(3 marks)</em>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            A train is moving at a uniform speed of \( 75 \text{ km/hr} \). Assuming it maintains this speed:
+            <div class="sub-question">
+                (i) How far will it travel in \( 20 \text{ minutes} \)? <em>(2.5 marks)</em>
+            </div>
+            <div class="sub-question">
+                (ii) Find the time required to cover a distance of \( 250 \text{ km} \). Express your answer in hours and minutes. <em>(2.5 marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            The scale of a geographical map is given as \( 1 : 30,000,000 \).
+            <div class="sub-question">
+                (a) If two cities are \( 4 \text{ cm} \) apart on the map, find the actual distance between them in kilometers. <em>(3 marks)</em>
+            </div>
+            <div class="sub-question">
+                (b) If the actual distance between two other cities is \( 1500 \text{ km} \), how far apart will they be placed on the same map? <em>(2 marks)</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan - Shaping Futures</div>
+</body>
+</html>

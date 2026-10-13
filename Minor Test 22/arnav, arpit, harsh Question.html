@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            opacity: 0.12; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 10px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+            flex-wrap: wrap;
+        }
+        .instructions { 
+            margin-top: 10px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .math-container {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 10px; 
+                font-size: 11pt;
+            }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 5px;
+            }
+            .institute-name { font-size: 18pt; }
+            .watermark { width: 90%; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test 22: Combustion and Flame</div>
+        <div class="exam-details">
+            <span>Class: 8 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A consists of 5 questions of 2 marks each.</li>
+                <li>Section B consists of 5 questions of 3 marks each.</li>
+                <li>Section C consists of 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Draw diagrams wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">Define a combustible substance. Classify the following into combustible and non-combustible substances: Wood, Glass, Iron, Kerosene.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">What is meant by the 'ignition temperature' of a substance? Why doesn't a piece of wood catch fire on its own at room temperature?</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">Define the calorific value of a fuel. Name the fuel that has the highest calorific value among common fuels and state its value.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">Do all burning substances produce a flame? Name one substance that produces a flame during combustion and one that does not.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">Why is carbon dioxide (<span class="math-container">\(CO_2\)</span>) considered the best extinguisher for fires involving electrical equipment and inflammable materials like petrol?</div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">What is the 'Fire Triangle'? List the three essential conditions represented in this triangle that must be met simultaneously for a fire to start.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">Differentiate between Rapid Combustion and Spontaneous Combustion. Give one suitable example of each from your everyday observation or chemical studies.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">Give scientific reasons for the following statements:
+            <div class="sub-question">(a) Water should not be used to extinguish oil or petrol fires.</div>
+            <div class="sub-question">(b) LPG is considered a much better domestic fuel than traditional wood.</div>
+        </div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">What is global warming? Name the gas whose increased concentration in the atmosphere traps heat, and mention two of its environmental consequences.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">How does the burning of coal and diesel contribute to the formation of 'acid rain'? What harmful impacts does acid rain have on the environment?</div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">Describe the physical structure of a candle flame in detail. Explain the characteristics (colour, level of combustion, and temperature) of its outermost, middle, and innermost zones.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">The increasing global consumption and burning of fossil fuels directly threatens the health of humans and the environment. Elaborate on any five harmful effects of burning fuels.</div>
+    </div>
+    
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            <div class="sub-question">(a) A goldsmith uses a metallic blowpipe to direct a specific zone of a flame to melt gold and silver. Which zone is used and why? (2 Marks)</div>
+            <div class="sub-question">(b) Why is it considered highly fatal to sleep in a closed room with a burning coal fire inside? Explain the chemical reason behind it. (3 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan | Powered by Vardaan Comet</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering equations and scientific notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 5px 0; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+        }
+        .question-container { 
+            margin-bottom: 15px; 
+            display: flex; 
+            page-break-inside: avoid;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 40px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .sub-question { 
+            margin-left: 20px; 
+            margin-top: 5px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+                margin: 0;
+            }
+            .institute-name { font-size: 18pt; }
+            .exam-details { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 8px; 
+                text-align: center;
+            }
+            .question-container { 
+                flex-direction: column; 
+            }
+            .q-num { 
+                margin-bottom: 5px; 
+                width: 100%;
+            }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test: Our Environment</div>
+        <div class="exam-details">
+            <span>Class: 10 CBSE</span>
+            <span>Subject: Science</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Write your answers neatly and legibly.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section A -->
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q.1</div>
+        <div class="q-content">Define the term "ecosystem". Name the two main constituents of an ecosystem.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.2</div>
+        <div class="q-content">What are trophic levels? Give one example of a food chain comprising four trophic levels.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.3</div>
+        <div class="q-content">Why are green plants and certain bacteria called "producers"?</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.4</div>
+        <div class="q-content">State the chemical equations to show what happens when higher energy ultraviolet (UV) radiations act on an oxygen \(\left(O_2\right)\) molecule at the higher levels of the atmosphere.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.5</div>
+        <div class="q-content">Differentiate between biodegradable and non-biodegradable substances. Give one example of each.</div>
+    </div>
+
+    <!-- Section B -->
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q.6</div>
+        <div class="q-content">What is biological magnification? Explain why the maximum concentration of harmful agricultural chemicals is found in human beings.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.7</div>
+        <div class="q-content">"The flow of energy in an ecosystem is unidirectional." Justify this statement with valid reasons.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.8</div>
+        <div class="q-content">What is ozone? How does it affect any ecosystem? Mention the primary reason why the amount of ozone in the atmosphere began to drop sharply in the 1980s.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.9</div>
+        <div class="q-content">Food chains generally consist of only three or four steps. Give reasons to justify this statement based on the flow of energy.</div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.10</div>
+        <div class="q-content">What is the role of decomposers in the ecosystem? What would happen if decomposers are completely removed from an ecosystem?</div>
+    </div>
+
+    <!-- Section C -->
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">Q.11</div>
+        <div class="q-content">
+            (a) Draw a labeled diagram showing the flow of energy in an ecosystem.<br>
+            (b) In a terrestrial ecosystem, green plants capture \(10,000 \text{ J}\) of solar energy that falls on their leaves. Calculate the amount of energy that will be available to the <i>secondary consumer</i> in the following food chain: 
+            <br>
+            \(\text{Sun} \rightarrow \text{Producer} \rightarrow \text{Primary Consumer} \rightarrow \text{Secondary Consumer}\)
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.12</div>
+        <div class="q-content">
+            (a) List any three problems caused by the non-biodegradable wastes that we generate.<br>
+            (b) Suggest any two methods you can adopt in your daily life to help in reducing the problem of waste disposal.
+        </div>
+    </div>
+    <div class="question-container">
+        <div class="q-num">Q.13</div>
+        <div class="q-content">
+            (a) Will the impact of removing all the organisms in a trophic level be different for different trophic levels? Can the organisms of any trophic level be removed without causing any damage to the ecosystem?<br>
+            (b) Construct a simple food web consisting of at least four interdependent food chains operating in nature.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
