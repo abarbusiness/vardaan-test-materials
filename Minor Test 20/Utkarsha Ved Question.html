@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 6 CBSE Mathematics Minor Test 20</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #1a237e;
+            --text-color: #212121;
+            --bg-light: #f9fbfd;
+        }
+        body { 
+            max-width: 850px; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-color); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3.5px solid var(--primary-yellow);
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffde7;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #111;
+        }
+        .sub-heading {
+            font-size: 10.5pt;
+            font-weight: bold;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+            color: #000;
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 6px 4px; 
+            background-color: #ffffff;
+        }
+        .exam-details span {
+            margin: 2px 8px;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+        }
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12.5pt; 
+            color: #000;
+            clear: both;
+        }
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            color: #444;
+        }
+        .question-container { 
+            margin-bottom: 16px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 38px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            color: #333;
+            margin-left: 10px;
+        }
+        .sub-question { 
+            margin-left: 18px; 
+            margin-top: 6px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #666; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+            .institute-name {
+                font-size: 17pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .exam-details span {
+                margin: 2px 0;
+            }
+            .q-num {
+                width: 28px;
+            }
+            .q-marks {
+                float: none;
+                display: block;
+                margin-left: 0;
+                margin-bottom: 4px;
+                color: #d84315;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark {
+                opacity: 0.10;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">EXCELLENCE IN MATHEMATICAL LEARNING</div>
+        <div class="test-name">MINOR TEST 20</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 6 CBSE</span>
+            <span><strong>Subject:</strong> Mathematics (Percentage & Its Application)</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read each question carefully.</li>
+                <li>The paper consists of three sections: Section A (10 Marks), Section B (15 Marks), and Section C (15 Marks).</li>
+                <li>Write neat calculation steps wherever required. Avoid overwriting.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Attempt all questions - 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            (a) Convert the fraction \(\dfrac{7}{20}\) into a percentage.<br>
+            (b) Convert \(45\%\) into a fraction in its simplest form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            (a) Express the decimal number \(0.35\) as a percentage.<br>
+            (b) Convert \(18\%\) into a decimal number.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the numerical value of the following quantities:
+            <div class="sub-question">(a) \(15\%\) of \(\text{₹ } 600\)</div>
+            <div class="sub-question">(b) \(25\%\) of \(80\text{ kg}\)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            In a class of \(40\) students, \(30\) students passed a mathematics test. Find the percentage of students who passed the test.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            (a) What percentage is \(15\) out of \(60\)?<br>
+            (b) If \(20\%\) of a number \(x\) is \(14\), find the value of \(x\).
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type - 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            In an examination, Rohan scored \(420\) marks out of a total of \(500\) marks.
+            <div class="sub-question">(a) Calculate his percentage score.</div>
+            <div class="sub-question">(b) If the minimum passing criteria is \(40\%\), did Rohan pass the examination?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            A shopkeeper bought a school bag for \(\text{₹ } 400\) and sold it to a customer for \(\text{₹ } 480\). Find his profit amount and his profit percentage.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            The population of a small town increased from \(2,000\) to \(2,300\) in one year. Calculate the percentage increase in the population.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            In an orchard containing \(250\) trees, \(40\%\) are mango trees, \(30\%\) are apple trees, and the remaining are lemon trees. Calculate the total number of lemon trees in the orchard.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            A worker receives a monthly salary of \(\text{₹ } 25,000\). He spends \(65\%\) of his salary on household expenses and saves the rest. Calculate his total monthly savings in rupees.
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Type - 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            (a) A fruit vendor buys a basket of fresh apples for \(\text{₹ } 800\). Due to overstocking, he sells them at a loss of \(5\%\). Calculate the selling price of the basket of apples. <span style="float:right; font-weight:normal;">[3 Marks]</span><br>
+            (b) Out of \(1,200\) registered voters in a locality, \(85\%\) cast their votes during an election. How many voters did <strong>NOT</strong> cast their vote? <span style="float:right; font-weight:normal;">[2 Marks]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            In an annual school sports meet, \(60\%\) of the total students in the school participated in various events.
+            <div class="sub-question">(a) If exactly \(450\) students participated, calculate the total number of students enrolled in the school. <span style="float:right; font-weight:normal;">[3 Marks]</span></div>
+            <div class="sub-question">(b) How many students did <strong>NOT</strong> participate in the sports meet? <span style="float:right; font-weight:normal;">[2 Marks]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            (a) Ananya scored \(45\) out of \(50\) marks in Test A, and \(72\) out of \(80\) marks in Test B. Calculate her percentage score in both tests and state in which test she performed better. <span style="float:right; font-weight:normal;">[3 Marks]</span><br>
+            (b) During a festive discount sale, the price of a jacket was reduced from \(\text{₹ } 2,000\) to \(\text{₹ } 1,600\). Calculate the percentage discount offered on the jacket. <span style="float:right; font-weight:normal;">[2 Marks]</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Academic Dean &bull; Vardaan Learning Institute &bull; All Rights Reserved
+    </div>
+</body>
+</html>

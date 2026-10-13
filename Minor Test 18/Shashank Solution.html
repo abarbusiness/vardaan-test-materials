@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Decimals & Algebra)</title>
+    <!-- MathJax for rendering math equations cleanly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --accent-green: #2e7d32;
+            --text-main: #111111;
+            --bg-badge: #fff8e1;
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3.5px solid var(--primary-yellow); 
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffde7;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #000; 
+            letter-spacing: 0.5px;
+        }
+        .doc-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: #c67100; 
+            text-transform: uppercase;
+        }
+        .exam-info {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #444;
+            margin-top: 4px;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: #f5f5f5;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #000;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 3px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: var(--accent-green);
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-size: 10.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .sol-content {
+            margin-left: 10px;
+            font-size: 10.5pt;
+            color: #222;
+        }
+        .sol-content p {
+            margin: 4px 0;
+        }
+        .key-concept {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 9.5pt;
+            color: #1b5e20;
+        }
+        .equation-box {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .marks-badge {
+                align-self: flex-start;
+            }
+            .sol-content {
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <div class="exam-info">Minor Test 18 | Class 6 ICSE | Subject: Mathematics (Decimals & Algebra) | Max Marks: 40</div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-bottom: 20px;">
+        SECTION A - DETAILED SOLUTIONS (10 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q1. (a) Place value of digit 7 in \(45.3\underline{7}8\). (b) Convert \(\dfrac{3}{5}\) to decimal.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Place Value:</strong></p>
+            <p>In the decimal number \(45.3\underline{7}8\):</p>
+            <ul>
+                <li>The digit \(3\) is at the tenths place (\(\dfrac{3}{10}\)).</li>
+                <li>The digit \(7\) is at the <strong>hundredths place</strong> (\(\dfrac{7}{100}\) or \(0.07\)).</li>
+            </ul>
+            <p><strong>Answer:</strong> Hundredths (\(\dfrac{7}{100}\) or \(0.07\)).</p>
+
+            <p style="margin-top: 10px;"><strong>(b) Fraction to Decimal:</strong></p>
+            <div class="equation-box">
+                \[ \dfrac{3}{5} = \dfrac{3 \times 2}{5 \times 2} = \dfrac{6}{10} = 0.6 \]
+            </div>
+            <p><strong>Answer:</strong> \(0.6\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for identifying place value correctly; 1 Mark for correct decimal conversion (\(0.6\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q2. (a) Convert \(0.65\) to fraction. (b) Express \(5\text{ m } 25\text{ cm}\) in metres.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Decimal to Simplest Fraction:</strong></p>
+            <div class="equation-box">
+                \[ 0.65 = \dfrac{65}{100} \]
+            </div>
+            <p>Dividing numerator and denominator by their HCF (\(5\)):</p>
+            <div class="equation-box">
+                \[ \dfrac{65 \div 5}{100 \div 5} = \dfrac{13}{20} \]
+            </div>
+            <p><strong>Answer:</strong> \(\dfrac{13}{20}\)</p>
+
+            <p style="margin-top: 10px;"><strong>(b) Expressing in Metres:</strong></p>
+            <p>We know that \(100\text{ cm} = 1\text{ m} \implies 1\text{ cm} = \dfrac{1}{100}\text{ m}\).</p>
+            <div class="equation-box">
+                \[ 25\text{ cm} = \dfrac{25}{100}\text{ m} = 0.25\text{ m} \]
+            </div>
+            <div class="equation-box">
+                \[ 5\text{ m } 25\text{ cm} = 5\text{ m} + 0.25\text{ m} = 5.25\text{ m} \]
+            </div>
+            <p><strong>Answer:</strong> \(5.25\text{ metres}\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for fraction in simplest form (\(13/20\)); 1 Mark for expressing as \(5.25\text{ m}\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q3. (a) Algebraic expression for statement. (b) Identify variable, coefficient, and constant in \(4y - 9\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Algebraic Expression:</strong></p>
+            <p>Twice a number \(x = 2x\)</p>
+            <p>7 added to twice a number \(x = 2x + 7\)</p>
+            <p><strong>Answer:</strong> \(2x + 7\)</p>
+
+            <p style="margin-top: 10px;"><strong>(b) In the expression \(4y - 9\):</strong></p>
+            <ul>
+                <li><strong>Variable:</strong> \(y\)</li>
+                <li><strong>Coefficient of \(y\):</strong> \(4\)</li>
+                <li><strong>Constant term:</strong> \(-9\) (or \(9\))</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for correct expression (\(2x + 7\)); 1 Mark for identifying variable, coefficient, and constant.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q4. Solve simple equations: (a) \(x + 8 = 15\) (b) \(3y = 21\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) \(x + 8 = 15\):</strong></p>
+            <p>Transposing \(8\) to RHS:</p>
+            <div class="equation-box">
+                \[ x = 15 - 8 \implies x = 7 \]
+            </div>
+
+            <p style="margin-top: 8px;"><strong>(b) \(3y = 21\):</strong></p>
+            <p>Dividing both sides by \(3\):</p>
+            <div class="equation-box">
+                \[ y = \dfrac{21}{3} \implies y = 7 \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for solving \(x = 7\); 1 Mark for solving \(y = 7\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q5. Find value of \(5a - 3\) when \(a = 4\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p>Given expression: \(5a - 3\)</p>
+            <p>Substitute \(a = 4\):</p>
+            <div class="equation-box">
+                \[ 5a - 3 = 5 \times 4 - 3 \]
+            </div>
+            <div class="equation-box">
+                \[ = 20 - 3 = 17 \]
+            </div>
+            <p><strong>Answer:</strong> \(17\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for substitution; 1 Mark for getting final answer \(17\).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION B - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q6. Decimal Operations: (a) Add \(24.56 + 8.9 + 102.34\) (b) Subtract \(45.8 - 18.25\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Addition:</strong> Convert to like decimals with two decimal places:</p>
+            <p>\(24.56\), \(8.90\), \(102.34\)</p>
+            <div class="equation-box">
+                \[
+                \begin{array}{r@{\quad}l}
+                  24.56 \\
+                + \; 8.90 \\
+                + 102.34 \\
+                \hline
+                 135.80
+                \end{array}
+                \]
+            </div>
+            <p><strong>Sum = \(135.80\) or \(135.8\)</strong></p>
+
+            <p style="margin-top: 10px;"><strong>(b) Subtraction:</strong> Convert to like decimals:</p>
+            <p>\(45.80 - 18.25\)</p>
+            <div class="equation-box">
+                \[
+                \begin{array}{r@{\quad}l}
+                  45.80 \\
+                - 18.25 \\
+                \hline
+                  27.55
+                \end{array}
+                \]
+            </div>
+            <p><strong>Difference = \(27.55\)</strong></p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for addition (\(135.8\)); 1.5 Marks for subtraction (\(27.55\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q7. (a) Multiply \(3.15 \times 1.2\). (b) Divide \(16.8 \div 4\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Multiplication:</strong></p>
+            <p>First multiply numbers ignoring decimal points: \(315 \times 12 = 3780\).</p>
+            <p>Total decimal places = \(2\) (in \(3.15\)) \(+\) \(1\) (in \(1.2\)) \(= 3\) decimal places.</p>
+            <div class="equation-box">
+                \[ 3.15 \times 1.2 = 3.780 = 3.78 \]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) Division:</strong></p>
+            <div class="equation-box">
+                \[ 16.8 \div 4 = \dfrac{16.8}{4} = 4.2 \]
+            </div>
+            <p><strong>Explanation:</strong> \(16 \div 4 = 4\); place decimal point; then \(8 \div 4 = 2\). So, result is \(4.2\).</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for multiplication (\(3.78\)); 1.5 Marks for division (\(4.2\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q8. Add algebraic expressions: \((3x + 4y - 5)\) and \((2x - 2y + 8)\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p>Arrange and combine like terms together:</p>
+            <div class="equation-box">
+                \[ \text{Sum} = (3x + 4y - 5) + (2x - 2y + 8) \]
+            </div>
+            <p>Grouping like terms:</p>
+            <div class="equation-box">
+                \[ = (3x + 2x) + (4y - 2y) + (-5 + 8) \]
+            </div>
+            <div class="equation-box">
+                \[ = 5x + 2y + 3 \]
+            </div>
+            <p><strong>Answer:</strong> \(5x + 2y + 3\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for setting up addition; 1 Mark for grouping like terms; 1 Mark for final answer (\(5x + 2y + 3\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q9. Subtract \((2a - 5b + 3)\) from \((6a + 2b - 1)\).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p>Write expression to subtract from first, and change signs of terms being subtracted:</p>
+            <div class="equation-box">
+                \[ (6a + 2b - 1) - (2a - 5b + 3) \]
+            </div>
+            <p>Opening brackets (changing signs of subtracted expression):</p>
+            <div class="equation-box">
+                \[ = 6a + 2b - 1 - 2a + 5b - 3 \]
+            </div>
+            <p>Grouping like terms:</p>
+            <div class="equation-box">
+                \[ = (6a - 2a) + (2b + 5b) + (-1 - 3) \]
+            </div>
+            <div class="equation-box">
+                \[ = 4a + 7b - 4 \]
+            </div>
+            <p><strong>Answer:</strong> \(4a + 7b - 4\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for opening bracket with sign changes; 1 Mark for grouping like terms; 1 Mark for simplified answer.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q10. Rohan's Money Word Problem (Money spent and money left).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong></p>
+            <ul>
+                <li>Total money Rohan had = \(\text{₹ } 50.00\)</li>
+                <li>Cost of notebook = \(\text{₹ } 22.50\)</li>
+                <li>Cost of pen = \(\text{₹ } 12.75\)</li>
+            </ul>
+
+            <p><strong>Step 1: Calculate total expenditure:</strong></p>
+            <div class="equation-box">
+                \[ 22.50 + 12.75 = \text{₹ } 35.25 \]
+            </div>
+
+            <p><strong>Step 2: Calculate money remaining with Rohan:</strong></p>
+            <div class="equation-box">
+                \[ 50.00 - 35.25 = \text{₹ } 14.75 \]
+            </div>
+            <p><strong>Answer:</strong> Rohan has <strong>\(\text{₹ } 14.75\)</strong> left with him.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for calculating total expenditure (\(₹ 35.25\)); 1.5 Marks for calculating balance left (\(₹ 14.75\)).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION C - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q11. (a) Solve & verify \(2x + 5 = 19\). (b) Evaluate \(3p^2 - 4q + 5\) for \(p=3, q=2\).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Solving \(2x + 5 = 19\):</strong></p>
+            <p>Transposing \(5\) to RHS:</p>
+            <div class="equation-box">
+                \[ 2x = 19 - 5 \implies 2x = 14 \]
+            </div>
+            <p>Dividing by \(2\):</p>
+            <div class="equation-box">
+                \[ x = \dfrac{14}{2} \implies x = 7 \]
+            </div>
+
+            <p style="margin-top: 6px;"><strong>Verification:</strong></p>
+            <p>Substitute \(x = 7\) in LHS of original equation:</p>
+            <div class="equation-box">
+                \[ \text{LHS} = 2(7) + 5 = 14 + 5 = 19 = \text{RHS} \]
+            </div>
+            <p>Hence verified.</p>
+
+            <p style="margin-top: 12px;"><strong>(b) Evaluating Expression:</strong></p>
+            <p>Given: \(p = 3\) and \(q = 2\).</p>
+            <div class="equation-box">
+                \[ 3p^2 - 4q + 5 = 3(3)^2 - 4(2) + 5 \]
+            </div>
+            <div class="equation-box">
+                \[ = 3(9) - 8 + 5 = 27 - 8 + 5 = 24 \]
+            </div>
+            <p><strong>Answer:</strong> \(24\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 2 Marks for finding \(x = 7\), 1 Mark for verification. (b) 1 Mark for substitution, 1 Mark for final value (\(24\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q12. Word Problems: (a) Water remaining in drum. (b) Distance covered by car.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Remaining Water in Drum:</strong></p>
+            <ul>
+                <li>Total capacity of water = \(45.50\text{ litres}\)</li>
+                <li>Water drawn out = \(18.75\text{ litres}\)</li>
+            </ul>
+            <div class="equation-box">
+                \[ \text{Remaining water} = 45.50 - 18.75 = 26.75\text{ litres} \]
+            </div>
+            <p><strong>Answer:</strong> \(26.75\text{ litres}\)</p>
+
+            <p style="margin-top: 12px;"><strong>(b) Distance Covered by Car:</strong></p>
+            <ul>
+                <li>Distance covered in \(1\text{ litre}\) of petrol = \(14.25\text{ km}\)</li>
+                <li>Petrol available = \(6\text{ litres}\)</li>
+            </ul>
+            <p>Total distance = \(14.25 \times 6\)</p>
+            <div class="equation-box">
+                \[
+                \begin{array}{r@{\quad}l}
+                  14.25 \\
+                \times \quad 6 \\
+                \hline
+                  85.50
+                \end{array}
+                \]
+            </div>
+            <p><strong>Answer:</strong> The car will cover <strong>\(85.5\text{ km}\)</strong> (or \(85.50\text{ km}\)).</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 2 Marks for calculating \(26.75\text{ litres}\). (b) 1 Mark for identifying multiplication operation, 2 Marks for correct product (\(85.5\text{ km}\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q13. (a) Form equation & solve word problem. (b) Simplify algebraic expression.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Forming & Solving Equation:</strong></p>
+            <p>Let the required number be \(y\).</p>
+            <p>4 times the number = \(4y\)</p>
+            <p>Subtracting 6 from 4 times the number = \(4y - 6\)</p>
+            <p>According to the given condition:</p>
+            <div class="equation-box">
+                \[ 4y - 6 = 18 \]
+            </div>
+            <p>Transposing \(-6\) to RHS:</p>
+            <div class="equation-box">
+                \[ 4y = 18 + 6 \implies 4y = 24 \]
+            </div>
+            <div class="equation-box">
+                \[ y = \dfrac{24}{4} \implies y = 6 \]
+            </div>
+            <p><strong>Answer:</strong> The required number is <strong>\(6\)</strong>.</p>
+
+            <p style="margin-top: 12px;"><strong>(b) Simplifying Algebraic Expression:</strong></p>
+            <p>Given expression: \((5x + 3y) - (2x - 4y) + (x - 2y)\)</p>
+            <p>Remove brackets carefully:</p>
+            <div class="equation-box">
+                \[ = 5x + 3y - 2x + 4y + x - 2y \]
+            </div>
+            <p>Group like terms of \(x\) and \(y\):</p>
+            <div class="equation-box">
+                \[ = (5x - 2x + x) + (3y + 4y - 2y) \]
+            </div>
+            <div class="equation-box">
+                \[ = 4x + 5y \]
+            </div>
+            <p><strong>Answer:</strong> \(4x + 5y\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 1 Mark for equation formation (\(4y - 6 = 18\)), 2 Marks for finding \(y = 6\). (b) 1 Mark for opening brackets properly, 1 Mark for final answer (\(4x + 5y\)).
+        </div>
+    </div>
+
+    <div class="footer">
+        Solutions Prepared by Senior Academic Faculty &bull; Vardaan Learning Institute
+    </div>
+</body>
+</html>

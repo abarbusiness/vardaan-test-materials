@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 Basic Math Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --accent-green: #2e7d32;
+            --text-main: #111111;
+            --bg-badge: #fff8e1;
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3.5px solid var(--primary-yellow); 
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffde7;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #000; 
+            letter-spacing: 0.5px;
+        }
+        .doc-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: #c67100; 
+            text-transform: uppercase;
+        }
+        .exam-info {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #444;
+            margin-top: 4px;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: #f5f5f5;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #000;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 3px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: var(--accent-green);
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-size: 10.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .sol-content {
+            margin-left: 10px;
+            font-size: 10.5pt;
+            color: #222;
+        }
+        .sol-content p {
+            margin: 4px 0;
+        }
+        .key-concept {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 9.5pt;
+            color: #1b5e20;
+        }
+        .equation-box {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsive styling for small screens */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .marks-badge {
+                align-self: flex-start;
+            }
+            .sol-content {
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS &amp; MARKING SCHEME</div>
+        <div class="exam-info">Minor Test 20 | Class 10 (Foundational Math) | Max Marks: 40</div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-bottom: 20px;">
+        SECTION A - DETAILED SOLUTIONS (10 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q1. (a) \((-15) + (+25)\) &nbsp; (b) \(18 - (-12)\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Addition of integers:</strong></p>
+            <div class="equation-box">
+                \[ (-15) + 25 = 25 - 15 = 10 \]
+            </div>
+            <p><strong>(b) Subtraction of integers:</strong></p>
+            <p>Subtracting a negative number is equivalent to adding its positive value (\(- \times - = +\)):</p>
+            <div class="equation-box">
+                \[ 18 - (-12) = 18 + 12 = 30 \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for correct answer \(10\); 1 Mark for correct answer \(30\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q2. LCM of 12 and 18</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>First, write the prime factorizations of both numbers:</p>
+            <div class="equation-box">
+                \[ 12 = 2 \times 2 \times 3 = 2^2 \times 3^1 \]
+            </div>
+            <div class="equation-box">
+                \[ 18 = 2 \times 3 \times 3 = 2^1 \times 3^2 \]
+            </div>
+            <p>To find the <strong>LCM</strong>, take the highest power of each prime factor:</p>
+            <div class="equation-box">
+                \[ \text{LCM}(12, 18) = 2^2 \times 3^2 = 4 \times 9 = 36 \]
+            </div>
+            <p><strong>Answer:</strong> The LCM of 12 and 18 is <strong>36</strong>.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for writing prime factors; 1 Mark for calculating LCM = 36.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q3. (a) \(\dfrac{3}{7} + \dfrac{2}{7}\) &nbsp; (b) \(\dfrac{1}{4} + \dfrac{2}{3}\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Same denominator:</strong></p>
+            <div class="equation-box">
+                \[ \frac{3}{7} + \frac{2}{7} = \frac{3 + 2}{7} = \frac{5}{7} \]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) Different denominators:</strong></p>
+            <p>LCM of denominators \(4\) and \(3\) is \(12\):</p>
+            <div class="equation-box">
+                \[ \frac{1}{4} = \frac{1 \times 3}{4 \times 3} = \frac{3}{12} \]
+            </div>
+            <div class="equation-box">
+                \[ \frac{2}{3} = \frac{2 \times 4}{3 \times 4} = \frac{8}{12} \]
+            </div>
+            <div class="equation-box">
+                \[ \frac{3}{12} + \frac{8}{12} = \frac{3 + 8}{12} = \frac{11}{12} \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for \(\dfrac{5}{7}\); 1 Mark for \(\dfrac{11}{12}\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q4. HCF of 24 and 36</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>Prime factors of \(24\) and \(36\):</p>
+            <div class="equation-box">
+                \[ 24 = 2 \times 2 \times 2 \times 3 = 2^3 \times 3^1 \]
+            </div>
+            <div class="equation-box">
+                \[ 36 = 2 \times 2 \times 3 \times 3 = 2^2 \times 3^2 \]
+            </div>
+            <p>To find the <strong>HCF</strong>, take the smallest power of common prime factors:</p>
+            <div class="equation-box">
+                \[ \text{HCF}(24, 36) = 2^2 \times 3^1 = 4 \times 3 = 12 \]
+            </div>
+            <p><strong>Answer:</strong> The HCF of 24 and 36 is <strong>12</strong>.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for prime factors; 1 Mark for correct HCF = 12.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q5. Solve for \(x\): \(2x + 5 = 15\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>Given linear equation:</p>
+            <div class="equation-box">
+                \[ 2x + 5 = 15 \]
+            </div>
+            <p>Subtract \(5\) from both sides:</p>
+            <div class="equation-box">
+                \[ 2x = 15 - 5 \]
+            </div>
+            <div class="equation-box">
+                \[ 2x = 10 \]
+            </div>
+            <p>Divide both sides by \(2\):</p>
+            <div class="equation-box">
+                \[ x = \frac{10}{2} = 5 \]
+            </div>
+            <p><strong>Answer:</strong> \(x = 5\).</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for transposing 5 to get \(2x = 10\); 1 Mark for getting \(x = 5\).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION B - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q6. (a) \(\dfrac{5}{6} - \dfrac{1}{3}\) &nbsp; (b) \(\dfrac{4}{5} \times \dfrac{10}{12}\)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Subtraction of fractions:</strong></p>
+            <p>LCM of denominators \(6\) and \(3\) is \(6\):</p>
+            <div class="equation-box">
+                \[ \frac{5}{6} - \frac{1}{3} = \frac{5}{6} - \frac{1 \times 2}{3 \times 2} = \frac{5}{6} - \frac{2}{6} = \frac{5 - 2}{6} = \frac{3}{6} = \frac{1}{2} \]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) Multiplication of fractions:</strong></p>
+            <div class="equation-box">
+                \[ \frac{4}{5} \times \frac{10}{12} = \frac{4 \times 10}{5 \times 12} = \frac{40}{60} = \frac{2}{3} \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for simplifying part (a) to \(\dfrac{1}{2}\); 1.5 Marks for simplifying part (b) to \(\dfrac{2}{3}\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q7. Directed numbers evaluation: (a), (b), (c)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Multiplication of two negatives:</strong></p>
+            <div class="equation-box">
+                \[ (-8) \times (-5) = +40 \]
+            </div>
+
+            <p><strong>(b) Division with different signs:</strong></p>
+            <div class="equation-box">
+                \[ (-36) \div (+9) = -4 \]
+            </div>
+
+            <p><strong>(c) Mixed operations:</strong></p>
+            <div class="equation-box">
+                \[ 15 + (-7) - (-4) = 15 - 7 + 4 = 8 + 4 = 12 \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for \(+40\); 1 Mark for \(-4\); 1 Mark for \(12\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q8. HCF, LCM, and verification for 15 and 25</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>Prime factorizations:</p>
+            <div class="equation-box">
+                \[ 15 = 3 \times 5 \]
+            </div>
+            <div class="equation-box">
+                \[ 25 = 5 \times 5 = 5^2 \]
+            </div>
+
+            <p><strong>Calculating HCF &amp; LCM:</strong></p>
+            <ul>
+                <li>\(\text{HCF} = 5\)</li>
+                <li>\(\text{LCM} = 3 \times 5^2 = 3 \times 25 = 75\)</li>
+            </ul>
+
+            <p style="margin-top: 10px;"><strong>Verification:</strong></p>
+            <div class="equation-box">
+                \[ \text{LHS} = \text{HCF} \times \text{LCM} = 5 \times 75 = 375 \]
+            </div>
+            <div class="equation-box">
+                \[ \text{RHS} = \text{Product of numbers} = 15 \times 25 = 375 \]
+            </div>
+            <p>Since \(\text{LHS} = \text{RHS} = 375\), the property is verified.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for HCF = 5 and LCM = 75; 2 Marks for step-by-step verification showing LHS = RHS = 375.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q9. Solve system: \(x + y = 10\) and \(x - y = 4\)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>Given equations:</p>
+            <div class="equation-box">
+                \[ (1) \quad x + y = 10 \]
+            </div>
+            <div class="equation-box">
+                \[ (2) \quad x - y = 4 \]
+            </div>
+
+            <p>Add equation (1) and equation (2):</p>
+            <div class="equation-box">
+                \[ (x + y) + (x - y) = 10 + 4 \]
+            </div>
+            <div class="equation-box">
+                \[ 2x = 14 \implies x = \frac{14}{2} = 7 \]
+            </div>
+
+            <p>Substitute \(x = 7\) into equation (1):</p>
+            <div class="equation-box">
+                \[ 7 + y = 10 \implies y = 10 - 7 = 3 \]
+            </div>
+            <p><strong>Answer:</strong> \(x = 7\) and \(y = 3\).</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for finding \(x = 7\); 1.5 Marks for finding \(y = 3\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q10. Evaluate polynomial \(P(x) = 2x^2 + 3x - 5\) at \(x=1\) and \(x=0\)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p>Given: \(P(x) = 2x^2 + 3x - 5\)</p>
+
+            <p><strong>(a) For \(x = 1\):</strong></p>
+            <div class="equation-box">
+                \[ P(1) = 2(1)^2 + 3(1) - 5 \]
+            </div>
+            <div class="equation-box">
+                \[ P(1) = 2(1) + 3 - 5 = 2 + 3 - 5 = 5 - 5 = 0 \]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) For \(x = 0\):</strong></p>
+            <div class="equation-box">
+                \[ P(0) = 2(0)^2 + 3(0) - 5 \]
+            </div>
+            <div class="equation-box">
+                \[ P(0) = 0 + 0 - 5 = -5 \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for \(P(1) = 0\); 1.5 Marks for \(P(0) = -5\).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION C - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q11. Prime factorization of 120 and HCF/LCM of (24, 36, 48)</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Prime factorization of 120:</strong></p>
+            <div class="equation-box">
+                \[ 120 = 2 \times 60 = 2 \times 2 \times 30 = 2 \times 2 \times 2 \times 15 = 2^3 \times 3^1 \times 5^1 \]
+            </div>
+            <p>Product form: \(2 \times 2 \times 2 \times 3 \times 5\).</p>
+
+            <p style="margin-top: 12px;"><strong>(b) LCM and HCF of 24, 36, and 48:</strong></p>
+            <div class="equation-box">
+                \[ 24 = 2^3 \times 3^1 \]
+            </div>
+            <div class="equation-box">
+                \[ 36 = 2^2 \times 3^2 \]
+            </div>
+            <div class="equation-box">
+                \[ 48 = 2^4 \times 3^1 \]
+            </div>
+
+            <p><strong>Calculating HCF:</strong> Smallest powers of common prime factors:</p>
+            <div class="equation-box">
+                \[ \text{HCF} = 2^2 \times 3^1 = 4 \times 3 = 12 \]
+            </div>
+
+            <p><strong>Calculating LCM:</strong> Highest powers of all prime factors:</p>
+            <div class="equation-box">
+                \[ \text{LCM} = 2^4 \times 3^2 = 16 \times 9 = 144 \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 2 Marks for prime factors of 120. (b) 1.5 Marks for HCF = 12 and 1.5 Marks for LCM = 144.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q12. Fraction simplification &amp; basic probability calculation</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Simplifying fractions:</strong></p>
+            <div class="equation-box">
+                \[ \left(\frac{2}{5} + \frac{1}{2}\right) - \frac{3}{10} \]
+            </div>
+            <p>First calculate inside brackets (LCM of 5 and 2 is 10):</p>
+            <div class="equation-box">
+                \[ \frac{2 \times 2}{5 \times 2} + \frac{1 \times 5}{2 \times 5} = \frac{4}{10} + \frac{5}{10} = \frac{9}{10} \]
+            </div>
+            <p>Now subtract \(\dfrac{3}{10}\):</p>
+            <div class="equation-box">
+                \[ \frac{9}{10} - \frac{3}{10} = \frac{9 - 3}{10} = \frac{6}{10} = \frac{3}{5} \]
+            </div>
+
+            <p style="margin-top: 12px;"><strong>(b) Probability calculations:</strong></p>
+            <p>Total number of balls \(= 5 \text{ (red)} + 3 \text{ (blue)} = 8 \text{ balls}\).</p>
+            <ul>
+                <li><strong>(i) Probability of Red ball:</strong>
+                    \[ P(\text{Red}) = \frac{\text{Number of Red balls}}{\text{Total balls}} = \frac{5}{8} \]
+                </li>
+                <li><strong>(ii) Probability of Blue ball:</strong>
+                    \[ P(\text{Blue}) = \frac{\text{Number of Blue balls}}{\text{Total balls}} = \frac{3}{8} \]
+                </li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 2.5 Marks for step-by-step simplification to \(\dfrac{3}{5}\). (b) 1.25 Marks each for \(P(\text{Red}) = \dfrac{5}{8}\) and \(P(\text{Blue}) = \dfrac{3}{8}\).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q13. Perimeter/Area of rectangle &amp; Distance formula calculation</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Step-by-Step Solution:</div>
+        <div class="sol-content">
+            <p><strong>(a) Mensuration problem:</strong></p>
+            <p>Given: Perimeter \(P = 30\text{ cm}\), Length \(l = 9\text{ cm}\).</p>
+            <p>Formula for perimeter of a rectangle: \(P = 2(l + b)\)</p>
+            <div class="equation-box">
+                \[ 30 = 2(9 + b) \]
+            </div>
+            <div class="equation-box">
+                \[ 9 + b = \frac{30}{2} = 15 \implies b = 15 - 9 = 6\text{ cm} \]
+            </div>
+            <p>Now find the Area (\(A = l \times b\)):</p>
+            <div class="equation-box">
+                \[ \text{Area} = 9 \times 6 = 54\text{ cm}^2 \]
+            </div>
+
+            <p style="margin-top: 12px;"><strong>(b) Distance Formula:</strong></p>
+            <p>Given points: \(A(0, 0)\) and \(B(6, 8)\). Here \(x_1 = 0, y_1 = 0, x_2 = 6, y_2 = 8\).</p>
+            <div class="equation-box">
+                \[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
+            </div>
+            <div class="equation-box">
+                \[ d = \sqrt{(6 - 0)^2 + (8 - 0)^2} = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} \]
+            </div>
+            <div class="equation-box">
+                \[ d = \sqrt{100} = 10\text{ units} \]
+            </div>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 1.5 Marks for breadth = \(6\text{ cm}\), 1 Mark for area = \(54\text{ cm}^2\). (b) 2.5 Marks for step-by-step evaluation showing distance = \(10\text{ units}\).
+        </div>
+    </div>
+
+    <div class="footer">
+        Solutions Prepared by Academic Dean &bull; Vardaan Learning Institute
+    </div>
+</body>
+</html>

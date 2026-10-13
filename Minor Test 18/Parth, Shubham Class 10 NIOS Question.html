@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 Basic Math Question Paper</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --primary-dark: #111111;
+            --text-color: #212121;
+            --bg-light: #fffde7;
+        }
+        body { 
+            max-width: 850px; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 11.5pt; 
+            line-height: 1.5; 
+            color: var(--text-color); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-top: 3.5px solid var(--primary-yellow);
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: var(--bg-light);
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: #111;
+        }
+        .sub-heading {
+            font-size: 10.5pt;
+            font-weight: bold;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .test-name { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline; 
+            color: #000;
+        }
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 12px; 
+            font-weight: bold; 
+            font-size: 10.5pt; 
+            border-top: 1px solid #000; 
+            border-bottom: 1px solid #000; 
+            padding: 6px 4px; 
+            background-color: #ffffff;
+        }
+        .exam-details span {
+            margin: 2px 6px;
+        }
+        .instructions { 
+            margin-top: 12px; 
+            font-size: 9.5pt; 
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+        }
+        .instructions ul { 
+            margin: 4px 0 0 0; 
+            padding-left: 20px; 
+        }
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 12.5pt; 
+            color: #000;
+            clear: both;
+        }
+        .marks-info { 
+            font-size: 9.5pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 2px; 
+            color: #444;
+        }
+        .question-container { 
+            margin-bottom: 16px; 
+            display: flex; 
+            align-items: flex-start;
+        }
+        .q-num { 
+            font-weight: bold; 
+            width: 38px; 
+            flex-shrink: 0; 
+        }
+        .q-content { 
+            flex-grow: 1; 
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            color: #333;
+            margin-left: 10px;
+        }
+        .sub-question { 
+            margin-left: 18px; 
+            margin-top: 6px; 
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #666; 
+        }
+
+        /* Responsive styling for screen sizes */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 11pt;
+            }
+            .institute-name {
+                font-size: 17pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .exam-details span {
+                margin: 2px 0;
+            }
+            .q-num {
+                width: 28px;
+            }
+            .q-marks {
+                float: none;
+                display: inline-block;
+                margin-left: 0;
+                margin-bottom: 4px;
+                color: #d84315;
+            }
+        }
+
+        @media print { 
+            body { 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact; 
+            } 
+            .watermark {
+                opacity: 0.10;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="sub-heading">FOUNDATIONAL ACADEMIC EXCELLENCE</div>
+        <div class="test-name">MINOR TEST 20</div>
+        <div class="exam-details">
+            <span><strong>Class:</strong> 10 CBSE / ICSE</span>
+            <span><strong>Subject:</strong> Mathematics (Foundational &amp; Basic)</span>
+            <span><strong>Time:</strong> 1 Hour</span>
+            <span><strong>Max. Marks:</strong> 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory. Read each calculation carefully.</li>
+                <li>The question paper consists of three sections: Section A (10 Marks), Section B (15 Marks), and Section C (15 Marks).</li>
+                <li>Topic coverage: Integers, Fractions, HCF &amp; LCM, Basic Algebra, Simple Linear Equations, and Basic Geometry/Probability.</li>
+                <li>Show proper step-by-step working for full marks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION A (10 Marks)
+        <span class="marks-info">(Very Short Answer Type - 2 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q1.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Perform the following basic integer operations:
+            <div class="sub-question">(a) Add: \((-15) + (+25)\)</div>
+            <div class="sub-question">(b) Subtract: \(18 - (-12)\)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q2.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the **LCM** (Lowest Common Multiple) of \(12\) and \(18\) by using prime factorization or division method.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q3.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Solve the following fraction additions:
+            <div class="sub-question">(a) \(\dfrac{3}{7} + \dfrac{2}{7}\)</div>
+            <div class="sub-question">(b) \(\dfrac{1}{4} + \dfrac{2}{3}\)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q4.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Find the **HCF** (Highest Common Factor) of \(24\) and \(36\).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q5.</div>
+        <div class="q-content">
+            <span class="q-marks">[2 Marks]</span>
+            Solve the simple direct linear equation to find the value of \(x\):
+            \[ 2x + 5 = 15 \]
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION B (15 Marks)
+        <span class="marks-info">(Short Answer Type - 3 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q6.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Perform the following operations on fractions:
+            <div class="sub-question">(a) Subtract: \(\dfrac{5}{6} - \dfrac{1}{3}\) <span style="float:right; font-weight:normal;">[1.5 Marks]</span></div>
+            <div class="sub-question">(b) Multiply: \(\dfrac{4}{5} \times \dfrac{10}{12}\) <span style="float:right; font-weight:normal;">[1.5 Marks]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q7.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Evaluate the following expressions involving directed numbers:
+            <div class="sub-question">(a) \((-8) \times (-5)\) <span style="float:right; font-weight:normal;">[1 Mark]</span></div>
+            <div class="sub-question">(b) \((-36) \div (+9)\) <span style="float:right; font-weight:normal;">[1 Mark]</span></div>
+            <div class="sub-question">(c) \(15 + (-7) - (-4)\) <span style="float:right; font-weight:normal;">[1 Mark]</span></div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q8.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Find the **HCF** and **LCM** of \(15\) and \(25\). Also verify that:
+            \[ \text{HCF} \times \text{LCM} = \text{Product of the two numbers} \]
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q9.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Solve the following pair of simple equations to find the values of \(x\) and \(y\):
+            \[ x + y = 10 \]
+            \[ x - y = 4 \]
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q10.</div>
+        <div class="q-content">
+            <span class="q-marks">[3 Marks]</span>
+            Given the algebraic polynomial \(P(x) = 2x^2 + 3x - 5\), find the value of \(P(x)\) at:
+            <div class="sub-question">(a) \(x = 1\) <span style="float:right; font-weight:normal;">[1.5 Marks]</span></div>
+            <div class="sub-question">(b) \(x = 0\) <span style="float:right; font-weight:normal;">[1.5 Marks]</span></div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        SECTION C (15 Marks)
+        <span class="marks-info">(Long Answer Type - 5 Marks Each)</span>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q11.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            (a) Express \(120\) as a product of its prime factors using tree or division method. <span style="float:right; font-weight:normal;">[2 Marks]</span><br>
+            (b) Find the **LCM** and **HCF** of three numbers: \(24\), \(36\), and \(48\). <span style="float:right; font-weight:normal;">[3 Marks]</span>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q12.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            (a) Simplify the following fraction problem step-by-step: <span style="float:right; font-weight:normal;">[2.5 Marks]</span>
+            \[ \left(\frac{2}{5} + \frac{1}{2}\right) - \frac{3}{10} \]
+            (b) A bag contains \(5\) red balls and \(3\) blue balls. One ball is taken out at random. What is the probability of getting: <span style="float:right; font-weight:normal;">[2.5 Marks]</span>
+            <div class="sub-question">(i) A red ball?</div>
+            <div class="sub-question">(ii) A blue ball?</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">Q13.</div>
+        <div class="q-content">
+            <span class="q-marks">[5 Marks]</span>
+            (a) The perimeter of a rectangle is \(30\text{ cm}\). If its length is \(9\text{ cm}\), find its breadth (width) and its area. <span style="float:right; font-weight:normal;">[2.5 Marks]</span><br>
+            (b) Find the distance between the two points \(A(0, 0)\) and \(B(6, 8)\) using the simple distance formula: <span style="float:right; font-weight:normal;">[2.5 Marks]</span>
+            \[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
+        </div>
+    </div>
+
+    <div class="footer">
+        Created by Academic Dean &bull; Vardaan Learning Institute &bull; All Rights Reserved
+    </div>
+</body>
+</html>

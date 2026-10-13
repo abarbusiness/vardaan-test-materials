@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for mathematical and scientific symbols -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --accent-green: #2e7d32;
+            --text-main: #111111;
+            --bg-badge: #fff8e1;
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3.5px solid var(--primary-yellow); 
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffde7;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #000; 
+            letter-spacing: 0.5px;
+        }
+        .doc-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: #c67100; 
+            text-transform: uppercase;
+        }
+        .exam-info {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #444;
+            margin-top: 4px;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: #f5f5f5;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #000;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 3px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: var(--accent-green);
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-size: 10.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .sol-content {
+            margin-left: 10px;
+            font-size: 10.5pt;
+            color: #222;
+        }
+        .sol-content p {
+            margin: 4px 0;
+        }
+        .sol-content ul, .sol-content ol {
+            margin: 4px 0;
+            padding-left: 22px;
+        }
+        .key-concept {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 9.5pt;
+            color: #1b5e20;
+        }
+        .equation-box {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        /* Responsive Breakpoints */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .marks-badge {
+                align-self: flex-start;
+            }
+            .sol-content {
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <div class="exam-info">Minor Test 18 | Class 6 ICSE | Subject: Chemistry (Water) | Max Marks: 40</div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-bottom: 20px;">
+        SECTION A - DETAILED SOLUTIONS (10 Marks)
+    </h2>
+
+    <!-- Q1 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q1. Define: (a) Potable water (b) Transpiration</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Potable Water:</strong> Water that is clean, free from disease-causing germs and harmful toxic substances, and completely fit/safe for drinking is called potable water.</p>
+            <p><strong>(b) Transpiration:</strong> The process by which green plants release excess water from their aerial parts (leaves) into the atmosphere in the form of water vapour is called transpiration.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for defining potable water accurately; 1 Mark for defining transpiration correctly.
+        </div>
+    </div>
+
+    <!-- Q2 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q2. Name gases causing acid rain and its effect on monuments.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Gases Responsible:</strong> Sulphur dioxide (\(\text{SO}_2\)) and Nitrogen dioxide (\(\text{NO}_2\)).</p>
+            <p><strong>Reaction & Formation:</strong> These gases react with atmospheric oxygen and water vapour to form sulfuric acid (\(\text{H}_2\text{SO}_4\)) and nitric acid (\(\text{HNO}_3\)), which fall along with rain as <em>acid rain</em>.</p>
+            <p><strong>Harmful Effect on Monuments:</strong> Acid rain corrodes and discolours historical monuments made of marble (\(\text{CaCO}_3\)) and limestone. For example, it is causing the white marble of the Taj Mahal to turn yellow ("marble cancer").</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for naming sulphur dioxide and nitrogen dioxide; 1 Mark for mentioning the corrosion/yellowing effect on marble/monuments.
+        </div>
+    </div>
+
+    <!-- Q3 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q3. Define Solute and Solvent. Identify both in a sugar solution.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Definitions:</strong></p>
+            <ul>
+                <li><strong>Solute:</strong> The substance that dissolves in a liquid to form a solution (present in a smaller quantity).</li>
+                <li><strong>Solvent:</strong> The liquid or medium in which the solute dissolves (present in a larger quantity).</li>
+            </ul>
+            <p><strong>In a Sugar-Water Solution:</strong></p>
+            <ul>
+                <li><strong>Sugar</strong> is the <strong>Solute</strong>.</li>
+                <li><strong>Water</strong> is the <strong>Solvent</strong>.</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for definitions (0.5 mark each); 1 Mark for correctly identifying sugar as solute and water as solvent.
+        </div>
+    </div>
+
+    <!-- Q4 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q4. What is an aquifer? Name two devices used to extract groundwater.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Aquifer:</strong> An aquifer is a huge underground layer of permeable rock, gravel, or sand that holds groundwater trapped between layers of hard rocks.</p>
+            <p><strong>Devices to Extract Groundwater:</strong></p>
+            <ol>
+                <li>Handpumps</li>
+                <li>Tubewells / Open Wells</li>
+            </ol>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for defining aquifer; 1 Mark for listing two valid extraction devices.
+        </div>
+    </div>
+
+    <!-- Q5 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q5. Differentiate between Evaporation and Condensation in the water cycle.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
+                <tr style="background-color: #f0f0f0;">
+                    <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Feature</th>
+                    <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Evaporation</th>
+                    <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Condensation</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 6px;"><strong>Process</strong></td>
+                    <td style="border: 1px solid #ccc; padding: 6px;">Conversion of liquid water into gaseous water vapour.</td>
+                    <td style="border: 1px solid #ccc; padding: 6px;">Conversion of water vapour into liquid water droplets.</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 6px;"><strong>Temperature Effect</strong></td>
+                    <td style="border: 1px solid #ccc; padding: 6px;">Occurs on heating (absorption of heat).</td>
+                    <td style="border: 1px solid #ccc; padding: 6px;">Occurs on cooling (loss of heat).</td>
+                </tr>
+            </table>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for each clear point of differentiation (2 points total).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION B - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <!-- Q6 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q6. (a) Water as universal solvent (b) Saturated solution and heating effect.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Universal Solvent:</strong> Water can dissolve a larger variety and quantity of substances (solids, liquids, and gases) than any other known liquid solvent. Hence, it is called a <em>universal solvent</em>.</p>
+            <p><strong>(b) Saturated Solution:</strong> A solution in which no more solute can dissolve at a specific given temperature is called a saturated solution.</p>
+            <p><strong>Effect of Heating:</strong> When a saturated solution is heated, the solubility of the solute increases. As a result, <em>more solute can be dissolved</em> in the heated solution.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for explaining universal solvent; 1 Mark for defining saturated solution; 1 Mark for stating that heating increases solubility allowing more solute to dissolve.
+        </div>
+    </div>
+
+    <!-- Q7 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q7. Three states of water with natural examples.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p>Water exists naturally in three states:</p>
+            <ol>
+                <li><strong>Solid State:</strong> Found as ice and snow on high mountains, glaciers, and polar ice caps.</li>
+                <li><strong>Liquid State:</strong> Found in water bodies such as oceans, seas, rivers, lakes, ponds, and groundwater.</li>
+                <li><strong>Gaseous State:</strong> Found as water vapour (humidity) in the surrounding atmosphere/air.</li>
+            </ol>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark per state along with its correct natural example (3 × 1 = 3 Marks).
+        </div>
+    </div>
+
+    <!-- Q8 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q8. Explain Algal Bloom and oxygen starvation in aquatic animals.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Algal Bloom:</strong> The rapid and excessive growth of green aquatic plants called algae on the surface of a water body, forming a dense green layer, is known as an <em>algal bloom</em>.</p>
+            <p><strong>Mechanism of Oxygen Starvation:</strong></p>
+            <ol>
+                <li>Chemical fertilisers (containing nutrients like nitrogen and phosphorus) washed away from fields enter nearby ponds/lakes.</li>
+                <li>These nutrients cause algae to multiply excessively, covering the water surface and blocking sunlight from reaching submerged aquatic plants.</li>
+                <li>When these algae and aquatic plants die, oxygen-consuming bacteria decompose them.</li>
+                <li>During decomposition, bacteria consume a large portion of the dissolved oxygen present in water, drastically reducing oxygen levels.</li>
+                <li>As a consequence, fish and other aquatic creatures die due to <strong>oxygen starvation</strong>.</li>
+            </ol>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for defining Algal Bloom; 2 Marks for explaining the step-by-step reduction of dissolved oxygen leading to aquatic death.
+        </div>
+    </div>
+
+    <!-- Q9 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q9. Compare Drought and Flood: Causes and Adverse Effects.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>1. Drought:</strong></p>
+            <ul>
+                <li><strong>Cause:</strong> An extended period of months or years with abnormally low or no rainfall in a region.</li>
+                <li><strong>Adverse Effect:</strong> Drying up of soil and water sources, loss of crops, severe shortage of food and fodder, malnutrition, and death of livestock.</li>
+            </ul>
+            <p><strong>2. Flood:</strong></p>
+            <ul>
+                <li><strong>Cause:</strong> Continuous heavy rainfall that causes water levels in rivers, lakes, and ponds to overflow onto surrounding land.</li>
+                <li><strong>Adverse Effect:</strong> Submergence and destruction of standing crops, damage to buildings/property, soil erosion/landslides, and spread of waterborne diseases (e.g., cholera, gastroenteritis).</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for Drought (cause + effect); 1.5 Marks for Flood (cause + effect).
+        </div>
+    </div>
+
+    <!-- Q10 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q10. (a) Rainwater Harvesting (b) Two daily habits to conserve water.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Rainwater Harvesting:</strong> The technique or process of collecting, filtering, and storing rainwater from rooftops or ground surfaces for future direct use or for recharging underground aquifers.</p>
+            <p><strong>(b) Household Water Conservation Practices:</strong></p>
+            <ul>
+                <li>Turn off tap water tightly while brushing teeth or washing hands instead of letting it run continuously.</li>
+                <li>Use a bucket and mug for bathing instead of taking long showers.</li>
+                <li>Reuse water used for washing fruits and vegetables to water garden plants.</li>
+                <li>Fix leaking pipes and running toilets immediately.</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for definition of Rainwater Harvesting; 2 Marks for listing two practical water conservation habits.
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION C - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <!-- Q11 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q11. Municipal water supply tanks and household purification.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Roles of Tanks in Town Water Treatment:</strong></p>
+            <ol>
+                <li><strong>Loading Tank:</strong> Alum (potash alum) is added to the water. Alum attaches to fine, light suspended clay particles, making them heavier and larger so that they settle rapidly during sedimentation.</li>
+                <li><strong>Filtration Tank:</strong> Water passes through thick layers of fine sand, coarse gravel, and charcoal. This removes fine suspended impurities and remaining solid particles.</li>
+                <li><strong>Chlorination Tank:</strong> Chlorine gas or chlorine tablets are added/bubbled through water. Chlorine acts as a disinfectant, killing harmful disease-causing germs and bacteria.</li>
+            </ol>
+            <p><strong>(b) Two Chemical/Household Methods for Safe Drinking Water:</strong></p>
+            <ul>
+                <li><strong>Boiling:</strong> Boiling water vigorously for 10-15 minutes kills all disease-causing pathogens and germs.</li>
+                <li><strong>Use of RO / Water Filters / Chlorination:</strong> Using candle filters or adding chlorine/bleaching powder tablets to purify water.</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 3 Marks for explaining the three municipal tanks (1 mark each); 2 Marks for stating two home purification methods (1 mark each).
+        </div>
+    </div>
+
+    <!-- Q12 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q12. The Water Cycle in nature and its importance.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Step-by-Step Explanation of the Water Cycle:</strong></p>
+            <ol>
+                <li><strong>Evaporation & Transpiration:</strong> Solar heat causes water from oceans, rivers, and lakes to evaporate into water vapour. Plants also release water vapour into the air through transpiration.</li>
+                <li><strong>Cooling & Condensation:</strong> As water vapour rises high into the atmosphere where temperatures are low, it cools down and condenses into tiny liquid water droplets, forming clouds.</li>
+                <li><strong>Precipitation:</strong> When these tiny droplets combine to form bigger, heavier drops, they fall back to the Earth's surface as rain, hail, or snow.</li>
+                <li><strong>Infiltration & Collection:</strong> Rainwater fills rivers, lakes, and oceans. A portion seeps into the soil (infiltration) to replenish groundwater, completing the continuous cycle.</li>
+            </ol>
+
+            <p><strong>(b) Importance of Water Cycle:</strong></p>
+            <ul>
+                <li>It continuously purifies and recycles freshwater naturally, making it available to all living organisms.</li>
+                <li>It plays a vital role in regulating global weather patterns and climate conditions.</li>
+            </ul>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 3 Marks for step-by-step description of water cycle stages; 2 Marks for stating two valid reasons for its environmental importance.
+        </div>
+    </div>
+
+    <!-- Q13 Solution -->
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q13. Water Pollution: Definition, Causes, and Prevention.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Definitions:</strong></p>
+            <ul>
+                <li><strong>Water Pollution:</strong> The contamination of natural water bodies (lakes, rivers, oceans, groundwater) by harmful domestic, industrial, or agricultural wastes, making it unfit for use.</li>
+                <li><strong>Water Pollutants:</strong> The unwanted, toxic, or harmful substances (like sewage, toxic chemicals, heavy metals, fertilisers) that degrade water quality.</li>
+            </ul>
+
+            <p><strong>(b) Three Major Sources of Water Pollution:</strong></p>
+            <ol>
+                <li><strong>Untreated Domestic Sewage:</strong> Release of untreated household waste and soapy water containing bacteria and harmful germs directly into rivers.</li>
+                <li><strong>Toxic Industrial Effluents:</strong> Factories (paper, leather, battery manufacturing) discharging untreated toxic chemicals like lead, mercury, and arsenic into river waters.</li>
+                <li><strong>Agricultural Runoff:</strong> Excessive use of chemical fertilisers, pesticides, and insecticides being washed into water bodies by rain.</li>
+            </ol>
+
+            <p><strong>(c) Preventive Measure by Factories:</strong></p>
+            <p>Factories must set up <em>Effluent Treatment Plants (ETPs)</em> to treat and neutralize poisonous chemicals and remove hazardous toxins from waste water before discharging it into natural water bodies.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for definitions; 2.5 Marks for listing 3 pollution sources; 1 Mark for suggesting pre-treatment of industrial effluents.
+        </div>
+    </div>
+
+    <div class="footer">
+        Solutions Prepared by Senior Academic Faculty &bull; Vardaan Learning Institute
+    </div>
+</body>
+</html>

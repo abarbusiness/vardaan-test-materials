@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions (Percentage & Its Application)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --accent-green: #2e7d32;
+            --text-main: #111111;
+            --bg-badge: #fff8e1;
+        }
+        body { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 25px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.06; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3.5px solid var(--primary-yellow); 
+            border-bottom: 3.5px solid var(--primary-yellow); 
+            padding: 12px 0; 
+            background-color: #fffde7;
+        }
+        .institute-name { 
+            font-size: 20pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            color: #000; 
+            letter-spacing: 0.5px;
+        }
+        .doc-title { 
+            font-size: 13pt; 
+            font-weight: bold; 
+            margin-top: 6px; 
+            color: #c67100; 
+            text-transform: uppercase;
+        }
+        .exam-info {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #444;
+            margin-top: 4px;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 18px; 
+            margin-bottom: 22px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: #f5f5f5;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 11pt;
+            color: #000;
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            font-size: 9pt;
+            padding: 3px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .sol-heading {
+            font-weight: bold;
+            color: var(--accent-green);
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-size: 10.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .sol-content {
+            margin-left: 10px;
+            font-size: 10.5pt;
+            color: #222;
+        }
+        .sol-content p {
+            margin: 4px 0;
+        }
+        .key-concept {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 9.5pt;
+            color: #1b5e20;
+        }
+        .equation-box {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 9.5pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 12px; 
+            color: #555; 
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 12px;
+                font-size: 10.5pt;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .q-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .marks-badge {
+                align-self: flex-start;
+            }
+            .sol-content {
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS & MARKING SCHEME</div>
+        <div class="exam-info">Minor Test 20 | Class 6 CBSE | Subject: Mathematics (Percentage & Its Application) | Max Marks: 40</div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-bottom: 20px;">
+        SECTION A - DETAILED SOLUTIONS (10 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q1. (a) Convert \(\dfrac{7}{20}\) to percentage. (b) Convert \(45\%\) into fraction in simplest form.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Fraction to Percentage:</strong></p>
+            <p>To convert a fraction into a percentage, multiply by \(100\%\):</p>
+            <div class="equation-box">
+                \[ \dfrac{7}{20} \times 100\% = 7 \times 5\% = 35\% \]
+            </div>
+            <p><strong>Answer:</strong> \(35\%\)</p>
+
+            <p style="margin-top: 10px;"><strong>(b) Percentage to Simplest Fraction:</strong></p>
+            <p>Write percentage as a fraction with denominator \(100\) and simplify:</p>
+            <div class="equation-box">
+                \[ 45\% = \dfrac{45}{100} \]
+            </div>
+            <p>Dividing numerator and denominator by HCF (\(5\)):</p>
+            <div class="equation-box">
+                \[ \dfrac{45 \div 5}{100 \div 5} = \dfrac{9}{20} \]
+            </div>
+            <p><strong>Answer:</strong> \(\dfrac{9}{20}\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for correct percentage conversion (\(35\%\)); 1 Mark for fraction in lowest terms (\(9/20\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q2. (a) Express \(0.35\) as percentage. (b) Convert \(18\%\) into decimal.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Decimal to Percentage:</strong></p>
+            <div class="equation-box">
+                \[ 0.35 \times 100\% = 35\% \]
+            </div>
+            <p><strong>Answer:</strong> \(35\%\)</p>
+
+            <p style="margin-top: 10px;"><strong>(b) Percentage to Decimal:</strong></p>
+            <div class="equation-box">
+                \[ 18\% = \dfrac{18}{100} = 0.18 \]
+            </div>
+            <p><strong>Answer:</strong> \(0.18\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for converting decimal to percentage (\(35\%\)); 1 Mark for converting percentage to decimal (\(0.18\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q3. (a) Find \(15\%\) of \(\text{₹ } 600\). (b) Find \(25\%\) of \(80\text{ kg}\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) \(15\%\) of \(\text{₹ } 600\):</strong></p>
+            <div class="equation-box">
+                \[ \dfrac{15}{100} \times 600 = 15 \times 6 = 90 \]
+            </div>
+            <p><strong>Answer:</strong> \(\text{₹ } 90\)</p>
+
+            <p style="margin-top: 10px;"><strong>(b) \(25\%\) of \(80\text{ kg}\):</strong></p>
+            <div class="equation-box">
+                \[ \dfrac{25}{100} \times 80 = \dfrac{1}{4} \times 80 = 20\text{ kg} \]
+            </div>
+            <p><strong>Answer:</strong> \(20\text{ kg}\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for part (a) (\(₹ 90\)); 1 Mark for part (b) (\(20\text{ kg}\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q4. Pass percentage when \(30\) out of \(40\) students pass.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong></p>
+            <ul>
+                <li>Total number of students = \(40\)</li>
+                <li>Number of students who passed = \(30\)</li>
+            </ul>
+            <div class="equation-box">
+                \[ \text{Pass Percentage} = \left( \dfrac{\text{Number of students passed}}{\text{Total students}} \right) \times 100\% \]
+            </div>
+            <div class="equation-box">
+                \[ = \left( \dfrac{30}{40} \right) \times 100\% = \dfrac{3}{4} \times 100\% = 75\% \]
+            </div>
+            <p><strong>Answer:</strong> \(75\%\) of the students passed.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for formula/setup; 1 Mark for final calculation (\(75\%\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q5. (a) Percentage of \(15\) out of \(60\). (b) If \(20\%\) of \(x\) is \(14\), find \(x\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Percentage of \(15\) out of \(60\):</strong></p>
+            <div class="equation-box">
+                \[ \left( \dfrac{15}{60} \right) \times 100\% = \dfrac{1}{4} \times 100\% = 25\% \]
+            </div>
+
+            <p style="margin-top: 10px;"><strong>(b) Find \(x\) when \(20\%\) of \(x = 14\):</strong></p>
+            <div class="equation-box">
+                \[ \dfrac{20}{100} \times x = 14 \implies \dfrac{1}{5} \times x = 14 \]
+            </div>
+            <div class="equation-box">
+                \[ x = 14 \times 5 = 70 \]
+            </div>
+            <p><strong>Answer:</strong> (a) \(25\%\), (b) \(x = 70\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for part (a) (\(25\%\)); 1 Mark for part (b) (\(x = 70\)).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION B - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q6. Rohan's score percentage (\(420\) out of \(500\)) and pass verification.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong> Marks scored = \(420\), Total marks = \(500\).</p>
+
+            <p><strong>(a) Percentage Score:</strong></p>
+            <div class="equation-box">
+                \[ \text{Percentage} = \left( \dfrac{420}{500} \right) \times 100\% = \dfrac{420}{5} = 84\% \]
+            </div>
+
+            <p style="margin-top: 8px;"><strong>(b) Pass Verification:</strong></p>
+            <p>Passing criteria = \(40\%\).</p>
+            <p>Since Rohan's score (\(84\%\)) is greater than \(40\%\), <strong>Yes, Rohan passed the examination comfortably.</strong></p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 2 Marks for calculating score percentage (\(84\%\)); 1 Mark for concluding pass status.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q7. Profit and Profit Percentage (CP = \(\text{₹ } 400\), SP = \(\text{₹ } 480\)).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong></p>
+            <ul>
+                <li>Cost Price (CP) = \(\text{₹ } 400\)</li>
+                <li>Selling Price (SP) = \(\text{₹ } 480\)</li>
+            </ul>
+
+            <p><strong>Step 1: Profit Calculation:</strong></p>
+            <div class="equation-box">
+                \[ \text{Profit} = \text{SP} - \text{CP} = 480 - 400 = \text{₹ } 80 \]
+            </div>
+
+            <p><strong>Step 2: Profit Percentage Calculation:</strong></p>
+            <div class="equation-box">
+                \[ \text{Profit \%} = \left( \dfrac{\text{Profit}}{\text{CP}} \right) \times 100\% \]
+            </div>
+            <div class="equation-box">
+                \[ = \left( \dfrac{80}{400} \right) \times 100\% = \dfrac{80}{4} = 20\% \]
+            </div>
+            <p><strong>Answer:</strong> Profit = \(\text{₹ } 80\), Profit Percentage = \(20\%\)</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1.5 Marks for calculating profit amount (\(₹ 80\)); 1.5 Marks for calculating profit percentage (\(20\%\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q8. Population increase percentage (\(2,000\) to \(2,300\)).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong></p>
+            <ul>
+                <li>Original Population = \(2,000\)</li>
+                <li>New Population = \(2,300\)</li>
+            </ul>
+
+            <p><strong>Step 1: Find increase in population:</strong></p>
+            <div class="equation-box">
+                \[ \text{Increase} = 2,300 - 2,000 = 300 \]
+            </div>
+
+            <p><strong>Step 2: Calculate percentage increase:</strong></p>
+            <div class="equation-box">
+                \[ \text{Percentage Increase} = \left( \dfrac{\text{Increase}}{\text{Original Population}} \right) \times 100\% \]
+            </div>
+            <div class="equation-box">
+                \[ = \left( \dfrac{300}{2000} \right) \times 100\% = \dfrac{30}{2} = 15\% \]
+            </div>
+            <p><strong>Answer:</strong> The population increased by <strong>\(15\%\)</strong>.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for finding increase in population (\(300\)); 2 Marks for calculating percentage increase (\(15\%\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q9. Number of lemon trees out of \(250\) total trees (\(40\%\) mango, \(30\%\) apple).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong> Total number of trees = \(250\)</p>
+            <p>Percentage of Mango trees = \(40\%\)</p>
+            <p>Percentage of Apple trees = \(30\%\)</p>
+
+            <p><strong>Method 1: By Percentage Remaining:</strong></p>
+            <p>Percentage of Lemon trees = \(100\% - (40\% + 30\%) = 100\% - 70\% = 30\%\)</p>
+            <div class="equation-box">
+                \[ \text{Number of Lemon trees} = 30\% \text{ of } 250 \]
+            </div>
+            <div class="equation-box">
+                \[ = \dfrac{30}{100} \times 250 = 3 \times 25 = 75 \]
+            </div>
+            <p><strong>Answer:</strong> There are <strong>\(75\) lemon trees</strong> in the orchard.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for calculating remaining percentage (\(30\%\)); 2 Marks for evaluating quantity (\(75\) trees).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q10. Calculate monthly savings (Salary = \(\text{₹ } 25,000\), Expenditure = \(65\%\)).</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>Given:</strong></p>
+            <ul>
+                <li>Total Salary = \(\text{₹ } 25,000\)</li>
+                <li>Expenditure Percentage = \(65\%\)</li>
+            </ul>
+
+            <p><strong>Step 1: Calculate Savings Percentage:</strong></p>
+            <div class="equation-box">
+                \[ \text{Savings Percentage} = 100\% - 65\% = 35\% \]
+            </div>
+
+            <p><strong>Step 2: Calculate Savings Amount:</strong></p>
+            <div class="equation-box">
+                \[ \text{Savings} = 35\% \text{ of } 25,000 \]
+            </div>
+            <div class="equation-box">
+                \[ = \dfrac{35}{100} \times 25000 = 35 \times 250 = \text{₹ } 8,750 \]
+            </div>
+            <p><strong>Answer:</strong> His monthly savings equal <strong>\(\text{₹ } 8,750\)</strong>.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> 1 Mark for finding savings percentage (\(35\%\)); 2 Marks for calculating savings in rupees (\(₹ 8,750\)).
+        </div>
+    </div>
+
+    <h2 style="text-align: center; color: #333; text-decoration: underline; font-size: 12pt; margin-top: 30px; margin-bottom: 20px;">
+        SECTION C - DETAILED SOLUTIONS (15 Marks)
+    </h2>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q11. (a) SP of apples with \(5\%\) loss on \(\text{₹ } 800\). (b) Non-voting voters out of \(1,200\) (\(85\%\) voted).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Selling Price of Apple Basket:</strong></p>
+            <p>Cost Price (CP) = \(\text{₹ } 800\), Loss Percentage = \(5\%\)</p>
+            <div class="equation-box">
+                \[ \text{Loss Amount} = 5\% \text{ of } 800 = \dfrac{5}{100} \times 800 = \text{₹ } 40 \]
+            </div>
+            <div class="equation-box">
+                \[ \text{Selling Price (SP)} = \text{CP} - \text{Loss} = 800 - 40 = \text{₹ } 760 \]
+            </div>
+            <p><strong>Answer (a):</strong> Selling Price = <strong>\(\text{₹ } 760\)</strong></p>
+
+            <p style="margin-top: 12px;"><strong>(b) Voters who did NOT cast vote:</strong></p>
+            <p>Total voters = \(1,200\)</p>
+            <p>Percentage who voted = \(85\%\) \(\implies\) Percentage who did NOT vote = \(100\% - 85\% = 15\%\)</p>
+            <div class="equation-box">
+                \[ \text{Non-voters} = 15\% \text{ of } 1200 = \dfrac{15}{100} \times 1200 = 15 \times 12 = 180 \]
+            </div>
+            <p><strong>Answer (b):</strong> <strong>\(180\) voters</strong> did not cast their vote.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 1.5 Marks for loss amount (\(₹ 40\)), 1.5 Marks for SP (\(₹ 760\)). (b) 1 Mark for finding non-voting percentage (\(15\%\)), 1 Mark for calculating voters count (\(180\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q12. (a) Total students if \(60\%\) equals \(450\). (b) Non-participating students.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Calculating Total Strength of School:</strong></p>
+            <p>Let total number of students in school be \(N\).</p>
+            <p>Given: \(60\%\) of \(N = 450\)</p>
+            <div class="equation-box">
+                \[ \dfrac{60}{100} \times N = 450 \]
+            </div>
+            <div class="equation-box">
+                \[ N = \dfrac{450 \times 100}{60} = \dfrac{4500}{6} = 750 \]
+            </div>
+            <p><strong>Answer (a):</strong> Total students in school = <strong>\(750\)</strong>.</p>
+
+            <p style="margin-top: 12px;"><strong>(b) Calculating Non-Participating Students:</strong></p>
+            <div class="equation-box">
+                \[ \text{Non-participating students} = \text{Total students} - \text{Participating students} \]
+            </div>
+            <div class="equation-box">
+                \[ = 750 - 450 = 300 \]
+            </div>
+            <p><em>(Alternative Method: \(40\%\) of \(750 = \dfrac{40}{100} \times 750 = 300\))</em></p>
+            <p><strong>Answer (b):</strong> <strong>\(300\) students</strong> did not participate.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 1 Mark for setting equation, 2 Marks for finding total students (\(750\)). (b) 2 Marks for finding non-participating count (\(300\)).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-title">Q13. (a) Score comparison using percentage (Test A vs Test B). (b) Discount percentage.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="sol-heading">Solution & Explanation:</div>
+        <div class="sol-content">
+            <p><strong>(a) Performance Comparison:</strong></p>
+            <p><strong>Test A:</strong> Score = \(45\) out of \(50\)</p>
+            <div class="equation-box">
+                \[ \text{Percentage in Test A} = \left( \dfrac{45}{50} \right) \times 100\% = 45 \times 2\% = 90\% \]
+            </div>
+
+            <p style="margin-top: 6px;"><strong>Test B:</strong> Score = \(72\) out of \(80\)</p>
+            <div class="equation-box">
+                \[ \text{Percentage in Test B} = \left( \dfrac{72}{80} \right) \times 100\% = \dfrac{9}{10} \times 100\% = 90\% \]
+            </div>
+            <p><strong>Conclusion:</strong> Ananya scored <strong>\(90\%\) in both tests</strong>, so her performance was equally outstanding in both tests.</p>
+
+            <p style="margin-top: 12px;"><strong>(b) Discount Percentage on Jacket:</strong></p>
+            <p>Original Price = \(\text{₹ } 2,000\), Reduced Price = \(\text{₹ } 1,600\)</p>
+            <div class="equation-box">
+                \[ \text{Discount Amount} = 2000 - 1600 = \text{₹ } 400 \]
+            </div>
+            <div class="equation-box">
+                \[ \text{Discount Percentage} = \left( \dfrac{\text{Discount}}{\text{Original Price}} \right) \times 100\% = \left( \dfrac{400}{2000} \right) \times 100\% = 20\% \]
+            </div>
+            <p><strong>Answer (b):</strong> Discount offered = <strong>\(20\%\)</strong>.</p>
+        </div>
+        <div class="key-concept">
+            <strong>Marking Scheme:</strong> (a) 1 Mark for Test A percentage (\(90\%\)), 1 Mark for Test B percentage (\(90\%\)), 1 Mark for comparison conclusion. (b) 1 Mark for discount amount (\(₹ 400\)), 1 Mark for discount percentage (\(20\%\)).
+        </div>
+    </div>
+
+    <div class="footer">
+        Solutions Prepared by Senior Academic Faculty &bull; Vardaan Learning Institute
+    </div>
+</body>
+</html>
