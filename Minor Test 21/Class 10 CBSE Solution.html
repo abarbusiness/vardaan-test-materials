@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 CBSE Minor Test 21 Detailed Solutions</title>
+    <!-- MathJax for rendering math equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #111111;
+            --success-green: #2e7d32;
+            --bg-success: #e8f5e9;
+        }
+        body {
+            width: 100%;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        .paper-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            opacity: 0.05;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+        .solution-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #333;
+            text-transform: uppercase;
+        }
+        .exam-meta {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 10pt;
+            background-color: #fffde7;
+            padding: 6px;
+            border-radius: 4px;
+        }
+        .solution-block {
+            border-bottom: 2px dashed var(--primary-yellow);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            page-break-inside: avoid;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            border-left: 4px solid var(--primary-yellow);
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 12px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 9pt;
+            white-space: nowrap;
+        }
+        .correct-answer {
+            color: var(--success-green);
+            background-color: var(--bg-success);
+            padding: 6px 12px;
+            margin: 8px 0 12px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+        .explanation {
+            margin-left: 20px;
+            color: #222;
+        }
+        .step {
+            margin-bottom: 8px;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .diagram-container {
+            text-align: center;
+            margin: 12px 0;
+        }
+        .diagram-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Formula scroll container for small screens */
+        .math-overflow {
+            overflow-x: auto;
+            max-width: 100%;
+            padding: 4px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 10pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+                font-size: 10pt;
+            }
+            .paper-container {
+                padding: 12px;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .solution-title {
+                font-size: 11pt;
+            }
+            .question-header {
+                flex-direction: column;
+                gap: 6px;
+            }
+            .correct-answer, .explanation {
+                margin-left: 5px;
+            }
+        }
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .paper-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+
+    <div class="paper-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="solution-title">DETAILED SOLUTIONS & MARKING SCHEME: MINOR TEST 21</div>
+            <div class="exam-meta">
+                <span>Class: 10th CBSE</span>
+                <span>Subject: Mathematics</span>
+                <span>Chapter: Circles</span>
+                <span>Max Marks: 40</span>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; background: #fff9c4; padding: 6px; border: 1px solid #fbc02d; border-radius: 4px;">SECTION A SOLUTIONS (10 MARKS)</h2>
+
+        <!-- Solution 1 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q1. From a point $Q$, the length of the tangent to a circle is $24\text{ cm}$ and the distance of $Q$ from the centre is $25\text{ cm}$. Find the radius of the circle.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="correct-answer">Correct Option: (A) $7\text{ cm}$</div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Step 1: Conceptual Understanding</span><br>
+                Let $O$ be the centre of the circle and $P$ be the point of contact of the tangent drawn from point $Q$.<br>
+                According to <strong>NCERT Theorem 10.1</strong>, the tangent at any point of a circle is perpendicular to the radius through the point of contact. Thus, $\angle OPQ = 90^\circ$.</div>
+                
+                <div class="step"><span class="step-title">Step 2: Applying Pythagoras Theorem</span><br>
+                In right-angled triangle $\Delta OPQ$:
+                <div class="math-overflow">
+                $$OQ^2 = OP^2 + PQ^2$$
+                $$(25)^2 = OP^2 + (24)^2$$
+                $$625 = OP^2 + 576$$
+                $$OP^2 = 625 - 576 = 49$$
+                $$OP = \sqrt{49} = 7\text{ cm}$$
+                </div>
+                Hence, the radius of the circle is $7\text{ cm}$.</div>
+            </div>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q2. In Fig. 10.11, if $TP$ and $TQ$ are the two tangents to a circle with centre $O$ so that $\angle POQ = 110^\circ$, then find $\angle PTQ$.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="correct-answer">Correct Option: (B) $70^\circ$</div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Step 1: Identify Given Values & Angle Properties</span><br>
+                $TP$ and $TQ$ are tangents at points $P$ and $Q$ respectively. <br>
+                By Theorem 10.1: $OP \perp TP \implies \angle OPT = 90^\circ$ and $OQ \perp TQ \implies \angle OQT = 90^\circ$.</div>
+                
+                <div class="step"><span class="step-title">Step 2: Angle Sum Property of Quadrilateral</span><br>
+                In quadrilateral $OPTQ$, the sum of all interior angles is $360^\circ$:
+                <div class="math-overflow">
+                $$\angle OPT + \angle POQ + \angle OQT + \angle PTQ = 360^\circ$$
+                $$90^\circ + 110^\circ + 90^\circ + \angle PTQ = 360^\circ$$
+                $$290^\circ + \angle PTQ = 360^\circ$$
+                $$\angle PTQ = 360^\circ - 290^\circ = 70^\circ$$
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q3. If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="correct-answer">Correct Option: (A) $50^\circ$</div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Step 1: Congruence of Tangent Triangles</span><br>
+                In $\Delta POA$ and $\Delta POB$:
+                <ul>
+                    <li>$OA = OB$ (Radii of the same circle)</li>
+                    <li>$PA = PB$ (Lengths of tangents from external point $P$, Theorem 10.2)</li>
+                    <li>$OP = OP$ (Common side)</li>
+                </ul>
+                Therefore, $\Delta POA \cong \Delta POB$ by SSS Congruence Criterion.<br>
+                By CPCT, $\angle APO = \angle BPO = \frac{1}{2} \angle APB = \frac{1}{2} (80^\circ) = 40^\circ$.</div>
+
+                <div class="step"><span class="step-title">Step 2: Calculating $\angle POA$</span><br>
+                In right-angled triangle $\Delta POA$ ($\angle OAP = 90^\circ$):
+                <div class="math-overflow">
+                $$\angle POA + \angle OAP + \angle APO = 180^\circ$$
+                $$\angle POA + 90^\circ + 40^\circ = 180^\circ$$
+                $$\angle POA = 180^\circ - 130^\circ = 50^\circ$$
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 4 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q4. Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="correct-answer">Length of Chord $= 8\text{ cm}$</div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Step 1: Geometry Setup</span><br>
+                Let $C_1$ and $C_2$ be two concentric circles with centre $O$. Let $AB$ be a chord of larger circle $C_1$ touching smaller circle $C_2$ at point $P$.<br>
+                Join $OP$ and $OA$. Here, $OA = 5\text{ cm}$ (radius of $C_1$) and $OP = 3\text{ cm}$ (radius of $C_2$).</div>
+
+                <div class="step"><span class="step-title">Step 2: Applying Tangent-Radius Property</span><br>
+                Since $AB$ is tangent to $C_2$ at $P$, $OP \perp AB$.<br>
+                In right $\Delta OPA$:
+                <div class="math-overflow">
+                $$OA^2 = OP^2 + AP^2 \implies 5^2 = 3^2 + AP^2$$
+                $$AP^2 = 25 - 9 = 16 \implies AP = 4\text{ cm}$$
+                </div>
+                Since the perpendicular from the centre to a chord bisects the chord:
+                $$AB = 2 \times AP = 2 \times 4\text{ cm} = 8\text{ cm}$$
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 5 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q5. The length of a tangent from a point $A$ at a distance $5\text{ cm}$ from the centre of the circle is $4\text{ cm}$. Find the radius of the circle.</div>
+                <div class="marks-badge">[2 Marks]</div>
+            </div>
+            <div class="correct-answer">Radius $= 3\text{ cm}$</div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Detailed Calculation</span><br>
+                Let $O$ be the centre of the circle and $P$ be the point of contact of the tangent from point $A$.<br>
+                Given: $OA = 5\text{ cm}$ and $AP = 4\text{ cm}$.<br>
+                Since radius is perpendicular to the tangent at the point of contact, $\angle OPA = 90^\circ$.<br>
+                In right $\Delta OPA$:
+                <div class="math-overflow">
+                $$OA^2 = OP^2 + AP^2$$
+                $$5^2 = OP^2 + 4^2$$
+                $$25 = OP^2 + 16 \implies OP^2 = 9 \implies OP = 3\text{ cm}$$
+                </div>
+                Thus, the radius of the circle is $3\text{ cm}$.
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; background: #fff9c4; padding: 6px; border: 1px solid #fbc02d; border-radius: 4px;">SECTION B SOLUTIONS (15 MARKS)</h2>
+
+        <!-- Solution 6 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q6. Prove that the tangents drawn at the ends of a diameter of a circle are parallel.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Proof:</span><br>
+                <strong>Given:</strong> A circle with centre $O$ and diameter $AB$. Let $l_1$ be the tangent at end $A$ and $l_2$ be the tangent at end $B$.<br>
+                <strong>To Prove:</strong> $l_1 \parallel l_2$.<br><br>
+                <strong>Proof Steps:</strong>
+                <ol>
+                    <li>By NCERT Theorem 10.1, tangent is perpendicular to the radius at the point of contact.</li>
+                    <li>Since $OA$ is radius to tangent $l_1$: $\angle OAP = 90^\circ$ (where $P$ is a point on $l_1$).</li>
+                    <li>Similarly, $OB$ is radius to tangent $l_2$: $\angle OBQ = 90^\circ$ (where $Q$ is a point on $l_2$).</li>
+                    <li>Now consider line $AB$ as a transversal intersecting two lines $l_1$ and $l_2$.</li>
+                    <li>Notice that $\angle OAP$ and $\angle OBQ$ form a pair of alternate interior angles, and:
+                        $$\angle OAP = \angle OBQ = 90^\circ$$
+                    </li>
+                    <li>Since alternate interior angles are equal, the lines $l_1$ and $l_2$ must be parallel ($l_1 \parallel l_2$). $\blacksquare$</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 7 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q7. A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="diagram-container">
+                <svg width="220" height="180" viewBox="0 0 220 180">
+                    <circle cx="110" cy="90" r="45" stroke="#0088cc" stroke-width="2" fill="none"/>
+                    <polygon points="58,127 147,142 162,54 74,38" stroke="#000" stroke-width="1.8" fill="none"/>
+                    
+                    <circle cx="102" cy="134" r="3" fill="#d32f2f"/>
+                    <text x="100" y="152" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">P</text>
+                    
+                    <circle cx="154" cy="98" r="3" fill="#d32f2f"/>
+                    <text x="162" y="102" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">Q</text>
+                    
+                    <circle cx="118" cy="46" r="3" fill="#d32f2f"/>
+                    <text x="118" y="38" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">R</text>
+                    
+                    <circle cx="66" cy="82" r="3" fill="#d32f2f"/>
+                    <text x="52" y="85" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">S</text>
+                    
+                    <text x="42" y="135" font-family="Times New Roman" font-size="12" font-weight="bold">A</text>
+                    <text x="154" y="152" font-family="Times New Roman" font-size="12" font-weight="bold">B</text>
+                    <text x="170" y="52" font-family="Times New Roman" font-size="12" font-weight="bold">C</text>
+                    <text x="62" y="32" font-family="Times New Roman" font-size="12" font-weight="bold">D</text>
+                </svg>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Proof (NCERT Ex 10.2 Q10):</span><br>
+                <strong>Given:</strong> Tangents $PA$ and $PB$ from external point $P$ touching circle at $A$ and $B$. Centre is $O$.<br>
+                <strong>To Prove:</strong> $\angle APB + \angle AOB = 180^\circ$.<br><br>
+                <strong>Proof:</strong>
+                <ol>
+                    <li>Radius $OA \perp PA \implies \angle OAP = 90^\circ$.</li>
+                    <li>Radius $OB \perp PB \implies \angle OBP = 90^\circ$.</li>
+                    <li>In quadrilateral $OAPB$, sum of all four interior angles $= 360^\circ$:
+                    <div class="math-overflow">
+                    $$\angle OAP + \angle APB + \angle OBP + \angle AOB = 360^\circ$$
+                    $$90^\circ + \angle APB + 90^\circ + \angle AOB = 360^\circ$$
+                    $$180^\circ + \angle APB + \angle AOB = 360^\circ$$
+                    $$\angle APB + \angle AOB = 360^\circ - 180^\circ = 180^\circ$$
+                    </div>
+                    </li>
+                </ol>
+                Hence, the angle between the two tangents is supplementary to the angle subtended by the points of contact at the centre. $\blacksquare$
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 9 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q9. Prove that the parallelogram circumscribing a circle is a rhombus.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Proof (NCERT Ex 10.2 Q11):</span><br>
+                Let $ABCD$ be a parallelogram circumscribing a circle.<br>
+                Since $ABCD$ is a parallelogram, opposite sides are equal:
+                $$AB = CD \quad \text{and} \quad AD = BC \quad \text{--- (1)}$$
+                From Question 7, we know that for any quadrilateral circumscribing a circle:
+                $$AB + CD = AD + BC \quad \text{--- (2)}$$
+                Substitute equation (1) into (2):
+                <div class="math-overflow">
+                $$AB + AB = AD + AD$$
+                $$2AB = 2AD \implies AB = AD$$
+                </div>
+                Since adjacent sides $AB$ and $AD$ are equal, and opposite sides are equal:
+                $$AB = BC = CD = DA$$
+                A parallelogram with all four sides equal is a <strong>rhombus</strong>. Hence Proved. $\blacksquare$
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 10 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q10. Two tangents $TP$ and $TQ$ are drawn to a circle with centre $O$ from an external point $T$. Prove that $\angle PTQ = 2\angle OPQ$.</div>
+                <div class="marks-badge">[3 Marks]</div>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Proof (NCERT Example 2):</span><br>
+                Let $\angle PTQ = \theta$.<br>
+                By Theorem 10.2, $TP = TQ$. Therefore, $\Delta TPQ$ is an isosceles triangle.<br>
+                Thus, $\angle TPQ = \angle TQP = \frac{1}{2}(180^\circ - \theta) = 90^\circ - \frac{1}{2}\theta$.<br><br>
+                By Theorem 10.1, $OP \perp TP \implies \angle OPT = 90^\circ$.<br>
+                Now:
+                <div class="math-overflow">
+                $$\angle OPQ = \angle OPT - \angle TPQ$$
+                $$\angle OPQ = 90^\circ - \left(90^\circ - \frac{1}{2}\theta\right) = \frac{1}{2}\theta$$
+                $$\angle OPQ = \frac{1}{2}\angle PTQ \implies \angle PTQ = 2\angle OPQ$$
+                </div>
+                Hence Proved. $\blacksquare$
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; background: #fff9c4; padding: 6px; border: 1px solid #fbc02d; border-radius: 4px;">SECTION C SOLUTIONS (15 MARKS)</h2>
+
+        <!-- Solution 11 -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q11. In Fig. 10.13, $XY$ and $X'Y'$ are two parallel tangents to a circle with centre $O$ and another tangent $AB$ with point of contact $C$ intersecting $XY$ at $A$ and $X'Y'$ at $B$. Prove that $\angle AOB = 90^\circ$.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="diagram-container">
+                <svg width="260" height="200" viewBox="0 0 260 200">
+                    <line x1="20" y1="50" x2="250" y2="50" stroke="#000" stroke-width="1.8"/>
+                    <line x1="20" y1="150" x2="250" y2="150" stroke="#000" stroke-width="1.8"/>
+                    <text x="25" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">X</text>
+                    <text x="235" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">Y</text>
+                    <text x="25" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">X'</text>
+                    <text x="235" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">Y'</text>
+                    
+                    <circle cx="120" cy="100" r="50" stroke="#0088cc" stroke-width="2" fill="none"/>
+                    <circle cx="120" cy="100" r="2.5" fill="#000"/>
+                    <text x="105" y="104" font-family="Times New Roman" font-size="12" font-weight="bold">O</text>
+                    
+                    <line x1="120" y1="50" x2="120" y2="150" stroke="#000" stroke-width="1.2" stroke-dasharray="3,3"/>
+                    <circle cx="120" cy="50" r="2.5" fill="#000"/>
+                    <circle cx="120" cy="150" r="2.5" fill="#000"/>
+                    <text x="117" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">P</text>
+                    <text x="117" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">Q</text>
+                    
+                    <line x1="135" y1="26" x2="220" y2="173" stroke="#d32f2f" stroke-width="2"/>
+                    
+                    <circle cx="163.3" cy="75" r="3" fill="#000"/>
+                    <text x="172" y="73" font-family="Times New Roman" font-size="11" font-weight="bold">C</text>
+                    
+                    <circle cx="148.9" cy="50" r="3" fill="#d32f2f"/>
+                    <text x="145" y="42" font-family="Times New Roman" font-size="12" font-weight="bold" fill="#d32f2f">A</text>
+                    
+                    <circle cx="206.6" cy="150" r="3" fill="#d32f2f"/>
+                    <text x="212" y="165" font-family="Times New Roman" font-size="12" font-weight="bold" fill="#d32f2f">B</text>
+                    
+                    <line x1="120" y1="100" x2="148.9" y2="50" stroke="#0088cc" stroke-width="1.5"/>
+                    <line x1="120" y1="100" x2="206.6" y2="150" stroke="#0088cc" stroke-width="1.5"/>
+                    <line x1="120" y1="100" x2="163.3" y2="75" stroke="#0088cc" stroke-width="1.2" stroke-dasharray="3,3"/>
+                </svg>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Detailed Proof (NCERT Ex 10.2 Q12):</span><br>
+                Let circle touch sides $BC, CA, AB$ at $D, E, F$ respectively.<br>
+                Given: $BD = 8\text{ cm}, CD = 6\text{ cm}$, radius $r = 4\text{ cm}$.<br>
+                By Theorem 10.2:
+                <ul>
+                    <li>$BF = BD = 8\text{ cm}$</li>
+                    <li>$CE = CD = 6\text{ cm}$</li>
+                    <li>Let $AF = AE = x\text{ cm}$</li>
+                </ul>
+                Sides of $\Delta ABC$ are:
+                $$a = BC = 6 + 8 = 14\text{ cm}$$
+                $$b = AC = x + 6\text{ cm}$$
+                $$c = AB = x + 8\text{ cm}$$<br>
+
+                <strong>Step 1: Semi-perimeter $s$ and Area via Heron's Formula</strong>
+                <div class="math-overflow">
+                $$s = \frac{a + b + c}{2} = \frac{14 + (x + 6) + (x + 8)}{2} = \frac{2x + 28}{2} = x + 14$$
+                $$\text{Area}(\Delta ABC) = \sqrt{s(s-a)(s-b)(s-c)}$$
+                $$\text{Area} = \sqrt{(x+14)(x+14-14)(x+14-(x+6))(x+14-(x+8))}$$
+                $$\text{Area} = \sqrt{(x+14)(x)(8)(6)} = \sqrt{48x(x+14)} \quad \text{--- (1)}$$
+                </div>
+
+                <strong>Step 2: Area via Sum of Sub-Triangles</strong>
+                <div class="math-overflow">
+                $$\text{Area}(\Delta ABC) = \text{Area}(\Delta OBC) + \text{Area}(\Delta OCA) + \text{Area}(\Delta OAB)$$
+                $$\text{Area} = \frac{1}{2}(14)(4) + \frac{1}{2}(x+6)(4) + \frac{1}{2}(x+8)(4)$$
+                $$\text{Area} = 28 + 2x + 12 + 2x + 16 = 4x + 56 = 4(x + 14) \quad \text{--- (2)}$$
+                </div>
+
+                <strong>Step 3: Equating and Solving for $x$</strong>
+                <div class="math-overflow">
+                $$\sqrt{48x(x+14)} = 4(x+14)$$
+                $$\text{Squaring both sides: } 48x(x+14) = 16(x+14)^2$$
+                $$\text{Divide by } 16(x+14): \quad 3x = x + 14 \implies 2x = 14 \implies x = 7\text{ cm}$$
+                </div>
+
+                <strong>Final Answer:</strong>
+                <div class="math-overflow">
+                $$AB = x + 8 = 7 + 8 = \mathbf{15\text{ cm}}$$
+                $$AC = x + 6 = 7 + 6 = \mathbf{13\text{ cm}}$$
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 13 (HOTS NON-NCERT) -->
+        <div class="solution-block">
+            <div class="question-header">
+                <div class="q-text">Q13. <strong>[HOTS NON-NCERT]</strong> Two circles $C_1$ ($r_1 = 9\text{ cm}$) and $C_2$ ($r_2 = 4\text{ cm}$) touch externally at $P$. $AB$ is a direct common tangent. A third circle $C_3$ of radius $r_3$ touches $C_1, C_2$ externally and line $AB$ tangentially.<br>
+                (a) Find $AB$. (b) Find $r_3$. (c) Find curvilinear area bounded by $C_1, C_2,$ and $AB$.</div>
+                <div class="marks-badge">[5 Marks]</div>
+            </div>
+            <div class="explanation">
+                <div class="step"><span class="step-title">Part (a): Length of Direct Common Tangent $AB$ [1.5 Marks]</span><br>
+                Let $O_1, O_2$ be centres of $C_1, C_2$. Distance between centres $O_1O_2 = r_1 + r_2 = 9 + 4 = 13\text{ cm}$.<br>
+                Draw $O_2K \perp O_1A$. In right $\Delta O_1 K O_2$:
+                $$O_1K = r_1 - r_2 = 9 - 4 = 5\text{ cm}$$
+                <div class="math-overflow">
+                $$AB = KO_2 = \sqrt{O_1O_2^2 - O_1K^2} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = \mathbf{12\text{ cm}}$$
+                </div>
+                </div>
+
+                <div class="step"><span class="step-title">Part (b): Radius $r_3$ of Smallest Circle $C_3$ [2 Marks]</span><br>
+                The segment $AB$ is equal to the sum of tangent segments from $C_1$ to $C_3$ and $C_3$ to $C_2$:
+                $$AB = 2\sqrt{r_1 r_3} + 2\sqrt{r_2 r_3} = 2\sqrt{r_1 r_2}$$
+                $$\sqrt{r_3}\left(\sqrt{r_1} + \sqrt{r_2}\right) = \sqrt{r_1 r_2} \implies \frac{1}{\sqrt{r_3}} = \frac{1}{\sqrt{r_1}} + \frac{1}{\sqrt{r_2}}$$
+                Substituting $r_1 = 9$ and $r_2 = 4$:
+                <div class="math-overflow">
+                $$\frac{1}{\sqrt{r_3}} = \frac{1}{\sqrt{9}} + \frac{1}{\sqrt{4}} = \frac{1}{3} + \frac{1}{2} = \frac{5}{6}$$
+                $$\sqrt{r_3} = \frac{6}{5} \implies r_3 = \left(\frac{6}{5}\right)^2 = \mathbf{1.44\text{ cm}} \quad \text{or } \left(\frac{36}{25}\text{ cm}\right)$$
+                </div>
+                </div>
+
+                <div class="step"><span class="step-title">Part (c): Area of Curvilinear Region [1.5 Marks]</span><br>
+                Area of right-trapezium $O_1 A B O_2$:
+                $$\text{Area}_{\text{trap}} = \frac{1}{2}(r_1 + r_2) \times AB = \frac{1}{2}(9 + 4) \times 12 = 78\text{ cm}^2$$
+                Angles at centres: $\cos \theta_1 = \frac{O_1K}{O_1O_2} = \frac{5}{13} \implies \theta_1 \approx 67.38^\circ$.<br>
+                Angle $\theta_2 = 180^\circ - \theta_1 = 112.62^\circ$.<br>
+                Area of Sector 1 ($C_1$): $\frac{67.38}{360} \times \pi \times 9^2 \approx 47.63\text{ cm}^2$.<br>
+                Area of Sector 2 ($C_2$): $\frac{112.62}{360} \times \pi \times 4^2 \approx 15.72\text{ cm}^2$.<br>
+                <div class="math-overflow">
+                $$\text{Enclosed Area} = 78 - (47.63 + 15.72) = 78 - 63.35 = \mathbf{14.65\text{ cm}^2}$$
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            End of Detailed Solutions &mdash; Team Vardaan Learning Institute
+        </div>
+    </div>
+</body>
+</html>

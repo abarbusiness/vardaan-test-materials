@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Class 10 CBSE Minor Test 21</title>
+    <!-- MathJax for rendering math equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #111111;
+            --bg-card: #ffffff;
+            --border-color: #000000;
+        }
+        body {
+            width: 100%;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        .paper-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            opacity: 0.08;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow);
+            padding: 12px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .institute-name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #000;
+        }
+        .test-name {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-top: 5px;
+            text-decoration: underline;
+            color: #222;
+        }
+        .exam-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 10.5pt;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 6px 4px;
+            background-color: #fffde7;
+        }
+        .exam-details span {
+            padding: 2px 5px;
+        }
+        .instructions {
+            margin-top: 12px;
+            font-size: 9.5pt;
+            background-color: #fcfcfc;
+            border: 1px solid #eee;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        .instructions ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-size: 12pt;
+            background-color: #fff9c4;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #fbc02d;
+            position: relative;
+            z-index: 1;
+        }
+        .marks-info {
+            font-size: 9.5pt;
+            font-weight: normal;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            color: #444;
+        }
+        .question-container {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+            page-break-inside: avoid;
+        }
+        .q-num {
+            font-weight: bold;
+            width: 45px;
+            flex-shrink: 0;
+            font-size: 11pt;
+        }
+        .q-content {
+            flex-grow: 1;
+            overflow-x: auto;
+        }
+        .q-marks {
+            float: right;
+            font-weight: bold;
+            font-size: 10pt;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 15px;
+            margin-top: 8px;
+            padding-left: 5px;
+        }
+        .diagram-box {
+            text-align: center;
+            margin: 12px 0;
+        }
+        .diagram-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 10pt;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #555;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Mobile and Tablet Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .paper-container {
+                padding: 12px;
+            }
+            .institute-name {
+                font-size: 16pt;
+            }
+            .test-name {
+                font-size: 11pt;
+            }
+            .exam-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            .question-container {
+                flex-direction: column;
+            }
+            .q-num {
+                margin-bottom: 4px;
+            }
+            .q-marks {
+                float: none;
+                display: inline-block;
+                margin-bottom: 6px;
+            }
+        }
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                -webkit-print-color-adjust: exact;
+            }
+            .paper-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="paper-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+            <div class="test-name">MINOR TEST 21 - MATHEMATICS (CLASS X)</div>
+            <div class="exam-details">
+                <span>Class: 10th CBSE</span>
+                <span>Subject: Mathematics</span>
+                <span>Chapter: Circles</span>
+                <span>Time: 1 Hour</span>
+                <span>Max. Marks: 40</span>
+            </div>
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ul>
+                    <li>All questions are compulsory. Read questions carefully before answering.</li>
+                    <li>The paper is divided into three sections: <strong>Section A</strong> (10 Marks), <strong>Section B</strong> (15 Marks), and <strong>Section C</strong> (15 Marks).</li>
+                    <li>Use neat diagrams wherever required. Take $\pi = \frac{22}{7}$ unless specified otherwise.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECTION A -->
+        <div class="section-header">
+            SECTION A (10 Marks)
+            <span class="marks-info">(5 Questions &mdash; 2 Marks Each)</span>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-container">
+            <div class="q-num">Q1.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                From a point $Q$, the length of the tangent to a circle is $24\text{ cm}$ and the distance of $Q$ from the centre is $25\text{ cm}$. Find the radius of the circle.
+                <div class="options-grid">
+                    <div>(A) $7\text{ cm}$</div>
+                    <div>(B) $12\text{ cm}$</div>
+                    <div>(C) $15\text{ cm}$</div>
+                    <div>(D) $24.5\text{ cm}$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container">
+            <div class="q-num">Q2.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                In the given figure, if $TP$ and $TQ$ are the two tangents to a circle with centre $O$ so that $\angle POQ = 110^\circ$, then find $\angle PTQ$.
+                <div class="diagram-box">
+                    <svg width="220" height="150" viewBox="0 0 220 150">
+                        <circle cx="125" cy="75" r="45" stroke="#000" stroke-width="1.8" fill="none"/>
+                        <circle cx="125" cy="75" r="2.5" fill="#000"/>
+                        <text x="132" y="79" font-family="Times New Roman" font-size="12" font-weight="bold">O</text>
+                        
+                        <circle cx="46.5" cy="75" r="2.5" fill="#000"/>
+                        <text x="32" y="79" font-family="Times New Roman" font-size="12" font-weight="bold">T</text>
+                        
+                        <circle cx="99.2" cy="38.1" r="2.5" fill="#000"/>
+                        <text x="96" y="28" font-family="Times New Roman" font-size="12" font-weight="bold">P</text>
+                        <circle cx="99.2" cy="111.9" r="2.5" fill="#000"/>
+                        <text x="96" y="127" font-family="Times New Roman" font-size="12" font-weight="bold">Q</text>
+                        
+                        <line x1="46.5" y1="75" x2="99.2" y2="38.1" stroke="#0088cc" stroke-width="1.8"/>
+                        <line x1="46.5" y1="75" x2="99.2" y2="111.9" stroke="#0088cc" stroke-width="1.8"/>
+                        
+                        <line x1="125" y1="75" x2="99.2" y2="38.1" stroke="#000" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        <line x1="125" y1="75" x2="99.2" y2="111.9" stroke="#000" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        
+                        <path d="M 112 56 A 20 20 0 0 0 112 94" fill="none" stroke="#d32f2f" stroke-width="1.2"/>
+                        <text x="88" y="79" font-family="Times New Roman" font-size="10" fill="#d32f2f" font-weight="bold">110°</text>
+                    </svg>
+                </div>
+                <div class="options-grid">
+                    <div>(A) $60^\circ$</div>
+                    <div>(B) $70^\circ$</div>
+                    <div>(C) $80^\circ$</div>
+                    <div>(D) $90^\circ$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container">
+            <div class="q-num">Q3.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+                <div class="options-grid">
+                    <div>(A) $50^\circ$</div>
+                    <div>(B) $60^\circ$</div>
+                    <div>(C) $70^\circ$</div>
+                    <div>(D) $80^\circ$</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-container">
+            <div class="q-num">Q4.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-container">
+            <div class="q-num">Q5.</div>
+            <div class="q-content">
+                <span class="q-marks">[2 Marks]</span>
+                The length of a tangent from a point $A$ at a distance $5\text{ cm}$ from the centre of the circle is $4\text{ cm}$. Find the radius of the circle.
+            </div>
+        </div>
+
+        <!-- SECTION B -->
+        <div class="section-header">
+            SECTION B (15 Marks)
+            <span class="marks-info">(5 Questions &mdash; 3 Marks Each)</span>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-container">
+            <div class="q-num">Q6.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Prove that the tangents drawn at the ends of a diameter of a circle are parallel.
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-container">
+            <div class="q-num">Q7.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that:
+                $$AB + CD = AD + BC$$
+                <div class="diagram-box">
+                    <svg width="220" height="180" viewBox="0 0 220 180">
+                        <circle cx="110" cy="90" r="45" stroke="#0088cc" stroke-width="2" fill="none"/>
+                        <polygon points="58,127 147,142 162,54 74,38" stroke="#000" stroke-width="1.8" fill="none"/>
+                        
+                        <!-- Tangent contact points P, Q, R, S -->
+                        <circle cx="102" cy="134" r="3" fill="#d32f2f"/>
+                        <text x="100" y="152" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">P</text>
+                        
+                        <circle cx="154" cy="98" r="3" fill="#d32f2f"/>
+                        <text x="162" y="102" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">Q</text>
+                        
+                        <circle cx="118" cy="46" r="3" fill="#d32f2f"/>
+                        <text x="118" y="38" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">R</text>
+                        
+                        <circle cx="66" cy="82" r="3" fill="#d32f2f"/>
+                        <text x="52" y="85" font-family="Times New Roman" font-size="11" font-weight="bold" fill="#d32f2f">S</text>
+                        
+                        <!-- Vertices A, B, C, D -->
+                        <text x="42" y="135" font-family="Times New Roman" font-size="12" font-weight="bold">A</text>
+                        <text x="154" y="152" font-family="Times New Roman" font-size="12" font-weight="bold">B</text>
+                        <text x="170" y="52" font-family="Times New Roman" font-size="12" font-weight="bold">C</text>
+                        <text x="62" y="32" font-family="Times New Roman" font-size="12" font-weight="bold">D</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-container">
+            <div class="q-num">Q8.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-container">
+            <div class="q-num">Q9.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Prove that the parallelogram circumscribing a circle is a rhombus.
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-container">
+            <div class="q-num">Q10.</div>
+            <div class="q-content">
+                <span class="q-marks">[3 Marks]</span>
+                Two tangents $TP$ and $TQ$ are drawn to a circle with centre $O$ from an external point $T$. Prove that:
+                $$\angle PTQ = 2\angle OPQ$$
+            </div>
+        </div>
+
+        <!-- SECTION C -->
+        <div class="section-header">
+            SECTION C (15 Marks)
+            <span class="marks-info">(3 Questions &mdash; 5 Marks Each)</span>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question-container">
+            <div class="q-num">Q11.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                In the given figure, $XY$ and $X'Y'$ are two parallel tangents to a circle with centre $O$ and another tangent $AB$ with point of contact $C$ intersecting $XY$ at $A$ and $X'Y'$ at $B$. Prove that $\angle AOB = 90^\circ$.
+                <div class="diagram-box">
+                    <svg width="260" height="200" viewBox="0 0 260 200">
+                        <line x1="20" y1="50" x2="250" y2="50" stroke="#000" stroke-width="1.8"/>
+                        <line x1="20" y1="150" x2="250" y2="150" stroke="#000" stroke-width="1.8"/>
+                        <text x="25" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">X</text>
+                        <text x="235" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">Y</text>
+                        <text x="25" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">X'</text>
+                        <text x="235" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">Y'</text>
+                        
+                        <circle cx="120" cy="100" r="50" stroke="#0088cc" stroke-width="2" fill="none"/>
+                        <circle cx="120" cy="100" r="2.5" fill="#000"/>
+                        <text x="105" y="104" font-family="Times New Roman" font-size="12" font-weight="bold">O</text>
+                        
+                        <line x1="120" y1="50" x2="120" y2="150" stroke="#000" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        <circle cx="120" cy="50" r="2.5" fill="#000"/>
+                        <circle cx="120" cy="150" r="2.5" fill="#000"/>
+                        <text x="117" y="42" font-family="Times New Roman" font-size="11" font-weight="bold">P</text>
+                        <text x="117" y="165" font-family="Times New Roman" font-size="11" font-weight="bold">Q</text>
+                        
+                        <line x1="135" y1="26" x2="220" y2="173" stroke="#d32f2f" stroke-width="2"/>
+                        
+                        <circle cx="163.3" cy="75" r="3" fill="#000"/>
+                        <text x="172" y="73" font-family="Times New Roman" font-size="11" font-weight="bold">C</text>
+                        
+                        <circle cx="148.9" cy="50" r="3" fill="#d32f2f"/>
+                        <text x="145" y="42" font-family="Times New Roman" font-size="12" font-weight="bold" fill="#d32f2f">A</text>
+                        
+                        <circle cx="206.6" cy="150" r="3" fill="#d32f2f"/>
+                        <text x="212" y="165" font-family="Times New Roman" font-size="12" font-weight="bold" fill="#d32f2f">B</text>
+                        
+                        <line x1="120" y1="100" x2="148.9" y2="50" stroke="#0088cc" stroke-width="1.5"/>
+                        <line x1="120" y1="100" x2="206.6" y2="150" stroke="#0088cc" stroke-width="1.5"/>
+                        <line x1="120" y1="100" x2="163.3" y2="75" stroke="#0088cc" stroke-width="1.2" stroke-dasharray="3,3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question-container">
+            <div class="q-num">Q12.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                A triangle $ABC$ is drawn to circumscribe a circle of radius $4\text{ cm}$ such that the segments $BD$ and $DC$ into which $BC$ is divided by the point of contact $D$ are of lengths $8\text{ cm}$ and $6\text{ cm}$ respectively. Find the sides $AB$ and $AC$.
+                <div class="diagram-box">
+                    <svg width="220" height="200" viewBox="0 0 220 200">
+                        <polygon points="110,20 25,160 195,160" stroke="#000" stroke-width="1.8" fill="none"/>
+                        <circle cx="110" cy="113" r="47" stroke="#0088cc" stroke-width="1.8" fill="none"/>
+                        <circle cx="110" cy="113" r="2.5" fill="#000"/>
+                        <text x="110" y="105" font-family="Times New Roman" font-size="12">O</text>
+                        <!-- Point D -->
+                        <line x1="110" y1="113" x2="110" y2="160" stroke="#000" stroke-width="1.2" stroke-dasharray="3,3"/>
+                        <circle cx="110" cy="160" r="2.5" fill="#d32f2f"/>
+                        <text x="107" y="175" font-family="Times New Roman" font-size="11">D</text>
+                        <!-- Vertices -->
+                        <text x="105" y="12" font-family="Times New Roman" font-size="12" font-weight="bold">A</text>
+                        <text x="10" y="170" font-family="Times New Roman" font-size="12" font-weight="bold">C</text>
+                        <text x="200" y="170" font-family="Times New Roman" font-size="12" font-weight="bold">B</text>
+                        <!-- Length labels -->
+                        <text x="55" y="173" font-family="Times New Roman" font-size="10">6 cm</text>
+                        <text x="145" y="173" font-family="Times New Roman" font-size="10">8 cm</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 13 (HOTS NON-NCERT) -->
+        <div class="question-container">
+            <div class="q-num">Q13.</div>
+            <div class="q-content">
+                <span class="q-marks">[5 Marks]</span>
+                <strong>[HIGH-ORDER THINKING SKILL (HOTS)]</strong><br>
+                Two circles $C_1$ and $C_2$ with radii $r_1 = 9\text{ cm}$ and $r_2 = 4\text{ cm}$ touch each other externally at a point $P$. A direct common tangent touches circle $C_1$ at $A$ and circle $C_2$ at $B$. A third smaller circle $C_3$ of radius $r_3$ is drawn in the curvilinear space between $C_1$, $C_2$, and the line segment $AB$ such that $C_3$ touches $C_1$ externally, $C_2$ externally, and line $AB$ tangentially.
+                <br><br>
+                (a) Calculate the exact length of the direct common tangent segment $AB$.<br>
+                (b) Determine the exact radius $r_3$ of the circle $C_3$.<br>
+                (c) Calculate the area of the curvilinear triangle region bounded between the two larger touching circles $C_1$, $C_2$ and the tangent segment $AB$. (Express answer correct to 2 decimal places).
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            End of Question Paper &mdash; Created by Team Vardaan Learning Institute
+        </div>
+    </div>
+</body>
+</html>
