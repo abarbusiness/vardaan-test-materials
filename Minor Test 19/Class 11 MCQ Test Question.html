@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - MCQ Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+            margin: 0 auto; 
+            padding: 20px; 
+            max-width: 1000px;
+            box-sizing: border-box;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: var(--text-main);
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            background-color: #fff9e6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+        .instructions ul { margin: 5px 0; padding-left: 20px; }
+        
+        .mcq-container { 
+            column-count: 2; 
+            column-gap: 40px; 
+            column-rule: 1.5px solid var(--primary-yellow); 
+            margin-top: 20px;
+        }
+        .question-block { 
+            break-inside: avoid; 
+            page-break-inside: avoid;
+            margin-bottom: 18px; 
+            background: #fff;
+        }
+        .q-text { 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            display: flex;
+        }
+        .q-num {
+            min-width: 25px;
+        }
+        .options-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 4px 10px; 
+            padding-left: 25px; 
+        }
+        .option-item {
+            display: flex;
+            align-items: baseline;
+        }
+        .opt-label {
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) { 
+            .mcq-container { 
+                column-count: 1; 
+                column-rule: none; 
+            } 
+            .options-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .exam-details {
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .mcq-container { column-count: 2; }
+            .options-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">MINOR TEST 19 - MCQ TEST</div>
+        <div class="exam-details">
+            <span>Class: 11 CBSE</span>
+            <span>Subject: Chemistry</span>
+            <span>Time: 1 Hour 30 Min (90 Min)</span>
+            <span>Max. Marks: 200</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>Topic: Some Basic Concepts of Chemistry (Complete Chapter).</li>
+                <li>This test contains 50 easy-level multiple-choice questions designed to be completed in 90 minutes.</li>
+                <li>Marking Scheme: +4 marks for each correct answer and –1 for each incorrect answer.</li>
+                <li>Select the most appropriate option. Use rough space for calculations.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mcq-container">
+        <!-- Question 1 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">1.</span><span>The SI unit of amount of substance is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Gram</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Mole</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Liter</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Kilogram</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">2.</span><span>How many significant figures are there in the number \( 0.0025 \)?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 2</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 3</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 4</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 5</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">3.</span><span>Which of the following has the highest number of significant figures?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0.0053</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 5.300</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 530</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 5.3</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">4.</span><span>The prefix "nano" corresponds to the multiplication factor:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 10^{-6} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 10^{-9} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 10^{-12} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 10^{9} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">5.</span><span>The Law of Conservation of Mass was proposed by:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Antoine Lavoisier</div>
+                <div class="option-item"><span class="opt-label">(B)</span> John Dalton</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Joseph Proust</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Amedeo Avogadro</div>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">6.</span><span>Which law states that a given chemical compound always contains its component elements in fixed ratio by mass?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Law of Multiple Proportions</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Law of Definite Proportions</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Law of Conservation of Mass</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Gay Lussac's Law</div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">7.</span><span>The pair of compounds \(CO\) and \(CO_2\) illustrates the:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Law of Conservation of Mass</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Law of Multiple Proportions</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Law of Reciprocal Proportions</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Avogadro's Law</div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">8.</span><span>1 amu (atomic mass unit) is exactly equal to:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Mass of one H atom</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1/12th the mass of one C-12 atom</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Mass of one O-16 atom</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 1/14th the mass of one N-14 atom</div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">9.</span><span>What is the molar mass of Water (\(H_2O\))?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 16 g/mol</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 18 g/mol</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 20 g/mol</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 22 g/mol</div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">10.</span><span>Avogadro's Number (\(N_A\)) is equal to:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 6.022 \times 10^{22} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 6.022 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 6.022 \times 10^{24} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 6.022 \times 10^{-23} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">11.</span><span>The volume occupied by 1 mole of an ideal gas at STP is approximately:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 22.4 L</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 11.2 L</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 24.0 L</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 44.8 L</div>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">12.</span><span>How many moles are present in 44 g of Carbon Dioxide (\(CO_2\))?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0.5 moles</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1.0 mole</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 2.0 moles</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 4.4 moles</div>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">13.</span><span>Which formula represents the simplest whole number ratio of atoms in a compound?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Molecular Formula</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Structural Formula</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Empirical Formula</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Chemical Formula</div>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">14.</span><span>What is the empirical formula of Glucose (\(C_6H_{12}O_6\))?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( CH_2O \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( C_2H_4O_2 \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( CHO \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( C_6H_{12}O_6 \)</div>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">15.</span><span>Molarity is defined as the number of moles of solute dissolved per:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 1 kg of solvent</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1 Liter of solution</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 1 Liter of solvent</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 1 kg of solution</div>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">16.</span><span>Which of the following concentration terms is independent of temperature?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Molarity</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Normality</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Molality</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Volume Percentage</div>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">17.</span><span>What is the mass of 0.5 moles of Nitrogen gas (\(N_2\))? (Atomic mass N = 14)</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 7 g</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 14 g</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 28 g</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 56 g</div>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">18.</span><span>The sum of the mole fractions of all components in a solution is always equal to:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 100</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Depends on solute</div>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">19.</span><span>The reactant which is entirely consumed in a chemical reaction is called the:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Excess Reagent</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Limiting Reagent</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Active Reagent</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Product Reagent</div>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">20.</span><span>Number of atoms present in 1 mole of an element is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 6.022 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 3.011 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 12.044 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 1.0 \)</div>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">21.</span><span>What is the mass percentage of Hydrogen in Water (\(H_2O\))?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 5.55%</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 11.11%</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 88.89%</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 20.00%</div>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">22.</span><span>The unit of density is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> kg m</div>
+                <div class="option-item"><span class="opt-label">(B)</span> kg / m³</div>
+                <div class="option-item"><span class="opt-label">(C)</span> m³ / kg</div>
+                <div class="option-item"><span class="opt-label">(D)</span> kg / m²</div>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">23.</span><span>Scientific notation of 0.000045 is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 4.5 \times 10^{-5} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 4.5 \times 10^{5} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 45 \times 10^{-6} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 0.45 \times 10^{-4} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">24.</span><span>Which of the following is a homogeneous mixture?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Sand in water</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Sugar dissolved in water</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Oil and water</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Smoke</div>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">25.</span><span>What is the molar mass of Sodium Hydroxide (\(NaOH\))? (Na=23, O=16, H=1)</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 28 g/mol</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 30 g/mol</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 40 g/mol</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 58.5 g/mol</div>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">26.</span><span>How many moles are in 3.6 g of \(H_2O\)?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0.1</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 0.2</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 0.5</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 1.0</div>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">27.</span><span>The prefix "pico" corresponds to:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 10^{-9} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 10^{-12} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 10^{-15} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 10^{-6} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">28.</span><span>Which element has the lowest atomic mass?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Helium</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Lithium</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Hydrogen</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Carbon</div>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">29.</span><span>If the empirical formula is \(CH\) and the molecular mass is 26, the molecular formula is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( CH_4 \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( C_2H_2 \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( C_2H_4 \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( C_6H_6 \)</div>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">30.</span><span>How many significant figures are in 100.0?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 1</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 2</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 3</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 4</div>
+            </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">31.</span><span>What is the molarity of a solution containing 40 g of \(NaOH\) in 1 L of solution?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0.5 M</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1.0 M</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 2.0 M</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 4.0 M</div>
+            </div>
+        </div>
+
+        <!-- Question 32 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">32.</span><span>The volume of 0.5 moles of \(O_2\) gas at STP is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 5.6 L</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 11.2 L</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 22.4 L</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 44.8 L</div>
+            </div>
+        </div>
+
+        <!-- Question 33 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">33.</span><span>One mole of any substance contains:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Avogadro's number of particles</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 1 gram of particles</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 100 particles</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 22.4 particles</div>
+            </div>
+        </div>
+
+        <!-- Question 34 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">34.</span><span>Rounding off 3.14159 to three significant figures gives:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 3.14</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 3.15</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 3.142</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 3.1</div>
+            </div>
+        </div>
+
+        <!-- Question 35 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">35.</span><span>The symbol for the SI unit of luminous intensity is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> A</div>
+                <div class="option-item"><span class="opt-label">(B)</span> cd</div>
+                <div class="option-item"><span class="opt-label">(C)</span> mol</div>
+                <div class="option-item"><span class="opt-label">(D)</span> K</div>
+            </div>
+        </div>
+
+        <!-- Question 36 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">36.</span><span>Which law deals specifically with the volumes of reacting gases?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Boyle's Law</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Gay Lussac's Law of Gaseous Volumes</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Law of Multiple Proportions</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Dalton's Law</div>
+            </div>
+        </div>
+
+        <!-- Question 37 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">37.</span><span>Mass percentage of Carbon in Methane (\(CH_4\)) is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 25%</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 50%</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 75%</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 80%</div>
+            </div>
+        </div>
+
+        <!-- Question 38 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">38.</span><span>Value of 1 amu in grams is approximately:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 1.66 \times 10^{-24} \text{ g} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 1.66 \times 10^{-27} \text{ g} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 9.1 \times 10^{-31} \text{ g} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 6.022 \times 10^{-23} \text{ g} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 39 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">39.</span><span>What is the molar mass of Sulphuric Acid (\(H_2SO_4\))? (H=1, S=32, O=16)</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 49 g/mol</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 98 g/mol</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 100 g/mol</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 108 g/mol</div>
+            </div>
+        </div>
+
+        <!-- Question 40 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">40.</span><span>How many atoms of Hydrogen are in 1 mole of \(H_2O\)?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> \( 6.022 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> \( 1.204 \times 10^{24} \)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> \( 3.011 \times 10^{23} \)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> \( 1.806 \times 10^{24} \)</div>
+            </div>
+        </div>
+
+        <!-- Question 41 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">41.</span><span>If 1L of a 1.0 M solution is diluted to 2L, the new molarity is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 0.25 M</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 0.5 M</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 1.0 M</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 2.0 M</div>
+            </div>
+        </div>
+
+        <!-- Question 42 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">42.</span><span>The number of significant figures in \( 6.022 \times 10^{23} \) is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 23</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 4</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 27</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Infinite</div>
+            </div>
+        </div>
+
+        <!-- Question 43 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">43.</span><span>Closeness of a measured value to the true value is known as:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Precision</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Accuracy</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Significance</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Error</div>
+            </div>
+        </div>
+
+        <!-- Question 44 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">44.</span><span>How many base SI units are there?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 5</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 6</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 7</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 8</div>
+            </div>
+        </div>
+
+        <!-- Question 45 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">45.</span><span>A pure substance made of two or more elements combined in a fixed ratio by mass is a:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Mixture</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Compound</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Solution</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Isotope</div>
+            </div>
+        </div>
+
+        <!-- Question 46 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">46.</span><span>Which of the following has zero mass (approximately) compared to protons and neutrons?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Alpha particle</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Electron</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Hydrogen atom</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Nucleus</div>
+            </div>
+        </div>
+
+        <!-- Question 47 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">47.</span><span>Amount of \(CO_2\) produced when 12g of Carbon burns completely in excess oxygen is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> 12 g</div>
+                <div class="option-item"><span class="opt-label">(B)</span> 22 g</div>
+                <div class="option-item"><span class="opt-label">(C)</span> 32 g</div>
+                <div class="option-item"><span class="opt-label">(D)</span> 44 g</div>
+            </div>
+        </div>
+
+        <!-- Question 48 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">48.</span><span>The formula of calculating number of moles is:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Mass / Molar Mass</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Molar Mass / Mass</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Mass × Molar Mass</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Volume / Density</div>
+            </div>
+        </div>
+
+        <!-- Question 49 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">49.</span><span>What is the SI unit of Temperature?</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Celsius (°C)</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Fahrenheit (°F)</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Kelvin (K)</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Rankine (R)</div>
+            </div>
+        </div>
+
+        <!-- Question 50 -->
+        <div class="question-block">
+            <div class="q-text"><span class="q-num">50.</span><span>According to Dalton's atomic theory, atoms of the same element are identical in:</span></div>
+            <div class="options-grid">
+                <div class="option-item"><span class="opt-label">(A)</span> Mass only</div>
+                <div class="option-item"><span class="opt-label">(B)</span> Size only</div>
+                <div class="option-item"><span class="opt-label">(C)</span> Chemical properties only</div>
+                <div class="option-item"><span class="opt-label">(D)</span> Mass, size, and chemical properties</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

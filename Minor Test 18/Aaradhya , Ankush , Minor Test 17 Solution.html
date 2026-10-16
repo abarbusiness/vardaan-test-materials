@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fdfbf7;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: var(--bg-light); 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .institute-name { font-size: 20pt; font-weight: bold; margin: 0; color: #333; }
+        .doc-title { font-size: 14pt; margin-top: 10px; font-weight: bold; text-decoration: underline;}
+        
+        .solution-block { 
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px; 
+            border-left: 4px solid var(--primary-yellow);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .q-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start;
+            margin-bottom: 15px;
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 10px;
+        }
+        .q-text { 
+            font-weight: bold; 
+            flex-grow: 1; 
+            margin-right: 15px;
+            font-size: 11.5pt;
+        }
+        .marks-badge { 
+            background-color: var(--primary-yellow); 
+            color: black; 
+            padding: 4px 10px; 
+            border-radius: 12px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            white-space: nowrap;
+        }
+        .final-answer { 
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 15px 0 10px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+        .explanation { margin-top: 10px; }
+        .math-container {
+            overflow-x: auto; /* Essential for mobile chunking/scrolling of equations */
+            overflow-y: hidden;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+        .math-container::-webkit-scrollbar { height: 6px; }
+        .math-container::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 3px; }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; font-size: 10.5pt; }
+            .solution-block { padding: 15px; }
+            .q-header { flex-direction: column; gap: 10px; }
+            .marks-badge { align-self: flex-start; }
+            .institute-name { font-size: 16pt; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="watermark">
+
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: General Mathematics (Class 8)</div>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 30px;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q1. Find two rational numbers between \(\frac{1}{4}\) and \(\frac{1}{2}\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Step 1: Make the denominators same.</strong><br>
+            LCM of 4 and 2 is 4. However, to find multiple numbers, let's use a larger equivalent denominator, say 16.
+            <div class="math-container">
+                \[ \frac{1}{4} = \frac{1 \times 4}{4 \times 4} = \frac{4}{16} \]
+                \[ \frac{1}{2} = \frac{1 \times 8}{2 \times 8} = \frac{8}{16} \]
+            </div>
+            <strong>Step 2: Pick rational numbers between the numerators.</strong><br>
+            Rational numbers between \(\frac{4}{16}\) and \(\frac{8}{16}\) are \(\frac{5}{16}, \frac{6}{16}, \frac{7}{16}\).
+            <div class="final-answer">Answer: \(\frac{5}{16}\) and \(\frac{3}{8}\) (or any other correct equivalents)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q2. Solve the linear equation for \(x\): \(3x - 5 = 2x + 7\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            Transposing variables to one side and constants to the other:
+            <div class="math-container">
+                \begin{aligned}
+                3x - 2x &= 7 + 5 \\
+                x &= 12
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(x = 12\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q3. The angles of a quadrilateral are in the ratio 2 : 3 : 4 : 6. Find the measure of the largest angle.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            Let the angles be \(2x\), \(3x\), \(4x\), and \(6x\).<br>
+            By angle sum property of a quadrilateral, the sum of all angles is \(360^\circ\).
+            <div class="math-container">
+                \begin{aligned}
+                2x + 3x + 4x + 6x &= 360^\circ \\
+                15x &= 360^\circ \\
+                x &= \frac{360^\circ}{15} = 24^\circ
+                \end{aligned}
+            </div>
+            The largest angle corresponds to the largest ratio part (6).<br>
+            Largest angle = \(6 \times 24^\circ = 144^\circ\).
+            <div class="final-answer">Answer: \(144^\circ\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q4. Evaluate using laws of exponents: \((2^{-1} \times 4^{-1}) \div 2^{-2}\)</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            Using the law \(a^{-m} = \frac{1}{a^m}\):
+            <div class="math-container">
+                \begin{aligned}
+                \left(\frac{1}{2} \times \frac{1}{4}\right) \div \frac{1}{2^2} &= \left(\frac{1}{8}\right) \div \frac{1}{4} \\
+                &= \frac{1}{8} \times 4 \\
+                &= \frac{4}{8} = \frac{1}{2}
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(\frac{1}{2}\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q5. Find the product of the algebraic expressions: \((3x + 2y)\) and \((3x - 2y)\).</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            Using the algebraic identity \((a + b)(a - b) = a^2 - b^2\), where \(a = 3x\) and \(b = 2y\):
+            <div class="math-container">
+                \begin{aligned}
+                (3x + 2y)(3x - 2y) &= (3x)^2 - (2y)^2 \\
+                &= 9x^2 - 4y^2
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(9x^2 - 4y^2\)</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 40px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q6. A rectangular piece of paper \(11\text{ cm} \times 4\text{ cm}\) is folded without overlapping to make a cylinder of height \(4\text{ cm}\). Find the volume.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            When folded along its length to form a cylinder of height \(4\text{ cm}\), the length of the paper (\(11\text{ cm}\)) becomes the circumference of the cylinder's base.<br><br>
+            Let \(r\) be the radius of the base.
+            <div class="math-container">
+                \begin{aligned}
+                2\pi r &= 11 \\
+                2 \times \frac{22}{7} \times r &= 11 \\
+                r &= \frac{11 \times 7}{2 \times 22} = \frac{7}{4}\text{ cm}
+                \end{aligned}
+            </div>
+            Now, calculate the Volume (\(V\)) = \(\pi r^2 h\):
+            <div class="math-container">
+                \begin{aligned}
+                V &= \frac{22}{7} \times \left(\frac{7}{4}\right)^2 \times 4 \\
+                &= \frac{22}{7} \times \frac{49}{16} \times 4 \\
+                &= \frac{22 \times 7 \times 4}{16} = \frac{616}{16} = 38.5\text{ cm}^3
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(38.5\text{ cm}^3\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q7. The sum of three consecutive multiples of \(8\) is \(888\). Find the multiples.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            Let the three consecutive multiples of 8 be \(8x\), \(8(x+1)\), and \(8(x+2)\).<br>
+            According to the question:
+            <div class="math-container">
+                \begin{aligned}
+                8x + 8(x+1) + 8(x+2) &= 888 \\
+                8 (x + x + 1 + x + 2) &= 888 \\
+                3x + 3 &= \frac{888}{8} = 111 \\
+                3x &= 111 - 3 = 108 \\
+                x &= \frac{108}{3} = 36
+                \end{aligned}
+            </div>
+            The multiples are:
+            <ul>
+                <li>First: \(8 \times 36 = 288\)</li>
+                <li>Second: \(8 \times 37 = 296\)</li>
+                <li>Third: \(8 \times 38 = 304\)</li>
+            </ul>
+            <div class="final-answer">Answer: \(288\), \(296\), and \(304\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q8. Factorise the given expression completely: \(a^4 - b^4\)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            We use the identity \(x^2 - y^2 = (x - y)(x + y)\).<br>
+            Rewrite the expression: \(a^4 - b^4 = (a^2)^2 - (b^2)^2\)
+            <div class="math-container">
+                \begin{aligned}
+                &= (a^2 - b^2)(a^2 + b^2)
+                \end{aligned}
+            </div>
+            The term \((a^2 - b^2)\) can be further factorised using the same identity:
+            <div class="math-container">
+                \begin{aligned}
+                &= (a - b)(a + b)(a^2 + b^2)
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \((a - b)(a + b)(a^2 + b^2)\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q9. Find the smallest whole number by which \(252\) must be multiplied to get a perfect square. Also, find the square root of the perfect square so obtained.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            First, find the prime factorization of 252:
+            <div class="math-container">
+                \(252 = 2 \times 126 = 2 \times 2 \times 63 = 2 \times 2 \times 3 \times 21 = 2 \times 2 \times 3 \times 3 \times 7\) <br>
+                \(252 = 2^2 \times 3^2 \times 7\)
+            </div>
+            Here, the prime factor 7 does not have a pair. Therefore, 252 must be multiplied by 7 to make it a perfect square.<br><br>
+            New perfect square = \(252 \times 7 = 1764\).<br>
+            Square root of 1764 = \(\sqrt{2^2 \times 3^2 \times 7^2} = 2 \times 3 \times 7 = 42\).
+            <div class="final-answer">Answer: Multiply by 7; Square Root is 42</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q10. Simplify: \(\frac{3^{-5} \times 10^{-5} \times 125}{5^{-7} \times 6^{-5}}\)</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            First, express all composite numbers as prime factors:
+            \(10 = 2 \times 5\), \(125 = 5^3\), \(6 = 2 \times 3\).
+            <div class="math-container">
+                \begin{aligned}
+                \text{Expression} &= \frac{3^{-5} \times (2 \times 5)^{-5} \times 5^3}{5^{-7} \times (2 \times 3)^{-5}} \\
+                &= \frac{3^{-5} \times 2^{-5} \times 5^{-5} \times 5^3}{5^{-7} \times 2^{-5} \times 3^{-5}}
+                \end{aligned}
+            </div>
+            Now, apply the laws of exponents (cancel common terms and combine powers of same bases):
+            <div class="math-container">
+                \begin{aligned}
+                &= \frac{2^{-5}}{2^{-5}} \times \frac{3^{-5}}{3^{-5}} \times \frac{5^{-5} \times 5^3}{5^{-7}} \\
+                &= 1 \times 1 \times \frac{5^{-2}}{5^{-7}} \\
+                &= 5^{-2 - (-7)} \\
+                &= 5^{-2 + 7} = 5^5
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(5^5\) (or \(3125\))</div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 40px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q11. The parallel sides of a trapezium are \(25\text{ cm}\) and \(13\text{ cm}\). Its non-parallel sides are equal, each being \(10\text{ cm}\). Find the area of the trapezium.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            Let the trapezium be ABCD with AB || DC. AB = 13 cm and DC = 25 cm. AD = BC = 10 cm (isosceles trapezium).<br>
+            Draw perpendiculars AM and BN from A and B to DC. <br>
+            Since ABCD is an isosceles trapezium, the triangles ADM and BCN are congruent. <br>
+            Thus, \(DM = NC\). Let \(DM = NC = x\).
+            <div class="math-container">
+                \begin{aligned}
+                DC &= DM + MN + NC \\
+                25 &= x + 13 + x \\
+                2x &= 25 - 13 = 12 \\
+                x &= 6\text{ cm}
+                \end{aligned}
+            </div>
+            In right-angled \(\Delta ADM\), apply Pythagoras theorem to find height (h = AM):
+            <div class="math-container">
+                \begin{aligned}
+                AM^2 + DM^2 &= AD^2 \\
+                h^2 + 6^2 &= 10^2 \\
+                h^2 &= 100 - 36 = 64 \\
+                h &= \sqrt{64} = 8\text{ cm}
+                \end{aligned}
+            </div>
+            Area of Trapezium = \(\frac{1}{2} \times (\text{Sum of parallel sides}) \times \text{height}\)
+            <div class="math-container">
+                \begin{aligned}
+                \text{Area} &= \frac{1}{2} \times (25 + 13) \times 8 \\
+                &= \frac{1}{2} \times 38 \times 8 = 38 \times 4 = 152\text{ cm}^2
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: \(152\text{ cm}^2\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q12. (i) Prove \((a+b)^2 - (a-b)^2 = 4ab\). (ii) Evaluate \(102^2 - 98^2\). (iii) Simplify \((2x+5)^2 - (2x-5)^2\).</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Part (i): Proof</strong>
+            <div class="math-container">
+                \begin{aligned}
+                \text{LHS} &= (a^2 + b^2 + 2ab) - (a^2 + b^2 - 2ab) \\
+                &= a^2 + b^2 + 2ab - a^2 - b^2 + 2ab \\
+                &= 4ab = \text{RHS} \text{ (Proved)}
+                \end{aligned}
+            </div>
+            <strong>Part (ii): Evaluation</strong><br>
+            Using the proven identity, substitute \(a = 100\) and \(b = 2\) 
+            (Or directly compare \(102 = a+b\) and \(98 = a-b\) which means \(a=100, b=2\)):
+            <div class="math-container">
+                \begin{aligned}
+                102^2 - 98^2 &= (100+2)^2 - (100-2)^2 \\
+                &= 4 \times 100 \times 2 = 800
+                \end{aligned}
+            </div>
+            <strong>Part (iii): Simplification</strong><br>
+            Using the same identity where \(a = 2x\) and \(b = 5\):
+            <div class="math-container">
+                \begin{aligned}
+                (2x+5)^2 - (2x-5)^2 &= 4(2x)(5) \\
+                &= 40x
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: (i) Proved (ii) 800 (iii) \(40x\)</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">Q13. A shopkeeper bought a VCR and a TV for ₹8,000 each. Loss of 4% on VCR and profit of 8% on TV. Find total gain or loss %.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>For the VCR:</strong><br>
+            Cost Price (CP) = ₹8,000<br>
+            Loss % = 4%
+            <div class="math-container">
+                \begin{aligned}
+                \text{Loss} &= \frac{4}{100} \times 8000 = \text{₹}320 \\
+                \text{Selling Price (SP) of VCR} &= \text{CP} - \text{Loss} = 8000 - 320 = \text{₹}7680
+                \end{aligned}
+            </div>
+            <strong>For the TV:</strong><br>
+            Cost Price (CP) = ₹8,000<br>
+            Profit % = 8%
+            <div class="math-container">
+                \begin{aligned}
+                \text{Profit} &= \frac{8}{100} \times 8000 = \text{₹}640 \\
+                \text{Selling Price (SP) of TV} &= \text{CP} + \text{Profit} = 8000 + 640 = \text{₹}8640
+                \end{aligned}
+            </div>
+            <strong>Total Transaction:</strong>
+            <div class="math-container">
+                \begin{aligned}
+                \text{Total CP} &= 8000 + 8000 = \text{₹}16,000 \\
+                \text{Total SP} &= 7680 + 8640 = \text{₹}16,320
+                \end{aligned}
+            </div>
+            Since Total SP > Total CP, there is a Gain (Profit).
+            <div class="math-container">
+                \begin{aligned}
+                \text{Total Profit} &= 16320 - 16000 = \text{₹}320 \\
+                \text{Profit \%} &= \left(\frac{\text{Total Profit}}{\text{Total CP}} \times 100\right)\% \\
+                &= \left(\frac{320}{16000} \times 100\right)\% = 2\%
+                \end{aligned}
+            </div>
+            <div class="final-answer">Answer: 2% Overall Profit (Gain)</div>
+        </div>
+    </div>
+    
+</body>
+</html>

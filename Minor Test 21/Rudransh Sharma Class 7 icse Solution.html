@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                packages: {'[+]': ['textcomp']}
+            },
+            chtml: {
+                matchFontHeight: false,
+                displayAlign: "left"
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .title-doc {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 30px 0 15px 0;
+            color: #d32f2f;
+            text-align: center;
+        }
+        
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-weight: bold;
+            align-self: flex-start;
+        }
+        .explanation {
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        /* MathJax Responsive Handling */
+        .math-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 5px 0;
+            width: 100%;
+        }
+        mjx-container {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 15px; font-size: 11pt; }
+            .institute-name { font-size: 18pt; }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; }
+            .explanation { margin-left: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="title-doc">DETAILED SOLUTIONS: Minor Test 21 (Light Energy & Heat)</div>
+        <div style="margin-top: 5px; font-weight: bold;">Class 7 ICSE | Max Marks: 40</div>
+    </div>
+
+    <div class="section-title">SECTION A (10 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. Define temperature and state its S.I. unit.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><span class="highlight">Temperature:</span> It is the reliable measure of the degree of hotness or coldness of a body. (1 Mark)</p>
+            <p><span class="highlight">S.I. Unit:</span> The S.I. unit of temperature is Kelvin (K). (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. What is meant by the reflection of light? Name the two types of reflection.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><span class="highlight">Reflection:</span> The bouncing back of light rays into the same medium after striking a surface is called reflection of light. (1 Mark)</p>
+            <p><span class="highlight">Types:</span> (i) Regular Reflection (ii) Irregular or Diffused Reflection. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. Convert $45^\circ \text{C}$ to the Kelvin scale.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="math-container">
+                <p>Formula: $$ K = C + 273 $$ (For class 7 standard, 273 is accepted in place of 273.15) (1 Mark)</p>
+                <p>$$ K = 45 + 273 = 318 \text{ K} $$ (1 Mark)</p>
+            </div>
+            <p><span class="highlight">Answer:</span> $318 \text{ K}$</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. State two properties of an image formed by a plane mirror.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p>Any two of the following properties (1 Mark each):</p>
+            <ul>
+                <li>The image is virtual and erect.</li>
+                <li>The size of the image is equal to the size of the object.</li>
+                <li>The image is laterally inverted.</li>
+                <li>Distance of the image behind the mirror equals distance of the object in front of it.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. Define a real image. Can it be obtained on a screen?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><span class="highlight">Real Image:</span> An image formed when reflected or refracted light rays actually intersect at a point is called a real image. (1 Mark)</p>
+            <p><span class="highlight">Screen:</span> Yes, a real image can be obtained on a screen. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION B (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. State the two laws of reflection of light.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p>The two laws are:</p>
+            <ol>
+                <li>The angle of incidence is always equal to the angle of reflection ($ \angle i = \angle r $). (1.5 Marks)</li>
+                <li>The incident ray, the reflected ray, and the normal at the point of incidence, all lie in the same plane. (1.5 Marks)</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. The normal body temperature of a human is $98.6^\circ \text{F}$. Calculate this temperature on the Celsius scale.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="math-container">
+                <p>Using the conversion formula: $$ \frac{C}{5} = \frac{F - 32}{9} $$ (1 Mark)</p>
+                <p>Substitute $F = 98.6^\circ \text{F}$:</p>
+                <p>$$ \frac{C}{5} = \frac{98.6 - 32}{9} $$</p>
+                <p>$$ \frac{C}{5} = \frac{66.6}{9} $$</p>
+                <p>$$ \frac{C}{5} = 7.4 $$ (1 Mark)</p>
+                <p>$$ C = 7.4 \times 5 = 37^\circ \text{C} $$ (1 Mark)</p>
+            </div>
+            <p><span class="highlight">Answer:</span> $37^\circ \text{C}$</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. Distinguish between regular reflection and irregular (diffused) reflection by giving two points of difference.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <tr>
+                    <th style="background-color: #f5f5f5;">Regular Reflection</th>
+                    <th style="background-color: #f5f5f5;">Irregular (Diffused) Reflection</th>
+                </tr>
+                <tr>
+                    <td>Takes place from smooth and highly polished surfaces (e.g., plane mirror).</td>
+                    <td>Takes place from rough or uneven surfaces (e.g., wall, paper).</td>
+                </tr>
+                <tr>
+                    <td>A parallel beam of incident light remains parallel after reflection.</td>
+                    <td>A parallel beam of incident light scatters in different directions after reflection.</td>
+                </tr>
+            </table>
+            <p><em>(1.5 Marks for each valid difference point)</em></p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. Why does a clinical thermometer have a slight bend (kink) in its capillary tube? Explain briefly.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><span class="highlight">Reason:</span> The kink (or constriction) is located just above the bulb. (1 Mark)</p>
+            <p><span class="highlight">Explanation:</span> It prevents the mercury level from falling back into the bulb on its own when the thermometer is removed from the patient's mouth. (1.5 Marks) This gives the user ample time to read the temperature accurately. (0.5 Mark)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. What is meant by the rectilinear propagation of light? Give one everyday example to support your answer.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><span class="highlight">Definition:</span> The property of light to travel in a straight line in a uniform or homogeneous medium is known as the rectilinear propagation of light. (2 Marks)</p>
+            <p><span class="highlight">Example:</span> Formation of shadows when an opaque object comes in the path of light, OR light beams from a car headlamp appearing straight in mist/smoke. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="section-title">SECTION C (15 Marks)</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. (a) Formula for $C$ and $F$. (b) Convert $20^\circ \text{C}$ to Fahrenheit. (c) Define heat energy.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="math-container">
+                <p><strong>(a)</strong> The relationship formula is: $$ \frac{C}{5} = \frac{F - 32}{9} $$ (2 Marks)</p>
+                <p><strong>(b)</strong> Given $C = 20$. Using the formula:<br>
+                $$ \frac{20}{5} = \frac{F - 32}{9} $$<br>
+                $$ 4 = \frac{F - 32}{9} $$<br>
+                $$ F - 32 = 4 \times 9 = 36 $$<br>
+                $$ F = 36 + 32 = 68^\circ \text{F} $$ (2 Marks)</p>
+            </div>
+            <p><strong>(c)</strong> <span class="highlight">Heat Energy:</span> It is a form of energy that causes the sensation of hotness and coldness, and it flows from a body at a higher temperature to a body at a lower temperature. (1 Mark)</p>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. (a) Diagram of reflection of a light ray. (b) Angle of incidence is $30^\circ$, calculate angle of reflection and total angle.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><strong>(a) Diagram (3 Marks):</strong><br>
+            <em>(Students must draw a diagram containing:)</em><br>
+            - A straight line with hatch marks representing the plane mirror. (0.5 Mark)<br>
+            - An incident ray with an arrow pointing towards the mirror. (0.5 Mark)<br>
+            - A reflected ray with an arrow pointing away. (0.5 Mark)<br>
+            - A normal (dotted line) perpendicular to the mirror surface at the point of incidence. (0.5 Mark)<br>
+            - Clear labeling of Angle of Incidence ($\angle i$) and Angle of Reflection ($\angle r$). (1 Mark)</p>
+            
+            <div class="math-container">
+                <p><strong>(b) Calculation (2 Marks):</strong></p>
+                <p>Given Angle of incidence ($\angle i$) = $30^\circ$.</p>
+                <p>By the first law of reflection, Angle of reflection ($\angle r$) = $\angle i = 30^\circ$. (1 Mark)</p>
+                <p>Total angle between incident ray and reflected ray = $\angle i + \angle r = 30^\circ + 30^\circ = 60^\circ$. (1 Mark)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. (a) Differentiate between Conduction, Convection, and Radiation. (b) Give one example of a good conductor and one of an insulator.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <p><strong>(a) Modes of Heat Transfer (3 Marks):</strong></p>
+            <ul>
+                <li><span class="highlight">Conduction:</span> Heat transfer in solids where energy is passed from molecule to molecule without any actual movement of the molecules themselves. (1 Mark)</li>
+                <li><span class="highlight">Convection:</span> Heat transfer in liquids and gases caused by the actual movement of the heated molecules from the hotter region to the colder region. (1 Mark)</li>
+                <li><span class="highlight">Radiation:</span> The process of heat transfer that does not require any material medium. Heat travels in the form of electromagnetic waves (like sunlight). (1 Mark)</li>
+            </ul>
+            <p><strong>(b) Examples (2 Marks):</strong></p>
+            <p><span class="highlight">Good Conductor:</span> Copper, Iron, Aluminum, Silver (Any one, 1 Mark)</p>
+            <p><span class="highlight">Insulator (Bad Conductor):</span> Wood, Plastic, Rubber, Glass, Air (Any one, 1 Mark)</p>
+        </div>
+    </div>
+
+</body>
+</html>

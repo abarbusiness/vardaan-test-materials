@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Solutions - Physics MCQ Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            chtml: {
+                scale: 0.95,
+                minScale: 0.5
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            color: var(--text-main); 
+            background-color: white; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            max-width: 210mm;
+            position: relative;
+            line-height: 1.6;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+            text-decoration: underline;
+        }
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            break-inside: avoid;
+        }
+        .sol-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .question-text {
+            flex-grow: 1;
+            font-weight: 600;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .correct-answer { 
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 10px 0 10px 25px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block; 
+            border-left: 4px solid #2e7d32;
+        }
+        .explanation { 
+            margin-left: 25px; 
+            color: #333;
+        }
+        /* Mobile friendly math container */
+        .math-scroll {
+            display: block;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+            padding: 5px 0;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            .sol-header { flex-direction: column; }
+            .marks-badge { margin-top: 10px; align-self: flex-start; }
+            .explanation, .correct-answer { margin-left: 0; }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { display: inline; overflow: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Class 12 – Physics MCQ Test</div>
+        <p style="margin-top: 5px; font-weight: bold;">Topic: Electrostatics & Magnetism</p>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q1. Two point charges $+q$ and $-q$ are separated by a distance $r$ in vacuum. The force between them is $F$. If a dielectric material of dielectric constant $K$ is completely filled between them, the new force will be:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $F / K$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> By Coulomb's Law, the force in vacuum is:
+            <span class="math-scroll">$$F = \frac{1}{4\pi\epsilon_0} \frac{q^2}{r^2}$$</span>
+            When a medium of dielectric constant $K$ is introduced, the permittivity becomes $\epsilon = K\epsilon_0$. 
+            The new force is:
+            <span class="math-scroll">$$F' = \frac{1}{4\pi(K\epsilon_0)} \frac{q^2}{r^2} = \frac{F}{K}$$</span>
+            Thus, the force decreases by a factor of $K$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q2. The electric flux through a closed Gaussian surface enclosing an electric dipole is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Zero</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> An electric dipole consists of two equal and opposite charges ($+q$ and $-q$). 
+            According to Gauss's Law, the total electric flux through a closed surface is:
+            <span class="math-scroll">$$\phi_E = \frac{q_{net}}{\epsilon_0}$$</span>
+            Since the net charge enclosed $q_{net} = (+q) + (-q) = 0$, the total electric flux is zero.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q3. A hollow conducting sphere of radius $R$ carries a charge $Q$. The electric potential at its center is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $\frac{1}{4\pi\epsilon_0} \frac{Q}{R}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The electric field inside a hollow conducting sphere is zero. Because $E = -\frac{dV}{dr} = 0$, the potential $V$ must be constant everywhere inside the sphere and equal to its value on the surface. Therefore, the potential at the center is the same as on the surface: $V = \frac{1}{4\pi\epsilon_0} \frac{Q}{R}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q4. Three identical capacitors, each of capacitance $C$, are connected in series. Their equivalent capacitance is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $C / 3$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> For capacitors in series, the equivalent capacitance $C_{eq}$ is given by the reciprocal sum:
+            <span class="math-scroll">$$\frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3}$$</span>
+            Here, $C_1 = C_2 = C_3 = C$. So, $\frac{1}{C_{eq}} = \frac{3}{C} \implies C_{eq} = \frac{C}{3}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q5. What is the work done in moving a test charge $q_0$ along an equipotential surface?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Zero</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> An equipotential surface is one where the potential $V$ is constant everywhere. The work done in moving a charge is $W = q_0 \Delta V$. Since the potential difference $\Delta V$ between any two points on an equipotential surface is zero, the work done $W = 0$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q6. The energy density of the electric field $E$ in free space is given by:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $\frac{1}{2} \epsilon_0 E^2$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Energy density (energy per unit volume) in an electric field in vacuum is a standard derived formula. It is directly proportional to the square of the electric field intensity and is given as $u_e = \frac{1}{2} \epsilon_0 E^2$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q7. An electric dipole placed in a uniform electric field experiences:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Only a torque</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> In a uniform electric field, the force on $+q$ is $qE$ and on $-q$ is $-qE$. The net force $F_{net} = qE - qE = 0$. However, these forces act at different points, forming a couple, which exerts a net torque given by $\vec{\tau} = \vec{p} \times \vec{E}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q8. A charge $q$ is placed at the center of a cube of side $l$. What is the electric flux passing through one face of the cube?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (D) $\frac{q}{6\epsilon_0}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> According to Gauss's law, the total flux through the entire cube is $\Phi_{total} = \frac{q}{\epsilon_0}$. Because the charge is exactly at the center, the flux is symmetrically distributed among all $6$ identical faces. Thus, the flux through one face is:
+            <span class="math-scroll">$$\Phi_{face} = \frac{q}{6\epsilon_0}$$</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q9. The electric field intensity due to an infinite uniformly charged straight wire at a perpendicular distance $r$ is proportional to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $1/r$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Using Gauss's Law, the electric field due to an infinitely long straight wire with linear charge density $\lambda$ is given by:
+            <span class="math-scroll">$$E = \frac{\lambda}{2\pi\epsilon_0 r}$$</span>
+            Therefore, $E \propto \frac{1}{r}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q10. A parallel plate capacitor is charged and the charging battery is disconnected. If a dielectric slab is now inserted between the plates, the potential difference across the plates will:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Decrease</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> When the battery is disconnected, the charge $Q$ on the plates remains constant. Introducing a dielectric of constant $K$ increases the capacitance to $C' = K \cdot C$. Since $V = \frac{Q}{C'}$, and $C'$ increases, the potential difference $V$ must decrease ($V' = V/K$).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q11. According to Biot-Savart's law, the magnetic field $d\vec{B}$ due to a current element $Id\vec{l}$ at a distance $\vec{r}$ is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $\frac{\mu_0}{4\pi} \frac{I(d\vec{l} \times \vec{r})}{r^3}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The Biot-Savart law in vector form is written as:
+            <span class="math-scroll">$$d\vec{B} = \frac{\mu_0 I}{4\pi} \frac{d\vec{l} \times \hat{r}}{r^2}$$</span>
+            Since unit vector $\hat{r} = \frac{\vec{r}}{r}$, substituting this gives:
+            <span class="math-scroll">$$d\vec{B} = \frac{\mu_0 I}{4\pi} \frac{d\vec{l} \times \vec{r}}{r^3}$$</span>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q12. A charged particle of charge $q$ enters a uniform magnetic field $\vec{B}$ with velocity $\vec{v}$ perpendicular to the field. The path of the particle will be:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Circular</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The magnetic Lorentz force $\vec{F} = q(\vec{v} \times \vec{B})$ acts perpendicular to both velocity and the magnetic field. This perpendicular force provides the centripetal force required for circular motion, causing the particle to trace a circular path.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q13. Two long parallel wires carrying steady currents in the <em>same direction</em> will:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Attract each other</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Wire 1 produces a magnetic field at the location of Wire 2. According to Fleming's Left-Hand Rule, the force on Wire 2 due to this magnetic field points toward Wire 1. Hence, currents in the same direction attract each other.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q14. To convert a moving coil galvanometer into an ammeter, we must connect:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (D) Low resistance in parallel</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> An ammeter is placed in series in a circuit and must have a very low resistance so it doesn't alter the main current. To achieve this, a very low resistance called a "shunt" is connected in parallel with the galvanometer.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q15. The magnetic field $B$ inside a long straight solenoid carrying current $I$ and having $n$ turns per unit length is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $\mu_0 n I$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Applying Ampere's Circuital Law to a rectangular loop inside an ideal long solenoid yields $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{enclosed}$. This simplifies to $B \cdot L = \mu_0 (nL) I$, giving the standard result $B = \mu_0 n I$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q16. The angle of dip at the Earth's magnetic poles is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $90^\circ$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> At the Earth's magnetic poles, the magnetic field lines enter or leave the Earth vertically. Therefore, the horizontal component is zero, and the angle of dip (the angle the magnetic field makes with the horizontal) is exactly $90^\circ$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q17. The radius of the circular path of a charged particle moving perpendicularly in a uniform magnetic field is directly proportional to its:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Momentum</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The radius of a charged particle in a magnetic field is given by $r = \frac{mv}{qB} = \frac{p}{qB}$, where $p$ is momentum. Since $q$ and $B$ are in the denominator, the radius is directly proportional to the momentum $p$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q18. The magnetic dipole moment $M$ of a circular coil of radius $r$ carrying current $I$ and having $N$ turns is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $N I \pi r^2$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The magnetic dipole moment of a current-carrying loop is $M = N I A$. For a circular coil of radius $r$, the area $A = \pi r^2$. Substituting this gives $M = N I (\pi r^2)$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q19. The magnetic susceptibility ($\chi$) of a diamagnetic material is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Negative and small</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Diamagnetic materials develop an induced magnetic dipole moment in a direction opposite to the applied magnetic field. Because they are weakly repelled by magnetic fields, their magnetic susceptibility $\chi$ is negative and very small in magnitude.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q20. At a certain place, the horizontal component of Earth's magnetic field is equal to the vertical component. The angle of dip at that place is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $45^\circ$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The angle of dip $\delta$ is related to the horizontal ($B_H$) and vertical ($B_V$) components by the equation $\tan \delta = \frac{B_V}{B_H}$. Since $B_V = B_H$, we have $\tan \delta = 1$, which means $\delta = 45^\circ$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q21. The electric field inside a uniformly charged non-conducting solid sphere of radius $R$ at a distance $r$ ($r < R$) from its center is proportional to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) $r$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Using Gauss's Law for a point inside a uniformly charged solid sphere, the electric field is given by $E = \frac{1}{4\pi\epsilon_0} \frac{Q \cdot r}{R^3}$. Therefore, $E \propto r$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q22. The dimensional formula of permittivity of free space $\epsilon_0$ is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $[M^{-1} L^{-3} T^4 A^2]$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> From Coulomb's Law, $\epsilon_0 = \frac{q_1 q_2}{4\pi F r^2}$. Putting dimensions: $\frac{[A T] \cdot [A T]}{[M L T^{-2}] [L^2]} = [M^{-1} L^{-3} T^4 A^2]$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q23. A soap bubble is given a negative charge. Its radius will:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Increase</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> When a soap bubble is charged, the excess charges (being of the same sign) mutually repel each other. This repulsive force pushes the surface outward, increasing its radius.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q24. Two capacitors of capacitance $2 \mu\text{F}$ and $3 \mu\text{F}$ are connected in parallel. Their equivalent capacitance is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $5 \mu\text{F}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> For capacitors connected in parallel, the equivalent capacitance is simply the algebraic sum of the individual capacitances. $C_{eq} = C_1 + C_2 = 2 \mu\text{F} + 3 \mu\text{F} = 5 \mu\text{F}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q25. The dielectric constant of metals is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (D) Infinity</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The electric field inside a conductor is zero. Since $E = \frac{E_0}{K}$ and $E = 0$ inside a metal, the dielectric constant $K$ must be infinity.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q26. The unit of electric flux is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) V-m</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Electric flux $\Phi_E = E \cdot A$. The unit of Electric field $E$ is Volt/meter (V/m). Multiplying by area ($m^2$) gives $(V/m) \cdot m^2 = V \cdot m$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q27. If the distance between two equal point charges is doubled, the electrostatic force between them becomes:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) One-fourth</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> According to Coulomb's Law, the force is inversely proportional to the square of the distance between charges ($F \propto 1/r^2$). If $r$ becomes $2r$, the new force becomes $F' \propto 1/(2r)^2 = 1/4r^2$, which is one-fourth of the original force.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q28. Work done in moving a charge of $2\text{ C}$ across two points having a potential difference of $5\text{ V}$ is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) 10 J</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Work done is calculated as $W = q \Delta V$. Here, $q = 2\text{ C}$ and $\Delta V = 5\text{ V}$. Hence, $W = 2 \times 5 = 10\text{ J}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q29. The electrostatic potential energy of a dipole of moment $\vec{p}$ in a uniform electric field $\vec{E}$ is given by:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $-\vec{p} \cdot \vec{E}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The potential energy of a dipole is calculated as the work done to rotate it in the field, derived as $U = -pE \cos\theta$, which in vector form is written as $-\vec{p} \cdot \vec{E}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q30. An uncharged insulated conductor $A$ is brought near a charged insulated conductor $B$. What happens to charge and potential of $B$?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Charge remains same, potential decreases</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Bringing conductor A near B causes induction, reducing the net potential of B. However, since the systems are insulated and no charge is transferred, the net charge on B remains the same.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q31. Which of the following is NOT a valid unit for electric field intensity?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) J/C</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The standard units of electric field are Newton/Coulomb (N/C) and Volt/meter (V/m). Since $1\text{ V} = 1\text{ J/C}$, $V/m$ is equivalent to $J/(C\cdot m)$. However, Joules/Coulomb (J/C) is strictly the unit of Electric Potential, not Electric Field.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q32. The electric field lines provide information about:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (D) All of these</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Electric field lines give the direction (tangent to the line), field strength (density of lines), and nature of charge (originating from positive, terminating at negative).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q33. If a conducting slab of thickness $t$ ($t < d$) is introduced between the plates of a parallel plate capacitor of plate separation $d$, its capacitance:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Increases</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The capacitance with a conducting slab is $C' = \frac{\epsilon_0 A}{d - t}$. Since the denominator decreases ($d-t < d$), the capacitance $C'$ increases.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q34. Equipotential surfaces associated with an isolated point charge are:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) Concentric spheres</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The potential due to a point charge is $V = k \frac{q}{r}$. For $V$ to be constant, $r$ must be constant. The locus of points with constant $r$ in 3D space is a sphere centered at the charge.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q35. Gauss's law will be invalid if:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Inverse square law is not exactly true</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Gauss's law depends fundamentally on the inverse square law of the electric field ($1/r^2$). If the field obeyed a different distance dependency, the solid angle derivation for Gauss's law would fail.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q36. The magnetic field at the center of a circular current carrying loop of radius $r$ and $N$ turns is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $\frac{\mu_0 N I}{2 r}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> By Biot-Savart Law integrated over a full circle, $B = \frac{\mu_0 I}{2r}$ for one turn. For $N$ turns, it is scaled to $B = \frac{\mu_0 N I}{2r}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q37. The frequency of a charged particle circulating in a cyclotron is independent of:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (D) Velocity of the particle</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The cyclotron frequency is given by $f = \frac{qB}{2\pi m}$. It depends on the charge $q$, mass $m$, and magnetic field $B$, but is completely independent of velocity (and radius).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q38. The Lorentz force on a particle of charge $q$ moving with velocity $\vec{v}$ in combined electric field $\vec{E}$ and magnetic field $\vec{B}$ is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) $q(\vec{E} + \vec{v} \times \vec{B})$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The total force is the sum of the electric force $\vec{F_e} = q\vec{E}$ and the magnetic force $\vec{F_m} = q(\vec{v} \times \vec{B})$. Thus, $\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q39. Which of the following material has a negative magnetic susceptibility?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Diamagnetic</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Diamagnetic materials develop a weak induced magnetization in a direction opposite to the applied magnetic field, leading to a small, negative magnetic susceptibility ($\chi < 0$).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q40. The temperature above which a ferromagnetic substance becomes paramagnetic is called:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Curie temperature</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The Curie temperature ($T_c$) is the critical temperature where the thermal agitation completely destroys the magnetic domain structure, turning a ferromagnetic material into a paramagnetic one.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q41. To convert a galvanometer into a voltmeter, we must connect a:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) High resistance in series</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> A voltmeter needs a very high resistance so it draws negligible current from the circuit when placed in parallel. This is achieved by connecting a high resistance in series with the galvanometer coil.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q42. The SI unit of magnetic field ($\vec{B}$) is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Tesla</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The SI unit of Magnetic field $B$ is Tesla (T), which is also equivalent to Weber per square meter ($Wb/m^2$). Gauss is the CGS unit.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q43. Two long parallel wires carrying steady currents in <em>opposite directions</em> will:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Repel each other</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> When currents are antiparallel (opposite directions), the magnetic field produced by one wire causes an outward Lorentz force on the electrons in the second wire, resulting in a repulsive force.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q44. The work done by a magnetic field on a moving charge is always:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Zero</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The magnetic force $\vec{F} = q(\vec{v} \times \vec{B})$ is always perpendicular to velocity $\vec{v}$. Because force and displacement are perpendicular, work done $W = \vec{F} \cdot d\vec{s} = 0$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q45. The magnetic dipole moment of a revolving electron in the $n^{th}$ orbit is given by:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $\frac{n e \hbar}{2m_e}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> From Bohr's quantization, $L = n\frac{h}{2\pi} = n\hbar$. The magnetic moment is related to angular momentum by $M = \frac{e}{2m_e} L$. Substituting $L$ gives $M = \frac{n e \hbar}{2m_e}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q46. The total magnetic flux passing through a closed surface is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Zero</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> According to Gauss's Law for Magnetism, $\oint \vec{B} \cdot d\vec{A} = 0$. This indicates that isolated magnetic poles (monopoles) do not exist, and magnetic field lines form continuous closed loops.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q47. The magnetic field produced at the center of a current carrying toroid of mean radius $r$ having $N$ total turns and current $I$ is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $\frac{\mu_0 N I}{2\pi r}$</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Inside a toroid, $B = \mu_0 n I$, where $n$ is turns per unit length. Since the total length is the circumference $2\pi r$, $n = \frac{N}{2\pi r}$. Substituting this gives $B = \frac{\mu_0 N I}{2\pi r}$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q48. If a charged particle is moving perfectly parallel to a uniform magnetic field, the magnetic force acting on it is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (C) Zero</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> The magnetic force is $F = qvB \sin\theta$. If the particle moves parallel to the field, $\theta = 0^\circ$, and $\sin 0^\circ = 0$. Thus, $F = 0$.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q49. The area of a hysteresis loop of a magnetic material is a measure of:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (B) Energy dissipated per cycle per unit volume</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> When a magnetic material undergoes a complete cycle of magnetization and demagnetization, the area enclosed by the B-H curve (hysteresis loop) equals the thermal energy lost per unit volume.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="sol-header">
+            <div class="question-text">Q50. According to Ampere's circuital law, the line integral of magnetic field $\vec{B}$ around any closed path in vacuum is equal to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Option: (A) $\mu_0$ times the total current threading the closed path</div>
+        <div class="explanation">
+            <strong>Explanation:</strong> Ampere's circuital law states that $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}$, meaning the integral around a closed loop is directly proportional to the total net current enclosed by that loop.
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

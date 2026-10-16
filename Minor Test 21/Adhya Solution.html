@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --success-green: #2e7d32;
+            --bg-green: #e8f5e9;
+        }
+        @page { size: A4; margin: 20mm; }
+        body { 
+            width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20mm; 
+            box-sizing: border-box; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .institute-name { 
+            font-size: 22pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+        .solution-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+        .section-header { 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+            color: #333;
+        }
+        .solution-block {
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .explanation {
+            margin-left: 20px;
+            color: #333;
+            overflow-x: auto;
+        }
+        .math-block {
+            overflow-x: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body { 
+                width: 100%; 
+                padding: 15px; 
+            }
+            .q-header { flex-direction: column; }
+            .marks-badge { margin-top: 5px; align-self: flex-start; }
+            .explanation { margin-left: 0; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="solution-title">DETAILED SOLUTIONS: Class 6 Physics - Simple Machines</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. Define a simple machine. Give one example.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            A simple machine is a tool or device that makes our work easier, faster, or more convenient by changing the direction or magnitude of the force applied.<br>
+            <em>Example:</em> A lever, a pulley, or an inclined plane. (Any one valid example)
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. Name the three important parts of a lever.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            The three important parts of a lever are:<br>
+            1. <strong>Fulcrum (F):</strong> The fixed point around which the lever moves.<br>
+            2. <strong>Load (L):</strong> The object or weight being moved or lifted.<br>
+            3. <strong>Effort (E):</strong> The force applied to the lever to move the load.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. What is an inclined plane?</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            An inclined plane is a flat, sloping surface that connects a lower level to a higher level. It helps in moving heavy objects upwards with less effort compared to lifting them straight up.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. State the difference between a wedge and a screw.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            <strong>Wedge:</strong> It is made up of two inclined planes placed back-to-back to form a sharp edge. It is used to split or cut objects (e.g., an axe).<br>
+            <strong>Screw:</strong> It is an inclined plane wrapped around a cylinder or a rod. It is used to hold objects together firmly (e.g., a nut and bolt).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. Which class of lever always has the fulcrum in the middle? Give an example.</div>
+            <div class="marks-badge">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            A <strong>Class I lever</strong> always has the fulcrum in the middle, between the Load and the Effort.<br>
+            <em>Example:</em> A pair of scissors, a see-saw, or a crowbar.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. Differentiate between Class II and Class III levers with one example each.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            <ul>
+                <li><strong>Class II Lever:</strong> The Load is located between the Fulcrum and the Effort. This setup always acts as a force multiplier.<br>
+                <em>Example:</em> A wheelbarrow or a nutcracker.</li>
+                <li><strong>Class III Lever:</strong> The Effort is located between the Fulcrum and the Load. This setup is used to gain speed or distance.<br>
+                <em>Example:</em> A pair of tongs, tweezers, or a fishing rod.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. How does a single fixed pulley help us in drawing water from a well?</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            A single fixed pulley does not multiply the force, meaning the effort applied is equal to the load. However, it helps us by <strong>changing the direction of the force applied</strong> to a more convenient direction. Instead of pulling the rope upward against gravity, we can pull it downwards, using our own body weight to assist in lifting the bucket of water easily.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. Define 'Load' and 'Effort' in the context of a simple machine.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            <strong>Load:</strong> The resisting force to be overcome by a machine is called the load. It is the actual weight of the object that needs to be moved or lifted.<br>
+            <strong>Effort:</strong> The external force applied to the machine to overcome the load is called the effort.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. A wheel and axle is a simple machine. Explain briefly with a common example from daily life.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            A wheel and axle consists of a large wheel rigidly attached to a smaller cylinder called the axle. When the wheel turns, the axle also turns. A small force applied to the large wheel produces a larger force on the axle, making work easier.<br>
+            <em>Example:</em> A steering wheel of a car or a doorknob. Turning the outer rim of the doorknob (wheel) makes it easy to turn the inner mechanism (axle).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. Why is a pair of scissors considered a Class I lever? Explain.</div>
+            <div class="marks-badge">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            A pair of scissors is considered a Class I lever because of the arrangement of its parts. The fixed screw in the center around which the blades move acts as the <strong>Fulcrum</strong>. The paper or cloth being cut by the blades represents the <strong>Load</strong>. The handles where we apply force with our fingers represent the <strong>Effort</strong>. Since the Fulcrum is exactly in the middle between the Load and Effort, it is a Class I lever.
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. (a) State the principle of a lever.<br>(b) Identify the class of lever for: (i) Nutcracker, (ii) Sugar tongs, (iii) See-saw.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            <strong>(a) Principle of a Lever:</strong> In an ideal lever at equilibrium, the product of the effort and the effort arm is equal to the product of the load and the load arm. Mathematically, it is expressed as:
+            <div class="math-block">
+                \( \text{Load} \times \text{Load Arm} = \text{Effort} \times \text{Effort Arm} \)
+            </div>
+            <strong>(b) Class of Levers:</strong><br>
+            (i) <strong>Nutcracker:</strong> Class II Lever (Load is in the middle).<br>
+            (ii) <strong>Sugar tongs:</strong> Class III Lever (Effort is in the middle).<br>
+            (iii) <strong>See-saw:</strong> Class I Lever (Fulcrum is in the middle).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. List the six different types of simple machines. Provide one daily life example for each type.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            The six different types of simple machines and their examples are:<br>
+            1. <strong>Lever:</strong> e.g., A crowbar, scissors, or a seesaw.<br>
+            2. <strong>Inclined Plane:</strong> e.g., A ramp used for wheelchairs or loading trucks.<br>
+            3. <strong>Pulley:</strong> e.g., The mechanism used to draw water from a well or raise a flag.<br>
+            4. <strong>Wheel and Axle:</strong> e.g., A steering wheel, a screwdriver, or a doorknob.<br>
+            5. <strong>Wedge:</strong> e.g., A knife, an axe, or a chisel.<br>
+            6. <strong>Screw:</strong> e.g., A bottle cap, a nut and bolt, or a screw-jack.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. (a) Describe a Class II lever and state exactly where the load is positioned relative to the other parts.<br>(b) Give two examples where an inclined plane is used in everyday life to make work easier.</div>
+            <div class="marks-badge">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <strong>Solution:</strong><br>
+            <strong>(a) Description of Class II Lever:</strong><br>
+            In a Class II lever, the <strong>Load</strong> is positioned exactly between the <strong>Fulcrum</strong> (on one end) and the <strong>Effort</strong> (on the other end). Because the effort arm is always longer than the load arm in this setup, less effort is required to lift a heavier load, acting as a force multiplier.<br>
+            <strong>(b) Examples of an Inclined Plane:</strong><br>
+            1. Ramps provided at hospitals for moving stretchers or wheelchairs easily.<br>
+            2. Wooden planks used to load heavy drums or furniture into the back of a truck.
+        </div>
+    </div>
+
+</body>
+</html>

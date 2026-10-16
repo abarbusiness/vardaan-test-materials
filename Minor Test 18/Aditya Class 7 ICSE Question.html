@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Question Paper</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --border-color: #000000;
+        }
+
+        @page { size: A4; margin: 15mm; }
+        
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            min-height: 297mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 12pt; 
+            line-height: 1.5; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 600px;
+            opacity: 0.08; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 15px; 
+        }
+
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: var(--text-main);
+        }
+
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+        }
+
+        .exam-details { 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 8px 0; 
+            gap: 10px;
+        }
+
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10.5pt; 
+            font-style: italic; 
+            text-align: left;
+        }
+
+        .instructions ul { 
+            margin: 5px 0; 
+            padding-left: 20px; 
+        }
+
+        .section-header { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            text-decoration: underline; 
+            font-size: 13pt; 
+        }
+
+        .marks-info { 
+            font-size: 10pt; 
+            font-weight: normal; 
+            font-style: italic; 
+            display: block; 
+            margin-top: 4px; 
+        }
+
+        .question-container { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: flex-start;
+            page-break-inside: avoid;
+        }
+
+        .q-num { 
+            font-weight: bold; 
+            width: 35px; 
+            flex-shrink: 0; 
+        }
+
+        .q-content { 
+            flex-grow: 1; 
+            overflow-x: auto; /* Protects against overflowing math equations */
+        }
+
+        .sub-question { 
+            margin-left: 15px; 
+            margin-top: 8px; 
+        }
+
+        .math-block {
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .exam-details { flex-direction: column; align-items: center; text-align: center; }
+            .question-container { flex-direction: column; }
+            .q-num { width: 100%; margin-bottom: 5px; }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .question-container { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Minor Test - General Mathematics</div>
+        <div class="exam-details">
+            <span>Class: 7 (CBSE/ICSE)</span>
+            <span>Subject: Mathematics</span>
+            <span>Time: 1 Hour</span>
+            <span>Max. Marks: 40</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong>
+            <ul>
+                <li>All questions are compulsory.</li>
+                <li>The paper is divided into three sections: A, B, and C.</li>
+                <li>Section A contains 5 questions of 2 marks each.</li>
+                <li>Section B contains 5 questions of 3 marks each.</li>
+                <li>Section C contains 3 questions of 5 marks each.</li>
+                <li>Write your answers neatly and legibly. Show rough work wherever necessary.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION A (10 Marks)<span class="marks-info">(Attempt all questions - 2 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">1.</div>
+        <div class="q-content">
+            Evaluate the following expression using suitable properties of integers:
+            <div class="math-block">\( [-15 \times 8] + [-15 \times 2] \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">2.</div>
+        <div class="q-content">
+            Find the area of a rectangle whose length is \( 5.7 \text{ cm} \) and breadth is \( 3 \text{ cm} \).
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">3.</div>
+        <div class="q-content">
+            Express the rational number \( \frac{-44}{72} \) in its standard form.
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">4.</div>
+        <div class="q-content">
+            Set up an equation and solve it to find the unknown number: <br>
+            "If you add \( 5 \) to three times a number, you get \( 14 \)."
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">5.</div>
+        <div class="q-content">
+            Find the complement of an angle measuring \( 35^\circ \).
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B (15 Marks)<span class="marks-info">(Short Answer Type - 3 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">6.</div>
+        <div class="q-content">
+            A car covers a distance of \( 89.1 \text{ km} \) in \( 2.2 \text{ hours} \). What is the average distance covered by the car in \( 1 \text{ hour} \)?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">7.</div>
+        <div class="q-content">
+            Simplify the given algebraic expression and find its value when \( a = 5 \) and \( b = -3 \):
+            <div class="math-block">\( 2(a^2 + ab) + 3 - ab \)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">8.</div>
+        <div class="q-content">
+            The perimeter of a rectangular swimming pool is \( 154 \text{ m} \). Its length is \( 2 \text{ m} \) more than twice its breadth. What are the length and breadth of the pool?
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">9.</div>
+        <div class="q-content">
+            In a triangle \( ABC \), \( \angle A = 50^\circ \) and \( \angle B = 60^\circ \). 
+            <div class="sub-question">(i) Find the measure of \( \angle C \).</div>
+            <div class="sub-question">(ii) State whether the triangle is acute-angled, obtuse-angled, or right-angled. Justify your answer.</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">10.</div>
+        <div class="q-content">
+            By selling a chair for ₹ \( 1440 \), a shopkeeper loses \( 10\% \). At what price should he sell it to gain \( 10\% \)?
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C (15 Marks)<span class="marks-info">(Long Answer Type - 5 Marks Each)</span></div>
+    
+    <div class="question-container">
+        <div class="q-num">11.</div>
+        <div class="q-content">
+            In a class test containing 15 questions, \( 4 \) marks are given for every correct answer and \( -2 \) marks are given for every incorrect answer.
+            <div class="sub-question">(i) Gurpreet attempts all questions but only \( 9 \) of her answers are correct. What is her total score? (2.5 Marks)</div>
+            <div class="sub-question">(ii) One of her friends gets only \( 5 \) answers correct out of the 15 questions attempted. What will be her score? (2.5 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">12.</div>
+        <div class="q-content">
+            The length and breadth of a rectangular piece of land are in the ratio of \( 5:3 \). If the total cost of fencing it at ₹ \( 24 \) per metre is ₹ \( 9600 \), find:
+            <div class="sub-question">(i) The length and breadth of the land. (3 Marks)</div>
+            <div class="sub-question">(ii) The area of the land. (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <div class="q-num">13.</div>
+        <div class="q-content">
+            Answer the following algebraic questions:
+            <div class="sub-question">(a) Subtract the sum of \( (3l - 4m - 7n^2) \) and \( (2l + 3m - 4n^2) \) from the sum of \( (9l + 2m - 3n^2) \) and \( (-3l + m + 4n^2) \). (3 Marks)</div>
+            <div class="sub-question">(b) Write a mathematical equation for the following statement and solve it: "Seven times a number plus 7 gets you 77." (2 Marks)</div>
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

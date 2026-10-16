@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        body { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: #fafafa;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background: #fff;
+        }
+        .institute-name { font-size: 22pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .doc-title { font-size: 14pt; font-weight: bold; margin-top: 10px; color: #333; }
+        
+        .section-header { 
+            background: var(--primary-yellow); 
+            padding: 10px 15px; 
+            font-weight: bold; 
+            font-size: 13pt; 
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .solution-block { 
+            background: #fff;
+            border: 1px solid #ddd;
+            border-left: 4px solid var(--primary-yellow);
+            padding: 20px; 
+            margin-bottom: 25px; 
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1.5px dashed var(--primary-yellow);
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .q-text { font-weight: bold; flex-grow: 1; padding-right: 20px; font-size: 12pt; }
+        .q-marks { 
+            background: var(--primary-yellow); 
+            color: #000; 
+            padding: 4px 10px; 
+            border-radius: 12px; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            white-space: nowrap; 
+        }
+        
+        .explanation { 
+            margin-left: 10px; 
+            color: #333;
+            overflow-x: auto;
+        }
+        .step { margin-bottom: 10px; }
+        .final-ans {
+            display: inline-block;
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 8px 12px; 
+            margin: 15px 0 5px 0; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            border: 1px solid #c8e6c9;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body { padding: 10px; font-size: 11pt; }
+            .q-header { flex-direction: column; }
+            .q-marks { align-self: flex-start; margin-top: 10px; }
+            .q-text { padding-right: 0; }
+            .solution-block { padding: 15px; }
+        }
+        
+        /* Utility for math scrolling on mobile */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test 21 (General Mathematics - Class 6)</div>
+    </div>
+
+    <div class="section-header">SECTION A</div>
+    
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. Write the number name for \( 4,56,789 \) in the Indian numbering system.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">According to the Indian place value system, commas are placed after the thousands and lakhs periods.</div>
+            <div class="step">Place values: \( 4 \) (Lakhs), \( 56 \) (Thousands), \( 789 \) (Ones/Hundreds).</div>
+            <div class="final-ans">Four lakh fifty-six thousand seven hundred eighty-nine.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. Find the sum of \( 23.45 \) and \( 6.7 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">To add decimals, align the decimal points vertically:</div>
+            <div class="math-scroll">
+                \[
+                \begin{array}{r@{\quad}l}
+                  23.45 & \\
+                + \phantom{0}6.70 & \text{(add a zero placeholder)} \\
+                \hline
+                  30.15 &
+                \end{array}
+                \]
+            </div>
+            <div class="final-ans">Sum = 30.15</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. Define a prime number and give two basic examples.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Definition:</strong> A prime number is a natural number greater than 1 that has exactly two distinct factors: 1 and the number itself.</div>
+            <div class="step"><strong>Examples:</strong> 2, 3, 5, 7, 11 (Any two examples are correct).</div>
+            <div class="final-ans">Prime number has only 2 factors. Ex: 2, 3.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. Solve for \( x \): \( x + 5 = 12 \).</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given equation: \( x + 5 = 12 \)</div>
+            <div class="step">Subtract 5 from both sides to isolate \( x \):</div>
+            <div class="step">\( x = 12 - 5 \)</div>
+            <div class="step">\( x = 7 \)</div>
+            <div class="final-ans">x = 7</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. What is an acute angle? Give one example of an acute angle in degrees.</div>
+            <div class="q-marks">[2 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Definition:</strong> An acute angle is an angle whose measure is strictly greater than \( 0^\circ \) and strictly less than \( 90^\circ \).</div>
+            <div class="step"><strong>Example:</strong> \( 45^\circ \), \( 30^\circ \), or \( 60^\circ \) (Any angle between 0 and 90).</div>
+            <div class="final-ans">Angle between 0° and 90°. Ex: 45°.</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION B</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. Simplify the fraction \( \frac{36}{48} \) to its lowest terms.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Find the Highest Common Factor (HCF) of 36 and 48, or divide by common factors step-by-step.</div>
+            <div class="step">Dividing numerator and denominator by 12 (since HCF is 12):</div>
+            <div class="math-scroll">
+                \[ \frac{36 \div 12}{48 \div 12} = \frac{3}{4} \]
+            </div>
+            <div class="final-ans">Lowest term = 3/4</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. Find the Lowest Common Multiple (LCM) of 12 and 18.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Write the prime factorization of each number:</div>
+            <div class="step">\( 12 = 2 \times 2 \times 3 = 2^2 \times 3 \)</div>
+            <div class="step">\( 18 = 2 \times 3 \times 3 = 2 \times 3^2 \)</div>
+            <div class="step">The LCM is found by multiplying the highest powers of all prime factors present:</div>
+            <div class="step">LCM = \( 2^2 \times 3^2 = 4 \times 9 = 36 \)</div>
+            <div class="final-ans">LCM = 36</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. A boy bought a book for ₹120 and sold it for ₹150. Find his profit percentage.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Cost Price (CP) = ₹120</div>
+            <div class="step">Selling Price (SP) = ₹150</div>
+            <div class="step">Profit = SP - CP = \( 150 - 120 = 30 \)</div>
+            <div class="step">Profit Percentage = \( (\frac{\text{Profit}}{\text{CP}}) \times 100 \)</div>
+            <div class="math-scroll">
+                \[ \text{Profit \%} = \left(\frac{30}{120}\right) \times 100 = \frac{1}{4} \times 100 = 25\% \]
+            </div>
+            <div class="final-ans">Profit Percentage = 25%</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. Calculate the perimeter and area of a rectangle whose length is 8 cm and breadth is 5 cm.</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Given: Length (\( l \)) = 8 cm, Breadth (\( b \)) = 5 cm</div>
+            <div class="step"><strong>Perimeter</strong> = \( 2 \times (l + b) \)</div>
+            <div class="step">Perimeter = \( 2 \times (8 + 5) = 2 \times 13 = 26 \text{ cm} \)</div>
+            <div class="step"><strong>Area</strong> = \( l \times b \)</div>
+            <div class="step">Area = \( 8 \times 5 = 40 \text{ cm}^2 \)</div>
+            <div class="final-ans">Perimeter = 26 cm, Area = 40 cm²</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. Evaluate the following using the BODMAS rule: \( 15 + (12 \div 3) - 5 \times 2 \)</div>
+            <div class="q-marks">[3 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step">Following BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction):</div>
+            <div class="step">Step 1: Solve inside the Bracket \((12 \div 3)\)</div>
+            <div class="step">\( = 15 + 4 - 5 \times 2 \)</div>
+            <div class="step">Step 2: Perform Multiplication \((5 \times 2)\)</div>
+            <div class="step">\( = 15 + 4 - 10 \)</div>
+            <div class="step">Step 3: Perform Addition \((15 + 4)\)</div>
+            <div class="step">\( = 19 - 10 \)</div>
+            <div class="step">Step 4: Perform Subtraction</div>
+            <div class="step">\( = 9 \)</div>
+            <div class="final-ans">Answer = 9</div>
+        </div>
+    </div>
+
+    <div class="section-header">SECTION C</div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. (a) Arrange in ascending order: \( \frac{1}{2}, \frac{3}{4}, \frac{2}{5} \). (b) Convert \( \frac{3}{4} \) into a percentage.</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a) [3 Marks]:</strong></div>
+            <div class="step">Find LCM of denominators 2, 4, 5. LCM = 20.</div>
+            <div class="step">Convert each fraction to have denominator 20:</div>
+            <div class="math-scroll">
+                \[ \frac{1}{2} = \frac{1 \times 10}{2 \times 10} = \frac{10}{20} \]
+                \[ \frac{3}{4} = \frac{3 \times 5}{4 \times 5} = \frac{15}{20} \]
+                \[ \frac{2}{5} = \frac{2 \times 4}{5 \times 4} = \frac{8}{20} \]
+            </div>
+            <div class="step">Comparing numerators: \( 8 < 10 < 15 \).</div>
+            <div class="step">Therefore, ascending order is: \( \frac{2}{5} < \frac{1}{2} < \frac{3}{4} \)</div>
+            <br>
+            <div class="step"><strong>Part (b) [2 Marks]:</strong></div>
+            <div class="step">To convert a fraction to percentage, multiply by 100%:</div>
+            <div class="step">\( \frac{3}{4} \times 100\% = 3 \times 25\% = 75\% \)</div>
+            <div class="final-ans">(a) 2/5, 1/2, 3/4 &nbsp;&nbsp; (b) 75%</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. Marks of 5 students: 45, 67, 89, 55, 74. (a) Find the mean (average) marks. (b) What is the range of the given marks?</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a) [3 Marks]:</strong></div>
+            <div class="step">Mean = (Sum of all observations) / (Total number of observations)</div>
+            <div class="step">Sum = \( 45 + 67 + 89 + 55 + 74 = 330 \)</div>
+            <div class="step">Mean = \( \frac{330}{5} = 66 \)</div>
+            <br>
+            <div class="step"><strong>Part (b) [2 Marks]:</strong></div>
+            <div class="step">Range = Highest mark - Lowest mark</div>
+            <div class="step">Highest mark = 89, Lowest mark = 45</div>
+            <div class="step">Range = \( 89 - 45 = 44 \)</div>
+            <div class="final-ans">(a) Mean = 66 &nbsp;&nbsp; (b) Range = 44</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. (a) If \( a = 3 \) and \( b = 4 \), find value of \( 2a^2 + 3b - 5 \). (b) Write an expression for: "Five times a number \( y \) decreased by 7".</div>
+            <div class="q-marks">[5 Marks]</div>
+        </div>
+        <div class="explanation">
+            <div class="step"><strong>Part (a) [3 Marks]:</strong></div>
+            <div class="step">Given expression: \( 2a^2 + 3b - 5 \)</div>
+            <div class="step">Substitute \( a = 3 \) and \( b = 4 \):</div>
+            <div class="step">\( = 2(3)^2 + 3(4) - 5 \)</div>
+            <div class="step">\( = 2(9) + 12 - 5 \)</div>
+            <div class="step">\( = 18 + 12 - 5 \)</div>
+            <div class="step">\( = 30 - 5 = 25 \)</div>
+            <br>
+            <div class="step"><strong>Part (b) [2 Marks]:</strong></div>
+            <div class="step">"Five times a number \( y \)" is \( 5y \).</div>
+            <div class="step">"decreased by 7" means we subtract 7.</div>
+            <div class="step">Expression: \( 5y - 7 \)</div>
+            <div class="final-ans">(a) Value = 25 &nbsp;&nbsp; (b) Expression: 5y - 7</div>
+        </div>
+    </div>
+
+</body>
+</html>

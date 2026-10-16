@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+            margin: 0 auto; 
+            padding: 20px; 
+            max-width: 900px;
+            box-sizing: border-box;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+            color: var(--text-main);
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 5px; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+        }
+        
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 15px; 
+            margin-bottom: 20px; 
+            page-break-inside: avoid;
+        }
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .q-text {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        .correct-answer { 
+            color: #2e7d32; 
+            background-color: #e8f5e9; 
+            padding: 6px 10px; 
+            margin: 5px 0 10px 25px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            display: inline-block; 
+            border: 1px solid #c8e6c9;
+        }
+        .explanation {
+            margin-left: 25px;
+            text-align: justify;
+        }
+        
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        
+        @media (max-width: 768px) {
+            .q-header {
+                flex-direction: column;
+            }
+            .marks-badge {
+                margin-top: 5px;
+                align-self: flex-start;
+            }
+            .correct-answer, .explanation {
+                margin-left: 0;
+            }
+        }
+        @media print { 
+            body { max-width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">DETAILED SOLUTIONS: Some Basic Concepts of Chemistry</div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">1. The SI unit of amount of substance is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Mole</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            According to the International System of Units (SI), there are seven base physical quantities. The mole (symbol: mol) is the base unit for the amount of substance.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">2. How many significant figures are there in the number \( 0.0025 \)?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) 2</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Leading zeros (zeros to the left of the first non-zero digit) are not significant. They only indicate the position of the decimal point. Thus, only '2' and '5' are significant.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">3. Which of the following has the highest number of significant figures?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 5.300</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            (A) 0.0053 has 2 sig figs. (B) 5.300 has 4 sig figs (trailing zeros after decimal are significant). (C) 530 has 2 (or 3, ambiguous) sig figs. (D) 5.3 has 2 sig figs.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">4. The prefix "nano" corresponds to the multiplication factor:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) \( 10^{-9} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            In the metric system, the prefix "nano" is used to denote a factor of \( 10^{-9} \). For example, 1 nanometer (nm) = \( 10^{-9} \) meters.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">5. The Law of Conservation of Mass was proposed by:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) Antoine Lavoisier</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Antoine Lavoisier (1789) established the Law of Conservation of Mass, which states that matter can neither be created nor destroyed in a chemical reaction.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">6. Which law states that a given chemical compound always contains its component elements in fixed ratio by mass?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Law of Definite Proportions</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Joseph Proust proposed the Law of Definite Proportions, stating that a pure chemical compound always contains exactly the same proportion of elements by mass, regardless of its source.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">7. The pair of compounds \(CO\) and \(CO_2\) illustrates the:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Law of Multiple Proportions</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Carbon combines with Oxygen to form two compounds (CO and CO₂). The masses of oxygen (16g and 32g) that combine with a fixed mass of carbon (12g) bear a simple ratio of 1:2.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">8. 1 amu (atomic mass unit) is exactly equal to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 1/12th the mass of one C-12 atom</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The atomic mass unit (amu or 'u') is officially defined as a mass equal to one-twelfth (\( \frac{1}{12} \)) of the mass of a single carbon-12 atom.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">9. What is the molar mass of Water (\(H_2O\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 18 g/mol</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of \(H_2O\) = (2 × Atomic mass of H) + (1 × Atomic mass of O)<br>
+            = \( (2 \times 1) + 16 = 18 \text{ g/mol} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">10. Avogadro's Number (\(N_A\)) is equal to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) \( 6.022 \times 10^{23} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Avogadro's number represents the number of fundamental particles (atoms, molecules, ions, etc.) in exactly 1 mole of a substance. Its value is \( 6.022 \times 10^{23} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">11. The volume occupied by 1 mole of an ideal gas at STP is approximately:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) 22.4 L</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            At Standard Temperature and Pressure (STP, which is 0°C and 1 atm), 1 mole of any ideal gas occupies a volume of 22.4 Liters (or 22710 mL at 1 bar).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">12. How many moles are present in 44 g of Carbon Dioxide (\(CO_2\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 1.0 mole</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of \(CO_2\) = \( 12 + (2 \times 16) = 44 \text{ g/mol} \).<br>
+            Number of Moles = \( \frac{\text{Given Mass}}{\text{Molar Mass}} = \frac{44}{44} = 1.0 \text{ mole} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">13. Which formula represents the simplest whole number ratio of atoms in a compound?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) Empirical Formula</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The empirical formula gives the simplest, most reduced whole-number ratio of the atoms of elements present in a compound, whereas molecular formula gives the exact number.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">14. What is the empirical formula of Glucose (\(C_6H_{12}O_6\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) \( CH_2O \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The molecular formula is \( C_6H_{12}O_6 \). Dividing the subscripts by their greatest common divisor (6) gives the simplest ratio: 1:2:1. Thus, the empirical formula is \( CH_2O \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">15. Molarity is defined as the number of moles of solute dissolved per:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 1 Liter of solution</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molarity (M) is the most widely used unit of concentration. It is defined as the number of moles of solute dissolved in 1 Liter (1000 mL) of the entire solution.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">16. Which of the following concentration terms is independent of temperature?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) Molality</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molality is moles of solute per kg of solvent. Since both moles and mass do not change with temperature changes, molality is temperature independent. Molarity depends on volume, which expands/contracts with temperature.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">17. What is the mass of 0.5 moles of Nitrogen gas (\(N_2\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 14 g</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of \(N_2\) gas = \( 2 \times 14 = 28 \text{ g/mol} \).<br>
+            Mass = Moles × Molar Mass = \( 0.5 \times 28 = 14 \text{ g} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">18. The sum of the mole fractions of all components in a solution is always equal to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 1</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            By definition, mole fraction (\(X\)) is a ratio of parts to the whole. For a mixture with components A, B, C..., \( X_A + X_B + X_C... = 1 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">19. The reactant which is entirely consumed in a chemical reaction is called the:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Limiting Reagent</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The limiting reagent determines the amount of product formed because it is completely consumed first, stopping the reaction.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">20. Number of atoms present in 1 mole of an element is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) \( 6.022 \times 10^{23} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            One mole of any elementary entity (atoms, molecules, ions, electrons) always contains Avogadro's number (\( 6.022 \times 10^{23} \)) of those entities.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">21. What is the mass percentage of Hydrogen in Water (\(H_2O\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 11.11%</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of \(H_2O = 18 \text{ g/mol}\). Mass of H = 2 g.<br>
+            Mass % of H = \( (\frac{2}{18}) \times 100 = 11.11\% \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">22. The unit of density is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) kg / m³</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Density is Mass / Volume. The SI unit for mass is kg, and for volume is \(m^3\). Hence, density is \( \text{kg m}^{-3} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">23. Scientific notation of 0.000045 is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) \( 4.5 \times 10^{-5} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Shift the decimal 5 places to the right to get a number between 1 and 10 (which is 4.5). Therefore, the exponent is -5.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">24. Which of the following is a homogeneous mixture?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Sugar dissolved in water</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            A homogeneous mixture has a uniform composition throughout. Sugar completely dissolves in water to form a uniform true solution. Sand, oil, and smoke form non-uniform (heterogeneous) mixtures.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">25. What is the molar mass of Sodium Hydroxide (\(NaOH\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) 40 g/mol</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass = Atomic mass of Na + Atomic mass of O + Atomic mass of H<br>
+            = \( 23 + 16 + 1 = 40 \text{ g/mol} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">26. How many moles are in 3.6 g of \(H_2O\)?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 0.2</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Moles = Mass / Molar Mass = \( 3.6 \text{ g} / 18 \text{ g/mol} = 0.2 \text{ moles} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">27. The prefix "pico" corresponds to:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) \( 10^{-12} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            In the metric system, "pico" (symbol: p) denotes a factor of one trillionth, which is \( 10^{-12} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">28. Which element has the lowest atomic mass?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) Hydrogen</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Hydrogen is the lightest element with an atomic mass of approximately 1.008 amu.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">29. If the empirical formula is \(CH\) and the molecular mass is 26, the molecular formula is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) \( C_2H_2 \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Empirical formula mass (CH) = 12 + 1 = 13. <br>
+            \( n = \frac{\text{Molecular Mass}}{\text{Empirical Mass}} = \frac{26}{13} = 2 \).<br>
+            Molecular formula = (CH)₂ = \( C_2H_2 \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">30. How many significant figures are in 100.0?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (D) 4</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Trailing zeros in a number containing a decimal point are considered significant. Thus, 100.0 has four significant figures (1, 0, 0, 0).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">31. What is the molarity of a solution containing 40 g of \(NaOH\) in 1 L of solution?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 1.0 M</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of NaOH = 40 g/mol.<br>
+            Moles of NaOH = 40 / 40 = 1 mole.<br>
+            Molarity = Moles / Volume (in L) = 1 / 1 = 1.0 M.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">32. The volume of 0.5 moles of \(O_2\) gas at STP is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 11.2 L</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            1 mole of gas at STP occupies 22.4 L. <br>
+            Therefore, 0.5 moles will occupy = \( 0.5 \times 22.4 = 11.2 \text{ L} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">33. One mole of any substance contains:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) Avogadro's number of particles</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            A mole is defined as containing exactly \( 6.02214076 \times 10^{23} \) elementary entities (Avogadro's number).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">34. Rounding off 3.14159 to three significant figures gives:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) 3.14</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            To round to 3 sig figs, look at the 4th digit (which is 1). Since 1 is less than 5, the preceding digit (4) remains unchanged. Result: 3.14.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">35. The symbol for the SI unit of luminous intensity is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) cd</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The base SI unit for luminous intensity is the candela, and its symbol is 'cd'.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">36. Which law deals specifically with the volumes of reacting gases?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Gay Lussac's Law of Gaseous Volumes</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Gay Lussac's Law states that when gases combine or are produced in a chemical reaction they do so in a simple ratio by volume, provided all gases are at the same temperature and pressure.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">37. Mass percentage of Carbon in Methane (\(CH_4\)) is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) 75%</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass of \(CH_4 = 12 + 4 = 16 \text{ g/mol}\).<br>
+            Mass of Carbon = 12 g.<br>
+            Mass % of C = \( (12 / 16) \times 100 = 75\% \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">38. Value of 1 amu in grams is approximately:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) \( 1.66 \times 10^{-24} \text{ g} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            \( 1 \text{ amu} = \frac{1}{N_A} \text{ g} = \frac{1}{6.022 \times 10^{23}} = 1.66056 \times 10^{-24} \text{ g} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">39. What is the molar mass of Sulphuric Acid (\(H_2SO_4\))?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 98 g/mol</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Molar mass = \( (2 \times 1) + 32 + (4 \times 16) = 2 + 32 + 64 = 98 \text{ g/mol} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">40. How many atoms of Hydrogen are in 1 mole of \(H_2O\)?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) \( 1.204 \times 10^{24} \)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            1 molecule of \(H_2O\) has 2 H atoms.<br>
+            1 mole of \(H_2O\) has \( 2 \times N_A \) atoms of H.<br>
+            \( 2 \times 6.022 \times 10^{23} = 1.2044 \times 10^{24} \) atoms.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">41. If 1L of a 1.0 M solution is diluted to 2L, the new molarity is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 0.5 M</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Using the dilution formula: \( M_1 V_1 = M_2 V_2 \)<br>
+            \( 1.0 \times 1 = M_2 \times 2 \implies M_2 = 0.5 \text{ M} \).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">42. The number of significant figures in \( 6.022 \times 10^{23} \) is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) 4</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            In scientific notation \( A \times 10^n \), only the digits in 'A' are significant. The number 6.022 has four significant figures.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">43. Closeness of a measured value to the true value is known as:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Accuracy</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Accuracy refers to the agreement of a particular value to the true (or accepted) value. Precision refers to the closeness of various measurements to each other.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">44. How many base SI units are there?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) 7</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The International System of Units (SI) is built upon seven fundamental base units: meter, kilogram, second, ampere, kelvin, mole, and candela.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">45. A pure substance made of two or more elements combined in a fixed ratio by mass is a:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Compound</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            By definition, a compound is a pure substance formed by chemically combining two or more different elements in a fixed, definite proportion by mass.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">46. Which of the following has zero mass (approximately) compared to protons and neutrons?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (B) Electron</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            An electron's mass is about \( \frac{1}{1836} \) of a proton's mass (approx. \( 9.1 \times 10^{-31} \text{ kg} \)), which is considered negligible (zero) when calculating mass numbers.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">47. Amount of \(CO_2\) produced when 12g of Carbon burns completely in excess oxygen is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (D) 44 g</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            Reaction: \( C + O_2 \rightarrow CO_2 \).<br>
+            1 mole of C (12g) yields 1 mole of \(CO_2\). Molar mass of \(CO_2\) is 44g. Therefore, 44g is produced.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">48. The formula of calculating number of moles is:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (A) Mass / Molar Mass</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            The standard formula to find the number of moles from a given mass is \( n = \frac{m}{M} \), where 'm' is the given mass and 'M' is the molar mass.
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">49. What is the SI unit of Temperature?</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (C) Kelvin (K)</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            While Celsius is commonly used, the official SI base unit for thermodynamic temperature is the Kelvin (K).
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <div class="q-text">50. According to Dalton's atomic theory, atoms of the same element are identical in:</div>
+            <div class="marks-badge">[4 Marks]</div>
+        </div>
+        <div class="correct-answer">Correct Answer: (D) Mass, size, and chemical properties</div>
+        <div class="explanation">
+            <strong>Explanation:</strong><br>
+            John Dalton postulated that all atoms of a given element are identical in all respects, including mass, size, and chemical properties (though later discoveries of isotopes showed variations in mass).
+        </div>
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>

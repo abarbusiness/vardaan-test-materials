@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Detailed Solutions</title>
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        MathJax = {
+          chtml: {
+            displayAlign: 'left',
+            displayIndent: '1em',
+          }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+            --bg-light: #fffbf0;
+            --border-color: #e0e0e0;
+        }
+
+        @page { size: A4; margin: 15mm; }
+        
+        body { 
+            width: 100%; 
+            max-width: 210mm; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            font-size: 11pt; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            background-color: white; 
+            position: relative; 
+        }
+
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            max-width: 500px;
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-top: 3px solid var(--primary-yellow); 
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+            background-color: var(--bg-light);
+        }
+
+        .institute-name { 
+            font-size: clamp(18pt, 4vw, 24pt); 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1px; 
+        }
+
+        .doc-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 8px;
+            color: #444;
+        }
+
+        .solution-block { 
+            border-bottom: 1.5px dashed var(--primary-yellow); 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+            page-break-inside: avoid;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f9f9f9;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-yellow);
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .q-text {
+            flex-grow: 1;
+            font-weight: 600;
+            overflow-x: auto;
+        }
+
+        .marks-badge {
+            background-color: var(--primary-yellow);
+            color: #000;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 10pt;
+            white-space: nowrap;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .solution-detail {
+            margin-left: 15px;
+            padding: 10px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+        }
+        
+        .final-answer {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+            padding: 8px 15px;
+            margin-top: 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+
+        .math-container {
+            overflow-x: auto; /* Chunking/protecting long equations on mobile */
+            padding: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .q-header { flex-direction: column; }
+            .marks-badge { align-self: flex-start; margin-top: 10px; }
+            .solution-detail { margin-left: 0; }
+        }
+
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+            .header { background-color: transparent !important; }
+            .q-header { background-color: transparent !important; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" class="watermark" alt="Watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="doc-title">DETAILED SOLUTIONS: Minor Test - General Math (Class 7)</div>
+    </div>
+
+    <h3 style="color: #444; border-bottom: 2px solid #ccc; padding-bottom: 5px;">SECTION A</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q1. Evaluate: \( [-15 \times 8] + [-15 \times 2] \)</span>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">We can solve this using the <strong>Distributive Property of Multiplication over Addition</strong>: \( a \times (b + c) = (a \times b) + (a \times c) \).</div>
+            <div class="math-container">
+                Here, let \( a = -15 \), \( b = 8 \), and \( c = 2 \).<br><br>
+                \( [-15 \times 8] + [-15 \times 2] = -15 \times (8 + 2) \)
+            </div>
+            <div class="math-container">
+                \( = -15 \times 10 \)
+            </div>
+            <div class="math-container">
+                \( = -150 \)
+            </div>
+            <div class="final-answer">Answer: -150</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q2. Find the area of a rectangle whose length is \( 5.7 \text{ cm} \) and breadth is \( 3 \text{ cm} \).</span>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">Given:<br>Length (\( l \)) = \( 5.7 \text{ cm} \)<br>Breadth (\( b \)) = \( 3 \text{ cm} \)</div>
+            <div class="step">Formula for Area of a rectangle = \( l \times b \)</div>
+            <div class="math-container">
+                Area \( = 5.7 \times 3 \)
+            </div>
+            <div class="math-container">
+                \( = 17.1 \text{ cm}^2 \)
+            </div>
+            <div class="final-answer">Answer: 17.1 cm²</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q3. Express the rational number \( \frac{-44}{72} \) in its standard form.</span>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">To express a rational number in standard form, we divide its numerator and denominator by their Highest Common Factor (HCF).</div>
+            <div class="step">The HCF of 44 and 72 is 4.</div>
+            <div class="math-container">
+                Dividing both by 4:<br>
+                \( \frac{-44 \div 4}{72 \div 4} = \frac{-11}{18} \)
+            </div>
+            <div class="final-answer">Answer: -11/18</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q4. Set up an equation and solve: "If you add 5 to three times a number, you get 14."</span>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">Let the unknown number be \( x \).</div>
+            <div class="step">"Three times a number" = \( 3x \)</div>
+            <div class="step">"Add 5 to it" = \( 3x + 5 \)</div>
+            <div class="math-container">
+                According to the question: <br>
+                \( 3x + 5 = 14 \)
+            </div>
+            <div class="step">Solving the equation:</div>
+            <div class="math-container">
+                \( 3x = 14 - 5 \)<br>
+                \( 3x = 9 \)<br>
+                \( x = \frac{9}{3} \)<br>
+                \( x = 3 \)
+            </div>
+            <div class="final-answer">Answer: The number is 3.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q5. Find the complement of an angle measuring \( 35^\circ \).</span>
+            <span class="marks-badge">[2 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">Two angles are complementary if their sum is \( 90^\circ \).</div>
+            <div class="math-container">
+                Complement of \( 35^\circ = 90^\circ - 35^\circ \)
+            </div>
+            <div class="math-container">
+                \( = 55^\circ \)
+            </div>
+            <div class="final-answer">Answer: 55°</div>
+        </div>
+    </div>
+
+    <h3 style="color: #444; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 40px;">SECTION B</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q6. A car covers a distance of \( 89.1 \text{ km} \) in \( 2.2 \text{ hours} \). What is the average distance covered by the car in \( 1 \text{ hour} \)?</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">Total distance covered = \( 89.1 \text{ km} \)</div>
+            <div class="step">Total time taken = \( 2.2 \text{ hours} \)</div>
+            <div class="step">Distance covered in 1 hour = \( \frac{\text{Total Distance}}{\text{Total Time}} \)</div>
+            <div class="math-container">
+                \( = \frac{89.1}{2.2} \)
+            </div>
+            <div class="step">To remove decimals, multiply numerator and denominator by 10:</div>
+            <div class="math-container">
+                \( = \frac{891}{22} \)
+            </div>
+            <div class="step">Dividing by 11:</div>
+            <div class="math-container">
+                \( = \frac{81}{2} = 40.5 \text{ km} \)
+            </div>
+            <div class="final-answer">Answer: 40.5 km</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q7. Simplify the expression and find its value when \( a = 5 \) and \( b = -3 \): \( 2(a^2 + ab) + 3 - ab \)</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>Step 1: Simplify the expression first.</strong></div>
+            <div class="math-container">
+                \( = 2a^2 + 2ab + 3 - ab \) <br>
+                \( = 2a^2 + (2ab - ab) + 3 \) <br>
+                \( = 2a^2 + ab + 3 \)
+            </div>
+            <div class="step"><strong>Step 2: Substitute the values \( a = 5 \) and \( b = -3 \).</strong></div>
+            <div class="math-container">
+                \( = 2(5)^2 + (5)(-3) + 3 \) <br>
+                \( = 2(25) - 15 + 3 \) <br>
+                \( = 50 - 15 + 3 \) <br>
+                \( = 35 + 3 \) <br>
+                \( = 38 \)
+            </div>
+            <div class="final-answer">Answer: 38</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q8. The perimeter of a rectangular swimming pool is \( 154 \text{ m} \). Its length is \( 2 \text{ m} \) more than twice its breadth. Find the length and breadth.</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step">Let the breadth of the pool be \( b \) meters.</div>
+            <div class="step">Then, length (\( l \)) = \( 2b + 2 \) meters.</div>
+            <div class="step">Perimeter of a rectangle = \( 2(l + b) \)</div>
+            <div class="math-container">
+                Given Perimeter = \( 154 \text{ m} \) <br><br>
+                \( 2((2b + 2) + b) = 154 \) <br>
+                \( 2(3b + 2) = 154 \) <br>
+                \( 3b + 2 = \frac{154}{2} \) <br>
+                \( 3b + 2 = 77 \) <br>
+                \( 3b = 77 - 2 \) <br>
+                \( 3b = 75 \) <br>
+                \( b = 25 \text{ m} \)
+            </div>
+            <div class="step">Now find the length:</div>
+            <div class="math-container">
+                \( l = 2(25) + 2 = 50 + 2 = 52 \text{ m} \)
+            </div>
+            <div class="final-answer">Answer: Length = 52 m, Breadth = 25 m</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q9. In \( \triangle ABC \), \( \angle A = 50^\circ \) and \( \angle B = 60^\circ \). (i) Find \( \angle C \). (ii) State the type of triangle.</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>Part (i):</strong> By the Angle Sum Property of a triangle, the sum of all interior angles is \( 180^\circ \).</div>
+            <div class="math-container">
+                \( \angle A + \angle B + \angle C = 180^\circ \) <br>
+                \( 50^\circ + 60^\circ + \angle C = 180^\circ \) <br>
+                \( 110^\circ + \angle C = 180^\circ \) <br>
+                \( \angle C = 180^\circ - 110^\circ = 70^\circ \)
+            </div>
+            <div class="step"><strong>Part (ii):</strong> Look at the measures of all three angles: \( 50^\circ, 60^\circ, \) and \( 70^\circ \).</div>
+            <div class="step">Since all three angles are less than \( 90^\circ \) (they are acute angles), the triangle is an <strong>acute-angled triangle</strong>.</div>
+            <div class="final-answer">Answer: (i) 70°, (ii) Acute-angled triangle</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q10. By selling a chair for ₹ 1440, a shopkeeper loses 10%. At what price should he sell it to gain 10%?</span>
+            <span class="marks-badge">[3 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>Case 1 (Loss):</strong></div>
+            <div class="step">Selling Price (SP) = ₹ 1440, Loss% = 10%</div>
+            <div class="math-container">
+                Let Cost Price (CP) be \( x \). <br>
+                \( \text{SP} = \text{CP} - \text{Loss} \) <br>
+                \( 1440 = x - (10\% \text{ of } x) \) <br>
+                \( 1440 = x - 0.1x = 0.9x \) <br>
+                \( x = \frac{1440}{0.9} = \frac{14400}{9} = \text{₹ } 1600 \)
+            </div>
+            <div class="step">So, CP = ₹ 1600.</div>
+            <div class="step"><strong>Case 2 (Gain):</strong></div>
+            <div class="step">Desired Gain% = 10%</div>
+            <div class="math-container">
+                \( \text{New SP} = \text{CP} + \text{Gain} \) <br>
+                \( = 1600 + (10\% \text{ of } 1600) \) <br>
+                \( = 1600 + 160 \) <br>
+                \( = \text{₹ } 1760 \)
+            </div>
+            <div class="final-answer">Answer: He should sell it for ₹ 1760.</div>
+        </div>
+    </div>
+
+    <h3 style="color: #444; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-top: 40px;">SECTION C</h3>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q11. Test containing 15 questions, +4 marks for correct, -2 for incorrect. (i) Gurpreet: 9 correct out of 15. (ii) Friend: 5 correct out of 15.</span>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>(i) Gurpreet's Score:</strong></div>
+            <div class="step">Total questions attempted = 15. Number of correct answers = 9.</div>
+            <div class="step">Number of incorrect answers = \( 15 - 9 = 6 \).</div>
+            <div class="math-container">
+                Marks for correct answers = \( 9 \times 4 = 36 \) <br>
+                Marks for incorrect answers = \( 6 \times (-2) = -12 \) <br>
+                Total Score = \( 36 + (-12) = 24 \)
+            </div>
+            
+            <div class="step" style="margin-top:15px;"><strong>(ii) Friend's Score:</strong></div>
+            <div class="step">Total questions attempted = 15. Number of correct answers = 5.</div>
+            <div class="step">Number of incorrect answers = \( 15 - 5 = 10 \).</div>
+            <div class="math-container">
+                Marks for correct answers = \( 5 \times 4 = 20 \) <br>
+                Marks for incorrect answers = \( 10 \times (-2) = -20 \) <br>
+                Total Score = \( 20 + (-20) = 0 \)
+            </div>
+            <div class="final-answer">Answer: (i) Gurpreet's score is 24. (ii) Friend's score is 0.</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q12. Length and breadth ratio is 5:3. Cost of fencing at ₹ 24/m is ₹ 9600. Find dimensions and area.</span>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>Part (i): Finding dimensions</strong></div>
+            <div class="step">Let length = \( 5x \) and breadth = \( 3x \).</div>
+            <div class="step">Fencing implies Perimeter. Total cost = ₹ 9600, Rate = ₹ 24/m.</div>
+            <div class="math-container">
+                \( \text{Perimeter} = \frac{\text{Total Cost}}{\text{Rate}} = \frac{9600}{24} = 400 \text{ m} \)
+            </div>
+            <div class="step">Formula for perimeter = \( 2(\text{length} + \text{breadth}) \)</div>
+            <div class="math-container">
+                \( 2(5x + 3x) = 400 \) <br>
+                \( 2(8x) = 400 \) <br>
+                \( 16x = 400 \) <br>
+                \( x = \frac{400}{16} = 25 \)
+            </div>
+            <div class="math-container">
+                Length = \( 5 \times 25 = 125 \text{ m} \) <br>
+                Breadth = \( 3 \times 25 = 75 \text{ m} \)
+            </div>
+            
+            <div class="step" style="margin-top:15px;"><strong>Part (ii): Finding Area</strong></div>
+            <div class="math-container">
+                \( \text{Area} = \text{length} \times \text{breadth} \) <br>
+                \( = 125 \times 75 \) <br>
+                \( = 9375 \text{ m}^2 \)
+            </div>
+            <div class="final-answer">Answer: Length = 125m, Breadth = 75m. Area = 9375 m².</div>
+        </div>
+    </div>
+
+    <div class="solution-block">
+        <div class="q-header">
+            <span class="q-text">Q13. (a) Subtract sum of \( (3l - 4m - 7n^2) \) and \( (2l + 3m - 4n^2) \) from sum of \( (9l + 2m - 3n^2) \) and \( (-3l + m + 4n^2) \).<br>(b) Write equation and solve: "Seven times a number plus 7 gets you 77."</span>
+            <span class="marks-badge">[5 Marks]</span>
+        </div>
+        <div class="solution-detail">
+            <div class="step"><strong>Part (a)</strong></div>
+            <div class="step">Let Sum 1 = \( (3l - 4m - 7n^2) + (2l + 3m - 4n^2) \)</div>
+            <div class="math-container">
+                \( \text{Sum 1} = (3l + 2l) + (-4m + 3m) + (-7n^2 - 4n^2) = 5l - m - 11n^2 \)
+            </div>
+            <div class="step">Let Sum 2 = \( (9l + 2m - 3n^2) + (-3l + m + 4n^2) \)</div>
+            <div class="math-container">
+                \( \text{Sum 2} = (9l - 3l) + (2m + m) + (-3n^2 + 4n^2) = 6l + 3m + n^2 \)
+            </div>
+            <div class="step">Now, we need to subtract Sum 1 from Sum 2: (Sum 2 - Sum 1)</div>
+            <div class="math-container">
+                \( = (6l + 3m + n^2) - (5l - m - 11n^2) \) <br>
+                \( = 6l + 3m + n^2 - 5l + m + 11n^2 \) <br>
+                \( = (6l - 5l) + (3m + m) + (n^2 + 11n^2) \) <br>
+                \( = l + 4m + 12n^2 \)
+            </div>
+            
+            <div class="step" style="margin-top:15px;"><strong>Part (b)</strong></div>
+            <div class="step">Let the number be \( x \).</div>
+            <div class="step">"Seven times a number" = \( 7x \). "Plus 7" = \( 7x + 7 \). "Gets you 77" means equals 77.</div>
+            <div class="math-container">
+                Equation: \( 7x + 7 = 77 \) <br>
+                \( 7x = 77 - 7 \) <br>
+                \( 7x = 70 \) <br>
+                \( x = 10 \)
+            </div>
+            <div class="final-answer">Answer: (a) \( l + 4m + 12n^2 \) (b) Equation is \( 7x + 7 = 77 \), Number is 10.</div>
+        </div>
+    </div>
+
+    <div class="header" style="border: none; border-top: 1px solid #ccc; font-size: 10pt; background: transparent; padding-top: 10px;">
+        Created by Team Vardaan
+    </div>
+</body>
+</html>

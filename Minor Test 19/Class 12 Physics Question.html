@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardaan Learning Institute - Physics MCQ Test</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            chtml: {
+                scale: 0.95,
+                minScale: 0.5
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-yellow: #fbc02d;
+            --text-main: #000000;
+        }
+        @page { size: A4; margin: 15mm; }
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 11pt; 
+            color: var(--text-main); 
+            background-color: white; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            max-width: 210mm;
+            position: relative;
+        }
+        .watermark { 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 70%; 
+            opacity: 0.05; 
+            z-index: -1; 
+            pointer-events: none; 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            border-top: 3px solid var(--primary-yellow);
+            border-bottom: 3px solid var(--primary-yellow); 
+            padding: 15px 0; 
+        }
+        .institute-name { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 1.5px; 
+        }
+        .test-name { 
+            font-size: 14pt; 
+            font-weight: bold; 
+            margin-top: 8px; 
+        }
+        .exam-details { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            font-size: 11pt; 
+        }
+        .instructions { 
+            margin-top: 15px; 
+            font-size: 10pt; 
+            text-align: left;
+            background-color: #fffde7;
+            padding: 10px;
+            border-left: 4px solid var(--primary-yellow);
+        }
+        .mcq-container {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1.5px solid var(--primary-yellow);
+            margin-top: 20px;
+        }
+        .question-block {
+            break-inside: avoid;
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .question-text {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        /* Mobile friendly math container */
+        .math-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 10px;
+            padding-left: 20px;
+        }
+        .option {
+            display: flex;
+            align-items: flex-start;
+            word-break: break-word;
+        }
+        .option-label {
+            font-weight: bold;
+            margin-right: 5px;
+            white-space: nowrap;
+        }
+        .footer { 
+            margin-top: 40px; 
+            text-align: center; 
+            font-size: 10pt; 
+            font-weight: bold; 
+            border-top: 1px solid #ccc; 
+            padding-top: 10px; 
+            color: #555; 
+        }
+        @media (max-width: 768px) {
+            .mcq-container { column-count: 1; column-rule: none; }
+            .options-grid { grid-template-columns: 1fr; }
+            .exam-details { flex-direction: column; align-items: center; gap: 5px; }
+            body { padding: 10px; }
+        }
+        @media print { 
+            body { width: 100%; margin: 0; padding: 0; -webkit-print-color-adjust: exact; } 
+            .math-scroll { overflow-x: visible; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dxwszplz7/image/upload/v1765105606/VARDAAN_watermark_jxdqqb.jpg" alt="Watermark" class="watermark">
+    
+    <div class="header">
+        <h1 class="institute-name">VARDAAN LEARNING INSTITUTE</h1>
+        <div class="test-name">Class 12 – Physics MCQ Test</div>
+        <div class="test-name" style="font-size: 12pt; font-weight: normal;">(Syllabus: Electrostatics & Magnetism)</div>
+        <div class="exam-details">
+            <span>Class: 12 CBSE</span>
+            <span>Subject: Physics</span>
+            <span>Time: 1 Hour 30 Minutes</span>
+            <span>Max. Marks: 200</span>
+        </div>
+        <div class="instructions">
+            <strong>General Instructions:</strong><br>
+            • All questions are compulsory. Each question carries <strong>+4 marks</strong>.<br>
+            • There is a negative marking of <strong>-1 mark</strong> for each incorrect answer.<br>
+            • Choose the most appropriate option.
+        </div>
+    </div>
+
+    <div class="mcq-container">
+        
+        <div class="question-block">
+            <div class="question-text"><strong>Q1.</strong> Two point charges $+q$ and $-q$ are separated by a distance $r$ in vacuum. The force between them is $F$. If a dielectric material of dielectric constant $K$ is completely filled between them, the new force will be:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $K F$</div>
+                <div class="option"><span class="option-label">(B)</span> $F / K$</div>
+                <div class="option"><span class="option-label">(C)</span> $F$</div>
+                <div class="option"><span class="option-label">(D)</span> $K^2 F$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q2.</strong> The electric flux through a closed Gaussian surface enclosing an electric dipole is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{q}{\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{2q}{\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> Infinity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q3.</strong> A hollow conducting sphere of radius $R$ carries a charge $Q$. The electric potential at its center is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Zero</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{1}{4\pi\epsilon_0} \frac{Q}{R}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\frac{1}{4\pi\epsilon_0} \frac{Q}{R^2}$</div>
+                <div class="option"><span class="option-label">(D)</span> Infinity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q4.</strong> Three identical capacitors, each of capacitance $C$, are connected in series. Their equivalent capacitance is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $3C$</div>
+                <div class="option"><span class="option-label">(B)</span> $C$</div>
+                <div class="option"><span class="option-label">(C)</span> $C / 3$</div>
+                <div class="option"><span class="option-label">(D)</span> $2C / 3$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q5.</strong> What is the work done in moving a test charge $q_0$ along an equipotential surface?</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Positive</div>
+                <div class="option"><span class="option-label">(B)</span> Negative</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> Depends on the path</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q6.</strong> The energy density of the electric field $E$ in free space is given by:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{1}{2} \epsilon_0 E^2$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{1}{2} \frac{E^2}{\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\epsilon_0 E^2$</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{1}{2} \epsilon_0^2 E$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q7.</strong> An electric dipole placed in a uniform electric field experiences:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Only a net force</div>
+                <div class="option"><span class="option-label">(B)</span> Only a torque</div>
+                <div class="option"><span class="option-label">(C)</span> Both force and torque</div>
+                <div class="option"><span class="option-label">(D)</span> Neither force nor torque</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q8.</strong> A charge $q$ is placed at the center of a cube of side $l$. What is the electric flux passing through one face of the cube?</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{q}{\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{q}{2\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\frac{q}{4\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{q}{6\epsilon_0}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q9.</strong> The electric field intensity due to an infinite uniformly charged straight wire at a perpendicular distance $r$ is proportional to:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $r$</div>
+                <div class="option"><span class="option-label">(B)</span> $r^2$</div>
+                <div class="option"><span class="option-label">(C)</span> $1/r$</div>
+                <div class="option"><span class="option-label">(D)</span> $1/r^2$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q10.</strong> A parallel plate capacitor is charged and the charging battery is disconnected. If a dielectric slab is now inserted between the plates, the potential difference across the plates will:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Increase</div>
+                <div class="option"><span class="option-label">(B)</span> Decrease</div>
+                <div class="option"><span class="option-label">(C)</span> Remain the same</div>
+                <div class="option"><span class="option-label">(D)</span> Become zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q11.</strong> According to Biot-Savart's law, the magnetic field $d\vec{B}$ due to a current element $Id\vec{l}$ at a distance $\vec{r}$ is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{\mu_0}{4\pi} \frac{I(d\vec{l} \cdot \vec{r})}{r^3}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{\mu_0}{4\pi} \frac{I(d\vec{l} \times \vec{r})}{r^3}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\frac{\mu_0}{4\pi} \frac{I(d\vec{l} \times \vec{r})}{r^2}$</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{\mu_0}{4\pi} \frac{Id\vec{l}}{r^2}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q12.</strong> A charged particle of charge $q$ enters a uniform magnetic field $\vec{B}$ with velocity $\vec{v}$ perpendicular to the field. The path of the particle will be:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Straight line</div>
+                <div class="option"><span class="option-label">(B)</span> Parabola</div>
+                <div class="option"><span class="option-label">(C)</span> Circular</div>
+                <div class="option"><span class="option-label">(D)</span> Helical</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q13.</strong> Two long parallel wires carrying steady currents in the <em>same direction</em> will:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Attract each other</div>
+                <div class="option"><span class="option-label">(B)</span> Repel each other</div>
+                <div class="option"><span class="option-label">(C)</span> Exert no force</div>
+                <div class="option"><span class="option-label">(D)</span> Rotate each other</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q14.</strong> To convert a moving coil galvanometer into an ammeter, we must connect:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> High resistance in series</div>
+                <div class="option"><span class="option-label">(B)</span> Low resistance in series</div>
+                <div class="option"><span class="option-label">(C)</span> High resistance in parallel</div>
+                <div class="option"><span class="option-label">(D)</span> Low resistance in parallel</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q15.</strong> The magnetic field $B$ inside a long straight solenoid carrying current $I$ and having $n$ turns per unit length is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\mu_0 n I$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{\mu_0 n I}{2}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\mu_0 N I$</div>
+                <div class="option"><span class="option-label">(D)</span> Zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q16.</strong> The angle of dip at the Earth's magnetic poles is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $0^\circ$</div>
+                <div class="option"><span class="option-label">(B)</span> $45^\circ$</div>
+                <div class="option"><span class="option-label">(C)</span> $90^\circ$</div>
+                <div class="option"><span class="option-label">(D)</span> $180^\circ$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q17.</strong> The radius of the circular path of a charged particle moving perpendicularly in a uniform magnetic field is directly proportional to its:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Charge</div>
+                <div class="option"><span class="option-label">(B)</span> Momentum</div>
+                <div class="option"><span class="option-label">(C)</span> Magnetic field</div>
+                <div class="option"><span class="option-label">(D)</span> Kinetic energy</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q18.</strong> The magnetic dipole moment $M$ of a circular coil of radius $r$ carrying current $I$ and having $N$ turns is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $N I \pi r^2$</div>
+                <div class="option"><span class="option-label">(B)</span> $N I r^2$</div>
+                <div class="option"><span class="option-label">(C)</span> $I \pi r^2$</div>
+                <div class="option"><span class="option-label">(D)</span> $N I / \pi r^2$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q19.</strong> The magnetic susceptibility ($\chi$) of a diamagnetic material is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Positive and large</div>
+                <div class="option"><span class="option-label">(B)</span> Positive and small</div>
+                <div class="option"><span class="option-label">(C)</span> Negative and small</div>
+                <div class="option"><span class="option-label">(D)</span> Zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q20.</strong> At a certain place, the horizontal component of Earth's magnetic field is equal to the vertical component. The angle of dip at that place is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $0^\circ$</div>
+                <div class="option"><span class="option-label">(B)</span> $30^\circ$</div>
+                <div class="option"><span class="option-label">(C)</span> $45^\circ$</div>
+                <div class="option"><span class="option-label">(D)</span> $60^\circ$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q21.</strong> The electric field inside a uniformly charged non-conducting solid sphere of radius $R$ at a distance $r$ ($r < R$) from its center is proportional to:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $1/r$</div>
+                <div class="option"><span class="option-label">(B)</span> $1/r^2$</div>
+                <div class="option"><span class="option-label">(C)</span> $r$</div>
+                <div class="option"><span class="option-label">(D)</span> $r^2$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q22.</strong> The dimensional formula of permittivity of free space $\epsilon_0$ is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $[M^{-1} L^{-3} T^4 A^2]$</div>
+                <div class="option"><span class="option-label">(B)</span> $[M L T^{-2} A^{-2}]$</div>
+                <div class="option"><span class="option-label">(C)</span> $[M L^2 T^{-1} A]$</div>
+                <div class="option"><span class="option-label">(D)</span> $[M^{-1} L^2 T^{-3} A^2]$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q23.</strong> A soap bubble is given a negative charge. Its radius will:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Increase</div>
+                <div class="option"><span class="option-label">(B)</span> Decrease</div>
+                <div class="option"><span class="option-label">(C)</span> Remain unchanged</div>
+                <div class="option"><span class="option-label">(D)</span> Fluctuate</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q24.</strong> Two capacitors of capacitance $2 \mu\text{F}$ and $3 \mu\text{F}$ are connected in parallel. Their equivalent capacitance is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $1.2 \mu\text{F}$</div>
+                <div class="option"><span class="option-label">(B)</span> $5 \mu\text{F}$</div>
+                <div class="option"><span class="option-label">(C)</span> $6 \mu\text{F}$</div>
+                <div class="option"><span class="option-label">(D)</span> $1 \mu\text{F}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q25.</strong> The dielectric constant of metals is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Zero</div>
+                <div class="option"><span class="option-label">(B)</span> 1</div>
+                <div class="option"><span class="option-label">(C)</span> Greater than 1 but finite</div>
+                <div class="option"><span class="option-label">(D)</span> Infinity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q26.</strong> The unit of electric flux is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> V/m</div>
+                <div class="option"><span class="option-label">(B)</span> V-m</div>
+                <div class="option"><span class="option-label">(C)</span> V/m$^2$</div>
+                <div class="option"><span class="option-label">(D)</span> V-m$^2$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q27.</strong> If the distance between two equal point charges is doubled, the electrostatic force between them becomes:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Double</div>
+                <div class="option"><span class="option-label">(B)</span> Half</div>
+                <div class="option"><span class="option-label">(C)</span> One-fourth</div>
+                <div class="option"><span class="option-label">(D)</span> Four times</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q28.</strong> Work done in moving a charge of $2\text{ C}$ across two points having a potential difference of $5\text{ V}$ is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> 2.5 J</div>
+                <div class="option"><span class="option-label">(B)</span> 10 J</div>
+                <div class="option"><span class="option-label">(C)</span> 20 J</div>
+                <div class="option"><span class="option-label">(D)</span> Zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q29.</strong> The electrostatic potential energy of a dipole of moment $\vec{p}$ in a uniform electric field $\vec{E}$ is given by:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\vec{p} \times \vec{E}$</div>
+                <div class="option"><span class="option-label">(B)</span> $-\vec{p} \cdot \vec{E}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\vec{p} \cdot \vec{E}$</div>
+                <div class="option"><span class="option-label">(D)</span> $-\vec{p} \times \vec{E}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q30.</strong> An uncharged insulated conductor $A$ is brought near a charged insulated conductor $B$. What happens to charge and potential of $B$?</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Charge remains same, potential decreases</div>
+                <div class="option"><span class="option-label">(B)</span> Charge remains same, potential increases</div>
+                <div class="option"><span class="option-label">(C)</span> Charge and potential both decrease</div>
+                <div class="option"><span class="option-label">(D)</span> Charge increases, potential remains same</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q31.</strong> Which of the following is NOT a valid unit for electric field intensity?</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> N/C</div>
+                <div class="option"><span class="option-label">(B)</span> V/m</div>
+                <div class="option"><span class="option-label">(C)</span> J/C</div>
+                <div class="option"><span class="option-label">(D)</span> J/(C·m)</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q32.</strong> The electric field lines provide information about:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Field strength</div>
+                <div class="option"><span class="option-label">(B)</span> Direction</div>
+                <div class="option"><span class="option-label">(C)</span> Nature of charge</div>
+                <div class="option"><span class="option-label">(D)</span> All of these</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q33.</strong> If a conducting slab of thickness $t$ ($t < d$) is introduced between the plates of a parallel plate capacitor of plate separation $d$, its capacitance:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Increases</div>
+                <div class="option"><span class="option-label">(B)</span> Decreases</div>
+                <div class="option"><span class="option-label">(C)</span> Remains same</div>
+                <div class="option"><span class="option-label">(D)</span> Becomes zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q34.</strong> Equipotential surfaces associated with an isolated point charge are:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Concentric spheres</div>
+                <div class="option"><span class="option-label">(B)</span> Concentric cylinders</div>
+                <div class="option"><span class="option-label">(C)</span> Parallel planes</div>
+                <div class="option"><span class="option-label">(D)</span> None of these</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q35.</strong> Gauss's law will be invalid if:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> There is a magnetic monopole</div>
+                <div class="option"><span class="option-label">(B)</span> Inverse square law is not exactly true</div>
+                <div class="option"><span class="option-label">(C)</span> Velocity of light is not constant</div>
+                <div class="option"><span class="option-label">(D)</span> None of these</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q36.</strong> The magnetic field at the center of a circular current carrying loop of radius $r$ and $N$ turns is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{\mu_0 N I}{2\pi r}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{\mu_0 N I}{2 r}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\frac{\mu_0 N I}{4\pi r}$</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{\mu_0 N I r^2}{2}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q37.</strong> The frequency of a charged particle circulating in a cyclotron is independent of:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Mass of the particle</div>
+                <div class="option"><span class="option-label">(B)</span> Charge of the particle</div>
+                <div class="option"><span class="option-label">(C)</span> Magnetic field</div>
+                <div class="option"><span class="option-label">(D)</span> Velocity of the particle</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q38.</strong> The Lorentz force on a particle of charge $q$ moving with velocity $\vec{v}$ in combined electric field $\vec{E}$ and magnetic field $\vec{B}$ is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $q(\vec{E} \cdot \vec{v} \times \vec{B})$</div>
+                <div class="option"><span class="option-label">(B)</span> $q(\vec{E} + \vec{v} \times \vec{B})$</div>
+                <div class="option"><span class="option-label">(C)</span> $q(\vec{E} + \vec{B} \times \vec{v})$</div>
+                <div class="option"><span class="option-label">(D)</span> $q(\vec{E} \times \vec{B} + \vec{v})$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q39.</strong> Which of the following material has a negative magnetic susceptibility?</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Paramagnetic</div>
+                <div class="option"><span class="option-label">(B)</span> Ferromagnetic</div>
+                <div class="option"><span class="option-label">(C)</span> Diamagnetic</div>
+                <div class="option"><span class="option-label">(D)</span> Non-magnetic</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q40.</strong> The temperature above which a ferromagnetic substance becomes paramagnetic is called:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Critical temperature</div>
+                <div class="option"><span class="option-label">(B)</span> Curie temperature</div>
+                <div class="option"><span class="option-label">(C)</span> Debye temperature</div>
+                <div class="option"><span class="option-label">(D)</span> Inversion temperature</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q41.</strong> To convert a galvanometer into a voltmeter, we must connect a:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Low resistance in series</div>
+                <div class="option"><span class="option-label">(B)</span> Low resistance in parallel</div>
+                <div class="option"><span class="option-label">(C)</span> High resistance in series</div>
+                <div class="option"><span class="option-label">(D)</span> High resistance in parallel</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q42.</strong> The SI unit of magnetic field ($\vec{B}$) is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Weber</div>
+                <div class="option"><span class="option-label">(B)</span> Tesla</div>
+                <div class="option"><span class="option-label">(C)</span> Gauss</div>
+                <div class="option"><span class="option-label">(D)</span> Oersted</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q43.</strong> Two long parallel wires carrying steady currents in <em>opposite directions</em> will:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Attract each other</div>
+                <div class="option"><span class="option-label">(B)</span> Repel each other</div>
+                <div class="option"><span class="option-label">(C)</span> Not exert any force</div>
+                <div class="option"><span class="option-label">(D)</span> Rotate each other</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q44.</strong> The work done by a magnetic field on a moving charge is always:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Positive</div>
+                <div class="option"><span class="option-label">(B)</span> Negative</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> Depends on charge polarity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q45.</strong> The magnetic dipole moment of a revolving electron in the $n^{th}$ orbit is given by:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{n e \hbar}{2m_e}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{n e}{2m_e \hbar}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\frac{e \hbar}{2n m_e}$</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{n m_e}{2e \hbar}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q46.</strong> The total magnetic flux passing through a closed surface is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\mu_0 I$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{q}{\epsilon_0}$</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> Infinity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q47.</strong> The magnetic field produced at the center of a current carrying toroid of mean radius $r$ having $N$ total turns and current $I$ is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\frac{\mu_0 N I}{2\pi r}$</div>
+                <div class="option"><span class="option-label">(B)</span> $\frac{\mu_0 N I}{2 r}$</div>
+                <div class="option"><span class="option-label">(C)</span> $\mu_0 N I$</div>
+                <div class="option"><span class="option-label">(D)</span> Zero</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q48.</strong> If a charged particle is moving perfectly parallel to a uniform magnetic field, the magnetic force acting on it is:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $qvB$</div>
+                <div class="option"><span class="option-label">(B)</span> Maximum</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> $\frac{mv^2}{r}$</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q49.</strong> The area of a hysteresis loop of a magnetic material is a measure of:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> Magnetic flux density</div>
+                <div class="option"><span class="option-label">(B)</span> Energy dissipated per cycle per unit volume</div>
+                <div class="option"><span class="option-label">(C)</span> Retentivity</div>
+                <div class="option"><span class="option-label">(D)</span> Coercivity</div>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="question-text"><strong>Q50.</strong> According to Ampere's circuital law, the line integral of magnetic field $\vec{B}$ around any closed path in vacuum is equal to:</div>
+            <div class="options-grid">
+                <div class="option"><span class="option-label">(A)</span> $\mu_0$ times the total current threading the closed path</div>
+                <div class="option"><span class="option-label">(B)</span> $\epsilon_0$ times the total charge enclosed</div>
+                <div class="option"><span class="option-label">(C)</span> Zero</div>
+                <div class="option"><span class="option-label">(D)</span> The total magnetic flux enclosed</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">Created by Team Vardaan</div>
+</body>
+</html>
